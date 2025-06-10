@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GlobalFunctions_SpinnerText" xml:space="preserve">
+    <value>Betöltés...</value>
+  </data>
+	<data name="FileArtifactUploadDialog_DefaultScreenshotFilename" xml:space="preserve">
+    <value>Képernyőkép1</value>
+  </data>
+	<data name="FileArtifactUploadDialog_ScreenshotFilenameRequired" xml:space="preserve">
+    <value>A képernyőkép nevének megadása kötelező</value>
+  </data>
+	<data name="FileArtifactUploadDialog_ScreenshotFilenameWrongExtension" xml:space="preserve">
+    <value>A képernyőkép nevének .png kiterjesztésűnek kell lennie</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardContentUnsupported" xml:space="preserve">
+    <value>A vágólap nem tartalmaz támogatott képformátumot.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardEmpty" xml:space="preserve">
+    <value>A vágólap üres.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardErrorCodeUnknown" xml:space="preserve">
+    <value>Hiba! Sajnos nincs hibaüzenet a hibakódhoz:</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardUnknownError" xml:space="preserve">
+    <value>Váratlan hiba. Lásd a Java-applet-konzolt a részletekért.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaInternalException" xml:space="preserve">
+    <value>Belső kivétel:</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaNotLoadedYet" xml:space="preserve">
+    <value>A Supa-Applet nem töltött még be.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaPasteImageFirst" xml:space="preserve">
+    <value>Kérem először illesszen be egy képet!</value>
+  </data>
+	<data name="GlobalFunctions_DefaultErrorMessage" xml:space="preserve">
+    <value>Kérjük, ellenőrizze az Alkalmazás eseménynaplóját részletes információért.</value>
+  </data>
+	<data name="GlobalFunctions_DefaultErrorType" xml:space="preserve">
+    <value>Rendszerhiba</value>
+  </data>
+	<data name="GlobalFunctions_TooltipLoading" xml:space="preserve">
+    <value>Betöltés…</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForBlocked" xml:space="preserve">
+    <value>Blokkolt státuszú tesztlépés rögzítésekor a tényleges eredmény megadása kötelező</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForCaution" xml:space="preserve">
+    <value>Caution státuszú tesztlépés rögzítésekor a tényleges eredmény megadása kötelező</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForFail" xml:space="preserve">
+    <value>Sikertelen státuszú tesztlépés rögzítésekor a tényleges eredmény megadása kötelező</value>
+  </data>
+	<data name="TestCaseExecution_IncidentLoggedMessage" xml:space="preserve">
+    <value>{0} bejelentve a tesztlépés eredményével</value>
+  </data>
+	<data name="TestSetDetails_OnlyOneCheckboxToAddTestCases" xml:space="preserve">
+    <value>Legfeljebb egy checkboxot jelöljön be a Teszteset hozzáadása művelethez</value>
+  </data>
+	<data name="TestSetDetails_SelectOnlyOneTestCase" xml:space="preserve">
+    <value>Paraméterek szerkesztéséhez pontosan egy tesztesetet jelöljön ki</value>
+  </data>
+	<data name="TestSetDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>Először válasszon tesztesetet.</value>
+  </data>
+	<data name="TreeView_ExpandCollapse" xml:space="preserve">
+    <value>Kiterjesztés / összeomlás</value>
+  </data>
+	<data name="TreeView_Folder" xml:space="preserve">
+    <value>Mappa</value>
+  </data>
+	<data name="Global_Export" xml:space="preserve">
+    <value>Exportálás</value>
+  </data>
+	<data name="Global_PleaseSelectProjectToExportTo" xml:space="preserve">
+    <value>Kérjük válassza ki a projektet amelybe exportálni szeretne:</value>
+  </data>
+	<data name="Global_ApplyFilter" xml:space="preserve">
+    <value>Szűrő alkalmazása</value>
+  </data>
+	<data name="Global_ArtifactHasAttachment" xml:space="preserve">
+    <value>A kapcsolódó elem melléklet(ekk)el rendelkezik</value>
+  </data>
+	<data name="Global_Cancel" xml:space="preserve">
+    <value>Mégse</value>
+  </data>
+	<data name="Global_CannotMoveItemOntoItself" xml:space="preserve">
+    <value>Az elem nem helyezhető át önmagára!</value>
+  </data>
+	<data name="Global_ClipboardEmpty" xml:space="preserve">
+    <value>A vágólap jelenleg üres!</value>
+  </data>
+	<data name="Global_DestinationItemNotValid" xml:space="preserve">
+    <value>A cél nem érvényes!</value>
+  </data>
+	<data name="Global_DisplayingPage" xml:space="preserve">
+    <value>Oldal megjelenítése</value>
+  </data>
+	<data name="Global_FilterSaved" xml:space="preserve">
+    <value>Szűrő mentése sikeres.</value>
+  </data>
+	<data name="Global_Hide" xml:space="preserve">
+    <value>Elrejtés</value>
+  </data>
+	<data name="Global_IntegerValidation" xml:space="preserve">
+    <value>{0}'-nak egész értéknek kell lennie.</value>
+  </data>
+	<data name="Global_ItemDraggedNotValid" xml:space="preserve">
+    <value>A behúzott elem nem érvényes!</value>
+  </data>
+	<data name="Global_ItemsCopiedToClipboard" xml:space="preserve">
+    <value>Az elemek másolása a vágólapra sikeres</value>
+  </data>
+	<data name="Global_ItemsCutToClipboard" xml:space="preserve">
+    <value>Az elemek kivágása a vágólapra sikeres</value>
+  </data>
+	<data name="Global_NeedToSelectDestinationProject" xml:space="preserve">
+    <value>Válassza ki a célprojektet.</value>
+  </data>
+	<data name="Global_NeedToSelectFilter" xml:space="preserve">
+    <value>Válassza ki a szűrőt a listából.</value>
+  </data>
+	<data name="Global_NeedToSelectItem" xml:space="preserve">
+    <value>Ki kell választania a {0}-t a listából.</value>
+  </data>
+	<data name="Global_None" xml:space="preserve">
+    <value>Egyik sem</value>
+  </data>
+	<data name="Global_Of" xml:space="preserve">
+    <value>/</value>
+  </data>
+	<data name="Global_PleaseSelectFilter" xml:space="preserve">
+    <value>Kérjük, válassza ki a használni kívánt szűrőt:</value>
+  </data>
+	<data name="Global_RetrieveSavedFilter" xml:space="preserve">
+    <value>Mentett szűrők használata</value>
+  </data>
+	<data name="Global_RowsPerPage" xml:space="preserve">
+    <value>sorok oldalanként</value>
+  </data>
+	<data name="Global_Select" xml:space="preserve">
+    <value>Válasszon</value>
+  </data>
+	<data name="Global_SelectFilter" xml:space="preserve">
+    <value>Szűrő kiválasztása</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCommand" xml:space="preserve">
+    <value>Válasszon ki legalább egy Checkboxot a parancs végrehajtásához!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCopy" xml:space="preserve">
+    <value>Válasszon ki legalább egy Checkboxot a másoláshoz!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCut" xml:space="preserve">
+    <value>Válasszon ki  legalább egy Checkboxot a kivágáshoz!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForDelete" xml:space="preserve">
+    <value>Válasszon ki legalább egy Checkboxot a törléshez!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForInsert" xml:space="preserve">
+    <value>Válasszon ki legalább egy Checkboxot a beillesztéshez!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForOpen" xml:space="preserve">
+    <value>Válasszon ki legalább egy Checkboxot a megnyitáshoz!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForPaste" xml:space="preserve">
+    <value>A beillesztéshez csak egy checkbox-ot választhat ki!</value>
+  </data>
+	<data name="Global_Show" xml:space="preserve">
+    <value>Mutat</value>
+  </data>
+	<data name="Global_SuccessAddingItemsToItem" xml:space="preserve">
+    <value>Az elemek sikeresen hozzáadva {0}-hoz</value>
+  </data>
+	<data name="Global_SuccessExport" xml:space="preserve">
+    <value>Sikeresen exportálta az elemeket.</value>
+  </data>
+	<data name="Global_TimeIntervalValidation" xml:space="preserve">
+    <value>{0}' időintervallumnak órákban, percben kell lennie, tizedes törtként</value>
+  </data>
+	<data name="Global_YouNeedToEnterFilterName" xml:space="preserve">
+    <value>A szűrő nevének megadása kötelező!</value>
+  </data>
+	<data name="HierarchicalGrid_CollapseNode" xml:space="preserve">
+    <value>Csomópont bezárása</value>
+  </data>
+	<data name="HierarchicalGrid_ExpandNode" xml:space="preserve">
+    <value>Csomópont nyitása</value>
+  </data>
+	<data name="HierarchicalGrid_SelectOneCheckBoxForIndent" xml:space="preserve">
+    <value>Válasszon ki  legalább egy Checkboxot a behúzáshoz!</value>
+  </data>
+	<data name="HierarchicalGrid_SelectOneCheckBoxForOutdent" xml:space="preserve">
+    <value>Válasszon ki  legalább egy Checkboxot a kihúzás parancsnak!</value>
+  </data>
+	<data name="Global_Edit" xml:space="preserve">
+    <value>Szerkesztés</value>
+  </data>
+	<data name="Global_FillWithValue" xml:space="preserve">
+    <value>Töltse ki ezzel az értékkel</value>
+  </data>
+	<data name="Global_SelectAll" xml:space="preserve">
+    <value>Az összes kijelölése</value>
+  </data>
+	<data name="Global_Update" xml:space="preserve">
+    <value>Frissítés</value>
+  </data>
+	<data name="Global_Insert" xml:space="preserve">
+    <value>Beillesztés</value>
+  </data>
+	<data name="Global_MultipleItems" xml:space="preserve">
+    <value>Összetett elemek</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForBulkEdit" xml:space="preserve">
+    <value>Válasszon ki egy Checkboxot, hogy használhassa a Csoportos szerkesztés műveletet.</value>
+  </data>
+	<data name="Global_ExportItems" xml:space="preserve">
+    <value>Elemek exportálása</value>
+  </data>
+	<data name="Global_Project" xml:space="preserve">
+    <value>Projekt</value>
+  </data>
+	<data name="Requirements_SuccessfullyCreatedTestCases" xml:space="preserve">
+    <value>A követelményekből készített tesztesetek sikeresen létrehozva</value>
+  </data>
+	<data name="Requirements_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>A követelményekből készített teszt setek sikeresen létrehozva</value>
+  </data>
+	<data name="Global_Any" xml:space="preserve">
+    <value>-- Bármelyik --</value>
+  </data>
+	<data name="Global_None2" xml:space="preserve">
+    <value>(Egyik sem)</value>
+  </data>
+	<data name="DatePicker_April" xml:space="preserve">
+    <value>Április</value>
+  </data>
+	<data name="DatePicker_August" xml:space="preserve">
+    <value>Augusztus</value>
+  </data>
+	<data name="DatePicker_ChosenDateInvalid" xml:space="preserve">
+    <value>Sajnos, a választott dátum nem elfogadható. Kérjük, olvassa el az oldalon lévő utasításokat.</value>
+  </data>
+	<data name="DatePicker_December" xml:space="preserve">
+    <value>December</value>
+  </data>
+	<data name="DatePicker_DHTMLUnsupported" xml:space="preserve">
+    <value>Szükséges DHTML funkciók nem támogattak ebben a böngészőben.</value>
+  </data>
+	<data name="DatePicker_February" xml:space="preserve">
+    <value>Február</value>
+  </data>
+	<data name="DatePicker_Fr" xml:space="preserve">
+    <value>Pé</value>
+  </data>
+	<data name="DatePicker_Friday" xml:space="preserve">
+    <value>Péntek</value>
+  </data>
+	<data name="DatePicker_January" xml:space="preserve">
+    <value>Január</value>
+  </data>
+	<data name="DatePicker_July" xml:space="preserve">
+    <value>Július</value>
+  </data>
+	<data name="DatePicker_June" xml:space="preserve">
+    <value>Június</value>
+  </data>
+	<data name="DatePicker_March" xml:space="preserve">
+    <value>Március</value>
+  </data>
+	<data name="DatePicker_May" xml:space="preserve">
+    <value>Május</value>
+  </data>
+	<data name="DatePicker_Mo" xml:space="preserve">
+    <value>Hé</value>
+  </data>
+	<data name="DatePicker_Monday" xml:space="preserve">
+    <value>Hétfő</value>
+  </data>
+	<data name="DatePicker_November" xml:space="preserve">
+    <value>November</value>
+  </data>
+	<data name="DatePicker_October" xml:space="preserve">
+    <value>Október</value>
+  </data>
+	<data name="DatePicker_Sa" xml:space="preserve">
+    <value>Szo</value>
+  </data>
+	<data name="DatePicker_Saturday" xml:space="preserve">
+    <value>Szombat</value>
+  </data>
+	<data name="DatePicker_September" xml:space="preserve">
+    <value>Szeptember</value>
+  </data>
+	<data name="DatePicker_Su" xml:space="preserve">
+    <value>Va</value>
+  </data>
+	<data name="DatePicker_Sunday" xml:space="preserve">
+    <value>Vasárnap</value>
+  </data>
+	<data name="DatePicker_TargetFormInvalid" xml:space="preserve">
+    <value>Cél űrlapmező nem társított, vagy nem hozzáférhető.</value>
+  </data>
+	<data name="DatePicker_Th" xml:space="preserve">
+    <value>Csü</value>
+  </data>
+	<data name="DatePicker_Thursday" xml:space="preserve">
+    <value>Csütörtök</value>
+  </data>
+	<data name="DatePicker_Tu" xml:space="preserve">
+    <value>Ke</value>
+  </data>
+	<data name="DatePicker_Tuesday" xml:space="preserve">
+    <value>Kedd</value>
+  </data>
+	<data name="DatePicker_UnknownError" xml:space="preserve">
+    <value>Ismeretlen hiba történt a script futtatása közben.</value>
+  </data>
+	<data name="DatePicker_We" xml:space="preserve">
+    <value>Sze</value>
+  </data>
+	<data name="DatePicker_Wednesday" xml:space="preserve">
+    <value>Szerda</value>
+  </data>
+	<data name="DateRangeFilter_CustomDates" xml:space="preserve">
+    <value>Egyéni dátumtartományok:</value>
+  </data>
+	<data name="DateRangeFilter_EnterDateRange" xml:space="preserve">
+    <value>Adjon meg dátumtartományt:</value>
+  </data>
+	<data name="DateRangeFilter_Last14Days" xml:space="preserve">
+    <value>Utolsó 14 nap</value>
+  </data>
+	<data name="DateRangeFilter_Last30Days" xml:space="preserve">
+    <value>Utolsó 30 nap</value>
+  </data>
+	<data name="DateRangeFilter_Last7Days" xml:space="preserve">
+    <value>Utolsó 7 nap</value>
+  </data>
+	<data name="DateRangeFilter_LastMonth" xml:space="preserve">
+    <value>Múlt hónap</value>
+  </data>
+	<data name="DateRangeFilter_LastWeek" xml:space="preserve">
+    <value>Múlt hét</value>
+  </data>
+	<data name="DateRangeFilter_StandardDates" xml:space="preserve">
+    <value>Normál dátumtartományok:</value>
+  </data>
+	<data name="DateRangeFilter_ThisMonth" xml:space="preserve">
+    <value>Ez a hónap</value>
+  </data>
+	<data name="DateRangeFilter_ThisWeek" xml:space="preserve">
+    <value>Ezen a héten</value>
+  </data>
+	<data name="DateRangeFilter_Today" xml:space="preserve">
+    <value>Ma</value>
+  </data>
+	<data name="DateRangeFilter_Yesterday" xml:space="preserve">
+    <value>Tegnap</value>
+  </data>
+	<data name="Global_PleaseSelect" xml:space="preserve">
+    <value>-- Kérem válasszon --</value>
+  </data>
+	<data name="Releases_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>A release-ből készített teszt set sikeresen létrehozva</value>
+  </data>
+	<data name="Global_No" xml:space="preserve">
+    <value>Nem</value>
+  </data>
+	<data name="Global_Yes" xml:space="preserve">
+    <value>Igen</value>
+  </data>
+	<data name="Global_Add" xml:space="preserve">
+    <value>Hozzáadás</value>
+  </data>
+	<data name="TestCaseList_AddToRelease" xml:space="preserve">
+    <value>Hozzáadás release-hez</value>
+  </data>
+	<data name="TestCaseList_AddToRequirement" xml:space="preserve">
+    <value>Hozzáadás követelményhez</value>
+  </data>
+	<data name="TestCaseList_AddToTestSet" xml:space="preserve">
+    <value>Hozzáadás teszt set-hez</value>
+  </data>
+	<data name="TestCaseList_SelectRelease" xml:space="preserve">
+    <value>Válassza ki a release-t amelyhez hozzá szeretné adni:</value>
+  </data>
+	<data name="TestCaseList_SelectRequirement" xml:space="preserve">
+    <value>Válassza ki a követelményt amelyhez hozzá szeretné adni:</value>
+  </data>
+	<data name="TestCaseList_SelectTestSet" xml:space="preserve">
+    <value>Válassza ki a teszt setet amelyhez hozzá szeretné adni:</value>
+  </data>
+	<data name="SortedList_SortByAscending" xml:space="preserve">
+    <value>Rendezés {0} szerint, növekvő</value>
+  </data>
+	<data name="SortedList_SortByDescending" xml:space="preserve">
+    <value>Rendezés {0} szerint, csökkenő</value>
+  </data>
+	<data name="Global_ChooseNameForFilter" xml:space="preserve">
+    <value>Kérjük, válasszon egy nevet ennek a szűrőnek:</value>
+  </data>
+	<data name="Global_Save" xml:space="preserve">
+    <value>Mentés</value>
+  </data>
+	<data name="Global_SaveFilter" xml:space="preserve">
+    <value>Szűrő mentése</value>
+  </data>
+	<data name="Global_Refresh" xml:space="preserve">
+    <value>Frissítés</value>
+  </data>
+	<data name="IterationPlan_CannotDragReqsTasksSameTime" xml:space="preserve">
+    <value>A követelmények és a feladatok nem mozgathatóak egyszerre</value>
+  </data>
+	<data name="IterationPlan_NoReleaseSelected" xml:space="preserve">
+    <value>Nincs {0} kiválasztva! A terv megjelenítéséhez válasszon {1}-t</value>
+  </data>
+	<data name="PlanningGrid_Available" xml:space="preserve">
+    <value>Elérhető</value>
+  </data>
+	<data name="PlanningGrid_ItemsDirectlyAssociated" xml:space="preserve">
+    <value>Elemek közvetlenül kapcsolódnak {0}-hoz</value>
+  </data>
+	<data name="PlanningGrid_Remaining" xml:space="preserve">
+    <value>Fennmaradó</value>
+  </data>
+	<data name="PlanningGrid_Utilized" xml:space="preserve">
+    <value>Felhasznált</value>
+  </data>
+	<data name="DropDownHierarchy_NavigateToArtifact" xml:space="preserve">
+    <value>Keresse meg a kapcsolódó elemet</value>
+  </data>
+	<data name="RichTextBox_AddImage" xml:space="preserve">
+    <value>Kép hozzáadása</value>
+  </data>
+	<data name="RichTextBox_AlignLeft" xml:space="preserve">
+    <value>Balra igazítás</value>
+  </data>
+	<data name="RichTextBox_AlignRight" xml:space="preserve">
+    <value>Jobbra igazítás</value>
+  </data>
+	<data name="RichTextBox_BackgroundColor" xml:space="preserve">
+    <value>Háttérszín</value>
+  </data>
+	<data name="RichTextBox_Bold" xml:space="preserve">
+    <value>Félkövér</value>
+  </data>
+	<data name="RichTextBox_Center" xml:space="preserve">
+    <value>Középre igazítás</value>
+  </data>
+	<data name="RichTextBox_EnterImageUrl" xml:space="preserve">
+    <value>Adja meg a kép URL-jét:</value>
+  </data>
+	<data name="RichTextBox_EnterUrl" xml:space="preserve">
+    <value>Adjon meg egy URL-t:</value>
+  </data>
+	<data name="RichTextBox_Font" xml:space="preserve">
+    <value>Betűtípus</value>
+  </data>
+	<data name="RichTextBox_FontDropDown" xml:space="preserve">
+    <value>-- Betűtípus --</value>
+  </data>
+	<data name="RichTextBox_HorizontalRule" xml:space="preserve">
+    <value>Vízszintes Rule</value>
+  </data>
+	<data name="RichTextBox_Indent" xml:space="preserve">
+    <value>Behúzás növelése</value>
+  </data>
+	<data name="RichTextBox_InsertLink" xml:space="preserve">
+    <value>Link beillesztése</value>
+  </data>
+	<data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>Táblázat beszúrása</value>
+  </data>
+	<data name="RichTextBox_Italic" xml:space="preserve">
+    <value>Dőlt</value>
+  </data>
+	<data name="RichTextBox_OrderedList" xml:space="preserve">
+    <value>Rendezett lista</value>
+  </data>
+	<data name="RichTextBox_Outdent" xml:space="preserve">
+    <value>Behúzás csökkentése</value>
+  </data>
+	<data name="RichTextBox_Size" xml:space="preserve">
+    <value>Méret</value>
+  </data>
+	<data name="RichTextBox_SizeDropDown" xml:space="preserve">
+    <value>-- Méret --</value>
+  </data>
+	<data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>Szöveg színe</value>
+  </data>
+	<data name="RichTextBox_Underline" xml:space="preserve">
+    <value>Aláhúzás</value>
+  </data>
+	<data name="RichTextBox_UnorderedList" xml:space="preserve">
+    <value>Rendezetlen lista</value>
+  </data>
+	<data name="RichTextBox_ViewFullScreen" xml:space="preserve">
+    <value>Teljes képernyős nézet</value>
+  </data>
+	<data name="RichTextBox_ViewHTMLSource" xml:space="preserve">
+    <value>HTML forrás megtekintése</value>
+  </data>
+	<data name="Global_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+	<data name="Global_Name" xml:space="preserve">
+    <value>Név</value>
+  </data>
+	<data name="Global_Status" xml:space="preserve">
+    <value>Állapot</value>
+  </data>
+	<data name="MappingSelector_Add" xml:space="preserve">
+    <value>Hozzáadás &gt;</value>
+  </data>
+	<data name="MappingSelector_CollapseNode" xml:space="preserve">
+    <value>Csomópont bezárása</value>
+  </data>
+	<data name="MappingSelector_ExpandNode" xml:space="preserve">
+    <value>Csomópont nyitása</value>
+  </data>
+	<data name="MappingSelector_NoItemsToRemove" xml:space="preserve">
+    <value>Nincsenek eltávolítható elemek</value>
+  </data>
+	<data name="MappingSelector_Remove" xml:space="preserve">
+    <value>Eltávolítás &lt;</value>
+  </data>
+	<data name="MappingSelector_RemoveAll" xml:space="preserve">
+    <value>Összes eltávolítása</value>
+  </data>
+	<data name="MappingSelector_SelectItemFromLeftHandBox" xml:space="preserve">
+    <value>Legalább egy elemet választania kell a bal oldali dobozból</value>
+  </data>
+	<data name="MappingSelector_SelectItemFromRightHandBox" xml:space="preserve">
+    <value>Legalább egy elemet választania kell a jobb oldali dobozból</value>
+  </data>
+	<data name="TestCaseSelector_TestCaseCreatedFromRequirement" xml:space="preserve">
+    <value>A követelményből készített új teszteset sikeresen létrehozva</value>
+  </data>
+	<data name="TestCaseSelector_TestSetCreatedFromRelease" xml:space="preserve">
+    <value>A release-ből készített teszt set sikeresen létrehozva</value>
+  </data>
+	<data name="Incidents_SuccessfullyCreatedRequirements" xml:space="preserve">
+    <value>Az incidensből készített követelmény sikeresen létrejött.</value>
+  </data>
+	<data name="Global_Uploading" xml:space="preserve">
+    <value>Feltöltés..</value>
+  </data>
+	<data name="ArtifactLinkPanel_IncidentIdNotValid" xml:space="preserve">
+    <value>Az incidens azonosítónak egész értéknek kell lennie.</value>
+  </data>
+	<data name="ArtifactLinkPanel_InvalidArtifactType" xml:space="preserve">
+    <value>A kiválasztott elem típusa érvénytelen!</value>
+  </data>
+	<data name="ArtifactLinkPanel_NeedToSelectOneArtifact" xml:space="preserve">
+    <value>Legalább egy elem kiválasztása kötelező kapcsolat létrehozásához!</value>
+  </data>
+	<data name="ArtifactLinkPanel_RequirementIdNotValid" xml:space="preserve">
+    <value>A követelmény azonosítónak egész értéknek kell lennie.</value>
+  </data>
+	<data name="ArtifactLinkPanel_TestStepIdNotValid" xml:space="preserve">
+    <value>A teszteset azonosítónak egész értéknek kell lennie.</value>
+  </data>
+	<data name="Global_Loading" xml:space="preserve">
+    <value>Betöltés...</value>
+  </data>
+	<data name="HierarchicalSelector_CollapseNode" xml:space="preserve">
+    <value>Csomópont bezárása</value>
+  </data>
+	<data name="HierarchicalSelector_ExpandNode" xml:space="preserve">
+    <value>Csomópont nyitása</value>
+  </data>
+	<data name="NavigationBar_AllItems" xml:space="preserve">
+    <value>Minden elem</value>
+  </data>
+	<data name="NavigationBar_Assigned" xml:space="preserve">
+    <value>Kiosztott</value>
+  </data>
+	<data name="NavigationBar_CurrentFilter" xml:space="preserve">
+    <value>Aktuális szűrő</value>
+  </data>
+	<data name="NavigationBar_Display" xml:space="preserve">
+    <value>Megjelenítés:</value>
+  </data>
+	<data name="NavigationBar_Maximize" xml:space="preserve">
+    <value>Maximalizálás</value>
+  </data>
+	<data name="NavigationBar_Minimize" xml:space="preserve">
+    <value>Minimalizál</value>
+  </data>
+	<data name="Global_ClipboardNotSupported" xml:space="preserve">
+    <value>Vágólap hozzáférést nem támogatja a böngészője!</value>
+  </data>
+	<data name="TestCaseDetails_CannotLinkToParent" xml:space="preserve">
+    <value>Egy tesztesethez hivatkozás csak egyszer készíthető</value>
+  </data>
+	<data name="TestCaseDetails_CannotLinkToSelf" xml:space="preserve">
+    <value>Nem készíthető hivatkozás, amely önmagadra mutat!</value>
+  </data>
+	<data name="TestCaseDetails_NewParameterSuccess" xml:space="preserve">
+    <value>Az új teszteset paraméter hozzáadva</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameInvalid" xml:space="preserve">
+    <value>Nem használható  idézőjel, szóköz vagy per jel a paraméter nevében.</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameInvalid2" xml:space="preserve">
+    <value>Nem használható kapcsos zárójel, vagy dollár-jel a paraméter nevében.</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameRequired" xml:space="preserve">
+    <value>A teszteset paraméter neve megadása kötelező</value>
+  </data>
+	<data name="TestCaseDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>Elsőként válasszon tesztesetet</value>
+  </data>
+	<data name="ReleaseSelector_RequirementCreatedFromTestCase" xml:space="preserve">
+    <value>A tesztesetből készített követelmény sikeresen létrehozva</value>
+  </data>
+	<data name="TestCaseExecution_Release" xml:space="preserve">
+    <value>Release</value>
+  </data>
+	<data name="TestCaseExecution_TestRunReadOnly" xml:space="preserve">
+    <value>A teszt futtatás csak olvasható, ki van jelölve</value>
+  </data>
+	<data name="Documents_ExportDocuments" xml:space="preserve">
+    <value>Dokumentumok exportálása</value>
+  </data>
+	<data name="JqPlot_DisplayDataGrid" xml:space="preserve">
+    <value>Táblázat megjelenítése</value>
+  </data>
+	<data name="JqPlot_ResetZoom" xml:space="preserve">
+    <value>Nagyítás visszaállítása</value>
+  </data>
+	<data name="JqPlot_DownloadData" xml:space="preserve">
+    <value>Letöltés CSV-ként</value>
+  </data>
+	<data name="JqPlot_SaveAs" xml:space="preserve">
+    <value>Mentés másként</value>
+  </data>
+	<data name="TestCases_BlockSucceeded" xml:space="preserve">
+    <value>Tesztesetek sikeresen blokkolva</value>
+  </data>
+	<data name="TestCases_UnBlockSucceeded" xml:space="preserve">
+    <value>Tesztesetek sikeresen feloldva</value>
+  </data>
+	<data name="Global_EstimatedEffort" xml:space="preserve">
+    <value>Becsült ráfordítás</value>
+  </data>
+	<data name="Global_Owner" xml:space="preserve">
+    <value>Tulajdonos</value>
+  </data>
+	<data name="Global_ProjectedEffort" xml:space="preserve">
+    <value>Tervezett ráfordítás</value>
+  </data>
+	<data name="PlanningBoard_UnassignedItems" xml:space="preserve">
+    <value>Nem kiosztott elemek</value>
+  </data>
+	<data name="Global_Multiple" xml:space="preserve">
+    <value>Összetett</value>
+  </data>
+	<data name="PlanningBoard_Back" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+	<data name="PlanningBoard_View" xml:space="preserve">
+    <value>Nézet</value>
+  </data>
+	<data name="BackgroundProcessManager_StartingProcess" xml:space="preserve">
+    <value>Folyamat indítása…</value>
+  </data>
+	<data name="Administration_CopyProjectConfirm" xml:space="preserve">
+    <value>Biztos benne, hogy másolatot kíván készíteni erről a projektről?</value>
+  </data>
+	<data name="Administration_CopyProjectDialogText" xml:space="preserve">
+    <value>A kiválasztott projekt másolatának készítése. Kérem, várjon...</value>
+  </data>
+	<data name="Administration_CopyProjectDialogTitle" xml:space="preserve">
+    <value>Projekt másolása</value>
+  </data>
+	<data name="Administration_DeleteProjectConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja ezt a projektet? A művelet nem visszavonható.</value>
+  </data>
+	<data name="Administration_DeleteProjectDialogText" xml:space="preserve">
+    <value>A kiválasztott projekt törlése. Kérem, várjon...</value>
+  </data>
+	<data name="Administration_DeleteProjectDialogTitle" xml:space="preserve">
+    <value>Projekt törlése</value>
+  </data>
+	<data name="Global_Close" xml:space="preserve">
+    <value>Bezárás</value>
+  </data>
+	<data name="NavigationBar_Detected" xml:space="preserve">
+    <value>Észlelt</value>
+  </data>
+	<data name="NavigationBar_ForRelease" xml:space="preserve">
+    <value>Release</value>
+  </data>
+	<data name="NavigationBar_ForTestCase" xml:space="preserve">
+    <value>Vizsgálat esetében</value>
+  </data>
+	<data name="NavigationBar_ForTestSet" xml:space="preserve">
+    <value>A vizsgálat beállítása</value>
+  </data>
+	<data name="TestCaseList_ExecuteTestCase" xml:space="preserve">
+    <value>Teszteset végrehajtása</value>
+  </data>
+	<data name="TestCaseList_ExecuteTestCaseDesc" xml:space="preserve">
+    <value>Teszt futás létrehozása történik, kérem várjon</value>
+  </data>
+	<data name="BackgroundProcessManager_ProcessCompleted" xml:space="preserve">
+    <value>A folyamat sikeresen befejeződött.</value>
+  </data>
+	<data name="TestSetList_ExecuteTestSet" xml:space="preserve">
+    <value>Hajtsa végre a vizsgálat beállítása</value>
+  </data>
+	<data name="TestSetList_ExecuteTestSetDesc" xml:space="preserve">
+    <value>A vizsgálat beállítása a próbamérést létrehozása. várj, kérlek...</value>
+  </data>
+	<data name="AttachmentPanel_NeedToSelectOneDocument" xml:space="preserve">
+    <value>Ki kell választania legalább egy dokumentum is!</value>
+  </data>
+	<data name="AttachmentPanel_NeedToSelectOneFile" xml:space="preserve">
+    <value>Ki kell választania legalább egy fájlt, hogy!</value>
+  </data>
+	<data name="TestSetList_SelectSingleTestSet" xml:space="preserve">
+    <value>Ki kell választania egy egységes vizsgálati végrehajtandó!</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTestCases" xml:space="preserve">
+    <value>Hajtsa végre a vizsgált esetben vizsgálat beállítása</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTestCasesDesc" xml:space="preserve">
+    <value>A kiválasztott vizsgált esetek a próbamérést létrehozása várj, kérlek...</value>
+  </data>
+	<data name="Admin_CustomPropertyOptions_Header" xml:space="preserve">#{0} Egyedi Tulajdonság Definíció</data><data name="Admin_CustomProp_FieldError_BadDate" xml:space="preserve">Érvénytelen dátum.</data><data name="Admin_CustomProp_FieldError_ListEmpty" xml:space="preserve">Egy egyedi listát kell kiválasztani.</data><data name="Admin_CustomProp_FieldError_MinHigherMax" xml:space="preserve">A minimum nem lehet nagyobb mint a maximum érték.</data><data name="Admin_CustomProp_FieldError_MultipleErrors" xml:space="preserve">Összetett hiba lépett fel.\nKérem ellenőrízze a kiemelt mezőket.</data><data name="Admin_CustomProp_FieldError_NameEmpty" xml:space="preserve">A mező neve nem lehet üres.</data><data name="Admin_CustomProp_FieldError_NameUsed" xml:space="preserve">A mező neve már használatban van.</data><data name="Admin_CustomProp_FieldError_NaN" xml:space="preserve">Az érték nem szám.</data><data name="Admin_CustomProp_FieldError_NumLessZero" xml:space="preserve">A szám nem lehet kisebb nullánál.</data><data name="Admin_CustomProp_FieldError_TypeEmpty" xml:space="preserve">Ki kell választani egy típust.</data><data name="Global_ClearFilters" xml:space="preserve">Szűrők törlése</data><data name="Global_FilteringBy" xml:space="preserve">Eredmény Szűrése {0} Szerint.</data><data name="DropDownList_Multiple" xml:space="preserve">(Összetett)</data><data name="WorkflowOperations_NoOperationsAvailable" xml:space="preserve">Nincselérhető művelet</data><data name="WorkflowOperations_SaveChangesFirst" xml:space="preserve">Kérem mentse el először.</data><data name="CommentList_Legend" xml:space="preserve">Hozzászólások mutatása:</data><data name="CommentList_NewestFirst" xml:space="preserve">újak először</data><data name="CommentList_OldestFirst" xml:space="preserve">régiek először</data><data name="CommentList_ConfirmDelete" xml:space="preserve">A törlés végleges, nem visszahozható, biztos, hogy törölni akarja ezt a hozzászólást?</data><data name="AjaxFormManager_ConfirmRefresh" xml:space="preserve">Változások még nem lettek elmentve. Az adatok frissitésével, ezeket a változásokat elveszti. Biztosan folytatni akarja?</data><data name="AjaxFormManager_ConfirmUnload" xml:space="preserve">Változások még nem lettek elmentve. Ha egy másik lapra lép, ezeket a változásokat elveszti. Biztosan folytatni akarja?</data><data name="AjaxFormManager_SaveSuccess" xml:space="preserve">A változások Sikeresen el lettek mentve a {0}-ba</data><data name="TestRunDetails_IncidentList" xml:space="preserve">A Teszt Futás lépés Incidens listája</data><data name="ReportViewer_GeneratingReport" xml:space="preserve">Riport Nézet</data><data name="ReportViewer_GeneratingReportDesc" xml:space="preserve">Kérem várjon amíg a kért riport elkészül...</data><data name="ReportDetails_NeedToSpecifyCustomQuery" xml:space="preserve">Mielött elönézet indítása elött egy egyedi kérést kell beírnia.</data><data name="Global_Customize" xml:space="preserve">Testreszabás</data><data name="Global_Delete" xml:space="preserve">Törlés</data><data name="ReportDetails_NameRequired" xml:space="preserve">Egy nevet kell adnia ennek a riportnak.</data><data name="Admin_DataTools_Processing" xml:space="preserve">Adattisztítás indítása</data><data name="Admin_DataTools_Title" xml:space="preserve">Adat Eszközök</data><data name="Admin_History_Processing" xml:space="preserve">Az összes törlött rekord végleges törlése.</data><data name="Admin_History_Title" xml:space="preserve">Projekt Elözmények</data><data name="NavigationBar_NotAuthorizedToView" xml:space="preserve">Ön Szerepköre nem engedélyezett.</data><data name="AjaxFormManager_NotAuthorizedToModify" xml:space="preserve">Ön nem jogosult módosítani ezt a rekordot!</data><data name="Global_Remove" xml:space="preserve">Eltávolítás</data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve">Eltávolítás a Release-ből</data><data name="TestCaseList_SelectReleaseToRemove" xml:space="preserve">Kérem válasszon egy Release-t amiből el akarja távolítani:</data><data name="Admin_CustomPropertyOptions_Header" xml:space="preserve"><value>#{0} Egyedi Tulajdonság Definíció</value></data><data name="Admin_CustomProp_FieldError_BadDate" xml:space="preserve"><value>Érvénytelen dátum.</value></data><data name="Admin_CustomProp_FieldError_ListEmpty" xml:space="preserve"><value>Egy egyedi listát kell kiválasztani.</value></data><data name="Admin_CustomProp_FieldError_MinHigherMax" xml:space="preserve"><value>A minimum nem lehet nagyobb mint a maximum érték.</value></data><data name="Admin_CustomProp_FieldError_MultipleErrors" xml:space="preserve"><value>Összetett hiba lépett fel.\nKérem ellenőrizze a kiemelt mezőket.</value></data><data name="Admin_CustomProp_FieldError_NameEmpty" xml:space="preserve"><value>A mező neve nem lehet üres.</value></data><data name="Admin_CustomProp_FieldError_NameUsed" xml:space="preserve"><value>A mező neve már használatban van.</value></data><data name="Admin_CustomProp_FieldError_NaN" xml:space="preserve"><value>Az érték nem szám.</value></data><data name="Admin_CustomProp_FieldError_NumLessZero" xml:space="preserve"><value>A szám nem lehet kisebb nullánál.</value></data><data name="Admin_CustomProp_FieldError_TypeEmpty" xml:space="preserve"><value>Ki kell választani egy típust.</value></data><data name="Global_ClearFilters" xml:space="preserve"><value>Szűrők törlése</value></data><data name="Global_FilteringBy" xml:space="preserve"><value>Eredmény Szűrése {0} Szerint.</value></data><data name="DropDownList_Multiple" xml:space="preserve"><value>(Összetett)</value></data><data name="WorkflowOperations_NoOperationsAvailable" xml:space="preserve"><value>Nincs elérhető művelet</value></data><data name="WorkflowOperations_SaveChangesFirst" xml:space="preserve"><value>Kérem mentse el először.</value></data><data name="CommentList_Legend" xml:space="preserve"><value>Hozzászólások mutatása:</value></data><data name="CommentList_NewestFirst" xml:space="preserve"><value>újak először</value></data><data name="CommentList_OldestFirst" xml:space="preserve"><value>régiek először</value></data><data name="CommentList_ConfirmDelete" xml:space="preserve"><value>A törlés végleges, nem visszahozható, biztos, hogy törölni akarja ezt a hozzászólást?</value></data><data name="AjaxFormManager_ConfirmRefresh" xml:space="preserve"><value>Változások még nem lettek elmentve. Az adatok frissítésével, ezeket a változásokat elveszti. Biztosan folytatni akarja?</value></data><data name="AjaxFormManager_ConfirmUnload" xml:space="preserve"><value>Változások még nem lettek elmentve. Ha egy másik lapra lép, ezeket a változásokat elveszti. Biztosan folytatni akarja?</value></data><data name="AjaxFormManager_SaveSuccess" xml:space="preserve"><value>A változások Sikeresen el lettek mentve a {0}-ba</value></data><data name="TestRunDetails_IncidentList" xml:space="preserve"><value>A Teszt Futás lépés Incidens listája</value></data><data name="ReportViewer_GeneratingReport" xml:space="preserve"><value>Riport Nézet</value></data><data name="ReportViewer_GeneratingReportDesc" xml:space="preserve"><value>Kérem várjon amíg a kért riport elkészül...</value></data><data name="ReportDetails_NeedToSpecifyCustomQuery" xml:space="preserve"><value>Előnézet indítása elött egy egyedi kérést kell beírnia.</value></data><data name="Global_Customize" xml:space="preserve"><value>Testreszabás</value></data><data name="Global_Delete" xml:space="preserve"><value>Törlés</value></data><data name="ReportDetails_NameRequired" xml:space="preserve"><value>Egy nevet kell adnia ennek a riportnak.</value></data><data name="Admin_DataTools_Processing" xml:space="preserve"><value>Adattisztítás indítása</value></data><data name="Admin_DataTools_Title" xml:space="preserve"><value>Adat Eszközök</value></data><data name="Admin_History_Processing" xml:space="preserve"><value>Az összes törlött rekord végleges törlése.</value></data><data name="Admin_History_Title" xml:space="preserve"><value>Projekt Előzmények</value></data><data name="NavigationBar_NotAuthorizedToView" xml:space="preserve"><value>Ön Szerepköre nem engedélyezett.</value></data><data name="AjaxFormManager_NotAuthorizedToModify" xml:space="preserve"><value>Ön nem jogosult módosítani ezt a rekordot!</value></data><data name="Global_Remove" xml:space="preserve"><value>Eltávolítás</value></data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve"><value>Eltávolítás a Release-ből</value></data><data name="TestCaseList_SelectReleaseToRemove" xml:space="preserve"><value>Kérem válasszon egy Release-t amiből el akarja távolítani:</value></data><data name="TestCaseList_Selectrelease-toRemove" xml:space="preserve"><value>Kérem válasszon egy Release-t amiből el akarja távolítani:</value></data><data name="Admin_History_Processing2" xml:space="preserve"><value>Kiválasztott elemek visszaállítása...</value></data><data name="Global_Rows" xml:space="preserve"><value>sorok</value></data><data name="Global_ShareFilter" xml:space="preserve"><value>Megosztás a projekt többi tagjával</value></data><data name="NumberRangeFilter_EnterMinMaxValues" xml:space="preserve"><value>Kérem, adja meg a min/max értékeket:</value></data><data name="NumberRangeFilter_Title" xml:space="preserve"><value>Tartományszűrő</value></data><data name="Global_Change" xml:space="preserve"><value>Módosítás</value></data><data name="NavigationBar_ForRequirement" xml:space="preserve"><value>Követelményhez</value></data><data name="Global_NoneDropDown" xml:space="preserve"><value>-- Nincs --</value></data><data name="TreeView_AddItem" xml:space="preserve"><value>{0} hozzáadása</value></data><data name="TreeView_ChooseParentItem" xml:space="preserve"><value>Kérem, válassza ki a szülő {0}-t ahhoz, hogy ez alá rendelje:</value></data><data name="TreeView_EditItem" xml:space="preserve"><value>{0} szerkesztése</value></data><data name="TreeView_EnterName" xml:space="preserve"><value>Adja meg az új {0} nevét:</value></data><data name="TreeView_NeedToProvideItemName" xml:space="preserve"><value>Adjon nevet az új {0}-nak!</value></data><data name="Global_Done" xml:space="preserve"><value>Kész</value></data><data name="TreeView_ConfirmDelete" xml:space="preserve"><value>Biztosan törli ezt a(z) {0}-t?</value></data><data name="TreeView_EditName" xml:space="preserve"><value>Kérem, szerkessze ennek a(z) {0}-nak a nevét:</value></data><data name="TreeView_EditParentItem" xml:space="preserve"><value>Válassza ki ennek a(z) {0}-nak a szülőjét:</value></data><data name="Messenger_SendMessage" xml:space="preserve"><value>Üzenet küldése</value></data><data name="Messenger_NeedToSelectComment" xml:space="preserve"><value>Legalább egy üzenetet válasszon ki, mielőtt a jelenlegi tárgyra posztolja.</value></data><data name="Messenger_PostAsComments" xml:space="preserve"><value>Posztolás hozzászólásként</value></data><data name="Messenger_PostAsCommentsSuccess" xml:space="preserve"><value>Sikeresen posztolt hozzászólások a jelenlegi elemhez</value></data><data name="ScreenshotCapture_BrowserNotSupported" xml:space="preserve"><value>Az Ön webböngészője nem támogatja a képernyőkép készítését!</value></data><data name="ScreenshotCapture_Intro" xml:space="preserve"><value>Kérem, illessze be a képet a CTRL+V billentyűparanccsal.</value></data><data name="ScreenshotCapture_InvalidImageFormat" xml:space="preserve"><value>A vágólap nem tartalmaz érvényes képet!</value></data><data name="ArtifactLinkPanel_TaskIdNotValid" xml:space="preserve"><value>Egy egész számot adjon meg a feladat azonosítójához</value></data><data name="Admin_History_Processing3" xml:space="preserve"><value>Az elem ürítése...</value></data><data name="Global_All" xml:space="preserve"><value>Mind</value></data><data name="CommentList_PleaseEnterComment" xml:space="preserve"><value>Kérem, adjon meg egy hozzászólást, majd próbálja újra!</value></data><data name="TaskDetails_SplitTaskEffortNotInRange" xml:space="preserve"><value>A % kísérlet értékének 0-100% között kell lennie!</value></data><data name="TaskDetails_SplitTaskEffortNotInteger" xml:space="preserve"><value>A % kísérlet értékének egész számnak kell lennie!</value></data><data name="TaskDetails_SplitTaskNameRequired" xml:space="preserve"><value>Adjon meg egy nevet az új feladathoz!</value></data><data name="AjaxFormManager_EnterSignature" xml:space="preserve"><value>Adjon meg egy elektronikus aláírást</value></data><data name="AjaxFormManager_EnterSignatureInfo" xml:space="preserve"><value>Adjon meg egy bejelentkezési nevet/jelszót a jelentéssel, majd kattintson a Bejelentkezésre:</value></data><data name="AjaxFormManager_Login" xml:space="preserve"><value>Bejelentkezés</value></data><data name="AjaxFormManager_Meaning" xml:space="preserve"><value>Jelentés</value></data><data name="AjaxFormManager_Password" xml:space="preserve"><value>Jelszó</value></data><data name="AjaxFormManager_Sign" xml:space="preserve"><value>Aláírás</value></data><data name="AjaxFormManager_DefaultMeaning" xml:space="preserve"><value>{0} {1}:{2} módosítása '{3}'-ról '{4}'-ra</value></data><data name="AjaxFormManager_LoginRequired" xml:space="preserve"><value>Adjon meg egy bejelentkezési nevet!</value></data><data name="AjaxFormManager_MeaningRequired" xml:space="preserve"><value>Adjon meg egy jelentést!</value></data><data name="AjaxFormManager_PasswordRequired" xml:space="preserve"><value>Adjon meg egy jelszót!</value></data><data name="ArtifactEmail_SentMessageSuccess" xml:space="preserve"><value>E-mail sikeresen elküldve</value></data><data name="SidebarPanel_Maximize" xml:space="preserve"><value>Nagyítás</value></data><data name="SidebarPanel_Minimize" xml:space="preserve"><value>Kicsinyítés</value></data><data name="Global_SelectOneCheckBoxForFocusOn" xml:space="preserve"><value>Válasszon ki pontosan egy elemet a Fókuszálási parancshoz!</value></data><data name="Global_SelectOneCheckBoxForClone" xml:space="preserve"><value>Jelöljön ki legalább EGY jelölőnégyzetet a Klónozás parancshoz!</value></data><data name="Global_SaveAndNew" xml:space="preserve"><value>Mentés és új létrehozása</value></data><data name="TreeView_EditDescription" xml:space="preserve"><value>Kérem, adja meg a leírást ehhez az új {0}-hoz:</value></data><data name="TreeView_EnterDescription" xml:space="preserve"><value>Kérem, adja meg a leírást ehhez az új {0}-hoz:</value></data><data name="WorkflowOperations" xml:space="preserve"><value>Munkafolyamaton belüli műveletek</value></data><data name="TestCaseExecution_ActualResultNeededForNotApplicable" xml:space="preserve"><value>Adja meg a tényleges eredményt, amikor N/A rögzítése történik! Kattintson az alábbi gombra a jóváhagyáshoz.</value></data><data name="TestStep_Step" xml:space="preserve"><value>Lépés</value></data><data name="TestStep_StepPlural" xml:space="preserve"><value>Lépések</value></data><data name="TestCaseExecution_Blocked" xml:space="preserve"><value>Blokkolva</value></data><data name="TestCaseExecution_Caution" xml:space="preserve"><value>Figyelem</value></data><data name="TestCaseExecution_Fail" xml:space="preserve"><value>Sikertelen</value></data><data name="TestCaseExecution_NotApplicable" xml:space="preserve"><value>(nincs adat)</value></data><data name="TestCaseExecution_Pass" xml:space="preserve"><value>Megfelel</value></data><data name="TestCaseExecution_PassAll" xml:space="preserve"><value>Az összes megfelel</value></data><data name="Global_SelectOneCheckBoxForImport" xml:space="preserve"><value>Jelöljön ki legalább EGY jelölőnégyzetet az Importálás parancshoz!</value></data><data name="TestCaseDetails_CannotImportSelf" xml:space="preserve"><value>Nem importálhatja a jelenlegi tesztesetet önmagába!</value></data><data name="TestCaseDetails_EnterTestCaseNameForNewLink" xml:space="preserve"><value>Adjon meg egy Nevet a következő tesztesethez!</value></data><data name="TestSetDetails_ParameterRequired" xml:space="preserve"><value>Válasszon egy paramétert!</value></data><data name="TestSetDetails_ParameterValueRequired" xml:space="preserve"><value>Adjon meg egy paraméterértéket!</value></data><data name="Global_RootFolderDropDown" xml:space="preserve"><value>-- Gyökérkönyvtár --</value></data><data name="TestCaseExecution_Pause" xml:space="preserve"><value>Leállítás</value></data><data name="TestCaseExecution_Resume" xml:space="preserve"><value>Visszatérés</value></data><data name="Global_Operations" xml:space="preserve"><value>Műveletek</value></data><data name="Guide_Global_Next" xml:space="preserve"><value>Tovább</value></data><data name="Guide_Global_Previous" xml:space="preserve"><value>Vissza</value></data><data name="Guide_Global_Done" xml:space="preserve"><value>Kész</value></data><data name="Guide_Global_Skip" xml:space="preserve"><value>Kihagyás</value></data><data name="Guide_Global_Close" xml:space="preserve"><value>Bezárás</value></data><data name="Guide_TestExecution_intro_Title" xml:space="preserve"><value>Gyors körbevezetés</value></data><data name="Guide_TestExecution_intro_Content" xml:space="preserve"><value>Ez a körbevezetés segít megismerni, hogy hogyan hajthat végre teszteket a ValidationMasterben.&lt;br&gt;&lt;br&gt;Nézzük sorra az interfész főbb elemeit, mielőtt teszteket hajtana végre.&lt;br&gt;&lt;br&gt;Kattintson az alábbi „Tovább” gombra a folytatáshoz.</value></data><data name="Guide_TestExecution_heading_Title" xml:space="preserve"><value>Végrehajtás címe</value></data><data name="Guide_TestExecution_heading_Content" xml:space="preserve"><value>Ez a tesztfutás (ha van) és a kiválasztott release nevét mutatja.</value></data><data name="Guide_TestExecution_display_Title" xml:space="preserve"><value>Megjelenítési opciók</value></data><data name="Guide_TestExecution_display_Content" xml:space="preserve"><value>Három különböző megjelenítési mód van.&lt;br&gt;Mindegyik két megjelenítési opcióval rendelkezik.&lt;br&gt;&lt;br&gt;Ezeket különböző munkamódokhoz tervezték</value></data><data name="Guide_TestExecution_settings_Title" xml:space="preserve"><value>Egyéb beállítások</value></data><data name="Guide_TestExecution_settings_Content" xml:space="preserve"><value>Kattintson ide az oldal beállításához vagy a körbevezetés újraindításához.</value></data><data name="Guide_TestExecution_progress_Title" xml:space="preserve"><value>Folyamatsáv</value></data><data name="Guide_TestExecution_progress_Content" xml:space="preserve"><value>Ezzel ellenőrizheti a tesztek előrehaladását (a teszt lépéseit alapértelmezés szerint mutatja, valamint megjeleníti a teszteseteket, ha több tesztlépés van). Felette elhúzva információkat jelenít meg a tesztről.</value></data><data name="Guide_TestExecution_moving_Title" xml:space="preserve"><value>Váltás a tesztek között</value></data><data name="Guide_TestExecution_moving_Content" xml:space="preserve"><value>Kattintson ide egy adott tesztben való előre- vagy visszalépéshez. Vagy kattintson bármelyik tesztre a folyamatsávon, illetve az alábbi listán ahhoz, hogy egyenes ide jusson.</value></data><data name="Guide_TestExecution_pause_Title" xml:space="preserve"><value>Tesztek megállítása</value></data><data name="Guide_TestExecution_pause_Content" xml:space="preserve"><value>Ha egy tesztfutástól kell ellépnie, kattintson a megállítás gombra a teszthez tartozó belső időzítő leállításához. Világít, amikor megállította, hogy emlékeztesse arra, hogy el kell indítani az időzítőt a tesztelés folytatásához.</value></data><data name="Guide_TestExecution_exit_Title" xml:space="preserve"><value>A teszt elhagyása</value></data><data name="Guide_TestExecution_exit_Content" xml:space="preserve"><value>Kattintson ide a tesztelésből való kilépéshez. A be nem fejezett tesztek a „My Page” felületen találhatók. Amikor egy teszt befejezhető, egy narancssárga gomb jelenik meg a jobb oldalon.</value></data><data name="Guide_TestExecution_split_Title" xml:space="preserve"><value>Megosztott nézet</value></data><data name="Guide_TestExecution_split_Content" xml:space="preserve"><value>Ezzel a funkcióval láthatja az összes lépés listáját egy ellenőrző mellett, mely az aktuális tesztlépésről részletes információkat jelenít meg.&lt;br&gt;&lt;br&gt;Az alul található fülekkel tekintheti meg a további információ.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Kijelzési lehetőségek:&lt;/strong&gt; az ellenőrző szoftvert, igényeinek megfelelően, széles vagy keskeny nézetre állíthatja.</value></data><data name="Guide_TestExecution_table_Title" xml:space="preserve"><value>Táblázatos nézet</value></data><data name="Guide_TestExecution_table_Content" xml:space="preserve"><value>Ez a megjelenítési mód kiválóan használható az összes lépés egyszerre történő megjelenítéséhez. Ennek a célja, hogy gyors áttekintést adjon és lehetővé tegye az intézkedést minden lépés tekintetében.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Megjelenítési opciók:&lt;/strong&gt; a táblázat összes mezőjének becsukása vagy kinyitása egyszerre, hogy kezelhesse a képernyőn megjelenő dolgokat. Vegye figyelembe, hogy az egyes mezők egyenként is becsukhatók vagy kinyithatók.</value></data><data name="Guide_TestExecution_mini_Title" xml:space="preserve"><value>Mini nézet</value></data><data name="Guide_TestExecution_mini_Content" xml:space="preserve"><value>A főnézet egy teljes képernyős ellenőrzőt jelenít meg. Kinagyítja a jelenlegi lépésről szóló információknak szánt területet.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Megjelenítési opciók:&lt;/strong&gt; csak egy iframe-mel rendelkező ellenőrzőre válthat át egy ellenőrzőről Ezzel a weboldalt úgy tesztelheti, hogy a teszttel kapcsolatos információk közvetlenül mellette vannak. </value></data><data name="Guide_TestExecution_status_Title" xml:space="preserve"><value>Egy tesztállapot naplózása</value></data><data name="Guide_TestExecution_status_Content" xml:space="preserve"><value>Egy lépés állapotát bármelyik nézetben naplózhatja. Ha nem halad végig a lépésen, akkor az „Actual Result” mezőben kell megadni az eredményt.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Megjegyzés: &lt;/strong&gt;az eredmény táblázatos nézetben való manuális hozzáadásához kattintson a „+” gombra az adott lépésnél.</value></data><data name="Guide_TestExecution_screenshot_Title" xml:space="preserve"><value>Képernyőkép mentése</value></data><data name="Guide_TestExecution_screenshot_Content" xml:space="preserve"><value>A képet közvetlenül az „Actual Result” szövegszerkesztőbe illessze be.&lt;br&gt;&lt;br&gt;Ezzel feltölti és elmenti a képet, majd ellenőrizze, hogy a kép megfelelően van-e behivatkozva a szövegdobozban.</value></data><data name="Guide_TestExecutionExploratory_intro_Title" xml:space="preserve"><value>Gyors körbevezetés</value></data><data name="Guide_TestExecutionExploratory_intro_Content" xml:space="preserve"><value>Ez a bemutató röviden ismerteti, hogyan kell végrehajtani a teszteseteket a SpiraTeamben a felfedező tesztelési módban.&lt;br&gt;&lt;br&gt;Ez tapasztalt tesztereknek készült. Ez a bemutató feltételezi, hogy Ön tudja, hogyan működik egy általános tesztvégrehajtás a SpiraTeamben.&lt;br&gt;&lt;br&gt;A folytatáshoz kattintson az alábbi „tovább” gombra.</value></data><data name="Guide_TestExecutionExploratory_editing_Title" xml:space="preserve"><value>Minden szerkesztése</value></data><data name="Guide_TestExecutionExploratory_editing_Content" xml:space="preserve"><value>Amikor felfedező módban hajt végre teszteket, akkor a teszt legtöbb része szerkeszthető. Egyszerűen kattintson egy mezőre és kezdjen el gépelni.&lt;br&gt;&lt;br&gt;Módosíthatja a tesztfuttatás nevét, a leírást és sok más mezőt. Amikor egy mező kiszürkül, akkor nem lehet szerkeszteni.&lt;br&gt;&lt;br&gt;Amint egy másik mezőre lép, a végrehajtott változtatások azonnal mentődnek a szerveren – vegye figyelembe, hogy az alapul szolgáló teszteset egyáltalán NEM változik (később választhat, hogy változzon-e a teszteset vagy sem).</value></data><data name="Guide_TestExecutionExploratory_grid_Title" xml:space="preserve"><value>Navigálás a lépések között</value></data><data name="Guide_TestExecutionExploratory_grid_Content" xml:space="preserve"><value>Akárcsak a normál testvégrehajtás esetén, ha bármelyik tesztlépésre kattint, akkor dolgozhat azon a lépésen. A részleteket a jobb oldalon lévő ellenőrző mutatja.&lt;br&gt;Ha bármelyik lépés kiszürkül, akkor az azt jelenti, hogy nincs engedélye szerkeszteni azt a lépést, viszont továbbra is rögzíthet eredményeket ahhoz a lépéshez.&lt;br&gt;&lt;br&gt;Lépés nem szerkeszthető, egy kapcsolt tesztesetből származik.</value></data><data name="Guide_TestExecutionExploratory_gridStep_Title" xml:space="preserve"><value>Lépések klónozása vagy törlése</value></data><data name="Guide_TestExecutionExploratory_gridStep_Content" xml:space="preserve"><value>Ha bármelyik lépés fölé húzza a kurzort (ami nem szürkült ki), akkor három vízszintes pont jelenik meg a lépés jobb oldalán.&lt;br&gt;Rákattintva egy kis méretű műveleti menü jelenik meg. Ezzel a lépést klónozhatja vagy törölheti.&lt;br&gt;&lt;br&gt;Ha klónozza a lépést, akkor egy másolat jön létre és kerül a lépéslista aljára. Ha törli a lépést, akkor az eltűnik ebből a futtatásból.</value></data><data name="Guide_TestExecutionExploratory_gridStepMoving_Title" xml:space="preserve"><value>A lépések átrendezése</value></data><data name="Guide_TestExecutionExploratory_gridStepMoving_Content" xml:space="preserve"><value>Bármelyik lépésre rákattinthat, illetve a listán felfelé vagy lefelé húzva új pozícióba helyezheti. Ez egy egyszerű módja a tesztlépések átrendezésének.&lt;br&gt;&lt;br&gt;Ezt bármikor megteheti: a lépésen belül információk egyike sem módosul.</value></data><data name="Guide_TestExecutionExploratory_gridAdd_Title" xml:space="preserve"><value>Lépések hozzáadása</value></data><data name="Guide_TestExecutionExploratory_gridAdd_Content" xml:space="preserve"><value>Új lépés hozzáadásához kattintson erre a gombra. Egy üres lépés jön létre és kerül a tesztlépések listájának aljára. Teljes mértékben szerkeszthető akárcsak más lépések.&lt;br&gt;&lt;br&gt;A már említett funkcióval együtt a tesztfuttatás tervezhető és módosítható a tesztelt funkció felfedezése közben.</value></data><data name="Guide_TestExecutionExploratory_tasks_Title" xml:space="preserve"><value>Feladatok kezelése</value></data><data name="Guide_TestExecutionExploratory_tasks_Content" xml:space="preserve"><value>Felfedezés közben olyat is találhat, amelyet egy fejlesztőnek is látnia kell. Előfordulhat, hogy bizonytalan abban, hogy ez hiba-e vagy, hogy a tesztelés a fejlesztés korai szakaszában történik. Ezen esetek bármelyikében egy incidens létrehozása túlzottan formális művelet lehet.&lt;br&gt;&lt;br&gt;Ehelyett jobb lenne létrehozni egy feladatot. Néhány másodperc alatt címet vagy opcionális leírást adhat hozzá, illetve a feladatot egy munkatárshoz társíthat.&lt;br&gt;&lt;br&gt;Az összes, ehhez a tesztfuttatáshoz létrehozott feladatokat bármikor megtekintheti.</value></data><data name="Guide_TestExecutionExploratory_settings_Title" xml:space="preserve"><value>Megjelenítési opciók</value></data><data name="Guide_TestExecutionExploratory_settings_Content" xml:space="preserve"><value>Több módon is személyre szabhatja a felfedező tesztelési munkafelületet. Ehhez különböző mezőket állíthat be úgy, hogy azok egyes felhasználóknál megjelenjenek vagy rejtve legyenek. Ha például nem használja a „Sample Data” felületet a felfedező teszteken, akkor elrejtheti ezt a mezőt.&lt;br&gt;&lt;br&gt;Opcionálisan megjelenítheti egy adott lépés (ha van ilyen) utolsó eredményeit, így gyorsan összehasonlíthatja a jelenlegi eredményekkel.</value></data><data name="Guide_TestExecutionExploratory_exit_Title" xml:space="preserve"><value>A teszt elhagyása</value></data><data name="Guide_TestExecutionExploratory_exit_Content" xml:space="preserve"><value>Amikor a felfedező tesztelés véget ért, egy gomb jelenik meg narancssárga színnel és egy „stop” szimbólummal. Ha erre kattint, akkor egy legördülő ablak jelenik meg két lehetőséggel.&lt;br&gt;&lt;br&gt;1. Az alapul szolgáló tesztesetet a végrehajtott változtatások alapján frissítheti (szerkesztés, hozzáadás, törlés, lépések mozgatása).&lt;br&gt;&lt;br&gt;2. A tesztesetet módosítás nélkül is hagyhatja. Ha ezt az opciót választja, akkor teszteset végrehajtási állapota frissül. Vegye figyelembe, hogy az ebből a munkafolyamatból létrehozott tesztfuttatás teljes mértékben tükrözi az ezen az oldalon elvégzett változtatásokat.</value></data><data name="Messenger_NewMessageFrom" xml:space="preserve"><value>Új üzenet ettől</value></data><data name="TestSetList_CannotExecuteFolder" xml:space="preserve"><value>Nem futtathat egy könyvtárat, kérem válasszon egy teszt szettet és próbálja újra.</value></data><data name="ArtifactType_Release" xml:space="preserve"><value>Release</value></data><data name="ArtifactType_Requirement" xml:space="preserve"><value>Követelmény</value></data><data name="ArtifactType_TestSet" xml:space="preserve"><value>Teszt szett</value></data><data name="TestCaseList_AddToReleaseSuccess" xml:space="preserve"><value>Sikeresen hozzáadta a teszteseteket a release-hez</value></data><data name="TestCaseList_AddToRequirementSuccess" xml:space="preserve"><value>Sikeresen hozzáadta a teszteseteket a követelményhez</value></data><data name="TestCaseList_AddToTestSetSuccess" xml:space="preserve"><value>Sikeresen hozzáadta a teszteseteket a teszt szetthez.</value></data><data name="TestCaseList_RemoveFromReleaseSuccess" xml:space="preserve"><value>Sikeresen eltávolította a teszteseteket  a releaseből</value></data><data name="GlobalFunctions_InvalidOperation" xml:space="preserve"><value>Érvénytelen művelet</value></data><data name="Global_CannotSelectMoreThanOneFolder" xml:space="preserve"><value>Ha kiválaszt egy könyvtárat, akkor nem választhat ki más elemeket.</value></data><data name="ArtifactType_AutomationEngine" xml:space="preserve"><value>Automatizációs motor</value></data><data name="ArtifactType_AutomationHost" xml:space="preserve"><value>Automatizációs hoszt</value></data><data name="ArtifactType_Document" xml:space="preserve"><value>Dokumentum</value></data><data name="ArtifactType_Incident" xml:space="preserve"><value>Incidens</value></data><data name="ArtifactType_Message" xml:space="preserve"><value>Üzenet</value></data><data name="ArtifactType_RequirementStep" xml:space="preserve"><value>Követelménylépés</value></data><data name="ArtifactType_Task" xml:space="preserve"><value>Feladat</value></data><data name="ArtifactType_TestCase" xml:space="preserve"><value>Teszteset</value></data><data name="ArtifactType_TestRun" xml:space="preserve"><value>Tesztfuttatás</value></data><data name="ArtifactType_TestStep" xml:space="preserve"><value>Tesztlépés</value></data><data name="ArtifactType_User" xml:space="preserve"><value>Felhasználó</value></data><data name="Global_Current" xml:space="preserve"><value>Aktuális</value></data><data name="Global_CurrentProject" xml:space="preserve"><value>Aktuális projekt</value></data><data name="Global_Filter" xml:space="preserve"><value>Szűrő</value></data><data name="Global_Search_MatchingResults" xml:space="preserve"><value>egyező találat(ok)</value></data><data name="Global_Sort" xml:space="preserve"><value>Rendezés</value></data><data name="Global_AllArtifacts" xml:space="preserve"><value>Összes tárgykör</value></data><data name="Global_AllProjects" xml:space="preserve"><value>Összes projekt</value></data><data name="NavigationBar_ItemList" xml:space="preserve"><value>Elemlista</value></data><data name="Pagination_First" xml:space="preserve"><value>Első</value></data><data name="Pagination_Last" xml:space="preserve"><value>Utolsó</value></data><data name="Pagination_Next" xml:space="preserve"><value>Tovább</value></data><data name="Pagination_Previous" xml:space="preserve"><value>Vissza</value></data><data name="Pagination_Refresh" xml:space="preserve"><value>Frissítés</value></data><data name="Global_Search" xml:space="preserve"><value>Keresés</value></data><data name="Global_AllFolders" xml:space="preserve"><value>Összes könyvtár</value></data><data name="AssociationPanel_SelectArtifact" xml:space="preserve"><value>Tárgykör kiválasztása</value></data><data name="ArtifactLinkType_Depends" xml:space="preserve"><value>Függőségek</value></data><data name="ArtifactLinkType_Related" xml:space="preserve"><value>Kapcsolódások</value></data><data name="Global_Comment" xml:space="preserve"><value>Hozzászólás</value></data><data name="Global_Type" xml:space="preserve"><value>Típus</value></data><data name="Global_FilterByName" xml:space="preserve"><value>Szűrés név szerint</value></data><data name="Global_RowsSelected" xml:space="preserve"><value>Kiválasztott sor(ok)</value></data><data name="AssociationPanel_CreateTestCaseFromRequirement" xml:space="preserve"><value>Teszteset létrehozása ebből a követelményből</value></data><data name="AssociationPanel_CreateTestCaseFromRequirementTooltip" xml:space="preserve"><value>Kattintson ide, ha új tesztesetet szeretne létrehozni a követelményhez kapcsolt tesztesetfában</value></data><data name="AssociationPanel_CreateTestSetFromRelease" xml:space="preserve"><value>Teszt szett létrehozása ebből a releaseből</value></data><data name="AssociationPanel_CreateTestSetFromrelease-tooltip" xml:space="preserve"><value>Kattintson ide, ha új teszt szettet szeretne létrehozni az ebből a releaseből  importált tesztesetekhez tartozó teszt szettből</value></data><data name="AssociationPanel_TestCaseCreatedFromRequirement" xml:space="preserve"><value>Új teszteset jött létre sikeresen ebből a követelményből.</value></data><data name="AssociationPanel_TestSetCreatedFromRelease" xml:space="preserve"><value>Új teszt szett jött létre sikeresen ebből a releaseből.</value></data><data name="Folders_AllPackages" xml:space="preserve"><value>Összes csomag</value></data><data name="Folders_Root" xml:space="preserve"><value>Gyökér</value></data><data name="AssociationPanel_FilterPlaceholder" xml:space="preserve"><value>Szűrés név szerint, illetve keresés azonosító szerint (pl. </value></data><data name="Global_Start" xml:space="preserve"><value>Indítás</value></data><data name="AssociationPanel_NoResults" xml:space="preserve"><value>Nem találhatók egyezések</value></data><data name="GlobalNavigation_MyProfile" xml:space="preserve"><value>Profilom</value></data><data name="GlobalNavigation_MyTimecard" xml:space="preserve"><value>Időkártyám</value></data><data name="Onboarding_NoThanks" xml:space="preserve"><value>Nem, köszönöm</value></data><data name="Onboarding_Welcome_Message" xml:space="preserve"><value>Szeretnénk röviden bemutatni, hogyan használhatja az alkalmazást. Mindez egy percet sem vesz igénybe, és felfedezheti az alkalmazást.</value></data><data name="Onboarding_YesPlease" xml:space="preserve"><value>Igen, köszönöm</value></data><data name="Global_Search_SortByDate" xml:space="preserve"><value>dátum</value></data><data name="Global_Search_SortByRelevance" xml:space="preserve"><value>relevancia</value></data><data name="Global_ShowAll" xml:space="preserve"><value>Összes mutatása</value></data><data name="Global_ShowLess" xml:space="preserve"><value>Kevesebb mutatása</value></data><data name="Global_Followers" xml:space="preserve"><value>Követők</value></data><data name="Global_People" xml:space="preserve"><value>Személyek</value></data><data name="ArtifactAddFollower_Success" xml:space="preserve"><value>Követő sikeresen hozzáadva.</value></data><data name="Followers_UnfollowUser" xml:space="preserve"><value>Követő eltávolítása</value></data><data name="Incidents_AllClosed" xml:space="preserve"><value>Összes bezárva</value></data><data name="Incidents_AllOpen" xml:space="preserve"><value>Összes nyitva</value></data><data name="IncidentDetails_IncidentNotFound" xml:space="preserve"><value>A kiválasztott incidens törlődött a rendszerből!</value></data><data name="SourceCode_Commits" xml:space="preserve"><value>Nyugtáz</value></data><data name="Global_Displaying" xml:space="preserve"><value>Megjelenítés</value></data><data name="Global_NewIncident" xml:space="preserve"><value>Új incidens</value></data><data name="TreeView_NotAuthorizedToView" xml:space="preserve"><value>Önnek nincs jogosultsága megtekinteni a könyvtárakat!</value></data><data name="Global_Count" xml:space="preserve"><value>Számítás</value></data><data name="Dashboards_SaveAsImage" xml:space="preserve"><value>Mentés képként</value></data><data name="Global_PleaseTryAgain" xml:space="preserve"><value>Probléma adódott a művelet befejezésekor, kérem, próbálja újra.</value></data><data name="TestExecutionService_ExploratoryDoNotDeleteLastStep" xml:space="preserve"><value>A tesztfuttatásnak minden esetben tartalmaznia kell legalább egy tesztlépést, ezért a kiválasztott tesztlépés nem törölhető</value></data><data name="Global_Description" xml:space="preserve"><value>Leírás</value></data><data name="ArtifactDetails_ArtifactNotFound" xml:space="preserve"><value>A kiválasztott elem törlődött a rendszerből!</value></data><data name="Global_Populate" xml:space="preserve"><value>Kitöltés</value></data><data name="TestConfigurationDetails_NoParameterOrCustomList" xml:space="preserve"><value>Választania kell egy teszteset-paramétert és egy egyéni listát is.</value></data><data name="TestConfigurationDetails_PleaseChooseParametersToPopulate" xml:space="preserve"><value>Kérem, válasszon egy teszteset-paramétert és hozzá társított egyéni listát ahhoz, hogy hozzáadja ezt a tesztkonfigurációs készletet:</value></data><data name="TestConfiguration_CustomList" xml:space="preserve"><value>Egyéni lista</value></data><data name="TestConfiguration_TestCaseParameter" xml:space="preserve"><value>Tesztparaméter</value></data><data name="TestConfigurationDetails_ConfirmPopulation" xml:space="preserve"><value>Biztosan fel szeretné tölteni a tesztkonfigurációs bejegyzések listáját? Ezzel eltávolítja az alábbi táblázatban lévő bejegyzéseket?</value></data><data name="TestConfigurationDetails_TooManyParameters" xml:space="preserve"><value>Legfeljebb 5 teszteset-paramétert adhat meg a feltöltéshez.</value></data><data name="Incident_EnterNewIncidentName" xml:space="preserve"><value>Adjon meg új incidensnevet</value></data><data name="AssociationPanel_CreateArtifactXFromArtifactY" xml:space="preserve"><value>{0} létrehozása ebből: {1}</value></data><data name="AssociationPanel_CreateArtifactXFromArtifactYTooltip" xml:space="preserve"><value>Kattintson az ehhez a(z) {1}-hoz kapcsolt új {0} létrehozásához</value></data><data name="AssociationPanel_ArtifactXCreatedFromArtifactY" xml:space="preserve"><value>Új {0} jött létre ebből a(z) {1}-ból.</value></data><data name="AssociationPanel_NoArtifactTypesCanBeAdded" xml:space="preserve"><value>Nem adhat hozzárendeléseket ehhez az elemhez!</value></data><data name="ArtifactType_TestRunStep" xml:space="preserve"><value>Tesztfuttatás lépése</value></data><data name="InAppHelp_Chart_IncidentAging" xml:space="preserve"><value>Ez az ábra azt mutatja, hogy az incidensek mennyi ideje vannak nyitva: az időtartomány az X-tengelyen, az incidensek száma pedig az Y-tengelyen látható.</value></data><data name="InAppHelp_Chart_IncidentOpenCount" xml:space="preserve"><value>Ez az ábra a projekten belüli összes incidens prioritás szerinti felosztását szemlélteti. Az ábra hasábja megfelelő az adott prioritáshoz rendelt színnek.</value></data><data name="InAppHelp_Chart_IncidentTestCoverage" xml:space="preserve"><value>Ez az ábra a korábban sikertelen és a később megoldott incidens létrejöttéhez vezető tesztesetek végrehajtási állapotát mutatja. Hasznos lehet tudni azt, hogy mely teszteseteket kell újratesztelni azt követően, hogy az incidenseiket megoldották.</value></data><data name="InAppHelp_Chart_RequirementGraphs" xml:space="preserve"><value>Gyorsan áttekintheti a négy különböző diagrammokat a követelményekkel kapcsolatos előrehaladás méréséhez egy rugalmas módszertannal: válassza ki a megfelelő ábrát a legördülő listából</value></data><data name="InAppHelp_Chart_RequirementsCoverage" xml:space="preserve"><value>Ez az ábra összevontan mutatja a követelmények tesztlefedettségét egy projekt esetén. Minden követelmény tesztlefedettségének összege 1, hogy a különböző számú tesztesetekkel rendelkező követelmények azonos súlyozást kapjanak. A release-re szűréssel az adott release-hez feltérképezett követelmények kerülnek kiszűrésre.</value></data><data name="InAppHelp_Chart_RequirementsCoverageRegression" xml:space="preserve"><value>Ez az ábra összevontan mutatja a követelmények tesztlefedettségét egy projekt esetén. Minden követelmény tesztlefedettségének összege 1, hogy a különböző számú tesztesetekkel rendelkező követelmények azonos súlyozást kapjanak. A release-re szűrés a teszteseteket szűri ki, nem pedig a követelményeket.</value></data><data name="InAppHelp_Chart_SourceCodeCommits" xml:space="preserve"><value>Ez az ábra az elmúlt 3 hónapban a projekthez rendelt kódokat mutatja (ha az alkalmazás forráskód funkcióját használja) A hozzárendelések heti szinten összegzettek. Az ábra a tevékenység alsó negyede, középső 50%-a és felső negyede szerinti bontásban meghatározott színkódokat tartalmaz.</value></data><data name="InAppHelp_Chart_TaskGraphs" xml:space="preserve"><value>Gyorsan áttekintheti a három különböző diagramot az előrehaladás méréséhez egy rugalmas módszertannal: válassza ki a megfelelő ábrát a legördülő listából</value></data><data name="InAppHelp_Chart_TestCasesPerStatusAndDay" xml:space="preserve"><value>Ez az ábra az elmúlt 30 napban végrehajtott teszteseteket mutatja kumulatív alapon. Ez azt jelenti, hogy minden egyes naphoz megjeleníti az összes végrehajtott teszteset összegét, valamint a korábbi, változtatás nélküli napok állapotát. Az eddig a pontig nem végrehajtott tesztesetek „nem futtatott” kategóriába kerülnek, és a „nem futtatott” kategóriában jelennek meg. Ha például az 1. napon 10 tesztesetet hoz létre, akkor az 1. napon 10 „nem futtatott” tesztesetet fog látni. A 2. napon végrehajt 5 tesztesetet és mindegyik sikertelenül zárul, ekkor 5 sikertelen és 5 nem futtatott tesztesetet fog látni. A 3. napon a korábbi 5 tesztesetből 3-at végrehajt, és mindegyik sikerrel zárul. Ekkor 3 sikeres, 2 sikertelen és 5 nem futtatott tesztesetet fog látni.</value></data><data name="InAppHelp_Chart_TestExecutionStatus" xml:space="preserve"><value>Ez az ábra projekthez tartozó tesztesetek összesített számát mutatja minden egyes végrehajtási állapothoz.</value></data><data name="InAppHelp_Chart_TestRunProgress" xml:space="preserve"><value>Ez az ábra az egyes tesztfuttatási állapotok szerint, napi bontásban mutatja az elmúlt 30 nap tesztfuttatási tevékenységét.</value></data><data name="InAppHelp_Chart_TestSetStatus" xml:space="preserve"><value>Ez az ábra projekthez tartozó teszt szetten belüli tesztesetek összesített számát mutatja minden egyes végrehajtási állapothoz.  Ha több teszt szettben ugyanazok a tesztesetek találhatók, akkor ezek külön kerülnek összeszámolásra, hogy ellenőrizni tudja, az összes teszt sikeresen végbement-e a teszt szettekben. Ez különösen hasznos akkor, amikor különböző környezetekben futtat teszteket.</value></data><data name="InAppHelp_Chart_RequirementsCoverageProgram" xml:space="preserve"><value>Ez az ábra összevontan mutatja a követelmények tesztlefedettségét a teljes program esetén. A sikeres, sikertelen, blokkolt, figyelmeztetés és nem futtatott sávok a követelményeknek azt az összegét mutatják, amelyekre tesztek vonatkoznak a tesztek végrehajtási állapotának megfelelő elosztásban.</value></data><data name="InAppHelp_Chart_TaskProgress" xml:space="preserve"><value>Ez az ábra összevontan mutatja az előrehaladási kategória szerinti feladatokat a teljes program esetén. Az „On Schedule”, „Late Finish”, „Late Start” és „Not Started” sávok azon feladatok összegét mutatják, amelyek az adott kategóriába esnek a programon belüli projektek mindegyike esetén.</value></data><data name="InAppHelp_Chart_TestExecutionStatusProgram" xml:space="preserve"><value>Ez az ábra projekthez tartozó tesztesetek összesített számát mutatja minden egyes végrehajtási állapothoz a teljes program esetén. A sikeres, sikertelen, blokkolt, figyelmeztetés és nem futtatott sávok azon tesztesetek összegét mutatják, amelyek az adott kategóriába esnek a programon belüli projektek mindegyike esetén.</value></data><data name="InAppHelp_Chart_DateRangeIncident" xml:space="preserve"><value>&lt;b&gt;Az incidens előrehaladása ábra&lt;/b&gt; egy adott dátumintervallumban létrehozott és lezárt incidensek teljes számát mutatja vagy mindegyik incidenstípusra vagy egy adott incidenstípusra vonatkozóan
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;A kumulatív incidensszám ábra&lt;/b&gt; egy adott dátumintervallumban naplózott incidensek kumulatív teljes számát mutatja vagy mindegyik incidenstípusra vagy egy adott incidenstípusra vonatkozóan. A jelentés az összes incidens, valamint az összes nyitott incidens összegét mutatja (vagyis az állapot nincs rögzítettre vagy lezártra állítva)
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Nyitott incidensek száma ábra&lt;/b&gt; egy adott dátumintervallumban a nyitott incidensek nettó számát mutatja az incidens prioritása szerint kategorizálva, illetve vagy az összes incidenstípusra vagy egy adott incidenstípusra vonatkozóan. Ennél az ábránál a „nyitott” olyan incidenst jelent, amely üres „Closed On” dátummal rendelkezik. Az incidensállapot nem szerepel ezen az ábrán.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Incidensszám állapot szerint&lt;/b&gt; a rendszerben az aktuális projekthez egy adott dátumintervallumban a nyitott incidensek számát mutatja az incidens állapota szerint kategorizálva, illetve vagy az összes incidenstípusra vagy egy adott incidenstípusra vonatkozóan. Ennél az ábránál a „nyitott” olyan incidenst jelent, amely üres „Closed On” dátummal rendelkezik. Az incidensállapot nem szerepel ezen az ábrán.</value></data><data name="InAppHelp_Chart_DateRangeTestRun" xml:space="preserve"><value>&lt;b&gt;Tesztfuttatás előrehaladása ábra&lt;/b&gt; az adott időszak alatt végrehajtott tesztek számát mutatja, valamint azt, hogy milyen végrehajtási állapot került rögzítésre. A jelentés egy adott dátumintervallumra, a teljes projektre és egy meghatározott relase-re/sprintre jeleníthető meg.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Teszteset előrehaladása ábra&lt;/b&gt; a tesztvégrehajtások számát mutatja egy adott dátumintervallumra. Ez azt jelenti, hogy minden egyes naphoz megjeleníti az összes végrehajtott teszteset összegét, kihagyva a korábbi napok állapotát. Az eddig a napig nem végrehajtott tesztesetek „nem futtatott” kategóriába kerülnek, és a „nem futtatott” kategóriában jelennek meg.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Kumulatív teszteset előrehaladása ábra&lt;/b&gt; a teszteset-végrehajtások számát mutatja kumulatívan egy adott dátumintervallumra vonatkozóan. Ez azt jelenti, hogy minden egyes naphoz megjeleníti az összes végrehajtott teszteset összegét, valamint a korábbi, változtatás nélküli napok állapotát. Az eddig a pontig nem végrehajtott tesztesetek „nem futtatott” kategóriába kerülnek, és a „nem futtatott” kategóriában jelennek meg.</value></data><data name="InAppHelp_Chart_SnapshotIncident" xml:space="preserve"><value>&lt;b&gt;Incidens elavulása ábra&lt;/b&gt; az incidensek a rendszerben nyitott állapotban töltött napjainak számát mutatja. Az ábra egy halmozott hisztogram, melyen az Y-tengely az incidensek számát, az X-tengely pedig a különböző elavulási intervallumokat mutatja. Minden oszlopdiagramszín egy-egy incidensprioritást jelöl, mely a projektmenedzser számára pillanatképet ad a nyitott projektincidensek koráról prioritás szerint.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Incidens átfutási ideje ábra&lt;/b&gt; azon napok számát mutatja, ameddig az incidensek a rendszerben zárva voltak (az első felmerülésük időpontjától). Az ábra egy halmozott hisztogram, melyen az Y-tengely az incidensek számát, az X-tengely pedig a különböző átfutási időintervallumokat mutatja. Minden oszlopdiagramszín egy-egy incidensprioritást jelöl, mely a projektmenedzser számára pillanatképet ad a nyitott projektincidensek átfutási idejéről prioritás szerint.</value></data><data name="InAppHelp_Chart_SnapshotRequirement" xml:space="preserve"><value>&lt;b&gt;Követelmények lefedettsége ábra&lt;/b&gt; azt mutatja, hogy hány követelmény van adott pillanatban egy projektben a tesztlefedettségi állapotuk szerint
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Hátralévő követelmények ábra&lt;/b&gt; azon hátralévő történeti pontok számát mutatja, amelyeket a projekten belüli egyes release-ekhez/sprintekhez teljesíteni kell a becsült és ideális teljesítést külön vonalakkal jelölve. Mindezek mellett az ábra az egyes időszakokban teljesített történeti pontok számához is tartalmaz oszlopokat az X-tengelyen
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Teljesített követelmények ábra&lt;/b&gt; a projekten belül az egyes release-hez/sprinthez kinnlevő történeti pontok kumulatív számát mutatja a becsült és az ideális teljesítést külön vonalakkal jelölve. Mindezek mellett az ábra az egyes időszakokban teljesített történeti pontok számához is tartalmaz oszlopokat az X-tengelyen
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Követelmények üteme ábra&lt;/b&gt; azon történeti pontok teljes számát mutatja, amelyek egy adott release-ben, sprintben vagy időszakban (ezt hívjuk ütemnek) teljesültek (vagy a tervek szerint teljesülnek). A tényleges ütem a teljes átlagos ütem (kékkel) és a göngyölített átlagos ütem (zöld) mentén jelenik meg
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;&lt;/b&gt;</value></data><data name="InAppHelp_Chart_SnapshotTask" xml:space="preserve"><value>&lt;b&gt;Feladat üteme ábra&lt;/b&gt; az összes becsült és tényleges erőfeszítést (órák számában) mutatja az egyes projektreleasehoz és/vagy sprinthez.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Teljesített feladatok ábra&lt;/b&gt; a projekten belüli egyes releasehoz/sprinthez tartozó kinnlevő kumulatív munkamennyiséget mutatja a becsült és ideális teljesítést külön vonalakkal jelölve. Mindezek mellett az ábra a hátralévő és teljesített erőfeszítést is oszlopokkal jelöli minden egyes időszakhoz az X-tengelyen.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Hátralévő feladatok ábra&lt;/b&gt; a projekten belül az egyes release-hez/sprinthez elvégzendő hátralévő munkát mutatja (órák számában) a becsült és ideális teljesítést külön vonalakkal jelölve. Mindezek mellett az ábra a hátralévő és teljesített erőfeszítést is oszlopokkal jelöli minden egyes időszakhoz az X-tengelyen.</value></data><data name="InAppHelp_Chart_SummaryIncident" xml:space="preserve"><value>Az incidensösszegző ábra azt mutatja, hogy hány incidens van jelenleg egy adott projekten belül. Az incidensek száma az Ön által meghatározott kritériumok szerint jelenik meg.</value></data><data name="InAppHelp_Chart_SummaryRequirement" xml:space="preserve"><value>A követelményösszegző ábra azt mutatja, hogy hány követelmény van jelenleg egy adott projekten belül. A követelmények száma az Ön által meghatározott kritériumok szerint jelenik meg</value></data><data name="InAppHelp_Chart_SummaryTask" xml:space="preserve"><value>A feladatösszegző ábra azt mutatja, hogy hány feladat van jelenleg egy adott projekten belül. A feladatok száma az Ön által meghatározott kritériumok szerint jelenik meg.</value></data><data name="InAppHelp_Chart_SummaryTestCase" xml:space="preserve"><value>A tesztesetösszegző ábra azt mutatja, hogy hány teszteset van jelenleg egy adott projekten belül. A tesztesetek száma az Ön által meghatározott kritériumok szerint jelenik meg</value></data><data name="InAppHelp_Chart_SummaryTestRun" xml:space="preserve"><value>A tesztfuttatás-összegző ábra azt mutatja, hogy hány tesztfuttatás van jelenleg egy adott projekten belül. A tesztfuttatások száma az Ön által meghatározott kritériumok szerint jelenik meg.</value></data><data name="InAppHelp_Chart_SummaryTestSet" xml:space="preserve"><value>A teszt szett összegző ábra azt mutatja, hogy hány teszt szett van jelenleg egy adott projekten belül. A teszt szettek száma az Ön által meghatározott kritériumok szerint jelenik meg</value></data><data name="JqPlot_ImageExportNotSupport" xml:space="preserve"><value>Az Ön webböngészője nem támogatja a képexportot!</value></data><data name="AssociationPanel_NoUnassociatedResults" xml:space="preserve"><value>Nem találhatók elérhető egyezések</value></data><data name="DocumentDetails_DeleteVersionConfirm" xml:space="preserve"><value>Biztosan törli ezt a verzióját a dokumentumnak?</value></data><data name="FileUpload_AttachmentEmpty" xml:space="preserve"><value>Nem tölthet fel üres csatolmányt.</value></data><data name="FileUpload_AttachmentTooLarge" xml:space="preserve"><value>Nem tölthet fel {0}KB-nál nagyobb csatolmányt.</value></data><data name="FileUpload_VersionNumberRequired" xml:space="preserve"><value>Adjon meg egy verziószámot!</value></data><data name="FileUpload_VersionNumberTooLong" xml:space="preserve"><value>A megadott verziószám túl hosszú.</value></data><data name="Graphs_NeedToHaveASingleDataSeries" xml:space="preserve"><value>Ez az ábratípus csak az egyszeri adatsorozatokat támogatja!</value></data><data name="TestCaseExecution_ActualResult" xml:space="preserve"><value>Tényleges eredmény</value></data><data name="RequirementDetails_SplitRequirementEstimateNotNumeric" xml:space="preserve"><value>A becsült értéknek numerikus értéknek kell lennie.</value></data><data name="RequirementDetails_SplitRequirementNameRequired" xml:space="preserve"><value>Adjon meg egy nevet az új követelményhez!</value></data><data name="AjaxFormManager_NotAuthorizedToCreate" xml:space="preserve"><value>Ön nem jogosult létrehozni ezt az elemet!</value></data><data name="Global_IncidentName" xml:space="preserve"><value>Incidens neve</value></data><data name="Global_Error" xml:space="preserve"><value>Hiba</value></data><data name="Global_ChooseWorkspace" xml:space="preserve"><value>--- Válasszon munkaterületet ---</value></data><data name="AjaxFormManager_Logout" xml:space="preserve"><value>Kijelentkezés</value></data><data name="GlobalNavigation_KeyboardShortcuts" xml:space="preserve"><value>Gyorsbillentyűk</value></data><data name="GlobalNavigation_ShowOnboardingTours" xml:space="preserve"><value>Funkciók  rövid bemutatása</value></data><data name="Global_Administration" xml:space="preserve"><value>Adminisztráció</value></data><data name="Global_Help" xml:space="preserve"><value>Súgó</value></data><data name="GlobalNavigation_SearchTooltip" xml:space="preserve"><value>Kereshet kulcsszavakkal vagy egy tárgykör egyedi tokenjével (pl. IN45 a 45. sz. incidenshez)</value></data><data name="NavigationBar_RecentSearches" xml:space="preserve"><value>Legutóbbi keresések</value></data><data name="Global_Artifacts" xml:space="preserve"><value>Műveletek</value></data><data name="NavigationBar_NoWorkspaceMembership" xml:space="preserve"><value>Nem található munkaterületi tagság</value></data><data name="GlobalNavigation_TooltipArtifacts" xml:space="preserve"><value>A tárgykörök a projekt vagy program építőkockái, és ezek tartalmazzák a hozzá tartozó adatokat is. Minden egyes tárgykör különböző adatokat tartalmaz és különböző módokon használható fel. A követelmények például egy tárgykört alkotnak, a release-k pedig egy másikat. Ezek különböző módon működnek, és nem felcserélhetők. Vannak olyan tárgykörök, amelyek elősegítik a tesztelést, tervezést, illetve a hibák és feladatok nyomon követését, és így tovább.</value></data><data name="GlobalNavigation_TooltipAutomationHost" xml:space="preserve"><value>Az automatizációs hosztok olyan rendszerek (pl. tesztelő gépek), amelyek a projekten belül az automatizált teszteket futtatják.</value></data><data name="GlobalNavigation_TooltipTestConfigurationSet" xml:space="preserve"><value>A konfiguráció egy olyan paramétermátrix, amelyekre a teszteket lefuttathatja (manuális és automatizált). A konfigurációkkal több különböző paraméterből gyorsan létrehozhat minden lehetséges kombinációt.</value></data><data name="GlobalNavigation_TooltipDocument" xml:space="preserve"><value>Az összes csatolmány, dokumentum, kép (a képernyőképeket is ideértve) és minden egyéb, a projekthez kapcsolódó fájl itt tekinthető meg beépített verziókövetéssel.</value></data><data name="GlobalNavigation_TooltipIncident" xml:space="preserve"><value>A projekten belüli összes incidens (ideértve a hibákat, feljavításokat, kockázatokat és más típusokat) a projektfelelős által meghatározottak szerint.</value></data><data name="GlobalNavigation_TooltipMyPage" xml:space="preserve"><value>A kezdőoldal tartalmazza az összes Önhöz kapcsolódó információt.</value></data><data name="GlobalNavigation_TooltipPlanningBoard" xml:space="preserve"><value>A projekthez tervezett hátralévő tételt megjelenítheti és kezelheti. Ez a tervezőeszköz a Scrum és Kanban módszereken alapul.</value></data><data name="GlobalNavigation_TooltipRelease" xml:space="preserve"><value>A projekt release-k  hierarchikus gyűjteménye (ideértve a sprinteket és elbeszéléseket)</value></data><data name="GlobalNavigation_TooltipReporting" xml:space="preserve"><value>Számos különböző diagram és jelentés létrehozása az aktuális munkaterülethez (ideértve a felhasználó által létrehozott jelentéseket). A jelentések szűrhetők, rendszerezhetők és exportálhatók.</value></data><data name="GlobalNavigation_TooltipRequirement" xml:space="preserve"><value>Bármely típusú követelmény hierarchikus gyűjteménye (ideértve a felhasználói történeteket, felhasználási eseteket és jellemzőket)</value></data><data name="GlobalNavigation_TooltipResource" xml:space="preserve"><value>Forráskezelés a projekthez tartozó összes aktív tag, valamint a teljes munkaterhelés (teljesített és tervezett) megjelenítéséhez.</value></data><data name="GlobalNavigation_TooltipSourceCode" xml:space="preserve"><value>Az alkalmazáshoz kapcsolódó összes forráskód megtekintése (ideértve a specifikus hozzárendeléseket, fájlverziókat és ágakat).</value></data><data name="GlobalNavigation_TooltipTask" xml:space="preserve"><value>A feladatokkal felbonthatja a munka nagyobb területeit például követelményekre vagy incidensekre, így a különálló részeket különböző személyek teljesíthetik. A feladatok lehetnek önálló tevékenységek is.</value></data><data name="GlobalNavigation_TooltipTestCase" xml:space="preserve"><value>A tesztesetek az alkalmazáson belüli tesztelés meghatározó egységei. Minden teszteset tesztlépésekből áll. Egy adott teszteset végrehajtási állapota (pl. sikeres vagy sikertelen) a rendszerben a release-k és követelmények szerint követhető nyomon.</value></data><data name="GlobalNavigation_TooltipTestRun" xml:space="preserve"><value>Valahányszor egy tesztesetet futtat, egy tesztfuttatás jön létre. Minden projekten belüli végrehajtás tesztfuttatásként kerül összegyűjtésre, amely a teljes tesztelési tevékenység feljegyzéseként szolgál.</value></data><data name="GlobalNavigation_TooltipTestSet" xml:space="preserve"><value>A teszt szettek  teszteseteket tartalmaznak. Egy teszt szett a dinamikus tesztelési adatok tárolójaként, valamint a tesztesetek sorrendjének beállításaként szolgál. A teszt szettek nem könyvtárak: egy teszteset jelen lehet több teszt szettben is, de akár többször is egy adott teszt szettben.</value></data><data name="GlobalNavigation_TooltipWorkspace" xml:space="preserve"><value>Ahhoz, hogy az alkalmazásban el tudja kezdeni a munkát, ki kell választania azt a munkaterületet, amelyet fel szeretne fedezni, kezelni vagy amelyen dolgozni szeretne. A munkaterületek lehetnek projektek (pl. egy adott alkalmazáshoz) vagy programok (amelyek egy bizonyos mennyiségű projektet csoportba rendeznek)</value></data><data name="GlobalNavigation_TooltipWorkspaceHome" xml:space="preserve"><value>Egy „minden egyben” hely, ahol megismerheti az aktuális munkaterület teljes állapotát átfogó és könnyen értelmezhető (illetve személyre szabható) információkkal. Ehhez a navigációs sávon lévő nagyméretű munkaterület ikonra kattintással férhet hozzá</value></data><data name="Global_Documentation" xml:space="preserve"><value>Dokumentáció</value></data><data name="Global_SystemAdministration" xml:space="preserve"><value>Rendszeradminisztráció</value></data><data name="Global_Templates" xml:space="preserve"><value>Sablonok</value></data><data name="Global_RiskName" xml:space="preserve"><value>Kockázat neve</value></data><data name="Onboarding_WelcomeToProduct" xml:space="preserve"><value>Bevezetés a(z) {0}-ba</value></data><data name="GlobalNavigation_TooltipAdministration" xml:space="preserve"><value>A kitűnő adminisztrációs elemek révén elvégezheti a megfelelő munkaterületek módosításait, valamint kezelheti a felhasználókat, értesítéseket, rendszer- és biztonsági beállításokat, külső szolgáltatásokkal való adatszinkronizálást, stb.</value></data><data name="GlobalNavigation_TooltipUserProfile" xml:space="preserve"><value>A felhasználói profil és beállítások kezelése (ideértve jelszót és a nyelvet). Ebből a menüből hozzáférhet továbbá az aktuális oldallal kapcsolatos dokumentációra mutató hivatkozásokhoz, rövid oktatásokat vagy gyorsbillentyűket tekinthet meg, illetve kijelentkezhet az alkalmazásból.</value></data><data name="Global_Finish" xml:space="preserve"><value>Befejezés</value></data><data name="Global_MyPage" xml:space="preserve"><value>Oldalam</value></data><data name="Global_UserProfile" xml:space="preserve"><value>Felhasználói profil</value></data><data name="Global_Workspaces" xml:space="preserve"><value>Munkaterületek</value></data><data name="Global_WorkspacesDashboard" xml:space="preserve"><value>Munkaterület kezelőpanele</value></data><data name="Onboarding_AppIntro_Title" xml:space="preserve"><value>Ismerje meg  {0}</value></data><data name="Onboarding_SelectATour" xml:space="preserve"><value>Válasszon egy opciót az alábbiak közül a körbevezetés megtekintéséhez</value></data><data name="Onboarding_UpdateIntro_Message" xml:space="preserve"><value>Fedezze fel a verziófrissítéssel érkezett újdonságokat</value></data><data name="Onboarding_ReadMore" xml:space="preserve"><value>Olvass tovább</value></data><data name="Onboarding_ShowAllTours" xml:space="preserve"><value>Összes körbevezető út megjelenítése</value></data><data name="GlobalNavigation_TooltipRisk" xml:space="preserve"><value>A kockázatokkal teljes körű kockázatkezelési megoldást alkalmazhat projekteihez. Minden egyes kockázat rendelkezik valószínűséggel, valamint hatással is, hogy elemezni tudja a kockázatnak való kitettséget. Kockázatcsökkentés hozzáadásával nyomon követheti, hogy miként kezeli a kockázatot</value></data><data name="ArtifactType_Risk" xml:space="preserve"><value>Kockázat</value></data><data name="ArtifactType_RiskMitigation" xml:space="preserve"><value>Csökkentés</value></data><data name="Onboarding_TourAims_AppIntro" xml:space="preserve"><value>Ebben a körbevezetésben az alkalmazásban való navigációt ismerheti meg. Áttekintjük a navigációs sáv (minden oldal tetején található sötét terület) minden egyes részét. Az egyes részekkel az alkalmazás különböző területei között lépkedhet. Ha e részek bármelyike fölött áthúzza a kurzort, akkor további információkat láthat.</value></data><data name="Onboarding_TourAims_Title" xml:space="preserve"><value>Itt kezdje</value></data><data name="Risk_EnterNewRiskName" xml:space="preserve"><value>Új kockázatnév megadása</value></data><data name="ArtifactType_PlanningBoard" xml:space="preserve"><value>Tervezőtábla</value></data><data name="ArtifactType_SourceCode" xml:space="preserve"><value>Forráskód</value></data><data name="ArtifactType_TestConfigurationSet" xml:space="preserve"><value>Konfiguráció</value></data><data name="Artifact_EnterNewName" xml:space="preserve"><value>Adjon meg új nevet</value></data><data name="GlobalNavigation_ColorScheme_Auto" xml:space="preserve"><value>Automata mód</value></data><data name="GlobalNavigation_ColorScheme_Dark" xml:space="preserve"><value>Sötét mód</value></data><data name="GlobalNavigation_ColorScheme_Light" xml:space="preserve"><value>Világos mód</value></data><data name="GlobalNavigation_ColorScheme_AutoTitle" xml:space="preserve"><value>Szín módot az operációs rendszer kezeli. Kattintson, hogy sötét módra váltson.</value></data><data name="GlobalNavigation_ColorScheme_DarkTitle" xml:space="preserve"><value>A félkövér új nézet, ami védi a szemet. Kattintson , hogy  a világos (normál) módra váltson.</value></data><data name="GlobalNavigation_ColorScheme_LightTitle" xml:space="preserve"><value>Klasszikus megjelenítés, sötés szöveg világos háttéren. Kattintson, hogy az auto módra váltson.</value></data><data name="Administration_Project_RemapTemplateDialogText" xml:space="preserve"><value>Jelenleg változik a projekt sablon</value></data><data name="Administration_Project_RemapTemplateTitle" xml:space="preserve"><value>Projekt sablon módosítása</value></data><data name="Administration_Project_NeedToSelectTemplate" xml:space="preserve"><value>Válasszon egy sablont a listából!</value></data><data name="MoreArtifactsThanCanDisplay" xml:space="preserve"><value>Túl sok termék van, nem tudjuk mind megjeleníteni. </value></data><data name="Admin_TemplateChange_FieldMappingLoss" xml:space="preserve"><value>Becsült adatvesztés</value></data><data name="Global_Artifact" xml:space="preserve"><value>Termék</value></data><data name="Global_FieldName" xml:space="preserve"><value>Mezőnév</value></data><data name="FileArtifactUploadDialog_FilenameRequired" xml:space="preserve"><value>Válasszon ki egy fájlt mielőtt megkisérli feltölteni!</value></data><data name="Global_ChooseFilterToUpdate" xml:space="preserve"><value>Válasszon egy meglévő szűrőt a módosításhoz.</value></data><data name="Global_IncludeColumns" xml:space="preserve"><value>Mentse a kiválasztott oszlopokat a szűréssel.</value></data><data name="Global_SaveNew" xml:space="preserve"><value>Új mentés</value></data><data name="Global_UpdateExisting" xml:space="preserve"><value>Meglévő módosítása</value></data><data name="Global_UpdateExistingOrSaveNew" xml:space="preserve"><value>A meglévő mentést akarja módosítani, vagy egy új mentés legyen?</value></data></root>

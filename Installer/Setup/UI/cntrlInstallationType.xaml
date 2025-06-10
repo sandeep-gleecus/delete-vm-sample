@@ -1,0 +1,90 @@
+﻿<UserControl x:Class="Inflectra.SpiraTest.Installer.UI.cntrlInstallationType"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Inflectra.SpiraTest.Installer.UI"
+             xmlns:resx="clr-namespace:Inflectra.SpiraTest.Installer.Themes.Inflectra"
+             mc:Ignorable="d" 
+             Unloaded="UserControl_Unloaded" Loaded="UserControl_Loaded"
+             d:DesignHeight="400" d:DesignWidth="400">
+	<DockPanel LastChildFill="True">
+		<CheckBox DockPanel.Dock="Bottom" Name="chkAdvanced" Content="{x:Static resx:Resources.Global_AdvancedOptions}" />
+		<StackPanel Orientation="Vertical">
+			<TextBlock FontSize="18" FontWeight="Bold" Text="{x:Static resx:Resources.InstallationType_KeyText}" />
+            <TextBlock FontSize="14" TextWrapping="Wrap" Text="{x:Static resx:Resources.InstallationType_Intro}" />
+			<GroupBox Margin="0,10,0,0">
+				<GroupBox.Header>
+					<Label FontWeight="Bold" Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.InstallationType_InstallationOptions}" />
+				</GroupBox.Header>
+				<GroupBox.Content>
+					<Grid Name="grdInstallationOptions">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+                        <Button Name="radCleanInstall"
+							Grid.Column="0" Grid.Row="0" 
+							Style="{StaticResource {x:Type Button}}" 
+							Height="32" Margin="4" Padding="24,0,24,0"
+                            FontSize="14"
+							Tag="NewInstall"
+                            Content="{x:Static resx:Resources.Global_Install}"
+                            />
+                        <Label Grid.Column="1" Grid.Row="0" Content="{x:Static resx:Resources.InstallationType_CleanInstall}" FontSize="12" VerticalAlignment="Center" />
+                        
+                        <Button Name="radUpgrade"
+							Grid.Column="0" Grid.Row="1" 
+							Style="{StaticResource {x:Type Button}}" 
+							Height="32" Margin="4" Padding="24,0,24,0"
+                            FontSize="14"
+							Tag="FullUpgrade" 
+                            Content="{x:Static resx:Resources.Global_Upgrade}"
+                            />
+                        <Label Grid.Column="1" Grid.Row="1" Content="{x:Static resx:Resources.InstallationType_Upgrade}" FontSize="12" VerticalAlignment="Center" />
+					</Grid>
+				</GroupBox.Content>
+			</GroupBox>
+			<GroupBox Margin="0,20,0,0">
+				<GroupBox.Header>
+					<Label FontWeight="Bold" Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.InstallationType_MaintenanceOptions}" />
+				</GroupBox.Header>
+				<GroupBox.Content>
+					<Grid Name="grdMaintenanceOptions">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+						<Button Name="radUninstall"
+								Grid.Column="0" Grid.Row="0" 
+								Style="{StaticResource {x:Type Button}}" 
+								Height="32" Margin="4" Padding="24,0,24,0"
+                                Content="{x:Static resx:Resources.InstallationType_Uninstall}"
+								Tag="Uninstall" />
+						<Button Name="radAddApplication"
+								Grid.Column="0" Grid.Row="1" 
+								Style="{StaticResource {x:Type Button}}" 
+								Height="32" Margin="4" Padding="24,0,24,0"
+                                Content="{x:Static resx:Resources.InstallationType_AddApplicationNode}"
+								Tag="AddApplication" />
+						<Button Name="radDatabaseUpgrade"
+								Grid.Column="0" Grid.Row="2" 
+								Style="{StaticResource {x:Type Button}}" 
+								Height="32" Margin="4" Padding="24,0,24,0"
+                                Content="{x:Static resx:Resources.InstallationType_UpgradeDatabaseOnly}"
+								Tag="DatabaseUpgrade" />
+					</Grid>
+				</GroupBox.Content>
+			</GroupBox>
+		</StackPanel>
+	</DockPanel>
+</UserControl>

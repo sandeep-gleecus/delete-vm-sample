@@ -1,0 +1,132 @@
+{
+  "CurrentRequestName": "Retrieve",
+  "CurrentPath": "Project60.rest",
+  "Name": "Project",
+  "Requests": [
+    {
+      "Name": "Retrieve",
+      "Url": "http://tardis/spira/services/v6_0/RestService.svc/projects",
+      "Method": "GET",
+      "Body": "",
+
+      "Headers": [
+        {
+          "Name": "Accept",
+          "Value": "application/json"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+      ]
+    },
+    {
+      "Name": "RetrieveById",
+      "Url": "http://tardis/spira/services/v6_0/RestService.svc/projects/{project_id}",
+      "Method": "GET",
+      "Body": "",
+
+      "Headers": [
+        {
+          "Name": "Accept",
+          "Value": "application/json"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "project_id",
+          "TokenName": "{project_id}",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Name": "Create",
+      "Url": "http://tardis/spira/services/v6_0/RestService.svc/projects?existing_project_id={existing_project_id}",
+      "Method": "POST",
+      "Body": "",
+
+      "Headers": [
+        {
+          "Name": "Accept",
+          "Value": "application/json"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "existing_project_id",
+          "TokenName": "{existing_project_id}",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Name": "Delete",
+      "Url": "http://tardis/spira/services/v6_0/RestService.svc/projects/{project_id}",
+      "Method": "DELETE",
+      "Body": "",
+
+      "Headers": [
+        {
+          "Name": "Accept",
+          "Value": "application/json"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "project_id",
+          "TokenName": "{project_id}",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Name": "RefreshProgressExecutionStatusCaches",
+      "Url": "http://tardis/spira/services/v6_0/RestService.svc/projects/{project_id}/refresh-caches/{release_id}?run_async={run_async}",
+      "Method": "POST",
+      "Body": "",
+
+      "Headers": [
+        {
+          "Name": "Accept",
+          "Value": "application/json"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "project_id",
+          "TokenName": "{project_id}",
+          "Value": ""
+        },
+        {
+          "Name": "release_id",
+          "TokenName": "{release_id}",
+          "Value": ""
+        },
+        {
+          "Name": "run_async",
+          "TokenName": "{run_async}",
+          "Value": ""
+        }
+      ]
+    }
+  ]
+}

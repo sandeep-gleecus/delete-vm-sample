@@ -1,0 +1,17 @@
+/***************************************************************
+**	Insert script for table TST_USER
+***************************************************************/
+SET IDENTITY_INSERT TST_USER ON; 
+
+INSERT INTO TST_USER
+(
+USER_ID, USER_NAME, PASSWORD, PASSWORD_SALT, EMAIL_ADDRESS, IS_ACTIVE, IS_APPROVED, IS_LOCKED, CREATION_DATE, LAST_LOGIN_DATE, PASSWORD_FORMAT, FAILED_PASSWORD_ATTEMPT_COUNT, FAILED_PASSWORD_ANSWER_ATTEMPT_COUNT, PASSWORD_QUESTION, PASSWORD_ANSWER, LDAP_DN, RSS_TOKEN, IS_LEGACY_FORMAT
+)
+VALUES
+(
+1, 'administrator', 'YX/sa3FbciBCwYuVdn1qmBPYJDo=', 'UdANF4/lpxLpj/vR51szYg==', 'administrator@mycompany.com', 1, 1, 0, '2010-01-01T00:00:00', '2011-01-01T00:00:00', 1, 0, 0, 'What is 1+1?', '/YE8eBvAECNQD80jAQxJMabiO3s=', NULL, NULL, 0
+)
+GO
+
+SET IDENTITY_INSERT TST_USER OFF; 
+

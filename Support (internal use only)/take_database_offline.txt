@@ -1,0 +1,9 @@
+ALTER DATABASE <dbname> SET OFFLINE WITH ROLLBACK IMMEDIATE
+
+you can run the following command to find out who is keeping a lock on your database:
+
+EXEC sp_who2
+
+And use whatever SPID you find in the following command:
+
+KILL <SPID>

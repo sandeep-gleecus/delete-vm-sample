@@ -1,0 +1,1390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Admin_EditWorkflows" xml:space="preserve">
+    <value>编辑工作流</value>
+  </data>
+	<data name="Admin_Notification_ArtifactFields" xml:space="preserve">
+    <value>工件的字段</value>
+  </data>
+	<data name="Admin_Notification_ArtifactNotificationEnabled" xml:space="preserve">
+    <value>启用了吗？</value>
+  </data>
+	<data name="Admin_Notification_ArtifactOpener" xml:space="preserve">
+    <value>工件开罐器或创建者：</value>
+  </data>
+	<data name="Admin_Notification_ArtifactOwner" xml:space="preserve">
+    <value>工件所有者：</value>
+  </data>
+	<data name="Admin_Notification_ArtifactPrefix" xml:space="preserve">
+    <value>前缀</value>
+  </data>
+	<data name="Admin_Notification_ArtifactType" xml:space="preserve">
+    <value>项目类型</value>
+  </data>
+	<data name="Admin_Notification_ArtifactUsers" xml:space="preserve">
+    <value>用户和项目角色</value>
+  </data>
+	<data name="Admin_Notification_ArtifactUsersRoles" xml:space="preserve">
+    <value>用户 / 项目的作用</value>
+  </data>
+	<data name="Admin_Notification_BackToNotificationList" xml:space="preserve">
+    <value>回通知事件列表</value>
+  </data>
+	<data name="Global_Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+	<data name="Admin_Notification_EMailServerSettings" xml:space="preserve">
+    <value>电子邮件配置</value>
+  </data>
+	<data name="Admin_Notification_EventName" xml:space="preserve">
+    <value>事件名称</value>
+  </data>
+	<data name="Admin_Notification_NavHeader" xml:space="preserve">
+    <value>通知</value>
+  </data>
+	<data name="Admin_Notification_NewEvent" xml:space="preserve">
+    <value>新的事件</value>
+  </data>
+	<data name="Admin_Notification_NotifyOnChange" xml:space="preserve">
+    <value>在更改通知吗？</value>
+  </data>
+	<data name="Admin_Notification_OnCreation" xml:space="preserve">
+    <value>论创作？</value>
+  </data>
+	<data name="Admin_Notification_ProjectRoles" xml:space="preserve">
+    <value>项目角色：</value>
+  </data>
+	<data name="Global_Test" xml:space="preserve">
+    <value>测试</value>
+  </data>
+	<data name="Admin_Notification_ViewEditNotification" xml:space="preserve">
+    <value>通知事件</value>
+  </data>
+	<data name="Admin_Notification_ViewEditNotificationEvent" xml:space="preserve">
+    <value>通知事件详细信息</value>
+  </data>
+	<data name="Admin_Notification_ViewNotificationTemplates" xml:space="preserve">
+    <value>通知模板</value>
+  </data>
+	<data name="Global_Active" xml:space="preserve">
+    <value>活动？</value>
+  </data>
+	<data name="Global_Artifact" xml:space="preserve">
+    <value>工件</value>
+  </data>
+	<data name="Global_DisplayDataFor" xml:space="preserve">
+    <value>显示的数据</value>
+  </data>
+	<data name="Global_GoTo" xml:space="preserve">
+    <value>转到(G)</value>
+  </data>
+	<data name="Global_Operations" xml:space="preserve">
+    <value>操作</value>
+  </data>
+	<data name="Global_SelectedRelease" xml:space="preserve">
+    <value>选定的版本：</value>
+  </data>
+	<data name="Global_Step" xml:space="preserve">
+    <value>一步</value>
+  </data>
+	<data name="Global_Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="IterationPlan_MainLegend" xml:space="preserve">
+    <value>显示选定的版本的迭代计划：</value>
+  </data>
+	<data name="Login_DontHaveAccount" xml:space="preserve">
+    <value>没有帐户吗？</value>
+  </data>
+	<data name="Login_EnterUserNamePassword" xml:space="preserve">
+    <value>请输入您的用户名和密码，然后单击按钮中的日志。</value>
+  </data>
+	<data name="Login_ForgotPassword" xml:space="preserve">
+    <value>忘记了您的密码吗？</value>
+  </data>
+	<data name="Login_KeepLoggedIn" xml:space="preserve">
+    <value>保持在登录</value>
+  </data>
+	<data name="Login_Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+	<data name="Login_UserName" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+	<data name="ProjectList_AddItems" xml:space="preserve">
+    <value>添加项</value>
+  </data>
+	<data name="ProjectList_AllProjects" xml:space="preserve">
+    <value>所有项目</value>
+  </data>
+	<data name="ProjectList_BrowseView" xml:space="preserve">
+    <value>返回到普通视图</value>
+  </data>
+	<data name="ProjectList_CurrentProject" xml:space="preserve">
+    <value>当前项目</value>
+  </data>
+	<data name="ProjectList_DesignView" xml:space="preserve">
+    <value>修改布局/设置</value>
+  </data>
+	<data name="ProjectList_MyAssignedIncidents" xml:space="preserve">
+    <value>我已分配的事件</value>
+  </data>
+	<data name="ProjectList_MyAssignedRequirements" xml:space="preserve">
+    <value>我已分配的要求</value>
+  </data>
+	<data name="ProjectList_MyAssignedTasks" xml:space="preserve">
+    <value>我分配的任务</value>
+  </data>
+	<data name="ProjectList_MyAssignedTestCases" xml:space="preserve">
+    <value>我已分配的测试用例</value>
+  </data>
+	<data name="ProjectList_MyAssignedTestSets" xml:space="preserve">
+    <value>我已分配的测试集</value>
+  </data>
+	<data name="ProjectList_MyDetectedIncidents" xml:space="preserve">
+    <value>我检测到的事件</value>
+  </data>
+	<data name="ProjectList_MyPage" xml:space="preserve">
+    <value>我的页面</value>
+  </data>
+	<data name="ProjectList_MyPendingTestRuns" xml:space="preserve">
+    <value>我挂起的测试运行</value>
+  </data>
+	<data name="ProjectList_MyProjects" xml:space="preserve">
+    <value>我的项目</value>
+  </data>
+	<data name="ProjectList_MySavedReports" xml:space="preserve">
+    <value>我保存的报告</value>
+  </data>
+	<data name="ProjectList_MySavedSearches" xml:space="preserve">
+    <value>我已保存的搜索</value>
+  </data>
+	<data name="ProjectList_MyWeather" xml:space="preserve">
+    <value>我的天气</value>
+  </data>
+	<data name="ProjectList_WelcomePrefix" xml:space="preserve">
+    <value>欢迎</value>
+  </data>
+	<data name="ProjectList_WelcomeSuffix" xml:space="preserve">
+    <value>为您的仪表板</value>
+  </data>
+	<data name="TestCaseExecution_ActualResult" xml:space="preserve">
+    <value>实际的结果</value>
+  </data>
+	<data name="TestCaseExecution_ActualResult2" xml:space="preserve">
+    <value>请输入实际测试结果，如果它与不同，然后单击相应的按钮：</value>
+  </data>
+	<data name="TestCaseExecution_ExistingIncidents" xml:space="preserve">
+    <value>此测试步骤已经记录了下列事件：</value>
+  </data>
+	<data name="TestCaseExecution_ExpectedResult" xml:space="preserve">
+    <value>预期的结果：</value>
+  </data>
+	<data name="TestCaseExecution_FollowDirections" xml:space="preserve">
+    <value>请按照下面的框中概述的说明：</value>
+  </data>
+	<data name="TestCaseExecution_IncidentCustomProperties" xml:space="preserve">
+    <value>也为这种新的事件输入以下自定义属性：</value>
+  </data>
+	<data name="TestCaseExecution_SampleData" xml:space="preserve">
+    <value>示例数据：</value>
+  </data>
+	<data name="TestExecutionService_IncidentText_ActualResult" xml:space="preserve">
+    <value>实际的结果</value>
+  </data>
+	<data name="TestExecutionService_IncidentText_Description" xml:space="preserve">
+    <value>说明</value>
+  </data>
+	<data name="TestExecutionService_IncidentText_ExpectedResult" xml:space="preserve">
+    <value>预期的结果</value>
+  </data>
+	<data name="TestSetDetails_TestCaseDragDropLegend" xml:space="preserve">
+    <value>若要更改测试用例的顺序，请单击测试用例的图标上，并将它拖到列表中的适当位置。</value>
+  </data>
+	<data name="Login_LicensedTo" xml:space="preserve">
+    <value>授权给：</value>
+  </data>
+	<data name="Notifications_EnterListofEmails" xml:space="preserve">
+    <value>分隔的电子邮件地址的列表 ；</value>
+  </data>
+	<data name="Notifications_SelectProjectUser" xml:space="preserve">
+    <value>将发送到该项目中选择一个用户。</value>
+  </data>
+	<data name="Notifications_SendEmailTo" xml:space="preserve">
+    <value>通过电子邮件发送到的这件神器</value>
+  </data>
+	<data name="Global_BlankforDefault" xml:space="preserve">
+    <value>保留默认值为空。</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_Intro" xml:space="preserve">
+    <value>请输入/编辑测试自动化引擎的以下信息。必需的字段以 &lt;b&gt;粗体&lt;/b&gt; 表示：</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_LinkHome" xml:space="preserve">
+    <value>&lt;&lt;测试自动化发动机返回首页</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_NewProvider" xml:space="preserve">
+    <value>新的引擎</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_Title" xml:space="preserve">
+    <value>编辑引擎</value>
+  </data>
+	<data name="Admin_AutomationEngines_Intro1" xml:space="preserve">
+    <value>可以与各种使用其灵活、 开放的体系结构和可用的测试自动化引擎库的外部测试自动化系统集成。</value>
+  </data>
+	<data name="Admin_AutomationEngines_Intro2" xml:space="preserve">
+    <value>此页允许您查看、 添加和修改的自动化测试引擎的列表以及它们的配置进行更改：</value>
+  </data>
+	<data name="Admin_AutomationEngines_Title" xml:space="preserve">
+    <value>测试自动化引擎</value>
+  </data>
+	<data name="Global_AddDiscussion" xml:space="preserve">
+    <value>要添加新的注释，请在下面输入并单击 [保存] 按钮：</value>
+  </data>
+	<data name="Global_Discussion" xml:space="preserve">
+    <value>评论</value>
+  </data>
+	<data name="Global_ExistingDiscussion" xml:space="preserve">
+    <value>现有的注释</value>
+  </data>
+	<data name="Global_hours" xml:space="preserve">
+    <value>小时</value>
+  </data>
+	<data name="Global_BackTo" xml:space="preserve">
+    <value>回</value>
+  </data>
+	<data name="Resources_ResourceList" xml:space="preserve">
+    <value>资源列表</value>
+  </data>
+	<data name="IterationPlan_IncludeTasks" xml:space="preserve">
+    <value>包括的任务</value>
+  </data>
+	<data name="UserProfile_ConfirmNewPassword" xml:space="preserve">
+    <value>确认密码：</value>
+  </data>
+	<data name="UserProfile_CurrentPassword" xml:space="preserve">
+    <value>当前密码：</value>
+  </data>
+	<data name="UserProfile_EmailAddress" xml:space="preserve">
+    <value>电子邮件地址 ＊：</value>
+  </data>
+	<data name="UserProfile_EnableNotifications" xml:space="preserve">
+    <value>启用电子邮件通知：</value>
+  </data>
+	<data name="UserProfile_FirstName" xml:space="preserve">
+    <value>第一名 ＊：</value>
+  </data>
+	<data name="UserProfile_LastName" xml:space="preserve">
+    <value>最后一个名称 ＊：</value>
+  </data>
+	<data name="UserProfile_LDAPDN" xml:space="preserve">
+    <value>LDAP DN：</value>
+  </data>
+	<data name="UserProfile_MiddleInitial" xml:space="preserve">
+    <value>中间名首字母:</value>
+  </data>
+	<data name="UserProfile_NameId" xml:space="preserve">
+    <value>用户名称/ID：</value>
+  </data>
+	<data name="UserProfile_NewPassword" xml:space="preserve">
+    <value>新密码：</value>
+  </data>
+	<data name="UserProfile_TabChangePassword" xml:space="preserve">
+    <value>更改密码</value>
+  </data>
+	<data name="UserProfile_TabEmailPreferences" xml:space="preserve">
+    <value>电子邮件首选项</value>
+  </data>
+	<data name="UserProfile_TabLDAPSettings" xml:space="preserve">
+    <value>LDAP 设置</value>
+  </data>
+	<data name="Attachment_NotExistError" xml:space="preserve">
+    <value>附件文件未找到。({0})</value>
+  </data>
+	<data name="TestRunDetails_ActualDuration" xml:space="preserve">
+    <value>实际工期：</value>
+  </data>
+	<data name="TestRunDetails_EstimatedDuration" xml:space="preserve">
+    <value>估计的工期：</value>
+  </data>
+	<data name="TestRunDetails_AutomationHost" xml:space="preserve">
+    <value>自动化主机：</value>
+  </data>
+	<data name="TestRunDetails_ExecutionDate" xml:space="preserve">
+    <value>执行日期:</value>
+  </data>
+	<data name="TestRunDetails_ExecutionStatus" xml:space="preserve">
+    <value>执行状态：</value>
+  </data>
+	<data name="TestRunDetails_Release" xml:space="preserve">
+    <value>释放 #：</value>
+  </data>
+	<data name="TestRunDetails_TestCase" xml:space="preserve">
+    <value>测试案例 #：</value>
+  </data>
+	<data name="TestRunDetails_TesterName" xml:space="preserve">
+    <value>仪器名称：</value>
+  </data>
+	<data name="TestRunDetails_TestRunType" xml:space="preserve">
+    <value>测试运行类型：</value>
+  </data>
+	<data name="TestRunDetails_TestSet" xml:space="preserve">
+    <value>测试集：</value>
+  </data>
+	<data name="UserProfile_RegionalSettings" xml:space="preserve">
+    <value>区域设置</value>
+  </data>
+	<data name="UserDetails_ToChangeCultureSettings" xml:space="preserve">
+    <value>请从下面的列表中选择您所需的区域。此设置确定哪些号码/日期格式使用整个应用程序使用的语言，以及其中。如果您不选择的值，将使用应用程序的默认值。</value>
+  </data>
+	<data name="UserProfile_UserCulture" xml:space="preserve">
+    <value>用户文化：</value>
+  </data>
+	<data name="Global_Copyright" xml:space="preserve">
+    <value>版权所有</value>
+  </data>
+	<data name="EmailPassword_EnterUserName" xml:space="preserve">
+    <value>请输入您的用户名称和电子邮件地址，然后单击重置按钮 [重置]您的密码。</value>
+  </data>
+	<data name="EmailPassword_NewPasswordWillBeSent" xml:space="preserve">
+    <value>新密码将会发送给您，您的配置文件中存储的电子邮件地址。</value>
+  </data>
+	<data name="EmailPassword_ReturnToLogin" xml:space="preserve">
+    <value>返回登录页</value>
+  </data>
+	<data name="EmailPassword_Title" xml:space="preserve">
+    <value>忘记了密码</value>
+  </data>
+	<data name="ForceSession_Body1" xml:space="preserve">
+    <value>您可以选择</value>
+  </data>
+	<data name="ForceSession_Body2" xml:space="preserve">
+    <value>尝试不同的用户名称或：</value>
+  </data>
+	<data name="ForceSession_Body3" xml:space="preserve">
+    <value>强制要注销的其他位置。</value>
+  </data>
+	<data name="ForceSession_Title" xml:space="preserve">
+    <value>已签署-在别的地方</value>
+  </data>
+	<data name="GlobalNavigation_Administration" xml:space="preserve">
+    <value>行政管理</value>
+  </data>
+	<data name="GlobalNavigation_Help" xml:space="preserve">
+    <value>帮助？</value>
+  </data>
+	<data name="GlobalNavigation_HelpTooltip" xml:space="preserve">
+    <value>启动联机帮助</value>
+  </data>
+	<data name="GlobalNavigation_MyProfile" xml:space="preserve">
+    <value>我的配置文件</value>
+  </data>
+	<data name="Global_NumberRowsToDisplay" xml:space="preserve">
+    <value># 要显示的行</value>
+  </data>
+	<data name="Global_NumberRowsToDisplayTooltip" xml:space="preserve">
+    <value>此属性可以限制显示的数据行数</value>
+  </data>
+	<data name="Global_Welcome" xml:space="preserve">
+    <value>欢迎</value>
+  </data>
+	<data name="Global_WelcomeTo" xml:space="preserve">
+    <value>欢迎来到</value>
+  </data>
+	<data name="NeedAccount_EnterInfo" xml:space="preserve">
+    <value>请在下面的表单中输入您的姓名和电子邮件地址。 &lt; br / 〉一封电子邮件将发送给管理员请求一个新的帐户：</value>
+  </data>
+	<data name="NeedAccount_Heading1" xml:space="preserve">
+    <value>新 {0} 帐户</value>
+  </data>
+	<data name="NeedAccount_Title" xml:space="preserve">
+    <value>请求新的帐户</value>
+  </data>
+	<data name="SiteMap_AutomationHosts" xml:space="preserve">
+    <value>自动化主机</value>
+  </data>
+	<data name="SiteMap_Documents" xml:space="preserve">
+    <value>文档</value>
+  </data>
+	<data name="SiteMap_Incidents" xml:space="preserve">
+    <value>事件</value>
+  </data>
+	<data name="SiteMap_Iterations" xml:space="preserve">
+    <value>迭代次数</value>
+  </data>
+	<data name="SiteMap_MyPage" xml:space="preserve">
+    <value>我的页面</value>
+  </data>
+	<data name="SiteMap_Planning" xml:space="preserve">
+    <value>规划</value>
+  </data>
+	<data name="SiteMap_ProjectGroupHome" xml:space="preserve">
+    <value>项目组主页</value>
+  </data>
+	<data name="SiteMap_ProjectHome" xml:space="preserve">
+    <value>项目主页</value>
+  </data>
+	<data name="SiteMap_Releases" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="SiteMap_Reporting" xml:space="preserve">
+    <value>报告</value>
+  </data>
+	<data name="SiteMap_Requirements" xml:space="preserve">
+    <value>要求</value>
+  </data>
+	<data name="SiteMap_Resources" xml:space="preserve">
+    <value>资源</value>
+  </data>
+	<data name="SiteMap_SourceCode" xml:space="preserve">
+    <value>源代码</value>
+  </data>
+	<data name="SiteMap_Tasks" xml:space="preserve">
+    <value>任务</value>
+  </data>
+	<data name="SiteMap_TestCases" xml:space="preserve">
+    <value>测试用例</value>
+  </data>
+	<data name="SiteMap_Testing" xml:space="preserve">
+    <value>测试</value>
+  </data>
+	<data name="SiteMap_TestRuns" xml:space="preserve">
+    <value>测试运行</value>
+  </data>
+	<data name="SiteMap_TestSets" xml:space="preserve">
+    <value>测试集</value>
+  </data>
+	<data name="SiteMap_Tracking" xml:space="preserve">
+    <value>跟踪</value>
+  </data>
+	<data name="ErrorPage_MyPage" xml:space="preserve">
+    <value>我的页面</value>
+  </data>
+	<data name="ErrorPage_PleaseClick" xml:space="preserve">
+    <value>系统出错...请点击</value>
+  </data>
+	<data name="ErrorPage_ReturnToApp" xml:space="preserve">
+    <value>返回应用程序的链接</value>
+  </data>
+	<data name="ErrorPage_Title" xml:space="preserve">
+    <value>系统错误</value>
+  </data>
+	<data name="InvalidDatabase_Title" xml:space="preserve">
+    <value>无效的数据库版本</value>
+  </data>
+	<data name="InvalidLicense_Change" xml:space="preserve">
+    <value>变化</value>
+  </data>
+	<data name="InvalidLicense_LicenseDetails" xml:space="preserve">
+    <value>许可证的详细信息</value>
+  </data>
+	<data name="InvalidLicense_Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+	<data name="InvalidLicense_Page" xml:space="preserve">
+    <value>页。</value>
+  </data>
+	<data name="InvalidLicense_ReturnTo" xml:space="preserve">
+    <value>返回</value>
+  </data>
+	<data name="InvalidLicense_Title" xml:space="preserve">
+    <value>无效的许可证服务器上</value>
+  </data>
+	<data name="WeatherBox_AsOf" xml:space="preserve">
+    <value>作为的</value>
+  </data>
+	<data name="WeatherBox_ClosestWeatherStation" xml:space="preserve">
+    <value>最接近的气象站，为您的 location,"{0}"was: &lt;br /&gt; Station: {1} {2} 在 &lt;br/&gt; 以下 {3}</value>
+  </data>
+	<data name="WeatherBox_CurrentlyIn" xml:space="preserve">
+    <value>目前在</value>
+  </data>
+	<data name="WeatherBox_CurrentTemperature" xml:space="preserve">
+    <value>当前温度</value>
+  </data>
+	<data name="WeatherBox_FeelsLike" xml:space="preserve">
+    <value>感觉</value>
+  </data>
+	<data name="WeatherBox_Humidity" xml:space="preserve">
+    <value>湿度</value>
+  </data>
+	<data name="WeatherBox_LocationSetting" xml:space="preserve">
+    <value>位置</value>
+  </data>
+	<data name="WeatherBox_LocationSettingTooltip" xml:space="preserve">
+    <value>您所在的位置： 邮政编码，市科技州/省，或"Lat，Lon"</value>
+  </data>
+	<data name="WeatherBox_MetricSetting" xml:space="preserve">
+    <value>公制单位？</value>
+  </data>
+	<data name="WeatherBox_MetricSettingTooltip" xml:space="preserve">
+    <value>如果选中，则报告度量单位。</value>
+  </data>
+	<data name="WeatherBox_MyWeather" xml:space="preserve">
+    <value>我的天气</value>
+  </data>
+	<data name="WeatherBox_PredictedHigh" xml:space="preserve">
+    <value>高预测</value>
+  </data>
+	<data name="WeatherBox_PredictedLow" xml:space="preserve">
+    <value>预测低</value>
+  </data>
+	<data name="WeatherBox_Tomorrow" xml:space="preserve">
+    <value>明天</value>
+  </data>
+	<data name="WeatherBox_TomorrowsHigh" xml:space="preserve">
+    <value>明天的高</value>
+  </data>
+	<data name="WeatherBox_TomorrowsLow" xml:space="preserve">
+    <value>明天的低</value>
+  </data>
+	<data name="WeatherBox_Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+	<data name="WeatherBox_WeatherFor" xml:space="preserve">
+    <value>天气</value>
+  </data>
+	<data name="WeatherBox_Wind" xml:space="preserve">
+    <value>风</value>
+  </data>
+	<data name="WeatherBox_YourLocalWeatherReport" xml:space="preserve">
+    <value>您当地的天气报告</value>
+  </data>
+	<data name="Global_ViewAll" xml:space="preserve">
+    <value>查看所有</value>
+  </data>
+	<data name="Global_ViewDetails" xml:space="preserve">
+    <value>查看详细信息</value>
+  </data>
+	<data name="ProjectHome_AddItems" xml:space="preserve">
+    <value>添加项</value>
+  </data>
+	<data name="ProjectHome_IncidentAging" xml:space="preserve">
+    <value>事件的老化</value>
+  </data>
+	<data name="ProjectHome_IncidentTestCoverage" xml:space="preserve">
+    <value>事件的测试覆盖率</value>
+  </data>
+	<data name="ProjectHome_LateFinishingTasks" xml:space="preserve">
+    <value>晚完成任务</value>
+  </data>
+	<data name="ProjectHome_LateStartingTasks" xml:space="preserve">
+    <value>晚开始任务</value>
+  </data>
+	<data name="ProjectHome_ModifyLayoutSettings" xml:space="preserve">
+    <value>修改布局/设置</value>
+  </data>
+	<data name="ProjectHome_ProjectOverview" xml:space="preserve">
+    <value>项目概述</value>
+  </data>
+	<data name="ProjectHome_ReleaseTaskProgress" xml:space="preserve">
+    <value>发布任务的进度</value>
+  </data>
+	<data name="ProjectHome_RequirementsCoverage" xml:space="preserve">
+    <value>要求覆盖范围</value>
+  </data>
+	<data name="ProjectHome_RequirementsRegressionCoverage" xml:space="preserve">
+    <value>要求回归覆盖范围</value>
+  </data>
+	<data name="ProjectHome_RequirementsSummary" xml:space="preserve">
+    <value>要求摘要</value>
+  </data>
+	<data name="ProjectHome_ReturntoNormalView" xml:space="preserve">
+    <value>返回到普通视图</value>
+  </data>
+	<data name="ProjectHome_TestSetStatus" xml:space="preserve">
+    <value>测试设置的状态</value>
+  </data>
+	<data name="Global_UsePrioritySeveritySetting" xml:space="preserve">
+    <value>使用优先或严重性</value>
+  </data>
+	<data name="Global_UsePrioritySeveritySettingTooltip" xml:space="preserve">
+    <value>确定是否显示排序的列显示优先级或严重性</value>
+  </data>
+	<data name="Global_ViewReleaseDetails" xml:space="preserve">
+    <value>查看发布详细信息</value>
+  </data>
+	<data name="IncidentAging_AgingIntervalSetting" xml:space="preserve">
+    <value>老化间隔 （天）</value>
+  </data>
+	<data name="IncidentAging_AgingIntervalSettingTooltip" xml:space="preserve">
+    <value>存储 （在 # days） 中使用的时间间隔</value>
+  </data>
+	<data name="IncidentAging_AgingRangeSetting" xml:space="preserve">
+    <value>老化的范围 (天)</value>
+  </data>
+	<data name="IncidentAging_AgingRangeSettingTooltip" xml:space="preserve">
+    <value>将存储在图表中显示的最大老化</value>
+  </data>
+	<data name="IncidentSummary_DisplayingForIncidentType" xml:space="preserve">
+    <value>显示事件类型：</value>
+  </data>
+	<data name="ProjectHome_IncidentOpenCount" xml:space="preserve">
+    <value>打开事件计数</value>
+  </data>
+	<data name="ProjectHome_IncidentSummary" xml:space="preserve">
+    <value>事件摘要</value>
+  </data>
+	<data name="ProjectHome_ReleaseTestSummary" xml:space="preserve">
+    <value>释放测试摘要</value>
+  </data>
+	<data name="ProjectHome_RequirementIncidentCount" xml:space="preserve">
+    <value>要求事件计数</value>
+  </data>
+	<data name="ProjectHome_TestExecutionStatus" xml:space="preserve">
+    <value>测试执行状态</value>
+  </data>
+	<data name="ProjectHome_TopOpenIssues" xml:space="preserve">
+    <value>热门的开放问题</value>
+  </data>
+	<data name="ProjectHome_TopOpenRisks" xml:space="preserve">
+    <value>开放的顶级风险</value>
+  </data>
+	<data name="RequirementIncidentCount_OnlyIncludeOpenSetting" xml:space="preserve">
+    <value>只包括打开事件的行</value>
+  </data>
+	<data name="RequirementIncidentCount_OnlyIncludeOpenSettingTooltip" xml:space="preserve">
+    <value>我们应该显示只有那些公开的事件的所有要求</value>
+  </data>
+	<data name="TestExecutionStatus_DailyRunCount" xml:space="preserve">
+    <value>日常运行计数:</value>
+  </data>
+	<data name="TestExecutionStatus_TotalNumRuns" xml:space="preserve">
+    <value>总的 # Runs：</value>
+  </data>
+	<data name="TestSetStatus_OverdueTestSets" xml:space="preserve">
+    <value>逾期未测试集</value>
+  </data>
+	<data name="Global_NumReqs" xml:space="preserve">
+    <value># 要求</value>
+  </data>
+	<data name="Global_NumRuns" xml:space="preserve">
+    <value># 运行</value>
+  </data>
+	<data name="Global_NumTests" xml:space="preserve">
+    <value># 测试</value>
+  </data>
+	<data name="ProjectGroupHome_DisplayProjectDetailSetting" xml:space="preserve">
+    <value>显示项目的详细信息：</value>
+  </data>
+	<data name="ProjectGroupHome_DisplayProjectDetailSettingTooltip" xml:space="preserve">
+    <value>我们应显示每个项目的各个详细的记录</value>
+  </data>
+	<data name="ProjectGroupHome_DisplaySummaryGraphSetting" xml:space="preserve">
+    <value>显示摘要的图形：</value>
+  </data>
+	<data name="ProjectGroupHome_DisplaySummaryGraphSettingTooltip" xml:space="preserve">
+    <value>我们应显示项目组汇总图</value>
+  </data>
+	<data name="ProjectGroupHome_GroupOverview" xml:space="preserve">
+    <value>组概述</value>
+  </data>
+	<data name="ProjectGroupHome_IncidentAging" xml:space="preserve">
+    <value>事件的老化</value>
+  </data>
+	<data name="ProjectGroupHome_ProjectList" xml:space="preserve">
+    <value>项目列表</value>
+  </data>
+	<data name="ProjectGroupHome_RequirementsCoverage" xml:space="preserve">
+    <value>要求覆盖范围</value>
+  </data>
+	<data name="ProjectGroupHome_TaskProgress" xml:space="preserve">
+    <value>任务的进度</value>
+  </data>
+	<data name="ProjectGroupHome_TestExecutionStatus" xml:space="preserve">
+    <value>测试执行状态</value>
+  </data>
+	<data name="ProjectGroupHome_TopOpenIssues" xml:space="preserve">
+    <value>热门的开放问题</value>
+  </data>
+	<data name="ProjectGroupHome_TopOpenRisks" xml:space="preserve">
+    <value>开放的顶级风险</value>
+  </data>
+	<data name="Global_NewRequirement" xml:space="preserve">
+    <value>新规定</value>
+  </data>
+	<data name="AutomationHosts_AutomationHostsForProject" xml:space="preserve">
+    <value>此项目的自动化主机</value>
+  </data>
+	<data name="Global_Displaying" xml:space="preserve">
+    <value>显示</value>
+  </data>
+	<data name="Global_OutOf" xml:space="preserve">
+    <value>出</value>
+  </data>
+	<data name="IncidentList_IncidentsForProject" xml:space="preserve">
+    <value>该种此项目</value>
+  </data>
+	<data name="ResourceList_DisplayingResourceUsage" xml:space="preserve">
+    <value>显示当前项目或选定的版本的资源使用情况：</value>
+  </data>
+	<data name="TaskList_TasksForProject" xml:space="preserve">
+    <value>此项目的任务</value>
+  </data>
+	<data name="TestCaseList_TestCasesForRelease" xml:space="preserve">
+    <value>此版本的测试</value>
+  </data>
+	<data name="TestRunList_TestRunsForProject" xml:space="preserve">
+    <value>测试 run(s) 此项目</value>
+  </data>
+	<data name="ArtifactEmail_EmailAddresses" xml:space="preserve">
+    <value>电子邮件地址：</value>
+  </data>
+	<data name="ArtifactEmail_MessageSubject" xml:space="preserve">
+    <value>邮件主题:</value>
+  </data>
+	<data name="ArtifactEmail_ProjectUser" xml:space="preserve">
+    <value>项目的用户：</value>
+  </data>
+	<data name="CustomPropertyPanel_ArtifactCustomProperties" xml:space="preserve">
+    <value>以下是这件神器的自定义属性：</value>
+  </data>
+	<data name="CustomPropertyPanel_FieldIsRequired" xml:space="preserve">
+    <value>"{0}"是必填的字段。</value>
+  </data>
+	<data name="TestCaseSelector_AvailableTestCases" xml:space="preserve">
+    <value>可用测试用例：</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestCaseFromRequirement" xml:space="preserve">
+    <value>这项规定从创建测试用例</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestCaseFromRequirementTooltip" xml:space="preserve">
+    <value>单击此链接到此要求的测试用例树中创建新的测试案例</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestSetFromRelease" xml:space="preserve">
+    <value>从本发行版中创建测试集</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestSetFromReleaseTooltip" xml:space="preserve">
+    <value>单击此选项以创建一个新的测试，已从这一版本导入测试用例的测试集列表中设置</value>
+  </data>
+	<data name="TestCaseSelector_ReleaseLegend1" xml:space="preserve">
+    <value>测试覆盖范围框指示当前映射反对释放测试用例。</value>
+  </data>
+	<data name="TestCaseSelector_ReleaseLegend2" xml:space="preserve">
+    <value>要添加到此版本的测试用例，从上述列表中进行选择，然后单击 [添加]。</value>
+  </data>
+	<data name="TestCaseSelector_ReleaseLegend3" xml:space="preserve">
+    <value>您可以使用 [删除] 和 [全部删除] 按钮来删除测试，不再支付释放。</value>
+  </data>
+	<data name="TestCaseSelector_RequirementLegend1" xml:space="preserve">
+    <value>测试覆盖范围框指示当前映射反对该项规定的测试案例。</value>
+  </data>
+	<data name="TestCaseSelector_RequirementLegend2" xml:space="preserve">
+    <value>要添加到此要求的测试用例，从上述列表中选择，然后单击 [添加]。</value>
+  </data>
+	<data name="TestCaseSelector_RequirementLegend3" xml:space="preserve">
+    <value>您可以使用 [删除] 和 [全部删除] 按钮来删除测试，不再满足该需求。</value>
+  </data>
+	<data name="TestCaseSelector_TestCoverage" xml:space="preserve">
+    <value>测试范围：</value>
+  </data>
+	<data name="RequirementDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;回要求列表</value>
+  </data>
+	<data name="ReleaseDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;回发布列表</value>
+  </data>
+	<data name="Global_PersonDays" xml:space="preserve">
+    <value>人天数</value>
+  </data>
+	<data name="ReleaseDetails_DisplayIncidents" xml:space="preserve">
+    <value>显示的事件的列表：</value>
+  </data>
+	<data name="TestCaseDetails_AddNewParameterToTestCase" xml:space="preserve">
+    <value>此测试用例添加一个新的参数：</value>
+  </data>
+	<data name="TestCaseDetails_AutomatedSectionIntro" xml:space="preserve">
+    <value>本节定义与此测试用例关联的自动化的测试脚本：</value>
+  </data>
+	<data name="TestCaseDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;返回到测试列表</value>
+  </data>
+	<data name="TestCaseDetails_EditTestCaseParameters" xml:space="preserve">
+    <value>编辑参数测试用例</value>
+  </data>
+	<data name="TestCaseDetails_ParametersDefinedForTestCase" xml:space="preserve">
+    <value>已为此测试用例定义下列参数：</value>
+  </data>
+	<data name="TestCaseDetails_ToChangeOrder" xml:space="preserve">
+    <value>若要更改测试步骤的顺序，请单击测试步骤/链接图标并将它拖到列表中的适当位置。</value>
+  </data>
+	<data name="ReleaseSelector_AvailableReleases" xml:space="preserve">
+    <value>可用的版本：</value>
+  </data>
+	<data name="ReleaseSelector_Legend1" xml:space="preserve">
+    <value>释放覆盖范围框指示当前的新闻映射对测试用例。</value>
+  </data>
+	<data name="ReleaseSelector_Legend2" xml:space="preserve">
+    <value>要与此测试用例，关联的版本从上面的列表中进行选择，然后单击 [添加]。</value>
+  </data>
+	<data name="ReleaseSelector_Legend3" xml:space="preserve">
+    <value>您可以使用 [删除] 和 [全部删除] 按钮来删除版本都没有再覆盖测试用例。</value>
+  </data>
+	<data name="ReleaseSelector_MappedReleases" xml:space="preserve">
+    <value>映射的版本：</value>
+  </data>
+	<data name="RequirementSelector_AvailableRequirements" xml:space="preserve">
+    <value>可用的要求：</value>
+  </data>
+	<data name="RequirementSelector_CreateRequirementFromTestCase" xml:space="preserve">
+    <value>创建要求从这个测试案例</value>
+  </data>
+	<data name="RequirementSelector_CreateRequirementFromTestCaseTooltip" xml:space="preserve">
+    <value>单击此选项以创建链接到这个测试案例的要求树中的新要求</value>
+  </data>
+	<data name="RequirementSelector_Legend1" xml:space="preserve">
+    <value>要求覆盖范围框指示当前映射对测试用例的要求。</value>
+  </data>
+	<data name="RequirementSelector_Legend2" xml:space="preserve">
+    <value>要添加到此测试用例的要求，从上述列表中选择，然后单击 [添加]。</value>
+  </data>
+	<data name="RequirementSelector_Legend3" xml:space="preserve">
+    <value>您可以使用 [删除] 和 [全部删除] 按钮来删除的要求，已再没有涵盖的测试用例。</value>
+  </data>
+	<data name="RequirementSelector_RequirementsCoverage" xml:space="preserve">
+    <value>要求覆盖范围：</value>
+  </data>
+	<data name="TestStepService_Call" xml:space="preserve">
+    <value>调用</value>
+  </data>
+	<data name="TestStepService_With" xml:space="preserve">
+    <value>与</value>
+  </data>
+	<data name="AutomationHostDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;回主机列表</value>
+  </data>
+	<data name="TestRunDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;回测试运行列表</value>
+  </data>
+	<data name="TestRunDetails_TestCaseAndTestStep" xml:space="preserve">
+    <value>测试 # / 步#</value>
+  </data>
+	<data name="TestRunDetails_ViewIncidents" xml:space="preserve">
+    <value>＞ 查看事件</value>
+  </data>
+	<data name="TestSetDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;回测试集列表</value>
+  </data>
+	<data name="TestStepDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;回测试步骤列表</value>
+  </data>
+	<data name="Admin_FileTypes_List" xml:space="preserve">
+    <value>文件类型列表</value>
+  </data>
+	<data name="Admin_FileTypes_Description" xml:space="preserve">
+    <value>说明</value>
+  </data>
+	<data name="Admin_FileTypes_Extension" xml:space="preserve">
+    <value>扩展</value>
+  </data>
+	<data name="Admin_FileTypes_Icon" xml:space="preserve">
+    <value>图标</value>
+  </data>
+	<data name="Admin_FileTypes_MimeType" xml:space="preserve">
+    <value>Mime 类型</value>
+  </data>
+	<data name="Global_WorkflowOperations" xml:space="preserve">
+    <value>工作流操作</value>
+  </data>
+	<data name="IncidentDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;回事件列表</value>
+  </data>
+	<data name="Admin_FileTypes_SureDelete" xml:space="preserve">
+    <value>确实要从列表中删除此文件类型吗？</value>
+  </data>
+	<data name="IncidentDetails_YouNeedTo" xml:space="preserve">
+    <value>您需要</value>
+  </data>
+	<data name="IncidentDetails_YouNeedToEnding" xml:space="preserve">
+    <value>这次事件之前，您可以添加附件。</value>
+  </data>
+	<data name="TaskDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;返回到任务列表</value>
+  </data>
+	<data name="Admin_FileTypes_EditFileType" xml:space="preserve">
+    <value>编辑/添加文件类型</value>
+  </data>
+	<data name="Admin_FileTypes_FileDescription" xml:space="preserve">
+    <value>文件说明：</value>
+  </data>
+	<data name="Admin_FileTypes_FileExtension" xml:space="preserve">
+    <value>文件扩展名:</value>
+  </data>
+	<data name="Admin_FileTypes_FileIconImage" xml:space="preserve">
+    <value>文件图标图像：</value>
+  </data>
+	<data name="Admin_FileTypes_FileMimeType" xml:space="preserve">
+    <value>Mime 类型：</value>
+  </data>
+	<data name="Admin_FileTypes_FileTypeID" xml:space="preserve">
+    <value>文件类型 ID：</value>
+  </data>
+	<data name="ResourceDetails_ResourceDetails" xml:space="preserve">
+    <value>资源详细信息</value>
+  </data>
+	<data name="ResourceDetails_CurrentPlanningSettings" xml:space="preserve">
+    <value>当前项目规划设置</value>
+  </data>
+	<data name="ResourceDetails_DaysPerWeek" xml:space="preserve">
+    <value>天 / 周</value>
+  </data>
+	<data name="ResourceDetails_HousePerDay" xml:space="preserve">
+    <value>小时 / 天</value>
+  </data>
+	<data name="ResourceDetails_NonWorkHoursPerMonth" xml:space="preserve">
+    <value>非工作时间 / 月</value>
+  </data>
+	<data name="SourceCodeList_NoFolderSelected" xml:space="preserve">
+    <value>没有选定的文件夹</value>
+  </data>
+	<data name="SourceCodeList_OtherOperations" xml:space="preserve">
+    <value>其他操作</value>
+  </data>
+	<data name="SourceCodeList_RepositoryBrowser" xml:space="preserve">
+    <value>存储库浏览器</value>
+  </data>
+	<data name="SourceCodeList_RevisionLog" xml:space="preserve">
+    <value>查看修订日志</value>
+  </data>
+	<data name="SourceCodeList_Title" xml:space="preserve">
+    <value>源代码储存库</value>
+  </data>
+	<data name="Admin_FileTypes_Adding" xml:space="preserve">
+    <value>添加</value>
+  </data>
+	<data name="Admin_FileTypes_ErrorAction" xml:space="preserve">
+    <value>文件类型错误 {0}。</value>
+  </data>
+	<data name="Admin_FileTypes_Updating" xml:space="preserve">
+    <value>更新</value>
+  </data>
+	<data name="SourceCodeRevisions_BackToRepository" xml:space="preserve">
+    <value>回源代码储存库</value>
+  </data>
+	<data name="SourceCodeRevisions_Title" xml:space="preserve">
+    <value>源代码版本</value>
+  </data>
+	<data name="Admin_FileTypes_NavHeaderFileIcon" xml:space="preserve">
+    <value>文件类型图标</value>
+  </data>
+	<data name="SourceCodeFileDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;返回到文件列表</value>
+  </data>
+	<data name="SourceCodeFileDetails_SourceCodeFile" xml:space="preserve">
+    <value>源代码文件</value>
+  </data>
+	<data name="ReportConfiguration_BackToHome" xml:space="preserve">
+    <value>&lt;&lt;报告返回首页</value>
+  </data>
+	<data name="ReportsConfiguration_CustomPropertyFilters" xml:space="preserve">
+    <value>自定义属性筛选器</value>
+  </data>
+	<data name="ReportsConfiguration_Legend1" xml:space="preserve">
+    <value>请从指定您想如何这下面的各种选项中选择要显示的报表。</value>
+  </data>
+	<data name="ReportsConfiguration_Legend2" xml:space="preserve">
+    <value>您可以筛选各种参数显示的结果，以及选择哪显示元素的报告。</value>
+  </data>
+	<data name="ReportsConfiguration_ReportElements" xml:space="preserve">
+    <value>报告元素</value>
+  </data>
+	<data name="ReportsConfiguration_ReportFormat" xml:space="preserve">
+    <value>报告格式</value>
+  </data>
+	<data name="ReportsConfiguration_SaveReportLegend" xml:space="preserve">
+    <value>如果想要保存此报告，供将来使用，请为它指定一个名称下面单击 [创建报告] 之前按钮：</value>
+  </data>
+	<data name="ReportsConfiguration_ShareReport" xml:space="preserve">
+    <value>我想与项目中的其他成员共享此报告</value>
+  </data>
+	<data name="ReportsConfiguration_SortAscending" xml:space="preserve">
+    <value>升序排序</value>
+  </data>
+	<data name="ReportsConfiguration_SortOptions" xml:space="preserve">
+    <value>排序选项</value>
+  </data>
+	<data name="ReportsConfiguration_StandardFieldFilters" xml:space="preserve">
+    <value>标准字段筛选器</value>
+  </data>
+	<data name="Reports_NoneAvailable" xml:space="preserve">
+    <value>无可用</value>
+  </data>
+	<data name="Reports_SavedReports" xml:space="preserve">
+    <value>保存的报告</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;回修订列表</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_SourceCodeRevision" xml:space="preserve">
+    <value>源代码修订版</value>
+  </data>
+	<data name="TestCaseExecution_BackToTests" xml:space="preserve">
+    <value>&lt;&lt;回测试</value>
+  </data>
+	<data name="TestCaseExecution_ChooseRelease" xml:space="preserve">
+    <value>请选择要对执行释放：</value>
+  </data>
+	<data name="TestCaseExecution_ChooseTestStep1" xml:space="preserve">
+    <value>请从导航栏上的列表中选择测试步骤，或单击</value>
+  </data>
+	<data name="TestCaseExecution_ChooseTestStep2" xml:space="preserve">
+    <value> 回 '的测试</value>
+  </data>
+	<data name="TestCaseExecution_ChooseTestStep3" xml:space="preserve">
+    <value>要执行另一个测试用例。</value>
+  </data>
+	<data name="TestCaseExecution_CustomPropertiesPresetLegend" xml:space="preserve">
+    <value>（注： 是只读的任何自定义属性都已经从测试设置填充。）</value>
+  </data>
+	<data name="TestCaseExecution_EnterIncidentInfo" xml:space="preserve">
+    <value>请输入登录事件执行此测试步骤的以下信息：</value>
+  </data>
+	<data name="TestCaseExecution_NoStepSelected" xml:space="preserve">
+    <value>没有选定的测试步骤 ！</value>
+  </data>
+	<data name="TestCaseExecution_TestExecutionWizard" xml:space="preserve">
+    <value>测试执行向导</value>
+  </data>
+	<data name="TestCaseExecution_TestRunCustomProperties" xml:space="preserve">
+    <value>现在此测试运行中输入以下属性：</value>
+  </data>
+	<data name="TestCaseExecution_Title" xml:space="preserve">
+    <value>执行测试实例</value>
+  </data>
+	<data name="DocumentDetails_AddNewAssociation" xml:space="preserve">
+    <value>添加新的关联</value>
+  </data>
+	<data name="DocumentDetails_BackToList" xml:space="preserve">
+    <value>返回到文档列表</value>
+  </data>
+	<data name="DocumentDetails_ChooseArtifact" xml:space="preserve">
+    <value>请选择您想要添加到关联的工件：</value>
+  </data>
+	<data name="DocumentDetails_MakeThisActiveVersion" xml:space="preserve">
+    <value>使此活动版本</value>
+  </data>
+	<data name="DocumentDetails_Title" xml:space="preserve">
+    <value>文档详细信息</value>
+  </data>
+	<data name="DocumentDetails_UploadNewVersion" xml:space="preserve">
+    <value>上传新版本</value>
+  </data>
+	<data name="Documents_DocumentFolders" xml:space="preserve">
+    <value>文档文件夹</value>
+  </data>
+	<data name="Documents_TagCloud" xml:space="preserve">
+    <value>标签云</value>
+  </data>
+	<data name="Admin_HistoryChangeset" xml:space="preserve">
+    <value>项目的更改历史记录</value>
+  </data>
+	<data name="Admin_HistoryChangeDetails" xml:space="preserve">
+    <value>历史记录详细信息</value>
+  </data>
+	<data name="Reports_CreateNewReport" xml:space="preserve">
+    <value>创建报表</value>
+  </data>
+	<data name="Reports_ReportsCenter" xml:space="preserve">
+    <value>报告中心</value>
+  </data>
+	<data name="Reports_IncidentDateRangeGraphs" xml:space="preserve">
+    <value>事件的日期范围图</value>
+  </data>
+	<data name="Reports_DateRange" xml:space="preserve">
+    <value>日期范围</value>
+  </data>
+	<data name="Reports_GraphName" xml:space="preserve">
+    <value>关系图名称</value>
+  </data>
+	<data name="Global_Items" xml:space="preserve">
+    <value>项目</value>
+  </data>
+	<data name="Admin_History_CustomLabel" xml:space="preserve">
+    <value>自定义字段</value>
+  </data>
+	<data name="Admin_Histoy_StandardLabel" xml:space="preserve">
+    <value>标准字段</value>
+  </data>
+	<data name="Global_SelectedDateRange" xml:space="preserve">
+    <value>选定的日期范围</value>
+  </data>
+	<data name="Global_SelectedGraph" xml:space="preserve">
+    <value>所选的图</value>
+  </data>
+	<data name="Reports_TestingDateRangeGraphs" xml:space="preserve">
+    <value>测试日期范围图</value>
+  </data>
+	<data name="Reports_RequirementSummaryGraph" xml:space="preserve">
+    <value>要求汇总图</value>
+  </data>
+	<data name="Reports_GroupedBy" xml:space="preserve">
+    <value>分组依据：</value>
+  </data>
+	<data name="Reports_TestCaseSummaryGraph" xml:space="preserve">
+    <value>测试案例汇总图</value>
+  </data>
+	<data name="Reports_XAxis" xml:space="preserve">
+    <value>X 轴</value>
+  </data>
+	<data name="Reports_IncidentSummaryGraph" xml:space="preserve">
+    <value>事件汇总图</value>
+  </data>
+	<data name="Reports_TaskSummaryGraph" xml:space="preserve">
+    <value>摘要任务图</value>
+  </data>
+	<data name="Reports_TestRunSummaryGraph" xml:space="preserve">
+    <value>测试运行汇总图</value>
+  </data>
+	<data name="Reports_TestSetSummaryGraph" xml:space="preserve">
+    <value>测试设置摘要图</value>
+  </data>
+	<data name="Admin_History_ToChange" xml:space="preserve">
+    <value>若要更改 # {0}</value>
+  </data>
+	<data name="Reports_IncidentGraphs" xml:space="preserve">
+    <value>事件图</value>
+  </data>
+	<data name="Reports_TaskGraphs" xml:space="preserve">
+    <value>任务图</value>
+  </data>
+	<data name="Reports_RequirementGraphs" xml:space="preserve">
+    <value>要求图</value>
+  </data>
+	<data name="Reports_GraphViewer" xml:space="preserve">
+    <value>图查看器</value>
+  </data>
+	<data name="SiteMap_PlanningBoard" xml:space="preserve">
+    <value>计划委员会</value>
+  </data>
+	<data name="IterationPlan_IncludeIncidents" xml:space="preserve">
+    <value>包括事件</value>
+  </data>
+	<data name="SiteMap_MyTimecard" xml:space="preserve">
+    <value>我的考勤卡</value>
+  </data>
+	<data name="Timecard_InstructionText" xml:space="preserve">
+    <value>以下的开放工件当前分配给您。 &lt; br / 〉请输入小时工作，几个小时仍留在相应的努力下面的输入框：</value>
+  </data>
+	<data name="UserProfile_EnableRSSFeeds" xml:space="preserve">
+    <value>启用 RSS 订阅源</value>
+  </data>
+	<data name="UserProfile_RssToken" xml:space="preserve">
+    <value>RSS 标记：</value>
+  </data>
+	<data name="ResourceDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;回资源列表</value>
+  </data>
+	<data name="SourceCodeFileDetails_Title" xml:space="preserve">
+    <value>文件详细信息</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_Title" xml:space="preserve">
+    <value>修订版本的详细信息</value>
+  </data>
+	<data name="Syndication_SavedSearchesDescription" xml:space="preserve">
+    <value>此订阅源显示匹配保存搜索/筛选器的预订的用户设置的特定的工件的列表。</value>
+  </data>
+	<data name="ProjectList_MyNewsFeeds" xml:space="preserve">
+    <value>我的新闻源</value>
+  </data>
+	<data name="ProjectList_MySubscribedArtifacts" xml:space="preserve">
+    <value>我已订阅的工件</value>
+  </data>
+	<data name="ProjectList_QuickLaunch" xml:space="preserve">
+    <value>快速启动</value>
+  </data>
+	<data name="QuickLaunch_CreateIncidentIn" xml:space="preserve">
+    <value>创建事件中：</value>
+  </data>
+	<data name="NewsReader_FeedTitle" xml:space="preserve">
+    <value>饲料的标题</value>
+  </data>
+	<data name="NewsReader_FeedTitleTooltip" xml:space="preserve">
+    <value>输入显示名称的新闻来源，如你会喜欢我的页面上显示</value>
+  </data>
+	<data name="NewsReader_FeedUrl" xml:space="preserve">
+    <value>饲料的 URL</value>
+  </data>
+	<data name="NewsReader_FeedUrlTooltip" xml:space="preserve">
+    <value>输入的 URL，您想要订阅的 RSS 2.0 或 ATOM 1.0 新闻推送</value>
+  </data>
+	<data name="NewsReader_HeadlineLength" xml:space="preserve">
+    <value>标题长度</value>
+  </data>
+	<data name="NewsReader_HeadlineLengthTooltip" xml:space="preserve">
+    <value>之前被截断，标题中显示的字符数</value>
+  </data>
+	<data name="Admin_RoleDetails_ArtifactPermissions" xml:space="preserve">
+    <value>工件的权限</value>
+  </data>
+	<data name="Admin_RoleDetails_OtherPermissions" xml:space="preserve">
+    <value>其他权限</value>
+  </data>
+	<data name="Admin_RoleDetails_Text1" xml:space="preserve">
+    <value>请检查下面列出的信息，并进行任何更改，如有必要。</value>
+  </data>
+	<data name="Admin_RoleDetails_Text2" xml:space="preserve">
+    <value>一旦完成后，单击 [更新] 确认他们。</value>
+  </data>
+	<data name="Admin_RoleDetails_Text3" xml:space="preserve">
+    <value>此角色可以执行的各种工件上的以下操作：</value>
+  </data>
+	<data name="Admin_RoleDetails_Text4" xml:space="preserve">
+    <value>此角色可以执行整个系统的以下操作：</value>
+  </data>
+	<data name="Admin_RoleList_NewProjectRole" xml:space="preserve">
+    <value>项目的新角色</value>
+  </data>
+	<data name="SiteMap_EditRoleDetails" xml:space="preserve">
+    <value>编辑角色的详细信息</value>
+  </data>
+	<data name="SiteMap_ViewEditRoles" xml:space="preserve">
+    <value>查看/编辑角色</value>
+  </data>
+	<data name="SiteMap_Enterprise" xml:space="preserve">
+		<value>企业</value>
+	</data>
+	<data name="SiteMap_Dashboard" xml:space="preserve">
+		<value>仪表板</value>
+	</data>
+	<data name="SiteMap_Portal" xml:space="preserve">
+		<value>门户网站</value>
+	</data>
+	<data name="SiteMap_Support" xml:space="preserve">
+		<value>支持</value>
+	</data>
+	<data name="SiteMap_Teams" xml:space="preserve">
+		<value>团队</value>
+	</data>
+	<data name="TestSetDetails_Title" xml:space="preserve">
+    <value>测试设置的详细信息</value>
+  </data>
+	<data name="TestSetDetails_RecurrenceNone" xml:space="preserve">
+    <value>-- 一次 --</value>
+  </data>
+	<data name="GlobalNavigation_Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+	<data name="GlobalNavigation_SearchResults" xml:space="preserve">
+    <value>搜索结果</value>
+  </data>
+	<data name="GlobalNavigation_SearchResultsLegend1" xml:space="preserve">
+    <value>以下</value>
+  </data>
+	<data name="GlobalNavigation_SearchResultsLegend2" xml:space="preserve">
+    <value>结果匹配你的关键词</value>
+  </data>
+	<data name="BuildDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;回以生成列表</value>
+  </data>
+	<data name="BuildDetails_Title" xml:space="preserve">
+    <value>生成详细信息</value>
+  </data>
+	<data name="Global_With" xml:space="preserve">
+    <value>与</value>
+  </data>
+	<data name="HistoryPanel_AdminViewTooltip" xml:space="preserve">
+    <value>打开历史记录列表内哪里可以还原更改、 清除历史记录和每个变更集的更多详细信息请参阅管理部分。</value>
+  </data>
+	<data name="ProjectHome_RecentBuilds" xml:space="preserve">
+    <value>最近的生成</value>
+  </data>
+	<data name="TestCaseDetails_Repository" xml:space="preserve">
+    <value>存储库</value>
+  </data>
+	<data name="Login_RegisterForAccount" xml:space="preserve">注册账户</data><data name="ResetPassword_AnswerQuestionInstructions" xml:space="preserve">请回答下列问题来接受密码</data><data name="ResetPassword_EnterUserNameText" xml:space="preserve">请输入用户名开接受密码</data><data name="ResetPassword_ForgotPassword" xml:space="preserve">忘记密码</data><data name="ResetPassword_ForgotYourPassword" xml:space="preserve">忘记密码？</data><data name="ResetPassword_IdentityConfirmation" xml:space="preserve">ID确认</data><data name="ResetPassword_ReturnLink" xml:space="preserve">返回到登录页面</data><data name="ResetPassword_SuccessTitle" xml:space="preserve">您的密码有发送到您的邮箱</data><data name="ResetPassword_Title" xml:space="preserve">重置密码</data><data name="Register_EmailSubject" xml:space="preserve">新账户{0} 请求</data><data name="Register_Heading" xml:space="preserve">请注册新账户</data><data name="Register_InstructionText" xml:space="preserve">请用下表来注册新账户</data><data name="Register_PasswordMinLength" xml:space="preserve">密码最小长度为{0}字符</data><data name="Register_CompleteLegend" xml:space="preserve">您的新账户注册已发送到系统管理员，批准后，您会收到账户已激活的通知</data><data name="Register_CompleteTitle" xml:space="preserve">注册新账户</data><data name="UserProfile_ChangePasswordQuestionAnswer" xml:space="preserve">更改密码问题/答案</data><data name="UserProfile_TabPasswords" xml:space="preserve">密码&amp;安全</data><data name="UserList_ImportFromLDAP" xml:space="preserve">从LDAP 服务器导入用户</data><data name="UserList_Legend1" xml:space="preserve">下列用户已存在系统中，可通过点击"编辑"来编辑姓名.&lt;br&gt;选择"增加"来创建新的用户或从LDAP导入用户</data><data name="UserList_Legend2" xml:space="preserve">您可通过左侧导航上的"等待用户"来查看处于待批准的新用户注册</data><data name="UserList_Title" xml:space="preserve">查看/编辑用户</data><data name="ProjectMembership_Title" xml:space="preserve">项目组成员</data><data name="UserDetails_AddEditUser" xml:space="preserve">添加/编辑用户</data><data name="UserDetails_AddEditUser_Legend" xml:space="preserve">请查看下列信息是否需要更改。&lt;br /&gt; 完成后，选择 [更新/插入]确认此操作</data><data name="UserDetails_ChangePassword" xml:space="preserve">更改密码</data><data name="UserDetails_ChangePasswordQuestionAnswer" xml:space="preserve">更改密码问题&amp;答案</data><data name="UserDetails_LdapManagedUser" xml:space="preserve">LDAP管理的用户</data><data name="UserDetails_NewUser" xml:space="preserve">新用户</data><data name="UserDetails_TabDataMapping" xml:space="preserve">数据映射</data><data name="Global_Minutes" xml:space="preserve">分钟</data><data name="Register_PasswordMinNonAlphaChars" xml:space="preserve">密码需要最新 {0}个文字和数字的字符</data><data name="SecuritySettings_AllowUserRegistration" xml:space="preserve">允许用户注册</data><data name="SecuritySettings_AllowUserRegistrationNotes" xml:space="preserve">此项设置为"True"可允许用户自行注册</data><data name="SecuritySettings_Legend1" xml:space="preserve">在此页面，你可修改..</data><data name="SecuritySettings_Legend2" xml:space="preserve">应用安全设定</data><data name="SecuritySettings_MaxInvalidPasswordAttempts" xml:space="preserve">最大次数#错误密码</data><data name="SecuritySettings_MaxInvalidPasswordAttemptsNotes" xml:space="preserve">用户可输入错误密码的次数</data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters" xml:space="preserve">最小包含的特殊字符数</data><data name="SecuritySettings_MinRequiredNonalphanumericCharactersNotes" xml:space="preserve">密码中最小的非字母&amp;数字的个数</data><data name="SecuritySettings_MinRequiredPasswordLength" xml:space="preserve">密码最小长度</data><data name="SecuritySettings_MinRequiredPasswordLengthNotes" xml:space="preserve">密码最小长度</data><data name="SecuritySettings_PasswordAttemptWindow" xml:space="preserve">密码窗口显示时间</data><data name="SecuritySettings_PasswordAttemptWindowNotes" xml:space="preserve">用户自动解冻时间</data><data name="SecuritySettings_Title" xml:space="preserve">安全设置</data><data name="UserLdapImport_BackToUserList" xml:space="preserve">返回用户列表</data><data name="UserLdapImport_LdapConfigLink" xml:space="preserve">LDAP配置</data><data name="UserLdapImport_Legend1" xml:space="preserve">使用当前</data><data name="UserLdapImport_Legend2" xml:space="preserve">以下是可导入的新用户</data><data name="UserLdapImport_Legend3" xml:space="preserve">请选择“导入" 按钮导入选中的用户</data><data name="UserLdapImport_Title" xml:space="preserve">从LDAP 服务器导入用户</data><data name="UserRequests_Legend" xml:space="preserve">系统中存在下列新用户注册请求，选择"同意"可批准用户注册，选择"删除"可拒绝用户注册</data><data name="UserRequests_Title" xml:space="preserve">等待的请求</data><data name="UserRequests_TitleLong" xml:space="preserve">查看处于等待中的用户请求</data><data name="GeneralSettings_AttachmentFolderNotes" xml:space="preserve">此文件夹用以保存附件(如:</data><data name="GeneralSettings_AttachmentsFolder" xml:space="preserve">附件文件夹</data><data name="GeneralSettings_DefaultCulture" xml:space="preserve">默认习惯</data><data name="GeneralSettings_DefaultCultureNotes" xml:space="preserve">使用习惯来设定数字/日期格式及设定语言</data><data name="GeneralSettings_DefaultTimezone" xml:space="preserve">默认时区</data><data name="GeneralSettings_DefaultTimezoneNotes" xml:space="preserve">时区设定系统中的日期和时间</data><data name="GeneralSettings_Legend1" xml:space="preserve">此页面可修改一般设定</data><data name="GeneralSettings_Legend2" xml:space="preserve">系统设置</data><data name="GeneralSettings_RichTextArtifactNotes" xml:space="preserve">使用富文本编辑工件描述</data><data name="GeneralSettings_RichTextEditing" xml:space="preserve">富文本编辑</data><data name="GeneralSettings_RichTextTestStepNotes" xml:space="preserve">使用富文本编辑测试步骤列表</data><data name="GeneralSettings_Title" xml:space="preserve">一般设定</data><data name="GeneralSettings_WebServerUrl" xml:space="preserve">Web服务器地址</data><data name="GeneralSettings_WebServerUrlNotes" xml:space="preserve">服务器访问地址</data><data name="UserProfile_UserTimezone" xml:space="preserve">用户时区</data><data name="UserProfile_ChangeLogoTitle" xml:space="preserve">变更用户图标</data><data name="UserProfile_Department" xml:space="preserve">部门</data><data name="UserProfile_Logo" xml:space="preserve">用户图标</data><data name="EventLog_Legend" xml:space="preserve">下面事件已被记录到系统日志中:</data><data name="EventLog_Title" xml:space="preserve">事件日志</data><data name="EventLog_TitleLong" xml:space="preserve">系统日志</data><data name="GeneralSettings_EventDaysToKeep" xml:space="preserve">日志保留时间</data><data name="GeneralSettings_EventDaysToKeepNotes" xml:space="preserve">系统中错误消息的保留天数</data><data name="GeneralSettings_EventDaysToKeepUnits" xml:space="preserve">天数</data><data name="EventLog_EventDetails" xml:space="preserve">时间详细</data><data name="EventLog_Exception" xml:space="preserve">例外</data><data name="DataSynchronization_ViewErrors" xml:space="preserve">查看错误</data><data name="VersionControlProviderDetails_ViewEvents" xml:space="preserve">查看事件</data><data name="Permission_Create" xml:space="preserve">创建</data><data name="Permission_Delete" xml:space="preserve">删除</data><data name="Permission_LimitedModify" xml:space="preserve">修改拥有者</data><data name="Permission_Modify" xml:space="preserve">修改全部</data><data name="Permission_View" xml:space="preserve">查看</data><data name="RoleDetails_ActiveNotes" xml:space="preserve">显示角色是否被激活</data><data name="RoleDetails_AdminNotes" xml:space="preserve">显示角色是否具有管理员权限</data><data name="RoleDetails_LimitedView" xml:space="preserve">限制性显示</data><data name="RoleDetails_LimitedViewNotes" xml:space="preserve">显示角色是否具有限制性显示权限, 此角色可访问自己创建/被分配的元件,其它不可访问</data><data name="AutomationHostDetails_Title" xml:space="preserve">自动主机详细信息</data><data name="IncidentDetails_Title" xml:space="preserve">时间详细信息</data><data name="ReleaseDetails_Title" xml:space="preserve">发布详细信息</data><data name="RequirementDetails_Title" xml:space="preserve">需求详细信息</data><data name="ResourceDetails_Title" xml:space="preserve">资源详细信息</data><data name="TaskDetails_Title" xml:space="preserve">任务详细信息</data><data name="TestCaseDetails_Title" xml:space="preserve">测试项详细信息</data><data name="TestRunDetails_Title" xml:space="preserve">测试运行详细信息</data><data name="TestStepDetails_Title" xml:space="preserve">测试步骤详细信息</data><data name="CustomLists_Title" xml:space="preserve">编辑自定义列表</data><data name="CustomProperties_Title" xml:space="preserve">编辑自定义属性</data><data name="Administration_ChangeProject" xml:space="preserve">(更改项目)</data><data name="Admin_CustomPropertyDefinition" xml:space="preserve">定义</data><data name="Admin_CustomPropertyDefinition_AddDefinition" xml:space="preserve">添加定义</data><data name="Admin_CustomPropertyDefinition_Alias" xml:space="preserve">姓名</data><data name="Admin_CustomPropertyDefinition_CustomList" xml:space="preserve">自定义列表</data><data name="Admin_CustomPropertyDefinition_EditDefinition" xml:space="preserve">编辑定义</data><data name="Admin_CustomPropertyDefinition_Intro" xml:space="preserve">下列自定义属性是被定义到当前选中的工件类型上，请更改下拉式裂变中的类型，来查看不同工件的自定义属性，&lt;br /&gt; 你可以点击下表中相关的连接添加，编辑或删除自定义属性定义</data><data name="Admin_CustomPropertyDefinition_Type" xml:space="preserve">类型</data><data name="Admin_CustomPropertyOptions" xml:space="preserve">选项</data><data name="Admin_CustomPropertyOptions_AllowNull" xml:space="preserve">允许空</data><data name="Admin_CustomPropertyOptions_Default" xml:space="preserve">默认</data><data name="Admin_CustomPropertyOptions_MaxLength" xml:space="preserve">最大长度</data><data name="Admin_CustomPropertyOptions_MaxValue" xml:space="preserve">最大值</data><data name="Admin_CustomPropertyOptions_MinLength" xml:space="preserve">最小长度</data><data name="Admin_CustomPropertyOptions_MinValue" xml:space="preserve">最小住</data><data name="Admin_CustomPropertyOptions_Precision" xml:space="preserve">精度</data><data name="Admin_CustomPropertyOptions_RichText" xml:space="preserve">富文本</data><data name="Admin_System_CustomListValue_AddValue" xml:space="preserve">添加值</data><data name="Admin_System_CustomListValue_ConfirmDeleteValue" xml:space="preserve">您确定想删除此值吗?\n 任何被设定为此值的字段都会被重置为空或字段中的第一个选项</data><data name="Admin_System_CustomListValue_Description" xml:space="preserve">列表描述</data><data name="Admin_System_CustomListValue_ErrorNameRequired" xml:space="preserve">请问自定义列表命名</data><data name="Admin_System_CustomListValue_ErrorValueRequired" xml:space="preserve">该列表中需要显示一个字段</data><data name="Admin_System_CustomListValue_Error_CustomListNameExists" xml:space="preserve">列表中已存在该名字，请更改</data><data name="Admin_System_CustomListValue_Error_CustomListNameIsEmpty" xml:space="preserve">请为自定义列表命名</data><data name="Admin_System_CustomListValue_Error_SavingCustomList" xml:space="preserve">保存列表时出错，请尝试用其它名称</data><data name="Admin_System_CustomListValue_Error_ValueNameIsDuplicate" xml:space="preserve">您不能设置重复的值.值: '{0}'</data><data name="Admin_System_CustomListValue_Error_ValueNameIsEmpty" xml:space="preserve">您不能设置空值</data><data name="Admin_System_CustomListValue_HeaderValueId" xml:space="preserve">列表值#</data><data name="Admin_System_CustomListValue_HeaderValueName" xml:space="preserve">值</data><data name="Admin_System_CustomListValue_NoValuesDefined" xml:space="preserve">没有定义列表值</data><data name="Admin_System_CustomListValue_SortBy" xml:space="preserve">选择器显示排序</data><data name="Admin_System_CustomList_AddList" xml:space="preserve">添加列表</data><data name="Admin_System_CustomList_HeaderActions" xml:space="preserve">行动</data><data name="Admin_System_CustomList_HeaderActions_ActionEditValue" xml:space="preserve">编辑值</data><data name="Admin_System_CustomList_HeaderDisplayName" xml:space="preserve">列表名字</data><data name="Admin_System_CustomList_HeaderListId" xml:space="preserve">列表</data><data name="Admin_System_CustomList_HeaderValues" xml:space="preserve"># 值</data><data name="Admin_System_CustomList_NoListsDefined" xml:space="preserve">没有定义自定义列表</data><data name="Admin_System_CustomList_NoListsDefinedDrop" xml:space="preserve">  -- 没有定义列表  --</data><data name="Admin_System_CustomList_NoListsDefinedDrop1" xml:space="preserve">  -- 没有定义列表  --</data><data name="CustomListDetails_BackToLists" xml:space="preserve">返回自定义列表</data><data name="CustomListDetails_IntroText" xml:space="preserve">列表中已创建下列自定义值，保存更改请点击 [保存]. &lt;br/&gt; 删除已存在的自定义值，请点击 "删除".&lt;br /&gt; 添加自定义值，请点击表格底部的"添加值"</data><data name="CustomListDetails_Title" xml:space="preserve">编辑自定义列表值</data><data name="CustomListSort_Alphabetical" xml:space="preserve">字母数序</data><data name="CustomLists_IntroText" xml:space="preserve">项目中已创建如下列表，可选择"添加列表"来添加自定义列表，"删除"来删除自定义列表，也可通过"编辑"来编辑相关自定义值</data><data name="CustomLists_NewList" xml:space="preserve">新列表</data><data name="Global_No" xml:space="preserve">取消</data><data name="Global_Yes" xml:space="preserve">确定</data><data name="Global_Multiple" xml:space="preserve">多选</data><data name="Admin_EditWorkflows_Title" xml:space="preserve">编辑工作流</data><data name="Admin_WorkflowDetails_AddNewTransitionTitle" xml:space="preserve">添加新流程</data><data name="Admin_WorkflowDetails_BackToList" xml:space="preserve">返回工作流</data><data name="Admin_WorkflowDetails_Default" xml:space="preserve">(默认)</data><data name="Admin_WorkflowDetails_Delete" xml:space="preserve">(删除)</data><data name="Admin_WorkflowDetails_DestinationStep" xml:space="preserve">目标步骤</data><data name="Admin_WorkflowDetails_Intro" xml:space="preserve">以下显示项目中事件的状态步骤</data><data name="Admin_WorkflowDetails_OriginatingStep" xml:space="preserve">起始步骤</data><data name="Admin_WorkflowDetails_Title" xml:space="preserve">查看/编辑工作流步骤</data><data name="Admin_WorkflowStep_BackToStepsList" xml:space="preserve">返回工作流步骤列表</data><data name="Admin_WorkflowStep_IncidentCustomProperties" xml:space="preserve">事件自定义属性</data><data name="Admin_WorkflowStep_IncidentCustomPropertiesIntro" xml:space="preserve">以下事件的自定义属性已在工作流的步骤中被隐藏/取消/要求</data><data name="Admin_WorkflowStep_IncidentFields" xml:space="preserve">事件字段</data><data name="Admin_WorkflowStep_IncidentFieldsIntro" xml:space="preserve">以下事件已在工作流的步骤中被隐藏/取消/要求</data><data name="Admin_WorkflowStep_Title" xml:space="preserve">编辑工作流步骤详细</data><data name="Admin_Workflows_Intro" xml:space="preserve">项目中存在多个工作流,点击"添加"可添加工作流，可点击"步骤“上的链接来编辑工作流</data><data name="Admin_Workflows_NewWorkflowName" xml:space="preserve">新工作流</data><data name="Admin_WorkflowTransition_BackToSteps" xml:space="preserve">返回工作流步骤列表</data><data name="Admin_WorkflowTransition_ConditionData" xml:space="preserve">条件数据</data><data name="Admin_WorkflowTransition_Conditions" xml:space="preserve">条件</data><data name="Admin_WorkflowTransition_ConditionsIntro" xml:space="preserve">以下用户/角色可执行下列流程</data><data name="Admin_WorkflowTransition_ConditionType" xml:space="preserve">条件类型</data><data name="Admin_WorkflowTransition_DetailsSection" xml:space="preserve">工作流程详细</data><data name="Admin_WorkflowTransition_DetectorExecuteLabel" xml:space="preserve">事件发现者可执行</data><data name="Admin_WorkflowTransition_DetectorNotifyLabel" xml:space="preserve">事件发现者可被通知</data><data name="Admin_WorkflowTransition_DisplayTokens" xml:space="preserve">(显示邮件主题的特定标记)</data><data name="Admin_WorkflowTransition_EmailTokens" xml:space="preserve">邮件通知标记</data><data name="Admin_WorkflowTransition_NotificationData" xml:space="preserve">通知数据</data><data name="Admin_WorkflowTransition_Notifications" xml:space="preserve">数据</data><data name="Admin_WorkflowTransition_NotificationsIntro" xml:space="preserve">此流程被执行时，以下用户/角色将得到通知</data><data name="Admin_WorkflowTransition_NotificationType" xml:space="preserve">通知类型</data><data name="Admin_WorkflowTransition_OwnerExecuteLabel" xml:space="preserve">事件的所有者可执行</data><data name="Admin_WorkflowTransition_OwnerNotifyLabel" xml:space="preserve">通知事件的所有者</data><data name="Admin_WorkflowTransition_RolesExecuteLabel" xml:space="preserve">具有特定角色的用户可执行</data><data name="Admin_WorkflowTransition_RolesNotifyLabel" xml:space="preserve">具有特定角色的用户可被通知</data><data name="Admin_WorkflowTransition_Title" xml:space="preserve">编辑工作流流程</data><data name="AttachmentPanel_Attachments" xml:space="preserve">附件</data><data name="ArtifactLinkPanel_Associations" xml:space="preserve">连结</data><data name="HistoryPanel_Changes" xml:space="preserve">更改</data><data name="Requirements_RequirementsForProject" xml:space="preserve">项目需求</data><data name="Releases_ReleasesForProject" xml:space="preserve">项目的发布</data><data name="TestSetList_TestSetsForProject" xml:space="preserve">项目的测试集</data><data name="TestCaseExecution_ChooseReleaseAndCustomProps" xml:space="preserve">请选择发布和自定义属性执行：</data><data name="TestCaseExecution_TestCaseInfo" xml:space="preserve">测试项信息</data><data name="TestCaseExecution_TestStepInfo" xml:space="preserve">测试步骤信息</data><data name="TaskListPanel_Tasks" xml:space="preserve">任务</data><data name="ReleaseDetails_BuildsInRelease" xml:space="preserve">发布/迭代中的版本</data><data name="ReleaseDetails_Incidents" xml:space="preserve">发布/迭代中的事件</data><data name="RequirementTaskPanel_Items" xml:space="preserve">元件</data><data name="TestRunListPanel_TestRuns" xml:space="preserve">测试运行</data><data name="TestCaseDetails_Incidents" xml:space="preserve">与事件相关的测试项</data><data name="TestStepDetails_Incidents" xml:space="preserve">与事件相关的测试步骤</data><data name="TestRunDetails_NothingReported" xml:space="preserve">没有报告</data><data name="TestRunDetails_Incidents" xml:space="preserve">与事件相关的测试运行</data><data name="TestSetDetails_Incidents" xml:space="preserve">与事件相关的测试集</data><data name="BuildDetails_Incidents" xml:space="preserve">当前版本中的事件</data><data name="BuildDetails_TestRuns" xml:space="preserve">当前版本中的测试运行</data><data name="Documents_Documents" xml:space="preserve">当前文件夹中的文档</data><data name="Global_ReturnToMobile" xml:space="preserve">返回移动站点</data><data name="UserProfile_StartPage" xml:space="preserve">开始页面</data><data name="UserProfile_StartPage_MyPage" xml:space="preserve">我的页面</data><data name="UserProfile_StartPage_ProjectGroupHome" xml:space="preserve">上一次访问的项目组</data><data name="UserProfile_StartPage_ProjectHome" xml:space="preserve">上以下访问的项目</data><data name="GeneralSettings_TestAutoUnassign" xml:space="preserve">自动取消分配的测试</data><data name="GeneralSettings_TestCaseAutoUnassign_Notes" xml:space="preserve">测试通过，取消分配的所有者</data><data name="GeneralSettings_TestSetAutoUnassign_Notes" xml:space="preserve">测试集完成，取消分配的所有者</data><data name="Login_Title" xml:space="preserve">登录</data><data name="Mobile_ViewFullSite" xml:space="preserve">查看全部站点</data><data name="ReportViewer_ReportBeingGenerated" xml:space="preserve">正在生成报告..</data><data name="ReportViewer_ClickToDisplayReport" xml:space="preserve">点击此处查看报告</data><data name="ReportViewer_ClickToRegenerateReport" xml:space="preserve">点击此处重新装载报告</data><data name="ReportViewer_GenerationComplete" xml:space="preserve">您的报告已成功生成</data><data name="ReportViewer_BackToReportConfiguration" xml:space="preserve">修稿报告配置</data><data name="TestCaseExecution_Navigation" xml:space="preserve">测试运行导航</data><data name="Admin_Reports" xml:space="preserve">编辑报告</data><data name="Admin_Reports_AddNewReport" xml:space="preserve">添加新报告</data><data name="Admin_Reports_Intro" xml:space="preserve">本页显示系统中的多个报告. 其中"默认"的报告是系统的一部分，不能更改，但您可以通过下列选项添加新报告或复制报告以便更改</data><data name="Admin_ReportDetails" xml:space="preserve">报告详细</data><data name="Admin_ReportDetails_Intro" xml:space="preserve">本页显示报告的详细详细，对于用户定义的报告，您可以指定格式，定义节和提供文件头和注脚</data><data name="Admin_ReportDetails_CustomSections" xml:space="preserve">自定义节</data><data name="Admin_ReportDetails_StandardSections" xml:space="preserve">标准节</data><data name="Admin_ReportDetails_AddNewCustomSection" xml:space="preserve">添加新自定义节</data><data name="Admin_ReportDetails_AddNewStandardSection" xml:space="preserve">添加新标准节</data><data name="ReportDetails_AddEditCustomSection" xml:space="preserve">编辑/编辑自定义节</data><data name="ReportDetails_AddEditStandardSection" xml:space="preserve">添加/编辑标准</data><data name="ReportDetails_CustomQueryResults" xml:space="preserve">自定义查询结果</data><data name="ReportDetails_NewReport" xml:space="preserve">新报告</data><data name="ResourceList_AllProjectsIn" xml:space="preserve">所有项目里</data><data name="ResourceList_ResourcesInGroupOrProject" xml:space="preserve">当前项目/项目组中的资源</data><data name="Register_Title" xml:space="preserve"><value></value></data><data name="Login_RegisterForAccount" xml:space="preserve"><value>注册账户</value></data><data name="ResetPassword_AnswerQuestionInstructions" xml:space="preserve"><value>请回答下列问题来接受密码</value></data><data name="ResetPassword_EnterUserNameText" xml:space="preserve"><value>请输入用户名开接受密码</value></data><data name="ResetPassword_ForgotPassword" xml:space="preserve"><value>忘记密码</value></data><data name="ResetPassword_ForgotYourPassword" xml:space="preserve"><value>忘记密码？</value></data><data name="ResetPassword_IdentityConfirmation" xml:space="preserve"><value>ID确认</value></data><data name="ResetPassword_ReturnLink" xml:space="preserve"><value>返回到登录页面</value></data><data name="ResetPassword_SuccessTitle" xml:space="preserve"><value>您的密码有发送到您的邮箱</value></data><data name="ResetPassword_Title" xml:space="preserve"><value>重置密码</value></data><data name="Register_EmailSubject" xml:space="preserve"><value>新账户{0} 请求</value></data><data name="Register_Heading" xml:space="preserve"><value>请注册新账户</value></data><data name="Register_InstructionText" xml:space="preserve"><value>请用下表来注册新账户</value></data><data name="Register_PasswordMinLength" xml:space="preserve"><value>密码最小长度为{0}字符</value></data><data name="Register_CompleteLegend" xml:space="preserve"><value>您的新账户注册已发送到系统管理员，批准后，您会收到账户已激活的通知</value></data><data name="Register_CompleteTitle" xml:space="preserve"><value>注册新账户</value></data><data name="UserProfile_ChangePasswordQuestionAnswer" xml:space="preserve"><value>更改密码问题/答案</value></data><data name="UserProfile_TabPasswords" xml:space="preserve"><value>密码&amp;安全</value></data><data name="UserList_ImportFromLDAP" xml:space="preserve"><value>从LDAP 服务器导入用户</value></data><data name="UserList_Legend1" xml:space="preserve"><value>下列用户已存在系统中，可通过点击"编辑"来编辑姓名.&lt;br&gt;选择"增加"来创建新的用户或从LDAP导入用户</value></data><data name="UserList_Legend2" xml:space="preserve"><value>您可通过左侧导航上的"等待用户"来查看处于待批准的新用户注册</value></data><data name="UserList_Title" xml:space="preserve"><value>查看/编辑用户</value></data><data name="ProjectMembership_Title" xml:space="preserve"><value>项目组成员</value></data><data name="UserDetails_AddEditUser" xml:space="preserve"><value>添加/编辑用户</value></data><data name="UserDetails_AddEditUser_Legend" xml:space="preserve"><value>请查看下列信息是否需要更改。&lt;br /&gt; 完成后，选择 [更新/插入]确认此操作</value></data><data name="UserDetails_ChangePassword" xml:space="preserve"><value>更改密码</value></data><data name="UserDetails_ChangePasswordQuestionAnswer" xml:space="preserve"><value>更改密码问题&amp;答案</value></data><data name="UserDetails_LdapManagedUser" xml:space="preserve"><value>LDAP管理的用户</value></data><data name="UserDetails_NewUser" xml:space="preserve"><value>新用户</value></data><data name="UserDetails_TabDataMapping" xml:space="preserve"><value>数据映射</value></data><data name="Global_Minutes" xml:space="preserve"><value>分钟</value></data><data name="Register_PasswordMinNonAlphaChars" xml:space="preserve"><value>密码需要最新 {0}个文字和数字的字符</value></data><data name="SecuritySettings_AllowUserRegistration" xml:space="preserve"><value>允许用户注册</value></data><data name="SecuritySettings_AllowUserRegistrationNotes" xml:space="preserve"><value>此项设置为"True"可允许用户自行注册</value></data><data name="SecuritySettings_Legend1" xml:space="preserve"><value>在此页面，你可修改..</value></data><data name="SecuritySettings_Legend2" xml:space="preserve"><value>应用安全设定</value></data><data name="SecuritySettings_MaxInvalidPasswordAttempts" xml:space="preserve"><value>最大次数#错误密码</value></data><data name="SecuritySettings_MaxInvalidPasswordAttemptsNotes" xml:space="preserve"><value>用户可输入错误密码的次数</value></data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters" xml:space="preserve"><value>最小包含的特殊字符数</value></data><data name="SecuritySettings_MinRequiredNonalphanumericCharactersNotes" xml:space="preserve"><value>密码中最小的非字母&amp;数字的个数</value></data><data name="SecuritySettings_MinRequiredPasswordLength" xml:space="preserve"><value>密码最小长度</value></data><data name="SecuritySettings_MinRequiredPasswordLengthNotes" xml:space="preserve"><value>密码最小长度</value></data><data name="SecuritySettings_PasswordAttemptWindow" xml:space="preserve"><value>密码窗口显示时间</value></data><data name="SecuritySettings_PasswordAttemptWindowNotes" xml:space="preserve"><value>用户自动解冻时间</value></data><data name="SecuritySettings_Title" xml:space="preserve"><value>安全设置</value></data><data name="UserLdapImport_BackToUserList" xml:space="preserve"><value>返回用户列表</value></data><data name="UserLdapImport_LdapConfigLink" xml:space="preserve"><value>LDAP配置</value></data><data name="UserLdapImport_Legend1" xml:space="preserve"><value>使用当前</value></data><data name="UserLdapImport_Legend2" xml:space="preserve"><value>以下是可导入的新用户</value></data><data name="UserLdapImport_Legend3" xml:space="preserve"><value>请选择“导入" 按钮导入选中的用户</value></data><data name="UserLdapImport_Title" xml:space="preserve"><value>从LDAP 服务器导入用户</value></data><data name="UserRequests_Legend" xml:space="preserve"><value>系统中存在下列新用户注册请求，选择"同意"可批准用户注册，选择"删除"可拒绝用户注册</value></data><data name="UserRequests_Title" xml:space="preserve"><value>等待的请求</value></data><data name="UserRequests_TitleLong" xml:space="preserve"><value>查看处于等待中的用户请求</value></data><data name="GeneralSettings_AttachmentFolderNotes" xml:space="preserve"><value>此文件夹用以保存附件(如:</value></data><data name="GeneralSettings_AttachmentsFolder" xml:space="preserve"><value>附件文件夹</value></data><data name="GeneralSettings_DefaultCulture" xml:space="preserve"><value>默认习惯</value></data><data name="GeneralSettings_DefaultCultureNotes" xml:space="preserve"><value>使用习惯来设定数字/日期格式及设定语言</value></data><data name="GeneralSettings_DefaultTimezone" xml:space="preserve"><value>默认时区</value></data><data name="GeneralSettings_DefaultTimezoneNotes" xml:space="preserve"><value>时区设定系统中的日期和时间</value></data><data name="GeneralSettings_Legend1" xml:space="preserve"><value>此页面可修改一般设定</value></data><data name="GeneralSettings_Legend2" xml:space="preserve"><value>系统设置</value></data><data name="GeneralSettings_RichTextArtifactNotes" xml:space="preserve"><value>使用富文本编辑工件描述</value></data><data name="GeneralSettings_RichTextEditing" xml:space="preserve"><value>富文本编辑</value></data><data name="GeneralSettings_RichTextTestStepNotes" xml:space="preserve"><value>使用富文本编辑测试步骤列表</value></data><data name="GeneralSettings_Title" xml:space="preserve"><value>一般设定</value></data><data name="GeneralSettings_WebServerUrl" xml:space="preserve"><value>Web服务器地址</value></data><data name="GeneralSettings_WebServerUrlNotes" xml:space="preserve"><value>服务器访问地址</value></data><data name="UserProfile_UserTimezone" xml:space="preserve"><value>用户时区</value></data><data name="UserProfile_ChangeLogoTitle" xml:space="preserve"><value>变更用户图标</value></data><data name="UserProfile_Department" xml:space="preserve"><value>部门</value></data><data name="UserProfile_Logo" xml:space="preserve"><value>用户图标</value></data><data name="EventLog_Legend" xml:space="preserve"><value>下面事件已被记录到系统日志中:</value></data><data name="EventLog_Title" xml:space="preserve"><value>事件日志</value></data><data name="EventLog_TitleLong" xml:space="preserve"><value>系统日志</value></data><data name="GeneralSettings_EventDaysToKeep" xml:space="preserve"><value>日志保留时间</value></data><data name="GeneralSettings_EventDaysToKeepNotes" xml:space="preserve"><value>系统中错误消息的保留天数</value></data><data name="GeneralSettings_EventDaysToKeepUnits" xml:space="preserve"><value>天数</value></data><data name="EventLog_EventDetails" xml:space="preserve"><value>时间详细</value></data><data name="EventLog_Exception" xml:space="preserve"><value>例外</value></data><data name="DataSynchronization_ViewErrors" xml:space="preserve"><value>查看错误</value></data><data name="VersionControlProviderDetails_ViewEvents" xml:space="preserve"><value>查看事件</value></data><data name="Permission_Create" xml:space="preserve"><value>创建</value></data><data name="Permission_Delete" xml:space="preserve"><value>删除</value></data><data name="Permission_LimitedModify" xml:space="preserve"><value>修改拥有者</value></data><data name="Permission_Modify" xml:space="preserve"><value>修改全部</value></data><data name="Permission_View" xml:space="preserve"><value>查看</value></data><data name="RoleDetails_ActiveNotes" xml:space="preserve"><value>显示角色是否被激活</value></data><data name="RoleDetails_AdminNotes" xml:space="preserve"><value>显示角色是否具有管理员权限</value></data><data name="RoleDetails_LimitedView" xml:space="preserve"><value>限制性显示</value></data><data name="RoleDetails_LimitedViewNotes" xml:space="preserve"><value>显示角色是否具有限制性显示权限, 此角色可访问自己创建/被分配的元件,其它不可访问</value></data><data name="AutomationHostDetails_Title" xml:space="preserve"><value>自动主机详细信息</value></data><data name="IncidentDetails_Title" xml:space="preserve"><value>时间详细信息</value></data><data name="ReleaseDetails_Title" xml:space="preserve"><value>发布详细信息</value></data><data name="RequirementDetails_Title" xml:space="preserve"><value>需求详细信息</value></data><data name="ResourceDetails_Title" xml:space="preserve"><value>资源详细信息</value></data><data name="TaskDetails_Title" xml:space="preserve"><value>任务详细信息</value></data><data name="TestCaseDetails_Title" xml:space="preserve"><value>测试项详细信息</value></data><data name="TestRunDetails_Title" xml:space="preserve"><value>测试运行详细信息</value></data><data name="TestStepDetails_Title" xml:space="preserve"><value>测试步骤详细信息</value></data><data name="CustomLists_Title" xml:space="preserve"><value>编辑自定义列表</value></data><data name="CustomProperties_Title" xml:space="preserve"><value>编辑自定义属性</value></data><data name="Administration_ChangeProject" xml:space="preserve"><value>(更改项目)</value></data><data name="Admin_CustomPropertyDefinition" xml:space="preserve"><value>定义</value></data><data name="Admin_CustomPropertyDefinition_AddDefinition" xml:space="preserve"><value>添加定义</value></data><data name="Admin_CustomPropertyDefinition_Alias" xml:space="preserve"><value>姓名</value></data><data name="Admin_CustomPropertyDefinition_CustomList" xml:space="preserve"><value>自定义列表</value></data><data name="Admin_CustomPropertyDefinition_EditDefinition" xml:space="preserve"><value>编辑定义</value></data><data name="Admin_CustomPropertyDefinition_Intro" xml:space="preserve"><value>下列自定义属性是被定义到当前选中的工件类型上，请更改下拉式裂变中的类型，来查看不同工件的自定义属性，&lt;br /&gt; 你可以点击下表中相关的连接添加，编辑或删除自定义属性定义</value></data><data name="Admin_CustomPropertyDefinition_Type" xml:space="preserve"><value>类型</value></data><data name="Admin_CustomPropertyOptions" xml:space="preserve"><value>选项</value></data><data name="Admin_CustomPropertyOptions_AllowNull" xml:space="preserve"><value>允许空</value></data><data name="Admin_CustomPropertyOptions_Default" xml:space="preserve"><value>默认</value></data><data name="Admin_CustomPropertyOptions_MaxLength" xml:space="preserve"><value>最大长度</value></data><data name="Admin_CustomPropertyOptions_MaxValue" xml:space="preserve"><value>最大值</value></data><data name="Admin_CustomPropertyOptions_MinLength" xml:space="preserve"><value>最小长度</value></data><data name="Admin_CustomPropertyOptions_MinValue" xml:space="preserve"><value>最小住</value></data><data name="Admin_CustomPropertyOptions_Precision" xml:space="preserve"><value>精度</value></data><data name="Admin_CustomPropertyOptions_RichText" xml:space="preserve"><value>富文本</value></data><data name="Admin_System_CustomListValue_AddValue" xml:space="preserve"><value>添加值</value></data><data name="Admin_System_CustomListValue_ConfirmDeleteValue" xml:space="preserve"><value>您确定想删除此值吗?\n 任何被设定为此值的字段都会被重置为空或字段中的第一个选项</value></data><data name="Admin_System_CustomListValue_Description" xml:space="preserve"><value>列表描述</value></data><data name="Admin_System_CustomListValue_ErrorNameRequired" xml:space="preserve"><value>请问自定义列表命名</value></data><data name="Admin_System_CustomListValue_ErrorValueRequired" xml:space="preserve"><value>该列表中需要显示一个字段</value></data><data name="Admin_System_CustomListValue_Error_CustomListNameExists" xml:space="preserve"><value>列表中已存在该名字，请更改</value></data><data name="Admin_System_CustomListValue_Error_CustomListNameIsEmpty" xml:space="preserve"><value>请为自定义列表命名</value></data><data name="Admin_System_CustomListValue_Error_SavingCustomList" xml:space="preserve"><value>保存列表时出错，请尝试用其它名称</value></data><data name="Admin_System_CustomListValue_Error_ValueNameIsDuplicate" xml:space="preserve"><value>您不能设置重复的值.值: '{0}'</value></data><data name="Admin_System_CustomListValue_Error_ValueNameIsEmpty" xml:space="preserve"><value>您不能设置空值</value></data><data name="Admin_System_CustomListValue_HeaderValueId" xml:space="preserve"><value>列表值#</value></data><data name="Admin_System_CustomListValue_HeaderValueName" xml:space="preserve"><value>值</value></data><data name="Admin_System_CustomListValue_NoValuesDefined" xml:space="preserve"><value>没有定义列表值</value></data><data name="Admin_System_CustomListValue_SortBy" xml:space="preserve"><value>选择器显示排序</value></data><data name="Admin_System_CustomList_AddList" xml:space="preserve"><value>添加列表</value></data><data name="Admin_System_CustomList_HeaderActions" xml:space="preserve"><value>行动</value></data><data name="Admin_System_CustomList_HeaderActions_ActionEditValue" xml:space="preserve"><value>编辑值</value></data><data name="Admin_System_CustomList_HeaderDisplayName" xml:space="preserve"><value>列表名字</value></data><data name="Admin_System_CustomList_HeaderListId" xml:space="preserve"><value>列表</value></data><data name="Admin_System_CustomList_HeaderValues" xml:space="preserve"><value># 值</value></data><data name="Admin_System_CustomList_NoListsDefined" xml:space="preserve"><value>没有定义自定义列表</value></data><data name="Admin_System_CustomList_NoListsDefinedDrop" xml:space="preserve"><value>  -- 没有定义列表  --</value></data><data name="Admin_System_CustomList_NoListsDefinedDrop1" xml:space="preserve"><value>  -- 没有定义列表  --</value></data><data name="CustomListDetails_BackToLists" xml:space="preserve"><value>返回自定义列表</value></data><data name="CustomListDetails_IntroText" xml:space="preserve"><value>列表中已创建下列自定义值，保存更改请点击 [保存]. &lt;br/&gt; 删除已存在的自定义值，请点击 "删除".&lt;br /&gt; 添加自定义值，请点击表格底部的"添加值"</value></data><data name="CustomListDetails_Title" xml:space="preserve"><value>编辑自定义列表值</value></data><data name="CustomListSort_Alphabetical" xml:space="preserve"><value>字母数序</value></data><data name="CustomLists_IntroText" xml:space="preserve"><value>项目中已创建如下列表，可选择"添加列表"来添加自定义列表，"删除"来删除自定义列表，也可通过"编辑"来编辑相关自定义值</value></data><data name="CustomLists_NewList" xml:space="preserve"><value>新列表</value></data><data name="Global_No" xml:space="preserve"><value>取消</value></data><data name="Global_Yes" xml:space="preserve"><value>确定</value></data><data name="Global_Multiple" xml:space="preserve"><value>多选</value></data><data name="Admin_EditWorkflows_Title" xml:space="preserve"><value>编辑工作流</value></data><data name="Admin_WorkflowDetails_AddNewTransitionTitle" xml:space="preserve"><value>添加新流程</value></data><data name="Admin_WorkflowDetails_BackToList" xml:space="preserve"><value>返回工作流</value></data><data name="Admin_WorkflowDetails_Default" xml:space="preserve"><value>(默认)</value></data><data name="Admin_WorkflowDetails_Delete" xml:space="preserve"><value>(删除)</value></data><data name="Admin_WorkflowDetails_DestinationStep" xml:space="preserve"><value>目标步骤</value></data><data name="Admin_WorkflowDetails_Intro" xml:space="preserve"><value>以下显示项目中事件的状态步骤</value></data><data name="Admin_WorkflowDetails_OriginatingStep" xml:space="preserve"><value>起始步骤</value></data><data name="Admin_WorkflowDetails_Title" xml:space="preserve"><value>查看/编辑工作流步骤</value></data><data name="Admin_WorkflowStep_BackToStepsList" xml:space="preserve"><value>返回工作流步骤列表</value></data><data name="Admin_WorkflowStep_IncidentCustomProperties" xml:space="preserve"><value>事件自定义属性</value></data><data name="Admin_WorkflowStep_IncidentCustomPropertiesIntro" xml:space="preserve"><value>以下事件的自定义属性已在工作流的步骤中被隐藏/取消/要求</value></data><data name="Admin_WorkflowStep_IncidentFields" xml:space="preserve"><value>事件字段</value></data><data name="Admin_WorkflowStep_IncidentFieldsIntro" xml:space="preserve"><value>以下事件已在工作流的步骤中被隐藏/取消/要求</value></data><data name="Admin_WorkflowStep_Title" xml:space="preserve"><value>编辑工作流步骤详细</value></data><data name="Admin_Workflows_Intro" xml:space="preserve"><value>项目中存在多个工作流,点击"添加"可添加工作流，可点击"步骤“上的链接来编辑工作流</value></data><data name="Admin_Workflows_NewWorkflowName" xml:space="preserve"><value>新工作流</value></data><data name="Admin_WorkflowTransition_BackToSteps" xml:space="preserve"><value>返回工作流步骤列表</value></data><data name="Admin_WorkflowTransition_ConditionData" xml:space="preserve"><value>条件数据</value></data><data name="Admin_WorkflowTransition_Conditions" xml:space="preserve"><value>条件</value></data><data name="Admin_WorkflowTransition_ConditionsIntro" xml:space="preserve"><value>以下用户/角色可执行下列流程</value></data><data name="Admin_WorkflowTransition_ConditionType" xml:space="preserve"><value>条件类型</value></data><data name="Admin_WorkflowTransition_DetailsSection" xml:space="preserve"><value>工作流程详细</value></data><data name="Admin_WorkflowTransition_DetectorExecuteLabel" xml:space="preserve"><value>事件发现者可执行</value></data><data name="Admin_WorkflowTransition_DetectorNotifyLabel" xml:space="preserve"><value>事件发现者可被通知</value></data><data name="Admin_WorkflowTransition_DisplayTokens" xml:space="preserve"><value>(显示邮件主题的特定标记)</value></data><data name="Admin_WorkflowTransition_EmailTokens" xml:space="preserve"><value>邮件通知标记</value></data><data name="Admin_WorkflowTransition_NotificationData" xml:space="preserve"><value>通知数据</value></data><data name="Admin_WorkflowTransition_Notifications" xml:space="preserve"><value>数据</value></data><data name="Admin_WorkflowTransition_NotificationsIntro" xml:space="preserve"><value>此流程被执行时，以下用户/角色将得到通知</value></data><data name="Admin_WorkflowTransition_NotificationType" xml:space="preserve"><value>通知类型</value></data><data name="Admin_WorkflowTransition_OwnerExecuteLabel" xml:space="preserve"><value>事件的所有者可执行</value></data><data name="Admin_WorkflowTransition_OwnerNotifyLabel" xml:space="preserve"><value>通知事件的所有者</value></data><data name="Admin_WorkflowTransition_RolesExecuteLabel" xml:space="preserve"><value>具有特定角色的用户可执行</value></data><data name="Admin_WorkflowTransition_RolesNotifyLabel" xml:space="preserve"><value>具有特定角色的用户可被通知</value></data><data name="Admin_WorkflowTransition_Title" xml:space="preserve"><value>编辑工作流流程</value></data><data name="AttachmentPanel_Attachments" xml:space="preserve"><value>附件</value></data><data name="ArtifactLinkPanel_Associations" xml:space="preserve"><value>连结</value></data><data name="HistoryPanel_Changes" xml:space="preserve"><value>更改</value></data><data name="Requirements_RequirementsForProject" xml:space="preserve"><value>项目需求</value></data><data name="Releases_ReleasesForProject" xml:space="preserve"><value>项目的发布</value></data><data name="TestSetList_TestSetsForProject" xml:space="preserve"><value>项目的测试集</value></data><data name="TestCaseExecution_ChooseReleaseAndCustomProps" xml:space="preserve"><value>请选择发布和自定义属性执行：</value></data><data name="TestCaseExecution_TestCaseInfo" xml:space="preserve"><value>测试项信息</value></data><data name="TestCaseExecution_TestStepInfo" xml:space="preserve"><value>测试步骤信息</value></data><data name="TaskListPanel_Tasks" xml:space="preserve"><value>任务</value></data><data name="ReleaseDetails_BuildsInRelease" xml:space="preserve"><value>发布/迭代中的版本</value></data><data name="ReleaseDetails_Incidents" xml:space="preserve"><value>发布/迭代中的事件</value></data><data name="RequirementTaskPanel_Items" xml:space="preserve"><value>元件</value></data><data name="TestRunListPanel_TestRuns" xml:space="preserve"><value>测试运行</value></data><data name="TestCaseDetails_Incidents" xml:space="preserve"><value>与事件相关的测试项</value></data><data name="TestStepDetails_Incidents" xml:space="preserve"><value>与事件相关的测试步骤</value></data><data name="TestRunDetails_NothingReported" xml:space="preserve"><value>没有报告</value></data><data name="TestRunDetails_Incidents" xml:space="preserve"><value>与事件相关的测试运行</value></data><data name="TestSetDetails_Incidents" xml:space="preserve"><value>与事件相关的测试集</value></data><data name="BuildDetails_Incidents" xml:space="preserve"><value>当前版本中的事件</value></data><data name="BuildDetails_TestRuns" xml:space="preserve"><value>当前版本中的测试运行</value></data><data name="Documents_Documents" xml:space="preserve"><value>当前文件夹中的文档</value></data><data name="Global_ReturnToMobile" xml:space="preserve"><value>返回移动站点</value></data><data name="UserProfile_StartPage" xml:space="preserve"><value>开始页面</value></data><data name="UserProfile_StartPage_MyPage" xml:space="preserve"><value>我的页面</value></data><data name="UserProfile_StartPage_ProjectGroupHome" xml:space="preserve"><value>上一次访问的项目组</value></data><data name="UserProfile_StartPage_ProjectHome" xml:space="preserve"><value>上以下访问的项目</value></data><data name="GeneralSettings_TestAutoUnassign" xml:space="preserve"><value>自动取消分配的测试</value></data><data name="GeneralSettings_TestCaseAutoUnassign_Notes" xml:space="preserve"><value>测试通过，取消分配的所有者</value></data><data name="GeneralSettings_TestSetAutoUnassign_Notes" xml:space="preserve"><value>测试集完成，取消分配的所有者</value></data><data name="Login_Title" xml:space="preserve"><value>登录</value></data><data name="Mobile_ViewFullSite" xml:space="preserve"><value>查看全部站点</value></data><data name="ReportViewer_ReportBeingGenerated" xml:space="preserve"><value>正在生成报告..</value></data><data name="ReportViewer_ClickToDisplayReport" xml:space="preserve"><value>点击此处查看报告</value></data><data name="ReportViewer_ClickToRegenerateReport" xml:space="preserve"><value>点击此处重新装载报告</value></data><data name="ReportViewer_GenerationComplete" xml:space="preserve"><value>您的报告已成功生成</value></data><data name="ReportViewer_BackToReportConfiguration" xml:space="preserve"><value>修稿报告配置</value></data><data name="TestCaseExecution_Navigation" xml:space="preserve"><value>测试运行导航</value></data><data name="Admin_Reports" xml:space="preserve"><value>编辑报告</value></data><data name="Admin_Reports_AddNewReport" xml:space="preserve"><value>添加新报告</value></data><data name="Admin_Reports_Intro" xml:space="preserve"><value>本页显示系统中的多个报告. 其中"默认"的报告是系统的一部分，不能更改，但您可以通过下列选项添加新报告或复制报告以便更改</value></data><data name="Admin_ReportDetails" xml:space="preserve"><value>报告详细</value></data><data name="Admin_ReportDetails_Intro" xml:space="preserve"><value>本页显示报告的详细详细，对于用户定义的报告，您可以指定格式，定义节和提供文件头和注脚</value></data><data name="Admin_ReportDetails_CustomSections" xml:space="preserve"><value>自定义节</value></data><data name="Admin_ReportDetails_StandardSections" xml:space="preserve"><value>标准节</value></data><data name="Admin_ReportDetails_AddNewCustomSection" xml:space="preserve"><value>添加新自定义节</value></data><data name="Admin_ReportDetails_AddNewStandardSection" xml:space="preserve"><value>添加新标准节</value></data><data name="ReportDetails_AddEditCustomSection" xml:space="preserve"><value>编辑/编辑自定义节</value></data><data name="ReportDetails_AddEditStandardSection" xml:space="preserve"><value>添加/编辑标准</value></data><data name="ReportDetails_CustomQueryResults" xml:space="preserve"><value>自定义查询结果</value></data><data name="ReportDetails_NewReport" xml:space="preserve"><value>新报告</value></data><data name="ResourceList_AllProjectsIn" xml:space="preserve"><value>所有项目里</value></data><data name="ResourceList_ResourcesInGroupOrProject" xml:space="preserve"><value>当前项目/项目组中的资源</value></data></root>

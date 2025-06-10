@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Client Area - Sectigo</title>
+
+    <!-- Styling -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:400,700" rel="stylesheet">
+<link href="/templates/six-child2/css/all.min.css?v=11bc43" rel="stylesheet">
+<link href="/assets/css/fontawesome-all.min.css" rel="stylesheet">
+<link href="/templates/six-child2/css/custom.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    var csrfToken = 'e9f0e0a861c7e1c0b56b377602885079ed9a8f5d',
+        markdownGuide = 'Markdown Guide',
+        locale = 'en',
+        saved = 'saved',
+        saving = 'autosaving',
+        whmcsBaseUrl = "",
+        requiredText = 'Required',
+        recaptchaSiteKey = "";
+</script>
+<script src="/templates/six/js/scripts.min.js?v=11bc43"></script>
+
+
+    <script>dataLayer = [];
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5RNMLZ9');
+</script>
+<!-- Start VWO Async SmartCode --><link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" /><script type='text/javascript' id='vwoCode'>window._vwo_code=window._vwo_code || (function() {var account_id=607415,version = 1.5,settings_tolerance=2000,library_tolerance=2500,use_existing_jquery=false,is_spa=1,hide_element='body',hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',/* DO NOT EDIT BELOW THIS LINE */f=false,w=window,d=document,vwoCodeEl=d.querySelector('#vwoCode'),code={use_existing_jquery:function(){return use_existing_jquery},library_tolerance:function(){return library_tolerance},hide_element_style:function(){return'{'+hide_element_style+'}'},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=d.createElement('script');t.fetchPriority='high';t.src=e;t.type='text/javascript';t.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(t)},getVersion:function(){return version},getMatchedCookies:function(e){var t=[];if(document.cookie){t=document.cookie.match(e)||[]}return t},getCombinationCookie:function(){var e=code.getMatchedCookies(/(?:^|;)\s?(_vis_opt_exp_\d+_combi=[^;$]*)/gi);e=e.map(function(e){try{var t=decodeURIComponent(e);if(!/_vis_opt_exp_\d+_combi=(?:\d+,?)+\s*$/.test(t)){return''}return t}catch(e){return''}});var i=[];e.forEach(function(e){var t=e.match(/([\d,]+)/g);t&&i.push(t.join('-'))});return i.join('|')},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;w.settings_timer=setTimeout(function(){_vwo_code.finish()},settings_tolerance);var e=d.currentScript,t=d.createElement('style'),i=e&&!e.async?hide_element?hide_element+'{'+hide_element_style+'}':'':code.lA=1,n=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');vwoCodeEl&&t.setAttribute('nonce',vwoCodeEl.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=i;else t.appendChild(d.createTextNode(i));n.appendChild(t);var o=this.getCombinationCookie();this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+ +is_spa+'&vn='+version+(o?'&c='+o:''));return settings_timer}};w._vwo_settings_timer = code.init();return code;}());</script><!-- End VWO Async SmartCode -->
+<script>var cookieDomain = ".sectigo.com";
+function setGclidCookie(name, value, days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    var expires = "; expires=" + date.toUTCString();
+    if (navigator.cookieEnabled) {
+      document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/; domain=" + cookieDomain;
+    }
+}
+function setCampaignSessionCookie(name, data) {
+    var jsonData = JSON.stringify(data);
+    if (navigator.cookieEnabled) {
+        document.cookie = name + "=" + encodeURIComponent(jsonData) + "; path=/; domain=" + cookieDomain;
+    }
+}
+function getCampaignParam(param) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(param);
+}
+function getCampaignDetails() {
+    const utmParams = ['utm_id', 'utm_campaign', 'utm_source', 'utm_medium', 'utm_term', 'utm_content'];
+    const campaignDetails = {};
+    utmParams.forEach(param => {
+        const value = getCampaignParam(param);
+        if (value) {
+            const newKey = param.startsWith('utm_') ? param.slice(4) : param;
+            campaignDetails[newKey] = value;
+        }
+    });
+    return campaignDetails;
+}
+var gclid = getCampaignParam('gclid');
+if (gclid) {
+    var gclsrc = getCampaignParam('gclsrc');
+    if (!gclsrc || gclsrc.indexOf('aw') !== -1) {
+        setGclidCookie('gclid', gclid, 90);
+    }
+}
+var campaignDetails = getCampaignDetails();
+if (Object.values(campaignDetails).some(value => value)) {
+    setCampaignSessionCookie('campaign_details', campaignDetails)
+}</script>
+
+
+</head>
+
+<body data-phone-cc-input="1">
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5RNMLZ9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+    <section id="header">
+        <div class="container">
+            <ul class="top-nav">
+                                    <li>
+                        <a href="#" class="choose-language" data-toggle="popover" id="languageChooser">
+                            English
+                            <b class="caret"></b>
+                        </a>
+                        <div id="languageChooserContent" class="hidden">
+                            <ul>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=arabic">العربية</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=azerbaijani">Azerbaijani</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=catalan">Català</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=chinese">中文</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=croatian">Hrvatski</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=czech">Čeština</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=danish">Dansk</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=dutch">Nederlands</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=english">English</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=estonian">Estonian</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=farsi">Persian</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=french">Français</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=german">Deutsch</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=hebrew">עברית</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=hungarian">Magyar</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=italian">Italiano</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=macedonian">Macedonian</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=norwegian">Norwegian</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=portuguese-br">Português</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=portuguese-pt">Português</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=romanian">Română</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=russian">Русский</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=spanish">Español</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=swedish">Svenska</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=turkish">Türkçe</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/clientarea.php?action=productdetails&amp;id=37109&amp;modop=custom&amp;a=collectCert&amp;language=ukranian">Українська</a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </li>
+                                                    <li>
+                        <a href="#" data-toggle="popover" id="accountNotifications" data-placement="bottom">
+                            Notifications
+                                                        <b class="caret"></b>
+                        </a>
+                        <div id="accountNotificationsContent" class="hidden">
+                            <ul class="client-alerts">
+                                                                    <li class="none">
+                                        You have no notifications at this time.
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </li>
+                    <li class="primary-action">
+                        <a href="/logout.php" class="btn">
+                            Logout
+                        </a>
+                    </li>
+                                            </ul>
+
+                            <a href="https://sectigo.com" class="logo"><img src="/assets/img/logo.png" alt="Sectigo"></a>
+            
+        </div>
+    </section>
+
+    <section id="main-menu">
+                                            
+        <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
+            <div class="container">
+                <span class="top--navigation__right-id mobile">
+                    Client ID: SEC-200010911
+                </span>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="primary-nav">
+
+                    <ul class="nav navbar-nav">
+                            <li menuItemName="My Products" class="" id="Primary_Navbar-My_Products">
+        <a href="/clientarea.php?action=services">
+                        My Products &amp; Services
+                                </a>
+            </li>
+    <li menuItemName="Billing" class="" id="Primary_Navbar-Billing">
+        <a href="/clientarea.php?action=invoices">
+                        Billing
+                                </a>
+            </li>
+                    </ul>
+
+                    <div class="top--navigation__right">
+                        <span class="top--navigation__right-id">
+                            Client ID: SEC-200010911
+                        </span>
+                        <ul class="nav navbar-nav top--navigation__right-nav">
+                                <li menuItemName="Account" class="dropdown account" id="Secondary_Navbar-Account">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        My Account
+                        &nbsp;<b class="caret"></b>        </a>
+                    <ul class="dropdown-menu">
+                            <li menuItemName="Edit Account Details" id="Secondary_Navbar-Account-Edit_Account_Details">
+                    <a href="/clientarea.php?action=details">
+                                                Account Details
+                                            </a>
+                </li>
+                            <li menuItemName="User Management" id="Secondary_Navbar-Account-User_Management">
+                    <a href="/index.php?rp=/account/users">
+                                                User Management
+                                            </a>
+                </li>
+                            <li menuItemName="Payment Methods" id="Secondary_Navbar-Account-Payment_Methods">
+                    <a href="/index.php?rp=/account/paymentmethods">
+                                                Payment Methods
+                                            </a>
+                </li>
+                            <li menuItemName="Contacts" id="Secondary_Navbar-Account-Contacts">
+                    <a href="/index.php?rp=/account/contacts">
+                                                Contacts
+                                            </a>
+                </li>
+                            <li menuItemName="Email History" id="Secondary_Navbar-Account-Email_History">
+                    <a href="/clientarea.php?action=emails">
+                                                Email History
+                                            </a>
+                </li>
+                            <li menuItemName="Switch Divider" class="nav-divider" id="Secondary_Navbar-Account-Switch_Divider">
+                    <a href="">
+                                                -----
+                                            </a>
+                </li>
+                            <li menuItemName="Profile" id="Secondary_Navbar-Account-Profile">
+                    <a href="/index.php?rp=/user/profile">
+                                                Your Profile
+                                            </a>
+                </li>
+                            <li menuItemName="Change Password" id="Secondary_Navbar-Account-Change_Password">
+                    <a href="/index.php?rp=/user/password">
+                                                Change Password
+                                            </a>
+                </li>
+                            <li menuItemName="Security Settings" id="Secondary_Navbar-Account-Security_Settings">
+                    <a href="/index.php?rp=/user/security">
+                                                Security Settings
+                                            </a>
+                </li>
+                            <li menuItemName="Divider" class="nav-divider" id="Secondary_Navbar-Account-Divider">
+                    <a href="">
+                                                -----
+                                            </a>
+                </li>
+                            <li menuItemName="Logout" id="Secondary_Navbar-Account-Logout">
+                    <a href="/logout.php">
+                                                Logout
+                                            </a>
+                </li>
+                        </ul>
+            </li>
+                        </ul>
+                    </div>
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+
+    </section>
+
+    
+                <section id="main-body">
+        <div class="container">
+            <div class="row">
+
+                <!-- Container for main page display content -->
+                <div
+                    class="main-content">
+                    
+
+<link rel="stylesheet" href="/assets/css/dist/clientareaproductdetails.tpl.min.css">
+
+            <div class="alert alert-success text-center" id="alertModuleCustomButtonSuccess">
+        Action Completed Successfully!
+</div>
+    
+
+
+<div class="tab-content margin-bottom">
+    <div class="tab-pane fade in active" id="tabOverview">
+
+        
+            <div class="product-details clearfix">
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="product-status product-status-active">
+                            <div class="product-icon text-center">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i
+                                        class="fas fa-archive fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h3>Code Signing Certificate</h3>
+                                <h4>Legacy</h4>
+                            </div>
+                            <div class="product-status-text">
+                                Active
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="col-md-6 text-center">
+
+                        <h4>Registration Date</h4>
+                        27th May 2021
+
+                                                    <h4>First Payment Amount</h4>
+                            $498.00 USD
+                        
+                        
+                        
+                        <h4>Billing Cycle</h4>
+                        One Time
+
+                        <h4>Next Due Date</h4>
+                        -
+
+                        <h4>Payment Method</h4>
+                        Purchase Order
+
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            
+                            <div class="row clearfix">
+                    <div class="col-xs-12">
+                        <ul class="nav nav-tabs nav-tabs-overflow">
+                                                            <li class="active">
+                                    <a href="#manage" data-toggle="tab"><i class="fas fa-globe fa-fw"></i> Manage</a>
+                                </li>
+                                                                                        <li>
+                                    <a href="#configoptions" data-toggle="tab"><i class="fas fa-cubes fa-fw"></i>
+                                        Configurable Options</a>
+                                    </li>
+                                                                                                                                            <li>
+                                            <a href="#additionalinfo" data-toggle="tab"><i class="fas fa-info fa-fw"></i>
+                                                Additional Information</a>
+                                            </li>
+                                                                                                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-content product-details-tab-container">
+                                            <div class="tab-pane fade in active text-center" id="manage">
+                                                            <div class="text-center module-client-area">
+                                        <div class="well manage-product-option-intro">
+		<p>Your Certificate is ready! Click below to download a .crt file containing the certificates.</p>        
+	</div>  
+    <form name="submitticket" method="post" class="server-info-form" action="/clientarea.php?action=productdetails&id=37109&modop=custom&a=collectCert">
+<input type="hidden" name="token" value="e9f0e0a861c7e1c0b56b377602885079ed9a8f5d" />
+        <input type="hidden" name="id" value="37109" />
+        <button class="btn btn-primary" type="submit">
+            Download Certificate
+        </button>
+    </form>
+
+    <hr/>
+    <p>If you wish to revoke your certificate, you can do so here:</p>
+    <form id="revokeSubmit" name="submitform" method="post" 
+        class="server-info-form"
+        action="/clientarea.php?action=productdetails&id=37109&modop=custom&a=revokeCert">
+<input type="hidden" name="token" value="e9f0e0a861c7e1c0b56b377602885079ed9a8f5d" />
+        <input type="hidden" name="id" value="37109" />
+        <button class="btn btn-danger btn-small" type="submit">
+            Revoke Certificate
+        </button>
+    </form>
+
+
+<SCRIPT type="text/javascript" language="JavaScript">
+    $(document).ready(function() {
+        $("#revokeSubmit").click(function(event) {
+            if( !confirm('Are you sure that you want to revoke your certificate?') ){
+                event.preventDefault();
+            } 
+
+        });
+    });
+</SCRIPT>
+
+                                </div>
+                                                    </div>
+                                                                <div class="tab-pane fade text-center" id="configoptions">
+                                                            <div class="row">
+                                    <div class="col-sm-5">
+                                        <strong>Years</strong>
+                                    </div>
+                                    <div class="col-sm-7 text-left">
+                                        3 Years $498.00 USD
+                                                                    </div>
+                            </div>
+                                            </div>
+                                                                    <div class="tab-pane fade text-center"
+                        id="additionalinfo">
+                                                    <div class="row">
+                                <div class="col-sm-5">
+                                    <strong>Terms of Service</strong>
+                                </div>
+                                <div class="col-sm-7 text-left">
+                                    
+                                </div>
+                            </div>
+                                            </div>
+                                            </div>
+                <script src="/assets/js/bootstrap-tabdrop.js"></script>
+        <script type="text/javascript">
+            jQuery('.nav-tabs-overflow').tabdrop();
+        </script>
+
+            </div>
+
+    </div>
+
+<div class="customer-support-panel col-sm-12">
+    <h3>Need help with your Code Signing Certificate?</h3>
+    <div class="text-center">
+                    <p>Our 24/7 support team is here to help answer your questions.<br>When communicating with our support team please reference order number:</p>
+            <p class="customer-support-reference-field">#492722928</p>
+            </div>
+            <p>We have 3 convenient ways to reach us:</p>
+        <ol>
+            <li>
+                Call - 
+                USA: 
+                <a
+                        href="tel:+18882666361">+1 (888) 266-6361</a>
+                /
+                Intl. 
+                <a
+                        href="tel:+19147328446">+1 (914) 732-8446</a>
+            </li>
+            <li>Live Chat located at bottom right. Select the "Support" option.</li>
+            <li>Open a support ticket
+                <a
+                        href="https://sectigo.com/support-ticket">Click Here</a>
+            </li>
+        </ol>
+    </div>
+
+                </div><!-- /.main-content -->
+                            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container">
+        <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+        <p>Copyright &copy; 2024 Sectigo. All Rights Reserved.</p>
+    </div>
+</section>
+
+<div id="fullpage-overlay" class="hidden">
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
+            <img src="/assets/img/overlay-spinner.svg">
+            <br>
+            <span class="msg"></span>
+        </div>
+    </div>
+</div>
+
+<div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content panel-primary">
+            <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body panel-body">
+                Loading...
+            </div>
+            <div class="modal-footer panel-footer">
+                <div class="pull-left loader">
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                    Loading...
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary modal-submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form action="#" id="frmGeneratePassword" class="form-horizontal">
+    <div class="modal fade" id="modalGeneratePassword">
+        <div class="modal-dialog">
+            <div class="modal-content panel-primary">
+                <div class="modal-header panel-heading">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">
+                        Generate Password
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger hidden" id="generatePwLengthError">
+                        Please enter a number between 8 and 64 for the password length
+                    </div>
+                    <div class="form-group">
+                        <label for="generatePwLength" class="col-sm-4 control-label">Password Length</label>
+                        <div class="col-sm-8">
+                            <input type="number" min="8" max="64" value="12" step="1" class="form-control input-inline input-inline-100" id="inputGeneratePasswordLength">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="generatePwOutput" class="col-sm-4 control-label">Generated Password</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputGeneratePasswordOutput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-4">
+                            <button type="submit" class="btn btn-default btn-sm">
+                                <i class="fas fa-plus fa-fw"></i>
+                                Generate new password
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm copy-to-clipboard" data-clipboard-target="#inputGeneratePasswordOutput">
+                                <img src="/assets/img/clippy.svg" alt="Copy to clipboard" width="15">
+                                Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btnGeneratePasswordInsert" data-clipboard-target="#inputGeneratePasswordOutput">
+                        Copy to clipboard and Insert
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'user_id',
+          identifier: "d2b7078087f6938bccbf1b8d6c06d71c9cb98d6a871c8c37c1735a9edad0b5d3",
+          displayName: "Vincent Bailey",
+          email: "vmbailey@onshoretech.com",
+        });</script>
+<script id='sleeknoteScript'>
+  (function () {
+    var sleeknoteScriptTag = document.createElement('script');
+    sleeknoteScriptTag.src = ('//sleeknotecustomerscripts.sleeknote.com/23853.js');
+    var s = document.getElementById('sleeknoteScript');
+    s.parentNode.insertBefore(sleeknoteScriptTag, s);
+  })();
+</script>
+
+
+</body>
+</html>

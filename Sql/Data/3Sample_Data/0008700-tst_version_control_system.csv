@@ -1,0 +1,2 @@
+version_control_system_id:Key,name:String,description:String,is_active:Normal,connection_string:String,login:String,password:String,domain:String,custom_01:String,custom_02:String,custom_03:String,custom_04:String,custom_05:String
+1,TestVersionControlProvider2,This provides the dummy version control provider used in testing,1,test://MyRepository,fredbloggs,fredbloggs,NULL,NULL,NULL,NULL,NULL,NULL

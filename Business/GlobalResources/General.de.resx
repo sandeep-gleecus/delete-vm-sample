@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Global_NoneFlag" xml:space="preserve">
+    <value>{Keine}</value>
+  </data>
+	<data name="TestRun_VariousTestCases" xml:space="preserve">
+    <value>Verschiedene Testfälle</value>
+  </data>
+	<data name="Task_ProgressNotStarted" xml:space="preserve">
+    <value>nicht gestartet</value>
+  </data>
+	<data name="Task_ProgressPercentComplete" xml:space="preserve">
+    <value>% abgeschlossen</value>
+  </data>
+	<data name="Task_ProgressScheduledEndOn" xml:space="preserve">
+    <value>Wird voraussichtlich beendet am</value>
+  </data>
+	<data name="Task_ProgressShouldHaveStartedOn" xml:space="preserve">
+    <value>Sollte begonnen haben am</value>
+  </data>
+	<data name="Task_Progress_ShouldHaveFinishedOn" xml:space="preserve">
+    <value>Sollte beendet werden am</value>
+  </data>
+	<data name="Global_NoTasks" xml:space="preserve">
+    <value>Keine Aufgaben</value>
+  </data>
+	<data name="Global_Tasks" xml:space="preserve">
+    <value>Aufgaben</value>
+  </data>
+	<data name="Task_NotStarted" xml:space="preserve">
+    <value>Nicht gestartet</value>
+  </data>
+	<data name="Task_OnSchedule" xml:space="preserve">
+    <value>Planmäßig</value>
+  </data>
+	<data name="Task_RunningLate" xml:space="preserve">
+    <value>Verspätetes Ende</value>
+  </data>
+	<data name="Task_StartingLate" xml:space="preserve">
+    <value>Verspäteter Beginn </value>
+  </data>
+	<data name="TestCase_NewTestCase" xml:space="preserve">
+    <value>Neuer Testfall</value>
+  </data>
+	<data name="TestCase_NewTestCaseComment" xml:space="preserve">
+    <value>Neuer Testfall aus der Anforderung erstellt</value>
+  </data>
+	<data name="TestSet_NewTestSetBasedOnRelease" xml:space="preserve">
+    <value>Neue Testreihe basierend auf dem Release</value>
+  </data>
+	<data name="TestSet_NewTestSetBasedOnRequirements" xml:space="preserve">
+    <value>Neue Testreihe an Hand der ausgewählten Anforderungen</value>
+  </data>
+	<data name="Requirement_NotCovered" xml:space="preserve">
+    <value>Nicht abgedeckt</value>
+  </data>
+	<data name="TestCase_Blocked" xml:space="preserve">
+    <value>Gesperrt</value>
+  </data>
+	<data name="TestCase_Caution" xml:space="preserve">
+    <value>Achtung</value>
+  </data>
+	<data name="TestCase_Failed" xml:space="preserve">
+    <value>Fehlgeschlagen</value>
+  </data>
+	<data name="TestCase_NotRun" xml:space="preserve">
+    <value>Nicht ausgeführt</value>
+  </data>
+	<data name="TestCase_Passed" xml:space="preserve">
+    <value>Bestanden</value>
+  </data>
+	<data name="TestCase_Run" xml:space="preserve">
+    <value>Ausführen</value>
+  </data>
+	<data name="Global_No" xml:space="preserve">
+    <value>Nein</value>
+  </data>
+	<data name="Global_Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+	<data name="Global_Copy" xml:space="preserve">
+    <value>Kopieren</value>
+  </data>
+	<data name="Global_CopyOf" xml:space="preserve">
+    <value>Kopieren von</value>
+  </data>
+	<data name="Task_Completed" xml:space="preserve">
+    <value>Abgeschlossen</value>
+  </data>
+	<data name="Requirement_ReqCreatedFromIncident" xml:space="preserve">
+    <value>Anforderung aus bestehendem Vorfall erstellt.</value>
+  </data>
+	<data name="TestCase_Call" xml:space="preserve">
+    <value>Aufruf</value>
+  </data>
+	<data name="Incident_Complete" xml:space="preserve">
+    <value>Abschließen</value>
+  </data>
+	<data name="Incident_NotStarted" xml:space="preserve">
+    <value>Nicht gestartet</value>
+  </data>
+	<data name="Incident_ShouldHaveStartedOn" xml:space="preserve">
+    <value>Sollte begonnen haben am</value>
+  </data>
+	<data name="GraphDescription_IncidentAging" xml:space="preserve">
+    <value>Das Diagramm 'Alterung des Vorfalls' zeigt die Anzahl der Tage an, an denen ein Vorfall den Status "offen" im System hat</value>
+  </data>
+	<data name="GraphDescription_IncidentCumulativeCount" xml:space="preserve">
+    <value>Das Diagramm 'Anzahl kumulierter Vorfälle' zeigt die kumulierte, gesamte Anzahl von Vorfällen, die im System für das aktuelle Produkt über einen bestimmten Zeitraum protokolliert sind</value>
+  </data>
+	<data name="GraphDescription_IncidentOpenCount" xml:space="preserve">
+    <value>Das Diagramm 'Anzahl offener Vorfälle' zeigt die Gesamtzahl offener Vorfälle im System, bezogen auf das aktuelle Produkt und einen bestimmten Zeitraum, an. Die Kategorisierung erfolgt nach der Priorität der Vorfälle.</value>
+  </data>
+	<data name="GraphDescription_IncidentProgressRate" xml:space="preserve">
+    <value>Das Diagramm 'Fortschrittsrate des Vorfalls' zeigt, bezogen auf einen bestimmten Zeitraum, die gesamte Anzahl von erstellten und abgeschlossenen Vorfällen an.</value>
+  </data>
+	<data name="GraphDescription_IncidentSummary" xml:space="preserve">
+    <value>Das Diagramm 'Vorfallsübersicht' zeigt wie viele Vorfälle es derzeit im Produkt gibt. Die Anzahl der Vorfälle hängt von den von Ihnen ausgewählten Kriterien ab. Sie können sowohl den Datentyp bestimmen, der entlang der X-Achse gezeigt wird, als auch die Vorfallsinformationen wählen, die zur Gruppierung der Daten genutzt werden.</value>
+  </data>
+	<data name="GraphDescription_IncidentTurnaround" xml:space="preserve">
+    <value>Das Diagramm 'Vorfalldurchlaufzeit' zeigt die Anzahl der Tage an, die die Vorfälle bis zu ihrem Abschluss (ab dem Zeitpunkt an dem sie erhoben wurden) im System benötigt haben.</value>
+  </data>
+	<data name="GraphDescription_RequirementCoverage" xml:space="preserve">
+    <value>Das Diagramm 'Anforderungsabdeckung' zeigt die Anzahl der Anforderungen im aktuellen Produkt, bezogen auf ihren Testabdeckungsstatus, an.</value>
+  </data>
+	<data name="GraphDescription_RequirementSummary" xml:space="preserve">
+    <value>Das Diagramm 'Anforderungsübersicht' zeigt die Anzahl der Anforderungen im aktuellen Produkt. Die Anzahl der Anforderungen wird nach den von Ihnen gewählten Kriterien angezeigt. Sie können sowohl den Datentyp, der entlang der X-Achse angezeigt wird, als auch die Anforderungsinformationen  für die Gruppierung der Daten angeben.</value>
+  </data>
+	<data name="GraphDescription_TaskBurnDown" xml:space="preserve">
+    <value>Das Diagramm 'Burndown der Aufgaben' zeigt die verbleibende Arbeit die vor dem Abschluss jedes Releases / jedes Sprints in dem Produkt getätigt werden muss.</value>
+  </data>
+	<data name="GraphDescription_TaskBurnUp" xml:space="preserve">
+    <value>Das Diagramm 'Burnup der Aufgaben' zeigt den kumulativen Anstieg der Arbeit für jedes Release / jeden Sprint im Produkt. Dabei wird der Prozentsatz der Aufgaben, die im Zeitplan sind, später beginnen und später beendet werden, angezeigt. </value>
+  </data>
+	<data name="GraphDescription_TaskSummary" xml:space="preserve">
+    <value>Das Diagramm 'Aufgabenübersicht' zeigt die Anzahl der Aufgaben im aktuellen Produkt. Die Anzahl der angezeigten Aufgaben hängt von den Kriterien ab, die Sie auswählen. Sie können sowohl den Datentyp bestimmen, der entlang der X-Achse gezeigt wird, als auch die Informationen der Aufgaben wählen, die zur Gruppierung der Daten genutzt werden.</value>
+  </data>
+	<data name="GraphDescription_TaskVelocity" xml:space="preserve">
+    <value>Das Diagramm 'Velocity der Aufgaben' zeigt den gesamten geschätzten und tatsächlich benötigten Aufwand jedes Releases / jeden Sprint eines Produkts an.</value>
+  </data>
+	<data name="GraphDescription_TestCaseSummary" xml:space="preserve">
+    <value>Das Diagramm 'Testfallübersicht' zeigt die Anzahl der Testfälle des aktuellen Produkts. Die Anzahl der angezeigten Testfälle hängt von den von Ihnen ausgewählten Kriterien ab. Sie können sowohl den Datentyp bestimmen, der entlang der X-Achse gezeigt wird, als auch die Informationen der Testfälle wählen, die zur Gruppierung der Daten genutzt werden.</value>
+  </data>
+	<data name="GraphDescription_TestRunProgressRate" xml:space="preserve">
+    <value>Das Diagramm 'Fortschrittsrate des Testlaufs' zeigt die Anzahl der durchgeführten Tests und deren Ausführungsstatus während eines bestimmten Zeitraums an.</value>
+  </data>
+	<data name="GraphDescription_TestRunSummary" xml:space="preserve">
+    <value>Das Diagramm 'Testlaufübersicht' zeigt die Anzahl der ausgeführten Testläufe in einem Produkt. Die Anzahl der angezeigten Testläufe hängt von den von Ihnen ausgewählten Kriterien ab. Sie können sowohl den Datentyp bestimmen, der entlang der X-Achse gezeigt wird, als auch die Informationen der Testläufe wählen, die zur Gruppierung der Daten genutzt werden.</value>
+  </data>
+	<data name="GraphName_IncidentAging" xml:space="preserve">
+    <value>Alterung des Vorfalls</value>
+  </data>
+	<data name="GraphName_IncidentCumulativeCount" xml:space="preserve">
+    <value>Anzahl kumulierter Vorfälle</value>
+  </data>
+	<data name="GraphName_IncidentOpenCount" xml:space="preserve">
+    <value>Anzahl offener Vorfälle</value>
+  </data>
+	<data name="GraphName_IncidentProgressRate" xml:space="preserve">
+    <value>Fortschrittsrate des Vorfalls</value>
+  </data>
+	<data name="GraphName_IncidentSummary" xml:space="preserve">
+    <value>Vorfallsübersicht</value>
+  </data>
+	<data name="GraphName_IncidentTurnaround" xml:space="preserve">
+    <value>Vorfalldurchlaufzeit </value>
+  </data>
+	<data name="GraphName_RequirementCoverage" xml:space="preserve">
+    <value>Anforderungsabdeckung</value>
+  </data>
+	<data name="GraphName_RequirementSummary" xml:space="preserve">
+    <value>Anforderungsübersicht</value>
+  </data>
+	<data name="GraphName_TaskBurnDown" xml:space="preserve">
+    <value>Burndown der Aufgaben</value>
+  </data>
+	<data name="GraphName_TaskBurnUp" xml:space="preserve">
+    <value>Burnup der Aufgaben</value>
+  </data>
+	<data name="GraphName_TaskSummary" xml:space="preserve">
+    <value>Aufgabenübersicht</value>
+  </data>
+	<data name="GraphName_TaskVelocity" xml:space="preserve">
+    <value>Velocity der Aufgaben</value>
+  </data>
+	<data name="GraphName_TestCaseSummary" xml:space="preserve">
+    <value>Testfallübersicht</value>
+  </data>
+	<data name="GraphName_TestRunProgressRate" xml:space="preserve">
+    <value>Fortschrittsrate des Testlaufs</value>
+  </data>
+	<data name="GraphName_TestRunSummary" xml:space="preserve">
+    <value>Testlaufübersicht</value>
+  </data>
+	<data name="Graph_ClosedCount" xml:space="preserve">
+    <value>Anzahl geschlossener</value>
+  </data>
+	<data name="Graph_Date" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+	<data name="Graph_DiscoveredCount" xml:space="preserve">
+    <value>Anzahl entdeckter</value>
+  </data>
+	<data name="Graph_OpenCount" xml:space="preserve">
+    <value>Anzahl offener</value>
+  </data>
+	<data name="Graph_TotalCount" xml:space="preserve">
+    <value>Gesamtzahl</value>
+  </data>
+	<data name="Global_None" xml:space="preserve">
+    <value>(Keine)</value>
+  </data>
+	<data name="GraphDescription_TestSetSummary" xml:space="preserve">
+    <value>Das Diagramm 'Testreihenübersicht' zeigt die Anzahl der Testreihen des aktuellen Produkts an. Die Anzahl der angezeigten Testreihen hängt von den von Ihnen ausgewählten Kriterien ab. Sie können sowohl den Datentyp bestimmen, der entlang der X-Achse gezeigt wird, als auch die Informationen der Testreihe wählen, die zur Gruppierung der Daten genutzt werden.</value>
+  </data>
+	<data name="GraphName_TestSetSummary" xml:space="preserve">
+    <value>Testreihenübersicht</value>
+  </data>
+	<data name="Graph_Age" xml:space="preserve">
+    <value>Alter</value>
+  </data>
+	<data name="Graph_Turnaround" xml:space="preserve">
+    <value>Durchlaufzeit</value>
+  </data>
+	<data name="Graph_Iteration" xml:space="preserve">
+    <value>Sprint</value>
+  </data>
+	<data name="Graph_Release" xml:space="preserve">
+    <value>Release</value>
+  </data>
+	<data name="Graphs_CompletedEffort" xml:space="preserve">
+    <value>Abgeschlossener Aufwand</value>
+  </data>
+	<data name="Graphs_EstimatedEffort" xml:space="preserve">
+    <value>Geschätzter Aufwand</value>
+  </data>
+	<data name="Graphs_IdealEffort" xml:space="preserve">
+    <value>Idealer Aufwand</value>
+  </data>
+	<data name="Graphs_RemainingEffort" xml:space="preserve">
+    <value>Verbleibender Aufwand</value>
+  </data>
+	<data name="Graphs_ActualVelocity" xml:space="preserve">
+    <value>Aktuelle Velocity</value>
+  </data>
+	<data name="Graphs_ExpectedVelocity" xml:space="preserve">
+    <value>Erwartete Velocity</value>
+  </data>
+	<data name="Graph_Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+	<data name="Graph_CoverageStatus" xml:space="preserve">
+    <value>Abdeckungsstatus</value>
+  </data>
+	<data name="Project_ResourceAllocated" xml:space="preserve">
+    <value>Zugewiesene Ressource</value>
+  </data>
+	<data name="Requirement_NewRequirement" xml:space="preserve">
+    <value>Neue Anforderung</value>
+  </data>
+	<data name="Requirement_NewRequirementComment" xml:space="preserve">
+    <value>Neue Anforderung von Testfall erstellt</value>
+  </data>
+	<data name="Workflow_ChangeStatusSubject" xml:space="preserve">
+    <value>Status wurde geändert von '{0}' in '{1}'</value>
+  </data>
+	<data name="Global_ImportedFrom" xml:space="preserve">
+    <value>Importiert aus Project # {0}, {1} # {2}</value>
+  </data>
+	<data name="Global_ExportedTo" xml:space="preserve">
+    <value>Exportiert nach Project # {0}, {1} # {2}</value>
+  </data>
+	<data name="Global_Incident" xml:space="preserve">
+    <value>Vorfall</value>
+  </data>
+	<data name="Workflow_DefaultWorflow" xml:space="preserve">
+    <value>Standardworkflow</value>
+  </data>
+	<data name="TestStep_Step" xml:space="preserve">
+    <value>Schritt</value>
+  </data>
+	<data name="Global_Revision" xml:space="preserve">
+    <value>Version</value>
+  </data>
+	<data name="Global_Report" xml:space="preserve">
+    <value>Bericht</value>
+  </data>
+	<data name="History_ArtifactIdFormat" xml:space="preserve">
+    <value>Artefakt [{0}:{1}]</value>
+  </data>
+	<data name="History_PurgeProgress_AutomationHosts" xml:space="preserve">
+    <value>Automatisierungshosts bereinigen …</value>
+  </data>
+	<data name="History_PurgeProgress_Complete" xml:space="preserve">
+    <value>Komplett!</value>
+  </data>
+	<data name="History_PurgeProgress_Incidents" xml:space="preserve">
+    <value>Vorfälle bereinigen …</value>
+  </data>
+	<data name="History_PurgeProgress_Releases" xml:space="preserve">
+    <value>Releases bereinigen …</value>
+  </data>
+	<data name="History_PurgeProgress_Requirements" xml:space="preserve">
+    <value>Anforderungen bereinigen …</value>
+  </data>
+	<data name="History_PurgeProgress_RequirementSteps" xml:space="preserve">
+    <value>Anforderungsschritte bereinigen …</value>
+  </data>
+	<data name="History_PurgeProgress_Tasks" xml:space="preserve">
+    <value>Aufgaben bereinigen …</value>
+  </data>
+	<data name="History_PurgeProgress_TestCases" xml:space="preserve">
+    <value>Testfälle bereinigen …</value>
+  </data>
+	<data name="History_PurgeProgress_TestSets" xml:space="preserve">
+    <value>Testreihen bereinigen …</value>
+  </data>
+	<data name="History_PurgeProgress_TestSteps" xml:space="preserve">
+    <value>Testschritte bereinigen …</value>
+  </data>
+	<data name="TestCase_NotApplicable" xml:space="preserve">
+    <value>Nicht anwendbar</value>
+  </data>
+	<data name="NotificationManager_SendIndivNotification" xml:space="preserve">
+    <value>{0} - Dies {1}erfordert Ihre Aufmerksamkeit!</value>
+  </data>
+	<data name="SourceCode_SourceCodeCommit" xml:space="preserve">
+    <value>Quellcode Commit</value>
+  </data>
+	<data name="SourceCode_NoProvidersLoaded" xml:space="preserve">
+    <value>Für das Produkt #{0} konnten keine Quellcodeanbieter geladen werden.</value>
+  </data>
+	<data name="SourceCode_CouldNotLogin" xml:space="preserve">
+    <value>Konnte nicht mit dem Quellcodeanbieter authentifiziert werden</value>
+  </data>
+	<data name="SourceCode_NoProvidersEnabled" xml:space="preserve">
+    <value>Für das Produkt #{0} sind keine Quellcodeanbieter aktiviert.</value>
+  </data>
+	<data name="SouceCode_UnableToLoadDLL" xml:space="preserve">
+    <value>Es ist nicht möglich den Anbieter der Versionskontrolle '{0}' zu laden. </value>
+  </data>
+	<data name="SourceCode_CouldNotIni" xml:space="preserve">
+    <value>Die Anbieterbibliothek '{0}' konnte nicht initialisiert werden.</value>
+  </data>
+	<data name="SourceCode_InvalidCache" xml:space="preserve">
+    <value>Die Bibliothek der Versionskontrolle aktualisiert den Zwischenspeicher.</value>
+  </data>
+	<data name="GraphDescription_RequirementBurnDown" xml:space="preserve">
+    <value>Das Diagramm 'Burndown der Anforderungen' zeigt die verbleibende Anzahl an Story Points, die für jedes Release / jeden Sprint des Produkts erledigt werden sollen.</value>
+  </data>
+	<data name="GraphDescription_RequirementBurnUp" xml:space="preserve">
+    <value>Das Diagramm 'Burnup der Anforderungen' zeigt die kumulative Zahl der Story Points für jedes Release / jeden Sprint eines Produkts. Dabei wird die Zahl abgeschlossener Story Points für jedes Intervall angezeigt.</value>
+  </data>
+	<data name="GraphDescription_RequirementVelocity" xml:space="preserve">
+    <value>Das Diagramm 'Velocity der Anforderungen' zeigt die tatsächliche Zahl an Story Points, die in jedem Release / jedes Sprints geliefert wird, verglichen mit dem Durchschnitt.</value>
+  </data>
+	<data name="GraphName_RequirementBurnDown" xml:space="preserve">
+    <value>Burndown der Anforderungen</value>
+  </data>
+	<data name="GraphName_RequirementBurnUp" xml:space="preserve">
+    <value>Burnup der Anforderungen</value>
+  </data>
+	<data name="GraphName_RequirementVelocity" xml:space="preserve">
+    <value>Velocity der Anforderungen</value>
+  </data>
+	<data name="Graphs_ActualBurnup" xml:space="preserve">
+    <value>Tatsächlicher Burnup</value>
+  </data>
+	<data name="Graphs_AverageVelocity" xml:space="preserve">
+    <value>Durchschnittliche Velocity</value>
+  </data>
+	<data name="Graphs_CompletedPoints" xml:space="preserve">
+    <value>Abgeschlossene Punkte</value>
+  </data>
+	<data name="Graphs_IdealBurndown" xml:space="preserve">
+    <value>Idealer Burndown</value>
+  </data>
+	<data name="Graphs_IdealBurnup" xml:space="preserve">
+    <value>Idealer Burnup</value>
+  </data>
+	<data name="Graphs_RemainingPoints" xml:space="preserve">
+    <value>Verbleibende Punkte</value>
+  </data>
+	<data name="Graphs_RollingAverage" xml:space="preserve">
+    <value>Gleitender Durchschnitt</value>
+  </data>
+	<data name="Global_Multiple" xml:space="preserve">
+    <value>Mehrere</value>
+  </data>
+	<data name="Project_ResourceAllocatedOpen" xml:space="preserve">
+    <value>Zugewiesen, um Artefakte zu öffnen</value>
+  </data>
+	<data name="History_Exported" xml:space="preserve">
+    <value>Exportiert</value>
+  </data>
+	<data name="History_Imported" xml:space="preserve">
+    <value>Importiert</value>
+  </data>
+	<data name="Exception_BadRequest" xml:space="preserve">
+    <value>Ein Feld in der Anfrage ist ungültig.</value>
+  </data>
+	<data name="Exception_Conflict" xml:space="preserve">
+    <value>Es existiert bereits ein Element mit diesem Namen / dieser Email.</value>
+  </data>
+	<data name="Exception_Unauthorized" xml:space="preserve">
+    <value>Das Konto ist nicht berechtigt diese Aktion durchzuführen.</value>
+  </data>
+	<data name="Exception_Unknown" xml:space="preserve">
+    <value>Ein unbekannter Kommunikationsfehler  ({0}) trat auf. {1}</value>
+  </data>
+	<data name="Exceptioon_MethodNotAllowed" xml:space="preserve">
+    <value>Diese Aktion können Sie derzeit nicht durchführen.</value>
+  </data>
+	<data name="TestCase_DefaultTestStepExpectedResult" xml:space="preserve">
+    <value>Arbeitet wie erwartet.</value>
+  </data>
+	<data name="TestStep_WorksAsExpected" xml:space="preserve">
+    <value>Arbeitet wie erwartet.</value>
+  </data>
+	<data name="Global_Root" xml:space="preserve">
+    <value>Basisverzeichnis</value>
+  </data>
+	<data name="Task_NewTask" xml:space="preserve">
+    <value>Neue Aufgabe</value>
+  </data>
+	<data name="TestSet_NewTestSet" xml:space="preserve">
+    <value>Neue Testreihe</value>
+  </data>
+	<data name="Description" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+	<data name="GraphDescription_IncidentCountByStatus" xml:space="preserve">
+    <value>Das Diagramm 'Vorfall pro Status' zeigt die Gesamtzahl der Vorfälle des aktuellen Produkts über den Zeitverlauf und gruppiert nach ihrem Status.</value>
+  </data>
+	<data name="GraphDescription_TestCaseProgress" xml:space="preserve">
+    <value>Das Diagramm Testfallfortschritt zeigt wie viele eindeutige Testfälle während eines Zeitraums ausgeführt wurden und welcher Ausführungsstatus dokumentiert wurde.</value>
+  </data>
+	<data name="GraphDescription_TestCaseProgressCumulative" xml:space="preserve">
+    <value>Das Diagramm 'Kumulierter Fortschritt der Testfälle' zeigt den Fortschritt der Testfallausführungsstatus über einen Zeitraum gegenüber der Gesamtzahl nicht durchgeführter Testfälle.</value>
+  </data>
+	<data name="GraphName_IncidentCountByStatus" xml:space="preserve">
+    <value>Anzahl der Vorfälle pro Status</value>
+  </data>
+	<data name="GraphName_TestCaseProgress" xml:space="preserve">
+    <value>Fortschritt der Testfälle</value>
+  </data>
+	<data name="GraphName_TestCaseProgressCumulative" xml:space="preserve">
+    <value>Kumulierter Fortschritt der Testfälle</value>
+  </data>
+	<data name="TestSet_Future" xml:space="preserve">
+    <value>Zukunft</value>
+  </data>
+	<data name="TestSet_Overdue" xml:space="preserve">
+    <value>Überfällig</value>
+  </data>
+	<data name="TestSet_Unscheduled" xml:space="preserve">
+    <value>Außerplanmäßig</value>
+  </data>
+	<data name="Global_Verify" xml:space="preserve">
+    <value>Verifizieren</value>
+  </data>
+	<data name="Global_NoRequirements" xml:space="preserve"><value>Keine Anforderungen</value></data><data name="Global_Complete" xml:space="preserve"><value>Vollständig</value></data><data name="Global_Requirements" xml:space="preserve"><value>Anfordergung(en)</value></data><data name="Incident_IncidentCreatedFromTask" xml:space="preserve"><value>Ein Vorfall wurde aus der bestehenden Aufgabe erstellt.</value></data></root>

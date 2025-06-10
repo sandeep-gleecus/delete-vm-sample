@@ -1,0 +1,13 @@
+saved_filter_id:Normal,entry_key:String,entry_value:String,entry_type_code:Normal
+1,ImportanceId,1,9
+1,CoverageId,1,9
+2,ExecutionStatusId,1,9
+2,ActiveYn,Y,18
+3,SortExpression,CreationDate ASC,18
+3,IncidentStatusId,1,9
+4,SortExpression,PriorityName ASC,18
+4,IncidentStatusId,8,9
+5,SortExpression,TaskStatusName ASC,18
+5,ProgressId,4,9
+5,TaskPriorityId,2,9
+6,ExecutionStatusId,1,9

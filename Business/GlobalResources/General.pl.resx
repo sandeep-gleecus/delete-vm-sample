@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Global_NoneFlag" xml:space="preserve">
+    <value>{Brak}</value>
+  </data>
+  <data name="TestRun_VariousTestCases" xml:space="preserve">
+    <value>Różne przypadki testowe</value>
+  </data>
+  <data name="Task_ProgressNotStarted" xml:space="preserve">
+    <value>nierozpoczęte</value>
+  </data>
+  <data name="Task_ProgressPercentComplete" xml:space="preserve">
+    <value>% wykonano </value>
+  </data>
+  <data name="Task_ProgressScheduledEndOn" xml:space="preserve">
+    <value>zakończenie zaplanowane</value>
+  </data>
+  <data name="Task_ProgressShouldHaveStartedOn" xml:space="preserve">
+    <value>powinno zacząć się</value>
+  </data>
+  <data name="Task_Progress_ShouldHaveFinishedOn" xml:space="preserve">
+    <value>powinno zakończyć się</value>
+  </data>
+  <data name="Global_NoTasks" xml:space="preserve">
+    <value>Brak zadań</value>
+  </data>
+  <data name="Global_Tasks" xml:space="preserve">
+    <value>Zadania</value>
+  </data>
+  <data name="Task_NotStarted" xml:space="preserve">
+    <value>Nierozpoczęte</value>
+  </data>
+  <data name="Task_OnSchedule" xml:space="preserve">
+    <value>Zgodnie z harmonogramem</value>
+  </data>
+  <data name="Task_RunningLate" xml:space="preserve">
+    <value>Wykonywane z opóźnieniem</value>
+  </data>
+  <data name="Task_StartingLate" xml:space="preserve">
+    <value>Rozpoczęte z opóźnieniem</value>
+  </data>
+  <data name="TestCase_NewTestCase" xml:space="preserve">
+    <value>Nowy przypadek testowy</value>
+  </data>
+  <data name="TestCase_NewTestCaseComment" xml:space="preserve">
+    <value>Nowy przypadek testowy utworzony z wymagania</value>
+  </data>
+  <data name="TestSet_NewTestSetBasedOnRelease" xml:space="preserve">
+    <value>Nowy zestaw testów oparty na wydaniu</value>
+  </data>
+  <data name="TestSet_NewTestSetBasedOnRequirements" xml:space="preserve">
+    <value>Nowy zestaw testów oparty na wybranych wymaganiach</value>
+  </data>
+  <data name="Requirement_NotCovered" xml:space="preserve">
+    <value>Not Covered</value>
+  </data>
+  <data name="TestCase_Blocked" xml:space="preserve">
+    <value>Blocked</value>
+  </data>
+  <data name="TestCase_Caution" xml:space="preserve">
+    <value>Caution</value>
+  </data>
+  <data name="TestCase_Failed" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="TestCase_NotRun" xml:space="preserve">
+    <value>Not Run</value>
+  </data>
+  <data name="TestCase_Passed" xml:space="preserve">
+    <value>Passed</value>
+  </data>
+  <data name="TestCase_Run" xml:space="preserve">
+    <value>Wykonaj</value>
+  </data>
+  <data name="Global_No" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="Global_Yes" xml:space="preserve">
+    <value>Tak</value>
+  </data>
+  <data name="Global_Copy" xml:space="preserve">
+    <value>Kopiuj</value>
+  </data>
+  <data name="Global_CopyOf" xml:space="preserve">
+    <value>Kopia</value>
+  </data>
+  <data name="Task_Completed" xml:space="preserve">
+    <value>Zakończone</value>
+  </data>
+  <data name="Requirement_ReqCreatedFromIncident" xml:space="preserve">
+    <value>Wymaganie utworzone z istniejącego incydentu.</value>
+  </data>
+  <data name="TestCase_Call" xml:space="preserve">
+    <value>Wywołaj</value>
+  </data>
+  <data name="Incident_Complete" xml:space="preserve">
+    <value>zakończone</value>
+  </data>
+  <data name="Incident_NotStarted" xml:space="preserve">
+    <value>nierozpoczęte</value>
+  </data>
+  <data name="Incident_ShouldHaveStartedOn" xml:space="preserve">
+    <value>powinny rozpocząć się</value>
+  </data>
+  <data name="GraphDescription_IncidentAging" xml:space="preserve">
+    <value>Wykres 'Wiek otwartych incydentów' wyświetla liczbę dni incydentów pozostających otwartymi w systemie</value>
+  </data>
+  <data name="GraphDescription_IncidentCumulativeCount" xml:space="preserve">
+    <value>Wykres skumulowanej liczby incydentów wyświetla sumę wszystkich incydentów zarejestrowanych w systemie dla bieżącego projektu w określonym zakresie dat</value>
+  </data>
+  <data name="GraphDescription_IncidentOpenCount" xml:space="preserve">
+    <value>Wykres otwartych incydentów wyświetla sumę otwartych incydentów w systemie dla bieżącego projektu w określonym zakresie dat zgrupowanych według priorytetu</value>
+  </data>
+  <data name="GraphDescription_IncidentProgressRate" xml:space="preserve">
+    <value>Wykres wskaźnika postępu incydentów wyświetla sumę incydentów utworzonych i zamkniętych w określonym zakresie dat</value>
+  </data>
+  <data name="GraphDescription_IncidentSummary" xml:space="preserve">
+    <value>Wykres podsumowania incydentów pokazuje ile incydentów jest aktualnie w projekcie. Liczba incydentów jest wyświetlana zgodnie z kryteriami, które należy określić. Można określić typ danych wyświetlanych wzdłuż osi X oraz informacje o incydencie, które zostały użyte do grupowania danych.</value>
+  </data>
+  <data name="GraphDescription_IncidentTurnaround" xml:space="preserve">
+    <value>Wykres  Czasu Kompletowania Incydentu wyświetla liczbę dni jakie upłynęły do zamnkięcia (od chwili kiedy po raz pierwszy zostały poruszone) w systemie</value>
+  </data>
+  <data name="GraphDescription_RequirementCoverage" xml:space="preserve">
+    <value>Wykres pokrycia wymagań pokazuje ile wymagań jest aktualnie w projekcie, w odniesieniu do statusu ich pokrycia w testach</value>
+  </data>
+  <data name="GraphDescription_RequirementSummary" xml:space="preserve">
+    <value>Wykres podsumowania wymagań pokazuje ile wymagań jest aktualnie w projekcie. Liczba wymagań jest wyświetlana zgodnie z kryteriami, które należy określić . Można określić typ danych wyświetlanych wzdłuż osi X oraz informacje o wymaganiu, które zostały użyte do grupowania danych</value>
+  </data>
+  <data name="GraphDescription_TaskBurnDown" xml:space="preserve">
+    <value>Wykres Burndown zadań pokazuje ile pracy pozostało do wykonania dla każdego wydania/iteracji w projekcie.</value>
+  </data>
+  <data name="GraphDescription_TaskBurnUp" xml:space="preserve">
+    <value>Wykres Burnup zadań pokazuje skumulowany wzrost pracy dla każdego wydania/iteracji w projekcie z procentem zadań, które są zgodne z harmonogramem, są wskazane jako rozpoczęte i zakończone później.</value>
+  </data>
+  <data name="GraphDescription_TaskSummary" xml:space="preserve">
+    <value>Wykres podsumowania zadań pokazuje ile zadań jest aktualnie w projekcie. Liczba zadań jest wyświetlana zgodnie z kryteriami, które należy określić. Można określić typ danych wyświetlanych wzdłuż   osi X oraz informacje o zadaniu, które zostały użyte do grupowania danych</value>
+  </data>
+  <data name="GraphDescription_TaskVelocity" xml:space="preserve">
+    <value>Wykres szybkości zadania pokazuje oszacowany całkowity i aktualny wysiłek dostarczony w poszczególnym wydaniu/iteracji projektu</value>
+  </data>
+  <data name="GraphDescription_TestCaseSummary" xml:space="preserve">
+    <value>Wykres podsumowania przypadków testowych pokazuje ile przypadków testowych jest aktualnie w projekcie. Liczba przypadków testowych jest wyświetlana zgodnie z kryteriami, które należy określić. Można określić typ danych wyświetlanych wzdłuż osi X oraz informacje o przypadkach testowych, które zostały użyte do grupowania danych</value>
+  </data>
+  <data name="GraphDescription_TestRunProgressRate" xml:space="preserve">
+    <value>Wykres wskaźnika postępu przebiegu testu pokazuje ile testów zostało wykonanych w przedziale czasu oraz z jakim statusem egzekucja została zakończona.</value>
+  </data>
+  <data name="GraphDescription_TestRunSummary" xml:space="preserve">
+    <value>Wykres podsumowania przebiegu testu pokazuje ile testów zostało wykonanych w projekcie. Liczba testów jest wyświetlana zgodnie z kryteriami, które należy określić. Można określić typ danych wyświetlanych wzdłuż osi X oraz informacje o przebiegu testu, która została użyta do grupowania danych</value>
+  </data>
+  <data name="GraphName_IncidentAging" xml:space="preserve">
+    <value>Wiek otwartych incydentów</value>
+  </data>
+  <data name="GraphName_IncidentCumulativeCount" xml:space="preserve">
+    <value>Liczba skumulowanych incydentów</value>
+  </data>
+  <data name="GraphName_IncidentOpenCount" xml:space="preserve">
+    <value>Liczba otwartych incydentów</value>
+  </data>
+  <data name="GraphName_IncidentProgressRate" xml:space="preserve">
+    <value>Wskaźnik postępu incydentu</value>
+  </data>
+  <data name="GraphName_IncidentSummary" xml:space="preserve">
+    <value>Podsumowanie incydentu</value>
+  </data>
+  <data name="GraphName_IncidentTurnaround" xml:space="preserve">
+    <value>Czas kompletowania incydentu</value>
+  </data>
+  <data name="GraphName_RequirementCoverage" xml:space="preserve">
+    <value>Pokrycie wymagań</value>
+  </data>
+  <data name="GraphName_RequirementSummary" xml:space="preserve">
+    <value>Podsumowanie wymagań</value>
+  </data>
+  <data name="GraphName_TaskBurnDown" xml:space="preserve">
+    <value>Burndown zadania </value>
+  </data>
+  <data name="GraphName_TaskBurnUp" xml:space="preserve">
+    <value>Burnup zadania</value>
+  </data>
+  <data name="GraphName_TaskSummary" xml:space="preserve">
+    <value>Podsumowanie zadania</value>
+  </data>
+  <data name="GraphName_TaskVelocity" xml:space="preserve">
+    <value>Szybkość zadania</value>
+  </data>
+  <data name="GraphName_TestCaseSummary" xml:space="preserve">
+    <value>Podsumowanie przypadku testowego</value>
+  </data>
+  <data name="GraphName_TestRunProgressRate" xml:space="preserve">
+    <value>Wskaźnik postępu przebiegu testu</value>
+  </data>
+  <data name="GraphName_TestRunSummary" xml:space="preserve">
+    <value>Podsumowanie przebiegu testu</value>
+  </data>
+  <data name="Graph_ClosedCount" xml:space="preserve">
+    <value>Liczba zamkniętych</value>
+  </data>
+  <data name="Graph_Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="Graph_DiscoveredCount" xml:space="preserve">
+    <value>Liczba wykrytych</value>
+  </data>
+  <data name="Graph_OpenCount" xml:space="preserve">
+    <value>Liczba otwartych</value>
+  </data>
+  <data name="Graph_TotalCount" xml:space="preserve">
+    <value>Całkowita liczba</value>
+  </data>
+  <data name="Global_None" xml:space="preserve">
+    <value>(Brak)</value>
+  </data>
+  <data name="GraphDescription_TestSetSummary" xml:space="preserve">
+    <value>Wykres podsumowania zestawu testów pokazuje bieżącą ilość zestawów testowych w projekcie. Liczba zestawów testowych wyświetlana jest zgodnie z kryteriami, które należy określić. Można określić typ danych wyświetlonych wzdłuż osi X oraz informacje o zestawie testowym użytym do grupowania danych</value>
+  </data>
+  <data name="GraphName_TestSetSummary" xml:space="preserve">
+    <value>Podsumowanie zestawu testów</value>
+  </data>
+  <data name="Graph_Age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="Graph_Turnaround" xml:space="preserve">
+    <value>Kompletowanie</value>
+  </data>
+  <data name="Graph_Iteration" xml:space="preserve">
+    <value>Iteracja</value>
+  </data>
+  <data name="Graph_Release" xml:space="preserve">
+    <value>Wydanie</value>
+  </data>
+  <data name="Graphs_CompletedEffort" xml:space="preserve">
+    <value>Ukończony nakład</value>
+  </data>
+  <data name="Graphs_EstimatedEffort" xml:space="preserve">
+    <value>Szacowany nakład</value>
+  </data>
+  <data name="Graphs_IdealEffort" xml:space="preserve">
+    <value>Idealny nakład</value>
+  </data>
+  <data name="Graphs_RemainingEffort" xml:space="preserve">
+    <value>Pozostały nakład</value>
+  </data>
+  <data name="Graphs_ActualVelocity" xml:space="preserve">
+    <value>Szybkość faktyczna</value>
+  </data>
+  <data name="Graphs_ExpectedVelocity" xml:space="preserve">
+    <value>Oczekiwana szybkość</value>
+  </data>
+  <data name="Graph_Start" xml:space="preserve">
+    <value>Uruchom</value>
+  </data>
+  <data name="Graph_CoverageStatus" xml:space="preserve">
+    <value>Status pokrycia</value>
+  </data>
+  <data name="Project_ResourceAllocated" xml:space="preserve">
+    <value>Zasób zaalokowany</value>
+  </data>
+  <data name="Requirement_NewRequirement" xml:space="preserve">
+    <value>Nowe wymaganie</value>
+  </data>
+  <data name="Requirement_NewRequirementComment" xml:space="preserve">
+    <value>Nowe wymaganie utworzone na podstawie przypadku testowego</value>
+  </data>
+  <data name="Global_Incident" xml:space="preserve">
+    <value>Incydent</value>
+  </data>
+  <data name="Workflow_ChangeStatusSubject" xml:space="preserve">
+    <value>Zmieniony status z '{0}' na '{1}'</value>
+  </data>
+  <data name="Global_ImportedFrom" xml:space="preserve">
+    <value>Zaimportowane z projektu #{0}, {1} #{2}</value>
+  </data>
+  <data name="Global_ExportedTo" xml:space="preserve">
+    <value>Wyeksportowane do projektu #{0}, {1} #{2}</value>
+  </data>
+  <data name="Workflow_DefaultWorflow" xml:space="preserve">
+    <value>Domyślny workflow</value>
+  </data>
+  <data name="TestStep_Step" xml:space="preserve">
+    <value>Krok</value>
+  </data>
+  <data name="Global_Revision" xml:space="preserve">
+    <value>Przegląd</value>
+  </data>
+  <data name="Global_Report" xml:space="preserve">
+    <value>Raport</value>
+  </data>
+  <data name="History_ArtifactIdFormat" xml:space="preserve">
+    <value>Artefakt [{0}:{1}]</value>
+  </data>
+  <data name="History_PurgeProgress_AutomationHosts" xml:space="preserve">
+    <value>Czyszczenie hostów automatyzacji</value>
+  </data>
+  <data name="History_PurgeProgress_Complete" xml:space="preserve">
+    <value>Wykonane</value>
+  </data>
+  <data name="History_PurgeProgress_Incidents" xml:space="preserve">
+    <value>Czyszczenie incydentów…</value>
+  </data>
+  <data name="History_PurgeProgress_Releases" xml:space="preserve">
+    <value>Czyszczenie wydań…</value>
+  </data>
+  <data name="History_PurgeProgress_Requirements" xml:space="preserve">
+    <value>Czyszczenie wymagań…</value>
+  </data>
+  <data name="History_PurgeProgress_RequirementSteps" xml:space="preserve">
+    <value>Czyszczenie kroków wymagań…</value>
+  </data>
+  <data name="History_PurgeProgress_Tasks" xml:space="preserve">
+    <value>Czyszczenie zadań</value>
+  </data>
+  <data name="History_PurgeProgress_TestCases" xml:space="preserve">
+    <value>Czyszczenie przypadków testowych…</value>
+  </data>
+  <data name="History_PurgeProgress_TestSets" xml:space="preserve">
+    <value>Czyszczenie zestawów testowych…</value>
+  </data>
+  <data name="History_PurgeProgress_TestSteps" xml:space="preserve">
+    <value>Czyszczenie kroków testowych…</value>
+  </data>
+  <data name="TestCase_NotApplicable" xml:space="preserve">
+    <value>Nie dotyczy</value>
+  </data>
+  <data name="NotificationManager_SendIndivNotification" xml:space="preserve">
+    <value>{0} - To {1} wymaga twojej uwagi!</value>
+  </data>
+  <data name="SourceCode_SourceCodeCommit" xml:space="preserve">
+    <value>Kodeks źródłowy Zobowiązanie</value>
+  </data>
+  <data name="SourceCode_NoProvidersLoaded" xml:space="preserve">
+    <value>Nie można było załadować żadnych dostawców kodu źródłowego dla produktu #{0}.</value>
+  </data>
+  <data name="SourceCode_CouldNotLogin" xml:space="preserve">
+    <value>Nie można uwierzytelnić się u dostawcy kodu źródłowego.</value>
+  </data>
+  <data name="SourceCode_NoProvidersEnabled" xml:space="preserve">
+    <value>Dla produktu #{0} nie są włączeni żadni dostawcy kodu źródłowego.</value>
+  </data>
+  <data name="SouceCode_UnableToLoadDLL" xml:space="preserve">
+    <value>Nie można załadować dostawcy kontroli wersji "{0}".</value>
+  </data>
+  <data name="SourceCode_CouldNotIni" xml:space="preserve">
+    <value>Nie mógł zainicjować biblioteki dostawcy "{0}".</value>
+  </data>
+  <data name="SourceCode_InvalidCache" xml:space="preserve">
+    <value>Biblioteka Version Control aktualizuje pamięć podręczną.</value>
+  </data>
+  <data name="GraphDescription_RequirementBurnDown" xml:space="preserve">
+    <value>Wykres wymagań Burndown pokazuje pozostałą liczbę punktów fabularnych, które muszą być wykonane dla każdego wydania/wydruku produktu.</value>
+  </data>
+  <data name="GraphDescription_RequirementBurnUp" xml:space="preserve">
+    <value>Wykres wymagań dotyczących wypalania (Requirement Burnup) pokazuje łączną liczbę punktów historii dla każdego wydania/wydruku w produkcie wraz z liczbą pełnych punktów historii wskazanych dla każdego interwału.</value>
+  </data>
+  <data name="GraphDescription_RequirementVelocity" xml:space="preserve">
+    <value>Wykres Requirement Velocity pokazuje rzeczywistą liczbę punktów historii dostarczonych w każdym wydaniu produktu i/lub sprincie w porównaniu do średniej.</value>
+  </data>
+  <data name="GraphName_RequirementBurnDown" xml:space="preserve">
+    <value>Wymóg Burndown</value>
+  </data>
+  <data name="GraphName_RequirementBurnUp" xml:space="preserve">
+    <value>Wymóg Burnup</value>
+  </data>
+  <data name="GraphName_RequirementVelocity" xml:space="preserve">
+    <value>Wymaganie Prędkość</value>
+  </data>
+  <data name="Graphs_ActualBurnup" xml:space="preserve">
+    <value>Rzeczywisty Burnup</value>
+  </data>
+  <data name="Graphs_AverageVelocity" xml:space="preserve">
+    <value>Average Velocity</value>
+  </data>
+  <data name="Graphs_CompletedPoints" xml:space="preserve">
+    <value>Punkty ukończone</value>
+  </data>
+  <data name="Graphs_IdealBurndown" xml:space="preserve">
+    <value>Idealny Burndown</value>
+  </data>
+  <data name="Graphs_IdealBurnup" xml:space="preserve">
+    <value>Idealny Burnup</value>
+  </data>
+  <data name="Graphs_RemainingPoints" xml:space="preserve">
+    <value>Pozostałe punkty</value>
+  </data>
+  <data name="Graphs_RollingAverage" xml:space="preserve">
+    <value>Średnia krocząca</value>
+  </data>
+  <data name="Global_Multiple" xml:space="preserve">
+    <value>Wielokrotnie</value>
+  </data>
+  <data name="Project_ResourceAllocatedOpen" xml:space="preserve">
+    <value>Przydzielone do otwartych obiektów</value>
+  </data>
+  <data name="History_Exported" xml:space="preserve">
+    <value>Wywieziony</value>
+  </data>
+  <data name="History_Imported" xml:space="preserve">
+    <value>Importowane</value>
+  </data>
+  <data name="Exception_BadRequest" xml:space="preserve">
+    <value>Pole we wniosku było nieważne.</value>
+  </data>
+  <data name="Exception_Conflict" xml:space="preserve">
+    <value>Przedmiot o takiej nazwie/emailu już istnieje.</value>
+  </data>
+  <data name="Exception_Unauthorized" xml:space="preserve">
+    <value>Konto nie może wykonać tej czynności.</value>
+  </data>
+  <data name="Exception_Unknown" xml:space="preserve">
+    <value>Wystąpił nieznany błąd komunikacyjny ({0}). {1}</value>
+  </data>
+  <data name="Exceptioon_MethodNotAllowed" xml:space="preserve">
+    <value>Nie możesz wykonać tej akcji w tym momencie.</value>
+  </data>
+  <data name="TestCase_DefaultTestStepExpectedResult" xml:space="preserve">
+    <value>Działa zgodnie z oczekiwaniami.</value>
+  </data>
+  <data name="TestStep_WorksAsExpected" xml:space="preserve">
+    <value>Działa zgodnie z oczekiwaniami.</value>
+  </data>
+  <data name="Global_Root" xml:space="preserve">
+    <value>Korzenie</value>
+  </data>
+  <data name="Task_NewTask" xml:space="preserve">
+    <value>Nowe zadanie</value>
+  </data>
+  <data name="TestSet_NewTestSet" xml:space="preserve">
+    <value>Nowy zestaw testowy</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Opis</value>
+  </data>
+  <data name="GraphDescription_IncidentCountByStatus" xml:space="preserve">
+    <value>Wykres Incident Count by Status wyświetla łączną liczbę zdarzeń zalogowanych w systemie dla bieżącego produktu w określonym zakresie dat, pogrupowanych według stanu.</value>
+  </data>
+  <data name="GraphDescription_TestCaseProgress" xml:space="preserve">
+    <value>Wykres szybkości postępu testów pokazuje, ile unikalnych przypadków testowych zostało wykonanych w danym okresie czasu oraz jaki status wykonania został zarejestrowany.</value>
+  </data>
+  <data name="GraphDescription_TestCaseProgressCumulative" xml:space="preserve">
+    <value>Wykres Kumulatywnego Postępu Przebiegu Przypadku Testowego pokazuje postęp stanu realizacji Przebiegu Przypadku Testowego w danym okresie czasu w stosunku do całkowitej liczby nieprzeprowadzonych przypadków testowych.</value>
+  </data>
+  <data name="GraphName_IncidentCountByStatus" xml:space="preserve">
+    <value>Liczba incydentów według statusu</value>
+  </data>
+  <data name="GraphName_TestCaseProgress" xml:space="preserve">
+    <value>Wskaźnik postępów w testach</value>
+  </data>
+  <data name="GraphName_TestCaseProgressCumulative" xml:space="preserve">
+    <value>Przypadek testowy Łączny postęp</value>
+  </data>
+  <data name="TestSet_Future" xml:space="preserve">
+    <value>Przyszłość</value>
+  </data>
+  <data name="TestSet_Overdue" xml:space="preserve">
+    <value>Przeterminowane</value>
+  </data>
+  <data name="TestSet_Unscheduled" xml:space="preserve">
+    <value>Nieplanowane</value>
+  </data>
+  <data name="Global_Verify" xml:space="preserve">
+    <value>Weryfikacja</value>
+  </data>
+</root>

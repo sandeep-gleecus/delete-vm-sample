@@ -1,0 +1,36 @@
+DECLARE @TestCaseId INT
+DECLARE @IndentLevel NVARCHAR(50)
+DECLARE @ParentIndent NVARCHAR(50)
+DECLARE @FolderYn CHAR(1)
+DECLARE @IsDeleted BIT
+DECLARE @MatchCount INT
+DECLARE @ProjectId INT
+
+SET @ProjectId = 73
+
+DECLARE db_cursor CURSOR FOR  
+SELECT TEST_CASE_ID, INDENT_LEVEL, FOLDER_YN, IS_DELETED
+FROM TST_TEST_CASE WHERE PROJECT_ID = @ProjectId
+ORDER BY INDENT_LEVEL
+
+OPEN db_cursor   
+FETCH NEXT FROM db_cursor INTO @TestCaseId,@IndentLevel,@FolderYn,@IsDeleted
+
+WHILE @@FETCH_STATUS = 0   
+BEGIN   
+       IF LEN(@IndentLevel) > 3
+       BEGIN
+		SET @ParentIndent = LEFT(@IndentLevel, LEN(@IndentLevel)-3)
+		SELECT @MatchCount = COUNT(TEST_CASE_ID) FROM TST_TEST_CASE WHERE INDENT_LEVEL = @ParentIndent AND PROJECT_ID = @ProjectId AND FOLDER_YN = 'Y'
+		IF @MatchCount < 1
+		BEGIN
+			PRINT CAST (@TestCaseID AS NVARCHAR) + ' ' + @IndentLevel
+		END
+       END
+
+       FETCH NEXT FROM db_cursor INTO @TestCaseId,@IndentLevel,@FolderYn,@IsDeleted   
+END   
+
+CLOSE db_cursor   
+DEALLOCATE db_cursor 
+

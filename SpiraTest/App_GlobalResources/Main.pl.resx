@@ -1,0 +1,4280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Admin_EditWorkflows" xml:space="preserve">
+    <value>Edytuj workflow</value>
+  </data>
+  <data name="Admin_Notification_ArtifactFields" xml:space="preserve">
+    <value>Pola artefaktów</value>
+  </data>
+  <data name="Admin_Notification_ArtifactNotificationEnabled" xml:space="preserve">
+    <value>Włączone?</value>
+  </data>
+  <data name="Admin_Notification_ArtifactOpener" xml:space="preserve">
+    <value>Twórca artefaktu lub otwierający:</value>
+  </data>
+  <data name="Admin_Notification_ArtifactOwner" xml:space="preserve">
+    <value>Właściciel artefaktu:</value>
+  </data>
+  <data name="Admin_Notification_ArtifactPrefix" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="Admin_Notification_ArtifactType" xml:space="preserve">
+    <value>Typ artefaktu</value>
+  </data>
+  <data name="Admin_Notification_ArtifactUsers" xml:space="preserve">
+    <value>Użytkownicy i role projektowe</value>
+  </data>
+  <data name="Admin_Notification_ArtifactUsersRoles" xml:space="preserve">
+    <value>Użytkownik / Rola projektowa</value>
+  </data>
+  <data name="Admin_Notification_BackToNotificationList" xml:space="preserve">
+    <value>Powrót do notyfikacji</value>
+  </data>
+  <data name="Global_Edit" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="Admin_Notification_EMailServerSettings" xml:space="preserve">
+    <value>Konfiguracja email</value>
+  </data>
+  <data name="Admin_Notification_EventName" xml:space="preserve">
+    <value>Nazwa zdarzenia notyfikacyjnego</value>
+  </data>
+  <data name="Admin_Notification_NavHeader" xml:space="preserve">
+    <value>Notyfikacje</value>
+  </data>
+  <data name="Admin_Notification_NewEvent" xml:space="preserve">
+    <value>Nowe zdarzenie</value>
+  </data>
+  <data name="Admin_Notification_NotifyOnChange" xml:space="preserve">
+    <value>Powiadamiaj po zmianie?</value>
+  </data>
+  <data name="Admin_Notification_OnCreation" xml:space="preserve">
+    <value>Przy utworzeniu?</value>
+  </data>
+  <data name="Admin_Notification_ProjectRoles" xml:space="preserve">
+    <value>Role projektowe:</value>
+  </data>
+  <data name="Global_Test" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Admin_Notification_ViewEditNotification" xml:space="preserve">
+    <value>Zdarzenia notyfikacyjne</value>
+  </data>
+  <data name="Admin_Notification_ViewEditNotificationEvent" xml:space="preserve">
+    <value>Szczegóły zdarzenia notyfikacyjnego</value>
+  </data>
+  <data name="Admin_Notification_ViewNotificationTemplates" xml:space="preserve">
+    <value>Szablony notyfikacji</value>
+  </data>
+  <data name="Global_Active" xml:space="preserve">
+    <value>Aktywne?</value>
+  </data>
+  <data name="Global_Artifact" xml:space="preserve">
+    <value>Artefakt</value>
+  </data>
+  <data name="Global_DisplayDataFor" xml:space="preserve">
+    <value>Wyświetlić dane dla</value>
+  </data>
+  <data name="Global_GoTo" xml:space="preserve">
+    <value>Przejdź do</value>
+  </data>
+  <data name="Global_Operations" xml:space="preserve">
+    <value>Operacje</value>
+  </data>
+  <data name="Global_SelectedRelease" xml:space="preserve">
+    <value>Wybrane wydania:</value>
+  </data>
+  <data name="Global_Step" xml:space="preserve">
+    <value>Krok</value>
+  </data>
+  <data name="Global_Version" xml:space="preserve">
+    <value>Wersja</value>
+  </data>
+  <data name="IterationPlan_MainLegend" xml:space="preserve">
+    <value>Wyświetlenie planu iteracji dla wybranego wydania:</value>
+  </data>
+  <data name="Login_DontHaveAccount" xml:space="preserve">
+    <value>Nie masz konta?</value>
+  </data>
+  <data name="Login_EnterUserNamePassword" xml:space="preserve">
+    <value>Wprowadź nazwę użytkownika i hasło, a następnie kliknij przycisk logowania.</value>
+  </data>
+  <data name="Login_ForgotPassword" xml:space="preserve">
+    <value>Zapomniałeś hasła?</value>
+  </data>
+  <data name="Login_KeepLoggedIn" xml:space="preserve">
+    <value>Zapamiętaj mnie</value>
+  </data>
+  <data name="Login_Password" xml:space="preserve">
+    <value>Hasło</value>
+  </data>
+  <data name="Login_UserName" xml:space="preserve">
+    <value>Nazwa użytkownika</value>
+  </data>
+  <data name="ProjectList_AddItems" xml:space="preserve">
+    <value>Dodaj elementy</value>
+  </data>
+  <data name="ProjectList_AllProjects" xml:space="preserve">
+    <value>Wszystkie projekty</value>
+  </data>
+  <data name="ProjectList_BrowseView" xml:space="preserve">
+    <value>Powrót do widoku normalnego</value>
+  </data>
+  <data name="ProjectList_CurrentProject" xml:space="preserve">
+    <value>Bieżący projekt</value>
+  </data>
+  <data name="ProjectList_DesignView" xml:space="preserve">
+    <value>Modyfikuj układ/ustawienia</value>
+  </data>
+  <data name="ProjectList_MyAssignedIncidents" xml:space="preserve">
+    <value>Incydenty przypisane do mnie</value>
+  </data>
+  <data name="ProjectList_MyAssignedRequirements" xml:space="preserve">
+    <value>Wymagania przypisanie do mnie</value>
+  </data>
+  <data name="ProjectList_MyAssignedTasks" xml:space="preserve">
+    <value>Zadania przypisane do mnie</value>
+  </data>
+  <data name="ProjectList_MyAssignedTestCases" xml:space="preserve">
+    <value>Przypadki testowe przypisane do mnie</value>
+  </data>
+  <data name="ProjectList_MyAssignedTestSets" xml:space="preserve">
+    <value>Zestawy testowe przypisane do mnie</value>
+  </data>
+  <data name="ProjectList_MyDetectedIncidents" xml:space="preserve">
+    <value>Incydenty wykryte przeze mnie</value>
+  </data>
+  <data name="ProjectList_MyPage" xml:space="preserve">
+    <value>Moja strona</value>
+  </data>
+  <data name="ProjectList_MyPendingTestRuns" xml:space="preserve">
+    <value>Wstrzymane przebiegi testów</value>
+  </data>
+  <data name="ProjectList_MyProjects" xml:space="preserve">
+    <value>Moje projekty</value>
+  </data>
+  <data name="ProjectList_MySavedReports" xml:space="preserve">
+    <value>Moje zapisane raporty</value>
+  </data>
+  <data name="ProjectList_MySavedSearches" xml:space="preserve">
+    <value>Moje zapisane wyszukiwania</value>
+  </data>
+  <data name="ProjectList_MyWeather" xml:space="preserve">
+    <value>Moja pogoda</value>
+  </data>
+  <data name="ProjectList_WelcomePrefix" xml:space="preserve">
+    <value>Witamy</value>
+  </data>
+  <data name="ProjectList_WelcomeSuffix" xml:space="preserve">
+    <value>w twoim Dashboardzie</value>
+  </data>
+  <data name="TestCaseExecution_ActualResult" xml:space="preserve">
+    <value>Faktyczny wynik</value>
+  </data>
+  <data name="TestCaseExecution_ActualResult2" xml:space="preserve">
+    <value>Jeżeli faktyczny wynik testu jest inny, wpisz go a następnie wybierz odpowiedni przycisk:</value>
+  </data>
+  <data name="TestCaseExecution_ExistingIncidents" xml:space="preserve">
+    <value>Do tego kroku zostały zgłoszone następujące incydenty:</value>
+  </data>
+  <data name="TestCaseExecution_ExpectedResult" xml:space="preserve">
+    <value>Oczekiwany wynik:</value>
+  </data>
+  <data name="TestCaseExecution_FollowDirections" xml:space="preserve">
+    <value>Postępuj zgodnie ze wskazówkami podanymi w polu poniżej:</value>
+  </data>
+  <data name="TestCaseExecution_IncidentCustomProperties" xml:space="preserve">
+    <value>Wprowadź  wartości w pola definiowalne dla nowego incydentu:</value>
+  </data>
+  <data name="TestCaseExecution_SampleData" xml:space="preserve">
+    <value>Przykładowe dane:</value>
+  </data>
+  <data name="TestExecutionService_IncidentText_ActualResult" xml:space="preserve">
+    <value>Faktyczny wynik</value>
+  </data>
+  <data name="TestExecutionService_IncidentText_Description" xml:space="preserve">
+    <value>Opis</value>
+  </data>
+  <data name="TestExecutionService_IncidentText_ExpectedResult" xml:space="preserve">
+    <value>Oczekiwany wynik</value>
+  </data>
+  <data name="TestSetDetails_TestCaseDragDropLegend" xml:space="preserve">
+    <value>W celu zmiany kolejności przypadków testowych, kliknij na ikonę przypadku testowego, a następnie przeciągnij ją do odpowiedniego miejsca na liście.</value>
+  </data>
+  <data name="Login_LicensedTo" xml:space="preserve">
+    <value>Licencja dla:</value>
+  </data>
+  <data name="Notifications_EnterListofEmails" xml:space="preserve">
+    <value>Lista adresów e-mail, rozdzielonych znakiem ;</value>
+  </data>
+  <data name="Notifications_SelectProjectUser" xml:space="preserve">
+    <value>Wybierz użytkownika do którego wysłać.</value>
+  </data>
+  <data name="Notifications_SendEmailTo" xml:space="preserve">
+    <value>Wyślij e-mail z tym artefaktem</value>
+  </data>
+  <data name="Global_BlankforDefault" xml:space="preserve">
+    <value>Pozostaw puste dla wartości domyślnej.</value>
+  </data>
+  <data name="Admin_AutomationEngineDetails_Intro" xml:space="preserve">
+    <value>Wprowadź informację dotyczące silnika automatyzacji. Poniższe pola są wymagane in &lt;b&gt;bold&lt;/b&gt;:</value>
+  </data>
+  <data name="Admin_AutomationEngineDetails_LinkHome" xml:space="preserve">
+    <value>Wróć do strony głównej modułu silniki automatyzacji</value>
+  </data>
+  <data name="Admin_AutomationEngineDetails_NewProvider" xml:space="preserve">
+    <value>Nowy silnik</value>
+  </data>
+  <data name="Admin_AutomationEngineDetails_Title" xml:space="preserve">
+    <value>Edytuj silnik</value>
+  </data>
+  <data name="Admin_AutomationEngines_Intro1" xml:space="preserve">
+    <value>umożliwia integrację z wieloma zewnętrznymi narzędziami do automatyzacji dzięki otwartej architekturze i bibliotekom silników automatyzacji.</value>
+  </data>
+  <data name="Admin_AutomationEngines_Intro2" xml:space="preserve">
+    <value>Ten ekran umożliwia dodawanie, edycję oraz przeglądanie silników automatyzacji testów. Konfiguracja:</value>
+  </data>
+  <data name="Admin_AutomationEngines_Title" xml:space="preserve">
+    <value>Silniki automatyzacji testów</value>
+  </data>
+  <data name="Global_AddDiscussion" xml:space="preserve">
+    <value>Aby dodać komentarz, wpisz go poniżej i kliknij przycisk [Zapisz]:</value>
+  </data>
+  <data name="Global_Discussion" xml:space="preserve">
+    <value>Komentarze</value>
+  </data>
+  <data name="Global_ExistingDiscussion" xml:space="preserve">
+    <value>Istniejące komentarze</value>
+  </data>
+  <data name="Global_hours" xml:space="preserve">
+    <value>godziny</value>
+  </data>
+  <data name="Global_BackTo" xml:space="preserve">
+    <value>Wróć do</value>
+  </data>
+  <data name="Resources_ResourceList" xml:space="preserve">
+    <value>Lista zasobów</value>
+  </data>
+  <data name="IterationPlan_IncludeTasks" xml:space="preserve">
+    <value>Uwzględnione zadania</value>
+  </data>
+  <data name="UserProfile_ConfirmNewPassword" xml:space="preserve">
+    <value>Potwierdź hasło:</value>
+  </data>
+  <data name="UserProfile_CurrentPassword" xml:space="preserve">
+    <value>Aktualne hasło:</value>
+  </data>
+  <data name="UserProfile_EmailAddress" xml:space="preserve">
+    <value>Adres e-mail:</value>
+  </data>
+  <data name="UserProfile_EnableNotifications" xml:space="preserve">
+    <value>Włącz powiadomienia e-mail:</value>
+  </data>
+  <data name="UserProfile_FirstName" xml:space="preserve">
+    <value>Imię:</value>
+  </data>
+  <data name="UserProfile_LastName" xml:space="preserve">
+    <value>Nazwisko:</value>
+  </data>
+  <data name="UserProfile_LDAPDN" xml:space="preserve">
+    <value>LDAP DN:</value>
+  </data>
+  <data name="UserProfile_MiddleInitial" xml:space="preserve">
+    <value>MI:</value>
+  </data>
+  <data name="UserProfile_NameId" xml:space="preserve">
+    <value>Nazwa użytkownika/ID:</value>
+  </data>
+  <data name="UserProfile_NewPassword" xml:space="preserve">
+    <value>Nowe hasło:</value>
+  </data>
+  <data name="UserProfile_TabChangePassword" xml:space="preserve">
+    <value>Zmiana hasła</value>
+  </data>
+  <data name="UserProfile_TabEmailPreferences" xml:space="preserve">
+    <value>Ustawienia e-mail</value>
+  </data>
+  <data name="UserProfile_TabLDAPSettings" xml:space="preserve">
+    <value>Ustawienia LDAP</value>
+  </data>
+  <data name="Attachment_NotExistError" xml:space="preserve">
+    <value>Nie znaleziono załącznika. ({0})</value>
+  </data>
+  <data name="TestRunDetails_ActualDuration" xml:space="preserve">
+    <value>Faktyczny czas:</value>
+  </data>
+  <data name="TestRunDetails_EstimatedDuration" xml:space="preserve">
+    <value>Szacowany czas:</value>
+  </data>
+  <data name="TestRunDetails_AutomationHost" xml:space="preserve">
+    <value>Host automatyzacji:</value>
+  </data>
+  <data name="TestRunDetails_ExecutionDate" xml:space="preserve">
+    <value>Data wykonania:</value>
+  </data>
+  <data name="TestRunDetails_ExecutionStatus" xml:space="preserve">
+    <value>Status wykonania:</value>
+  </data>
+  <data name="TestRunDetails_Release" xml:space="preserve">
+    <value>Wydanie #:</value>
+  </data>
+  <data name="TestRunDetails_TestCase" xml:space="preserve">
+    <value>Przypadek testowy #:</value>
+  </data>
+  <data name="TestRunDetails_TesterName" xml:space="preserve">
+    <value>Tester:</value>
+  </data>
+  <data name="TestRunDetails_TestRunType" xml:space="preserve">
+    <value>Typ przebiegu testu:</value>
+  </data>
+  <data name="TestRunDetails_TestSet" xml:space="preserve">
+    <value>Zestaw testowy:</value>
+  </data>
+  <data name="UserProfile_RegionalSettings" xml:space="preserve">
+    <value>Ustawienia regionalne</value>
+  </data>
+  <data name="UserDetails_ToChangeCultureSettings" xml:space="preserve">
+    <value>Wybierz odpowiedni region z listy poniżej. To ustawienie określa format liczb/dat, a także język używany w całej aplikacji. Jeśli nie zostanie wybrana żadna wartość, obowiązywać będą wartości domyślne.</value>
+  </data>
+  <data name="UserProfile_UserCulture" xml:space="preserve">
+    <value>Uwarunkowania kulturowe użytkownika:</value>
+  </data>
+  <data name="Global_Copyright" xml:space="preserve">
+    <value>Prawa autorskie</value>
+  </data>
+  <data name="EmailPassword_EnterUserName" xml:space="preserve">
+    <value>Proszę podaj swój adres nazwę i adres e-mail użytkownika, a następnie kliknij przycisk [Resetuj], aby zresetować
+								hasło.</value>
+  </data>
+  <data name="EmailPassword_NewPasswordWillBeSent" xml:space="preserve">
+    <value>Nowe hasło zostanie wysłane na adres e-mail przechowywane w profilu.</value>
+  </data>
+  <data name="EmailPassword_ReturnToLogin" xml:space="preserve">
+    <value>Powrócić do strony logowania</value>
+  </data>
+  <data name="EmailPassword_Title" xml:space="preserve">
+    <value>Zapomniałem hasła</value>
+  </data>
+  <data name="ForceSession_Body1" xml:space="preserve">
+    <value>Możesz użyć</value>
+  </data>
+  <data name="ForceSession_Body2" xml:space="preserve">
+    <value>spróbować użyć innej nazwy użytkownika lub:</value>
+  </data>
+  <data name="ForceSession_Body3" xml:space="preserve">
+    <value>co wymusi wylogowanie z innych lokalizacji.</value>
+  </data>
+  <data name="ForceSession_Title" xml:space="preserve">
+    <value>Zalogowany już w innym miejscu</value>
+  </data>
+  <data name="GlobalNavigation_Administration" xml:space="preserve">
+    <value>Administracja</value>
+  </data>
+  <data name="GlobalNavigation_Help" xml:space="preserve">
+    <value>Potrzebujesz pomocy?</value>
+  </data>
+  <data name="GlobalNavigation_HelpTooltip" xml:space="preserve">
+    <value>Uruchomienie pomocy online</value>
+  </data>
+  <data name="GlobalNavigation_MyProfile" xml:space="preserve">
+    <value>Mój profil</value>
+  </data>
+  <data name="Global_NumberRowsToDisplay" xml:space="preserve">
+    <value># Wiersze do wyświetlenia</value>
+  </data>
+  <data name="Global_NumberRowsToDisplayTooltip" xml:space="preserve">
+    <value>Ogranicza liczbę wyświetlanych wierszy</value>
+  </data>
+  <data name="Global_Welcome" xml:space="preserve">
+    <value>Witamy</value>
+  </data>
+  <data name="Global_WelcomeTo" xml:space="preserve">
+    <value>Witamy w</value>
+  </data>
+  <data name="NeedAccount_EnterInfo" xml:space="preserve">
+    <value>Proszę wprowadzić użytkownik nazwa i adres e-mail w formie poniżej. &lt; br / &gt;
+								Wiadomość e-mail zostanie wysłany do administratora żądanie nowego konta:</value>
+  </data>
+  <data name="NeedAccount_Heading1" xml:space="preserve">
+    <value>Nowe {0} konta</value>
+  </data>
+  <data name="NeedAccount_Title" xml:space="preserve">
+    <value>Żądanie nowego konta</value>
+  </data>
+  <data name="SiteMap_AutomationHosts" xml:space="preserve">
+    <value>Host automatyzacji</value>
+  </data>
+  <data name="SiteMap_Documents" xml:space="preserve">
+    <value>Dokumenty</value>
+  </data>
+  <data name="SiteMap_Incidents" xml:space="preserve">
+    <value>Incydenty</value>
+  </data>
+  <data name="SiteMap_Iterations" xml:space="preserve">
+    <value>Iteracje</value>
+  </data>
+  <data name="SiteMap_MyPage" xml:space="preserve">
+    <value>Moja strona</value>
+  </data>
+  <data name="SiteMap_Planning" xml:space="preserve">
+    <value>Planowanie</value>
+  </data>
+  <data name="SiteMap_ProjectGroupHome" xml:space="preserve">
+    <value>Strona grupy projektu</value>
+  </data>
+  <data name="SiteMap_ProjectHome" xml:space="preserve">
+    <value>Strona projektu</value>
+  </data>
+  <data name="SiteMap_Releases" xml:space="preserve">
+    <value>Wydania</value>
+  </data>
+  <data name="SiteMap_Reporting" xml:space="preserve">
+    <value>Raportowanie</value>
+  </data>
+  <data name="SiteMap_Requirements" xml:space="preserve">
+    <value>Wymagania</value>
+  </data>
+  <data name="SiteMap_Resources" xml:space="preserve">
+    <value>Zasoby</value>
+  </data>
+  <data name="SiteMap_SourceCode" xml:space="preserve">
+    <value>Kod źródłowy</value>
+  </data>
+  <data name="SiteMap_Tasks" xml:space="preserve">
+    <value>Zadania</value>
+  </data>
+  <data name="SiteMap_TestCases" xml:space="preserve">
+    <value>Przypadki testowe</value>
+  </data>
+  <data name="SiteMap_Testing" xml:space="preserve">
+    <value>Testowanie</value>
+  </data>
+  <data name="SiteMap_TestRuns" xml:space="preserve">
+    <value>Przebiegi testu</value>
+  </data>
+  <data name="SiteMap_TestSets" xml:space="preserve">
+    <value>Zestawy testowe</value>
+  </data>
+  <data name="SiteMap_Tracking" xml:space="preserve">
+    <value>Śledzenie</value>
+  </data>
+  <data name="ErrorPage_MyPage" xml:space="preserve">
+    <value>Moja strona'</value>
+  </data>
+  <data name="ErrorPage_PleaseClick" xml:space="preserve">
+    <value>Wystąpił błąd systemowy ... Kliknij na</value>
+  </data>
+  <data name="ErrorPage_ReturnToApp" xml:space="preserve">
+    <value>link do powrotu do aplikacji</value>
+  </data>
+  <data name="ErrorPage_Title" xml:space="preserve">
+    <value>Błąd systemowy</value>
+  </data>
+  <data name="InvalidDatabase_Title" xml:space="preserve">
+    <value>Nieprawidłowe odwołanie do bazy danych</value>
+  </data>
+  <data name="InvalidLicense_Change" xml:space="preserve">
+    <value>Zamiana</value>
+  </data>
+  <data name="InvalidLicense_LicenseDetails" xml:space="preserve">
+    <value>Szczegóły licencji</value>
+  </data>
+  <data name="InvalidLicense_Login" xml:space="preserve">
+    <value>Zaloguj się</value>
+  </data>
+  <data name="InvalidLicense_Page" xml:space="preserve">
+    <value>strona.</value>
+  </data>
+  <data name="InvalidLicense_ReturnTo" xml:space="preserve">
+    <value>Powrót do</value>
+  </data>
+  <data name="InvalidLicense_Title" xml:space="preserve">
+    <value>Nieprawidłowa licencja na serwerze</value>
+  </data>
+  <data name="WeatherBox_AsOf" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="WeatherBox_ClosestWeatherStation" xml:space="preserve">
+    <value>Najbliższa stacja pogodowa do Twojej lokalizacji, "{0}":&lt;br /&gt;Stacja: {1} w {2}&lt;br/&gt;Nazwa: {3}</value>
+  </data>
+  <data name="WeatherBox_CurrentlyIn" xml:space="preserve">
+    <value>Obecnie w</value>
+  </data>
+  <data name="WeatherBox_CurrentTemperature" xml:space="preserve">
+    <value>Aktualna temperatura</value>
+  </data>
+  <data name="WeatherBox_FeelsLike" xml:space="preserve">
+    <value>Temperatura odczuwalna</value>
+  </data>
+  <data name="WeatherBox_Humidity" xml:space="preserve">
+    <value>Wilgotność</value>
+  </data>
+  <data name="WeatherBox_LocationSetting" xml:space="preserve">
+    <value>Lokalizacja</value>
+  </data>
+  <data name="WeatherBox_LocationSettingTooltip" xml:space="preserve">
+    <value>Twoja lokalizacja: kod pocztowy, miasto i stan/województwo, lub "Lat, Lon"</value>
+  </data>
+  <data name="WeatherBox_MetricSetting" xml:space="preserve">
+    <value>Jednostki metryczne?</value>
+  </data>
+  <data name="WeatherBox_MetricSettingTooltip" xml:space="preserve">
+    <value>Jeśli zaznaczone, pokazywane w jednostkach metrycznych</value>
+  </data>
+  <data name="WeatherBox_MyWeather" xml:space="preserve">
+    <value>Moja pogoda</value>
+  </data>
+  <data name="WeatherBox_PredictedHigh" xml:space="preserve">
+    <value>Przewidywana najwyższa</value>
+  </data>
+  <data name="WeatherBox_PredictedLow" xml:space="preserve">
+    <value>Przewidywana najniższa</value>
+  </data>
+  <data name="WeatherBox_Tomorrow" xml:space="preserve">
+    <value>Jutro</value>
+  </data>
+  <data name="WeatherBox_TomorrowsHigh" xml:space="preserve">
+    <value>Jutrzejsza najwyższa</value>
+  </data>
+  <data name="WeatherBox_TomorrowsLow" xml:space="preserve">
+    <value>Jutrzejsza najniższa</value>
+  </data>
+  <data name="WeatherBox_Unknown" xml:space="preserve">
+    <value>Nieznana</value>
+  </data>
+  <data name="WeatherBox_WeatherFor" xml:space="preserve">
+    <value>Pogoda dla</value>
+  </data>
+  <data name="WeatherBox_Wind" xml:space="preserve">
+    <value>Wiatr</value>
+  </data>
+  <data name="WeatherBox_YourLocalWeatherReport" xml:space="preserve">
+    <value>Twoja lokalna prognoza pogody</value>
+  </data>
+  <data name="Global_ViewAll" xml:space="preserve">
+    <value>Zobacz wszystko</value>
+  </data>
+  <data name="Global_ViewDetails" xml:space="preserve">
+    <value>Zobacz szczegóły</value>
+  </data>
+  <data name="ProjectHome_AddItems" xml:space="preserve">
+    <value>Dodaj elementy</value>
+  </data>
+  <data name="ProjectHome_IncidentAging" xml:space="preserve">
+    <value>Wiek otwartych incydentów</value>
+  </data>
+  <data name="ProjectHome_IncidentTestCoverage" xml:space="preserve">
+    <value>Pokrycie incydentu testami</value>
+  </data>
+  <data name="ProjectHome_LateFinishingTasks" xml:space="preserve">
+    <value>Późne zakończenie zadań</value>
+  </data>
+  <data name="ProjectHome_LateStartingTasks" xml:space="preserve">
+    <value>Późne rozpoczęcie zadań</value>
+  </data>
+  <data name="ProjectHome_ModifyLayoutSettings" xml:space="preserve">
+    <value>Modyfikacja układu/ustawień</value>
+  </data>
+  <data name="ProjectHome_ProjectOverview" xml:space="preserve">
+    <value>Przegląd projektu</value>
+  </data>
+  <data name="ProjectHome_ReleaseTaskProgress" xml:space="preserve">
+    <value>Postęp zadania w wydaniu</value>
+  </data>
+  <data name="ProjectHome_RequirementsCoverage" xml:space="preserve">
+    <value>Pokrycie wymagań</value>
+  </data>
+  <data name="ProjectHome_RequirementsRegressionCoverage" xml:space="preserve">
+    <value>Pokrycie wymagań regresji</value>
+  </data>
+  <data name="ProjectHome_RequirementsSummary" xml:space="preserve">
+    <value>Podsumowanie wymagań</value>
+  </data>
+  <data name="ProjectHome_ReturntoNormalView" xml:space="preserve">
+    <value>Powrót do widoku normalnego</value>
+  </data>
+  <data name="ProjectHome_TestSetStatus" xml:space="preserve">
+    <value>Status zestawu testów</value>
+  </data>
+  <data name="Global_UsePrioritySeveritySetting" xml:space="preserve">
+    <value>Użyj priorytet lub ważność</value>
+  </data>
+  <data name="Global_UsePrioritySeveritySettingTooltip" xml:space="preserve">
+    <value>Określa sortowanie wg kolumny ważność lub priorytet</value>
+  </data>
+  <data name="Global_ViewReleaseDetails" xml:space="preserve">
+    <value>Zobacz szczegóły wydania</value>
+  </data>
+  <data name="IncidentAging_AgingIntervalSetting" xml:space="preserve">
+    <value>Interwał czasowy (Dni)</value>
+  </data>
+  <data name="IncidentAging_AgingIntervalSettingTooltip" xml:space="preserve">
+    <value>Używany interwał czasowy (w # dniach)</value>
+  </data>
+  <data name="IncidentAging_AgingRangeSetting" xml:space="preserve">
+    <value>Zakres czasu (Dni)</value>
+  </data>
+  <data name="IncidentAging_AgingRangeSettingTooltip" xml:space="preserve">
+    <value>Maksymalny zakres wieku otwartych incydentów, wyświetlanego na diagramie</value>
+  </data>
+  <data name="IncidentSummary_DisplayingForIncidentType" xml:space="preserve">
+    <value>Wyświetlane dal typu incydentu:</value>
+  </data>
+  <data name="ProjectHome_IncidentOpenCount" xml:space="preserve">
+    <value>Liczba otwartych incydentów</value>
+  </data>
+  <data name="ProjectHome_IncidentSummary" xml:space="preserve">
+    <value>Podsumowanie incydentów</value>
+  </data>
+  <data name="ProjectHome_ReleaseTestSummary" xml:space="preserve">
+    <value>Podsumowanie testów w wydaniu</value>
+  </data>
+  <data name="ProjectHome_RequirementIncidentCount" xml:space="preserve">
+    <value>Liczba incydentów w wymaganiach</value>
+  </data>
+  <data name="ProjectHome_TestExecutionStatus" xml:space="preserve">
+    <value>Status wykonania testów</value>
+  </data>
+  <data name="ProjectHome_TopOpenIssues" xml:space="preserve">
+    <value>Ostatnio otwarte zagadnienia</value>
+  </data>
+  <data name="ProjectHome_TopOpenRisks" xml:space="preserve">
+    <value>Ostatnio otwarte ryzyka</value>
+  </data>
+  <data name="RequirementIncidentCount_OnlyIncludeOpenSetting" xml:space="preserve">
+    <value>Zawiera tylko wiersze z otwartymi incydentami</value>
+  </data>
+  <data name="RequirementIncidentCount_OnlyIncludeOpenSettingTooltip" xml:space="preserve">
+    <value>Wyświetlanie wszystkich wymagań z incydentami czy tylko te z otwartymi</value>
+  </data>
+  <data name="TestExecutionStatus_DailyRunCount" xml:space="preserve">
+    <value>Liczba dziennych przebiegów testów:</value>
+  </data>
+  <data name="TestExecutionStatus_TotalNumRuns" xml:space="preserve">
+    <value>Całkowita liczba # przebiegów testów</value>
+  </data>
+  <data name="TestSetStatus_OverdueTestSets" xml:space="preserve">
+    <value>Zaległe zestawy testowe</value>
+  </data>
+  <data name="Global_NumReqs" xml:space="preserve">
+    <value># Wymagań</value>
+  </data>
+  <data name="Global_NumRuns" xml:space="preserve">
+    <value># Przebiegów testów</value>
+  </data>
+  <data name="Global_NumTests" xml:space="preserve">
+    <value># Testów</value>
+  </data>
+  <data name="ProjectGroupHome_DisplayProjectDetailSetting" xml:space="preserve">
+    <value>Wyświetl szczegóły projektu:</value>
+  </data>
+  <data name="ProjectGroupHome_DisplayProjectDetailSettingTooltip" xml:space="preserve">
+    <value>Wyświetlanie poszczególnych danych dla każdego projektu</value>
+  </data>
+  <data name="ProjectGroupHome_DisplaySummaryGraphSetting" xml:space="preserve">
+    <value>Wyświetl wykres podsumowania:</value>
+  </data>
+  <data name="ProjectGroupHome_DisplaySummaryGraphSettingTooltip" xml:space="preserve">
+    <value>Wyświetlanie wykresu podsumowania dla grupy projektów</value>
+  </data>
+  <data name="ProjectGroupHome_GroupOverview" xml:space="preserve">
+    <value>Przegląd grupy</value>
+  </data>
+  <data name="ProjectGroupHome_IncidentAging" xml:space="preserve">
+    <value>Wiek otwartych incydentów</value>
+  </data>
+  <data name="ProjectGroupHome_ProjectList" xml:space="preserve">
+    <value>Lista projektów</value>
+  </data>
+  <data name="ProjectGroupHome_RequirementsCoverage" xml:space="preserve">
+    <value>Pokrycie wymagań</value>
+  </data>
+  <data name="ProjectGroupHome_TaskProgress" xml:space="preserve">
+    <value>Postęp zadań</value>
+  </data>
+  <data name="ProjectGroupHome_TestExecutionStatus" xml:space="preserve">
+    <value>Status wykonania testu</value>
+  </data>
+  <data name="ProjectGroupHome_TopOpenIssues" xml:space="preserve">
+    <value>Ostatnio otwarte zagadnienia</value>
+  </data>
+  <data name="ProjectGroupHome_TopOpenRisks" xml:space="preserve">
+    <value>Ostatnio otwarte ryzyka</value>
+  </data>
+  <data name="Global_NewRequirement" xml:space="preserve">
+    <value>Nowe wymaganie</value>
+  </data>
+  <data name="AutomationHosts_AutomationHostsForProject" xml:space="preserve">
+    <value>automatyzacja hosta/ów dla tego projektu</value>
+  </data>
+  <data name="Global_Displaying" xml:space="preserve">
+    <value>Wyświetlanie</value>
+  </data>
+  <data name="Global_OutOf" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="IncidentList_IncidentsForProject" xml:space="preserve">
+    <value>Incydentu(ów) dla tego projektu</value>
+  </data>
+  <data name="ResourceList_DisplayingResourceUsage" xml:space="preserve">
+    <value>Wyświetlanie wykorzystania zasobów dla bieżącego lub wybranego wydania:</value>
+  </data>
+  <data name="TaskList_TasksForProject" xml:space="preserve">
+    <value>zadanie(a) dla tego projektu</value>
+  </data>
+  <data name="TestCaseList_TestCasesForRelease" xml:space="preserve">
+    <value>przypadek (przypadki) testowe dla tego wydania</value>
+  </data>
+  <data name="TestRunList_TestRunsForProject" xml:space="preserve">
+    <value>przebieg(i) testów dla tego projektu</value>
+  </data>
+  <data name="ArtifactEmail_EmailAddresses" xml:space="preserve">
+    <value>Adresy e-mail:</value>
+  </data>
+  <data name="ArtifactEmail_MessageSubject" xml:space="preserve">
+    <value>Temat wiadomości:</value>
+  </data>
+  <data name="ArtifactEmail_ProjectUser" xml:space="preserve">
+    <value>Użytkownik projektu:</value>
+  </data>
+  <data name="CustomPropertyPanel_ArtifactCustomProperties" xml:space="preserve">
+    <value>Pola definiowalne tego artefaktu to:</value>
+  </data>
+  <data name="CustomPropertyPanel_FieldIsRequired" xml:space="preserve">
+    <value>{0}' jest polem wymaganym.</value>
+  </data>
+  <data name="TestCaseSelector_AvailableTestCases" xml:space="preserve">
+    <value>Dostępne przypadki testowe:</value>
+  </data>
+  <data name="TestCaseSelector_CreateTestCaseFromRequirement" xml:space="preserve">
+    <value>Utwórz przypadek testowy na podstawie wymagania</value>
+  </data>
+  <data name="TestCaseSelector_CreateTestCaseFromRequirementTooltip" xml:space="preserve">
+    <value>Kliknij, aby utworzyć nowy przypadek testowy w drzewie przypadków testowych, które jest powiązane z tym wymaganiem</value>
+  </data>
+  <data name="TestCaseSelector_CreateTestSetFromRelease" xml:space="preserve">
+    <value>Utwórz zestaw testowy na podstawie wydania</value>
+  </data>
+  <data name="TestCaseSelector_CreateTestSetFromReleaseTooltip" xml:space="preserve">
+    <value>Kliknij aby utworzyć nowy zestaw testowy na liście zestawów testowych, gdzie zaimportowano przypadki testowe z tego wydania</value>
+  </data>
+  <data name="TestCaseSelector_ReleaseLegend1" xml:space="preserve">
+    <value>W polu 'Pokrycie testu' wskazane są przypadki testowe już zmapowane do wydania</value>
+  </data>
+  <data name="TestCaseSelector_ReleaseLegend2" xml:space="preserve">
+    <value>Aby dodać przypadki testowe do tego wydania, należy wybrać je z powyższej listy i kliknąć przycisk [Dodaj].</value>
+  </data>
+  <data name="TestCaseSelector_ReleaseLegend3" xml:space="preserve">
+    <value>Możesz użyć przycisków [Usuń] i [Usuń wszystkie] w celu usunięcia testów, które nie pokrywają wydania.</value>
+  </data>
+  <data name="TestCaseSelector_RequirementLegend1" xml:space="preserve">
+    <value>W polu 'Pokrycie testu' wskazane są przypadki testowe zmapowane do wymagania</value>
+  </data>
+  <data name="TestCaseSelector_RequirementLegend2" xml:space="preserve">
+    <value>Aby dodać przypadki testowe do tego wymagania, należy dokonać wyboru z powyższej listy i kliknąć przycisk [Dodaj].</value>
+  </data>
+  <data name="TestCaseSelector_RequirementLegend3" xml:space="preserve">
+    <value>Możesz użyć przycisków [Usuń] i [Usuń wszystkie] w celu usunięcia testów, które nie pokrywają się z wymaganiami.</value>
+  </data>
+  <data name="TestCaseSelector_TestCoverage" xml:space="preserve">
+    <value>Pokrycie testu:</value>
+  </data>
+  <data name="RequirementDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy wymagań</value>
+  </data>
+  <data name="ReleaseDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy wydań</value>
+  </data>
+  <data name="Global_PersonDays" xml:space="preserve">
+    <value>osobodni</value>
+  </data>
+  <data name="ReleaseDetails_DisplayIncidents" xml:space="preserve">
+    <value>Wyświetl listę incydentów:</value>
+  </data>
+  <data name="TestCaseDetails_AddNewParameterToTestCase" xml:space="preserve">
+    <value>Dodaj nowy parametr do tego przypadku testowego:</value>
+  </data>
+  <data name="TestCaseDetails_AutomatedSectionIntro" xml:space="preserve">
+    <value>Ta sekcja definiuje zautomatyzowany skrypt testowy związany z tym przypadkiem testowym:</value>
+  </data>
+  <data name="TestCaseDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy testów</value>
+  </data>
+  <data name="TestCaseDetails_EditTestCaseParameters" xml:space="preserve">
+    <value>Edycja parametrów przypadków testowych</value>
+  </data>
+  <data name="TestCaseDetails_ParametersDefinedForTestCase" xml:space="preserve">
+    <value>Dla tego przypadku testowego zostały zdefiniowane następujące parametry:</value>
+  </data>
+  <data name="TestCaseDetails_ToChangeOrder" xml:space="preserve">
+    <value>Aby zmienić kolejność kroków testowych, należy kliknąć na krok testowy / ikonę linku i przeciągnąć na odpowiednie miejsce na liście.</value>
+  </data>
+  <data name="ReleaseSelector_AvailableReleases" xml:space="preserve">
+    <value>Dostępne wydania:</value>
+  </data>
+  <data name="ReleaseSelector_Legend1" xml:space="preserve">
+    <value>W polu 'Zmapowane wydania' wskazane są wydania, które są aktualnie zmapowane do przypadku testowego.</value>
+  </data>
+  <data name="ReleaseSelector_Legend2" xml:space="preserve">
+    <value>Aby powiązać wydanie z tym przypadkiem testowym należy dokonać wyboru z listy powyżej i kliknąć przycisk [Dodaj].</value>
+  </data>
+  <data name="ReleaseSelector_Legend3" xml:space="preserve">
+    <value>Możesz użyć przycisków [Usuń] i [Usuń wszystkie] w celu usunięcia wydań, które nie są już pokryte przypadkami testowymi.</value>
+  </data>
+  <data name="ReleaseSelector_MappedReleases" xml:space="preserve">
+    <value>Zmapowane wydania:</value>
+  </data>
+  <data name="RequirementSelector_AvailableRequirements" xml:space="preserve">
+    <value>Dostępne wymagania:</value>
+  </data>
+  <data name="RequirementSelector_CreateRequirementFromTestCase" xml:space="preserve">
+    <value>Tworzenie wymagania ze wskazanego przypadku testowego</value>
+  </data>
+  <data name="RequirementSelector_CreateRequirementFromTestCaseTooltip" xml:space="preserve">
+    <value>Kliknij , aby utworzyć nowe wymaganie w drzewie wymagań, które jest związane z tym przypadkiem testowym</value>
+  </data>
+  <data name="RequirementSelector_Legend1" xml:space="preserve">
+    <value>W polu 'Pokrycie wymagań' wskazane są wymagania, które są aktualnie zmapowane do przypadku testowego.</value>
+  </data>
+  <data name="RequirementSelector_Legend2" xml:space="preserve">
+    <value>Aby dodać wymagania do przypadku testowego, należy dokonać wyboru z listy powyżej i kliknąć przycisk [Dodaj].</value>
+  </data>
+  <data name="RequirementSelector_Legend3" xml:space="preserve">
+    <value>Możesz użyć przycisków [Usuń] i [Usuń wszystkie] w celu usunięcia wymagań, które nie są już pokryte przypadkami testowymi.</value>
+  </data>
+  <data name="RequirementSelector_RequirementsCoverage" xml:space="preserve">
+    <value>Pokrycie wymagań:</value>
+  </data>
+  <data name="TestStepService_Call" xml:space="preserve">
+    <value>Wywołaj</value>
+  </data>
+  <data name="TestStepService_With" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="AutomationHostDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy hostów</value>
+  </data>
+  <data name="TestRunDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy przebiegu testów</value>
+  </data>
+  <data name="TestRunDetails_TestCaseAndTestStep" xml:space="preserve">
+    <value>Test # / Krok #</value>
+  </data>
+  <data name="TestRunDetails_ViewIncidents" xml:space="preserve">
+    <value>&gt; Przegląd incydentów</value>
+  </data>
+  <data name="TestSetDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy zestawów testowych</value>
+  </data>
+  <data name="TestStepDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy kroków testowych</value>
+  </data>
+  <data name="Admin_FileTypes_List" xml:space="preserve">
+    <value>Lista typów plików</value>
+  </data>
+  <data name="Admin_FileTypes_Description" xml:space="preserve">
+    <value>Opis</value>
+  </data>
+  <data name="Admin_FileTypes_Extension" xml:space="preserve">
+    <value>Rozszerzenie</value>
+  </data>
+  <data name="Admin_FileTypes_Icon" xml:space="preserve">
+    <value>Ikona</value>
+  </data>
+  <data name="Admin_FileTypes_MimeType" xml:space="preserve">
+    <value>Typ MIME:</value>
+  </data>
+  <data name="Global_WorkflowOperations" xml:space="preserve">
+    <value>Workflow operacyjny</value>
+  </data>
+  <data name="IncidentDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy incydentów</value>
+  </data>
+  <data name="Admin_FileTypes_SureDelete" xml:space="preserve">
+    <value>Czy chcesz usnąć ten typ pliku z listy?</value>
+  </data>
+  <data name="IncidentDetails_YouNeedTo" xml:space="preserve">
+    <value>Musisz</value>
+  </data>
+  <data name="IncidentDetails_YouNeedToEnding" xml:space="preserve">
+    <value>ten incydent, zanim będzie można dodać załączniki.</value>
+  </data>
+  <data name="TaskDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy zadań</value>
+  </data>
+  <data name="Admin_FileTypes_EditFileType" xml:space="preserve">
+    <value>Edytuj / Dodaj Typy plików</value>
+  </data>
+  <data name="Admin_FileTypes_FileDescription" xml:space="preserve">
+    <value>Opis pliku:</value>
+  </data>
+  <data name="Admin_FileTypes_FileExtension" xml:space="preserve">
+    <value>Rozszerzenie pliku</value>
+  </data>
+  <data name="Admin_FileTypes_FileIconImage" xml:space="preserve">
+    <value>Ikona pliku:</value>
+  </data>
+  <data name="Admin_FileTypes_FileMimeType" xml:space="preserve">
+    <value>Typ MIME:</value>
+  </data>
+  <data name="Admin_FileTypes_FileTypeID" xml:space="preserve">
+    <value>Typ pliku ID:</value>
+  </data>
+  <data name="ResourceDetails_ResourceDetails" xml:space="preserve">
+    <value>Szczegóły zasobów</value>
+  </data>
+  <data name="ResourceDetails_CurrentPlanningSettings" xml:space="preserve">
+    <value>Ustawienia planowania projektów</value>
+  </data>
+  <data name="ResourceDetails_DaysPerWeek" xml:space="preserve">
+    <value>dni / tygodni</value>
+  </data>
+  <data name="ResourceDetails_HousePerDay" xml:space="preserve">
+    <value>godziny / dni</value>
+  </data>
+  <data name="ResourceDetails_NonWorkHoursPerMonth" xml:space="preserve">
+    <value>godziny niepracujące / miesiąc</value>
+  </data>
+  <data name="SourceCodeList_NoFolderSelected" xml:space="preserve">
+    <value>Brak wybranego folderu</value>
+  </data>
+  <data name="SourceCodeList_OtherOperations" xml:space="preserve">
+    <value>Inne operacje</value>
+  </data>
+  <data name="SourceCodeList_RepositoryBrowser" xml:space="preserve">
+    <value>Repozytorium przeglądarek</value>
+  </data>
+  <data name="SourceCodeList_RevisionLog" xml:space="preserve">
+    <value>Wyświetl dziennik zmian</value>
+  </data>
+  <data name="SourceCodeList_Title" xml:space="preserve">
+    <value>Repozytorium kodu źródłowego</value>
+  </data>
+  <data name="Admin_FileTypes_Adding" xml:space="preserve">
+    <value>dodawanie</value>
+  </data>
+  <data name="Admin_FileTypes_ErrorAction" xml:space="preserve">
+    <value>Błąd {0} typu pliku.</value>
+  </data>
+  <data name="Admin_FileTypes_Updating" xml:space="preserve">
+    <value>aktualizowanie</value>
+  </data>
+  <data name="SourceCodeRevisions_BackToRepository" xml:space="preserve">
+    <value>Powrót do repozytorium kodu źródłowego</value>
+  </data>
+  <data name="SourceCodeRevisions_Title" xml:space="preserve">
+    <value>Wersje kodu źródłowego</value>
+  </data>
+  <data name="Admin_FileTypes_NavHeaderFileIcon" xml:space="preserve">
+    <value>Ikony plików</value>
+  </data>
+  <data name="SourceCodeFileDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy plików</value>
+  </data>
+  <data name="SourceCodeFileDetails_SourceCodeFile" xml:space="preserve">
+    <value>Plik kodu źródłowego</value>
+  </data>
+  <data name="ReportConfiguration_BackToHome" xml:space="preserve">
+    <value>Powrót do strony głównej raportów</value>
+  </data>
+  <data name="ReportsConfiguration_CustomPropertyFilters" xml:space="preserve">
+    <value>Właściwości filtrów niestandardowych</value>
+  </data>
+  <data name="ReportsConfiguration_Legend1" xml:space="preserve">
+    <value>Dokonaj wyboru z opcji dostępnych poniżej, aby określić, jak raport ma zostać wyświetlony.</value>
+  </data>
+  <data name="ReportsConfiguration_Legend2" xml:space="preserve">
+    <value>Możesz filtrować wyniki wyświetlane w przypadku różnych parametrów, a także wybrać, które elementy raportu są wyświetlane.</value>
+  </data>
+  <data name="ReportsConfiguration_ReportElements" xml:space="preserve">
+    <value>Elementy raportu</value>
+  </data>
+  <data name="ReportsConfiguration_ReportFormat" xml:space="preserve">
+    <value>Format raportu</value>
+  </data>
+  <data name="ReportsConfiguration_SaveReportLegend" xml:space="preserve">
+    <value>Jeśli chcesz zapisać ten raport do wykorzystania w przyszłości, należy podać jego nazwę poniżej, przed kliknięciem przycisku [Utwórz raport]:</value>
+  </data>
+  <data name="ReportsConfiguration_ShareReport" xml:space="preserve">
+    <value>Chcę współdzielić ten raport wraz z innymi członkami projektu</value>
+  </data>
+  <data name="ReportsConfiguration_SortAscending" xml:space="preserve">
+    <value>Sortuj rosnąco</value>
+  </data>
+  <data name="ReportsConfiguration_SortOptions" xml:space="preserve">
+    <value>Opcje sortowania</value>
+  </data>
+  <data name="ReportsConfiguration_StandardFieldFilters" xml:space="preserve">
+    <value>Pola filtrów standardowych</value>
+  </data>
+  <data name="Reports_NoneAvailable" xml:space="preserve">
+    <value>Brak dostępnych</value>
+  </data>
+  <data name="Reports_SavedReports" xml:space="preserve">
+    <value>Raporty zapisane</value>
+  </data>
+  <data name="SourceCodeRevisionDetails_BackToList" xml:space="preserve">
+    <value>Wróć do przeglądu listy</value>
+  </data>
+  <data name="SourceCodeRevisionDetails_SourceCodeRevision" xml:space="preserve">
+    <value>Przegląd kodu źródłowego</value>
+  </data>
+  <data name="TestCaseExecution_BackToTests" xml:space="preserve">
+    <value>Wróć do testów</value>
+  </data>
+  <data name="TestCaseExecution_ChooseRelease" xml:space="preserve">
+    <value>Przed wykonaniem wybierz wydanie:</value>
+  </data>
+  <data name="TestCaseExecution_ChooseTestStep1" xml:space="preserve">
+    <value>Wybierz krok testowy z listy na pasku nawigacji lub kliknij</value>
+  </data>
+  <data name="TestCaseExecution_ChooseTestStep2" xml:space="preserve">
+    <value>Powrót do testów'</value>
+  </data>
+  <data name="TestCaseExecution_ChooseTestStep3" xml:space="preserve">
+    <value>aby wykonać inny przypadek testowy.</value>
+  </data>
+  <data name="TestCaseExecution_CustomPropertiesPresetLegend" xml:space="preserve">
+    <value>(Uwaga: Wszelkie pola definiowalne, które są tylko do odczytu, zostały już wypełnione z zestawu testowego)</value>
+  </data>
+  <data name="TestCaseExecution_EnterIncidentInfo" xml:space="preserve">
+    <value>Wprowadź następujące informacje, aby przypisać incydent do kroku testowego:</value>
+  </data>
+  <data name="TestCaseExecution_NoStepSelected" xml:space="preserve">
+    <value>Brak wybranego kroku testowego!</value>
+  </data>
+  <data name="TestCaseExecution_TestExecutionWizard" xml:space="preserve">
+    <value>Kreator wykonania testu</value>
+  </data>
+  <data name="TestCaseExecution_TestRunCustomProperties" xml:space="preserve">
+    <value>Wprowadź następujące informacje dla tego przebiegu testów:</value>
+  </data>
+  <data name="TestCaseExecution_Title" xml:space="preserve">
+    <value>Wykonanie przypadku testowego</value>
+  </data>
+  <data name="DocumentDetails_AddNewAssociation" xml:space="preserve">
+    <value>Dodaj nowe powiązanie</value>
+  </data>
+  <data name="DocumentDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy dokumentów</value>
+  </data>
+  <data name="DocumentDetails_ChooseArtifact" xml:space="preserve">
+    <value>Wybierz artefakt, który chcesz dodać do powiązania:</value>
+  </data>
+  <data name="DocumentDetails_MakeThisActiveVersion" xml:space="preserve">
+    <value>Ustaw wersję jako bieżącą</value>
+  </data>
+  <data name="DocumentDetails_Title" xml:space="preserve">
+    <value>Szczegóły dokumentu</value>
+  </data>
+  <data name="DocumentDetails_UploadNewVersion" xml:space="preserve">
+    <value>Załaduj nową wersję</value>
+  </data>
+  <data name="Documents_DocumentFolders" xml:space="preserve">
+    <value>Foldery dokumentów</value>
+  </data>
+  <data name="Documents_TagCloud" xml:space="preserve">
+    <value>Tagi</value>
+  </data>
+  <data name="Admin_HistoryChangeset" xml:space="preserve">
+    <value>Historia zmian w projekcie</value>
+  </data>
+  <data name="Admin_HistoryChangeDetails" xml:space="preserve">
+    <value>Szczegóły historii</value>
+  </data>
+  <data name="Reports_CreateNewReport" xml:space="preserve">
+    <value>Tworzenie raportu</value>
+  </data>
+  <data name="Reports_ReportsCenter" xml:space="preserve">
+    <value>Centrum raportów</value>
+  </data>
+  <data name="Reports_IncidentDateRangeGraphs" xml:space="preserve">
+    <value>Wykres incydentów wg zakresu dat</value>
+  </data>
+  <data name="Reports_DateRange" xml:space="preserve">
+    <value>Zakres dat</value>
+  </data>
+  <data name="Reports_GraphName" xml:space="preserve">
+    <value>Nazwa wykresu</value>
+  </data>
+  <data name="Global_Items" xml:space="preserve">
+    <value>elementy</value>
+  </data>
+  <data name="Admin_History_CustomLabel" xml:space="preserve">
+    <value>Pola definiowalne</value>
+  </data>
+  <data name="Admin_Histoy_StandardLabel" xml:space="preserve">
+    <value>Pola standardowe</value>
+  </data>
+  <data name="Global_SelectedDateRange" xml:space="preserve">
+    <value>Wybrany zakres dat</value>
+  </data>
+  <data name="Global_SelectedGraph" xml:space="preserve">
+    <value>Wybrany wykres</value>
+  </data>
+  <data name="Reports_TestingDateRangeGraphs" xml:space="preserve">
+    <value>Wykres testowania wg zakresu dat</value>
+  </data>
+  <data name="Reports_RequirementSummaryGraph" xml:space="preserve">
+    <value>Podsumowujący wykres wymagań</value>
+  </data>
+  <data name="Reports_GroupedBy" xml:space="preserve">
+    <value>Grupuj według:</value>
+  </data>
+  <data name="Reports_TestCaseSummaryGraph" xml:space="preserve">
+    <value>Wykres: Podsumowanie przypadków testowych</value>
+  </data>
+  <data name="Reports_XAxis" xml:space="preserve">
+    <value>Oś X</value>
+  </data>
+  <data name="Reports_IncidentSummaryGraph" xml:space="preserve">
+    <value>Wykres: Podsumowanie incydentów</value>
+  </data>
+  <data name="Reports_TaskSummaryGraph" xml:space="preserve">
+    <value>Wykres: Podsumowanie zadań</value>
+  </data>
+  <data name="Reports_TestRunSummaryGraph" xml:space="preserve">
+    <value>Wykres: Podsumowanie przebiegów testowych</value>
+  </data>
+  <data name="Reports_TestSetSummaryGraph" xml:space="preserve">
+    <value>Wykres: Podsumowanie zestawów testowych</value>
+  </data>
+  <data name="Admin_History_ToChange" xml:space="preserve">
+    <value>Aby zmienić # {0}</value>
+  </data>
+  <data name="Reports_IncidentGraphs" xml:space="preserve">
+    <value>Wykresy incydentu</value>
+  </data>
+  <data name="Reports_TaskGraphs" xml:space="preserve">
+    <value>Wykresy zadania</value>
+  </data>
+  <data name="Reports_RequirementGraphs" xml:space="preserve">
+    <value>Wykresy wymagania</value>
+  </data>
+  <data name="Reports_GraphViewer" xml:space="preserve">
+    <value>Podgląd wykresu</value>
+  </data>
+  <data name="SiteMap_PlanningBoard" xml:space="preserve">
+    <value>Karta planowania</value>
+  </data>
+  <data name="IterationPlan_IncludeIncidents" xml:space="preserve">
+    <value>Uwzględnia incydenty</value>
+  </data>
+  <data name="SiteMap_MyTimecard" xml:space="preserve">
+    <value>Moja karta pracy</value>
+  </data>
+  <data name="Timecard_InstructionText" xml:space="preserve">
+    <value>Poniższe otwarte artefakty są aktualnie przypisane do Ciebie. &lt;br /&gt;
+Podaj liczbę godzin przepracowanych i liczbę godzin pozostałych w odpowiednich polach poniżej:</value>
+  </data>
+  <data name="UserProfile_EnableRSSFeeds" xml:space="preserve">
+    <value>Włącz feed RSS</value>
+  </data>
+  <data name="UserProfile_RssToken" xml:space="preserve">
+    <value>RSS Token:</value>
+  </data>
+  <data name="ResourceDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy zasobów</value>
+  </data>
+  <data name="SourceCodeFileDetails_Title" xml:space="preserve">
+    <value>Szczegóły pliku</value>
+  </data>
+  <data name="SourceCodeRevisionDetails_Title" xml:space="preserve">
+    <value>Szczegóły wersji</value>
+  </data>
+  <data name="Syndication_SavedSearchesDescription" xml:space="preserve">
+    <value>Ten kanał wyświetla listę artefaktów, które pasują do konkretnego zapisanego wyszukiwania/filtrowania utworzonego przez użytkownika subskrypcji.</value>
+  </data>
+  <data name="ProjectList_MyNewsFeeds" xml:space="preserve">
+    <value>Moje kanały wiadomości</value>
+  </data>
+  <data name="ProjectList_MySubscribedArtifacts" xml:space="preserve">
+    <value>Moje subskrybowane artefakty</value>
+  </data>
+  <data name="ProjectList_QuickLaunch" xml:space="preserve">
+    <value>Szybkie uruchamianie</value>
+  </data>
+  <data name="QuickLaunch_CreateIncidentIn" xml:space="preserve">
+    <value>Utwórz incydent w:</value>
+  </data>
+  <data name="NewsReader_FeedTitle" xml:space="preserve">
+    <value>Tytuł kanału</value>
+  </data>
+  <data name="NewsReader_FeedTitleTooltip" xml:space="preserve">
+    <value>Wpisz nazwę kanału wiadomości, jaka ma być wyświetlana na Mojej stronie</value>
+  </data>
+  <data name="NewsReader_FeedUrl" xml:space="preserve">
+    <value>Adres URL kanału</value>
+  </data>
+  <data name="NewsReader_FeedUrlTooltip" xml:space="preserve">
+    <value>Wpisz adres URL do kanału wiadomości RSS 2.0 lub ATOM 1.0, który chcesz subskrybować</value>
+  </data>
+  <data name="NewsReader_HeadlineLength" xml:space="preserve">
+    <value>Długość nagłówka</value>
+  </data>
+  <data name="NewsReader_HeadlineLengthTooltip" xml:space="preserve">
+    <value>Znaki wyświetlane w nagłówku, przed przycięciem</value>
+  </data>
+  <data name="Admin_RoleDetails_ArtifactPermissions" xml:space="preserve">
+    <value>Uprawnienia do artefaktów</value>
+  </data>
+  <data name="Admin_RoleDetails_OtherPermissions" xml:space="preserve">
+    <value>Pozostałe uprawnienia</value>
+  </data>
+  <data name="Admin_RoleDetails_Text1" xml:space="preserve">
+    <value>Zweryfikuj poniższe informacje i dokonaj zmian w razie konieczności.</value>
+  </data>
+  <data name="Admin_RoleDetails_Text2" xml:space="preserve">
+    <value>Po zakończeniu, kliknij [Aktualizuj] by zatwierdzić zmiany.</value>
+  </data>
+  <data name="Admin_RoleDetails_Text3" xml:space="preserve">
+    <value>Rola może wykonywać poniższe operacje:</value>
+  </data>
+  <data name="Admin_RoleDetails_Text4" xml:space="preserve">
+    <value>Rola może wykonywać poniższe operacje w całym systemie:</value>
+  </data>
+  <data name="Admin_RoleList_NewProjectRole" xml:space="preserve">
+    <value>Nowa rola projektowa</value>
+  </data>
+  <data name="SiteMap_EditRoleDetails" xml:space="preserve">
+    <value>Edytuj rolę projektową</value>
+  </data>
+  <data name="SiteMap_ViewEditRoles" xml:space="preserve">
+    <value>Edycja role projektowe</value>
+  </data>
+  <data name="TestSetDetails_Title" xml:space="preserve">
+    <value>Szczegóły zestawu testowego</value>
+  </data>
+  <data name="TestSetDetails_RecurrenceNone" xml:space="preserve">
+    <value> -- Jednokrotnie --</value>
+  </data>
+  <data name="GlobalNavigation_Search" xml:space="preserve">
+    <value>Szukaj</value>
+  </data>
+  <data name="GlobalNavigation_SearchResults" xml:space="preserve">
+    <value>Wyniki wyszukiwania</value>
+  </data>
+  <data name="GlobalNavigation_SearchResultsLegend1" xml:space="preserve">
+    <value>Następujące</value>
+  </data>
+  <data name="GlobalNavigation_SearchResultsLegend2" xml:space="preserve">
+    <value>wyniki dla słowa kluczowego/słów kluczowych</value>
+  </data>
+  <data name="BuildDetails_BackToList" xml:space="preserve">
+    <value>Wróć do listy buildów</value>
+  </data>
+  <data name="BuildDetails_Title" xml:space="preserve">
+    <value>Szczegóły buildu</value>
+  </data>
+  <data name="Global_With" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="HistoryPanel_AdminViewTooltip" xml:space="preserve">
+    <value>Otwiera listę zmian historycznych w obszarze 'Administracja'. Można tam cofnąć zmiany, wyczyścić historię i zobaczyć szczegóły dla każdej grupy zmiany.</value>
+  </data>
+  <data name="ProjectHome_RecentBuilds" xml:space="preserve">
+    <value>Ostatnie buildy</value>
+  </data>
+  <data name="TestCaseDetails_Repository" xml:space="preserve">
+    <value>Repozytorium</value>
+  </data>
+  <data name="Register_Title" xml:space="preserve">
+    <value>Prośba o nowe konto</value>
+  </data>
+  <data name="Login_RegisterForAccount" xml:space="preserve">
+    <value>Zarejestruj konto</value>
+  </data>
+  <data name="ResetPassword_AnswerQuestionInstructions" xml:space="preserve">
+    <value>Odpowiedz na pytanie, aby otrzymać hasło.</value>
+  </data>
+  <data name="ResetPassword_EnterUserNameText" xml:space="preserve">
+    <value>Wpisz nazwę użytkownika, aby otrzymać hasło.</value>
+  </data>
+  <data name="ResetPassword_ForgotPassword" xml:space="preserve">
+    <value>Zapomniałem hasła</value>
+  </data>
+  <data name="ResetPassword_ForgotYourPassword" xml:space="preserve">
+    <value>Zapomniałeś hasła?</value>
+  </data>
+  <data name="ResetPassword_IdentityConfirmation" xml:space="preserve">
+    <value>Potwierdzenie tożsamości</value>
+  </data>
+  <data name="ResetPassword_ReturnLink" xml:space="preserve">
+    <value>Powrót do strony logowania</value>
+  </data>
+  <data name="ResetPassword_SuccessTitle" xml:space="preserve">
+    <value>Twoje hasło zostało do Ciebie wysłane.</value>
+  </data>
+  <data name="ResetPassword_Title" xml:space="preserve">
+    <value>Zresetuj hasło</value>
+  </data>
+  <data name="Register_EmailSubject" xml:space="preserve">
+    <value>Prośba o nowe konto</value>
+  </data>
+  <data name="Register_Heading" xml:space="preserve">
+    <value>Poproś o nowe konto</value>
+  </data>
+  <data name="Register_InstructionText" xml:space="preserve">
+    <value>Skorzystaj z poniższego formularza, aby poprosić o nowe konto.</value>
+  </data>
+  <data name="Register_PasswordMinLength" xml:space="preserve">
+    <value>Hasła muszą mieć co najmniej {0} znaków.</value>
+  </data>
+  <data name="Register_CompleteLegend" xml:space="preserve">
+    <value>Twoja prośba o nowe konto została wysłana do administratora systemu. Gdy wniosek zostanie zatwierdzony, otrzymasz powiadomienie z informacją, że konto jest już aktywne.</value>
+  </data>
+  <data name="Register_CompleteTitle" xml:space="preserve">
+    <value>Poproś o nowe konto</value>
+  </data>
+  <data name="UserProfile_ChangePasswordQuestionAnswer" xml:space="preserve">
+    <value>Zmień pytanie/odpowiedź</value>
+  </data>
+  <data name="UserProfile_TabPasswords" xml:space="preserve">
+    <value>Hasła i zabezpieczenia</value>
+  </data>
+  <data name="UserList_ImportFromLDAP" xml:space="preserve">
+    <value>Importuj użytkowników z serwera LDAP</value>
+  </data>
+  <data name="UserList_Legend1" xml:space="preserve">
+    <value>Następujący zatwierdzeni użytkownicy istnieją w systemie. W celu edycji istniejącego użytkownika, kliknij 'Edytuj' obok jego nazwiska.&lt;br /&gt;Aby utworzyć nowego użytkownika kliknij przycisk [Dodaj] lub wybierz opcję importu z serwera LDAP.</value>
+  </data>
+  <data name="UserList_Legend2" xml:space="preserve">
+    <value>Aby zobaczyć wszystkie oczekujące żądania użytkowników, kliknij na 'Wnioski oczekujące' w lewym pasku nawigacyjnym strony.</value>
+  </data>
+  <data name="UserList_Title" xml:space="preserve">
+    <value>Zobacz/edytuj użytkowników</value>
+  </data>
+  <data name="ProjectMembership_Title" xml:space="preserve">
+    <value>Przynależność do projektu</value>
+  </data>
+  <data name="UserDetails_AddEditUser" xml:space="preserve">
+    <value>Dodaj/edytuj użytkownika</value>
+  </data>
+  <data name="UserDetails_AddEditUser_Legend" xml:space="preserve">
+    <value>Proszę o przejrzenie poniższych informacji i ewentualnego dokonania zmian.&lt;br /&gt; Aby potwierdzić kliknij [Aktualizuj/Wstaw].</value>
+  </data>
+  <data name="UserDetails_ChangePassword" xml:space="preserve">
+    <value>Zmień hasło</value>
+  </data>
+  <data name="UserDetails_ChangePasswordQuestionAnswer" xml:space="preserve">
+    <value>Zmień pytanie/odpowiedź</value>
+  </data>
+  <data name="UserDetails_LdapManagedUser" xml:space="preserve">
+    <value>Użytkownik LDAP</value>
+  </data>
+  <data name="UserDetails_NewUser" xml:space="preserve">
+    <value>Nowy użytkownik</value>
+  </data>
+  <data name="UserDetails_TabDataMapping" xml:space="preserve">
+    <value>Mapowanie danych</value>
+  </data>
+  <data name="Global_Minutes" xml:space="preserve">
+    <value>minut</value>
+  </data>
+  <data name="Register_PasswordMinNonAlphaChars" xml:space="preserve">
+    <value>Hasła muszą mieć co najmniej {0} znaków nie-alfanumerycznych.</value>
+  </data>
+  <data name="SecuritySettings_AllowUserRegistration" xml:space="preserve">
+    <value>Możliwość samodzielnej rejestracji użytkowników</value>
+  </data>
+  <data name="SecuritySettings_AllowUserRegistrationNotes" xml:space="preserve">
+    <value>Możliwość logowania się użytkowników, którzy utworzyli samodzielnie konta</value>
+  </data>
+  <data name="SecuritySettings_Legend1" xml:space="preserve">
+    <value>Ta strona umożliwia modyfikację</value>
+  </data>
+  <data name="SecuritySettings_Legend2" xml:space="preserve">
+    <value>ustawień bezpieczeństwa:</value>
+  </data>
+  <data name="SecuritySettings_MaxInvalidPasswordAttempts" xml:space="preserve">
+    <value>Max # prób podania nieprawidłowego hasła</value>
+  </data>
+  <data name="SecuritySettings_MaxInvalidPasswordAttemptsNotes" xml:space="preserve">
+    <value>Ilość razy wprowadzenia błędnego hasła przed zabalowaniem konta</value>
+  </data>
+  <data name="SecuritySettings_MinRequiredNonalphanumericCharacters" xml:space="preserve">
+    <value>Minimalna liczba znaków specjalnych</value>
+  </data>
+  <data name="SecuritySettings_MinRequiredNonalphanumericCharactersNotes" xml:space="preserve">
+    <value>Minimalna liczba znaków niealfanumerycznych</value>
+  </data>
+  <data name="SecuritySettings_MinRequiredPasswordLength" xml:space="preserve">
+    <value>Minimalna długość hasła</value>
+  </data>
+  <data name="SecuritySettings_MinRequiredPasswordLengthNotes" xml:space="preserve">
+    <value>Minimalna długość hasła wybranego przez użytkownika</value>
+  </data>
+  <data name="SecuritySettings_PasswordAttemptWindow" xml:space="preserve">
+    <value>Okno czasowe na wprowadzenie hasła</value>
+  </data>
+  <data name="SecuritySettings_PasswordAttemptWindowNotes" xml:space="preserve">
+    <value>Czas po którym konto zostanie automatycznie odblokowane</value>
+  </data>
+  <data name="SecuritySettings_Title" xml:space="preserve">
+    <value>Ustawienia zabezpieczeń</value>
+  </data>
+  <data name="UserLdapImport_BackToUserList" xml:space="preserve">
+    <value>Powrót do listy użytkowników</value>
+  </data>
+  <data name="UserLdapImport_LdapConfigLink" xml:space="preserve">
+    <value>Konfiguracja LDAP </value>
+  </data>
+  <data name="UserLdapImport_Legend1" xml:space="preserve">
+    <value>Użycie bieżącego</value>
+  </data>
+  <data name="UserLdapImport_Legend2" xml:space="preserve">
+    <value>użytkownicy gotowi do importu</value>
+  </data>
+  <data name="UserLdapImport_Legend3" xml:space="preserve">
+    <value>Zaznacz użytkowników do importu i kliknij [Import]:</value>
+  </data>
+  <data name="UserLdapImport_Title" xml:space="preserve">
+    <value>Importuj użytkowników z serwera LDAP</value>
+  </data>
+  <data name="UserRequests_Legend" xml:space="preserve">
+    <value>Zgłoszenia o dodanie do systemu. Jeśli chcesz dodać użytkownika kliknij 'Zatwierdź'</value>
+  </data>
+  <data name="UserRequests_Title" xml:space="preserve">
+    <value>Prośby o dodanie do Spira</value>
+  </data>
+  <data name="UserRequests_TitleLong" xml:space="preserve">
+    <value>Przejrzyj prośby o dodanie do Spira</value>
+  </data>
+  <data name="GeneralSettings_AttachmentFolderNotes" xml:space="preserve">
+    <value>Folder załączników (np.</value>
+  </data>
+  <data name="GeneralSettings_AttachmentsFolder" xml:space="preserve">
+    <value>Folder załączników </value>
+  </data>
+  <data name="GeneralSettings_DefaultCulture" xml:space="preserve">
+    <value>Domyślne uwarunkowania kulturowe użytkownika</value>
+  </data>
+  <data name="GeneralSettings_DefaultCultureNotes" xml:space="preserve">
+    <value>Uwarunkowania kulturowe determinują formaty dat oraz język</value>
+  </data>
+  <data name="GeneralSettings_DefaultTimezone" xml:space="preserve">
+    <value>Domyślna strefa czasowa</value>
+  </data>
+  <data name="GeneralSettings_DefaultTimezoneNotes" xml:space="preserve">
+    <value>Stefa czasowa determinuje datę i czas systemowy.</value>
+  </data>
+  <data name="GeneralSettings_Legend1" xml:space="preserve">
+    <value>Ten ekran umożliwia zmianę dla ustawień globalnych</value>
+  </data>
+  <data name="GeneralSettings_Legend2" xml:space="preserve">
+    <value>ustawienia systemowe:</value>
+  </data>
+  <data name="GeneralSettings_RichTextArtifactNotes" xml:space="preserve">
+    <value>Możesz użyć rich text do opisania szczegółów artefaktu</value>
+  </data>
+  <data name="GeneralSettings_RichTextEditing" xml:space="preserve">
+    <value>Edytowanie w rich text</value>
+  </data>
+  <data name="GeneralSettings_RichTextTestStepNotes" xml:space="preserve">
+    <value>Use rich-text editing for test step list</value>
+  </data>
+  <data name="GeneralSettings_Title" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="GeneralSettings_WebServerUrl" xml:space="preserve">
+    <value>Web Server URL</value>
+  </data>
+  <data name="GeneralSettings_WebServerUrlNotes" xml:space="preserve">
+    <value>The base URL used to access</value>
+  </data>
+  <data name="UserProfile_UserTimezone" xml:space="preserve">
+    <value>Strefa czasowa użytkownika</value>
+  </data>
+  <data name="UserProfile_ChangeLogoTitle" xml:space="preserve">
+    <value>Zmień awatar</value>
+  </data>
+  <data name="UserProfile_Department" xml:space="preserve">
+    <value>Departament</value>
+  </data>
+  <data name="UserProfile_Logo" xml:space="preserve">
+    <value>Awatar użytkownika</value>
+  </data>
+  <data name="EventLog_Legend" xml:space="preserve">
+    <value>Poniższe zdarzenia zostały zalogowane w systemie:</value>
+  </data>
+  <data name="EventLog_Title" xml:space="preserve">
+    <value>Log zdarzeń</value>
+  </data>
+  <data name="EventLog_TitleLong" xml:space="preserve">
+    <value>Log zdarzeń systemowych</value>
+  </data>
+  <data name="GeneralSettings_EventDaysToKeep" xml:space="preserve">
+    <value>Przechowanie logów</value>
+  </data>
+  <data name="GeneralSettings_EventDaysToKeepNotes" xml:space="preserve">
+    <value>Liczba dni przez jaką zachowane zostaną logi błędu</value>
+  </data>
+  <data name="GeneralSettings_EventDaysToKeepUnits" xml:space="preserve">
+    <value>dni</value>
+  </data>
+  <data name="EventLog_EventDetails" xml:space="preserve">
+    <value>Szczegóły zdarzenia</value>
+  </data>
+  <data name="EventLog_Exception" xml:space="preserve">
+    <value>Wyjątek</value>
+  </data>
+  <data name="DataSynchronization_ViewErrors" xml:space="preserve">
+    <value>Przejrzyj komunikaty błędów</value>
+  </data>
+  <data name="VersionControlProviderDetails_ViewEvents" xml:space="preserve">
+    <value>Przejrzyj zdarzenia</value>
+  </data>
+  <data name="Permission_Create" xml:space="preserve">
+    <value>Utwórz</value>
+  </data>
+  <data name="Permission_Delete" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="Permission_LimitedModify" xml:space="preserve">
+    <value>Właściciel może edytować</value>
+  </data>
+  <data name="Permission_Modify" xml:space="preserve">
+    <value>Edytuj wszystkie</value>
+  </data>
+  <data name="Permission_View" xml:space="preserve">
+    <value>Przeglądaj</value>
+  </data>
+  <data name="RoleDetails_ActiveNotes" xml:space="preserve">
+    <value>Czy rola jest aktywna ?</value>
+  </data>
+  <data name="RoleDetails_AdminNotes" xml:space="preserve">
+    <value>Czy rola posiada uprawniania administratora projektu</value>
+  </data>
+  <data name="RoleDetails_LimitedView" xml:space="preserve">
+    <value>Ograniczony dostęp (Limited View)</value>
+  </data>
+  <data name="RoleDetails_LimitedViewNotes" xml:space="preserve">
+    <value>Użytkownicy w roli z ograniczonym dostępem widzą tylko artefakty które zostały przez nich utworzone/do nich przypisane .</value>
+  </data>
+  <data name="AutomationHostDetails_Title" xml:space="preserve">
+    <value>Szczegóły hosta automatyzacji</value>
+  </data>
+  <data name="IncidentDetails_Title" xml:space="preserve">
+    <value>Szczegóły incydentu</value>
+  </data>
+  <data name="ReleaseDetails_Title" xml:space="preserve">
+    <value>Szczegóły wydania</value>
+  </data>
+  <data name="RequirementDetails_Title" xml:space="preserve">
+    <value>Szczegóły wymagania</value>
+  </data>
+  <data name="ResourceDetails_Title" xml:space="preserve">
+    <value>Szczegóły zasobu</value>
+  </data>
+  <data name="TaskDetails_Title" xml:space="preserve">
+    <value>Szczegóły zadania</value>
+  </data>
+  <data name="TestCaseDetails_Title" xml:space="preserve">
+    <value>Szczegóły przypadku testowego</value>
+  </data>
+  <data name="TestRunDetails_Title" xml:space="preserve">
+    <value>Szczegóły przebiegu testu</value>
+  </data>
+  <data name="TestStepDetails_Title" xml:space="preserve">
+    <value>Szczegóły kroku testowego</value>
+  </data>
+  <data name="CustomLists_Title" xml:space="preserve">
+    <value>Edytuj listę definiowalną</value>
+  </data>
+  <data name="CustomProperties_Title" xml:space="preserve">
+    <value>Edytuj pole definiowalne</value>
+  </data>
+  <data name="Administration_ChangeProject" xml:space="preserve">
+    <value>(Zmień projekt)</value>
+  </data>
+  <data name="Admin_CustomPropertyDefinition" xml:space="preserve">
+    <value>Definicja</value>
+  </data>
+  <data name="Admin_CustomPropertyDefinition_AddDefinition" xml:space="preserve">
+    <value>Dodaj definicję</value>
+  </data>
+  <data name="Admin_CustomPropertyDefinition_Alias" xml:space="preserve">
+    <value>Nazwa wykresu</value>
+  </data>
+  <data name="Admin_CustomPropertyDefinition_CustomList" xml:space="preserve">
+    <value>Lista definiowalna</value>
+  </data>
+  <data name="Admin_CustomPropertyDefinition_EditDefinition" xml:space="preserve">
+    <value>Edytuj definicję</value>
+  </data>
+  <data name="Admin_CustomPropertyDefinition_Intro" xml:space="preserve">
+    <value>Poniższe pola definiowalne zostały już utworzone dla wybranego typu artefaktu.&lt;br /&gt; 
+Możesz dodać, edytować lub usunąć definiowalną pole przez kliknięcie odpowiedniego linku w kolumnie 'Akcje'.</value>
+  </data>
+  <data name="Admin_CustomPropertyDefinition_Type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="Admin_CustomPropertyOptions" xml:space="preserve">
+    <value>Opcje</value>
+  </data>
+  <data name="Admin_CustomPropertyOptions_AllowNull" xml:space="preserve">
+    <value>Dopuszczalny brak wartości</value>
+  </data>
+  <data name="Admin_CustomPropertyOptions_Default" xml:space="preserve">
+    <value>Domyślne</value>
+  </data>
+  <data name="Admin_CustomPropertyOptions_MaxLength" xml:space="preserve">
+    <value>Max długość</value>
+  </data>
+  <data name="Admin_CustomPropertyOptions_MaxValue" xml:space="preserve">
+    <value>Max wartość</value>
+  </data>
+  <data name="Admin_CustomPropertyOptions_MinLength" xml:space="preserve">
+    <value>Min długość</value>
+  </data>
+  <data name="Admin_CustomPropertyOptions_MinValue" xml:space="preserve">
+    <value>Min wartość</value>
+  </data>
+  <data name="Admin_CustomPropertyOptions_Precision" xml:space="preserve">
+    <value>Zaokrąglenie</value>
+  </data>
+  <data name="Admin_CustomPropertyOptions_RichText" xml:space="preserve">
+    <value>Rich Text</value>
+  </data>
+  <data name="Admin_System_CustomListValue_AddValue" xml:space="preserve">
+    <value>Dodaj wartość</value>
+  </data>
+  <data name="Admin_System_CustomListValue_ConfirmDeleteValue" xml:space="preserve">
+    <value>Czy chcesz usunąć tą wartość ?\nKażde pole z tą wartością zostanie wyzerowane.</value>
+  </data>
+  <data name="Admin_System_CustomListValue_Description" xml:space="preserve">
+    <value>Opis listy</value>
+  </data>
+  <data name="Admin_System_CustomListValue_ErrorNameRequired" xml:space="preserve">
+    <value>Musisz wprowadzić nazwę.</value>
+  </data>
+  <data name="Admin_System_CustomListValue_ErrorValueRequired" xml:space="preserve">
+    <value>Wartość nie może być pusta</value>
+  </data>
+  <data name="Admin_System_CustomListValue_Error_CustomListNameExists" xml:space="preserve">
+    <value>Powtórzona nazwa listy</value>
+  </data>
+  <data name="Admin_System_CustomListValue_Error_CustomListNameIsEmpty" xml:space="preserve">
+    <value>Lista musi mieć nazwę</value>
+  </data>
+  <data name="Admin_System_CustomListValue_Error_SavingCustomList" xml:space="preserve">
+    <value>Wystąpił problem z zapisaniem listy. Spróbuj zmienić jej nazwę.</value>
+  </data>
+  <data name="Admin_System_CustomListValue_Error_ValueNameIsDuplicate" xml:space="preserve">
+    <value>Nie można duplikować wartości. Wartość: '{0}'</value>
+  </data>
+  <data name="Admin_System_CustomListValue_Error_ValueNameIsEmpty" xml:space="preserve">
+    <value>Wartość nie może być pusta.</value>
+  </data>
+  <data name="Admin_System_CustomListValue_HeaderValueId" xml:space="preserve">
+    <value>Wartość listy #</value>
+  </data>
+  <data name="Admin_System_CustomListValue_HeaderValueName" xml:space="preserve">
+    <value>Wartość</value>
+  </data>
+  <data name="Admin_System_CustomListValue_NoValuesDefined" xml:space="preserve">
+    <value>Nie zdefiniowano list wartości</value>
+  </data>
+  <data name="Admin_System_CustomListValue_SortBy" xml:space="preserve">
+    <value>Wartości wyświetlane wg.</value>
+  </data>
+  <data name="Admin_System_CustomList_AddList" xml:space="preserve">
+    <value>Dodaj listę</value>
+  </data>
+  <data name="Admin_System_CustomList_HeaderActions" xml:space="preserve">
+    <value>Akcje</value>
+  </data>
+  <data name="Admin_System_CustomList_HeaderActions_ActionEditValue" xml:space="preserve">
+    <value>Edytuj wartości</value>
+  </data>
+  <data name="Admin_System_CustomList_HeaderDisplayName" xml:space="preserve">
+    <value>Nazwa listy</value>
+  </data>
+  <data name="Admin_System_CustomList_HeaderListId" xml:space="preserve">
+    <value>Lista #</value>
+  </data>
+  <data name="Admin_System_CustomList_HeaderValues" xml:space="preserve">
+    <value># Wartości</value>
+  </data>
+  <data name="Admin_System_CustomList_NoListsDefined" xml:space="preserve">
+    <value>Brak list definiowalnych</value>
+  </data>
+  <data name="Admin_System_CustomList_NoListsDefinedDrop" xml:space="preserve">
+    <value>-- Brak list definiowalnych --</value>
+  </data>
+  <data name="Admin_System_CustomList_NoListsDefinedDrop1" xml:space="preserve">
+    <value>-- Brak list definiowalnych --</value>
+  </data>
+  <data name="CustomListDetails_BackToLists" xml:space="preserve">
+    <value>wróć do list</value>
+  </data>
+  <data name="CustomListDetails_IntroText" xml:space="preserve">
+    <value>Poniższe wartości zostały utworzone dla listy.Please make any changes and click [Save].&lt;br /&gt; To remove an existing custom list value just click the 'Remove' link.&lt;br /&gt;To add a new value, click the 'Add Value' link at the bottom of the grid.</value>
+  </data>
+  <data name="CustomListDetails_Title" xml:space="preserve">
+    <value>Edytuj wartości listy</value>
+  </data>
+  <data name="CustomListSort_Alphabetical" xml:space="preserve">
+    <value>Alfabetyczny</value>
+  </data>
+  <data name="CustomLists_IntroText" xml:space="preserve">
+    <value>W projekcie zostały utworzone poniższe listy. W celu dodania nowej listy wybierz "Dodaj listę", przycisk "Usuń" służy do kasowania list wraz z ich wartościami</value>
+  </data>
+  <data name="CustomLists_NewList" xml:space="preserve">
+    <value>Nowa lista</value>
+  </data>
+  <data name="Global_No" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="Global_Yes" xml:space="preserve">
+    <value>Tak</value>
+  </data>
+  <data name="Global_Multiple" xml:space="preserve">
+    <value>Wielokrotny</value>
+  </data>
+  <data name="Admin_EditWorkflows_Title" xml:space="preserve">
+    <value>Edytuj workflow</value>
+  </data>
+  <data name="Admin_WorkflowDetails_AddNewTransitionTitle" xml:space="preserve">
+    <value>Dodaj nową tranzycję</value>
+  </data>
+  <data name="Admin_WorkflowDetails_BackToList" xml:space="preserve">
+    <value>Powrót do listy przepływów</value>
+  </data>
+  <data name="Admin_WorkflowDetails_Default" xml:space="preserve">
+    <value>(Domyślny)</value>
+  </data>
+  <data name="Admin_WorkflowDetails_Delete" xml:space="preserve">
+    <value>(Usuń)</value>
+  </data>
+  <data name="Admin_WorkflowDetails_DestinationStep" xml:space="preserve">
+    <value>Status docelowy</value>
+  </data>
+  <data name="Admin_WorkflowDetails_Intro" xml:space="preserve">
+    <value>Wyświetlone zostań wszystkie statusy dla określonego workflow:</value>
+  </data>
+  <data name="Admin_WorkflowDetails_OriginatingStep" xml:space="preserve">
+    <value>Status początkowy</value>
+  </data>
+  <data name="Admin_WorkflowDetails_Title" xml:space="preserve">
+    <value>Przeglądaj/Edytuj Workflow</value>
+  </data>
+  <data name="Admin_WorkflowStep_BackToStepsList" xml:space="preserve">
+    <value>Powrót do listy kroków workflow</value>
+  </data>
+  <data name="Admin_WorkflowStep_IncidentCustomProperties" xml:space="preserve">
+    <value>Pola definiowalne incydentów</value>
+  </data>
+  <data name="Admin_WorkflowStep_IncidentCustomPropertiesIntro" xml:space="preserve">
+    <value>Poniższe wartości definiowalne są ukryte / wyłączone / wymagane w bieżącym kroku workflow:</value>
+  </data>
+  <data name="Admin_WorkflowStep_IncidentFields" xml:space="preserve">
+    <value>Pola incydentu</value>
+  </data>
+  <data name="Admin_WorkflowStep_IncidentFieldsIntro" xml:space="preserve">
+    <value>Poniższe pola incydentu są ukryte / wyłączone / wymagane w bieżącym kroku workflow:</value>
+  </data>
+  <data name="Admin_WorkflowStep_Title" xml:space="preserve">
+    <value>Edytuj krok workflow</value>
+  </data>
+  <data name="Admin_Workflows_Intro" xml:space="preserve">
+    <value>Poniżej prezentowane są wszystkie workflow dostępne w bieżącym projekcie. W celu dodania nowego workflow kliknij [Dodaj], aby edytować istniejący kliknij [Kroki]</value>
+  </data>
+  <data name="Admin_Workflows_NewWorkflowName" xml:space="preserve">
+    <value>Nowy workflow</value>
+  </data>
+  <data name="Admin_WorkflowTransition_BackToSteps" xml:space="preserve">
+    <value>Powrót do listy kroków workflow</value>
+  </data>
+  <data name="Admin_WorkflowTransition_ConditionData" xml:space="preserve">
+    <value>Dane warunku</value>
+  </data>
+  <data name="Admin_WorkflowTransition_Conditions" xml:space="preserve">
+    <value>Warunki</value>
+  </data>
+  <data name="Admin_WorkflowTransition_ConditionsIntro" xml:space="preserve">
+    <value>Użytkownicy / role uprawnione do wykonania tranzycji :</value>
+  </data>
+  <data name="Admin_WorkflowTransition_ConditionType" xml:space="preserve">
+    <value>Typ warunku</value>
+  </data>
+  <data name="Admin_WorkflowTransition_DetailsSection" xml:space="preserve">
+    <value>Szczegóły tranzycji workflow</value>
+  </data>
+  <data name="Admin_WorkflowTransition_DetectorExecuteLabel" xml:space="preserve">
+    <value>Zgłaszający może wykonać tranzycję</value>
+  </data>
+  <data name="Admin_WorkflowTransition_DetectorNotifyLabel" xml:space="preserve">
+    <value>Zgłaszający zostanie powiadomiony</value>
+  </data>
+  <data name="Admin_WorkflowTransition_DisplayTokens" xml:space="preserve">
+    <value>(Wyświetl Tokeny email, które można użyć w tytule notyfikacji)</value>
+  </data>
+  <data name="Admin_WorkflowTransition_EmailTokens" xml:space="preserve">
+    <value>Tokeny notyfikacji email</value>
+  </data>
+  <data name="Admin_WorkflowTransition_NotificationData" xml:space="preserve">
+    <value>Dane notyfikacji</value>
+  </data>
+  <data name="Admin_WorkflowTransition_Notifications" xml:space="preserve">
+    <value>Notyfikacje</value>
+  </data>
+  <data name="Admin_WorkflowTransition_NotificationsIntro" xml:space="preserve">
+    <value>Poniżsi użytkownicy / role zostaną powiadomieni emailem po wykonaniu tranzycji:</value>
+  </data>
+  <data name="Admin_WorkflowTransition_NotificationType" xml:space="preserve">
+    <value>Typ notyfikacji</value>
+  </data>
+  <data name="Admin_WorkflowTransition_OwnerExecuteLabel" xml:space="preserve">
+    <value>Właściciel może wykonać tranzycję</value>
+  </data>
+  <data name="Admin_WorkflowTransition_OwnerNotifyLabel" xml:space="preserve">
+    <value>Właściciel zostanie powiadomiony</value>
+  </data>
+  <data name="Admin_WorkflowTransition_RolesExecuteLabel" xml:space="preserve">
+    <value>Role, które mogą wykonać tranzycję</value>
+  </data>
+  <data name="Admin_WorkflowTransition_RolesNotifyLabel" xml:space="preserve">
+    <value>Role, które zostaną powiadomione</value>
+  </data>
+  <data name="Admin_WorkflowTransition_Title" xml:space="preserve">
+    <value>Edytuj tranzycję workflow</value>
+  </data>
+  <data name="AttachmentPanel_Attachments" xml:space="preserve">
+    <value>załącznik(i)</value>
+  </data>
+  <data name="ArtifactLinkPanel_Associations" xml:space="preserve">
+    <value>powiązania</value>
+  </data>
+  <data name="HistoryPanel_Changes" xml:space="preserve">
+    <value>zmiany</value>
+  </data>
+  <data name="Requirements_RequirementsForProject" xml:space="preserve">
+    <value>Wymaganie/wymagania do tego projektu</value>
+  </data>
+  <data name="Releases_ReleasesForProject" xml:space="preserve">
+    <value>Wydanie/wydania do tego projektu</value>
+  </data>
+  <data name="TestSetList_TestSetsForProject" xml:space="preserve">
+    <value>Przypadek/przypadki do tego projektu</value>
+  </data>
+  <data name="TestCaseExecution_ChooseReleaseAndCustomProps" xml:space="preserve">
+    <value>Wybierz wydanie i pola definiowalne które będą brane pod uwagę:</value>
+  </data>
+  <data name="TestCaseExecution_TestCaseInfo" xml:space="preserve">
+    <value>Informacje o przypadku testowym</value>
+  </data>
+  <data name="TestCaseExecution_TestStepInfo" xml:space="preserve">
+    <value>Informacje o kroku testowym</value>
+  </data>
+  <data name="TaskListPanel_Tasks" xml:space="preserve">
+    <value>Zadanie/zadania</value>
+  </data>
+  <data name="ReleaseDetails_BuildsInRelease" xml:space="preserve">
+    <value>build(y) w tym wydaniu/iteracji</value>
+  </data>
+  <data name="ReleaseDetails_Incidents" xml:space="preserve">
+    <value>incydent(y) w tym wydaniu/iteracji</value>
+  </data>
+  <data name="RequirementTaskPanel_Items" xml:space="preserve">
+    <value>pozycja/pozycje</value>
+  </data>
+  <data name="TestRunListPanel_TestRuns" xml:space="preserve">
+    <value>przebieg(i) testów</value>
+  </data>
+  <data name="TestCaseDetails_Incidents" xml:space="preserve">
+    <value>incydent(y) przypisane do przydatku testowego</value>
+  </data>
+  <data name="TestStepDetails_Incidents" xml:space="preserve">
+    <value>incydent(y) przypisane do kroku testowego</value>
+  </data>
+  <data name="TestRunDetails_NothingReported" xml:space="preserve">
+    <value>Nic nie zostało zaraportowane.</value>
+  </data>
+  <data name="TestRunDetails_Incidents" xml:space="preserve">
+    <value>incydent(y) przypisane do przydatku testowego</value>
+  </data>
+  <data name="TestSetDetails_Incidents" xml:space="preserve">
+    <value>incydenty powiązane z zestawem testowym</value>
+  </data>
+  <data name="BuildDetails_Incidents" xml:space="preserve">
+    <value>incydent(y) w bieżącym buildzie</value>
+  </data>
+  <data name="BuildDetails_TestRuns" xml:space="preserve">
+    <value>przebieg(i) testowe w bieżącym buildzie</value>
+  </data>
+  <data name="Documents_Documents" xml:space="preserve">
+    <value>dokument(y) w bieżącym folderze</value>
+  </data>
+  <data name="Global_ReturnToMobile" xml:space="preserve">
+    <value>Wróć do strony w formacie mobilnym</value>
+  </data>
+  <data name="UserProfile_StartPage" xml:space="preserve">
+    <value>Strona startowa</value>
+  </data>
+  <data name="UserProfile_StartPage_MyPage" xml:space="preserve">
+    <value>Moja strona</value>
+  </data>
+  <data name="UserProfile_StartPage_ProjectGroupHome" xml:space="preserve">
+    <value>Ostatnio otwarta strona grupy projektów</value>
+  </data>
+  <data name="UserProfile_StartPage_ProjectHome" xml:space="preserve">
+    <value>Ostatnio otwarty projekt</value>
+  </data>
+  <data name="GeneralSettings_TestAutoUnassign" xml:space="preserve">
+    <value>Automatycznie usuń przypisania do testów</value>
+  </data>
+  <data name="GeneralSettings_TestCaseAutoUnassign_Notes" xml:space="preserve">
+    <value>Sukces wykonania testu automatycznie usunie przypisaną osobę</value>
+  </data>
+  <data name="GeneralSettings_TestSetAutoUnassign_Notes" xml:space="preserve">
+    <value>Zakończenie wykonania zestawu testu automatycznie usunie przypisaną osobę</value>
+  </data>
+  <data name="Login_Title" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Mobile_ViewFullSite" xml:space="preserve">
+    <value>Przeglądaj pełną stronę</value>
+  </data>
+  <data name="ReportViewer_ReportBeingGenerated" xml:space="preserve">
+    <value>Raport w trakcie generowania…</value>
+  </data>
+  <data name="ReportViewer_ClickToDisplayReport" xml:space="preserve">
+    <value>Kliknij tutaj, aby zobaczyć raport </value>
+  </data>
+  <data name="ReportViewer_ClickToRegenerateReport" xml:space="preserve">
+    <value>Kliknij tutaj, aby przeładować raport</value>
+  </data>
+  <data name="ReportViewer_GenerationComplete" xml:space="preserve">
+    <value>Wygenerowanie powiodło się.</value>
+  </data>
+  <data name="ReportViewer_BackToReportConfiguration" xml:space="preserve">
+    <value>&amp;lt;&amp;lt;Modyfikuj konfigurację raportu</value>
+  </data>
+  <data name="TestCaseExecution_Navigation" xml:space="preserve">
+    <value>Nawigacja przebiegu testowego</value>
+  </data>
+  <data name="Admin_Reports" xml:space="preserve">
+    <value>Edytuj raporty</value>
+  </data>
+  <data name="Admin_Reports_AddNewReport" xml:space="preserve">
+    <value>Dodaj nowy raport</value>
+  </data>
+  <data name="Admin_Reports_Intro" xml:space="preserve">
+    <value>Na tej stronie wyświetlane są raporty dostępne w systemie. Raporty oznaczone jako 'Domyślne' są częścią systemu i nie mogą zostać zmodyfikowane ale użytkownik może edytować ich kopię używając poniższych opcji:</value>
+  </data>
+  <data name="Admin_ReportDetails" xml:space="preserve">
+    <value>Szczegóły raportu</value>
+  </data>
+  <data name="Admin_ReportDetails_Intro" xml:space="preserve">
+    <value>Strona wyświetla szczegóły raportu. Raporty utworzone przez użytkowników posiadają edytowalne sekcje nagłówka i stopki:</value>
+  </data>
+  <data name="Admin_ReportDetails_CustomSections" xml:space="preserve">
+    <value>Sekcje niestandardowe</value>
+  </data>
+  <data name="Admin_ReportDetails_StandardSections" xml:space="preserve">
+    <value>Sekcje standardowe</value>
+  </data>
+  <data name="Admin_ReportDetails_AddNewCustomSection" xml:space="preserve">
+    <value>Dodaj nową sekcję niestandardową</value>
+  </data>
+  <data name="Admin_ReportDetails_AddNewStandardSection" xml:space="preserve">
+    <value>Dodaj nową sekcję standardową</value>
+  </data>
+  <data name="ReportDetails_AddEditCustomSection" xml:space="preserve">
+    <value>Dodaj/edytuj sekcję niestandardową</value>
+  </data>
+  <data name="ReportDetails_AddEditStandardSection" xml:space="preserve">
+    <value>Dodaj/edytuj sekcję standardową</value>
+  </data>
+  <data name="ReportDetails_CustomQueryResults" xml:space="preserve">
+    <value>Wynik zapytania niestandardowego</value>
+  </data>
+  <data name="ReportDetails_NewReport" xml:space="preserve">
+    <value>Nowy raport</value>
+  </data>
+  <data name="ResourceList_AllProjectsIn" xml:space="preserve">
+    <value>Wszystkie projekty w</value>
+  </data>
+  <data name="ResourceList_ResourcesInGroupOrProject" xml:space="preserve">
+    <value>zasoby w bieżącym projekcie / grupie</value>
+  </data>
+  <data name="SecuritySettings_AuthenticationExpiration" xml:space="preserve">
+    <value>Wygaśnięcie autentykacji</value>
+  </data>
+  <data name="SecuritySettings_AuthenticationExpirationNotes" xml:space="preserve">
+    <value>Określa czas ( w minutach) po jakiem użytkownik zostanie wylogowany z powodu bezczynności.</value>
+  </data>
+  <data name="SecuritySettings_AuthenticationExpirationRememberMe" xml:space="preserve">
+    <value>Nie wylogowuj mnie</value>
+  </data>
+  <data name="SecuritySettings_AuthenticationExpirationRememberMeNotes" xml:space="preserve">
+    <value>Określa czas ( w minutach) po jakiem użytkownik zostanie wylogowany z powodu bezczynności w przypadku wybrania opcji "Nie wylogowuj mnie"</value>
+  </data>
+  <data name="CustomListSort_ById" xml:space="preserve">
+    <value>Po ID</value>
+  </data>
+  <data name="Admin_ActiveSessions" xml:space="preserve">
+    <value>Aktywne sesje</value>
+  </data>
+  <data name="Admin_AddOns_Downloads" xml:space="preserve">
+    <value>Dodatki i pliki do pobrania</value>
+  </data>
+  <data name="Admin_CustomProperties" xml:space="preserve">
+    <value>Wartości definiowalne </value>
+  </data>
+  <data name="Admin_DataSynchronization" xml:space="preserve">
+    <value>Synchronizacja danych</value>
+  </data>
+  <data name="Admin_DataTools" xml:space="preserve">
+    <value>Narzędzia danych</value>
+  </data>
+  <data name="Admin_Documents" xml:space="preserve">
+    <value>Dokumenty</value>
+  </data>
+  <data name="Admin_EditFolders" xml:space="preserve">
+    <value>Edycja folderów</value>
+  </data>
+  <data name="Admin_EditPriorities" xml:space="preserve">
+    <value>Edycja priorytetów</value>
+  </data>
+  <data name="Admin_EditProjectGroups" xml:space="preserve">
+    <value>Edycja grup projektów</value>
+  </data>
+  <data name="Admin_EditSeverities" xml:space="preserve">
+    <value>Edycja krytyczności</value>
+  </data>
+  <data name="Admin_EditStatuses" xml:space="preserve">
+    <value>Edycja statusów</value>
+  </data>
+  <data name="Admin_EditTypes" xml:space="preserve">
+    <value>Edycja typów</value>
+  </data>
+  <data name="Admin_Incidents" xml:space="preserve">
+    <value>Incydenty</value>
+  </data>
+  <data name="Admin_Integration" xml:space="preserve">
+    <value>Integracja</value>
+  </data>
+  <data name="Admin_LDAPConfiguration" xml:space="preserve">
+    <value>Konfiguracja LDAP</value>
+  </data>
+  <data name="Admin_LicenseDetails" xml:space="preserve">
+    <value>Szczegóły licencji</value>
+  </data>
+  <data name="Admin_Notifications" xml:space="preserve">
+    <value>Notyfikacje</value>
+  </data>
+  <data name="Admin_PlanningOptions" xml:space="preserve">
+    <value>Opcje planowania</value>
+  </data>
+  <data name="Admin_ProjectMembership" xml:space="preserve">
+    <value>Członkostwo w projekcie</value>
+  </data>
+  <data name="Admin_Projects" xml:space="preserve">
+    <value>Projekty</value>
+  </data>
+  <data name="Admin_System" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Admin_TestAutomation" xml:space="preserve">
+    <value>Automatyzacja Testów</value>
+  </data>
+  <data name="Admin_Users" xml:space="preserve">
+    <value>Użytkownicy</value>
+  </data>
+  <data name="Admin_VersionControl" xml:space="preserve">
+    <value>Kontrola wersji</value>
+  </data>
+  <data name="Admin_ViewEditProjects" xml:space="preserve">
+    <value>Zobacz / Edytuj Projekty</value>
+  </data>
+  <data name="DocumentFolders_Intro" xml:space="preserve">
+    <value>Poniższe foldery dokumentów zostały utworzone w projekcie. Kliknij link aby edytować istniejący folder, lub użyj przycisku [Dodaj] aby utworzyć w projekcie nowy folder:</value>
+  </data>
+  <data name="DocumentFolders_Title" xml:space="preserve">
+    <value>Edycja folderów dokumentów</value>
+  </data>
+  <data name="DocumentTypes_Intro" xml:space="preserve">
+    <value>Poniższe typy dokumentów zostały utworzone w projekcie. Edycja po wybraniu [Dodaj] lub [Edytuj].&lt;br /&gt;
+Aby usunąć istniejący typ dokumentu deaktywuj go wybierając wartość "Nie" w polu Aktywny.</value>
+  </data>
+  <data name="DocumentTypes_Title" xml:space="preserve">
+    <value>Edycja typów dokumentów</value>
+  </data>
+  <data name="Global_NotApplicable" xml:space="preserve">
+    <value>n/a</value>
+  </data>
+  <data name="IncidentPriorities_Intro" xml:space="preserve">
+    <value>Priorytety w bieżącym projekcie:</value>
+  </data>
+  <data name="IncidentPriorities_Title" xml:space="preserve">
+    <value>Edycja priorytetów incydentu</value>
+  </data>
+  <data name="IncidentSeverities_Intro" xml:space="preserve">
+    <value>Wartości dla krytyczności incydentu:</value>
+  </data>
+  <data name="IncidentSeverities_Title" xml:space="preserve">
+    <value>Edytuj krytyczności incydentu</value>
+  </data>
+  <data name="IncidentStatuses_Intro" xml:space="preserve">
+    <value>Statusy incydentów bieżącego projektu</value>
+  </data>
+  <data name="IncidentStatuses_Title" xml:space="preserve">
+    <value>Edycja statusów incydentu</value>
+  </data>
+  <data name="IncidentTypes_Intro" xml:space="preserve">
+    <value>Typy incydentu zdefiniowane w bieżącym projekcie</value>
+  </data>
+  <data name="IncidentTypes_Title" xml:space="preserve">
+    <value>Edycja typów incydentu</value>
+  </data>
+  <data name="LicenseDetails_EnterpriseLicense" xml:space="preserve">
+    <value>Licencja enterprise</value>
+  </data>
+  <data name="LicenseDetails_EvaluationLicense" xml:space="preserve">
+    <value>Licencja ewaluacyjana</value>
+  </data>
+  <data name="LicenseDetails_Expiration" xml:space="preserve">
+    <value>Wygasa</value>
+  </data>
+  <data name="LicenseDetails_LicenseType" xml:space="preserve">
+    <value>Typ licencji</value>
+  </data>
+  <data name="LicenseDetails_LicenseVersionNumber" xml:space="preserve">
+    <value>Wersja licencji #</value>
+  </data>
+  <data name="LicenseDetails_NumConcurrentUsers" xml:space="preserve">
+    <value># Równoczesnych użytkowników</value>
+  </data>
+  <data name="LicenseDetails_Title" xml:space="preserve">
+    <value>Szczegóły licencji</value>
+  </data>
+  <data name="LicenseDetails_UnlicensedDoNotUse" xml:space="preserve">
+    <value>Wersja nielicencjonowana | Nie używać</value>
+  </data>
+  <data name="LicenseDetails_UsersConcurrent" xml:space="preserve">
+    <value>{0}-Równoczesnych użytkowników</value>
+  </data>
+  <data name="LicenseDetail_CustomerHomePage" xml:space="preserve">
+    <value>Strona domowa klienta</value>
+  </data>
+  <data name="LicenseDetail_Legend1" xml:space="preserve">
+    <value>Notatka:</value>
+  </data>
+  <data name="LicenseDetail_Legend2" xml:space="preserve">
+    <value>Nazwa organizacji i klucz licencyjny są ze sobą powiązane</value>
+  </data>
+  <data name="LicenseDetail_Legend3" xml:space="preserve">
+    <value>Jeśli już posiadasz licencję możesz</value>
+  </data>
+  <data name="LicenseDetail_Legend4" xml:space="preserve">
+    <value>online dzisiaj</value>
+  </data>
+  <data name="LicenseDetail_LicenseKey" xml:space="preserve">
+    <value>Klucz licencyjny</value>
+  </data>
+  <data name="LicenseDetail_Organization" xml:space="preserve">
+    <value>Organizacja</value>
+  </data>
+  <data name="LicenseDetail_PurchaseOne" xml:space="preserve">
+    <value>zakupić</value>
+  </data>
+  <data name="Admin_EditProjects_String1" xml:space="preserve">
+    <value>Poniższe projekty zostały utworzone w systemie. Aby edytować istniejący projekt kliknij na link 'Edycja'.</value>
+  </data>
+  <data name="Admin_EditProjects_String2" xml:space="preserve">
+    <value>Aby utworzyć nowy projekt, kliknij przycisk [Dodaj].</value>
+  </data>
+  <data name="Admin_EditProjects_Title" xml:space="preserve">
+    <value>Zobacz / Edytuj Projekty</value>
+  </data>
+  <data name="Admin_Home_Title" xml:space="preserve">
+    <value>Administracja strona główna</value>
+  </data>
+  <data name="Admin_PlanningOptions_DataCaching" xml:space="preserve">
+    <value>Cache danych</value>
+  </data>
+  <data name="Admin_PlanningOptions_String1" xml:space="preserve">
+    <value>Opcje harmonogramu i kalendarza używane projekcie. Aby zmienić ustawienia zmodyfikuj wartości i zatwierdź zmiany.</value>
+  </data>
+  <data name="Admin_PlanningOptions_String2" xml:space="preserve">
+    <value>Po dokonaniu zmian, rekomendowane jest odświeżenie harmonogramu i informacji o postępie projektu poprzez </value>
+  </data>
+  <data name="Admin_PlanningOptions_String3" xml:space="preserve">
+    <value>panel administracyjny.</value>
+  </data>
+  <data name="Admin_PlanningOptions_Title" xml:space="preserve">
+    <value>Opcje planowania</value>
+  </data>
+  <data name="Admin_PlanningOptions_WorkHoursPerDay" xml:space="preserve">
+    <value>Godziny pracy na dzień</value>
+  </data>
+  <data name="Admin_ProjectDetails_BackToList" xml:space="preserve">
+    <value>Powrót do listy projektów</value>
+  </data>
+  <data name="Admin_ProjectDetails_NewProject" xml:space="preserve">
+    <value>Nowy projekt</value>
+  </data>
+  <data name="Admin_ProjectDetails_String1" xml:space="preserve">
+    <value>Zweryfikuj poniższe informacje i dokonaj zmian w razie konieczności.</value>
+  </data>
+  <data name="Admin_ProjectDetails_String2" xml:space="preserve">
+    <value>Aby zapisać zmiany użyj [Aktualizuj/Wstaw]</value>
+  </data>
+  <data name="Admin_ProjectDetails_TemplateDefault" xml:space="preserve">
+    <value>Domyślny</value>
+  </data>
+  <data name="Admin_ProjectDetails_TemplateExistingProject" xml:space="preserve">
+    <value>W oparciu o istniejący projekt</value>
+  </data>
+  <data name="Admin_ProjectDetails_TemplateNotes" xml:space="preserve">
+    <value>Wybranie szablonu domyślnego spowoduje użycie standardowych workflow i list incydentów.
+Wybór jako szablonu istniejącego projektu, spowoduje przekopiowanie z niego dokonanych w nim modyfikacji workflow, pól incydentu i użycie ich w tworzonym projekcie.   </value>
+  </data>
+  <data name="Admin_ProjectDetails_Title" xml:space="preserve">
+    <value>Edytuj szczegóły projektu</value>
+  </data>
+  <data name="Admin_ProjectGroupDetails_BackToList" xml:space="preserve">
+    <value>Powrót do listy grup projektu</value>
+  </data>
+  <data name="Admin_ProjectGroupDetails_NewProjectGroup" xml:space="preserve">
+    <value>Nowa grupa projektów</value>
+  </data>
+  <data name="Admin_ProjectGroupDetails_String1" xml:space="preserve">
+    <value>Zweryfikuj poniższe informacje i dokonaj zmian w razie konieczności.</value>
+  </data>
+  <data name="Admin_ProjectGroupDetails_String2" xml:space="preserve">
+    <value>Aby zapisać zmiany użyj [Aktualizuj/Wstaw]</value>
+  </data>
+  <data name="Admin_ProjectGroupDetails_Title" xml:space="preserve">
+    <value>Szczegóły grupy projektów</value>
+  </data>
+  <data name="Admin_ProjectGroups_String1" xml:space="preserve">
+    <value>Grupy projektów zapisanych w systemie. W celu edycji użyj linka 'Edytuj'</value>
+  </data>
+  <data name="Admin_ProjectGroups_String2" xml:space="preserve">
+    <value>W celu utworzenia nowej grupy projektów kliknij [Dodaj].</value>
+  </data>
+  <data name="Admin_ProjectGroups_Title" xml:space="preserve">
+    <value>Edycja grup projektu</value>
+  </data>
+  <data name="LdapConfiguration_Attributes" xml:space="preserve">
+    <value>Attributes</value>
+  </data>
+  <data name="LdapConfiguration_BaseDn" xml:space="preserve">
+    <value>Base DN</value>
+  </data>
+  <data name="LdapConfiguration_BaseDnNotes" xml:space="preserve">
+    <value>Name of the root node in LDAP from which to search for users</value>
+  </data>
+  <data name="LdapConfiguration_BindDn" xml:space="preserve">
+    <value>Bind DN</value>
+  </data>
+  <data name="LdapConfiguration_BindDnNotes1" xml:space="preserve">
+    <value>The distinguished name of the user to log into the directory server as</value>
+  </data>
+  <data name="LdapConfiguration_BindDnNotes2" xml:space="preserve">
+    <value>or leave blank for anonymous</value>
+  </data>
+  <data name="LdapConfiguration_BindPassword" xml:space="preserve">
+    <value>Bind Password</value>
+  </data>
+  <data name="LdapConfiguration_BindPasswordNotes" xml:space="preserve">
+    <value>The password of the user to log into the directory server as, or leave blank for anonymous</value>
+  </data>
+  <data name="LdapConfiguration_EmailAddress" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="LdapConfiguration_EmailAddressNotes" xml:space="preserve">
+    <value>The attribute in LDAP holding the user's email address (e.g. mail)</value>
+  </data>
+  <data name="LdapConfiguration_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="LdapConfiguration_FirstNameNotes" xml:space="preserve">
+    <value>The attribute in LDAP holding the user's first name (e.g. givenName)</value>
+  </data>
+  <data name="LdapConfiguration_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="LdapConfiguration_LastNameNotes" xml:space="preserve">
+    <value>The attribute in LDAP holding the user's last name (e.g. sn)</value>
+  </data>
+  <data name="LdapConfiguration_LdapHost" xml:space="preserve">
+    <value>LDAP Host</value>
+  </data>
+  <data name="LdapConfiguration_LdapHostNotes" xml:space="preserve">
+    <value>Name (and optionally port) of the server running LDAP</value>
+  </data>
+  <data name="LdapConfiguration_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LdapConfiguration_LoginNotes" xml:space="preserve">
+    <value>The attribute in LDAP holding the login name</value>
+  </data>
+  <data name="LdapConfiguration_MiddleInitial" xml:space="preserve">
+    <value>Middle Initial</value>
+  </data>
+  <data name="LdapConfiguration_MiddleInitialNotes" xml:space="preserve">
+    <value>The attribute in LDAP holding the user's middle initials (e.g. initials)</value>
+  </data>
+  <data name="LdapConfiguration_SamplePassword" xml:space="preserve">
+    <value>Sample Password</value>
+  </data>
+  <data name="LdapConfiguration_SampleUser" xml:space="preserve">
+    <value>Sample User</value>
+  </data>
+  <data name="LdapConfiguration_SampleUserNotes" xml:space="preserve">
+    <value>The distinguished name of a sample user you want to test authenticate</value>
+  </data>
+  <data name="LdapConfiguration_String1" xml:space="preserve">
+    <value>This page allows you to configure</value>
+  </data>
+  <data name="LdapConfiguration_String2" xml:space="preserve">
+    <value>to authenticate users against an LDAP directory server. This allows you to avoid having to store passwords in a user's</value>
+  </data>
+  <data name="LdapConfiguration_String3" xml:space="preserve">
+    <value>profile. You can have both types of user exist at the same time -</value>
+  </data>
+  <data name="LdapConfiguration_String4" xml:space="preserve">
+    <value>users that store their passwords inside</value>
+  </data>
+  <data name="LdapConfiguration_String5" xml:space="preserve">
+    <value>and LDAP users that use their existing LDAP passwords.</value>
+  </data>
+  <data name="LdapConfiguration_String6" xml:space="preserve">
+    <value>Please view/edit your LDAP server's configuration details below:</value>
+  </data>
+  <data name="LdapConfiguration_String7" xml:space="preserve">
+    <value>You can optionally enter a sample user to authenticate. When you click [Save]</value>
+  </data>
+  <data name="LdapConfiguration_String8" xml:space="preserve">
+    <value>will try authenticating this user before it updates the LDAP configuration.</value>
+  </data>
+  <data name="LdapConfiguration_Title" xml:space="preserve">
+    <value>LDAP Configuration</value>
+  </data>
+  <data name="LdapConfiguration_UseSSL" xml:space="preserve">
+    <value>Use Secure Sockets Layer (SSL)</value>
+  </data>
+  <data name="Admin_DataTools_Title" xml:space="preserve">
+    <value>Narzędzia danych</value>
+  </data>
+  <data name="Admin_PlanningOptions_AutoCreateTasks" xml:space="preserve">
+    <value>Automatyczne tworzenie zadań</value>
+  </data>
+  <data name="Admin_PlanningOptions_AutoCreateTasksLabel" xml:space="preserve">
+    <value>Utwórz nowe zadanie kiedy Wymaganie będzie miało status 'In-Progress'</value>
+  </data>
+  <data name="Admin_PlanningOptions_DefaultEffort" xml:space="preserve">
+    <value>Domyślny nakład</value>
+  </data>
+  <data name="Admin_PlanningOptions_DefaultEffort_Requirements" xml:space="preserve">
+    <value>Wymagania (planowany nakład)</value>
+  </data>
+  <data name="Admin_PlanningOptions_DefaultEffort_Tasks" xml:space="preserve">
+    <value>Zadania (szacowany nakład)</value>
+  </data>
+  <data name="Admin_PlanningOptions_EffortCalculations" xml:space="preserve">
+    <value>Wyliczenia nakładu</value>
+  </data>
+  <data name="Admin_PlanningOptions_EnabledForIncidents" xml:space="preserve">
+    <value>Włączone dla incydentów</value>
+  </data>
+  <data name="Admin_PlanningOptions_EnabledForTasks" xml:space="preserve">
+    <value>Włączone dla zadań</value>
+  </data>
+  <data name="Admin_PlanningOptions_IncludeIncidentEffort" xml:space="preserve">
+    <value>Zawrzyj nakład na incydenty</value>
+  </data>
+  <data name="Admin_PlanningOptions_IncludeTaskEffort" xml:space="preserve">
+    <value>Zawrzyj nakład na zadania</value>
+  </data>
+  <data name="Admin_PlanningOptions_NonWorkingHoursPerMonth" xml:space="preserve">
+    <value>Nie pracujące godziny w miesiącu</value>
+  </data>
+  <data name="Admin_PlanningOptions_TimeTracking" xml:space="preserve">
+    <value>Śledzenie czasu</value>
+  </data>
+  <data name="Admin_PlanningOptions_WorkDaysPerWeek" xml:space="preserve">
+    <value>Dni roboczych w tygodniu</value>
+  </data>
+  <data name="Admin_ProjectGroupMembershipAdd_BackToList" xml:space="preserve">
+    <value>Powrót do przynależności do grupy projektów</value>
+  </data>
+  <data name="Admin_ProjectGroupMembershipAdd_String1" xml:space="preserve">
+    <value>Poniżsi użytkownicy NIE są członkami tej grupy projektów.</value>
+  </data>
+  <data name="Admin_ProjectGroupMembershipAdd_String2" xml:space="preserve">
+    <value>Wybierz rolę dla każdego z użytkowników, którego chcesz dodać do grupy projektów i kliknij 'Dodaj'</value>
+  </data>
+  <data name="Admin_ProjectGroupMembershipAdd_Title" xml:space="preserve">
+    <value>Modyfikuj przynależność użytkowników do grupy projektów</value>
+  </data>
+  <data name="Admin_ProjectMembershipAdd_BackToList" xml:space="preserve">
+    <value>Powrót do Ekranu 'Przynależności do projektu'</value>
+  </data>
+  <data name="Admin_ProjectMembershipAdd_String1" xml:space="preserve">
+    <value>Użytkownicy którzy NIE są członkami tego projektu.</value>
+  </data>
+  <data name="Admin_ProjectMembershipAdd_String2" xml:space="preserve">
+    <value>Wybierz rolę dla każdego z użytkowników, którego chcesz dodać do projektu i kliknij 'Dodaj'</value>
+  </data>
+  <data name="Admin_ProjectMembershipAdd_Title" xml:space="preserve">
+    <value>Dodaj członków projektu</value>
+  </data>
+  <data name="Admin_ProjectMembership_String1" xml:space="preserve">
+    <value>Lista członków projektu. Aby zmienić ich role, wybierz odpowiednią wartość z listy rozwijalnej i Aktualizuj.</value>
+  </data>
+	<data name="Admin_AssignedApprovers_String1" xml:space="preserve">
+    <value>The following users are assigned approvers of this product. To change their role, just select the value in the dropdown and click Update.</value>
+  </data>
+	<data name="Admin_AssignedApprovers_String2" xml:space="preserve">
+    <value>To add a new approver to the product, click [Add]. To remove existing users, select their checkboxes and click [Delete].</value>
+  </data>
+  <data name="Admin_ProjectMembership_String2" xml:space="preserve">
+    <value>Aby dodać nowego użytkownika do projektu klinki 'Dodaj'. W celu usunięcia istniejącego/ch użytkownika/ów, zaznacz go/ich i kliknij 'Usuń'.</value>
+  </data>
+  <data name="Admin_ProjectMembership_Title" xml:space="preserve">
+    <value>Przynależność do projektu</value>
+  </data>
+	<data name="Admin_AssignedApprovers_Title" xml:space="preserve">
+    <value>Assigned Approvers</value>
+  </data>
+  <data name="Admin_ActiveSessions_Title" xml:space="preserve">
+    <value>Aktywne sesje użytkowników</value>
+  </data>
+  <data name="Admin_ActiveSessions_Intro" xml:space="preserve">
+    <value>Użytkownicy z aktywnymi sesjami </value>
+  </data>
+  <data name="Admin_ActiveSessions_Notes" xml:space="preserve">
+    <value>Aby zakończyć sesję użytkownika kliknij link 'Zakończ sesję' </value>
+  </data>
+  <data name="Admin_ActiveSessions_UsageConcurrent" xml:space="preserve">
+    <value>Obecnie zajęte jest {0} użytkowników z {1} dostępnych </value>
+  </data>
+  <data name="Admin_ActiveSessions_UsageEnterprise" xml:space="preserve">
+    <value>W tej chwili w systemie jest {0} aktywnych użytkowników</value>
+  </data>
+  <data name="Admin_Custom_01" xml:space="preserve">
+    <value>Definiowalne 01</value>
+  </data>
+  <data name="Admin_Custom_02" xml:space="preserve">
+    <value>Definiowalne 02</value>
+  </data>
+  <data name="Admin_Custom_03" xml:space="preserve">
+    <value>Definiowalne 03</value>
+  </data>
+  <data name="Admin_Custom_04" xml:space="preserve">
+    <value>Definiowalne 04</value>
+  </data>
+  <data name="Admin_Custom_05" xml:space="preserve">
+    <value>Definiowalne 05</value>
+  </data>
+  <data name="Admin_DataSyncCustomPropertyMapping_CustomValueMapping" xml:space="preserve">
+    <value>Custom Value Mapping</value>
+  </data>
+  <data name="Admin_DataSyncCustomPropertyMapping_Intro1" xml:space="preserve">
+    <value>To configure the data mappings for this custom property, please fill in the</value>
+  </data>
+  <data name="Admin_DataSyncCustomPropertyMapping_Intro2" xml:space="preserve">
+    <value>external key values for the custom property below. If this is a &lt;b&gt;custom list&lt;/b&gt; property, you also need to fill in the external
+				    key for each of the custom property values as well:</value>
+  </data>
+  <data name="Admin_DataSyncCustomPropertyMapping_Title" xml:space="preserve">
+    <value>Edit Custom Property Data Mapping</value>
+  </data>
+  <data name="Admin_DataSyncDetails_AutoMapUsers" xml:space="preserve">
+    <value>Auto-Map Users</value>
+  </data>
+  <data name="Admin_DataSyncDetails_BackToHome" xml:space="preserve">
+    <value>Back to Data Synchronization Home</value>
+  </data>
+  <data name="Admin_DataSyncDetails_Intro" xml:space="preserve">
+    <value>Please enter/edit the following information for the plug-in. The exact information that needs to be entered is specific to each plug-in, and you should refer to the documentation for the plug-in when entering/changing it:</value>
+  </data>
+  <data name="Admin_DataSyncDetails_NewPlugIn" xml:space="preserve">
+    <value>New Plug-In</value>
+  </data>
+  <data name="Admin_DataSyncDetails_TimeOffset" xml:space="preserve">
+    <value>Time Offset</value>
+  </data>
+  <data name="Admin_DataSyncDetails_Title" xml:space="preserve">
+    <value>Edit Plug-In</value>
+  </data>
+  <data name="Admin_DataSyncFieldMapping_BackToMappings" xml:space="preserve">
+    <value>Back to Project Mappings</value>
+  </data>
+  <data name="Admin_DataSyncFieldMapping_Intro" xml:space="preserve">
+    <value>To configure the data mappings for this field, please fill in the external key values for the {0} plug-in next to each {1} value:</value>
+  </data>
+  <data name="Admin_DataSyncFieldMapping_Title" xml:space="preserve">
+    <value>Edit Standard Field Data Mapping</value>
+  </data>
+  <data name="Admin_DataSynchronization_DataMapping" xml:space="preserve">
+    <value>Data Mapping</value>
+  </data>
+  <data name="Admin_DataSynchronization_Intro1" xml:space="preserve">
+    <value>is able to communicate with a variety of external systems and applications using its background data synchronization service and library of available plug-ins.</value>
+  </data>
+  <data name="Admin_DataSynchronization_Intro2" xml:space="preserve">
+    <value>This page allows you to view, add and modify the list of plug-ins, make changes to their configuration, and verify the status of the most recent synchronization. In addition, you can force a particular plug-in to perform a complete data-synchronization by resetting its date of last sync:</value>
+  </data>
+  <data name="Admin_DataSynchronization_PlugIn" xml:space="preserve">
+    <value>Plug-In</value>
+  </data>
+  <data name="Admin_DataSynchronization_Title" xml:space="preserve">
+    <value>Data Synchronization</value>
+  </data>
+  <data name="Admin_DataSyncProjects_ArtifactFieldMapping" xml:space="preserve">
+    <value>Artifact Field Mapping</value>
+  </data>
+  <data name="Admin_DataSyncProjects_ArtifactFieldMapping_Intro" xml:space="preserve">
+    <value>Please click on each of the links below to configure the field-level data mapping for each of the types of artifact that you will be synchronizing in this project:</value>
+  </data>
+  <data name="Admin_DataSyncProjects_CustomProperties" xml:space="preserve">
+    <value>Custom Properties</value>
+  </data>
+  <data name="Admin_DataSyncProjects_Intro1" xml:space="preserve">
+    <value>To configure this project for data mapping with the</value>
+  </data>
+  <data name="Admin_DataSyncProjects_Intro2" xml:space="preserve">
+    <value>plug-in, you need to specify the key/id of the project in the external system, and then click on the links below to actually configure the different fields that need to be mapped for the synchronization to operate:</value>
+  </data>
+  <data name="Admin_DataSyncProjects_ProjectDataMapping" xml:space="preserve">
+    <value>Project Data Mapping</value>
+  </data>
+  <data name="Admin_DataSyncProjects_StandardFields" xml:space="preserve">
+    <value>Standard Fields</value>
+  </data>
+  <data name="Admin_DataSyncProjects_Title" xml:space="preserve">
+    <value>View/Edit Data Mapping</value>
+  </data>
+  <data name="Admin_DataSyncProjects_Unselected" xml:space="preserve">
+    <value>(Unselected)</value>
+  </data>
+  <data name="Admin_DocumentFolderDetails_String1" xml:space="preserve">
+    <value>Zweryfikuj poniższe informacje i dokonaj zmian w razie konieczności.</value>
+  </data>
+  <data name="Admin_DocumentFolderDetails_String2" xml:space="preserve">
+    <value>Po zakończeniu, kliknij [Aktualizuj/Wstaw] by zatwierdzić zmiany.</value>
+  </data>
+  <data name="Admin_DocumentFolderDetails_Title" xml:space="preserve">
+    <value>Dodaj / Edytuj folder</value>
+  </data>
+  <data name="Admin_EmailConfiguration_ActiveNotes1" xml:space="preserve">
+    <value>Jeśli wyłączone</value>
+  </data>
+  <data name="Admin_EmailConfiguration_ActiveNotes2" xml:space="preserve">
+    <value>nie będą wysyłane żadne wiadomości.</value>
+  </data>
+  <data name="Admin_EmailConfiguration_ActiveYn" xml:space="preserve">
+    <value>Czy notyfikacje email są aktywne ?</value>
+  </data>
+  <data name="Admin_EmailConfiguration_AllowUserControlNotes" xml:space="preserve">
+    <value>Jeśli aktywne, użytkownicy będą mieli możliwość wyłączenia przyjmowania powiadomień email</value>
+  </data>
+  <data name="Admin_EmailConfiguration_AllowUsersControl" xml:space="preserve">
+    <value>Czy użytkownicy będą mogli kontrolować przychodzące notyfikację ?</value>
+  </data>
+  <data name="Admin_EmailConfiguration_FromAddressNotes" xml:space="preserve">
+    <value>Adres, z którego notyfikacje będą przysyłane. Odpowiedzi na notyfikacje nie są monitorowane</value>
+  </data>
+  <data name="Admin_EmailConfiguration_FromEmailAddress" xml:space="preserve">
+    <value>From E-Mail Address</value>
+  </data>
+  <data name="Admin_EmailConfiguration_HostName" xml:space="preserve">
+    <value>Host Name</value>
+  </data>
+  <data name="Admin_EmailConfiguration_MailHostNotes" xml:space="preserve">
+    <value>The SMTP host name of your mail server.</value>
+  </data>
+  <data name="Admin_EmailConfiguration_MailServer" xml:space="preserve">
+    <value>Mail Server</value>
+  </data>
+  <data name="Admin_EmailConfiguration_MailServerIntro" xml:space="preserve">
+    <value>Please leave all the following fields empty if you want to use the default IIS SMTP Virtual Server:</value>
+  </data>
+  <data name="Admin_EmailConfiguration_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Admin_EmailConfiguration_PasswordNotes" xml:space="preserve">
+    <value>If your SMTP server requires authentication, this is your password.</value>
+  </data>
+  <data name="Admin_EmailConfiguration_PortNumber" xml:space="preserve">
+    <value>Port Number</value>
+  </data>
+  <data name="Admin_EmailConfiguration_PortNumberNotes" xml:space="preserve">
+    <value>The SMTP port number to use. Leave blank to use the default of 25.</value>
+  </data>
+  <data name="Admin_EmailConfiguration_ReplyToAddressNotes" xml:space="preserve">
+    <value>The Reply-To field that emails sent will contain. Blank will leave header field blank in messages.</value>
+  </data>
+  <data name="Admin_EmailConfiguration_ReplyToEmailAddress" xml:space="preserve">
+    <value>Reply-To E-Mail Address</value>
+  </data>
+  <data name="Admin_EmailConfiguration_SendHtml" xml:space="preserve">
+    <value>Send HTML Emails</value>
+  </data>
+  <data name="Admin_EmailConfiguration_SendInHtmlNotes" xml:space="preserve">
+    <value>If enabled, emails will be sent out in HTML. Otherwise, plain text.</value>
+  </data>
+  <data name="Admin_EmailConfiguration_SslConnection" xml:space="preserve">
+    <value>SSL Connection</value>
+  </data>
+  <data name="Admin_EmailConfiguration_String1" xml:space="preserve">
+    <value>By default,</value>
+  </data>
+  <data name="Admin_EmailConfiguration_String2" xml:space="preserve">
+    <value>will use the default IIS SMTP Virtual Server to send outgoing email notifications to users in the system. However, it can also be configured to send emails through an external SMTP server directly.</value>
+  </data>
+  <data name="Admin_EmailConfiguration_String3" xml:space="preserve">
+    <value>This page allows you to change these mail server settings:</value>
+  </data>
+  <data name="Admin_EmailConfiguration_UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="Admin_EmailConfiguration_UserNameNotes" xml:space="preserve">
+    <value>If your SMTP server requires authentication, this is your username.</value>
+  </data>
+  <data name="Admin_Notification_ArtifactFieldsIntro" xml:space="preserve">
+    <value>Zdarzenie notyfikacyjne zostanie aktywowane kiedy zostanie zapisana zmiana w wybranych poniżej polach</value>
+  </data>
+  <data name="Admin_Notification_ArtifactTypeNotes" xml:space="preserve">
+    <value>Zdarzenie notyfikacyjne zostanie dołączone do wybranego typu artefaktu.</value>
+  </data>
+  <data name="Admin_Notification_ArtifactUsersIntro" xml:space="preserve">
+    <value>Jeśli wybranym pole zostanie zapisana zmiana, poniżsi użytkownicy i role zostaną powiadomieni.</value>
+  </data>
+  <data name="Admin_Notification_Intro" xml:space="preserve">
+    <value>Poniże zdarzenia notyfikacje zostały zdefiniowane w bieżącym projekcie. W celu edycji zdarzenia kliknij 'Edycja'</value>
+  </data>
+  <data name="Admin_Notification_IsActiveNotes" xml:space="preserve">
+    <value>Określa aktywność zdarzenia</value>
+  </data>
+  <data name="Admin_Notification_OnCreationNotes" xml:space="preserve">
+    <value>Określa czy zdarzenie ma zostać aktywowane dla nowoutworzonego artefaktu</value>
+  </data>
+  <data name="Admin_Notification_ReturnToTemplateList" xml:space="preserve">
+    <value>wróć do list szablonów</value>
+  </data>
+  <data name="Admin_Notification_SubjectLine" xml:space="preserve">
+    <value>Temat notyfikacji</value>
+  </data>
+  <data name="Admin_Notification_SubjectLineNotes" xml:space="preserve">
+    <value>Temat notyfikacji będzie wyświetlony w otrzymanym emailu. W temacie można używać tokenów takich jak w treści notyfikacji</value>
+  </data>
+  <data name="Admin_RoleList_Intro" xml:space="preserve">
+    <value>Role w systemie:</value>
+  </data>
+  <data name="Admin_VersionControlProject_ActiveForProject" xml:space="preserve">
+    <value>Active for Project</value>
+  </data>
+  <data name="Admin_VersionControlProject_Intro1" xml:space="preserve">
+    <value>Please edit the following project-specific settings for the</value>
+  </data>
+  <data name="Admin_VersionControlProject_Intro2" xml:space="preserve">
+    <value>version control provider. If you leave any fields blank, then the value will be taken from the provider’s default settings. To stop using this provider on the project, just set the Active flag to No below:</value>
+  </data>
+  <data name="Admin_VersionControlProject_LongTitle" xml:space="preserve">
+    <value>Version Control Project Settings</value>
+  </data>
+  <data name="Admin_VersionControlProject_Title" xml:space="preserve">
+    <value>Project Settings</value>
+  </data>
+  <data name="Admin_VersionControlProject_Unselected" xml:space="preserve">
+    <value>(Unselected)</value>
+  </data>
+  <data name="Admin_VersionControlProvider_BackToHome" xml:space="preserve">
+    <value>Back to Version Control Home</value>
+  </data>
+  <data name="Admin_VersionControlProvider_DefaultSettings" xml:space="preserve">
+    <value>Default Settings</value>
+  </data>
+  <data name="Admin_VersionControlProvider_Intro" xml:space="preserve">
+    <value>Please enter/edit the following information for the provider. The exact information
+that needs to be entered is specific to each provider, and you should refer to the documentation for the provider when entering/changing it:</value>
+  </data>
+  <data name="Admin_VersionControlProvider_Intro2" xml:space="preserve">
+    <value>The following settings are used for any projects that do not define their own settings:</value>
+  </data>
+  <data name="Admin_VersionControlProvider_NewProvider" xml:space="preserve">
+    <value>New Provider</value>
+  </data>
+  <data name="Admin_VersionControlProvider_Title" xml:space="preserve">
+    <value>Edit Version Control Provider</value>
+  </data>
+  <data name="Admin_VersionControl_Intro" xml:space="preserve">
+    <value>is able to integrate with a variety of external version control systems using its flexible, open architecture and library of available version control providers.</value>
+  </data>
+  <data name="Admin_VersionControl_Intro2" xml:space="preserve">
+    <value>This page allows you to view, add and modify the list of version control providers, make changes to their configuration and also specify any project-specific configuration values:</value>
+  </data>
+  <data name="Admin_VersionControl_Title" xml:space="preserve">
+    <value>Version Control Integration</value>
+  </data>
+  <data name="Notification_ID" xml:space="preserve">
+    <value>ID# obiektu</value>
+  </data>
+  <data name="Notification_NotifyTo" xml:space="preserve">
+    <value>Adresat notyfikacji</value>
+  </data>
+  <data name="Notification_Product" xml:space="preserve">
+    <value>Nazwa produktu</value>
+  </data>
+  <data name="Notification_Project" xml:space="preserve">
+    <value>Nazwa projektu</value>
+  </data>
+  <data name="Notification_URL" xml:space="preserve">
+    <value>URL Artefaktu</value>
+  </data>
+  <data name="GlobalNavigation_SearchTooltip" xml:space="preserve">
+    <value>Wyszukiwanie odbywa się po przez wpisanie słów kluczowych lub ID (np. IN45 dla incydentu 45</value>
+  </data>
+  <data name="Admin_PlanningOptions_DefaultEstimate" xml:space="preserve">
+    <value>Domyślne szacowanie</value>
+  </data>
+  <data name="Admin_PlanningOptions_General" xml:space="preserve">
+    <value>Ogólne</value>
+  </data>
+  <data name="Admin_PlanningOptions_PointEffort" xml:space="preserve">
+    <value>Punkt nakładu</value>
+  </data>
+  <data name="Admin_PlanningOptions_PointEffortNotes" xml:space="preserve">
+    <value>Jest to przelicznik stosowany do określenia liczby osobo-godzin na szacowany punkt.</value>
+  </data>
+  <data name="Admin_PlanningOptions_Requirements" xml:space="preserve">
+    <value>Wymagania</value>
+  </data>
+  <data name="Admin_PlanningOptions_TasksIncidents" xml:space="preserve">
+    <value>Zadania i Incydenty</value>
+  </data>
+  <data name="Global_Days" xml:space="preserve">
+    <value>dni</value>
+  </data>
+  <data name="Global_Points" xml:space="preserve">
+    <value>punkty/ów</value>
+  </data>
+  <data name="Admin_Components_AddComponent" xml:space="preserve">
+    <value>Dodaj komponent</value>
+  </data>
+  <data name="Admin_Components_NoComponentsDefined" xml:space="preserve">
+    <value>Brak zdefiniowanych komponentów w tym projekcie. Aby utworzyć nowy kliknij link 'Dodaj komponent'.</value>
+  </data>
+  <data name="Admin_EditComponents" xml:space="preserve">
+    <value>Edycja komponentów</value>
+  </data>
+  <data name="Admin_EditComponents_Intro" xml:space="preserve">
+    <value>Poniższe komponenty zostały zdefiniowane w projekcie. W razie potrzeb dokonaj zmian naciśnij przycisk 'Zapisz'</value>
+  </data>
+  <data name="Admin_Requirements" xml:space="preserve">
+    <value>Wymagania</value>
+  </data>
+  <data name="Admin_UserDetailsAddProjectMembership_BackToUserDetails" xml:space="preserve">
+    <value>Powrót do szczegółów użytkownika</value>
+  </data>
+  <data name="Admin_UserDetailsAddProjectMembership_Legend1" xml:space="preserve">
+    <value>Ten użytkownik NIE jest członkiem niżej wymienionych projektów.</value>
+  </data>
+  <data name="Admin_UserDetailsAddProjectMembership_Legend2" xml:space="preserve">
+    <value>Wybierz role projektowe jakie chcesz dodać użytkownikowi w projektach, następnie kliknij 'Dodaj':</value>
+  </data>
+  <data name="Admin_UserDetailsAddProjectMembership_Title" xml:space="preserve">
+    <value>Dodaj użytkownika do projektu</value>
+  </data>
+  <data name="Global_Deleted" xml:space="preserve">
+    <value>Usunięte</value>
+  </data>
+  <data name="Global_Inactive" xml:space="preserve">
+    <value>Nieaktywne</value>
+  </data>
+  <data name="Admin_RequirementTypes_Intro" xml:space="preserve">
+    <value>Poniżej prezentowane są typy wymagań w bieżącym projekcie. Do każdego typu może być podpięty workflow statusów:</value>
+  </data>
+  <data name="Admin_RequirementWorkflowDetails_Intro" xml:space="preserve">
+    <value>Wszystkie statusy wybranego workflow:</value>
+  </data>
+  <data name="Admin_RequirementWorkflowStep_RequirementCustomProperties" xml:space="preserve">
+    <value>Pola definiowalne dla wymagań</value>
+  </data>
+  <data name="Admin_RequirementWorkflowStep_RequirementCustomPropertiesIntro" xml:space="preserve">
+    <value>Niżej wymienione pola definiowalne, są ukryte/wyłączone/wymagane w tym kroku workflow </value>
+  </data>
+  <data name="Admin_RequirementWorkflowStep_RequirementFields" xml:space="preserve">
+    <value>Pola wymagań</value>
+  </data>
+  <data name="Admin_RequirementWorkflowStep_RequirementFieldsIntro" xml:space="preserve">
+    <value>Niżej wymienione pola, są ukryte/wyłączone/wymagane w tym kroku przepływu </value>
+  </data>
+  <data name="Admin_RequirementWorkflows_Intro" xml:space="preserve">
+    <value>Workflow wymagań dostępnych w bierzącym projekcie. Aby dodać nowe, użyj linku 'Dodaj workflow', aby edytować istniejący: 'Podgląd elementu'.</value>
+  </data>
+  <data name="Admin_Workflows_AddWorkflow" xml:space="preserve">
+    <value>Dodaj workflow</value>
+  </data>
+  <data name="Admin_PlanningOptions_ReqStatusChangedByTasks" xml:space="preserve">
+    <value>Użyj statusów zadań</value>
+  </data>
+  <data name="Admin_PlanningOptions_ReqStatusChangedByTestCase" xml:space="preserve">
+    <value>Użyj statusów testów</value>
+  </data>
+  <data name="Admin_PlanningOptions_ReqStatusChangedByTestCaseLabel" xml:space="preserve">
+    <value>Kiedy wszystkie przypadki testowe mają status Passed, powiązane wymaganie zmieni automatycznie status na 'Tested'.</value>
+  </data>
+  <data name="Admin_RequirementWorkflowTransition_AuthorExecuteLabel" xml:space="preserve">
+    <value>Autor tego wymagania może wykonać:</value>
+  </data>
+  <data name="Admin_RequirementWorkflowTransition_OwnerExecuteLabel" xml:space="preserve">
+    <value>Właściciel tego wymagania może wykonać:</value>
+  </data>
+  <data name="Global_Components" xml:space="preserve">
+    <value>Komponenty</value>
+  </data>
+  <data name="QuickFilterPanel_MyFilters" xml:space="preserve">
+    <value>Moje filtry</value>
+  </data>
+  <data name="QuickFilterPanel_NoFilters" xml:space="preserve">
+    <value>(Brak dostępnych filtrów)</value>
+  </data>
+  <data name="QuickFilterPanel_SharedFilters" xml:space="preserve">
+    <value>Współdzielone filtry</value>
+  </data>
+  <data name="Admin_EditTaskWorkflows_Title" xml:space="preserve">
+    <value>Worklow zadań</value>
+  </data>
+  <data name="Admin_Planning" xml:space="preserve">
+    <value>Planowanie</value>
+  </data>
+  <data name="Admin_TaskTypes_Intro" xml:space="preserve">
+    <value>Dostępne są poniższe typy zadań. W projekcie możesz określić workflow które będą używane dla poszczególnych typów zadań:</value>
+  </data>
+  <data name="Admin_TaskWorkflowDetails_Intro" xml:space="preserve">
+    <value>Wyświetla wszystkie kroki dla statusów workflow:</value>
+  </data>
+  <data name="Admin_TaskWorkflowStep_TaskCustomProperties" xml:space="preserve">
+    <value>Pola definiowalne zadania</value>
+  </data>
+  <data name="Admin_TaskWorkflowStep_TaskCustomPropertiesIntro" xml:space="preserve">
+    <value>Niżej wymienione pola definiowalne zadania, są ukryte/wyłączone/wymagane w tym kroku workflow</value>
+  </data>
+  <data name="Admin_TaskWorkflowStep_TaskFields" xml:space="preserve">
+    <value>Pola zadania</value>
+  </data>
+  <data name="Admin_TaskWorkflowStep_TaskFieldsIntro" xml:space="preserve">
+    <value>Niżej wymienione pola zadania, są ukryte/wyłączone/wymagane w tym kroku workflow</value>
+  </data>
+  <data name="Admin_TaskWorkflows_Intro" xml:space="preserve">
+    <value>W tym projekcie dostępne jest klilka workflow zadań. Aby dodać nowy, użyj linku 'Dodaj workflow', aby edytować istniejący: 'Podgląd elementu'.</value>
+  </data>
+  <data name="Admin_TaskWorkflowTransition_AuthorExecuteLabel" xml:space="preserve">
+    <value>Autor tego zadania może wykonać:</value>
+  </data>
+  <data name="Admin_TaskWorkflowTransition_OwnerExecuteLabel" xml:space="preserve">
+    <value>Właściciel tego zadania może wykonać:</value>
+  </data>
+  <data name="Global_Folders" xml:space="preserve">
+    <value>Foldery</value>
+  </data>
+  <data name="Tasks_AllTasks" xml:space="preserve">
+    <value>(Wszystkie zadania)</value>
+  </data>
+  <data name="Global_Root" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="TaskDetails_ChangeRequirement" xml:space="preserve">
+    <value>Zmień wymaganie</value>
+  </data>
+  <data name="TaskDetails_ChangeRequirement_Intro" xml:space="preserve">
+    <value>Wybierz wymaganie z którym to zadanie jest powiązane:</value>
+  </data>
+  <data name="Global_Unknown" xml:space="preserve">
+    <value>Nieznane</value>
+  </data>
+  <data name="UserProfile_Avatar" xml:space="preserve">
+    <value>Avatar</value>
+  </data>
+  <data name="ProjectList_Contacts" xml:space="preserve">
+    <value>Moje kontakty</value>
+  </data>
+  <data name="UserProfile_Avatar_DeleteExisting" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="UserProfile_Avatar_Notes" xml:space="preserve">
+    <value>Avatar nie może mieć przekraczać 100k ani mieć więcej niż 100x100 pikseli. Dopuszczone są tylko formaty JPG, GIF i PNG. Konieczne jest wyczyszczenie casha przeglądarki w celu zobaczenia avatara. </value>
+  </data>
+  <data name="UserProfile_Avatar_UploadNew" xml:space="preserve">
+    <value>Załaduj nowy</value>
+  </data>
+  <data name="UserProfile_Avatar_UploadNewTooltip" xml:space="preserve">
+    <value>Wybierz plik, następnie kliknij przycisk Załaduj.</value>
+  </data>
+  <data name="Admin_PlanningOptions_IncludeTestCaseEffort" xml:space="preserve">
+    <value>Zawrzyj nakład przypadków testowych</value>
+  </data>
+  <data name="Admin_PlanningOptions_ReqStatusAutoPlanned" xml:space="preserve">
+    <value>Zaplanowane automatycznie</value>
+  </data>
+  <data name="Admin_PlanningOptions_ReqStatusAutoPlannedLabel" xml:space="preserve">
+    <value>Jeśli przypiszesz Wydanie do Wymagania, status zmieni się automatycznie na Zaplanowane.</value>
+  </data>
+  <data name="GeneralSettings_InstantMessenger" xml:space="preserve">
+    <value>Komunikator</value>
+  </data>
+  <data name="GeneralSettings_InstantMessengerNotes" xml:space="preserve">
+    <value>Umożliwia korzystanie z wbudowanego komunikatora.</value>
+  </data>
+  <data name="GeneralSettings_InstantMessengerRetention" xml:space="preserve">
+    <value>Liczba dni, przez które przeczytane wiadomości z komunikatora są przechowywane w systemie.</value>
+  </data>
+  <data name="IterationPlan_IncludeTestCases" xml:space="preserve">
+    <value>Uwzględnia przypadki testowe</value>
+  </data>
+  <data name="TestCaseList_TestCasesForProject" xml:space="preserve">
+    <value>przypadki testowe powiązane z tym projektem</value>
+  </data>
+  <data name="TestCaseList_TestCasesNotAssociatedWithRelease" xml:space="preserve">
+    <value>przypadki testowe nie powiązane z tym wydaniem</value>
+  </data>
+  <data name="ProjectHome_SharedSearches" xml:space="preserve">
+    <value>Współdzielone wyszukiwania</value>
+  </data>
+  <data name="TestCaseExecution_NoStepsAvailableForTestCase" xml:space="preserve">
+    <value>Przypadek testowy nie ma zdefiniowanych kroków</value>
+  </data>
+  <data name="Admin_EmailConfiguration_SendEmailFromUsers" xml:space="preserve">
+    <value>Email'e z adresów użytkowników?</value>
+  </data>
+  <data name="Admin_EmailConfiguration_SendEmailFromUsersNotes" xml:space="preserve">
+    <value>Jeśli zaznaczone, wszystkie wiadomości wysłane przy użyciu przycisku 'Email' będą pokazywały w polu OD użytkownika inicjującego wysyłkę. W przeciwnym wypadku jako nadawca widoczny będzie System Administrator.</value>
+  </data>
+  <data name="Admin_VersionControl_TaraVault" xml:space="preserve">
+    <value>TaraVault</value>
+  </data>
+  <data name="Admin_TaraVaultConfig" xml:space="preserve">
+    <value>Konfiguracja TaraVault</value>
+  </data>
+  <data name="Admin_TaraVaultConfig_Intro1" xml:space="preserve">
+    <value>TaraVault jest hostowanym repozytorium kodu źródłowego i systemem zarządzania konfiguracją oprogramowania (SCM) dostarczanym przez Inflectrę.</value>
+  </data>
+  <data name="Admin_TaraVault_Config_AccountName" xml:space="preserve">
+    <value>Nazwa konta TaraVault</value>
+  </data>
+  <data name="Admin_TaraVault_Config_Active" xml:space="preserve">
+    <value>TaraVault Active?</value>
+  </data>
+  <data name="Admin_TaraVault_Config_NumberUsers" xml:space="preserve">
+    <value>Dostępni użytkownicy TaraVault</value>
+  </data>
+  <data name="Admin_TaraVault_Config_ProjName" xml:space="preserve">
+    <value>Nazwa produktu TaraVault</value>
+  </data>
+  <data name="Admin_TaraVault_Config_ProjType" xml:space="preserve">
+    <value>Typ produktu TaraVault</value>
+  </data>
+  <data name="Admin_TaraVault_Config_ProjUsers" xml:space="preserve">
+    <value>Użytkownicy przypisani do tego produktu</value>
+  </data>
+  <data name="Admin_TaraVault_Confirm_Deactivate" xml:space="preserve">
+    <value>Gdy TaraVault zostanie wyłączony, stracisz wszystkie pliki kontroli wersji i mapowania użytkowników. Jesteś pewien, że chcesz kontynuować?</value>
+  </data>
+  <data name="Admin_TaraVault_Confirm_ProjActivate" xml:space="preserve">
+    <value>Po aktywacji produktu nie można dokonać żadnych zmian w jego konfiguracji. Czy na pewno chcesz aktywować ten produkt?</value>
+  </data>
+  <data name="Admin_TaraVault_Confirm_ProjDeactivate" xml:space="preserve">
+    <value>Wyłączenie tego produktu spowoduje usunięcie wszystkich plików źródłowo-kontrolnych. Jesteś pewien, że chcesz kontynuować?</value>
+  </data>
+  <data name="Admin_TaraVault_ProjectSummary" xml:space="preserve">
+    <value>Ustawienia produktu TaraVault</value>
+  </data>
+  <data name="Admin_TaraVault_SelectProject" xml:space="preserve">
+    <value>Musisz wybrać produkt, aby skonfigurować ustawienia produktu.</value>
+  </data>
+  <data name="Admin_TaraVault_SystemSummary" xml:space="preserve">
+    <value>Ustawienia globalne TaraVault</value>
+  </data>
+  <data name="Admin_UserDetails_TabTaraVault" xml:space="preserve">
+    <value>Członkostwo w TaraVault</value>
+  </data>
+  <data name="Global_ChooseReleaseTypeSetting" xml:space="preserve">
+    <value>Filtr uwalniający</value>
+  </data>
+  <data name="Global_ChooseReleaseTypeSettingTooltip" xml:space="preserve">
+    <value>Określa, czy dane opierają się na usuniętej lub rozwiązanej wersji incydentu.</value>
+  </data>
+  <data name="PlanningBoard_ProductBacklog" xml:space="preserve">
+    <value>-- Rejestr produktów --</value>
+  </data>
+  <data name="PlanningBoard_GroupBy" xml:space="preserve">
+    <value>Grupa przez</value>
+  </data>
+  <data name="PlanningBoard_IncludeDetails" xml:space="preserve">
+    <value>Widok szczegółowy</value>
+  </data>
+  <data name="TestCaseDetails_ObjectsPath" xml:space="preserve">
+    <value>Obiekty Ścieżka</value>
+  </data>
+  <data name="TestCaseDetails_ProjectFile" xml:space="preserve">
+    <value>Dokumentacja produktu</value>
+  </data>
+  <data name="TestCaseDetails_ScriptPath" xml:space="preserve">
+    <value>Ścieżka skryptowa</value>
+  </data>
+  <data name="TestCaseDetails_UserFunctionsPath" xml:space="preserve">
+    <value>Funkcje użytkownika Ścieżka</value>
+  </data>
+  <data name="SourceCodeList_CurrentBranch" xml:space="preserve">
+    <value>Aktualny Oddział</value>
+  </data>
+  <data name="SourceCodeList_Files" xml:space="preserve">
+    <value>plik(i) w bieżącym folderze</value>
+  </data>
+  <data name="SourceCodeRevisions_Revisions" xml:space="preserve">
+    <value>rewizja(-y) w obecnym repozytorium</value>
+  </data>
+  <data name="Admin_User_NoTaraProjects" xml:space="preserve">
+    <value>W tym momencie użytkownik nie jest przypisany do żadnego z produktów TaraVault.</value>
+  </data>
+  <data name="Admin_User_TaraEnable" xml:space="preserve">
+    <value>Włączyć użytkownika do TaraVault?</value>
+  </data>
+  <data name="Admin_User_TaraVaultLogin" xml:space="preserve">
+    <value>Login użytkownika TaraVault</value>
+  </data>
+  <data name="Admin_User_TaraVaultPass" xml:space="preserve">
+    <value>Hasło użytkownika TaraVault</value>
+  </data>
+  <data name="Admin_User_TaraVaultProjects" xml:space="preserve">
+    <value>Produkty dostępne dla tego Użytkownika</value>
+  </data>
+  <data name="PlanningBoard_AddRequirement" xml:space="preserve">
+    <value>Dodatek Wymóg</value>
+  </data>
+  <data name="Admin_UserDetailsAddTaraVaultProject_Legend1" xml:space="preserve">
+    <value>Użytkownik jest &lt;b&gt;nie&lt;/b&gt;członkiem następujących produktów TaraVault.</value>
+  </data>
+  <data name="Admin_UserDetailsAddTaraVaultProject_Legend2" xml:space="preserve">
+    <value>Zaznaczyć pole wyboru, aby dodać użytkownika do tych produktów, a następnie kliknąć przycisk "Dodaj".</value>
+  </data>
+  <data name="Admin_User_TaraVault_AddProject" xml:space="preserve">
+    <value>Dodać użytkownika do produktu?</value>
+  </data>
+  <data name="Admin_GeneralSettings_CacheFolder" xml:space="preserve">
+    <value>Folder skrytki</value>
+  </data>
+  <data name="Admin_GeneralSettings_CacheFolderNotes" xml:space="preserve">
+    <value>Folder lokalny używany przez proces sieciowy do przechowywania danych w pamięci podręcznej. Domyślnie lub błędnie, folder jest &lt;span style="font-family: monospace"&gt;{0}&lt;/span&gt;</value>
+  </data>
+  <data name="Admin_TaraVaultConfig_Intro2" xml:space="preserve">
+    <value>Produkty w {0} mogą być włączone w TaraVault do przechowywania plików z kodem źródłowym produktu i jego korekt. TaraVault jest dostarczany w oparciu o określoną liczbę aktywnych użytkowników.</value>
+  </data>
+  <data name="Admin_TaraVaultConfig_Intro3" xml:space="preserve">
+    <value>Na ekranie {0} można zmienić, którzy użytkownicy są aktywni do zarządzania kodem źródłowym.</value>
+  </data>
+  <data name="GeneralSettings_WorXEnabled" xml:space="preserve">
+    <value>Integracja WorX</value>
+  </data>
+  <data name="GeneralSettings_WorXEnabledNotes" xml:space="preserve">
+    <value>Ustawienie tej opcji na "Tak" włącza integrację z ręcznym narzędziem testowym Autom8 WorX.</value>
+  </data>
+  <data name="TaskDetails_SplitTask" xml:space="preserve">
+    <value>Podzielone zadanie</value>
+  </data>
+  <data name="TaskDetails_SplitTask_Intro" xml:space="preserve">
+    <value>Proszę wpisać nazwę nowego zadania wraz z właścicielem oraz % nakładu pracy, który chcesz przypisać do nowego zadania:</value>
+  </data>
+  <data name="TaskDetails_SplitTask_Notes" xml:space="preserve">
+    <value>Jeśli zostawisz % wysiłku puste, system albo przeniesie pozostały wysiłek do nowego zadania (jeśli zadanie jest w trakcie realizacji), albo po prostu podzieli go 50/50, jeśli zadanie nie jest rozpoczęte lub zakończone.</value>
+  </data>
+  <data name="TestCaseExecution_LinkExisting" xml:space="preserve">
+    <value>Link Istniejący Incydent</value>
+  </data>
+  <data name="ProjectHome_ActivityStream" xml:space="preserve">
+    <value>Strumień działań</value>
+  </data>
+  <data name="ActivityList_Title" xml:space="preserve">
+    <value>Strumień działań</value>
+  </data>
+  <data name="WorkflowTransition_RequireSignature" xml:space="preserve">
+    <value>Wymaga podpisu elektronicznego</value>
+  </data>
+	<data name="WorkflowTransition_RequireSignatory" xml:space="preserve">
+    <value>HOLDER-SIGNATORY</value>
+  </data>
+  <data name="Permission_BulkEdit" xml:space="preserve">
+    <value>Edycja masowa</value>
+  </data>
+  <data name="Admin_TaraVault_MaxUsers" xml:space="preserve">
+    <value>Maksymalna liczba użytkowników została już aktywowana dla Taravault.</value>
+  </data>
+  <data name="UserProfile_TabTaraV" xml:space="preserve">
+    <value>TaraVault</value>
+  </data>
+  <data name="UserProfile_TaravaultClickToShowPass" xml:space="preserve">
+    <value>Kliknij, aby wyświetlić hasło.</value>
+  </data>
+  <data name="UserProfile_TaravaultConn" xml:space="preserve">
+    <value>Podłączenie produktu</value>
+  </data>
+  <data name="UserProfile_TaravaultPass" xml:space="preserve">
+    <value>Hasło użytkownika</value>
+  </data>
+  <data name="UserProfile_TaravaultUser" xml:space="preserve">
+    <value>Login użytkownika</value>
+  </data>
+  <data name="Admin_TaraVault_Config_ProjActive" xml:space="preserve">
+    <value>TaraVault Product Active</value>
+  </data>
+  <data name="Admin_TaraVault_Config_ProjConnect" xml:space="preserve">
+    <value>Podłączenie klienta</value>
+  </data>
+  <data name="Admin_TaraVault_Config_ActiveUsers" xml:space="preserve">
+    <value>Aktywni użytkownicy TaraVault</value>
+  </data>
+  <data name="Admin_TaraVault_Config_ActiveUsers_ViewList" xml:space="preserve">
+    <value>Lista widoku</value>
+  </data>
+  <data name="Admin_TaraVault_Config_NoUsersEnabled" xml:space="preserve">
+    <value>Dla tego produktu nie są włączeni żadni użytkownicy.</value>
+  </data>
+  <data name="Admin_TaraVaultUsers" xml:space="preserve">
+    <value>Użytkownicy TaraVault</value>
+  </data>
+  <data name="Admin_TaraVaultUsers_Intro" xml:space="preserve">
+    <value>Ten ekran zawiera listę wszystkich użytkowników, którzy są skonfigurowani do korzystania z TaraVault i którzy są aktywni dla tego produktu.</value>
+  </data>
+  <data name="Admin_TaraVault_Config_NoUsersActivated" xml:space="preserve">
+    <value>Żaden użytkownik nie jest aktywowany dla TaraVault!</value>
+  </data>
+  <data name="Admin_WebServices" xml:space="preserve">
+    <value>Usługi internetowe</value>
+  </data>
+  <data name="SecuritySettings_AllowedDomains" xml:space="preserve">
+    <value>Domeny dozwolone</value>
+  </data>
+  <data name="SecuritySettings_AllowedDomainsNotes" xml:space="preserve">
+    <value>Powinna ona zawierać listę innych domen internetowych, które mogą wykonywać połączenia CORS (cross-origin) REST API do tej instancji. Możesz określić listę oddzielonych przecinkami bazowych adresów URL (np. https://www.domain1.com, http://www.domain2.com) lub gwiazdkę (*) oznaczającą wszystkie domeny, które są dozwolone (nie zalecane).</value>
+  </data>
+  <data name="Admin_EditReleaseWorkflows_Title" xml:space="preserve">
+    <value>Przepływy pracy związane z wydawaniem</value>
+  </data>
+  <data name="Admin_ReleaseTypes_Intro" xml:space="preserve">
+    <value>W systemie istnieją następujące rodzaje wydań. Możesz określić dla tego produktu, które przepływy pracy będą używane dla każdego typu wydania:</value>
+  </data>
+  <data name="Admin_ReleaseWorkflows_Intro" xml:space="preserve">
+    <value>Są to różne przepływy pracy dostępne w produkcie. Aby dodać nowy przepływ, należy kliknąć przycisk Dodaj przepływ, a aby edytować istniejący przepływ, należy kliknąć przycisk Kroki:</value>
+  </data>
+  <data name="Admin_ReleaseWorkflowDetails_Intro" xml:space="preserve">
+    <value>Wyświetla on wszystkie kroki stanu wydania dla tego konkretnego przepływu pracy:</value>
+  </data>
+  <data name="Admin_ReleaseWorkflowStep_ReleaseCustomProperties" xml:space="preserve">
+    <value>Wydanie właściwości niestandardowych</value>
+  </data>
+  <data name="Admin_ReleaseWorkflowStep_ReleaseCustomPropertiesIntro" xml:space="preserve">
+    <value>Następujące niestandardowe właściwości wydania są ukryte/wyłączone/wymagane na tym etapie przepływu pracy:</value>
+  </data>
+  <data name="Admin_ReleaseWorkflowStep_ReleaseFields" xml:space="preserve">
+    <value>Pola edycji</value>
+  </data>
+  <data name="Admin_ReleaseWorkflowStep_ReleaseFieldsIntro" xml:space="preserve">
+    <value>Poniższe pola edycji są ukryte/wyłączone/wymagane na tym etapie przepływu pracy:</value>
+  </data>
+  <data name="Admin_ReleaseWorkflowTransition_CreatorExecuteLabel" xml:space="preserve">
+    <value>Twórca tego wydania może wykonać:</value>
+  </data>
+  <data name="Admin_ReleaseWorkflowTransition_OwnerExecuteLabel" xml:space="preserve">
+    <value>Właściciel tego wydania może wykonać:</value>
+  </data>
+  <data name="UserProfile_Organization" xml:space="preserve">
+    <value>Organizacja</value>
+  </data>
+  <data name="Admin_Notification_DisplayTokens" xml:space="preserve">
+    <value>(Wyświetlacz Emaila Temat specjalnych żetonów)</value>
+  </data>
+  <data name="Admin_Notification_EmailTokens" xml:space="preserve">
+    <value>Żetony do powiadamiania pocztą elektroniczną</value>
+  </data>
+  <data name="Login_PleaseLogin" xml:space="preserve">
+    <value>Proszę się zalogować</value>
+  </data>
+  <data name="Admin_GeneralSettings_AdminMessage" xml:space="preserve">
+    <value>Wiadomość administracyjna</value>
+  </data>
+  <data name="Admin_GeneralSettings_AdminMessageNotes" xml:space="preserve">
+    <value>Tymczasowe powiadomienie wyświetlane na ekranie logowania dla wszystkich użytkowników (należy pamiętać o usunięciu, gdy nie jest już potrzebne)</value>
+  </data>
+  <data name="Admin_GeneralSettings_LoginNotice" xml:space="preserve">
+    <value>Powiadomienie o logowaniu</value>
+  </data>
+  <data name="Admin_GeneralSettings_LoginNoticeNotes" xml:space="preserve">
+    <value>Komunikat do wyświetlania na stałe w dolnej części ekranu logowania dla wszystkich użytkowników (np. zrzeczenie się odpowiedzialności przez firmę)</value>
+  </data>
+  <data name="Admin_EditTestCaseWorkflows_Title" xml:space="preserve">
+    <value>Przepływy pracy w przypadkach testowych</value>
+  </data>
+  <data name="Admin_Testing" xml:space="preserve">
+    <value>Testowanie</value>
+  </data>
+  <data name="Admin_TestCaseTypes_Intro" xml:space="preserve">
+    <value>W systemie istnieją następujące typy przypadków testowych. Możesz określić dla tego produktu, które przepływy pracy będą używane dla każdego typu przypadku testowego:</value>
+  </data>
+  <data name="Admin_TestCaseWorkflowDetails_Intro" xml:space="preserve">
+    <value>Wyświetlane są w nim wszystkie kroki stanu przypadku testowego dla tego konkretnego przepływu pracy:</value>
+  </data>
+  <data name="Admin_TestCaseWorkflowStep_TestCaseCustomProperties" xml:space="preserve">
+    <value>Przypadek testowy Właściwości niestandardowe</value>
+  </data>
+  <data name="Admin_TestCaseWorkflowStep_TestCaseCustomPropertiesIntro" xml:space="preserve">
+    <value>Na tym etapie przepływu pracy ukryte/wyłączone/wymagane są następujące niestandardowe właściwości przypadku testowego:</value>
+  </data>
+  <data name="Admin_TestCaseWorkflowStep_TestCaseFields" xml:space="preserve">
+    <value>Pola przypadków testowych</value>
+  </data>
+  <data name="Admin_TestCaseWorkflowStep_TestCaseFieldsIntro" xml:space="preserve">
+    <value>Następujące pola przypadków testowych są ukryte/wyłączone/wymagane na tym etapie przepływu pracy:</value>
+  </data>
+  <data name="Admin_TestCaseWorkflows_Intro" xml:space="preserve">
+    <value>Są to różne przepływy pracy w przypadku testowym dostępne w produkcie. Aby dodać nowy przepływ, należy kliknąć przycisk Dodaj przepływ, a aby edytować istniejący przepływ, należy kliknąć przycisk Kroki:</value>
+  </data>
+  <data name="Admin_TestCaseWorkflowTransition_CreatorExecuteLabel" xml:space="preserve">
+    <value>Twórca tego przypadku testowego może wykonać:</value>
+  </data>
+  <data name="Admin_TestCaseWorkflowTransition_OwnerExecuteLabel" xml:space="preserve">
+    <value>Właściciel tego przypadku testowego może wykonać:</value>
+  </data>
+  <data name="Admin_EditIncidentWorkflows_Title" xml:space="preserve">
+    <value>Przepływy pracy w przypadku incydentów</value>
+  </data>
+  <data name="Admin_WorkflowTransition_Intro" xml:space="preserve">
+    <value>Można zmienić nazwę i uprawnienia związane z tą operacją przepływu pracy:</value>
+  </data>
+  <data name="TestCases_AllTestCases" xml:space="preserve">
+    <value>(Wszystkie przypadki testowe)</value>
+  </data>
+  <data name="UserDetails_AddUser" xml:space="preserve">
+    <value>Dodaj użytkownika</value>
+  </data>
+  <data name="UserDetails_EditUser" xml:space="preserve">
+    <value>Edycja użytkownika</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="UserDetails_UserInformation" xml:space="preserve">
+    <value>Informacje dla użytkowników</value>
+  </data>
+  <data name="UserDetails_MembershipMapping" xml:space="preserve">
+    <value>Członkostwo i mapowanie</value>
+  </data>
+  <data name="Admin_EditRequirementWorkflows_Title" xml:space="preserve">
+    <value>Wymóg Przepływy pracy</value>
+  </data>
+  <data name="Admin_PlanningOptions_PointEffortSuggestExplanation" xml:space="preserve">
+    <value>Zalecany jest następujący wysiłek punktowy w oparciu o aktualnie przewidywane wartości nakładu zadaniowego w bieżącym produkcie</value>
+  </data>
+  <data name="Admin_ReportDetails_BackToList" xml:space="preserve">
+    <value>Powrót do listy raportów</value>
+  </data>
+  <data name="Admin_DataTools_DatabaseIndexes" xml:space="preserve">
+    <value>Indeksy bazy danych</value>
+  </data>
+  <data name="Admin_LicenseDetails_ViewActiveSessions" xml:space="preserve">
+    <value>Wyświetlanie sesji aktywnych</value>
+  </data>
+  <data name="Admin_TaraVaultConfig_IsActive" xml:space="preserve">
+    <value>Twoja subskrypcja TaraVault jest aktywna.</value>
+  </data>
+  <data name="GeneralSettings_VersionControlCacheRetentionNotes" xml:space="preserve">
+    <value>Liczba godzin, przez którą przechowywana jest pamięć podręczna korekt kodu źródłowego przed jego automatycznym odświeżeniem.</value>
+  </data>
+  <data name="TestRunDetails_LinkExisting" xml:space="preserve">
+    <value>Link Incydent</value>
+  </data>
+  <data name="TestCaseDetails_TestSets" xml:space="preserve">
+    <value>zestaw(-y) testowy(-e) zawierający(-e) ten przypadek testowy</value>
+  </data>
+  <data name="TestCaseExecution_NoExistingIncident" xml:space="preserve">
+    <value>Obecnie z tym etapem testowania nie są związane żadne incydenty.</value>
+  </data>
+  <data name="TestingSettings_CreateDefaultTestStep" xml:space="preserve">
+    <value>Tworzenie domyślnego kroku testowego</value>
+  </data>
+  <data name="TestingSettings_CreateDefaultTestStepNotes" xml:space="preserve">
+    <value>Ustawienie tej opcji na "Tak" tworzy domyślny krok testowy dla wszystkich tworzonych przypadków testowych</value>
+  </data>
+  <data name="TestingSettings_Legend1" xml:space="preserve">
+    <value>Ta strona pozwala na modyfikację</value>
+  </data>
+  <data name="TestingSettings_Legend2" xml:space="preserve">
+    <value>Ustawienia testowe:</value>
+  </data>
+  <data name="TestingSettings_Title" xml:space="preserve">
+    <value>Ustawienia testowe</value>
+  </data>
+  <data name="TestSetDetails_AddParameterValue" xml:space="preserve">
+    <value>Dodaj wartość parametru Wartość parametru</value>
+  </data>
+  <data name="TestSetDetails_ParametersIntro" xml:space="preserve">
+    <value>Następujące wartości parametrów zostały określone na poziomie zestawu testowego:</value>
+  </data>
+  <data name="TestSetDetails_TestSetValue" xml:space="preserve">
+    <value>Wartość zestawu testowego</value>
+  </data>
+  <data name="TestCaseExecution_AddNewAttachment" xml:space="preserve">
+    <value>Dodaj nowy załącznik</value>
+  </data>
+  <data name="TestCaseExecution_LinkExistingAttachment" xml:space="preserve">
+    <value>Link Istniejący załącznik</value>
+  </data>
+  <data name="TestCaseExecution_AlwaysShowTestCase" xml:space="preserve">
+    <value>Zawsze pokazuj przypadek testowy</value>
+  </data>
+  <data name="TestCaseExecution_Complete" xml:space="preserve">
+    <value>Kompletny</value>
+  </data>
+  <data name="TestCaseExecution_TestExecutionResume" xml:space="preserve">
+    <value>Wznowienie wykonywania testu</value>
+  </data>
+  <data name="Admin_Notification_EditTemplate_Tokens" xml:space="preserve">
+    <value>(Wyświetlanie szablonu e-maila w polu Żetony)</value>
+  </data>
+  <data name="Help_AdministrationGuide" xml:space="preserve">
+    <value>Przewodnik administracyjny</value>
+  </data>
+  <data name="Help_HelpViewer" xml:space="preserve">
+    <value>Pomóż widzowi</value>
+  </data>
+  <data name="Help_UserManual" xml:space="preserve">
+    <value>Instrukcja obsługi</value>
+  </data>
+  <data name="TestRunDetails_ChangeTestSet" xml:space="preserve">
+    <value>Zmień zestaw testowy</value>
+  </data>
+  <data name="TestRunDetails_ChangeTestSet_Intro" xml:space="preserve">
+    <value>Proszę wybrać zestaw testowy, z którym związane jest to badanie testowe:</value>
+  </data>
+  <data name="ReportConfiguration_DefaultSortDDL" xml:space="preserve">
+    <value>--Default Sort --</value>
+  </data>
+  <data name="TestCaseExecution_ShowCustomProperties" xml:space="preserve">
+    <value>Pokaż niestandardowe właściwości</value>
+  </data>
+  <data name="GlobalNavigation_KeyboardShortcuts" xml:space="preserve">
+    <value>Klawiatura Skróty klawiszowe</value>
+  </data>
+  <data name="Admin_TestingSettings_DisplayBuildDuringExecution" xml:space="preserve">
+    <value>Wyświetlacz tworzony podczas wykonywania testu</value>
+  </data>
+  <data name="DataSyncDetails_Notes_Caption" xml:space="preserve">
+    <value>Nazwa wyświetlacza wtyczki (np. Internal Jira), która może być używana do rozróżnienia wielu instancji tego samego typu wtyczki.</value>
+  </data>
+  <data name="DataSyncDetails_Notes_Connection" xml:space="preserve">
+    <value>URL lub inny ciąg połączeń używany do połączenia z zewnętrznym urządzeniem śledzącym błędy</value>
+  </data>
+  <data name="DataSyncDetails_Notes_Description" xml:space="preserve">
+    <value>Długi opis wtyczki (np. "Podłącza się do wewnętrznego urządzenia śledzącego błędy")</value>
+  </data>
+  <data name="DataSyncDetails_Notes_LoginPasswordTo" xml:space="preserve">
+    <value>Login i hasło używane do łączenia się z</value>
+  </data>
+  <data name="DataSyncDetails_Notes_Name" xml:space="preserve">
+    <value>Fizyczna nazwa wtyczki (np. JiraDataSync), która pasuje do używanego DLL</value>
+  </data>
+  <data name="DataSyncDetails_Notes_TimeOffset" xml:space="preserve">
+    <value>Liczba godzin, które należy poświęcić na szukanie zmian w synchronizacji. Normalnie powinno być ustawione na zero (0), chyba że zmiany nie są synchronizowane.</value>
+  </data>
+  <data name="GeneralSettings_FreeTextIndexingEnabled" xml:space="preserve">
+    <value>Włączanie indeksów swobodnego tekstu</value>
+  </data>
+  <data name="GeneralSettings_FreeTextIndexingEnabledNotes" xml:space="preserve">
+    <value>Jeśli opcja ta jest włączona, używa indeksów tekstowych SQL Server Free Text Indexes aby poprawić wydajność wyszukiwania tekstu.</value>
+  </data>
+  <data name="Global_Of" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="Admin_ProjectAssociations" xml:space="preserve">
+    <value>Stowarzyszenia Produktów</value>
+  </data>
+  <data name="Admin_ProjectAssociations_ArtifactTypes" xml:space="preserve">
+    <value>Rodzaje artefaktów</value>
+  </data>
+  <data name="Admin_ProjectAssociations_AddAssociation" xml:space="preserve">
+    <value>Dodaj Stowarzyszenie Nowych Produktów</value>
+  </data>
+  <data name="Admin_ProjectAssociations_AddAssociation_Intro" xml:space="preserve">
+    <value>Proszę wybrać typ(y) artefaktu(ów) i produkt, z którym chcesz się podzielić:</value>
+  </data>
+  <data name="Admin_ProjectAssociations_EditAssociation" xml:space="preserve">
+    <value>Edytuj Istniejące Stowarzyszenie Produktów</value>
+  </data>
+  <data name="Admin_ProjectAssociations_EditAssociation_Intro" xml:space="preserve">
+    <value>Proszę wybrać typy artefaktów, którymi chciałbyś się podzielić z tym produktem:</value>
+  </data>
+  <data name="Admin_ProjectAssociations_Intro" xml:space="preserve">
+    <value>Następujące inne produkty mają dostęp do artefaktów w &lt;strong&gt;tego produktu&lt;/strong&gt; w ramach własnych danych:</value>
+  </data>
+  <data name="Admin_ProjectAssociations_Notes" xml:space="preserve">
+    <value>Uwaga: inne produkty będą miały dostęp tylko do odczytu do artefaktów w tym produkcie.</value>
+  </data>
+  <data name="PlanningBoard_GroupBacklog" xml:space="preserve">
+    <value>-- Backlog programu --</value>
+  </data>
+  <data name="Global_Seconds" xml:space="preserve">
+    <value>sekundy</value>
+  </data>
+  <data name="Followers_SelectProjectUser" xml:space="preserve">
+    <value>Wybierz użytkownika w produkcie, aby podążał za tym artefaktem</value>
+  </data>
+  <data name="PendingTestRuns_Reassign" xml:space="preserve">
+    <value>Ponowne przypisanie biegu testowego</value>
+  </data>
+  <data name="ProjectHome_PendingTestRuns" xml:space="preserve">
+    <value>Wszystkie oczekujące badania testowe</value>
+  </data>
+  <data name="ProjectHome_ForDevelopment" xml:space="preserve">
+    <value>dla rozwoju</value>
+  </data>
+  <data name="ProjectHome_ForTesting" xml:space="preserve">
+    <value>do testowania</value>
+  </data>
+  <data name="ProjectHome_SourceCodeCommits" xml:space="preserve">
+    <value>Kodeks źródłowy Zobowiązania</value>
+  </data>
+  <data name="ProjectHome_TestRunProgress" xml:space="preserve">
+    <value>Postępy w przeprowadzaniu testów</value>
+  </data>
+  <data name="SourceCodeCommits_PleaseEnableSourceCode" xml:space="preserve">
+    <value>Musisz włączyć zarządzanie kodem źródłowym dla tego produktu w</value>
+  </data>
+  <data name="TestRunDetails_ActualDurationWithHours" xml:space="preserve">
+    <value>Rzeczywisty czas trwania (h)</value>
+  </data>
+  <data name="TestRunDetails_EstimatedDurationWithHours" xml:space="preserve">
+    <value>Szacunkowy czas trwania (h)</value>
+  </data>
+  <data name="Global_Or" xml:space="preserve">
+    <value>Albo</value>
+  </data>
+  <data name="SiteMap_TestConfigurations" xml:space="preserve">
+    <value>Konfiguracje</value>
+  </data>
+  <data name="SiteMap_TestConfigurationsDesc" xml:space="preserve">
+    <value>Konfiguracje testowe</value>
+  </data>
+  <data name="TestConfigurationSets_NewTestConfigurationSet" xml:space="preserve">
+    <value>Nowa konfiguracja</value>
+  </data>
+  <data name="TestConfigurations_TestConfigurationsForProject" xml:space="preserve">
+    <value>konfiguracja(-e) testowa(-e) produktu</value>
+  </data>
+  <data name="TestCaseExecution_ShowExpectedResult" xml:space="preserve">
+    <value>Pokaż oczekiwany rezultat</value>
+  </data>
+  <data name="TestCaseExecution_ShowSampleData" xml:space="preserve">
+    <value>Pokaż przykładowe dane</value>
+  </data>
+  <data name="TestCaseExecution_ShowCaseDescription" xml:space="preserve">
+    <value>Pokaż opis przypadku testowego</value>
+  </data>
+  <data name="TestCaseExecution_ShowLastResult" xml:space="preserve">
+    <value>Pokaż ostatni wynik</value>
+  </data>
+  <data name="TestCaseExecution_LastResult" xml:space="preserve">
+    <value>Ostatni wynik</value>
+  </data>
+  <data name="TestConfigurationDetails_BackToList" xml:space="preserve">
+    <value>Powrót do Listy Konfiguracji</value>
+  </data>
+  <data name="TestConfigurationDetails_TestSets" xml:space="preserve">
+    <value>zestaw(y) testowy(e) wykorzystujący(e) tę konfigurację testową.</value>
+  </data>
+  <data name="TestConfiguration_NewTestConfigurationSet" xml:space="preserve">
+    <value>Nowa konfiguracja testowa</value>
+  </data>
+  <data name="TestConfigurationDetails_TestConfigurationEntries" xml:space="preserve">
+    <value>wpisy w tym zestawie konfiguracji testowej</value>
+  </data>
+  <data name="ProjectHome_TestCasesPerStatusAndDay" xml:space="preserve">
+    <value>Przypadek testowy Łączny postęp</value>
+  </data>
+  <data name="TestConfigurationDetails_Title" xml:space="preserve">
+    <value>Szczegóły konfiguracji testowej</value>
+  </data>
+  <data name="DataSync_ResetSyncTooltip" xml:space="preserve">
+    <value>Kliknij, aby usunąć ostatnią zsynchronizowaną datę. Zapewni to, że przy następnej synchronizacji system będzie przeglądał wszystkie wpisy, nie tylko te, które zostały zsynchronizowane po raz ostatni.</value>
+  </data>
+  <data name="Global_ShowOnboarding" xml:space="preserve">
+    <value>Show Onboarding Tours</value>
+  </data>
+  <data name="SourceCodeList_CheckoutIntro" xml:space="preserve">
+    <value>Użyj SVN do kasy za pomocą adresu URL strony internetowej:</value>
+  </data>
+  <data name="SourceCodeList_CheckoutTitle" xml:space="preserve">
+    <value>Kasa z HTTPS</value>
+  </data>
+  <data name="SourceCodeList_CloneIntro" xml:space="preserve">
+    <value>Użyj Git do klonowania za pomocą adresu URL:</value>
+  </data>
+  <data name="SourceCodeList_CloneOrCheckout" xml:space="preserve">
+    <value>Klonowanie lub kasa</value>
+  </data>
+  <data name="SourceCodeList_CloneTitle" xml:space="preserve">
+    <value>Klonowanie za pomocą HTTPS</value>
+  </data>
+  <data name="SourceCodeList_CopyToClipboard" xml:space="preserve">
+    <value>Kopia do schowka</value>
+  </data>
+  <data name="SourceCodeList_VersionControlConnectIntro" xml:space="preserve">
+    <value>Użyj swojego narzędzia SCM do klonowania lub kasowania za pomocą tego adresu URL:</value>
+  </data>
+  <data name="SourceCodeList_VersionControlConnectTitle" xml:space="preserve">
+    <value>Połączenie z kodem źródłowym</value>
+  </data>
+  <data name="Task_NotStarted" xml:space="preserve">
+    <value>Nie uruchomiony</value>
+  </data>
+  <data name="Task_OnSchedule" xml:space="preserve">
+    <value>Zgodnie z harmonogramem</value>
+  </data>
+  <data name="Task_RunningLate" xml:space="preserve">
+    <value>Opóźnienie w biegu</value>
+  </data>
+  <data name="Task_StartingLate" xml:space="preserve">
+    <value>Zaczynając od późnego terminu</value>
+  </data>
+  <data name="SiteMap_TaskBoard" xml:space="preserve">
+    <value>Rada Zadaniowa</value>
+  </data>
+  <data name="TaskBoard_AddTask" xml:space="preserve">
+    <value>Dodaj zadanie</value>
+  </data>
+  <data name="IncidentBoard_AddIncident" xml:space="preserve">
+    <value>Dodaj Incydent</value>
+  </data>
+  <data name="SiteMap_IncidentBoard" xml:space="preserve">
+    <value>Rada Incydentowa</value>
+  </data>
+  <data name="Global_Board" xml:space="preserve">
+    <value>Zarząd</value>
+  </data>
+  <data name="Global_Table" xml:space="preserve">
+    <value>Tabela</value>
+  </data>
+  <data name="Admin_Graphs" xml:space="preserve">
+    <value>Wykresy edycyjne</value>
+  </data>
+  <data name="Admin_Reporting" xml:space="preserve">
+    <value>Raportowanie</value>
+  </data>
+  <data name="Admin_Graphs_Intro" xml:space="preserve">
+    <value>Ta strona wyświetla wszystkie niestandardowe wykresy utworzone w systemie. Na tej stronie można dodać nowy wykres, usunąć istniejący lub sklonować istniejący wykres w celu jego modyfikacji:</value>
+  </data>
+  <data name="Admin_Reports_AddNewGraph" xml:space="preserve">
+    <value>Dodaj nowy wykres niestandardowy</value>
+  </data>
+  <data name="Graphs_NewGraph" xml:space="preserve">
+    <value>Nowy wykres</value>
+  </data>
+  <data name="Admin_GraphDetails_BackToList" xml:space="preserve">
+    <value>Powrót do listy wykresów</value>
+  </data>
+  <data name="Admin_GraphDetails_DisplayDataGrid" xml:space="preserve">
+    <value>Wyświetlanie siatki danych</value>
+  </data>
+  <data name="Admin_GraphDetails_Intro" xml:space="preserve">
+    <value>Ta strona wyświetla szczegóły określonego wykresu niestandardowego. Możesz zmienić nazwę, opis i zapytanie do bazy danych używane do generowania danych wykresu:</value>
+  </data>
+  <data name="Admin_GraphDetails_PreviewGraph" xml:space="preserve">
+    <value>Wykres poglądowy</value>
+  </data>
+  <data name="Admin_GraphDetails_QueryLegend" xml:space="preserve">
+    <value>Musisz podać polecenie ESQL, aby pobrać dane wykresu. Można użyć specjalnych tokenów ${ProjectId} i ${ProjectGroupId}, aby ograniczyć zapytanie do konkretnego produktu lub programu. Pierwszą kolumną będzie X-Axis wykresu (i może być dowolny typ danych). Pozostałe kolumny składają się na różne serie danych i muszą być numeryczne.</value>
+  </data>
+  <data name="Graphs_BarChart" xml:space="preserve">
+    <value>Wykres słupkowy</value>
+  </data>
+  <data name="Graphs_DonutChart" xml:space="preserve">
+    <value>Wykres pączków</value>
+  </data>
+  <data name="Graphs_LineChart" xml:space="preserve">
+    <value>Wykres liniowy</value>
+  </data>
+  <data name="Reports_CustomGraphs" xml:space="preserve">
+    <value>Wykresy niestandardowe</value>
+  </data>
+  <data name="TestCaseExecution_SetTaskDescriptionFromTestStep" xml:space="preserve">
+    <value>nadpisać aktualny opis etapu testu i aktualny wynik</value>
+  </data>
+  <data name="IncidentList_IncidentsForProgram" xml:space="preserve">
+    <value>incydent(y) dla tego programu</value>
+  </data>
+  <data name="Releases_ReleasesForProgram" xml:space="preserve">
+    <value>wydanie(a) tego programu</value>
+  </data>
+  <data name="RequirementDetails_SplitRequirement" xml:space="preserve">
+    <value>Wymagania dotyczące podziału</value>
+  </data>
+  <data name="RequirementDetails_SplitRequirement_Intro" xml:space="preserve">
+    <value>Proszę podać nazwę nowego wymagania wraz z właścicielem i liczbą punktów, które chcesz przypisać do nowego wymagania:</value>
+  </data>
+  <data name="RequirementDetails_SplitRequirement_Notes" xml:space="preserve">
+    <value>Jeśli pozostawisz pole punktów puste, system przeniesie pozostałe prace do nowego wymagania.</value>
+  </data>
+  <data name="SecuritySettings_ChangePasswordOnFirstLogin" xml:space="preserve">
+    <value>Wymaga podania hasła Zmiana hasła przy pierwszym logowaniu</value>
+  </data>
+  <data name="SecuritySettings_ChangePasswordOnFirstLogin_Notes" xml:space="preserve">
+    <value>Włączenie tego wymaga od wszystkich nowych użytkowników zmiany hasła przy pierwszym logowaniu.</value>
+  </data>
+  <data name="SecuritySettings_PasswordChangeInterval" xml:space="preserve">
+    <value>Zmiana hasła Odstęp czasowy</value>
+  </data>
+  <data name="SecuritySettings_PasswordChangeInterval_Notes" xml:space="preserve">
+    <value>Jeśli zostanie ustawiona wartość, będzie wymagała zmiany wszystkich haseł po określonej liczbie dni.</value>
+  </data>
+  <data name="SecuritySettings_PasswordContainNoNames" xml:space="preserve">
+    <value>Zapomnij o nazwach w hasłach (Disallow Names in Password)</value>
+  </data>
+  <data name="SecuritySettings_PasswordContainNoNames_Notes" xml:space="preserve">
+    <value>Jeśli jest włączone, hasła nie mogą zawierać prawdziwego imienia i nazwiska użytkownika i/lub nazwy użytkownika.</value>
+  </data>
+  <data name="UserProfile_PasswordNoNames" xml:space="preserve">
+    <value>Hasło nie może zawierać Twojego imienia i nazwiska ani loginu.</value>
+  </data>
+  <data name="PasswordExpired_Intro" xml:space="preserve">
+    <value>Twoje hasło wygasło. Proszę zmienić hasło korzystając z poniższego formularza:</value>
+  </data>
+  <data name="PasswordExpired_Title" xml:space="preserve">
+    <value>Hasło wygasło</value>
+  </data>
+  <data name="Password_ConfirmNewPasswordPlaceholder" xml:space="preserve">
+    <value>Proszę potwierdzić nowe hasło</value>
+  </data>
+  <data name="Password_CurrentPasswordPlaceholder" xml:space="preserve">
+    <value>Proszę podać swoje aktualne hasło</value>
+  </data>
+  <data name="Password_NewPasswordPlaceholder" xml:space="preserve">
+    <value>Proszę wprowadzić nowe hasło</value>
+  </data>
+  <data name="Admin_TaraVault_BackToHome" xml:space="preserve">
+    <value>Wracamy do TaraVault</value>
+  </data>
+  <data name="Admin_TaraVault_UserList" xml:space="preserve">
+    <value>Użytkownicy TaraVault</value>
+  </data>
+  <data name="Admin_TaraVault_ProjectMembers" xml:space="preserve">
+    <value>Członkowie produktu TaraVault</value>
+  </data>
+  <data name="Administration_SystemAdminHome" xml:space="preserve">
+    <value>Administracja domowa</value>
+  </data>
+  <data name="Admin_Programs" xml:space="preserve">
+    <value>Programy</value>
+  </data>
+  <data name="Admin_ViewEditPrograms" xml:space="preserve">
+    <value>Przeglądaj / edytuj programy</value>
+  </data>
+  <data name="Admin_LockedOutUsers" xml:space="preserve">
+    <value>Zablokowani użytkownicy</value>
+  </data>
+  <data name="Admin_SystemInfo" xml:space="preserve">
+    <value>Informacje o systemie</value>
+  </data>
+  <data name="System_About_ApplicationServer" xml:space="preserve">
+    <value>Serwer aplikacji</value>
+  </data>
+  <data name="System_About_ApplicationServer_ApplPath" xml:space="preserve">
+    <value>Ścieżka zastosowania</value>
+  </data>
+  <data name="System_About_ApplicationServer_IISVersion" xml:space="preserve">
+    <value>Wersja IIS</value>
+  </data>
+  <data name="System_About_ApplicationServer_OSVersion" xml:space="preserve">
+    <value>Wersja OS</value>
+  </data>
+  <data name="System_About_ApplicationServer_Protocol" xml:space="preserve">
+    <value>Protokół/Secure</value>
+  </data>
+  <data name="System_About_ApplicationServer_RuntimeVersion" xml:space="preserve">
+    <value>Wersja Runtime</value>
+  </data>
+  <data name="System_About_ApplicationServer_ServerName" xml:space="preserve">
+    <value>Nazwa serwera</value>
+  </data>
+  <data name="System_About_BrowserDetected" xml:space="preserve">
+    <value>Detected Browser</value>
+  </data>
+  <data name="System_About_DatabaseServer" xml:space="preserve">
+    <value>Serwer bazy danych</value>
+  </data>
+  <data name="System_About_DatabaseServer_Database" xml:space="preserve">
+    <value>Nazwa bazy danych</value>
+  </data>
+  <data name="System_About_DatabaseServer_Language" xml:space="preserve">
+    <value>Zestawienie serwerów</value>
+  </data>
+  <data name="System_About_DatabaseServer_Name" xml:space="preserve">
+    <value>Nazwa serwera</value>
+  </data>
+  <data name="System_About_DatabaseServer_User" xml:space="preserve">
+    <value>Logowanie do serwera</value>
+  </data>
+  <data name="System_About_DatabaseServer_Version" xml:space="preserve">
+    <value>Wersja serwerowa</value>
+  </data>
+  <data name="System_About_Intro" xml:space="preserve">
+    <value>Ta strona pokazuje szczegóły dotyczące twojej {0} instalacji.</value>
+  </data>
+  <data name="System_About_Libraries" xml:space="preserve">
+    <value>Zespoły biblioteczne</value>
+  </data>
+  <data name="System_About_Unknown" xml:space="preserve">
+    <value>Nieznany</value>
+  </data>
+  <data name="System_About_Version" xml:space="preserve">
+    <value>Wersja/Build</value>
+  </data>
+  <data name="SystemInfo_NumberProjects" xml:space="preserve">
+    <value># Produkty</value>
+  </data>
+  <data name="Global_Projects" xml:space="preserve">
+    <value>Produkty</value>
+  </data>
+  <data name="Admin_Project_Home_Title" xml:space="preserve">
+    <value>Strona główna administratora produktu</value>
+  </data>
+  <data name="Admin_Project_BackToHome" xml:space="preserve">
+    <value>Powrót do strony głównej administratora produktu</value>
+  </data>
+  <data name="ProjectCreate_BasedOn" xml:space="preserve">
+    <value>Na podstawie</value>
+  </data>
+  <data name="ProjectDetails_ChangingTemplateSideEffects" xml:space="preserve">
+    <value>Zmiana szablonu powiązanego z produktem spowoduje zmianę jego własnych właściwości, przepływów pracy, typów artefaktów, prioirities i statusów na te z nowego szablonu. System usunie wszelkie wartości artefaktów, które nie odpowiadają szablonowi nowego produktu.</value>
+  </data>
+  <data name="Admin_ProgramList_Title" xml:space="preserve">
+    <value>Przeglądaj / edytuj programy</value>
+  </data>
+  <data name="Admin_ProjectCreate_Title" xml:space="preserve">
+    <value>Stwórz nowy produkt</value>
+  </data>
+  <data name="Admin_ProjectDetails_BasedOnNotes" xml:space="preserve">
+    <value>Opierając się na istniejącym produkcie, skopiuje on swoje członkostwo, ustawienia i modyfikacje. Można albo użyć tego samego szablonu produktu, albo skopiować ustawienia do nowego szablonu.</value>
+  </data>
+  <data name="Admin_ProjectDetails_TemplateNewProject" xml:space="preserve">
+    <value>Nowy pusty produkt</value>
+  </data>
+  <data name="Admin_ProjectDetails_TemplateNotes2" xml:space="preserve">
+    <value>Wybierz istniejący szablon, jeśli chcesz, aby nowy produkt posiadał własne właściwości, pola artefaktów, przepływy pracy i powiadomienia jako wybrany szablon.</value>
+  </data>
+  <data name="ProjectCreate_TemplateCreateNew" xml:space="preserve">
+    <value>(Stwórz nowy szablon)</value>
+  </data>
+  <data name="Admin_ProgramCreate_Title" xml:space="preserve">
+    <value>Tworzenie nowego programu</value>
+  </data>
+  <data name="Admin_ProgramDetails_BackToList" xml:space="preserve">
+    <value>Powrót do listy programów</value>
+  </data>
+  <data name="Admin_ProgramDetails_ProjectTemplateNotes" xml:space="preserve">
+    <value>W przypadku powiązania szablonu produktu z programem, można wyświetlić różne niestandardowe pola/właściwości na liście produktów, które należą do programu.</value>
+  </data>
+  <data name="Admin_ProgramEditDetails_BackToList" xml:space="preserve">
+    <value>Powrót do listy programów</value>
+  </data>
+  <data name="Admin_ProgramEditDetails_Title" xml:space="preserve">
+    <value>Edycja programu</value>
+  </data>
+  <data name="TaskPriorities_Intro" xml:space="preserve">
+    <value>Poniższe priorytety zadań zostały zdefiniowane w aktualnym szablonie produktu:</value>
+  </data>
+  <data name="TaskPriorities_Title" xml:space="preserve">
+    <value>Edycja Priorytetów Zadań</value>
+  </data>
+  <data name="Admin_EditImportances" xml:space="preserve">
+    <value>Edycja Znaczenie</value>
+  </data>
+  <data name="TestCasePriorities_Intro" xml:space="preserve">
+    <value>Poniższe priorytety przypadków testowych zostały zdefiniowane w aktualnym szablonie produktu:</value>
+  </data>
+  <data name="TestCasePriorities_Title" xml:space="preserve">
+    <value>Edycja Priorytetów przypadków testowych</value>
+  </data>
+  <data name="RequirementTypes_Intro" xml:space="preserve">
+    <value>Poniższe typy wymagań zostały zdefiniowane w aktualnym szablonie produktu:</value>
+  </data>
+  <data name="RequirementTypes_Title" xml:space="preserve">
+    <value>Edycja Rodzaje wymagań</value>
+  </data>
+  <data name="TaskTypes_Intro" xml:space="preserve">
+    <value>W aktualnym szablonie produktu zdefiniowano następujące typy zadań:</value>
+  </data>
+  <data name="TaskTypes_Title" xml:space="preserve">
+    <value>Edycja typów zadań</value>
+  </data>
+  <data name="TestCaseTypes_Intro" xml:space="preserve">
+    <value>Poniższe typy przypadków testowych zostały zdefiniowane w aktualnym szablonie produktu:</value>
+  </data>
+  <data name="TestCaseTypes_Title" xml:space="preserve">
+    <value>Edycja typów przypadków testowych</value>
+  </data>
+  <data name="Admin_ProjectTemplate_Edit_BackToList" xml:space="preserve">
+    <value>Powrót do listy szablonów</value>
+  </data>
+  <data name="Admin_ProjectTemplate_Edit_Title" xml:space="preserve">
+    <value>Edycja szablonu produktu</value>
+  </data>
+  <data name="Admin_ProjectTemplate_Home_Title" xml:space="preserve">
+    <value>Wzorzec administracyjny</value>
+  </data>
+  <data name="ProjectTemplateAdmin_TemplateOverview" xml:space="preserve">
+    <value>Szablon Przegląd</value>
+  </data>
+  <data name="Admin_ViewEditProjectTemplates" xml:space="preserve">
+    <value>Widok / Edycja szablonów</value>
+  </data>
+  <data name="Admin_ProjectTemplates_String1" xml:space="preserve">
+    <value>W systemie stworzono następujące szablony produktów. Aby edytować istniejący szablon, należy kliknąć na link "Edytuj".</value>
+  </data>
+  <data name="Admin_ProjectTemplates_String2" xml:space="preserve">
+    <value>Aby utworzyć nowy szablon, należy kliknąć na przycisk [Dodaj].</value>
+  </data>
+  <data name="Admin_ProjectTemplateCreate_BasedOnNotes" xml:space="preserve">
+    <value>Oparcie szablonu produktu na istniejącym szablonie skopiuje jego niestandardowe właściwości i listy, jak również wszelkie specyficzne dla artefaktów modyfikacje, powiadomienia i przepływy pracy.</value>
+  </data>
+  <data name="Admin_ProjectTemplateCreate_ExistingTemplate" xml:space="preserve">
+    <value>Istniejący szablon</value>
+  </data>
+  <data name="Admin_ProjectTemplateCreate_NewTemplate" xml:space="preserve">
+    <value>Nowy szablon</value>
+  </data>
+  <data name="Admin_ProjectTemplateCreate_Title" xml:space="preserve">
+    <value>Stwórz nowy szablon</value>
+  </data>
+  <data name="Admin_DocumentWorkflowDetails_Intro" xml:space="preserve">
+    <value>Wyświetla on wszystkie kroki stanu dokumentu dla tego konkretnego przepływu pracy:</value>
+  </data>
+  <data name="Admin_DocumentWorkflowStep_DocumentCustomProperties" xml:space="preserve">
+    <value>Dokument Właściwości niestandardowe</value>
+  </data>
+  <data name="Admin_DocumentWorkflowStep_DocumentCustomPropertiesIntro" xml:space="preserve">
+    <value>Następujące właściwości niestandardowe dokumentu są ukryte/wyłączone/wymagane na tym etapie przepływu pracy:</value>
+  </data>
+  <data name="Admin_DocumentWorkflowStep_DocumentFields" xml:space="preserve">
+    <value>Pola dokumentów</value>
+  </data>
+  <data name="Admin_DocumentWorkflowStep_DocumentFieldsIntro" xml:space="preserve">
+    <value>Poniższe pola dokumentów są ukryte/wyłączone/wymagane na tym etapie przepływu pracy:</value>
+  </data>
+  <data name="Admin_DocumentWorkflows_Intro" xml:space="preserve">
+    <value>Są to różne przepływy dokumentów dostępne w szablonie produktu. Aby dodać nowy przepływ, należy kliknąć przycisk Dodaj przepływ, a aby edytować istniejący przepływ, należy kliknąć przycisk Kroki:</value>
+  </data>
+  <data name="Admin_DocumentWorkflowTransition_AuthorExecuteLabel" xml:space="preserve">
+    <value>Autor tego dokumentu może wykonać:</value>
+  </data>
+  <data name="Admin_DocumentWorkflowTransition_OwnerExecuteLabel" xml:space="preserve">
+    <value>Edytor tego dokumentu może wykonać:</value>
+  </data>
+  <data name="Admin_EditDocumentWorkflows_Title" xml:space="preserve">
+    <value>Przepływy dokumentów</value>
+  </data>
+  <data name="DocumentStatuses_Intro" xml:space="preserve">
+    <value>W aktualnym szablonie produktu zdefiniowano następujące statusy dokumentów:</value>
+  </data>
+  <data name="DocumentStatuses_Title" xml:space="preserve">
+    <value>Edycja statusów dokumentów</value>
+  </data>
+  <data name="SiteMap_ProgramHome" xml:space="preserve">
+    <value>Program do domu</value>
+  </data>
+  <data name="RoleDetails_TemplateAdminNotes" xml:space="preserve">
+    <value>Określa, czy ta rola posiada uprawnienia administracyjne dla szablonu produktu</value>
+  </data>
+  <data name="Global_Home" xml:space="preserve">
+    <value>Strona główna</value>
+  </data>
+  <data name="RequirementImportances_Intro" xml:space="preserve">
+    <value>W aktualnym szablonie produktu zdefiniowano następujące wymagania importowe:</value>
+  </data>
+  <data name="RequirementImportances_Title" xml:space="preserve">
+    <value>Edycja Wymóg Ważność</value>
+  </data>
+  <data name="Admin_Sidebar_OpenMenu" xml:space="preserve">
+    <value>Pokaż menu administracyjne</value>
+  </data>
+  <data name="ProjectList_MyAssignedDocuments" xml:space="preserve">
+    <value>Moje przydzielone dokumenty</value>
+  </data>
+  <data name="Admin_Importance_Title" xml:space="preserve">
+    <value>Znaczenie</value>
+  </data>
+  <data name="Admin_Priority_Title" xml:space="preserve">
+    <value>Priorytet</value>
+  </data>
+  <data name="Admin_Severity_Title" xml:space="preserve">
+    <value>Powaga</value>
+  </data>
+  <data name="Admin_Statuses_Title" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Admin_Types_Title" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="Admin_Workflows_Title" xml:space="preserve">
+    <value>Przepływ pracy</value>
+  </data>
+  <data name="Admin_Impact_Title" xml:space="preserve">
+    <value>Wpływ</value>
+  </data>
+  <data name="Admin_Probability_Title" xml:space="preserve">
+    <value>Prawdopodobieństwo:</value>
+  </data>
+  <data name="RiskImpacts_Intro" xml:space="preserve">
+    <value>W aktualnym szablonie produktu zdefiniowano następujące skutki ryzyka:</value>
+  </data>
+  <data name="RiskImpacts_Title" xml:space="preserve">
+    <value>Edycja wpływu ryzyka</value>
+  </data>
+  <data name="RiskProbabilities_Intro" xml:space="preserve">
+    <value>W aktualnym szablonie produktu zdefiniowano następujące prawdopodobieństwa ryzyka:</value>
+  </data>
+  <data name="RiskProbabilities_Title" xml:space="preserve">
+    <value>Edycja prawdopodobieństwa ryzyka</value>
+  </data>
+  <data name="RiskStatuses_Intro" xml:space="preserve">
+    <value>W aktualnym szablonie produktu zdefiniowano następujące stany ryzyka:</value>
+  </data>
+  <data name="RiskStatuses_Title" xml:space="preserve">
+    <value>Edycja statutów ryzyka</value>
+  </data>
+  <data name="RiskTypes_Intro" xml:space="preserve">
+    <value>W aktualnym szablonie produktu zdefiniowano następujące rodzaje ryzyka:</value>
+  </data>
+  <data name="RiskTypes_Title" xml:space="preserve">
+    <value>Edycja typów ryzyka</value>
+  </data>
+  <data name="SiteMap_Risks" xml:space="preserve">
+    <value>Ryzyko</value>
+  </data>
+  <data name="Admin_EditRiskWorkflows_Title" xml:space="preserve">
+    <value>Ryzyko Przepływy pracy</value>
+  </data>
+  <data name="Admin_RiskWorkflows_Intro" xml:space="preserve">
+    <value>Są to różne przepływy pracy związane z ryzykiem dostępne w szablonie produktu. Aby dodać nowy przepływ, należy kliknąć przycisk Dodaj przepływ, a aby edytować istniejący przepływ, należy kliknąć przycisk Kroki:</value>
+  </data>
+  <data name="Admin_RiskWorkflowDetails_Intro" xml:space="preserve">
+    <value>W tym miejscu wyświetlane są wszystkie kroki stanu ryzyka dla tego konkretnego procesu pracy:</value>
+  </data>
+  <data name="Admin_RiskWorkflowStep_RiskCustomProperties" xml:space="preserve">
+    <value>Ryzyko Właściwości niestandardowe</value>
+  </data>
+  <data name="Admin_RiskWorkflowStep_RiskCustomPropertiesIntro" xml:space="preserve">
+    <value>Następujące niestandardowe właściwości ryzyka są ukryte/wyłączone/wymagane na tym etapie przepływu pracy:</value>
+  </data>
+  <data name="Admin_RiskWorkflowStep_RiskFields" xml:space="preserve">
+    <value>Obszary ryzyka</value>
+  </data>
+  <data name="Admin_RiskWorkflowStep_RiskFieldsIntro" xml:space="preserve">
+    <value>Następujące pola ryzyka są ukryte/wyłączone/wymagane na tym etapie przepływu pracy:</value>
+  </data>
+  <data name="Admin_RiskWorkflows_Intro1" xml:space="preserve">
+    <value>Są to różne przepływy pracy związane z ryzykiem dostępne w szablonie produktu. Aby dodać nowy przepływ, należy kliknąć przycisk Dodaj przepływ, a aby edytować istniejący przepływ, należy kliknąć przycisk Kroki:</value>
+  </data>
+  <data name="Admin_RiskWorkflowTransition_AuthorExecuteLabel" xml:space="preserve">
+    <value>Twórca tego ryzyka może go wykonać:</value>
+  </data>
+  <data name="Admin_RiskWorkflowTransition_OwnerExecuteLabel" xml:space="preserve">
+    <value>Właściciel tego ryzyka może wykonać:</value>
+  </data>
+  <data name="RiskList_RisksForProject" xml:space="preserve">
+    <value>ryzyko(-a) dla tego produktu</value>
+  </data>
+  <data name="RiskDetails_BackToList" xml:space="preserve">
+    <value>Powrót do listy ryzyka</value>
+  </data>
+  <data name="RiskDetails_Title" xml:space="preserve">
+    <value>Szczegóły dotyczące ryzyka</value>
+  </data>
+  <data name="RiskDetails_YouNeedTo" xml:space="preserve">
+    <value>Musisz</value>
+  </data>
+  <data name="RiskDetails_YouNeedToEnding" xml:space="preserve">
+    <value>to ryzyko przed dodaniem załączników.</value>
+  </data>
+  <data name="ProjectList_MyAssignedRisks" xml:space="preserve">
+    <value>Moje przydzielone ryzyko</value>
+  </data>
+  <data name="OpenRisks_DisplayOwner" xml:space="preserve">
+    <value>Wyświetlanie kolumny właściciela ryzyka</value>
+  </data>
+  <data name="OpenRisks_DisplayType" xml:space="preserve">
+    <value>Wyświetlanie kolumny z rodzajem ryzyka</value>
+  </data>
+  <data name="ProjectHome_RiskSummary" xml:space="preserve">
+    <value>Podsumowanie ryzyka</value>
+  </data>
+  <data name="Global_Links" xml:space="preserve">
+    <value>Linki</value>
+  </data>
+  <data name="LicenseDetails_Perpetual" xml:space="preserve">
+    <value>Wieczyste</value>
+  </data>
+  <data name="Admin_ProductDetails_BackToHome" xml:space="preserve">
+    <value>Powrót do strony głównej administratora produktu</value>
+  </data>
+  <data name="Global_List" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="Global_Document" xml:space="preserve">
+    <value>Dokument</value>
+  </data>
+  <data name="Global_MindMap" xml:space="preserve">
+    <value>Mapa umysłu</value>
+  </data>
+  <data name="Global_Tree" xml:space="preserve">
+    <value>Drzewo</value>
+  </data>
+  <data name="SiteMap_RequirementsBoard" xml:space="preserve">
+    <value>Rada ds. wymagań</value>
+  </data>
+  <data name="SiteMap_RequirementsDocument" xml:space="preserve">
+    <value>Wymagania Dokumentacja</value>
+  </data>
+  <data name="SiteMap_RequirementsMap" xml:space="preserve">
+    <value>Wymagania Mapa umysłu</value>
+  </data>
+  <data name="RequirementsMap_IncludeAssociations" xml:space="preserve">
+    <value>Obejmuje stowarzyszenia</value>
+  </data>
+  <data name="RequirementStep_End" xml:space="preserve">
+    <value>Koniec</value>
+  </data>
+  <data name="RequirementStep_Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Global_Beta" xml:space="preserve">
+    <value>Beta</value>
+  </data>
+  <data name="TaskList_IncludeCompleted" xml:space="preserve">
+    <value>Wyświetlanie ukończonych zadań</value>
+  </data>
+  <data name="TaskList_IncludeDeferred" xml:space="preserve">
+    <value>Wyświetlanie odroczonych zadań</value>
+  </data>
+  <data name="TaskList_IncludeDeferredTooltip" xml:space="preserve">
+    <value>Jeżeli uwzględnimy zadania, które są w stanie odroczonym</value>
+  </data>
+  <data name="RequirementsList_IncludeAccepted" xml:space="preserve">
+    <value>Uwzględniać Przyjęte Wymagania</value>
+  </data>
+  <data name="RequirementsList_IncludeAcceptedTooltip" xml:space="preserve">
+    <value>Czy powinniśmy wyświetlić wymagania w statusie Akceptowane (zanim zostaną one zaplanowane)</value>
+  </data>
+  <data name="RequirementsList_IncludeCompleted" xml:space="preserve">
+    <value>Uwzględniać ukończone wymagania</value>
+  </data>
+  <data name="RequirementsList_IncludeCompletedTooltip" xml:space="preserve">
+    <value>Czy mamy wyświetlić wymagania w jednym z zakończonych statusów (ukończony, przestarzały, odrzucony, rozwinięty, przetestowany)</value>
+  </data>
+  <data name="Global_Unlimited" xml:space="preserve">
+    <value>Nieograniczony</value>
+  </data>
+  <data name="RequirementsDocument_PackageSelector" xml:space="preserve">
+    <value>Selektor wymagań</value>
+  </data>
+  <data name="UserProfile_RssTokenApiKey" xml:space="preserve">
+    <value>RSS / Klucz API</value>
+  </data>
+  <data name="TaskList_IncludeBlocked" xml:space="preserve">
+    <value>Wyświetlanie zablokowanych zadań</value>
+  </data>
+  <data name="TaskList_IncludeBlockedTooltip" xml:space="preserve">
+    <value>Czy powinniśmy uwzględnić zadania, które są w stanie zablokowanym</value>
+  </data>
+  <data name="TaskList_IncludeCompletedTooltip" xml:space="preserve">
+    <value>Czy powinniśmy włączyć zadania, które są w jednym ze statusów zamkniętych (ukończone, powielone, odrzucone, przestarzałe)</value>
+  </data>
+  <data name="GeneralSettings_UseTaraVaultForSourceCode" xml:space="preserve">
+    <value>Użyj TaraVault dla kodu źródłowego</value>
+  </data>
+  <data name="GeneralSettings_UseTaraVaultForSourceCodeNotes" xml:space="preserve">
+    <value>Po włączeniu, Spira będzie używała TaraVault do zarządzania kodem źródłowym, w przeciwnym razie pozwoli na użycie zewnętrznego dostawcy Git lub Subversion, takiego jak BitBucket, GitLab lub Azure DevOps.</value>
+  </data>
+  <data name="Admin_OAuthList_Title" xml:space="preserve">
+    <value>Zarządzanie dostawcami usług logowania</value>
+  </data>
+  <data name="Global_OAuth" xml:space="preserve">
+    <value>OAuth2</value>
+  </data>
+  <data name="Admin_OAuthDetails_Subtitle" xml:space="preserve">
+    <value>Login Provider: {0} Ustawienia</value>
+  </data>
+  <data name="Admin_OAuthDetails_Title" xml:space="preserve">
+    <value>Edytuj dostawcę logowania</value>
+  </data>
+  <data name="UserProfile_OAuthLinked" xml:space="preserve">
+    <value>Konto powiązane</value>
+  </data>
+  <data name="Admin_OAuthList_Summary" xml:space="preserve">
+    <value>Poniżej znajduje się lista możliwych dostawców logowania dostępnych dla {0}. Przed aktywowaniem każdego z nich należy zapoznać się z dokumentacją dostawcy, aby dowiedzieć się, jak je skonfigurować.</value>
+  </data>
+  <data name="Admin_UserDetails_OAuthLogin" xml:space="preserve">
+    <value>Dostawca logowania do konta</value>
+  </data>
+  <data name="Admin_UserDetails_UnlinkOAuthLdap_Summary" xml:space="preserve">
+    <value>Aby odblokować konto użytkownika {0} z {1}, należy wprowadzić następujące informacje. Użytkownik nie będzie już mógł zalogować się u innego dostawcy kont, dopóki nie połączy swojego konta ręcznie.</value>
+  </data>
+  <data name="Admin_UserDetails_UnlinkOAuth_Title" xml:space="preserve">
+    <value>Unlink User Account from OAuth</value>
+  </data>
+  <data name="Global_Ldap" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="Global_CouldNotParse" xml:space="preserve">
+    <value>Nie może parzyć {0}.</value>
+  </data>
+  <data name="Login_Oauth_ConnectAccount" xml:space="preserve">
+    <value>Połącz istniejącego użytkownika z tym kontem</value>
+  </data>
+  <data name="Login_Oauth_CreateAccount" xml:space="preserve">
+    <value>Zarejestruj nowego użytkownika za pomocą tego konta</value>
+  </data>
+  <data name="Login_OAuthProvider_NoAccount" xml:space="preserve">
+    <value>Żaden użytkownik nie jest powiązany z twoim kontem {0}</value>
+  </data>
+  <data name="Login_Oauth_ProviderTitle" xml:space="preserve">
+    <value>Zaloguj się z</value>
+  </data>
+  <data name="Admin_GraphDetails_QueryLegend2" xml:space="preserve">
+    <value>Dla wykresów, które mogą być filtrowane według wydania, użyj tokenów ${ReleaseId} do filtrowania według określonego wydania, lub ${ReleaseAndChildIds} do filtrowania według oddzielonej przecinkiem listy wydania i dziecięcych sprintów/faz.</value>
+  </data>
+  <data name="Admin_LoginProviderDetails_BackToList" xml:space="preserve">
+    <value>Powrót do listy dostawców</value>
+  </data>
+  <data name="Admin_UserDetails_LinkToLdap_Summary" xml:space="preserve">
+    <value>Aby połączyć konto użytkownika z serwerem LDAP, należy wprowadzić jego pełną nazwę LDAP Distinguished Name (DN). Po dokonaniu zmiany, użytkownik zaloguje się tą samą nazwą użytkownika, ale zamiast tego hasłem LDAP.</value>
+  </data>
+  <data name="Admin_UserDetails_LinkToLdap_Title" xml:space="preserve">
+    <value>Połączenie konta użytkownika z serwerem LDAP</value>
+  </data>
+  <data name="Admin_UserDetails_UnlinkLdap_Title" xml:space="preserve">
+    <value>Unlink User Account z LDAP</value>
+  </data>
+</root>

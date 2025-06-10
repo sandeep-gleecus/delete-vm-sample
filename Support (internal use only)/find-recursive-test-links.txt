@@ -1,0 +1,47 @@
+-- https://stackoverflow.com/questions/31739150/to-find-infinite-recursive-loop-in-cte
+IF OBJECT_ID ( 'MyView', 'V' ) IS NOT NULL 
+    DROP VIEW [MyView];
+GO
+CREATE VIEW [MyView]
+AS
+	SELECT	
+	STP.LINKED_TEST_CASE_ID AS ID,
+	STP.TEST_CASE_ID AS ParentID,
+	STP.DESCRIPTION AS Description
+    FROM TST_TEST_STEP STP
+	WHERE STP.LINKED_TEST_CASE_ID IS NOT NULL
+	/* AND STP.IS_DELETED = 0 */
+GO
+
+
+-- The "terminal" childrens (that are elements that don't have childrens
+-- connected to them)
+;WITH WithoutChildren AS
+(
+    SELECT MT1.* FROM MyView MT1
+        WHERE NOT EXISTS (SELECT 1 FROM MyView MT2 WHERE MT1.ID != MT2.ID AND MT1.ID = MT2.ParentID)
+)
+
+, RecursiveCTE (StartingID, Level, Parents, Descriptions, Loop, ParentID) AS
+(
+    SELECT ID, -- StartingID 
+        1, -- Level
+        '|' + CAST(ID AS VARCHAR(MAX)) + '|', 
+        '|' + CAST(Description AS VARCHAR(MAX)) + '|', 
+        0, -- Loop
+        ParentID
+        FROM WithoutChildren
+    UNION ALL
+    SELECT R.StartingID, -- StartingID
+        R.Level + 1, -- Level
+        R.Parents + CAST(MT.ID AS VARCHAR(MAX)) + '|',
+        R.Descriptions + CAST(MT.Description AS VARCHAR(MAX)) + '|', 
+        CASE WHEN R.Parents LIKE '%|' + CAST(MT.ID AS VARCHAR(MAX)) + '|%' THEN 1 ELSE 0 END,
+        MT.ParentID
+        FROM MyView MT
+        INNER JOIN RecursiveCTE R ON R.ParentID = MT.ID AND R.Loop = 0
+)
+
+SELECT * FROM RecursiveCTE 
+    WHERE ParentID IS NULL OR Loop = 1
+GO

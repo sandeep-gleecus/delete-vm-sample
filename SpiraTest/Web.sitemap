@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true" >
+  <siteMapNode url="~/Default.aspx" title="$resources:Main,SiteMap_MyPage"  description="$resources:Main,SiteMap_MyPage" value="-3">
+    <siteMapNode url="~/{projId}/MyPage.aspx#" title="$resources:Main,SiteMap_MyPage"  description="$resources:Main,SiteMap_MyPage" value="-3">
+      <siteMapNode url="~/{projId}/MyPage.aspx" title="$resources:Main,SiteMap_MyPage"  description="$resources:Main,SiteMap_MyPage" value="-3" />
+      <!--<siteMapNode url="~/{projId}/MyTimecard.aspx" title="$resources:Main,SiteMap_MyTimecard"  description="$resources:Main,SiteMap_MyTimecard" value="-24" />-->
+      <siteMapNode url="~/{projId}/Administration.aspx" title="$resources:Main,GlobalNavigation_Administration"  description="$resources:Main,GlobalNavigation_Administration" value="-6" />
+    </siteMapNode>
+    <siteMapNode url="~/pf/{portfolioId}.aspx#" title="$resources:Main,SiteMap_PortfolioHome"  description="$resources:Main,SiteMap_PortfolioHome" value="-401">
+      <siteMapNode url="~/pf/{portfolioId}.aspx" title="$resources:Main,SiteMap_PortfolioHome"  description="$resources:Main,SiteMap_PortfolioHome" value="-401" />
+    </siteMapNode>
+    <siteMapNode url="~/Enterprise/Default.aspx#" title="$resources:Main,SiteMap_EnterpriseHome"  description="$resources:Main,SiteMap_EnterpriseHome" value="-501">
+      <siteMapNode url="~/Enterprise/Default.aspx" title="$resources:Main,SiteMap_EnterpriseHome"  description="$resources:Main,SiteMap_EnterpriseHome" value="-501" />
+    </siteMapNode>
+    <siteMapNode url="~/pg/{projGroupId}.aspx" title="$resources:Main,SiteMap_ProgramHome"  description="$resources:Main,SiteMap_ProgramHome" value="-12">
+      <siteMapNode url="~/pg/{projGroupId}/PlanningBoard.aspx" title="$resources:Main,SiteMap_PlanningBoard"  description="$resources:Main,SiteMap_PlanningBoard" value="-36" />
+      <siteMapNode url="~/pg/{projGroupId}/Releases.aspx" title="$resources:Main,SiteMap_Releases"  description="$resources:Main,SiteMap_Releases" value="-34" />
+      <siteMapNode url="~/pg/{projGroupId}/Incidents.aspx" title="$resources:Main,SiteMap_Incidents"  description="$resources:Main,SiteMap_Incidents" value="-35" />
+    </siteMapNode>
+    <siteMapNode url="~/{projId}.aspx" title="$resources:Main,SiteMap_ProjectHome"  description="$resources:Main,SiteMap_ProjectHome" value="-4">
+      <siteMapNode url="~/{projId}/Requirement/List.aspx#" title="$resources:Main,SiteMap_Planning"  description="$resources:Main,SiteMap_Planning" hideifempty="true">
+        <siteMapNode url="~/{projId}/Requirement/List.aspx" title="$resources:Main,SiteMap_Requirements"  description="$resources:Main,SiteMap_Requirements" value="1" />
+        <siteMapNode url="~/{projId}/PlanningBoard.aspx" title="$resources:Main,SiteMap_PlanningBoard"  description="$resources:Main,SiteMap_PlanningBoard" value="-23" />
+        <siteMapNode url="~/{projId}/Release/List.aspx" title="$resources:Main,SiteMap_Releases"  description="$resources:Main,SiteMap_Releases" value="4" />
+        <siteMapNode url="~/{projId}/Document/List.aspx" title="$resources:Main,SiteMap_Documents"  description="$resources:Main,SiteMap_Documents" value="13" />
+      </siteMapNode>
+      <siteMapNode url="~/{projId}/TestCase/List.aspx#" title="$resources:Main,SiteMap_Testing"  description="$resources:Main,SiteMap_Testing" hideifempty="true">
+        <siteMapNode url="~/{projId}/TestCase/List.aspx" title="$resources:Main,SiteMap_TestCases"  description="$resources:Main,SiteMap_TestCases" value="2" />
+        <siteMapNode url="~/{projId}/TestSet/List.aspx" title="$resources:Main,SiteMap_TestSets" description="$resources:Main,SiteMap_TestSets" value="8" />
+        <siteMapNode url="~/{projId}/TestRun/List.aspx" title="$resources:Main,SiteMap_TestRuns"  description="$resources:Main,SiteMap_TestRuns" value="5" />
+        <siteMapNode url="~/{projId}/AutomationHost/List.aspx" title="$resources:Main,SiteMap_AutomationHosts" description="$resources:Main,SiteMap_AutomationHosts" value="9" />
+        <siteMapNode url="~/{projId}/TestConfiguration/List.aspx" title="$resources:Main,SiteMap_TestConfigurations" description="$resources:Main,SiteMap_TestConfigurationsDesc" value="-33" />
+      </siteMapNode>
+      <siteMapNode url="~/{projId}/SourceCode/List.aspx#" title="$resources:Main,SiteMap_Developing"  description="$resources:Main,SiteMap_Developing" hideifempty="true">
+        <siteMapNode url="~/{projId}/SourceCode/List.aspx" title="$resources:Main,SiteMap_SourceCode"  description="$resources:Main,SiteMap_SourceCode" value="-13" />
+        <siteMapNode url="~/{projId}/SourceCodeRevision/List.aspx" title="$resources:Main,SiteMap_Revisions"  description="$resources:Main,SiteMap_Revisions" value="-28" />
+        <siteMapNode url="~/{projId}/PullRequest/List.aspx" title="$resources:Main,SiteMap_PullRequests"  description="$resources:Main,SiteMap_PullRequests" value="-38" />
+      </siteMapNode>
+      <siteMapNode url="~/{projId}/Incident/List.aspx#" title="$resources:Main,SiteMap_Tracking"  description="$resources:Main,SiteMap_Tracking" hideifempty="true">
+        <siteMapNode url="~/{projId}/Incident/List.aspx" title="$resources:Main,SiteMap_Incidents"  description="$resources:Main,SiteMap_Incidents" value="3" />
+        <siteMapNode url="~/{projId}/Risk/List.aspx#" title="$resources:Main,SiteMap_Risks"  description="$resources:Main,SiteMap_Risks" value="14" />
+        <siteMapNode url="~/{projId}/Task/List.aspx" title="$resources:Main,SiteMap_Tasks"  description="$resources:Main,SiteMap_Tasks" value="6" />
+        <siteMapNode url="~/{projId}/Resource/List.aspx" title="$resources:Main,SiteMap_Resources"  description="$resources:Main,SiteMap_Resources" value="-11" />
+      </siteMapNode>
+      <siteMapNode url="~/{projId}/Report/List.aspx" title="$resources:Main,SiteMap_Reporting"  description="$resources:Main,SiteMap_Reporting" value="-5" />
+    </siteMapNode>
+    <siteMapNode url="~/{projId}/MyProfile.aspx#" title="$resources:Main,GlobalNavigation_MyProfile"  description="$resources:Main,GlobalNavigation_MyProfile" value="-8">
+      <siteMapNode url="~/{projId}/MyProfile.aspx" title="$resources:Main,GlobalNavigation_MyProfile"  description="$resources:Main,GlobalNavigation_MyProfile" value="-8" glyph-icon="fas fa-user" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

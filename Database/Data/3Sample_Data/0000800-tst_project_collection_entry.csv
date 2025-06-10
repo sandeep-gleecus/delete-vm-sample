@@ -1,0 +1,4 @@
+user_id:Normal,project_id:Normal,project_collection_id:Normal,entry_key:String,entry_value:String,entry_type_code:Normal
+2,1,1,SortExpression,PriorityName DESC,18
+2,1,2,IncidentTypeId,2,9
+2,1,2,OpenerId,2,9

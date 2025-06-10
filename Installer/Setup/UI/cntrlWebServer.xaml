@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="Inflectra.SpiraTest.Installer.UI.cntrlWebServer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Inflectra.SpiraTest.Installer.UI"
+             xmlns:resx="clr-namespace:Inflectra.SpiraTest.Installer.Themes.Inflectra"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400" Unloaded="UserControl_Unloaded" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <LinearGradientBrush x:Key="ErrorControlBackground" StartPoint=".5,0" EndPoint=".5,1">
+            <GradientStop Color="LightPink" Offset=".35" />
+            <GradientStop Color="IndianRed" Offset="1.5" />
+        </LinearGradientBrush>
+        <Style x:Key="ErrorHighlight">
+            <Style.Triggers>
+                <Trigger Property="Control.Tag" Value="1">
+                    <Setter Property="Control.Background" Value="{StaticResource ErrorControlBackground}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <DockPanel LastChildFill="True">
+        <TextBlock Name="msgStatus" DockPanel.Dock="Bottom" HorizontalAlignment="Right" Text="{x:Static resx:Resources.Global_ClickNext}"></TextBlock>
+        <StackPanel Orientation="Vertical">
+            <TextBlock FontSize="18" FontWeight="Bold" Text="{x:Static resx:Resources.WebServer_KeyText}" />
+            <TextBlock FontSize="14" TextWrapping="Wrap" Text="{x:Static resx:Resources.WebServer_Intro}" />
+            <GroupBox Name="grpWebSite" Margin="0,20,0,0">
+                <GroupBox.Header>
+                    <Label FontWeight="Bold" Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.WebServer_WebSite}" />
+                </GroupBox.Header>
+                <GroupBox.Content>
+                    <StackPanel Orientation="Vertical">
+                        <Label Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.WebServer_WebSiteIntro}" />
+                        <ComboBox HorizontalAlignment="Stretch" Name="cmbWebSite" SelectionChanged="cmbWebSite_SelectionChanged" Margin="5"
+                                   DisplayMemberPath="Name" SelectedValuePath="Name" />
+                    </StackPanel>
+                </GroupBox.Content>
+            </GroupBox>
+            <GroupBox Name="grpNewVirtualDirectory" Visibility="Collapsed" Margin="0,20,0,0">
+                <GroupBox.Header>
+                    <Label FontWeight="Bold" Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.WebServer_VirtualDirectory}" />
+                </GroupBox.Header>
+                <GroupBox.Content>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Height="Auto" VerticalAlignment="Center" TextWrapping="Wrap" Text="{x:Static resx:Resources.WebServer_NewVirtualDirectoryIntro}" />
+                        <TextBox HorizontalAlignment="Stretch" Name="txbVirtualDirectory" Margin="5" TextChanged="txbVirtualDirectory_TextChanged"  Style="{StaticResource ResourceKey=ErrorHighlight}" />
+                        <TextBlock Height="Auto" VerticalAlignment="Center" TextWrapping="Wrap" Text="{x:Static resx:Resources.WebServer_NewApplicationPool}" />
+                        <TextBox HorizontalAlignment="Stretch" Name="txbApplicationPool" Margin="5"  Style="{StaticResource ResourceKey=ErrorHighlight}"  />
+                    </StackPanel>
+                </GroupBox.Content>
+            </GroupBox>
+            <GroupBox Name="grpExistingVirtualDirectory" Visibility="Collapsed">
+                <GroupBox.Header>
+                    <Label FontWeight="Bold" Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.WebServer_VirtualDirectory}" />
+                </GroupBox.Header>
+                <GroupBox.Content>
+                    <StackPanel Orientation="Vertical">
+                        <Label Name="lblVirtualDirectory" Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.WebServer_ExistingVirtualDirectoryIntro1}" />
+                        <ComboBox HorizontalAlignment="Stretch" Name="cmbVirtualDirectory" Margin="5" DisplayMemberPath="Name" SelectedValuePath="Path" />
+                    </StackPanel>
+                </GroupBox.Content>
+            </GroupBox>
+        </StackPanel>
+    </DockPanel>
+</UserControl>

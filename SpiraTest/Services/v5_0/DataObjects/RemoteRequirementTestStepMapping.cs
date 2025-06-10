@@ -1,0 +1,28 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+
+namespace Inflectra.SpiraTest.Web.Services.v5_0.DataObjects
+{
+    /// <summary>
+    /// Stores the mapping/coverage between Requirements and Test Steps
+    /// </summary>
+    public class RemoteRequirementTestStepMapping
+    {
+        /// <summary>
+        /// The id of the requirement
+        /// </summary>
+        public int RequirementId;
+
+        /// <summary>
+        /// The id of the test step
+        /// </summary>
+        public int TestStepId;
+    }
+}

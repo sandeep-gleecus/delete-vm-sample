@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Add" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+	<data name="Cancel" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+	<data name="LogIn" xml:space="preserve">
+    <value>Přihlásit</value>
+  </data>
+	<data name="Reset" xml:space="preserve">
+    <value>Resetovat</value>
+  </data>
+	<data name="Submit" xml:space="preserve">
+    <value>Zadat</value>
+  </data>
+	<data name="LogOut" xml:space="preserve">
+    <value>Odhlásit</value>
+  </data>
+	<data name="SignOffOtherLocations" xml:space="preserve">
+    <value>Odhlásit druhou lokalitu</value>
+  </data>
+	<data name="Apply" xml:space="preserve">
+    <value>Použít</value>
+  </data>
+	<data name="Close" xml:space="preserve">
+    <value>Zavřít</value>
+  </data>
+	<data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+	<data name="Delete" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+	<data name="Execute" xml:space="preserve">
+    <value>Spustit</value>
+  </data>
+	<data name="Resume" xml:space="preserve">
+    <value>Pokračovat</value>
+  </data>
+	<data name="ApplyFilter" xml:space="preserve">
+    <value>Použít filtr</value>
+  </data>
+	<data name="ClearFilter" xml:space="preserve">
+    <value>Vyčistit filtr</value>
+  </data>
+	<data name="CopyItems" xml:space="preserve">
+    <value>Kopírovat položky</value>
+  </data>
+	<data name="CutItems" xml:space="preserve">
+    <value>Vyjmout položky</value>
+  </data>
+	<data name="Edit" xml:space="preserve">
+    <value>Upravit</value>
+  </data>
+	<data name="Export" xml:space="preserve">
+    <value>Exportovat</value>
+  </data>
+	<data name="Filter" xml:space="preserve">
+    <value>Filtr</value>
+  </data>
+	<data name="Indent" xml:space="preserve">
+    <value>Odsadit</value>
+  </data>
+	<data name="Insert" xml:space="preserve">
+    <value>Vložit</value>
+  </data>
+	<data name="Outdent" xml:space="preserve">
+    <value>Předsadit</value>
+  </data>
+	<data name="PasteItems" xml:space="preserve">
+    <value>Vložit položky</value>
+  </data>
+	<data name="Refresh" xml:space="preserve">
+    <value>Obnovit</value>
+  </data>
+	<data name="RetrieveFilter" xml:space="preserve">
+    <value>Zobrazit filtr</value>
+  </data>
+	<data name="SaveFilter" xml:space="preserve">
+    <value>Uložit filtr</value>
+  </data>
+	<data name="OpenItem" xml:space="preserve">
+    <value>Otevřít položku</value>
+  </data>
+	<data name="OpenItemNewTab" xml:space="preserve">
+    <value>Otevřít v nové záložce</value>
+  </data>
+	<data name="EditItems" xml:space="preserve">
+    <value>Upravit položky</value>
+  </data>
+	<data name="Tools" xml:space="preserve">
+    <value>Nástroje</value>
+  </data>
+	<data name="Copy" xml:space="preserve">
+    <value>Kopírovat</value>
+  </data>
+	<data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+	<data name="Print" xml:space="preserve">
+    <value>Tisk</value>
+  </data>
+	<data name="Save" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+	<data name="SaveAndClose" xml:space="preserve">
+    <value>Uložit a uzavřít</value>
+  </data>
+	<data name="SaveAndNew" xml:space="preserve">
+    <value>Uložit a nový</value>
+  </data>
+	<data name="Subscribe" xml:space="preserve">
+    <value>Přihlásit k odběru</value>
+  </data>
+	<data name="Unsubscribe" xml:space="preserve">
+    <value>Odhlásit odběr</value>
+  </data>
+	<data name="Send" xml:space="preserve">
+    <value>Odeslat</value>
+  </data>
+	<data name="Update" xml:space="preserve">
+    <value>Aktualizovat</value>
+  </data>
+	<data name="Remove" xml:space="preserve">
+    <value>Odebrat</value>
+  </data>
+	<data name="Upload" xml:space="preserve">
+    <value>Nahrát</value>
+  </data>
+	<data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopírovat do schránky</value>
+  </data>
+	<data name="InsertLink" xml:space="preserve">
+    <value>Vložit odkaz</value>
+  </data>
+	<data name="InsertStep" xml:space="preserve">
+    <value>Vložit krok</value>
+  </data>
+	<data name="Find" xml:space="preserve">
+    <value>Najít</value>
+  </data>
+	<data name="Revert" xml:space="preserve">
+    <value>Vrátit</value>
+  </data>
+	<data name="New" xml:space="preserve">
+    <value>Nové</value>
+  </data>
+	<data name="Blocked" xml:space="preserve">
+    <value>Blokováno</value>
+  </data>
+	<data name="Caution" xml:space="preserve">
+    <value>Pozor</value>
+  </data>
+	<data name="CreateReport" xml:space="preserve">
+    <value>Vytvořit report</value>
+  </data>
+	<data name="Fail" xml:space="preserve">
+    <value>Selhalo</value>
+  </data>
+	<data name="Finish" xml:space="preserve">
+    <value>Ukončit</value>
+  </data>
+	<data name="Next" xml:space="preserve">
+    <value>Další</value>
+  </data>
+	<data name="Pass" xml:space="preserve">
+    <value>Prošlo</value>
+  </data>
+	<data name="PassAll" xml:space="preserve">
+    <value>Vše prošlo</value>
+  </data>
+	<data name="Pause" xml:space="preserve">
+    <value>Pozastavit</value>
+  </data>
+	<data name="AddAssociation" xml:space="preserve">
+    <value>Přidat propojení</value>
+  </data>
+	<data name="MakeActive" xml:space="preserve">
+    <value>Aktivovat</value>
+  </data>
+	<data name="BackList" xml:space="preserve">
+    <value>Zpět na seznam</value>
+  </data>
+	<data name="Details" xml:space="preserve">
+    <value>Podrobnosti</value>
+  </data>
+	<data name="GenerateNew" xml:space="preserve">
+    <value>Vygenetovat nové</value>
+  </data>
+	<data name="Purge" xml:space="preserve">
+    <value>Vymazat</value>
+  </data>
+	<data name="Restore" xml:space="preserve">
+    <value>Obnovit zpět</value>
+  </data>
+	<data name="SubmitTimecard" xml:space="preserve">
+    <value>Upravit TimeCard</value>
+  </data>
+	<data name="ViewItem" xml:space="preserve">
+    <value>Zobrazit položku</value>
+  </data>
+	<data name="AddRole" xml:space="preserve">
+    <value>Přidat roli</value>
+  </data>
+	<data name="Create" xml:space="preserve">
+    <value>Vytvořit</value>
+  </data>
+	<data name="AdminView" xml:space="preserve">
+    <value>Administrátorské zobrazení</value>
+  </data>
+	<data name="Activate" xml:space="preserve">Aktivovat</data><data name="AddTransition" xml:space="preserve">Přidat transakci</data><data name="AddWorkflow" xml:space="preserve">Přidat workflow</data><data name="Approve" xml:space="preserve">Schválit</data><data name="Change" xml:space="preserve">Změnit</data><data name="ClearLog" xml:space="preserve">Vyčistit log</data><data name="Continue" xml:space="preserve">Pokračovat</data><data name="Customize" xml:space="preserve">Přizpůsobit</data><data name="Deactivate" xml:space="preserve">Deaktivovat</data><data name="Import" xml:space="preserve">Importovat</data><data name="InsertAndClose" xml:space="preserve">Vložit a zavřít</data><data name="Revert_Parenthesis" xml:space="preserve">(Vrátit)</data><data name="Steps" xml:space="preserve">Kroky</data><data name="Test" xml:space="preserve">Test</data><data name="UpdateAndClose" xml:space="preserve">Aktualizovat a zavřít</data><data name="View" xml:space="preserve">Pohled</data><data name="Activate" xml:space="preserve"><value>Aktivovat</value></data><data name="AddTransition" xml:space="preserve"><value>Přidat transakci</value></data><data name="AddWorkflow" xml:space="preserve"><value>Přidat workflow</value></data><data name="Approve" xml:space="preserve"><value>Schválit</value></data><data name="Change" xml:space="preserve"><value>Změnit</value></data><data name="ClearLog" xml:space="preserve"><value>Vyčistit log</value></data><data name="Continue" xml:space="preserve"><value>Pokračovat</value></data><data name="Customize" xml:space="preserve"><value>Přizpůsobit</value></data><data name="Deactivate" xml:space="preserve"><value>Deaktivovat</value></data><data name="Import" xml:space="preserve"><value>Importovat</value></data><data name="InsertAndClose" xml:space="preserve"><value>Vložit a zavřít</value></data><data name="Revert_Parenthesis" xml:space="preserve"><value>(Vrátit)</value></data><data name="Steps" xml:space="preserve"><value>Kroky</value></data><data name="Test" xml:space="preserve"><value>Test</value></data><data name="UpdateAndClose" xml:space="preserve"><value>Aktualizovat a zavřít</value></data><data name="View" xml:space="preserve"><value>Pohled</value></data><data name="ActivateTara" xml:space="preserve"><value>Aktivovat TaraVault</value></data><data name="ActivateUsers" xml:space="preserve"><value>Aktivovat uživatele</value></data><data name="AddComment" xml:space="preserve"><value>Přidat komentář</value></data><data name="AddContact" xml:space="preserve"><value>Přidat kontakt</value></data><data name="AddProjects" xml:space="preserve"><value>Přidat produkt</value></data><data name="AddUsers" xml:space="preserve"><value>Přidat uživatele</value></data><data name="ClearCache" xml:space="preserve"><value>Vyčistit cache</value></data><data name="Clone" xml:space="preserve"><value>Klonovat</value></data><data name="EditUsers" xml:space="preserve"><value>Editovat uživatele</value></data><data name="EndSession" xml:space="preserve"><value>Ukončit relaci</value></data><data name="FocusOn" xml:space="preserve"><value>Najít složku</value></data><data name="ForceReSync" xml:space="preserve"><value>Vynutit synchronizaci</value></data><data name="InsertAtCursor" xml:space="preserve"><value>Vložit na kurzoru</value></data><data name="Leave" xml:space="preserve"><value>Opustit</value></data><data name="Link" xml:space="preserve"><value>Spojit</value></data><data name="PurgeAll" xml:space="preserve"><value>Vymazat vše</value></data><data name="Refresh_Parenthesis" xml:space="preserve"><value>(Obnovit)</value></data><data name="RemoveContact" xml:space="preserve"><value>Odstranit kontakt</value></data><data name="Select" xml:space="preserve"><value>Vybrat</value></data><data name="SendMessage" xml:space="preserve"><value>Odeslat zprávu</value></data><data name="ShowGuidedTour" xml:space="preserve"><value>Zobrazit průvodce</value></data><data name="Split" xml:space="preserve"><value>Rozdělit</value></data><data name="Suggest" xml:space="preserve"><value>Vypočítat</value></data><data name="Table" xml:space="preserve"><value>Tabulka</value></data><data name="Undelete" xml:space="preserve"><value>Obnovit</value></data><data name="ViewProjectMappings" xml:space="preserve"><value>Zobrazit mapu produktů</value></data><data name="AddFollower" xml:space="preserve"><value>Přidat followera</value></data><data name="Assign" xml:space="preserve"><value>Přiřadit</value></data><data name="Development" xml:space="preserve"><value>Vývoj</value></data><data name="General" xml:space="preserve"><value>Vše</value></data><data name="Testing" xml:space="preserve"><value>Testy</value></data><data name="Cloning" xml:space="preserve"><value>Klonuji…</value></data><data name="Populate" xml:space="preserve"><value>Vyplnit</value></data><data name="JustFinish" xml:space="preserve"><value>Ukončit</value></data><data name="UpdateTestCase" xml:space="preserve"><value>Aktualizovat testovací případ</value></data><data name="ResetSync" xml:space="preserve"><value>Resetovat synchronizaci</value></data><data name="ViewItemNewTab" xml:space="preserve"><value>Zobrazit položku v novém panelu</value></data><data name="RefreshCache" xml:space="preserve"><value>Obnovit cache</value></data><data name="ChangePassword" xml:space="preserve"><value>Změnit heslo</value></data><data name="AddToProject" xml:space="preserve"><value>Přidat do produktu</value></data><data name="Decrease" xml:space="preserve"><value>Snížit</value></data><data name="Increase" xml:space="preserve"><value>Zvýšit</value></data><data name="Download" xml:space="preserve"><value>Stáhnout</value></data><data name="AccountSecurity" xml:space="preserve"><value>Zabezpečení účtu</value></data><data name="UnlinkAccount" xml:space="preserve"><value>Odpojit účet</value></data><data name="Delete_TestCase" xml:space="preserve"><value>Smazat testovací případ</value></data><data name="Delete_TestStep" xml:space="preserve"><value>Smazat krok</value></data><data name="LinkToLDAP" xml:space="preserve"><value>Spojit s LDAP</value></data><data name="NewBaseline" xml:space="preserve"><value>Nová základní linka</value></data></root>

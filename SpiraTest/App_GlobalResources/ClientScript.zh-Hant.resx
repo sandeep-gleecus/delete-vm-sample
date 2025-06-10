@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GlobalFunctions_SpinnerText" xml:space="preserve">
+    <value>載入中…</value>
+  </data>
+	<data name="FileArtifactUploadDialog_DefaultScreenshotFilename" xml:space="preserve">
+    <value>Screenshot1</value>
+  </data>
+	<data name="FileArtifactUploadDialog_ScreenshotFilenameRequired" xml:space="preserve">
+    <value>您必須輸入截圖的檔案名稱</value>
+  </data>
+	<data name="FileArtifactUploadDialog_ScreenshotFilenameWrongExtension" xml:space="preserve">
+    <value>螢幕截圖檔案名稱必須含 .png 副檔名</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardContentUnsupported" xml:space="preserve">
+    <value>剪貼簿中不包含支援的圖像格式。</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardEmpty" xml:space="preserve">
+    <value>剪貼板是空的。</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardErrorCodeUnknown" xml:space="preserve">
+    <value>錯誤 ！很遺憾，此錯誤訊息仍未被實作。錯誤代碼：</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardUnknownError" xml:space="preserve">
+    <value>無法預期的錯誤。請參閱 Jave-Applet 控制台的詳細資訊。</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaInternalException" xml:space="preserve">
+    <value>內部錯誤：</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaNotLoadedYet" xml:space="preserve">
+    <value>Supa-Applet 仍未載入。</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaPasteImageFirst" xml:space="preserve">
+    <value>請先貼上一個圖片</value>
+  </data>
+	<data name="GlobalFunctions_DefaultErrorMessage" xml:space="preserve">
+    <value>請至應用程式事件紀錄的檢查詳細訊息</value>
+  </data>
+	<data name="GlobalFunctions_DefaultErrorType" xml:space="preserve">
+    <value>系統錯誤</value>
+  </data>
+	<data name="GlobalFunctions_TooltipLoading" xml:space="preserve">
+    <value>載入中…</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForBlocked" xml:space="preserve">
+    <value>當記錄步驟為被阻擋時，必須輸入實際結果</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForCaution" xml:space="preserve">
+    <value>當記錄步驟為警告時，必須輸入實際結果</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForFail" xml:space="preserve">
+    <value>當記錄步驟為失敗時，必須輸入實際結果</value>
+  </data>
+	<data name="TestCaseExecution_IncidentLoggedMessage" xml:space="preserve">
+    <value>違反測試結果建立事件{0}</value>
+  </data>
+	<data name="TestSetDetails_OnlyOneCheckboxToAddTestCases" xml:space="preserve">
+    <value>新增測試案例指令不可選擇超過一個核取方塊</value>
+  </data>
+	<data name="TestSetDetails_SelectOnlyOneTestCase" xml:space="preserve">
+    <value>編輯參數值時必須選擇一個測試案例</value>
+  </data>
+	<data name="TestSetDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>必須先選擇一個測試案例</value>
+  </data>
+	<data name="TreeView_ExpandCollapse" xml:space="preserve">
+    <value>展開/摺疊</value>
+  </data>
+	<data name="TreeView_Folder" xml:space="preserve">
+    <value>資料夾</value>
+  </data>
+	<data name="Global_Export" xml:space="preserve">
+    <value>匯出</value>
+  </data>
+	<data name="Global_PleaseSelectProjectToExportTo" xml:space="preserve">
+    <value>請選擇您要匯出的專案</value>
+  </data>
+	<data name="Global_ApplyFilter" xml:space="preserve">
+    <value>採用篩選</value>
+  </data>
+	<data name="Global_ArtifactHasAttachment" xml:space="preserve">
+    <value>項目夾帶附件</value>
+  </data>
+	<data name="Global_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+	<data name="Global_CannotMoveItemOntoItself" xml:space="preserve">
+    <value>你無法將項目移動到該項目</value>
+  </data>
+	<data name="Global_ClipboardEmpty" xml:space="preserve">
+    <value>剪貼簿目前為空的！</value>
+  </data>
+	<data name="Global_DestinationItemNotValid" xml:space="preserve">
+    <value>目的項目無效！</value>
+  </data>
+	<data name="Global_DisplayingPage" xml:space="preserve">
+    <value>顯示頁面</value>
+  </data>
+	<data name="Global_FilterSaved" xml:space="preserve">
+    <value>目前篩選已成功儲存</value>
+  </data>
+	<data name="Global_Hide" xml:space="preserve">
+    <value>隱藏</value>
+  </data>
+	<data name="Global_IntegerValidation" xml:space="preserve">
+    <value>"{0}" 必須為一整數</value>
+  </data>
+	<data name="Global_ItemDraggedNotValid" xml:space="preserve">
+    <value>正在拖拉的項目無效！</value>
+  </data>
+	<data name="Global_ItemsCopiedToClipboard" xml:space="preserve">
+    <value>項目已成功複製到剪貼簿</value>
+  </data>
+	<data name="Global_ItemsCutToClipboard" xml:space="preserve">
+    <value>項目已成功剪下到剪貼簿</value>
+  </data>
+	<data name="Global_NeedToSelectDestinationProject" xml:space="preserve">
+    <value>你必須選擇目的專案</value>
+  </data>
+	<data name="Global_NeedToSelectFilter" xml:space="preserve">
+    <value>你必須從清單中選擇一個篩選</value>
+  </data>
+	<data name="Global_NeedToSelectItem" xml:space="preserve">
+    <value>你必須從清單中選擇{0}。</value>
+  </data>
+	<data name="Global_None" xml:space="preserve">
+    <value>無</value>
+  </data>
+	<data name="Global_Of" xml:space="preserve">
+    <value>的</value>
+  </data>
+	<data name="Global_PleaseSelectFilter" xml:space="preserve">
+    <value>請選擇您要使用的篩選：</value>
+  </data>
+	<data name="Global_RetrieveSavedFilter" xml:space="preserve">
+    <value>檢索已儲存的篩選</value>
+  </data>
+	<data name="Global_RowsPerPage" xml:space="preserve">
+    <value>每頁的列數</value>
+  </data>
+	<data name="Global_Select" xml:space="preserve">
+    <value>選擇</value>
+  </data>
+	<data name="Global_SelectFilter" xml:space="preserve">
+    <value>選擇篩選</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCommand" xml:space="preserve">
+    <value>此指令必須選擇至少一個核取方塊</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCopy" xml:space="preserve">
+    <value>複製指令必須選擇至少一個核取方塊</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCut" xml:space="preserve">
+    <value>剪下指令必須選擇至少一個核取方塊</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForDelete" xml:space="preserve">
+    <value>刪除指令必須選擇至少一個核取方塊</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForInsert" xml:space="preserve">
+    <value>插入指令不可選擇超過一個核取方塊</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForOpen" xml:space="preserve">
+    <value>開啟項目指令必須選擇一個核取方塊</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForPaste" xml:space="preserve">
+    <value>複製指令僅可選擇一個核取方塊</value>
+  </data>
+	<data name="Global_Show" xml:space="preserve">
+    <value>顯示</value>
+  </data>
+	<data name="Global_SuccessAddingItemsToItem" xml:space="preserve">
+    <value>已成功新增項目至{0}</value>
+  </data>
+	<data name="Global_SuccessExport" xml:space="preserve">
+    <value>已成功匯出項目</value>
+  </data>
+	<data name="Global_TimeIntervalValidation" xml:space="preserve">
+    <value>"{0}"必須為時間區間，以小時為單位，分鐘數顯示為小數點</value>
+  </data>
+	<data name="Global_YouNeedToEnterFilterName" xml:space="preserve">
+    <value>您必須輸入此篩選的名稱</value>
+  </data>
+	<data name="HierarchicalGrid_CollapseNode" xml:space="preserve">
+    <value>摺疊節點</value>
+  </data>
+	<data name="HierarchicalGrid_ExpandNode" xml:space="preserve">
+    <value>展開節點</value>
+  </data>
+	<data name="HierarchicalGrid_SelectOneCheckBoxForIndent" xml:space="preserve">
+    <value>增加縮排指令必須選擇至少一個核取方塊</value>
+  </data>
+	<data name="HierarchicalGrid_SelectOneCheckBoxForOutdent" xml:space="preserve">
+    <value>減少縮排指令必須選擇至少一個核取方塊</value>
+  </data>
+	<data name="Global_Edit" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+	<data name="Global_FillWithValue" xml:space="preserve">
+    <value>填入此值</value>
+  </data>
+	<data name="Global_SelectAll" xml:space="preserve">
+    <value>選擇全部</value>
+  </data>
+	<data name="Global_Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+	<data name="Global_Insert" xml:space="preserve">
+    <value>插入</value>
+  </data>
+	<data name="Global_MultipleItems" xml:space="preserve">
+    <value>多個項目</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForBulkEdit" xml:space="preserve">
+    <value>批次編輯選項必須選擇至少一個核取方塊</value>
+  </data>
+	<data name="Global_ExportItems" xml:space="preserve">
+    <value>匯出項目</value>
+  </data>
+	<data name="Global_Project" xml:space="preserve">
+    <value>專案</value>
+  </data>
+	<data name="Requirements_SuccessfullyCreatedTestCases" xml:space="preserve">
+    <value>已成功從需求建立測試案例</value>
+  </data>
+	<data name="Requirements_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>已成功從需求建立測試集</value>
+  </data>
+	<data name="Global_Any" xml:space="preserve">
+    <value>-- 任何 --</value>
+  </data>
+	<data name="Global_None2" xml:space="preserve">
+    <value>(無)</value>
+  </data>
+	<data name="DatePicker_April" xml:space="preserve">
+    <value>4月</value>
+  </data>
+	<data name="DatePicker_August" xml:space="preserve">
+    <value>8月</value>
+  </data>
+	<data name="DatePicker_ChosenDateInvalid" xml:space="preserve">
+    <value>很抱歉，您選擇的日期不符合規定。請閱讀頁面上的說明。</value>
+  </data>
+	<data name="DatePicker_December" xml:space="preserve">
+    <value>12月</value>
+  </data>
+	<data name="DatePicker_DHTMLUnsupported" xml:space="preserve">
+    <value>此瀏覽器不支援所需的 DHTML 功能。</value>
+  </data>
+	<data name="DatePicker_February" xml:space="preserve">
+    <value>2月</value>
+  </data>
+	<data name="DatePicker_Fr" xml:space="preserve">
+    <value>五</value>
+  </data>
+	<data name="DatePicker_Friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+	<data name="DatePicker_January" xml:space="preserve">
+    <value>1月</value>
+  </data>
+	<data name="DatePicker_July" xml:space="preserve">
+    <value>7月</value>
+  </data>
+	<data name="DatePicker_June" xml:space="preserve">
+    <value>6月</value>
+  </data>
+	<data name="DatePicker_March" xml:space="preserve">
+    <value>3月</value>
+  </data>
+	<data name="DatePicker_May" xml:space="preserve">
+    <value>5月</value>
+  </data>
+	<data name="DatePicker_Mo" xml:space="preserve">
+    <value>一</value>
+  </data>
+	<data name="DatePicker_Monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+	<data name="DatePicker_November" xml:space="preserve">
+    <value>11月</value>
+  </data>
+	<data name="DatePicker_October" xml:space="preserve">
+    <value>10月</value>
+  </data>
+	<data name="DatePicker_Sa" xml:space="preserve">
+    <value>六</value>
+  </data>
+	<data name="DatePicker_Saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+	<data name="DatePicker_September" xml:space="preserve">
+    <value>9月</value>
+  </data>
+	<data name="DatePicker_Su" xml:space="preserve">
+    <value>日</value>
+  </data>
+	<data name="DatePicker_Sunday" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+	<data name="DatePicker_TargetFormInvalid" xml:space="preserve">
+    <value>目標表單欄位未指定或不可存取。</value>
+  </data>
+	<data name="DatePicker_Th" xml:space="preserve">
+    <value>Th</value>
+  </data>
+	<data name="DatePicker_Thursday" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+	<data name="DatePicker_Tu" xml:space="preserve">
+    <value>二</value>
+  </data>
+	<data name="DatePicker_Tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+	<data name="DatePicker_UnknownError" xml:space="preserve">
+    <value>執行此腳本時出現未知的錯誤。</value>
+  </data>
+	<data name="DatePicker_We" xml:space="preserve">
+    <value>三</value>
+  </data>
+	<data name="DatePicker_Wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+	<data name="DateRangeFilter_CustomDates" xml:space="preserve">
+    <value>自訂日期範圍：</value>
+  </data>
+	<data name="DateRangeFilter_EnterDateRange" xml:space="preserve">
+    <value>輸入日期範圍：</value>
+  </data>
+	<data name="DateRangeFilter_Last14Days" xml:space="preserve">
+    <value>最近 14 天</value>
+  </data>
+	<data name="DateRangeFilter_Last30Days" xml:space="preserve">
+    <value>最近 30 天</value>
+  </data>
+	<data name="DateRangeFilter_Last7Days" xml:space="preserve">
+    <value>最近 7 天</value>
+  </data>
+	<data name="DateRangeFilter_LastMonth" xml:space="preserve">
+    <value>上個月</value>
+  </data>
+	<data name="DateRangeFilter_LastWeek" xml:space="preserve">
+    <value>上個星期</value>
+  </data>
+	<data name="DateRangeFilter_StandardDates" xml:space="preserve">
+    <value>標準日期範圍：</value>
+  </data>
+	<data name="DateRangeFilter_ThisMonth" xml:space="preserve">
+    <value>本月</value>
+  </data>
+	<data name="DateRangeFilter_ThisWeek" xml:space="preserve">
+    <value>本周</value>
+  </data>
+	<data name="DateRangeFilter_Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+	<data name="DateRangeFilter_Yesterday" xml:space="preserve">
+    <value>昨天</value>
+  </data>
+	<data name="Global_PleaseSelect" xml:space="preserve">
+    <value>-- 請選擇 --</value>
+  </data>
+	<data name="Releases_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>已成功從版本建立測試集</value>
+  </data>
+	<data name="Global_No" xml:space="preserve">
+    <value>否</value>
+  </data>
+	<data name="Global_Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+	<data name="Global_Add" xml:space="preserve">
+    <value>新增</value>
+  </data>
+	<data name="TestCaseList_AddToRelease" xml:space="preserve">
+    <value>加入至版本</value>
+  </data>
+	<data name="TestCaseList_AddToRequirement" xml:space="preserve">
+    <value>加入至需求</value>
+  </data>
+	<data name="TestCaseList_AddToTestSet" xml:space="preserve">
+    <value>加入至測試集</value>
+  </data>
+	<data name="TestCaseList_SelectRelease" xml:space="preserve">
+    <value>請選擇您要加入的版本：</value>
+  </data>
+	<data name="TestCaseList_SelectRequirement" xml:space="preserve">
+    <value>請選擇您要加入的需求：</value>
+  </data>
+	<data name="TestCaseList_SelectTestSet" xml:space="preserve">
+    <value>請選擇您要加入的測試集：</value>
+  </data>
+	<data name="SortedList_SortByAscending" xml:space="preserve">
+    <value>按{0}升冪排列</value>
+  </data>
+	<data name="SortedList_SortByDescending" xml:space="preserve">
+    <value>按{0}降冪排列</value>
+  </data>
+	<data name="Global_ChooseNameForFilter" xml:space="preserve">
+    <value>請選擇此篩選的名稱：</value>
+  </data>
+	<data name="Global_Save" xml:space="preserve">
+    <value>儲存</value>
+  </data>
+	<data name="Global_SaveFilter" xml:space="preserve">
+    <value>儲存篩選</value>
+  </data>
+	<data name="Global_Refresh" xml:space="preserve">
+    <value>重整</value>
+  </data>
+	<data name="IterationPlan_CannotDragReqsTasksSameTime" xml:space="preserve">
+    <value>您無法同時拖拉需求與任務</value>
+  </data>
+	<data name="IterationPlan_NoReleaseSelected" xml:space="preserve">
+    <value>{0} 沒有被選擇！請選擇{1}顯示計畫。</value>
+  </data>
+	<data name="PlanningGrid_Available" xml:space="preserve">
+    <value>可用的</value>
+  </data>
+	<data name="PlanningGrid_ItemsDirectlyAssociated" xml:space="preserve">
+    <value>項目直接相關至{0}</value>
+  </data>
+	<data name="PlanningGrid_Remaining" xml:space="preserve">
+    <value>剩餘</value>
+  </data>
+	<data name="PlanningGrid_Utilized" xml:space="preserve">
+    <value>利用</value>
+  </data>
+	<data name="DropDownHierarchy_NavigateToArtifact" xml:space="preserve">
+    <value>導航到工作</value>
+  </data>
+	<data name="RichTextBox_AddImage" xml:space="preserve">
+    <value>新增圖像</value>
+  </data>
+	<data name="RichTextBox_AlignLeft" xml:space="preserve">
+    <value>置左</value>
+  </data>
+	<data name="RichTextBox_AlignRight" xml:space="preserve">
+    <value>置右</value>
+  </data>
+	<data name="RichTextBox_BackgroundColor" xml:space="preserve">
+    <value>背景顏色</value>
+  </data>
+	<data name="RichTextBox_Bold" xml:space="preserve">
+    <value>粗體</value>
+  </data>
+	<data name="RichTextBox_Center" xml:space="preserve">
+    <value>中心</value>
+  </data>
+	<data name="RichTextBox_EnterImageUrl" xml:space="preserve">
+    <value>輸入圖像的網址：</value>
+  </data>
+	<data name="RichTextBox_EnterUrl" xml:space="preserve">
+    <value>輸入網址：</value>
+  </data>
+	<data name="RichTextBox_Font" xml:space="preserve">
+    <value>字體</value>
+  </data>
+	<data name="RichTextBox_FontDropDown" xml:space="preserve">
+    <value>-- 字體 --</value>
+  </data>
+	<data name="RichTextBox_HorizontalRule" xml:space="preserve">
+    <value>水平線尺規</value>
+  </data>
+	<data name="RichTextBox_Indent" xml:space="preserve">
+    <value>增加縮排</value>
+  </data>
+	<data name="RichTextBox_InsertLink" xml:space="preserve">
+    <value>插入連結</value>
+  </data>
+	<data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>插入表格</value>
+  </data>
+	<data name="RichTextBox_Italic" xml:space="preserve">
+    <value>斜體</value>
+  </data>
+	<data name="RichTextBox_OrderedList" xml:space="preserve">
+    <value>已排序清單</value>
+  </data>
+	<data name="RichTextBox_Outdent" xml:space="preserve">
+    <value>減少縮排</value>
+  </data>
+	<data name="RichTextBox_Size" xml:space="preserve">
+    <value>大小</value>
+  </data>
+	<data name="RichTextBox_SizeDropDown" xml:space="preserve">
+    <value>-- 大小 --</value>
+  </data>
+	<data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>文字顏色</value>
+  </data>
+	<data name="RichTextBox_Underline" xml:space="preserve">
+    <value>底線</value>
+  </data>
+	<data name="RichTextBox_UnorderedList" xml:space="preserve">
+    <value>未排序清單</value>
+  </data>
+	<data name="RichTextBox_ViewFullScreen" xml:space="preserve">
+    <value>檢視全螢幕</value>
+  </data>
+	<data name="RichTextBox_ViewHTMLSource" xml:space="preserve">
+    <value>檢視 HTML 原始碼</value>
+  </data>
+	<data name="Global_ID" xml:space="preserve">
+    <value>識別碼</value>
+  </data>
+	<data name="Global_Name" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+	<data name="Global_Status" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+	<data name="MappingSelector_Add" xml:space="preserve">
+    <value>新增 &gt;</value>
+  </data>
+	<data name="MappingSelector_CollapseNode" xml:space="preserve">
+    <value>折疊節點</value>
+  </data>
+	<data name="MappingSelector_ExpandNode" xml:space="preserve">
+    <value>展開節點</value>
+  </data>
+	<data name="MappingSelector_NoItemsToRemove" xml:space="preserve">
+    <value>沒有可移除的對應項目</value>
+  </data>
+	<data name="MappingSelector_Remove" xml:space="preserve">
+    <value>移除 &lt;</value>
+  </data>
+	<data name="MappingSelector_RemoveAll" xml:space="preserve">
+    <value>移除全部</value>
+  </data>
+	<data name="MappingSelector_SelectItemFromLeftHandBox" xml:space="preserve">
+    <value>您必須先從左邊方框中選擇至少一個項目</value>
+  </data>
+	<data name="MappingSelector_SelectItemFromRightHandBox" xml:space="preserve">
+    <value>您必須先從右邊方框中選擇至少一個項目</value>
+  </data>
+	<data name="TestCaseSelector_TestCaseCreatedFromRequirement" xml:space="preserve">
+    <value>已成功從此需求建立新測試案例</value>
+  </data>
+	<data name="TestCaseSelector_TestSetCreatedFromRelease" xml:space="preserve">
+    <value>已成功從此版本建立新測試集</value>
+  </data>
+	<data name="Incidents_SuccessfullyCreatedRequirements" xml:space="preserve">
+    <value>已成功從此事件建立需求</value>
+  </data>
+	<data name="Global_Uploading" xml:space="preserve">
+    <value>上傳中…</value>
+  </data>
+	<data name="ArtifactLinkPanel_IncidentIdNotValid" xml:space="preserve">
+    <value>您必須為此事件輸入一個整數識別碼</value>
+  </data>
+	<data name="ArtifactLinkPanel_InvalidArtifactType" xml:space="preserve">
+    <value>選擇無效的工作類型</value>
+  </data>
+	<data name="ArtifactLinkPanel_NeedToSelectOneArtifact" xml:space="preserve">
+    <value>您必須選擇至少一件工作</value>
+  </data>
+	<data name="ArtifactLinkPanel_RequirementIdNotValid" xml:space="preserve">
+    <value>您必須為此需求輸入一個整數識別碼</value>
+  </data>
+	<data name="ArtifactLinkPanel_TestStepIdNotValid" xml:space="preserve">
+    <value>您必須為此測試步驟輸入一個整數識別碼</value>
+  </data>
+	<data name="Global_Loading" xml:space="preserve">
+    <value>載入中…</value>
+  </data>
+	<data name="HierarchicalSelector_CollapseNode" xml:space="preserve">
+    <value>折疊節點</value>
+  </data>
+	<data name="HierarchicalSelector_ExpandNode" xml:space="preserve">
+    <value>展開節點</value>
+  </data>
+	<data name="NavigationBar_AllItems" xml:space="preserve">
+    <value>所有項目</value>
+  </data>
+	<data name="NavigationBar_Assigned" xml:space="preserve">
+    <value>已指派</value>
+  </data>
+	<data name="NavigationBar_CurrentFilter" xml:space="preserve">
+    <value>目前篩選</value>
+  </data>
+	<data name="NavigationBar_Display" xml:space="preserve">
+    <value>顯示：</value>
+  </data>
+	<data name="NavigationBar_Maximize" xml:space="preserve">
+    <value>最大化</value>
+  </data>
+	<data name="NavigationBar_Minimize" xml:space="preserve">
+    <value>最小化</value>
+  </data>
+	<data name="Global_ClipboardNotSupported" xml:space="preserve">
+    <value>您的瀏覽器不支援剪貼簿存取！</value>
+  </data>
+	<data name="TestCaseDetails_CannotLinkToParent" xml:space="preserve">
+    <value>您無法再次對已連結的測試案例建立連結</value>
+  </data>
+	<data name="TestCaseDetails_CannotLinkToSelf" xml:space="preserve">
+    <value>無法連結到自己！</value>
+  </data>
+	<data name="TestCaseDetails_NewParameterSuccess" xml:space="preserve">
+    <value>已新增測試案例的參數。</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameInvalid" xml:space="preserve">
+    <value>參數名稱無法使用單引號、空白、反斜線。</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameInvalid2" xml:space="preserve">
+    <value>參數名稱無法使用大括號、錢字號。</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameRequired" xml:space="preserve">
+    <value>您必須為新的測試案例參數提供名稱。</value>
+  </data>
+	<data name="TestCaseDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>您必須先選擇測試案例。</value>
+  </data>
+	<data name="ReleaseSelector_RequirementCreatedFromTestCase" xml:space="preserve">
+    <value>已成功從此測試案例建立新需求。</value>
+  </data>
+	<data name="TestCaseExecution_Release" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="TestCaseExecution_TestRunReadOnly" xml:space="preserve">
+    <value>此已被指派的測試執行為唯讀</value>
+  </data>
+	<data name="Documents_ExportDocuments" xml:space="preserve">
+    <value>匯出文件</value>
+  </data>
+	<data name="JqPlot_DisplayDataGrid" xml:space="preserve">
+    <value>顯示資料表格</value>
+  </data>
+	<data name="JqPlot_ResetZoom" xml:space="preserve">
+    <value>重設顯示比例</value>
+  </data>
+	<data name="JqPlot_DownloadData" xml:space="preserve">
+    <value>下載資料存為 CSV 檔</value>
+  </data>
+	<data name="JqPlot_SaveAs" xml:space="preserve">
+    <value>另存為：</value>
+  </data>
+	<data name="TestCases_BlockSucceeded" xml:space="preserve">
+    <value>測試案例已成功阻擋</value>
+  </data>
+	<data name="TestCases_UnBlockSucceeded" xml:space="preserve">
+    <value>測試案例已成功解除阻擋</value>
+  </data>
+	<data name="Global_EstimatedEffort" xml:space="preserve">
+    <value>預估工時</value>
+  </data>
+	<data name="Global_Owner" xml:space="preserve">
+    <value>擁有者</value>
+  </data>
+	<data name="Global_ProjectedEffort" xml:space="preserve">
+    <value>計畫中的工時</value>
+  </data>
+	<data name="PlanningBoard_UnassignedItems" xml:space="preserve">
+    <value>未指派項目</value>
+  </data>
+	<data name="Global_Multiple" xml:space="preserve">
+    <value>多個項目</value>
+  </data>
+	<data name="PlanningBoard_Back" xml:space="preserve">
+    <value>返回項目</value>
+  </data>
+	<data name="PlanningBoard_View" xml:space="preserve">
+    <value>檢視</value>
+  </data>
+	<data name="BackgroundProcessManager_StartingProcess" xml:space="preserve">
+    <value>開啟進行…</value>
+  </data>
+	<data name="Administration_CopyProjectConfirm" xml:space="preserve">
+    <value>您確認要將此專案建立副本？</value>
+  </data>
+	<data name="Administration_CopyProjectDialogText" xml:space="preserve">
+    <value>正在對選定的專案建立副本。請稍後…</value>
+  </data>
+	<data name="Administration_CopyProjectDialogTitle" xml:space="preserve">
+    <value>複製專案</value>
+  </data>
+	<data name="Administration_DeleteProjectConfirm" xml:space="preserve">
+    <value>操作無法復原，您確認要刪除此專案？</value>
+  </data>
+	<data name="Administration_DeleteProjectDialogText" xml:space="preserve">
+    <value>正在刪除選定的專案。請稍後…</value>
+  </data>
+	<data name="Administration_DeleteProjectDialogTitle" xml:space="preserve">
+    <value>刪除專案</value>
+  </data>
+	<data name="Global_Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+	<data name="NavigationBar_Detected" xml:space="preserve">
+    <value>已檢測</value>
+  </data>
+	<data name="NavigationBar_ForRelease" xml:space="preserve">
+    <value>發行版本</value>
+  </data>
+	<data name="NavigationBar_ForTestCase" xml:space="preserve">
+    <value>測試案例</value>
+  </data>
+	<data name="NavigationBar_ForTestSet" xml:space="preserve">
+    <value>測試集</value>
+  </data>
+	<data name="TestCaseList_ExecuteTestCase" xml:space="preserve">
+    <value>執行測試案例</value>
+  </data>
+	<data name="TestCaseList_ExecuteTestCaseDesc" xml:space="preserve">
+    <value>正在為此測試案例建立測試執行。請稍後…</value>
+  </data>
+	<data name="BackgroundProcessManager_ProcessCompleted" xml:space="preserve">
+    <value>流程已成功完成</value>
+  </data>
+	<data name="TestSetList_ExecuteTestSet" xml:space="preserve">
+    <value>執行測試集</value>
+  </data>
+	<data name="TestSetList_ExecuteTestSetDesc" xml:space="preserve">
+    <value>正在為此測試集建立測試執行。請稍後…</value>
+  </data>
+	<data name="AttachmentPanel_NeedToSelectOneDocument" xml:space="preserve">
+    <value>您必須選擇至少一個關聯的文件！</value>
+  </data>
+	<data name="AttachmentPanel_NeedToSelectOneFile" xml:space="preserve">
+    <value>您必須遠則至少一個關聯的檔案！</value>
+  </data>
+	<data name="TestSetList_SelectSingleTestSet" xml:space="preserve">
+    <value>您必須選擇一個欲執行的測試集！</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTestCases" xml:space="preserve">
+    <value>執行測試集中的測試案例</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTestCasesDesc" xml:space="preserve">
+    <value>正在為選定的測試集建立測試執行。請稍後…</value>
+  </data>
+	<data name="Admin_CustomPropertyOptions_Header" xml:space="preserve"><value>自訂 #{0} 屬性的定義</value></data><data name="Admin_CustomProp_FieldError_BadDate" xml:space="preserve"><value>填入不合法的資料。</value></data><data name="Admin_CustomProp_FieldError_ListEmpty" xml:space="preserve"><value>您必須選擇自訂列表。</value></data><data name="Admin_CustomProp_FieldError_MinHigherMax" xml:space="preserve"><value>最小值不可大於最大值。</value></data><data name="Admin_CustomProp_FieldError_MultipleErrors" xml:space="preserve"><value>發生多個錯誤。\n請確認標注的欄位。</value></data><data name="Admin_CustomProp_FieldError_NameEmpty" xml:space="preserve"><value>欄位名稱不可為空。</value></data><data name="Admin_CustomProp_FieldError_NameUsed" xml:space="preserve"><value>欄位名稱已使用。</value></data><data name="Admin_CustomProp_FieldError_NaN" xml:space="preserve"><value>項目不是數字。</value></data><data name="Admin_CustomProp_FieldError_NumLessZero" xml:space="preserve"><value>數字不可小於0。</value></data><data name="Admin_CustomProp_FieldError_TypeEmpty" xml:space="preserve"><value>您必須選擇類型。</value></data><data name="Global_ClearFilters" xml:space="preserve"><value>清除篩選</value></data><data name="Global_FilteringBy" xml:space="preserve"><value>依據 {0} 篩選結果</value></data><data name="DropDownList_Multiple" xml:space="preserve"><value>(多選)</value></data><data name="WorkflowOperations_NoOperationsAvailable" xml:space="preserve"><value>無可用的操作</value></data><data name="WorkflowOperations_SaveChangesFirst" xml:space="preserve"><value>請先儲存異動。</value></data><data name="CommentList_Legend" xml:space="preserve"><value>顯示評論列表</value></data><data name="CommentList_NewestFirst" xml:space="preserve"><value>最新的優先</value></data><data name="CommentList_OldestFirst" xml:space="preserve"><value>最舊的優先</value></data><data name="CommentList_ConfirmDelete" xml:space="preserve"><value>操作無法復原，您確定要刪除此評論？</value></data><data name="AjaxFormManager_ConfirmRefresh" xml:space="preserve"><value>重整資料會遺失未儲存的修改，您確定要繼續？</value></data><data name="AjaxFormManager_ConfirmUnload" xml:space="preserve"><value>瀏覽至其他頁面會遺失未儲存的修改，您確定要繼續？</value></data><data name="AjaxFormManager_SaveSuccess" xml:space="preserve"><value>成功儲存修改至 {0}</value></data><data name="TestRunDetails_IncidentList" xml:space="preserve"><value>測試執行步驟的事件列表：</value></data><data name="ReportViewer_GeneratingReport" xml:space="preserve"><value>報表檢視器</value></data><data name="ReportViewer_GeneratingReportDesc" xml:space="preserve"><value>正在產生報表，請稍後…</value></data><data name="ReportDetails_NeedToSpecifyCustomQuery" xml:space="preserve"><value>預覽結果前，您需輸入自訂查詢條件</value></data><data name="Global_Customize" xml:space="preserve"><value>自訂</value></data><data name="Global_Delete" xml:space="preserve"><value>刪除</value></data><data name="ReportDetails_NameRequired" xml:space="preserve"><value>此報表必須提供名稱</value></data><data name="Admin_DataTools_Processing" xml:space="preserve"><value>資料清除中</value></data><data name="Admin_DataTools_Title" xml:space="preserve"><value>資料工具</value></data><data name="Admin_History_Processing" xml:space="preserve"><value>清楚所有已刪除記錄</value></data><data name="Admin_History_Title" xml:space="preserve"><value>專案歷史</value></data><data name="NavigationBar_NotAuthorizedToView" xml:space="preserve"><value>您的角色未授權</value></data><data name="AjaxFormManager_NotAuthorizedToModify" xml:space="preserve"><value>您無修改此項目的權限</value></data><data name="Global_Remove" xml:space="preserve"><value>移除</value></data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve"><value>從版本移除</value></data><data name="TestCaseList_SelectReleaseToRemove" xml:space="preserve"><value>請選擇您要從哪一版本中移除</value></data><data name="Admin_History_Processing2" xml:space="preserve"><value>還原選擇的項目中…</value></data><data name="Global_Rows" xml:space="preserve"><value>列</value></data><data name="Global_ShareFilter" xml:space="preserve"><value>分享給專案中的其他成員</value></data><data name="NumberRangeFilter_EnterMinMaxValues" xml:space="preserve"><value>請輸入最小/最大值</value></data><data name="NumberRangeFilter_Title" xml:space="preserve"><value>篩選範圍</value></data><data name="Global_Change" xml:space="preserve"><value>更改</value></data><data name="NavigationBar_ForRequirement" xml:space="preserve"><value>需求</value></data><data name="Global_NoneDropDown" xml:space="preserve"><value>-- 無 --</value></data><data name="TreeView_AddItem" xml:space="preserve"><value>新增{0}</value></data><data name="TreeView_ChooseParentItem" xml:space="preserve"><value>請選擇要新增在哪一父節點 {0} 的下方</value></data><data name="TreeView_EditItem" xml:space="preserve"><value>編輯{0}</value></data><data name="TreeView_EnterName" xml:space="preserve"><value>請為此新{0}輸入名稱：</value></data><data name="TreeView_NeedToProvideItemName" xml:space="preserve"><value>您必須提供此新{0}的名稱！</value></data><data name="Global_Done" xml:space="preserve"><value>已完成</value></data><data name="TreeView_ConfirmDelete" xml:space="preserve"><value>請確認刪除此 {0}？</value></data><data name="TreeView_EditName" xml:space="preserve"><value>請編輯此{0}的名稱：</value></data><data name="TreeView_EditParentItem" xml:space="preserve"><value>請選擇此{0}的父節點：</value></data><data name="Messenger_SendMessage" xml:space="preserve"><value>寄送訊息</value></data><data name="Messenger_NeedToSelectComment" xml:space="preserve"><value>在張貼目前項目前，您必須選擇至少一個訊息。</value></data><data name="Messenger_PostAsComments" xml:space="preserve"><value>張貼為評論</value></data><data name="Messenger_PostAsCommentsSuccess" xml:space="preserve"><value>已成功張貼此項目的說明。</value></data><data name="ScreenshotCapture_BrowserNotSupported" xml:space="preserve"><value>您的瀏覽器不支援螢幕畫面擷取！</value></data><data name="ScreenshotCapture_Intro" xml:space="preserve"><value>請使用鍵盤CTRL+V貼上圖片。</value></data><data name="ScreenshotCapture_InvalidImageFormat" xml:space="preserve"><value>剪貼簿不包含合法的圖片！</value></data><data name="ArtifactLinkPanel_TaskIdNotValid" xml:space="preserve"><value>工作ID必須為整數值</value></data><data name="Admin_History_Processing3" xml:space="preserve"><value>清除項目中…</value></data><data name="Global_All" xml:space="preserve"><value>所有</value></data><data name="CommentList_PleaseEnterComment" xml:space="preserve"><value>請輸入說明並再次嘗試！</value></data><data name="TaskDetails_SplitTaskEffortNotInRange" xml:space="preserve"><value>工作的%值必須介於0~100%！</value></data><data name="TaskDetails_SplitTaskEffortNotInteger" xml:space="preserve"><value>工作的%值必須為整數值！</value></data><data name="TaskDetails_SplitTaskNameRequired" xml:space="preserve"><value>您必須為新工作輸入名稱</value></data></root>

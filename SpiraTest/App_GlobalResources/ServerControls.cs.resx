@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="CatalogZone_AddRemoveItems" xml:space="preserve">
+    <value>Přidat / Odstranit položky</value>
+  </data>
+	<data name="CatalogZone_AddVerbDescription" xml:space="preserve">
+    <value>Přidá nový Widget na Nástěnku</value>
+  </data>
+	<data name="CatalogZone_CloseVerbDescription" xml:space="preserve">
+    <value>Zavře toto dialogové okno</value>
+  </data>
+	<data name="CatalogZone_InstructionText" xml:space="preserve">
+    <value>Vyberte si položky, které chcete přidat:</value>
+  </data>
+	<data name="EditorZone_ApplyVerbDescription" xml:space="preserve">
+    <value>Uloží změny</value>
+  </data>
+	<data name="EditorZone_CancelVerbDescription" xml:space="preserve">
+    <value>Zruší změny a zavře editor</value>
+  </data>
+	<data name="EditorZone_CloseVerbDescription" xml:space="preserve">
+    <value>Zruší změny a zavře editor</value>
+  </data>
+	<data name="EditorZone_DashboardSettings" xml:space="preserve">
+    <value>Nastavení Nástěnky</value>
+  </data>
+	<data name="EditorZone_InstructionText" xml:space="preserve">
+    <value>Upravte vlastnosti Widgetu a klikněte na tlačítko OK nebo Použít pro uložení vašich změn</value>
+  </data>
+	<data name="EditorZone_OKVerbDescription" xml:space="preserve">
+    <value>Uloží změny a zavře editor</value>
+  </data>
+	<data name="IncidentReleaseType_DetectedRelease" xml:space="preserve">
+    <value>Nalezené v této verzi</value>
+  </data>
+	<data name="IncidentReleaseType_ResolvedRelease" xml:space="preserve">
+    <value>Vyřešené v této verzi</value>
+  </data>
+	<data name="IncidentReleaseType_VerifiedRelease" xml:space="preserve">
+    <value>Ověřené v této verzi</value>
+  </data>
+	<data name="RichTextBox_BorderThickness" xml:space="preserve">
+    <value>Tloušťka ohraničení</value>
+  </data>
+	<data name="RichTextBox_Cancel" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+	<data name="RichTextBox_CellPadding" xml:space="preserve">
+    <value>Vnitřní okraje buněk</value>
+  </data>
+	<data name="RichTextBox_CellSpacing" xml:space="preserve">
+    <value>Vzdálenost buněk</value>
+  </data>
+	<data name="RichTextBox_Columns" xml:space="preserve">
+    <value>Sloupce</value>
+  </data>
+	<data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>Vložit tabulku</value>
+  </data>
+	<data name="RichTextBox_Percent" xml:space="preserve">
+    <value>procent</value>
+  </data>
+	<data name="RichTextBox_Pixels" xml:space="preserve">
+    <value>pixelů</value>
+  </data>
+	<data name="RichTextBox_Rows" xml:space="preserve">
+    <value>Řádky</value>
+  </data>
+	<data name="RichTextBox_TableWidth" xml:space="preserve">
+    <value>Šířka tabulky</value>
+  </data>
+	<data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>Barva textu</value>
+  </data>
+	<data name="TabControl_Associations" xml:space="preserve">
+    <value>Propojení</value>
+  </data>
+	<data name="TabControl_Attachments" xml:space="preserve">
+    <value>Přílohy</value>
+  </data>
+	<data name="TabControl_Automation" xml:space="preserve">
+    <value>Automatizace</value>
+  </data>
+	<data name="TabControl_Comments" xml:space="preserve">
+    <value>Komentáře</value>
+  </data>
+	<data name="TabControl_CustomProperties" xml:space="preserve">
+    <value>Volitelné položky</value>
+  </data>
+	<data name="TabControl_History" xml:space="preserve">
+    <value>Historie</value>
+  </data>
+	<data name="TabControl_IncidentAssociations" xml:space="preserve">
+    <value>Propojení Incidentů</value>
+  </data>
+	<data name="TabControl_Incidents" xml:space="preserve">
+    <value>Incidenty</value>
+  </data>
+	<data name="TabControl_Releases" xml:space="preserve">
+    <value>Verze</value>
+  </data>
+	<data name="TabControl_ReqCoverage" xml:space="preserve">
+    <value>Pokrytí pož.</value>
+  </data>
+	<data name="TabControl_ReqsTasks" xml:space="preserve">
+    <value>Požadavky a Úkoly</value>
+  </data>
+	<data name="TabControl_Tasks" xml:space="preserve">
+    <value>Úkoly</value>
+  </data>
+	<data name="TabControl_TestCases" xml:space="preserve">
+    <value>Testovací případy</value>
+  </data>
+	<data name="TabControl_TestCoverage" xml:space="preserve">
+    <value>Pokrytí testy</value>
+  </data>
+	<data name="TabControl_TestRuns" xml:space="preserve">
+    <value>Běhy testů</value>
+  </data>
+	<data name="TabControl_TestRunSteps" xml:space="preserve">
+    <value>Kroky v běhu testu</value>
+  </data>
+	<data name="TabControl_TestSteps" xml:space="preserve">
+    <value>Kroky testu</value>
+  </data>
+	<data name="WebPartChrome_ChangeSettings" xml:space="preserve">
+    <value>Změnit nastavení</value>
+  </data>
+	<data name="WebPartChrome_CloseWidget" xml:space="preserve">
+    <value>Zavřít Widget</value>
+  </data>
+	<data name="WebPartChrome_MinimizeWidget" xml:space="preserve">
+    <value>Minimalizovat Widget</value>
+  </data>
+	<data name="WebPartChrome_RestoreWidget" xml:space="preserve">
+    <value>Obnovit Widget</value>
+  </data>
+	<data name="WebPartZone_LeftSide" xml:space="preserve">
+    <value>Vlevo</value>
+  </data>
+	<data name="WebPartZone_RightSide" xml:space="preserve">
+    <value>Vpravo</value>
+  </data>
+	<data name="TabControl_Schedule" xml:space="preserve">
+    <value>Rozvrh</value>
+  </data>
+	<data name="TabControl_TestSets" xml:space="preserve">
+    <value>Testovací sady</value>
+  </data>
+	<data name="TabControl_Files" xml:space="preserve">
+    <value>Soubory</value>
+  </data>
+	<data name="TabControl_Revisions" xml:space="preserve">
+    <value>Revize</value>
+  </data>
+	<data name="TabControl_Versions" xml:space="preserve">
+    <value>Verze</value>
+  </data>
+	<data name="TagCloud_DefaultFormat" xml:space="preserve">
+    <value>%k nastalo %c krát</value>
+  </data>
+	<data name="TagCloud_Error" xml:space="preserve">
+    <value>Chyba při vytváření cloudu</value>
+  </data>
+	<data name="TagCloud_NoValues" xml:space="preserve">
+    <value>Nejsou hodnoty pro vytvoření cloudu</value>
+  </data>
+	<data name="WebPartZone_SideBar" xml:space="preserve">
+    <value>Postranní pruh</value>
+  </data>
+	<data name="WebPartZone_Top" xml:space="preserve">
+    <value>Nahoru</value>
+  </data>
+	<data name="PlanningBoard_Resource" xml:space="preserve">
+    <value>Zdroj:</value>
+  </data>
+	<data name="TabControl_Builds" xml:space="preserve">
+    <value>Buildy</value>
+  </data>
+	<data name="TabControl_Builds" xml:space="preserve">
+    <value>Builds</value>
+  </data>
+	<data name="TabControl_Builds" xml:space="preserve">
+    <value>Sestavení</value>
+  </data>
+	<data name="CatalogZone_SelectTargetZoneText" xml:space="preserve">Přidat do</data><data name="TabControl_Overview" xml:space="preserve">Přehled</data><data name="TabControl_Description" xml:space="preserve">Popis</data><data name="TabControl_Details" xml:space="preserve">Podrobnosti</data><data name="TimeExtender_SelectCurrentTime" xml:space="preserve">Kliknutím vyberte aktuální čas.</data><data name="TabControl_Console" xml:space="preserve">Výstup do konzole</data><data name="CatalogZone_SelectTargetZoneText" xml:space="preserve"><value>Přidat do</value></data><data name="TabControl_Overview" xml:space="preserve"><value>Přehled</value></data><data name="TabControl_Description" xml:space="preserve"><value>Popis</value></data><data name="TabControl_Details" xml:space="preserve"><value>Podrobnosti</value></data><data name="TimeExtender_SelectCurrentTime" xml:space="preserve"><value>Kliknutím vyberte aktuální čas.</value></data><data name="TabControl_Console" xml:space="preserve"><value>Výstup do konzole</value></data><data name="GridViewEx_SortByAscending" xml:space="preserve"><value>Seřadit vzestupně</value></data><data name="GridViewEx_SortByDescending" xml:space="preserve"><value>Seřadit sestupně</value></data><data name="GridViewEx_SortByFieldAscending" xml:space="preserve"><value>Seřadit podle {0} vzestupně</value></data><data name="GridViewEx_SortByFieldDescending" xml:space="preserve"><value>Seřadit podle {0} sestupně</value></data><data name="TabControl_ProjectList" xml:space="preserve"><value>Seznam produktů</value></data><data name="TabControl_UserMembership" xml:space="preserve"><value>Členství uživatelů</value></data><data name="TabControl_ChangeActions" xml:space="preserve"><value>Změnit akce</value></data><data name="TabControl_Scenario" xml:space="preserve"><value>Scénář</value></data><data name="PlanningBoard_ByComponent" xml:space="preserve"><value>Podle Komponenty</value></data><data name="PlanningBoard_ByIteration" xml:space="preserve"><value>Podle Sprintu</value></data><data name="PlanningBoard_ByPackage" xml:space="preserve"><value>Podle Požadavku</value></data><data name="PlanningBoard_ByPerson" xml:space="preserve"><value>Podle Osoby</value></data><data name="PlanningBoard_ByPriority" xml:space="preserve"><value>Podle Priority</value></data><data name="PlanningBoard_ByRelease" xml:space="preserve"><value>Podle Verze</value></data><data name="PlanningBoard_TasksByPerson" xml:space="preserve"><value>Úkoly podle Osob</value></data><data name="PlanningBoard_ByStatus" xml:space="preserve"><value>Podle Stavu</value></data><data name="TabControl_Preview" xml:space="preserve"><value>Náhled</value></data><data name="TabControl_ExistingIncidents" xml:space="preserve"><value>Stávající Incidenty</value></data><data name="TabControl_NewIncident" xml:space="preserve"><value>Nový Incident</value></data><data name="PlanningBoard_TasksByStatus" xml:space="preserve"><value>Úkoly podle stavu</value></data><data name="TabControl_Requirements" xml:space="preserve"><value>Požadavky</value></data><data name="TabControl_Parameters" xml:space="preserve"><value>Parametry</value></data><data name="GridViewEx_DisplayingPage" xml:space="preserve"><value>Zobrazuji stránku</value></data><data name="GridViewEx_RowsPerPage" xml:space="preserve"><value>řádů na stránku</value></data><data name="PlanningBoard_ByProject" xml:space="preserve"><value>Podle Produktu</value></data><data name="TabControl_TestConfigurationEntries" xml:space="preserve"><value>Položky testovací konfigurace</value></data><data name="TabControl_Mitigations" xml:space="preserve"><value>Zmírnění</value></data><data name="PlanningBoard_ByRequirement" xml:space="preserve"><value>Podle Požadavku</value></data><data name="WebPartZone_Bottom" xml:space="preserve"><value>Dolů</value></data><data name="TabControl_ProgramList" xml:space="preserve"><value>Programy</value></data><data name="TabControl_Baselines" xml:space="preserve"><value>Základní úrovně</value></data></root>

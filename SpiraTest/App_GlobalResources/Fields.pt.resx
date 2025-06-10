@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="AuthorId" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+	<data name="Blocked" xml:space="preserve">
+    <value>Bloqueado</value>
+  </data>
+	<data name="Caution" xml:space="preserve">
+    <value>Atenção</value>
+  </data>
+	<data name="Comments" xml:space="preserve">
+    <value>Comentários</value>
+  </data>
+	<data name="Coverage" xml:space="preserve">
+    <value>Cobertura</value>
+  </data>
+	<data name="CoverageId" xml:space="preserve">
+    <value>Cobertura do teste</value>
+  </data>
+	<data name="CreationDate" xml:space="preserve">
+    <value>Data da Criação</value>
+  </data>
+	<data name="DateOpened" xml:space="preserve">
+    <value>Data da Abertura</value>
+  </data>
+	<data name="Description" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+	<data name="DueDate" xml:space="preserve">
+    <value>Data de Vencimento</value>
+  </data>
+	<data name="EmailAddress" xml:space="preserve">
+    <value>Endereço de e-mail</value>
+  </data>
+	<data name="EndDate" xml:space="preserve">
+    <value>Data de Encerramento</value>
+  </data>
+	<data name="Est" xml:space="preserve">
+    <value>Est.</value>
+  </data>
+	<data name="ExecutionStatus" xml:space="preserve">
+    <value>Status da Execução</value>
+  </data>
+	<data name="Failed" xml:space="preserve">
+    <value>Reprovado</value>
+  </data>
+	<data name="FirstName" xml:space="preserve">
+    <value>Primeiro Nome</value>
+  </data>
+	<data name="Group" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+	<data name="Importance" xml:space="preserve">
+    <value>Importância</value>
+  </data>
+	<data name="ImportanceId" xml:space="preserve">
+    <value>Importância</value>
+  </data>
+	<data name="Iteration" xml:space="preserve">
+    <value>Iteração</value>
+  </data>
+	<data name="LastExecuted" xml:space="preserve">
+    <value>Última Execução</value>
+  </data>
+	<data name="LastName" xml:space="preserve">
+    <value>Último Nome</value>
+  </data>
+	<data name="LastUpdated" xml:space="preserve">
+    <value>Última Atualização</value>
+  </data>
+	<data name="LastUpdateDate" xml:space="preserve">
+    <value>Última Atualização</value>
+  </data>
+	<data name="MiddleInitial" xml:space="preserve">
+    <value>Inicial do Meio</value>
+  </data>
+	<data name="Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+	<data name="None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+	<data name="NotRun" xml:space="preserve">
+    <value>Não Executado</value>
+  </data>
+	<data name="NumberOpen" xml:space="preserve">
+    <value>Nº Aberto</value>
+  </data>
+	<data name="Open" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+	<data name="OpenByPriority" xml:space="preserve">
+    <value>Abrir por Prioridade</value>
+  </data>
+	<data name="OwnedBy" xml:space="preserve">
+    <value>Propriedade de</value>
+  </data>
+	<data name="Owner" xml:space="preserve">
+    <value>Proprietário</value>
+  </data>
+	<data name="OwnerId" xml:space="preserve">
+    <value>Proprietário</value>
+  </data>
+	<data name="Owner_s_" xml:space="preserve">
+    <value>Proprietário(s)</value>
+  </data>
+	<data name="Passed" xml:space="preserve">
+    <value>Aprovado</value>
+  </data>
+	<data name="PlannedEffort" xml:space="preserve">
+    <value>Esforço Planejado</value>
+  </data>
+	<data name="Priority" xml:space="preserve">
+    <value>Prioridade</value>
+  </data>
+	<data name="Progress" xml:space="preserve">
+    <value>Progresso</value>
+  </data>
+	<data name="ProgressId" xml:space="preserve">
+    <value>Progresso</value>
+  </data>
+	<data name="Proj" xml:space="preserve">
+    <value>Proj.</value>
+  </data>
+	<data name="Project" xml:space="preserve">
+    <value>Projeto</value>
+  </data>
+	<data name="ProjectGroup" xml:space="preserve">
+    <value>Grupo do Projeto</value>
+  </data>
+	<data name="ProjectName" xml:space="preserve">
+    <value>Nome do Projeto</value>
+  </data>
+	<data name="Release" xml:space="preserve">
+    <value>Release</value>
+  </data>
+	<data name="ReleaseId" xml:space="preserve">
+    <value>Release</value>
+  </data>
+	<data name="RequirementId" xml:space="preserve">
+    <value>Requerimento nº</value>
+  </data>
+	<data name="RequirementName" xml:space="preserve">
+    <value>Nome do Requerimento</value>
+  </data>
+	<data name="Requirement_ImportanceCritical" xml:space="preserve">
+    <value>1 - Crítico</value>
+  </data>
+	<data name="Requirement_ImportanceHigh" xml:space="preserve">
+    <value>2 - Alto</value>
+  </data>
+	<data name="Requirement_ImportanceLow" xml:space="preserve">
+    <value>4 - Baixo</value>
+  </data>
+	<data name="Requirement_ImportanceMedium" xml:space="preserve">
+    <value>3 - Médio</value>
+  </data>
+	<data name="Role" xml:space="preserve">
+    <value>Função</value>
+  </data>
+	<data name="ScopeLevelId" xml:space="preserve">
+    <value>Status</value>
+  </data>
+	<data name="Severity" xml:space="preserve">
+    <value>Gravidade</value>
+  </data>
+	<data name="StartDate" xml:space="preserve">
+    <value>Data de Início</value>
+  </data>
+	<data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+	<data name="TaskActualEffort" xml:space="preserve">
+    <value>Esforço Real</value>
+  </data>
+	<data name="TaskEstimatedEffort" xml:space="preserve">
+    <value>Esforço da Tarefa</value>
+  </data>
+	<data name="TaskProgress" xml:space="preserve">
+    <value>Andamento da Tarefa</value>
+  </data>
+	<data name="TaskProjectedEffort" xml:space="preserve">
+    <value>Esforço Projetado</value>
+  </data>
+	<data name="TaskRemainingEffort" xml:space="preserve">
+    <value>Esforço Restante</value>
+  </data>
+	<data name="Tasks" xml:space="preserve">
+    <value>Tarefas</value>
+  </data>
+	<data name="Tests" xml:space="preserve">
+    <value>Testes</value>
+  </data>
+	<data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+	<data name="TotalCaps" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+	<data name="Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+	<data name="WebSite" xml:space="preserve">
+    <value>Página Web</value>
+  </data>
+	<data name="ReqId" xml:space="preserve">
+    <value>Req nº</value>
+  </data>
+	<data name="CoveringTests" xml:space="preserve">
+    <value>Testes Cobertos</value>
+  </data>
+	<data name="NotCovered" xml:space="preserve">
+    <value>Sem Cobertura</value>
+  </data>
+	<data name="ActiveYn" xml:space="preserve">
+    <value>Ativo</value>
+  </data>
+	<data name="ActualDuration" xml:space="preserve">
+    <value>Dur. Atual</value>
+  </data>
+	<data name="AvailableEffort" xml:space="preserve">
+    <value>Esforço Disponível</value>
+  </data>
+	<data name="CreatorId" xml:space="preserve">
+    <value>Criador</value>
+  </data>
+	<data name="DaysNonWorking" xml:space="preserve">
+    <value>Nº de dias não úteis</value>
+  </data>
+	<data name="Hours" xml:space="preserve">
+    <value>horas</value>
+  </data>
+	<data name="IterationYn" xml:space="preserve">
+    <value>Iteração?</value>
+  </data>
+	<data name="Minutes" xml:space="preserve">
+    <value>minutos</value>
+  </data>
+	<data name="No" xml:space="preserve">
+    <value>Não</value>
+  </data>
+	<data name="ReleaseName" xml:space="preserve">
+    <value>Nome do Release</value>
+  </data>
+	<data name="ResourceCount" xml:space="preserve">
+    <value>Nº de Recursos</value>
+  </data>
+	<data name="VersionNumber" xml:space="preserve">
+    <value>Versão nº</value>
+  </data>
+	<data name="Yes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+	<data name="AutomationHostId" xml:space="preserve">
+    <value>Host de Automação</value>
+  </data>
+	<data name="EstimatedDuration" xml:space="preserve">
+    <value>Dur. Est.</value>
+  </data>
+	<data name="ExecutionDate" xml:space="preserve">
+    <value>Última Execução</value>
+  </data>
+	<data name="ExecutionStatusId" xml:space="preserve">
+    <value>Status da Execução</value>
+  </data>
+	<data name="NA" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+	<data name="NoTests" xml:space="preserve">
+    <value>Nenhum Teste</value>
+  </data>
+	<data name="PlannedDate" xml:space="preserve">
+    <value>Data Planejada</value>
+  </data>
+	<data name="RunnerName" xml:space="preserve">
+    <value>Nome do Executador</value>
+  </data>
+	<data name="TesterId" xml:space="preserve">
+    <value>Testador</value>
+  </data>
+	<data name="TestRunId" xml:space="preserve">
+    <value>Execução de teste nº</value>
+  </data>
+	<data name="TestRunTypeId" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+	<data name="TestSetId" xml:space="preserve">
+    <value>Conjunto de Teste</value>
+  </data>
+	<data name="TestSetName" xml:space="preserve">
+    <value>Nome do Conjunto de Teste</value>
+  </data>
+	<data name="AutomationEngineId" xml:space="preserve">
+    <value>Mecanismo de Automação</value>
+  </data>
+	<data name="TestCaseId" xml:space="preserve">
+    <value>Teste nº</value>
+  </data>
+	<data name="TestCasePriorityId" xml:space="preserve">
+    <value>Prioridade</value>
+  </data>
+	<data name="ActualEffort" xml:space="preserve">
+    <value>Esforço Real</value>
+  </data>
+	<data name="ClosedDate" xml:space="preserve">
+    <value>Encerrado em</value>
+  </data>
+	<data name="CompletionPercent" xml:space="preserve">
+    <value>% Concluído</value>
+  </data>
+	<data name="DetectedReleaseId" xml:space="preserve">
+    <value>Detectado no Release</value>
+  </data>
+	<data name="EstimatedEffort" xml:space="preserve">
+    <value>Esforço Est.</value>
+  </data>
+	<data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+	<data name="Incident" xml:space="preserve">
+    <value>Incidente</value>
+  </data>
+	<data name="IncidentEffort" xml:space="preserve">
+    <value>Esforço do incidente</value>
+  </data>
+	<data name="IncidentId" xml:space="preserve">
+    <value>Incidente nº</value>
+  </data>
+	<data name="IncidentName" xml:space="preserve">
+    <value>Nome do Incidente</value>
+  </data>
+	<data name="IncidentStatusId" xml:space="preserve">
+    <value>Status</value>
+  </data>
+	<data name="IncidentTypeId" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+	<data name="OpenerId" xml:space="preserve">
+    <value>Detectado por</value>
+  </data>
+	<data name="PriorityId" xml:space="preserve">
+    <value>Prioridade</value>
+  </data>
+	<data name="ProjectedEffort" xml:space="preserve">
+    <value>Esforço Projetado</value>
+  </data>
+	<data name="RemainingEffort" xml:space="preserve">
+    <value>Esforço Restante</value>
+  </data>
+	<data name="Requirement" xml:space="preserve">
+    <value>Requerimento</value>
+  </data>
+	<data name="RequirementTaskName" xml:space="preserve">
+    <value>Requerimento/Nome da Tarefa</value>
+  </data>
+	<data name="Resolution" xml:space="preserve">
+    <value>Comentários</value>
+  </data>
+	<data name="ResolvedReleaseId" xml:space="preserve">
+    <value>Release Resolvido</value>
+  </data>
+	<data name="ResourceName" xml:space="preserve">
+    <value>Nome do Recurso</value>
+  </data>
+	<data name="SeverityId" xml:space="preserve">
+    <value>Gravidade</value>
+  </data>
+	<data name="Task" xml:space="preserve">
+    <value>Tarefa</value>
+  </data>
+	<data name="TaskEffort" xml:space="preserve">
+    <value>Esforço da tarefa</value>
+  </data>
+	<data name="TaskId" xml:space="preserve">
+    <value>Tarefa nº</value>
+  </data>
+	<data name="TaskName" xml:space="preserve">
+    <value>Nome da Tarefa</value>
+  </data>
+	<data name="TaskPriorityId" xml:space="preserve">
+    <value>Prioridade</value>
+  </data>
+	<data name="TaskStatusId" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+	<data name="TestCaseName" xml:space="preserve">
+    <value>Nome do Caso de Teste</value>
+  </data>
+	<data name="TestRunName" xml:space="preserve">
+    <value>Nome da Execução de Teste</value>
+  </data>
+	<data name="Token" xml:space="preserve">
+    <value>Token</value>
+  </data>
+	<data name="TotalEffort" xml:space="preserve">
+    <value>Esforço Total</value>
+  </data>
+	<data name="VerifiedReleaseId" xml:space="preserve">
+    <value>Release Verificado</value>
+  </data>
+	<data name="ChangeDate" xml:space="preserve">
+    <value>Data da Alteração</value>
+  </data>
+	<data name="ChangerId" xml:space="preserve">
+    <value>Alterado por</value>
+  </data>
+	<data name="FieldName" xml:space="preserve">
+    <value>Nome do Campo</value>
+  </data>
+	<data name="NewValue" xml:space="preserve">
+    <value>Novo Valor</value>
+  </data>
+	<data name="OldValue" xml:space="preserve">
+    <value>Valor Antigo</value>
+  </data>
+	<data name="ArtifactName" xml:space="preserve">
+    <value>Nome do Artefato</value>
+  </data>
+	<data name="ArtifactTypeId" xml:space="preserve">
+    <value>Tipo de Artefato</value>
+  </data>
+	<data name="Comment" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+	<data name="DocumentFolder" xml:space="preserve">
+    <value>Pasta de Documentos</value>
+  </data>
+	<data name="DocumentName" xml:space="preserve">
+    <value>Nome do Documento</value>
+  </data>
+	<data name="DocumentType" xml:space="preserve">
+    <value>Tipo de Documento</value>
+  </data>
+	<data name="EditedDate" xml:space="preserve">
+    <value>Editado em</value>
+  </data>
+	<data name="EditorId" xml:space="preserve">
+    <value>Editado por</value>
+  </data>
+	<data name="File" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+	<data name="Filename" xml:space="preserve">
+    <value>Nome de arquivo</value>
+  </data>
+	<data name="Screenshot" xml:space="preserve">
+    <value>Captura de Tela</value>
+  </data>
+	<data name="Size" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+	<data name="Tags" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+	<data name="TestCase" xml:space="preserve">
+    <value>Caso de Teste</value>
+  </data>
+	<data name="TestStep" xml:space="preserve">
+    <value>Etapa de teste</value>
+  </data>
+	<data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+	<data name="DefaultValue" xml:space="preserve">
+    <value>Valor Padrão</value>
+  </data>
+	<data name="Folder" xml:space="preserve">
+    <value>Pasta</value>
+  </data>
+	<data name="NonWorking" xml:space="preserve">
+    <value>Não-útil</value>
+  </data>
+	<data name="NumberResources" xml:space="preserve">
+    <value>Nº de recursos</value>
+  </data>
+	<data name="Operations" xml:space="preserve">
+    <value>Operações</value>
+  </data>
+	<data name="ScriptType" xml:space="preserve">
+    <value>Tipo de script</value>
+  </data>
+	<data name="StartEndDate" xml:space="preserve">
+    <value>Data de Início/Fim</value>
+  </data>
+	<data name="TestScript" xml:space="preserve">
+    <value>Script de teste</value>
+  </data>
+	<data name="TestScript_Attached" xml:space="preserve">
+    <value>Anexado</value>
+  </data>
+	<data name="TestScript_Linked" xml:space="preserve">
+    <value>Relacionado</value>
+  </data>
+	<data name="Version" xml:space="preserve">
+    <value>Versão</value>
+  </data>
+	<data name="ActualResult" xml:space="preserve">
+    <value>Resultado Real</value>
+  </data>
+	<data name="ExpectedResult" xml:space="preserve">
+    <value>Resultado Esperado</value>
+  </data>
+	<data name="SampleData" xml:space="preserve">
+    <value>Dados de Amostra</value>
+  </data>
+	<data name="Step" xml:space="preserve">
+    <value>Etapa</value>
+  </data>
+	<data name="TestStepDescription" xml:space="preserve">
+    <value>Descrição da Etapa de Teste</value>
+  </data>
+	<data name="TestStepPosition" xml:space="preserve">
+    <value>Etapa nº</value>
+  </data>
+	<data name="TestSet" xml:space="preserve">
+    <value>Conjunto de Testes</value>
+  </data>
+	<data name="AssertCount" xml:space="preserve">
+    <value>Contador de Asserção</value>
+  </data>
+	<data name="HostName" xml:space="preserve">
+    <value>Nome do Host</value>
+  </data>
+	<data name="RunnerDetails" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+	<data name="RunnerMessage" xml:space="preserve">
+    <value>Mensagem</value>
+  </data>
+	<data name="RunnerTestName" xml:space="preserve">
+    <value>Nome do Teste</value>
+  </data>
+	<data name="ReleaseIteration" xml:space="preserve">
+    <value>Release/Iteração</value>
+  </data>
+	<data name="Department" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+	<data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+	<data name="ProjectRole" xml:space="preserve">
+    <value>Função de Projeto</value>
+  </data>
+	<data name="TestSetStatusId" xml:space="preserve">
+    <value>Status</value>
+  </data>
+	<data name="Action" xml:space="preserve">
+    <value>Ação</value>
+  </data>
+	<data name="LastEdited" xml:space="preserve">
+    <value>Última Edição</value>
+  </data>
+	<data name="LatestRevision" xml:space="preserve">
+    <value>Última Revisão</value>
+  </data>
+	<data name="Revision" xml:space="preserve">
+    <value>Revisão</value>
+  </data>
+	<data name="CommitDate" xml:space="preserve">
+    <value>Data do Commit</value>
+  </data>
+	<data name="ContentChanged" xml:space="preserve">
+    <value>Conteúdo Δ</value>
+  </data>
+	<data name="Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+	<data name="FilePath" xml:space="preserve">
+    <value>Caminho do Arquivo</value>
+  </data>
+	<data name="FileType" xml:space="preserve">
+    <value>Tipo de Arquivo</value>
+  </data>
+	<data name="Format" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+	<data name="IncidentStatus_AllClosed" xml:space="preserve">
+    <value>(Todos os Fechados)</value>
+  </data>
+	<data name="IncidentStatus_AllOpen" xml:space="preserve">
+    <value>(Todos os Abertos)</value>
+  </data>
+	<data name="IncidentType_AllIssues" xml:space="preserve">
+    <value>(Todos os Problemas)</value>
+  </data>
+	<data name="IncidentType_AllRisks" xml:space="preserve">
+    <value>(Todos os Riscos)</value>
+  </data>
+	<data name="Notes" xml:space="preserve">
+    <value>Notas</value>
+  </data>
+	<data name="PropertiesChanged" xml:space="preserve">
+    <value>Propriedades Δ</value>
+  </data>
+	<data name="ReportName" xml:space="preserve">
+    <value>Nome do Relatório</value>
+  </data>
+	<data name="SortField" xml:space="preserve">
+    <value>Ordenar</value>
+  </data>
+	<data name="Summary" xml:space="preserve">
+    <value>Resumo</value>
+  </data>
+	<data name="Document" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+	<data name="ArtifactId" xml:space="preserve">
+    <value>ID do Artefato</value>
+  </data>
+	<data name="AutomationHost" xml:space="preserve">
+    <value>Host de Automação</value>
+  </data>
+	<data name="CurrentVersion" xml:space="preserve">
+    <value>Versão Atual</value>
+  </data>
+	<data name="HTMLLink" xml:space="preserve">
+    <value>Link HTML</value>
+  </data>
+	<data name="TestRun" xml:space="preserve">
+    <value>Execução de Teste</value>
+  </data>
+	<data name="UploadDate" xml:space="preserve">
+    <value>Data do Upload</value>
+  </data>
+	<data name="VersionComments" xml:space="preserve">
+    <value>Comentários da Versão</value>
+  </data>
+	<data name="ChangeType" xml:space="preserve">
+    <value>Alterar Tipo</value>
+  </data>
+	<data name="Allocation" xml:space="preserve">
+    <value>Alocação</value>
+  </data>
+	<data name="AdditionalEffort" xml:space="preserve">
+    <value>Esforço Adicional</value>
+  </data>
+	<data name="EffortToDate" xml:space="preserve">
+    <value>Esforço até a Data</value>
+  </data>
+	<data name="Permission_Add" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+	<data name="Permission_Create" xml:space="preserve">
+    <value>Criar</value>
+  </data>
+	<data name="Permission_Delete" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+	<data name="Permission_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+	<data name="Permission_Modify" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+	<data name="Permission_View" xml:space="preserve">
+    <value>Exibir</value>
+  </data>
+	<data name="ProjectAdmin" xml:space="preserve">
+    <value>Admin. do Projeto</value>
+  </data>
+	<data name="RoleName" xml:space="preserve">
+    <value>Nome da Função</value>
+  </data>
+	<data name="SourceCode" xml:space="preserve">
+    <value>Código Fonte</value>
+  </data>
+	<data name="BuildName" xml:space="preserve">
+    <value>Nome da Compilação</value>
+  </data>
+	<data name="BuildStatusId" xml:space="preserve">
+    <value>Status</value>
+  </data>
+	<data name="Build" xml:space="preserve">
+    <value>Compilação</value>
+  </data>
+	<data name="BuildId" xml:space="preserve">
+    <value>Compilação</value>
+  </data>
+	<data name="FixedBuild" xml:space="preserve">
+    <value>Compilação Fixa</value>
+  </data>
+	<data name="Actions" xml:space="preserve">
+    <value>Ações</value>
+  </data>
+	<data name="Succeeded" xml:space="preserve">
+    <value>Sucedido</value>
+  </data>
+	<data name="Answer" xml:space="preserve">
+    <value>Responder</value>
+  </data>
+	<data name="NewPassword" xml:space="preserve">
+    <value>Nova Senha</value>
+  </data>
+	<data name="OldPassword" xml:space="preserve">
+    <value>Senha Antiga</value>
+  </data>
+	<data name="Password" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+	<data name="PasswordAnswer" xml:space="preserve">
+    <value>Resposta Secreta</value>
+  </data>
+	<data name="PasswordQuestion" xml:space="preserve">
+    <value>Pergunta Secreta</value>
+  </data>
+	<data name="Question" xml:space="preserve">
+    <value>Pergunta</value>
+  </data>
+	<data name="UserName" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+	<data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirmar Senha</value>
+  </data>
+	<data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+	<data name="EmailEnabled" xml:space="preserve">
+    <value>E-mail ?</value>
+  </data>
+	<data name="UserId" xml:space="preserve">
+    <value>Usuário nº</value>
+  </data>
+	<data name="EmailEnabledYn" xml:space="preserve">
+    <value>E-mail Ativado</value>
+  </data>
+	<data name="SystemAdministrator" xml:space="preserve">
+    <value>Administrador do Sistema</value>
+  </data>
+	<data name="CommonName" xml:space="preserve">
+    <value>Nome Comum</value>
+  </data>
+	<data name="DistinguishedName" xml:space="preserve">
+    <value>Nome Distinto</value>
+  </data>
+	<data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+	<data name="Category" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+	<data name="EventCode" xml:space="preserve">
+    <value>Código do Evento</value>
+  </data>
+	<data name="EventTime" xml:space="preserve">
+    <value>Horário do Evento</value>
+  </data>
+	<data name="Exception" xml:space="preserve">
+    <value>Exceção</value>
+  </data>
+	<data name="Message" xml:space="preserve">
+    <value>Mensagem</value>
+  </data>
+	<data name="CustomProperty_FieldNumber" xml:space="preserve">
+    <value>Campo nº</value>
+  </data>
+	<data name="CustomProperty_LegacyName" xml:space="preserve">
+    <value>Nome Herança</value>
+  </data>
+	<data name="CustomProperty_PropertyName" xml:space="preserve">
+    <value>Nome da Propriedade</value>
+  </data>
+	<data name="Disabled" xml:space="preserve">
+    <value>Desativado</value>
+  </data>
+	<data name="general_isactive" xml:space="preserve">
+    <value>Ativo</value>
+  </data>
+	<data name="general_isdefault" xml:space="preserve">
+    <value>Padrão</value>
+  </data>
+	<data name="general_notify" xml:space="preserve">
+    <value>Notificar</value>
+  </data>
+	<data name="general_operations" xml:space="preserve">
+    <value>Operações</value>
+  </data>
+	<data name="Hidden" xml:space="preserve">
+    <value>Oculto</value>
+  </data>
+	<data name="Required" xml:space="preserve">
+    <value>Obrigatório</value>
+  </data>
+	<data name="Subject" xml:space="preserve">
+    <value>Assunto da Notificação</value>
+  </data>
+	<data name="Workflow" xml:space="preserve">
+    <value>Fluxo de Trabalho</value>
+  </data>
+	<data name="workflow_id" xml:space="preserve">
+    <value>Fluxo de Trabalho nº</value>
+  </data>
+	<data name="workflow_name" xml:space="preserve">
+    <value>Nome do Fluxo de Trabalho</value>
+  </data>
+	<data name="workflow_step_name" xml:space="preserve">
+    <value>Nome da Etapa</value>
+  </data>
+	<data name="workflow_transitions" xml:space="preserve">
+    <value>Transições</value>
+  </data>
+	<data name="ReleaseVersionNumber" xml:space="preserve">
+    <value>Release nº</value>
+  </data>
+	<data name="Report" xml:space="preserve">
+    <value>Relatório</value>
+  </data>
+	<data name="Default" xml:space="preserve">
+    <value>Padrão</value>
+  </data>
+	<data name="Footer" xml:space="preserve">
+    <value>Rodapé</value>
+  </data>
+	<data name="Formats" xml:space="preserve">
+    <value>Formatos</value>
+  </data>
+	<data name="Header" xml:space="preserve">
+    <value>Cabeçalho</value>
+  </data>
+	<data name="Query" xml:space="preserve">
+    <value>Consulta</value>
+  </data>
+	<data name="Template" xml:space="preserve">
+    <value>Modelo</value>
+  </data>
+	<data name="Image" xml:space="preserve">
+    <value>Imagem</value>
+  </data>
+	<data name="LockedOut" xml:space="preserve">
+    <value>Bloqueado</value>
+  </data>
+	<data name="Issue" xml:space="preserve">
+    <value>Incidente</value>
+  </data>
+	<data name="Risk" xml:space="preserve">
+    <value>Risco</value>
+  </data>
+	<data name="Color" xml:space="preserve">
+    <value>Cor</value>
+  </data>
+	<data name="FullName" xml:space="preserve">
+    <value>Nome Completo</value>
+  </data>
+	<data name="ProductType" xml:space="preserve">
+    <value>Tipo de Produto</value>
+  </data>
+	<data name="ProjectGroupName" xml:space="preserve">
+    <value>Nome do Grupo do Projeto</value>
+  </data>
+	<data name="ProjectGroupRole" xml:space="preserve">
+    <value>Função do Grupo do Projeto</value>
+  </data>
+	<data name="Artifact" xml:space="preserve">
+    <value>Artefato</value>
+  </data>
+	<data name="FieldSet" xml:space="preserve">
+    <value>Conjunto de Campos</value>
+  </data>
+	<data name="Configuration" xml:space="preserve">
+    <value>Configuração</value>
+  </data>
+	<data name="ConnectionInfo" xml:space="preserve">
+    <value>Informações de Conexão</value>
+  </data>
+	<data name="Domain" xml:space="preserve">
+    <value>Domínio</value>
+  </data>
+	<data name="ExternalKey" xml:space="preserve">
+    <value>Chave Externa</value>
+  </data>
+	<data name="Field" xml:space="preserve">
+    <value>Campo</value>
+  </data>
+	<data name="FieldValue" xml:space="preserve">
+    <value>Valor do Campo</value>
+  </data>
+	<data name="FolderName" xml:space="preserve">
+    <value>Nome da Pasta</value>
+  </data>
+	<data name="Interface" xml:space="preserve">
+    <value>Interface</value>
+  </data>
+	<data name="LastLogon" xml:space="preserve">
+    <value>Última Entrada</value>
+  </data>
+	<data name="LastSyncDate" xml:space="preserve">
+    <value>Última Sincronização</value>
+  </data>
+	<data name="ParentFolder" xml:space="preserve">
+    <value>Pasta Superior</value>
+  </data>
+	<data name="Primary" xml:space="preserve">
+    <value>Primário</value>
+  </data>
+	<data name="ProjectSettings" xml:space="preserve">
+    <value>Configurações do Projeto</value>
+  </data>
+	<data name="Provider" xml:space="preserve">
+    <value>Provedor</value>
+  </data>
+	<data name="SessionId" xml:space="preserve">
+    <value>ID da Sessão</value>
+  </data>
+	<data name="RequirementStatusId" xml:space="preserve">
+    <value>Status</value>
+  </data>
+	<data name="ComponentId" xml:space="preserve">
+    <value>Componente</value>
+  </data>
+	<data name="RequirementTypeId" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+	<data name="UseCase" xml:space="preserve">
+    <value>Caso de Uso</value>
+  </data>
+	<data name="Estimate" xml:space="preserve">
+    <value>Estimado</value>
+  </data>
+	<data name="TaskTypeId" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+	<data name="Online" xml:space="preserve">
+    <value>Online</value>
+  </data>
+	<data name="User" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+	<data name="ProjectId" xml:space="preserve">
+    <value>Identificação do Projeto</value>
+  </data>
+	<data name="ProjectActive" xml:space="preserve">
+    <value>Projeto Ativo</value>
+  </data>
+	<data name="MiddleInitialAbbreviation" xml:space="preserve"><value>Inic.</value></data>
+	<data name="Headline" xml:space="preserve"><value>Título</value></data>
+	<data name="PublishDate" xml:space="preserve"><value>Data de Publicação</value></data>
+	<data name="workflow_status_id" xml:space="preserve"><value>Status&amp;nbsp;#</value></data>
+	<data name="RequirementStepId" xml:space="preserve"><value>Etapa nº</value></data>
+	<data name="ArtifactLinkTypeId" xml:space="preserve"><value>Tipo de Link</value></data>
+	<data name="TaraVault_UserLogin" xml:space="preserve"><value>Login TaraVault</value></data>
+	<data name="ComponentIds" xml:space="preserve"><value>Componente(s)</value></data>
+	<data name="ReqTaskEffort" xml:space="preserve"><value>Req./ Esforço da Tarefa</value></data>
+	<data name="AllocationIndicator" xml:space="preserve"><value>Alocação</value></data>
+	<data name="ProjectRoleId" xml:space="preserve"><value>Função de Projeto</value></data>
+	<data name="ResourceEffort" xml:space="preserve"><value>Esforço do Recurso</value></data>
+	<data name="PercentEffort" xml:space="preserve"><value>% de Esforço</value></data>
+	<data name="ArtifactDesc" xml:space="preserve"><value>Nome do Artefato</value></data>
+	<data name="Author" xml:space="preserve"><value>Autor</value></data>
+	<data name="UpdateDate" xml:space="preserve"><value>Data do Commit</value></data>
+	<data name="Signed" xml:space="preserve"><value>Assinado</value></data>
+	<data name="Signature_Invalid" xml:space="preserve"><value>Inválido</value></data>
+	<data name="Signature_Valid" xml:space="preserve"><value>Válido</value></data>
+	<data name="SignatureHash" xml:space="preserve"><value>Hash da Assinatura</value></data>
+	<data name="Signature_NotSigned" xml:space="preserve"><value>Não Assinado</value></data>
+	<data name="ReleaseStatusId" xml:space="preserve"><value>Status</value></data>
+	<data name="ReleaseTypeId" xml:space="preserve"><value>Tipo</value></data>
+	<data name="LastActivityDate" xml:space="preserve"><value>Última Atividade</value></data>
+	<data name="LastLockoutDate" xml:space="preserve"><value>Último Bloqueio</value></data>
+	<data name="LastLoginDate" xml:space="preserve"><value>Último Acesso</value></data>
+	<data name="LastPasswordChangeDate" xml:space="preserve"><value>Última Troca de Senha</value></data>
+	<data name="LastDateDetails" xml:space="preserve"><value>Datas das Últimas Atividades por Usuário</value></data>
+	<data name="Organization" xml:space="preserve"><value>Organização</value></data>
+	<data name="IsSuspect" xml:space="preserve"><value>Suspeito?</value></data>
+	<data name="TestCaseStatusId" xml:space="preserve"><value>Status</value></data>
+	<data name="TestCaseTypeId" xml:space="preserve"><value>Tipo</value></data>
+	<data name="NotApplicable" xml:space="preserve"><value>Não Aplicável</value></data>
+	<data name="Value" xml:space="preserve"><value>Valor</value></data>
+	<data name="RecurrenceId" xml:space="preserve"><value>Recorrência</value></data>
+	<data name="Parameter" xml:space="preserve"><value>Parâmetro</value></data>
+	<data name="Parameters" xml:space="preserve"><value>Parâmetros</value></data>
+	<data name="AttachmentId" xml:space="preserve"><value>ID do Anexo</value></data>
+	<data name="ProjectAttachmentFolderId" xml:space="preserve"><value>Pasta</value></data>
+	<data name="ProjectAttachmentTypeId" xml:space="preserve"><value>Tipo</value></data>
+	<data name="IsActive" xml:space="preserve"><value>Ativo</value></data>
+	<data name="Caption" xml:space="preserve"><value>Legenda</value></data>
+	<data name="Requirement_Importance_1" xml:space="preserve"><value>1 - Crítico</value></data>
+	<data name="Requirement_Importance_2" xml:space="preserve"><value>2 - Alto</value></data>
+	<data name="Requirement_Importance_3" xml:space="preserve"><value>3 - Médio</value></data>
+	<data name="Requirement_Importance_4" xml:space="preserve"><value>4 - Baixo</value></data>
+	<data name="Requirement_Status_1" xml:space="preserve"><value>Requisitado</value></data>
+	<data name="Requirement_Status_10" xml:space="preserve"><value>Completado</value></data>
+	<data name="Requirement_Status_2" xml:space="preserve"><value>Planejado</value></data>
+	<data name="Requirement_Status_3" xml:space="preserve"><value>Em Progresso</value></data>
+	<data name="Requirement_Status_4" xml:space="preserve"><value>Desenvolvido</value></data>
+	<data name="Requirement_Status_5" xml:space="preserve"><value>Aceito</value></data>
+	<data name="Requirement_Status_6" xml:space="preserve"><value>Rejeitado</value></data>
+	<data name="Requirement_Status_7" xml:space="preserve"><value>Sob Revisão</value></data>
+	<data name="Requirement_Status_8" xml:space="preserve"><value>Obsoleto</value></data>
+	<data name="Requirement_Status_9" xml:space="preserve"><value>Testado</value></data>
+	<data name="Task_Priority_1" xml:space="preserve"><value>1 - Crítico</value></data>
+	<data name="Task_Priority_2" xml:space="preserve"><value>2 - Alto</value></data>
+	<data name="Task_Priority_3" xml:space="preserve"><value>3 - Médio</value></data>
+	<data name="Task_Priority_4" xml:space="preserve"><value>4 - Baixo</value></data>
+	<data name="TestCase_ExecutionStatus_1" xml:space="preserve"><value>Reprovado</value></data>
+	<data name="TestCase_ExecutionStatus_2" xml:space="preserve"><value>Aprovado</value></data>
+	<data name="TestCase_ExecutionStatus_3" xml:space="preserve"><value>Não Executado</value></data>
+	<data name="TestCase_ExecutionStatus_4" xml:space="preserve"><value>Não Aplicável</value></data>
+	<data name="TestCase_ExecutionStatus_5" xml:space="preserve"><value>Bloqueado</value></data>
+	<data name="TestCase_ExecutionStatus_6" xml:space="preserve"><value>Atenção</value></data>
+	<data name="TestSet_Status_1" xml:space="preserve"><value>Não Iniciado</value></data>
+	<data name="TestSet_Status_2" xml:space="preserve"><value>Em Progresso</value></data>
+	<data name="TestSet_Status_3" xml:space="preserve"><value>Completado</value></data>
+	<data name="TestSet_Status_4" xml:space="preserve"><value>Bloqueado</value></data>
+	<data name="TestSet_Status_5" xml:space="preserve"><value>Diferido</value></data>
+	<data name="ArtifactStatusName" xml:space="preserve"><value>Status</value></data>
+	<data name="Requirement_Type_Package" xml:space="preserve"><value>Pacote</value></data>
+	<data name="ChangeSetId" xml:space="preserve"><value>Alterar ID</value></data><data name="ActualEffortWithHours" xml:space="preserve"><value>Esforço Real (h)</value></data><data name="EstimatedEffortWithHours" xml:space="preserve"><value>Esforço Est. (h)</value></data><data name="ProjectedEffortWithHours" xml:space="preserve"><value>Esforço Projetado (h)</value></data><data name="RemainingEffortWithHours" xml:space="preserve"><value>Esforço Restante (h)</value></data><data name="BuildExecuteTimeInterval" xml:space="preserve"><value>Tempo de espera Pós-Compilação</value></data><data name="IsAutoScheduled" xml:space="preserve"><value>Agendar na Compilação</value></data><data name="DatesAndTimes" xml:space="preserve"><value>Datas e Tempos</value></data><data name="People" xml:space="preserve"><value>Pessoas</value></data><data name="Properties" xml:space="preserve"><value>Propriedades</value></data><data name="RichTextFieldsTitle" xml:space="preserve"><value>Informação Detalhada</value></data><data name="IsTestSteps" xml:space="preserve"><value>Tem Etapas?</value></data><data name="TestCaseReleaseId" xml:space="preserve"><value>Release da Execução de Teste</value></data><data name="EstimatedDurationWithHours" xml:space="preserve"><value>Dur. Est. (h)</value></data><data name="BuildExecuteTimeIntervalWithSeconds" xml:space="preserve"><value>Atraso Pós-Compilação (s)</value></data><data name="TestCase_Execution_EnterIncidentName" xml:space="preserve"><value>Por favor, informe um nome de incidente para o registro</value></data><data name="EstimateWithPoints" xml:space="preserve"><value>Estimativa (pontos)</value></data><data name="NonWorkingWithPersonDays" xml:space="preserve"><value>Não-Produtivo (pessoa/dia)</value></data><data name="ChangeSetTypeId" xml:space="preserve"><value>Alterar Tipo</value></data><data name="TestCase_Execution_EnterTaskName" xml:space="preserve"><value>Por favor, informe um nome para registrar a tarefa</value></data><data name="TestConfigurationSet" xml:space="preserve"><value>Conjunto de Configurações de Teste</value></data><data name="TestConfigurationSetId" xml:space="preserve"><value>Configuração</value></data><data name="Position" xml:space="preserve"><value>Posição</value></data><data name="Program" xml:space="preserve"><value>Programa</value></data><data name="ProjectTemplate" xml:space="preserve"><value>Modelo de Produto</value></data><data name="ProgramRole" xml:space="preserve"><value>Função do Programa</value></data><data name="Score" xml:space="preserve"><value>Pontuação</value></data><data name="HasSteps" xml:space="preserve"><value>Tem Etapas?</value></data><data name="IsExploratory" xml:space="preserve"><value>É Exploratório?</value></data><data name="TemplateName" xml:space="preserve"><value>Nome do Modelo</value></data><data name="TemplateAdmin" xml:space="preserve"><value>Administração de Modelos</value></data><data name="DocumentStatusId" xml:space="preserve"><value>Status</value></data><data name="RiskImpactId" xml:space="preserve"><value>Impacto</value></data><data name="RiskProbabilityId" xml:space="preserve"><value>Probabilidade</value></data><data name="RiskStatusId" xml:space="preserve"><value>Status</value></data><data name="RiskTypeId" xml:space="preserve"><value>Tipo</value></data><data name="ReviewDate" xml:space="preserve"><value>Data de Revisão</value></data><data name="RiskExposure" xml:space="preserve"><value>Exposição</value></data><data name="Source" xml:space="preserve"><value>Fonte</value></data><data name="Requirement_Status_11" xml:space="preserve"><value>Pronto para Revisão</value></data><data name="Requirement_Status_12" xml:space="preserve"><value>Pronto para Teste</value></data><data name="Requirement_Status_13" xml:space="preserve"><value>Lançado</value></data><data name="Requirement_Status_14" xml:space="preserve"><value>Design em Processo</value></data><data name="Requirement_Status_15" xml:space="preserve"><value>Aprovação de Design</value></data><data name="Requirement_Status_16" xml:space="preserve"><value>Documentado</value></data><data name="EstimatePoints" xml:space="preserve"><value>Estimativa (pontos)</value></data><data name="DisplayForRelease" xml:space="preserve"><value>Mostrar para</value></data><data name="ScheduledRelease" xml:space="preserve"><value>Agendado</value></data><data name="Portfolio" xml:space="preserve"><value>Portfólio</value></data><data name="Enterprise" xml:space="preserve"><value>Empresa</value></data><data name="LastAccessed" xml:space="preserve"><value>Último Acesso</value></data><data name="CompletionId" xml:space="preserve"><value>Req. Realizado</value></data><data name="PercentComplete" xml:space="preserve"><value>% completo</value></data><data name="RequirementCount" xml:space="preserve"><value>Contagem de Req.</value></data><data name="RequirementPoints" xml:space="preserve"><value>Pontos de Req.</value></data><data name="PortfolioViewer" xml:space="preserve"><value>Visualizador de Portfólio</value></data><data name="ClientId" xml:space="preserve"><value>ID do Cliente</value></data><data name="LoadedYn" xml:space="preserve"><value>Carregado</value></data><data name="NumUsers" xml:space="preserve"><value>Núm. de Usuários</value></data><data name="ClientIdKey" xml:space="preserve"><value>ID Cliente/Chave</value></data><data name="ClientSecretKey" xml:space="preserve"><value>Chave Secreta do Cliente</value></data><data name="AuthorizationUrl" xml:space="preserve"><value>URL de Autorização</value></data><data name="TokenUrl" xml:space="preserve"><value>URL do Token</value></data><data name="ProfileUrl" xml:space="preserve"><value>URL do Perfil</value></data><data name="NewUsername" xml:space="preserve"><value>Novo Nome de Usuário</value></data><data name="DocumentTypeId" xml:space="preserve"><value>Tipo</value></data><data name="ReturnUrl" xml:space="preserve"><value>URL de Retorno</value></data><data name="ResolvedReleaseId_Tooltip" xml:space="preserve"><value>Até a versão 6.4 isso era chamado de "Resease Resolvido". Use este campo para selecionar a versão em que planeja resolver esse incidente.</value></data><data name="NumOpenIncidents" xml:space="preserve"><value>Núm. de Incidentes Abertos</value></data><data name="Branch" xml:space="preserve"><value>Ramo</value></data><data name="BaselineId" xml:space="preserve"><value>ID de Baseline</value></data><data name="CreatorUserId" xml:space="preserve"><value>Criador</value></data><data name="PlannedPoints" xml:space="preserve"><value>Pontos Planejados</value></data><data name="EstimatesAndEffort" xml:space="preserve"><value>Estimativas e Esforço</value></data><data name="AvailablePoints" xml:space="preserve"><value>Pontos Disponíveis</value></data><data name="UtilizedEffort" xml:space="preserve"><value>Esforço Utilizado</value></data><data name="IsApproved" xml:space="preserve"><value>É Aprovado?</value></data><data name="PreviousBaseline" xml:space="preserve"><value>Baseline Anterior</value></data><data name="LastModified" xml:space="preserve"><value>Última Modificação</value></data><data name="AuthorName" xml:space="preserve"><value>Autor</value></data><data name="Branches" xml:space="preserve"><value>Branches</value></data><data name="PeopleAndDates" xml:space="preserve"><value>Pessoas e Datas</value></data><data name="Previous" xml:space="preserve"><value>Anterior</value></data><data name="PreviousRevision" xml:space="preserve"><value>Commit Anterior</value></data><data name="LatestRevisionInBranch" xml:space="preserve"><value>Commit mais recente nessa branch</value></data><data name="Builds_FullLog" xml:space="preserve"><value>Log Completo</value></data><data name="IsCodeReview" xml:space="preserve"><value>Revisão de Código?</value></data><data name="IsPullRequest" xml:space="preserve"><value>Pull Request?</value></data><data name="DestBranch" xml:space="preserve"><value>Mesclar Para</value></data><data name="SourceBranch" xml:space="preserve"><value>Mesclar De</value></data><data name="DestBranchId" xml:space="preserve"><value>Mesclar Para</value></data><data name="SourceBranchId" xml:space="preserve"><value>Mesclar De</value></data><data name="View_File" xml:space="preserve"><value>Ver arquivo</value></data><data name="ReportAdmin" xml:space="preserve"><value>Administrador de Relatórios</value></data><data name="Enabled" xml:space="preserve"><value>Habilitado</value></data><data name="NotEnabled" xml:space="preserve"><value>Desabilitado</value></data><data name="ExternalLogin" xml:space="preserve"><value>Login Ext.</value></data><data name="MfaEnabled" xml:space="preserve"><value>A2F?</value></data><data name="MfaEnabledLong" xml:space="preserve"><value>Aut. 2-Fatores?</value></data></root>

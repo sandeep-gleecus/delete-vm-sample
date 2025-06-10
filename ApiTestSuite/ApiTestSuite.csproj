@@ -1,0 +1,1348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnitTestAdapter.2.3.0\build\NUnitTestAdapter.props" Condition="Exists('..\packages\NUnitTestAdapter.2.3.0\build\NUnitTestAdapter.props')" />
+  <Import Project="..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D572B8FF-445B-4257-BEE2-B85110588709}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inflectra.SpiraTest.ApiTestSuite</RootNamespace>
+    <AssemblyName>ApiTestSuite</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\TestSuite\Assemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SpiraTestFramework">
+      <HintPath>..\TestSuite\Assemblies\SpiraTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OData_ApiTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Rest Code Generation\RestClient.cs" />
+    <Compile Include="Rest Code Generation\RestHeader.cs" />
+    <Compile Include="Rest Code Generation\RestParameter.cs" />
+    <Compile Include="Rest Code Generation\RestRequest.cs" />
+    <Compile Include="Rest Code Generation\RestResponse.cs" />
+    <Compile Include="Rest Code Generation\SpiraRestClient40.cs" />
+    <Compile Include="Rest Code Generation\SpiraRestClient50.cs" />
+    <Compile Include="Rest Code Generation\SpiraRestClient60.cs" />
+    <Compile Include="Rest Code Generation\SpiraRestService40.cs">
+      <DependentUpon>SpiraRestService40.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rest Code Generation\SpiraRestService50.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpiraRestService50.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rest Code Generation\SpiraRestService60.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpiraRestService60.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rest Code Generation\StandardHeaders.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StandardHeaders.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SpiraDataSync40\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SpiraImportExport30\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SpiraImportExport40\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SpiraSoapService50\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SpiraSoapService60\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="V1_ApiTest.cs" />
+    <Compile Include="V2_2_ApiTest.cs" />
+    <Compile Include="V3_0_ApiTest.cs" />
+    <Compile Include="V4_0_ApiTest.cs" />
+    <Compile Include="V6_0_ApiTest.cs" />
+    <Compile Include="V5_0_ApiTest.cs" />
+    <Compile Include="V5_0_RestTest.cs" />
+    <Compile Include="V6_0_RestTest.cs" />
+    <Compile Include="Web References\SpiraImport152\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SpiraImportExport22\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SpiraTestExecute12\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{ddbe8b78-e613-4a84-8267-af81a7ccfee6}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{80d5a03b-be61-4171-9d01-b8a492e49041}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{3a6b00ce-2665-4baf-9cfc-4d08ce6d8446}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestSuite\UnitTestSuite.csproj">
+      <Project>{ed1aabeb-840e-4c4d-83cd-0191a184bc2d}</Project>
+      <Name>UnitTestSuite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteAssociation.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteAutomatedTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteAutomationEngine.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteAutomationHost.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteBuild.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteComment.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteCustomList.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteCustomListValue.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteCustomProperty.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteDataMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteDocument.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteDocumentFolder.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteDocumentType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteDocumentVersion.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteIncident.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteIncidentPriority.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteIncidentResolution.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteIncidentSeverity.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteIncidentStatus.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteIncidentType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteManualTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteProject.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteProjectRole.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteProjectUser.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteRelease.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteReleaseTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteRequirement.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteRequirementTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteSetting.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteTask.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteTestCase.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteTestCaseParameter.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteTestSet.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteTestSetTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteTestStep.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteUser.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteVersion.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteWorkflowIncidentCustomProperties.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteWorkflowIncidentFields.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport30.RemoteWorkflowIncidentTransition.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteAssociation.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteAutomatedTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteAutomationEngine.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteAutomationHost.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteBuild.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteComment.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteCustomList.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteCustomListValue.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteCustomProperty.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteDataMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteDocument.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteDocumentFolder.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteDocumentType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteDocumentVersion.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteIncident.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteIncidentPriority.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteIncidentSeverity.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteIncidentStatus.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteIncidentType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteManualTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteProject.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteProjectRole.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteProjectUser.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteRelease.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteReleaseTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteRequirement.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteRequirementTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteSetting.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteTask.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteTestCase.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteTestCaseFolder.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteTestCaseParameter.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteTestSet.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteTestSetTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteTestStep.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteTestStepParameter.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteUser.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteVersion.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteWorkflowIncidentCustomProperties.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteWorkflowIncidentFields.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraImportExport40.RemoteWorkflowIncidentTransition.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteArtifactSubscription.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteAssociation.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteAutomatedTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteAutomationEngine.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteAutomationHost.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteBuild.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteComment.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteComponent.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteCustomList.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteCustomListValue.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteCustomProperty.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteDataMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteDataSyncSystem.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteDocument.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteDocumentFolder.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteDocumentType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteDocumentVersion.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteHistoryChange.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteHistoryChangeSet.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteIncident.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteIncidentPriority.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteIncidentSeverity.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteIncidentStatus.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteIncidentType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteLinkedArtifact.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteManualTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteMessage.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteMessageInfo.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteProject.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteProjectArtifact.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteProjectRole.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteProjectUser.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteRelease.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteReleaseStatus.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteReleaseTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteReleaseType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteRequirement.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteRequirementStatus.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteRequirementStep.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteRequirementTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteRequirementTestStepMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteRequirementType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteSavedFilter.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteSetting.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteSourceCodeBranch.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteSourceCodeFile.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteSourceCodeFolder.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteSourceCodeRevision.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTask.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTaskFolder.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTaskStatus.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTaskType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestCase.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestCaseFolder.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestCaseParameter.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestCaseStatus.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestCaseType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestConfigurationSet.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestSet.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestSetFolder.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestSetParameter.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestSetTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestSetTestCaseParameter.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestStep.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteTestStepParameter.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteUser.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteUserMessage.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteVersion.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteWorkflowCustomProperty.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteWorkflowField.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.TestSuite.SpiraSoapService50.RemoteWorkflowTransition.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rest References\Inflectra.SpiraTest.Web.Services.v4_0.RestServiceDescription.json" />
+    <None Include="Rest References\Inflectra.SpiraTest.Web.Services.v5_0.RestServiceDescription.json" />
+    <None Include="Rest References\Inflectra.SpiraTest.Web.Services.v6_0.RestServiceDescription.json" />
+    <None Include="Service References\SpiraDataSync40\DataSync.wsdl" />
+    <None Include="Service References\SpiraDataSync40\Inflectra.SpiraTest.ApiTestSuite.SpiraDataSync40.RemoteDataSyncSystem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\ImportExport.wsdl" />
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteAssociation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteAutomatedTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteAutomationEngine.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteAutomationHost.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteBuild.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteComment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteCustomList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteCustomListValue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteCustomProperty.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteDataMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteDocument.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteDocumentFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteDocumentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteDocumentVersion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteIncident.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteIncidentPriority.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteIncidentResolution.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteIncidentSeverity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteIncidentStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteIncidentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteManualTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteProject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteProjectRole.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteProjectUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteRelease.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteReleaseTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteRequirement.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteRequirementTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteSetting.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteTask.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteTestCase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteTestCaseParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteTestSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteTestSetTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteTestStep.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteVersion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteWorkflowIncidentCustomProperties.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteWorkflowIncidentFields.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport30\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport30.RemoteWorkflowIncidentTransition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\ImportExport.wsdl" />
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteAssociation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteAutomatedTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteAutomationEngine.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteAutomationHost.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteBuild.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteComment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteCustomList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteCustomListValue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteCustomProperty.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteDataMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteDocument.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteDocumentFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteDocumentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteDocumentVersion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteIncident.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteIncidentPriority.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteIncidentSeverity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteIncidentStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteIncidentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteManualTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteProject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteProjectRole.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteProjectUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteRelease.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteReleaseTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteRequirement.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteRequirementTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteSetting.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteTask.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteTestCase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteTestCaseFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteTestCaseParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteTestSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteTestSetTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteTestStep.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteTestStepParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteVersion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteWorkflowIncidentCustomProperties.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteWorkflowIncidentFields.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraImportExport40\Inflectra.SpiraTest.ApiTestSuite.SpiraImportExport40.RemoteWorkflowIncidentTransition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteArtifactSubscription.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteAssociation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteAutomatedTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteAutomationEngine.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteAutomationHost.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteBuild.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteComment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteComponent.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteCustomList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteCustomListValue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteCustomProperty.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteDataMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteDataSyncSystem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteDocument.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteDocumentFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteDocumentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteDocumentVersion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteHistoryChange.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteHistoryChangeSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteIncident.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteIncidentPriority.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteIncidentSeverity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteIncidentStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteIncidentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteLinkedArtifact.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteManualTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteMessageInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteProject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteProjectArtifact.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteProjectRole.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteProjectUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteRelease.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteReleaseStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteReleaseTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteReleaseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteRequirement.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteRequirementStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteRequirementStep.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteRequirementTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteRequirementTestStepMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteRequirementType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteSavedFilter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteSetting.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteSourceCodeBranch.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteSourceCodeFile.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteSourceCodeFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteSourceCodeRevision.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTask.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTaskFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTaskStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTaskType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestCase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestCaseFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestCaseParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestCaseStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestCaseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestConfigurationSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestSetFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestSetParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestSetTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestSetTestCaseParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestStep.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteTestStepParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteUserMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteVersion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteWorkflowCustomProperty.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteWorkflowField.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService50.RemoteWorkflowTransition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService50\SoapService.wsdl" />
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteArtifactSubscription.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteAssociation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteAutomatedTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteAutomationEngine.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteAutomationHost.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteBuild.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteComment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteComponent.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteCredentials.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteCustomList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteCustomListValue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteCustomProperty.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteDataMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteDataSyncSystem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteDocument.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteDocumentFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteDocumentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteDocumentVersion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteEvent21.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteHistoryChange.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteHistoryChangeSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteIncident.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteIncidentPriority.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteIncidentSeverity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteIncidentStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteIncidentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteLinkedArtifact.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteManualTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteMessageInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteProject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteProjectArtifact.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteProjectRole.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteProjectTemplate.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteProjectUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRelease.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteReleaseStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteReleaseTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteReleaseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRequirement.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRequirementImportance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRequirementStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRequirementStep.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRequirementTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRequirementTestStepMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRequirementType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRisk.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRiskImpact.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRiskMitigation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRiskProbability.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRiskStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteRiskType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteSavedFilter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteSavedReport.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteSetting.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteSourceCodeBranch.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteSourceCodeConnection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteSourceCodeFile.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteSourceCodeFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteSourceCodeRevision.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTableData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTask.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTaskFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTaskPriority.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTaskStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTaskType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestCase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestCaseFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestCaseParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestCasePriority.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestCaseStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestCaseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestConfigurationSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestRun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestSetFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestSetParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestSetTestCaseMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestSetTestCaseParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestStep.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteTestStepParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteUserMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteVersion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteWorkflowCustomProperty.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteWorkflowField.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\Inflectra.SpiraTest.ApiTestSuite.SpiraSoapService60.RemoteWorkflowTransition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SpiraSoapService60\SoapService1.wsdl" />
+    <None Include="Web References\SpiraImport152\Import.wsdl" />
+    <None Include="Web References\SpiraImport152\ProjectData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImport152\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SpiraImportExport22\ImportExport.wsdl" />
+    <None Include="Web References\SpiraImportExport22\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteCustomList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteCustomListValue.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteCustomProperty.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteDataMapping.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteDocument.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteIncident.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteIncidentPriority.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteIncidentResolution.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteIncidentSeverity.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteIncidentStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteIncidentType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteProject.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteProjectCustomProperty.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteProjectRole.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteProjectUser.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteRelease.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteRequirement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteSetting.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteTask.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteTestCase.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteTestCaseParameter.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteTestRun.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteTestSet.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteTestStep.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteUser.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteVersion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteWorkflowIncidentFields.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraImportExport22\RemoteWorkflowIncidentTransition.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraTestExecute12\ProjectData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpiraTestExecute12\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SpiraTestExecute12\TestExecute.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SpiraDataSync40\" />
+    <WCFMetadataStorage Include="Service References\SpiraImportExport30\" />
+    <WCFMetadataStorage Include="Service References\SpiraImportExport40\" />
+    <WCFMetadataStorage Include="Service References\SpiraSoapService50\" />
+    <WCFMetadataStorage Include="Service References\SpiraSoapService60\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraDataSync40\DataSync.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraDataSync40\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraDataSync40\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraDataSync40\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraImportExport30\ImportExport.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraImportExport30\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraImportExport30\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraImportExport30\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraImportExport40\ImportExport.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraImportExport40\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraImportExport40\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraImportExport40\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraSoapService50\SoapService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraSoapService50\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraSoapService50\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraSoapService50\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraSoapService60\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraSoapService60\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SpiraSoapService60\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/Spira/Services/Import.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\SpiraImport152\</RelPath>
+      <UpdateFromURL>http://localhost/Spira/Services/Import.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ApiTestSuite_SpiraImport152_Import</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Spira/Services/TestExecute.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\SpiraTestExecute12\</RelPath>
+      <UpdateFromURL>http://localhost/Spira/Services/TestExecute.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ApiTestSuite_SpiraTestExecute12_TestExecute</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Spira/Services/v2_2/ImportExport.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\SpiraImportExport22\</RelPath>
+      <UpdateFromURL>http://localhost/Spira/Services/v2_2/ImportExport.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ApiTestSuite_SpiraImportExport22_ImportExport</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SpiraImport152\Import.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SpiraImportExport22\ImportExport.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SpiraTestExecute12\TestExecute.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ideas.txt" />
+    <Content Include="Rest Code Generation\SpiraRestService40.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SpiraRestService40.cs</LastGenOutput>
+    </Content>
+    <Content Include="Rest Code Generation\SpiraRestService50.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SpiraRestService50.cs</LastGenOutput>
+    </Content>
+    <Content Include="Rest Code Generation\SpiraRestService60.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SpiraRestService60.cs</LastGenOutput>
+    </Content>
+    <None Include="Service References\SpiraSoapService60\SoapService1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest Code Generation\StandardHeaders.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StandardHeaders.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.4.0.0\build\net35\NUnit3TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\NUnitTestAdapter.2.3.0\build\NUnitTestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnitTestAdapter.2.3.0\build\NUnitTestAdapter.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

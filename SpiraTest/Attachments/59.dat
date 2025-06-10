@@ -1,0 +1,14 @@
+Feature: Can successfully create author
+
+# Equivalent to the Test Case [TC:20] 
+
+Scenario: Navigate to the New Author page
+  WHEN the user clicks on the 'Create new author' link
+  THEN the new author page is displayed
+
+Scenario: Create the new author
+  GIVEN the user is on the New Author Page
+  WHEN the user enters the author name as "Chinua Achebe"
+  AND the user enters the author age as "82"
+  AND the user clicks the "Insert" button
+  THEN the new author is successfully added

@@ -1,0 +1,419 @@
+/***************************************************************
+**	Insert script for table TST_REQUIREMENT_WORKFLOW_TRANSITION
+***************************************************************/
+SET IDENTITY_INSERT TST_REQUIREMENT_WORKFLOW_TRANSITION ON; 
+
+INSERT INTO TST_REQUIREMENT_WORKFLOW_TRANSITION
+(
+WORKFLOW_TRANSITION_ID, REQUIREMENT_WORKFLOW_ID, INPUT_REQUIREMENT_STATUS_ID, OUTPUT_REQUIREMENT_STATUS_ID, NAME, IS_EXECUTE_BY_CREATOR, IS_EXECUTE_BY_OWNER, IS_SIGNATURE_REQUIRED
+)
+VALUES
+(
+1, 1, 1, 7, 'Review Requirement', 0, 0, 0
+),
+(
+2, 1, 1, 5, 'Accept Requirement', 0, 0, 0
+),
+(
+3, 1, 7, 6, 'Reject Requirement', 1, 1, 0
+),
+(
+4, 1, 7, 5, 'Accept Requirement', 0, 1, 0
+),
+(
+5, 1, 6, 7, 'Return to Review', 0, 1, 0
+),
+(
+6, 1, 5, 2, 'Assign Release', 0, 1, 0
+),
+(
+7, 1, 2, 3, 'Start Development', 0, 1, 0
+),
+(
+8, 1, 3, 4, 'Finish Development', 0, 1, 0
+),
+(
+9, 1, 3, 10, 'Mark as Completed', 0, 0, 0
+),
+(
+10, 1, 4, 9, 'Mark as Tested', 0, 0, 0
+),
+(
+11, 1, 4, 10, 'Mark as Completed', 0, 1, 0
+),
+(
+12, 1, 9, 10, 'Mark as Completed', 0, 1, 0
+),
+(
+13, 1, 10, 8, 'Mark as Obsolete', 0, 1, 0
+),
+(
+14, 1, 8, 7, 'Return to Review', 0, 1, 0
+),
+(
+9, 1, 17, 10, 'Mark as Completed', 0, 0, 0
+),
+(
+16, 2, 1, 5, 'Accept Requirement', 0, 0, 0
+),
+(
+17, 2, 7, 6, 'Reject Requirement', 1, 1, 0
+),
+(
+18, 2, 7, 5, 'Accept Requirement', 0, 1, 0
+),
+(
+19, 2, 6, 7, 'Return to Review', 0, 1, 0
+),
+(
+20, 2, 5, 2, 'Assign Release', 0, 1, 0
+),
+(
+21, 2, 2, 3, 'Start Development', 0, 1, 0
+),
+(
+22, 2, 3, 4, 'Finish Development', 0, 1, 0
+),
+(
+23, 2, 3, 10, 'Mark as Completed', 0, 0, 0
+),
+(
+24, 2, 4, 9, 'Mark as Tested', 0, 0, 0
+),
+(
+25, 2, 4, 10, 'Mark as Completed', 0, 1, 0
+),
+(
+26, 2, 9, 10, 'Mark as Completed', 0, 1, 0
+),
+(
+27, 2, 10, 8, 'Mark as Obsolete', 0, 1, 0
+),
+(
+28, 2, 8, 7, 'Return to Review', 0, 1, 0
+),
+(
+57, 1, 5, 7, 'Return to Review', 0, 1, 0
+),
+(
+58, 1, 2, 5, 'Remove from Plan', 0, 1, 0
+),
+(
+59, 1, 3, 2, 'Cancel Development', 0, 1, 0
+),
+(
+60, 1, 4, 3, 'Continue Development', 0, 1, 0
+),
+(
+61, 1, 10, 3, 'Continue Development', 0, 1, 0
+),
+(
+62, 1, 10, 9, 'Not Completed', 0, 1, 0
+),
+(
+63, 1, 10, 4, 'Continue Testing', 0, 1, 0
+),
+(
+64, 1, 9, 4, 'Continue Testing', 0, 1, 0
+),
+(
+65, 1, 8, 10, 'Not Obsolete', 0, 1, 0
+),
+(
+66, 2, 5, 7, 'Return to Review', 0, 1, 0
+),
+(
+67, 2, 2, 5, 'Remove from Plan', 0, 1, 0
+),
+(
+68, 2, 3, 2, 'Cancel Development', 0, 1, 0
+),
+(
+69, 2, 4, 3, 'Continue Development', 0, 1, 0
+),
+(
+70, 2, 10, 3, 'Continue Development', 0, 1, 0
+),
+(
+71, 2, 10, 9, 'Not Completed', 0, 1, 0
+),
+(
+72, 2, 10, 4, 'Continue Testing', 0, 1, 0
+),
+(
+73, 2, 9, 4, 'Continue Testing', 0, 1, 0
+),
+(
+74, 2, 8, 10, 'Not Obsolete', 0, 1, 0
+),
+(
+75, 3, 1, 7, 'Review Requirement', 1, 0, 0
+),
+(
+77, 3, 7, 6, 'Reject Requirement', 0, 1, 0
+),
+(
+78, 3, 7, 5, 'Accept Requirement', 0, 1, 1
+),
+(
+79, 3, 6, 7, 'Return to Review', 0, 1, 0
+),
+(
+80, 3, 5, 2, 'Assign Release', 0, 0, 0
+),
+(
+81, 3, 2, 3, 'Start Development', 0, 1, 0
+),
+(
+82, 3, 3, 4, 'Finish Development', 0, 1, 0
+),
+(
+84, 3, 4, 9, 'Mark as Tested', 0, 1, 1
+),
+(
+85, 3, 4, 10, 'Mark as Completed', 0, 0, 0
+),
+(
+86, 3, 9, 10, 'Mark as Completed', 0, 0, 1
+),
+(
+87, 3, 10, 8, 'Mark as Obsolete', 0, 0, 0
+),
+(
+88, 3, 8, 7, 'Return to Review', 0, 0, 0
+),
+(
+89, 3, 5, 7, 'Return to Review', 0, 0, 0
+),
+(
+90, 3, 2, 5, 'Remove from Plan', 0, 1, 0
+),
+(
+91, 3, 3, 2, 'Cancel Development', 0, 1, 0
+),
+(
+92, 3, 4, 3, 'Continue Development', 0, 1, 0
+),
+(
+93, 3, 10, 3, 'Continue Development', 0, 0, 0
+),
+(
+94, 3, 10, 9, 'Not Completed', 0, 0, 0
+),
+(
+95, 3, 10, 4, 'Continue Testing', 0, 0, 0
+),
+(
+96, 3, 9, 4, 'Continue Testing', 0, 1, 0
+),
+(
+97, 3, 8, 10, 'Not Obsolete', 0, 0, 0
+),
+(
+98, 3, 4, 12, 'Ready for Test', 0, 1, 0
+),
+(
+99, 3, 9, 3, 'Continue Development', 0, 1, 0
+),
+(
+100, 3, 12, 3, 'Continue Development', 0, 1, 0
+),
+(
+101, 3, 12, 4, 'Move to Developed', 0, 1, 0
+),
+(
+102, 3, 10, 13, 'Move to Released', 0, 0, 1
+),
+(
+103, 3, 13, 10, 'Move back to Completed', 0, 0, 0
+),
+(
+104, 3, 13, 8, 'Mark as Obsolete', 0, 0, 0
+),
+(
+105, 3, 1, 11, 'Ready to Review', 1, 0, 0
+),
+(
+106, 3, 11, 1, 'Revert to Requested', 1, 0, 0
+),
+(
+107, 3, 11, 7, 'Review Requirement', 1, 0, 0
+),
+(
+108, 3, 12, 9, 'Mark as Tested', 0, 1, 1
+),
+(
+110, 4, 1, 5, 'Accepted', 1, 1, 0
+),
+(
+114, 4, 5, 2, 'Planned', 1, 1, 0
+),
+(
+115, 4, 2, 3, 'In Progress', 1, 1, 0
+),
+(
+116, 4, 3, 4, 'Developed', 1, 1, 0
+),
+(
+117, 4, 3, 10, 'Completed', 1, 1, 0
+),
+(
+118, 4, 4, 9, 'Tested', 1, 1, 0
+),
+(
+119, 4, 4, 10, 'Completed', 1, 1, 0
+),
+(
+120, 4, 9, 10, 'Completed', 1, 1, 0
+),
+(
+121, 4, 10, 8, 'Obsolete', 1, 1, 0
+),
+(
+124, 4, 2, 5, 'Accepted', 1, 1, 0
+),
+(
+125, 4, 3, 2, 'Planned', 1, 1, 0
+),
+(
+126, 4, 4, 3, 'In Progress', 1, 1, 0
+),
+(
+127, 4, 10, 3, 'In Progress', 1, 1, 0
+),
+(
+128, 4, 10, 9, 'Tested', 1, 1, 0
+),
+(
+129, 4, 10, 4, 'Developed', 1, 1, 0
+),
+(
+130, 4, 9, 4, 'Developed', 1, 1, 0
+),
+(
+131, 4, 8, 10, 'Completed', 1, 1, 0
+),
+(
+132, 4, 7, 1, 'Return to Requested', 1, 1, 0
+),
+(
+133, 4, 6, 1, 'Return to Requested', 1, 1, 0
+),
+(
+134, 4, 8, 1, 'Requested', 1, 1, 0
+),
+(
+135, 4, 11, 1, 'Return to Requested', 1, 1, 0
+),
+(
+136, 4, 12, 1, 'Return to Requested', 1, 1, 0
+),
+(
+137, 4, 13, 1, 'Return to Requested', 1, 1, 0
+),
+(
+138, 4, 14, 1, 'Return to Requested', 1, 1, 0
+),
+(
+139, 4, 15, 1, 'Return to Requested', 1, 1, 0
+),
+(
+140, 4, 16, 1, 'Return to Requested', 1, 1, 0
+),
+(
+141, 4, 1, 2, 'Planned', 1, 1, 0
+),
+(
+142, 4, 1, 3, 'In Progress', 1, 1, 0
+),
+(
+143, 4, 1, 4, 'Developed', 1, 1, 0
+),
+(
+144, 4, 1, 9, 'Tested', 1, 1, 0
+),
+(
+145, 4, 1, 10, 'Completed', 1, 1, 0
+),
+(
+146, 4, 5, 3, 'In Progress', 1, 1, 0
+),
+(
+147, 4, 5, 4, 'Developed', 1, 1, 0
+),
+(
+148, 4, 5, 9, 'Tested', 1, 1, 0
+),
+(
+149, 4, 5, 10, 'Completed', 1, 1, 0
+),
+(
+150, 4, 2, 4, 'Developed', 1, 1, 0
+),
+(
+151, 4, 2, 9, 'Tested', 1, 1, 0
+),
+(
+153, 4, 2, 10, 'Completed', 1, 1, 0
+),
+(
+154, 4, 3, 9, 'Tested', 1, 1, 0
+),
+(
+155, 4, 3, 5, 'Accepted', 1, 1, 0
+),
+(
+156, 4, 4, 5, 'Accepted', 1, 1, 0
+),
+(
+157, 4, 4, 2, 'Planned', 1, 1, 0
+),
+(
+158, 4, 9, 3, 'In Progress', 1, 1, 0
+),
+(
+159, 4, 9, 5, 'Accepted', 1, 1, 0
+),
+(
+160, 4, 9, 2, 'Planned', 1, 1, 0
+),
+(
+161, 4, 10, 2, 'Planned', 1, 1, 0
+),
+(
+162, 4, 10, 1, 'Requested', 1, 1, 0
+),
+(
+210, 4, 1, 8, 'Obsolete', 1, 1, 0
+),
+(
+211, 4, 5, 8, 'Obsolete', 1, 1, 0
+),
+(
+212, 4, 2, 8, 'Obsolete', 1, 1, 0
+),
+(
+213, 4, 3, 8, 'Obsolete', 1, 1, 0
+),
+(
+214, 4, 4, 8, 'Obsolete', 1, 1, 0
+),
+(
+215, 4, 9, 8, 'Obsolete', 1, 1, 0
+),
+(
+216, 4, 8, 4, 'Developed', 1, 1, 0
+),
+(
+217, 4, 8, 3, 'In Progress', 1, 1, 0
+),
+(
+218, 4, 8, 2, 'Planned', 1, 1, 0
+),
+(
+219, 4, 8, 9, 'Tested', 1, 1, 0
+)
+GO
+
+SET IDENTITY_INSERT TST_REQUIREMENT_WORKFLOW_TRANSITION OFF; 
+

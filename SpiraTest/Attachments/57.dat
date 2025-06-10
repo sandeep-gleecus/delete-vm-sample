@@ -1,0 +1,13 @@
+# Test plan for website
+Below is the first draft of our test plan for the Library Information System (LIS).
+
+## Aims
+Each requirement for this sprint for LIS has adequate test coverage, and those tests enable the team to fix critical bugs, understand the quality of the application, and asses the risks to release. 
+
+## Resources
+- 3 developers
+- 3 QA engineers
+- 1 product manager
+
+## Testing methodology
+TBD

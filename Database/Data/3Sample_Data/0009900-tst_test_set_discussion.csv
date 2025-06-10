@@ -1,0 +1,4 @@
+discussion_id:Key,artifact_id:Normal,text:String,creator_id:Normal,creation_date:Normal,is_deleted:Normal,is_permanent:Normal
+1,1,We need to make sure we get through this test set by the first release.,2,"DATEADD(minute, -203474, SYSUTCDATETIME())",0,0
+2,1,OK will make sure that we do.,3,"DATEADD(minute, -202484, SYSUTCDATETIME())",0,0
+3,1,"Thanks, appreciate it!",2,"DATEADD(minute, -202433, SYSUTCDATETIME())",0,0

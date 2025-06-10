@@ -1,0 +1,365 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.ComponentModel;
+using System.Globalization;
+using System.Runtime.Serialization;
+using System.Security.Cryptography;
+using System.Text;
+using Inflectra.SpiraTest.DataModel;
+
+namespace Inflectra.SpiraTest.Common
+{
+	public partial class OldHistoryChangesetResponse : IObjectWithChangeTracker, INotifyPropertyChanged
+	{
+		#region Primitive Properties
+
+		[DataMember]
+		public long ChangeSetId
+		{
+			get { return _changeSetId; }
+			set
+			{
+				if (_changeSetId != value)
+				{
+					if (ChangeTracker.ChangeTrackingEnabled && ChangeTracker.State != ObjectState.Added)
+					{
+						throw new InvalidOperationException("The property 'ChangeSetId' is part of the object's key and cannot be changed. Changes to key properties can only be made when the object is not being tracked or is in the Added state.");
+					}
+					_changeSetId = value;
+					OnPropertyChanged("ChangeSetId");
+				}
+			}
+		}
+		private long _changeSetId;
+
+		[DataMember]
+		public int UserId
+		{
+			get { return _userId; }
+			set
+			{
+				if (_userId != value)
+				{
+					if (ChangeTracker.ChangeTrackingEnabled && ChangeTracker.State != ObjectState.Added)
+					{
+						throw new InvalidOperationException("The property 'UserId' is part of the object's key and cannot be changed. Changes to key properties can only be made when the object is not being tracked or is in the Added state.");
+					}
+					_userId = value;
+					OnPropertyChanged("UserId");
+				}
+			}
+		}
+		private int _userId;
+		[DataMember]
+		public string ProjectName
+		{
+			get { return _projectName; }
+			set
+			{
+				if (_projectName != value)
+				{
+					//ChangeTracker.RecordOriginalValue("ArtifactDesc", _artifactDesc);
+					_projectName = value;
+					OnPropertyChanged("ProjectName");
+				}
+			}
+		}
+		private string _projectName;
+
+		[DataMember]
+		public int ArtifactTypeId
+		{
+			get { return _artifactTypeId; }
+			set
+			{
+				if (_artifactTypeId != value)
+				{
+					if (ChangeTracker.ChangeTrackingEnabled && ChangeTracker.State != ObjectState.Added)
+					{
+						throw new InvalidOperationException("The property 'ArtifactTypeId' is part of the object's key and cannot be changed. Changes to key properties can only be made when the object is not being tracked or is in the Added state.");
+					}
+					_artifactTypeId = value;
+					OnPropertyChanged("ArtifactTypeId");
+				}
+			}
+		}
+		private int _artifactTypeId;
+
+		[DataMember]
+		public int ArtifactId
+		{
+			get { return _artifactId; }
+			set
+			{
+				if (_artifactId != value)
+				{
+					if (ChangeTracker.ChangeTrackingEnabled && ChangeTracker.State != ObjectState.Added)
+					{
+						throw new InvalidOperationException("The property 'ArtifactId' is part of the object's key and cannot be changed. Changes to key properties can only be made when the object is not being tracked or is in the Added state.");
+					}
+					_artifactId = value;
+					OnPropertyChanged("ArtifactId");
+				}
+			}
+		}
+		private int _artifactId;
+
+		[DataMember]
+		public System.DateTime ChangeDate
+		{
+			get { return _changeDate; }
+			set
+			{
+				if (_changeDate != value)
+				{
+					if (ChangeTracker.ChangeTrackingEnabled && ChangeTracker.State != ObjectState.Added)
+					{
+						throw new InvalidOperationException("The property 'ChangeDate' is part of the object's key and cannot be changed. Changes to key properties can only be made when the object is not being tracked or is in the Added state.");
+					}
+					_changeDate = value;
+					OnPropertyChanged("ChangeDate");
+				}
+			}
+		}
+		private System.DateTime _changeDate;
+
+		[DataMember]
+		public int ChangeTypeId
+		{
+			get { return _changeTypeId; }
+			set
+			{
+				if (_changeTypeId != value)
+				{
+					if (ChangeTracker.ChangeTrackingEnabled && ChangeTracker.State != ObjectState.Added)
+					{
+						throw new InvalidOperationException("The property 'ChangeTypeId' is part of the object's key and cannot be changed. Changes to key properties can only be made when the object is not being tracked or is in the Added state.");
+					}
+					_changeTypeId = value;
+					OnPropertyChanged("ChangeTypeId");
+				}
+			}
+		}
+		private int _changeTypeId;
+
+		[DataMember]
+		public Nullable<int> ProjectId
+		{
+			get { return _projectId; }
+			set
+			{
+				if (_projectId != value)
+				{
+					//ChangeTracker.RecordOriginalValue("ProjectId", _projectId);
+					_projectId = value;
+					OnPropertyChanged("ProjectId");
+				}
+			}
+		}
+		private Nullable<int> _projectId;
+
+		[DataMember]
+		public Nullable<long> RevertId
+		{
+			get { return _revertId; }
+			set
+			{
+				if (_revertId != value)
+				{
+					//ChangeTracker.RecordOriginalValue("RevertId", _revertId);
+					_revertId = value;
+					OnPropertyChanged("RevertId");
+				}
+			}
+		}
+		private Nullable<long> _revertId;
+
+		[DataMember]
+		public string ArtifactDesc
+		{
+			get { return _artifactDesc; }
+			set
+			{
+				if (_artifactDesc != value)
+				{
+					//ChangeTracker.RecordOriginalValue("ArtifactDesc", _artifactDesc);
+					_artifactDesc = value;
+					OnPropertyChanged("ArtifactDesc");
+				}
+			}
+		}
+		private string _artifactDesc;
+
+		[DataMember]
+		public string SignatureHash
+		{
+			get { return _signatureHash; }
+			set
+			{
+				if (_signatureHash != value)
+				{
+					//ChangeTracker.RecordOriginalValue("SignatureHash", _signatureHash);
+					_signatureHash = value;
+					OnPropertyChanged("SignatureHash");
+				}
+			}
+		}
+		private string _signatureHash;
+
+		[DataMember]
+		public string ChangeTypeName
+		{
+			get { return _changeTypeName; }
+			set
+			{
+				if (_changeTypeName != value)
+				{
+					if (ChangeTracker.ChangeTrackingEnabled && ChangeTracker.State != ObjectState.Added)
+					{
+						throw new InvalidOperationException("The property 'ChangeTypeName' is part of the object's key and cannot be changed. Changes to key properties can only be made when the object is not being tracked or is in the Added state.");
+					}
+					_changeTypeName = value;
+					OnPropertyChanged("ChangeTypeName");
+				}
+			}
+		}
+		private string _changeTypeName;
+
+		[DataMember]
+		public string UserName
+		{
+			get { return _userName; }
+			set
+			{
+				if (_userName != value)
+				{
+					//ChangeTracker.RecordOriginalValue("UserName", _userName);
+					_userName = value;
+					OnPropertyChanged("UserName");
+				}
+			}
+		}
+		private string _userName;
+
+		[DataMember]
+		public string ArtifactTypeName
+		{
+			get { return _artifactTypeName; }
+			set
+			{
+				if (_artifactTypeName != value)
+				{
+					if (ChangeTracker.ChangeTrackingEnabled && ChangeTracker.State != ObjectState.Added)
+					{
+						throw new InvalidOperationException("The property 'ArtifactTypeName' is part of the object's key and cannot be changed. Changes to key properties can only be made when the object is not being tracked or is in the Added state.");
+					}
+					_artifactTypeName = value;
+					OnPropertyChanged("ArtifactTypeName");
+				}
+			}
+		}
+		private string _artifactTypeName;
+
+		[DataMember]
+		public string Meaning
+		{
+			get { return _meaning; }
+			set
+			{
+				if (_meaning != value)
+				{
+					//ChangeTracker.RecordOriginalValue("Meaning", _meaning);
+					_meaning = value;
+					OnPropertyChanged("Meaning");
+				}
+			}
+		}
+		private string _meaning;
+
+		#endregion
+
+		#region ChangeTracking
+
+		protected virtual void OnPropertyChanged(String propertyName)
+		{
+			if (ChangeTracker.State != ObjectState.Added && ChangeTracker.State != ObjectState.Deleted)
+			{
+				ChangeTracker.State = ObjectState.Modified;
+			}
+			if (_propertyChanged != null)
+			{
+				_propertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+
+		protected virtual void OnNavigationPropertyChanged(String propertyName)
+		{
+			if (_propertyChanged != null)
+			{
+				_propertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+
+		event PropertyChangedEventHandler INotifyPropertyChanged.PropertyChanged { add { _propertyChanged += value; } remove { _propertyChanged -= value; } }
+		private event PropertyChangedEventHandler _propertyChanged;
+		private ObjectChangeTracker _changeTracker;
+
+		[DataMember]
+		public ObjectChangeTracker ChangeTracker
+		{
+			get
+			{
+				if (_changeTracker == null)
+				{
+					_changeTracker = new ObjectChangeTracker();
+					_changeTracker.ObjectStateChanging += HandleObjectStateChanging;
+				}
+				return _changeTracker;
+			}
+			set
+			{
+				if (_changeTracker != null)
+				{
+					_changeTracker.ObjectStateChanging -= HandleObjectStateChanging;
+				}
+				_changeTracker = value;
+				if (_changeTracker != null)
+				{
+					_changeTracker.ObjectStateChanging += HandleObjectStateChanging;
+				}
+			}
+		}
+
+		private void HandleObjectStateChanging(object sender, ObjectStateChangingEventArgs e)
+		{
+			if (e.NewState == ObjectState.Deleted)
+			{
+				ClearNavigationProperties();
+			}
+		}
+
+		protected bool IsDeserializing { get; private set; }
+
+		[OnDeserializing]
+		public void OnDeserializingMethod(StreamingContext context)
+		{
+			IsDeserializing = true;
+		}
+
+		[OnDeserialized]
+		public void OnDeserializedMethod(StreamingContext context)
+		{
+			IsDeserializing = false;
+			ChangeTracker.ChangeTrackingEnabled = true;
+		}
+
+		protected virtual void ClearNavigationProperties()
+		{
+		}
+
+		#endregion
+
+	}
+}

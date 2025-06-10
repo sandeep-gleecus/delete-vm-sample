@@ -1,0 +1,999 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArtifactUploadDialog_NoJava" xml:space="preserve">
+    <value>There's no &lt;a href='http://www.java.com'&gt;Java-Plugin&lt;/a&gt; installed in your browser.</value>
+  </data>
+  <data name="ArtifactUploadDialog_PasteImageFromClipboard" xml:space="preserve">
+    <value>Paste image from clipboard</value>
+  </data>
+  <data name="DocumentDetails_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="DocumentDetails_CreatedBy" xml:space="preserve">
+    <value>Created By:</value>
+  </data>
+  <data name="DocumentDetails_Description" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="DocumentDetails_DocumentID" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="DocumentDetails_DocumentType" xml:space="preserve">
+    <value>Document&amp;nbsp;Type:</value>
+  </data>
+  <data name="DocumentDetails_EditedBy" xml:space="preserve">
+    <value>Edited By:</value>
+  </data>
+  <data name="DocumentDetails_Filename" xml:space="preserve">
+    <value>Filename:</value>
+  </data>
+  <data name="DocumentDetails_FileType" xml:space="preserve">
+    <value>File&amp;nbsp;Type:</value>
+  </data>
+  <data name="DocumentDetails_Tags" xml:space="preserve">
+    <value>Tags:</value>
+  </data>
+  <data name="DocumentDetails_Version" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="DocumentDetails_ViewDetails" xml:space="preserve">
+    <value>View Details</value>
+  </data>
+  <data name="TestRunDetails_IncidentList" xml:space="preserve">
+    <value>Incident List for Test Run Step:</value>
+  </data>
+  <data name="TestSetDetails_AddTestCaseLegend" xml:space="preserve">
+    <value>Choose the test case(s) to add to the current test set:</value>
+  </data>
+  <data name="TestSetDetails_AddTestCaseTitle" xml:space="preserve">
+    <value>Add Test Case to the Test Set</value>
+  </data>
+  <data name="TestSetDetails_TestCaseParametersLegend" xml:space="preserve">
+    <value>Please fill out the parameters for this test case entry:</value>
+  </data>
+  <data name="TestSetDetails_TestCaseParametersNone" xml:space="preserve">
+    <value>This test case does not have any parameters defined.</value>
+  </data>
+  <data name="TestSetDetails_TestCaseParametersTitle" xml:space="preserve">
+    <value>Edit Test Case Parameters</value>
+  </data>
+  <data name="TestStepDetails_SavedChanges" xml:space="preserve">
+    <value>Successfully saved changes to test step</value>
+  </data>
+  <data name="WebParts_AvailableWidgets" xml:space="preserve">
+    <value>Available Widgets</value>
+  </data>
+  <data name="WebParts_ClosedWidgets" xml:space="preserve">
+    <value>Closed Widgets</value>
+  </data>
+  <data name="WebParts_EditWidgetSettings" xml:space="preserve">
+    <value>Edit Widget Settings</value>
+  </data>
+  <data name="Administration_GeneralSettings_DefaultCultureNoValue" xml:space="preserve">
+    <value>--- Server Default ---</value>
+  </data>
+  <data name="UserProfile_UserCultureNoValue" xml:space="preserve">
+    <value>--- Use Application Default ---</value>
+  </data>
+  <data name="Global_ChooseProject" xml:space="preserve">
+    <value>--- Choose Product ---</value>
+  </data>
+  <data name="Global_AllReleases" xml:space="preserve">
+    <value>--- All Releases ---</value>
+  </data>
+  <data name="Global_DropDownAll" xml:space="preserve">
+    <value>-- All --</value>
+  </data>
+  <data name="Global_ShowHideColumns" xml:space="preserve">
+    <value>-- Show/hide columns --</value>
+  </data>
+  <data name="Global_ShowLevel" xml:space="preserve">
+    <value>--- Show Level ---</value>
+  </data>
+  <data name="Global_AllLevels" xml:space="preserve">
+    <value>All Levels</value>
+  </data>
+  <data name="Global_ExportToProject" xml:space="preserve">
+    <value>Export to Product</value>
+  </data>
+  <data name="Global_Hide" xml:space="preserve">
+    <value>Hide</value>
+  </data>
+  <data name="Global_Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Global_Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="RequirementList_ChildRequirement" xml:space="preserve">
+    <value>Child Requirement</value>
+  </data>
+  <data name="RequirementList_NewRequirement" xml:space="preserve">
+    <value>New Requirement</value>
+  </data>
+  <data name="Requirements_CreateTestCases" xml:space="preserve">
+    <value>Create Test Cases</value>
+  </data>
+  <data name="Requirements_CreateTestSet" xml:space="preserve">
+    <value>Create Test Set</value>
+  </data>
+  <data name="Releases_CreateTestSet" xml:space="preserve">
+    <value>Create Test Set</value>
+  </data>
+  <data name="Releases_NewIteration" xml:space="preserve">
+    <value>New Sprint</value>
+  </data>
+  <data name="Releases_NewRelease" xml:space="preserve">
+    <value>New Release</value>
+  </data>
+  <data name="Global_Host" xml:space="preserve">
+    <value>Host</value>
+  </data>
+  <data name="Global_NewCustomList" xml:space="preserve">
+    <value>New Custom List</value>
+  </data>
+  <data name="Global_NewDocumentType" xml:space="preserve">
+    <value>New Document Type</value>
+  </data>
+  <data name="Global_NewFolder" xml:space="preserve">
+    <value>New Folder</value>
+  </data>
+  <data name="Global_NewHost" xml:space="preserve">
+    <value>New Host</value>
+  </data>
+  <data name="Global_NewIncident" xml:space="preserve">
+    <value>New Incident</value>
+  </data>
+  <data name="Global_NewIteration" xml:space="preserve">
+    <value>New Sprint</value>
+  </data>
+  <data name="Global_NewRelease" xml:space="preserve">
+    <value>New Release</value>
+  </data>
+  <data name="Global_NewSubFolder" xml:space="preserve">
+    <value>New Subfolder</value>
+  </data>
+  <data name="Global_NewTask" xml:space="preserve">
+    <value>New Task</value>
+  </data>
+  <data name="Global_NewTestCase" xml:space="preserve">
+    <value>New Test Case</value>
+  </data>
+  <data name="Global_NewTestSet" xml:space="preserve">
+    <value>New Test Set</value>
+  </data>
+  <data name="Global_NewValue" xml:space="preserve">
+    <value>New Value</value>
+  </data>
+  <data name="ReleasesService_NoTestsMapped" xml:space="preserve">
+    <value>No tests mapped against this release/sprint</value>
+  </data>
+  <data name="TestSetList_NewChildTestSet" xml:space="preserve">
+    <value>New Child Test Set</value>
+  </data>
+  <data name="TestSetList_NewTestSet" xml:space="preserve">
+    <value>New Test Set</value>
+  </data>
+  <data name="TestCaseList_AddToRelease" xml:space="preserve">
+    <value>Add to Release</value>
+  </data>
+  <data name="TestCaseList_AddToRequirement" xml:space="preserve">
+    <value>Add to Requirement</value>
+  </data>
+  <data name="TestCaseList_AddToTestSet" xml:space="preserve">
+    <value>Add to Test Set</value>
+  </data>
+  <data name="TestCaseList_ExecuteTests" xml:space="preserve">
+    <value>Execute Tests</value>
+  </data>
+  <data name="TestCaseList_NewChildTestCase" xml:space="preserve">
+    <value>New Child Test Case</value>
+  </data>
+  <data name="TestCaseList_NewTestCase" xml:space="preserve">
+    <value>New Test Case</value>
+  </data>
+  <data name="AutomationHosts_NewHost" xml:space="preserve">
+    <value>New Host</value>
+  </data>
+  <data name="Global_CollapseAll" xml:space="preserve">
+    <value>Collapse All</value>
+  </data>
+  <data name="Global_ExpandAll" xml:space="preserve">
+    <value>Expand All</value>
+  </data>
+  <data name="Global_NoneDropDown" xml:space="preserve">
+    <value>-- None --</value>
+  </data>
+  <data name="Global_PleaseSelectDropDown" xml:space="preserve">
+    <value>--- Please Select ---</value>
+  </data>
+  <data name="IncidentList_CopyIncident" xml:space="preserve">
+    <value>Copy Incident</value>
+  </data>
+  <data name="IncidentList_DeleteIncident" xml:space="preserve">
+    <value>Delete Incident</value>
+  </data>
+  <data name="IncidentList_NewIncident" xml:space="preserve">
+    <value>New Incident</value>
+  </data>
+  <data name="IterationPlan_InsertTask" xml:space="preserve">
+    <value>Insert Task</value>
+  </data>
+  <data name="TaskList_CopyTask" xml:space="preserve">
+    <value>Copy Task</value>
+  </data>
+  <data name="TaskList_DeleteTask" xml:space="preserve">
+    <value>Delete Task</value>
+  </data>
+  <data name="TaskList_NewTask" xml:space="preserve">
+    <value>New Task</value>
+  </data>
+  <data name="ArtifactLinkPanel_AddAssociation" xml:space="preserve">
+    <value>Add Association</value>
+  </data>
+  <data name="ArtifactLinkPanel_AddNewAssociation" xml:space="preserve">
+    <value>Add New Association</value>
+  </data>
+  <data name="ArtifactLinkPanel_ChooseArtifact" xml:space="preserve">
+    <value>Please choose the artifact that you want to add an association to:</value>
+  </data>
+  <data name="ArtifactLinkPanel_ChooseFromList" xml:space="preserve">
+    <value>Choose from list:</value>
+  </data>
+  <data name="ArtifactLinkPanel_ChooseTypeOfArtifact" xml:space="preserve">
+    <value>Please choose the type of artifact that you want to add an association to:</value>
+  </data>
+  <data name="ArtifactLinkPanel_CreateRequirementFromIncident" xml:space="preserve">
+    <value>Create a new requirement from this incident</value>
+  </data>
+  <data name="ArtifactLinkPanel_DeleteAssociation" xml:space="preserve">
+    <value>Delete Association</value>
+  </data>
+  <data name="ArtifactLinkPanel_EnterArtifactId" xml:space="preserve">
+    <value>Enter Artifact ID:</value>
+  </data>
+  <data name="ArtifactLinkPanel_IncludeSourceCodeRevisions" xml:space="preserve">
+    <value>Include Source Code Commits</value>
+  </data>
+  <data name="AttachmentPanel_AddAttachment" xml:space="preserve">
+    <value>Add Attachment</value>
+  </data>
+  <data name="FileUploadDialog_AddNewDocument" xml:space="preserve">
+    <value>Add New Document</value>
+  </data>
+  <data name="Incidents_CreateRequirement" xml:space="preserve">
+    <value>Convert Into Requirements</value>
+  </data>
+  <data name="TaskList_InsertTask" xml:space="preserve">
+    <value>Insert Task</value>
+  </data>
+  <data name="TestCaseDetails_EditParameters" xml:space="preserve">
+    <value>Edit Parameters</value>
+  </data>
+  <data name="TestCaseDetails_InsertLink" xml:space="preserve">
+    <value>Insert Link</value>
+  </data>
+  <data name="TestCaseDetails_InsertStep" xml:space="preserve">
+    <value>Insert Step</value>
+  </data>
+  <data name="TestCaseDetails_AddLinkedTestCase" xml:space="preserve">
+    <value>Add Linked Test Case</value>
+  </data>
+  <data name="TestCaseDetails_ChooseTestCaseForLink" xml:space="preserve">
+    <value>Choose the test case to add as a link in the test step list:</value>
+  </data>
+  <data name="TestCaseDetails_EditLinkedTestParameters" xml:space="preserve">
+    <value>Edit Linked Test Case Parameters</value>
+  </data>
+  <data name="TestCaseDetails_PleaseFillOutParameters" xml:space="preserve">
+    <value>Please fill out the parameters for this linked test case:</value>
+  </data>
+  <data name="TestSetDetails_AddTests" xml:space="preserve">
+    <value>Add Tests</value>
+  </data>
+  <data name="TestSetDetails_EditParameters" xml:space="preserve">
+    <value>Edit Parameters</value>
+  </data>
+  <data name="TestSetDetails_ExecuteTests" xml:space="preserve">
+    <value>Execute Tests</value>
+  </data>
+  <data name="TestSetDetails_InsertTests" xml:space="preserve">
+    <value>Insert Tests</value>
+  </data>
+  <data name="TestSetDetails_RemoveTests" xml:space="preserve">
+    <value>Remove Tests</value>
+  </data>
+  <data name="TestCaseExecution_NoReleasesDropDown" xml:space="preserve">
+    <value>--- No Releases For This Product ---</value>
+  </data>
+  <data name="Documents_AddDocument" xml:space="preserve">
+    <value>Add Document</value>
+  </data>
+  <data name="Global_SortedAscending" xml:space="preserve">
+    <value>Sorted Ascending</value>
+  </data>
+  <data name="Global_SortedDescending" xml:space="preserve">
+    <value>Sorted Descending</value>
+  </data>
+  <data name="Global_Filter" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="Global_AllItems" xml:space="preserve">
+    <value>All Items</value>
+  </data>
+  <data name="Global_ItemsInFolder" xml:space="preserve">
+    <value>Items in Current Folder</value>
+  </data>
+  <data name="TestCases_BlockTestCases" xml:space="preserve">
+    <value>Block Test Cases</value>
+  </data>
+  <data name="TestCases_UnBlockTestCases" xml:space="preserve">
+    <value>Unblock Test Cases</value>
+  </data>
+  <data name="Timecard_SubmitConfirm" xml:space="preserve">
+    <value>Are you sure you want to submit this timecard? It will update the Additional Effort and Remaining Effort for all the items on the page.</value>
+  </data>
+  <data name="Timecard_SubmitSuccess" xml:space="preserve">
+    <value>Your timecard was successfully submitted.</value>
+  </data>
+  <data name="AttachmentPanel_AddExisting" xml:space="preserve">
+    <value>Add Existing</value>
+  </data>
+  <data name="AttachmentPanel_AddExistingDocument" xml:space="preserve">
+    <value>Add Existing Document</value>
+  </data>
+  <data name="AttachmentPanel_AddNew" xml:space="preserve">
+    <value>Add New</value>
+  </data>
+  <data name="AttachmentPanel_IncludeSourceCodeDocuments" xml:space="preserve">
+    <value>Include Source Code Documents</value>
+  </data>
+  <data name="AttachmentPanel_ChooseTypeOfExisting" xml:space="preserve">
+    <value>Choose the location of existing document that you'd like to add:</value>
+  </data>
+  <data name="Global_PrintItems" xml:space="preserve">
+    <value>Print Items</value>
+  </data>
+  <data name="Admin_ReportDetails_AddNewQuery" xml:space="preserve">
+    <value>--- Add New Query ---</value>
+  </data>
+  <data name="Admin_ReportDetails_CreateDefaultTemplate" xml:space="preserve">
+    <value>Create Default Template</value>
+  </data>
+  <data name="Admin_ReportDetails_CustomQueryLegend" xml:space="preserve">
+    <value>You need to enter the SQL command for retrieving the report data. You can use the special tokens ${ProjectId} and ${ProjectGroupId} to limit the query to a specific product or program. WARNING: If you do not specify either of these parameters, the report will retrieve data for all products in the system, regardless of the user's role or permissions.</value>
+  </data>
+  <data name="Admin_ReportDetails_CustomTemplateLegend" xml:space="preserve">
+    <value>You need to enter the XSLT Template for displaying the retrieved data as HTML. When you click the 'Create Default Template' option, the system will automatically generate a default XSLT template that you can edit.</value>
+  </data>
+  <data name="Admin_ReportDetails_PreviewResults" xml:space="preserve">
+    <value>Preview Results</value>
+  </data>
+  <data name="Admin_ReportDetails_StandardTemplateLegend" xml:space="preserve">
+    <value>You need to enter the XSLT Template for displaying the retrieved data as HTML. When you first add the section, the default template for this section will be included. You can modify this if you wish.</value>
+  </data>
+  <data name="TestCaseList_RemoveFromRelease" xml:space="preserve">
+    <value>Remove from Release</value>
+  </data>
+  <data name="Global_UnknownDropDownValue" xml:space="preserve">
+    <value>-- Unknown --</value>
+  </data>
+  <data name="Global_SelectRole" xml:space="preserve">
+    <value>--- Select Role ---</value>
+  </data>
+  <data name="Admin_PlanningOptions_SuggestPointMetric" xml:space="preserve">
+    <value>Suggest Point Effort</value>
+  </data>
+  <data name="Global_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Global_AllActive" xml:space="preserve">
+    <value>All Active</value>
+  </data>
+  <data name="Global_AllButDeleted" xml:space="preserve">
+    <value>All But Deleted</value>
+  </data>
+  <data name="Requirements_FocusOn" xml:space="preserve">
+    <value>Focus On</value>
+  </data>
+  <data name="SidebarPanel_QuickFilters" xml:space="preserve">
+    <value>Quick Filter</value>
+  </data>
+  <data name="Global_AllReleases2" xml:space="preserve">
+    <value>(All Releases)</value>
+  </data>
+  <data name="TaskDetails_SameAsCurrentTask" xml:space="preserve">
+    <value>-- Same as Current Task --</value>
+  </data>
+  <data name="Global_NewPhase" xml:space="preserve">
+    <value>New Phase</value>
+  </data>
+  <data name="Releases_ChildIteration" xml:space="preserve">
+    <value>Child Sprint</value>
+  </data>
+  <data name="Releases_ChildRelease" xml:space="preserve">
+    <value>Child Release</value>
+  </data>
+  <data name="Global_ExportToExcel" xml:space="preserve">
+    <value>Export to Excel</value>
+  </data>
+  <data name="Global_ExportToPdf" xml:space="preserve">
+    <value>Export to Acrobat</value>
+  </data>
+  <data name="Global_ExportToWord" xml:space="preserve">
+    <value>Export to Word</value>
+  </data>
+  <data name="TaskList_CloneTask" xml:space="preserve">
+    <value>Clone Task</value>
+  </data>
+  <data name="IncidentList_CloneIncident" xml:space="preserve">
+    <value>Clone Incident</value>
+  </data>
+  <data name="InsertTestLink_CreateNewTestCase" xml:space="preserve">
+    <value>Create New Test Case</value>
+  </data>
+  <data name="InsertTestLink_LinkExistingTestCase" xml:space="preserve">
+    <value>Link Existing Test Case</value>
+  </data>
+  <data name="InsertTestLink_LinkTypeLegend" xml:space="preserve">
+    <value>Do you want to:</value>
+  </data>
+  <data name="Global_RootFolderDropDown" xml:space="preserve">
+    <value>--- Root Folder ---</value>
+  </data>
+  <data name="TestCaseDetails_ChooseTestCaseToImport" xml:space="preserve">
+    <value>Choose the test case to import test steps from:</value>
+  </data>
+  <data name="TestCaseDetails_ImportStepsFromTestCase" xml:space="preserve">
+    <value>Import Steps from Test Case</value>
+  </data>
+  <data name="TestCaseDetails_CreateTestCaseForLink" xml:space="preserve">
+    <value>Please choose the folder and name for the new linked test case:</value>
+  </data>
+  <data name="TestCaseDetails_EnterParameters" xml:space="preserve">
+    <value>Enter Parameters</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_MyPage" xml:space="preserve">
+    <value>Go to My Page</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_ProjectHome" xml:space="preserve">
+    <value>Go to Product Home</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_ProjectGroupHome" xml:space="preserve">
+    <value>Go to Program Home</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Requirements" xml:space="preserve">
+    <value>Go to Requirements</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_PlanningBoard" xml:space="preserve">
+    <value>Go to Planning Board</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Releases" xml:space="preserve">
+    <value>Go to Releases</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Documents" xml:space="preserve">
+    <value>Go to Documents</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_TestCases" xml:space="preserve">
+    <value>Go to Test Cases</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_TestSets" xml:space="preserve">
+    <value>Go to Test Sets</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_TestRuns" xml:space="preserve">
+    <value>Go to Test Runs</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_AutomationHosts" xml:space="preserve">
+    <value>Go to Automation Hosts</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Incidents" xml:space="preserve">
+    <value>Go to Incidents</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Tasks" xml:space="preserve">
+    <value>Go to Tasks</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Resources" xml:space="preserve">
+    <value>Go to Resources</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_SourceCode" xml:space="preserve">
+    <value>Go to Source Code</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Reporting" xml:space="preserve">
+    <value>Go to Reporting</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_UserProfile" xml:space="preserve">
+    <value>Go to User Profile</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Administration" xml:space="preserve">
+    <value>Go to Administration</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalSearch_Search" xml:space="preserve">
+    <value>Global Search</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalAction_NewIncident" xml:space="preserve">
+    <value>Create a New Incident</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalAction_ShortcutReference" xml:space="preserve">
+    <value>Show keyboard shortcut reference</value>
+  </data>
+  <data name="KeyBoardShortcuts_ListPage_NextRow" xml:space="preserve">
+    <value>Go to next row</value>
+  </data>
+  <data name="KeyBoardShortcuts_ListPage_ToggleNav" xml:space="preserve">
+    <value>Toggle keyboard navigation of the list table</value>
+  </data>
+  <data name="KeyBoardShortcuts_ListPage_ToggleCheckRow" xml:space="preserve">
+    <value>Toggle current row marked row as checked</value>
+  </data>
+  <data name="KeyBoardShortcuts_ListPage_OpenItem" xml:space="preserve">
+    <value>Open selected item</value>
+  </data>
+  <data name="KeyBoardShortcuts_ListPage_OpenItemNewWindow" xml:space="preserve">
+    <value>Open selected item in new browser window</value>
+  </data>
+  <data name="KeyBoardShortcuts_ListPage_PreviousRow" xml:space="preserve">
+    <value>Go to previous row</value>
+  </data>
+  <data name="KeyBoardShortcuts_DetailsPage_NextTab" xml:space="preserve">
+    <value>Go to next tab</value>
+  </data>
+  <data name="KeyBoardShortcuts_DetailsPage_PreviousTab" xml:space="preserve">
+    <value>Go to previous tab</value>
+  </data>
+  <data name="KeyBoardShortcuts_Modal_Title" xml:space="preserve">
+    <value>Keyboard Shortcut Reference</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Title" xml:space="preserve">
+    <value>Site Wide Navigation</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Note" xml:space="preserve">
+    <value>Access to pages varies by user and product</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalAction_Title" xml:space="preserve">
+    <value>Site Wide Shortcuts</value>
+  </data>
+  <data name="KeyBoardShortcuts_ListPage_Title" xml:space="preserve">
+    <value>List Page Shortcuts</value>
+  </data>
+  <data name="KeyBoardShortcuts_DetailsPage_Title" xml:space="preserve">
+    <value>Details Page Shortcuts</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_Title" xml:space="preserve">
+    <value>Test Execution Shortcuts</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_HeaderDisplay" xml:space="preserve">
+    <value>Change the Display</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_SplitView" xml:space="preserve">
+    <value>Show Split View</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_TableView" xml:space="preserve">
+    <value>Show Table View</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_MiniView" xml:space="preserve">
+    <value>Show Mini View</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_SubViewLeft" xml:space="preserve">
+    <value>Select the left sub view</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_SubViewRight" xml:space="preserve">
+    <value>Select the right sub view</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalAction_Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_ShowRun" xml:space="preserve">
+    <value>Toggle always showing test run details</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_HeaderInspector" xml:space="preserve">
+    <value>Switch Tabs in the Inspector</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_ResultsTab" xml:space="preserve">
+    <value>Switch to the Actual Results Tab</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_AttachmentsTab" xml:space="preserve">
+    <value>Switch to the Attachments Tab</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_IncidentsTab" xml:space="preserve">
+    <value>Switch to the Incidents Tab</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_HeaderActions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_TogglePausePlay" xml:space="preserve">
+    <value>Toggle Pause / Play</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_AddResults" xml:space="preserve">
+    <value>Add actual results</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_Fail" xml:space="preserve">
+    <value>Mark current step as Fail</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_Pass" xml:space="preserve">
+    <value>Mark current step as Pass</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_Caution" xml:space="preserve">
+    <value>Mark current step as Caution</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_Blocked" xml:space="preserve">
+    <value>Mark current step as Blocked</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_NotApplicable" xml:space="preserve">
+    <value>Mark current step as Not Applicable</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_HeaderNavigate" xml:space="preserve">
+    <value>Navigate Between Test Steps</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_NextStep" xml:space="preserve">
+    <value>Move to next test run step</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_PreviousStep" xml:space="preserve">
+    <value>Move to previous test run step</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_NextRun" xml:space="preserve">
+    <value>Move to next test run</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_PreviousRun" xml:space="preserve">
+    <value>Move to previous test run</value>
+  </data>
+  <data name="TestStepDetails_EnterId" xml:space="preserve">
+    <value>Enter ID</value>
+  </data>
+  <data name="TestStepDetails_LinkExistingIncident" xml:space="preserve">
+    <value>Link Existing Incident</value>
+  </data>
+  <data name="TestStepDetails_LinkExistingIncidentIntro" xml:space="preserve">
+    <value>Please choose the incident(s) to link to this test step:</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalSearch_GoToFirstResult" xml:space="preserve">
+    <value>Go to first result listed</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalSearch_GoToSecondResult" xml:space="preserve">
+    <value>Go to second result listed</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalSearch_GoToThirdResult" xml:space="preserve">
+    <value>Go to third result listed</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalSearch_ShowResults" xml:space="preserve">
+    <value>Display Results</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalSearch_Title" xml:space="preserve">
+    <value>Site Wide Search</value>
+  </data>
+  <data name="TestRunDetails_LinkExistingIncidentIntro" xml:space="preserve">
+    <value>Please choose the incident(s) to link to this test run step:</value>
+  </data>
+  <data name="KeyBoardShortcuts_PlanningBoard_GroupByComponent" xml:space="preserve">
+    <value>Group By Component</value>
+  </data>
+  <data name="KeyBoardShortcuts_PlanningBoard_GroupByPackage" xml:space="preserve">
+    <value>Group By Epic</value>
+  </data>
+  <data name="KeyBoardShortcuts_PlanningBoard_GroupByPriority" xml:space="preserve">
+    <value>Group By Priority</value>
+  </data>
+  <data name="KeyBoardShortcuts_PlanningBoard_GroupByStatus" xml:space="preserve">
+    <value>Group By Status</value>
+  </data>
+  <data name="KeyBoardShortcuts_PlanningBoard_Title" xml:space="preserve">
+    <value>Planning Board Shortcuts</value>
+  </data>
+  <data name="KeyBoardShortcuts_PlanningBoard_ToggleDetails" xml:space="preserve">
+    <value>Toggle Detailed View</value>
+  </data>
+  <data name="KeyBoardShortcuts_PlanningBoard_ToggleIncidents" xml:space="preserve">
+    <value>Toggle Incidents</value>
+  </data>
+  <data name="KeyBoardShortcuts_PlanningBoard_ToggleTasks" xml:space="preserve">
+    <value>Toggle Tasks</value>
+  </data>
+  <data name="KeyBoardShortcuts_PlanningBoard_ToggleTestCases" xml:space="preserve">
+    <value>Toggle Test Cases</value>
+  </data>
+  <data name="Global_AllProjects" xml:space="preserve">
+    <value>(All Products)</value>
+  </data>
+  <data name="PendingTestRuns_Reassign_Intro" xml:space="preserve">
+    <value>Please choose the name of the user you'd like to assign this test run to:</value>
+  </data>
+  <data name="SidebarPanel_Charts" xml:space="preserve">
+    <value>Charts</value>
+  </data>
+  <data name="KeyBoardShortcuts_DetailsPage_Save" xml:space="preserve">
+    <value>Save all changes</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_AddStep" xml:space="preserve">
+    <value>Add new test step</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_CloneStep" xml:space="preserve">
+    <value>Create a clone of the current test step</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_DeleteStep" xml:space="preserve">
+    <value>Delete the current test step</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_EditCaseDescription" xml:space="preserve">
+    <value>Edit the test case description</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_EditCaseName" xml:space="preserve">
+    <value>Edit the name of the test case</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_EditStepActualResult" xml:space="preserve">
+    <value>Edit the current test step actual result</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_EditStepDescription" xml:space="preserve">
+    <value>Edit the current test step description</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_EditStepExpectedResult" xml:space="preserve">
+    <value>Edit the current test step expected result</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_EditStepSampleData" xml:space="preserve">
+    <value>Edit the current test step sample data</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_MoveStepDown" xml:space="preserve">
+    <value>Move current test step down one</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_MoveStepUp" xml:space="preserve">
+    <value>Move current test step up one</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_ShowCaseDescription" xml:space="preserve">
+    <value>Toggle showing test case description</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_ShowExpectedResult" xml:space="preserve">
+    <value>Toggle showing expected result</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_ShowLastResult" xml:space="preserve">
+    <value>Toggle showing the results from the last time the step was run</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_ShowSampleData" xml:space="preserve">
+    <value>Toggle showing sample data</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecution_ShowCustomProperties" xml:space="preserve">
+    <value>Toggle showing custom properties</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_HeaderChangeStatus" xml:space="preserve">
+    <value>Change Execution Status</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_HeaderEdit" xml:space="preserve">
+    <value>Editing</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_TasksTab" xml:space="preserve">
+    <value>Switch to the Tasks Tab</value>
+  </data>
+  <data name="KeyBoardShortcuts_TestExecutionExploratory_Title" xml:space="preserve">
+    <value>Exploratory Test Execution</value>
+  </data>
+  <data name="FileUpload_DragAndDrop" xml:space="preserve">
+    <value>Or drag and drop a file here</value>
+  </data>
+  <data name="FileUpload_SelectFiles" xml:space="preserve">
+    <value>Select a file to upload</value>
+  </data>
+  <data name="RequirementDetails_SameAsCurrentRequirement" xml:space="preserve">
+    <value>-- Same as Current Requirement --</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_OpenArtifacts" xml:space="preserve">
+    <value>Open atrifacts dropdown</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_OpenUser" xml:space="preserve">
+    <value>Open user dropdown</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_OpenWorkspace" xml:space="preserve">
+    <value>Open workspace dropdown</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_ToggleAdminMenu" xml:space="preserve">
+    <value>Open or close the admin menu (if present)</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_ToggleArtifactMenu" xml:space="preserve">
+    <value>Open or close the dropdown artifact menu</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_ToggleUserMenu" xml:space="preserve">
+    <value>Open or close the dropdown user menu</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_ToggleWorkspaceMenu" xml:space="preserve">
+    <value>Open or close the dropdown workspace menu</value>
+  </data>
+  <data name="KeyBoardShortcuts_Instructions" xml:space="preserve">
+    <value>To use any shortcut, tap the keys as shown. When there is a space between characters (e.g. "t c") then tap the keys one after the other in sequence. When there's a "+" between keys, press those keys together at the same time. Please note the "mod" key is "command" on Mac OS, "control" on other operating systems.</value>
+  </data>
+  <data name="Global_NewRisk" xml:space="preserve">
+    <value>New Risk</value>
+  </data>
+  <data name="RiskList_CloneRisk" xml:space="preserve">
+    <value>Clone Risk</value>
+  </data>
+  <data name="RiskList_DeleteRisk" xml:space="preserve">
+    <value>Delete Risk</value>
+  </data>
+  <data name="RiskList_NewRisk" xml:space="preserve">
+    <value>New Risk</value>
+  </data>
+  <data name="Admin_ProductList_CloneProduct" xml:space="preserve">
+    <value>Clone product</value>
+  </data>
+  <data name="Admin_ProductList_CloneProductAndTemplate" xml:space="preserve">
+    <value>Clone product and its template</value>
+  </data>
+  <data name="Global_Deleted" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="Project_ChangeTemplate" xml:space="preserve">
+    <value>Change Product Template</value>
+  </data>
+  <data name="Project_ChangeTemplate_Intro" xml:space="preserve">
+    <value>Please choose the new template for this product and click Next to go to the next part of this operation</value>
+  </data>
+  <data name="Project_ChangeTemplate_TypeConfirm" xml:space="preserve">
+    <value>Type the exact name of the product below to continue</value>
+  </data>
+  <data name="Project_ChangeTemplate_Warning1" xml:space="preserve">
+    <value>This will permanently change data for this product (it will not change any template in any way). You cannot undo this action. The next screen will tell you more about how the data may change.</value>
+  </data>
+  <data name="Project_ChangeTemplate_Warning_CatchAll" xml:space="preserve">
+    <value>Data in custom properties may also change or not display as you expect. Only continue if you have checked the custom properties in the old and new template for all relevant artifacts to make sure they are the same.</value>
+  </data>
+  <data name="Project_ChangeTemplate_Warning_HowLong" xml:space="preserve">
+    <value>This process is usually fast but it can take a long time. DO NOT REFRESH THE PAGE. Make sure users do not work on this product at all during this time.</value>
+  </data>
+  <data name="Project_ChangeTemplate_Warning_StandardFieldsNotOk" xml:space="preserve">
+    <value>By changing this product's template you will lose data in certain standard fields. These are shown in the table above. </value>
+  </data>
+  <data name="Project_ChangeTemplate_Warning_StandardFieldsOK" xml:space="preserve">
+    <value>The standard fields in this product can be successfully migrated to the new template: you should not lose any data from these fields.</value>
+  </data>
+  <data name="Administration_DeleteProjectConfirmTV" xml:space="preserve">
+    <value>&lt;br /&gt;SourceCode repositories associated with this project - if any - will be deleted.</value>
+  </data>
+  <data name="Admin_ReportDetails_CustomQueryLegend2" xml:space="preserve">
+    <value>For report sections that can be filtered by release, use tokens ${ReleaseId} to filter by the specified release, or ${ReleaseAndChildIds} to filter by a comma-separated list of the release and child sprints/phases.</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_Commits" xml:space="preserve">
+    <value>Go to Commits</value>
+  </data>
+  <data name="Global_Markdown" xml:space="preserve">
+    <value>Markdown</value>
+  </data>
+  <data name="Global_Feature_BDD" xml:space="preserve">
+    <value>Feature</value>
+  </data>
+  <data name="KeyBoardShortcuts_GlobalNav_PullRequests" xml:space="preserve">
+    <value>Go to Pull Requests</value>
+  </data>
+  <data name="Global_ShowHideFields" xml:space="preserve">
+    <value>-- Show/hide fields --</value>
+  </data>
+  <data name="Admin_ProductList_CloneInformation" xml:space="preserve">
+    <value>Choose to either create a full clone of everything in this product, or a reset copy. The reset copy resets all statuses, and does not copy over incidents, risk mitigations, test runs, or task dates.&lt;br&gt;You can also decide if you want the new product to use the same template or a cloned template.</value>
+  </data>
+  <data name="Admin_ProductList_CloneResetProduct" xml:space="preserve">
+    <value>Create a reset copy of the product</value>
+  </data>
+  <data name="Admin_ProductList_CloneTemplate" xml:space="preserve">
+    <value>Clone Template</value>
+  </data>
+  <data name="Global_Diagram" xml:space="preserve">
+    <value>Diagram</value>
+  </data>
+  <data name="Global_Mindmap" xml:space="preserve">
+    <value>Mindmap</value>
+  </data>
+  <data name="Global_Orgchart" xml:space="preserve">
+    <value>Org Chart</value>
+  </data>
+</root>

@@ -1,0 +1,32 @@
+-- =====================================================================
+-- Author:			Inflectra Corporation
+-- Business Object: ArtifactManager
+-- Description:		Retrieves the list of fields and custom properties configured
+--					for a specific artifact and project
+-- =====================================================================
+IF OBJECT_ID ( 'ARTIFACT_RETRIEVE_ALL_FIELDS', 'P' ) IS NOT NULL 
+    DROP PROCEDURE ARTIFACT_RETRIEVE_ALL_FIELDS;
+GO
+CREATE PROCEDURE ARTIFACT_RETRIEVE_ALL_FIELDS
+	@ProjectId INT,
+	@ArtifactTypeId INT,
+	@CustumPropPrefix NVARCHAR(50)
+AS
+BEGIN
+	--Get the list of fields and custom properties
+	SELECT	ARF.NAME, ARF.CAPTION, ARF.ARTIFACT_FIELD_TYPE_ID, ARF.LOOKUP_PROPERTY, ARF.IS_HISTORY_RECORDED
+	FROM	TST_ARTIFACT_FIELD ARF
+	WHERE 	ARF.IS_ACTIVE = 1
+	AND	ARF.ARTIFACT_TYPE_ID = @ArtifactTypeId
+	UNION
+	SELECT	@CustumPropPrefix + REPLACE(STR(CPR.PROPERTY_NUMBER, 2), SPACE(1), '0') AS NAME, CPR.NAME AS CAPTION,
+			CPT.ARTIFACT_FIELD_TYPE_ID, NULL AS LOOKUP_PROPERTY, CAST(0 AS BIT) AS IS_HISTORY_RECORDED
+	FROM	TST_CUSTOM_PROPERTY CPR
+			INNER JOIN TST_CUSTOM_PROPERTY_TYPE CPT ON CPR.CUSTOM_PROPERTY_TYPE_ID = CPT.CUSTOM_PROPERTY_TYPE_ID
+			INNER JOIN TST_PROJECT PRJ ON CPR.PROJECT_TEMPLATE_ID = PRJ.PROJECT_TEMPLATE_ID
+	WHERE 	CPR.IS_DELETED = 0
+	AND	CPR.ARTIFACT_TYPE_ID = @ArtifactTypeId
+	AND PRJ.PROJECT_ID = @ProjectId
+	ORDER BY NAME
+END
+GO

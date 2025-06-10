@@ -1,0 +1,892 @@
+﻿/*
+ * ==============
+ * NAVIGATION BAR
+ * ==============
+ */
+
+:root {
+    --nav-bg: rgba(7, 54, 66, .9);
+    --nav-bg-secondary: rgba(76,110,119,0.9);
+    --nav-bg-highlight-subtle: rgba(255,255,255,.2);
+    --nav-bg-highlight: rgba(255,255,255, .5);
+    --nav-text: #f1f1f1;
+    --nav-secondary: #ddd;
+    --nav-active: #fdcb26;
+    --nav-muted: #93a1a1;
+}
+
+.nav-top {
+    background-color: rgba(7,54,66,0.9);
+    background-color: var(--nav-bg);
+    color: #f1f1f1;
+    color: var(--nav-text);
+    display: flex;
+    justify-content: space-between;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+	backdrop-filter: saturate(180%) blur(5px);
+    height: 40px;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 3;
+}
+
+.mt-nav-top {
+    margin-top: 40px;
+}
+
+.nav-top-list,
+.nav-top-list-user {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+
+}
+.nav-top-list {
+    flex-grow: 1;
+    max-width: 960px;
+}
+
+.h-nav-top {
+    height: 40px;
+    max-height: 40px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.nav-top-li,
+.nav-sub-li {
+    list-style: none;
+    display: inline-block;
+    display: inline-flex;
+    position: relative;
+}
+/*these are set for the main nav list - 2*4rem for the home page icons, and divide by 3 as there are three li items that take this class*/
+.nav-top-set-width,
+.nav-sub-li {
+    width: calc((100% - 8rem) / 3);
+}
+.nav-top-set-ml1 {margin-left: calc((100% - 8rem) / 3);}
+.nav-top-set-ml2 {margin-left: calc((100% - 8rem) / 3 * 2);}
+
+.nav-top-btn {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #f1f1f1;
+    color: var(--nav-text);
+    display: flex;
+    font-weight: 400;
+    height: 40px;
+    justify-content: center;
+    overflow: hidden;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .2s;
+    white-space: nowrap;
+    width: 100%;
+}
+.nav-top-li.selected .nav-top-btn, 
+.nav-top-btn:not(.no-indicator):hover,
+.nav-top-btn:not(.no-indicator):focus,
+.nav-top-btn:not(.no-indicator):active,
+.nav-drop-menu-item:hover,
+.nav-drop-menu-item:focus,
+.nav-drop-menu-item:active {
+    background-color: rgba(255,255,255,.2);
+    background-color: var(--nav-bg-highlight-subtle);
+    color: #fdcb26;
+    fill: #fdcb26;
+    color: var(--nav-active);
+    fill: var(--nav-active);
+    outline: 0;
+    text-decoration: none;
+}
+
+.nav-top-btn .svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* NAV DROPDOWNS */
+.nav-drop-menu {
+    background-color: rgba(7, 54, 66, .9);
+    background-color: var(--nav-bg);
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+	backdrop-filter: saturate(180%) blur(5px);
+    border: none;
+    border-radius: 0 0 .25rem .25rem;
+    display: block;
+    left: 0;
+    max-height: calc(100vh - 40px);
+    max-width: 768px; /* the same width as the break point for the mobile nav - to ensure mobile nav is full width*/
+    overflow-y: auto;
+    padding: .5rem .25rem;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+.nav-drop-menu-item {
+    background-color: transparent;
+    color: #f1f1f1;
+    color: var(--nav-text);
+    display: block;
+    overflow: hidden;
+    padding: .25rem 1rem;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.nav-drop-menu-item.is-focused {
+    background-color: rgba(255,255,255,.2);
+    background-color: var(--nav-bg-highlight-subtle);
+    outline: 1px dotted #ddd;
+    outline: 1px dotted var(--nav-secondary);
+}
+.nav-drop-menu-item.is-selected {
+    background-color: rgba(255,255,255, .5);
+    background-color: var(--nav-bg-highlight);
+}
+.nav-drop-menu-item.not-allowed {
+    opacity: .6;
+}
+
+.nav-text, .nav-text-hover:hover { color: #f1f1f1; color: var(--nav-text); }
+.nav-bg { color: rgba(7,54,66,0.9); color: var(--nav-bg); }
+.nav-active, .nav-active-hover:hover {color: #fdcb26; color: var(--nav-active); }
+.nav-muted { color: #93a1a1; color: var(--nav-muted)}
+
+.bg-nav-text { background-color: #f1f1f1; background-color: var(--nav-text); }
+.bg-nav-bg { background-color: rgba(7,54,66,0.9); background-color: var(--nav-bg); }
+.bg-nav-bg-highlight { background-color: rgba(255,255,255, .5); background-color: var(--nav-bg-highlight); }
+.bg-nav-bg-highlight-subtle { background-color: rgba(255,255,255, .2); background-color: var(--nav-bg-highlight-subtle); }
+.bg-nav-secondary-bg { background-color: rgba(76,110,119,0.9); background-color: var(--nav-bg-secondary); }
+
+.nav-active-b {border-color: #fdcb26; border-color: var(--nav-active); }
+
+
+/* SEARCH ICON */
+  
+/* the animated search icon */
+.nav-search-label,
+.nav-search-go {
+    border-radius: 100%;
+    transition: background .4s ease-in-out;
+    background: transparent;
+    border: none;
+    position: relative;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+.nav-search-label:hover,
+.nav-search-go:hover {
+    background-color: rgba(255,255,255,.15);
+}
+
+.nav-search-icon {
+    cursor: pointer;
+    font-size: 60%;
+    transition: transform .5s;
+}
+.nav-search-label:hover .nav-search-icon,
+.nav-search-go:hover .nav-search-icon {
+    color: #f1f1f1;
+    color: var(--nav-text);
+}
+
+.nav-search-icon:before, 
+.nav-search-icon:after {
+    border-radius: 2rem;
+    content: '';
+    position: absolute;
+    transition: all .5s ease-in-out;
+}
+.nav-search-icon:before {
+    box-shadow: 0 0 0 .25em;
+    width: 1em;
+    height: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -75%);
+}
+.nav-search-icon:after {
+    width: 1em;
+    height: .3em;
+    background: #f1f1f1;
+    background: var(--nav-text);
+    transform: translate(0%, 100%) rotate(45deg);
+    top: 50%;
+    left: 50%;
+}
+
+/* active search/close icon */
+#nav-search-check:checked ~ .nav-top-list .nav-search-label .nav-search-icon {
+    /*transform: translate(-1em, -0.15em);*/
+}
+#nav-search-check:checked ~ .nav-top-list .nav-search-label .nav-search-icon:before, 
+#nav-search-check:checked ~ .nav-top-list .nav-search-label .nav-search-icon:after {
+    box-shadow: 0 0 0 0;
+    width: 2em;
+    height: .1em;
+    background: #f1f1f1;
+    background: var(--nav-text);
+}
+#nav-search-check:checked ~ .nav-top-list .nav-search-label .nav-search-icon:before {
+    transform: translate(-50%, 0) rotate(225deg);
+}
+#nav-search-check:checked ~ .nav-top-list .nav-search-label .nav-search-icon:after {
+    transform: translate(-50%, 0) rotate(-225deg);
+}
+
+/*manage hiding / showing navbar items that we don't want to see when searching*/
+#nav-search-check:checked ~ .nav-top-list .nav-hide-on-search {
+    opacity: 0;
+    transform: rotateY(30deg), scale(.5);
+    visibility: hidden;
+}
+/* manage adjusting the left margin of the search open / close button - used for when elements in the menu are absent */
+#nav-search-check:checked ~ .nav-top-list .nav-top-set-ml1-on-search {margin-left: calc((100% - 8rem) / 3);}
+#nav-search-check:checked ~ .nav-top-list .nav-top-set-ml2-on-search {margin-left: calc((100% - 8rem) / 3 * 2);}
+
+/*we can't reference by class name for child pseudo selectors so have to hard code them here*/
+.nav-top-list li:nth-of-type(6) { transition: all .5s .35s }
+.nav-top-list li:nth-of-type(5) { transition: all .5s .28s }
+.nav-top-list li:nth-of-type(4) { transition: all .5s .21s }
+.nav-top-list li:nth-of-type(3) { transition: all .5s .14s }
+.nav-top-list li:nth-of-type(2) { transition: all .5s .07s }
+
+#nav-search-check:checked ~ .nav-top-list li:nth-of-type(2) { transition: all .5s .35s }
+#nav-search-check:checked ~ .nav-top-list li:nth-of-type(3) { transition: all .5s .28s }
+#nav-search-check:checked ~ .nav-top-list li:nth-of-type(4) { transition: all .5s .21s }
+#nav-search-check:checked ~ .nav-top-list li:nth-of-type(5) { transition: all .5s .14s }
+#nav-search-check:checked ~ .nav-top-list li:nth-of-type(6) { transition: all .5s .07s }
+
+.nav-show-on-search {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 12.5%;
+    transition: opacity .3s ease-in-out;
+    width: calc(100% - 12rem); /* 12rem represents the 3 4rem boxes that stay visible when the search bar is showing*/
+}
+#nav-search-check:checked ~ .nav-top-list .nav-show-on-search {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s ease-in-out .3s;
+}
+
+.nav-search-box {
+    transform: translateX(100%);
+    transition: all .5s;
+    width: 100%;
+}
+#nav-search-check:checked ~ .nav-top-list .nav-search-box {
+    transform: translateX(0);
+    transition: all .3s ease-in-out .3s;
+}
+
+.nav-quick-links {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .1s ease-in-out 0s;
+}
+#nav-search-check:checked ~ .nav-top-list .nav-search-box .nav-quick-links {
+    opacity: 1;
+    visibility: visible;
+    transition: all .2s ease-in-out 0.6s;
+}
+
+.nav-search-go {
+    color: #f1f1f1;
+    color: var(--nav-text);
+    height: 2rem;
+    opacity: 0;
+    transition: opacity .2s;
+    width: 2rem;
+}
+.nav-search-go:hover {
+    color: #f1f1f1;
+}
+#nav-search-check:checked ~ .nav-top-list .nav-search-go {
+    opacity: 1;
+    transition: opacity .9s ease-in-out .3s, background .3s;
+}
+
+.nav-search-input {
+    color: #f1f1f1;
+    color: var(--nav-text);
+    border: 0;
+    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid var(--nav-text);
+    box-shadow: none;
+    background: transparent;
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-top: 1px;
+    padding: .25rem;
+    transition: all .3s;
+    width: calc(100% - 2.5rem);
+}
+.nav-search-input:focus {
+    box-shadow: 0 -2px 0 #f1f1f1 inset;
+    box-shadow: 0 -2px 0 var(--nav-text) inset;
+    outline: 0;
+}
+
+
+/* quick links box */
+
+/* manage show/hiding the modal overlay to give focus to search */
+.modal-overlay {
+    cursor: pointer;
+}
+#nav-search-check:checked ~ .modal-overlay {
+    max-height: calc(100vh - 40px);
+}
+
+
+/*manage modals*/
+.modal-full-belowHeader {
+    bottom: 0;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 40px;
+    transition: max-height .3s;
+}
+.modal-full-belowHeader.show,
+.mh-belowHeader,
+.modal-full-belowHeader.show > .ov-y-auto {
+    max-height: calc(100vh - 40px);
+}
+
+
+
+
+/*
+ * ===========
+ * NAV ON SMALL SCREENS
+ * ===========
+ * single breakpoint set for 768px to make it easier to manage
+ */
+ 
+/*small screen specific header*/
+.nav-top-head-sm {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-hamburger {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    transition: all .4s;
+    z-index: 2;
+}
+.nav-hamburger:before,
+.nav-hamburger:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid var(--nav-text);
+    height: 1px;
+    transition: all 0.5s;
+    left: 50%;
+    width: 16px;
+    transform: translate(-50%, -50%);
+}
+.nav-hamburger:before {
+    top: 35%;
+
+}
+.nav-hamburger:after {
+    top: 65%;
+}
+
+
+.nav-home-link path {
+    transition: all .3s;
+}
+.nav-home-link:hover path {
+    fill: #f1f1f1;
+    fill: var(--nav-text);
+}
+
+/*make sure the dropdowns is visible above the full screen nav menu on mobile*/ 
+#nav-modal {
+    z-index: 3;
+}
+
+
+@media only screen and (max-width: 768.1px) {
+    .nav-top {
+        flex-wrap: wrap;
+    }
+    .nav-secondary {
+        display: none;
+    }
+
+    .nav-top-head-sm {
+        display: flex;
+        transition: background .4s;
+        width: 100%;
+    }
+    .nav-top-list,
+    .nav-top-list-user {
+        -webkit-backdrop-filter: saturate(180%) blur(5px);
+	    backdrop-filter: saturate(180%) blur(5px);
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
+        overflow: visible;
+        position: initial;
+        transition: all .5s;
+        visibility: hidden;
+        width: 100%;
+
+    }
+    #nav-menu-sm-check:checked ~ .nav-top-list + .nav-top-list-user { transition: all .5s ease-in-out .15s; }
+
+    .nav-top-list .nav-top-li,
+    .nav-top-list-user .nav-top-li {
+        height: unset;
+        width: 100%;
+    }
+    .nav-top-list .nav-top-btn,
+    .nav-top-list-user .nav-top-btn {
+        align-items: center;
+        border-bottom: 1px solid rgba(255,255,255,.2);
+        border-bottom: 1px solid var(--nav-bg);
+        font-size: calc(.75rem + 1vh);
+        line-height: 1.25;
+        margin: 0 2rem;
+        opacity: 0;
+        padding: 0 1rem;
+        text-align: left;
+        justify-content: flex-start;
+        transition: all .2s;
+        visibility: hidden;
+    }
+    .nav-top-list .drop-box,
+    .nav-top-list-user .drop-box {
+        display: flex;
+    }
+
+    .nav-top-list .nav-drop-menu,
+    .nav-top-list-user .nav-drop-menu {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 40px;
+    }
+
+    /*toggling the main menu open using the header button*/
+    /*hamburger icon animation*/
+    #nav-menu-sm-check:checked ~ .nav-top-head-sm .nav-hamburger:before {
+        transform: translate(-50%, -50%) rotate(-135deg);
+        top: 50%;
+    }
+    #nav-menu-sm-check:checked ~ .nav-top-head-sm .nav-hamburger:after {
+        transform: translate(-50%, -50%) rotate(135deg);
+        top: 50%;
+    }
+
+    /*animation on opening the menu - menu itself*/
+    #nav-menu-sm-check:checked ~ .nav-top-head-sm,
+    #nav-menu-sm-check:checked ~ .nav-top-list,
+    #nav-menu-sm-check:checked ~ .nav-top-list-user {
+        background-color: rgba(7,54,66,0.9);
+        background-color: var(--nav-bg);
+    }
+
+    #nav-menu-sm-check:checked ~ .nav-top-list,
+    #nav-menu-sm-check:checked ~ .nav-top-list-user {
+        visibility: visible;
+    }
+
+    #nav-menu-sm-check:checked ~ .nav-top-list.nav-top-list-5 { max-height: 48vh; }
+    #nav-menu-sm-check:checked ~ .nav-top-list.nav-top-list-4 { max-height: 38vh; }
+    #nav-menu-sm-check:checked ~ .nav-top-list.nav-top-list-3 { max-height: 28vh; }
+
+    /* we need both height and max-height to make sure animation works and height gets set correctly*/
+    #nav-menu-sm-check:checked ~ .nav-top-list.nav-top-list-5 + .nav-top-list-user { max-height: calc(52vh - 40px); height: calc(52vh - 40px);}
+    #nav-menu-sm-check:checked ~ .nav-top-list.nav-top-list-4 + .nav-top-list-user { max-height: calc(62vh - 40px); height: calc(62vh - 40px);}
+    #nav-menu-sm-check:checked ~ .nav-top-list.nav-top-list-3 + .nav-top-list-user { max-height: calc(72vh - 40px); height: calc(72vh - 40px);}
+
+    /*animation of showing the menu items*/
+    #nav-menu-sm-check:checked ~ .nav-top-list .nav-top-btn,
+    #nav-menu-sm-check:checked ~ .nav-top-list-user .nav-top-btn {
+        min-height: 10vh;
+        opacity: 1;
+        padding: calc(5vh - 1em) 1rem;/* for consistent vertical alignment between links and buttons we subtract the line height from the padding*/
+        visibility: visible;
+    }
+
+
+    #nav-menu-sm-check:checked ~ .nav-top-list li:nth-of-type(2) .nav-top-btn { transition: all .3s ease-in-out .14s;  }
+    #nav-menu-sm-check:checked ~ .nav-top-list li:nth-of-type(3) .nav-top-btn { transition: all .3s ease-in-out .21s; }
+    #nav-menu-sm-check:checked ~ .nav-top-list li:nth-of-type(4) .nav-top-btn { transition: all .3s ease-in-out .28s; }
+    #nav-menu-sm-check:checked ~ .nav-top-list li:nth-of-type(5) .nav-top-btn { transition: all .3s ease-in-out .35s; }
+    #nav-menu-sm-check:checked ~ .nav-top-list-user li:nth-of-type(1) .nav-top-btn { transition: all .3s ease-in-out .42s; }
+    #nav-menu-sm-check:checked ~ .nav-top-list-user li:nth-of-type(2) .nav-top-btn { transition: all .3s ease-in-out .49s; }
+
+
+    /*handling search on small devices*/
+
+    /* put the search box at the top and make sure it animates in correctly*/
+    #nav-menu-sm-check:checked ~ .nav-top-list li:nth-of-type(6) {order: -1; transition: all .3s ease-in-out .07s;}
+    .nav-top-list li:nth-of-type(6) {transition: none;}
+    #nav-menu-sm-check:checked ~ .nav-top-list .nav-show-on-search {
+        opacity: 1;
+        order: 1; /*moves search to the bottom*/
+        position: relative;
+        padding: 0;
+        visibility: visible;
+        left: unset;
+        min-height: 8vh;
+    }
+    /*show the search box itself*/
+    .nav-search-box {
+        align-items: flex-end;
+        border-bottom: 1px solid #f1f1f1;
+        border-bottom: 1px solid var(--nav-text);
+        display: flex;
+        margin: 2vh 2rem 0 2rem;
+        padding: 0 1rem 0 .5rem;
+        text-align: left;
+        transform: unset;
+        transition: none;
+    }
+    .nav-search-go {
+        opacity: 1;
+    }
+    .nav-search-input {
+        border-bottom: 0;
+        font-size: calc(.75rem + 1vh);
+        padding: 1vh .25rem;
+        vertical-align: bottom;
+    }
+
+    .nav-quick-links {
+        display: none;
+    }
+
+
+}
+
+
+
+/*
+ * =============
+ * SECONDARY NAV
+ * =============
+ */
+.nav-sub-wrap {
+    display: block; /*2018-02 this has a bug in Edge - inline-block fixes it but this breaks Safari so we have left it as block*/
+    width: 100vw; /*2018-02 hack to fix Edge bug*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    -webkit-backdrop-filter: saturate(180%) blur(20px); /*2018-02 safari only*/
+	backdrop-filter: saturate(180%) blur(20px); /*2018-02 safari only*/
+}
+.nav-sub-wrap,
+.nav-sub {
+    height: 60px;
+}
+.nav-sub-li {
+    text-align: center; /*ie fallback*/
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+/*
+ * ===========
+ * FOOTER
+ * ===========
+ * single breakpoint set for 768px to make it easier to manage
+ */
+
+.footer { height: 50px; }
+@media only screen and (max-width: 768.1px) {
+    .footer { height: 80px; }
+}
+
+
+
+
+
+
+
+
+
+/*
+ * ==========
+ * COMPONENTS
+ * ==========
+ */
+
+/* u-btn u-btn-group was here */
+
+/* Dropdown button*/
+.drop-toggle:not(.is-open) ~ .u-drop-menu {
+    display: none;
+}
+.drop-box {
+    position: relative;
+    display: inline-block;
+}
+.u-drop-menu {
+    background-color: white;
+    background-color: var(--white);
+    border: 1px solid #ccc;
+    border: 1px solid var(--light-gray);
+    border-radius: .25rem;
+    display: block;
+    left: .25rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    position: absolute;
+    top: calc(100% + .25rem);
+    z-index: 1;
+}
+.u-drop-item {
+    background-color: transparent;
+    clear: both;
+    color: #333;
+    color: var(--dark-gray);
+    display: block;
+    padding: .25rem 1.5rem;
+    white-space: nowrap;
+    width: 100%;
+    text-decoration: none;
+}
+.u-drop-item:hover {
+    background-color: #FFF1C4;
+    background-color: var(--blonde);
+    color: #333;
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+.drop-toggle:not(.is-empty):after {
+    content: "\f0d7";
+    display: inline-block;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    font-size: .8em;
+    margin-left: .25em;
+    transition: all .2s;
+}
+.drop-toggle.is-open:after {
+    transform: rotate(180deg);
+}
+
+
+/*Close button*/
+.u-close {
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(2rem - .5vmin);
+    opacity: .7;
+    position: absolute;
+    right: calc(.5rem + .5vw);
+    top: .75rem;
+    transition: all .2s;
+}
+
+.u-close:hover {
+    opacity: 1;
+}
+
+
+
+
+/* card highlight for news / blog / whitepaper */
+/* first define the basic elements - structure is card > bar + content > title + subtitle*/
+.u-card-hl {
+    background-color: #f9f9f9;
+    background: linear-gradient(#FFF 0%, #f5f5f5 100%);
+    background: linear-gradient(var(--white) 0%, var(--off-white) 100%);
+    border-radius: .5rem;
+    display: inline-block; /*ie9 fallback*/
+    float: left; /*ie9 fallback*/
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 1rem;
+    height: 8em; /* ems not rems are used so we can scale the control dynamically by changing the overall font size - used for smaller screens*/
+    margin: .5rem 1rem;
+    position: relative;
+    width: calc(10em * 1.61803); /*golden ratio*/
+    transition: all .2s;
+    box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2), 0 2px 0px -1px #d8d8d8, 0 4px 0px -2px #c7c7c7, 0 6px 0px -3px #d8d8d8, 0 8px 0px -4px #c6c6c6, 0 10px 20px -9px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 -1px 3px rgba(var(--black-rgb), 0.2), 0 2px 0px -1px var(--light-gray2), 0 4px 0px -2px var(--vlight-silver), 0 6px 0px -3px var(--light-gray2), 0 8px 0px -4px var(--vlight-silver), 0 10px 20px -9px rgba(var(--black-rgb), 0.5);
+}
+
+.u-card-hl-bar {
+    background-color: #999;
+    background: linear-gradient(#fdcb26 0%, #f1a42b 100%);
+    background: linear-gradient(var(--yolk) 0%, var(--orange) 100%);
+    align-items: center;
+    display: flex;
+    height: 1.75em;
+    z-index: 1;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.u-card-hl-bar:before {
+    content: "HIGHLIGHT";
+    color: white;
+    color: var(--white);
+    font-size: .75rem;
+    font-weight: bold;
+    padding: 0 1.25em;
+}
+
+.u-card-hl-content {
+    background-color: #f9f9f9;
+    background: linear-gradient(#FFF 0%, #f5f5f5 100%);
+    background: linear-gradient(var(--white) 0%, var(--off-white) 100%);
+    display: block;
+    position: relative;
+    height: 6.25em;
+    padding: .75em 1.25em;
+    text-decoration: none;
+    z-index: 1;
+    border-radius: 0 0 .5rem .5rem;
+    transition: all .4s;
+}
+
+.u-card-hl-content:before {
+    border-radius: inherit;
+    background: linear-gradient(#fff7eb 0%, #fff 100%);
+    background: linear-gradient(var(--yellow-pale) 0%, var(--white) 100%);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.u-card-hl-title {
+    color: var(--dark-gray);
+    display: -webkit-box;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5;
+    height: calc(1.5em * 3); /* times the lines to show by the line height*/
+    margin: 0;
+    opacity: .7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    transition: all .4s;
+}
+
+/*behavior and effects*/
+.u-card-hl-content:hover {
+    color: initial;
+    text-decoration: none;
+}
+
+.u-card-hl:hover {
+    box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2), 0 2px 0px -1px #d8d8d8, 0 4px 0px -2px #c7c7c7, 0 6px 0px -3px #d8d8d8, 0 8px 0px -4px #c6c6c6, 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 -1px 3px rgba(var(--black-rgb), 0.2), 0 2px 0px -1px var(--light-gray2), 0 4px 0px -2px var(--vlight-silver), 0 6px 0px -3px var(--light-gray2), 0 8px 0px -4px var(--vlight-silver), 0 10px 20px -5px rgba(var(--black-rgb), 0.5);
+}
+
+.u-card-hl:hover .u-card-hl-content:before {
+    opacity: 1;
+}
+
+.u-card-hl:hover .u-card-hl-title {
+    opacity: .9;
+}
+
+/*colors and attributes can be set based on the parent card class changing - to allow for different categories to be shown*/
+.u-card-hl-news .u-card-hl-bar,
+.u-card-hl .u-card-hl-bar[data-cardtype="Case Study"],
+.u-card-hl .u-card-hl-bar[data-cardtype="Company News"],
+.u-card-hl .u-card-hl-bar[data-cardtype="Product News"],
+.u-card-hl .u-card-hl-bar[data-cardtype="Press Release"] {
+    background-color: #cc6155;
+    background: linear-gradient(#d8867d 0%, #cc6155 100%);
+}
+
+.u-card-hl .u-card-hl-bar[data-cardtype="Blog Post"] {
+    background-color: #f5cb62;
+    background: linear-gradient(#f8db91 0%, #f5cb62 100%);
+}
+
+.u-card-hl .u-card-hl-bar[data-cardtype="Whitepaper"] {
+    background-color: #073640;
+    background: linear-gradient(#0f748b 0%, #073640 100%);
+}
+
+.u-card-hl .u-card-hl-bar[data-cardtype="Event"] {
+    background-color: #7bcabb;
+    background: linear-gradient(#a0d9cf 0%, #7bcabb 100%);
+}
+
+.u-card-hl .u-card-hl-bar[data-cardtype="Video"], .u-card-hl .u-card-hl-bar[data-cardtype="Webinar"] {
+    background-color: #38367d;
+    background: linear-gradient(#4845a1 0%, #38367d 100%);
+}
+
+.u-card-hl .u-card-hl-bar[data-cardtype="Document"] {
+    background-color: #165f99;
+    background: linear-gradient(#1c79c4 0%, #165f99 100%);
+}
+
+.u-card-hl .u-card-hl-bar[data-cardtype]:before {
+    content: attr(data-cardtype);
+    text-transform: uppercase;
+}
+
+
+
+/*media queries*/
+
+@media only screen and (max-width: 768px) {
+    .u-card-hl {
+        font-size: .9rem; /*used to control scaling of rest of control*/
+    }
+}
+
+@media only screen and (max-width: 544px) {
+    .u-card-hl {
+        font-size: .8rem; /*used to control scaling of rest of control*/
+        width: 100%;
+        box-shadow: none;
+        border: 1px solid var(--light-gray3);
+        margin: .5rem 0 0 0;
+        height: 5em;
+    }
+    .u-card-hl-content {
+        height: 3.25em;
+    }
+    .u-card-hl-title {
+        height: calc(1.5em * 1); /*only show 2 lines in mobile view*/
+    }
+}

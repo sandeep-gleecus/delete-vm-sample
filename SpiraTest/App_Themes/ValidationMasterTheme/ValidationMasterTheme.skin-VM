@@ -1,0 +1,103 @@
+﻿<%-- Inflectra Theme Skins--%>
+<asp:Image runat="server" SkinID="Series1Point" ImageUrl="Images/Graphs/Series1Point.gif" />
+<asp:Image runat="server" SkinID="Series2Point" ImageUrl="Images/Graphs/Series2Point.gif" />
+<tstsc:HyperLinkEx SkinID="CompanyName" Runat="server" Text="ValidationMaster" NavigateUrl="http://www.onshoretech.com/" />
+<tstsc:HyperLinkEx SkinID="AddOnsDownloads" NavigateUrl="http://www.validationmaster.com/ContactUs" Target="_blank" Runat="server" />
+<tstsc:HyperLinkEx SkinID="CustomerArea" NavigateUrl="http://www.validationmaster.com/ContactUs" Target="_blank" Runat="server" />
+<tstsc:HyperLinkEx SkinID="ProductPurchase" NavigateUrl="http://www.validationmaster.com" Target="_blank" Runat="server" />
+<tstsc:HyperLinkEx SkinID="CustomerSupport" NavigateUrl="http://www.validationmaster.com/ContactUs" Target="_blank" Runat="server" />
+<tstsc:HyperLinkEx SkinID="HelpLink" Runat="server" Visible="true" />
+<tstsc:MessageBox SkinID="MessageBox" Runat="server" HiddenCssClass="MessageHidden" InformationCssClass="MessageInformation" ErrorCssClass="MessageError" />
+<tstsc:CheckBoxEx Runat="server" CssClass="CheckBox" />
+<tstsc:DropDownListEx Runat="server" CssClass="DropDownList" DisabledCssClass="DropDownListDisabled" />
+<tstsc:WebPartZoneEx Runat="server" SkinID="WebPartZone" DragHighlightColor="#f46515" DragZoneColor="White" PartChromePadding="2px">
+    <PartStyle CssClass="Part" />
+    <PartTitleStyle CssClass="Title" />
+    <PartChromeStyle CssClass="Chrome" />
+    <SelectedPartChromeStyle CssClass="ChromeSelected" />
+    <HeaderStyle CssClass="Header" />
+    <FooterStyle CssClass="Footer" />
+    <EmptyZoneTextStyle CssClass="Empty" />
+    <ErrorStyle CssClass="Error" />
+    <MenuPopupStyle CssClass="MenuPopup" />
+</tstsc:WebPartZoneEx>
+<asp:CatalogZone Runat="server" SkinID="CatalogZone" CssClass="CatalogZone">
+    <HeaderVerbStyle CssClass="HeaderVerbStyle" />
+    <PartTitleStyle CssClass="PartTitleStyle" />
+    <FooterStyle CssClass="FooterStyle" />
+    <PartChromeStyle CssClass="PartChromeStyle" BorderColor="Silver" />
+    <InstructionTextStyle CssClass="InstructionTextStyle" />
+    <LabelStyle CssClass="LabelStyle" />
+    <PartLinkStyle CssClass="PartLinkStyle" />
+    <SelectedPartLinkStyle CssClass="SelectedPartLinkStyle" />
+    <VerbStyle CssClass="VerbStyle" />
+    <HeaderStyle CssClass="HeaderStyle" />
+    <EmptyZoneTextStyle CssClass="EmptyZoneTextStyle" />
+    <EditUIStyle CssClass="EditUIStyle" />
+    <PartStyle CssClass="PartStyle" />
+</asp:CatalogZone>
+<asp:EditorZone runat="server" SkinID="EditorZone" CssClass="EditorZone">
+    <LabelStyle CssClass="LabelStyle" />
+    <HeaderStyle CssClass="HeaderStyle" />
+    <HeaderVerbStyle CssClass="HeaderVerbStyle" />
+    <PartChromeStyle CssClass="PartChromeStyle" />
+    <PartStyle CssClass="PartStyle" />
+    <FooterStyle CssClass="FooterStyle" />
+    <EditUIStyle CssClass="EditUIStyle" />
+    <InstructionTextStyle CssClass="InstructionTextStyle" />
+    <ErrorStyle CssClass="ErrorStyle" />
+    <VerbStyle CssClass="VerbStyle" />
+    <EmptyZoneTextStyle CssClass="EmptyZoneTextStyle" />
+    <PartTitleStyle CssClass="PartTitleStyle" />
+</asp:EditorZone>
+<tstsc:GridViewEx Runat="server" SkinID="WidgetGrid" AutoGenerateColumns="False" Width="100%" CssClass="WidgetGrid" GridLines="None" />
+<tstsc:GridViewEx Runat="server" SkinID="WidgetTable" AutoGenerateColumns="False" Width="100%" CssClass="WidgetTable" GridLines="None" />
+<tstsc:DropDownHierarchy Runat="server" CssClass="DropDownHierarchy" DisabledCssClass="DropDownHierarchyDisabled" />
+<tstsc:DropDownUserList Runat="server" CssClass="DropDownHierarchy" DisabledCssClass="DropDownHierarchyDisabled" ActiveItemField="IsActive" />
+<tstsc:DateControl Runat="server" Width="90px" CssClass="DatePicker" DisabledCssClass="ReadOnlyDatePicker" />
+<tstsc:TextBoxEx Runat="server" CssClass="text-box" DisabledCssClass="ReadOnlyTextBox" />
+<tstsc:TextBoxEx Runat="server" SkinID="GlobalSearch" CssClass="GlobalSearch"/>
+<asp:RequiredFieldValidator Runat="server" CssClass="Validator" Text="*" />
+<asp:RegularExpressionValidator Runat="server" CssClass="Validator" Text="*" />
+<tstsc:RequiredFieldValidatorEx Runat="server" CssClass="Validator" Text="*" />
+<tstsc:DropMenu runat="server" MenuCssClass="DropMenu" CssClass="DropMenuIcon" HoverCssClass="DropMenuIconHover" />
+<tstsc:DropMenu SkinID="HeaderDropMenu" runat="server" MenuCssClass="HeaderDropMenu" CssClass="HeaderDropMenuIcon" HoverCssClass="HeaderDropMenuIconHover" />
+<asp:ValidationSummary CssClass="ValidationMessage" ShowMessageBox="False" ShowSummary="True" DisplayMode="BulletList" Runat="server" />
+<tstsc:Equalizer runat="server" CssClass="Equalizer" />
+<tstsc:ButtonEx runat="server" CssClass="Button" />
+<tstsc:NavigationBar runat="server" CssClass="NavigationBar" />
+<tstsc:ButtonEx runat="server" SkinID="PassButton" CssClass="PassButton" />
+<tstsc:ButtonEx runat="server" SkinID="PassAllButton" CssClass="PassAllButton" />
+<tstsc:ButtonEx runat="server" SkinID="BlockedButton" CssClass="BlockedButton" />
+<tstsc:ButtonEx runat="server" SkinID="CautionButton" CssClass="CautionButton" />
+<tstsc:ButtonEx runat="server" SkinID="FailButton" CssClass="FailButton" />
+<tstsc:TagCloud runat="server" SkinID="TagCloud" CssClass="TagCloud" MinFontSize="5" MaxFontSize="26" MinColor="#555555" MaxColor="#000000" />
+<tstsc:BackgroundProcessManager runat="server" CssClass="DialogBox" Height="150px" Width="310px" Modal="true" />
+<tstsc:SidebarPanel runat="server" CssClass="NavigationBar" />
+<tstsc:LabelEx runat="server" SkinID="DefaultRssUrl" Style="display:none" Text="http://www.inflectra.com/Feeds/Atom.aspx" />
+<tstsc:SearchResults runat="server" CssClass="SearchResults" />
+<tstsc:ImageEx runat="server" SkinID="RepositoryTest" ImageUrl="Images/RepositoryTest.gif" AlternateText="Rapise" Tooltip="Rapise" />
+<asp:Login SkinID="LoginForm" runat="server" RenderOuterTable="false" />
+<tstsc:DialogBoxPanel runat="server" CssClass="PopupPanel" />
+<tstsc:TabControl runat="server" CssClass="TabControl" TabHeight="25" TabCssClass="Tab" SelectedTabCssClass="TabSelected" DividerCssClass="Divider" />
+<tstsc:WorkflowOperations Runat="server" CssClass="WorkflowOperations" />
+<tstsc:DropDownMultiList Runat="server" CssClass="DropDownList" DisabledCssClass="DropDownListDisabled" />
+<tstsc:CommentList runat="server" CssClass="CommentList" />
+<tstsc:ThemeStylePlaceHolder runat="server" SkinID="MainStylesheet" FavIconFilename="FavIcon.ico">
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css" />
+</tstsc:ThemeStylePlaceHolder>
+<tstsc:ThemeStylePlaceHolder runat="server" SkinID="MobileStylesheet" FavIconFilename="FavIcon.ico">
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme_Mobile.css" />
+</tstsc:ThemeStylePlaceHolder>
+<tstsc:StatusBox runat="server" CssClass="StatusBox" />
+<tstsc:GridViewEx runat="server" SkinID="DataGrid" CssClass="DataGrid" AutoGenerateColumns="false">
+    <HeaderStyle CssClass="Header" />
+    <SubHeaderStyle CssClass="SubHeader" />
+    <RowStyle CssClass="Normal" />
+</tstsc:GridViewEx>
+<tstsc:DecimalRangeFilter runat="server" CssClass="NumberRangeFilter" />
+<tstsc:IntRangeFilter runat="server" CssClass="NumberRangeFilter" />
+<tstsc:EffortRangeFilter runat="server" CssClass="NumberRangeFilter" />
+<tstsc:UserNameAvatar runat="server" CssClass="UserNameAvatar" />
+<tstsc:UserOnlineStatus runat="server" CssClass="UserOnlineStatus" />
+<tstsc:ScreenshotCapture runat="server" CssClass="ScreenshotCapture" Width="250px" Height="100px" />

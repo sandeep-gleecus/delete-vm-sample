@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GlobalFunctions_SpinnerText" xml:space="preserve">
+    <value>Načítání ...</value>
+  </data>
+	<data name="FileArtifactUploadDialog_DefaultScreenshotFilename" xml:space="preserve">
+    <value>Screenshot1</value>
+  </data>
+	<data name="FileArtifactUploadDialog_ScreenshotFilenameRequired" xml:space="preserve">
+    <value>Je třeba zadat název souboru pro snímek obrazovky</value>
+  </data>
+	<data name="FileArtifactUploadDialog_ScreenshotFilenameWrongExtension" xml:space="preserve">
+    <value>Název snímku musí mít příponu .png.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardContentUnsupported" xml:space="preserve">
+    <value>Schránka neobsahuje podporovaný formát obrázku.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardEmpty" xml:space="preserve">
+    <value>Schránka je prázdná.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardErrorCodeUnknown" xml:space="preserve">
+    <value>Chyba! Bohužel, žádná chybová zpráva není přiřazena pro kód chyby:</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardUnknownError" xml:space="preserve">
+    <value>Nečekávaná položka. Pro více informací zkontrlujte Java-Applet konzoli</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaInternalException" xml:space="preserve">
+    <value>Interní výjimka:</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaNotLoadedYet" xml:space="preserve">
+    <value>Supa-Applet ještě není načten.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaPasteImageFirst" xml:space="preserve">
+    <value>Nejdříve prosím vložte obrázek.</value>
+  </data>
+	<data name="GlobalFunctions_DefaultErrorMessage" xml:space="preserve">
+    <value>Pro více informací zkontrolujte protokol událostí (Application Event log).</value>
+  </data>
+	<data name="GlobalFunctions_DefaultErrorType" xml:space="preserve">
+    <value>Systémová chyba</value>
+  </data>
+	<data name="GlobalFunctions_TooltipLoading" xml:space="preserve">
+    <value>Načítání ...</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForBlocked" xml:space="preserve">
+    <value>Zadejte skutečný výsledek pro zanamenání blokovaného testovacího kroku!</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForCaution" xml:space="preserve">
+    <value>Zadejte skutečný výsledek pro zaznamenání výstrahy u tohoto testovacího kroku!</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForFail" xml:space="preserve">
+    <value>Zadejte skutečný výsledek pro záznam selhání tohoto testovacího kroku!</value>
+  </data>
+	<data name="TestCaseExecution_IncidentLoggedMessage" xml:space="preserve">
+    <value>Incident {0} založen oproti výsledku testovacího kroku.</value>
+  </data>
+	<data name="TestSetDetails_OnlyOneCheckboxToAddTestCases" xml:space="preserve">
+    <value>Prosím vyberte nejvýše jeden záznam pro příkaz Přidat testovací případy!</value>
+  </data>
+	<data name="TestSetDetails_SelectOnlyOneTestCase" xml:space="preserve">
+    <value>Vyberte právě jeden testovací případ pro úpravu hodnot parametru.</value>
+  </data>
+	<data name="TestSetDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>Nejprve vyberte testovací případ.</value>
+  </data>
+	<data name="TreeView_ExpandCollapse" xml:space="preserve">
+    <value>Rozbalit/Sbalit</value>
+  </data>
+	<data name="TreeView_Folder" xml:space="preserve">
+    <value>Složka</value>
+  </data>
+	<data name="Global_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+	<data name="Global_PleaseSelectProjectToExportTo" xml:space="preserve">
+    <value>Prosím vyberte produkt, do kterého chcete exportovat:</value>
+  </data>
+	<data name="Global_ApplyFilter" xml:space="preserve">
+    <value>Použít filtr</value>
+  </data>
+	<data name="Global_ArtifactHasAttachment" xml:space="preserve">
+    <value>Artefakt má přílohu(y)</value>
+  </data>
+	<data name="Global_Cancel" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+	<data name="Global_CannotMoveItemOntoItself" xml:space="preserve">
+    <value>Nemůžete přesunout položku na sebe!</value>
+  </data>
+	<data name="Global_ClipboardEmpty" xml:space="preserve">
+    <value>Schránka je v tuto chvíli prázdná!</value>
+  </data>
+	<data name="Global_DestinationItemNotValid" xml:space="preserve">
+    <value>Cílová položka není platná.</value>
+  </data>
+	<data name="Global_DisplayingPage" xml:space="preserve">
+    <value>Zobrazuji stránku</value>
+  </data>
+	<data name="Global_FilterSaved" xml:space="preserve">
+    <value>Aktuální filtr úspěšně uložen.</value>
+  </data>
+	<data name="Global_Hide" xml:space="preserve">
+    <value>Schovat</value>
+  </data>
+	<data name="Global_IntegerValidation" xml:space="preserve">
+    <value>{0}' musí být celé číslo.</value>
+  </data>
+	<data name="Global_ItemDraggedNotValid" xml:space="preserve">
+    <value>Přesouvaná položka není platná</value>
+  </data>
+	<data name="Global_ItemsCopiedToClipboard" xml:space="preserve">
+    <value>Položky úspěšně zkopírovány do schránky.</value>
+  </data>
+	<data name="Global_ItemsCutToClipboard" xml:space="preserve">
+    <value>Položky úspěšně vloženy do schránky.</value>
+  </data>
+	<data name="Global_NeedToSelectDestinationProject" xml:space="preserve">
+    <value>Vyberte cílový produkt.</value>
+  </data>
+	<data name="Global_NeedToSelectFilter" xml:space="preserve">
+    <value>Vyberte filtr ze seznamu.</value>
+  </data>
+	<data name="Global_NeedToSelectItem" xml:space="preserve">
+    <value>Vyberte {0} ze seznamu.</value>
+  </data>
+	<data name="Global_None" xml:space="preserve">
+    <value>Žádné</value>
+  </data>
+	<data name="Global_Of" xml:space="preserve">
+    <value>ze</value>
+  </data>
+	<data name="Global_PleaseSelectFilter" xml:space="preserve">
+    <value>Prosím vyberte filtr, který chcete použít:</value>
+  </data>
+	<data name="Global_RetrieveSavedFilter" xml:space="preserve">
+    <value>Načíst uložený filtr</value>
+  </data>
+	<data name="Global_RowsPerPage" xml:space="preserve">
+    <value>řádků na stránce</value>
+  </data>
+	<data name="Global_Select" xml:space="preserve">
+    <value>Vybrat</value>
+  </data>
+	<data name="Global_SelectFilter" xml:space="preserve">
+    <value>Vybrat filtr</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCommand" xml:space="preserve">
+    <value>Vyberte alespoň jeden záznam pro tento příkaz!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCopy" xml:space="preserve">
+    <value>Vyberte alespoň jeden záznam pro příkaz Kopírovat!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCut" xml:space="preserve">
+    <value>Vyberte alespoň jeden záznam pro příkaz Vyjmout!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForDelete" xml:space="preserve">
+    <value>Vyberte alespoň jeden záznam pro příkaz Odstranit!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForInsert" xml:space="preserve">
+    <value>Prosím vyberte nejvýše jeden záznam pro příkaz Vložit!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForOpen" xml:space="preserve">
+    <value>Vyberte právě jeden záznam pro příkaz Otevřít!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForPaste" xml:space="preserve">
+    <value>Můžete vybrat pouze jeden záznam pro příkaz Vložit!</value>
+  </data>
+	<data name="Global_Show" xml:space="preserve">
+    <value>Zobrazit</value>
+  </data>
+	<data name="Global_SuccessAddingItemsToItem" xml:space="preserve">
+    <value>Položky úspěšně přidány do {0}.</value>
+  </data>
+	<data name="Global_SuccessExport" xml:space="preserve">
+    <value>Položky úspěšně exportovány.</value>
+  </data>
+	<data name="Global_TimeIntervalValidation" xml:space="preserve">
+    <value>{0}' zadejte jako časový interval v hodinách, minuty vyjádřete jako desetinné číslo.</value>
+  </data>
+	<data name="Global_YouNeedToEnterFilterName" xml:space="preserve">
+    <value>Zadejte název pro tento filtr!</value>
+  </data>
+	<data name="HierarchicalGrid_CollapseNode" xml:space="preserve">
+    <value>Sbalit uzel</value>
+  </data>
+	<data name="HierarchicalGrid_ExpandNode" xml:space="preserve">
+    <value>Rozbalit uzel</value>
+  </data>
+	<data name="HierarchicalGrid_SelectOneCheckBoxForIndent" xml:space="preserve">
+    <value>Vyberte alespoň jeden záznam pro odsazení!</value>
+  </data>
+	<data name="HierarchicalGrid_SelectOneCheckBoxForOutdent" xml:space="preserve">
+    <value>Vyberte alespoň jeden záznam pro předsazení!</value>
+  </data>
+	<data name="Global_Edit" xml:space="preserve">
+    <value>Upravit</value>
+  </data>
+	<data name="Global_FillWithValue" xml:space="preserve">
+    <value>Vyplňte s touto hodnotou</value>
+  </data>
+	<data name="Global_SelectAll" xml:space="preserve">
+    <value>Vybrat vše</value>
+  </data>
+	<data name="Global_Update" xml:space="preserve">
+    <value>Aktualizovat</value>
+  </data>
+	<data name="Global_Insert" xml:space="preserve">
+    <value>Vložit</value>
+  </data>
+	<data name="Global_MultipleItems" xml:space="preserve">
+    <value>Více položek</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForBulkEdit" xml:space="preserve">
+    <value>Vyberte alespoň jeden záznam pro použití Hromadné úpravy.</value>
+  </data>
+	<data name="Global_ExportItems" xml:space="preserve">
+    <value>Export položek</value>
+  </data>
+	<data name="Global_Project" xml:space="preserve">
+    <value>Produkt</value>
+  </data>
+	<data name="Requirements_SuccessfullyCreatedTestCases" xml:space="preserve">
+    <value>Testovací případy byly úspěšně vytvořeny z požadavků</value>
+  </data>
+	<data name="Requirements_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>Testovací sada byla úspěšně vytvořena z požadavků</value>
+  </data>
+	<data name="Global_Any" xml:space="preserve">
+    <value>-- Jakékoliv --</value>
+  </data>
+	<data name="Global_None2" xml:space="preserve">
+    <value>(Žádné)</value>
+  </data>
+	<data name="DatePicker_April" xml:space="preserve">
+    <value>Duben</value>
+  </data>
+	<data name="DatePicker_August" xml:space="preserve">
+    <value>Srpen</value>
+  </data>
+	<data name="DatePicker_ChosenDateInvalid" xml:space="preserve">
+    <value>Omlouváme se, ale zvolené datum není přijatelné. Přečtěte si prosím pokyny na stránce.</value>
+  </data>
+	<data name="DatePicker_December" xml:space="preserve">
+    <value>Prosinec</value>
+  </data>
+	<data name="DatePicker_DHTMLUnsupported" xml:space="preserve">
+    <value>Požadované DHTML funkce nejsou podporovány v tomto prohlížeči.</value>
+  </data>
+	<data name="DatePicker_February" xml:space="preserve">
+    <value>Únor</value>
+  </data>
+	<data name="DatePicker_Fr" xml:space="preserve">
+    <value>Pá</value>
+  </data>
+	<data name="DatePicker_Friday" xml:space="preserve">
+    <value>Pátek</value>
+  </data>
+	<data name="DatePicker_January" xml:space="preserve">
+    <value>Leden</value>
+  </data>
+	<data name="DatePicker_July" xml:space="preserve">
+    <value>Červenec</value>
+  </data>
+	<data name="DatePicker_June" xml:space="preserve">
+    <value>Červen</value>
+  </data>
+	<data name="DatePicker_March" xml:space="preserve">
+    <value>Březen</value>
+  </data>
+	<data name="DatePicker_May" xml:space="preserve">
+    <value>Květen</value>
+  </data>
+	<data name="DatePicker_Mo" xml:space="preserve">
+    <value>Po</value>
+  </data>
+	<data name="DatePicker_Monday" xml:space="preserve">
+    <value>Pondělí</value>
+  </data>
+	<data name="DatePicker_November" xml:space="preserve">
+    <value>Listopad</value>
+  </data>
+	<data name="DatePicker_October" xml:space="preserve">
+    <value>Říjen</value>
+  </data>
+	<data name="DatePicker_Sa" xml:space="preserve">
+    <value>So</value>
+  </data>
+	<data name="DatePicker_Saturday" xml:space="preserve">
+    <value>Sobota</value>
+  </data>
+	<data name="DatePicker_September" xml:space="preserve">
+    <value>Září</value>
+  </data>
+	<data name="DatePicker_Su" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+	<data name="DatePicker_Sunday" xml:space="preserve">
+    <value>Neděle</value>
+  </data>
+	<data name="DatePicker_TargetFormInvalid" xml:space="preserve">
+    <value>Cílové pole formuláře není přiřazeno nebo není dostupné.</value>
+  </data>
+	<data name="DatePicker_Th" xml:space="preserve">
+    <value>Čt</value>
+  </data>
+	<data name="DatePicker_Thursday" xml:space="preserve">
+    <value>Čtvrtek</value>
+  </data>
+	<data name="DatePicker_Tu" xml:space="preserve">
+    <value>Út</value>
+  </data>
+	<data name="DatePicker_Tuesday" xml:space="preserve">
+    <value>Úterý</value>
+  </data>
+	<data name="DatePicker_UnknownError" xml:space="preserve">
+    <value>Při vykonávání tohoto skriptu došlo k neznámé chybě.</value>
+  </data>
+	<data name="DatePicker_We" xml:space="preserve">
+    <value>St</value>
+  </data>
+	<data name="DatePicker_Wednesday" xml:space="preserve">
+    <value>Středa</value>
+  </data>
+	<data name="DateRangeFilter_CustomDates" xml:space="preserve">
+    <value>Vlastní rozsah dat:</value>
+  </data>
+	<data name="DateRangeFilter_EnterDateRange" xml:space="preserve">
+    <value>Vložte rozsah dat:</value>
+  </data>
+	<data name="DateRangeFilter_Last14Days" xml:space="preserve">
+    <value>Posledních 14 dní</value>
+  </data>
+	<data name="DateRangeFilter_Last30Days" xml:space="preserve">
+    <value>Posledních 30 dní</value>
+  </data>
+	<data name="DateRangeFilter_Last7Days" xml:space="preserve">
+    <value>Posledních 7 dní</value>
+  </data>
+	<data name="DateRangeFilter_LastMonth" xml:space="preserve">
+    <value>Minulý měsíc</value>
+  </data>
+	<data name="DateRangeFilter_LastWeek" xml:space="preserve">
+    <value>Minulý týden</value>
+  </data>
+	<data name="DateRangeFilter_StandardDates" xml:space="preserve">
+    <value>Standardní rozsahy dat:</value>
+  </data>
+	<data name="DateRangeFilter_ThisMonth" xml:space="preserve">
+    <value>Tento měsíc</value>
+  </data>
+	<data name="DateRangeFilter_ThisWeek" xml:space="preserve">
+    <value>Tento týden</value>
+  </data>
+	<data name="DateRangeFilter_Today" xml:space="preserve">
+    <value>Dnes</value>
+  </data>
+	<data name="DateRangeFilter_Yesterday" xml:space="preserve">
+    <value>Včera</value>
+  </data>
+	<data name="Global_PleaseSelect" xml:space="preserve">
+    <value>-- Prosím vyberte --</value>
+  </data>
+	<data name="Releases_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>Testovací sada byla úspěšně vytvořena z této verze</value>
+  </data>
+	<data name="Global_No" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+	<data name="Global_Yes" xml:space="preserve">
+    <value>Ano</value>
+  </data>
+	<data name="Global_Add" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+	<data name="TestCaseList_AddToRelease" xml:space="preserve">
+    <value>Přidat k verzi</value>
+  </data>
+	<data name="TestCaseList_AddToRequirement" xml:space="preserve">
+    <value>Přidat k požadavku</value>
+  </data>
+	<data name="TestCaseList_AddToTestSet" xml:space="preserve">
+    <value>Přidat do testovací sady</value>
+  </data>
+	<data name="TestCaseList_SelectRelease" xml:space="preserve">
+    <value>Vyberte verzi, ke které chcete přidat:</value>
+  </data>
+	<data name="TestCaseList_SelectRequirement" xml:space="preserve">
+    <value>Vyberte požadavek, ke kterému chcete přidat:</value>
+  </data>
+	<data name="TestCaseList_SelectTestSet" xml:space="preserve">
+    <value>Vyberte testovací sadu, do které chcete přidat:</value>
+  </data>
+	<data name="SortedList_SortByAscending" xml:space="preserve">
+    <value>Seřadit podle {0} vzestupně</value>
+  </data>
+	<data name="SortedList_SortByDescending" xml:space="preserve">
+    <value>Seřadit podle {0} sestupně</value>
+  </data>
+	<data name="Global_ChooseNameForFilter" xml:space="preserve">
+    <value>Prosím, vyberte název pro tento filtr:</value>
+  </data>
+	<data name="Global_Save" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+	<data name="Global_SaveFilter" xml:space="preserve">
+    <value>Uložit filtr</value>
+  </data>
+	<data name="Global_Refresh" xml:space="preserve">
+    <value>Aktualizovat</value>
+  </data>
+	<data name="IterationPlan_CannotDragReqsTasksSameTime" xml:space="preserve">
+    <value>Nemůžete najednou přesouvat požadavky a úkoly</value>
+  </data>
+	<data name="IterationPlan_NoReleaseSelected" xml:space="preserve">
+    <value>Žádné {0} vybrány! Prosím vyberte {1} pro zobrazení plánu.</value>
+  </data>
+	<data name="PlanningGrid_Available" xml:space="preserve">
+    <value>K dispozici</value>
+  </data>
+	<data name="PlanningGrid_ItemsDirectlyAssociated" xml:space="preserve">
+    <value>Položek přímo souvisejících s {0}</value>
+  </data>
+	<data name="PlanningGrid_Remaining" xml:space="preserve">
+    <value>Zbývající</value>
+  </data>
+	<data name="PlanningGrid_Utilized" xml:space="preserve">
+    <value>Využité</value>
+  </data>
+	<data name="DropDownHierarchy_NavigateToArtifact" xml:space="preserve">
+    <value>Navigace k artefaktu</value>
+  </data>
+	<data name="RichTextBox_AddImage" xml:space="preserve">
+    <value>Přidat obrázek</value>
+  </data>
+	<data name="RichTextBox_AlignLeft" xml:space="preserve">
+    <value>Zarovnat doleva</value>
+  </data>
+	<data name="RichTextBox_AlignRight" xml:space="preserve">
+    <value>Zarovnat doprava</value>
+  </data>
+	<data name="RichTextBox_BackgroundColor" xml:space="preserve">
+    <value>Barva pozadí</value>
+  </data>
+	<data name="RichTextBox_Bold" xml:space="preserve">
+    <value>Tučně</value>
+  </data>
+	<data name="RichTextBox_Center" xml:space="preserve">
+    <value>Vycentrovat</value>
+  </data>
+	<data name="RichTextBox_EnterImageUrl" xml:space="preserve">
+    <value>Zadejte URL obrázku:</value>
+  </data>
+	<data name="RichTextBox_EnterUrl" xml:space="preserve">
+    <value>Zadejte URL:</value>
+  </data>
+	<data name="RichTextBox_Font" xml:space="preserve">
+    <value>Písmo</value>
+  </data>
+	<data name="RichTextBox_FontDropDown" xml:space="preserve">
+    <value>-- Písmo --</value>
+  </data>
+	<data name="RichTextBox_HorizontalRule" xml:space="preserve">
+    <value>Vodorovné měřítko</value>
+  </data>
+	<data name="RichTextBox_Indent" xml:space="preserve">
+    <value>Odsadit</value>
+  </data>
+	<data name="RichTextBox_InsertLink" xml:space="preserve">
+    <value>Vložit odkaz</value>
+  </data>
+	<data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>Vložit tabulku</value>
+  </data>
+	<data name="RichTextBox_Italic" xml:space="preserve">
+    <value>Kurzíva</value>
+  </data>
+	<data name="RichTextBox_OrderedList" xml:space="preserve">
+    <value>Seřazený seznam</value>
+  </data>
+	<data name="RichTextBox_Outdent" xml:space="preserve">
+    <value>Předsadit</value>
+  </data>
+	<data name="RichTextBox_Size" xml:space="preserve">
+    <value>Velikost</value>
+  </data>
+	<data name="RichTextBox_SizeDropDown" xml:space="preserve">
+    <value>-- Velikost --</value>
+  </data>
+	<data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>Barva textu</value>
+  </data>
+	<data name="RichTextBox_Underline" xml:space="preserve">
+    <value>Podtrhnout</value>
+  </data>
+	<data name="RichTextBox_UnorderedList" xml:space="preserve">
+    <value>Neseřazený seznam</value>
+  </data>
+	<data name="RichTextBox_ViewFullScreen" xml:space="preserve">
+    <value>Zobrazit celou obrazovku</value>
+  </data>
+	<data name="RichTextBox_ViewHTMLSource" xml:space="preserve">
+    <value>Zobrazit HTML zdroj</value>
+  </data>
+	<data name="Global_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+	<data name="Global_Name" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+	<data name="Global_Status" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+	<data name="MappingSelector_Add" xml:space="preserve">
+    <value>Přidat&gt;</value>
+  </data>
+	<data name="MappingSelector_CollapseNode" xml:space="preserve">
+    <value>Sbalit uzel</value>
+  </data>
+	<data name="MappingSelector_ExpandNode" xml:space="preserve">
+    <value>Rozbalit uzel</value>
+  </data>
+	<data name="MappingSelector_NoItemsToRemove" xml:space="preserve">
+    <value>Nejsou připojeny žádné položky k odstranění!</value>
+  </data>
+	<data name="MappingSelector_Remove" xml:space="preserve">
+    <value>Odstranit &lt;</value>
+  </data>
+	<data name="MappingSelector_RemoveAll" xml:space="preserve">
+    <value>Odstranit všechny</value>
+  </data>
+	<data name="MappingSelector_SelectItemFromLeftHandBox" xml:space="preserve">
+    <value>Nejprve vyberte alespoň jednu položku z levého rámečku</value>
+  </data>
+	<data name="MappingSelector_SelectItemFromRightHandBox" xml:space="preserve">
+    <value>Nejprve vyberte alespoň jednu položku z pravého rámečku</value>
+  </data>
+	<data name="TestCaseSelector_TestCaseCreatedFromRequirement" xml:space="preserve">
+    <value>Nový testovací případ byl úspěšně vytvořen z tohoto požadavku.</value>
+  </data>
+	<data name="TestCaseSelector_TestSetCreatedFromRelease" xml:space="preserve">
+    <value>Nová testovací sada byla úspěšně vytvořena z této verze.</value>
+  </data>
+	<data name="Incidents_SuccessfullyCreatedRequirements" xml:space="preserve">
+    <value>Požadavky byly úspěšně vytvořeny  z Incidentů</value>
+  </data>
+	<data name="Global_Uploading" xml:space="preserve">
+    <value>Nahrávání ...</value>
+  </data>
+	<data name="ArtifactLinkPanel_IncidentIdNotValid" xml:space="preserve">
+    <value>ID incidentu musí být celé číslo</value>
+  </data>
+	<data name="ArtifactLinkPanel_InvalidArtifactType" xml:space="preserve">
+    <value>Byl vybrán neplatný typ artefaktu!</value>
+  </data>
+	<data name="ArtifactLinkPanel_NeedToSelectOneArtifact" xml:space="preserve">
+    <value>Musíte vybrat alespoň jeden artefakt pro propojení!</value>
+  </data>
+	<data name="ArtifactLinkPanel_RequirementIdNotValid" xml:space="preserve">
+    <value>ID požadavku musí být celé číslo</value>
+  </data>
+	<data name="ArtifactLinkPanel_TestStepIdNotValid" xml:space="preserve">
+    <value>ID kroku testu musí být celé číslo</value>
+  </data>
+	<data name="Global_Loading" xml:space="preserve">
+    <value>Načítání ...</value>
+  </data>
+	<data name="HierarchicalSelector_CollapseNode" xml:space="preserve">
+    <value>Sbalit uzel</value>
+  </data>
+	<data name="HierarchicalSelector_ExpandNode" xml:space="preserve">
+    <value>Rozbalit uzel</value>
+  </data>
+	<data name="NavigationBar_AllItems" xml:space="preserve">
+    <value>Všechny položky</value>
+  </data>
+	<data name="NavigationBar_Assigned" xml:space="preserve">
+    <value>Přiřazeno</value>
+  </data>
+	<data name="NavigationBar_CurrentFilter" xml:space="preserve">
+    <value>Aktuální filtr</value>
+  </data>
+	<data name="NavigationBar_Display" xml:space="preserve">
+    <value>Zobraz:</value>
+  </data>
+	<data name="NavigationBar_Maximize" xml:space="preserve">
+    <value>Maximalizovat</value>
+  </data>
+	<data name="NavigationBar_Minimize" xml:space="preserve">
+    <value>Minimalizovat</value>
+  </data>
+	<data name="Global_ClipboardNotSupported" xml:space="preserve">
+    <value>Váš prohlížeč nepodporuje přístup do schránky!</value>
+  </data>
+	<data name="TestCaseDetails_CannotLinkToParent" xml:space="preserve">
+    <value>Není možno odkazovat se na testovací případ, který se již odkazuje na tento záznam.</value>
+  </data>
+	<data name="TestCaseDetails_CannotLinkToSelf" xml:space="preserve">
+    <value>Nemůžete vytvořit odkaz na sebe sama!</value>
+  </data>
+	<data name="TestCaseDetails_NewParameterSuccess" xml:space="preserve">
+    <value>Nový parameter pro testovací případ byl přidán.</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameInvalid" xml:space="preserve">
+    <value>Nemůžete použít apostrof, mezeru nebo zpětné lomítko v názvu parametru.</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameInvalid2" xml:space="preserve">
+    <value>Nelze použít složené závorky nebo symbol dolaru v názvu parametru.</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameRequired" xml:space="preserve">
+    <value>Je třeba zadat název pro nový parametr testovacího případu.</value>
+  </data>
+	<data name="TestCaseDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>Nejprve vyberte testovací případ.</value>
+  </data>
+	<data name="ReleaseSelector_RequirementCreatedFromTestCase" xml:space="preserve">
+    <value>Nový požadavek byl úspěšně vytvořen z tohoto testovacího případu.</value>
+  </data>
+	<data name="TestCaseExecution_Release" xml:space="preserve">
+    <value>Verze</value>
+  </data>
+	<data name="TestCaseExecution_TestRunReadOnly" xml:space="preserve">
+    <value>Tento běh testu je pouze pro čtení, protože je přiřazen:</value>
+  </data>
+	<data name="Documents_ExportDocuments" xml:space="preserve">
+    <value>Exportovat dokumenty</value>
+  </data>
+	<data name="JqPlot_DisplayDataGrid" xml:space="preserve">
+    <value>Zobrazit datovou mřížku</value>
+  </data>
+	<data name="JqPlot_ResetZoom" xml:space="preserve">
+    <value>Resetovat přiblížení (Zoom)</value>
+  </data>
+	<data name="JqPlot_DownloadData" xml:space="preserve">
+    <value>Stáhnout data ve formátu CSV</value>
+  </data>
+	<data name="JqPlot_SaveAs" xml:space="preserve">
+    <value>Uložit jako</value>
+  </data>
+	<data name="TestCases_BlockSucceeded" xml:space="preserve">
+    <value>Úspěšně zablokované testovací případy</value>
+  </data>
+	<data name="TestCases_UnBlockSucceeded" xml:space="preserve">
+    <value>Úspěšně odblokované testovací případy</value>
+  </data>
+	<data name="Global_EstimatedEffort" xml:space="preserve">
+    <value>Odhadovaná pracnost</value>
+  </data>
+	<data name="Global_Owner" xml:space="preserve">
+    <value>Vlastník</value>
+  </data>
+	<data name="Global_ProjectedEffort" xml:space="preserve">
+    <value>Plánovaná pracnost</value>
+  </data>
+	<data name="PlanningBoard_UnassignedItems" xml:space="preserve">
+    <value>Nepřiřazené položky</value>
+  </data>
+	<data name="Global_Multiple" xml:space="preserve">
+    <value>Více</value>
+  </data>
+	<data name="PlanningBoard_Back" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+	<data name="PlanningBoard_View" xml:space="preserve">
+    <value>Zobrazit</value>
+  </data>
+	<data name="BackgroundProcessManager_StartingProcess" xml:space="preserve">
+    <value>Spuštění procesu ...</value>
+  </data>
+	<data name="Administration_CopyProjectConfirm" xml:space="preserve">
+    <value>Jste si jisti, že chcete udělat kopii tohoto produktu?</value>
+  </data>
+	<data name="Administration_CopyProjectDialogText" xml:space="preserve">
+    <value>Probíhá kopírování vybraného produktu. Čekejte prosím ...</value>
+  </data>
+	<data name="Administration_CopyProjectDialogTitle" xml:space="preserve">
+    <value>Kopie produktu</value>
+  </data>
+	<data name="Administration_DeleteProjectConfirm" xml:space="preserve">
+    <value>Jste si jisti, že chcete smazat tento produkt? Tato akce je nevratná.</value>
+  </data>
+	<data name="Administration_DeleteProjectDialogText" xml:space="preserve">
+    <value>Probíhá odstranění vybraného produktu. Čekejte prosím ...</value>
+  </data>
+	<data name="Administration_DeleteProjectDialogTitle" xml:space="preserve">
+    <value>Smazat produkt</value>
+  </data>
+	<data name="Global_Close" xml:space="preserve">
+    <value>Zavřít</value>
+  </data>
+	<data name="NavigationBar_Detected" xml:space="preserve">
+    <value>Zjištěné</value>
+  </data>
+	<data name="NavigationBar_ForRelease" xml:space="preserve">
+    <value>Pro Verzi</value>
+  </data>
+	<data name="NavigationBar_ForTestCase" xml:space="preserve">
+    <value>Pro testovací případ</value>
+  </data>
+	<data name="NavigationBar_ForTestSet" xml:space="preserve">
+    <value>Pro testovací sady</value>
+  </data>
+	<data name="TestCaseList_ExecuteTestCase" xml:space="preserve">
+    <value>Spustit testovací případ</value>
+  </data>
+	<data name="TestCaseList_ExecuteTestCaseDesc" xml:space="preserve">
+    <value>Vytváření běhů testů pro tento testovací případ. Počkejte prosím...</value>
+  </data>
+	<data name="BackgroundProcessManager_ProcessCompleted" xml:space="preserve">
+    <value>Proces byl úspěšně dokončen.</value>
+  </data>
+	<data name="TestSetList_ExecuteTestSet" xml:space="preserve">
+    <value>Spustit sady testů</value>
+  </data>
+	<data name="TestSetList_ExecuteTestSetDesc" xml:space="preserve">
+    <value>Vytváření běhů testů pro tuto testovací sadu. Počkejte prosím...</value>
+  </data>
+	<data name="AttachmentPanel_NeedToSelectOneDocument" xml:space="preserve">
+    <value>Musíte vybrat alespoň jeden dokument pro propojení!</value>
+  </data>
+	<data name="AttachmentPanel_NeedToSelectOneFile" xml:space="preserve">
+    <value>Musíte vybrat alespoň jeden soubor pro propojení!</value>
+  </data>
+	<data name="TestSetList_SelectSingleTestSet" xml:space="preserve">
+    <value>Vyberte jen jednu sadu testů pro spuštění!</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTestCases" xml:space="preserve">
+    <value>Spustit testy v testovací sadě</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTestCasesDesc" xml:space="preserve">
+    <value>Vytváření běhů testů pro vybrané testovací případy. Počkejte prosím...</value>
+  </data>
+	<data name="Admin_CustomPropertyOptions_Header" xml:space="preserve">Definice vlastní vlastnosti  #{0}.</data><data name="Admin_CustomProp_FieldError_BadDate" xml:space="preserve">Zadáno neplatné datum.</data><data name="Admin_CustomProp_FieldError_ListEmpty" xml:space="preserve">Musíte vybrat vlastní seznam.</data><data name="Admin_CustomProp_FieldError_MinHigherMax" xml:space="preserve">Minimum nemůže být větší než maximum. </data><data name="Admin_CustomProp_FieldError_MultipleErrors" xml:space="preserve">Vícenásobná chyba. \n Prosím zkontrolujte označená pole. </data><data name="Admin_CustomProp_FieldError_NameEmpty" xml:space="preserve">Název pole nemůže být prázdný.</data><data name="Admin_CustomProp_FieldError_NameUsed" xml:space="preserve">Název pole již existuje.</data><data name="Admin_CustomProp_FieldError_NaN" xml:space="preserve">Vstup není číslo</data><data name="Admin_CustomProp_FieldError_NumLessZero" xml:space="preserve">Číslo nemůže být menší než nula.</data><data name="Admin_CustomProp_FieldError_TypeEmpty" xml:space="preserve">Musíte vybrat typ. </data><data name="Global_ClearFilters" xml:space="preserve">Smazat filtry.</data><data name="Global_FilteringBy" xml:space="preserve">Výsledek filtrů {0}.</data><data name="DropDownList_Multiple" xml:space="preserve">(Více)</data><data name="WorkflowOperations_NoOperationsAvailable" xml:space="preserve">Žádná operace k dispozici.</data><data name="WorkflowOperations_SaveChangesFirst" xml:space="preserve">Prosím nejdříve uložte změny. </data><data name="CommentList_Legend" xml:space="preserve">Zobrazený seznam komentářů. </data><data name="CommentList_NewestFirst" xml:space="preserve">Od nejnovějšího.</data><data name="CommentList_OldestFirst" xml:space="preserve">Od nejstaršího.</data><data name="CommentList_ConfirmDelete" xml:space="preserve">Opravdu chcete smazat tento komentář? Tuto akci nelze vzít zpět. </data><data name="AjaxFormManager_ConfirmRefresh" xml:space="preserve">Neuložili jste změny. Obnovením dat ztratíte provedené změny, chcete pokračovat?</data><data name="AjaxFormManager_ConfirmUnload" xml:space="preserve">Neuložili jste změny. Přechodem na jinou stránku ztratíte provedené změny, chcete pokračovat?</data><data name="AjaxFormManager_SaveSuccess" xml:space="preserve">Úspěšně uloženy změny do {0}</data><data name="TestRunDetails_IncidentList" xml:space="preserve">Seznam incidentů pro krok běhu testů:</data><data name="ReportViewer_GeneratingReport" xml:space="preserve">Zobrazení reportů.</data><data name="ReportViewer_GeneratingReportDesc" xml:space="preserve">Prosím vyčkejte, Váš report se generuje…</data><data name="ReportDetails_NeedToSpecifyCustomQuery" xml:space="preserve">Před zobrazením výsledku musíte zadat vlastní dotaz. </data><data name="Global_Customize" xml:space="preserve">Přizpůsobit</data><data name="Global_Delete" xml:space="preserve">Smazat</data><data name="ReportDetails_NameRequired" xml:space="preserve">Musíte zadat Název reportu.</data><data name="Admin_DataTools_Processing" xml:space="preserve">Provedení pročištění dat:</data><data name="Admin_DataTools_Title" xml:space="preserve">Nástroje pro správu dat</data><data name="Admin_History_Processing" xml:space="preserve">Odstranění všech smazaných dat.</data><data name="Admin_History_Title" xml:space="preserve">Historie Projektu</data><data name="NavigationBar_NotAuthorizedToView" xml:space="preserve">Vaše role není autorizována.</data><data name="AjaxFormManager_NotAuthorizedToModify" xml:space="preserve">Nemáte oprávnění měnit tento záznam.</data><data name="Global_Remove" xml:space="preserve">Odebrat.</data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve">Odebrat z Releasu</data><data name="TestCaseList_SelectReleaseToRemove" xml:space="preserve">Prosím vyberte release, ze kterého chcete odebírat:</data><data name="Admin_CustomPropertyOptions_Header" xml:space="preserve"><value>Definice vlastní vlastnosti  #{0}.</value></data><data name="Admin_CustomProp_FieldError_BadDate" xml:space="preserve"><value>Zadáno neplatné datum.</value></data><data name="Admin_CustomProp_FieldError_ListEmpty" xml:space="preserve"><value>Musíte vybrat vlastní seznam.</value></data><data name="Admin_CustomProp_FieldError_MinHigherMax" xml:space="preserve"><value>Minimum nemůže být větší než maximum. </value></data><data name="Admin_CustomProp_FieldError_MultipleErrors" xml:space="preserve"><value>Vícenásobná chyba. \n Prosím zkontrolujte označená pole. </value></data><data name="Admin_CustomProp_FieldError_NameEmpty" xml:space="preserve"><value>Název pole nemůže být prázdný.</value></data><data name="Admin_CustomProp_FieldError_NameUsed" xml:space="preserve"><value>Název pole již existuje.</value></data><data name="Admin_CustomProp_FieldError_NaN" xml:space="preserve"><value>Vstup není číslo</value></data><data name="Admin_CustomProp_FieldError_NumLessZero" xml:space="preserve"><value>Číslo nemůže být menší než nula.</value></data><data name="Admin_CustomProp_FieldError_TypeEmpty" xml:space="preserve"><value>Musíte vybrat typ. </value></data><data name="Global_ClearFilters" xml:space="preserve"><value>Smazat filtry.</value></data><data name="Global_FilteringBy" xml:space="preserve"><value>Výsledek filtrů {0}.</value></data><data name="DropDownList_Multiple" xml:space="preserve"><value>(Více)</value></data><data name="WorkflowOperations_NoOperationsAvailable" xml:space="preserve"><value>Žádná operace k dispozici.</value></data><data name="WorkflowOperations_SaveChangesFirst" xml:space="preserve"><value>Prosím nejdříve uložte změny. </value></data><data name="CommentList_Legend" xml:space="preserve"><value>Zobrazený seznam komentářů. </value></data><data name="CommentList_NewestFirst" xml:space="preserve"><value>Od nejnovějšího.</value></data><data name="CommentList_OldestFirst" xml:space="preserve"><value>Od nejstaršího.</value></data><data name="CommentList_ConfirmDelete" xml:space="preserve"><value>Opravdu chcete smazat tento komentář? Tuto akci nelze vzít zpět. </value></data><data name="AjaxFormManager_ConfirmRefresh" xml:space="preserve"><value>Neuložili jste změny. Obnovením dat ztratíte provedené změny, chcete pokračovat?</value></data><data name="AjaxFormManager_ConfirmUnload" xml:space="preserve"><value>Neuložili jste změny. Přechodem na jinou stránku ztratíte provedené změny, chcete pokračovat?</value></data><data name="AjaxFormManager_SaveSuccess" xml:space="preserve"><value>Úspěšně uloženy změny do {0}</value></data><data name="TestRunDetails_IncidentList" xml:space="preserve"><value>Seznam incidentů pro krok běhu testů:</value></data><data name="ReportViewer_GeneratingReport" xml:space="preserve"><value>Zobrazení reportů.</value></data><data name="ReportViewer_GeneratingReportDesc" xml:space="preserve"><value>Prosím vyčkejte, Váš report se generuje…</value></data><data name="ReportDetails_NeedToSpecifyCustomQuery" xml:space="preserve"><value>Před zobrazením výsledku musíte zadat vlastní dotaz. </value></data><data name="Global_Customize" xml:space="preserve"><value>Přizpůsobit</value></data><data name="Global_Delete" xml:space="preserve"><value>Smazat</value></data><data name="ReportDetails_NameRequired" xml:space="preserve"><value>Musíte zadat Název reportu.</value></data><data name="Admin_DataTools_Processing" xml:space="preserve"><value>Provedení pročištění dat:</value></data><data name="Admin_DataTools_Title" xml:space="preserve"><value>Nástroje pro správu dat</value></data><data name="Admin_History_Processing" xml:space="preserve"><value>Odstranění všech smazaných dat.</value></data><data name="Admin_History_Title" xml:space="preserve"><value>Historie Produktu</value></data><data name="NavigationBar_NotAuthorizedToView" xml:space="preserve"><value>Vaše role není autorizována.</value></data><data name="AjaxFormManager_NotAuthorizedToModify" xml:space="preserve"><value>Nemáte oprávnění měnit tento záznam.</value></data><data name="Global_Remove" xml:space="preserve"><value>Odebrat.</value></data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve"><value>Odebrat z Releasu</value></data><data name="TestCaseList_SelectReleaseToRemove" xml:space="preserve"><value>Prosím vyberte release, ze kterého chcete odebírat:</value></data><data name="Admin_History_Processing2" xml:space="preserve"><value>Vracím vybrané položky…</value></data><data name="Global_Rows" xml:space="preserve"><value>řádky</value></data><data name="Global_ShareFilter" xml:space="preserve"><value>Sdílet s ostatnímy členy produktu</value></data><data name="NumberRangeFilter_EnterMinMaxValues" xml:space="preserve"><value>Prosím vložte min/max hodnoty:</value></data><data name="NumberRangeFilter_Title" xml:space="preserve"><value>Rozsah filtru</value></data><data name="Global_Change" xml:space="preserve"><value>Změnit</value></data><data name="Global_NoneDropDown" xml:space="preserve"><value>-- Bez výběru --</value></data><data name="TreeView_AddItem" xml:space="preserve"><value>Přidat {0}</value></data><data name="TreeView_ChooseParentItem" xml:space="preserve"><value>Vyberte nadřazenou složku pod kterou bude vloženo:</value></data><data name="TreeView_EditItem" xml:space="preserve"><value>Editovat {0}</value></data><data name="TreeView_EnterName" xml:space="preserve"><value>Zadejte jméno pro novou složku:</value></data><data name="TreeView_NeedToProvideItemName" xml:space="preserve"><value>Musite vložit jméno pro novou složku!</value></data><data name="Global_Done" xml:space="preserve"><value>Hotovo</value></data><data name="TreeView_ConfirmDelete" xml:space="preserve"><value>Jste si jisti, že chcete smazat tuto složku?</value></data><data name="TreeView_EditName" xml:space="preserve"><value>Upravte název této složky:</value></data><data name="TreeView_EditParentItem" xml:space="preserve"><value>Vyberte nadřazenou složku:</value></data><data name="Messenger_SendMessage" xml:space="preserve"><value>Poslat zprávu</value></data><data name="Messenger_NeedToSelectComment" xml:space="preserve"><value>Před odesláním do aktuálního artefaktu musíte vybrat alespoň jednu zprávu</value></data><data name="Messenger_PostAsComments" xml:space="preserve"><value>Zveřejnit jako komentáře</value></data><data name="Messenger_PostAsCommentsSuccess" xml:space="preserve"><value>Komentář/e úspěšně přidány k aktuálnímu artefaktu</value></data><data name="ScreenshotCapture_BrowserNotSupported" xml:space="preserve"><value>Váš prohlížeč nepodporuje funkci Snímek obrazovky!</value></data><data name="ScreenshotCapture_Intro" xml:space="preserve"><value>Vložte Váš obrázek stisknutím kláves CTRL+V</value></data><data name="ScreenshotCapture_InvalidImageFormat" xml:space="preserve"><value>Schránka neobsahuje podporovaný formát obrázku.</value></data><data name="ArtifactLinkPanel_TaskIdNotValid" xml:space="preserve"><value>Musíte zadat celé číslo pro ID úkolu</value></data><data name="Admin_History_Processing3" xml:space="preserve"><value>Vymazávám položku…</value></data><data name="Global_All" xml:space="preserve"><value>Vše</value></data><data name="CommentList_PleaseEnterComment" xml:space="preserve"><value>Zadejte prosím komentář a zkuste to znovu!</value></data><data name="TaskDetails_SplitTaskEffortNotInRange" xml:space="preserve"><value>Hodnota pracnosti musí být v rozsahu 0-100%</value></data><data name="TaskDetails_SplitTaskEffortNotInteger" xml:space="preserve"><value>Hodnota pracnosti musí být celé číslo!</value></data><data name="TaskDetails_SplitTaskNameRequired" xml:space="preserve"><value>Musíte zadat Jméno pro nový Úkol!</value></data><data name="AjaxFormManager_EnterSignature" xml:space="preserve"><value>Vložte elektronický podpis</value></data><data name="AjaxFormManager_EnterSignatureInfo" xml:space="preserve"><value>Zadejte prosím své přihlašovací jméno/heslo spolu s významem a klikněte na Přihlásit</value></data><data name="AjaxFormManager_Login" xml:space="preserve"><value>Login</value></data><data name="AjaxFormManager_Meaning" xml:space="preserve"><value>Význam</value></data><data name="AjaxFormManager_Password" xml:space="preserve"><value>Heslo</value></data><data name="AjaxFormManager_Sign" xml:space="preserve"><value>Přihlásit</value></data><data name="AjaxFormManager_DefaultMeaning" xml:space="preserve"><value>Měním {0} {1}:{2} z '{3}' na '{4}'</value></data><data name="AjaxFormManager_LoginRequired" xml:space="preserve"><value>Musíte zadat Login!</value></data><data name="AjaxFormManager_MeaningRequired" xml:space="preserve"><value>Musíte zadat Význam!</value></data><data name="AjaxFormManager_PasswordRequired" xml:space="preserve"><value>Musíte zadat Heslo!</value></data><data name="ArtifactEmail_SentMessageSuccess" xml:space="preserve"><value>Email byl úspěšně odeslán</value></data><data name="SidebarPanel_Maximize" xml:space="preserve"><value>Maximalizovat</value></data><data name="SidebarPanel_Minimize" xml:space="preserve"><value>Minimalizovat</value></data><data name="Global_SelectOneCheckBoxForFocusOn" xml:space="preserve"><value>Pro příkaz Najít složku musíte vybrat přesně jednu položku!</value></data><data name="Global_SelectOneCheckBoxForClone" xml:space="preserve"><value>U příkazu Klonovat musíte zaškrtnout alespoň JEDNO zaškrtávací políčko!</value></data><data name="Global_SaveAndNew" xml:space="preserve"><value>Uložit a Nový</value></data><data name="TreeView_EditDescription" xml:space="preserve"><value>Zadejte prosím popis nové složky:</value></data><data name="TreeView_EnterDescription" xml:space="preserve"><value>Zadejte prosím popis nové složky:</value></data><data name="WorkflowOperations" xml:space="preserve"><value>Operace workflow</value></data><data name="TestStep_Step" xml:space="preserve"><value>Krok</value></data><data name="TestStep_StepPlural" xml:space="preserve"><value>Kroky</value></data><data name="TestCaseExecution_Blocked" xml:space="preserve"><value>Blokováno</value></data><data name="TestCaseExecution_Caution" xml:space="preserve"><value>Pozor</value></data><data name="TestCaseExecution_Fail" xml:space="preserve"><value>Selhalo</value></data><data name="TestCaseExecution_Pass" xml:space="preserve"><value>Prošlo</value></data><data name="TestCaseExecution_PassAll" xml:space="preserve"><value>Prošlo Vše</value></data><data name="Global_SelectOneCheckBoxForImport" xml:space="preserve"><value>Zaškrtněte prosím u příkazu Import ne více než JEDNO zaškrtávací políčko!</value></data><data name="TestCaseDetails_CannotImportSelf" xml:space="preserve"><value>Aktuální testovací případ nelze importovat do sebe!</value></data><data name="TestCaseDetails_EnterTestCaseNameForNewLink" xml:space="preserve"><value>Musíte zadat název pro další testovací případ!</value></data><data name="TestSetDetails_ParameterRequired" xml:space="preserve"><value>Musíte vybrat parametr!</value></data><data name="TestSetDetails_ParameterValueRequired" xml:space="preserve"><value>Musíte zadat hodnotu parametru!</value></data><data name="TestCaseExecution_Pause" xml:space="preserve"><value>Pauza</value></data><data name="TestCaseExecution_Resume" xml:space="preserve"><value>Pokračovat</value></data><data name="Global_Operations" xml:space="preserve"><value>Operace</value></data><data name="Guide_Global_Next" xml:space="preserve"><value>Další</value></data><data name="Guide_Global_Previous" xml:space="preserve"><value>Zpět</value></data><data name="Guide_Global_Done" xml:space="preserve"><value>Hotovo</value></data><data name="Guide_Global_Skip" xml:space="preserve"><value>Přeskočit</value></data><data name="Guide_Global_Close" xml:space="preserve"><value>Zavřít</value></data><data name="Guide_TestExecution_intro_Title" xml:space="preserve"><value>Rychlá prohlídka</value></data><data name="Guide_TestExecution_intro_Content" xml:space="preserve"><value>Tato prohlídka Vám pomůže rychle pochopit, jak provádět testy ve ValidationMasteru. &lt;br&gt; &lt;br&gt; Pojďme si projít hlavní prvky rozhraní, než se podíváme na to, jak skutečně provádět testy. &lt;br&gt; &lt;br&gt; Pokračujte kliknutím na tlačítko Další.</value></data><data name="Guide_TestExecution_heading_Title" xml:space="preserve"><value>Název případu</value></data><data name="Guide_TestExecution_heading_Content" xml:space="preserve"><value>Zobrazuje název testovacího běhu (je-li k dispozici) a vybrané verze.</value></data><data name="Guide_TestExecution_display_Title" xml:space="preserve"><value>Možnosti zobrazení</value></data><data name="Guide_TestExecution_display_Content" xml:space="preserve"><value>Existují tři různé režimy zobrazení. &lt;br&gt; Každý má dvě možnosti zobrazení. &lt;br&gt; &lt;br&gt; Jsou navrženy pro různé způsoby práce</value></data><data name="Guide_TestExecution_settings_Title" xml:space="preserve"><value>Další nastavení</value></data><data name="Guide_TestExecution_settings_Content" xml:space="preserve"><value>Klikněte sem pro nastavení stránky, nebo pro přehrání této prohlídky.</value></data><data name="Guide_TestExecution_progress_Title" xml:space="preserve"><value>Ukazatel průběhu</value></data><data name="Guide_TestExecution_progress_Content" xml:space="preserve"><value>Slouží ke kontrole průběhu testů (ve výchozím nastavení zobrazuje kroky testu, nebo testovací případy, pokud existuje mnoho kroků testu). Při přechodu myší můžete vidět informace o testu.</value></data><data name="Guide_TestExecution_moving_Title" xml:space="preserve"><value>Přechod mezi jednotlivými testy</value></data><data name="Guide_TestExecution_moving_Content" xml:space="preserve"><value>Kliknutím sem se posunete o jeden test zpět nebo vpřed. Nebo klikněte na libovolný test v Ukazateli průběhu nebo v seznamu níže a přejděte přímo na konkrétní test.</value></data><data name="Guide_TestExecution_pause_Title" xml:space="preserve"><value>Pozastavení testů</value></data><data name="Guide_TestExecution_pause_Content" xml:space="preserve"><value>Pokud potřebujete pozastavit testování, kliknutím na tlačítko pro pauzu zastavíte interní časovač testu. Tlačítko pro pauzu svítí, když je pozastaveno, aby Vám připomínalo spuštění časovače při obnovení testování.</value></data><data name="Guide_TestExecution_exit_Title" xml:space="preserve"><value>Opuštění testu</value></data><data name="Guide_TestExecution_exit_Content" xml:space="preserve"><value>Kliknutím sem ukončíte testování. Nedokončený test naleznete na stránce 'Moje stránka'. Pro dokončení/pokračování v testu použijte oranžové tlačítko.</value></data><data name="Guide_TestExecution_split_Title" xml:space="preserve"><value>Rozdělený pohled</value></data><data name="Guide_TestExecution_split_Content" xml:space="preserve"><value>Tato část Vám umožní zobrazit seznam všech kroků vedle inspektora, který zobrazuje podrobné informace o aktuálním kroku testu. &lt;br&gt; &lt;br&gt; Další informace zobrazíte pomocí karet v dolní části. &lt;br&gt; &lt;br&gt; &lt;strong&gt; Možnosti zobrazení: &lt;/strong&gt; zvětšete nebo zmenšete inspektora podle svých potřeb</value></data><data name="Guide_TestExecution_table_Title" xml:space="preserve"><value>Tabulkový pohled</value></data><data name="Guide_TestExecution_table_Content" xml:space="preserve"><value>Tento režim zobrazení je skvělý pro zobrazení všech vašich testovacích kroků společně. Je navržen tak, aby vám umožnil velmi rychle zkontrolovat a podniknout úpravy v každém kroku. &lt;br&gt; &lt;br&gt; &lt;strong&gt; Možnosti zobrazení: &lt;/strong&gt; sbalte nebo rozbalte všechna pole v tabulce najednou a spravujte, co se zobrazuje na obrazovce. Každé pole lze také sbalit nebo rozbalit jednotlivě.</value></data><data name="Guide_TestExecution_mini_Title" xml:space="preserve"><value>Minimalistický pohled</value></data><data name="Guide_TestExecution_mini_Content" xml:space="preserve"><value>Hlavní pohled zobrazuje inspektora na celé obrazovce. Maximalizuje prostor vyhrazený pro zobrazení informací o aktuálním kroku. &lt;br&gt; &lt;br&gt; &lt;strong&gt; Možnosti zobrazení: &lt;/strong&gt; umožňuje přepnout z inspektora pouze na inspektora s iframe. To vám umožní otestovat webovou stránku s informacemi o testu hned vedle.</value></data><data name="Guide_TestExecution_status_Title" xml:space="preserve"><value>Zalogování stavu testu</value></data><data name="Guide_TestExecution_status_Content" xml:space="preserve"><value>Stav kroku můžete zaznamenat v libovolném zobrazení. Může se zobrazit výzva k zadání „Skutečného výsledku“ (např. Pokud v daném kroku zadáte Selhalo). &lt;br&gt; &lt;br&gt; &lt;strong&gt; Poznámka: &lt;/strong&gt; Chcete-li přidat výsledek ručně do tabulky, klikněte na „ Tlačítko + "pro daný krok. &lt;br&gt; Je možné, že budete požádáni o vytvoření Incidentu.</value></data><data name="Guide_TestExecution_screenshot_Title" xml:space="preserve"><value>Uložení snímku obrazovky</value></data><data name="Guide_TestExecution_screenshot_Content" xml:space="preserve"><value>Vložte obrázek přímo do textového pole „Skutečný výsledek“. &lt;br&gt; &lt;br&gt; Tím se nahraje a uloží obrázek a zajistí se správný odkaz na obrázek i v textovém poli.</value></data><data name="Guide_TestExecutionExploratory_intro_Title" xml:space="preserve"><value>Rychlá prohlídka</value></data><data name="Guide_TestExecutionExploratory_intro_Content" xml:space="preserve"><value>Tato příručka vám stručně ukáže, jak provádět Testovací Případy ve ValidationMasteru pomocí jeho režimu průzkumného testování. &lt;br&gt; &lt;br&gt; Toto je určeno pro zkušené testery. Tato příručka předpokládá, že už víte, jak funguje standardní provedení testu ve ValidationMasteru. &lt;br&gt; &lt;br&gt; Pokračujte kliknutím na tlačítko „Další“ níže.</value></data><data name="Guide_TestExecutionExploratory_editing_Title" xml:space="preserve"><value>Upravit vše</value></data><data name="Guide_TestExecutionExploratory_editing_Content" xml:space="preserve"><value>Když provádíte testy v průzkumném režimu, můžete upravit většinu částí testu. Stačí kliknout na pole a začít psát. &lt;br&gt; &lt;br&gt; Můžete změnit název testovacího běhu, popis a mnoho dalších polí. Když je pole zašedlé, nebudete jej moci upravovat. &lt;br&gt; &lt;br&gt; Jakmile přejdete do jiného pole, provedené změny se okamžitě uloží na server - všimněte si, že základní testovací případ se nemění (můžete si později vybrat, zda testovací případ změnit, či nikoli).</value></data><data name="Guide_TestExecutionExploratory_grid_Title" xml:space="preserve"><value>Pohyb mezi kroky</value></data><data name="Guide_TestExecutionExploratory_grid_Content" xml:space="preserve"><value>Stejně jako u běžného provádění testu, kliknutím na libovolný krok testu můžete na tomto kroku pracovat. Podrobnosti jsou zobrazeny v inspektoru vpravo. &lt;br&gt; Pokud je některý krok zobrazen šedě, znamená to, že nemáte oprávnění k úpravám tohoto kroku, ale přesto můžete pro tento krok zaznamenat výsledky. &lt;br&gt; &lt;br&gt; Krok nelze upravit, pokud pochází z propojeného testovacího případu.</value></data><data name="Guide_TestExecutionExploratory_gridStep_Title" xml:space="preserve"><value>Klonování nebo mazání kroků</value></data><data name="Guide_TestExecutionExploratory_gridStep_Content" xml:space="preserve"><value>Pokud umístíte ukazatel myši na libovolný krok (který není šedý), uvidíte na pravé straně kroku tři vodorovné tečky. &lt;br&gt; Kliknutím na toto tlačítko zobrazíte mini akční nabídku. To vám umožní buď klonovat tento krok, nebo ho smazat. &lt;br&gt; &lt;br&gt; Pokud klonujete tento krok, vytvoří se duplikát a umístí se na konec seznamu kroků. Pokud krok odstraníte, bude z tohoto běhu odstraněn.</value></data><data name="Guide_TestExecutionExploratory_gridStepMoving_Title" xml:space="preserve"><value>Změna pořadí kroků</value></data><data name="Guide_TestExecutionExploratory_gridStepMoving_Content" xml:space="preserve"><value>Můžete kliknout a podržet libovolný krok a poté jej přetáhnout nahoru nebo dolů v seznamu a umístit jej na novou pozici. Toto je opravdu snadný způsob, jak změnit pořadí testovacích kroků. &lt;br&gt; &lt;br&gt; Můžete to udělat kdykoli: žádná z informací v kroku nebude nijak změněna.</value></data><data name="Guide_TestExecutionExploratory_gridAdd_Title" xml:space="preserve"><value>Přidávání kroků</value></data><data name="Guide_TestExecutionExploratory_gridAdd_Content" xml:space="preserve"><value>Chcete-li přidat nový krok, klikněte na toto tlačítko. Bude vytvořen prázdný krok, který bude umístěn do spodní části seznamu testovacích kroků. Lze jej poté plně upravit stejným způsobem jako v jiných krocích. &lt;br&gt; &lt;br&gt; V kombinaci s již zmíněnými funkcemi Vám to dává možnosti navrhnout a změnit testovací běh při zkoumání funkcí, které testujete.</value></data><data name="Guide_TestExecutionExploratory_tasks_Title" xml:space="preserve"><value>Správa úkolů</value></data><data name="Guide_TestExecutionExploratory_tasks_Content" xml:space="preserve"><value>Při zkoumání můžete najít něco, na co by se vývojář měl podívat. Možná si nejste jisti, zda se jedná o chybu, nebo testování může být v raných fázích vývoje. V každém z těchto případů může být vytvoření incidentu příliš formální akcí. &lt;br&gt; &lt;br&gt; Proč místo toho nevytvořit úkol? Během několika sekund můžete přidat název, volitelný popis a přiřadit úkol kolegovi. &lt;br&gt; &lt;br&gt; Všechny úkoly vytvořené pro tento test můžete kdykoli zobrazit.</value></data><data name="Guide_TestExecutionExploratory_settings_Title" xml:space="preserve"><value>Volby zobrazení</value></data><data name="Guide_TestExecutionExploratory_settings_Content" xml:space="preserve"><value>Existuje několik způsobů, jak lze přizpůsobit váš pracovní prostor pro průzkumné testování. Konkrétně lze nastavit nebo skrýt různá pole podle jednotlivých uživatelů. Pokud například během průzkumných testů nepoužíváte 'Vzorová data', můžete toto pole skrýt. &lt;br&gt; &lt;br&gt; Můžete volitelně zobrazit poslední výsledky kroku (pokud existuje), abyste to mohli rychle porovnat s aktuálními výsledky.</value></data><data name="Guide_TestExecutionExploratory_exit_Title" xml:space="preserve"><value>Opuštění testu</value></data><data name="Guide_TestExecutionExploratory_exit_Content" xml:space="preserve"><value>Jakmile je průzkumné testování dokončeno, zobrazí se zde oranžové tlačítko se symbolem „stop“. Kliknutím na toto tlačítko zobrazíte rozbalovací nabídku se dvěma možnostmi. &lt;br&gt; &lt;br&gt; 1. Základní testovací případ můžete aktualizovat na základě všech změn, které jste provedli (úpravy, přidání, odstranění, přesunutí kroků). &lt;br&gt; &lt;br&gt; 2. Nebo můžete testovací případ ponechat beze změny. Pokud vyberete tuto možnost, aktualizuje se pouze stav provedení testovacího případu. Všimněte si, že testovací běh vytvořený z této relace bude plně odrážet všechny změny provedené na této stránce.</value></data><data name="Messenger_NewMessageFrom" xml:space="preserve"><value>Nová zpráva od</value></data><data name="TestSetList_CannotExecuteFolder" xml:space="preserve"><value>Složku nemůžete spustit, vyberte testovací sadu a zkuste to znovu!</value></data><data name="ArtifactType_Release" xml:space="preserve"><value>Verze</value></data><data name="ArtifactType_Requirement" xml:space="preserve"><value>Požadavek</value></data><data name="ArtifactType_TestSet" xml:space="preserve"><value>Testovací sada</value></data><data name="TestCaseList_AddToReleaseSuccess" xml:space="preserve"><value>Testovací Případy úspěšně přidány do Verze.</value></data><data name="TestCaseList_AddToRequirementSuccess" xml:space="preserve"><value>Testovací Případy úspěšně přidány do Požadavku.</value></data><data name="TestCaseList_AddToTestSetSuccess" xml:space="preserve"><value>Testovací Případy úspěně přidány do Testovací Sady.</value></data><data name="TestCaseList_RemoveFromReleaseSuccess" xml:space="preserve"><value>Testovací případy byly úspěšně odebrány z Verze.</value></data><data name="GlobalFunctions_InvalidOperation" xml:space="preserve"><value>Neplatná operace</value></data><data name="Global_CannotSelectMoreThanOneFolder" xml:space="preserve"><value>Pokud vyberete složku, nemůžete vybrat další položky současně!</value></data><data name="ArtifactType_AutomationEngine" xml:space="preserve"><value>Automatizační modul</value></data><data name="ArtifactType_AutomationHost" xml:space="preserve"><value>Hostitel automatizace</value></data><data name="ArtifactType_Document" xml:space="preserve"><value>Dokument</value></data><data name="ArtifactType_Incident" xml:space="preserve"><value>Incident</value></data><data name="ArtifactType_Message" xml:space="preserve"><value>Zpráva</value></data><data name="ArtifactType_RequirementStep" xml:space="preserve"><value>Krok požadavku</value></data><data name="ArtifactType_Task" xml:space="preserve"><value>Úkol</value></data><data name="ArtifactType_TestCase" xml:space="preserve"><value>Testovací případ</value></data><data name="ArtifactType_TestRun" xml:space="preserve"><value>Běh testu</value></data><data name="ArtifactType_TestStep" xml:space="preserve"><value>Krok testu</value></data><data name="ArtifactType_User" xml:space="preserve"><value>Uživatel</value></data><data name="Global_Current" xml:space="preserve"><value>Aktuální</value></data><data name="Global_CurrentProject" xml:space="preserve"><value>Aktuální Produkt</value></data><data name="Global_Filter" xml:space="preserve"><value>Filtr</value></data><data name="Global_Search_MatchingResults" xml:space="preserve"><value>Odpovídající výsledky</value></data><data name="Global_Sort" xml:space="preserve"><value>Seřadit</value></data><data name="Global_AllArtifacts" xml:space="preserve"><value>Všechny artefakty</value></data><data name="Global_AllProjects" xml:space="preserve"><value>Všechny produkty</value></data><data name="NavigationBar_ItemList" xml:space="preserve"><value>Seznam položek</value></data><data name="Pagination_First" xml:space="preserve"><value>První</value></data><data name="Pagination_Last" xml:space="preserve"><value>Poslední</value></data><data name="Pagination_Next" xml:space="preserve"><value>Další</value></data><data name="Pagination_Previous" xml:space="preserve"><value>Předchozí</value></data><data name="Pagination_Refresh" xml:space="preserve"><value>Obnovit</value></data><data name="Global_Search" xml:space="preserve"><value>Vyhledat</value></data><data name="Global_AllFolders" xml:space="preserve"><value>Všechny složky</value></data><data name="AssociationPanel_SelectArtifact" xml:space="preserve"><value>Vybrat typ artefaktu</value></data><data name="ArtifactLinkType_Depends" xml:space="preserve"><value>Záleží na</value></data><data name="ArtifactLinkType_Related" xml:space="preserve"><value>Související s</value></data><data name="Global_Comment" xml:space="preserve"><value>Komentář</value></data><data name="Global_Type" xml:space="preserve"><value>Typ</value></data><data name="Global_FilterByName" xml:space="preserve"><value>Filtrovat podle jména</value></data><data name="Global_RowsSelected" xml:space="preserve"><value>Řádky vybrány</value></data><data name="AssociationPanel_CreateTestCaseFromRequirement" xml:space="preserve"><value>Vytvořit Testovací Případ z tohoto Požadavku</value></data><data name="AssociationPanel_CreateTestCaseFromRequirementTooltip" xml:space="preserve"><value>Kliknutím vytvoříte nový Testovací Případ ve stromu testovacích případů, který je propojen s tímto Požadavkem.</value></data><data name="AssociationPanel_CreateTestSetFromRelease" xml:space="preserve"><value>Vytvořit Testovací Sadu z této Verze</value></data><data name="AssociationPanel_CreateTestSetFromReleaseTooltip" xml:space="preserve"><value>Kliknutím vytvoříte novou Testovací Sadu v seznamu testovacích sad, která má Testovací Případy importované z této Verze</value></data><data name="AssociationPanel_TestCaseCreatedFromRequirement" xml:space="preserve"><value>Z tohoto Požadavku byl úspěšně vytvořen nový Testovací Případ.</value></data><data name="AssociationPanel_TestSetCreatedFromRelease" xml:space="preserve"><value>Z tohoto Požadavku byl úspěšně vytvořena nová Testovací Sada.</value></data><data name="AssociationPanel_FilterPlaceholder" xml:space="preserve"><value>Filtrovat podle jména nebo hledat podle ID (např.</value></data><data name="Global_Start" xml:space="preserve"><value>Start</value></data><data name="AssociationPanel_NoResults" xml:space="preserve"><value>Nebyly nalezeny žádné shody</value></data><data name="GlobalNavigation_MyProfile" xml:space="preserve"><value>Můj Profil</value></data><data name="GlobalNavigation_MyTimecard" xml:space="preserve"><value>Moje Timecard</value></data><data name="Onboarding_NoThanks" xml:space="preserve"><value>Ne, díky</value></data><data name="Onboarding_Welcome_Message" xml:space="preserve"><value>Chceme vám rychle ukázat, jak pracovat s aplikací. Bude to trvat méně než minutu a pak můžete systém zkoumat sami.</value></data><data name="Onboarding_YesPlease" xml:space="preserve"><value>Ano, prosím</value></data><data name="Global_Search_SortByDate" xml:space="preserve"><value>datum</value></data><data name="Global_ShowAll" xml:space="preserve"><value>Zobrazit vše</value></data><data name="Global_ShowLess" xml:space="preserve"><value>Zobrazit méně</value></data><data name="Global_Followers" xml:space="preserve"><value>Followeři</value></data><data name="Global_People" xml:space="preserve"><value>Lidé</value></data><data name="ArtifactAddFollower_Success" xml:space="preserve"><value>Follower úspěšně přidán</value></data><data name="Followers_UnfollowUser" xml:space="preserve"><value>Odstranit followera</value></data><data name="Incidents_AllClosed" xml:space="preserve"><value>Všechny uzavřené</value></data><data name="Incidents_AllOpen" xml:space="preserve"><value>Všechny otevřené</value></data><data name="IncidentDetails_IncidentNotFound" xml:space="preserve"><value>Vámi vybraný Incident byl smazán ze systému!</value></data><data name="SourceCode_Commits" xml:space="preserve"><value>Umístit</value></data><data name="Global_Displaying" xml:space="preserve"><value>Zobrazuji</value></data><data name="Global_NewIncident" xml:space="preserve"><value>Nový Incident</value></data><data name="TreeView_NotAuthorizedToView" xml:space="preserve"><value>Nemáte oprávnění prohlížet složky!</value></data><data name="Global_Count" xml:space="preserve"><value>Počet</value></data><data name="Dashboards_SaveAsImage" xml:space="preserve"><value>Uložit jako obrázek</value></data><data name="Global_PleaseTryAgain" xml:space="preserve"><value>Při dokončení této operace došlo k problému, zkuste to znovu.</value></data><data name="TestExecutionService_ExploratoryDoNotDeleteLastStep" xml:space="preserve"><value>Váš test musí vždy obsahovat alespoň jeden testovací krok, takže vybraný testovací krok nebyl odstraněn</value></data><data name="Global_Description" xml:space="preserve"><value>Popis</value></data><data name="ArtifactDetails_ArtifactNotFound" xml:space="preserve"><value>Vybraný artefakt byl ze systému odstraněn!</value></data><data name="Global_Populate" xml:space="preserve"><value>Vyplnit</value></data><data name="TestConfigurationDetails_NoParameterOrCustomList" xml:space="preserve"><value>Musíte si vybrat jak parametr Testovacího Případu, tak vlastní seznam!</value></data><data name="TestConfigurationDetails_PleaseChooseParametersToPopulate" xml:space="preserve"><value>Vyberte parametr testovacího případu a přidružený vlastní seznam, který chcete přidat do této konfigurační sady testu:</value></data><data name="TestConfiguration_CustomList" xml:space="preserve"><value>Vlastní seznam</value></data><data name="TestConfiguration_TestCaseParameter" xml:space="preserve"><value>Parametr testu</value></data><data name="TestConfigurationDetails_ConfirmPopulation" xml:space="preserve"><value>Opravdu chcete vyplnit seznam položek konfigurace testu? Tímto odstraníte všechny své stávající položky v níže uvedené tabulce.</value></data><data name="TestConfigurationDetails_TooManyParameters" xml:space="preserve"><value>Můžete vložit až 5 parametrů pro vyplnění!</value></data><data name="Incident_EnterNewIncidentName" xml:space="preserve"><value>Zadejte jméno nového Incidentu</value></data><data name="AssociationPanel_CreateArtifactXFromArtifactY" xml:space="preserve"><value>Vytvořit {0} z tohoto {1}</value></data><data name="AssociationPanel_CreateArtifactXFromArtifactYTooltip" xml:space="preserve"><value>Kliknutím vytvoříte nový {0}, který je propojen s tímto {1}</value></data><data name="AssociationPanel_ArtifactXCreatedFromArtifactY" xml:space="preserve"><value>Z tohoto {1} byl úspěšně vytvořen nový {0}.</value></data><data name="AssociationPanel_NoArtifactTypesCanBeAdded" xml:space="preserve"><value>K tomuto artefaktu nemůžete přidat žádné asociace!</value></data><data name="ArtifactType_TestRunStep" xml:space="preserve"><value>Krok Běhu testu</value></data><data name="InAppHelp_Chart_IncidentAging" xml:space="preserve"><value>Tento graf ukazuje, jak dlouho byly Incidenty ponechány otevřené: časový interval je na ose x, počet incidentů na ose y.</value></data><data name="InAppHelp_Chart_IncidentOpenCount" xml:space="preserve"><value>Tento graf ukazuje rozdělení všech otevřených incidentů v produktu podle priority. Lišta grafu odpovídá barvě dané priority.</value></data><data name="InAppHelp_Chart_IncidentTestCoverage" xml:space="preserve"><value>Tento graf ukazuje stav vykonání všech Testovacích Případů, které dříve selhaly a vedly k založení Incidentu, který byl následně vyřešen. Může být velmi užitečné vidět, které testovací případy je pravděpodobně třeba znovu otestovat, když jsou jejich Incidenty vyřešeny.</value></data><data name="InAppHelp_Chart_RequirementGraphs" xml:space="preserve"><value>Můžete rychle zobrazit čtyři různé grafy použité při měření postupu v Požadavcích v agilní metodice: vyberte příslušný graf z rozevíracího seznamu</value></data><data name="InAppHelp_Chart_RequirementsCoverage" xml:space="preserve"><value>Tento graf ukazuje souhrnný počet testů pokrývajících Požadavky v Produktu. Pokrytí testů každého Požadavku je shrnuto na 1, aby byly Požadavky s různým počtem testovacích případů stejně váženy. Filtrování podle Verze vyfiltruje Požadavky přiřazené do dané Verze.</value></data><data name="InAppHelp_Chart_RequirementsCoverageRegression" xml:space="preserve"><value>Tento graf ukazuje souhrnný počet testů pokrývajících Požadavky v Produktu. Pokrytí testů každého Požadavku je shrnuto na 1, aby byly Požadavky s různým počtem testovacích případů stejně váženy. Filtrování podle Verze vyfiltruje Požadavky přiřazené do dané Verze.</value></data><data name="InAppHelp_Chart_SourceCodeCommits" xml:space="preserve"><value>Tento graf ukazuje poslední 3 měsíce úprav (commitů) kódu k produktu (pokud používáte funkci úpravy zdrojového kódu aplikace). Úpravy (commity) jsou agregovány podle týdnů. Graf je barevně označen dolním kvartilem, prostředním 50% a horním kvartilem aktivity.</value></data><data name="InAppHelp_Chart_TaskGraphs" xml:space="preserve"><value>Můžete rychle zobrazit tři různé grafy použité při měření postupu úkolů v agilní metodice: vyberte příslušný graf z rozbalovací nabídky</value></data><data name="InAppHelp_Chart_TestCasesPerStatusAndDay" xml:space="preserve"><value>Tento graf zobrazuje kumulativně posledních 30 dní vykonání Testovacích Případů. To znamená, že bude zobrazovat pro každý den celkový počet provedených testovacích případů plus stav z předchozích dnů, které nebyly změněny. Všechny testovací případy, které nebyly provedeny do tohoto bodu, budou považovány za „nespuštěné“ a zobrazí se v kategorii nespuštěné (Not Run). Například pokud máte 10 testovacích případů vytvořených v 1. den, uvidíte 10 testovacích případů „neběžících“ v 1. den. V den 2 vykonáte 5 testovacích případů a všechny selhají, nyní uvidíte 5 testovacích případů, které selhaly a 5 nespuštěných. V den 3 provedete 3 z předchozích 5 testovacích případů ,kdy vše prošlo. Nyní uvidíte 3 úspěšné testovací případy, 2 ve stavu selháno a 5 ve stavu nespuštěno.</value></data><data name="InAppHelp_Chart_TestExecutionStatus" xml:space="preserve"><value>Tento graf ukazuje souhrnný počet Testovacích Případů pro každý stav v produktu.</value></data><data name="InAppHelp_Chart_TestRunProgress" xml:space="preserve"><value>Tento graf zobrazuje posledních 30 dní aktivity testovacího běhu rozepsaných pro každý den podle stavu testovacího běhu.</value></data><data name="InAppHelp_Chart_TestSetStatus" xml:space="preserve"><value>Tento graf ukazuje agregovaný počet Testovacích Případů v každém stavu provedení pro každou testovací sadu v produktu. Pokud máte stejné testovací případy ve více testovacích sadách, všechny se počítají samostatně, abyste mohli zjistit, že testy úspěšně prošly napříč testovacími sadami. To je užitečné při testování v různých prostředích.</value></data><data name="InAppHelp_Chart_RequirementsCoverageProgram" xml:space="preserve"><value>Tento graf ukazuje agregovaný počet pokrytí požadavků jednotlivými testy pro celý program. Prošlo, Selhalo, Blokováno, Pozor a Neprovedeno (Not-Run) označují celkový počet Požadavků pokryté testy, přidělené napříč stavem prováděných testů.</value></data><data name="InAppHelp_Chart_TaskProgress" xml:space="preserve"><value>Tento graf ukazuje agregovaný počet Úkolů podle úrovně postupu pro celý program. Lišta 'Naplánováno' (On Schedule), 'Pozdní dokončení' (Late Finish), 'Pozdní spuštění' (Late Start) a 'Nezapočato' (Not Started) označuje celkový počet úkolů, které jsou v dané kategorii pro všechny produkty v Programu.</value></data><data name="InAppHelp_Chart_TestExecutionStatusProgram" xml:space="preserve"><value>Tento graf ukazuje agregovaný počet Testovacích Případů podle stavu vykonání pro celý program. Prošlo, Selhalo, Blokováno, Pozor a Neprovedeno (Not-Run) indikují celkový počet Testovacích Případů, které jsou v dané kategorii pro všechny produkty v programu.</value></data><data name="InAppHelp_Chart_DateRangeIncident" xml:space="preserve"><value>&lt;b&gt;Graf vývoje Incidentů&lt;/b&gt; zobrazuje celkový počet incidentů vytvořených a uzavřených v určitém časovém období, a to buď pro všechny typy incidentů, nebo pro konkrétní typ incidentu
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Graf kumulativního počtu Incidentů&lt;/b&gt; zobrazuje kumulativní celkový počet incidentů zaznamenaných v určitém časovém období, a to buď pro všechny typy incidentů, nebo pro konkrétní typ incidentu. Zpráva zobrazuje celkový počet všech incidentů a celkový počet všech otevřených incidentů (tj. Se stavem nenastaveným na pevný nebo uzavřený)
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Tabulka počtu otevřených Incidentů&lt;/b&gt; zobrazuje čistý počet otevřených incidentů v konkrétním časovém období kategorizovaných podle priority incidentu, a to buď pro všechny typy incidentů, nebo pro konkrétní typ incidentu. Pro tento graf je 'otevřený' definován jako jakýkoli incident, který má pole 'Uzavřeno' prázdné. Stav incidentu se pro tento graf nepoužívá.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Počet incidentů podle stavu &lt;/b&gt; zobrazuje počet otevřených incidentů v systému pro aktuální produkt za konkrétní časové období kategorizované podle stavu incidentu, a to buď pro všechny typy incidentů, nebo pro konkrétní typ incidentu. Pro tento graf je „otevřený“ definován jako jakýkoli incident s prázdným datem 'Uzavřeno'. Stav incidentu se pro tento graf nepoužívá.</value></data><data name="InAppHelp_Chart_DateRangeTestRun" xml:space="preserve"><value>&lt;b&gt;Graf průběhu Běhu testů&lt;/b&gt; ukazuje, kolik testů bylo provedeno pro vybraou Verzi/Sprint pro konkrétní časové období a jaký byl zaznamenán stav vykonání. Graf lze zobrazit pro všechny typy Testovacích Případů nebo pro konkrétní typ.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Graf vývoje Testovacích Případů &lt;/b&gt; zobrazuje počet spuštění testovacích případů pro zadané časové období oproti uvedené Verzi/Sprintu, přičemž ignoruje stav z předchozích dnů. Všechny testovací případy, které nebyly v daný den provedeny, budou považovány za 'nespuštěné' (Not-Run) a objeví se v kategorii 'Nespuštěno' (Not-Run).
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Kumulativní graf průběhu testovacího případu &lt;/b&gt; zobrazuje počet spuštění testovacího případu kumulativně za zadané časové období oproti uvedené Verzi/sprintu. To znamená, že bude zobrazovat pro každý den celkový počet provedených testovacích případů plus stav z předchozích dnů, které nebyly změněny. Všechny testovací případy, které nebyly provedeny až do tohoto bodu, budou považovány za 'nespuštěné' (Not-Run) a objeví se v kategorii 'Nespuštěno' (Not-Run).</value></data><data name="InAppHelp_Chart_SnapshotIncident" xml:space="preserve"><value>&lt;b&gt;Graf stárnutí Incidentů&lt;/b&gt; zobrazuje počet dní, kdy byly incidenty ponechány v systému otevřené, s počtem incidentů na ose y a různými věkovými intervaly na ose x. Každá barva sloupcového grafu představuje jinou prioritu incidentu, což produktovému manažerovi poskytuje okamžitý pohled na stáří otevřených incidentů podle priority a zjištěné Verze. U tohoto grafu je 'Otevřený' Incident definován jako jakýkoli incident s prázdným datem 'Uzavřeno'. Stav incidentu se pro tento graf nepoužívá.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Graf času obratu incidentu&lt;/b&gt; zobrazuje počet dní, během nichž byly incidenty uzavřeny (od okamžiku, kdy byly poprvé vytvořeny) v systému s počtem incidentů na ose y a různými časovými intervaly obratu na ose x. Každá barva sloupcového grafu představuje jinou prioritu incidentu, což produktovému manažerovi poskytuje okamžitý pohled na dobu zpracování incidentů podle priority a zjištěného vydání. Pro tento graf je 'Uzavřeno' definováno jako jakýkoli incident s datem v atributu 'Uzavřeno'. Stav incidentu se pro tento graf nepoužívá.</value></data><data name="InAppHelp_Chart_SnapshotRequirement" xml:space="preserve"><value>&lt;b&gt;Graf pokrytí Požadavků&lt;/b&gt; ukazuje, kolik Požadavků aktuálně produkt obsahuje, podle jejich stavu pokrytí testy
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Burndown graf Požadavků&lt;/b&gt; zobrazuje zbývající počet příběhových bodů, které je třeba dokončit pro každou Verzi/sprint v produktu, se samostatnými řádky pro odhadované a ideální shrnutí. Kromě toho graf obsahuje pruhy pro dokončený počet bodů příběhu v každém časovém období na ose x
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Burnup graf Požadavků&lt;/b&gt; zobrazuje kumulativní počet zbývajících bodů příběhu pro každou Verzi/sprint v produktu se samostatnými řádky pro odhadované a ideální dokončení. Kromě toho graf obsahuje sloupce pro počet dokončených bodů příběhu v každém časovém období na ose x
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Graf rychlosti Požadavků&lt;/b&gt; zobrazuje celkový počet bodů příběhu, které byly dokončeny (nebo byly naplánovány pro dokončení) v konkrétní Verzi, sprintu nebo časovém období (nazývaném rychlost). Skutečná rychlost se zobrazuje spolu s celkovou průměrnou rychlostí (modře) a klouzavou průměrnou rychlostí (zeleně)
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;&lt;/b&gt;</value></data><data name="InAppHelp_Chart_SnapshotTask" xml:space="preserve"><value>&lt;b&gt; Graf Rychlosti Úkolů&lt;/b&gt; zobrazuje celkovou odhadovanou a skutečnou pracnost (v počtu hodin) definovanou pro každou Verzi produktu nebo sprint.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Burnup graph Úkolů&lt;/b&gt; zobrazuje kumulativní množství práce, která zbývá pro každou Verzi/sprint v produktu se samostatnými řádky pro odhadované a ideální dokončení. Kromě toho graf obsahuje sloupce zbývajícího a dokončeného úsilí v každém časovém období na ose x.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Burndown graf Úkolů&lt;/b&gt; zobrazuje zbývající práci (v hodinách), kterou je třeba provést pro každou Verzi/sprint v produktu, se samostatnými řádky pro odhadované a ideální dokončení. Kromě toho graf obsahuje sloupce zbývajícího a dokončeného úsilí v každém časovém období na ose x.</value></data><data name="InAppHelp_Chart_SummaryIncident" xml:space="preserve"><value>Souhrnný graf incidentů ukazuje, kolik Incidentů je aktuálně v produktu. Počet Incidentů se zobrazí podle vámi zadaných kritérií.</value></data><data name="InAppHelp_Chart_SummaryRequirement" xml:space="preserve"><value>Souhrnný graf Požadavků ukazuje, kolik Požadavků je aktuálně v produktu. Počet Požadavků se zobrazí podle vámi zadaných kritérií</value></data><data name="InAppHelp_Chart_SummaryTask" xml:space="preserve"><value>Souhrnný graf Úkolů ukazuje, kolik Úkolů je aktuálně v produktu. Počet Úkolů se zobrazuje podle vámi zadaných kritérií.</value></data><data name="InAppHelp_Chart_SummaryTestCase" xml:space="preserve"><value>Souhrnný graf testovacích případů ukazuje, kolik Testovacích Případů se aktuálně v produktu nachází. Počet Testovacích Případů se zobrazí podle vámi zadaných kritérií.</value></data><data name="InAppHelp_Chart_SummaryTestRun" xml:space="preserve"><value>Souhrnný graf Běhu testů ukazuje, kolik testovacích běhů je aktuálně v produktu. Počet Běhů testu se zobrazí podle vámi zadaných kritérií.</value></data><data name="InAppHelp_Chart_SummaryTestSet" xml:space="preserve"><value>Souhrnný graf Testovacích sad ukazuje, kolik testovacích sad je aktuálně v produktu. Počet Testovacích sad se zobrazí podle vámi zadaných kritérií</value></data><data name="JqPlot_ImageExportNotSupport" xml:space="preserve"><value>Váš webový prohlížeč nepodporuje export obrázků!</value></data><data name="AssociationPanel_NoUnassociatedResults" xml:space="preserve"><value>Nebyly nalezeny žádné shody</value></data><data name="DocumentDetails_DeleteVersionConfirm" xml:space="preserve"><value>Opravdu chcete odstranit tuto verzi dokumentu?</value></data><data name="FileUpload_AttachmentEmpty" xml:space="preserve"><value>Nemůžete nahrát prázdnou přílohu!</value></data><data name="FileUpload_AttachmentTooLarge" xml:space="preserve"><value>Nelze nahrát přílohu větší než {0} KB!</value></data><data name="FileUpload_VersionNumberRequired" xml:space="preserve"><value>Musíte uvést číslo verze!</value></data><data name="FileUpload_VersionNumberTooLong" xml:space="preserve"><value>Vaše číslo verze je příliš dlouhé!</value></data><data name="Graphs_NeedToHaveASingleDataSeries" xml:space="preserve"><value>Tento typ grafu podporuje pouze jednu datovou řadu!</value></data><data name="TestCaseExecution_ActualResult" xml:space="preserve"><value>Aktuální výsledek</value></data><data name="RequirementDetails_SplitRequirementEstimateNotNumeric" xml:space="preserve"><value>Hodnota odhadu musí být číselná!</value></data><data name="RequirementDetails_SplitRequirementNameRequired" xml:space="preserve"><value>Musíte zadat Název nového Požadavku!</value></data><data name="AjaxFormManager_NotAuthorizedToCreate" xml:space="preserve"><value>K vytvoření této položky nemáte oprávnění!</value></data><data name="Global_IncidentName" xml:space="preserve"><value>Jméno Incidentu</value></data><data name="Global_Error" xml:space="preserve"><value>Chyba</value></data><data name="Global_ChooseWorkspace" xml:space="preserve"><value>--- Vyberte pracovní prostor ---</value></data><data name="AjaxFormManager_Logout" xml:space="preserve"><value>Odhlásit</value></data><data name="GlobalNavigation_KeyboardShortcuts" xml:space="preserve"><value>Klávesové zkratky</value></data><data name="GlobalNavigation_ShowOnboardingTours" xml:space="preserve"><value>Spustit prohlídku systému</value></data><data name="Global_Administration" xml:space="preserve"><value>Administrace</value></data><data name="Global_Help" xml:space="preserve"><value>Nápověda</value></data><data name="GlobalNavigation_SearchTooltip" xml:space="preserve"><value>Můžete vyhledávat podle klíčových slov nebo zadáním jedinečného tokenu artefaktu (např. IN45 pro incident 45)</value></data><data name="NavigationBar_RecentSearches" xml:space="preserve"><value>Nedávná vyhledávání</value></data><data name="Global_Artifacts" xml:space="preserve"><value>Artefakty</value></data><data name="NavigationBar_NoWorkspaceMembership" xml:space="preserve"><value>Nebylo nalezeno členství pro pracovní prostor</value></data><data name="GlobalNavigation_TooltipArtifacts" xml:space="preserve"><value>Artefakty jsou stavebními kameny produktu nebo programu a obsahují všechna jejich data. Každý artefakt obsahuje různá data a používá se různými způsoby. Například Požadavky jsou jeden artefakt a Verze jsou další. Fungují odlišně a nejsou zaměnitelné. Existují artefakty, které vám pomohou testovat, plánovat, sledovat chyby, vytvářet úkoly atd.</value></data><data name="GlobalNavigation_TooltipAutomationHost" xml:space="preserve"><value>Automatizační hostitelé jsou všechny různé systémy (tj. Testovací stroje) používané k provádění automatizovaných testů v produktu.</value></data><data name="GlobalNavigation_TooltipTestConfigurationSet" xml:space="preserve"><value>Konfigurace je matice parametrů, proti kterým lze spustit testy (ruční i automatizované). Konfigurace vám umožní rychle vytvořit každou možnou kombinaci z několika různých parametrů.</value></data><data name="GlobalNavigation_TooltipDocument" xml:space="preserve"><value>Zde jsou viditelné všechny přílohy, dokumenty, obrázky (včetně snímků obrazovky) a další soubory připojené k produktu, s uvedenou verzí.</value></data><data name="GlobalNavigation_TooltipIncident" xml:space="preserve"><value>Všechny typy Incidentů v produktu, včetně typů chyba, vylepšení, riziko nebo jakéhokoli jiného typu podle specifikace vlastníka produktu.</value></data><data name="GlobalNavigation_TooltipMyPage" xml:space="preserve"><value>Domovská stránka obsahuje všechny informace, které se vás týkají - sloučeno do jedné stránky, abyste mohli okamžitě pracovat</value></data><data name="GlobalNavigation_TooltipPlanningBoard" xml:space="preserve"><value>Vizualizujte a spravujte položky nevyřízených položek (backlog) plánované pro váš produkt. Tento plánovací nástroj je založen na metodikách Scrum a Kanban.</value></data><data name="GlobalNavigation_TooltipRelease" xml:space="preserve"><value>Hierarchický seznam Verzí produktu (včetně sprintů a epiců)</value></data><data name="GlobalNavigation_TooltipReporting" xml:space="preserve"><value>Generujte širokou škálu grafů a reportů pro aktuální pracovní prostor, včetně reportů vygenerovaných uživateli. Reporty lze filtrovat, třídit a exportovat.</value></data><data name="GlobalNavigation_TooltipRequirement" xml:space="preserve"><value>Hierarchický seznam Požadavků jakéhokoli typu, včetně příběhů uživatelů (User story), případů použití (Use case) a funkcí (feature)</value></data><data name="GlobalNavigation_TooltipResource" xml:space="preserve"><value>Správa zdrojů k zobrazení každého aktivního člena produktu spolu s celkovou pracovní zátěží (dokončenou i plánovanou).</value></data><data name="GlobalNavigation_TooltipSourceCode" xml:space="preserve"><value>Zobrazí veškerý zdrojový kód připojený k aplikaci, včetně konkrétních úprav (commitů), revizí souborů a větví aplikace (branches).</value></data><data name="GlobalNavigation_TooltipTask" xml:space="preserve"><value>Úkoly pomáhají rozdělit větší pracovní oblasti, jako jsou Požadavky nebo Incidenty, takže dílčí části mohou provádět různí lidé. Úkoly mohou být také samostatnými činnostmi.</value></data><data name="GlobalNavigation_TooltipTestCase" xml:space="preserve"><value>Testovací případy jsou klíčovou jednotkou testování v aplikaci. Každý testovací případ se skládá z testovacích kroků. Stav provedení testovacího případu (např. Prošlo nebo Selhalo) lze v celém systému vysledovat skrz Verze a Požadavky.</value></data><data name="GlobalNavigation_TooltipTestRun" xml:space="preserve"><value>Při každém spuštění Testovacího Případu se vytvoří Běh testu. Každé spuštění v produktu se shromažďuje jako testovací běhy, které fungují jako záznamy pro celou testovací aktivitu.</value></data><data name="GlobalNavigation_TooltipTestSet" xml:space="preserve"><value>Testovací sady obsahují testovací případy. Testovací sada funguje jako kumulující artefakt pro dynamické testování a pro nastavení konkrétního pořadí při provádění Testovacích Případů. Testovací sady nejsou složky: testovací případ může žít v mnoha testovacích sadách a dokonce může být v jedné testovací sadě vícekrát.</value></data><data name="GlobalNavigation_TooltipWorkspace" xml:space="preserve"><value>Chcete-li začít dělat věci v aplikaci, musíte vybrat pracovní prostor, který chcete prozkoumat, spravovat nebo pracovat. Pracovní prostory mohou být produkty (např. Pro konkrétní aplikaci), programy (které seskupují několik produktů dohromady), portfolia (pouze ValidationMaster - seskupuje několik programů dohromady) nebo podnikové zobrazení celého systému (pouze ValidationMaster)</value></data><data name="GlobalNavigation_TooltipWorkspaceHome" xml:space="preserve"><value>Souhrnné zobrazení produktu' pro pochopení celkového stavu aktuálního pracovního prostoru s komplexními a snadno pochopitelnými (a přizpůsobitelnými) informacemi. Přístup k němu získáte kliknutím na velkou ikonu pracovního prostoru na navigačním panelu</value></data><data name="Global_Documentation" xml:space="preserve"><value>Dokumentace</value></data><data name="Global_SystemAdministration" xml:space="preserve"><value>Administrace systému</value></data><data name="Global_Templates" xml:space="preserve"><value>Šablony</value></data><data name="Global_RiskName" xml:space="preserve"><value>Jméno rizika</value></data><data name="Onboarding_WelcomeToProduct" xml:space="preserve"><value>Úvod do {0}</value></data><data name="GlobalNavigation_TooltipAdministration" xml:space="preserve"><value>Rozsáhlé možnosti správy umožňují osobám s dostatečným přístupem provádět změny v příslušných pracovních prostorech jako správu uživatelů, notifikace, nastavení systému a zabezpečení, synchronizaci dat s externími službami a další.</value></data><data name="GlobalNavigation_TooltipUserProfile" xml:space="preserve"><value>Spravujte svůj uživatelský profil a nastavení (včetně hesel a lokalizace). Z této nabídky můžete také přistupovat k odkazům na dokumentaci o stránce, na které se nacházíte, podívat se na mini návody nebo klávesové zkratky, příp odhlásit se z aplikace.</value></data><data name="Global_Finish" xml:space="preserve"><value>Dokončit</value></data><data name="Global_MyPage" xml:space="preserve"><value>Moje stránka</value></data><data name="Global_UserProfile" xml:space="preserve"><value>Uživatelský profil</value></data><data name="Global_Workspaces" xml:space="preserve"><value>Pracovní prostor</value></data><data name="Global_WorkspacesDashboard" xml:space="preserve"><value>Řídící panel pracovního prostoru</value></data><data name="Onboarding_AppIntro_Title" xml:space="preserve"><value>Poznejte {0}</value></data><data name="Onboarding_SelectATour" xml:space="preserve"><value>Pro zobrazení prohlídky vyberte z níže uvedené nabídky</value></data><data name="Onboarding_UpdateIntro_Message" xml:space="preserve"><value>Objevte, co je nového v nejnovější aktualizaci.</value></data><data name="Onboarding_ReadMore" xml:space="preserve"><value>Zobrazit víc</value></data><data name="Onboarding_ShowAllTours" xml:space="preserve"><value>Zobrazit všechny prohlídky</value></data><data name="GlobalNavigation_TooltipRisk" xml:space="preserve"><value>Využijte rizika k implementaci kompletního řešení řízení rizik pro vaše produkty. Každé riziko může mít pravděpodobnost a dopad, které vám pomohou analyzovat expozici každého rizika. Přidejte zmírnění rizika a sledujte, jak s rizikem zacházíte</value></data><data name="ArtifactType_Risk" xml:space="preserve"><value>Riziko</value></data><data name="ArtifactType_RiskMitigation" xml:space="preserve"><value>Zmírnění</value></data><data name="Onboarding_TourAims_AppIntro" xml:space="preserve"><value>Tato prohlídka vám pomůže orientovat se v aplikaci. Podíváme se na každou část navigační lišty - tmavou část v horní části každé stránky. Každá část vám pomůže pohybovat se mezi různými oblastmi aplikace. Pokud umístíte ukazatel myši na některou z těchto částí, zobrazí se vám nápověda s dalšími informacemi.</value></data><data name="Onboarding_TourAims_Title" xml:space="preserve"><value>Začněte zde</value></data><data name="Risk_EnterNewRiskName" xml:space="preserve"><value>Zadejte nový název rizika</value></data><data name="ArtifactType_PlanningBoard" xml:space="preserve"><value>Plánovací nástěnka</value></data><data name="ArtifactType_SourceCode" xml:space="preserve"><value>Zdrojový kód</value></data><data name="ArtifactType_TestConfigurationSet" xml:space="preserve"><value>Konfigurace</value></data><data name="Artifact_EnterNewName" xml:space="preserve"><value>Zadejte nový název</value></data><data name="GlobalNavigation_ColorScheme_Auto" xml:space="preserve"><value>Automatický režim</value></data><data name="GlobalNavigation_ColorScheme_Dark" xml:space="preserve"><value>Tmavý režim</value></data><data name="GlobalNavigation_ColorScheme_Light" xml:space="preserve"><value>Světlý režim</value></data><data name="GlobalNavigation_ColorScheme_AutoTitle" xml:space="preserve"><value>Barevný režim je nastaven podle nastavení operačního systému. Kliknutím přepnete do tmavého režimu</value></data><data name="GlobalNavigation_ColorScheme_DarkTitle" xml:space="preserve"><value>Nový vzhled, který je snazší pro oči. Kliknutím přepnete do světelného (normálního) režimu</value></data><data name="GlobalNavigation_ColorScheme_LightTitle" xml:space="preserve"><value>Klasický, nadčasový tmavý text na světlém pozadí. Kliknutím přepnete do automatického režimu</value></data><data name="Administration_Project_RemapTemplateDialogText" xml:space="preserve"><value>Právě se mění šablona produktu ...</value></data><data name="Administration_Project_RemapTemplateTitle" xml:space="preserve"><value>Změnit šablonu produktu</value></data><data name="Administration_Project_NeedToSelectTemplate" xml:space="preserve"><value>Musíte vybrat šablonu ze seznamu!</value></data><data name="MoreArtifactsThanCanDisplay" xml:space="preserve"><value>Je nám líto, celkem existuje více artefaktů, než lze zobrazit na stránce.</value></data><data name="Admin_TemplateChange_FieldMappingLoss" xml:space="preserve"><value>Odhadovaná ztráta dat</value></data><data name="Global_Artifact" xml:space="preserve"><value>Artefakt</value></data><data name="Global_FieldName" xml:space="preserve"><value>Název pole</value></data><data name="FileArtifactUploadDialog_FilenameRequired" xml:space="preserve"><value>Vyberte, nebo přesuňte soubor do oblasti před nahráním!</value></data><data name="Global_ChooseFilterToUpdate" xml:space="preserve"><value>Vyberte filtr, který chcete aktualizovat:</value></data><data name="Global_IncludeColumns" xml:space="preserve"><value>Uložit výběr sloupců s filtrem</value></data><data name="Global_SaveNew" xml:space="preserve"><value>Uložit nový</value></data><data name="Global_UpdateExisting" xml:space="preserve"><value>Aktualizovat existující</value></data><data name="Global_UpdateExistingOrSaveNew" xml:space="preserve"><value>Chcete aktualizovat existující uložený filtr nebo uložit nový?</value></data><data name="Global_Portfolio" xml:space="preserve"><value>Portfolio</value></data><data name="Global_Portfolios" xml:space="preserve"><value>Portfolia</value></data><data name="Global_Programs" xml:space="preserve"><value>Programy</value></data><data name="Global_Projects" xml:space="preserve"><value>Produkty</value></data><data name="Global_Releases" xml:space="preserve"><value>Verze</value></data><data name="Global_Sprints" xml:space="preserve"><value>Sprinty</value></data><data name="GlobalNavigation_DefaultPortfolio" xml:space="preserve"><value>(Žádné portfolio)</value></data><data name="Dashboards_ProgressLegend_FullyDone" xml:space="preserve"><value>Plně Hotovo</value></data><data name="Dashboards_ProgressLegend_Late" xml:space="preserve"><value>Pozdní / mimo trasování</value></data><data name="Dashboards_ProgressLegend_MostlyDone" xml:space="preserve"><value>Téměř hotovo</value></data><data name="Dashboards_ProgressLegend_Started" xml:space="preserve"><value>Započato</value></data><data name="Dashboards_Legend_Title" xml:space="preserve"><value>Legenda</value></data><data name="GlobalNavigation_TooltipEnterprise" xml:space="preserve"><value>Stránka Enterprise poskytuje pohled z ptačí perspektivy na vše ve Vaší organizaci. Zde si můžete prohlédnout všechna portfolia ve Vaší organizaci.</value></data><data name="InAppHelp_Chart_PortfolioRelativeSize" xml:space="preserve"><value>Tento graf ukazuje počet aktivních Požadavků v každém aktivním portfoliu. Když umístíte ukazatel myši na segment, zobrazí se jeho procento ze všech Požadavků (to je vizuálně vyjádřeno segmentem v kruhovém grafu). Upozorňujeme, že portfolia bez aktivních Požadavků se nezobrazí.</value></data><data name="InAppHelp_Chart_ProductRelativeSize" xml:space="preserve"><value>Tento graf ukazuje počet aktivních Požadavků u každého aktivního produktu. Když umístíte ukazatel myši na segment, zobrazí se jeho procento ze všech požadavků (to je vizuálně vyjádřeno segmentem v kruhovém grafu). Upozorňujeme, že produkty bez aktivních požadavků se nezobrazují.</value></data><data name="InAppHelp_Chart_ProgramRelativeSize" xml:space="preserve"><value>Tato tabulka ukazuje počet aktivních Požadavků v každém aktivním programu. Když umístíte ukazatel myši na segment, zobrazí se jeho procento ze všech požadavků (toto je vizuálně vyjádřeno segmentem v kruhovém grafu). Programy bez aktivních požadavků se nezobrazí.</value></data><data name="InAppHelp_Chart_ReleaseRelativeSize" xml:space="preserve"><value>Tento graf ukazuje počet aktivních Požadavků v každé aktivní Verzi. Když umístíte ukazatel myši na segment, zobrazí se jeho procento ze všech požadavků (to je vizuálně vyjádřeno segmentem v kruhovém grafu). Vydání bez aktivních požadavků se nezobrazí.</value></data><data name="InAppHelp_Chart_EnterpriseOverallCompletion" xml:space="preserve"><value>Tento graf ukazuje podíl všech aktivních Požadavků, které byly dokončeny ve všech aktivních programech v tomto portfoliu. Když je splněno 100% požadavků, barva se změní tak, aby bylo snadné zjistit, co právě probíhá vs co je dokončeno.</value></data><data name="InAppHelp_Chart_PortfolioOverallCompletion" xml:space="preserve"><value>Tento graf ukazuje podíl všech aktivních Požadavků, které byly dokončeny ve všech aktivních programech v tomto portfoliu. Když je splněno 100% požadavků, barva se změní tak, aby bylo snadné zjistit, co právě probíhá vs co je dokončeno.</value></data><data name="InAppHelp_Chart_ProductOverallCompletion" xml:space="preserve"><value>Tento graf ukazuje podíl všech aktivních Požadavků, které byly dokončeny ve všech aktivních verzích v tomto produktu. Když je splněno 100% požadavků, barva se změní tak, aby bylo snadné zjistit, co právě probíhá vs co je dokončeno.</value></data><data name="InAppHelp_Chart_ProgramOverallCompletion" xml:space="preserve"><value>Tento graf ukazuje podíl všech aktivních požadavků, které byly splněny u všech aktivních produktů v tomto programu. Když je splněno 100% požadavků, barva se změní, takže je snadné zjistit, co právě probíhá vs co je dokončeno.</value></data><data name="Dashboards_Legend_AheadOfSchedule" xml:space="preserve"><value>V předstihu</value></data><data name="Dashboards_Legend_BehindSchedule" xml:space="preserve"><value>Ve skluzu</value></data><data name="Dashboards_Legend_Completed" xml:space="preserve"><value>Hotovo</value></data><data name="Dashboards_Legend_InProgress" xml:space="preserve"><value>Probíhá</value></data><data name="Dashboards_Legend_Late" xml:space="preserve"><value>Zpožděný</value></data><data name="Dashboards_Legend_OnSchedule" xml:space="preserve"><value>Podle plánu</value></data><data name="Dashboards_Legend_NotStarted" xml:space="preserve"><value>Nezapočato</value></data><data name="Dashboard_Completion_RequirementsTitle" xml:space="preserve"><value>Hotové Požadavky</value></data><data name="Dashboard_Completion_ScheduleTitle" xml:space="preserve"><value>Naplánovat postup (od začátku do dneška)</value></data><data name="Dashboard_Completion_ShowAsNumbers" xml:space="preserve"><value>Jako čísla</value></data><data name="Dashboard_Completion_ShowAsPercent" xml:space="preserve"><value>Jako procenta</value></data><data name="InAppHelp_Chart_EnterpriseSchedule" xml:space="preserve"><value>Tento Ganttův graf zobrazuje všechna aktivní portfolia, programy, produkty, verze a sprinty v podniku (Enterprise). Každý pruh se rozprostírá od data zahájení položky do data ukončení. Tmavší stínovaná část každého pruhu vám řekne, jak úplné jsou jeho požadavky.</value></data><data name="InAppHelp_Chart_EnterpriseWorkspaceCompletion" xml:space="preserve"><value>Tento graf ukazuje postup každého portfolia v podniku (Enterprise). Levý graf ukazuje pokrok od data začátku do konce portfolia. Barva pruhu označuje, v jakém stavu je plán proti splnění požadavku. Pravý graf ukazuje podíl požadavků v aktivních pracovních prostorech v portfoliu, které byly dokončeny.</value></data><data name="InAppHelp_Chart_PortfolioSchedule" xml:space="preserve"><value>Tento Ganttův graf ukazuje všechny aktivní programy, produkty, verze a sprinty v tomto portfoliu. Každý pruh se rozprostírá od data zahájení položky do data ukončení. Tmavší stínovaná část každého pruhu vám řekne, jak úplné jsou jeho požadavky.</value></data><data name="InAppHelp_Chart_PortfolioWorkspaceCompletion" xml:space="preserve"><value>Tento graf ukazuje postup jednotlivých programů v tomto portfoliu. Levý graf zobrazuje postup od data zahájení do konce programu. Barva pruhu označuje v jakém stavu je plán proti splnění požadavku. Pravý graf ukazuje podíl požadavků v rámci aktivních pracovních prostorů v programu, které byly dokončeny.</value></data><data name="InAppHelp_Chart_ProductSchedule" xml:space="preserve"><value>Tento Ganttův graf ukazuje všechny aktivní verze a sprinty v tomto produktu. Každý pruh se rozprostírá od data zahájení položky do data ukončení. Tmavší stínovaná část každého pruhu vám řekne, jak úplné jsou jeho požadavky.</value></data><data name="InAppHelp_Chart_ProductWorkspaceCompletion" xml:space="preserve"><value>Tento graf ukazuje průběh každé aktivní Verze s požadavky připojenými k tomuto produktu. Levý graf ukazuje postup od počátečního do koncového data Verze. Barva pruhu označuje, v jakém stavu je plán proti splnění požadavku. Pravý graf ukazuje podíl požadavků ve verzi, které byly dokončeny.</value></data><data name="InAppHelp_Chart_ProgramSchedule" xml:space="preserve"><value>Tento Ganttův graf ukazuje všechny aktivní produkty, verze a sprinty v tomto programu. Každý pruh se rozprostírá od data zahájení položky do data ukončení. Tmavší stínovaná část každého pruhu vám řekne, jak úplné jsou jeho požadavky.</value></data><data name="InAppHelp_Chart_ProgramWorkspaceCompletion" xml:space="preserve"><value>Tato tabulka ukazuje postup jednotlivých produktů v tomto programu. Levý graf ukazuje pokrok od počátečního do koncového data produktu. Barva pruhu označuje, v jakém stavu je plán proti splnění požadavku. Pravý graf ukazuje podíl požadavků napříč aktivními verzemi produktu, které byly dokončeny.</value></data><data name="LoginOAuth_NotAdmin" xml:space="preserve"><value>Uživatel 'administrator' se nemůže připojit k Oauth</value></data><data name="Admin_UserDetailsEdit_LdapDnRequired" xml:space="preserve"><value>Musíte zadat hodnotu pro nový LDAP DN!</value></data><data name="ListPage_ExportToReport_MaxLengthExceeded" xml:space="preserve"><value>Vybrali jste příliš mnoho artefaktů k exportu. Vyberte méně než {0} a zkuste to znovu.</value></data><data name="TestRun_ChooseTestToRun" xml:space="preserve"><value>Spustit test</value></data><data name="TestRun_ExecuteNewTest" xml:space="preserve"><value>Spustit nový Běh testů</value></data><data name="TestRun_ExistingPendingForUseAndTestId" xml:space="preserve"><value>Pro vybraný test máte čekající Běhy testů</value></data><data name="TestRun_ExistingPendingForUseAndTestId_info" xml:space="preserve"><value>Můžete: spustit Testovací Případ od začátku (spustit nový Běh testu); nebo vyberte poslední probíhající Běh testu. Chcete-li zobrazit všechny nedokončené Běhy testu, přejděte na stránku Moje stránka.</value></data><data name="Global_NoDataToDisplay" xml:space="preserve"><value>Litujeme, nejsou k dispozici žádná data k zobrazení</value></data><data name="Dashboards_Legend_AheadOfSchedule_Tooltip" xml:space="preserve"><value>Procento dokončených požadavků je větší než procento harmonogramu, který uplynul</value></data><data name="Dashboards_Legend_BehindSchedule_Tooltip" xml:space="preserve"><value>Procento dokončených požadavků je menší než procento harmonogramu, který uplynul</value></data><data name="Dashboards_Legend_Completed_Tooltip" xml:space="preserve"><value>Všechny Požadavky zahrnuté ve Verzích v tomto workflow jsou dokončené</value></data><data name="Dashboards_Legend_Late_Tooltip" xml:space="preserve"><value>Workflow nebo kterákoli jeho část (je-li k dispozici) má zpoždění. Samotné workflow je ve spoždění, kdy požadavky ještě nejsou všechny úplné, ale jeho datum ukončení již uplynulo</value></data><data name="Dashboards_Legend_OnSchedule_Tooltip" xml:space="preserve"><value>Procento splněných požadavků je zhruba stejné jako procento harmonogramu, který uplynul</value></data><data name="SystemInfo_DeleteSampleDataConfirm" xml:space="preserve"><value>Opravdu chcete smazat všechna vzorová data? Tako akce odstraní všechny ukázkové produkty, programy (kromě výchozích), portfolia a uživatele. Pamatujte, že administrátor  (s uživatelským jménem „adminstrator“ a ID „1“) nebude smazán.</value></data><data name="SystemInfo_DeleteSampleData" xml:space="preserve"><value>Odstranit vzorová data</value></data><data name="InAppHelp_Chart_Program_ProjectTestSummary" xml:space="preserve"><value>Tato tabulka zobrazuje každý produkt v programu, spolu s počtem testovacích případů, vykonaných testů (běhů) a podílem testů, které prošly, selhaly, byly zablokovány, skončily ve stavu Pozor, nebo nebyly spuštěny. Kromě toho u každého produktu také zobrazuje počet otevřených incidentů a jejich prioritní rozdělení.</value></data><data name="PlanningBoard_CollapseAll" xml:space="preserve"><value>Sbalit vše</value></data><data name="PlanningBoard_ExpandAll" xml:space="preserve"><value>Rozbalit vše</value></data><data name="PlanningBoard_WIP" xml:space="preserve"><value>WIP</value></data><data name="Global_NameRequired" xml:space="preserve"><value>Zadejte jméno</value></data><data name="TestCaseExecution_ActualResultNeeded" xml:space="preserve"><value>Abyste mohli zaznamenat tento testovací krok, musíte zadat Skutečný výsledek! Zadejte výsledek a potvrďte kliknutím na tlačítko níže.</value></data><data name="TestCaseExecution_ActualResultNeededPassAll" xml:space="preserve"><value>Abyste mohli zaznamenat tento testovací krok, musíte zadat Skutečný výsledek! Zadejte výsledek a potvrďte kliknutím na tlačítko níže.</value></data><data name="TestCaseExecution_IncidentEntryInvalid" xml:space="preserve"><value>Chcete-li přidat tento Incident, vyplňte všechna povinná pole (včetně jména)</value></data><data name="PlanningGrid_Available_HoursTooltip" xml:space="preserve"><value>Dostupné hodiny jsou stejné jako hodnota Plánované úsilí pro tuto Verzi</value></data><data name="PlanningGrid_Available_PointsTooltip" xml:space="preserve"><value>Dostupné body jsou stejné jako hodnota Plánované úsilí pro tuto Verzi</value></data><data name="PlanningGrid_Remaining_HoursTooltip" xml:space="preserve"><value>Zbývající hodiny se počítají jako dostupné mínus využité hodiny</value></data><data name="PlanningGrid_Remaining_PointsTooltip" xml:space="preserve"><value>Zbývající body se počítají jako dostupné mínus využité body</value></data><data name="PlanningGrid_Utilized_HoursTooltip" xml:space="preserve"><value>Využité hodiny jsou stejné jako hodnota Plánované úsilí pro tuto verzi</value></data><data name="PlanningGrid_Utilized_PointsTooltip" xml:space="preserve"><value>Využité body jsou stejné jako hodnota Požadovaných bodů pro tuto Verzi</value></data><data name="Folders_AllPackages" xml:space="preserve"><value>Všechny požadavky</value></data></root>

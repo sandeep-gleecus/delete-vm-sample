@@ -1,0 +1,4 @@
+release_id:Normal,test_set_id:Normal,actual_duration:Normal,count_passed:Normal,count_failed:Normal,count_blocked:Normal,count_caution:Normal,count_not_run:Normal,count_not_applicable:Normal,execution_date:Normal
+1,1,255,1,2,0,0,0,0,"DATEADD(day, -25, SYSUTCDATETIME())"
+1,2,270,3,0,0,0,0,0,"DATEADD(day, -90, SYSUTCDATETIME())"
+2,2,270,3,0,0,0,0,0,"DATEADD(day, -90, SYSUTCDATETIME())"

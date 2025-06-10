@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.inflectra.com/SpiraTest/Services/v4.0/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DataSync" targetNamespace="http://www.inflectra.com/SpiraTest/Services/v4.0/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IDataSync1_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.inflectra.com/SpiraTest/Services/v4.0/">
+      <xsd:element name="Connection_Authenticate">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="userName" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="password" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Connection_AuthenticateResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="Connection_AuthenticateResult" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Connection_Authenticate2">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="userName" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="plugInName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Connection_Authenticate2Response">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="Connection_Authenticate2Result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Connection_ConnectToProject">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="projectId" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Connection_ConnectToProjectResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="Connection_ConnectToProjectResult" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Connection_Disconnect">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Connection_DisconnectResponse">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="System_GetProductName">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="System_GetProductNameResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="System_GetProductNameResult" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="System_GetServerDateTime">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="System_GetServerDateTimeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="System_GetServerDateTimeResult" type="xsd:dateTime" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="System_GetWebServerUrl">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="System_GetWebServerUrlResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="System_GetWebServerUrlResult" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataSyncSystem_Retrieve">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataSyncSystem_RetrieveResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q1="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0.DataObjects" minOccurs="0" name="DataSyncSystem_RetrieveResult" nillable="true" type="q1:ArrayOfRemoteDataSyncSystem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataSyncSystem_SaveRunFailure">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataSyncSystemId" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataSyncSystem_SaveRunFailureResponse">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataSyncSystem_SaveRunSuccess">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataSyncSystemId" type="xsd:int" />
+            <xsd:element minOccurs="0" name="lastRunDate" type="xsd:dateTime" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataSyncSystem_SaveRunSuccessResponse">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataSyncSystem_SaveRunWarning">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataSyncSystemId" type="xsd:int" />
+            <xsd:element minOccurs="0" name="lastRunDate" type="xsd:dateTime" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataSyncSystem_SaveRunWarningResponse">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataSyncSystem_WriteEvent">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="message" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="details" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="eventLogEntryType" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataSyncSystem_WriteEventResponse">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xsd:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0">
+      <xsd:complexType name="ServiceFaultMessage">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+          </xsd:appinfo>
+          <xsd:documentation>
+            <comments>
+              <summary>
+            This is structure is used to define the custom soap fault message.
+            Custom SOAP Fault Message class Name :ServiceFaultMessage 
+            </summary>
+            </comments>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Message" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The short description of the fault
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="StackTrace" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The detailed stack trace of the error message
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Type" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The type of the fault - normally the full name of the server exception class
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ServiceFaultMessage" nillable="true" type="tns:ServiceFaultMessage" />
+    </xsd:schema>
+    <xsd:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0.DataObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0.DataObjects">
+      <xsd:complexType name="ArrayOfRemoteDataSyncSystem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="RemoteDataSyncSystem" nillable="true" type="tns:RemoteDataSyncSystem" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfRemoteDataSyncSystem" nillable="true" type="tns:ArrayOfRemoteDataSyncSystem" />
+      <xsd:complexType name="RemoteDataSyncSystem">
+        <xsd:annotation>
+          <xsd:appinfo />
+          <xsd:documentation>
+            <comments>
+              <summary>
+            Represents a single data-sync plug-in entry
+            </summary>
+            </comments>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AutoMapUsers" type="xsd:boolean">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            Should we attempt to auto-map user in the two systems
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="ConnectionString" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The connection string (often a URL) for accessing the external system
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Custom01" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            Custom value, its use is dependent on the specific data-sync plug-in
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Custom02" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            Custom value, its use is dependent on the specific data-sync plug-in
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Custom03" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            Custom value, its use is dependent on the specific data-sync plug-in
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Custom04" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            Custom value, its use is dependent on the specific data-sync plug-in
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Custom05" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            Custom value, its use is dependent on the specific data-sync plug-in
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="DataSyncStatusId" type="xsd:int">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The id of the synchronization status (for the last time it ran)
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="DataSyncStatusName" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The display name of the synchronization status
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="DataSyncSystemId" type="xsd:int">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The id the data-sync plug-in
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Description" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The description of the data-sync plug-in
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="LastSyncDate" nillable="true" type="xsd:dateTime">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The date/time that the data-sync last ran
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Login" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The username / login for accessing the external system
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The name of the data-sync plug-in
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The password for accessing the external system
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="TimeOffsetHours" type="xsd:int">
+            <xsd:annotation>
+              <xsd:appinfo />
+              <xsd:documentation>
+                <comments>
+                  <summary>
+            The number of hours to add to the last-updated date/times when making comparisons
+            </summary>
+                </comments>
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="RemoteDataSyncSystem" nillable="true" type="tns:RemoteDataSyncSystem" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDataSync_Connection_Authenticate_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connection_Authenticate" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_Authenticate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Connection_AuthenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_Authenticate_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q2:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_Authenticate2_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connection_Authenticate2" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_Authenticate2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Connection_Authenticate2Response" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_Authenticate2_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q3:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_ConnectToProject_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connection_ConnectToProject" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_ConnectToProject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Connection_ConnectToProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_ConnectToProject_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q4:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_Disconnect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connection_Disconnect" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_Disconnect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Connection_DisconnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_Connection_Disconnect_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q5:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_System_GetProductName_InputMessage">
+    <wsdl:part name="parameters" element="tns:System_GetProductName" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_System_GetProductName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:System_GetProductNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_System_GetProductName_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q6:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_System_GetServerDateTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:System_GetServerDateTime" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_System_GetServerDateTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:System_GetServerDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_System_GetServerDateTime_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q7:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_System_GetWebServerUrl_InputMessage">
+    <wsdl:part name="parameters" element="tns:System_GetWebServerUrl" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_System_GetWebServerUrl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:System_GetWebServerUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_System_GetWebServerUrl_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q8:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_Retrieve_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSyncSystem_Retrieve" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_Retrieve_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSyncSystem_RetrieveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_Retrieve_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q9:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_SaveRunFailure_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSyncSystem_SaveRunFailure" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_SaveRunFailure_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSyncSystem_SaveRunFailureResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_SaveRunFailure_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q10:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_SaveRunSuccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSyncSystem_SaveRunSuccess" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_SaveRunSuccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSyncSystem_SaveRunSuccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_SaveRunSuccess_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q11:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_SaveRunWarning_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSyncSystem_SaveRunWarning" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_SaveRunWarning_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSyncSystem_SaveRunWarningResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_SaveRunWarning_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q12:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_WriteEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSyncSystem_WriteEvent" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_WriteEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSyncSystem_WriteEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataSync_DataSyncSystem_WriteEvent_ServiceFaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/Inflectra.SpiraTest.Web.Services.v4_0" name="detail" element="q13:ServiceFaultMessage" />
+  </wsdl:message>
+  <wsdl:portType name="IDataSync">
+    <wsdl:operation name="Connection_Authenticate">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Authenticate" message="tns:IDataSync_Connection_Authenticate_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_AuthenticateResponse" message="tns:IDataSync_Connection_Authenticate_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_AuthenticateServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_Connection_Authenticate_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Connection_Authenticate2">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Authenticate2" message="tns:IDataSync_Connection_Authenticate2_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Authenticate2Response" message="tns:IDataSync_Connection_Authenticate2_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Authenticate2ServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_Connection_Authenticate2_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Connection_ConnectToProject">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_ConnectToProject" message="tns:IDataSync_Connection_ConnectToProject_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_ConnectToProjectResponse" message="tns:IDataSync_Connection_ConnectToProject_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_ConnectToProjectServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_Connection_ConnectToProject_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Connection_Disconnect">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Disconnect" message="tns:IDataSync_Connection_Disconnect_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_DisconnectResponse" message="tns:IDataSync_Connection_Disconnect_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_DisconnectServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_Connection_Disconnect_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="System_GetProductName">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetProductName" message="tns:IDataSync_System_GetProductName_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetProductNameResponse" message="tns:IDataSync_System_GetProductName_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetProductNameServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_System_GetProductName_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="System_GetServerDateTime">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetServerDateTime" message="tns:IDataSync_System_GetServerDateTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetServerDateTimeResponse" message="tns:IDataSync_System_GetServerDateTime_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetServerDateTimeServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_System_GetServerDateTime_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="System_GetWebServerUrl">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetWebServerUrl" message="tns:IDataSync_System_GetWebServerUrl_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetWebServerUrlResponse" message="tns:IDataSync_System_GetWebServerUrl_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetWebServerUrlServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_System_GetWebServerUrl_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_Retrieve">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_Retrieve" message="tns:IDataSync_DataSyncSystem_Retrieve_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_RetrieveResponse" message="tns:IDataSync_DataSyncSystem_Retrieve_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_RetrieveServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_DataSyncSystem_Retrieve_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_SaveRunFailure">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunFailure" message="tns:IDataSync_DataSyncSystem_SaveRunFailure_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunFailureResponse" message="tns:IDataSync_DataSyncSystem_SaveRunFailure_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunFailureServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_DataSyncSystem_SaveRunFailure_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_SaveRunSuccess">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunSuccess" message="tns:IDataSync_DataSyncSystem_SaveRunSuccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunSuccessResponse" message="tns:IDataSync_DataSyncSystem_SaveRunSuccess_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunSuccessServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_DataSyncSystem_SaveRunSuccess_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_SaveRunWarning">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunWarning" message="tns:IDataSync_DataSyncSystem_SaveRunWarning_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunWarningResponse" message="tns:IDataSync_DataSyncSystem_SaveRunWarning_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunWarningServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_DataSyncSystem_SaveRunWarning_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_WriteEvent">
+      <wsdl:input wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_WriteEvent" message="tns:IDataSync_DataSyncSystem_WriteEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_WriteEventResponse" message="tns:IDataSync_DataSyncSystem_WriteEvent_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_WriteEventServiceFaultMessageFault" name="ServiceFaultMessageFault" message="tns:IDataSync_DataSyncSystem_WriteEvent_ServiceFaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDataSync" type="tns:IDataSync">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connection_Authenticate">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Connection_Authenticate2">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Authenticate2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Connection_ConnectToProject">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_ConnectToProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Connection_Disconnect">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Disconnect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="System_GetProductName">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetProductName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="System_GetServerDateTime">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetServerDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="System_GetWebServerUrl">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetWebServerUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_Retrieve">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_Retrieve" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_SaveRunFailure">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunFailure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_SaveRunSuccess">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunSuccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_SaveRunWarning">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_WriteEvent">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_WriteEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IDataSync1" type="tns:IDataSync">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IDataSync1_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connection_Authenticate">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Connection_Authenticate2">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Authenticate2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Connection_ConnectToProject">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_ConnectToProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Connection_Disconnect">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/Connection_Disconnect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="System_GetProductName">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetProductName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="System_GetServerDateTime">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetServerDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="System_GetWebServerUrl">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IService/System_GetWebServerUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_Retrieve">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_Retrieve" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_SaveRunFailure">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunFailure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_SaveRunSuccess">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunSuccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_SaveRunWarning">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_SaveRunWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataSyncSystem_WriteEvent">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v4.0/IDataSync/DataSyncSystem_WriteEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultMessageFault">
+        <soap:fault use="literal" name="ServiceFaultMessageFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataSync">
+    <wsdl:port name="BasicHttpBinding_IDataSync" binding="tns:BasicHttpBinding_IDataSync">
+      <soap:address location="http://localhost/Spira/Services/v4_0/DataSync.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IDataSync1" binding="tns:BasicHttpBinding_IDataSync1">
+      <soap:address location="https://tardis.corp.inflectra.com/Spira/Services/v4_0/DataSync.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

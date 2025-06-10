@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ArtifactUploadDialog_NoJava" xml:space="preserve">
+    <value>El &lt;a href='http://www.java.com'&gt;Java-Plugin&lt;/a&gt; no está instalado en su navegador. </value>
+  </data>
+	<data name="ArtifactUploadDialog_PasteImageFromClipboard" xml:space="preserve">
+    <value>Pegar imagen del portapapeles</value>
+  </data>
+	<data name="DocumentDetails_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+	<data name="DocumentDetails_CreatedBy" xml:space="preserve">
+    <value>Creado por:</value>
+  </data>
+	<data name="DocumentDetails_Description" xml:space="preserve">
+    <value>Descripción:</value>
+  </data>
+	<data name="DocumentDetails_DocumentID" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+	<data name="DocumentDetails_DocumentType" xml:space="preserve">
+    <value>Documento&amp;nbsp;Tipo:</value>
+  </data>
+	<data name="DocumentDetails_EditedBy" xml:space="preserve">
+    <value>Editado por:</value>
+  </data>
+	<data name="DocumentDetails_Filename" xml:space="preserve">
+    <value>Nombre del archivo:</value>
+  </data>
+	<data name="DocumentDetails_FileType" xml:space="preserve">
+    <value>Archivo&amp;nbsp;Tipo:</value>
+  </data>
+	<data name="DocumentDetails_Tags" xml:space="preserve">
+    <value>Etiquetas:</value>
+  </data>
+	<data name="DocumentDetails_Version" xml:space="preserve">
+    <value>Versión:</value>
+  </data>
+	<data name="DocumentDetails_ViewDetails" xml:space="preserve">
+    <value>Ver Detalles</value>
+  </data>
+	<data name="TestRunDetails_IncidentList" xml:space="preserve">
+    <value>Lista de incidents para ejecución de paso de prueba:</value>
+  </data>
+	<data name="TestSetDetails_AddTestCaseLegend" xml:space="preserve">
+    <value>Elija casos de prueba para agregarlos al conjunto de pruebas actual: </value>
+  </data>
+	<data name="TestSetDetails_AddTestCaseTitle" xml:space="preserve">
+    <value>Agregar caso de prueba al conjunto de pruebas</value>
+  </data>
+	<data name="TestSetDetails_TestCaseParametersLegend" xml:space="preserve">
+    <value>Por favor, ingrese los parámetros para este caso de prueba:</value>
+  </data>
+	<data name="TestSetDetails_TestCaseParametersNone" xml:space="preserve">
+    <value>Este caso de prueba no tiene parámetros definidos.</value>
+  </data>
+	<data name="TestSetDetails_TestCaseParametersTitle" xml:space="preserve">
+    <value>Editar Parámetros del Caso de Prueba</value>
+  </data>
+	<data name="TestStepDetails_SavedChanges" xml:space="preserve">
+    <value>Cambios en el paso de prueba guardados con éxito </value>
+  </data>
+	<data name="WebParts_AvailableWidgets" xml:space="preserve">
+    <value>Widgets disponibles</value>
+  </data>
+	<data name="WebParts_ClosedWidgets" xml:space="preserve">
+    <value>Widgets Cerrados</value>
+  </data>
+	<data name="WebParts_EditWidgetSettings" xml:space="preserve">
+    <value>Editar Configuraciones de Widget</value>
+  </data>
+	<data name="Administration_GeneralSettings_DefaultCultureNoValue" xml:space="preserve">
+    <value>--- Servidor por Defecto ---</value>
+  </data>
+	<data name="UserProfile_UserCultureNoValue" xml:space="preserve">
+    <value>--- Usar Aplicación por Defecto ---</value>
+  </data>
+	<data name="Global_ChooseProject" xml:space="preserve">
+    <value>--- Elegir Proyecto ---</value>
+  </data>
+	<data name="Global_AllReleases" xml:space="preserve">
+    <value>--- Todas las Releases ---</value>
+  </data>
+	<data name="Global_DropDownAll" xml:space="preserve">
+    <value>-- Todos --</value>
+  </data>
+	<data name="Global_ShowHideColumns" xml:space="preserve">
+    <value>-- Mostrar/Ocultar columnas --</value>
+  </data>
+	<data name="Global_ShowLevel" xml:space="preserve">
+    <value>--- Mostrar Nivel ---</value>
+  </data>
+	<data name="Global_AllLevels" xml:space="preserve">
+    <value>Todos los Niveles</value>
+  </data>
+	<data name="Global_ExportToProject" xml:space="preserve">
+    <value>Exportar al Proyecto</value>
+  </data>
+	<data name="Global_Hide" xml:space="preserve">
+    <value>Ocultar</value>
+  </data>
+	<data name="Global_Level" xml:space="preserve">
+    <value>Nivel</value>
+  </data>
+	<data name="Global_Show" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+	<data name="RequirementList_ChildRequirement" xml:space="preserve">
+    <value>Requerimiento Hijo</value>
+  </data>
+	<data name="RequirementList_NewRequirement" xml:space="preserve">
+    <value>Nuevo Requerimiento</value>
+  </data>
+	<data name="Requirements_CreateTestCases" xml:space="preserve">
+    <value>Crear Casos de Prueba</value>
+  </data>
+	<data name="Requirements_CreateTestSet" xml:space="preserve">
+    <value>Crear Conjunto de Pruebas</value>
+  </data>
+	<data name="Releases_CreateTestSet" xml:space="preserve">
+    <value>Crear Conjunto de Pruebas</value>
+  </data>
+	<data name="Releases_NewIteration" xml:space="preserve">
+    <value>Nueva Iteración</value>
+  </data>
+	<data name="Releases_NewRelease" xml:space="preserve">
+    <value>Nueva Release</value>
+  </data>
+	<data name="Global_Host" xml:space="preserve">
+    <value>Host</value>
+  </data>
+	<data name="Global_NewCustomList" xml:space="preserve">
+    <value>Nueva Lista Personalizada</value>
+  </data>
+	<data name="Global_NewDocumentType" xml:space="preserve">
+    <value>Nuevo Tipo de Documento</value>
+  </data>
+	<data name="Global_NewFolder" xml:space="preserve">
+    <value>Nueva Carpeta</value>
+  </data>
+	<data name="Global_NewHost" xml:space="preserve">
+    <value>Nuevo Host</value>
+  </data>
+	<data name="Global_NewIncident" xml:space="preserve">
+    <value>Nuevo Incidente</value>
+  </data>
+	<data name="Global_NewIteration" xml:space="preserve">
+    <value>Nueva Iteración</value>
+  </data>
+	<data name="Global_NewRelease" xml:space="preserve">
+    <value>Nueva Release</value>
+  </data>
+	<data name="Global_NewSubFolder" xml:space="preserve">
+    <value>Nueva Subcarpeta</value>
+  </data>
+	<data name="Global_NewTask" xml:space="preserve">
+    <value>Nueva Tarea</value>
+  </data>
+	<data name="Global_NewTestCase" xml:space="preserve">
+    <value>Nuevo Caso de Prueba</value>
+  </data>
+	<data name="Global_NewTestSet" xml:space="preserve">
+    <value>Nuevo Conjunto de Pruebas</value>
+  </data>
+	<data name="Global_NewValue" xml:space="preserve">
+    <value>Nuevo Valor</value>
+  </data>
+	<data name="ReleasesService_NoTestsMapped" xml:space="preserve">
+    <value>No hay pruebas relacionadas a esta release/iteración</value>
+  </data>
+	<data name="TestSetList_NewChildTestSet" xml:space="preserve">
+    <value>Nuevo Conjunto de Pruebas Hijo</value>
+  </data>
+	<data name="TestSetList_NewTestSet" xml:space="preserve">
+    <value>Nuevo Conjunto de Pruebas</value>
+  </data>
+	<data name="TestCaseList_AddToRelease" xml:space="preserve">
+    <value>Agregar a la Release</value>
+  </data>
+	<data name="TestCaseList_AddToRequirement" xml:space="preserve">
+    <value>Agregar al Requerimiento</value>
+  </data>
+	<data name="TestCaseList_AddToTestSet" xml:space="preserve">
+    <value>Agregar al Conjunto de Pruebas</value>
+  </data>
+	<data name="TestCaseList_ExecuteTests" xml:space="preserve">
+    <value>Ejecutar Pruebas</value>
+  </data>
+	<data name="TestCaseList_NewChildTestCase" xml:space="preserve">
+    <value>Nuevo Caso de Prueba Hijo</value>
+  </data>
+	<data name="TestCaseList_NewTestCase" xml:space="preserve">
+    <value>Nuevo Caso de Prueba</value>
+  </data>
+	<data name="AutomationHosts_NewHost" xml:space="preserve">
+    <value>Nuevo Host</value>
+  </data>
+	<data name="Global_CollapseAll" xml:space="preserve">
+    <value>Contraer Todos</value>
+  </data>
+	<data name="Global_ExpandAll" xml:space="preserve">
+    <value>Expandir Todos</value>
+  </data>
+	<data name="Global_NoneDropDown" xml:space="preserve">
+    <value>-- Ninguno --</value>
+  </data>
+	<data name="Global_PleaseSelectDropDown" xml:space="preserve">
+    <value>--- Por favor, seleccione ---</value>
+  </data>
+	<data name="IncidentList_CopyIncident" xml:space="preserve">
+    <value>Copiar Incidente</value>
+  </data>
+	<data name="IncidentList_DeleteIncident" xml:space="preserve">
+    <value>Borrar Incidente</value>
+  </data>
+	<data name="IncidentList_NewIncident" xml:space="preserve">
+    <value>Nuevo Incidente</value>
+  </data>
+	<data name="IterationPlan_InsertTask" xml:space="preserve">
+    <value>Insertar Tarea</value>
+  </data>
+	<data name="TaskList_CopyTask" xml:space="preserve">
+    <value>Copiar Tarea</value>
+  </data>
+	<data name="TaskList_DeleteTask" xml:space="preserve">
+    <value>Borrar Tarea</value>
+  </data>
+	<data name="TaskList_NewTask" xml:space="preserve">
+    <value>Nueva Tarea</value>
+  </data>
+	<data name="ArtifactLinkPanel_AddAssociation" xml:space="preserve">
+    <value>Agregar Asociación</value>
+  </data>
+	<data name="ArtifactLinkPanel_AddNewAssociation" xml:space="preserve">
+    <value>Agregar Nueva Asociación</value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseArtifact" xml:space="preserve">
+    <value>Por favor, elija el artefacto al que desea asociar: </value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseFromList" xml:space="preserve">
+    <value>Elija de la lista:</value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseTypeOfArtifact" xml:space="preserve">
+    <value>Por favor, elija el tipo de artifacto al que desea asociar: </value>
+  </data>
+	<data name="ArtifactLinkPanel_CreateRequirementFromIncident" xml:space="preserve">
+    <value>Crar un nuevo requerimiento a partir de este incidente</value>
+  </data>
+	<data name="ArtifactLinkPanel_DeleteAssociation" xml:space="preserve">
+    <value>Borrar Asociación</value>
+  </data>
+	<data name="ArtifactLinkPanel_EnterArtifactId" xml:space="preserve">
+    <value>Ingrese el ID del Artefacto: </value>
+  </data>
+	<data name="ArtifactLinkPanel_IncludeSourceCodeRevisions" xml:space="preserve">
+    <value>Incluir Revisiones de Código Fuente</value>
+  </data>
+	<data name="AttachmentPanel_AddAttachment" xml:space="preserve">
+    <value>Agregar Adjunto</value>
+  </data>
+	<data name="FileUploadDialog_AddNewDocument" xml:space="preserve">
+    <value>Agregar Nuevo Documento</value>
+  </data>
+	<data name="Incidents_CreateRequirement" xml:space="preserve">
+    <value>Convertir en Requerimientos</value>
+  </data>
+	<data name="TaskList_InsertTask" xml:space="preserve">
+    <value>Insertar Tarea</value>
+  </data>
+	<data name="TestCaseDetails_EditParameters" xml:space="preserve">
+    <value>Editar Parámetros</value>
+  </data>
+	<data name="TestCaseDetails_InsertLink" xml:space="preserve">
+    <value>Insertar Link</value>
+  </data>
+	<data name="TestCaseDetails_InsertStep" xml:space="preserve">
+    <value>Insertar Paso</value>
+  </data>
+	<data name="TestCaseDetails_AddLinkedTestCase" xml:space="preserve">
+    <value>Agregar Caso de Prueba asociado</value>
+  </data>
+	<data name="TestCaseDetails_ChooseTestCaseForLink" xml:space="preserve">
+    <value>Elija el caso de prueba para asociarlo en la lista de pasos de prueba:</value>
+  </data>
+	<data name="TestCaseDetails_EditLinkedTestParameters" xml:space="preserve">
+    <value>Editar parámetros de Caso de Pruebas Asociados</value>
+  </data>
+	<data name="TestCaseDetails_PleaseFillOutParameters" xml:space="preserve">
+    <value>Por favor, rellene los parámetros de este Caso de Prueba:</value>
+  </data>
+	<data name="TestSetDetails_AddTests" xml:space="preserve">
+    <value>Agregar Pruebas</value>
+  </data>
+	<data name="TestSetDetails_EditParameters" xml:space="preserve">
+    <value>Editar Parámetros</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTests" xml:space="preserve">
+    <value>Ejecutar Pruebas</value>
+  </data>
+	<data name="TestSetDetails_InsertTests" xml:space="preserve">
+    <value>Insertar Pruebas</value>
+  </data>
+	<data name="TestSetDetails_RemoveTests" xml:space="preserve">
+    <value>Eliminar Pruebas</value>
+  </data>
+	<data name="TestCaseExecution_NoReleasesDropDown" xml:space="preserve">
+    <value>--- No hay releases registradas para este proyecto ---</value>
+  </data>
+	<data name="Documents_AddDocument" xml:space="preserve">
+    <value>Agregar Documento</value>
+  </data>
+	<data name="Global_SortedAscending" xml:space="preserve">
+    <value>Orden Creciente</value>
+  </data>
+	<data name="Global_SortedDescending" xml:space="preserve">
+    <value>Orden Decreciente</value>
+  </data>
+	<data name="Global_Filter" xml:space="preserve">
+    <value>Filtro:</value>
+  </data>
+	<data name="Global_AllItems" xml:space="preserve">
+    <value>Todos los Ítems</value>
+  </data>
+	<data name="Global_ItemsInFolder" xml:space="preserve">
+    <value>Ítems en la Carpeta Actual</value>
+  </data>
+	<data name="TestCases_BlockTestCases" xml:space="preserve">
+    <value>Bloquear Casos de Prueba</value>
+  </data>
+	<data name="TestCases_UnBlockTestCases" xml:space="preserve">
+    <value>Desbloquear Casos de Prueba</value>
+  </data>
+	<data name="Timecard_SubmitConfirm" xml:space="preserve">
+    <value>Está seguro que desea enviar esta tarjeta de tiempo? Se actualizará el Esfuerzo Adicional y Esfuerzo Restante de todos los ítems de la página.</value>
+  </data>
+	<data name="Timecard_SubmitSuccess" xml:space="preserve">
+    <value>Su tarjeta de tiempo se ha enviado correctamente.</value>
+  </data>
+	<data name="AttachmentPanel_AddExisting" xml:space="preserve">
+    <value>Agregar Existente</value>
+  </data>
+	<data name="AttachmentPanel_AddExistingDocument" xml:space="preserve">
+    <value>Agregar Documento Existente</value>
+  </data>
+	<data name="AttachmentPanel_AddNew" xml:space="preserve">
+    <value>Agregar Nuevo</value>
+  </data>
+	<data name="AttachmentPanel_IncludeSourceCodeDocuments" xml:space="preserve">
+    <value>Incluir Documentos de Código Fuente</value>
+  </data>
+	<data name="AttachmentPanel_ChooseTypeOfExisting" xml:space="preserve">
+    <value>Elija la ubicación del documento existente que desea agregar:</value>
+  </data>
+	<data name="Global_PrintItems" xml:space="preserve">
+    <value>Imprimir Ítems</value>
+  </data>
+	<data name="Admin_ReportDetails_AddNewQuery" xml:space="preserve">---Agregar Nueva Consulta---</data><data name="Admin_ReportDetails_CreateDefaultTemplate" xml:space="preserve">Crear un Formato estándar</data><data name="Admin_ReportDetails_CustomQueryLegend" xml:space="preserve">Necesita entrar el comando SQL para recuperar los datos del informe.  Puede utilizar un identificador especial ${ProyectoId} y ${ProyectoGroupoId} para limitar la consulta a un proyecto específico o a un proyecto grupal.  ADVERTENCIA: Si usted no especifica ninguno de estos parámetros, el informe recuperará los datos de todos los proyectos en el sistema, pese a la función o aprobación del usuario. </data><data name="Admin_ReportDetails_CustomTemplateLegend" xml:space="preserve">Necesita entrar el formato XSLT para visualizar los datos recuperados como HTML.  Cuando pulse en la opción del 'Formato Estándar Creado', el sistema automáticamente generará un formato estándar XSLT que usted puede editar.</data><data name="Admin_ReportDetails_PreviewResults" xml:space="preserve">Resultados Previstos</data><data name="Admin_ReportDetails_StandardTemplateLegend" xml:space="preserve">Necesita entrar el formato XSLT para visualizar los datos recuperados como HTML. Cuando usted agregue la sección inicial, el formato estándar será incluido.  Usted puede modificar esto si así lo  desea.</data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve">Remover del Comunicado</data><data name="Admin_ReportDetails_AddNewQuery" xml:space="preserve"><value>---Agregar Nueva Consulta---</value></data><data name="Admin_ReportDetails_CreateDefaultTemplate" xml:space="preserve"><value>Crear Plantilla por Defecto</value></data><data name="Admin_ReportDetails_CustomQueryLegend" xml:space="preserve"><value>Debe introducir el comando SQL para recuperar los datos del informe.  Puede utilizar los símbolos especiales ${ProjectId} y ${ProjectGroupId} para limitar la consulta a un proyecto específico o grupo de proyectos.   ADVERTENCIA: Si no especifica ninguno de estos parámetros, el informe recuperará los datos de todos los proyectos en el sistema, independientemente de la función o  permisos del usuario.</value></data><data name="Admin_ReportDetails_CustomTemplateLegend" xml:space="preserve"><value>Debe introducir la plantilla XSLT para visualizar los datos recuperados como HTML. Al hacer clic en la opción "Crear Plantilla por Defecto", el sistema generará automáticamente una plantilla XSLT estándar, que usted puede editar.</value></data><data name="Admin_ReportDetails_PreviewResults" xml:space="preserve"><value>Resultados de la Vista Previa</value></data><data name="Admin_ReportDetails_StandardTemplateLegend" xml:space="preserve"><value>Debe introducir la plantilla XSLT para visualizar los datos recuperados como HTML. Cuando usted agregue la sección inicial, el formato por defecto será incluido. Usted puede modificar esto si así lo desea.</value></data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve"><value>Eliminar de la Release</value></data><data name="Global_UnknownDropDownValue" xml:space="preserve"><value>-- Desconocido --</value></data><data name="Global_SelectRole" xml:space="preserve"><value>-- Seleccionar Función --</value></data><data name="Admin_PlanningOptions_SuggestPointMetric" xml:space="preserve"><value>Sugerir Punto de Esfuerzo</value></data><data name="Global_All" xml:space="preserve"><value>Todos</value></data><data name="Global_AllActive" xml:space="preserve"><value>Todos Activos</value></data><data name="Global_AllButDeleted" xml:space="preserve"><value>Todos, excepto borrados</value></data><data name="Requirements_FocusOn" xml:space="preserve"><value>Enfocar en</value></data><data name="SidebarPanel_QuickFilters" xml:space="preserve"><value>Filtro Rápido</value></data><data name="Global_AllReleases2" xml:space="preserve"><value>(Todas las Releases)</value></data><data name="TaskDetails_SameAsCurrentTask" xml:space="preserve"><value>-- Igual que la tarea actual --</value></data><data name="Global_NewPhase" xml:space="preserve"><value>Nueva Fase</value></data><data name="Releases_ChildIteration" xml:space="preserve"><value>Iteración Hijo</value></data><data name="Releases_ChildRelease" xml:space="preserve"><value>Release Hijo</value></data><data name="Global_ExportToExcel" xml:space="preserve"><value>Exportar a Excel</value></data><data name="Global_ExportToPdf" xml:space="preserve"><value>Exportar a Acrobat</value></data><data name="Global_ExportToWord" xml:space="preserve"><value>Exportar a Word</value></data><data name="TaskList_CloneTask" xml:space="preserve"><value>Clonar Tarea</value></data><data name="IncidentList_CloneIncident" xml:space="preserve"><value>Clonar Incidente</value></data><data name="InsertTestLink_CreateNewTestCase" xml:space="preserve"><value>Crear Nuevo Caso de Prueba</value></data><data name="InsertTestLink_LinkExistingTestCase" xml:space="preserve"><value>Asociar Caso de Prueba Existente </value></data><data name="InsertTestLink_LinkTypeLegend" xml:space="preserve"><value>Quieres:</value></data><data name="Global_RootFolderDropDown" xml:space="preserve"><value>--- Carpeta Raíz ---</value></data><data name="TestCaseDetails_ChooseTestCaseToImport" xml:space="preserve"><value>Elija el Caso de Prueba para importar sus Pasos de Prueba:</value></data><data name="TestCaseDetails_ImportStepsFromTestCase" xml:space="preserve"><value>Importar Pasos del Caso de Prueba</value></data><data name="TestCaseDetails_CreateTestCaseForLink" xml:space="preserve"><value>Elija la carpeta y introduzca el nombre del nuevo Caso de Prueba asociado:</value></data><data name="TestCaseDetails_EnterParameters" xml:space="preserve"><value>Introducir Parámetros</value></data><data name="KeyBoardShortcuts_GlobalNav_MyPage" xml:space="preserve"><value>Ir a Mi Página</value></data><data name="KeyBoardShortcuts_GlobalNav_ProjectHome" xml:space="preserve"><value>Ir a la Página Principal del Proyecto</value></data><data name="KeyBoardShortcuts_GlobalNav_ProjectGroupHome" xml:space="preserve"><value>Ir a la Página Principal del Grupo del Proyecto</value></data><data name="KeyBoardShortcuts_GlobalNav_Requirements" xml:space="preserve"><value>Ir a Requerimientos</value></data><data name="KeyBoardShortcuts_GlobalNav_PlanningBoard" xml:space="preserve"><value>Ir a Tabla de Planificación</value></data><data name="KeyBoardShortcuts_GlobalNav_Releases" xml:space="preserve"><value>Ir a Releases</value></data><data name="KeyBoardShortcuts_GlobalNav_Documents" xml:space="preserve"><value>Ir a Documentos</value></data><data name="KeyBoardShortcuts_GlobalNav_TestCases" xml:space="preserve"><value>Ir a Casos de Prueba</value></data><data name="KeyBoardShortcuts_GlobalNav_TestSets" xml:space="preserve"><value>Ir a Conjuntos de Pruebas</value></data><data name="KeyBoardShortcuts_GlobalNav_TestRuns" xml:space="preserve"><value>Ir a Ejecuciones de Prueba</value></data><data name="KeyBoardShortcuts_GlobalNav_AutomationHosts" xml:space="preserve"><value>Ir a Hosts de Automatización</value></data><data name="KeyBoardShortcuts_GlobalNav_Incidents" xml:space="preserve"><value>Ir a Incidentes</value></data><data name="KeyBoardShortcuts_GlobalNav_Tasks" xml:space="preserve"><value>Ir a Tareas</value></data><data name="KeyBoardShortcuts_GlobalNav_Resources" xml:space="preserve"><value>Ir a Recursos</value></data><data name="KeyBoardShortcuts_GlobalNav_SourceCode" xml:space="preserve"><value>Ir al Código Fuente</value></data><data name="KeyBoardShortcuts_GlobalNav_Reporting" xml:space="preserve"><value>Ir a Informes</value></data><data name="KeyBoardShortcuts_GlobalNav_UserProfile" xml:space="preserve"><value>Ir al Perfil de Usuario</value></data><data name="KeyBoardShortcuts_GlobalNav_Administration" xml:space="preserve"><value>Ir a Administración</value></data><data name="KeyBoardShortcuts_GlobalSearch_Search" xml:space="preserve"><value>Búsqueda Global</value></data><data name="KeyBoardShortcuts_GlobalAction_NewIncident" xml:space="preserve"><value>Crear Nuevo Incidente</value></data><data name="KeyBoardShortcuts_GlobalAction_ShortcutReference" xml:space="preserve"><value>Mostrar la referencia de atajos de teclado</value></data><data name="KeyBoardShortcuts_ListPage_NextRow" xml:space="preserve"><value>Ir a la siguiente fila</value></data><data name="KeyBoardShortcuts_ListPage_ToggleNav" xml:space="preserve"><value>Navegación de tabla por teclado/mouse </value></data><data name="KeyBoardShortcuts_ListPage_ToggleCheckRow" xml:space="preserve"><value>Marcar la fila seleccionada como revisada/no revisada</value></data><data name="KeyBoardShortcuts_ListPage_OpenItem" xml:space="preserve"><value>Abrir Elemento Seleccionado</value></data><data name="KeyBoardShortcuts_ListPage_OpenItemNewWindow" xml:space="preserve"><value>Abrir el elemento seleccionado en una nueva ventana</value></data><data name="KeyBoardShortcuts_ListPage_PreviousRow" xml:space="preserve"><value>Ir a la fila anterior</value></data><data name="KeyBoardShortcuts_DetailsPage_NextTab" xml:space="preserve"><value>Ir a la pestaña siguiente</value></data><data name="KeyBoardShortcuts_DetailsPage_PreviousTab" xml:space="preserve"><value>Ir a la pestaña anterior</value></data><data name="KeyBoardShortcuts_Modal_Title" xml:space="preserve"><value>Referencia de Atajos de Teclado</value></data><data name="KeyBoardShortcuts_GlobalNav_Title" xml:space="preserve"><value>Navegación Ampliada</value></data><data name="KeyBoardShortcuts_GlobalNav_Note" xml:space="preserve"><value>El acceso a las páginas varía según el usuario y el proyecto</value></data><data name="KeyBoardShortcuts_GlobalAction_Title" xml:space="preserve"><value>Atajos de Teclado para Navegación Ampliada </value></data><data name="KeyBoardShortcuts_ListPage_Title" xml:space="preserve"><value>Atajos de Teclado para Página de Listas</value></data><data name="KeyBoardShortcuts_DetailsPage_Title" xml:space="preserve"><value>Atajos de Teclado para Página de Detalles</value></data><data name="KeyBoardShortcuts_TestExecution_Title" xml:space="preserve"><value>Atajos de Teclado para Ejecuciones de Pruebas</value></data><data name="KeyBoardShortcuts_TestExecution_HeaderDisplay" xml:space="preserve"><value>Cambiar la Visualización</value></data><data name="KeyBoardShortcuts_TestExecution_SplitView" xml:space="preserve"><value>Mostrar Vista Dividida</value></data><data name="KeyBoardShortcuts_TestExecution_TableView" xml:space="preserve"><value>Mostrar Vista de Tabla</value></data><data name="KeyBoardShortcuts_TestExecution_MiniView" xml:space="preserve"><value>Mostrar Vista en Miniatura</value></data><data name="KeyBoardShortcuts_TestExecution_SubViewLeft" xml:space="preserve"><value>Seleccione la subvista izquierda</value></data><data name="KeyBoardShortcuts_TestExecution_SubViewRight" xml:space="preserve"><value>Seleccione la subvista derecha</value></data><data name="KeyBoardShortcuts_GlobalAction_Refresh" xml:space="preserve"><value>Actualizar</value></data><data name="KeyBoardShortcuts_TestExecution_ShowRun" xml:space="preserve"><value>Siempre mostrar/ocultar los detalles de la Ejecución de Prueba</value></data><data name="KeyBoardShortcuts_TestExecution_HeaderInspector" xml:space="preserve"><value>Cambiar pestañas en el Inspector</value></data><data name="KeyBoardShortcuts_TestExecution_ResultsTab" xml:space="preserve"><value>Cambiar a la pestaña Resultados Reales</value></data><data name="KeyBoardShortcuts_TestExecution_AttachmentsTab" xml:space="preserve"><value>Cambiar a la pestaña Adjuntos</value></data><data name="KeyBoardShortcuts_TestExecution_IncidentsTab" xml:space="preserve"><value>Cambiar a la pestaña Incidentes</value></data><data name="KeyBoardShortcuts_TestExecution_HeaderActions" xml:space="preserve"><value>Acciones</value></data><data name="KeyBoardShortcuts_TestExecution_TogglePausePlay" xml:space="preserve"><value>Pausar/Reproducir</value></data><data name="KeyBoardShortcuts_TestExecution_AddResults" xml:space="preserve"><value>Agregar Resultados Reales</value></data><data name="KeyBoardShortcuts_TestExecution_Fail" xml:space="preserve"><value>Marcar paso actual como Reprobado</value></data><data name="KeyBoardShortcuts_TestExecution_Pass" xml:space="preserve"><value>Marcar paso actual como Aprobado</value></data><data name="KeyBoardShortcuts_TestExecution_Caution" xml:space="preserve"><value>Marcar paso actual como Precaución</value></data><data name="KeyBoardShortcuts_TestExecution_Blocked" xml:space="preserve"><value>Marcar paso actual como Bloqueado</value></data><data name="KeyBoardShortcuts_TestExecution_NotApplicable" xml:space="preserve"><value>Marcar paso actual como No Aplicable</value></data><data name="KeyBoardShortcuts_TestExecution_HeaderNavigate" xml:space="preserve"><value>Navegar entre Pasos de Prueba</value></data><data name="KeyBoardShortcuts_TestExecution_NextStep" xml:space="preserve"><value>Pasar al siguiente Paso de Ejecución de Prueba </value></data><data name="KeyBoardShortcuts_TestExecution_PreviousStep" xml:space="preserve"><value>Pasar al Paso de Ejecución de Prueba anterior</value></data><data name="KeyBoardShortcuts_TestExecution_NextRun" xml:space="preserve"><value>Pasar a la siguiente Ejecución de Prueba </value></data><data name="KeyBoardShortcuts_TestExecution_PreviousRun" xml:space="preserve"><value>Pasar a la Ejecución de Prueba anterior</value></data><data name="TestStepDetails_EnterId" xml:space="preserve"><value>Introducir ID</value></data><data name="TestStepDetails_LinkExistingIncident" xml:space="preserve"><value>Asociar Incidente Existente </value></data><data name="TestStepDetails_LinkExistingIncidentIntro" xml:space="preserve"><value>Por favor, seleccione el (los) incidente(s) para asociar a este Paso de Prueba:</value></data><data name="KeyBoardShortcuts_GlobalSearch_GoToFirstResult" xml:space="preserve"><value>Ir al primer resultado listado</value></data><data name="KeyBoardShortcuts_GlobalSearch_GoToSecondResult" xml:space="preserve"><value>Ir al segundo resultado listado</value></data><data name="KeyBoardShortcuts_GlobalSearch_GoToThirdResult" xml:space="preserve"><value>Ir al tercer resultado listado</value></data><data name="KeyBoardShortcuts_GlobalSearch_ShowResults" xml:space="preserve"><value>Mostrar Resultados</value></data><data name="KeyBoardShortcuts_GlobalSearch_Title" xml:space="preserve"><value>Búsqueda de Navegación Ampliada</value></data><data name="TestRunDetails_LinkExistingIncidentIntro" xml:space="preserve"><value>Por favor, seleccione el (los) incidente(s) para asociar a esta Ejecución de Paso de Prueba:</value></data><data name="KeyBoardShortcuts_PlanningBoard_GroupByComponent" xml:space="preserve"><value>Agrupar por Componentes</value></data><data name="KeyBoardShortcuts_PlanningBoard_GroupByPackage" xml:space="preserve"><value>Agrupar por Paquetes</value></data><data name="KeyBoardShortcuts_PlanningBoard_GroupByPriority" xml:space="preserve"><value>Agrupar por Prioridades</value></data><data name="KeyBoardShortcuts_PlanningBoard_GroupByStatus" xml:space="preserve"><value>Agrupar por Estados</value></data><data name="KeyBoardShortcuts_PlanningBoard_Title" xml:space="preserve"><value>Atajos de teclado de la Tabla de Planificación</value></data><data name="KeyBoardShortcuts_PlanningBoard_ToggleDetails" xml:space="preserve"><value>Activar/Desactivar Vista Detallada</value></data><data name="KeyBoardShortcuts_PlanningBoard_ToggleIncidents" xml:space="preserve"><value>Activar/Desactivar Incidentes</value></data><data name="KeyBoardShortcuts_PlanningBoard_ToggleTasks" xml:space="preserve"><value>Activar/Desactivar Tareas</value></data><data name="KeyBoardShortcuts_PlanningBoard_ToggleTestCases" xml:space="preserve"><value>Activar/Desactivar Casos de Prueba</value></data><data name="Global_AllProjects" xml:space="preserve"><value>(Todos los Proyectos)</value></data><data name="PendingTestRuns_Reassign_Intro" xml:space="preserve"><value>Por favor, elija el nombre del usuario al que desea asignar esta ejecución de prueba:</value></data><data name="SidebarPanel_Charts" xml:space="preserve"><value>Gráficos</value></data><data name="KeyBoardShortcuts_DetailsPage_Save" xml:space="preserve"><value>Guardar todos los cambios</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_AddStep" xml:space="preserve"><value>Agregar nuevo paso de prueba</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_CloneStep" xml:space="preserve"><value>Crear un clon del paso de prueba actual</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_DeleteStep" xml:space="preserve"><value>Eliminar el paso de prueba actual</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_EditCaseDescription" xml:space="preserve"><value>Editar la descripción del caso de prueba</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_EditCaseName" xml:space="preserve"><value>Editar el nombre del caso de prueba</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_EditStepActualResult" xml:space="preserve"><value>Editar el resultado real del paso de prueba actual</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_EditStepDescription" xml:space="preserve"><value>Editar la descripción del paso de prueba actual</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_EditStepExpectedResult" xml:space="preserve"><value>Editar el resultado esperado del paso de prueba actual</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_EditStepSampleData" xml:space="preserve"><value>Edite los datos de muestra del paso de prueba actual</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_MoveStepDown" xml:space="preserve"><value>Bajar el paso de prueba actual una posición</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_MoveStepUp" xml:space="preserve"><value>Subir el paso de prueba actual una posición</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_ShowCaseDescription" xml:space="preserve"><value>Alternar para mostrar la descripción del caso de prueba</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_ShowExpectedResult" xml:space="preserve"><value>Alternar para mostrar el resultado esperado</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_ShowLastResult" xml:space="preserve"><value>Alternar para mostrar los resultados de la última vez que se ejecutó el paso</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_ShowSampleData" xml:space="preserve"><value>Alternar para mostrar datos de muestra</value></data><data name="KeyBoardShortcuts_TestExecution_ShowCustomProperties" xml:space="preserve"><value>Alternar para mostrar propiedades personalizadas</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_HeaderChangeStatus" xml:space="preserve"><value>Cambiar Estado de Ejecución</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_HeaderEdit" xml:space="preserve"><value>Edición</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_TasksTab" xml:space="preserve"><value>Pasar a la pestaña de tareas</value></data><data name="KeyBoardShortcuts_TestExecutionExploratory_Title" xml:space="preserve"><value>Ejecución Exploratoria de Pruebas </value></data><data name="FileUpload_DragAndDrop" xml:space="preserve"><value>O arrastra y suelta archivos aquí</value></data><data name="FileUpload_SelectFiles" xml:space="preserve"><value>Seleccionar archivos para subir</value></data><data name="RequirementDetails_SameAsCurrentRequirement" xml:space="preserve"><value>-- Mismo que el requisito actual --</value></data><data name="KeyBoardShortcuts_GlobalNav_OpenArtifacts" xml:space="preserve"><value>Abrir lista desplegable de atrifacts</value></data><data name="KeyBoardShortcuts_GlobalNav_OpenUser" xml:space="preserve"><value>Abrir lista desplegable de usuarios</value></data><data name="KeyBoardShortcuts_GlobalNav_OpenWorkspace" xml:space="preserve"><value>Abrir lista desplegable de espacios de trabajo </value></data><data name="KeyBoardShortcuts_GlobalNav_ToggleAdminMenu" xml:space="preserve"><value>Abrir o cerrar el menú de administración (si está presente)</value></data><data name="KeyBoardShortcuts_GlobalNav_ToggleArtifactMenu" xml:space="preserve"><value>Abrir o cerrar el menú desplegable de artefactos</value></data><data name="KeyBoardShortcuts_GlobalNav_ToggleUserMenu" xml:space="preserve"><value>Abrir o cerrar el menú desplegable de usuarios</value></data><data name="KeyBoardShortcuts_GlobalNav_ToggleWorkspaceMenu" xml:space="preserve"><value>Abrir o cerrar el menú desplegable de espacios de trabajo </value></data><data name="KeyBoardShortcuts_Instructions" xml:space="preserve"><value>Para usar cualquier atajo, presione las teclas como se muestra. El espacio entre los caracteres (por ejemplo, "t c") significa que tienes que presionar las teclas una tras otra, en secuencia. El "+" entre las teclas  significa que tienes que presionar las teclas juntas, al mismo tiempo. Tenga en cuenta que la tecla "mod" es "command" en Mac OS, "control" en otros sistemas operativos.</value></data><data name="Global_NewRisk" xml:space="preserve"><value>Nuevo Riesgo</value></data><data name="RiskList_CloneRisk" xml:space="preserve"><value>Clonar Riesgo</value></data><data name="RiskList_DeleteRisk" xml:space="preserve"><value>Eliminar Riesgo</value></data><data name="RiskList_NewRisk" xml:space="preserve"><value>Nuevo Riesgo</value></data><data name="Admin_ProductList_CloneProduct" xml:space="preserve"><value>Clonar Producto</value></data><data name="Admin_ProductList_CloneProductAndTemplate" xml:space="preserve"><value>Clonar Producto y su Plantilla</value></data><data name="Global_Deleted" xml:space="preserve"><value>Eliminado</value></data><data name="Project_ChangeTemplate" xml:space="preserve"><value>Cambiar Plantilla de Producto</value></data><data name="Project_ChangeTemplate_Intro" xml:space="preserve"><value>Por favor, elija la nueva plantilla para este producto y haga clic en Siguiente para pasar a la siguiente parte de esta operación</value></data><data name="Project_ChangeTemplate_TypeConfirm" xml:space="preserve"><value>Escriba el nombre exacto del producto a continuación para continuar</value></data><data name="Project_ChangeTemplate_Warning1" xml:space="preserve"><value>Esto cambiará permanentemente los datos de este producto (no cambiará ninguna plantilla de ninguna manera). No puedes deshacer esta acción. La siguiente pantalla le informará más sobre cómo pueden cambiar los datos.</value></data><data name="Project_ChangeTemplate_Warning_CatchAll" xml:space="preserve"><value>Los datos en las propiedades personalizadas también pueden cambiar o no mostrarse como espera. Continúe solo si ha verificado las propiedades personalizadas en la plantilla antigua y nueva para todos los artefactos relevantes para asegurarse de que sean iguales.</value></data><data name="Project_ChangeTemplate_Warning_HowLong" xml:space="preserve"><value>Este proceso suele ser rápido, pero puede llevar mucho tiempo. NO ACTUALICE LA PÁGINA. Asegúrese de que los usuarios no trabajen en este producto en absoluto durante este tiempo.</value></data><data name="Project_ChangeTemplate_Warning_StandardFieldsNotOk" xml:space="preserve"><value>Al cambiar la plantilla de este producto, perderá datos en ciertos campos estándar. Estos se muestran en la tabla anterior.</value></data><data name="Project_ChangeTemplate_Warning_StandardFieldsOK" xml:space="preserve"><value>Los campos estándar de este producto se pueden migrar con éxito a la nueva plantilla: no debe perder ningún dato de estos campos.</value></data><data name="Administration_DeleteProjectConfirmTV" xml:space="preserve"><value>&lt;br /&gt; Los repositorios de código fuente asociados con este proyecto - si los hay - se eliminarán.</value></data><data name="Admin_ReportDetails_CustomQueryLegend2" xml:space="preserve"><value>Para las secciones del informe que se pueden filtrar por release, use los tokens ${ReleaseId} para filtrar por la release especificada, o ${ReleaseAndChildIds} para filtrar por una lista separada por comas de release y iteraciones / fases secundarias.</value></data><data name="KeyBoardShortcuts_GlobalNav_Commits" xml:space="preserve"><value>Ir a Commits</value></data><data name="Global_Markdown" xml:space="preserve"><value>Markdown</value></data><data name="Global_Feature_BDD" xml:space="preserve"><value>Característica</value></data><data name="KeyBoardShortcuts_GlobalNav_PullRequests" xml:space="preserve"><value>Ir a Pull Requests</value></data><data name="Global_ShowHideFields" xml:space="preserve"><value>-- Mostrar/ocultar campos --</value></data><data name="Admin_ProductList_CloneInformation" xml:space="preserve"><value>Elija crear un clon completo de todo en este producto o una copia restablecida. La copia restablecida restablece todos los estados y no copia los incidentes, las mitigaciones de riesgos, las ejecuciones de prueba o las fechas de las tareas. &lt;br&gt; También puede decidir si desea que el nuevo producto use la misma plantilla o una plantilla clonada.</value></data><data name="Admin_ProductList_CloneResetProduct" xml:space="preserve"><value>Crear una copia restablecida del producto</value></data><data name="Admin_ProductList_CloneTemplate" xml:space="preserve"><value>Clonar Plantilla</value></data><data name="Global_Diagram" xml:space="preserve"><value>Diagrama</value></data><data name="Global_Mindmap" xml:space="preserve"><value>Mapa Mental</value></data><data name="Global_Orgchart" xml:space="preserve"><value>Organigráma</value></data></root>

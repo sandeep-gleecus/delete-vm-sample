@@ -1,0 +1,321 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="ProgId" content="Excel.Sheet" />
+    <meta name="Generator" content="Microsoft Excel 14" />
+    <title>
+      <!--REPORT-TITLE-->
+    </title>
+    <style type="text/css">
+      /* Reports Styles */
+      BODY.Reports
+      {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 10pt;
+      background-color: White;
+      font-family: Arial, Helvetica, Sans-Serif;
+      font-weight: normal;
+      }
+      BODY.Reports P
+      {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      }
+      BODY.Reports TABLE
+      {
+      font-size: 10pt;
+      }
+      BODY.Reports .Spacer
+      {
+      font-size: 1pt;
+      height: 8px;
+      }
+      BODY.Reports .Title1
+      {
+      font-weight: bold;
+      font-size: 16pt;
+      text-align: left;
+      padding-top: 10px;
+      }
+      BODY.Reports .Title2
+      {
+      font-weight: bold;
+      font-size: 14pt;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      }
+      BODY.Reports .Title3
+      {
+      font-weight: bold;
+      font-size: 12pt;
+      padding-top: 10px;
+      padding-bottom: 0px;
+      font-style: italic;
+      }
+      BODY.Reports .Title4
+      {
+      font-weight: bold;
+      font-size: 10pt;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      text-decoration: underline;
+      }
+
+      BODY.Reports .HiddenTable
+      {
+      border: none;
+      border-collapse: collapse;
+      margin: 5px;
+      width: 100%;
+      }
+      BODY.Reports .HiddenTable TR
+      {
+      border: none;
+      }
+      BODY.Reports .HiddenTable TD
+      {
+      border: none;
+      padding-left: 2px;
+      padding-right: 2px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      width: 30%;
+      }
+      BODY.Reports .HiddenTable TH
+      {
+      font-weight: bold;
+      text-align: left;
+      border: none;
+      padding-left: 2px;
+      padding-right: 2px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      width: 10%;
+      }
+      BODY.Reports .DataGrid
+      {
+      margin: 10px;
+      border-collapse: collapse;
+      font-family: Arial;
+      font-size: 10pt;
+      font-weight: normal;
+      color: Black;
+      border: 1px solid Silver;
+      background-color: White;
+      width: 100%;
+      }
+      BODY.Reports .DataGrid TD
+      {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      border: 1px solid Silver;
+      border-collapse: collapse;
+      font-size: 10pt;
+      font-weight: normal;
+      }
+      BODY.Reports .DataGrid TD.Date
+      {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      border: 1px solid Silver;
+      border-collapse: collapse;
+      font-size: 10pt;
+      font-weight: normal;
+      mso-number-format:"Short Date";
+      }
+      BODY.Reports .DataGrid TD.Timespan
+      {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      border: 1px solid Silver;
+      border-collapse: collapse;
+      font-size: 10pt;
+      font-weight: normal;
+      mso-number-format:"0\.00";
+      }
+      BODY.Reports .DataGrid TH
+      {
+      text-align: left;
+      background-color: #e0e0e0;
+      white-space: nowrap;
+      font-weight: bold;
+      border: 1px solid Silver;
+      border-collapse: collapse;
+      }
+      BODY.Reports .DataGrid .ItalicRow TD
+      {
+      font-style: italic;
+      }
+      BODY.Reports .DataGrid .BoldRow TD
+      {
+      font-weight: bold;
+      }
+      BODY.Reports .DataGrid .SmallRow TD
+      {
+      font-size: 8pt;
+      }
+      BODY.Reports .DataGrid .SmallItalicRow TD
+      {
+      font-size: 8pt;
+      font-style: italic;
+      }
+      img
+      {
+      max-width: 90% !important;
+      height: auto !important;
+      }
+      .DataGrid TD img
+      {
+      max-width: 200px !important;
+      }
+      <!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+-->
+      tr
+      {mso-height-source:auto;}
+      col
+      {mso-width-source:auto;}
+      br
+      {mso-data-placement:same-cell;}
+      .style0
+      {mso-number-format:General;
+      text-align:general;
+      vertical-align:bottom;
+      white-space:nowrap;
+      mso-rotate:0;
+      mso-background-source:auto;
+      mso-pattern:auto;
+      color:black;
+      font-size:11.0pt;
+      font-weight:400;
+      font-style:normal;
+      text-decoration:none;
+      font-family:Calibri, sans-serif;
+      mso-font-charset:0;
+      border:none;
+      mso-protection:locked visible;
+      mso-style-name:Normal;
+      mso-style-id:0;}
+      td
+      {mso-style-parent:style0;
+      padding-top:1px;
+      padding-right:1px;
+      padding-left:1px;
+      mso-ignore:padding;
+      color:black;
+      font-size:11.0pt;
+      font-weight:400;
+      font-style:normal;
+      text-decoration:none;
+      font-family:Calibri, sans-serif;
+      mso-font-charset:0;
+      mso-number-format:General;
+      text-align:general;
+      vertical-align:bottom;
+      border:none;
+      mso-background-source:auto;
+      mso-pattern:auto;
+      mso-protection:locked visible;
+      white-space:nowrap;
+      mso-rotate:0;}
+      .xl65
+      {mso-style-parent:style0;
+      color:windowtext;
+      font-size:18.0pt;
+      font-weight:700;
+      font-family:"Arial Unicode MS";
+      mso-generic-font-family:auto;
+      mso-font-charset:0;
+      text-align:left;
+      vertical-align:top;}
+      .xl66
+      {mso-style-parent:style0;
+      color:windowtext;
+      font-size:14.0pt;
+      font-weight:700;
+      font-family:"Arial Unicode MS";
+      mso-generic-font-family:auto;
+      mso-font-charset:0;
+      text-align:left;
+      vertical-align:top;}
+      .xl67
+      {mso-style-parent:style0;
+      color:windowtext;
+      font-size:10.0pt;
+      font-weight:700;
+      font-family:"Arial Unicode MS";
+      mso-generic-font-family:auto;
+      mso-font-charset:0;
+      text-align:left;
+      vertical-align:middle;
+      border:.5pt solid black;
+      background:silver;
+      mso-pattern:black none;}
+      .xl68
+      {mso-style-parent:style0;
+      color:windowtext;
+      font-size:10.0pt;
+      font-family:"Arial Unicode MS";
+      mso-generic-font-family:auto;
+      mso-font-charset:0;
+      text-align:left;
+      vertical-align:top;
+      border:.5pt solid black;}
+      .xl69
+      {mso-style-parent:style0;
+      color:windowtext;
+      font-size:10.0pt;
+      font-weight:700;
+      font-family:"Arial Unicode MS";
+      mso-generic-font-family:auto;
+      mso-font-charset:0;
+      text-align:left;
+      vertical-align:top;
+      border:.5pt solid black;}
+    </style>
+    <![if !supportTabStrip]><script language="JavaScript">
+      <!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../Report-Excel.htm");
+else
+ fnUpdateTabs();
+//-->
+        </script>
+        <![endif]>
+  </head>
+  <body class="Reports">
+    <div class="Title1">
+      <!--REPORT-TITLE-->
+    </div>
+    <!--REPORT-BODY-->
+  </body>
+</html>

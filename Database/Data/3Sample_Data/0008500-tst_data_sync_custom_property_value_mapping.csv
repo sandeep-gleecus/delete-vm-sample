@@ -1,0 +1,9 @@
+data_sync_system_id:Normal,project_id:Normal,custom_property_value_id:Normal,external_key:String
+1,1,9,Windows 2003
+1,1,10,Windows Vista
+1,1,11,Windows XP
+1,1,12,Windows 2000
+2,1,9,Windows 2003
+2,1,10,Windows Vista
+2,1,11,Windows XP
+2,1,12,Windows 2000

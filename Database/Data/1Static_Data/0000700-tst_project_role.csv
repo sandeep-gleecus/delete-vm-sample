@@ -1,0 +1,7 @@
+project_role_id:Key,name:String,description:String,is_admin:Normal,is_active:Normal,is_discussions_add:Normal,is_source_code_view:Normal,is_source_code_edit:Normal,is_document_folders_edit:Normal,is_limited_view:Normal,is_template_admin:Normal
+1,Product Owner,Can see all product artifacts. Can create/modify all artifacts. Can access the product/template administration tools,1,1,1,1,1,1,0,1
+2,Manager,Can see all product artifacts. Can create/modify all artifacts,0,1,1,1,1,1,0,0
+3,Developer,"Can see all product artifacts (except automation hosts). Can create new and modify your own risks and incidents. Can create and modify all / bulk edit documents, tasks, and tests",0,1,1,1,1,1,0,0
+4,Tester,"Can see all product artifacts (except tasks). Can create new and modify your own risks and tests. Can create and modify all / bulk edit documents, incidents, and automation hosts",0,1,1,1,1,1,0,0
+5,Observer,"Can see all product artifacts, but cannot perform any write operations (create / modify / delete)",0,1,0,1,0,0,0,0
+6,Incident User,"Can only create/modify/view incidents and their attachments that you are the owner of. Cannot see anything else (cannot see requirements, tests, risks, or releases)",0,1,1,1,0,0,1,0

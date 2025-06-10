@@ -1,0 +1,5 @@
+graph_type_id:Key,name:String,is_active:Normal
+1,Date Range Graphs,1
+2,Summary Graphs,1
+3,Snapshot Graphs,1
+4,Custom Graphs,1

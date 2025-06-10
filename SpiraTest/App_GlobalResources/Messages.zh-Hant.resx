@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Services_AttachmentIdNotNull" xml:space="preserve">
+    <value>新增文檔物件需將 AttachmentId 設為空。</value>
+  </data>
+	<data name="Services_CannotConnectToProject" xml:space="preserve">
+    <value>無法連接專案，確認使用者為專案成員並存在且為活動狀態。</value>
+  </data>
+	<data name="Services_CustomListIdNotNull" xml:space="preserve">
+    <value>建立自訂列表物件 CustomPropertyListId 需設定為空</value>
+  </data>
+	<data name="Services_CustomPropertyValueIdNotNull" xml:space="preserve">
+    <value>建立自訂列表值物件 CustomPropertyValueId 需設定為空</value>
+  </data>
+	<data name="Services_IncidentIdMissing" xml:space="preserve">
+    <value>事件物件需 IncidentId 填入</value>
+  </data>
+	<data name="Services_IncidentIdNotNull" xml:space="preserve">
+    <value>建立事件物件 IncidentId 需設定為空</value>
+  </data>
+	<data name="Services_LicenseViolationException" xml:space="preserve">
+    <value>此使用者沒有足夠授權存取此 API</value>
+  </data>
+	<data name="Services_NotAuthorizedAddCustomLists" xml:space="preserve">
+    <value>未授權新增自訂列表 - 必須為專案擁有者</value>
+  </data>
+	<data name="Services_NotAuthorizedAddCustomListValues" xml:space="preserve">
+    <value>未授權新增自訂列表值 - 必須為專案擁有者</value>
+  </data>
+	<data name="Services_NotAuthorizedAddDocuments" xml:space="preserve">
+    <value>未授權新增文件至專案</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentPriorities" xml:space="preserve">
+    <value>未授權新增事件屬性 - 必須為專案擁有者</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentSeverities" xml:space="preserve">
+    <value>未授權新增事件嚴重性 - 必須為專案擁有者</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentStatuses" xml:space="preserve">
+    <value>未授權新增事件狀態 - 必須為專案擁有者</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentTypes" xml:space="preserve">
+    <value>未授權新增事件類型 - 必須為專案擁有者</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateIncidents" xml:space="preserve">
+    <value>未授權建立事件</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateProjects" xml:space="preserve">
+    <value>未授權建立專案 - 必須為系統管理者</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateReleases" xml:space="preserve">
+    <value>未授權建立版本</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateRequirements" xml:space="preserve">
+    <value>未授權建立需求</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTasks" xml:space="preserve">
+    <value>未授權建立任務</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestCases" xml:space="preserve">
+    <value>未授權建立測試案例</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestFolders" xml:space="preserve">
+    <value>未授權建立測試資料夾</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestRuns" xml:space="preserve">
+    <value>未授權建立測試執行</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestSets" xml:space="preserve">
+    <value>未授權建立測試集</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestSteps" xml:space="preserve">
+    <value>未授權建立測試步驟</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateUsers" xml:space="preserve">
+    <value>未授權建立使用者 - 必須為系統管理者</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteProjects" xml:space="preserve">
+    <value>未授權刪除專案 - 必須為系統管理者</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyIncidents" xml:space="preserve">
+    <value>未授權修改事件</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyReleases" xml:space="preserve">
+    <value>未授權修改版本</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyRequirements" xml:space="preserve">
+    <value>未授權修改需求</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyTasks" xml:space="preserve">
+    <value>未授權修改任務</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyTestCases" xml:space="preserve">
+    <value>未授權修改測試案例</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyTestSets" xml:space="preserve">
+    <value>未授權修改測試集</value>
+  </data>
+	<data name="Services_NotAuthorizedUpdateCustomProperties" xml:space="preserve">
+    <value>未授權更新專案自訂屬性 - 必須為專案擁有者</value>
+  </data>
+	<data name="Services_NotAuthorizedViewCustomProperties" xml:space="preserve">
+    <value>未授權檢視專案自訂屬性 - 必須為專案擁有者</value>
+  </data>
+	<data name="Services_NotAuthorizedViewIncidents" xml:space="preserve">
+    <value>未授權檢視事件</value>
+  </data>
+	<data name="Services_NotAuthorizedViewReleases" xml:space="preserve">
+    <value>未授權檢視版本</value>
+  </data>
+	<data name="Services_NotAuthorizedViewRequirements" xml:space="preserve">
+    <value>未授權檢視需求</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTasks" xml:space="preserve">
+    <value>未授權檢視任務</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestCases" xml:space="preserve">
+    <value>未授權檢視測試案例</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestRuns" xml:space="preserve">
+    <value>未授權檢視測試執行</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestSets" xml:space="preserve">
+    <value>未授權檢視測試集</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestSteps" xml:space="preserve">
+    <value>未授權檢視測試步驟</value>
+  </data>
+	<data name="Services_NotConnectedToProject" xml:space="preserve">
+    <value>未連結至專案。請先呼叫 Connection_ConnectToProject() 函式</value>
+  </data>
+	<data name="Services_ProjectIdNotNull" xml:space="preserve">
+    <value>建立專案物件 ProjectId 需設定為空</value>
+  </data>
+	<data name="Services_ReleaseIdMissing" xml:space="preserve">
+    <value>版本物件需 ReleaseId 填入</value>
+  </data>
+	<data name="Services_ReleaseIdNotNull" xml:space="preserve">
+    <value>建立版本物件 ReleaseId 需設定為空</value>
+  </data>
+	<data name="Services_ReleaseNotFound" xml:space="preserve">
+    <value>系統中找不到提供的版本編號</value>
+  </data>
+	<data name="Services_RequirementIdMissing" xml:space="preserve">
+    <value>需求物件需 RequirementId 填入</value>
+  </data>
+	<data name="Services_RequirementIdNotNull" xml:space="preserve">
+    <value>建立需求物件 RequirementId 需設定為空</value>
+  </data>
+	<data name="Services_RequirementNotFound" xml:space="preserve">
+    <value>系統中找不到提供的版本編號</value>
+  </data>
+	<data name="Services_RunnerNameMissing" xml:space="preserve">
+    <value>測試執行物件必須將 RunnerName 設定一個值，用來記錄自動測試結果</value>
+  </data>
+	<data name="Services_SessionNotAuthenticated" xml:space="preserve">
+    <value>此連線未認證，請先呼叫 Connection_Authenticate() 函式</value>
+  </data>
+	<data name="Services_SortMissing" xml:space="preserve">
+    <value>您必須提供 RemoteSort 物件填入作為參數</value>
+  </data>
+	<data name="Services_TaskIdMissing" xml:space="preserve">
+    <value>任務物件必須有 TaskId 填入</value>
+  </data>
+	<data name="Services_TaskIdNotNull" xml:space="preserve">
+    <value>建立任務物件 TaskId 需設定為空</value>
+  </data>
+	<data name="Services_TestCaseIdMissing" xml:space="preserve">
+    <value>測試案例物件必須有 TaskCaseId 填入</value>
+  </data>
+	<data name="Services_TestCaseIdNotNull" xml:space="preserve">
+    <value>建立測試案例物件 TaseCaseId 需設定為空</value>
+  </data>
+	<data name="Services_TestCaseParameterIdNotNull" xml:space="preserve">
+    <value>新增測試案例參數物件 TaseCaseParameterId 需設定為空</value>
+  </data>
+	<data name="Services_TestSetIdMissing" xml:space="preserve">
+    <value>測試集物件必須有 TestSetId 填入</value>
+  </data>
+	<data name="Services_TestSetIdNotNull" xml:space="preserve">
+    <value>建立測試集物件 TestSetId 需設定為空</value>
+  </data>
+	<data name="Services_TestStepIdNotNull" xml:space="preserve">
+    <value>建立測試步驟物件 TestStepId 需設定為空</value>
+  </data>
+	<data name="Services_UserIdNotNull" xml:space="preserve">
+    <value>建立使用者物件 UserId 需設定為空</value>
+  </data>
+	<data name="Services_DocumentationUnavailable" xml:space="preserve">
+    <value>無法顯示網頁服務線上說明文件</value>
+  </data>
+	<data name="Services_DocumentNotFound" xml:space="preserve">
+    <value>系統中找不到提供的附件編號</value>
+  </data>
+	<data name="Services_IncidentNotFound" xml:space="preserve">
+    <value>找不到請求的事件</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteDocuments" xml:space="preserve">
+    <value>未授權從專案中刪除文件</value>
+  </data>
+	<data name="PageLayout_ProjectNoLongerExists" xml:space="preserve">
+    <value>選擇的專案已不存在。</value>
+  </data>
+	<data name="Services_ArtifactLinkIdNotNull" xml:space="preserve">
+    <value>建立連結物件 ArtifactLinkId 需設定為空</value>
+  </data>
+	<data name="Services_NotAuthorizedAddAssociations" xml:space="preserve">
+    <value>您未授權新增與來源項目類型的連結</value>
+  </data>
+	<data name="Services_ArtifactLinkIdMissing" xml:space="preserve">
+    <value>關聯物件必須有 ArtifactLinkId 填入</value>
+  </data>
+	<data name="Services_ArtifactLinkNotFound" xml:space="preserve">
+    <value>系統中不存在指定的關聯</value>
+  </data>
+	<data name="Services_ArtifactLinkReadOnly" xml:space="preserve">
+    <value>關聯產生後無法更新</value>
+  </data>
+	<data name="Services_NotAuthorizedViewAssociations" xml:space="preserve">
+    <value>未授權檢視此項目類型的關聯</value>
+  </data>
+	<data name="Services_CustomListNotBelongToProject" xml:space="preserve">
+    <value>指定的自訂列表不屬於目前專案</value>
+  </data>
+	<data name="ScriptService_UnableToLoadUserControl" xml:space="preserve">
+    <value>無法載入使用者控制項，位置{0} 使用主題名稱 {1}</value>
+  </data>
+	<data name="Global_DataChangedBySomeoneElse" xml:space="preserve">
+    <value>當其他人已變更資料將無法儲存。請按下刷新圖示再試一次。</value>
+  </data>
+	<data name="Global_DependentArtifactDeleted" xml:space="preserve">
+    <value>與其他相依項目被刪除的資料無法儲存。請按下刷新圖示再試一次。</value>
+  </data>
+	<data name="Releases_CannotTurnSummaryToIteration" xml:space="preserve">
+    <value>您無法將摘要版本轉為迭代。</value>
+  </data>
+	<data name="Releases_VersionNumberInUse" xml:space="preserve">
+    <value>您必須選擇一個尚未使用的版本號碼。</value>
+  </data>
+	<data name="TestCaseService_DuplicatePositionException" xml:space="preserve">
+    <value>當其他人異動後無法新增所有測試案例至測試集。請按下刷新圖示再試一次。</value>
+  </data>
+	<data name="TestSetTestCaseService_MissingTestSetIdStdFilter" xml:space="preserve">
+    <value>您必須提供 TestSetId 作為標準篩選器</value>
+  </data>
+	<data name="TestSetTestCaseService_MissingAddedTestCasesStdFilter" xml:space="preserve">
+    <value>您必須提供 LinkedTestCaseId 作為標準篩選器</value>
+  </data>
+	<data name="TestCaseService_DuplicateParameterName" xml:space="preserve">
+    <value>請選擇一個尚未使用的參數名稱。</value>
+  </data>
+	<data name="TestStepService_SelfReferencingTestLink" xml:space="preserve">
+    <value>您已建立自引用的測試連結。這將無法正確執行。</value>
+  </data>
+	<data name="IncidentList_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的事件？</value>
+  </data>
+	<data name="RequirementsList_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的需求？</value>
+  </data>
+	<data name="TaskList_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的任務？</value>
+  </data>
+	<data name="TestCaseDetails_TestStepDeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的測試步驟？</value>
+  </data>
+	<data name="TestRunList_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的測試執行？</value>
+  </data>
+	<data name="ReleaseList_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的版本？</value>
+  </data>
+	<data name="TestCaseList_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的測試案例？</value>
+  </data>
+	<data name="TestSetList_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的測試集？</value>
+  </data>
+	<data name="ArtifactLinkPanel_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的關聯？</value>
+  </data>
+	<data name="Admin_Notification_DeleteEvent" xml:space="preserve">
+    <value>確定要刪除此事件？此操作無法還原。</value>
+  </data>
+	<data name="Admin_Notification_ErrorEventIdNotFound" xml:space="preserve">
+    <value>找不到指定的事件編號。</value>
+  </data>
+	<data name="Admin_SelectProject" xml:space="preserve">
+    <value>您必須從檢視/編輯專案頁中先選擇一個專案！</value>
+  </data>
+	<data name="Admin_Notification_WorkflowNotice" xml:space="preserve">
+    <value>需注意這些事件無法覆寫或取消事件工作流程通知設定。欲調整基於事件狀態的設定和工作流程步驟，請至檢視/編輯工作流程頁面。</value>
+  </data>
+	<data name="TestExecutionService_PendingTestRunDoesNotExist" xml:space="preserve">
+    <value>擱置的測試執行 {0} 在系統中不存在</value>
+  </data>
+	<data name="Global_TooltipNotAvailable" xml:space="preserve">
+    <value>無可用的提示</value>
+  </data>
+	<data name="Admin_Notification_EditArtifactTemplate" xml:space="preserve">
+    <value>當事件 {0} 與項目 {1} 相符何時，將寄出下方範本。設定電子郵件時，範本中的標誌會被取代。否則，該範本將發送、指派給使用者和角色。</value>
+  </data>
+	<data name="Admin_Notification_EditArtifactTemplates" xml:space="preserve">
+    <value>您可指定每一個項目類型寄出的電子郵件通知範本。欲編輯範本，選擇編輯範本連結。&lt;br&gt;欲寄送範本測試郵件，選擇測試範本連結。專案中第一個項目將被寄出。</value>
+  </data>
+	<data name="Admin_Notification_EditTemplateTokens" xml:space="preserve">
+    <value>以下所有可用的標誌 {0} 和意義。不在列表的標誌最終將被取出。按下標誌以將其插入目前上方編輯器游標位置。</value>
+  </data>
+	<data name="Global_TestRunDoesNotExist" xml:space="preserve">
+    <value>系統中不存在測試執行 TR{0}</value>
+  </data>
+	<data name="Global_TestRunStepDoesNotExist" xml:space="preserve">
+    <value>系統中不存在測試執行步驟 {0}</value>
+  </data>
+	<data name="TestCaseExecution_NotAuthorizedToResume" xml:space="preserve">
+    <value>您未授權恢復選擇的擱置測試執行。</value>
+  </data>
+	<data name="TestExecutionService_NotAuthorizedToUpdateTestRun" xml:space="preserve">
+    <value>您無法更新非指派給您的測試執行。</value>
+  </data>
+	<data name="Notification_YouAreSubscribed" xml:space="preserve">
+    <value>您現在已訂閱 {0}。</value>
+  </data>
+	<data name="Notification_YouAreUnsubscribed" xml:space="preserve">
+    <value>您不再訂閱 {0}。</value>
+  </data>
+	<data name="Login_UnlicensedProduct" xml:space="preserve">
+    <value>無授權。不可使用</value>
+  </data>
+	<data name="Admin_Notification_NoArtifactFound" xml:space="preserve">
+    <value>系統中不存在該項目類型。嘗試寄送測試郵件前請確定至少一個項目類型存在。</value>
+  </data>
+	<data name="Admin_Notification_TestTemplateSent" xml:space="preserve">
+    <value>測試電子郵件等待發送。</value>
+  </data>
+	<data name="Admin_Notification_ViewEditNotificationEventText" xml:space="preserve">
+    <value>事件詳細資料列於下方。您可編輯欄位、使用者、建立事件。但一旦建立項目類型將無法異動。&lt;br&gt;當完成時，按下[更新]或[插入]以儲存修改。</value>
+  </data>
+	<data name="AutomationHostService_AutomationHostTokenNotUnique" xml:space="preserve">
+    <value>您必須提供具有唯一標誌的自動化主機。</value>
+  </data>
+	<data name="AutomationHosts_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的自動化主機？</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_UpdatedAdmin_AutomationEngineDetails_EngineNotExists" xml:space="preserve">
+    <value>選擇的自動化引擎已從系統中刪除。</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_UpdatedMessage" xml:space="preserve">
+    <value>自動化主機已成功更新。</value>
+  </data>
+	<data name="Services_TestSetNotAutomated" xml:space="preserve">
+    <value>您需指定測試集標記為自動化</value>
+  </data>
+	<data name="TestCaseDetails_UnableToConvertToText" xml:space="preserve">
+    <value>無法轉換文字</value>
+  </data>
+	<data name="TestCaseDetails_NeedAutomationFilename" xml:space="preserve">
+    <value>您需未自動化測試腳本指定文件名稱。</value>
+  </data>
+	<data name="UserDetails_ChangesSaved" xml:space="preserve">
+    <value>已儲存您的偏愛設定。</value>
+  </data>
+	<data name="UserDetails_NewPasswordError1" xml:space="preserve">
+    <value>您必須輸入目前密碼。</value>
+  </data>
+	<data name="UserDetails_NewPasswordError2" xml:space="preserve">
+    <value>新密碼欄位不符合。</value>
+  </data>
+	<data name="UserDetails_NewPasswordError3" xml:space="preserve">
+    <value>新密碼不可為空。</value>
+  </data>
+	<data name="UserDetails_NewPasswordError4" xml:space="preserve">
+    <value>目前密碼不正確。</value>
+  </data>
+	<data name="UserDetails_UpdateMessage" xml:space="preserve">
+    <value>請檢查下方列出的資訊，若需要請進行修改。&lt;br/&gt;按下[更新]儲存變更。</value>
+  </data>
+	<data name="UserDetails_UpdatePasswordMessage" xml:space="preserve">
+    <value>欲更改密碼，您必須輸入目前密碼和新密碼。</value>
+  </data>
+	<data name="TaskDetails_DatesOutsideReleaseDates" xml:space="preserve">
+    <value>開始或結束此任務不可超過關聯的版本/迭代的時間範圍。</value>
+  </data>
+	<data name="TaskDetails_EnterValidActualEffort" xml:space="preserve">
+    <value>您必須於實際工時輸入合法的小時數</value>
+  </data>
+	<data name="TaskDetails_EnterValidEstimatedEffort" xml:space="preserve">
+    <value>您必須於預估工時輸入合法的小時數</value>
+  </data>
+	<data name="TaskDetails_EnterValidRemainingEffort" xml:space="preserve">
+    <value>您必須於剩餘工時輸入合法的小時數</value>
+  </data>
+	<data name="RequirementDetails_EnterValidPlannedEffort" xml:space="preserve">
+    <value>您必須於計畫工時輸入合法的小時數</value>
+  </data>
+	<data name="UserDetails_detEnableNotifications" xml:space="preserve">
+    <value>若取消，您將無法收到此系統的任何通知。</value>
+  </data>
+	<data name="UserDetails_ToChangePassword" xml:space="preserve">
+    <value>欲更改密碼，您必須輸入目前密碼和新密碼。</value>
+  </data>
+	<data name="Notification_EventDeleted" xml:space="preserve">
+    <value>選擇的通知事件已被刪除。</value>
+  </data>
+	<data name="InvalidDatabase_ContactSupport1" xml:space="preserve">
+    <value>請</value>
+  </data>
+	<data name="InvalidDatabase_InvalidRevisionInstalled" xml:space="preserve">
+    <value>不合法的資料庫修訂版本已安裝於伺服器。&lt;br&gt;除了：&lt;b&gt;{0}&lt;/br&gt;&lt;br&gt;已安裝：&lt;b&gt;{1}&lt;/b&gt;</value>
+  </data>
+	<data name="TestCaseDetails_EnterValidEstimatedDuration" xml:space="preserve">
+    <value>您必須於預估工期輸入合法的小時數</value>
+  </data>
+	<data name="TestRunDetails_EnterValidActualDuration" xml:space="preserve">
+    <value>您必須於實際工期輸入合法的小時數</value>
+  </data>
+	<data name="TestRunDetails_EnterValidEstimatedDuration" xml:space="preserve">
+    <value>您必須於預估工期輸入合法的小時數</value>
+  </data>
+	<data name="Login_InvalidUserNamePassword" xml:space="preserve">
+    <value>輸入不合法使用者名稱或帳號，請在試一次</value>
+  </data>
+	<data name="Login_NeedToEnterPassword" xml:space="preserve">
+    <value>必須輸入密碼</value>
+  </data>
+	<data name="Login_NeedToEnterUserName" xml:space="preserve">
+    <value>必須輸入使用者名稱</value>
+  </data>
+	<data name="EmailPassword_EmailNotEnabled" xml:space="preserve">
+    <value>無法重置未啟動電子郵件！</value>
+  </data>
+	<data name="EmailPassword_EmailNotMatch" xml:space="preserve">
+    <value>電子郵寄地址不匹配，請再試 ！</value>
+  </data>
+	<data name="EmailPassword_EnterUserNameEmail" xml:space="preserve">
+    <value>您需要輸入使用者名稱和電子郵寄地址 ！</value>
+  </data>
+	<data name="EmailPassword_ErrorSending" xml:space="preserve">
+    <value>寄送郵件錯誤，請聯絡管理者！</value>
+  </data>
+	<data name="EmailPassword_NotResetLDAP" xml:space="preserve">
+    <value>您無法透過 {0} 重置 LDAP 使用者！</value>
+  </data>
+	<data name="EmailPassword_NoUserExists" xml:space="preserve">
+    <value>沒有這樣的使用者存在與該使用者名 ！</value>
+  </data>
+	<data name="EmailPassword_PasswordSent" xml:space="preserve">
+    <value>密碼已發送至您的郵件地址。</value>
+  </data>
+	<data name="NeedAccount_EmailNotValid" xml:space="preserve">
+    <value>輸入的電子郵寄地址無效</value>
+  </data>
+	<data name="NeedAccount_EmailRequired" xml:space="preserve">
+    <value>電子郵寄地址為必填項</value>
+  </data>
+	<data name="NeedAccount_EmailSent" xml:space="preserve">
+    <value>已向管理員發送一封電子郵件，請求新帳戶的存取權限</value>
+  </data>
+	<data name="NeedAccount_ErrorSendingEmail" xml:space="preserve">
+    <value>錯誤發送電子郵件，請與管理員聯繫 ！</value>
+  </data>
+	<data name="NeedAccount_FirstNameRequired" xml:space="preserve">
+    <value>第一個名稱是必需的</value>
+  </data>
+	<data name="NeedAccount_LastNameRequired" xml:space="preserve">
+    <value>最後一個名稱是必需的</value>
+  </data>
+	<data name="ForceSession_AccountSignedInMultiple" xml:space="preserve">
+    <value>您的使用者帳號目前已登錄到 {0} 中的 &lt;u&gt;多個&lt;/u&gt; 位置。</value>
+  </data>
+	<data name="Global_UnableToLoad" xml:space="preserve">
+    <value>無法載入</value>
+  </data>
+	<data name="PendingTestRuns_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的擱置測試執行已不存在！</value>
+  </data>
+	<data name="RequirementsList_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的需求已不存在！</value>
+  </data>
+	<data name="SavedReports_DeleteConfirmation" xml:space="preserve">
+    <value>確定刪除此儲存的報表？</value>
+  </data>
+	<data name="SavedSearches_DeleteConfirmation" xml:space="preserve">
+    <value>確定刪除此儲存的查詢？</value>
+  </data>
+	<data name="SavedSearches_UnableToRetrieveSeach" xml:space="preserve">
+    <value>無法取回已儲存的查詢。</value>
+  </data>
+	<data name="TaskList_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的任務已不存在。</value>
+  </data>
+	<data name="TestCaseList_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的測試案例已不存在。</value>
+  </data>
+	<data name="TestSetList_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的測試集已不存在。</value>
+  </data>
+	<data name="WeatherBox_ErrorRetrievingWeather" xml:space="preserve">
+    <value>從伺服器取得天氣資訊錯誤。</value>
+  </data>
+	<data name="WeatherBox_NoResults" xml:space="preserve">
+    <value>您輸入的位置無法產生天氣結果。</value>
+  </data>
+	<data name="InvalidLicense_EvaluationExpired" xml:space="preserve">
+    <value>伺服器上的評估授權已過期。 &lt; br / 〉 請聯繫產品業務獲得永久授權。</value>
+  </data>
+	<data name="InvalidLicense_ExceededConcurrent" xml:space="preserve">
+    <value>您已超出所允許的同時登入使用者數量。&lt;br/&gt;欲繼續執行請登出已登入的使用者。</value>
+  </data>
+	<data name="InvalidLicense_InvalidLicenseOnServer" xml:space="preserve">
+    <value>伺服器上授權金鑰不合法，請聯絡系統管理者修正問題。</value>
+  </data>
+	<data name="InvalidDatabase_ContactSupport2" xml:space="preserve">
+    <value>聯絡支援</value>
+  </data>
+	<data name="InvalidDatabase_ContactSupport3" xml:space="preserve">
+    <value>協助</value>
+  </data>
+	<data name="ErrorPage_ContactSupport1" xml:space="preserve">
+    <value>請</value>
+  </data>
+	<data name="ErrorPage_ContactSupport2" xml:space="preserve">
+    <value>聯絡支援</value>
+  </data>
+	<data name="ErrorPage_ContactSupport3" xml:space="preserve">
+    <value>且提供以下詳細資訊：</value>
+  </data>
+	<data name="ErrorPage_DetailsNotAvailable" xml:space="preserve">
+    <value>錯誤詳細資訊無法使用 - 檢查視窗應用程式事件記錄。</value>
+  </data>
+	<data name="Global_CannotAddWidgetMoreThanOnce" xml:space="preserve">
+    <value>不能新增相同小工具超過一次。</value>
+  </data>
+	<data name="AssignedIncidents_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的事件已不存在。</value>
+  </data>
+	<data name="RequirementsService_OnlySupportsRequirementInserts" xml:space="preserve">
+    <value>此方法僅支援插入需求</value>
+  </data>
+	<data name="TestSetList_TestSetHasNoTestCases" xml:space="preserve">
+    <value>選擇的測試集不包含任何測試案例！</value>
+  </data>
+	<data name="Global_InvalidOperation" xml:space="preserve">
+    <value>無效的操作</value>
+  </data>
+	<data name="SourceCode_ProviderError" xml:space="preserve">
+    <value>提供器錯誤</value>
+  </data>
+	<data name="TestSetList_TestSetsCannotHaveChildItems" xml:space="preserve">
+    <value>測試集不可有子測試集或資料夾。</value>
+  </data>
+	<data name="TestCaseList_SelectCheckboxForExecute" xml:space="preserve">
+    <value>必須選擇至少一個核取方塊執行命令！</value>
+  </data>
+	<data name="TestCaseList_TestCasesCannotHaveChildItems" xml:space="preserve">
+    <value>測試用例不能有子測試用例或資料夾。</value>
+  </data>
+	<data name="RequirementDetails_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的需求已不存在。</value>
+  </data>
+	<data name="RequirementDetails_DeleteConfirm" xml:space="preserve">
+    <value>這將會永久刪除需求。您確定要繼續？</value>
+  </data>
+	<data name="RequirementDetails_RefreshConfirm" xml:space="preserve">
+    <value>這將會捨棄未儲存的異動。您確定要繼續？</value>
+  </data>
+	<data name="RequirementDetails_NameRequired" xml:space="preserve">
+    <value>需求名稱為必須</value>
+  </data>
+	<data name="RequirementDetails_PlannedEffortInvalid" xml:space="preserve">
+    <value>計畫工時無效</value>
+  </data>
+	<data name="RequirementDetails_SaveSuccess" xml:space="preserve">
+    <value>需求異動已儲存成功</value>
+  </data>
+	<data name="UserProfile_EmailNotValid" xml:space="preserve">
+    <value>輸入的電子郵件位址無效</value>
+  </data>
+	<data name="UserProfile_EmailRequired" xml:space="preserve">
+    <value>電子郵寄地址為必須</value>
+  </data>
+	<data name="UserProfile_FirstNameRequired" xml:space="preserve">
+    <value>名為必須</value>
+  </data>
+	<data name="UserProfile_LastNameRequired" xml:space="preserve">
+    <value>姓為必須</value>
+  </data>
+	<data name="UserProfile_NotLinked" xml:space="preserve">
+    <value>未連結</value>
+  </data>
+	<data name="Global_EnterValidDateRangeValue" xml:space="preserve">
+    <value>您必須為 {0} 輸入有效的日期範圍值</value>
+  </data>
+	<data name="Global_EnterValidIntegerValue" xml:space="preserve">
+    <value>您必須為 {0} 輸入有效的整數值</value>
+  </data>
+	<data name="FileUploadDialog_ErrorLoadingDialog" xml:space="preserve">
+    <value>載入對畫框錯誤</value>
+  </data>
+	<data name="FileUploadDialog_TagsNotValid" xml:space="preserve">
+    <value>標籤僅可包含以逗號分隔的字母數字字元</value>
+  </data>
+	<data name="FileUploadDialog_URLNotValid" xml:space="preserve">
+    <value>URL 非有效格式</value>
+  </data>
+	<data name="AttachmentPanel_DeleteConfirm" xml:space="preserve">
+    <value>確定從系統刪除此文件？</value>
+  </data>
+	<data name="ReleaseDetails_SaveSuccess" xml:space="preserve">
+    <value>版本異動已儲存成功</value>
+  </data>
+	<data name="ReleaseDetails_DeleteConfirm" xml:space="preserve">
+    <value>這將會永久刪除版本/迭代。您確定要繼續？</value>
+  </data>
+	<data name="ReleaseDetails_EndDateInvalid" xml:space="preserve">
+    <value>必須以指定格式輸入結束日期</value>
+  </data>
+	<data name="ReleaseDetails_EndDateRequired" xml:space="preserve">
+    <value>結束日期為必須</value>
+  </data>
+	<data name="ReleaseDetails_NameRequired" xml:space="preserve">
+    <value>版本名稱為必須</value>
+  </data>
+	<data name="ReleaseDetails_NonWorkInvalid" xml:space="preserve">
+    <value># 非工作天必須為整數值。</value>
+  </data>
+	<data name="ReleaseDetails_NonWorkRequired" xml:space="preserve">
+    <value># 非工作天為必須</value>
+  </data>
+	<data name="ReleaseDetails_NumResourcesInvalid" xml:space="preserve">
+    <value># 資源必須為整數值。</value>
+  </data>
+	<data name="ReleaseDetails_NumResourcesRequired" xml:space="preserve">
+    <value># 資源為必須</value>
+  </data>
+	<data name="ReleaseDetails_RefreshConfirm" xml:space="preserve">
+    <value>這將會捨棄未儲存的異動。您確定要繼續？</value>
+  </data>
+	<data name="ReleaseDetails_StartDateInvalid" xml:space="preserve">
+    <value>必須以指定格式輸入開始日期</value>
+  </data>
+	<data name="ReleaseDetails_StartDateRequired" xml:space="preserve">
+    <value>開始日期為必須</value>
+  </data>
+	<data name="ReleaseDetails_VersionNumberRequired" xml:space="preserve">
+    <value>版本號碼為必須</value>
+  </data>
+	<data name="ReleaseDetails_CannotMakeSummaryReleaseIteration" xml:space="preserve">
+    <value>您無法將摘要版本轉為迭代。</value>
+  </data>
+	<data name="ReleaseDetails_VersionNumberInUse" xml:space="preserve">
+    <value>您必須選擇一個尚未使用的版本號碼。</value>
+  </data>
+	<data name="TestCaseDetails_DeleteConfirm" xml:space="preserve">
+    <value>這將會永久刪除整個測試案例。您確定要繼續？</value>
+  </data>
+	<data name="TestCaseDetails_NameRequired" xml:space="preserve">
+    <value>測試案例名稱為必須</value>
+  </data>
+	<data name="TestCaseDetails_RefreshConfirm" xml:space="preserve">
+    <value>這將會捨棄未儲存的異動。您確定要繼續？</value>
+  </data>
+	<data name="TestCaseDetails_SaveSuccess" xml:space="preserve">
+    <value>測試案例異動已儲存成功</value>
+  </data>
+	<data name="TestCaseDetails_VersionNumberInvalid" xml:space="preserve">
+    <value>版本號碼僅可包含字母數位字元和句點</value>
+  </data>
+	<data name="TestCaseDetails_TestHasNoParameters" xml:space="preserve">
+    <value>此測試案例無任何參數。</value>
+  </data>
+	<data name="TestCaseDetails_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的測試案例已從系統刪除。</value>
+  </data>
+	<data name="TestSetDetails_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的測試集已從系統刪除。</value>
+  </data>
+	<data name="TestSetDetails_DeleteConfirm" xml:space="preserve">
+    <value>這將會永久刪除測試集。您確定要繼續？</value>
+  </data>
+	<data name="TestSetDetails_NameRequired" xml:space="preserve">
+    <value>測試集名稱為必須</value>
+  </data>
+	<data name="TestSetDetails_NotExecuteEmptySet" xml:space="preserve">
+    <value>您無法執行測試集資料夾或不含測試案例的測試集。</value>
+  </data>
+	<data name="TestSetDetails_NotExecuteTestsInAutomated" xml:space="preserve">
+    <value>您無法個別執行自動化測試集的案例。請按下主要測試集執行圖示。</value>
+  </data>
+	<data name="TestSetDetails_PlannedTimeInvalid" xml:space="preserve">
+    <value>無效計畫時間</value>
+  </data>
+	<data name="TestSetDetails_PlannedTimeTooltip" xml:space="preserve">
+    <value>輸入計畫時間</value>
+  </data>
+	<data name="TestSetDetails_RefreshConfirm" xml:space="preserve">
+    <value>這將會捨棄未儲存的異動。您確定要繼續？</value>
+  </data>
+	<data name="TestSetDetails_SaveSuccess" xml:space="preserve">
+    <value>測試集更改已成功儲存</value>
+  </data>
+	<data name="TestSetDetails_SelectOneForExecute" xml:space="preserve">
+    <value>必須選擇至少一個核取方塊以執行命令。</value>
+  </data>
+	<data name="TestStepDetails_DeleteConfirm" xml:space="preserve">
+    <value>此將會刪除目前測試步驟。您確定要繼續？</value>
+  </data>
+	<data name="TestStepDetails_DescriptionRequired" xml:space="preserve">
+    <value>描述為必須</value>
+  </data>
+	<data name="TestStepDetails_ExpectedResultRequired" xml:space="preserve">
+    <value>預期結果為必須</value>
+  </data>
+	<data name="TestStepDetails_RefreshConfirm" xml:space="preserve">
+    <value>這將會捨棄未儲存的異動。您確定要繼續？</value>
+  </data>
+	<data name="TestRunDetails_ActualDurationInvalid" xml:space="preserve">
+    <value>實際工期為無效</value>
+  </data>
+	<data name="TestRunDetails_ArtifactDeleted" xml:space="preserve">
+    <value>選擇的測試執行已從系統刪除。</value>
+  </data>
+	<data name="TestRunDetails_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的測試執行已不存在。</value>
+  </data>
+	<data name="TestRunDetails_DeleteConfirm" xml:space="preserve">
+    <value>這將會永久刪除此測試執行。您確定要繼續？</value>
+  </data>
+	<data name="TestRunDetails_EstimatedDurationInvalid" xml:space="preserve">
+    <value>無效預估工期</value>
+  </data>
+	<data name="TestRunDetails_RefreshConfirm" xml:space="preserve">
+    <value>這將會捨棄未儲存的異動。您確定要繼續？</value>
+  </data>
+	<data name="TestRunDetails_TestSetIsFolderOrNotExists" xml:space="preserve">
+    <value>選擇的測試集不是資料夾或已不存在。</value>
+  </data>
+	<data name="TestRunDetails_UpdateSuccess" xml:space="preserve">
+    <value>測試執行已更新成功</value>
+  </data>
+	<data name="AutomationHostDetails_DeleteConfirm" xml:space="preserve">
+    <value>這將會永久刪除此主機。您確定要繼續？</value>
+  </data>
+	<data name="AutomationHostDetails_NameRequired" xml:space="preserve">
+    <value>主機名稱為必須</value>
+  </data>
+	<data name="AutomationHostDetails_RefreshConfirm" xml:space="preserve">
+    <value>這將會捨棄未儲存的異動。您確定要繼續？</value>
+  </data>
+	<data name="AutomationHostDetails_Success" xml:space="preserve">
+    <value>自動化主機異動已儲存成功</value>
+  </data>
+	<data name="AutomationHostDetails_TokenRequired" xml:space="preserve">
+    <value>標誌為必須</value>
+  </data>
+	<data name="IncidentDetails_Success" xml:space="preserve">
+    <value>事件已更新成功</value>
+  </data>
+	<data name="IncidentDetails_UnableToRetrieve" xml:space="preserve">
+    <value>無法取回指定事件</value>
+  </data>
+	<data name="Admin_FileTypes_AllListed" xml:space="preserve">
+    <value>此為設定文件類型列表，其圖式顯示於應用程式，MIME類型報表。注意:允許任何未定義的文件副檔名，但會顯示為[未知]。</value>
+  </data>
+	<data name="IncidentDetails_ActualEffortInvalid" xml:space="preserve">
+    <value>無效實際工時</value>
+  </data>
+	<data name="IncidentDetails_ActualEffortRequired" xml:space="preserve">
+    <value>實際工時為必須</value>
+  </data>
+	<data name="IncidentDetails_ClosedDateInvalid" xml:space="preserve">
+    <value>關閉日期必須輸入指定的格式</value>
+  </data>
+	<data name="IncidentDetails_ClosedDateRequired" xml:space="preserve">
+    <value>關閉日期為必須</value>
+  </data>
+	<data name="IncidentDetails_CommentRequired" xml:space="preserve">
+    <value>新說明為必須</value>
+  </data>
+	<data name="IncidentDetails_DescriptionRequired" xml:space="preserve">
+    <value>事件描述為必須</value>
+  </data>
+	<data name="IncidentDetails_DetectedReleaseRequired" xml:space="preserve">
+    <value>檢測到版本為必須</value>
+  </data>
+	<data name="IncidentDetails_EstimatedEffortInvalid" xml:space="preserve">
+    <value>無效預估工時</value>
+  </data>
+	<data name="IncidentDetails_EstimatedEffortRequired" xml:space="preserve">
+    <value>預估工時為必須</value>
+  </data>
+	<data name="IncidentDetails_IncidentIdNotValid" xml:space="preserve">
+    <value>事件編號必須為數字</value>
+  </data>
+	<data name="IncidentDetails_NameRequired" xml:space="preserve">
+    <value>事件名稱為必須</value>
+  </data>
+	<data name="IncidentDetails_NoOperationsAvailable" xml:space="preserve">
+    <value>無可用操作</value>
+  </data>
+	<data name="IncidentDetails_OwnerRequired" xml:space="preserve">
+    <value>擁有者為必須</value>
+  </data>
+	<data name="IncidentDetails_PriorityRequired" xml:space="preserve">
+    <value>優先度為必須</value>
+  </data>
+	<data name="IncidentDetails_RemainingEffortInvalid" xml:space="preserve">
+    <value>無效剩餘工時</value>
+  </data>
+	<data name="IncidentDetails_RemainingEffortRequired" xml:space="preserve">
+    <value>剩餘工時為必須</value>
+  </data>
+	<data name="IncidentDetails_SaveChangesFirst" xml:space="preserve">
+    <value>請先儲存異動。</value>
+  </data>
+	<data name="IncidentDetails_SeverityRequired" xml:space="preserve">
+    <value>嚴重性為必須</value>
+  </data>
+	<data name="IncidentDetails_StartDateInvalid" xml:space="preserve">
+    <value>開始日期必須輸入指定的格式</value>
+  </data>
+	<data name="IncidentDetails_StartDateRequired" xml:space="preserve">
+    <value>開始日期為必須</value>
+  </data>
+	<data name="IncidentDetails_VerifiedReleaseRequired" xml:space="preserve">
+    <value>已驗證版本為必須</value>
+  </data>
+	<data name="IncidentDetails_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除此事件？此操作無法還原。</value>
+  </data>
+	<data name="IncidentDetails_RefreshConfirm" xml:space="preserve">
+    <value>這將會捨棄未儲存的異動。您確定要繼續？</value>
+  </data>
+	<data name="TaskDetails_ActualEffortInvalid" xml:space="preserve">
+    <value>無效實際工時</value>
+  </data>
+	<data name="TaskDetails_ArtifactNotExists" xml:space="preserve">
+    <value>選擇的任務已不存在此系統中。</value>
+  </data>
+	<data name="TaskDetails_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除此任務？</value>
+  </data>
+	<data name="TaskDetails_EndDateInvalid" xml:space="preserve">
+    <value>結束日期必須輸入指定的格式</value>
+  </data>
+	<data name="TaskDetails_EstimatedEffortInvalid" xml:space="preserve">
+    <value>無效預估工時</value>
+  </data>
+	<data name="TaskDetails_NameRequired" xml:space="preserve">
+    <value>任務名稱為必須</value>
+  </data>
+	<data name="TaskDetails_RefreshConfirm" xml:space="preserve">
+    <value>這將會捨棄未儲存的異動。您確定要繼續？</value>
+  </data>
+	<data name="TaskDetails_RemainingEffortInvalid" xml:space="preserve">
+    <value>無效剩餘工時</value>
+  </data>
+	<data name="TaskDetails_StartDateInvalid" xml:space="preserve">
+    <value>開始日期必須輸入指定的格式</value>
+  </data>
+	<data name="TaskDetails_Success" xml:space="preserve">
+    <value>任務更改已成功儲存</value>
+  </data>
+	<data name="Admin_FileTypes_EditFileTypeMessage" xml:space="preserve">
+    <value>此為給定副檔名的檔案類型定義。簡易輸入值可正確顯示來源控制和文件頁附件的文件資訊。所有欄位為必須，空白欄位將用預設值設定。圖示圖片必須存在於 Web 伺服器的活動主題目錄[Filetypes] 下</value>
+  </data>
+	<data name="Admin_FileTypes_RequiredDecription" xml:space="preserve">
+    <value>文件副檔名描述為必須</value>
+  </data>
+	<data name="Admin_FileTypes_RequiredExtension" xml:space="preserve">
+    <value>必須指定副檔名，且最前方無句號。</value>
+  </data>
+	<data name="Admin_FileTypes_TypeDeletedError" xml:space="preserve">
+    <value>文件類型無法移除。</value>
+  </data>
+	<data name="SourceCodeList_GeneralError" xml:space="preserve">
+    <value>存取指定版本控制提供器發生存取錯誤。請確認管理的設置，請再試一次。</value>
+  </data>
+	<data name="SourceCodeList_InvalidLicense" xml:space="preserve">
+    <value>目前授權無法存取程式原始碼特性。</value>
+  </data>
+	<data name="SourceCodeList_InvalidRole" xml:space="preserve">
+    <value>目前角色無法存取程式原始碼特性。</value>
+  </data>
+	<data name="SourceCodeList_UnableToAuthenticate" xml:space="preserve">
+    <value>無法與版本控制提供器認證。請確認登入/密碼資訊，請再試一次。</value>
+  </data>
+	<data name="SourceCodeList_UnableToLoadProvider" xml:space="preserve">
+    <value>無法載入指定版本控制提供器。請確認管理設定，請再試一次。</value>
+  </data>
+	<data name="Admin_FileTypes_ExtensionExists" xml:space="preserve">
+    <value>資料庫已存在副檔名 {0}。</value>
+  </data>
+	<data name="SourceCodeRedirect_CacheInvalid" xml:space="preserve">
+    <value>無效程式原始馬快取，請再試一次。</value>
+  </data>
+	<data name="Admin_FileTypes_SuccessDeleted" xml:space="preserve">
+    <value>文件類型 {0} 已成功刪除。</value>
+  </data>
+	<data name="Admin_FileTypes_SuccessAdded" xml:space="preserve">
+    <value>檔案類型 {0} 已新增成功</value>
+  </data>
+	<data name="Admin_FileTypes_SuccessUpdated" xml:space="preserve">
+    <value>檔案類型 {0} 已修改成功</value>
+  </data>
+	<data name="SourceCodeFileDetails_FileNotExists" xml:space="preserve">
+    <value>選擇的文件已從系統中刪除。</value>
+  </data>
+	<data name="SourceCodeFileDetails_FolderNotExists" xml:space="preserve">
+    <value>選擇的資料夾已從系統中刪除。</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_NotAuthorizedForRevision" xml:space="preserve">
+    <value>您無權限檢視選擇的修訂版本。</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_RevisionNotExists" xml:space="preserve">
+    <value>選擇的修訂版本已從系統中刪除。</value>
+  </data>
+	<data name="Reports_DeleteSaved" xml:space="preserve">
+    <value>您確定要刪除這個已儲存的報表?</value>
+  </data>
+	<data name="ReportConfiguration_FormatNotExists" xml:space="preserve">
+    <value>選擇的格式在系統中已不存在。</value>
+  </data>
+	<data name="ReportConfiguration_Needs" xml:space="preserve">
+    <value>{0} 必須為一個有效的時間範圍</value>
+  </data>
+	<data name="ReportConfiguration_NeedToSelectFormat" xml:space="preserve">
+    <value>您必須選擇欲產生的報表格式</value>
+  </data>
+	<data name="ReportConfiguration_NotAvailableInCurrentEdition" xml:space="preserve">
+    <value>此功能不可用，在當前安裝的版本。</value>
+  </data>
+	<data name="ReportConfiguration_ReportIDNotExists" xml:space="preserve">
+    <value>傳入的報表編號不存在。</value>
+  </data>
+	<data name="Reports_NotExists" xml:space="preserve">
+    <value>無法取回儲存的報表。</value>
+  </data>
+	<data name="TestCaseExecution_FinishConfirm" xml:space="preserve">
+    <value>您確定要結束此測試執行？您將無法進行任何更改。</value>
+  </data>
+	<data name="TestCaseExecution_OwnerRequired" xml:space="preserve">
+    <value>必須輸入擁有者</value>
+  </data>
+	<data name="TestCaseExecution_PriorityRequired" xml:space="preserve">
+    <value>必須輸入優先度</value>
+  </data>
+	<data name="TestCaseExecution_SeverityRequired" xml:space="preserve">
+    <value>必須輸入嚴重性</value>
+  </data>
+	<data name="WebPartBase_NotAuthorizedForProject" xml:space="preserve">
+    <value>您不是專案 {0} 的成員。請聯絡專案擁有者將您新增為成員。</value>
+  </data>
+	<data name="TestCaseExecution_PassAllConfirm" xml:space="preserve">
+    <value>您確定要通過目前測試案例的所有測試步驟？</value>
+  </data>
+	<data name="DocumentDetails_ArtifactIdInvalid" xml:space="preserve">
+    <value>必須輸入為數字的項目編號</value>
+  </data>
+	<data name="DocumentDetails_ArtifactIdRequired" xml:space="preserve">
+    <value>必須輸入項目編號</value>
+  </data>
+	<data name="DocumentDetails_ArtifactNotExists" xml:space="preserve">
+    <value>指定的項目編號無法與系統中的項目匹配。</value>
+  </data>
+	<data name="DocumentDetails_CannotChangeFiletype" xml:space="preserve">
+    <value>您無法更改文件名稱為不同的文件類型。</value>
+  </data>
+	<data name="DocumentDetails_CannotDeleteActiveVersion" xml:space="preserve">
+    <value>您無法刪除啟動中的版本。</value>
+  </data>
+	<data name="DocumentDetails_DeleteConfirm" xml:space="preserve">
+    <value>這將永久刪除此文件。您確定要繼續？</value>
+  </data>
+	<data name="DocumentDetails_DeleteVersionConfirm" xml:space="preserve">
+    <value>您確定要刪除此文件的版本？</value>
+  </data>
+	<data name="DocumentDetails_DocumentNotExists" xml:space="preserve">
+    <value>選擇的文件已從系統中刪除。</value>
+  </data>
+	<data name="DocumentDetails_FolderNotExists" xml:space="preserve">
+    <value>選擇的資料夾已從系統中刪除。</value>
+  </data>
+	<data name="DocumentDetails_NameRequired" xml:space="preserve">
+    <value>文件名稱為必須</value>
+  </data>
+	<data name="DocumentDetails_RefreshConfirm" xml:space="preserve">
+    <value>這將會捨棄未儲存的異動。您確定要繼續？</value>
+  </data>
+	<data name="DocumentDetails_RemoveAssociationConfirm" xml:space="preserve">
+    <value>確定要移除此關聯？</value>
+  </data>
+	<data name="DocumentDetails_TagsInvalid" xml:space="preserve">
+    <value>標籤僅可包含以逗號分隔的字母數字字元</value>
+  </data>
+	<data name="DocumentDetails_URLInvalid" xml:space="preserve">
+    <value>URL 不為有效的格式</value>
+  </data>
+	<data name="DocumentDetails_VersionNumberInvalid" xml:space="preserve">
+    <value>版本號碼僅可包含字母數字字元與句點</value>
+  </data>
+	<data name="DocumentDetails_VersionNumberRequired" xml:space="preserve">
+    <value>您必須指定一個版本號碼</value>
+  </data>
+	<data name="Documents_DeleteConfirm" xml:space="preserve">
+    <value>確定要刪除選擇的文件？</value>
+  </data>
+	<data name="Documents_InvalidLicense" xml:space="preserve">
+    <value>您目前的授權無法存取文件功能。</value>
+  </data>
+	<data name="Admin_HistoryChangeset" xml:space="preserve">
+    <value>此頁列出所有已選擇的專案的異動。欲檢視詳細資料和選擇性還原，或清除指定變更集項目，按下變更集編號數字。&lt;br/&gt;欲一次恢復多個項目，選擇多個核取方塊後按下「恢復」按鈕。若您選擇一個項目的多個變更集，異動將被返回至最早的變更集。您無法返回新增、清除、返回變更集。</value>
+  </data>
+	<data name="Admin_HistoryChangeDetails" xml:space="preserve">
+    <value>下列為此變更集的詳細資訊</value>
+  </data>
+	<data name="Admin_History_PurgeSure" xml:space="preserve">
+    <value>您確定要清除此項目？清除後項目將不存在於資料庫，且無法復原。</value>
+  </data>
+	<data name="Admin_History_RestoreSure" xml:space="preserve">
+    <value>復原此項目將重置所有項目。若項目已被刪除，此會取消刪除。無法復原的所有項目將保留目前的內容，其他欄位將被復原。您確定要復原此項目？</value>
+  </data>
+	<data name="ListServiceBase_EnterValidDateRange" xml:space="preserve">
+    <value>{0} 必須輸入一個合法的時間範圍值</value>
+  </data>
+	<data name="ListServiceBase_EnterValidInteger" xml:space="preserve">
+    <value>{0} 必須輸入一個合法的整數值</value>
+  </data>
+	<data name="ListServiceBase_EnterValidNumeric" xml:space="preserve">
+    <value>{0} 必須輸入一個合法的數字值</value>
+  </data>
+	<data name="Admin_History_ArtifactIsDeleted" xml:space="preserve">
+    <value>此項目已被刪除</value>
+  </data>
+	<data name="Admin_History_ErrorPurging" xml:space="preserve">
+    <value>項目無法從資料庫刪除。</value>
+  </data>
+	<data name="Admin_History_PurgingSuccessful" xml:space="preserve">
+    <value>項目從資料庫清除。</value>
+  </data>
+	<data name="Admin_History_RevertError" xml:space="preserve">
+    <value>當嘗試回復此項目時出現無法補救的錯誤。</value>
+  </data>
+	<data name="Admin_History_RevertSuccessful" xml:space="preserve">
+    <value>項目已被成功回復。</value>
+  </data>
+	<data name="Admin_History_RevertWarning" xml:space="preserve">
+    <value>項目已成功回復，但有些欄位無法復原。</value>
+  </data>
+	<data name="UserProfile_PreferencesSaved" xml:space="preserve">
+    <value>您的偏好項目已儲存。</value>
+  </data>
+	<data name="RssFeeds_UserNotExists" xml:space="preserve">
+    <value>無法找到特定 RSS 標誌的使用者，請檢查標誌，再試一次。</value>
+  </data>
+	<data name="BackgroundProcessService_Parameter1NotSpecified" xml:space="preserve">
+    <value>Parameter1 必須指定此操作</value>
+  </data>
+	<data name="BackrgroundProcessService_CompletedSuccessfully" xml:space="preserve">
+    <value>操作已成功完成</value>
+  </data>
+	<data name="Services_AutomationHostIdNotNull" xml:space="preserve">
+    <value>自動化主機編號必須為 NULL</value>
+  </data>
+	<data name="Services_AutomationHostIdMissing" xml:space="preserve">
+    <value>您必須填入 AutomationHostId 欄位以執行更新。</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateAutomationHosts" xml:space="preserve">
+    <value>您未授權建立自動化主機</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyAutomationHosts" xml:space="preserve">
+    <value>您無授權修改自動化主機</value>
+  </data>
+	<data name="Services_NotAuthorizedViewAutomationHosts" xml:space="preserve">
+    <value>您無授權檢視自動化主機</value>
+  </data>
+	<data name="Services_ItemNotBelongToProject" xml:space="preserve">
+    <value>此更新項目不屬於目前專案</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteArtifactType" xml:space="preserve">
+    <value>您無授權刪除此類型的項目</value>
+  </data>
+	<data name="Services_NotAuthorizedAddDocumentFolders" xml:space="preserve">
+    <value>您無授權新增此專案的文件資料夾</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteDocumentFolders" xml:space="preserve">
+    <value>您無授權刪除文件資料夾</value>
+  </data>
+	<data name="Services_AttachmentVersionIdNotNull" xml:space="preserve">
+    <value>DocumentVersion 物件新增時必須 AttachmentVersionId 為 NULL</value>
+  </data>
+	<data name="Services_AttachmentTypeMismatch" xml:space="preserve">
+    <value>新增的版本附件類型無法與原先的附件類型匹配。</value>
+  </data>
+	<data name="Services_ProjectAttachmentFolderIdMissing" xml:space="preserve">
+    <value>您必須提供一個專案附件資料夾編號</value>
+  </data>
+	<data name="Admin_HistoryPurgeAll" xml:space="preserve">
+    <value>這將永久清除所有此專案刪除的項目。此無法恢復。欲繼續請按下「確定」，中止請按下「取消」。</value>
+  </data>
+	<data name="Admin_HistoryRevertAll" xml:space="preserve">
+    <value>這將恢復所有項目至最早的異動。欲繼續請按下「確定」，中止請按下「取消」。</value>
+  </data>
+	<data name="ReleaseDetails_CannotMakeStartDateAfterEndDate" xml:space="preserve">
+    <value>開始日期必須等於或早於結束日期。</value>
+  </data>
+	<data name="FileUploadDialog_DirectoryNotFound" xml:space="preserve">
+    <value>管理區指定的附件資料夾不存在。</value>
+  </data>
+	<data name="FileUploadDialog_DirectorySecurityError" xml:space="preserve">
+    <value>管理區指定的附件資料夾無權限存取Web應用程式。</value>
+  </data>
+	<data name="FileUploadDialog_UploadErrorGeneral" xml:space="preserve">
+    <value>欲上傳附件 {0} 時發生錯誤</value>
+  </data>
+	<data name="TestSetList_TestSetFoldersCannotbeExecuted" xml:space="preserve">
+    <value>測試集資料夾無法執行。</value>
+  </data>
+	<data name="MasterPage_JavaScriptDisabled" xml:space="preserve">
+    <value>此應用程式欲運作正確，JavaScript 必須啟動。</value>
+  </data>
+	<data name="TestStepDetails_ArtifactNotExists" xml:space="preserve">
+    <value>目前測試步驟不再存在</value>
+  </data>
+	<data name="BackgroundProcessService_ProjectIdNotSpecified" xml:space="preserve">
+    <value>ProjectId 必須指定此操作</value>
+  </data>
+	<data name="NewsReaderService_FeedNotAccessible" xml:space="preserve">
+    <value>指定的 RSS/ATOM 消息來源無法使用</value>
+  </data>
+	<data name="NewsReaderService_FeedUrlIncorrect" xml:space="preserve">
+    <value>RSS/ATOM 消息來源格式不正確。</value>
+  </data>
+	<data name="Admin_RoleList_DeleteConfirm" xml:space="preserve">
+    <value>您確定要刪除此專案角色？</value>
+  </data>
+	<data name="SourceCodeFileDetails_AssociationAlreadyExists" xml:space="preserve">
+    <value>您無法新增已存在的關聯。</value>
+  </data>
+	<data name="BackgroundProcessService_Parameter2NotSpecified" xml:space="preserve">
+    <value>Parameter2 必須指定此操作</value>
+  </data>
+	<data name="BuildDetails_BuildNotExists" xml:space="preserve">
+    <value>選擇的建置已存在統中刪除。</value>
+  </data>
+	<data name="ReleaseDetails_ReleaseNotExists" xml:space="preserve">
+    <value>選擇的版本已從系統中刪除。</value>
+  </data>
+	<data name="IncidentDetails_FixedBuildRequired" xml:space="preserve">
+    <value>已修正的建置為必須</value>
+  </data>
+	<data name="Services_BuildIdNotNull" xml:space="preserve">
+    <value>建立時建置物件必須設定 BuildId 為 NULL</value>
+  </data>
+	<data name="ReportConfiguration_NeedsToBeInteger" xml:space="preserve">
+    <value>必須有一個整數值。</value>
+  </data>
+	<data name="ReportConfiguration_NeedsToBeIntegerList" xml:space="preserve">
+    <value>必須為以逗點區隔的整數列表</value>
+  </data>
+	<data name="RecentBuilds_NeedToSelectRelease" xml:space="preserve">
+    <value>必須選擇一個版本/迭代顯示最近的建置</value>
+  </data>
+	<data name="Admin_AssignedApprovers_Success" xml:space="preserve"><value>Approvers Updated.</value></data>
+	<data name="Services_UnableToConnectWithApiKey" xml:space="preserve"><value>無法目前 API 鍵值連結 {0}</value></data><data name="Services_NotAuthorizedModifyArtifact" xml:space="preserve"><value>無授權修改項目類型</value></data><data name="Services_NotAuthorizedViewArtifact" xml:space="preserve"><value>無授權檢視項目類型</value></data><data name="Register_ConfirmPasswordRequired" xml:space="preserve"><value>確認密碼為必須</value></data><data name="Register_EmailNotValid" xml:space="preserve"><value>輸入的電子郵件位址無效</value></data><data name="Register_EmailRequired" xml:space="preserve"><value>電子郵寄地址為必須</value></data><data name="Register_FirstNameRequired" xml:space="preserve"><value>名為必須</value></data><data name="Register_LastNameRequired" xml:space="preserve"><value>姓為必須</value></data><data name="Register_UserNameNotValid" xml:space="preserve"><value>輸入的使用者名稱無效</value></data><data name="Register_UserNameRequired" xml:space="preserve"><value>使用者名稱為必須</value></data><data name="Register_PasswordAnswerRequired" xml:space="preserve"><value>密碼回答為必須</value></data><data name="Register_PasswordQuestionRequired" xml:space="preserve"><value>密碼問題為必須</value></data><data name="Register_PasswordRequired" xml:space="preserve"><value>密碼為必須</value></data><data name="Register_PasswordsMustMatch" xml:space="preserve"><value>密碼和確認密碼必須一致。</value></data><data name="EmailPassword_AnswerRequired" xml:space="preserve"><value>回答為必須。</value></data><data name="EmailPassword_GeneralFailureText" xml:space="preserve"><value>存取您的使用者資訊有一般錯誤。請聯絡您的系統管理者。</value></data><data name="EmailPassword_UserNameFailureText" xml:space="preserve"><value>我們無法存取您的使用者資訊。請再試一次。</value></data><data name="EmailPassword_QuestionFailureText" xml:space="preserve"><value>您的密碼重置回答無法驗證。請再試一次。</value></data><data name="UserDetails_NewPasswordError5" xml:space="preserve"><value>您目前密碼不正確，無法修改密碼問題/回答。</value></data><data name="UserDetails_NewPasswordError6" xml:space="preserve"><value>新密碼包含的特殊字元不足。請必須至少有 {0} 個特殊字元。</value></data><data name="UserDetails_NewPasswordError7" xml:space="preserve"><value>新密碼長度不足，此長度必須大於 {0} 個字元。</value></data><data name="UserDetails_ToChangePasswordQuestionAnswer" xml:space="preserve"><value>欲修改您的密碼安全問題/回答，您必須輸入目前密碼和新的問題與回答。</value></data><data name="UserProfile_ErrorUpdatingProfile" xml:space="preserve"><value>欲更新您的使用者資訊時發生錯誤，請再試一次。</value></data><data name="UserDetails_CannotChangeAdminUser1" xml:space="preserve"><value>您無法改變系統管理者帳號的管理/啟動狀態。</value></data><data name="UserDetails_ConfirmPasswordRequired" xml:space="preserve"><value>必須確認新密碼</value></data><data name="UserDetails_InvalidEmailAddress" xml:space="preserve"><value>使用者的電子郵件地址無效，請更新後再試一次</value></data><data name="UserDetails_InvalidPassword" xml:space="preserve"><value>密碼無效。請確認密碼長度與特殊字元字數符合要求。</value></data><data name="UserDetails_InvalidPasswordAnswer" xml:space="preserve"><value>密碼回答太長，請使用不同回答。</value></data><data name="UserDetails_InvalidPasswordQuestion" xml:space="preserve"><value>密碼問題太長，請使用不同問題。</value></data><data name="UserDetails_InvalidUserName" xml:space="preserve"><value>使用者名稱無效。請更新後再試一次</value></data><data name="UserDetails_NeedToSpecifyDn" xml:space="preserve"><value>您必須指定 LDAP 使用者的可辨名稱 (DN)</value></data><data name="UserDetails_NewPasswordRequired" xml:space="preserve"><value>必須輸入新密碼</value></data><data name="UserDetails_PasswordAnswerRequired" xml:space="preserve"><value>必須輸入密碼還原回答</value></data><data name="UserDetails_PasswordQuestionRequired" xml:space="preserve"><value>必須輸入密碼還原問題</value></data><data name="UserDetails_PasswordsNotMatch" xml:space="preserve"><value>密碼確認與新密碼不一致</value></data><data name="UserDetails_ProviderError" xml:space="preserve"><value>無法建立/更新使用者。請確認系統事件記錄取得詳細資訊。</value></data><data name="UserDetails_UserNameInUse" xml:space="preserve"><value>輸入的使用者名稱已被使用，請選擇其他名稱。</value></data><data name="Users_PasswordError_MoreAlphaNumeric" xml:space="preserve"><value>新密碼必須有更多數字字元。</value></data><data name="Users_PasswordError_NoMatchRequired" xml:space="preserve"><value>新密碼不符核格式需求。</value></data><data name="Users_PasswordError_TooLong" xml:space="preserve"><value>新密碼太長。</value></data><data name="Users_PasswordError_TooShort" xml:space="preserve"><value>新密碼太短。</value></data><data name="Users_PasswordNotChanged" xml:space="preserve"><value>密碼無修改。</value></data><data name="Users_QuestionAnswerNotChanged" xml:space="preserve"><value>密碼問題和回答提示無修改。</value></data><data name="UserDetails_EmailAddressInvalid" xml:space="preserve"><value>電子郵寄地址為必須</value></data><data name="UserDetails_EmailAddressRequired" xml:space="preserve"><value>電子郵寄地址為必須</value></data><data name="UserDetails_FirstNameRequired" xml:space="preserve"><value>名為必須</value></data><data name="UserDetails_LastNameRequired" xml:space="preserve"><value>姓為必須</value></data><data name="UserDetails_UserNameInvalid" xml:space="preserve"><value>使用者名稱僅可包含字母、數字、句點、連字符號、底線</value></data><data name="UserDetails_UserNameRequired" xml:space="preserve"><value>使用者名稱為必須</value></data><data name="UserLdapImport_ImportSuccess" xml:space="preserve"><value>選擇的使用者已成功匯入。</value></data><data name="UserLdapImport_ImportWithErrors" xml:space="preserve"><value>匯入 LDAP 使用者已完成，包含 {0} 錯誤</value></data><data name="UserLdapImport_LdapGeneralError" xml:space="preserve"><value>錯誤存取 LDAP 伺服器：</value></data><data name="UserLdapImport_NeedToSelectOneUser" xml:space="preserve"><value>必須選擇至少一個匯入的使用者。</value></data><data name="UserLdapImport_UnableToAccessLdapServer" xml:space="preserve"><value>無法存取 LDAP 伺服器。請確認 LDAP 設定後再試一次 ({0})</value></data><data name="UserLdapImport_UnableToGetUserList" xml:space="preserve"><value>無法從 LDAP 伺服器取得使用者列表。請確認 LDAP 設定後再試一次。</value></data><data name="UserRequests_ConfirmDelete" xml:space="preserve"><value>您確定要刪除此新使用者需求？</value></data><data name="SecuritySettings_MaxInvalidPasswordAttempts_Invalid" xml:space="preserve"><value>必須為最大無效密碼嘗試次數輸入一整數值</value></data><data name="SecuritySettings_MaxInvalidPasswordAttempts_Required" xml:space="preserve"><value>必須為最大無效密碼嘗試次數輸入一數值</value></data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters_Invalid" xml:space="preserve"><value>必須為最小特殊字元數輸入一整數值</value></data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters_Required" xml:space="preserve"><value>必須為最小特殊字元數輸入一數值</value></data><data name="SecuritySettings_MinRequiredPasswordLength_Invalid" xml:space="preserve"><value>必須為最小密碼長度數輸入一整數值</value></data><data name="SecuritySettings_MinRequiredPasswordLength_Required" xml:space="preserve"><value>必須為最小密碼長度數輸入一數值</value></data><data name="SecuritySettings_PasswordAttemptWindow_Invalid" xml:space="preserve"><value>必須為密碼嘗試次數視窗輸入一整數值</value></data><data name="SecuritySettings_PasswordAttemptWindow_Required" xml:space="preserve"><value>必須為密碼嘗試次數視窗輸入一數值</value></data><data name="SecuritySettings_SaveSuccess" xml:space="preserve"><value>安全設定已儲存。</value></data><data name="GeneralSettings_AttachmentsFolderNotExists" xml:space="preserve"><value>提供的附件資料夾不存在於伺服器！</value></data><data name="GeneralSettings_AttachmentsFolderRequired" xml:space="preserve"><value>附件資料夾路徑為必須</value></data><data name="GeneralSettings_Success" xml:space="preserve"><value>一般設定已儲存。</value></data><data name="GeneralSettings_WebServerUrlInvalid" xml:space="preserve"><value>Web 伺服器 URL 無效。</value></data><data name="GeneralSettings_WebServerUrlRequired" xml:space="preserve"><value>Web 伺服器 URL 為必須</value></data><data name="GeneralSettings_EventDaysToKeepInvalid" xml:space="preserve"><value>必須為事件記錄保留輸入一整數值</value></data><data name="GeneralSettings_EventDaysToKeepRequired" xml:space="preserve"><value>必須為事件記錄保留輸入一數值</value></data><data name="EventLog_ClearLogConfirm" xml:space="preserve"><value>您確定要清除系統事件記錄，此操作將無法還原？</value></data><data name="EventLog_ClearLogFailure" xml:space="preserve"><value>無法清除系統事件記錄</value></data><data name="EventLog_ClearLogSuccess" xml:space="preserve"><value>已成功清除系統事件記錄</value></data><data name="VersionControlProviderDetails_TestFailed" xml:space="preserve"><value>無法連結版本控制提供器。請按下下方「檢視事件」連結取得更多詳細資訊。</value></data><data name="VersionControlProviderDetails_TestSuccess" xml:space="preserve"><value>已成功連結版本控制提供器。</value></data><data name="GlobalNavigation_NotHavePermissionToView" xml:space="preserve"><value>您無權限檢視此資訊。</value></data><data name="RequirementsTaskService_TaskOutsideDateRange" xml:space="preserve"><value>此任務的開始或結束日期無法超過關聯的版本/迭代日期範圍。</value></data><data name="Admin_CustomPropertyDefinition_Removed" xml:space="preserve"><value>位於 {0} 的自訂屬性已刪除。</value></data><data name="Admin_CustomPropertyDefinition_Saved" xml:space="preserve"><value>位於 {0} 的自訂屬性已儲存。</value></data><data name="Admin_System_CustomListValue_ConfirmDeleteValue" xml:space="preserve"><value>您確定要移除此值？\n任何欄位設定此直接會被重置為列表中第一個項目或為 NULL。</value></data><data name="ListServiceBase_EnterValidDecimal" xml:space="preserve"><value>必須為 {0} 輸入十進位值</value></data><data name="ListServiceBase_FieldIncorrectFormat" xml:space="preserve"><value>必須為 {0} 輸入合法格式</value></data><data name="ListServiceBase_FieldRequired" xml:space="preserve"><value>必須為 {0} 輸入一個值</value></data><data name="Admin_WorkflowDetails_AddSuccess" xml:space="preserve"><value>新工作流程轉換已成功新增。</value></data><data name="Admin_WorkflowDetails_NameRequired" xml:space="preserve"><value>必須為此轉換輸入一名稱。</value></data><data name="Admin_WorkflowStep_RequiredNotAllowed" xml:space="preserve"><value>若欄位為隱藏或取消啟動無法設定為必須欄位。</value></data><data name="Admin_WorkflowStep_UpdateSuccess" xml:space="preserve"><value>欄位和自訂屬性設定已更新</value></data><data name="Admin_Workflows_Default_CopySuccess" xml:space="preserve"><value>工作流程已成功複製</value></data><data name="Admin_Workflows_Default_DeleteConfirm" xml:space="preserve"><value>您確定要刪除此工作流程？</value></data><data name="Admin_Workflows_Default_DeleteSuccess" xml:space="preserve"><value>工作流程已成功刪除</value></data><data name="Admin_Workflows_Default_EditActiveWarning" xml:space="preserve"><value>警告：您欲編輯正在使用中的工作流程。\n您確定要繼續？</value></data><data name="Admin_Workflows_Default_NameRequired" xml:space="preserve"><value>必須為工作流程輸入名稱</value></data><data name="Admin_Workflows_Default_OneNeedsToBeActive" xml:space="preserve"><value>至少一個工作流程需被標示為啟動。</value></data><data name="Admin_Workflows_Default_SaveConfirm" xml:space="preserve"><value>工作流程已成功儲存</value></data><data name="Admin_WorkflowTransition_NameRequired" xml:space="preserve"><value>必須輸入轉換名稱！</value></data><data name="Admin_WorkflowTransition_SettingsSaved" xml:space="preserve"><value>工作流程轉換設定已更新</value></data><data name="IncidentsService_IncidentNotFound" xml:space="preserve"><value>無法取回不存在的事件 IN{0} 。</value></data><data name="TasksService_DatesOutsideBounds" xml:space="preserve"><value>開始或結束此任務不可超過關聯的版本/迭代的時間範圍。</value></data><data name="TestRunService_TestSetNotValid" xml:space="preserve"><value>選擇的測試集為資料夾或已不再存在。</value></data><data name="Services_CustomPropertyDefinitionsNotLoaded" xml:space="preserve"><value>必須載入項目的自訂屬性定義！</value></data><data name="Services_CustomListDoesNotExist" xml:space="preserve"><value>請求的自訂列表不存在於此專案。</value></data><data name="Services_NoAvailableCustomProperties" xml:space="preserve"><value>此專案中剩餘的項目類型自訂屬性無法使用</value></data><data name="TestExecutionService_TestRunsPendingIdNotProvided" xml:space="preserve"><value>必須為 TestRunsPendingId 參數輸入一個值</value></data><data name="TestExecutionService_NoTestRunsFound" xml:space="preserve"><value>擱置記錄中找不到測試執行</value></data><data name="RequirementsService_RequirementNotFound" xml:space="preserve"><value>無法取回不存在的需求 RQ{0}。</value></data><data name="ReleasesService_ReleaseNotFound" xml:space="preserve"><value>無法取回不存在的版本/迭代 RL{0}。</value></data><data name="TestSetService_TestSetNotFound" xml:space="preserve"><value>無法取回不存在的測試集 TX{0}。</value></data><data name="TasksService_TaskNotFound" xml:space="preserve"><value>無法取回不存在的任務 TK{0}。</value></data><data name="AutomationHostsService_AutomationHostNotFound" xml:space="preserve"><value>無法取回不存在的自動化主機 AH{0}。</value></data><data name="TestCaseService_TestCaseNotFound" xml:space="preserve"><value>無法取回不存在的測試案例 TC{0}。</value></data><data name="TestStepService_TestStepNotFound" xml:space="preserve"><value>無法取回不存在的測試步驟 TS{0}。</value></data><data name="TestRunService_TestRunNotFound" xml:space="preserve"><value>無法取回不存在的測試執行 TR{0}。</value></data><data name="ReportViewer_ReportFormatIdMissing" xml:space="preserve"><value>必須提供報表格式編號。</value></data><data name="ReportViewer_ReportIdNotValid" xml:space="preserve"><value>必須提供一個有效的數字報表編號。</value></data><data name="ReportViewer_QueryStringEmpty" xml:space="preserve"><value>報表查詢字串為空，中止產生報表!</value></data><data name="ReportViewer_GeneratedReportNotExists" xml:space="preserve"><value>產生的報表已不存在。</value></data><data name="ReportViewer_InvalidGeneratedId" xml:space="preserve"><value>必須提供有效的數字報表產生編號。</value></data><data name="ReportViewer_NeedGeneratedId" xml:space="preserve"><value>必須提供報表產生編號。</value></data><data name="ReportViewer_NotAuthorizedToViewGeneratedReport" xml:space="preserve"><value>無權限檢視產生的報表！</value></data><data name="PendingTestRuns_DeleteConfirm" xml:space="preserve"><value>您確定要刪除此擱置測試執行？</value></data><data name="Admin_Reports_DeleteConfirm" xml:space="preserve"><value>您確定要刪除此報表？此操作無法還原！</value></data><data name="Admin_Reports_ReportCopied" xml:space="preserve"><value>報表已成功複製。</value></data><data name="Admin_Reports_ReportDeleted" xml:space="preserve"><value>報表已成功刪除。</value></data><data name="Admin_ReportDetails_DeleteSectionConfirm" xml:space="preserve"><value>您確定要刪除此部份？此操作將無法還原。</value></data><data name="Admin_CustomPropertyDefinition_RemoveProperty" xml:space="preserve"><value>您確定要移除此屬性？\n若繼續此欄位存在的值將無法存取。</value></data><data name="Admin_DataTools_CurrentStatusBad" xml:space="preserve"><value>&lt;span style="color:darkred;"&gt;錯誤&lt;/span&gt;</value></data><data name="Admin_DataTools_CurrentStatusGood" xml:space="preserve"><value>&lt;span style="color:darkgreen;"&gt;確定&lt;/span&gt;</value></data><data name="Admin_DataTools_Intro1" xml:space="preserve"><value>欲改進應用程式效能，將會快取資料的一些類型。有時候修改了下方的資料，您可能要重整快取資訊。欲重整，請按下一個下方的連結：</value></data><data name="Admin_DataTools_Intro2" xml:space="preserve"><value>有時損壞的縮排資訊會導致遺失或重複資料列。若任何下方旗標顯示「錯誤」，您可按下連結嘗試修復：</value></data><data name="Admin_DataTools_RefreshThe" xml:space="preserve"><value>重新整理</value></data><data name="Admin_DataTools_TaskProgressCache" xml:space="preserve"><value>任務進度快取</value></data><data name="Admin_DataTools_TestStatusCache" xml:space="preserve"><value>測試狀態快取</value></data><data name="Admin_DataTools_Title" xml:space="preserve"><value>資料工具</value></data><data name="Admin_DataTools_Correct" xml:space="preserve"><value>正確</value></data><data name="Admin_DataTools_UpdatingTaskProgress" xml:space="preserve"><value>更新任務進度..</value></data><data name="Admin_DataTools_UpdatingTestStatus" xml:space="preserve"><value>更新測試狀態..</value></data><data name="Admin_DataTools_IndentFixingRelease" xml:space="preserve"><value>修正版本事件..</value></data><data name="Admin_DataTools_IndentFixingRequirement" xml:space="preserve"><value>修正需求事件..</value></data><data name="Admin_DataTools_IndentFixingTestCase" xml:space="preserve"><value>修正測試案例事件..</value></data><data name="Admin_DataTools_IndentFixingTestSet" xml:space="preserve"><value>修正測試集事件..</value></data><data name="Admin_History_PurgingAll" xml:space="preserve"><value>清除所有刪除項目..</value></data><data name="Admin_History_Restoring" xml:space="preserve"><value>還原選擇項目..</value></data><data name="Admin_History_RestoreError" xml:space="preserve"><value>您必須選擇至少一個欲恢復的項目。</value></data><data name="DocumentDetails_ArtifactAlreadyAttached" xml:space="preserve"><value>項目關聯已存在。</value></data><data name="Services_CustomPropertyDoesNotExist" xml:space="preserve"><value>請求的自訂屬性不存在於此專案。</value></data><data name="Services_CustomPropertyNotBelongToProject" xml:space="preserve"><value>指定的自訂屬性不屬於目前專案</value></data><data name="Services_CustomPropertyIdNotNull" xml:space="preserve"><value>新增 RemoteCustomProperty 物件時 CustomPropertyId 必須設為 NULL</value></data><data name="Admin_RoleDetails_CannotDeactivateProjectOwner" xml:space="preserve"><value>內建的專案擁有者角色不可被取消啟動！</value></data><data name="SecuritySettings_AuthenticationExpirationRememberMe_Required" xml:space="preserve"><value>必須為 「提醒我到期」輸入一個值！</value></data><data name="SecuritySettings_AuthenticationExpirationRememberMe_Invalid" xml:space="preserve"><value>必須為 「提醒我到期」輸入一個整數值！</value></data><data name="SecuritySettings_AuthenticationExpiration_Required" xml:space="preserve"><value>必須為 「提醒我到期」輸入一個整數值！</value></data><data name="SecuritySettings_AuthenticationExpiration_Invalid" xml:space="preserve"><value>必須為 「認證到期」輸入一個整數值！</value></data><data name="Admin_EmailConfig_Seperator" xml:space="preserve"><value>寄送信件匯入器分隔符號？</value></data><data name="Admin_EmailConfig_Seperator_Small" xml:space="preserve"><value>若啟動，所有寄出的信件將包含需清除的回覆分隔符號將轉換程說明。</value></data><data name="Admin_CustomLists_CannotRemoveInUse" xml:space="preserve"><value>無法移除使用中的列表。</value></data><data name="Admin_CustomLists_Removed" xml:space="preserve"><value>自訂列表已移除。</value></data><data name="TestExecutionService_TestRunHasNoSteps" xml:space="preserve"><value>目前測試執行沒有任何測試步驟，無法被執行。</value></data><data name="DocumentFolders_ConfirmDelete" xml:space="preserve"><value>這將刪除選擇的資料夾、任何子資料夾、包含的文件。您確定要繼續？</value></data><data name="DocumentTypes_Success" xml:space="preserve"><value>文件類型已成功更新</value></data><data name="IncidentPriorities_AtLeastOneMustBeActive" xml:space="preserve"><value>至少一個事件屬性需被標示為啟動。</value></data><data name="IncidentPriorities_ColorInvalid" xml:space="preserve"><value>必須為事件優先度輸入有效顏色代碼</value></data><data name="IncidentPriorities_ColorRequired" xml:space="preserve"><value>必須為事件優先度輸入一個顏色代碼</value></data><data name="IncidentPriorities_NameRequired" xml:space="preserve"><value>必須為事件優先度輸入一個名稱</value></data><data name="IncidentPriorities_Success" xml:space="preserve"><value>事件屬性已成功更新</value></data><data name="IncidentSeverities_AtLeastOneMustBeActive" xml:space="preserve"><value>至少一個事件嚴重性需被標示為啟動。</value></data><data name="IncidentSeverities_ColorInvalid" xml:space="preserve"><value>必須為事件嚴重性輸入有效顏色代碼</value></data><data name="IncidentSeverities_ColorRequired" xml:space="preserve"><value>必須為事件嚴重性輸入一個顏色代碼</value></data><data name="IncidentSeverities_NameRequired" xml:space="preserve"><value>必須為事件嚴重性輸入一個名稱</value></data><data name="IncidentSeverities_Success" xml:space="preserve"><value>事件嚴重性已成功更新</value></data><data name="IncidentStatuses_NameRequired" xml:space="preserve"><value>必須為事件狀態輸入一個名稱</value></data><data name="IncidentStatuses_Success" xml:space="preserve"><value>事件狀態已成功更新</value></data><data name="IncidentTypes_CannotSetDefaultTypeInactive" xml:space="preserve"><value>您無法將預設的事件類型設為取消啟動</value></data><data name="IncidentTypes_NameRequired" xml:space="preserve"><value>必須為事件類型輸入一個名稱</value></data><data name="IncidentTypes_Success" xml:space="preserve"><value>事件類型已成功更新</value></data><data name="LdapConfiguration_SettingsSaved" xml:space="preserve"><value>LDAP 伺服器的範例使用者已驗證成功。設定已儲存。</value></data><data name="LdapConfiguration_SettingsSavedWithoutTesting" xml:space="preserve"><value>設定已存存，範例使用者無測試。</value></data><data name="LicenseDetails_EvalLicenseExpired" xml:space="preserve"><value>示範授權金鑰已過期。&amp;nbsp;&lt;br&gt;&amp;nbsp;請聯絡客戶支援取得新授權。</value></data><data name="LicenseDetails_LicenseKeyRequired" xml:space="preserve"><value>授權金鑰為必須</value></data><data name="LicenseDetails_OrganizationRequired" xml:space="preserve"><value>授權組織名稱為必須</value></data><data name="LicenseDetails_ProductOrgLicenseNotValid" xml:space="preserve"><value>產品名稱、授權金鑰和/或組織名稱無效。&amp;nbsp;&lt;br /&gt;&amp;nbsp;確認您輸入相同產品金鑰和組織名稱與客戶帳號中所列相同。</value></data><data name="LicenseDetails_Success" xml:space="preserve"><value>授權詳細資訊已成功更新</value></data><data name="Admin_PlanningOptions_NonWorkingHoursExceedWorkingHours" xml:space="preserve"><value>非工作時數不可大於工作時數！</value></data><data name="Admin_PlanningOptions_Success" xml:space="preserve"><value>專案計畫選項已儲存。</value></data><data name="Admin_PlanningOptions_WorkHoursPerDayRequired" xml:space="preserve"><value>每天工作時數為必須</value></data><data name="Admin_PlanningOptions_WorkingDaysPerWeekNotInRange" xml:space="preserve"><value>每週工作天數必須介於1-7</value></data><data name="Admin_PlanningOptions_WorkingHoursPerDayNotInRange" xml:space="preserve"><value>每天工作時數必須介於1-24</value></data><data name="Admin_ProjectDetails_NotExists" xml:space="preserve"><value>無法找到已存在專案。</value></data><data name="Admin_ProjectDetails_ProjectNameRequired" xml:space="preserve"><value>專案名稱為必須</value></data><data name="Admin_ProjectDetails_WebSiteUrlInvalid" xml:space="preserve"><value>網站必須有一個有效 URL</value></data><data name="Admin_ProjectGroupDetails_CannotMakeDefaultInactive" xml:space="preserve"><value>您無法將預設專案群組設為取消啟動</value></data><data name="Admin_ProjectGroupDetails_CannotMakeInactiveDefault" xml:space="preserve"><value>您無法將系統中預設的專案群組為取消啟動。</value></data><data name="Admin_ProjectGroupDetails_ConfirmUserDelete" xml:space="preserve"><value>您確定要從此專案群組移除使用者？</value></data><data name="Admin_ProjectGroupDetails_MembershipRemoved" xml:space="preserve"><value>專案群組成員已成功移除。</value></data><data name="Admin_ProjectGroupDetails_MembershipUpdated" xml:space="preserve"><value>專案群組成員已更新。</value></data><data name="Admin_ProjectGroupDetails_NameRequired" xml:space="preserve"><value>專案群組名稱為必須</value></data><data name="Admin_ProjectGroupDetails_NeedAtLeastOneDefault" xml:space="preserve"><value>必須有至少一個預設專案群組。請將另一個群組設為預設，而非設定此為「否」。</value></data><data name="Admin_ProjectGroupDetails_NotExists" xml:space="preserve"><value>無法找到已存在專案群組。</value></data><data name="Admin_ProjectGroups_CannotDeleteDefault" xml:space="preserve"><value>您無法刪除預設專案群組。</value></data><data name="Admin_ProjectGroups_DeleteConfirm" xml:space="preserve"><value>您確定要刪除此專案群組？這將移動所有專案至預設群組。</value></data><data name="Global_EnterValidDateValue" xml:space="preserve"><value>必須為{0}輸入一個有效日期！</value></data><data name="LdapConfiguration_FailedToAuthenticate" xml:space="preserve"><value>警告： LDAP 伺服器認證失敗，請確認設定後再試一次。設定尚未儲存。</value></data><data name="Admin_PlanningOptions_NonWorkingHoursPerMonthNotInteger" xml:space="preserve"><value>每月非工作時數應為整數值</value></data><data name="Admin_PlanningOptions_NonWorkingHoursPerMonthRequired" xml:space="preserve"><value>每月非工作時數為必須</value></data><data name="Admin_PlanningOptions_WorkDaysPerWeekNotInteger" xml:space="preserve"><value>每週工作天數應為整數值</value></data><data name="Admin_PlanningOptions_WorkDaysPerWeekRequired" xml:space="preserve"><value>每週工作天數為必須</value></data><data name="Admin_PlanningOptions_WorkHoursPerDayNotInteger" xml:space="preserve"><value>每天工作時數應為整數值</value></data><data name="Admin_ProjectGroupMembershipAdd_UserAlreadyMember" xml:space="preserve"><value>您無法新增已為專案群組成員的使用者！</value></data><data name="Admin_ProjectMembershipAdd_UserAlreadyMember" xml:space="preserve"><value>您無法新增已為專案成員的使用者！</value></data><data name="Admin_ProjectMembership_ConfirmRemove" xml:space="preserve"><value>您確定要從專案移除使用者？</value></data><data name="Admin_ProjectMembership_DeleteSuccess" xml:space="preserve"><value>專案成員已成功移除。</value></data><data name="Admin_ProjectMembership_Success" xml:space="preserve"><value>專案成員已更新。</value></data><data name="Admin_ActiveSessions_ConfirmEnd" xml:space="preserve"><value>您確定要結束此使用者的連線？</value></data><data name="Admin_AutomationEngineDetails_DeleteConfirm" xml:space="preserve"><value>您確定要刪除此外掛程式？這將刪除所有對應項目資料，且無法還原！</value></data><data name="Admin_AutomationEngineDetails_NameRequired" xml:space="preserve"><value>必須為此引擎指定名稱</value></data><data name="Admin_AutomationEngineDetails_TokenNotUnique" xml:space="preserve"><value>必須為此自動化引擎輸入唯一標誌。這個已使用中。</value></data><data name="Admin_AutomationEngineDetails_TokenRequired" xml:space="preserve"><value>必須為此引擎指定標誌</value></data><data name="Admin_AutomationEngines_DeleteConfirm" xml:space="preserve"><value>您確定要刪除此引擎？這將刪除所有設定，且無法還原！</value></data><data name="Admin_DataSyncCustomPropertyMapping_Success" xml:space="preserve"><value>自訂屬性對應已成功儲存</value></data><data name="Admin_DataSyncDetails_ConnectionRequired" xml:space="preserve"><value>必須為外掛程式指定連線資訊</value></data><data name="Admin_DataSyncDetails_LoginRequired" xml:space="preserve"><value>必須為外掛程式指定一個登入</value></data><data name="Admin_DataSyncDetails_NameRequired" xml:space="preserve"><value>必須為外掛程式指定一個名稱</value></data><data name="Admin_DataSyncDetails_PlugInDeleted" xml:space="preserve"><value>選擇的資料同步已從系統中刪除</value></data><data name="Admin_DataSyncDetails_TimeOffsetInvalid" xml:space="preserve"><value>您必須指定時間偏移量整數值</value></data><data name="Admin_DataSyncDetails_TimeOffsetRequired" xml:space="preserve"><value>您必須指定時間偏移量值</value></data><data name="Admin_DataSyncFieldMapping_Success" xml:space="preserve"><value>欄位值對應已成功儲存</value></data><data name="Admin_DataSyncProjects_CustomPropertyNotExists" xml:space="preserve"><value>選擇的自訂屬性已從系統中刪除。</value></data><data name="Admin_DataSyncProjects_DataSyncNotExists" xml:space="preserve"><value>選擇的資料同步已從系統中刪除</value></data><data name="Admin_DataSyncProjects_NeedToSelectProject" xml:space="preserve"><value>設定資料對應前必須先選擇一個專案。</value></data><data name="Admin_DataSyncProjects_NeedToSetExternalKey" xml:space="preserve"><value>必須為此專案設定外部鍵值</value></data><data name="Admin_DataSyncProjects_SettingsSaved" xml:space="preserve"><value>專案資料同步設定已儲存</value></data><data name="Admin_DocumentFolderDetails_CannotInsertRoot" xml:space="preserve"><value>您無法插入一個新的專案根資料夾</value></data><data name="Admin_DocumentFolderDetails_CannotSetParentToYourChild" xml:space="preserve"><value>您設定目前資料夾的子資料夾為父資料夾。</value></data><data name="Admin_DocumentFolderDetails_FolderNameRequired" xml:space="preserve"><value>資料夾名稱為必須</value></data><data name="Admin_EmailConfiguration_AddressInvalid" xml:space="preserve"><value>電子郵寄地址輸入無效。</value></data><data name="Admin_EmailConfiguration_EventNameRequired" xml:space="preserve"><value>事件名稱為必須</value></data><data name="Admin_EmailConfiguration_FromAddressRequired" xml:space="preserve"><value>電子郵件來源為必須</value></data><data name="Admin_EmailConfiguration_PortNumberInvalid" xml:space="preserve"><value>SMTP 埠號必須為整數</value></data><data name="Admin_EmailConfiguration_Success" xml:space="preserve"><value>電子郵件設定已儲存。</value></data><data name="Admin_Notification_ErrorSendingTestEmail" xml:space="preserve"><value>寄送測試信件發生錯誤。確認 SMTP 設定，修正後再試一次。</value></data><data name="Admin_Notification_SubjectLineRequired" xml:space="preserve"><value>通知主旨線為必須</value></data><data name="Admin_RoleDetails_NameRequired" xml:space="preserve"><value>角色名稱為必須</value></data><data name="Admin_VersionControlProject_NeedToSelectProject" xml:space="preserve"><value>設置版本控制設定前必須先選擇一個專案。</value></data><data name="Admin_VersionControlProject_Success" xml:space="preserve"><value>專案設定已成功更新</value></data><data name="Admin_VersionControlProvider_ConnectionInfoRequired" xml:space="preserve"><value>必須為提供器指定連線資訊</value></data><data name="Admin_VersionControlProvider_HasBeenDeleted" xml:space="preserve"><value>選擇的提供器已從系統中刪除。</value></data><data name="Admin_VersionControlProvider_LoginRequired" xml:space="preserve"><value>必須為提供器指定登入</value></data><data name="Admin_VersionControlProvider_NameRequired" xml:space="preserve"><value>必須為提供器指定名稱</value></data><data name="Admin_VersionControlProvider_PasswordRequired" xml:space="preserve"><value>必須為提供器登入指定密碼</value></data><data name="Admin_VersionControlProvider_Success" xml:space="preserve"><value>提供器已成功更新</value></data><data name="PlanningOptions_DefaultEstimateInvalid" xml:space="preserve"><value>預設預估為無效</value></data><data name="PlanningOptions_PointEffortInvalid" xml:space="preserve"><value>點預估為無效</value></data><data name="Admin_Components_Saved" xml:space="preserve"><value>模組已成功儲存</value></data><data name="Admin_Components_SaveError" xml:space="preserve"><value>儲存模組時發生錯誤</value></data><data name="Global_UnableRetrieveTooltip" xml:space="preserve"><value>無法取回提示..</value></data><data name="ReleaseDetails_ScenarioStepDeleteConfirm" xml:space="preserve"><value>您確定要刪除選擇的情境步驟？</value></data><data name="TasksService_TaskFolderIdNotInteger" xml:space="preserve"><value>ParentNodeId 必須為整數值！</value></data><data name="TasksService_TaskFolderNameRequired" xml:space="preserve"><value>新任務資料夾名稱為必須！</value></data><data name="DocumentsService_DocumentFolderIdNotInteger" xml:space="preserve"><value>ParentNodeId 必須為整數值！</value></data><data name="DocumentsService_DocumentFolderNameRequired" xml:space="preserve"><value>新聞鍵資料夾名稱為必須！</value></data><data name="UserProfile_AvatarNotRemoved" xml:space="preserve"><value>從系統中移除您的頭像圖片發生錯誤。</value></data><data name="UserProfile_AvatarRemoved" xml:space="preserve"><value>您的頭像圖片已移除。將此異動傳送至全系統需花些時間。</value></data><data name="UserProfile_AvatarTooLarge" xml:space="preserve"><value>頭像圖示大小必須小於 100KB。</value></data><data name="UserProfile_AvatarWrongType" xml:space="preserve"><value>頭像圖示僅支援 GIF、JPG、PNG 文件類型。</value></data><data name="Global_DataSavedWithoutNewComment" xml:space="preserve"><value>項目資料已儲存，但新的說明無法被新增。</value></data><data name="GeneralSettings_InstantMessengerRetentionInvalid" xml:space="preserve"><value>必須為即時訊息保留輸入一個整數值</value></data><data name="GeneralSettings_InstantMessengerRetentionRequired" xml:space="preserve"><value>必須為即時訊息保留輸入一個值</value></data><data name="Timecard_AdditionalEffortInvalid" xml:space="preserve"><value>至少一個額外工時值為無效！</value></data><data name="Timecard_RemainingEffortInvalid" xml:space="preserve"><value>至少一個剩餘工時值為無效！</value></data><data name="Services_NotAuthorizedModifyProject" xml:space="preserve"><value>使用此功能必須為專案管理者。</value></data><data name="TestExecutionService_NoTestCaseFound" xml:space="preserve"><value>當此測試找不到時無法儲存測試結果。繼續進行下一個測試。</value></data><data name="Global_DatabaseTimeout" xml:space="preserve"><value>執行此命令時發生資料庫逾時。請重整資料庫索引 (參閱 KB10)。</value></data><data name="Admin_VersionControlProvider_ClearCacheWarning" xml:space="preserve"><value>清除快取會導致系統從提供器重整版本控制資訊。這將導致來源控制頁面成為取消啟動直到完成異動。您確定要繼續？</value></data><data name="Admin_TaraVault_NotActive" xml:space="preserve"><value>TaraVault 為不啟動。一旦啟動必須為任何 {0} 專案建立一個 TaraVault 專案用於版本控制儲存庫。若要啟動 TaraVault，請按下下方案紐。</value></data><data name="SourceCodeList_CacheNotReadyError" xml:space="preserve"><value>來源碼儲存庫瀏覽器目前正在初始化。請重整頁面，再試一次。</value></data><data name="SourceCodeFileDetails_PreviewNotAvailable" xml:space="preserve"><value>無法使用此文件預覽。</value></data><data name="Admin_TaraVault_Active" xml:space="preserve"><value>TaraVault 已啟動！您的帳號 {0} 已被設定為 TaraVault 使用者。 每個 {1} 專案使用前需啟動、設定。</value></data><data name="Admin_User_TaraVaultNoProjects" xml:space="preserve"><value>使用者為活動中，但無指派任何專案。</value></data><data name="Admin_User_TaraVaultNoAvailProjects" xml:space="preserve"><value>此使用者已屬於所有啟動 TaraVault 的專案。</value></data><data name="Admin_WorkflowDetails_DeleteConfirm" xml:space="preserve"><value>您確定要刪除此轉換？</value></data><data name="Admin_VersionControl_ReloadingCache" xml:space="preserve"><value>重新載入版本控制快取..</value></data><data name="VersionControl_CacheUpdateRunning" xml:space="preserve"><value>正在執行來源碼快取更新..</value></data><data name="VersionControl_CacheUpToDate" xml:space="preserve"><value>來源碼快取為最新版本。</value></data><data name="Services_NotAuthorizedCreateAutomationEngines" xml:space="preserve"><value>未授權建立自動化引擎 - 必須為系統管理者</value></data><data name="ListServiceBase_EnterValidEffortRange" xml:space="preserve"><value>必須為 {0} 輸入有效工時範圍值</value></data></root>

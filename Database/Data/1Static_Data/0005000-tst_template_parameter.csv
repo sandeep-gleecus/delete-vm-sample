@@ -1,0 +1,8 @@
+parameterid:Key,templateid:Normal,parameterlabel:String,parametertype:String
+2051,3098,TestCaseID,NUMBER
+2052,3099,TestCaseID,NUMBER
+2053,3100,TestRunID,NUMBER
+2054,3101,TestRunID,NUMBER
+2055,3102,ProjectID,NUMBER
+2056,3103,ProjectID,NUMBER
+2057,3104,ProjectID,NUMBER

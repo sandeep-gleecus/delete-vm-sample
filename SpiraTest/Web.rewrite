@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RewriterConfig>
+	<Rules>
+		<!-- ** My page Tab ** -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/MyPage\.aspx</LookFor>
+			<SendTo>~/ProjectList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/MyPage\.aspx</LookFor>
+			<SendTo>~/ProjectList.aspx</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/MyPage\.aspx</LookFor>
+			<SendTo>~/ProjectList.aspx</SendTo>
+		</RewriterRule>
+
+		<!-- ** Project Home Tab ** -->
+		<!-- Project Home -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/ProjectHomeSelector.ashx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/General\.aspx</LookFor>
+			<SendTo>~/ProjectHome.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Test\.aspx</LookFor>
+			<SendTo>~/ProjectHome2.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Dev\.aspx</LookFor>
+			<SendTo>~/ProjectHome3.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule Redirect="true">
+			<LookFor>~/\.aspx</LookFor>
+			<SendTo>~/MyPage.aspx</SendTo>
+		</RewriterRule>
+		<!-- Project Group -->
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/ProjectGroupHomeSelector.ashx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)/General\.aspx</LookFor>
+			<SendTo>~/ProjectGroupHome.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)/Test\.aspx</LookFor>
+			<SendTo>~/ProjectGroupHome2.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)/Dev\.aspx</LookFor>
+			<SendTo>~/ProjectGroupHome3.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<!-- Project Group Planning Board -->
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)/PlanningBoard\.aspx</LookFor>
+			<SendTo>~/ProjectGroupPlanningBoard.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<!-- Project Group Releases -->
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)/Releases\.aspx</LookFor>
+			<SendTo>~/ProjectGroupReleases.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<!-- Project Group Incidents -->
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)/Incidents\.aspx</LookFor>
+			<SendTo>~/ProjectGroupIncidents.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<!-- Portfolio -->
+		<RewriterRule>
+			<LookFor>~/pf/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/PortfolioHome.aspx?portfolioId=$1</SendTo>
+		</RewriterRule>
+		<!-- Documents -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/GroupHome/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/ProjectGroupHome.aspx?projectId=$1&amp;projectGroupId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/ProjectGroupHome.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<!-- Project Group Planning Board -->
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)/PlanningBoard\.aspx</LookFor>
+			<SendTo>~/ProjectGroupPlanningBoard.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<!-- Project Group Releases -->
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)/Releases\.aspx</LookFor>
+			<SendTo>~/ProjectGroupReleases.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<!-- Project Group Incidents -->
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)/Incidents\.aspx</LookFor>
+			<SendTo>~/ProjectGroupIncidents.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<!-- Documents -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Document/List\.aspx</LookFor>
+			<SendTo>~/Documents.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Document/List/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/Documents.aspx?projectId=$1&amp;folderId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Document/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/DocumentDetails.aspx?projectId=$1&amp;attachmentId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Document/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/DocumentDetails.aspx?projectId=$1&amp;attachmentId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule Redirect="true">
+			<LookFor>~/([0-9]+?)/Attachment/List\.aspx</LookFor>
+			<SendTo>~/$1/Document/List.aspx</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Attachment/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/AttachmentViewer.ashx?attachmentId=$2&amp;projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Attachment/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/AttachmentViewer.ashx?attachmentId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/AttachmentVersion/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/AttachmentViewer.ashx?attachmentVersionId=$2&amp;projectId=$1</SendTo>
+		</RewriterRule>
+		<!-- ** Planning Tab ** -->
+		<!-- Requirements -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Requirement/List\.aspx</LookFor>
+			<SendTo>~/RequirementSelector.ashx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Requirement/Tree\.aspx</LookFor>
+			<SendTo>~/Requirements.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Requirement/Table\.aspx</LookFor>
+			<SendTo>~/RequirementsList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Requirement/Board\.aspx</LookFor>
+			<SendTo>~/RequirementsBoard.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Requirement/Document\.aspx</LookFor>
+			<SendTo>~/RequirementsDocument.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Requirement/Map\.aspx</LookFor>
+			<SendTo>~/RequirementsMap.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule Redirect="true">
+			<LookFor>~/([0-9]+?)/Requirement/New\.aspx</LookFor>
+			<SendTo>~/Requirements.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Requirement/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/RequirementDetails.aspx?projectId=$1&amp;requirementId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Requirement/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/RequirementDetails.aspx?projectId=$1&amp;requirementId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Requirement/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/RequirementDetails.aspx?requirementId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- Releases -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Release/List\.aspx</LookFor>
+			<SendTo>~/ReleaseSelector.ashx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Release/Tree\.aspx</LookFor>
+			<SendTo>~/Releases.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Release/Gantt\.aspx</LookFor>
+			<SendTo>~/ReleaseGantt.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Release/Map\.aspx</LookFor>
+			<SendTo>~/ReleasesMap.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Release/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/ReleaseDetails.aspx?projectId=$1&amp;releaseId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Release/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/ReleaseDetails.aspx?projectId=$1&amp;releaseId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+
+		<!-- Iterations -->
+		<RewriterRule Redirect="true">
+			<LookFor>~/([0-9]+?)/Iteration\.aspx</LookFor>
+			<SendTo>~/PlanningBoard.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule Redirect="true">
+			<LookFor>~/([0-9]+?)/IterationPlan\.aspx</LookFor>
+			<SendTo>~/PlanningBoard.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule Redirect="true">
+			<LookFor>~/Iteration.*</LookFor>
+			<SendTo>~/MyPage.aspx</SendTo>
+		</RewriterRule>
+
+		<!-- PlanningBoard -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/PlanningBoard\.aspx</LookFor>
+			<SendTo>~/PlanningBoard.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- **Testing Tab** -->
+		<!-- Test Cases -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestCase/List\.aspx</LookFor>
+			<SendTo>~/TestCaseList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestCase/List/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestCaseList.aspx?projectId=$1&amp;folderId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestCase/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestCaseDetails.aspx?projectId=$1&amp;testCaseId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestCase/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/TestCaseDetails.aspx?projectId=$1&amp;testCaseId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/TestCase/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestCaseDetails.aspx?testCaseId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- Test Sets -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestSet/List\.aspx</LookFor>
+			<SendTo>~/TestSetList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestSet/List/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestSetList.aspx?projectId=$1&amp;folderId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestSet/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestSetDetails.aspx?projectId=$1&amp;testSetId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestSet/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/TestSetDetails.aspx?projectId=$1&amp;testSetId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestSetTestCase/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestSetTestCaseRedirect.ashx?projectId=$1&amp;testSetTestCaseId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/TestSet/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestSetDetails.aspx?testSetId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- Test Runs -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestRun/List\.aspx</LookFor>
+			<SendTo>~/TestRunList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestRun/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestRunDetails.aspx?projectId=$1&amp;testRunId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestRun/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/TestRunDetails.aspx?projectId=$1&amp;testRunId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestCaseRun/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestRunDetails.aspx?projectId=$1&amp;testCaseId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestStepRun/([0-9]+?)/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestRunDetails.aspx?projectId=$1&amp;testCaseId=$2&amp;testStepId=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestSetTestCaseRun/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestSetTestCaseRunRedirect.ashx?projectId=$1&amp;testSetTestCaseId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestExecute/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestCaseExecution.aspx?projectId=$1&amp;testRunsPendingId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestExecuteExploratory/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestCaseExecutionExploratory.aspx?projectId=$1&amp;testRunsPendingId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestLaunch/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestSetLaunch.aspx?projectId=$1&amp;testSetId=$2</SendTo>
+		</RewriterRule>
+
+		<!-- Automation Hosts -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/AutomationHost/List\.aspx</LookFor>
+			<SendTo>~/AutomationHosts.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/AutomationHost/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/AutomationHostDetails.aspx?projectId=$1&amp;automationHostId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/AutomationHost/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/AutomationHostDetails.aspx?projectId=$1&amp;automationHostId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+
+		<!-- Test Configurations -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestConfiguration/List\.aspx</LookFor>
+			<SendTo>~/TestConfigurations.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestConfiguration/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestConfigurationDetails.aspx?projectId=$1&amp;testConfigurationSetId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestConfiguration/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/TestConfigurationDetails.aspx?projectId=$1&amp;testConfigurationSetId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+
+		<!-- Test Steps -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestStep/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TestStepDetails.aspx?projectId=$1&amp;testStepId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/TestStep/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/TestStepDetails.aspx?projectId=$1&amp;testStepId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+
+		<!-- ** Tracking Tab ** -->
+		<!-- Incidents -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Incident/List\.aspx</LookFor>
+			<SendTo>~/IncidentSelector.ashx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Incident/Table\.aspx</LookFor>
+			<SendTo>~/IncidentList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Incident/Board\.aspx</LookFor>
+			<SendTo>~/IncidentBoard.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Incident/New\.aspx</LookFor>
+			<SendTo>~/IncidentDetails.aspx?projectId=$1&amp;incidentId=-1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Incident/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/IncidentDetails.aspx?projectId=$1&amp;incidentId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Incident/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/IncidentDetails.aspx?projectId=$1&amp;incidentId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Incident/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/IncidentDetails.aspx?incidentId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- Risks -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Risk/List\.aspx</LookFor>
+			<SendTo>~/RiskList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Risk/New\.aspx</LookFor>
+			<SendTo>~/RiskDetails.aspx?projectId=$1&amp;riskId=-1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Risk/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/RiskDetails.aspx?projectId=$1&amp;riskId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Risk/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/RiskDetails.aspx?projectId=$1&amp;riskId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+
+		<!-- Tasks -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Task/List\.aspx</LookFor>
+			<SendTo>~/TaskSelector.ashx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Task/Table\.aspx</LookFor>
+			<SendTo>~/TaskList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Task/Table/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TaskList.aspx?projectId=$1&amp;folderId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Task/Board\.aspx</LookFor>
+			<SendTo>~/TaskBoard.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Task/Gantt\.aspx</LookFor>
+			<SendTo>~/TaskGantt.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Task/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TaskDetails.aspx?projectId=$1&amp;taskId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Task/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/TaskDetails.aspx?projectId=$1&amp;taskId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Task/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/TaskDetails.aspx?taskId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- Resources -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Resource/List\.aspx</LookFor>
+			<SendTo>~/ResourceList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Resource/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/ResourceDetails.aspx?userId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Resource/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/ResourceDetails.aspx?projectId=$1&amp;userId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Resource/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/ResourceDetails.aspx?projectId=$1&amp;userId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule Redirect="true">
+			<LookFor>~/([0-9]+?)/Resource/New\.aspx</LookFor>
+			<SendTo>~/ResourceList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- Source Code -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/SourceCode/List\.aspx</LookFor>
+			<SendTo>~/SourceCodeList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/SourceCodeRevision/List\.aspx</LookFor>
+			<SendTo>~/SourceCodeRevisions.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+    <RewriterRule>
+      <LookFor>~/([0-9]+?)/PullRequest/List\.aspx</LookFor>
+      <SendTo>~/PullRequests.aspx?projectId=$1</SendTo>
+    </RewriterRule>
+
+    <!-- Builds -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Build/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/BuildDetails.aspx?projectId=$1&amp;buildId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Build/([0-9]+?)/([a-zA-Z ]+?)\.aspx</LookFor>
+			<SendTo>~/BuildDetails.aspx?projectId=$1&amp;buildId=$2&amp;tab=$3</SendTo>
+		</RewriterRule>
+
+		<!-- Activity Stream -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Activity/List\.aspx</LookFor>
+			<SendTo>~/ActivityList.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- ** Reports Tab ** -->
+		<!-- Reports -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Report/List\.aspx</LookFor>
+			<SendTo>~/Reports.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Report/([0-9]+?)/Configure\.aspx</LookFor>
+			<SendTo>~/ReportConfiguration.aspx?projectId=$1&amp;reportId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Report/([0-9]+?)/View\.aspx</LookFor>
+			<SendTo>~/ReportViewer.aspx?projectId=$1&amp;reportId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Report/([0-9]+?)/Generated\.aspx</LookFor>
+			<SendTo>~/ReportGeneratedViewer.ashx?projectId=$1&amp;reportGeneratedId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Graph/([0-9]+?)/Download\.aspx</LookFor>
+			<SendTo>~/GraphDataDownload.ashx?projectId=$1&amp;graphId=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Report/Saved/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/ReportDisplaySaved.ashx?projectId=$1&amp;reportSavedId=$2</SendTo>
+		</RewriterRule>
+
+		<!-- ** Administration ** -->
+		<RewriterRule>
+			<LookFor>~/Administration\.aspx</LookFor>
+			<SendTo>~/Administration/Default.aspx</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Administration\.aspx</LookFor>
+			<SendTo>~/Administration/Project/Default.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+)/Administration/([a-zA-Z_]+)\.aspx</LookFor>
+			<SendTo>~/Administration/Project/$2.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Administration/HistoryList/([0-9]+?)/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/Administration/Project/HistoryList.aspx?projectId=$1&amp;artifactTypeId=$2&amp;artifactId=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Administration/HistoryDetails/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/Administration/Project/HistoryDetails.aspx?projectId=$1&amp;change=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Administration/BaselineDetails/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/Administration/Project/BaselineDetails.aspx?projectId=$1&amp;bl=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/Administration/BaselineDetails/([0-9]+?)/([0-9]+?)/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/Administration/Project/BaselineArtifactDetails.aspx?projectId=$1&amp;baselineId=$2&amp;artifactTypeId=$3&amp;artifactId=$4</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+?)/Administration\.aspx</LookFor>
+			<SendTo>~/Administration/Program/Edit.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/pg/([0-9]+)/Administration/([a-zA-Z]+)\.aspx</LookFor>
+			<SendTo>~/Administration/Program/$2.aspx?projectGroupId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/pt/([0-9]+?)/Administration\.aspx</LookFor>
+			<SendTo>~/Administration/ProjectTemplate/Default.aspx?projectTemplateId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/pt/([0-9]+)/Administration/([a-zA-Z]+)\.aspx</LookFor>
+			<SendTo>~/Administration/ProjectTemplate/$2.aspx?projectTemplateId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/pf/([0-9]+?)/Administration\.aspx</LookFor>
+			<SendTo>~/Administration/Portfolio/Edit.aspx?portfolioId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/pf/([0-9]+)/Administration/([a-zA-Z]+)\.aspx</LookFor>
+			<SendTo>~/Administration/Portfolio/$2.aspx?portfolioId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- ** MyProfile ** -->
+		<RewriterRule>
+			<LookFor>~/MyProfile\.aspx</LookFor>
+			<SendTo>~/UserProfile.aspx</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/MyProfile\.aspx</LookFor>
+			<SendTo>~/UserProfile.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- ** My Timecard ** -->
+		<RewriterRule>
+			<LookFor>~/MyTimecard\.aspx</LookFor>
+			<SendTo>~/Timecard.aspx</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/MyTimecard\.aspx</LookFor>
+			<SendTo>~/Timecard.aspx?projectId=$1</SendTo>
+		</RewriterRule>
+
+		<!-- ** Saved Searches **-->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/SavedSearch/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/SavedFilter.ashx?projectId=$1&amp;savedFilterId=$2</SendTo>
+		</RewriterRule>
+
+		<!-- Screenshot upload -->
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/ScreenshotUpload\.aspx</LookFor>
+			<SendTo>~/ScreenshotUpload.ashx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/ScreenshotUpload/List\.aspx</LookFor>
+			<SendTo>~/ScreenshotUpload.ashx?projectId=$1</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/([0-9]+?)/ScreenshotUpload/([0-9]+?)/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/ScreenshotUpload.ashx?projectId=$1&amp;artifactId=$2&amp;artifactTypeId=$3</SendTo>
+		</RewriterRule>
+
+		<!-- ** RSS Feeds ** -->
+		<RewriterRule>
+			<LookFor>~/Feeds/([0-9]+?)/([0-9A-Z\-]+?)/AssignedIncidents\.aspx</LookFor>
+			<SendTo>~/Feeds/Syndication.svc/AssignedIncidents?userId=$1&amp;rssToken=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Feeds/([0-9]+?)/([0-9A-Z\-]+?)/AssignedRisks\.aspx</LookFor>
+			<SendTo>~/Feeds/Syndication.svc/AssignedRisks?userId=$1&amp;rssToken=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Feeds/([0-9]+?)/([0-9A-Z\-]+?)/DetectedIncidents\.aspx</LookFor>
+			<SendTo>~/Feeds/Syndication.svc/DetectedIncidents?userId=$1&amp;rssToken=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Feeds/([0-9]+?)/([0-9A-Z\-]+?)/AssignedRequirements\.aspx</LookFor>
+			<SendTo>~/Feeds/Syndication.svc/AssignedRequirements?userId=$1&amp;rssToken=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Feeds/([0-9]+?)/([0-9A-Z\-]+?)/AssignedTestCases\.aspx</LookFor>
+			<SendTo>~/Feeds/Syndication.svc/AssignedTestCases?userId=$1&amp;rssToken=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Feeds/([0-9]+?)/([0-9A-Z\-]+?)/AssignedTestSets\.aspx</LookFor>
+			<SendTo>~/Feeds/Syndication.svc/AssignedTestSets?userId=$1&amp;rssToken=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Feeds/([0-9]+?)/([0-9A-Z\-]+?)/AssignedTasks\.aspx</LookFor>
+			<SendTo>~/Feeds/Syndication.svc/AssignedTasks?userId=$1&amp;rssToken=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Feeds/([0-9]+?)/([0-9A-Z\-]+?)/AssignedDocuments\.aspx</LookFor>
+			<SendTo>~/Feeds/Syndication.svc/AssignedDocuments?userId=$1&amp;rssToken=$2</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Feeds/([0-9]+?)/([0-9A-Z\-]+?)/SavedSearch/([0-9]+?)\.aspx</LookFor>
+			<SendTo>~/Feeds/Syndication.svc/SavedSearch?userId=$1&amp;rssToken=$2&amp;savedFilterId=$3</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Feeds/([0-9]+?)/([0-9A-Z\-]+?)/SubscribedArtifacts\.aspx</LookFor>
+			<SendTo>~/Feeds/Syndication.svc/SubscribedArtifacts?userId=$1&amp;rssToken=$2</SendTo>
+		</RewriterRule>
+
+		<!-- ** Old v1.x Web Services ** -->
+		<RewriterRule>
+			<LookFor>~/Services/TestExecute\.asmx</LookFor>
+			<SendTo>~/Services/v1_2_0/TestExecute.asmx</SendTo>
+		</RewriterRule>
+		<RewriterRule>
+			<LookFor>~/Services/Import\.asmx</LookFor>
+			<SendTo>~/Services/v1_5_2/Import.asmx</SendTo>
+		</RewriterRule>
+
+		<!-- Oauth handler -->
+		<RewriterRule>
+			<LookFor>~/Oauth</LookFor>
+			<SendTo>~/OauthHandler.ashx</SendTo>
+		</RewriterRule>
+
+	</Rules>
+</RewriterConfig>

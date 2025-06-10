@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project name="Create Standalone Service" default="zipup">
+	<property name="product.name" value="SpiraDataSync" />
+	<property name="product.version" value="6.0.0.0_x86" />
+	<property name="product.suffix" value="StandaloneService" />
+	<target name="zipup" description="Zips up the whole standalone DB upgrade files">
+		<property name="dest.path" value="${product.name}_${product.suffix}_v${product.version}.zip" readonly="true" />
+		<echo message="Zipping up to ${dest.path}" />
+
+		<zip zipfile="../${dest.path}" verbose="true" comment="${product.name} v${product.version} ${product.suffix}">
+			<fileset basedir=".">
+				<include name="bin/Release/DataSyncService.exe" />
+				<include name="bin/Release/DataSyncService.exe.config" />
+				<include name="bin/Release/PlugInInterfaces.dll" />
+				<include name="*.bat" />
+			</fileset>
+		</zip>
+	</target>	
+</project>

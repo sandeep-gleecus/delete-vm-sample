@@ -1,0 +1,51 @@
+----------------------------------------------------------------------------------------------------- 
+--Description:	Creates the SpiraTest/Plan/Team database 
+-- 
+--Author: 	Inflectra Corporation 
+-- 
+--Date:		1/15/2015 
+----------------------------------------------------------------------------------------------------- 
+ 
+--Create new database 
+DROP DATABASE [SpiraTest] 
+GO 
+ 
+CREATE DATABASE [SpiraTest] 
+GO 
+ALTER DATABASE [SpiraTest] 
+SET AUTO_CLOSE OFF WITH NO_WAIT 
+GO 
+ 
+--Set the compatability level to SQL2008 
+EXEC dbo.sp_dbcmptlevel @dbname=N'SpiraTest', @new_cmptlevel=100 
+GO 
+ 
+--Create Application Login and User Rights 
+USE [SpiraTest] 
+GO 
+DECLARE @login nvarchar(50)   
+DECLARE @sql nvarchar(255)   
+SET @login = 'NT AUTHORITY\NETWORK SERVICE' 
+EXEC sp_revokedbaccess @login 
+SET @sql = 'DROP LOGIN [' + @login + ']' 
+PRINT @sql 
+EXEC (@sql) 
+GO 
+DECLARE @login nvarchar(50)   
+DECLARE @sql nvarchar(255) 
+SET @login = 'NT AUTHORITY\NETWORK SERVICE' 
+SET @sql = 'CREATE LOGIN [' + @login + '] FROM WINDOWS WITH DEFAULT_DATABASE = [SpiraTest]' 
+PRINT @sql 
+EXEC (@sql) 
+SET @sql = 'CREATE USER [SpiraTest] FOR LOGIN [' + @login + ']' 
+PRINT @sql 
+EXEC (@sql) 
+EXEC sp_addrolemember 'db_owner', 'SpiraTest' 
+GO 
+ 
+--Used for debugging other environments 
+--USE Tempdb 
+--GO 
+--ALTER DATABASE SpiraTest COLLATE Danish_Norwegian_CI_AS 
+--GO 
+ 

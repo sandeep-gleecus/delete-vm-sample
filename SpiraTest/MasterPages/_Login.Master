@@ -1,0 +1,326 @@
+<%@ Master 
+    Language="C#" 
+    AutoEventWireup="True" 
+    CodeBehind="Login.master.cs" 
+    Inherits="Inflectra.SpiraTest.Web.MasterPages.Login" 
+    %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ROBOTS" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <tstsc:ThemeStylePlaceHolder ID="themeStylePlaceHolder" runat="server" SkinID="LoginStylesheet" />
+    
+    <asp:ContentPlaceHolder ID="cplHead" runat="server" />
+    <title />
+</head>
+<body 
+    xmlns:sys="javascript:Sys" 
+    xmlns:tst="javascript:Inflectra.Web.SpiraTest"
+    class="ma0 min-vh-100 mvw-100 bg-pattern df flex-column"
+    id="login-body"
+    >
+    <div id="dhtmltooltip"></div>
+    <script type="text/javascript">
+        var browserCapabilities = {};
+    </script>
+    <!--[if IE 7]>
+            <script type="text/javascript">browserCapabilities.isIE7 = true;</script>
+        <![endif]-->
+    <!--[if IE 8]>
+            <script type="text/javascript">browserCapabilities.isIE8 = true;</script>
+        <![endif]-->
+    <!--[if IE 9]>
+            <script type="text/javascript">browserCapabilities.isIE9 = true;</script>
+        <![endif]-->
+    <!--[if IE 10]>
+        <script type="text/javascript">browserCapabilities.isIE10 = true;</script>
+    <![endif]-->
+    <!--[if IE 11]>
+        <script type="text/javascript">browserCapabilities.isIE11 = true;</script>
+    <![endif]-->
+    <script type="text/javascript">
+            //Needed because ScriptManager tries to check dependencies before the main scripts are loaded
+            if (!window) this.window = this;
+            window.Type = Function;
+            Type._checkDependency = function (a, b) { return true; }
+    </script>
+
+
+
+
+
+    <%-- header --%>
+    <div class="px5 px4-md-down pt5 pt3-xs df flex-wrap relative">
+        <div class="df items-center mt5-xs">
+            <tstsc:ImageEx 
+                runat="server" 
+                ID="imgProductIcon"
+                CssClass="h6 w6 mr4"
+                 />
+            <div class="dib">
+                <h2 class="ma0 pa0 fs-h2 blue-strong">
+                    <asp:Localize 
+                        ID="ltrProductName" 
+                        runat="server" 
+                        />
+                </h2>
+                <p 
+                    id="pVersion" 
+                    class="mb0 mtn3 mr1 pa0 font75 tr"
+                    >
+                    <asp:Localize 
+                        ID="ltrVersion" 
+                        runat="server" 
+                        Text="<%$ Resources:Main,Global_Version %>" 
+                        />
+                    <asp:Literal 
+                        ID="ltrVersionNumber" 
+                        runat="server" 
+                        />.<asp:Literal 
+                        ID="ltrBuildNumber" 
+                        runat="server" 
+                        />
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="mw-100 w960 px4-md-down mx-auto df flex-wrap relative mt6 mt5-xs z-1">
+        <%-- main content --%>
+        <tstsc:ActionlessForm 
+            ID="actionlessForm" 
+            runat="server"
+            Style="width: 100%"
+            >
+            <div 
+                class="w-100"
+                id="divMainContent"
+                >
+                <asp:ContentPlaceHolder ID="cplMainContent" runat="server" />
+            </div>
+        
+            <!--Validate that JavaScript is enabled-->
+            <noscript>
+                <div class="MessageError" style="width:100%; margin:5px;">
+                    <asp:Localize ID="Localize1" runat="server" Text="<%$Resources:Messages,MasterPage_JavaScriptDisabled%>" />                            
+                </div>
+            </noscript>
+
+            <%--Script Section--%>
+            <tstsc:ScriptManagerEx ID="ajxScriptManager" runat="server" EnableScriptGlobalization="true" EnableScriptLocalization="true"
+                AjaxFrameworkMode="Explicit">
+                <Scripts>
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxCore.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxGlobalization.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxSerialization.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxComponentModel.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxHistory.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxNetwork.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxWebServices.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxApplicationServices.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxScriptLoader.js" Assembly="Web" />
+
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.AjaxExtensions.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.Timer.Timer.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.Common.Common.js" Assembly="Web" />
+                    <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.Validation.js" Assembly="Web" />
+                </Scripts>
+            </tstsc:ScriptManagerEx>
+               
+            <asp:ContentPlaceHolder ID="cplScripts" runat="server" />
+        </tstsc:ActionlessForm>
+    </div>
+
+
+
+    <%-- footer area --%>
+    <div class="w-100 grow-1 df">
+        <div class="self-end mx-auto">
+            <p class="tc ma0 w-100 relative">
+                <tstsc:ImageEx 
+                    AlternateText="Inflectra"
+                    CssClass="h6 tc"
+                    ImageUrl="Images/CompanyLogo_Light.svg" 
+                    ID="companyLogo" 
+                    runat="server" 
+                    ClientIDMode="Static"
+                    />
+                <span class="fs-h2 mln4">®</span>
+            </p>
+            <div class="w-100 relative tc pb3 pb0-xs">
+                <div 
+                    class="dib mb3 mx3 mx2-xs py3 px5 px4-xs br-pill fs-90 bg-page o-70-xs"
+                    id="product-explanation">
+
+
+                    <p class="ma0">
+                        <asp:Localize 
+                            ID="ltrLicensedTo" 
+                            runat="server" 
+                            Text="<%$ Resources:Main,Login_LicensedTo %>" 
+                            />
+                        <asp:Label 
+                            ID="lblOrganization" 
+                            runat="server"
+                            />, 
+                        ©<asp:Label 
+                            ID="lblCopyrightYear" 
+                            runat="server"
+                            ></asp:Label>
+                        <tstsc:HyperLinkEx 
+                            ID="lnkCompany" 
+                            SkinID="CompanyName" 
+                            runat="server" 
+                            Target="_blank" 
+                            CssClass="fw-b" 
+                            />
+                    </p>
+
+                    <p class="dn-xs ma0">
+                        <asp:PlaceHolder 
+                            runat="server" 
+                            ID="plcSpiraTestSEO" 
+                            Visible="false"
+                            >
+                            Powerful 
+                            <a 
+                                href="https://www.inflectra.com/SpiraTest/Highlights/Test-Case-Management.aspx" 
+                                target="_blank"
+                                >
+                                test management software
+                            </a>, 
+                            <a 
+                                href="https://www.inflectra.com/SpiraTest/Highlights/Requirements-Management.aspx" 
+                                target="_blank"
+                                >
+                                requirements management software
+                            </a>, and 
+                            <a 
+                                href="https://www.inflectra.com/SpiraTest/Highlights/Bug-Tracking.aspx" 
+                                target="_blank"
+                                >
+                                bug-tracking software
+                            </a>.
+                        </asp:PlaceHolder>
+                        <asp:PlaceHolder 
+                            runat="server" 
+                            ID="plcSpiraPlanSEO" 
+                            Visible="false"
+                            >
+                            Powerful 
+                            <a 
+                                href="https://www.inflectra.com/Methodologies/Agile-Development.aspx" 
+                                target="_blank"
+                                >
+                                agile software development
+                            </a>, 
+                            <a 
+                                href="https://www.inflectra.com/SpiraPlan/Highlights/Project-Management.aspx" 
+                                target="_blank"
+                                >
+                                project management 
+                            </a>, and 
+                            <a 
+                                href="https://www.inflectra.com/SpiraPlan/Highlights/Task-Management.aspx" 
+                                target="_blank"
+                                >
+                                task-tracking software                                                                                                                          
+                            </a>.
+                        </asp:PlaceHolder>
+                        <asp:PlaceHolder 
+                        runat="server" 
+                        ID="plcSpiraTeamSEO" 
+                        Visible="false"
+                        >
+                        Powerful 
+                        <a 
+                            href="https://www.inflectra.com/SpiraTeam/Highlights/Understanding-ALM-Tools.aspx" 
+                            target="_blank"
+                            >
+                            application lifecycle management
+                        </a>, including 
+                        <a 
+                            href="https://www.inflectra.com/SpiraTeam/Highlights/Understanding-Requirements-Management-Tools.aspx" 
+                            target="_blank"
+                            >
+                            requirements management
+                        </a>, and 
+                        <a 
+                            href="https://www.inflectra.com/SpiraTeam/Highlights/Test-Case-Management.aspx" 
+                            target="_blank"
+                            >
+                            software testing
+                        </a>.
+                    </asp:PlaceHolder>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        (function () {
+            // on ready function
+            function ready(fn) {
+                if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                    fn();
+                } else {
+                    document.addEventListener('DOMContentLoaded', fn);
+                }
+            }
+            // konami code
+            /*! konami-js v1.0.1 | http://mck.me/mit-license */
+            var Konami = {}; (function (d, e) { var f = d.sequence = function () { var b = Array.prototype.slice.call(arguments), c = 0; return function (a) { a = a || e.event; a = a.keyCode || a.which || a; if (a === b[c] || a === b[c = 0]) a = b[++c], "function" === typeof a && (a(), c = 0) } }; d.code = function (b) { return f(38, 38, 40, 40, 37, 39, 37, 39, 66, 65, b) } })(Konami, window);
+
+
+            // handle setting dark mode
+            document.addEventListener('keyup', Konami.sequence(
+                    71, 79, 76, 73, 71, 72, 84,
+                    function () {
+                        setLight(true)
+                    }
+                )
+            );
+
+            function setLight(shouldToggle) {
+                var light = localStorage.getItem("light");
+                var body = document.getElementById("login-body");
+                var companyLogo = document.getElementById("companyLogo");
+                if (shouldToggle === true) {
+                    light = light === "1" ? "0" : "1";
+                    localStorage.setItem("light", light);
+                }
+                // if dark was set to being dark then we move to non dark mode
+                if (light == "1") {
+                    body.classList.add("light");
+                    companyLogo.src = companyLogo.src.replace("CompanyLogo_Light.svg", "CompanyLogo.svg");
+                } else if (shouldToggle === true) {
+                    body.classList.remove("light");
+					companyLogo.src = companyLogo.src.replace("CompanyLogo.svg", "CompanyLogo_ValidationMaster.gif");
+                }
+            }
+            ready(setLight);
+
+
+        
+            console.log("type 'golight' to come into the light");
+            // handle input styling
+            var uInputs = document.querySelectorAll('.u-input');
+            if (uInputs) {
+                uInputs.forEach(function (el) {
+                    el.onload = el.setAttribute('value', el.value);
+                });
+
+            }
+        })();
+	</script>
+</html>

@@ -1,0 +1,52 @@
+-- =============================================================================================================
+-- Author:			Inflectra Corporation
+-- Business Object: Release
+-- Description:		Refreshes the requirement count, overall percent complete, and the total requirement points
+-- =============================================================================================================
+IF OBJECT_ID ( 'RELEASE_REFRESH_REQUIREMENT_COMPLETION', 'P' ) IS NOT NULL 
+    DROP PROCEDURE RELEASE_REFRESH_REQUIREMENT_COMPLETION;
+GO
+CREATE PROCEDURE RELEASE_REFRESH_REQUIREMENT_COMPLETION
+	@ProjectId INT,
+	@ReleaseId INT
+AS
+BEGIN
+	MERGE TST_RELEASE AS TARGET	
+	USING (
+		SELECT
+			@ReleaseId AS RELEASE_ID,
+			IS_DELETED,
+			SUM(ISNULL(REQ.ESTIMATE_POINTS,0)) AS REQUIREMENT_POINTS,
+			COUNT(REQ.REQUIREMENT_ID) AS REQUIREMENT_COUNT,
+			SUM((CASE WHEN REQ.REQUIREMENT_STATUS_ID IN
+			(
+				9, /*Tested*/
+				10, /*Completed*/
+				13 /*Released*/
+			)
+			THEN 1 ELSE 0 END)* 100) / COUNT(REQ.REQUIREMENT_ID) AS PERCENT_COMPLETE
+		FROM
+			TST_REQUIREMENT REQ
+		WHERE
+			REQ.PROJECT_ID = @ProjectId AND
+			REQ.RELEASE_ID IN (SELECT RELEASE_ID FROM FN_RELEASE_GET_SELF_AND_CHILDREN(@ProjectId, @ReleaseId, 0)) AND
+			REQ.REQUIREMENT_STATUS_ID NOT IN (6 /* Rejected */, 8 /* Obsolete*/) AND
+			REQ.IS_DELETED = 0
+		GROUP BY IS_DELETED
+	) AS SOURCE
+	ON
+		TARGET.RELEASE_ID = SOURCE.RELEASE_ID
+	WHEN MATCHED THEN
+		UPDATE
+			SET	
+				TARGET.REQUIREMENT_POINTS = SOURCE.REQUIREMENT_POINTS,
+				TARGET.REQUIREMENT_COUNT = SOURCE.REQUIREMENT_COUNT,
+				TARGET.PERCENT_COMPLETE = SOURCE.PERCENT_COMPLETE
+	WHEN NOT MATCHED BY SOURCE AND TARGET.RELEASE_ID = @ReleaseId THEN
+			UPDATE
+			SET	
+				TARGET.REQUIREMENT_POINTS = NULL,
+				TARGET.REQUIREMENT_COUNT = 0,
+				TARGET.PERCENT_COMPLETE = 0;
+END
+GO

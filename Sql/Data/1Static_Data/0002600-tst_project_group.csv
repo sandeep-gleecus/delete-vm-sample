@@ -1,0 +1,2 @@
+project_group_id:Key,name:String,description:String,website:String,is_active:Normal,is_default:Normal,percent_complete:Normal,requirement_count:Normal
+1,(Default Program),The default program that installs with the system.,NULL,1,1,0,0

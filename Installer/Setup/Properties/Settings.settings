@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Inflectra.SpiraTest.Installer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DatabaseVersionForUpgradingFrom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="ApplicationPackage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Files.zip</Value>
+    </Setting>
+    <Setting Name="LicenseEditable" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ProductTemplateName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ValidationMaster</Value>
+    </Setting>
+    <Setting Name="SQLUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">!paris!NEWYORK026348</Value>
+    </Setting>
+    <Setting Name="DatabaseVersionCurrent" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">674</Value>
+    </Setting>
+    <Setting Name="ProductDatabaseVersion" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">674</Value>
+    </Setting>
+    <Setting Name="ProductVersion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">7.0.0.0</Value>
+    </Setting>
+    <Setting Name="LicenseVersion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">7.0.0.0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

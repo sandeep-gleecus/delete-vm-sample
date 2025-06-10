@@ -1,0 +1,9 @@
+custom_property_option_id:Key,name:String,is_active:Normal
+1,AllowEmpty,1
+2,MaxLength,1
+3,MinLength,1
+4,RichText,1
+5,Default,1
+6,MaxValue,1
+7,MinValue,1
+8,Precision,1

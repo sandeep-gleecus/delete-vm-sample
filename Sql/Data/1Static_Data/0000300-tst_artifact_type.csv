@@ -1,0 +1,38 @@
+artifact_type_id:Key,name:String,prefix:String,is_notify:Normal,is_active:Normal,is_data_sync:Normal,is_attachments:Normal,is_custom_properties:Normal,is_global_item:Normal
+-12,Program,PG,0,0,0,0,0,1
+-3,User,US,0,0,0,0,0,1
+-1,Project,PR,0,0,0,0,0,1
+1,Requirement,RQ,1,1,1,1,1,0
+2,Test Case,TC,1,1,1,1,1,0
+3,Incident,IN,1,1,1,1,1,0
+4,Release,RL,1,1,1,1,1,0
+5,Test Run,TR,0,1,0,1,1,0
+6,Task,TK,1,1,1,1,1,0
+7,Test Step,TS,0,1,0,1,1,0
+8,Test Set,TX,1,1,0,1,1,0
+9,Automation Host,AH,0,1,0,1,1,0
+10,Automation Engine,AE,0,0,0,0,0,0
+11,Placeholder,PL,0,1,0,0,0,0
+12,Requirement Step,RS,0,1,0,0,0,0
+13,Document,DC,1,1,0,0,1,0
+14,Risk,RK,1,1,1,1,1,0
+15,Risk Mitigation,RM,0,1,0,0,0,0
+16,Project Audit Trail,HL,1,0,1,1,0,1
+19,Audit Trail,AL,1,0,1,1,0,1
+20,Admin Audit Trail,AT,1,0,1,1,0,1
+21,Portfolios,PF,0,0,0,0,0,1
+22,User Audit Trail,UT,1,0,1,1,0,1
+23,ProjectTemplate,PT,0,0,0,0,0,1
+24,Project Role,PO,0,0,0,0,0,1
+25,Project Role Permission,PP,0,0,0,0,0,1
+26,Login Provider,LP,0,0,0,0,0,1
+27,File Type Icon,FT,0,0,0,0,0,1
+28,SourceCode,SC,0,0,0,0,0,1
+29,DataSync,DS,0,0,0,0,0,1
+30,Report,RP,0,0,0,0,0,1
+31,Graph,GP,0,0,0,0,0,1
+32,ReportSectionInstance,RS,0,0,0,0,0,1
+33,ReportCustomSection,RC,0,0,0,0,0,1
+34,SystemUsageReport,SU,1,0,1,1,0,1
+35,Project User Group,PG,1,0,1,1,0,1
+36,Project Tag Frequency,PT,1,0,1,1,0,1

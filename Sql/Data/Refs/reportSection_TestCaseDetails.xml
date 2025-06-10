@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+  <xsl:template match="/TestCaseData">
+    <xsl:for-each select="TestCaseFolder">
+      <div class="Title2">
+        Folder: <xsl:value-of select="Name"/>
+      </div>
+      <div class="Description">
+        <xsl:value-of select="Description" disable-output-escaping="yes"/>
+      </div>
+      <xsl:for-each select="TestCases/TestCase">
+        <div class="Title3">
+          Test TC:<xsl:value-of select="TestCaseId"/> - <xsl:value-of select="Name"/>
+        </div>
+        <div class="Description">
+          <xsl:value-of select="Description" disable-output-escaping="yes"/>
+        </div>
+        <table class="HiddenTable">
+          <tr>
+            <th>Execution Status:</th>
+            <td>
+              <xsl:value-of select="ExecutionStatusName"/>
+            </td>
+            <th>Priority:</th>
+            <td>
+              <xsl:value-of select="TestCasePriorityName"/>
+            </td>
+          </tr>
+          <tr>
+            <th>Type:</th>
+            <td>
+              <xsl:value-of select="TestCaseTypeName"/>
+            </td>
+            <th>Status:</th>
+            <td>
+              <xsl:value-of select="TestCaseStatusName"/>
+            </td>
+          </tr>
+          <tr>
+            <th>Author:</th>
+            <td>
+              <xsl:value-of select="AuthorName"/>
+            </td>
+            <th>Creation Date:</th>
+            <td class="Date">
+              <xsl:call-template name="format-date">
+                <xsl:with-param name="datetime" select="CreationDate" />
+              </xsl:call-template>
+            </td>
+          </tr>
+          <tr>
+            <th>Owner:</th>
+            <td>
+              <xsl:value-of select="OwnerName"/>
+            </td>
+            <th>Last Execution:</th>
+            <td class="Date">
+              <xsl:call-template name="format-date">
+                <xsl:with-param name="datetime" select="ExecutionDate" />
+              </xsl:call-template>
+            </td>
+          </tr>
+          <tr>
+            <th>Automation Engine:</th>
+            <td>
+              <xsl:value-of select="AutomationEngineName"/>
+            </td>
+            <th>Last Updated:</th>
+            <td class="Date">
+              <xsl:call-template name="format-date">
+                <xsl:with-param name="datetime" select="LastUpdateDate" />
+              </xsl:call-template>
+            </td>
+          </tr>
+          <tr>
+            <th>Component(s):</th>
+            <td colspan="3">
+              <xsl:value-of select="ComponentNames"/>
+            </td>            
+          </tr>
+          <xsl:for-each select="CustomProperties/CustomProperty">
+            <tr>
+              <th>
+                <xsl:value-of select="Alias"/>:
+              </th>
+              <xsl:choose>
+                <xsl:when test="Type='Date'">
+                  <td class="Date" colspan="3">
+                    <xsl:call-template name="format-date">
+                      <xsl:with-param name="datetime" select="Value" />
+                    </xsl:call-template>
+                  </td>
+                </xsl:when>
+                <xsl:otherwise>
+                  <td colspan="3">
+                    <xsl:value-of select="Value" disable-output-escaping="yes"/>
+                  </td>
+                </xsl:otherwise>
+              </xsl:choose>
+            </tr>
+          </xsl:for-each>
+        </table>
+        <xsl:if test="TestSteps/TestStep">
+          <table class="DataGrid">
+            <tr>
+              <th>Step</th>
+              <th>Description</th>
+              <th>Expected Result</th>
+              <th>Sample Data</th>
+              <th>Last Status</th>
+            </tr>
+            <xsl:for-each select="TestSteps/TestStep">
+              <tr>
+                <td>
+                  <xsl:value-of select="position()"/>
+                </td>
+                <xsl:if test="string(LinkedTestCaseId)">
+                  <td colspan="3">
+                    <xsl:value-of select="Description" disable-output-escaping="yes"/>
+                    '<xsl:value-of select="LinkedTestCaseName"/>'
+                    <xsl:for-each select="Parameters">
+                      <i>
+                        with
+                        <xsl:for-each select="TestStepParameter">
+                          <xsl:value-of select="Name"/> = '<xsl:value-of select="Value"/>',
+                        </xsl:for-each>
+                      </i>
+                    </xsl:for-each>
+                  </td>
+                </xsl:if>
+                <xsl:if test="not(string(LinkedTestCaseId))">
+                  <td>
+                    <xsl:value-of select="Description" disable-output-escaping="yes"/>
+                  </td>
+                  <td>
+                    <xsl:value-of select="ExpectedResult" disable-output-escaping="yes"/>
+                  </td>
+                  <td>
+                    <xsl:value-of select="SampleData" disable-output-escaping="yes"/>
+                  </td>
+                </xsl:if>
+                <td>
+                  <xsl:value-of select="ExecutionStatusName"/>
+                </td>
+              </tr>
+            </xsl:for-each>
+          </table>
+        </xsl:if>
+        <xsl:if test="Discussions/Discussion">
+          <div class="Title3">
+            Comments:
+          </div>
+          <table class="DataGrid">
+            <tr>
+              <th>Date</th>
+              <th>Creator</th>
+              <th>Comment</th>
+              <th>Id</th>
+            </tr>
+            <xsl:for-each select="Discussions/Discussion">
+              <tr>
+                <td class="Date">
+                  <xsl:call-template name="format-date">
+                    <xsl:with-param name="datetime" select="CreationDate" />
+                  </xsl:call-template>
+                </td>
+                <td>
+                  <xsl:value-of select="CreatorName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="Text" disable-output-escaping="yes"/>
+                </td>
+                <td>
+                  <xsl:value-of select="DiscussionId"/>
+                </td>
+              </tr>
+            </xsl:for-each>
+          </table>
+        </xsl:if>
+        <xsl:if test="TestRuns/TestRun">
+          <div class="Title4">
+            Test Runs:
+          </div>
+          <table class="DataGrid">
+            <tr>
+              <th>Run #</th>
+              <th>Tester</th>
+              <th>Test Set</th>
+              <th>Release</th>
+              <th>Version</th>
+              <th>Status</th>
+              <th>Type</th>
+              <th>Automation Host</th>
+              <th>Est. Duration</th>
+              <th>Actual Duration</th>
+              <th>Execution Date</th>
+            </tr>
+            <xsl:for-each select="TestRuns/TestRun">
+              <tr>
+                <td>
+                  TR<xsl:value-of select="TestRunId"/>
+                </td>
+                <td>
+                  <xsl:value-of select="TesterName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="TestSetName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="ReleaseName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="ReleaseVersionNumber"/>
+                </td>
+                <td>
+                  <xsl:value-of select="ExecutionStatusName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="TestRunTypeName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="AutomationHostName"/>
+                </td>
+                <td class="Timespan">
+                  <xsl:value-of select="EstimatedDuration"/>
+                </td>
+                <td class="Timespan">
+                  <xsl:value-of select="ActualDuration"/>
+                </td>
+                <td class="Date">
+                  <xsl:call-template name="format-date">
+                    <xsl:with-param name="datetime" select="EndDate" />
+                  </xsl:call-template>
+                </td>
+              </tr>
+              <xsl:if test="TestRunSteps/TestRunStep">
+                <tr>
+                  <td colspan="11">
+                    <table class="DataGrid">
+                      <tr>
+                        <th>Step</th>
+                        <th>Description</th>
+                        <th>Expected Result</th>
+                        <th>Sample Data</th>
+                        <th>ActualResult</th>
+                        <th>Status</th>
+                      </tr>
+                      <xsl:for-each select="TestRunSteps/TestRunStep">
+                        <tr>
+                          <td>
+                            <xsl:value-of select="Position"/>
+                          </td>
+                          <td>
+                            <xsl:value-of select="Description" disable-output-escaping="yes"/>
+                          </td>
+                          <td>
+                            <xsl:value-of select="ExpectedResult" disable-output-escaping="yes"/>
+                          </td>
+                          <td>
+                            <xsl:value-of select="SampleData" disable-output-escaping="yes"/>
+                          </td>
+                          <td>
+                            <xsl:value-of select="ActualResult" disable-output-escaping="yes"/>
+                          </td>
+                          <td>
+                            <xsl:value-of select="ExecutionStatusName"/>
+                          </td>
+                        </tr>
+                      </xsl:for-each>
+                    </table>
+                  </td>
+                </tr>
+              </xsl:if>
+            </xsl:for-each>
+          </table>
+        </xsl:if>
+        <br />
+        <xsl:if test="Requirements/Requirement">
+          <div class="Title4">
+            Requirements Coverage:
+          </div>
+          <table class="DataGrid">
+            <tr>
+              <th>Req #</th>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Type</th>
+              <th>Priority</th>
+            </tr>
+            <xsl:for-each select="Requirements/Requirement">
+              <tr>
+                <td>
+                  RQ<xsl:value-of select="RequirementId"/>
+                </td>
+                <td>
+                  <xsl:value-of select="Name"/>
+                </td>
+                <td>
+                  <xsl:value-of select="RequirementStatusName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="RequirementTypeName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="ImportanceName"/>
+                </td>
+              </tr>
+            </xsl:for-each>
+          </table>
+        </xsl:if>
+        <xsl:if test="Incidents/Incident">
+          <div class="Title4">
+            Open Incidents:
+          </div>
+          <table class="DataGrid">
+            <tr>
+              <th>Inc #</th>
+              <th>Type</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th>Severity</th>
+              <th>Name</th>
+              <th>Owned By</th>
+              <th>Detected On</th>
+            </tr>
+            <xsl:for-each select="Incidents/Incident">
+              <tr>
+                <td>
+                  IN<xsl:value-of select="IncidentId"/>
+                </td>
+                <td>
+                  <xsl:value-of select="IncidentTypeName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="IncidentStatusName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="PriorityName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="SeverityName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="Name"/>
+                </td>
+                <td>
+                  <xsl:value-of select="OwnerName"/>
+                </td>
+                <td class="Date">
+                  <xsl:call-template name="format-date">
+                    <xsl:with-param name="datetime" select="CreationDate" />
+                  </xsl:call-template>
+                </td>
+              </tr>
+            </xsl:for-each>
+          </table>
+        </xsl:if>
+        <xsl:if test="Releases/Release">
+          <div class="Title3">
+            Release Coverage:
+          </div>
+          <table class="DataGrid">
+            <tr>
+              <th>Name</th>
+              <th>Version Number</th>
+              <th>Type</th>
+              <th>Status</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Release #</th>
+            </tr>
+            <xsl:for-each select="Releases/Release">
+              <tr>
+                <td>
+                  <xsl:attribute name="style">
+                    padding-left: <xsl:value-of select="string-length(IndentLevel)*2"/>px;
+                  </xsl:attribute>
+                  <xsl:if test="IsSummary='True'">
+                    <b>
+                      <xsl:value-of select="Name"/>
+                    </b>
+                  </xsl:if>
+                  <xsl:if test="IsSummary='False'">
+                    <xsl:value-of select="Name"/>
+                  </xsl:if>
+                </td>
+                <td>
+                  <xsl:value-of select="VersionNumber"/>
+                </td>
+                <td>
+                  <xsl:value-of select="ReleaseTypeName"/>
+                </td>
+                <td>
+                  <xsl:value-of select="ReleaseStatusName"/>
+                </td>
+                <td class="Date">
+                  <xsl:call-template name="format-date">
+                    <xsl:with-param name="datetime" select="StartDate" />
+                  </xsl:call-template>
+                </td>
+                <td class="Date">
+                  <xsl:call-template name="format-date">
+                    <xsl:with-param name="datetime" select="EndDate" />
+                  </xsl:call-template>
+                </td>
+                <td>
+                  RL<xsl:value-of select="ReleaseId"/>
+                </td>
+              </tr>
+            </xsl:for-each>
+          </table>
+        </xsl:if>
+        <xsl:if test="Attachments/Attachment">
+          <div class="Title4">
+            File Attachments:
+          </div>
+          <table class="DataGrid">
+            <tr>
+              <th>Filename</th>
+              <th>Description</th>
+              <th>Author</th>
+              <th>Date Uploaded</th>
+            </tr>
+            <xsl:for-each select="Attachments/Attachment">
+              <tr>
+                <td>
+                  <xsl:value-of select="Filename"/>
+                </td>
+                <td>
+                  <xsl:value-of select="Description"/>
+                </td>
+                <td>
+                  <xsl:value-of select="AuthorName"/>
+                </td>
+                <td class="Date">
+                  <xsl:call-template name="format-date">
+                    <xsl:with-param name="datetime" select="UploadDate" />
+                  </xsl:call-template>
+                </td>
+              </tr>
+            </xsl:for-each>
+          </table>
+        </xsl:if>
+        <xsl:if test="History/ArtifactHistory">
+          <div class="Title4">
+            Test Case Change History:
+          </div>
+          <table class="DataGrid">
+            <tr>
+              <th>Change Date</th>
+              <th>Field Name</th>
+              <th>Old Value</th>
+              <th>New Value</th>
+              <th>Changed By</th>
+            </tr>
+            <xsl:for-each select="History/ArtifactHistory">
+              <tr>
+                <td class="Date">
+                  <xsl:call-template name="format-date">
+                    <xsl:with-param name="datetime" select="ChangeDate" />
+                  </xsl:call-template>
+                </td>
+                <td>
+                  <xsl:value-of select="FieldCaption"/>
+                </td>
+                <td>
+                  <xsl:value-of select="OldValue" disable-output-escaping="yes"/>
+                </td>
+                <td>
+                  <xsl:value-of select="NewValue" disable-output-escaping="yes"/>
+                </td>
+                <td>
+                  <xsl:value-of select="ChangerName"/>
+                </td>
+              </tr>
+            </xsl:for-each>
+          </table>
+        </xsl:if>
+        <br/>
+      </xsl:for-each>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template name="format-date">
+    <xsl:param name="datetime"/>
+    <xsl:variable name="date" select="substring-before($datetime, 'T')" />
+    <xsl:variable name="year" select="substring-before($date, '-')" />
+    <xsl:variable name="month" select="substring-before(substring-after($date, '-'), '-')" />
+    <xsl:variable name="day" select="substring-after(substring-after($date, '-'), '-')" />
+    <xsl:variable name="time" select="substring-before(substring-after($datetime, 'T'), '.')" />
+    <xsl:variable name="monthname">
+      <xsl:choose>
+        <xsl:when test="$month='01'">
+          <xsl:value-of select="'Jan'"/>
+        </xsl:when>
+        <xsl:when test="$month='02'">
+          <xsl:value-of select="'Feb'"/>
+        </xsl:when>
+        <xsl:when test="$month='03'">
+          <xsl:value-of select="'Mar'"/>
+        </xsl:when>
+        <xsl:when test="$month='04'">
+          <xsl:value-of select="'Apr'"/>
+        </xsl:when>
+        <xsl:when test="$month='05'">
+          <xsl:value-of select="'May'"/>
+        </xsl:when>
+        <xsl:when test="$month='06'">
+          <xsl:value-of select="'Jun'"/>
+        </xsl:when>
+        <xsl:when test="$month='07'">
+          <xsl:value-of select="'Jul'"/>
+        </xsl:when>
+        <xsl:when test="$month='08'">
+          <xsl:value-of select="'Aug'"/>
+        </xsl:when>
+        <xsl:when test="$month='09'">
+          <xsl:value-of select="'Sep'"/>
+        </xsl:when>
+        <xsl:when test="$month='10'">
+          <xsl:value-of select="'Oct'"/>
+        </xsl:when>
+        <xsl:when test="$month='11'">
+          <xsl:value-of select="'Nov'"/>
+        </xsl:when>
+        <xsl:when test="$month='12'">
+          <xsl:value-of select="'Dec'"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="''" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:value-of select="concat($day, '-' ,$monthname, '-', $year , ' ', $time)" />
+  </xsl:template>
+</xsl:stylesheet>
+

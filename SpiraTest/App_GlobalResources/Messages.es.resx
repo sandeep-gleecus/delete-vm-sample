@@ -1,0 +1,2882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Services_AttachmentIdNotNull" xml:space="preserve">
+    <value>Para agregar, el objeto del documento necesita tener un AttachmentId igual a nulo</value>
+  </data>
+	<data name="Services_CannotConnectToProject" xml:space="preserve">
+    <value>No se puede conectar al proyecto, compruebe que el usuario es miembro del proyecto, que exista y está activo.</value>
+  </data>
+	<data name="Services_CustomListIdNotNull" xml:space="preserve">
+    <value>El objeto de la Lista Personalizada necesita tener un CustomPropertyListID igual a nulo para su creación</value>
+  </data>
+	<data name="Services_CustomPropertyValueIdNotNull" xml:space="preserve">
+    <value>El objeto valor de la Lista Personalizada  debe tener un CustomPropertyValueId igual a nulo para su creación</value>
+  </data>
+	<data name="Services_IncidentIdMissing" xml:space="preserve">
+    <value>El objeto Incidente necesita información en IncidentId</value>
+  </data>
+	<data name="Services_IncidentIdNotNull" xml:space="preserve">
+    <value>El objeto Incidente necesita tener IncidentId igual a nulo para su creación</value>
+  </data>
+	<data name="Services_LicenseViolationException" xml:space="preserve">
+    <value>Usted no tiene suficientes licencias disponibles para accesar a las API’s con este usuario</value>
+  </data>
+	<data name="Services_NotAuthorizedAddCustomLists" xml:space="preserve">
+    <value>No está Autorizado para Agregar Listas Personalizadas – debe ser Propietario del Proyecto</value>
+  </data>
+	<data name="Services_NotAuthorizedAddCustomListValues" xml:space="preserve">
+    <value>No está Autorizado para Agregar Valores para Listas Personalizadas – debe ser Propietario del Proyecto</value>
+  </data>
+	<data name="Services_NotAuthorizedAddDocuments" xml:space="preserve">
+    <value>No está Autorizado para Agregar Documentos al Proyecto</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentPriorities" xml:space="preserve">
+    <value>No está Autorizado para Agregar Prioridades de Incidentes – debe ser Propietario del Proyecto</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentSeverities" xml:space="preserve">
+    <value>No está Autorizado para Agregar Severidades de Incidentes – debe ser Propietario del Proyecto</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentStatuses" xml:space="preserve">
+    <value>No está Autorizado para Agregar Estados de Incidentes - necesita ser Propietario del Proyecto</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentTypes" xml:space="preserve">
+    <value>No está Autorizado para Agregar Tipos de Incidentes - debe ser Propietario del Proyecto</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateIncidents" xml:space="preserve">
+    <value>No está Autorizado para Crear Incidentes</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateProjects" xml:space="preserve">
+    <value>No está Autorizado para Crear Proyectos - Necesita ser Administrador del Sistema</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateReleases" xml:space="preserve">
+    <value>No está Autorizado para Crear Releases</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateRequirements" xml:space="preserve">
+    <value>No está Autorizado para Crear Requerimientos</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTasks" xml:space="preserve">
+    <value>No está Autorizado para Crear Tareas</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestCases" xml:space="preserve">
+    <value>No está Autorizado para Crear Casos de Prueba</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestFolders" xml:space="preserve">
+    <value>No está Autorizado para Crear Carpetas de Pruebas</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestRuns" xml:space="preserve">
+    <value>No está Autorizado para Crear Ejecuciones de Prueba</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestSets" xml:space="preserve">
+    <value>No está Autorizado para Crear Conjuntos de Pruebas</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestSteps" xml:space="preserve">
+    <value>No está Autorizado para Crear Pasos de Prueba</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateUsers" xml:space="preserve">
+    <value>No está Autorizado para Crear Usuarios - Necesita ser Administrador del Sistema</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteProjects" xml:space="preserve">
+    <value>No está Autorizado para Borrar Proyectos - Necesita ser Administrador del Sistema</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyIncidents" xml:space="preserve">
+    <value>No está Autorizado para Modificar los Incidentes</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyReleases" xml:space="preserve">
+    <value>No está Autorizado para Modificar las Releases</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyRequirements" xml:space="preserve">
+    <value>No está Autorizado para Modificar los Requerimientos</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyTasks" xml:space="preserve">
+    <value>No está Autorizado para Modificar las Tareas</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyTestCases" xml:space="preserve">
+    <value>No está Autorizado para Modificar los Casos de Prueba</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyTestSets" xml:space="preserve">
+    <value>No está Autorizado para Modificar los Conjuntos de Pruebas</value>
+  </data>
+	<data name="Services_NotAuthorizedUpdateCustomProperties" xml:space="preserve">
+    <value>No está Autorizado para Actualizar las Propiedades Personalizadas del Proyecto – Necesita ser Propietario del Proyecto</value>
+  </data>
+	<data name="Services_NotAuthorizedViewCustomProperties" xml:space="preserve">
+    <value>No está Autorizado para ver las Propiedades Personalizadas del proyecto – Necesita ser Propietario del Proyecto</value>
+  </data>
+	<data name="Services_NotAuthorizedViewIncidents" xml:space="preserve">
+    <value>No está Autorizado para ver los Incidentes</value>
+  </data>
+	<data name="Services_NotAuthorizedViewReleases" xml:space="preserve">
+    <value>No está Autorizado para ver las Releases</value>
+  </data>
+	<data name="Services_NotAuthorizedViewRequirements" xml:space="preserve">
+    <value>No está Autorizado para ver los Requerimientos</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTasks" xml:space="preserve">
+    <value>No está Autorizado para ver las Tareas</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestCases" xml:space="preserve">
+    <value>No está Autorizado para ver los Casos de Prueba</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestRuns" xml:space="preserve">
+    <value>No está Autorizado para ver Ejecuciones de Pruebas</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestSets" xml:space="preserve">
+    <value>No está Autorizado para ver Conjunto de Pruebas</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestSteps" xml:space="preserve">
+    <value>No está Autorizado para ver Pasos de Prueba</value>
+  </data>
+	<data name="Services_NotConnectedToProject" xml:space="preserve">
+    <value>No está conectado a un proyecto. Por favor llame el método Connection_ConnectToProject()  primero </value>
+  </data>
+	<data name="Services_ProjectIdNotNull" xml:space="preserve">
+    <value>El Objeto Proyecto necesita tener ProjectId igual a nulo para su creación</value>
+  </data>
+	<data name="Services_ReleaseIdMissing" xml:space="preserve">
+    <value>El Objeto Release necesita tener ReleaseId con información</value>
+  </data>
+	<data name="Services_ReleaseIdNotNull" xml:space="preserve">
+    <value>El Objeto Release necesita tener ReleaseId igual a nulo para su creación</value>
+  </data>
+	<data name="Services_ReleaseNotFound" xml:space="preserve">
+    <value>No se puede encontrar el ID de la release en el sistema</value>
+  </data>
+	<data name="Services_RequirementIdMissing" xml:space="preserve">
+    <value>El objeto Requerimiento debe tener RequirementId con información</value>
+  </data>
+	<data name="Services_RequirementIdNotNull" xml:space="preserve">
+    <value>El objeto Requerimiento debe tener RequirementId igual a nulo para su creación</value>
+  </data>
+	<data name="Services_RequirementNotFound" xml:space="preserve">
+    <value>No se puede encontrar el ID de la release en el sistema</value>
+  </data>
+	<data name="Services_RunnerNameMissing" xml:space="preserve">
+    <value>El objeto Ejecuión de Prueba necesita tener RunnerName con un valor para grabar el resultado de la prueba automatizada</value>
+  </data>
+	<data name="Services_SessionNotAuthenticated" xml:space="preserve">
+    <value>La Sesión no fue autenticada, por favor primero llame al método Connection_Authenticate()</value>
+  </data>
+	<data name="Services_SortMissing" xml:space="preserve">
+    <value>Necesita introducir un objeto RemoteSort rellenado como parámetro</value>
+  </data>
+	<data name="Services_TaskIdMissing" xml:space="preserve">
+    <value>El objeto Tarea debe tener un TaskID con información </value>
+  </data>
+	<data name="Services_TaskIdNotNull" xml:space="preserve">
+    <value>El objeto Tarea debe tener un TaskID con información igual a nulo para su creación</value>
+  </data>
+	<data name="Services_TestCaseIdMissing" xml:space="preserve">
+    <value>El objeto Caso de Pruebas debe tener un TestCaseID con información</value>
+  </data>
+	<data name="Services_TestCaseIdNotNull" xml:space="preserve">
+    <value>El objeto Caso de Prueba debe tener un TestCaseID igual a nulo para su creación</value>
+  </data>
+	<data name="Services_TestCaseParameterIdNotNull" xml:space="preserve">
+    <value>El objeto Parámetro de Caso de Prueba debe tener TestCaseParameterId igual a nulo para agregar</value>
+  </data>
+	<data name="Services_TestSetIdMissing" xml:space="preserve">
+    <value>El objeto Conjunto de Pruebas debe tener un TestSetID con información</value>
+  </data>
+	<data name="Services_TestSetIdNotNull" xml:space="preserve">
+    <value>El objeto Conjunto de Pruebas debe tener un TestSetID igual a nulo para su creación</value>
+  </data>
+	<data name="Services_TestStepIdNotNull" xml:space="preserve">
+    <value>El objeto Paso de Prueba debe tener un TestStepID igual a nulo para su creación</value>
+  </data>
+	<data name="Services_UserIdNotNull" xml:space="preserve">
+    <value>El objeto Usuario debe tener un UserID igual a nulo para su creación</value>
+  </data>
+	<data name="Services_DocumentationUnavailable" xml:space="preserve">
+    <value>No se puede mostrar el Servicio Web  Documentación Online </value>
+  </data>
+	<data name="Services_DocumentNotFound" xml:space="preserve">
+    <value>No se puede encontrar el ID del Ajdunto en el sistema</value>
+  </data>
+	<data name="Services_IncidentNotFound" xml:space="preserve">
+    <value>No se puede encontrar el Incidente solicitado</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteDocuments" xml:space="preserve">
+    <value>No está autorizado a borrar los documentos del proyecto</value>
+  </data>
+	<data name="PageLayout_ProjectNoLongerExists" xml:space="preserve">
+    <value>El proyecto seleccionado ya no existe.</value>
+  </data>
+	<data name="Services_ArtifactLinkIdNotNull" xml:space="preserve">
+    <value>El objeto Asociación debe tener un ArtifactLinkId igual a nulo para su creación</value>
+  </data>
+	<data name="Services_NotAuthorizedAddAssociations" xml:space="preserve">
+    <value>No está autorizado para agregar asociaciones al tipo del artefacto fuente</value>
+  </data>
+	<data name="Services_ArtifactLinkIdMissing" xml:space="preserve">
+    <value>El objeto Asociación debe tener su ArtifactLinkId con información</value>
+  </data>
+	<data name="Services_ArtifactLinkNotFound" xml:space="preserve">
+    <value>La asociación especificada no existe en el sistema</value>
+  </data>
+	<data name="Services_ArtifactLinkReadOnly" xml:space="preserve">
+    <value>Usted no puede actualizar esta asociación ya que es generada por el sistema</value>
+  </data>
+	<data name="Services_NotAuthorizedViewAssociations" xml:space="preserve">
+    <value>No está autorizado para ver las asociaciones de este tipo de artefacto</value>
+  </data>
+	<data name="Services_CustomListNotBelongToProject" xml:space="preserve">
+    <value>La lista personalizada especificada no pertenece al proyecto actual</value>
+  </data>
+	<data name="ScriptService_UnableToLoadUserControl" xml:space="preserve">
+    <value>No se puede cargar el control de usuario en la ubicación {0} con el nombre {1}</value>
+  </data>
+	<data name="Global_DataChangedBySomeoneElse" xml:space="preserve">
+    <value>No se puede guardar los datos, ya que han sido cambiados por otra persona. Por favor, haga clic en el icono Actualizar y vuelva a intentarlo.</value>
+  </data>
+	<data name="Global_DependentArtifactDeleted" xml:space="preserve">
+    <value>No se pueden guardar los datos, pues el artefacto dependiente ha sido borrado. Por favor, haga clic en el icono Actualizar y vuelva a intentarlo.</value>
+  </data>
+	<data name="Releases_CannotTurnSummaryToIteration" xml:space="preserve">
+    <value>No se puede activar una Release en una Iteración.</value>
+  </data>
+	<data name="Releases_VersionNumberInUse" xml:space="preserve">
+    <value>Debe elegir un Número de Versión que no haya sido utilizado.</value>
+  </data>
+	<data name="TestCaseService_DuplicatePositionException" xml:space="preserve">
+    <value>No se pueden agregar todos los casos de prueba al conjunto de pruebas, ya que otro usuario está realizando un cambio. Por favor, haga clic en el icono Actualizar y vuelva a intentarlo.</value>
+  </data>
+	<data name="TestSetTestCaseService_MissingTestSetIdStdFilter" xml:space="preserve">
+    <value>Necesita introducir un TestSetId como un filtro estándar</value>
+  </data>
+	<data name="TestSetTestCaseService_MissingAddedTestCasesStdFilter" xml:space="preserve">
+    <value>Necesita introducir un LinkedTestCaseId como un filtro estándar</value>
+  </data>
+	<data name="TestCaseService_DuplicateParameterName" xml:space="preserve">
+    <value>Por favor, elija un nombre de parámetro no utilizado.</value>
+  </data>
+	<data name="TestStepService_SelfReferencingTestLink" xml:space="preserve">
+    <value>Ha creado una Asociación de Prueba autoreferenciada. Esto no se ejecutará correctamente.</value>
+  </data>
+	<data name="IncidentList_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar el(los) incidente(s) seleccionado(s)?</value>
+  </data>
+	<data name="RequirementsList_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar el(los) requisito(s) seleccionado(s)?</value>
+  </data>
+	<data name="TaskList_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea eliminar la(s) tarea(s) seleccionada(s)?</value>
+  </data>
+	<data name="TestCaseDetails_TestStepDeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar los pasos de prueba seleccionados?</value>
+  </data>
+	<data name="TestRunList_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar la(s) ejecución(es) de prueba seleccionada(s)?</value>
+  </data>
+	<data name="ReleaseList_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar la(s) release(s) seleccionada(s)?</value>
+  </data>
+	<data name="TestCaseList_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea eliminar el(los) caso(s) de prueba seleccionado(s)?</value>
+  </data>
+	<data name="TestSetList_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar el(los) conjunto(s) de pruebas seleccionado(s)?</value>
+  </data>
+	<data name="ArtifactLinkPanel_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar las asociaciones seleccionadas?</value>
+  </data>
+	<data name="Admin_Notification_DeleteEvent" xml:space="preserve">
+    <value>Está seguro que desea borrar este evento? Esto no se puede deshacer.</value>
+  </data>
+	<data name="Admin_Notification_ErrorEventIdNotFound" xml:space="preserve">
+    <value>No se pudo encontrar el ID del evento especificado.</value>
+  </data>
+	<data name="Admin_SelectProject" xml:space="preserve">
+    <value>Primero, usted debe seleccionar un proyecto de la página Ver/Editar Proyectos!</value>
+  </data>
+	<data name="Admin_Notification_WorkflowNotice" xml:space="preserve">
+    <value>Tenga en cuenta que estos eventos no anulan ni cancelan las notificaciones configuradas para Flujos de Trabajo de Incidentes. Para ajustar la configuración según los cambios en el estado del incidente y los pasos del flujo de trabajo, vaya a la página Ver/Editar Flujo de Trabajo.</value>
+  </data>
+	<data name="TestExecutionService_PendingTestRunDoesNotExist" xml:space="preserve">
+    <value>La Ejecución de Prueba Pendiente {0} no existe en el sistema</value>
+  </data>
+	<data name="Global_TooltipNotAvailable" xml:space="preserve">
+    <value>Descripción no Disponible!</value>
+  </data>
+	<data name="Admin_Notification_EditArtifactTemplate" xml:space="preserve">
+    <value>La plantilla a continuación se enviará siempre que un evento {0} coincida con un artefacto {1}. Los tokens de la plantilla se sustituirán cuando sea configurado un e-mail. De lo contrario, la plantilla se enviará tal cual a los usuarios y funciones asignados.</value>
+  </data>
+	<data name="Admin_Notification_EditArtifactTemplates" xml:space="preserve">
+    <value>Aquí puede especificar las plantillas de notificación de e-mail enviadas para cada tipo de Artefacto. Para editar la plantilla, seleccione el enlace Editar Plantilla. &lt;br&gt; Para probar el e-mail utilizando la plantilla, seleccione el enlace Probar Plantilla. El e-mail de prueba se enviará utilizando el primer elemento del proyecto.</value>
+  </data>
+	<data name="Admin_Notification_EditTemplateTokens" xml:space="preserve">
+    <value>A continuación se listan todos los tokens disponibles para {0}s y sus significados. Los tokens no listados serán sacados del mensaje final. Haga clic en un token para insertarlo en la posición actual del cursor en el editor anterior.</value>
+  </data>
+	<data name="Global_TestRunDoesNotExist" xml:space="preserve">
+    <value>La Ejecución de Prueba TR{0} no existe en el sistema</value>
+  </data>
+	<data name="Global_TestRunStepDoesNotExist" xml:space="preserve">
+    <value>El Paso de Prueba {0} no existe en el sistema</value>
+  </data>
+	<data name="TestCaseExecution_NotAuthorizedToResume" xml:space="preserve">
+    <value>Usted no está autorizado a  
+continuar esta ejecución pendiente.</value>
+  </data>
+	<data name="TestExecutionService_NotAuthorizedToUpdateTestRun" xml:space="preserve">
+    <value>Usted no puede actualizar esta ejecución de prueba, ya que no está asignada a usted.</value>
+  </data>
+	<data name="Notification_YouAreSubscribed" xml:space="preserve">
+    <value>Ahora está suscrito a este {0}.</value>
+  </data>
+	<data name="Notification_YouAreUnsubscribed" xml:space="preserve">
+    <value>Usted ya no está suscrito a este {0}.</value>
+  </data>
+	<data name="Login_UnlicensedProduct" xml:space="preserve">
+    <value>SIN LICENCIA. NO UTILICE.</value>
+  </data>
+	<data name="Admin_Notification_NoArtifactFound" xml:space="preserve">
+    <value>No existen artefactos de ese tipo en el sistema. Asegúrese de que al menos un tipo de artefacto existe antes de enviar un e-mail de prueba.</value>
+  </data>
+	<data name="Admin_Notification_TestTemplateSent" xml:space="preserve">
+    <value>E-mail de prueba en cola para enviar.</value>
+  </data>
+	<data name="Admin_Notification_ViewEditNotificationEventText" xml:space="preserve">
+    <value>Los detalles del evento se enumeran a continuación. Puede editar los campos y los usuarios y si este evento se activará en la creación, pero una vez creado, el Tipo de Artefacto no se puede cambiar.&lt;br&gt;Una vez terminado, haga clic en [Guardar] o [Insertar] para guardar los cambios.</value>
+  </data>
+	<data name="AutomationHostService_AutomationHostTokenNotUnique" xml:space="preserve">
+    <value>Usted debe proporcionar un token único para el host de automatización </value>
+  </data>
+	<data name="AutomationHosts_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea eliminar el(los) host(s) de automatización seleccionado(s)?</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_UpdatedAdmin_AutomationEngineDetails_EngineNotExists" xml:space="preserve">
+    <value>La herramienta de automatización seleccionada ha sido borrada del sistema.</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_UpdatedMessage" xml:space="preserve">
+    <value>Herramienta de Automatización actualizada con éxito.</value>
+  </data>
+	<data name="Services_TestSetNotAutomated" xml:space="preserve">
+    <value>Es necesario especificar un conjunto de pruebas que esté marcado como automatizado</value>
+  </data>
+	<data name="TestCaseDetails_UnableToConvertToText" xml:space="preserve">
+    <value>No se puede convertir a texto</value>
+  </data>
+	<data name="TestCaseDetails_NeedAutomationFilename" xml:space="preserve">
+    <value>Es necesario especificar un nombre para el script de pruebas automatizadas.</value>
+  </data>
+	<data name="UserDetails_ChangesSaved" xml:space="preserve">
+    <value>Tus preferencias han sido guardadas.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError1" xml:space="preserve">
+    <value>Debe introducir su contraseña actual.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError2" xml:space="preserve">
+    <value>Los campos de nueva contraseña no coinciden.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError3" xml:space="preserve">
+    <value>La nueva contraseña no puede estar en blanco.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError4" xml:space="preserve">
+    <value>La contraseña actual está incorrecta.</value>
+  </data>
+	<data name="UserDetails_UpdateMessage" xml:space="preserve">
+    <value>Por favor, revise la siguiente información y realice los cambios necesarios.&lt;br /&gt; Haga clic en [Guardar] para guardar los cambios.</value>
+  </data>
+	<data name="UserDetails_UpdatePasswordMessage" xml:space="preserve">
+    <value>Para cambiar su contraseña, usted debe introducir su contraseña actual y la nueva contraseña.</value>
+  </data>
+	<data name="TaskDetails_DatesOutsideReleaseDates" xml:space="preserve">
+    <value>La fecha de inicio o de fin de esta tarea no puede estar fuera del rango de fechas de la Release/Iteración asociada</value>
+  </data>
+	<data name="TaskDetails_EnterValidActualEffort" xml:space="preserve">
+    <value>Es necesario introducir un número válido de horas para el Esfuerzo Real</value>
+  </data>
+	<data name="TaskDetails_EnterValidEstimatedEffort" xml:space="preserve">
+    <value>Es necesario introducir un número válido de horas para el Esfuerzo Estimado</value>
+  </data>
+	<data name="TaskDetails_EnterValidRemainingEffort" xml:space="preserve">
+    <value>Es necesario introducir un número válido de horas para el Esfuerzo Restante</value>
+  </data>
+	<data name="RequirementDetails_EnterValidPlannedEffort" xml:space="preserve">
+    <value>Es necesario introducir un número válido de horas para el Esfuerzo Planeado</value>
+  </data>
+	<data name="UserDetails_detEnableNotifications" xml:space="preserve">
+    <value>Si está desactivado, usted no recibirá notificaciones por e-mail.</value>
+  </data>
+	<data name="UserDetails_ToChangePassword" xml:space="preserve">
+    <value>Para cambiar su contraseña, debe introducir su contraseña actual y la nueva contraseña.</value>
+  </data>
+	<data name="Notification_EventDeleted" xml:space="preserve">
+    <value>Se ha borrado el evento de notificación seleccionado.</value>
+  </data>
+	<data name="InvalidDatabase_ContactSupport1" xml:space="preserve">
+    <value>Por favor,</value>
+  </data>
+	<data name="InvalidDatabase_InvalidRevisionInstalled" xml:space="preserve">
+    <value>Una revisión de base de datos no válida está instalada en el servidor. &lt;br&gt;Esperado: &lt;b&gt;{0}&lt;/b&gt;&lt;br&gt;Instalado: &lt;b&gt;{1}&lt;/b&gt;</value>
+  </data>
+	<data name="TestCaseDetails_EnterValidEstimatedDuration" xml:space="preserve">
+    <value>Es necesario introducir un número válido de horas para la Duración Estimada</value>
+  </data>
+	<data name="TestRunDetails_EnterValidActualDuration" xml:space="preserve">
+    <value>Es necesario introducir un número válido de horas para la Duración Real</value>
+  </data>
+	<data name="TestRunDetails_EnterValidEstimatedDuration" xml:space="preserve">
+    <value>Es necesario introducir un número válido de horas para la Duración Estimada</value>
+  </data>
+	<data name="Login_InvalidUserNamePassword" xml:space="preserve">
+    <value>Nombre de usuario o contraseña inválidos. Por favor, vuelve a intentarlo.</value>
+  </data>
+	<data name="Login_NeedToEnterPassword" xml:space="preserve">
+    <value>Es necesario introducir una contraseña</value>
+  </data>
+	<data name="Login_NeedToEnterUserName" xml:space="preserve">
+    <value>Es necesario introducir un nombre de usuario</value>
+  </data>
+	<data name="EmailPassword_EmailNotEnabled" xml:space="preserve">
+    <value>No se puede restablecer la contraseña, pues el e-mail no está habilitado!</value>
+  </data>
+	<data name="EmailPassword_EmailNotMatch" xml:space="preserve">
+    <value>La dirección de correo electrónico no coincide, por favor, inténtelo de nuevo!</value>
+  </data>
+	<data name="EmailPassword_EnterUserNameEmail" xml:space="preserve">
+    <value>Es necesario introducir un nombre de usuario y dirección de correo electrónico!</value>
+  </data>
+	<data name="EmailPassword_ErrorSending" xml:space="preserve">
+    <value>Error al enviar el e-mail, por favor, contacte con su administrador!</value>
+  </data>
+	<data name="EmailPassword_NotResetLDAP" xml:space="preserve">
+    <value>No se puede restablecer la contraseña de un usuario LDAP a través de {0}!</value>
+  </data>
+	<data name="EmailPassword_NoUserExists" xml:space="preserve">
+    <value>No existe un usuario con ese nombre de usuario!</value>
+  </data>
+	<data name="EmailPassword_PasswordSent" xml:space="preserve">
+    <value>La contraseña se ha enviado a su e-mail!</value>
+  </data>
+	<data name="NeedAccount_EmailNotValid" xml:space="preserve">
+    <value>La dirección de correo electrónico que introdujo no es válida</value>
+  </data>
+	<data name="NeedAccount_EmailRequired" xml:space="preserve">
+    <value>Dirección de correo electrónico se requerida</value>
+  </data>
+	<data name="NeedAccount_EmailSent" xml:space="preserve">
+    <value>Un correo electrónico solicitando acceso a una nueva cuenta ha sido enviado al administrador</value>
+  </data>
+	<data name="NeedAccount_ErrorSendingEmail" xml:space="preserve">
+    <value>Error al enviar el correo electrónico, por favor, contacte con su administrador!</value>
+  </data>
+	<data name="NeedAccount_FirstNameRequired" xml:space="preserve">
+    <value>Nombre requerido</value>
+  </data>
+	<data name="NeedAccount_LastNameRequired" xml:space="preserve">
+    <value>Apellido requerido</value>
+  </data>
+	<data name="ForceSession_AccountSignedInMultiple" xml:space="preserve">
+    <value>Su cuenta de usuario está actualmente activa en {0} en &lt;u&gt;varias&lt;/u&gt; ubicaciones.</value>
+  </data>
+	<data name="Global_UnableToLoad" xml:space="preserve">
+    <value>No se puede cargar</value>
+  </data>
+	<data name="PendingTestRuns_ArtifactNotExists" xml:space="preserve">
+    <value>La ejecución de prueba pendiente seleccionada ya no existe!</value>
+  </data>
+	<data name="RequirementsList_ArtifactNotExists" xml:space="preserve">
+    <value>El requerimiento seleccionados ya no existe.</value>
+  </data>
+	<data name="SavedReports_DeleteConfirmation" xml:space="preserve">
+    <value>Está seguro que desea borrar este informe guardado?</value>
+  </data>
+	<data name="SavedSearches_DeleteConfirmation" xml:space="preserve">
+    <value>Está seguro que desea borrar esta búsqueda guardada?</value>
+  </data>
+	<data name="SavedSearches_UnableToRetrieveSeach" xml:space="preserve">
+    <value>No se puede recuperar la búsqueda guardada.</value>
+  </data>
+	<data name="TaskList_ArtifactNotExists" xml:space="preserve">
+    <value>La tarea seleccionada ya no existe.</value>
+  </data>
+	<data name="TestCaseList_ArtifactNotExists" xml:space="preserve">
+    <value>El caso de prueba seleccionado ya no existe.</value>
+  </data>
+	<data name="TestSetList_ArtifactNotExists" xml:space="preserve">
+    <value>El conjunto de pruebas seleccionado ya no existe.</value>
+  </data>
+	<data name="WeatherBox_ErrorRetrievingWeather" xml:space="preserve">
+    <value>Error al recuperar información del clima desde el servidor.</value>
+  </data>
+	<data name="WeatherBox_NoResults" xml:space="preserve">
+    <value>No se encontró información del clima en la localidad capturada.</value>
+  </data>
+	<data name="InvalidLicense_EvaluationExpired" xml:space="preserve">
+    <value>La licencia de evaluación en el servidor ha expirado. &lt;br /&gt; Por favor, contacte con un representante de ventas para obtener una licencia permanente.</value>
+  </data>
+	<data name="InvalidLicense_ExceededConcurrent" xml:space="preserve">
+    <value>El número máximo permitido de usuarios simultáneos se excedió. &lt;br /&gt; Un usuario conectado debe cerrar sesión antes de que usted pueda continuar.</value>
+  </data>
+	<data name="InvalidLicense_InvalidLicenseOnServer" xml:space="preserve">
+    <value>Hay una llave de licencia inválida en el servidor. Por favor, contacte al administrador del sistema para corregir el problema.</value>
+  </data>
+	<data name="InvalidDatabase_ContactSupport2" xml:space="preserve">
+    <value>Contacte al Soporte</value>
+  </data>
+	<data name="InvalidDatabase_ContactSupport3" xml:space="preserve">
+    <value>para asistencia</value>
+  </data>
+	<data name="ErrorPage_ContactSupport1" xml:space="preserve">
+    <value>Por favor,</value>
+  </data>
+	<data name="ErrorPage_ContactSupport2" xml:space="preserve">
+    <value>contacte con el soporte</value>
+  </data>
+	<data name="ErrorPage_ContactSupport3" xml:space="preserve">
+    <value>y proporcione los siguientes datos:</value>
+  </data>
+	<data name="ErrorPage_DetailsNotAvailable" xml:space="preserve">
+    <value>Detalle del Error no Disponible - Vea el Registro de Eventos de Aplicaciones del Windows </value>
+  </data>
+	<data name="Global_CannotAddWidgetMoreThanOnce" xml:space="preserve">
+    <value>No se puede agregar el mismo widget más de una vez.</value>
+  </data>
+	<data name="AssignedIncidents_ArtifactNotExists" xml:space="preserve">
+    <value>El incidente seleccionado ya no existe.</value>
+  </data>
+	<data name="RequirementsService_OnlySupportsRequirementInserts" xml:space="preserve">
+    <value>Este método sólo es compatible con inserciones de Requerimiento</value>
+  </data>
+	<data name="TestSetList_SelectSingleTestSet" xml:space="preserve">
+    <value>Debe Seleccionar un solo grpuo de pruebas para la ejecució!</value>
+  </data>
+	<data name="TestSetList_TestSetHasNoTestCases" xml:space="preserve">
+    <value>El conjunto de pruebas seleccionado no contiene ningún caso de prueba!</value>
+  </data>
+	<data name="Global_InvalidOperation" xml:space="preserve">
+    <value>Operación Inválida</value>
+  </data>
+	<data name="SourceCode_ProviderError" xml:space="preserve">
+    <value>Error de Proveedor</value>
+  </data>
+	<data name="TestSetList_TestSetsCannotHaveChildItems" xml:space="preserve">
+    <value>Los conjuntos de pruebas no pueden tener otros conjuntos de pruebas o carpetas como hijos.</value>
+  </data>
+	<data name="TestCaseList_SelectCheckboxForExecute" xml:space="preserve">
+    <value>Debe seleccionar al menos UN ítem para el comando Ejecutar!</value>
+  </data>
+	<data name="TestCaseList_TestCasesCannotHaveChildItems" xml:space="preserve">
+    <value>Los casos de prueba no puede tener casos de prueba hijos o carpetas.</value>
+  </data>
+	<data name="RequirementDetails_ArtifactNotExists" xml:space="preserve">
+    <value>El requerimiento seleccionado no existe en el sistema.</value>
+  </data>
+	<data name="RequirementDetails_DeleteConfirm" xml:space="preserve">
+    <value>Esta acción eliminará este requerimiento de manera permanente. Está seguro que desea continuar?</value>
+  </data>
+	<data name="RequirementDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esta acción descartará los cambios no guardados. Está seguro que desea continuar?</value>
+  </data>
+	<data name="RequirementDetails_NameRequired" xml:space="preserve">
+    <value>El Nombre del Requerimento es necesario</value>
+  </data>
+	<data name="RequirementDetails_PlannedEffortInvalid" xml:space="preserve">
+    <value>El Esfuerzo Planeado no es válido</value>
+  </data>
+	<data name="RequirementDetails_SaveSuccess" xml:space="preserve">
+    <value>Cambios al Requerimento guardados con éxito</value>
+  </data>
+	<data name="UserProfile_EmailNotValid" xml:space="preserve">
+    <value>La dirección de e-mail ingresada no es válida</value>
+  </data>
+	<data name="UserProfile_EmailRequired" xml:space="preserve">
+    <value>La dirección de e-mail es requerida</value>
+  </data>
+	<data name="UserProfile_FirstNameRequired" xml:space="preserve">
+    <value>El Nombre es requerido</value>
+  </data>
+	<data name="UserProfile_LastNameRequired" xml:space="preserve">
+    <value>El Apellido es requerido</value>
+  </data>
+	<data name="UserProfile_NotLinked" xml:space="preserve">
+    <value>No Asociado</value>
+  </data>
+	<data name="Global_EnterValidDateRangeValue" xml:space="preserve">
+    <value>Es necesario introducir un rango válido de fechas para '{0}'</value>
+  </data>
+	<data name="Global_EnterValidIntegerValue" xml:space="preserve">
+    <value>Es necesario introducir un valor entero válido para '{0}'</value>
+  </data>
+	<data name="FileUploadDialog_ErrorLoadingDialog" xml:space="preserve">
+    <value>Error al Cargar el Cuadro de Diálogo</value>
+  </data>
+	<data name="FileUploadDialog_TagsNotValid" xml:space="preserve">
+    <value>Las etiquetas sólo pueden contener caracteres alfanuméricos separados por una coma</value>
+  </data>
+	<data name="FileUploadDialog_URLNotValid" xml:space="preserve">
+    <value>La URL no está en un formato válido</value>
+  </data>
+	<data name="AttachmentPanel_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que quiere eliminar este documento del sistema?</value>
+  </data>
+	<data name="ReleaseDetails_SaveSuccess" xml:space="preserve">
+    <value>Cambios en la release guardados con éxito </value>
+  </data>
+	<data name="ReleaseDetails_DeleteConfirm" xml:space="preserve">
+    <value>Esta acción eliminará esta release/iteración de forma permanente. Está seguro que desea continuar?</value>
+  </data>
+	<data name="ReleaseDetails_EndDateInvalid" xml:space="preserve">
+    <value>Debe introducir la fecha final en el formato especificado</value>
+  </data>
+	<data name="ReleaseDetails_EndDateRequired" xml:space="preserve">
+    <value>La Fecha de Fin es necesaria</value>
+  </data>
+	<data name="ReleaseDetails_NameRequired" xml:space="preserve">
+    <value>El Nombre de la Release es necesario</value>
+  </data>
+	<data name="ReleaseDetails_NonWorkInvalid" xml:space="preserve">
+    <value>El n.º de Días Laborables debe ser un valor entero.</value>
+  </data>
+	<data name="ReleaseDetails_NonWorkRequired" xml:space="preserve">
+    <value>El n.º de Días Laborables es necesario</value>
+  </data>
+	<data name="ReleaseDetails_NumResourcesInvalid" xml:space="preserve">
+    <value>El n.º de Recursos debe ser un valor entero.</value>
+  </data>
+	<data name="ReleaseDetails_NumResourcesRequired" xml:space="preserve">
+    <value>El n.º de Recursos es necesario</value>
+  </data>
+	<data name="ReleaseDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esta acción descartará los cambios no guardados. Está seguro que desea continuar?</value>
+  </data>
+	<data name="ReleaseDetails_StartDateInvalid" xml:space="preserve">
+    <value>Debe introducir la fecha de inicio en el formato especificado</value>
+  </data>
+	<data name="ReleaseDetails_StartDateRequired" xml:space="preserve">
+    <value>Fecha de Inicio es necesaria</value>
+  </data>
+	<data name="ReleaseDetails_VersionNumberRequired" xml:space="preserve">
+    <value>El Número de Versión es necesario</value>
+  </data>
+	<data name="ReleaseDetails_CannotMakeSummaryReleaseIteration" xml:space="preserve">
+    <value>No se puede cambiar un Resumen de Release en un Ciclo.</value>
+  </data>
+	<data name="ReleaseDetails_VersionNumberInUse" xml:space="preserve">
+    <value>Usted debe elegir un Número de Versión que no esté en uso.</value>
+  </data>
+	<data name="TestCaseDetails_DeleteConfirm" xml:space="preserve">
+    <value>Esta acción eliminará permanentemente todo el CASO DE PRUEBA. Está seguro que desea continuar?</value>
+  </data>
+	<data name="TestCaseDetails_NameRequired" xml:space="preserve">
+    <value>El Nombre del Caso de Prueba es necesario</value>
+  </data>
+	<data name="TestCaseDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esta acción descartará los cambios no guardados. Está seguro que desea continuar?</value>
+  </data>
+	<data name="TestCaseDetails_SaveSuccess" xml:space="preserve">
+    <value>Cambios al caso de prueba guardados con éxito </value>
+  </data>
+	<data name="TestCaseDetails_VersionNumberInvalid" xml:space="preserve">
+    <value>El número de versión sólo puede contener caracteres alfanuméricos y puntos</value>
+  </data>
+	<data name="TestCaseDetails_TestHasNoParameters" xml:space="preserve">
+    <value>Este Caso de Prueba no tiene ningún parámetro.</value>
+  </data>
+	<data name="TestCaseDetails_ArtifactNotExists" xml:space="preserve">
+    <value>El caso de prueba seleccionado ha sido borrado del sistema.</value>
+  </data>
+	<data name="TestSetDetails_ArtifactNotExists" xml:space="preserve">
+    <value>El conjunto de pruebas seleccionado ha sido borrado del sistema.</value>
+  </data>
+	<data name="TestSetDetails_DeleteConfirm" xml:space="preserve">
+    <value>Esta acción eliminará el conjunto de pruebas permanentemente. Está seguro que desea continuar?</value>
+  </data>
+	<data name="TestSetDetails_NameRequired" xml:space="preserve">
+    <value>El Nombre del Conjunto de Pruebas es necesario</value>
+  </data>
+	<data name="TestSetDetails_NotExecuteEmptySet" xml:space="preserve">
+    <value>No se puede ejecutar una carpeta o un conjunto de pruebas que no contenga algún caso de prueba.</value>
+  </data>
+	<data name="TestSetDetails_NotExecuteTestsInAutomated" xml:space="preserve">
+    <value>No puede ejecutar casos de prueba individuales en un conjunto de pruebas automatizadas. En su lugar, por favor, haga clic en el icono de ejecución del conjunto de pruebas principal.</value>
+  </data>
+	<data name="TestSetDetails_PlannedTimeInvalid" xml:space="preserve">
+    <value>El Tiempo Planeado es inválido</value>
+  </data>
+	<data name="TestSetDetails_PlannedTimeTooltip" xml:space="preserve">
+    <value>Ingrese el Tiempo Planeado</value>
+  </data>
+	<data name="TestSetDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esta acción descartará los cambios no guardados. Está seguro que desea continuar?</value>
+  </data>
+	<data name="TestSetDetails_SaveSuccess" xml:space="preserve">
+    <value>Cambios al Conjunto de Pruebas guardados con éxito </value>
+  </data>
+	<data name="TestSetDetails_SelectOneForExecute" xml:space="preserve">
+    <value>Debe seleccionar al menos UN ítem para iniciar la Ejecución!</value>
+  </data>
+	<data name="TestStepDetails_DeleteConfirm" xml:space="preserve">
+    <value>Esta acción borrará el paso de prueba actual. Está seguro que desea continuar?</value>
+  </data>
+	<data name="TestStepDetails_DescriptionRequired" xml:space="preserve">
+    <value>La descripción es necesaria</value>
+  </data>
+	<data name="TestStepDetails_ExpectedResultRequired" xml:space="preserve">
+    <value>El Resultado Esperado es necesario</value>
+  </data>
+	<data name="TestStepDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esta acción descartará los cambios no guardados. Está seguro que desea continuar?</value>
+  </data>
+	<data name="TestRunDetails_ActualDurationInvalid" xml:space="preserve">
+    <value>La Duración Real no es válida</value>
+  </data>
+	<data name="TestRunDetails_ArtifactDeleted" xml:space="preserve">
+    <value>La ejecución de prueba seleccionada ha sido borrada del sistema.</value>
+  </data>
+	<data name="TestRunDetails_ArtifactNotExists" xml:space="preserve">
+    <value>La ejecución de prueba seleccionada no existe en el sistema.</value>
+  </data>
+	<data name="TestRunDetails_DeleteConfirm" xml:space="preserve">
+    <value>Esta acción eliminará la ejecución de prueba permanentemente. Está seguro que desea continuar?</value>
+  </data>
+	<data name="TestRunDetails_EstimatedDurationInvalid" xml:space="preserve">
+    <value>La Duración Estimada no es válida</value>
+  </data>
+	<data name="TestRunDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esta acción descartará los cambios no guardados. Está seguro que desea continuar?</value>
+  </data>
+	<data name="TestRunDetails_TestSetIsFolderOrNotExists" xml:space="preserve">
+    <value>El conjunto de pruebas seleccionado es una carpeta o ya no existe.</value>
+  </data>
+	<data name="TestRunDetails_UpdateSuccess" xml:space="preserve">
+    <value>Ejecución de Prueba actualizada con éxito </value>
+  </data>
+	<data name="AutomationHostDetails_DeleteConfirm" xml:space="preserve">
+    <value>Esta acción eliminará el host permanentemente. Está seguro que desea continuar?</value>
+  </data>
+	<data name="AutomationHostDetails_NameRequired" xml:space="preserve">
+    <value>El Nombre del Host es necesario</value>
+  </data>
+	<data name="AutomationHostDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esta acción descartará los cambios no guardados. Está seguro que desea continuar?</value>
+  </data>
+	<data name="AutomationHostDetails_Success" xml:space="preserve">
+    <value>Cambios al host de automatización guardados con éxito </value>
+  </data>
+	<data name="AutomationHostDetails_TokenRequired" xml:space="preserve">
+    <value>El Token es necesario</value>
+  </data>
+	<data name="IncidentDetails_Success" xml:space="preserve">
+    <value>Incidente actualizado con éxito.</value>
+  </data>
+	<data name="IncidentDetails_UnableToRetrieve" xml:space="preserve">
+    <value>No se puede recuperar el incidente especificado</value>
+  </data>
+	<data name="Admin_FileTypes_AllListed" xml:space="preserve">
+    <value>Esta es la lista de tipos de archivos configurados, sus iconos mostrados en la aplicación y los tipos MIME correspondientes. Tenga en cuenta que las extensiones de archivo no definidas se permiten, sólo se mostrarán como 'Desconocido' en la aplicación.</value>
+  </data>
+	<data name="IncidentDetails_ActualEffortInvalid" xml:space="preserve">
+    <value>Esfuerzo Real inválido</value>
+  </data>
+	<data name="IncidentDetails_ActualEffortRequired" xml:space="preserve">
+    <value>El Esfuerzo Real es necesario</value>
+  </data>
+	<data name="IncidentDetails_ClosedDateInvalid" xml:space="preserve">
+    <value>Debe introducir la Fecha de Cierre en el formato especificado</value>
+  </data>
+	<data name="IncidentDetails_ClosedDateRequired" xml:space="preserve">
+    <value>La Fecha de Cierre es necesaria</value>
+  </data>
+	<data name="IncidentDetails_CommentRequired" xml:space="preserve">
+    <value>Un nuevo comentario es necesario</value>
+  </data>
+	<data name="IncidentDetails_DescriptionRequired" xml:space="preserve">
+    <value>La Descripción del Incidente es necesaria</value>
+  </data>
+	<data name="IncidentDetails_DetectedReleaseRequired" xml:space="preserve">
+    <value>La Release Detectada es necesaria</value>
+  </data>
+	<data name="IncidentDetails_EstimatedEffortInvalid" xml:space="preserve">
+    <value>El Esfuerzo Estimado no es válido</value>
+  </data>
+	<data name="IncidentDetails_EstimatedEffortRequired" xml:space="preserve">
+    <value>El Esfuerzo Estimado es necesario</value>
+  </data>
+	<data name="IncidentDetails_IncidentIdNotValid" xml:space="preserve">
+    <value>El ID del Incidente debe ser numérico</value>
+  </data>
+	<data name="IncidentDetails_NameRequired" xml:space="preserve">
+    <value>El Nombre del Incidente es necesario</value>
+  </data>
+	<data name="IncidentDetails_NoOperationsAvailable" xml:space="preserve">
+    <value>No hay Operaciones Disponibles</value>
+  </data>
+	<data name="IncidentDetails_OwnerRequired" xml:space="preserve">
+    <value>El Propietario es necesario</value>
+  </data>
+	<data name="IncidentDetails_PriorityRequired" xml:space="preserve">
+    <value>La Prioridad es necesaria</value>
+  </data>
+	<data name="IncidentDetails_RemainingEffortInvalid" xml:space="preserve">
+    <value>El Esfuerzo Restante no es válido</value>
+  </data>
+	<data name="IncidentDetails_RemainingEffortRequired" xml:space="preserve">
+    <value>El Esfuerzo restante es necesario</value>
+  </data>
+	<data name="IncidentDetails_SaveChangesFirst" xml:space="preserve">
+    <value>Por favor, primero guarde los cambios.</value>
+  </data>
+	<data name="IncidentDetails_SeverityRequired" xml:space="preserve">
+    <value>La severidad es necesaria</value>
+  </data>
+	<data name="IncidentDetails_StartDateInvalid" xml:space="preserve">
+    <value>Debe introducir la fecha de inicio en el formato especificado</value>
+  </data>
+	<data name="IncidentDetails_StartDateRequired" xml:space="preserve">
+    <value>La Fecha de inicio es necesaria</value>
+  </data>
+	<data name="IncidentDetails_VerifiedReleaseRequired" xml:space="preserve">
+    <value>La Release Verificada es necesaria</value>
+  </data>
+	<data name="IncidentDetails_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que quiere borrar este incidente?</value>
+  </data>
+	<data name="IncidentDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esta acción descartará los cambios no guardados. Está seguro que desea continuar?</value>
+  </data>
+	<data name="TaskDetails_ActualEffortInvalid" xml:space="preserve">
+    <value>El Esfuerzo Real no es válido</value>
+  </data>
+	<data name="TaskDetails_ArtifactNotExists" xml:space="preserve">
+    <value>La tarea seleccionada ya no existe en el sistema.</value>
+  </data>
+	<data name="TaskDetails_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar esta tarea?</value>
+  </data>
+	<data name="TaskDetails_EndDateInvalid" xml:space="preserve">
+    <value>Debe introducir la Fecha de Fin en el formato especificado</value>
+  </data>
+	<data name="TaskDetails_EstimatedEffortInvalid" xml:space="preserve">
+    <value>El Esfuerzo Estimado no es válido</value>
+  </data>
+	<data name="TaskDetails_NameRequired" xml:space="preserve">
+    <value>El Nombre de la Tarea es necesario</value>
+  </data>
+	<data name="TaskDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esta acción descartará los cambios no guardados. Está seguro que desea continuar?</value>
+  </data>
+	<data name="TaskDetails_RemainingEffortInvalid" xml:space="preserve">
+    <value>El Esfuerzo Restante no es válido</value>
+  </data>
+	<data name="TaskDetails_StartDateInvalid" xml:space="preserve">
+    <value>Debe introducir la Fecha de Inicio en el formato especificado</value>
+  </data>
+	<data name="TaskDetails_Success" xml:space="preserve">
+    <value>Los cambios a la tarea se han guardados con éxito</value>
+  </data>
+	<data name="Admin_FileTypes_EditFileTypeMessage" xml:space="preserve">
+    <value>Esta es la definición del tipo de archivo con la extensión determinada. Introducir valores aquí simplemente ayuda a mostrar la información de archivo correctamente en el control de código fuente y las páginas de los documentos con archivos adjuntos. Todos los campos son obligatorios, los campos en blanco se establecerán por Defecto. La imagen de icono debe existir en el servidor web en el directorio del tema activo en "Filetypes".</value>
+  </data>
+	<data name="Admin_FileTypes_RequiredDecription" xml:space="preserve">
+    <value>Es necesaria la descripción de la extensión de archivo.</value>
+  </data>
+	<data name="Admin_FileTypes_RequiredExtension" xml:space="preserve">
+    <value>Debe especificar una extensión sin punto.</value>
+  </data>
+	<data name="Admin_FileTypes_TypeDeletedError" xml:space="preserve">
+    <value>No se pudo eliminar el tipo de archivo.</value>
+  </data>
+	<data name="SourceCodeList_GeneralError" xml:space="preserve">
+    <value>Se ha producido un error al accesar el proveedor de Control de Versiones especificado. Por favor, verifique la configuración en la sección Administración y vuelva a intentarlo.</value>
+  </data>
+	<data name="SourceCodeList_InvalidLicense" xml:space="preserve">
+    <value>Usted no tiene acceso al modulo de Código Fuente, debido a la licencia actual.</value>
+  </data>
+	<data name="SourceCodeList_InvalidRole" xml:space="preserve">
+    <value>Usted no tiene acceso al modulo de Control de Versiones, debido a su función actual.</value>
+  </data>
+	<data name="SourceCodeList_UnableToAuthenticate" xml:space="preserve">
+    <value>No se puede autenticar con el proveedor del Control de Versiones. Por favor, verifique el nombre de usuario/ contraseña y vuelva a intentarlo.</value>
+  </data>
+	<data name="SourceCodeList_UnableToLoadProvider" xml:space="preserve">
+    <value>No se puede cargar el proveedor de Control de Versiones especificado. Por favor, verifique los ajustes en la sección de Administración y vuelva a intentarlo.</value>
+  </data>
+	<data name="Admin_FileTypes_ExtensionExists" xml:space="preserve">
+    <value>La extension de '{0}' ya existe en la base de datos.</value>
+  </data>
+	<data name="SourceCodeRedirect_CacheInvalid" xml:space="preserve">
+    <value>La caché de código fuente no es válida. Por favor, inténtelo de nuevo.</value>
+  </data>
+	<data name="Admin_FileTypes_SuccessDeleted" xml:space="preserve">
+    <value>Tipo de archivo "{0}" eliminado con éxito.</value>
+  </data>
+	<data name="Admin_FileTypes_SuccessAdded" xml:space="preserve">
+    <value>Tipo de archivo "{0}" añadido con éxito.</value>
+  </data>
+	<data name="Admin_FileTypes_SuccessUpdated" xml:space="preserve">
+    <value>Tipo de archivo "{0}" modificado con éxito.</value>
+  </data>
+	<data name="SourceCodeFileDetails_FileNotExists" xml:space="preserve">
+    <value>El archivo seleccionado se ha borrado del sistema.</value>
+  </data>
+	<data name="SourceCodeFileDetails_FolderNotExists" xml:space="preserve">
+    <value>La carpeta seleccionada se ha borrado del sistema.</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_NotAuthorizedForRevision" xml:space="preserve">
+    <value>Usted no tiene permiso para ver la revisión  seleccionada.</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_RevisionNotExists" xml:space="preserve">
+    <value>La revisión seleccionada ha sido borrada del sistema.</value>
+  </data>
+	<data name="Reports_DeleteSaved" xml:space="preserve">
+    <value>Está seguro que quiere borrar este informe guardado?</value>
+  </data>
+	<data name="ReportConfiguration_FormatNotExists" xml:space="preserve">
+    <value>El formato que ha seleccionado ya no existe en el sistema</value>
+  </data>
+	<data name="ReportConfiguration_Needs" xml:space="preserve">
+    <value>{0} debe ser un rango de fechas válido</value>
+  </data>
+	<data name="ReportConfiguration_NeedToSelectFormat" xml:space="preserve">
+    <value>Debe seleccionar un formato de informe que se generará</value>
+  </data>
+	<data name="ReportConfiguration_NotAvailableInCurrentEdition" xml:space="preserve">
+    <value>Esta característica no está disponible en la edición actualmente instalada.</value>
+  </data>
+	<data name="ReportConfiguration_ReportIDNotExists" xml:space="preserve">
+    <value>El ID del informe no existe.</value>
+  </data>
+	<data name="Reports_NotExists" xml:space="preserve">
+    <value>No se puede recuperar el informe guardado.</value>
+  </data>
+	<data name="TestCaseExecution_FinishConfirm" xml:space="preserve">
+    <value>Está seguro que desea Finalizar esta ejecución de pruebas? Usted no será capaz de realizar más cambios después.</value>
+  </data>
+	<data name="TestCaseExecution_OwnerRequired" xml:space="preserve">
+    <value>Es necesario introducir un Propietario</value>
+  </data>
+	<data name="TestCaseExecution_PriorityRequired" xml:space="preserve">
+    <value>Es necesario introducir una Prioridad</value>
+  </data>
+	<data name="TestCaseExecution_SeverityRequired" xml:space="preserve">
+    <value>Es necesario introducir una Severidad</value>
+  </data>
+	<data name="WebPartBase_NotAuthorizedForProject" xml:space="preserve">
+    <value>Usted no es miembro del proyecto '{0}'. Por favor, póngase en contacto con el propietario del proyecto si desea ser agregado.</value>
+  </data>
+	<data name="TestCaseExecution_PassAllConfirm" xml:space="preserve">
+    <value>Está seguro que desea aprobar a TODOS los pasos de prueba de este caso de prueba?</value>
+  </data>
+	<data name="DocumentDetails_ArtifactIdInvalid" xml:space="preserve">
+    <value>Es necesario introducir un ID de artefacto numérico</value>
+  </data>
+	<data name="DocumentDetails_ArtifactIdRequired" xml:space="preserve">
+    <value>Es necesario introducir un ID de artefacto</value>
+  </data>
+	<data name="DocumentDetails_ArtifactNotExists" xml:space="preserve">
+    <value>El ID del artefacto especificado no coincide con un artefacto del sistema.</value>
+  </data>
+	<data name="DocumentDetails_CannotChangeFiletype" xml:space="preserve">
+    <value>No se puede cambiar el nombre del archivo para que sea de un tipo diferente.</value>
+  </data>
+	<data name="DocumentDetails_CannotDeleteActiveVersion" xml:space="preserve">
+    <value>No se puede borrar la versión activa.</value>
+  </data>
+	<data name="DocumentDetails_DeleteConfirm" xml:space="preserve">
+    <value>Esta acción borrará este documento de forma permanente. Está seguro que desea continuar?</value>
+  </data>
+	<data name="DocumentDetails_DeleteVersionConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar esta versión del documento?</value>
+  </data>
+	<data name="DocumentDetails_DocumentNotExists" xml:space="preserve">
+    <value>El documento seleccionado ha sido borrado del sistema.</value>
+  </data>
+	<data name="DocumentDetails_FolderNotExists" xml:space="preserve">
+    <value>La carpeta seleccionada ha sido borrada del sistema.</value>
+  </data>
+	<data name="DocumentDetails_NameRequired" xml:space="preserve">
+    <value>El Nombre del Documento es necesario</value>
+  </data>
+	<data name="DocumentDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esta acción descartará cualquier cambio no guardado. Está seguro que desea proceder?</value>
+  </data>
+	<data name="DocumentDetails_RemoveAssociationConfirm" xml:space="preserve">
+    <value>Está seguro que desea eliminar esta asociación?</value>
+  </data>
+	<data name="DocumentDetails_TagsInvalid" xml:space="preserve">
+    <value>Las etiquetas sólo pueden contener caracteres alfanuméricos separados por comas</value>
+  </data>
+	<data name="DocumentDetails_URLInvalid" xml:space="preserve">
+    <value>La URL no está en un formato válido</value>
+  </data>
+	<data name="DocumentDetails_VersionNumberInvalid" xml:space="preserve">
+    <value>El número de versión sólo puede contener caracteres alfanuméricos y puntos</value>
+  </data>
+	<data name="DocumentDetails_VersionNumberRequired" xml:space="preserve">
+    <value>Es necesario especificar un número de versión</value>
+  </data>
+	<data name="Documents_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar el(los) documento(s) seleccionado(s)?</value>
+  </data>
+	<data name="Documents_InvalidLicense" xml:space="preserve">
+    <value>Usted no puede accesar el modulo de Documentos con la licencia actual.</value>
+  </data>
+	<data name="String" xml:space="preserve">
+    <value>MsgBox "Update Completed with " &amp; intUpdates &amp; " updates"</value>
+  </data>
+	<data name="Admin_HistoryChangeset" xml:space="preserve">
+    <value>Esta página enumera todos los cambios  en el proyecto seleccionado. Para ver los detalles y, opcionalmente, restaurar o eliminar permanentemente un artefacto específico de un conjunto de cambios, haga clic en el ID del conjunto. &lt;br/&gt; Para recuperar varios elementos a la vez, seleccione las casillas de verificación y haga clic en el botón "Revertir". Si usted selecciona varios conjuntos de cambios para un solo artefacto, los cambios se revertirán al primer conjunto de cambios. Usted no puede deshacer un conjunto de cambios Agregado, Eliminado Permanentemente o Revertido.</value>
+  </data>
+	<data name="Admin_HistoryChangeDetails" xml:space="preserve">
+    <value>Los detalles de este conjunto de cambios se enumeran a continuación.</value>
+  </data>
+	<data name="Admin_History_PurgeSure" xml:space="preserve">
+    <value>Está seguro que desea eliminar permanentemente este elemento? Después de eliminar, el elemento ya no estará en la base de datos y no se puede restaurar.</value>
+  </data>
+	<data name="Admin_History_RestoreSure" xml:space="preserve">
+    <value>La restauración de este elemento restablecerá todos los campos a este punto. Si el elemento fue borrado será recuperado también. Si todos los campos no se pueden restaurar, se mantendrán como están ahora y otros campos se restaurarán. Está seguro de que quiere restaurar este artefacto?</value>
+  </data>
+	<data name="ListServiceBase_EnterValidDateRange" xml:space="preserve">
+    <value>Es necesario introducir un valor válido de rango de fechas para '{0}'</value>
+  </data>
+	<data name="ListServiceBase_EnterValidInteger" xml:space="preserve">
+    <value>Es necesario introducir un valor entero válido para '{0}'</value>
+  </data>
+	<data name="ListServiceBase_EnterValidNumeric" xml:space="preserve">
+    <value>Es necesario introducir un valor numérico válido para '{0}'</value>
+  </data>
+	<data name="Admin_History_ArtifactIsDeleted" xml:space="preserve">
+    <value>Este artefacto ha sido borrado.</value>
+  </data>
+	<data name="Admin_History_ErrorPurging" xml:space="preserve">
+    <value>No pudo eliminarse el artefacto de la base de datos.</value>
+  </data>
+	<data name="Admin_History_PurgingSuccessful" xml:space="preserve">
+    <value>Artefacto eliminado de la base de datos.</value>
+  </data>
+	<data name="Admin_History_RevertError" xml:space="preserve">
+    <value>Se ha producido un error irrecuperable al intentar revertir el artefacto.</value>
+  </data>
+	<data name="Admin_History_RevertSuccessful" xml:space="preserve">
+    <value>El artefacto fue revertido con éxito.</value>
+  </data>
+	<data name="Admin_History_RevertWarning" xml:space="preserve">
+    <value>El artefacto fue revertido con éxito, pero no se han podido restaurar algunos campos.</value>
+  </data>
+	<data name="UserProfile_PreferencesSaved" xml:space="preserve">
+    <value>Tus preferencias han sido guardadas.</value>
+  </data>
+	<data name="RssFeeds_UserNotExists" xml:space="preserve">
+    <value>No se puede localizar al usuario con el token RSS especificado. Por favor, revise el token y vuelva a intentarlo.</value>
+  </data>
+	<data name="BackgroundProcessService_Parameter1NotSpecified" xml:space="preserve">
+    <value>Parameter1 debe ser especificado para esta operación</value>
+  </data>
+	<data name="BackrgroundProcessService_CompletedSuccessfully" xml:space="preserve">
+    <value>La operación se realizó con éxito</value>
+  </data>
+	<data name="Services_AutomationHostIdNotNull" xml:space="preserve">
+    <value>El ID del Host de Automatización debe ser NULL</value>
+  </data>
+	<data name="Services_AutomationHostIdMissing" xml:space="preserve">
+    <value>Es necesario rellenar el campo AutomationHostId para realizar una actualización</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateAutomationHosts" xml:space="preserve">
+    <value>Usted no está autorizado para crear hosts de automatización</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyAutomationHosts" xml:space="preserve">
+    <value>Usted no está autorizado a modificar hosts de automatización</value>
+  </data>
+	<data name="Services_NotAuthorizedViewAutomationHosts" xml:space="preserve">
+    <value>Usted no está autorizado para ver hosts de automatización</value>
+  </data>
+	<data name="Services_ItemNotBelongToProject" xml:space="preserve">
+    <value>El elemento que se está actualizando no pertenece al proyecto actual</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteArtifactType" xml:space="preserve">
+    <value>Usted no está autorizado a borrar los artefactos de este tipo</value>
+  </data>
+	<data name="Services_NotAuthorizedAddDocumentFolders" xml:space="preserve">
+    <value>Usted no está autorizado para agregar carpetas de documentos a este proyecto</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteDocumentFolders" xml:space="preserve">
+    <value>Usted no está autorizado a borrar carpetas de documentos</value>
+  </data>
+	<data name="Services_AttachmentVersionIdNotNull" xml:space="preserve">
+    <value>El objeto DocumentVersion necesita tener AttachmentVersionId establecido en null para agregar</value>
+  </data>
+	<data name="Services_AttachmentTypeMismatch" xml:space="preserve">
+    <value>El tipo de adjunto de la versión que está siendo añadida no coincide con el tipo de adjunto original. </value>
+  </data>
+	<data name="Services_ProjectAttachmentFolderIdMissing" xml:space="preserve">
+    <value>Debe proporcionar un ID para la carpeta de datos adjuntos del proyecto</value>
+  </data>
+	<data name="Admin_HistoryPurgeAll" xml:space="preserve">
+    <value>Esta acción eliminará permanentemente TODOS los elementos eliminados en este proyecto. Esto no se puede deshacer. Haga clic en 'Aceptar' para continuar o en 'Cancelar' para anular.</value>
+  </data>
+	<data name="Admin_HistoryRevertAll" xml:space="preserve">
+    <value>Esta acción revertirá todos los elementos a los primeros cambios seleccionados. Haga clic en 'Aceptar' para continuar o en 'Cancelar' para anular.</value>
+  </data>
+	<data name="ReleaseDetails_CannotMakeStartDateAfterEndDate" xml:space="preserve">
+    <value>La fecha de inicio debe ser igual o anterior a la fecha de fin.</value>
+  </data>
+	<data name="FileUploadDialog_DirectoryNotFound" xml:space="preserve">
+    <value>La Carpeta de Adjuntos especificada en la sección Administración no existe.</value>
+  </data>
+	<data name="FileUploadDialog_DirectorySecurityError" xml:space="preserve">
+    <value>La Carpeta de Adjuntos especificada en la sección Administración no tiene sus permisos establecidos para permitir el acceso de la aplicación web.</value>
+  </data>
+	<data name="FileUploadDialog_UploadErrorGeneral" xml:space="preserve">
+    <value>Se ha producido un error al intentar cargar el archivo adjunto ({0})</value>
+  </data>
+	<data name="TestSetList_TestSetFoldersCannotbeExecuted" xml:space="preserve">
+    <value>No se puede ejecutar una carpeta de conjunto de pruebas.</value>
+  </data>
+	<data name="MasterPage_JavaScriptDisabled" xml:space="preserve">
+    <value>JavaScript debe estar habilitado para que esta aplicación funcione correctamente!</value>
+  </data>
+	<data name="TestStepDetails_ArtifactNotExists" xml:space="preserve">
+    <value>El paso de prueba actual ya no existe</value>
+  </data>
+	<data name="BackgroundProcessService_ProjectIdNotSpecified" xml:space="preserve">
+    <value>ProjectId debe ser especificado para esta operación</value>
+  </data>
+	<data name="NewsReaderService_FeedNotAccessible" xml:space="preserve">
+    <value>El feed de noticias RSS/ATOM especificado no está disponible.</value>
+  </data>
+	<data name="NewsReaderService_FeedUrlIncorrect" xml:space="preserve">
+    <value>El formato del feed de noticias RSS/ATOM es incorrecto.</value>
+  </data>
+	<data name="Admin_RoleList_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar esta función de proyecto?</value>
+  </data>
+	<data name="SourceCodeFileDetails_AssociationAlreadyExists" xml:space="preserve">
+    <value>No se puede agregar una asociación que ya existe.</value>
+  </data>
+	<data name="BackgroundProcessService_Parameter2NotSpecified" xml:space="preserve">
+    <value>Parameter2 debe ser especificado para esta operación</value>
+  </data>
+	<data name="BuildDetails_BuildNotExists" xml:space="preserve">
+    <value>La build  seleccionada se ha borrado del sistema.</value>
+  </data>
+	<data name="ReleaseDetails_ReleaseNotExists" xml:space="preserve">
+    <value>La versión seleccionada se ha borrado del sistema.</value>
+  </data>
+	<data name="IncidentDetails_FixedBuildRequired" xml:space="preserve">
+    <value>Una Build corregida es necesaria</value>
+  </data>
+	<data name="Services_BuildIdNotNull" xml:space="preserve">
+    <value>El objeto Build necesita tener BuildId establecido en null para creación</value>
+  </data>
+	<data name="ReportConfiguration_NeedsToBeInteger" xml:space="preserve">
+    <value>debe ser un valor entero.</value>
+  </data>
+	<data name="ReportConfiguration_NeedsToBeIntegerList" xml:space="preserve">
+    <value>debe ser una lista de enteros separada por comas.</value>
+  </data>
+	<data name="RecentBuilds_NeedToSelectRelease" xml:space="preserve">
+    <value>Debe seleccionar una Release/Iteración para mostrar las Builds Recientes</value>
+  </data>
+	<data name="Services_UnableToConnectWithApiKey" xml:space="preserve">
+    <value>No se puede conectar a {0} con la actual llave de API</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyArtifact" xml:space="preserve">
+    <value>No está autorizado a modificar ese tipo de Artefacto</value>
+  </data>
+	<data name="Services_NotAuthorizedViewArtifact" xml:space="preserve">
+    <value>No está autorizado a ver ese tipo de Artefacto</value>
+  </data>
+	<data name="Register_ConfirmPasswordRequired" xml:space="preserve">
+    <value>La Confirmación de Contraseña es necesaria</value>
+  </data>
+	<data name="Register_EmailNotValid" xml:space="preserve">
+    <value>La Dirección de E-mail ingresada no es válida</value>
+  </data>
+	<data name="Register_EmailRequired" xml:space="preserve">
+    <value>La Dirección de E-mail es necesaria</value>
+  </data>
+	<data name="Register_FirstNameRequired" xml:space="preserve">
+    <value>El Primer Nombre es necesario</value>
+  </data>
+	<data name="Register_LastNameRequired" xml:space="preserve">
+    <value>El Apellido es necesario</value>
+  </data>
+	<data name="Register_UserNameNotValid" xml:space="preserve">
+    <value>El Nombre de Usuario ingresado no es válido</value>
+  </data>
+	<data name="Register_UserNameRequired" xml:space="preserve">
+    <value>El Nombre de Usuario es necesario.</value>
+  </data>
+	<data name="Register_PasswordAnswerRequired" xml:space="preserve">
+    <value>La Respuesta Secreta es necesaria.</value>
+  </data>
+	<data name="Register_PasswordQuestionRequired" xml:space="preserve">
+    <value>La Pregunta Secreta es necesaria</value>
+  </data>
+	<data name="Register_PasswordRequired" xml:space="preserve">
+    <value>La contraseña es necesaria</value>
+  </data>
+	<data name="Register_PasswordsMustMatch" xml:space="preserve">
+    <value>La contraseña y la confirmación deben coincidir.</value>
+  </data>
+	<data name="EmailPassword_AnswerRequired" xml:space="preserve">
+    <value>La respuesta es necesaria.</value>
+  </data>
+	<data name="EmailPassword_GeneralFailureText" xml:space="preserve">
+    <value>Se ha producido un error general al accesar su perfil de usuario. Por favor, contacte al administrador del sistema.</value>
+  </data>
+	<data name="EmailPassword_UserNameFailureText" xml:space="preserve">
+    <value>No hemos podido accesar su perfil de usuario. Por favor, vuelve a intentarlo.</value>
+  </data>
+	<data name="EmailPassword_QuestionFailureText" xml:space="preserve">
+    <value>No se pudo verificar su respuesta de restablecimiento de contraseña. Por favor, vuelve a intentarlo.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError5" xml:space="preserve">
+    <value>Su contraseña actual está incorrecta. No se ha podido cambiar la Pregunta/Respuesta Secreta.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError6" xml:space="preserve">
+    <value>La nueva contraseña debe tener al menos {0} caracteres especiales.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError7" xml:space="preserve">
+    <value>La nueva contraseña debe tener al menos {0} caracteres de longitud.</value>
+  </data>
+	<data name="UserDetails_ToChangePasswordQuestionAnswer" xml:space="preserve">
+    <value>Para cambiar la Pregunta/Respuesta Secreta de su contraseña, necesita ingresar su contraseña actual junto con la nueva pregunta y respuesta.</value>
+  </data>
+	<data name="UserProfile_ErrorUpdatingProfile" xml:space="preserve">
+    <value>Hubo un error al intentar actualizar su perfil. Por favor, inténtalo de nuevo.</value>
+  </data>
+	<data name="UserDetails_CannotChangeAdminUser1" xml:space="preserve">
+    <value>Usted no puede cambiar el estado admin/activo de la cuenta del administrador del sistema!</value>
+  </data>
+	<data name="UserDetails_ConfirmPasswordRequired" xml:space="preserve">
+    <value>Usted necesita confirmar la nueva contraseña</value>
+  </data>
+	<data name="UserDetails_InvalidEmailAddress" xml:space="preserve">
+    <value>La dirección de e-mail del usuario no es válida. Por favor, actualice e inténtelo de nuevo</value>
+  </data>
+	<data name="UserDetails_InvalidPassword" xml:space="preserve">
+    <value>La contraseña no es válida. Por favor, asegúrese de que tenga la longitud y el número de caracteres especiales requeridos.</value>
+  </data>
+	<data name="UserDetails_InvalidPasswordAnswer" xml:space="preserve">
+    <value>La respuesta secreta es demasiado larga. Por favor, intente una respuesta diferente.</value>
+  </data>
+	<data name="UserDetails_InvalidPasswordQuestion" xml:space="preserve">
+    <value>La pregunta secreta es demasiado larga. Por favor, intente una pregunta diferente.</value>
+  </data>
+	<data name="UserDetails_InvalidUserName" xml:space="preserve">
+    <value>El nombre de usuario es inválido. Por favor, actualice e inténtelo de nuevo</value>
+  </data>
+	<data name="UserDetails_NeedToSpecifyDn" xml:space="preserve">
+    <value>Usted necesita especificar el Nombre Distinguido (ND) para el usuario de LDAP.</value>
+  </data>
+	<data name="UserDetails_NewPasswordRequired" xml:space="preserve">
+    <value>Usted necesita ingresar una nueva contraseña </value>
+  </data>
+	<data name="UserDetails_PasswordAnswerRequired" xml:space="preserve">
+    <value>Usted necesita ingresar una respuesta para recuperar su contraseña</value>
+  </data>
+	<data name="UserDetails_PasswordQuestionRequired" xml:space="preserve">
+    <value>Usted necesita ingresar una pregunta para recuperar su contaraseña</value>
+  </data>
+	<data name="UserDetails_PasswordsNotMatch" xml:space="preserve">
+    <value>La confirmación de contraseña no coincide con la contraseña nueva</value>
+  </data>
+	<data name="UserDetails_ProviderError" xml:space="preserve">
+    <value>No se puede crear/actualizar un usuario. Por favor verifique el evento registrado en el sistema para más detalles.</value>
+  </data>
+	<data name="UserDetails_UserNameInUse" xml:space="preserve">
+    <value>El nombre de usuario introducido ya está en uso, por favor elija otro!</value>
+  </data>
+	<data name="Users_PasswordError_MoreAlphaNumeric" xml:space="preserve">
+    <value>La nueva contraseña necesita tener más caracteres numéricos.</value>
+  </data>
+	<data name="Users_PasswordError_NoMatchRequired" xml:space="preserve">
+    <value>La nueva contraseña no coincide con los patrones requeridos.</value>
+  </data>
+	<data name="Users_PasswordError_TooLong" xml:space="preserve">
+    <value>La nueva contraseña es demasiado larga.</value>
+  </data>
+	<data name="Users_PasswordError_TooShort" xml:space="preserve">
+    <value>La nueva contraseña es demasiado corta.</value>
+  </data>
+	<data name="Users_PasswordNotChanged" xml:space="preserve">
+    <value>La contraseña no ha sido cambiada.</value>
+  </data>
+	<data name="Users_QuestionAnswerNotChanged" xml:space="preserve">
+    <value>La pregunta y la respuesta secreta no se cambiaron.</value>
+  </data>
+	<data name="UserDetails_EmailAddressInvalid" xml:space="preserve">
+    <value>La dirección de e-mail no es válida</value>
+  </data>
+	<data name="UserDetails_EmailAddressRequired" xml:space="preserve">
+    <value>La Dirección de E-mail es necesaria</value>
+  </data>
+	<data name="UserDetails_FirstNameRequired" xml:space="preserve">
+    <value>El Primer Nombre es necesario</value>
+  </data>
+	<data name="UserDetails_LastNameRequired" xml:space="preserve">
+    <value>El Apellido es necesario</value>
+  </data>
+	<data name="UserDetails_UserNameInvalid" xml:space="preserve">
+    <value>El nombre del usuario solo puede contener letras, números, puntos, guiones y barras bajas</value>
+  </data>
+	<data name="UserDetails_UserNameRequired" xml:space="preserve">
+    <value>El Nombre de Usuario es necesario.</value>
+  </data>
+	<data name="UserLdapImport_ImportSuccess" xml:space="preserve">
+    <value>Los usuarios seleccionados fueron importados.</value>
+  </data>
+	<data name="UserLdapImport_ImportWithErrors" xml:space="preserve">
+    <value>La importación de los usuarios LDAP ha sido completada con {0} errores</value>
+  </data>
+	<data name="UserLdapImport_LdapGeneralError" xml:space="preserve">
+    <value>Error al accesar servidor LDAP:</value>
+  </data>
+	<data name="UserLdapImport_NeedToSelectOneUser" xml:space="preserve">
+    <value>Usted debe seleccionar al menos UN usuario para importar.</value>
+  </data>
+	<data name="UserLdapImport_UnableToAccessLdapServer" xml:space="preserve">
+    <value>No se puede accesar el servidor LDAP.  Por favor, verifique la configuración LDAP y vuelva a intentarlo ({0})</value>
+  </data>
+	<data name="UserLdapImport_UnableToGetUserList" xml:space="preserve">
+    <value>No se puede obtener la lista de usuarios del servidor LDAP. Por favor, verifique la configuración LDAP y vuelva a intentarlo.</value>
+  </data>
+	<data name="UserRequests_ConfirmDelete" xml:space="preserve">
+    <value>Está seguro de que quiere borrar el pedido de usuario nuevo?</value>
+  </data>
+	<data name="SecuritySettings_MaxInvalidPasswordAttempts_Invalid" xml:space="preserve">
+    <value>Necesita introducir un valor entero para </value>
+  </data>
+	<data name="SecuritySettings_MaxInvalidPasswordAttempts_Required" xml:space="preserve">
+    <value>Usted necesita introducir un valor entero para el Número Máximo de Intentos de Contraseña</value>
+  </data>
+	<data name="SecuritySettings_MinRequiredNonalphanumericCharacters_Invalid" xml:space="preserve">
+    <value>Usted necesita introducir un valor entero para el Número Mínimo de Caracteres Especiales Requeridos</value>
+  </data>
+	<data name="SecuritySettings_MinRequiredNonalphanumericCharacters_Required" xml:space="preserve">
+    <value>Usted necesita introducir un valor para el Número Mínimo de Caracteres Especiales Requeridos</value>
+  </data>
+	<data name="SecuritySettings_MinRequiredPasswordLength_Invalid" xml:space="preserve">
+    <value>Usted necesita introducir un valor entero para la Longitud Mínima de Contraseña  Requerida</value>
+  </data>
+	<data name="SecuritySettings_MinRequiredPasswordLength_Required" xml:space="preserve">
+    <value>Usted necesita introducir un valor para la Longitud Mínima de Contraseña  Requerida</value>
+  </data>
+	<data name="SecuritySettings_PasswordAttemptWindow_Invalid" xml:space="preserve">
+    <value>Usted necesita introducir un valor entero en la Ventana de Tiempo de Intentos de Ingreso</value>
+  </data>
+	<data name="SecuritySettings_PasswordAttemptWindow_Required" xml:space="preserve">
+    <value>Usted necesita introducir un valor en la Ventana de Tiempo de Intentos de Ingreso</value>
+  </data>
+	<data name="SecuritySettings_SaveSuccess" xml:space="preserve">
+    <value>Configuración de Seguridad Guardada.</value>
+  </data>
+	<data name="GeneralSettings_AttachmentsFolderNotExists" xml:space="preserve">
+    <value>La Carpeta de Adjuntos proporcionada no existe en el servidor!</value>
+  </data>
+	<data name="GeneralSettings_AttachmentsFolderRequired" xml:space="preserve">
+    <value>La Carpeta de Adjuntos es necesaria</value>
+  </data>
+	<data name="GeneralSettings_Success" xml:space="preserve">
+    <value>Configuración General Guardada.</value>
+  </data>
+	<data name="GeneralSettings_WebServerUrlInvalid" xml:space="preserve">
+    <value>La URL del Servidor Web no es válida.</value>
+  </data>
+	<data name="GeneralSettings_WebServerUrlRequired" xml:space="preserve">
+    <value>La URL del Servidor Web es necesaria</value>
+  </data>
+	<data name="GeneralSettings_EventDaysToKeepInvalid" xml:space="preserve">
+    <value>Usted necesita introducir un valor entero para la Retención de Registro de Eventos</value>
+  </data>
+	<data name="GeneralSettings_EventDaysToKeepRequired" xml:space="preserve">
+    <value>Usted necesita introducir un valor para la Retención de Registro de Eventos</value>
+  </data>
+	<data name="EventLog_ClearLogConfirm" xml:space="preserve">
+    <value>Está seguro de que desea borrar el Registro de Eventos del Sistema? Esta operación no se puede deshacer.</value>
+  </data>
+	<data name="EventLog_ClearLogFailure" xml:space="preserve">
+    <value>No se puede borrar el Registro de Eventos del Sistema</value>
+  </data>
+	<data name="EventLog_ClearLogSuccess" xml:space="preserve">
+    <value>Se ha eliminado con éxito el Registro de Eventos del Sistema</value>
+  </data>
+	<data name="VersionControlProviderDetails_TestFailed" xml:space="preserve">
+    <value>No se puede conectar al proveedor de control de versiones. Para obtener más detalles, haga clic en el enlace "Ver Eventos" a continuación.</value>
+  </data>
+	<data name="VersionControlProviderDetails_TestSuccess" xml:space="preserve">
+    <value>Se ha conectado al proveedor de control de versiones con éxito.</value>
+  </data>
+	<data name="GlobalNavigation_NotHavePermissionToView" xml:space="preserve">
+    <value>Usted no tiene permiso para ver esta información.</value>
+  </data>
+	<data name="RequirementsTaskService_TaskOutsideDateRange" xml:space="preserve">
+    <value>La fecha de inicio o fin de esta tarea no puede estar fuera del rango de fechas de su iteración/release asociada.</value>
+  </data>
+	<data name="Admin_CustomPropertyDefinition_Removed" xml:space="preserve">
+    <value>La propiedad personalizada en la posición n.º {0} fue borrada.</value>
+  </data>
+	<data name="Admin_CustomPropertyDefinition_Saved" xml:space="preserve">
+    <value>La propiedad personalizada en la posición n.º {0} fue guardada.</value>
+  </data>
+	<data name="Admin_System_CustomListValue_ConfirmDeleteValue" xml:space="preserve">
+    <value>Está seguro de que desea eliminar este valor?\nCualquier campo establecido en este valor se restablecerá al primer elemento de la lista o anulado.</value>
+  </data>
+	<data name="ListServiceBase_EnterValidDecimal" xml:space="preserve">
+    <value>Usted debe introducir un valor decimal válido para '{0}'</value>
+  </data>
+	<data name="ListServiceBase_FieldIncorrectFormat" xml:space="preserve">
+    <value>Usted debe entrar '{0}' en un formato válido.</value>
+  </data>
+	<data name="ListServiceBase_FieldRequired" xml:space="preserve">
+    <value>Usted necesita entrar un valor por '{0}'</value>
+  </data>
+	<data name="Admin_WorkflowDetails_AddSuccess" xml:space="preserve">
+    <value>Se ha agregado correctamente la nueva transición de flujo de trabajo.</value>
+  </data>
+	<data name="Admin_WorkflowDetails_NameRequired" xml:space="preserve">
+    <value>Usted debe introducir un nombre para la transición.</value>
+  </data>
+	<data name="Admin_WorkflowStep_RequiredNotAllowed" xml:space="preserve">
+    <value>Usted no puede establecer un campo como requerido si está oculto o deshabilitado.</value>
+  </data>
+	<data name="Admin_WorkflowStep_UpdateSuccess" xml:space="preserve">
+    <value>Las configuraciones de Campo y Propiedades Personalizadas están actualizadas</value>
+  </data>
+	<data name="Admin_Workflows_Default_CopySuccess" xml:space="preserve">
+    <value>Flujo de Trabajo copiado con éxito.</value>
+  </data>
+	<data name="Admin_Workflows_Default_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar este flujo de trabajo?</value>
+  </data>
+	<data name="Admin_Workflows_Default_DeleteSuccess" xml:space="preserve">
+    <value>Flujo de Trabajo borrado con éxito.</value>
+  </data>
+	<data name="Admin_Workflows_Default_EditActiveWarning" xml:space="preserve">
+    <value>Advertencia: Usted está a punto de editar un flujo de trabajo activo que puede estar en uso.\nEstá seguro que desea continuar?</value>
+  </data>
+	<data name="Admin_Workflows_Default_NameRequired" xml:space="preserve">
+    <value>Usted debe introducir un nombre para el flujo de trabajo</value>
+  </data>
+	<data name="Admin_Workflows_Default_OneNeedsToBeActive" xml:space="preserve">
+    <value>Al menos un Flujo de Trabajo debe estar marcado como activo.</value>
+  </data>
+	<data name="Admin_Workflows_Default_SaveConfirm" xml:space="preserve">
+    <value>Flujos de trabajo guardados con éxito</value>
+  </data>
+	<data name="Admin_WorkflowTransition_NameRequired" xml:space="preserve">
+    <value>Usted necesita entrar un nombre para la transición.</value>
+  </data>
+	<data name="Admin_WorkflowTransition_SettingsSaved" xml:space="preserve">
+    <value>Configuración de Transición de Flujo de Trabajo actualizada</value>
+  </data>
+	<data name="IncidentsService_IncidentNotFound" xml:space="preserve">
+    <value>No se puede recuperar el incidente IN{0} puesto que ya no existe. </value>
+  </data>
+	<data name="TasksService_DatesOutsideBounds" xml:space="preserve">
+    <value>La fecha de inicio o de fin de esta tarea no puede estar fuera del rango de fechas de su Release/Iteración asociada.</value>
+  </data>
+	<data name="TestRunService_TestSetNotValid" xml:space="preserve">
+    <value>El conjunto de pruebas seleccionado es una carpeta o ya no existe.</value>
+  </data>
+	<data name="Services_CustomPropertyDefinitionsNotLoaded" xml:space="preserve">
+    <value>Necesita tener las definiciones de las propiedades personalizadas del artefacto cargadas!</value>
+  </data>
+	<data name="Services_CustomListDoesNotExist" xml:space="preserve">
+    <value>La lista personalizada solicitada no existe en el proyecto.</value>
+  </data>
+	<data name="Services_NoAvailableCustomProperties" xml:space="preserve">
+    <value>No hay propiedades personalizadas disponibles en este proyecto para este tipo de artefacto</value>
+  </data>
+	<data name="TestExecutionService_TestRunsPendingIdNotProvided" xml:space="preserve">
+    <value>Usted necesita proveer un valor para el parámetro TestRunsPendingId</value>
+  </data>
+	<data name="TestExecutionService_NoTestRunsFound" xml:space="preserve">
+    <value>No se encontraron Ejecuciones de Prueba en el Registro de Pendencias </value>
+  </data>
+	<data name="RequirementsService_RequirementNotFound" xml:space="preserve">
+    <value>No se puede recuperar el requerimiento RQ{0} puesto que ya no existe.</value>
+  </data>
+	<data name="ReleasesService_ReleaseNotFound" xml:space="preserve">
+    <value>No se puede recuperar la release/iteración RL{0} puesto que ya no existe.</value>
+  </data>
+	<data name="TestSetService_TestSetNotFound" xml:space="preserve">
+    <value>No se puede recuperar el Conjunto de Pruebas TX{0} puesto que ya no existe.</value>
+  </data>
+	<data name="TasksService_TaskNotFound" xml:space="preserve">
+    <value>No se puede recuperar la tarea TK{0} puesto que ya no existe.</value>
+  </data>
+	<data name="AutomationHostsService_AutomationHostNotFound" xml:space="preserve">
+    <value>No se puede recuperar el host de automatización AH{0} puesto que ya no existe.</value>
+  </data>
+	<data name="TestCaseService_TestCaseNotFound" xml:space="preserve">
+    <value>No se puede recuperar el caso de prueba TC{0} puesto que ya no existe.</value>
+  </data>
+	<data name="TestStepService_TestStepNotFound" xml:space="preserve">
+    <value>No se puede recuperar el paso de prueba TS{0} puesto que ya no existe.</value>
+  </data>
+	<data name="TestRunService_TestRunNotFound" xml:space="preserve">
+    <value>No se puede recuperar la ejecución de prueba TR{0} puesto que ya no existe.</value>
+  </data>
+	<data name="ReportViewer_ReportFormatIdMissing" xml:space="preserve">
+    <value>Usted debe proporcionar un ID de formato de informe.</value>
+  </data>
+	<data name="ReportViewer_ReportIdNotValid" xml:space="preserve">
+    <value>Usted debe proporcionar un ID numérico de formato de informe válido.</value>
+  </data>
+	<data name="ReportViewer_QueryStringEmpty" xml:space="preserve">
+    <value>La Query String del informe estaba vacía. La generación del informe fue cancelada.</value>
+  </data>
+	<data name="ReportViewer_GeneratedReportNotExists" xml:space="preserve">
+    <value>El informe generado ya no existe</value>
+  </data>
+	<data name="ReportViewer_InvalidGeneratedId" xml:space="preserve">
+    <value>Debe proporcionar un ID numérico de informe generado válido .</value>
+  </data>
+	<data name="ReportViewer_NeedGeneratedId" xml:space="preserve">
+    <value>Debe proporcionar un ID de informe generado válido .</value>
+  </data>
+	<data name="ReportViewer_NotAuthorizedToViewGeneratedReport" xml:space="preserve">
+    <value>Usted no está autorizado para ver el informe generado!</value>
+  </data>
+	<data name="PendingTestRuns_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea borrar esta ejecución de prueba pendiente?</value>
+  </data>
+	<data name="Admin_Reports_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea borrar este informe? Esto no se puede deshacer!</value>
+  </data>
+	<data name="Admin_Reports_ReportCopied" xml:space="preserve">
+    <value>El informe ha sido copiado con éxito.</value>
+  </data>
+	<data name="Admin_Reports_ReportDeleted" xml:space="preserve">
+    <value>El informe ha sido borrado con éxito.</value>
+  </data>
+	<data name="Admin_ReportDetails_DeleteSectionConfirm" xml:space="preserve">
+    <value>Está seguro de que desea borrar esta sección? Esta operación no se puede deshacer.</value>
+  </data>
+	<data name="Admin_CustomPropertyDefinition_RemoveProperty" xml:space="preserve">
+    <value>Está seguro de que desea eliminar esta propiedad?\nSi continúa, los valores existentes en este campo serán inaccesibles.</value>
+  </data>
+	<data name="Admin_DataTools_CurrentStatusBad" xml:space="preserve">
+    <value>&lt;span style="color:darkred;"&gt;Error&lt;/span&gt;</value>
+  </data>
+	<data name="Admin_DataTools_CurrentStatusGood" xml:space="preserve">
+    <value>&lt;span style="color:darkgreen;"&gt;OK&lt;/span&gt;</value>
+  </data>
+	<data name="Admin_DataTools_Intro1" xml:space="preserve">
+    <value>Para aumentar el rendimiento de la aplicación, ciertos tipos de datos se almacenan en caché. A veces, después de efectuar cambios en los datos principales, es posible que desee actualizar la información almacenada en caché. Para ello, haga clic en uno de los siguientes enlaces:</value>
+  </data>
+	<data name="Admin_DataTools_Intro2" xml:space="preserve">
+    <value>A veces, la información de indentación dañada puede provocar filas perdidas o duplicadas en tablas. Si alguno de los indicadores siguientes muestra 'Error', puede hacer clic en el enlace para intentar solucionarlos:</value>
+  </data>
+	<data name="Admin_DataTools_RefreshThe" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+	<data name="Admin_DataTools_TaskProgressCache" xml:space="preserve">
+    <value>Caché de Progreso de Tarea</value>
+  </data>
+	<data name="Admin_DataTools_TestStatusCache" xml:space="preserve">
+    <value>Caché de Estado de Prueba</value>
+  </data>
+	<data name="Admin_DataTools_Title" xml:space="preserve">
+    <value>Herramientas de Datos</value>
+  </data>
+	<data name="Admin_DataTools_Correct" xml:space="preserve">
+    <value>Corregir</value>
+  </data>
+	<data name="Admin_DataTools_UpdatingTaskProgress" xml:space="preserve">
+    <value>Actualizando progreso de tarea..</value>
+  </data>
+	<data name="Admin_DataTools_UpdatingTestStatus" xml:space="preserve">
+    <value>Actualizando estados de pruebas..</value>
+  </data>
+	<data name="Admin_DataTools_IndentFixingRelease" xml:space="preserve">
+    <value>Corrigiendo Incidentes de Releases..</value>
+  </data>
+	<data name="Admin_DataTools_IndentFixingRequirement" xml:space="preserve">
+    <value>Corrigiendo Incidentes de Requerimiento..</value>
+  </data>
+	<data name="Admin_DataTools_IndentFixingTestCase" xml:space="preserve">
+    <value>Corrigiendo Incidentes de Casos de Prueba..</value>
+  </data>
+	<data name="Admin_DataTools_IndentFixingTestSet" xml:space="preserve">
+    <value>Corrigiendo Incidentes de Conjunto de Pruebas..</value>
+  </data>
+	<data name="Admin_History_PurgingAll" xml:space="preserve">
+    <value>Purgando todos los elementos borrados…</value>
+  </data>
+	<data name="Admin_History_Restoring" xml:space="preserve">
+    <value>Revirtiendo los elementos seleccionados..</value>
+  </data>
+	<data name="Admin_History_RestoreError" xml:space="preserve">
+    <value>Usted debe seleccionar al menos un elemento para restaurar.</value>
+  </data>
+	<data name="DocumentDetails_ArtifactAlreadyAttached" xml:space="preserve">
+    <value>La asociación de artefacto ya existe.</value>
+  </data>
+	<data name="Services_CustomPropertyDoesNotExist" xml:space="preserve">
+    <value>La propiedad personalizada solicitada no existe en el proyecto.</value>
+  </data>
+	<data name="Services_CustomPropertyNotBelongToProject" xml:space="preserve">
+    <value>La propiedad personalizada especificada no pertenece al proyecto actual</value>
+  </data>
+	<data name="Services_CustomPropertyIdNotNull" xml:space="preserve">
+    <value>El objeto RemoteCustomProperty necesita tener CustomPropertyId establecido en null para agregar</value>
+  </data>
+	<data name="Admin_RoleDetails_CannotDeactivateProjectOwner" xml:space="preserve">
+    <value>Usted no puede desactivar la función Propietario del Proyecto!</value>
+  </data>
+	<data name="SecuritySettings_AuthenticationExpirationRememberMe_Required" xml:space="preserve">
+    <value>Debe introducir un valor para 'Expiración de Recuérdame'!</value>
+  </data>
+	<data name="SecuritySettings_AuthenticationExpirationRememberMe_Invalid" xml:space="preserve">
+    <value>Debe introducir un valor entero para 'Expiración de Recuérdame'!</value>
+  </data>
+	<data name="SecuritySettings_AuthenticationExpiration_Required" xml:space="preserve">
+    <value>Debe introducir un valor para 'Expiración de Sesión'!</value>
+  </data>
+	<data name="SecuritySettings_AuthenticationExpiration_Invalid" xml:space="preserve">
+    <value>Debe introducir un valor entero para 'Expiración de Sesión'!</value>
+  </data>
+	<data name="Admin_EmailConfig_Seperator" xml:space="preserve">
+    <value>Enviar el Separador de Importación de E-mail?</value>
+  </data>
+	<data name="Admin_EmailConfig_Seperator_Small" xml:space="preserve">
+    <value>Si está activado, todos los e-mails que salen contendrán el separador necesario para limpiar las respuestas que se convierten en comentarios.</value>
+  </data>
+	<data name="Admin_CustomLists_CannotRemoveInUse" xml:space="preserve">
+    <value>No se puede eliminar una lista que está en uso.</value>
+  </data>
+	<data name="Admin_CustomLists_Removed" xml:space="preserve">
+    <value>La Lista Personalizada ha sido eliminada con éxito.</value>
+  </data>
+	<data name="TestExecutionService_TestRunHasNoSteps" xml:space="preserve">
+    <value>La Ejecución de Prueba actual no tiene ningún paso de prueba y no se puede ejecutar.</value>
+  </data>
+	<data name="DocumentFolders_ConfirmDelete" xml:space="preserve">
+    <value>Esta acción borrará la carpeta seleccionada, las subcarpetas y cualquier documento contenido. Está seguro de que desea continuar? </value>
+  </data>
+	<data name="DocumentTypes_Success" xml:space="preserve">
+    <value>Tipos de Documentos actualizados con éxito</value>
+  </data>
+	<data name="IncidentPriorities_AtLeastOneMustBeActive" xml:space="preserve">
+    <value>Al menos una Prioridad de Incidente debe estar marcada como Activa.</value>
+  </data>
+	<data name="IncidentPriorities_ColorInvalid" xml:space="preserve">
+    <value>Usted debe introducir un código de color válido para la prioridad de incidente</value>
+  </data>
+	<data name="IncidentPriorities_ColorRequired" xml:space="preserve">
+    <value>Usted debe introducir un código de color para la prioridad de incidente</value>
+  </data>
+	<data name="IncidentPriorities_NameRequired" xml:space="preserve">
+    <value>Usted debe introducir un nombre para la prioridad de incidente</value>
+  </data>
+	<data name="IncidentPriorities_Success" xml:space="preserve">
+    <value>Prioridades de Incidentes actualizadas con éxito.</value>
+  </data>
+	<data name="IncidentSeverities_AtLeastOneMustBeActive" xml:space="preserve">
+    <value>Al menos una Severidade de Incidente debe estar marcada como Activa.</value>
+  </data>
+	<data name="IncidentSeverities_ColorInvalid" xml:space="preserve">
+    <value>Usted debe introducir un código de color válido para la severidade de incidente</value>
+  </data>
+	<data name="IncidentSeverities_ColorRequired" xml:space="preserve">
+    <value>Usted debe introducir un código de color para la severidade de incidente</value>
+  </data>
+	<data name="IncidentSeverities_NameRequired" xml:space="preserve">
+    <value>Usted debe introducir un nombre para la severidade de incidente</value>
+  </data>
+	<data name="IncidentSeverities_Success" xml:space="preserve">
+    <value>Severidades de Incidente actualizadas con éxito.</value>
+  </data>
+	<data name="IncidentStatuses_NameRequired" xml:space="preserve">
+    <value>Usted debe introducir un nombre para el estado de incidente</value>
+  </data>
+	<data name="IncidentStatuses_Success" xml:space="preserve">
+    <value>Estados de Incidente actualizados con éxito.</value>
+  </data>
+	<data name="IncidentTypes_CannotSetDefaultTypeInactive" xml:space="preserve">
+    <value>Usted no puede establecer el tipo de incidente por defecto en un valor inactivo</value>
+  </data>
+	<data name="IncidentTypes_NameRequired" xml:space="preserve">
+    <value>Usted debe introducir un nombre para el tipo de incidente</value>
+  </data>
+	<data name="IncidentTypes_Success" xml:space="preserve">
+    <value>Tipos de incidentes actualizados con éxito.</value>
+  </data>
+	<data name="LdapConfiguration_SettingsSaved" xml:space="preserve">
+    <value>Usuario de Ejemplo autenticado con éxito en el servidor LDAP. Configuraciones guardadas.</value>
+  </data>
+	<data name="LdapConfiguration_SettingsSavedWithoutTesting" xml:space="preserve">
+    <value>Configuraciones guardadas sin probar Usuario de Ejemplo.</value>
+  </data>
+	<data name="LicenseDetails_EvalLicenseExpired" xml:space="preserve">
+    <value>La Clave de Licencia de demostración ingresada ha expirado.&amp;nbsp;&lt;br&gt;&amp;nbsp;Por favor, contacte con el Soporte al Cliente para obtener una nueva.</value>
+  </data>
+	<data name="LicenseDetails_LicenseKeyRequired" xml:space="preserve">
+    <value>La Clave de Licencia es necesaria</value>
+  </data>
+	<data name="LicenseDetails_OrganizationRequired" xml:space="preserve">
+    <value>El Nombre de la Organización Licenciada es necesario</value>
+  </data>
+	<data name="LicenseDetails_ProductOrgLicenseNotValid" xml:space="preserve">
+    <value>El nombre del producto, la clave de licencia y/o el nombre de la organización no son válidos.&amp;nbsp;&lt;br /&gt;&amp;nbsp;Verifique que ha ingresado la misma clave de licencia Y nombre de la organización que aparecen en su cuenta de cliente.</value>
+  </data>
+	<data name="LicenseDetails_Success" xml:space="preserve">
+    <value>Detalles de la licencia actualizados con éxito.</value>
+  </data>
+	<data name="Admin_PlanningOptions_NonWorkingHoursExceedWorkingHours" xml:space="preserve">
+    <value>No puedes tener más horas no laborables que horas laborables!</value>
+  </data>
+	<data name="Admin_PlanningOptions_Success" xml:space="preserve">
+    <value>Opciones de Planificación de Proyectos guardadas.</value>
+  </data>
+	<data name="Admin_PlanningOptions_WorkHoursPerDayRequired" xml:space="preserve">
+    <value>Horas laborables por Día es necesario</value>
+  </data>
+	<data name="Admin_PlanningOptions_WorkingDaysPerWeekNotInRange" xml:space="preserve">
+    <value>Los días laborables por semana deben estar en el rango 1-7</value>
+  </data>
+	<data name="Admin_PlanningOptions_WorkingHoursPerDayNotInRange" xml:space="preserve">
+    <value>Las horas laborables por día deben estar en el rango 1-24</value>
+  </data>
+	<data name="Admin_ProjectDetails_NotExists" xml:space="preserve">
+    <value>No se puede localizar el proyecto existente!</value>
+  </data>
+	<data name="Admin_ProjectDetails_ProjectNameRequired" xml:space="preserve">
+    <value>El Nombre del Proyecto es necesario</value>
+  </data>
+	<data name="Admin_ProjectDetails_WebSiteUrlInvalid" xml:space="preserve">
+    <value>El Sitio Web debe ser una URL válida</value>
+  </data>
+	<data name="Admin_ProjectGroupDetails_CannotMakeDefaultInactive" xml:space="preserve">
+    <value>Usted no puede desactivar el grupo de proyectos por defecto</value>
+  </data>
+	<data name="Admin_ProjectGroupDetails_CannotMakeInactiveDefault" xml:space="preserve">
+    <value>Usted no puede convertir un grupo de proyectos inactivo en el predeterminado del sistema.</value>
+  </data>
+	<data name="Admin_ProjectGroupDetails_ConfirmUserDelete" xml:space="preserve">
+    <value>Está seguro de que desea eliminar este(os) usuario(s) del grupo de proyectos?</value>
+  </data>
+	<data name="Admin_ProjectGroupDetails_MembershipRemoved" xml:space="preserve">
+    <value>Miembros del Grupo de Proyectos eliminados con éxito.</value>
+  </data>
+	<data name="Admin_ProjectGroupDetails_MembershipUpdated" xml:space="preserve">
+    <value>Afiliaciones al Proyecto actualizadas.</value>
+  </data>
+	<data name="Admin_ProjectGroupDetails_NameRequired" xml:space="preserve">
+    <value>El Nombre del Grupo de Proyecto es necesario</value>
+  </data>
+	<data name="Admin_ProjectGroupDetails_NeedAtLeastOneDefault" xml:space="preserve">
+    <value>Usted debe tener al menos un grupo de proyectos por defecto. Por favor, haga que otro grupo de proyecto sea el valor predeterminado en lugar de configurarlo como No.</value>
+  </data>
+	<data name="Admin_ProjectGroupDetails_NotExists" xml:space="preserve">
+    <value>No se puede localizar el grupo de proyecto existente!</value>
+  </data>
+	<data name="Admin_ProjectGroups_CannotDeleteDefault" xml:space="preserve">
+    <value>No puede borrar el Grupo de Proyecto por defecto.</value>
+  </data>
+	<data name="Admin_ProjectGroups_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea eliminar este grupo de proyecto? Esta acción moverá todos sus proyectos al grupo por defecto.</value>
+  </data>
+	<data name="Global_EnterValidDateValue" xml:space="preserve">
+    <value>Usted debe introducir una fecha válida para '{0}'!</value>
+  </data>
+	<data name="LdapConfiguration_FailedToAuthenticate" xml:space="preserve">
+    <value>ADVERTENCIA: Error de autenticación en el servidor LDAP. Verifique la configuración e vuelva a intentarlo. Los ajustes no se han guardado.</value>
+  </data>
+	<data name="Admin_PlanningOptions_NonWorkingHoursPerMonthNotInteger" xml:space="preserve">
+    <value>Horas no Laborables por Mes debe ser un valor entero</value>
+  </data>
+	<data name="Admin_PlanningOptions_NonWorkingHoursPerMonthRequired" xml:space="preserve">
+    <value>Horas no Laborables por Mes es requerido</value>
+  </data>
+	<data name="Admin_PlanningOptions_WorkDaysPerWeekNotInteger" xml:space="preserve">
+    <value>Días Laborables por Semana debe ser un valor entero</value>
+  </data>
+	<data name="Admin_PlanningOptions_WorkDaysPerWeekRequired" xml:space="preserve">
+    <value>Días Laborables por Semana es necesario</value>
+  </data>
+	<data name="Admin_PlanningOptions_WorkHoursPerDayNotInteger" xml:space="preserve">
+    <value>Horas Laborables por Día debe ser un valor entero</value>
+  </data>
+	<data name="Admin_ProjectGroupMembershipAdd_UserAlreadyMember" xml:space="preserve">
+    <value>Usted no puede agregar un usuario que ya sea miembro del grupo del proyecto!</value>
+  </data>
+	<data name="Admin_ProjectMembershipAdd_UserAlreadyMember" xml:space="preserve">
+    <value>Usted no puede agregar un usuario que ya sea miembro del proyecto!</value>
+  </data>
+	<data name="Admin_ProjectMembership_ConfirmRemove" xml:space="preserve">
+    <value>Está seguro de que desea eliminar este(os) usuario(s) del proyecto?</value>
+  </data>
+	<data name="Admin_ProjectMembership_DeleteSuccess" xml:space="preserve">
+    <value>Se eliminaron con éxito los miembros del proyecto.</value>
+  </data>
+	<data name="Admin_ProjectMembership_Success" xml:space="preserve">
+    <value>Afiliaciones al Proyecto actualizadas.</value>
+  </data>
+	<data name="Admin_ActiveSessions_ConfirmEnd" xml:space="preserve">
+    <value>Está seguro de que desea finalizar la sesión de este usuario?</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea borrar este plug-in? Esta acción borrará todas las entradas de mapeo de datos y no se puede deshacer!</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_NameRequired" xml:space="preserve">
+    <value>Es necesario especificar un nombre para la herramienta</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_TokenNotUnique" xml:space="preserve">
+    <value>Usted debe introducir un Token único para esta herramienta de automatización. La herramienta especificada ya está en uso.</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_TokenRequired" xml:space="preserve">
+    <value>Es necesario especificar un Token para la herramienta</value>
+  </data>
+	<data name="Admin_AutomationEngines_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea borrar esta herramienta? Esta acción eliminará todos los ajustes y no se puede deshacer!</value>
+  </data>
+	<data name="Admin_DataSyncCustomPropertyMapping_Success" xml:space="preserve">
+    <value>Mapeos de Propiedades Personalizadas guardados con éxito.</value>
+  </data>
+	<data name="Admin_DataSyncDetails_ConnectionRequired" xml:space="preserve">
+    <value>Es necesario especificar la información de conexión para el plug-in</value>
+  </data>
+	<data name="Admin_DataSyncDetails_LoginRequired" xml:space="preserve">
+    <value>Es necesario especificar un nombre de inicio de sesión para el plug-in</value>
+  </data>
+	<data name="Admin_DataSyncDetails_NameRequired" xml:space="preserve">
+    <value>Es necesario especificar un nombre para el plug-in</value>
+  </data>
+	<data name="Admin_DataSyncDetails_PlugInDeleted" xml:space="preserve">
+    <value>El sincronizador de datos seleccionado fue borrado del sistema.</value>
+  </data>
+	<data name="Admin_DataSyncDetails_TimeOffsetInvalid" xml:space="preserve">
+    <value>Es necesario especificar un valor entero de Desfase Temporal </value>
+  </data>
+	<data name="Admin_DataSyncDetails_TimeOffsetRequired" xml:space="preserve">
+    <value>Es necesario especificar un valor de Desfase Temporal </value>
+  </data>
+	<data name="Admin_DataSyncFieldMapping_Success" xml:space="preserve">
+    <value>Mapeos de Valor de Campo guardados con éxito.</value>
+  </data>
+	<data name="Admin_DataSyncProjects_CustomPropertyNotExists" xml:space="preserve">
+    <value>La propiedad personalizada seleccionada fue borrada del proyecto.</value>
+  </data>
+	<data name="Admin_DataSyncProjects_DataSyncNotExists" xml:space="preserve">
+    <value>El sincronizador de datos seleccionado fue borrado del sistema.</value>
+  </data>
+	<data name="Admin_DataSyncProjects_NeedToSelectProject" xml:space="preserve">
+    <value>Usted debe primero seleccionar un proyecto antes de configurar el mapeo de datos.</value>
+  </data>
+	<data name="Admin_DataSyncProjects_NeedToSetExternalKey" xml:space="preserve">
+    <value>Usted debe establecer una Clave Externa para este proyecto</value>
+  </data>
+	<data name="Admin_DataSyncProjects_SettingsSaved" xml:space="preserve">
+    <value>Configuración de Sincronización de Datos de Proyecto guardada</value>
+  </data>
+	<data name="Admin_DocumentFolderDetails_CannotInsertRoot" xml:space="preserve">
+    <value>No puede insertar una nueva carpeta raíz en el proyecto</value>
+  </data>
+	<data name="Admin_DocumentFolderDetails_CannotSetParentToYourChild" xml:space="preserve">
+    <value>Usted estableció la carpeta principal a un elemento que es un elemento secundario del elemento actual.</value>
+  </data>
+	<data name="Admin_DocumentFolderDetails_FolderNameRequired" xml:space="preserve">
+    <value>El Nombre de la Carpeta es necesario</value>
+  </data>
+	<data name="Admin_EmailConfiguration_AddressInvalid" xml:space="preserve">
+    <value>La dirección de e-mail ingresada no es válida.</value>
+  </data>
+	<data name="Admin_EmailConfiguration_EventNameRequired" xml:space="preserve">
+    <value>El Nombre del Evento es necesario</value>
+  </data>
+	<data name="Admin_EmailConfiguration_FromAddressRequired" xml:space="preserve">
+    <value>El E-mail de Origen es necesario</value>
+  </data>
+	<data name="Admin_EmailConfiguration_PortNumberInvalid" xml:space="preserve">
+    <value>El número de puerto SMTP debe ser entero</value>
+  </data>
+	<data name="Admin_EmailConfiguration_Success" xml:space="preserve">
+    <value>Configuraciones de e-mail guardadas.</value>
+  </data>
+	<data name="Admin_Notification_ErrorSendingTestEmail" xml:space="preserve">
+    <value>Se ha producido un error al enviar el e-mail de prueba. Verifique los registros de SMTP, realice correcciones y vuelva a intentarlo.</value>
+  </data>
+	<data name="Admin_Notification_SubjectLineRequired" xml:space="preserve">
+    <value>La Línea de Asunto de Notificación es necesaria.</value>
+  </data>
+	<data name="Admin_RoleDetails_NameRequired" xml:space="preserve">
+    <value>El Nombre de la Función es necesario</value>
+  </data>
+	<data name="Admin_VersionControlProject_NeedToSelectProject" xml:space="preserve">
+    <value>Usted debe primero seleccionar un proyecto antes de configurar el control de versiones.</value>
+  </data>
+	<data name="Admin_VersionControlProject_Success" xml:space="preserve">
+    <value>Configuraciones de Proyecto actualizadas con éxito.</value>
+  </data>
+	<data name="Admin_VersionControlProvider_ConnectionInfoRequired" xml:space="preserve">
+    <value>Es necesario especificar la información de conexión para el proveedor</value>
+  </data>
+	<data name="Admin_VersionControlProvider_HasBeenDeleted" xml:space="preserve">
+    <value>El proveedor borrado ha sido eliminado del sistema.</value>
+  </data>
+	<data name="Admin_VersionControlProvider_LoginRequired" xml:space="preserve">
+    <value>Es necesario especificar un nombre de inicio de sesión para el proveedor</value>
+  </data>
+	<data name="Admin_VersionControlProvider_NameRequired" xml:space="preserve">
+    <value>Usted debe especificar un nombre para el proveedor</value>
+  </data>
+	<data name="Admin_VersionControlProvider_PasswordRequired" xml:space="preserve">
+    <value>Usted debe especificar una contraseña para el acceso al proveedor</value>
+  </data>
+	<data name="Admin_VersionControlProvider_Success" xml:space="preserve">
+    <value>Proveedor actualizado con éxito.</value>
+  </data>
+	<data name="PlanningOptions_DefaultEstimateInvalid" xml:space="preserve">
+    <value>La Estimación por defecto no es válida</value>
+  </data>
+	<data name="PlanningOptions_PointEffortInvalid" xml:space="preserve">
+    <value>Los Puntos de Esfuerzo no son válidos</value>
+  </data>
+	<data name="Admin_Components_Saved" xml:space="preserve">
+    <value>Componentes guardados con éxito</value>
+  </data>
+	<data name="Admin_Components_SaveError" xml:space="preserve">
+    <value>Error al guardar componentes</value>
+  </data>
+	<data name="Global_UnableRetrieveTooltip" xml:space="preserve">
+    <value>No se puede recuperar la descripción...</value>
+  </data>
+	<data name="ReleaseDetails_ScenarioStepDeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea borrar los pasos del escenario seleccionado?</value>
+  </data>
+	<data name="TasksService_TaskFolderIdNotInteger" xml:space="preserve">
+    <value>El valor de parentNodeId debe ser entero!</value>
+  </data>
+	<data name="TasksService_TaskFolderNameRequired" xml:space="preserve">
+    <value>El Nombre de la Nueva Carpeta de Tareas es necesario!</value>
+  </data>
+	<data name="DocumentsService_DocumentFolderIdNotInteger" xml:space="preserve">
+    <value>El valor de parentNodeId debe ser entero!</value>
+  </data>
+	<data name="DocumentsService_DocumentFolderNameRequired" xml:space="preserve">
+    <value>El nombre de la nueva carpeta de Documentos es necesario!</value>
+  </data>
+	<data name="UserProfile_AvatarNotRemoved" xml:space="preserve">
+    <value>Se ha producido un error al eliminar su avatar del sistema.</value>
+  </data>
+	<data name="UserProfile_AvatarRemoved" xml:space="preserve">
+    <value>Su avatar ha sido eliminado. Puede tomar algún tiempo antes de que el cambio se propague en todo el sistema.</value>
+  </data>
+	<data name="UserProfile_AvatarTooLarge" xml:space="preserve">
+    <value>La imagen de Avatar debe tener menos de 100KB de tamaño.</value>
+  </data>
+	<data name="UserProfile_AvatarWrongType" xml:space="preserve">
+    <value>Sólo los tipos de archivo GIF, JPG o PNG se pueden utilizar para las imágenes de avatar.</value>
+  </data>
+	<data name="Global_DataSavedWithoutNewComment" xml:space="preserve">
+    <value>Los datos del ítem fueron guardados, pero no se pudo agregar un nuevo comentario.</value>
+  </data>
+	<data name="GeneralSettings_InstantMessengerRetentionInvalid" xml:space="preserve">
+    <value>Usted debe introducir un valor entero para la Retención de Mensajes Instantáneos</value>
+  </data>
+	<data name="GeneralSettings_InstantMessengerRetentionRequired" xml:space="preserve">
+    <value>Usted debe introducir un valor para la Retención de Mensajes Instantáneos</value>
+  </data>
+	<data name="Timecard_AdditionalEffortInvalid" xml:space="preserve">
+    <value>Al menos un valor de Esfuerzo Adicional no es válido!</value>
+  </data>
+	<data name="Timecard_RemainingEffortInvalid" xml:space="preserve">
+    <value>Al menos un valor de Esfuerzo Restante no es válido!</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyProject" xml:space="preserve">
+    <value>Necesitas ser un Administrador de Proyectos para usar esta función!</value>
+  </data>
+	<data name="TestExecutionService_NoTestCaseFound" xml:space="preserve">
+    <value>No se puede almacenar el resultado de la prueba ya que no se puede encontrar esta prueba. Continúe con la siguiente prueba.</value>
+  </data>
+	<data name="Global_DatabaseTimeout" xml:space="preserve">
+    <value>El tiempo de espera de la conexión a la base de datos se agotó durante la ejecución de este comando. Por favor, actualice los índices de la base de datos (vea KB10).</value>
+  </data>
+	<data name="Admin_VersionControlProvider_ClearCacheWarning" xml:space="preserve">
+    <value>Borrar la memoria caché hará que el sistema actualice la información de control de versión del proveedor. Esto hará que las páginas de control de origen permanezcan inactivas hasta que se complete el almacenamiento en caché. Está seguro de que desea continuar?</value>
+  </data>
+	<data name="Admin_TaraVault_NotActive" xml:space="preserve">
+    <value>Su instancia de TaraVault no está activa. Una vez activada, usted deberá crear un proyecto TaraVault para cualquier proyecto {0} que desee configurar un repositorio de control de versiones. Usted puede activar TaraVault haciendo clic en el botón de abajo.</value>
+  </data>
+	<data name="SourceCodeList_CacheNotReadyError" xml:space="preserve">
+    <value>El navegador del repositorio de código fuente se está iniciando. Por favor, actualice la página y vuelva a intentarlo.</value>
+  </data>
+	<data name="SourceCodeFileDetails_PreviewNotAvailable" xml:space="preserve">
+    <value>Vista previa no disponible para este archivo.</value>
+  </data>
+	<data name="Admin_TaraVault_Active" xml:space="preserve">
+    <value>Su suscripción de TaraVault está lista para  activación! &lt;br/&gt; Su cuenta {1} está configurada para {0} usuario(s) TaraVault.</value>
+  </data>
+	<data name="Admin_User_TaraVaultNoProjects" xml:space="preserve">
+    <value>Este usuario está activo, pero no asignado a ningún proyecto.</value>
+  </data>
+	<data name="Admin_User_TaraVaultNoAvailProjects" xml:space="preserve">
+    <value>El usuario ya pertenece a todos los proyectos que están habilitados para TaraVault.</value>
+  </data>
+	<data name="Admin_WorkflowDetails_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea borrar esta transición?</value>
+  </data>
+	<data name="Admin_VersionControl_ReloadingCache" xml:space="preserve">
+    <value>Recargando el Caché de Control de Versiones ...</value>
+  </data>
+	<data name="VersionControl_CacheUpdateRunning" xml:space="preserve">
+    <value>Una actualización de la Caché de Código Fuente se está ejecutando actualmente ...</value>
+  </data>
+	<data name="VersionControl_CacheUpToDate" xml:space="preserve">
+    <value>La caché del Código Fuente está actualizada.</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateAutomationEngines" xml:space="preserve">
+    <value>No Autorizado a crear Herramientas de Automatización - Necesita ser Administrador del Sistema</value>
+  </data>
+	<data name="ListServiceBase_EnterValidEffortRange" xml:space="preserve">
+    <value>Usted debe introducir un valor de rango de esfuerzo válido para '{0}'</value>
+  </data>
+	<data name="Services_DigitalSignatureNotValid" xml:space="preserve">
+    <value>La firma electrónica no es válida. Por favor, verifique la información y vuelva a intentarlo!</value>
+  </data>
+	<data name="Admin_TaraVault_ProjectNameExists" xml:space="preserve">
+    <value>El nombre de la Vault ya está en uso por otro proyecto. Seleccione otro nombre.</value>
+  </data>
+	<data name="Admin_TaraVault_ErrorCreatingProject" xml:space="preserve">
+    <value>Hubo un error al procesar su solicitud.</value>
+  </data>
+	<data name="Admin_TaraVault_ProjCreated" xml:space="preserve">
+    <value>Proyecto de Control de Fuente creado!</value>
+  </data>
+	<data name="Admin_User_TaraVaultPassRequired" xml:space="preserve">
+    <value>La contraseña del usuario TaraVault es necesaria.</value>
+  </data>
+	<data name="Admin_TaraVault_NotActiveNoService" xml:space="preserve">
+    <value>No se puede activar TaraVault en este momento, ya que no se ha registrado para el servicio. Por favor, visite su cuenta de cliente en el sitio de OnShore Technology Group e inscríbase.</value>
+  </data>
+	<data name="DocumentsService_DocumentFolderNotEmptyCannotDelete" xml:space="preserve">
+    <value>Usted no puede borrar una carpeta de documento que no esté vacía!</value>
+  </data>
+	<data name="Services_ComponentDoesNotExist" xml:space="preserve">
+    <value>El Componente especificado no existe, verifique el ID y vuelva a intentarlo!</value>
+  </data>
+	<data name="Services_ComponentIdNotPopulated" xml:space="preserve">
+    <value>Usted debe rellenar el campo ComponentId para actualizaciones!</value>
+  </data>
+	<data name="Services_NotAuthorizedUpdateComponents" xml:space="preserve">
+    <value>Usted no está autorizado para crear, modificar o borrar componentes del proyecto!</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyDataSyncs" xml:space="preserve">
+    <value>Usted no está autorizado a modificar las entradas de Sincronización de Datos!</value>
+  </data>
+	<data name="SecuritySettings_AllowedDomainsNotes_Invalid" xml:space="preserve">
+    <value>La lista de dominios permitidos no es válida!</value>
+  </data>
+	<data name="Admin_TaraVault_UnableToActivate" xml:space="preserve">
+    <value>No se puede activar la cuenta TaraVault</value>
+  </data>
+	<data name="SpiraMembershipProvider_PasswordMatch" xml:space="preserve">
+    <value>{0}'  inició sesión en su cuenta</value>
+  </data>
+	<data name="SpiraMembershipProvider_PasswordNotMatch" xml:space="preserve">
+    <value>{0}'  intentó iniciar sesión con una contraseña incorrecta.</value>
+  </data>
+	<data name="SpiraMembershipProvider_UserLocked" xml:space="preserve">
+    <value>{0}'  intentó iniciar sesión pero se ha bloqueado.</value>
+  </data>
+	<data name="SpiraMembershipProvider_UserNotActive" xml:space="preserve">
+    <value>{0}'  intentó iniciar sesión pero el usuario no estaba activo.</value>
+  </data>
+	<data name="SpiraMembershipProvider_UserNotApproved" xml:space="preserve">
+    <value>{0}'  intentó registrar pero aún no había sido aprobado.</value>
+  </data>
+	<data name="SpiraMembershipProvider_UserNotExist" xml:space="preserve">
+    <value>Un usuario desconocido intentó iniciar sesión con el nombre de usuario '{0}'.</value>
+  </data>
+	<data name="Releases_CannotInsertChildUnderIterationOrPhase" xml:space="preserve">
+    <value>Usted no puede insertar un elemento secundario en uma Iteración/Fase!</value>
+  </data>
+	<data name="TestCasesService_TestCaseFolderIdNotInteger" xml:space="preserve">
+    <value>El valor parentNodeId debe ser entero!</value>
+  </data>
+	<data name="TestCasesService_TestCaseFolderNameRequired" xml:space="preserve">
+    <value>El nuevo nombre de la carpeta del Caso de Prueba es obligatorio!</value>
+  </data>
+	<data name="ErrorPage_ContactLocalAdmin" xml:space="preserve">
+    <value>contacte con el administrador del sistema</value>
+  </data>
+	<data name="Admin_DataTools_RefreshingDatabaseIndexes" xml:space="preserve">
+    <value>Actualizando los índices de la base de datos.</value>
+  </data>
+	<data name="Admin_VersionControl_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea borrar este proveedor? Esto eliminará todos los ajustes por defecto y específicos del proyecto y no se puede deshacer!</value>
+  </data>
+	<data name="Admin_TaraVault_ProjectNotActivated" xml:space="preserve">
+    <value>TaraVault aún no ha sido activado para este proyecto. Puede activarlo rellenando los detalles a continuación.</value>
+  </data>
+	<data name="TestCasesService_CannotMoveFolderUnderItself" xml:space="preserve">
+    <value>No se puede mover una carpeta de prueba a sí misma!</value>
+  </data>
+	<data name="TestSetsService_CannotMoveFolderUnderItself" xml:space="preserve">
+    <value>No puede mover una carpeta de conjunto de pruebas a sí misma!</value>
+  </data>
+	<data name="TestSetsService_TestSetFolderIdNotInteger" xml:space="preserve">
+    <value>El valor parentNodeId debe ser entero!</value>
+  </data>
+	<data name="TestSetsService_TestSetFolderNameRequired" xml:space="preserve">
+    <value>El nuevo nombre de la carpeta del Conjunto de Pruebas es necesario!</value>
+  </data>
+	<data name="GeneralSettings_VersionControlCacheRetentionInvalid" xml:space="preserve">
+    <value>Usted debe introducir un valor entero para la Retención de Caché del Control de Versiones</value>
+  </data>
+	<data name="GeneralSettings_VersionControlCacheRetentionRequired" xml:space="preserve">
+    <value>Usted debe introducir un valor para la Retención de Caché del Control de Versiones</value>
+  </data>
+	<data name="TestingSettings_Success" xml:space="preserve">
+    <value>Configuraciones de Prueba Guardadas.</value>
+  </data>
+	<data name="TestExecutionService_NeedToProvideIncident" xml:space="preserve">
+    <value>Usted necesita proporcionar un Incidente!</value>
+  </data>
+	<data name="Services_UserNotFound" xml:space="preserve">
+    <value>No se puede localizar el usuario solicitado.</value>
+  </data>
+	<data name="Services_TaskNotFound" xml:space="preserve">
+    <value>No se puede localizar la tarea solicitada</value>
+  </data>
+	<data name="Services_AutomationEngineNotExist" xml:space="preserve">
+    <value>No se puede localizar la herramienta de automatización solicitada</value>
+  </data>
+	<data name="Service_ProjectNotFound" xml:space="preserve">
+    <value>No se puede localizar el proyecto solicitado</value>
+  </data>
+	<data name="TestCaseExecution_AddScreenshotUsingEditor" xml:space="preserve">
+    <value>Para agregar una captura de pantalla, péguela en el cuadro de texto de Resultado Real</value>
+  </data>
+	<data name="TestCaseService_CannotAddToTestSetFolder" xml:space="preserve">
+    <value>Por favor, elija un Conjunto de Pruebas no una carpeta y vuelva a intentarlo!</value>
+  </data>
+	<data name="Services_TestStepIdMissing" xml:space="preserve">
+    <value>El objeto TestStep necesita tener um TestStepId válido</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyTestSteps" xml:space="preserve">
+    <value>No autorizado a modificar Pasos de Prueba</value>
+  </data>
+	<data name="Services_TestStepNotBelongToTestCase" xml:space="preserve">
+    <value>El Paso de Prueba no pertenece al Caso de Prueba especificado.</value>
+  </data>
+	<data name="Services_NoDataProvided" xml:space="preserve">
+    <value>No se proporcionaron datos al Servicio Web!</value>
+  </data>
+	<data name="Services_UserIsAlreadyMemberOfProject" xml:space="preserve">
+    <value>El usuario ya es miembro del proyecto</value>
+  </data>
+	<data name="Services_UserIdIsNull" xml:space="preserve">
+    <value>Usted debe proporcionar un valor para UserId</value>
+  </data>
+	<data name="Services_AutomationEngineIdMissing" xml:space="preserve">
+    <value>Usted debe asegurarse de que el ID de la herramienta de automatización esté válido</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyUsers" xml:space="preserve">
+    <value>Usted no está autorizado a modificar usuarios</value>
+  </data>
+	<data name="Services_NotAuthorizedViewAllUsers" xml:space="preserve">
+    <value>Usted no tiene autorización para ver todos los usuarios</value>
+  </data>
+	<data name="Services_RequirementStepIdMissing" xml:space="preserve">
+    <value>Usted debe asegurarse de que el ID del paso de Requerimiento esté válido</value>
+  </data>
+	<data name="Services_UserMembershipNotFound" xml:space="preserve">
+    <value>No se puede encontrar una afiliación de usuario para este usuario/proyecto</value>
+  </data>
+	<data name="Services_HistoryChangeSetNotFound" xml:space="preserve">
+    <value>El historial de cambios no fue encontrado!</value>
+  </data>
+	<data name="Services_InvalidLicense" xml:space="preserve">
+    <value>Esta función no está disponible para su licencia!</value>
+  </data>
+	<data name="Admin_ProjectAssociations_ConfirmRemove" xml:space="preserve">
+    <value>Está  seguro que desea eliminar los proyectos seleccionados?</value>
+  </data>
+	<data name="Admin_ProjectAssociations_RemoveSuccess" xml:space="preserve">
+    <value>Los proyectos seleccionados se han eliminados de la lista.</value>
+  </data>
+	<data name="Admin_ProjectAssociations_AddSuccess" xml:space="preserve">
+    <value>La nueva asociación del proyecto fue agregada con éxito.</value>
+  </data>
+	<data name="Admin_ProjectAssociations_ArtifactTypesRequired" xml:space="preserve">
+    <value>Usted debe seleccionar al menos un tipo de artefacto para compartir!</value>
+  </data>
+	<data name="Admin_ProjectAssociations_ProjectRequired" xml:space="preserve">
+    <value>Usted necesita elegir un proyecto para compartir con él!</value>
+  </data>
+	<data name="Admin_ProjectAssociations_SaveSuccess" xml:space="preserve">
+    <value>La asociación del proyecto fue actualizada con éxito</value>
+  </data>
+	<data name="Services_NotAuthorizedAddContact" xml:space="preserve">
+    <value>Usted no está autorizado a agregar este contacto</value>
+  </data>
+	<data name="TestExecutionService_NoTestCasesWithStepsFound" xml:space="preserve">
+    <value>No hay pasos de prueba en ninguno de los casos de prueba ejecutados!</value>
+  </data>
+	<data name="TestConfigurationSet_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea eliminar la(s) configuración(es) seleccionada(s)?</value>
+  </data>
+	<data name="TestExecutionService_ExploratoryDoNotDeleteLastStep" xml:space="preserve">
+    <value>Su ejecución de prueba siempre debe contener al menos un paso de prueba. Por eso, el paso de prueba seleccionado no fue eliminado</value>
+  </data>
+	<data name="TestExecutionService_ExploratoryNotAuthorized" xml:space="preserve">
+    <value>No puede ejecutar esta ejecución de prueba en modo exploratorio ya que no tiene suficiente autorización</value>
+  </data>
+	<data name="Exception_Unknown" xml:space="preserve">
+    <value>La operación solicitada no se pudo completar.</value>
+  </data>
+	<data name="TestConfigurationDetails_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea eliminar este conjunto de configuración de prueba?</value>
+  </data>
+	<data name="TestExecutionService_NeedToProvideTaskName" xml:space="preserve">
+    <value>Necesitas proporcionar un nombre de tarea</value>
+  </data>
+	<data name="TestConfigurationService_MissingTestConfigurationSetIdStdFilter" xml:space="preserve">
+    <value>Debe proporcionar TestConfigurationSetId como un filtro estándar para esta función</value>
+  </data>
+	<data name="TestConfigurationDetails_ConfirmRemoveConfiguration" xml:space="preserve">
+    <value>Está seguro de que desea eliminar la configuración de prueba seleccionada?</value>
+  </data>
+	<data name="TestConfigurationService_NoParametersSpecified" xml:space="preserve">
+    <value>Debe especificar al menos un parámetro de caso de prueba y una lista personalizada</value>
+  </data>
+	<data name="TestConfigurationService_TooManyParametersSpecified" xml:space="preserve">
+    <value>Ha especificado demasiados parámetros de casos de prueba y listas personalizadas ({0})</value>
+  </data>
+	<data name="Services_TestCase_NotInExecutableStatus" xml:space="preserve">
+    <value>No puede ejecutar este caso de prueba mientras está en este estado!</value>
+  </data>
+	<data name="TestStepDetails_RemoveIncidentConfirm" xml:space="preserve">
+    <value>Está seguro de que desea eliminar la asociación con el (los) incidente(s) seleccionado(s)?</value>
+  </data>
+	<data name="Services_UserSelectedNotAuthorized" xml:space="preserve">
+    <value>Lo sentimos, ese usuario no puede acceder a este elemento.</value>
+  </data>
+	<data name="AssociationService_UnableToFindArtifactInSharedProjects" xml:space="preserve">
+    <value>No se puede encontrar un artefacto que coincida en los productos compartidos.</value>
+  </data>
+	<data name="FileUploadDialog_EmptyFileUploaded" xml:space="preserve">
+    <value>Has intentado subir un archivo vacío!</value>
+  </data>
+	<data name="Admin_Graphs_GraphCloned" xml:space="preserve">
+    <value>El gráfico fue clonado con éxito.</value>
+  </data>
+	<data name="Admin_Graphs_GraphDeleted" xml:space="preserve">
+    <value>El gráfico fue eliminado con éxito.</value>
+  </data>
+	<data name="GraphingService_NeedAtLeastTwoColumns" xml:space="preserve">
+    <value>Necesita al menos dos columnas en la consulta para mostrar como un gráfico!</value>
+  </data>
+	<data name="Admin_GraphDetails_NameRequired" xml:space="preserve">
+    <value>Se requiere el nombre</value>
+  </data>
+	<data name="Admin_GraphDetails_QueryRequired" xml:space="preserve">
+    <value>Se requiere una consulta</value>
+  </data>
+	<data name="Admin_Graphs_DeleteConfirm" xml:space="preserve">
+    <value>Estás seguro de que quieres eliminar este gráfico? Esto no se puede deshacer!</value>
+  </data>
+	<data name="GraphingService_CustomGraphNoLongerExists" xml:space="preserve">
+    <value>El gráfico personalizado que has elegido ya no está disponible!</value>
+  </data>
+	<data name="ProjectGroup_InvalidLicense" xml:space="preserve">
+    <value>Su licencia no permite el acceso a esta función!</value>
+  </data>
+	<data name="TasksService_CannotMoveFolderUnderItself" xml:space="preserve">
+    <value>No puedes mover una carpeta de tareas debajo de sí misma!</value>
+  </data>
+	<data name="SecuritySettings_PasswordChangeInterval_Invalid" xml:space="preserve">
+    <value>El intervalo de cambio de contraseña debe ser un valor entero!</value>
+  </data>
+	<data name="UserDetails_NewPasswordContainsNames" xml:space="preserve">
+    <value>La nueva contraseña no puede contener el nombre de usuario o el login!</value>
+  </data>
+	<data name="SpiraMembershipProvider_PasswordCannotBeSame" xml:space="preserve">
+    <value>No puedes usar tu contraseña anterior como tu nueva contraseña!</value>
+  </data>
+	<data name="SpiraMembershipProvider_PasswordCannotContainUsername" xml:space="preserve">
+    <value>Tu contraseña no puede contener tu nombre de usuario!</value>
+  </data>
+	<data name="ChangePassword_ConfirmNewPasswordMustMatch" xml:space="preserve">
+    <value>La nueva contraseña y la contraseña de confirmación deben coincidir!</value>
+  </data>
+	<data name="ChangePassword_ConfirmNewPasswordRequired" xml:space="preserve">
+    <value>Necesitas ingresar la contraseña de confirmación!</value>
+  </data>
+	<data name="ChangePassword_CurrentPasswordRequired" xml:space="preserve">
+    <value>Necesitas ingresar tu contraseña actual!</value>
+  </data>
+	<data name="ChangePassword_NewPasswordRequired" xml:space="preserve">
+    <value>Necesitas ingresar una nueva contraseña!</value>
+  </data>
+	<data name="WebPartBase_NotAuthorizedForProjectTemplate" xml:space="preserve">
+    <value>No está autorizado para acceder a la plantilla del producto '{0}'.</value>
+  </data>
+	<data name="WebPartBase_NotAuthorizedToEditProjectTemplate" xml:space="preserve">
+    <value>No está autorizado a realizar cambios en la plantilla del producto '{0}'.</value>
+  </data>
+	<data name="Services_EmptyCredentialsObject" xml:space="preserve">
+    <value>Debe pasar un objeto de credenciales rellenado a la llamada API!</value>
+  </data>
+	<data name="Services_YouNeedToPassApiKeyOrPassword" xml:space="preserve">
+    <value>Debes pasar una clave API o una contraseña!</value>
+  </data>
+	<data name="Admin_SelectProjectTemplate" xml:space="preserve">
+    <value>Primero debes seleccionar una plantilla de producto antes de acceder a esta página!</value>
+  </data>
+	<data name="Admin_Notification_TemplateSaved" xml:space="preserve">
+    <value>Plantilla guardada con éxito</value>
+  </data>
+	<data name="Admin_Priorities_AtLeastOneMustBeActive" xml:space="preserve">
+    <value>Al menos una Prioridad debe estar marcada como Activa.</value>
+  </data>
+	<data name="Admin_Priorities_ColorInvalid" xml:space="preserve">
+    <value>Necesitas ingresar un código de color válido para la prioridad.</value>
+  </data>
+	<data name="Admin_Priorities_ColorRequired" xml:space="preserve">
+    <value>Necesitas ingresar un código de color para la prioridad.</value>
+  </data>
+	<data name="Admin_Priorities_NameRequired" xml:space="preserve">
+    <value>Necesitas ingresar un nombre para la prioridad.</value>
+  </data>
+	<data name="Admin_Priorities_ScoreMustBeNumeric" xml:space="preserve">
+    <value>Necesita ingresar un valor numérico de puntuación</value>
+  </data>
+	<data name="Admin_Priorities_ScoreRequired" xml:space="preserve">
+    <value>Necesitas ingresar una puntuación para la prioridad.</value>
+  </data>
+	<data name="Admin_Priorities_Success" xml:space="preserve">
+    <value>Prioridades actualizadas con éxito.</value>
+  </data>
+	<data name="RequirementTypes_CannotSetDefaultTypeInactive" xml:space="preserve">
+    <value>No puede establecer el tipo de requisito predeterminado en un valor inactivo</value>
+  </data>
+	<data name="RequirementTypes_NameRequired" xml:space="preserve">
+    <value>Debe ingresar un nombre para el tipo de requisito</value>
+  </data>
+	<data name="RequirementTypes_Success" xml:space="preserve">
+    <value>Tipos de requisitos actualizados con éxito.</value>
+  </data>
+	<data name="TaskTypes_CannotSetDefaultTypeInactive" xml:space="preserve">
+    <value>No puede establecer el tipo de tarea predeterminado en un valor inactivo</value>
+  </data>
+	<data name="TaskTypes_NameRequired" xml:space="preserve">
+    <value>Necesita ingresar un nombre para el tipo de tarea</value>
+  </data>
+	<data name="TaskTypes_Success" xml:space="preserve">
+    <value>Tipos de tareas actualizados con éxito.</value>
+  </data>
+	<data name="TestCaseTypes_CannotSetDefaultTypeInactive" xml:space="preserve">
+    <value>No puede establecer el tipo de caso de prueba predeterminado en un valor inactivo</value>
+  </data>
+	<data name="TestCaseTypes_NameRequired" xml:space="preserve">
+    <value>Debe ingresar un nombre para el tipo de caso de prueba</value>
+  </data>
+	<data name="TestCaseTypes_Success" xml:space="preserve">
+    <value>Tipos de casos de prueba actualizados con éxito.</value>
+  </data>
+	<data name="Admin_ProjectTemplateEdit_TemplateNameRequired" xml:space="preserve">
+    <value>El nombre de la plantilla es obligatorio</value>
+  </data>
+	<data name="Admin_ProjectTemplates_CannotDeleteInUse" xml:space="preserve">
+    <value>No puede eliminar una plantilla de producto que está siendo utilizada por productos!</value>
+  </data>
+	<data name="Admin_ProjectTemplates_DeleteConfirm" xml:space="preserve">
+    <value>Estás seguro de que quieres eliminar esta plantilla?</value>
+  </data>
+	<data name="DocumentStatuses_NameRequired" xml:space="preserve">
+    <value>Debe ingresar un nombre para el estado del documento</value>
+  </data>
+	<data name="DocumentStatuses_Success" xml:space="preserve">
+    <value>Los estados de los documentos se han actualizado correctamente.</value>
+  </data>
+	<data name="Admin_Importances_AtLeastOneMustBeActive" xml:space="preserve">
+    <value>Al menos una importancia debe estar marcada como activa.</value>
+  </data>
+	<data name="RiskImpacts_AtLeastOneMustBeActive" xml:space="preserve">
+    <value>Al menos un impacto de riesgodebe estar marcado como activo.</value>
+  </data>
+	<data name="RiskImpacts_ColorInvalid" xml:space="preserve">
+    <value>Debe ingresar un código de color válido para el impacto de riesgo</value>
+  </data>
+	<data name="RiskImpacts_ColorRequired" xml:space="preserve">
+    <value>Necesita ingresar un código de color para el impacto de riesgo</value>
+  </data>
+	<data name="RiskImpacts_NameRequired" xml:space="preserve">
+    <value>Necesita ingresar un nombre para el impacto de riesgo</value>
+  </data>
+	<data name="RiskImpacts_Success" xml:space="preserve">
+    <value>Impactos de riesgo actualizados con éxito.</value>
+  </data>
+	<data name="RiskProbabilities_AtLeastOneMustBeActive" xml:space="preserve">
+    <value>Al menos una Prioridad de Riesgo debe estar marcada como Activa.</value>
+  </data>
+	<data name="RiskProbabilities_ColorInvalid" xml:space="preserve">
+    <value>Debe ingresar un código de color válido para la probabilidad de riesgo</value>
+  </data>
+	<data name="RiskProbabilities_ColorRequired" xml:space="preserve">
+    <value>Necesitas ingresar un código de color para la probabilidad de riesgo.</value>
+  </data>
+	<data name="RiskProbabilities_NameRequired" xml:space="preserve">
+    <value>Necesita ingresar un nombre para la probabilidad de riesgo</value>
+  </data>
+	<data name="RiskProbabilities_Success" xml:space="preserve">
+    <value>Probabilidades de riesgo actualizadas con éxito.</value>
+  </data>
+	<data name="RiskStatuses_NameRequired" xml:space="preserve">
+    <value>Necesita ingresar un nombre para el estado de riesgo</value>
+  </data>
+	<data name="RiskStatuses_Success" xml:space="preserve">
+    <value>Los estados de riesgo se actualizan con éxito.</value>
+  </data>
+	<data name="RiskTypes_CannotSetDefaultTypeInactive" xml:space="preserve">
+    <value>No puede establecer el tipo de riesgo predeterminado en un valor inactivo</value>
+  </data>
+	<data name="RiskTypes_NameRequired" xml:space="preserve">
+    <value>Debe ingresar un nombre para el tipo de riesgo</value>
+  </data>
+	<data name="RiskTypes_Success" xml:space="preserve">
+    <value>Tipos de riesgo actualizados con éxito.</value>
+  </data>
+	<data name="Admin_Impacts_ColorInvalid" xml:space="preserve">
+    <value>Necesitas ingresar un código de color válido para el impacto.</value>
+  </data>
+	<data name="Admin_Impacts_ColorRequired" xml:space="preserve">
+    <value>Necesitas ingresar un código de color para el impacto.</value>
+  </data>
+	<data name="Admin_Impacts_NameRequired" xml:space="preserve">
+    <value>Necesitas ingresar un nombre para el impacto.</value>
+  </data>
+	<data name="Admin_Impacts_PositionMustBeNumeric" xml:space="preserve">
+    <value>Necesita ingresar un valor de posición numérico</value>
+  </data>
+	<data name="Admin_Impacts_PositionRequired" xml:space="preserve">
+    <value>Necesitas ingresar una posición para el impacto.</value>
+  </data>
+	<data name="Admin_Impacts_ScoreMustBeNumeric" xml:space="preserve">
+    <value>Necesita ingresar un valor numérico de puntuación</value>
+  </data>
+	<data name="Admin_Impacts_ScoreRequired" xml:space="preserve">
+    <value>Necesitas ingresar una puntuación para el impacto.</value>
+  </data>
+	<data name="Admin_Probabilities_ColorInvalid" xml:space="preserve">
+    <value>Necesitas ingresar un código de color válido para la probabilidad</value>
+  </data>
+	<data name="Admin_Probabilities_ColorRequired" xml:space="preserve">
+    <value>Necesitas ingresar un código de color para la probabilidad.</value>
+  </data>
+	<data name="Admin_Probabilities_NameRequired" xml:space="preserve">
+    <value>Necesitas ingresar un nombre para la probabilidad</value>
+  </data>
+	<data name="Admin_Probabilities_PositionMustBeNumeric" xml:space="preserve">
+    <value>Necesita ingresar un valor de posición numérico</value>
+  </data>
+	<data name="Admin_Probabilities_PositionRequired" xml:space="preserve">
+    <value>Necesitas ingresar una posición para la probabilidad</value>
+  </data>
+	<data name="Admin_Probabilities_ScoreMustBeNumeric" xml:space="preserve">
+    <value>Necesita ingresar un valor numérico de puntuación</value>
+  </data>
+	<data name="Admin_Probabilities_ScoreRequired" xml:space="preserve">
+    <value>Necesitas ingresar una puntuación para la probabilidad</value>
+  </data>
+	<data name="Admin_Statuses_PositionMustBeNumeric" xml:space="preserve">
+    <value>Necesita ingresar un valor de posición numérico</value>
+  </data>
+	<data name="Admin_Statuses_PositionRequired" xml:space="preserve">
+    <value>Necesitas ingresar una posición para el estado</value>
+  </data>
+	<data name="RisksService_RiskNotFound" xml:space="preserve">
+    <value>No se puede recuperar el riesgo RK{0} porque ya no existe.</value>
+  </data>
+	<data name="RiskList_DeleteConfirm" xml:space="preserve">
+    <value>Estás seguro de que deseas eliminar los riesgos seleccionados?</value>
+  </data>
+	<data name="RiskDetails_DeleteConfirm" xml:space="preserve">
+    <value>Estás seguro de que deseas eliminar este riesgo?</value>
+  </data>
+	<data name="RiskDetails_RefreshConfirm" xml:space="preserve">
+    <value>Esto descartará cualquier cambio no guardado. Estas seguro que deseas continuar?</value>
+  </data>
+	<data name="RiskDetails_MitigationDeleteConfirm" xml:space="preserve">
+    <value>Estás seguro de que deseas eliminar las mitigaciones de riesgo seleccionadas?</value>
+  </data>
+	<data name="LicenseDetails_LicenseExpired" xml:space="preserve">
+    <value>La clave de licencia ha caducado.&amp;nbsp;&lt;br&gt;&amp;nbsp;Por favor, póngase en contacto con el soporte al cliente para obtener una nueva.</value>
+  </data>
+	<data name="BackgroundProcessService_ProjectTemplateIdNotSpecified" xml:space="preserve">
+    <value>Se debe especificar ProjectTemplateId para esta operación</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyDocumentFolders" xml:space="preserve">
+    <value>No estás autorizado para modificar carpetas de documentos.</value>
+  </data>
+	<data name="ListServiceBase_UploadRequired" xml:space="preserve">
+    <value>Debes subir un(a) nuevo(a) {0}</value>
+  </data>
+	<data name="TestCaseDetails_ParameterInUse" xml:space="preserve">
+    <value>No todos los parámetros se pueden eliminar porque están en uso en otro lugar. Por favor actualiza la página.</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateProjectTemplates" xml:space="preserve">
+    <value>No Autorizado para Crear Plantillas: debe ser Administrador del Sistema</value>
+  </data>
+	<data name="Services_ProjectTemplateIdNotNull" xml:space="preserve">
+    <value>El objeto Plantilla de Producto debe tener ProjectTemplateId establecido en nulo para la creación</value>
+  </data>
+	<data name="Services_ArtifactNotFound" xml:space="preserve">
+    <value>No se encontró el artefacto especificado!</value>
+  </data>
+	<data name="Services_NotAuthorizedUpdateProjectTemplates" xml:space="preserve">
+    <value>Usted no está autorizado para actualizar esta plantilla de producto!</value>
+  </data>
+	<data name="Services_ProjectIdMissing" xml:space="preserve">
+    <value>El objeto de Proyecto necesita tener ProjectId rellenado</value>
+  </data>
+	<data name="Services_ProjectTemplateIdMissing" xml:space="preserve">
+    <value>El objeto ProjectTemplate necesita tener ProjectTemplateId rellenado</value>
+  </data>
+	<data name="RequirementsFeature_InvalidLicense" xml:space="preserve">
+    <value>Usted no puede acceder a esta función de Requisitos con su licencia actual.</value>
+  </data>
+	<data name="GraphingService_NoDataToGraph" xml:space="preserve">
+    <value>No había datos para mostrar en este gráfico! Cualquier gráfico existente no ha sido cambiado.</value>
+  </data>
+	<data name="Services_NotAuthorizedToGenerateThisReport" xml:space="preserve">
+    <value>Usted no tiene autorización para generar este informe.</value>
+  </data>
+	<data name="Services_NotAuthorizedViewProject" xml:space="preserve">
+    <value>Usted no tiene autorización para ver datos de todo el producto para el producto PR{0}</value>
+  </data>
+	<data name="Services_NotAuthorizedViewProjectGroup" xml:space="preserve">
+    <value>Usted no tiene autorización para ver datos de todo el programa para el programa PG{0}</value>
+  </data>
+	<data name="Services_NotAuthorizedViewSystemWideData" xml:space="preserve">
+    <value>Usted no tiene autorización para ver datos de todo el sistema</value>
+  </data>
+	<data name="Admin_VersionControlProvider_NotActiveForProduct" xml:space="preserve">
+    <value>No hay un proveedor activo para este producto. Le sugerimos que contacte con su administrador de sistema para activar un proveedor.</value>
+  </data>
+	<data name="FileUploadDialog_FilenameRequired" xml:space="preserve">
+    <value>El nombre del fichero es necesario!</value>
+  </data>
+	<data name="FileUploadDialog_URLRequired" xml:space="preserve">
+    <value>La URL es necesaria!</value>
+  </data>
+	<data name="Login_OAuthProvider_Error" xml:space="preserve">
+    <value>La integración {0} no se puede utilizar en este momento. Le sugerimos que contacte con su administrador de sistema.</value>
+  </data>
+	<data name="UserProfile_OAuthLinkedSummary" xml:space="preserve">
+    <value>Usted actualmente inicia sesión en {0} con su cuenta {1}. Para desvincularla, haga clic en el botón de abajo.</value>
+  </data>
+	<data name="UserProfile_OAuthUnlinkHead" xml:space="preserve">
+    <value>Desvincular cuenta de usuario de {0}</value>
+  </data>
+	<data name="UserProfile_OAuthUnlinkSummary" xml:space="preserve">
+    <value>Para desvincular su cuenta, ingrese nueva información de seguridad y su contraseña. Ya no iniciarás sesión con {0}.</value>
+  </data>
+	<data name="Admin_OAuth_ProviderDeleted" xml:space="preserve">
+    <value>Proveedor eliminado.</value>
+  </data>
+	<data name="Admin_OAuth_ProviderErrorDelete" xml:space="preserve">
+    <value>Error al eliminar el proveedor. Consulte el Registro de Eventos para más detalles.</value>
+  </data>
+	<data name="Admin_OAuth_ProviderStillLoaded" xml:space="preserve">
+    <value>No se puede eliminar el proveedor mientras la DLL aún está cargada.</value>
+  </data>
+	<data name="Admin_OAuth_ProviderStillUsers" xml:space="preserve">
+    <value>No se puede realizar una acción con el Proveedor mientras los usuarios están vinculados a él.</value>
+  </data>
+	<data name="Login_UnableToLogIn" xml:space="preserve">
+    <value>Su intento de inicio de sesión no fue exitoso. Por favor, inténtalo de nuevo.</value>
+  </data>
+	<data name="Login_NotYetApproved" xml:space="preserve">
+    <value>Su cuenta aún no ha sido aprobada por el Administrador.</value>
+  </data>
+	<data name="Admin_OAuth_ClientIdSecretKeyRequired" xml:space="preserve">
+    <value>Se requieren tanto el ID del Cliente como el Secreto del Cliente.</value>
+  </data>
+	<data name="Admin_OAuth_URLsRequired" xml:space="preserve">
+    <value>El proveedor requiere que las tres URL funcionen correctamente.</value>
+  </data>
+	<data name="Admin_OAuth_ProviderInfoSaved" xml:space="preserve">
+    <value>Información del proveedor de acceso guardada.</value>
+  </data>
+	<data name="Admin_UserDetails_NewPasswordRequired" xml:space="preserve">
+    <value>Debe introducir una nueva contraseña.</value>
+  </data>
+	<data name="Admin_UserDetails_NewUsernamePasswordRequired" xml:space="preserve">
+    <value>Debe introducir una nueva contraseña.</value>
+  </data>
+	<data name="Admin_UserDetails_CannotLinkOAuthUserToLdap" xml:space="preserve">
+    <value>No puede vincular un usuario administrado por OAUTH a un servidor LDAP. Primero debe desvincularlos de OAUTH.</value>
+  </data>
+	<data name="Admin_UserDetails_CannotLinkUnapprovedUserToLdap" xml:space="preserve">
+    <value>No puede vincular un usuario no aprobado a un perfil LDAP!</value>
+  </data>
+	<data name="NeedAccount_OAuthLoginInUse" xml:space="preserve">
+    <value>Nombre de Usuario/Correo Electrónico ya en uso.</value>
+  </data>
+	<data name="Admin_OAuth_ProviderUnloadedNoUser" xml:space="preserve">
+    <value>Usted tiene un proveedor configurado que no se cargó correctamente! Necesitas ver su configuración!</value>
+  </data>
+	<data name="Admin_OAuth_ProviderUnloadedUsers" xml:space="preserve">
+    <value>Usted tiene un proveedor configurado que no se cargó correctamente! Algunos usuarios no pueden iniciar sesión!</value>
+  </data>
+	<data name="PortfolioHome_PortfolioNotValid" xml:space="preserve">
+    <value>Lo portafolio especificado no es válido.</value>
+  </data>
+	<data name="Admin_Portfolios_DeleteConfirm" xml:space="preserve">
+    <value>Estás seguro de que deseas eliminar este portafolio?</value>
+  </data>
+	<data name="Admin_PortfolioDetails_NameRequired" xml:space="preserve">
+    <value>
+El nombre de lo portafolio es obligatorio</value>
+  </data>
+	<data name="Admin_SystemInfo_DeletingSampleData" xml:space="preserve">
+    <value>Eliminando los datos de muestra ...</value>
+  </data>
+	<data name="Confirm_BaselineDelete" xml:space="preserve">
+    <value>Está seguro de que desea eliminar las baselines seleccionadas?</value>
+  </data>
+	<data name="Baseline_Create_NameRequired" xml:space="preserve">
+    <value>Se requiere un nombre para crear la baseline</value>
+  </data>
+	<data name="ErrorPage_ValidationOfXsrfTokenFailed" xml:space="preserve">
+    <value>Se hizo un intento de evitar las características de seguridad en este sitio web. Su solicitud no ha sido procesada!</value>
+  </data>
+	<data name="MasterPage_ValidationOfXsrfTokenFailed" xml:space="preserve">
+    <value>
+La validación del token Anti-XSRF ha fallado.</value>
+  </data>
+	<data name="Gantt_CannotDisplayOnThisScreen" xml:space="preserve">
+    <value>Lo sentimos, este gráfico no funciona correctamente en este tamaño de pantalla, gire su dispositivo o use una pantalla más grande</value>
+  </data>
+	<data name="Admin_BaselinesNotAvailable" xml:space="preserve">
+    <value>Las funciones de Baseline no están disponibles en esta versión de Spira!</value>
+  </data>
+	<data name="Admin_BaselinesNotEnabled" xml:space="preserve">
+    <value>Las funciones de Baseline no están habilitadas para este producto!</value>
+  </data>
+	<data name="Admin_ProjectBaselineList_Summary" xml:space="preserve">
+    <value>Todas las baselines creadas en el Producto se enumeran a continuación. Para cambiar una baseline, haga clic en la columna de release. Esto lo llevará a la página de detalles de la release de esa baseline. Haga clic en el nombre de la baseline para ver más detalles al respecto, incluida una lista de los artefactos que cambiaron en la baseline.</value>
+  </data>
+	<data name="Admin_BaselineDetails" xml:space="preserve">
+    <value>Los detalles para la baseline seleccionada se encuentran a continuación.</value>
+  </data>
+	<data name="Admin_DataTools_FolderHieararchyCaches" xml:space="preserve">
+    <value>Cachés de Jerarquía de Carpetas</value>
+  </data>
+	<data name="Admin_DataTools_TestCaseParameterHierarchyCache" xml:space="preserve">
+    <value>Caché de Jerarquía de Parámetros de Casos de Prueba</value>
+  </data>
+	<data name="Admin_DataTools_TestStatus_TaskProgress_Cache" xml:space="preserve">
+    <value>Cachés de Estado de Pruebas y Progreso de Tareas</value>
+  </data>
+	<data name="Admin_DataTools_UpdatingDocumentFolderHierarchy" xml:space="preserve">
+    <value>Actualizando la Jerarquía de Carpetas de Documentos ...</value>
+  </data>
+	<data name="Admin_DataTools_UpdatingTaskFolderHierarchy" xml:space="preserve">
+    <value>
+Actualizando la Jerarquía de Carpetas de Tareas ...</value>
+  </data>
+	<data name="Admin_DataTools_UpdatingTaskProgressAndTestStatus" xml:space="preserve">
+    <value>Actualizando Progreso de Tareas y Estado de Pruebas ...</value>
+  </data>
+	<data name="Admin_DataTools_UpdatingTestCaseFolderHierarchy" xml:space="preserve">
+    <value>Actualizando la Jerarquía de Carpetas de Casos de Prueba ...</value>
+  </data>
+	<data name="Admin_DataTools_UpdatingTestCaseParameterHierarchy" xml:space="preserve">
+    <value>
+Actualizando la Jerarquía de Parámetros de Casos de Prueba ...</value>
+  </data>
+	<data name="Admin_DataTools_UpdatingTestSetFolderHierarchy" xml:space="preserve">
+    <value>Actualizando la Jerarquía de Carpetas de Conjunto de Pruebas ...</value>
+  </data>
+	<data name="Admin_History_BaselineCantRevert" xml:space="preserve">
+    <value>El elemento está contenido dentro de una baseline, no se puede revertir.</value>
+  </data>
+	<data name="Admin_DataTools_DatabaseIndexes_Tooltip" xml:space="preserve">
+    <value>Esto actualizará los índices en TODOS los productos de la aplicación, no solo en este. Por este motivo, solo los administradores del sistema pueden realizar esta función.</value>
+  </data>
+	<data name="ListServiceBase_UploadOrEditRequired" xml:space="preserve">
+    <value>Debes subir un nuevo {0} o actualizarlo editando en línea.</value>
+  </data>
+	<data name="SourceCodeFileDetails_FileNotExistsInBranch" xml:space="preserve">
+    <value>El archivo que seleccionó no existe en la rama actual.</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_RevisionNotExistsInBranch" xml:space="preserve">
+    <value>La commit que seleccionó no existe en la rama actual.</value>
+  </data>
+	<data name="Services_CannotFilterByField" xml:space="preserve">
+    <value>No puede filtrar por {0} actualmente ...</value>
+  </data>
+	<data name="Services_FirstOrLastNameNotProvided" xml:space="preserve">
+    <value>Debe proporcionar el nombre y apellido de un usuario cuando intente crear un nuevo usuario!</value>
+  </data>
+	<data name="PullRequest_DeleteConfirm" xml:space="preserve">
+    <value>Está seguro de que desea eliminar los pull request(s) seleccionados?</value>
+  </data>
+	<data name="ReportsConfiguration_GeneratedFilenameInvalid" xml:space="preserve">
+    <value>Debe ingresar un nombre de archivo válido para el informe generado!</value>
+  </data>
+	<data name="ChangePassword_UserNameRequired" xml:space="preserve">
+    <value>Debes ingresar tu nombre de usuario actual!</value>
+  </data>
+	<data name="VersionControl_CacheNotInitialized" xml:space="preserve">
+    <value>La caché de código fuente no está inicializada para este producto.</value>
+  </data>
+	<data name="Admin_HistoryChangeDetails_NoField" xml:space="preserve">
+    <value>No se produjeron cambios de campo en este conjunto de cambios. No se puede revertir.</value>
+  </data>
+	<data name="PullRequests_DifferentBranchesNeeded" xml:space="preserve">
+    <value>Debe elegir diferentes ramas DESDE y A!</value>
+  </data>
+	<data name="PullRequests_NoTaskTypeConfigured" xml:space="preserve">
+    <value>Debe pedirle al administrador de la plantilla de producto que se asegure de que al menos un tipo de tarea esté configurado como un pull request para usar esta página.</value>
+  </data>
+	<data name="SourceCode_ProjectNotEnabled" xml:space="preserve">
+    <value>Este producto no está configurado para acceder al código fuente. Pídale al administrador de su producto que lo habilite.</value>
+  </data>
+	<data name="BuildDetails_DescriptionTruncated" xml:space="preserve">
+    <value>El registro completo es demasiado largo para mostrarse, por lo que se ha cortado el medio.</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyDocuments" xml:space="preserve">
+    <value>No está autorizado a modificar documentos</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateRisks" xml:space="preserve">
+    <value>No autorizado para crear riesgos!</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteRisks" xml:space="preserve">
+    <value>No autorizado para eliminar riesgos!</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyRisks" xml:space="preserve">
+    <value>No autorizado para modificar riesgos!</value>
+  </data>
+	<data name="Services_NotAuthorizedViewRisks" xml:space="preserve">
+    <value>No autorizado para ver riesgos!</value>
+  </data>
+	<data name="Services_RiskIdMissing" xml:space="preserve">
+    <value>El objeto de riesgo debe tener RiskId poblado</value>
+  </data>
+	<data name="Services_RiskIdNotNull" xml:space="preserve">
+    <value>El objeto de riesgo debe tener RiskId establecido en nulo para su creación</value>
+  </data>
+	<data name="Services_RiskNotFound" xml:space="preserve">
+    <value>No se puede localizar el riesgo solicitado</value>
+  </data>
+	<data name="Services_RiskMitigationIdMissing" xml:space="preserve">
+    <value>Debe asegurarse de que se complete la identificación de mitigación de riesgos</value>
+  </data>
+	<data name="InvalidLicense_LicenseExpired" xml:space="preserve"><value>La clave de licencia de la aplicación ha expirado. &lt;br /&gt; Por favor renueve en https://onshoretech.com o envíe un correo electrónico a OnShore Technology Group a info@onshoretech.com. &lt;br /&gt; Solo los administradores del sistema pueden cambiar los detalles de la licencia.</value></data><data name="SourceCode_ProviderInitializing" xml:space="preserve"><value>Proveedor inicializando</value></data><data name="SourceCodeFileDetails_ChangesNotAvailable" xml:space="preserve"><value>La lista de cambios no está disponible.</value></data><data name="Login_IE11_SupportEnd" xml:space="preserve"><value>Estás usando Internet Explorer. Esto ya no es compatible. Por favor, cambie a un navegador moderno y seguro.</value></data><data name="Services_AuthorizationFailure" xml:space="preserve"><value>Hubo un error de autorización. Asegúrese de que está pasando un inicio de sesión válido y una clave Api y que su usuario no está bloqueado.</value></data><data name="Admin_BaselineArtifactDetails" xml:space="preserve"><value>Los detalles de los cambios de este artefacto en la línea de base se describen a continuación:</value></data><data name="ProjectTemplate_CanBulkChangeStatus" xml:space="preserve"><value>Cuando esta opción está habilitada, los usuarios con permisos de 'Edición masiva' pueden realizar cambios masivos en el estado de los artefactos, fuera de los controles del flujo de trabajo.</value></data><data name="Login_LicenseExpire_Soon" xml:space="preserve"><value>&lt;b&gt; Su licencia caducará en {0} día(s). &lt;/b&gt; &lt;br /&gt; Asegúrese de renovarla a tiempo, porque una vez que caduque la licencia, nadie podrá acceder al sistema.</value></data><data name="Login_TrialExpire_Soon" xml:space="preserve"><value>&lt;b&gt; Su  licencia de prueba vence en {0} día(s). &lt;/b&gt;</value></data><data name="Services_OData_NotSupported" xml:space="preserve"><value>Su licencia no proporciona acceso a las APIs de ODATA</value></data><data name="Services_TestCaseParameterNotInTestCase" xml:space="preserve"><value>El parámetro del caso de prueba no pertenece al caso de prueba especificado</value></data><data name="Services_TestCaseParameterUpdateFields" xml:space="preserve"><value>El objeto TestCaseParameter debe tener TestCaseParameterId, TestCaseId y Name al actualizar</value></data><data name="Services_TestCaseParameterDeleteFields" xml:space="preserve"><value>El objeto TestCaseParameter debe tener TestCaseParameterId y TestCaseId para eliminar el parámetro</value></data><data name="Services_TestSetParameterUpdateFields" xml:space="preserve"><value>El objeto TestSetParameter debe tener TestCaseParameterId y TestSetId al actualizar o eliminar</value></data><data name="Services_TestCaseParameterNotInTestSet" xml:space="preserve"><value>El parámetro del caso de prueba no pertenece al conjunto de prueba especificado</value></data><data name="Services_RequiredFieldMissing" xml:space="preserve"><value>Por favor, complete todos los campos obligatorios para realizar esta operación</value></data><data name="Services_TestSetTestCaseParameterInTestCase" xml:space="preserve"><value>El parámetro ya existe para este caso de prueba de conjunto de prueba</value></data><data name="Services_TestSetTestCaseParameterNotInTestCase" xml:space="preserve"><value>El parámetro no existe para este caso de prueba de conjunto de prueba</value></data><data name="ChangeMfa_Otp_Invalid" xml:space="preserve"><value>Por favor, Ingrese una contraseña válida de un solo uso de 6 dígitos</value></data><data name="ChangeMfa_Otp_Invalid2" xml:space="preserve"><value>La contraseña de un solo uso ingresada no es válida. Por favor, vuelva a intentarlo.</value></data><data name="ChangeMfa_Otp_Required" xml:space="preserve"><value>Por favor, ingrese la contraseña de un solo uso</value></data><data name="ChangeMfa_UserNotExists1" xml:space="preserve"><value>El usuario actual ya no existe, de este modo no se puede eliminar la autenticación de dos pasos</value></data><data name="ChangeMfa_UserNotExists2" xml:space="preserve"><value>El usuario actual ya no existe, de este modo no se puede agregar la autenticación de dos pasos </value></data><data name="ChangeMfa_RemoveConfirm" xml:space="preserve"><value>Está seguro de que desea eliminar la autenticación de dos pasos?</value></data><data name="Login_CannotEnableSsoWithMfaToken" xml:space="preserve"><value>Tú tienes habilitada la autenticación en dos pasos. Inicie sesión y desactive esta opción antes de intentar utilizar un proveedor de inicio de sesión único.</value></data><data name="Login_MfaCheckFailure" xml:space="preserve"><value>El usuario '{0}' ingresó una contraseña de un solo uso incorrecta para el inicio de sesión de MFA.</value></data><data name="Login_MfaCheckSuccess" xml:space="preserve"><value>El usuario '{0}' ingresó correctamente una contraseña de un solo uso para iniciar sesión de MFA.</value></data></root>

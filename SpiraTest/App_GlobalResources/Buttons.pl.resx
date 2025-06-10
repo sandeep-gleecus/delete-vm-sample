@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anuluj</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Zaloguj się</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Resetuj</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Zatwierdź</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>Wyloguj się</value>
+  </data>
+  <data name="SignOffOtherLocations" xml:space="preserve">
+    <value>Wyloguj z innych lokalizacji</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Zastosuj</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Zamknij</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="Execute" xml:space="preserve">
+    <value>Wykonaj</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Wznów</value>
+  </data>
+  <data name="ApplyFilter" xml:space="preserve">
+    <value>Zastosuj filtr</value>
+  </data>
+  <data name="ClearFilter" xml:space="preserve">
+    <value>Wyczyść filtr</value>
+  </data>
+  <data name="CopyItems" xml:space="preserve">
+    <value>Kopiuj elementy</value>
+  </data>
+  <data name="CutItems" xml:space="preserve">
+    <value>Wytnij elementy</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Eksport</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filtr</value>
+  </data>
+  <data name="Indent" xml:space="preserve">
+    <value>Zwiększ wcięcie</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>Wstaw</value>
+  </data>
+  <data name="Outdent" xml:space="preserve">
+    <value>Zmniejsz wcięcie</value>
+  </data>
+  <data name="PasteItems" xml:space="preserve">
+    <value>Wklej elementy</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Odśwież</value>
+  </data>
+  <data name="RetrieveFilter" xml:space="preserve">
+    <value>Pobierz filtr</value>
+  </data>
+  <data name="SaveFilter" xml:space="preserve">
+    <value>Zapisz filtr</value>
+  </data>
+  <data name="OpenItem" xml:space="preserve">
+    <value>Otwórz element</value>
+  </data>
+  <data name="OpenItemNewTab" xml:space="preserve">
+    <value>Otwórz w nowej zakładce</value>
+  </data>
+  <data name="EditItems" xml:space="preserve">
+    <value>Edytuj elementy</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Narzędzia</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Kopiuj</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Drukuj</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Zapisz</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>Zapisz i zamknij</value>
+  </data>
+  <data name="SaveAndNew" xml:space="preserve">
+    <value>Zapisz i nowy</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Subskrybuj</value>
+  </data>
+  <data name="Unsubscribe" xml:space="preserve">
+    <value>Anuluj subskrypcję</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Wyślij</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Aktualizuj</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Załaduj</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopiuj do schowka</value>
+  </data>
+  <data name="InsertLink" xml:space="preserve">
+    <value>Wstaw link </value>
+  </data>
+  <data name="InsertStep" xml:space="preserve">
+    <value>Wstaw krok</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Znajdź</value>
+  </data>
+  <data name="Revert" xml:space="preserve">
+    <value>Przywróć</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Nowy</value>
+  </data>
+  <data name="Blocked" xml:space="preserve">
+    <value>Blocked</value>
+  </data>
+  <data name="Caution" xml:space="preserve">
+    <value>Caution</value>
+  </data>
+  <data name="CreateReport" xml:space="preserve">
+    <value>Utwórz raport</value>
+  </data>
+  <data name="Fail" xml:space="preserve">
+    <value>Fail</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Zakończ</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Następny</value>
+  </data>
+  <data name="Pass" xml:space="preserve">
+    <value>Pass</value>
+  </data>
+  <data name="PassAll" xml:space="preserve">
+    <value>Pass All</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>Wstrzymaj</value>
+  </data>
+  <data name="AddAssociation" xml:space="preserve">
+    <value>Dodaj powiązanie</value>
+  </data>
+  <data name="MakeActive" xml:space="preserve">
+    <value>Uaktywnij</value>
+  </data>
+  <data name="BackList" xml:space="preserve">
+    <value>Wróć do listy</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Szczegóły</value>
+  </data>
+  <data name="GenerateNew" xml:space="preserve">
+    <value>Wygeneruj nowy</value>
+  </data>
+  <data name="Purge" xml:space="preserve">
+    <value>Wyczyść </value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Przywróć</value>
+  </data>
+  <data name="SubmitTimecard" xml:space="preserve">
+    <value>Zatwierdź kartę pracy</value>
+  </data>
+  <data name="ViewItem" xml:space="preserve">
+    <value>Podgląd elementu</value>
+  </data>
+  <data name="AddRole" xml:space="preserve">
+    <value>Dodaj rolę</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Utwórz</value>
+  </data>
+  <data name="AdminView" xml:space="preserve">
+    <value>Widok administratora</value>
+  </data>
+  <data name="AddTransition" xml:space="preserve">Dodaj przejście</data>
+  <data name="AddWorkflow" xml:space="preserve">Dodaj workflow</data>
+  <data name="Approve" xml:space="preserve">Blocked</data>
+  <data name="Change" xml:space="preserve">Zmień</data>
+  <data name="ClearLog" xml:space="preserve">Wyczyść log</data>
+  <data name="Continue" xml:space="preserve">Kontynuuj</data>
+  <data name="Customize" xml:space="preserve">Dostosuj</data>
+  <data name="Import" xml:space="preserve">Import</data>
+  <data name="InsertAndClose" xml:space="preserve">Wstaw i zamknij</data>
+  <data name="Revert_Parenthesis" xml:space="preserve">(Przywróć)</data>
+  <data name="Steps" xml:space="preserve">Podgląd elementu</data>
+  <data name="UpdateAndClose" xml:space="preserve">Zaktualizuj i zamknij</data>
+  <data name="View" xml:space="preserve">Podgląd</data>
+  <data name="AddTransition" xml:space="preserve">
+    <value>Dodaj przejście</value>
+  </data>
+  <data name="AddWorkflow" xml:space="preserve">
+    <value>Dodaj workflow</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Zatwierdź</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Zmień</value>
+  </data>
+  <data name="ClearLog" xml:space="preserve">
+    <value>Wyczyść log</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Kontynuuj</value>
+  </data>
+  <data name="Customize" xml:space="preserve">
+    <value>Dostosuj</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="InsertAndClose" xml:space="preserve">
+    <value>Wstaw i zamknij</value>
+  </data>
+  <data name="Revert_Parenthesis" xml:space="preserve">
+    <value>(Przywróć)</value>
+  </data>
+  <data name="Steps" xml:space="preserve">
+    <value>Podgląd elementu</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>Sprawdź</value>
+  </data>
+  <data name="UpdateAndClose" xml:space="preserve">
+    <value>Zaktualizuj i zamknij</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Podgląd</value>
+  </data>
+  <data name="Activate" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="AddContact" xml:space="preserve">
+    <value>Dodaj rolę</value>
+  </data>
+  <data name="Deactivate" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="EndSession" xml:space="preserve">
+    <value>Wykonaj</value>
+  </data>
+  <data name="ForceReSync" xml:space="preserve">
+    <value>Wygeneruj nowy</value>
+  </data>
+  <data name="PurgeAll" xml:space="preserve">
+    <value>Odśwież</value>
+  </data>
+  <data name="Refresh_Parenthesis" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="RemoveContact" xml:space="preserve">
+    <value>Przywróć</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Wyloguj z innych lokalizacji</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>Zatwierdź</value>
+  </data>
+  <data name="Suggest" xml:space="preserve">
+    <value>Sugeruj</value>
+  </data>
+  <data name="Undelete" xml:space="preserve">
+    <value>Zaktualizuj i zamknij</value>
+  </data>
+  <data name="ViewProjectMappings" xml:space="preserve">
+    <value>Pogląd</value>
+  </data>
+  <data name="ActivateTara" xml:space="preserve">
+    <value>Aktywuj TaraVault</value>
+  </data>
+  <data name="AddUsers" xml:space="preserve">
+    <value>Dodaj użytkowników</value>
+  </data>
+  <data name="ClearCache" xml:space="preserve">
+    <value>Czysta pamięć podręczna</value>
+  </data>
+  <data name="AddComment" xml:space="preserve">
+    <value>Dodaj komentarz</value>
+  </data>
+  <data name="Split" xml:space="preserve">
+    <value>Split</value>
+  </data>
+  <data name="ActivateUsers" xml:space="preserve">
+    <value>Aktywuj użytkowników</value>
+  </data>
+  <data name="AddProjects" xml:space="preserve">
+    <value>Dodaj produkty</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>Klon</value>
+  </data>
+  <data name="EditUsers" xml:space="preserve">
+    <value>Edycja użytkowników</value>
+  </data>
+  <data name="FocusOn" xml:space="preserve">
+    <value>Skup się na</value>
+  </data>
+  <data name="InsertAtCursor" xml:space="preserve">
+    <value>Wstawić w Kursorze</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="Mini" xml:space="preserve">
+    <value>Mini</value>
+  </data>
+  <data name="NotApplicable" xml:space="preserve">
+    <value>NIE DOTYCZY</value>
+  </data>
+  <data name="ShowGuidedTour" xml:space="preserve">
+    <value>Pokaż Zwiedzanie z przewodnikiem</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>Tabela</value>
+  </data>
+  <data name="Leave" xml:space="preserve">
+    <value>Wyjdź</value>
+  </data>
+  <data name="ReTest" xml:space="preserve">
+    <value>Re-Test</value>
+  </data>
+  <data name="AddFollower" xml:space="preserve">
+    <value>Naśladowca</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>Przydzielić</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Rozwój</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Ogólne</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>Testowanie</value>
+  </data>
+  <data name="Cloning" xml:space="preserve">
+    <value>Klonowanie...</value>
+  </data>
+  <data name="Populate" xml:space="preserve">
+    <value>Populacja</value>
+  </data>
+  <data name="JustFinish" xml:space="preserve">
+    <value>Just Finish</value>
+  </data>
+  <data name="UpdateTestCase" xml:space="preserve">
+    <value>Aktualizacja przypadku testowego</value>
+  </data>
+  <data name="ResetSync" xml:space="preserve">
+    <value>Resetuj Sync</value>
+  </data>
+  <data name="ViewItemNewTab" xml:space="preserve">
+    <value>Zobacz pozycję w nowej zakładce</value>
+  </data>
+  <data name="RefreshCache" xml:space="preserve">
+    <value>Odświeżanie Skrytki</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Zmiana hasła</value>
+  </data>
+  <data name="AddToProject" xml:space="preserve">
+    <value>Dodaj do produktu</value>
+  </data>
+  <data name="Decrease" xml:space="preserve">
+    <value>Spadek</value>
+  </data>
+  <data name="Increase" xml:space="preserve">
+    <value>Zwiększyć</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Pobierz</value>
+  </data>
+  <data name="AccountSecurity" xml:space="preserve">
+    <value>Zabezpieczenie konta</value>
+  </data>
+  <data name="UnlinkAccount" xml:space="preserve">
+    <value>Konto Unlink</value>
+  </data>
+  <data name="LinkToLDAP" xml:space="preserve">
+    <value>Link do LDAP</value>
+  </data>
+</root>

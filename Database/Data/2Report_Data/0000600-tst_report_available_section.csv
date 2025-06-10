@@ -1,0 +1,65 @@
+report_id:Normal,report_section_id:Normal,template:String,header:String,footer:String
+1,1,NULL,NULL,NULL
+2,1,NULL,NULL,NULL
+3,1,NULL,NULL,NULL
+4,1,NULL,NULL,NULL
+5,1,NULL,NULL,NULL
+6,1,NULL,NULL,NULL
+7,1,NULL,NULL,NULL
+8,1,NULL,NULL,NULL
+9,1,NULL,NULL,NULL
+10,1,NULL,NULL,NULL
+11,1,NULL,NULL,NULL
+12,1,NULL,NULL,NULL
+13,1,NULL,NULL,NULL
+14,1,NULL,NULL,NULL
+15,1,NULL,NULL,NULL
+16,1,NULL,NULL,NULL
+17,1,NULL,NULL,NULL
+1,2,NULL,NULL,NULL
+2,3,NULL,NULL,NULL
+3,4,NULL,NULL,NULL
+4,5,NULL,NULL,NULL
+5,6,NULL,NULL,NULL
+6,7,NULL,NULL,NULL
+7,8,NULL,NULL,NULL
+8,9,NULL,NULL,NULL
+9,10,NULL,NULL,NULL
+10,11,NULL,NULL,NULL
+11,12,NULL,NULL,NULL
+12,13,NULL,NULL,NULL
+13,14,NULL,NULL,NULL
+14,15,NULL,NULL,NULL
+15,16,NULL,NULL,NULL
+16,17,NULL,NULL,NULL
+17,18,NULL,NULL,NULL
+18,1,NULL,NULL,NULL
+18,19,NULL,"<br />
+    <div class=""Title3"">
+      Requirements Forward Traceability
+    </div>
+    <p>
+      This section displays a list of all the requirements with the associated test cases/requirements.
+    </p>",NULL
+18,20,NULL,"<div class=""Title3"">
+      Requirements Reverse Traceability
+    </div>
+    <p>
+      This section displays a list of all the test cases with the associated requirements.
+    </p>",NULL
+19,21,NULL," <br />
+    <div class=""Title3"">
+      Test Case Forward Traceability
+    </div>
+    <p>
+      This section displays a list of all the test cases with the associated releases, incidents and test sets.
+    </p>",NULL
+20,1,NULL,NULL,NULL
+20,22,NULL,NULL,NULL
+21,1,NULL,NULL,NULL
+21,23,NULL,NULL,NULL
+22,24,NULL,NULL,NULL
+23,25,NULL,NULL,NULL
+24,26,NULL,NULL,NULL
+25,27,NULL,NULL,NULL
+28,28,NULL,NULL,NULL

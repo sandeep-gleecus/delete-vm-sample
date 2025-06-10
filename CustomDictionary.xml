@@ -1,0 +1,37 @@
+<Dictionary>
+	<Words>
+		<Unrecognized>
+			<Word>cb</Word>
+		</Unrecognized>
+		<Recognized>
+			<Word>Inflectra</Word>
+			<Word>Spira</Word>
+			<Word>Git</Word>
+			<Word>dest</Word>
+			<Word>Asc</Word>
+			<Word>Desc</Word>
+			<Word>cust</Word>
+			<Word>Stati</Word>
+			<Word>Pendings</Word>
+			<Word>Sharings</Word>
+			<Word>Auth</Word>
+			<Word>Multi</Word>
+			<Word>Freetext</Word>
+			<Word>num</Word>
+			<Word>inc</Word>
+			<Word>timezone</Word>
+		</Recognized>
+		<Deprecated>
+			<Term PreferredAlternate="EnterpriseServices">ComPlus</Term>
+		</Deprecated>
+	</Words>
+	<Acronyms>
+		<CasingExceptions>
+			<Acronym>CJK</Acronym>
+			<Acronym>Pi</Acronym>
+		</CasingExceptions>
+	</Acronyms>
+</Dictionary>
+
+
+<!-- https://docs.microsoft.com/en-us/visualstudio/code-quality/how-to-customize-the-code-analysis-dictionary?view=vs-2019#BKMK_ToApplyACustomDictionaryToAProject -->

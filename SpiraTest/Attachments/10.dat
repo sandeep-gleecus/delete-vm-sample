@@ -1,0 +1,17 @@
+Input string was not in a correct format. 
+Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. 
+
+Exception Details: System.FormatException: Input string was not in a correct format.
+
+Stack Trace: 
+
+
+[FormatException: Input string was not in a correct format.]
+   System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info) +0
+   System.Int32.Parse(String s) +38
+   Inflectra.SpiraTest.Web.AttachmentViewer.Page_Load(Object sender, EventArgs e) in c:\subversion\projects\inflectra\trunk\products and services\quality assurance\development\code\spiratest\attachmentviewer.aspx.cs:38
+   System.Web.UI.Control.OnLoad(EventArgs e) +67
+   System.Web.UI.Control.LoadRecursive() +35
+   System.Web.UI.Page.ProcessRequestMain() +750
+
+ 

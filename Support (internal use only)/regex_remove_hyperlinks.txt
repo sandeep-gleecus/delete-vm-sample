@@ -1,0 +1,5 @@
+FIND:
+</?a(|\s+[^>]+)>
+
+REPLACE:
+(blank)

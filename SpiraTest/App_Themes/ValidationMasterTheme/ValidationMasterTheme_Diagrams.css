@@ -1,0 +1,77 @@
+﻿.graphviz-container {
+    border: 1px solid #aaa;
+    border: 1px solid var(--light-silver);
+    border-radius: 5px;
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+svg.graphviz-large-text {
+    font-size: 18px;
+}
+
+svg.graphviz-hierarchical .node {
+    white-space: nowrap;
+    color: black;
+}
+
+    svg.graphviz-hierarchical .node a {
+        color: black;
+        color: var(--black);
+    }
+
+        svg.graphviz-hierarchical .node a:hover {
+            text-shadow: white 1px 0 10px;
+            text-shadow: var(--white) 1px 0 10px;
+        }
+
+    svg.graphviz-hierarchical .node rect,
+    svg.graphviz-hierarchical .node circle,
+    svg.graphviz-hierarchical .node ellipse {
+        stroke: #333;
+        stroke: var(--dark-gray);
+        fill: #fff;
+        fill: var(--white);
+        stroke-width: 1.5px;
+    }
+
+svg.graphviz-hierarchical .cluster rect {
+    stroke: #333;
+    stroke: var(--dark-gray);
+    fill: #000;
+    fill: var(--black);
+    fill-opacity: 0.1;
+    stroke-width: 1.5px;
+}
+
+svg.graphviz-hierarchical .edgePath path.path {
+    stroke: #333;
+    stroke: var(--dark-gray);
+    stroke-width: 1.5px;
+    fill: none;
+}
+/*arrowheads*/
+svg.graphviz-hierarchical .edgePath defs marker path {
+    fill: #333;
+    fill: var(--dark-gray);
+}
+
+svg.graphviz-hierarchical g.label {
+    color: black;
+    color: var(--black);
+}
+
+.not-supported-ie {
+    font-size: 50pt;
+    text-align: center;
+    color: #333;
+    color: var(--dark-gray);
+    background: repeating-linear-gradient( 45deg, #eeeeee, #eeeeee 10px, white 10px, white 20px );
+    background: repeating-linear-gradient( 45deg, var(--vlight-gray), var(--vlight-gray) 10px, var(--white) 10px, var(--white) 20px );
+}
+.not-supported-ie::before {
+    position: relative;
+    top: 40%;
+    content: "Not Supported by IE";
+}

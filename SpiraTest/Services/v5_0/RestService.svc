@@ -1,0 +1,2 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Inflectra.SpiraTest.Web.Services.v5_0.RestService"
+    CodeBehind="RestService.svc.cs" Factory="Inflectra.SpiraTest.Web.Services.Rest.RestServiceHostFactory" %>

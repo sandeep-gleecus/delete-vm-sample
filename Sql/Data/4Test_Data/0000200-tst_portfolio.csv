@@ -1,0 +1,5 @@
+portfolio_id:Key,name:String,description:String,is_active:Normal,start_date:Normal,end_date:Normal,percent_complete:Normal,requirement_count:Normal
+2,Industry: Life Sciences,TBD,1,NULL,NULL,0,0
+3,Industry: Financial Services,TBD,1,NULL,NULL,0,0
+4,Industry: Aerospace,TBD,1,NULL,NULL,0,0
+5,Industry: Manufacturing,TBD,1,NULL,NULL,0,0

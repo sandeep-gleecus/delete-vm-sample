@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Вход в систему</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Отправить .</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>Выход из системы</value>
+  </data>
+  <data name="SignOffOtherLocations" xml:space="preserve">
+    <value>Подписаться Другие места</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Подать заявку на сайте .</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Execute" xml:space="preserve">
+    <value>Выполнить</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Резюме</value>
+  </data>
+  <data name="ApplyFilter" xml:space="preserve">
+    <value>Применить фильтр</value>
+  </data>
+  <data name="ClearFilter" xml:space="preserve">
+    <value>Чистый фильтр</value>
+  </data>
+  <data name="CopyItems" xml:space="preserve">
+    <value>Копии Элементы</value>
+  </data>
+  <data name="CutItems" xml:space="preserve">
+    <value>Вырезанные предметы</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Фильтр</value>
+  </data>
+  <data name="Indent" xml:space="preserve">
+    <value>Индент</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Outdent" xml:space="preserve">
+    <value>Outdent</value>
+  </data>
+  <data name="PasteItems" xml:space="preserve">
+    <value>Паста Элементы</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="RetrieveFilter" xml:space="preserve">
+    <value>Восстановительный фильтр</value>
+  </data>
+  <data name="SaveFilter" xml:space="preserve">
+    <value>Сохранить фильтр</value>
+  </data>
+  <data name="OpenItem" xml:space="preserve">
+    <value>Открытый объект</value>
+  </data>
+  <data name="OpenItemNewTab" xml:space="preserve">
+    <value>Открыт в новой вкладке</value>
+  </data>
+  <data name="EditItems" xml:space="preserve">
+    <value>Редактировать Элементы</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Инструменты</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Скопировать</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>Сохранить и закрыть</value>
+  </data>
+  <data name="SaveAndNew" xml:space="preserve">
+    <value>Сохранить и обновить</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Подписаться на</value>
+  </data>
+  <data name="Unsubscribe" xml:space="preserve">
+    <value>Отписаться от рассылки</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Обновление</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Загрузить</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Копировать в буфер обмена</value>
+  </data>
+  <data name="InsertLink" xml:space="preserve">
+    <value>Вставить ссылку</value>
+  </data>
+  <data name="InsertStep" xml:space="preserve">
+    <value>Вставить шаг</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Найти</value>
+  </data>
+  <data name="Revert" xml:space="preserve">
+    <value>Реверт</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Новый сайт</value>
+  </data>
+  <data name="Blocked" xml:space="preserve">
+    <value>Блокированный</value>
+  </data>
+  <data name="Caution" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="CreateReport" xml:space="preserve">
+    <value>Создать отчет</value>
+  </data>
+  <data name="Fail" xml:space="preserve">
+    <value>Неудача</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Закончить</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="Pass" xml:space="preserve">
+    <value>Перейти на</value>
+  </data>
+  <data name="PassAll" xml:space="preserve">
+    <value>Передать все</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>Пауза</value>
+  </data>
+  <data name="AddAssociation" xml:space="preserve">
+    <value>Добавить ассоциацию</value>
+  </data>
+  <data name="MakeActive" xml:space="preserve">
+    <value>Сделать активным</value>
+  </data>
+  <data name="BackList" xml:space="preserve">
+    <value>Назад к списку</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Подробности</value>
+  </data>
+  <data name="GenerateNew" xml:space="preserve">
+    <value>Создать новое</value>
+  </data>
+  <data name="Purge" xml:space="preserve">
+    <value>Чистка</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Восстановление</value>
+  </data>
+  <data name="SubmitTimecard" xml:space="preserve">
+    <value>Отправьте карточку времени</value>
+  </data>
+  <data name="ViewItem" xml:space="preserve">
+    <value>Посмотреть Элемент</value>
+  </data>
+  <data name="AddRole" xml:space="preserve">
+    <value>Добавить роль</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="AdminView" xml:space="preserve">
+    <value>Вид администратора</value>
+  </data>
+  <data name="AddTransition" xml:space="preserve">
+    <value>Добавить переход</value>
+  </data>
+  <data name="AddWorkflow" xml:space="preserve">
+    <value>Добавить рабочий процесс</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Утвердить</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="ClearLog" xml:space="preserve">
+    <value>Чистый журнал</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Продолжить работу по адресу .</value>
+  </data>
+  <data name="Customize" xml:space="preserve">
+    <value>Настроить</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Импорт</value>
+  </data>
+  <data name="InsertAndClose" xml:space="preserve">
+    <value>Вставить и закрыть</value>
+  </data>
+  <data name="Revert_Parenthesis" xml:space="preserve">
+    <value>(Реверт)</value>
+  </data>
+  <data name="Steps" xml:space="preserve">
+    <value>Шаги</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>Тест</value>
+  </data>
+  <data name="UpdateAndClose" xml:space="preserve">
+    <value>Обновить и закрыть</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Посмотреть</value>
+  </data>
+  <data name="Activate" xml:space="preserve">
+    <value>Активировать</value>
+  </data>
+  <data name="Deactivate" xml:space="preserve">
+    <value>Деактивировать</value>
+  </data>
+  <data name="EndSession" xml:space="preserve">
+    <value>Конечная сессия</value>
+  </data>
+  <data name="ForceReSync" xml:space="preserve">
+    <value>Форсированная перезагрузка</value>
+  </data>
+  <data name="PurgeAll" xml:space="preserve">
+    <value>Очистить все</value>
+  </data>
+  <data name="Refresh_Parenthesis" xml:space="preserve">
+    <value>(Обновление)</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Выберите</value>
+  </data>
+  <data name="ViewProjectMappings" xml:space="preserve">
+    <value>Просмотреть отображения продуктов</value>
+  </data>
+  <data name="Suggest" xml:space="preserve">
+    <value>Предложить</value>
+  </data>
+  <data name="Undelete" xml:space="preserve">
+    <value>Разблокировать</value>
+  </data>
+  <data name="AddContact" xml:space="preserve">
+    <value>Добавить Контакт</value>
+  </data>
+  <data name="RemoveContact" xml:space="preserve">
+    <value>Удалить контакт</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>Отправить сообщение</value>
+  </data>
+  <data name="ActivateTara" xml:space="preserve">
+    <value>Активировать TaraVault</value>
+  </data>
+  <data name="AddUsers" xml:space="preserve">
+    <value>Добавить пользователей</value>
+  </data>
+  <data name="ClearCache" xml:space="preserve">
+    <value>Чистый кэш</value>
+  </data>
+  <data name="AddComment" xml:space="preserve">
+    <value>Добавить комментарий</value>
+  </data>
+  <data name="Split" xml:space="preserve">
+    <value>Раздел</value>
+  </data>
+  <data name="ActivateUsers" xml:space="preserve">
+    <value>Активировать пользователей</value>
+  </data>
+  <data name="AddProjects" xml:space="preserve">
+    <value>Добавить Продукты</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>Клон</value>
+  </data>
+  <data name="EditUsers" xml:space="preserve">
+    <value>Редактировать Пользователи</value>
+  </data>
+  <data name="FocusOn" xml:space="preserve">
+    <value>Сосредоточиться</value>
+  </data>
+  <data name="InsertAtCursor" xml:space="preserve">
+    <value>Вставить на Cursor</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Ссылка</value>
+  </data>
+  <data name="Mini" xml:space="preserve">
+    <value>Мини</value>
+  </data>
+  <data name="NotApplicable" xml:space="preserve">
+    <value>Н/Д</value>
+  </data>
+  <data name="ShowGuidedTour" xml:space="preserve">
+    <value>Показать экскурсию</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>Таблица</value>
+  </data>
+  <data name="Leave" xml:space="preserve">
+    <value>Оставить</value>
+  </data>
+  <data name="ReTest" xml:space="preserve">
+    <value>Повторное тестирование</value>
+  </data>
+  <data name="AddFollower" xml:space="preserve">
+    <value>Добавить подписчика</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>Назначить</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Разработка</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Общие сведения</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>Тестирование</value>
+  </data>
+  <data name="Cloning" xml:space="preserve">
+    <value>Клонирование...</value>
+  </data>
+  <data name="Populate" xml:space="preserve">
+    <value>Популяризировать</value>
+  </data>
+  <data name="JustFinish" xml:space="preserve">
+    <value>Просто закончить</value>
+  </data>
+  <data name="UpdateTestCase" xml:space="preserve">
+    <value>Обновить тестовый случай</value>
+  </data>
+  <data name="ResetSync" xml:space="preserve">
+    <value>Сброс синхронизации</value>
+  </data>
+  <data name="ViewItemNewTab" xml:space="preserve">
+    <value>Просмотр пункта в новой вкладке</value>
+  </data>
+  <data name="RefreshCache" xml:space="preserve">
+    <value>Обновить кэш</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="AddToProject" xml:space="preserve">
+    <value>Добавить в продукт</value>
+  </data>
+  <data name="Decrease" xml:space="preserve">
+    <value>Сокращение</value>
+  </data>
+  <data name="Increase" xml:space="preserve">
+    <value>Увеличить</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Скачать</value>
+  </data>
+  <data name="AccountSecurity" xml:space="preserve">
+    <value>Безопасность аккаунта</value>
+  </data>
+  <data name="UnlinkAccount" xml:space="preserve">
+    <value>Нелинковый счёт</value>
+  </data>
+  <data name="LinkToLDAP" xml:space="preserve">
+    <value>Ссылка на LDAP</value>
+  </data>
+</root>

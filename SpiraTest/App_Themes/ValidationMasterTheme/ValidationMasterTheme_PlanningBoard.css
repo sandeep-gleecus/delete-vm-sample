@@ -1,0 +1,472 @@
+/* Planning Board*/
+
+.NoData TD {
+	background-color: Yellow;
+	background-color: var(--blonde);
+	font-weight: bold;
+	color: Red;
+	border: 1px solid red;
+	border: 1px solid var(--error);
+}
+
+.pb-columns_header_strong {
+	background-color: #eee;
+	background-color: var(--vlight-gray);
+	border-bottom: 4px solid white;
+	border-bottom: 4px solid var(--white);
+	border-top: 1px solid #eee;
+	border-top: 1px solid var(--vlight-gray);
+	padding: .25rem .25rem 1rem .25rem;
+	overflow-x: hidden;
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+.pb-columns_header,
+.pb-columns_subheader {
+	background-color: #f5f5f5;
+	background-color: var(--off-white);
+	border-bottom: 4px solid white;
+	border-bottom: 4px solid var(--white);
+	border-top: 1px solid #eee;
+	border-top: 1px solid var(--vlight-gray);
+	padding: .25rem .25rem 1rem .25rem;
+	overflow-x: hidden;
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+.pb-columns_subheader {
+	padding: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+.pb-columns_subheader,
+.pb-columns_content {
+	border-right: 4px solid #eee;
+	border-right: 4px solid var(--vlight-gray);
+}
+
+.pb-columns_subheader_collapsed .pb-add-item,
+.pb-columns_subheader_collapsed .pb-efforts,
+.pb-columns_subheader_collapsed .pb-subheader-bar_equalizer,
+.pb-columns_subheader_collapsed .pb-subheder_name {
+	display: none;
+}
+
+.pb-columns_subheader_collapsed .pb-suhbheader_avatar,
+.pb-columns_subheader_collapsed .pb-suhbheader_icon {
+	display: block;
+}
+
+.pb-columns_subheader_collapsed .pb-minimize {
+	margin-bottom: .5rem;
+}
+
+.pb-columns_content-container {
+	min-height: 300px;
+	width: 16rem;
+}
+
+
+.pb-header {
+	background-color: #f5f5f5;
+	background-color: var(--off-white);
+	border-top: 4px solid #ddd;
+	border-top: 4px solid var(--light-gray2);
+}
+
+	.pb-header .btn-group {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+
+.pb-rows {
+	border-top: 4px solid #eee;
+	border-top: 4px solid var(--vlight-gray);
+}
+
+.pb-rows_sideheader {
+	background-color: #f5f5f5;
+	background-color: var(--off-white);
+	border-right: 1px solid #eee;
+	border-right: 1px solid var(--vlight-gray);
+	border-top: 4px solid #ddd;
+	border-top: 4px solid var(--light-gray2);
+	padding: .25rem .25rem 1rem .25rem;
+	overflow-x: hidden;
+	vertical-align: top;
+	white-space: nowrap;
+	width: 300px;
+}
+
+.pb-rows_content,
+.pb-columns_content {
+	background-color: white;
+	background-color: var(--white);
+	padding: .5rem;
+	vertical-align: top;
+}
+
+.pb-rows_sideheader > span {
+	padding-right: 25px; /*so that the sideheader text is not obscured by the plus button*/
+}
+
+.pb-wip-exceeded,
+.pb-efforts-warning-wrapper {
+	background-color: #edcdcd;
+	background-color: var(--pale-red);
+}
+
+.pb-wip-not-exceeded {
+	background-color: #dff0d8;
+	background-color: var(--pale-green);
+}
+
+.pb-rows_content.is-active,
+.pb-columns_content.is-active {
+	background-color: #d9edf7;
+	background-color: var(--pale-blue);
+}
+
+
+/* Efforts mini displays */
+.pb-efforts {
+	display: inline;
+	font-size: .66rem;
+	line-height: 1;
+	margin: 0 1rem 0 0;
+	opacity: .8;
+}
+
+	.pb-efforts td {
+		padding: .125rem;
+	}
+
+.pb-efforts_warning,
+.pb-efforts_highlighted {
+	font-weight: bold;
+}
+
+.pb-efforts_warning,
+.pb-wip-exceeded .wip-badge {
+	background-color: #0667ac;
+	color: initial;
+}
+
+
+
+
+/* Planning board buttons */
+.pb-maximize,
+.pb-minimize {
+	cursor: pointer;
+	height: 1rem;
+	margin-right: 10px;
+	padding-left: 4px;
+	width: 1rem;
+}
+
+	.pb-minimize:hover,
+	.pb-maximize:hover {
+		color: #0667ac;
+	}
+
+.pb-add-item {
+	border: none;
+	height: 16px;
+	width: 16px;
+	margin-right: 2px;
+	cursor: pointer;
+	font-size: 1rem;
+	color: #0667ac;
+}
+
+.pb-rows_sideheader .pb-add-item {
+	float: right;
+	text-indent: 0px !important;
+	margin-top: 2px;
+}
+
+.pb-scrollLeft,
+.pb-scrollRight {
+	background-color: White;
+	background-color: var(--white);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1px solid #ddd;
+	border: 1px solid var(--light-gray2);
+	border-radius: 4px;
+	cursor: pointer;
+	opacity: 0.7;
+	padding: .5rem 1rem;
+	margin: .5rem;
+	transition: all .2s;
+}
+
+	.pb-scrollLeft:hover,
+	.pb-scrollRight:hover {
+		background-color: #eee;
+		background-color: var(--vlight-gray);
+		color: #f1a42b;
+		color: var(--orange);
+		opacity: 1.0;
+	}
+
+
+
+
+
+.pb-container-full-width {
+	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid var(--light-gray2);
+	margin-bottom: .25rem;
+	padding: .5rem;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+	.pb-container-full-width.container-unassigned,
+	.pb-rows_content.container-unassigned {
+		background-color: #fff4e6;
+		background-color: var(--pale-yellow);
+	}
+
+	.pb-container-full-width.container-release {
+		background-color: #f6eef6;
+		background-color: var(--purple-off-white);
+	}
+
+
+
+/*Equalizers*/
+[class*="_equalizer"] {
+	border-radius: 2px;
+	height: 8px;
+	overflow: hidden;
+}
+
+.pb-header-bar_equalizer {
+	height: 12px;
+	margin-right: 10px;
+}
+
+.pb-card_equalizer {
+	width: 100px;
+	margin: 4px;
+}
+
+.pb-subcard_equalizer {
+	width: 40px;
+	margin: 1px;
+}
+
+
+
+
+
+
+
+/* Planning board cards */
+.pb-card,
+.pb-card_sidebar,
+.pb-card td,
+.pb-card .ChildItems .ChildItem {
+	border-collapse: initial;
+	border: 0;
+}
+
+.pb-card {
+	background-color: White;
+	background-color: var(--white);
+	border: 1px solid #ddd;
+	border: 1px solid var(--light-gray2);
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.05);
+	display: inline-table;
+	height: auto;
+	margin: 2px;
+	overflow: hidden;
+	transition: box-shadow .2s, background .2s;
+	width: 250px;
+}
+
+	.pb-card:hover,
+	.pb-card.is-selected {
+		background-color: #fff4e3;
+		background-color: var(--peach-light);
+		box-shadow: 4px 4px 6px rgba(0,0,0,.1);
+	}
+
+	.pb-card.inactive,
+	.pb-card.inactive:hover {
+		background-color: #f5f5f5;
+		background-color: var(--off-white);
+		box-shadow: inset -3px 3px 9px rgba(0,0,0,.1);
+		cursor: not-allowed;
+	}
+
+.pb-card_sidebar {
+	width: 6px;
+	padding: 0px;
+}
+
+.pb-card_body {
+	padding: 4px 0;
+	position: relative;
+}
+
+.pb-card_body-header {
+	font-size: 10pt;
+	text-align: left;
+	margin-left: 5px;
+	width: 200px;
+	display: inline-block;
+}
+
+.pb-card_artifact-icon {
+	margin-right: 5px;
+	vertical-align: text-top;
+}
+
+.pb-card_body-header a {
+	color: #333;
+	color: var(--dark-gray);
+	font-weight: bold;
+}
+
+.pb-card_body-details {
+	font-size: .66rem;
+	margin-left: 5px;
+	overflow-y: hidden;
+	padding-top: 2px;
+	text-align: left;
+	white-space: normal;
+	width: 195px;
+	word-wrap: break-word;
+	position: relative;
+	z-index: 1;
+}
+
+.pb-card_body-details-title {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.pb-card_avatar-estimate {
+	color: DimGray;
+	color: var(--gray);
+	font-size: .66rem;
+	font-weight: bold;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	white-space: normal;
+	width: 32px;
+}
+
+.pb-card_avatar {
+	width: 32px;
+	height: 32px;
+	border-radius: 0 3px 0 3px;
+}
+
+
+.pb-card .TaskCount,
+.pb-card .TestCaseCount {
+	position: relative;
+	margin-bottom: -18px;
+	margin-right: 2px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	border: 1px solid var(--light-gray2);
+	color: DimGray;
+	color: var(--gray);
+	font-size: 0.625rem;
+	width: auto;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #ff9966;
+	background-color: var(--peach);
+	box-sizing: border-box;
+	float: right;
+	border-radius: 3px;
+}
+
+.pb-card .TaskCount {
+	top: -37px;
+	background-color: #ff9966;
+	background-color: var(--peach)
+}
+
+.pb-card .TestCaseCount {
+	top: -18px;
+	background-color: #ffff99;
+	background-color: var(--blonde);
+}
+
+
+.pb-card-position-legend,
+.pb-card-position-legend-sm {
+	position: absolute;
+	z-index: 0;
+	display: block;
+	color: #eee;
+	color: var(--vlight-gray);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+	font-family: 'Josefin Sans';
+	line-height: 1;
+}
+
+.pb-card-position-legend {
+	font-size: 8rem;
+}
+
+.pb-card-position-legend-sm {
+	font-size: 5rem;
+}
+
+
+
+
+/*SUBCARDS inside the main cards*/
+.pb-subcard-box {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 4px;
+	text-align: left;
+}
+
+.pb-subcard {
+	border: 1px solid #eee;
+	border: 1px solid var(--vlight-gray);
+	display: inline-block;
+	font-size: 8pt;
+	margin: -1px -1px 0 0;
+	padding: 2px 3px;
+}
+
+	.pb-subcard a:hover {
+		color: #f46515;
+		color: var(--orange-dark);
+		text-decoration: underline;
+	}
+
+
+
+
+
+
+
+
+.PopupPanel .DataEntry {
+	padding-right: 1rem;
+}

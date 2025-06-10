@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97D4C717-81F9-4DA0-8AAF-2C3206EECB3E}</ProjectGuid>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>LinqToEdmx</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>LinqToEdmx</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FSharp.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\FSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Xml.Schema.Linq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\LinqToXsd\Xml.Schema.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeGen\Access.cs" />
+    <Compile Include="CodeGen\PublicOrInternalAccess.cs" />
+    <Compile Include="Common\EnumerableExtensions.cs" />
+    <Compile Include="Map\Alias.cs" />
+    <Compile Include="Map\AssociationSetMapping.cs" />
+    <Compile Include="Map\AssociationSetModificationFunction.cs" />
+    <Compile Include="Map\AssociationSetModificationFunctionMapping.cs" />
+    <Compile Include="Map\ComplexProperty.cs" />
+    <Compile Include="Map\ComplexTypeMapping.cs" />
+    <Compile Include="Map\Condition.cs" />
+    <Compile Include="Map\EndProperty.cs" />
+    <Compile Include="Map\EntityContainerMapping.cs" />
+    <Compile Include="Map\EntitySetMapping.cs" />
+    <Compile Include="Map\EntityTypeMapping.cs" />
+    <Compile Include="Map\EntityTypeModificationFunction.cs" />
+    <Compile Include="Map\EntityTypeModificationFunctionMapping.cs" />
+    <Compile Include="Map\EntityTypeModificationFunctionWithResult.cs" />
+    <Compile Include="Map\FunctionImportComplexTypeMapping.cs" />
+    <Compile Include="Map\FunctionImportCondition.cs" />
+    <Compile Include="Map\FunctionImportEntityTypeMapping.cs" />
+    <Compile Include="Map\FunctionImportMapping.cs" />
+    <Compile Include="Map\FunctionImportMappingResultMapping.cs" />
+    <Compile Include="Map\FunctionMappingAssociationEnd.cs" />
+    <Compile Include="Map\FunctionMappingComplexProperty.cs" />
+    <Compile Include="Map\FunctionMappingEndProperty.cs" />
+    <Compile Include="Map\FunctionMappingScalarProperty.cs" />
+    <Compile Include="Map\Mapping.cs" />
+    <Compile Include="Map\MappingFragment.cs" />
+    <Compile Include="Map\QualifiedName.cs" />
+    <Compile Include="Map\QueryView.cs" />
+    <Compile Include="Map\ResultBinding.cs" />
+    <Compile Include="Map\ScalarProperty.cs" />
+    <Compile Include="Map\SimpleIdentifier.cs" />
+    <Compile Include="Map\Space.cs" />
+    <Compile Include="Map\TMapping.cs" />
+    <Compile Include="Map\Version.cs" />
+    <Compile Include="Map\XRootNamespace.cs" />
+    <Compile Include="Model\Conceptual\EDMSimpleType.cs" />
+    <Compile Include="Model\Conceptual\EntityContainer.cs" />
+    <Compile Include="Model\Conceptual\ConceptualSchema.cs" />
+    <Compile Include="Model\Conceptual\Action.cs" />
+    <Compile Include="Model\Conceptual\Association.cs" />
+    <Compile Include="Model\Conceptual\AssociationEnd.cs" />
+    <Compile Include="Model\Conceptual\CollationFacet.cs" />
+    <Compile Include="Model\Conceptual\CollectionType.cs" />
+    <Compile Include="Model\Conceptual\CommandText.cs" />
+    <Compile Include="Model\Conceptual\ComplexType.cs" />
+    <Compile Include="Model\Conceptual\ComplexTypeProperty.cs" />
+    <Compile Include="Model\Conceptual\ConcurrencyMode.cs" />
+    <Compile Include="Model\Conceptual\Constraint.cs" />
+    <Compile Include="Model\Conceptual\Documentation.cs" />
+    <Compile Include="Model\Conceptual\EntityKeyElement.cs" />
+    <Compile Include="Model\Conceptual\EntityProperty.cs" />
+    <Compile Include="Model\Conceptual\EntityType.cs" />
+    <Compile Include="Model\Conceptual\Function.cs" />
+    <Compile Include="Model\Conceptual\FunctionImportParameter.cs" />
+    <Compile Include="Model\Conceptual\FunctionParameter.cs" />
+    <Compile Include="Model\Conceptual\FunctionReturnType.cs" />
+    <Compile Include="Model\Conceptual\FunctionType.cs" />
+    <Compile Include="Model\Conceptual\IsFixedLengthFacet.cs" />
+    <Compile Include="Model\Conceptual\IsUnicodeFacet.cs" />
+    <Compile Include="Model\Conceptual\Max.cs" />
+    <Compile Include="Model\Conceptual\MaxLengthFacet.cs" />
+    <Compile Include="Model\Conceptual\Multiplicity.cs" />
+    <Compile Include="Model\Conceptual\NamespaceName.cs" />
+    <Compile Include="Model\Conceptual\NavigationProperty.cs" />
+    <Compile Include="Model\Conceptual\OnAction.cs" />
+    <Compile Include="Model\Conceptual\ParameterMode.cs" />
+    <Compile Include="Model\Conceptual\PrecisionFacet.cs" />
+    <Compile Include="Model\Conceptual\Property.cs" />
+    <Compile Include="Model\Conceptual\PropertyRef.cs" />
+    <Compile Include="Model\Conceptual\PropertyType.cs" />
+    <Compile Include="Model\Conceptual\QualifiedName.cs" />
+    <Compile Include="Model\Conceptual\ReferenceType.cs" />
+    <Compile Include="Model\Conceptual\ReferentialConstraintRoleElement.cs" />
+    <Compile Include="Model\Conceptual\RowType.cs" />
+    <Compile Include="Model\Conceptual\ScaleFacet.cs" />
+    <Compile Include="Model\Conceptual\TSchema.cs" />
+    <Compile Include="Model\Conceptual\SimpleIdentifier.cs" />
+    <Compile Include="Model\Conceptual\Text.cs" />
+    <Compile Include="Model\Conceptual\TypeRef.cs" />
+    <Compile Include="Model\Conceptual\UnwrappedFunctionType.cs" />
+    <Compile Include="Model\Conceptual\Using.cs" />
+    <Compile Include="Model\Conceptual\WrappedFunctionType.cs" />
+    <Compile Include="Model\Conceptual\XmlOrText.cs" />
+    <Compile Include="Model\Conceptual\XRootNamespace.cs" />
+    <Compile Include="Edmx.cs" />
+    <Compile Include="Designer\AssociationConnector.cs" />
+    <Compile Include="Designer\Connection.cs" />
+    <Compile Include="Designer\ConnectorPoint.cs" />
+    <Compile Include="Designer\DataServices.cs" />
+    <Compile Include="Designer\Designer.cs" />
+    <Compile Include="Designer\DesignerInfoPropertySet.cs" />
+    <Compile Include="Designer\DesignerProperty.cs" />
+    <Compile Include="Designer\Diagram.cs" />
+    <Compile Include="Designer\Diagrams.cs" />
+    <Compile Include="Designer\TEdmx.cs" />
+    <Compile Include="Designer\EntityTypeShape.cs" />
+    <Compile Include="Designer\InheritanceConnector.cs" />
+    <Compile Include="Designer\Options.cs" />
+    <Compile Include="Designer\Runtime.cs" />
+    <Compile Include="Designer\ConceptualModels.cs" />
+    <Compile Include="Designer\Mappings.cs" />
+    <Compile Include="Designer\StorageModels.cs" />
+    <Compile Include="Designer\XRootNamespace.cs" />
+    <Compile Include="Model\Storage\EntityContainer.cs" />
+    <Compile Include="Model\Storage\LinqToXsdTypeManager.cs" />
+    <Compile Include="Model\Storage\StorageSchema.cs" />
+    <Compile Include="Model\Storage\Action.cs" />
+    <Compile Include="Model\Storage\Association.cs" />
+    <Compile Include="Model\Storage\AssociationEnd.cs" />
+    <Compile Include="Model\Storage\CollationFacet.cs" />
+    <Compile Include="Model\Storage\CommandText.cs" />
+    <Compile Include="Model\Storage\Constraint.cs" />
+    <Compile Include="Model\Storage\Documentation.cs" />
+    <Compile Include="Model\Storage\EntityKeyElement.cs" />
+    <Compile Include="Model\Storage\EntityProperty.cs" />
+    <Compile Include="Model\Storage\EntityTypeStore.cs" />
+    <Compile Include="Model\Storage\Function.cs" />
+    <Compile Include="Model\Storage\FunctionType.cs" />
+    <Compile Include="Model\Storage\IsFixedLengthFacet.cs" />
+    <Compile Include="Model\Storage\IsUnicodeFacet.cs" />
+    <Compile Include="Model\Storage\KindFacet.cs" />
+    <Compile Include="Model\Storage\Max.cs" />
+    <Compile Include="Model\Storage\MaxLengthFacet.cs" />
+    <Compile Include="Model\Storage\Multiplicity.cs" />
+    <Compile Include="Model\Storage\OnAction.cs" />
+    <Compile Include="Model\Storage\Parameter.cs" />
+    <Compile Include="Model\Storage\ParameterMode.cs" />
+    <Compile Include="Model\Storage\ParameterTypeSemantics.cs" />
+    <Compile Include="Model\Storage\PrecisionFacet.cs" />
+    <Compile Include="Model\Storage\PropertyRef.cs" />
+    <Compile Include="Model\Storage\PropertyType.cs" />
+    <Compile Include="Model\Storage\QualifiedName.cs" />
+    <Compile Include="Model\Storage\ReferentialConstraintRoleElement.cs" />
+    <Compile Include="Model\Storage\ScaleFacet.cs" />
+    <Compile Include="Model\Storage\TSchema.cs" />
+    <Compile Include="Model\Storage\SimpleIdentifier.cs" />
+    <Compile Include="Model\Storage\StoreGeneratedPattern.cs" />
+    <Compile Include="Model\Storage\Text.cs" />
+    <Compile Include="Model\Storage\UndottedIdentifier.cs" />
+    <Compile Include="Model\Storage\XRoot.cs" />
+    <Compile Include="Model\Storage\XRootNamespace.cs" />
+    <Compile Include="SchemaGen\SourceType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assemblies\FSharp.Core.dll" />
+    <Content Include="Assemblies\Xml.Schema.Linq.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{80D5A03B-BE61-4171-9D01-B8A492E49041}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,29 @@
+-- Deletes a large number of automated test runs in small batches to avoid massive transaction log
+DECLARE @Deleted_Rows INT;
+SET @Deleted_Rows = 1;
+
+
+WHILE (@Deleted_Rows > 0)
+  BEGIN
+   -- Delete some small number of rows at a time to avoid taking forever
+     DELETE TOP (10000)  FROM TST_TEST_RUN
+     WHERE END_DATE < DATEADD(month, -2, GETUTCDATE())
+     AND TEST_RUN_ID NOT IN (SELECT TEST_RUN_ID FROM TST_TEST_RUN_STEP)
+
+  SET @Deleted_Rows = @@ROWCOUNT;
+END
+
+--Delete the History ChangeSets
+DECLARE @Deleted_Rows INT;
+SET @Deleted_Rows = 1;
+
+
+WHILE (@Deleted_Rows > 0)
+  BEGIN
+   -- Delete some small number of rows at a time to avoid taking forever
+     DELETE TOP (10000)  FROM TST_HISTORY_CHANGESET
+     WHERE CHANGE_DATE < DATEADD(month, -2, GETUTCDATE())
+     AND ARTIFACT_TYPE_ID = 5
+	 AND CHANGESET_ID NOT IN (SELECT CHANGESET_ID FROM TST_TEST_RUN)
+  SET @Deleted_Rows = @@ROWCOUNT;
+END

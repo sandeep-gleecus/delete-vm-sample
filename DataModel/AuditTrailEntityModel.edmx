@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AuditTrailModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="TST_ADMIN_HISTORY_CHANGESET_AUDIT">
+          <Key>
+            <PropertyRef Name="CHANGESET_ID" />
+          </Key>
+          <Property Name="CHANGESET_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ADMIN_USER_ID" Type="int" />
+          <Property Name="CHANGE_DATE" Type="datetime" Nullable="false" />
+          <Property Name="ADMIN_SECTION_ID" Type="int" Nullable="false" />
+          <Property Name="HISTORY_CHANGESET_TYPE_ID" Type="int" />
+          <Property Name="ACTION_DESCRIPTION" Type="nvarchar(max)" />
+          <Property Name="ARTIFACT_ID" Type="int" />
+          <Property Name="ARTIFACT_GUID_ID" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="TST_ADMIN_HISTORY_DETAILS_AUDIT">
+          <Key>
+            <PropertyRef Name="ADMIN_HISTORY_DETAIL_ID" />
+          </Key>
+          <Property Name="ADMIN_HISTORY_DETAIL_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ADMIN_PROPERTY_NAME" Type="nvarchar(max)" />
+          <Property Name="OLD_VALUE" Type="nvarchar(max)" />
+          <Property Name="NEW_VALUE" Type="nvarchar(max)" />
+          <Property Name="OLD_VALUE_INT" Type="int" />
+          <Property Name="NEW_VALUE_INT" Type="int" />
+          <Property Name="OLD_VALUE_DATE" Type="datetime" />
+          <Property Name="NEW_VALUE_DATE" Type="datetime" />
+          <Property Name="ADMIN_USER_ID" Type="int" />
+          <Property Name="ADMIN_ARTIFACT_FIELD_ID" Type="int" />
+          <Property Name="ADMIN_CUSTOM_PROPERTY_ID" Type="int" />
+          <Property Name="ADMIN_CHANGESET_ID" Type="bigint" Nullable="false" />
+          <Property Name="ADMIN_ARTIFACT_FIELD_NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADMIN_ARTIFACT_FIELD_CAPTION" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TST_ADMIN_SECTION_AUDIT">
+          <Key>
+            <PropertyRef Name="ADMIN_SECTION_ID" />
+          </Key>
+          <Property Name="ADMIN_SECTION_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="50" />
+          <Property Name="DESCRIPTION" Type="nvarchar(max)" />
+          <Property Name="PARENT_ID" Type="int" />
+          <Property Name="IS_ACTIVE" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TST_HISTORY_CHANGESET">
+          <Key>
+            <PropertyRef Name="CHANGESET_ID" />
+          </Key>
+          <Property Name="CHANGESET_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USER_ID" Type="int" Nullable="false" />
+          <Property Name="ARTIFACT_TYPE_ID" Type="int" Nullable="false" />
+          <Property Name="ARTIFACT_ID" Type="int" Nullable="false" />
+          <Property Name="CHANGE_DATE" Type="datetime" Nullable="false" />
+          <Property Name="CHANGETYPE_ID" Type="int" Nullable="false" />
+          <Property Name="PROJECT_ID" Type="int" />
+          <Property Name="REVERT_ID" Type="bigint" />
+          <Property Name="ARTIFACT_DESC" Type="nvarchar" MaxLength="255" />
+          <Property Name="SIGNATURE_HASH" Type="nvarchar" MaxLength="255" />
+          <Property Name="MEANING" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="TST_HISTORY_DETAIL">
+          <Key>
+            <PropertyRef Name="ARTIFACT_HISTORY_ID" />
+          </Key>
+          <Property Name="ARTIFACT_HISTORY_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FIELD_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="OLD_VALUE" Type="nvarchar(max)" />
+          <Property Name="FIELD_CAPTION" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NEW_VALUE" Type="nvarchar(max)" />
+          <Property Name="OLD_VALUE_INT" Type="int" />
+          <Property Name="OLD_VALUE_DATE" Type="datetime" />
+          <Property Name="NEW_VALUE_INT" Type="int" />
+          <Property Name="NEW_VALUE_DATE" Type="datetime" />
+          <Property Name="CHANGESET_ID" Type="bigint" Nullable="false" />
+          <Property Name="FIELD_ID" Type="int" />
+          <Property Name="CUSTOM_PROPERTY_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="TST_USER_ACTIVITY_LOG_AUDIT">
+          <Key>
+            <PropertyRef Name="USER_ACTIVITY_LOG_ID" />
+          </Key>
+          <Property Name="USER_ACTIVITY_LOG_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USER_ID" Type="int" Nullable="false" />
+          <Property Name="LOGIN_DATE" Type="datetime" />
+          <Property Name="LOGOUT_DATE" Type="datetime" />
+          <Property Name="ACTIVITY_DESCRIPTION" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="TST_USER_HISTORY_CHANGESET_AUDIT">
+          <Key>
+            <PropertyRef Name="CHANGESET_ID" />
+          </Key>
+          <Property Name="CHANGESET_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USER_ID" Type="int" Nullable="false" />
+          <Property Name="UPDATED_BY_USERID" Type="int" Nullable="false" />
+          <Property Name="CHANGE_DATE" Type="datetime" Nullable="false" />
+          <Property Name="EVENT_DESCRIPTION" Type="nvarchar(max)" />
+          <Property Name="PROPERTY_NAME" Type="nvarchar(max)" />
+          <Property Name="OLD_VALUE" Type="nvarchar(max)" />
+          <Property Name="NEW_VALUE" Type="nvarchar(max)" />
+          <Property Name="HISTORY_CHANGESET_TYPE_ID" Type="int" Nullable="false" />
+          <Property Name="ADMIN_SECTION_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ValidationMasterAudit.dbo.RPT_HISTORYCHANGESETS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="RPT_HISTORYCHANGESETS">
+          <Key>
+            <PropertyRef Name="CHANGESET_ID" />
+            <PropertyRef Name="USER_ID" />
+            <PropertyRef Name="ARTIFACT_TYPE_ID" />
+            <PropertyRef Name="ARTIFACT_ID" />
+            <PropertyRef Name="CHANGE_DATE" />
+            <PropertyRef Name="CHANGETYPE_ID" />
+            <PropertyRef Name="CHANGETYPE_NAME" />
+            <PropertyRef Name="ARTIFACT_TYPE_NAME" />
+          </Key>
+          <Property Name="CHANGESET_ID" Type="bigint" Nullable="false" />
+          <Property Name="USER_ID" Type="int" Nullable="false" />
+          <Property Name="ARTIFACT_TYPE_ID" Type="int" Nullable="false" />
+          <Property Name="ARTIFACT_ID" Type="int" Nullable="false" />
+          <Property Name="CHANGE_DATE" Type="datetime" Nullable="false" />
+          <Property Name="CHANGETYPE_ID" Type="int" Nullable="false" />
+          <Property Name="PROJECT_ID" Type="int" />
+          <Property Name="REVERT_ID" Type="bigint" />
+          <Property Name="ARTIFACT_DESC" Type="nvarchar" MaxLength="255" />
+          <Property Name="SIGNATURE_HASH" Type="nvarchar" MaxLength="255" />
+          <Property Name="MEANING" Type="nvarchar(max)" />
+          <Property Name="CHANGETYPE_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="USER_NAME" Type="nvarchar" MaxLength="103" />
+          <Property Name="ARTIFACT_TYPE_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ValidationMasterAudit.dbo.RPT_HISTORYDETAILS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="RPT_HISTORYDETAILS">
+          <Key>
+            <PropertyRef Name="ARTIFACT_HISTORY_ID" />
+            <PropertyRef Name="FIELD_NAME" />
+            <PropertyRef Name="CHANGESET_ID" />
+            <PropertyRef Name="ARTIFACT_ID" />
+            <PropertyRef Name="USER_ID" />
+            <PropertyRef Name="ARTIFACT_TYPE_ID" />
+            <PropertyRef Name="CHANGE_DATE" />
+            <PropertyRef Name="CHANGE_NAME" />
+            <PropertyRef Name="CHANGETYPE_ID" />
+          </Key>
+          <Property Name="ARTIFACT_HISTORY_ID" Type="bigint" Nullable="false" />
+          <Property Name="FIELD_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FIELD_CAPTION" Type="nvarchar" MaxLength="95" />
+          <Property Name="OLD_VALUE" Type="nvarchar(max)" />
+          <Property Name="NEW_VALUE" Type="nvarchar(max)" />
+          <Property Name="OLD_VALUE_INT" Type="int" />
+          <Property Name="NEW_VALUE_INT" Type="int" />
+          <Property Name="OLD_VALUE_DATE" Type="datetime" />
+          <Property Name="NEW_VALUE_DATE" Type="datetime" />
+          <Property Name="CHANGESET_ID" Type="bigint" Nullable="false" />
+          <Property Name="FIELD_ID" Type="int" />
+          <Property Name="CUSTOM_PROPERTY_ID" Type="int" />
+          <Property Name="ARTIFACT_ID" Type="int" Nullable="false" />
+          <Property Name="USER_ID" Type="int" Nullable="false" />
+          <Property Name="ARTIFACT_TYPE_ID" Type="int" Nullable="false" />
+          <Property Name="CHANGE_DATE" Type="datetime" Nullable="false" />
+          <Property Name="CHANGER_NAME" Type="nvarchar" MaxLength="103" />
+          <Property Name="CHANGE_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CHANGETYPE_ID" Type="int" Nullable="false" />
+          <Property Name="ARTIFACT_FIELD_TYPE_ID" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ValidationMasterAudit.dbo.RPT_PROJECT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="RPT_PROJECT">
+          <Key>
+            <PropertyRef Name="PROJECT_ID" />
+            <PropertyRef Name="PROJECT_GROUP_ID" />
+            <PropertyRef Name="PROJECT_TEMPLATE_ID" />
+            <PropertyRef Name="NAME" />
+            <PropertyRef Name="CREATION_DATE" />
+            <PropertyRef Name="IS_ACTIVE" />
+            <PropertyRef Name="WORKING_HOURS" />
+            <PropertyRef Name="WORKING_DAYS" />
+            <PropertyRef Name="NON_WORKING_HOURS" />
+            <PropertyRef Name="IS_TIME_TRACK_INCIDENTS" />
+            <PropertyRef Name="IS_TIME_TRACK_TASKS" />
+            <PropertyRef Name="IS_EFFORT_INCIDENTS" />
+            <PropertyRef Name="IS_EFFORT_TASKS" />
+            <PropertyRef Name="IS_TASKS_AUTO_CREATE" />
+            <PropertyRef Name="REQ_POINT_EFFORT" />
+            <PropertyRef Name="IS_REQ_STATUS_BY_TASKS" />
+            <PropertyRef Name="IS_REQ_STATUS_BY_TEST_CASES" />
+            <PropertyRef Name="IS_EFFORT_TEST_CASES" />
+            <PropertyRef Name="IS_REQ_STATUS_AUTO_PLANNED" />
+            <PropertyRef Name="PERCENT_COMPLETE" />
+            <PropertyRef Name="REQUIREMENT_COUNT" />
+          </Key>
+          <Property Name="PROJECT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PROJECT_GROUP_ID" Type="int" Nullable="false" />
+          <Property Name="PROJECT_TEMPLATE_ID" Type="int" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DESCRIPTION" Type="nvarchar(max)" />
+          <Property Name="CREATION_DATE" Type="datetime" Nullable="false" />
+          <Property Name="WEBSITE" Type="nvarchar" MaxLength="255" />
+          <Property Name="IS_ACTIVE" Type="bit" Nullable="false" />
+          <Property Name="WORKING_HOURS" Type="int" Nullable="false" />
+          <Property Name="WORKING_DAYS" Type="int" Nullable="false" />
+          <Property Name="NON_WORKING_HOURS" Type="int" Nullable="false" />
+          <Property Name="IS_TIME_TRACK_INCIDENTS" Type="bit" Nullable="false" />
+          <Property Name="IS_TIME_TRACK_TASKS" Type="bit" Nullable="false" />
+          <Property Name="IS_EFFORT_INCIDENTS" Type="bit" Nullable="false" />
+          <Property Name="IS_EFFORT_TASKS" Type="bit" Nullable="false" />
+          <Property Name="IS_TASKS_AUTO_CREATE" Type="bit" Nullable="false" />
+          <Property Name="REQ_DEFAULT_ESTIMATE" Type="decimal" Precision="4" Scale="1" />
+          <Property Name="REQ_POINT_EFFORT" Type="int" Nullable="false" />
+          <Property Name="TASK_DEFAULT_EFFORT" Type="int" />
+          <Property Name="IS_REQ_STATUS_BY_TASKS" Type="bit" Nullable="false" />
+          <Property Name="IS_REQ_STATUS_BY_TEST_CASES" Type="bit" Nullable="false" />
+          <Property Name="IS_EFFORT_TEST_CASES" Type="bit" Nullable="false" />
+          <Property Name="IS_REQ_STATUS_AUTO_PLANNED" Type="bit" Nullable="false" />
+          <Property Name="START_DATE" Type="datetime" />
+          <Property Name="END_DATE" Type="datetime" />
+          <Property Name="PERCENT_COMPLETE" Type="int" Nullable="false" />
+          <Property Name="REQUIREMENT_COUNT" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__TST_ADMIN__ADMIN__571DF1D5">
+          <End Role="TST_ADMIN_SECTION_AUDIT" Type="Self.TST_ADMIN_SECTION_AUDIT" Multiplicity="1" />
+          <End Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT" Type="Self.TST_ADMIN_HISTORY_CHANGESET_AUDIT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TST_ADMIN_SECTION_AUDIT">
+              <PropertyRef Name="ADMIN_SECTION_ID" />
+            </Principal>
+            <Dependent Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT">
+              <PropertyRef Name="ADMIN_SECTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TST_ADMIN__ADMIN__5812160E">
+          <End Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT" Type="Self.TST_ADMIN_HISTORY_CHANGESET_AUDIT" Multiplicity="1" />
+          <End Role="TST_ADMIN_HISTORY_DETAILS_AUDIT" Type="Self.TST_ADMIN_HISTORY_DETAILS_AUDIT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT">
+              <PropertyRef Name="CHANGESET_ID" />
+            </Principal>
+            <Dependent Role="TST_ADMIN_HISTORY_DETAILS_AUDIT">
+              <PropertyRef Name="ADMIN_CHANGESET_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TST_USER___ADMIN__6383C8BA">
+          <End Role="TST_ADMIN_SECTION_AUDIT" Type="Self.TST_ADMIN_SECTION_AUDIT" Multiplicity="1" />
+          <End Role="TST_USER_HISTORY_CHANGESET_AUDIT" Type="Self.TST_USER_HISTORY_CHANGESET_AUDIT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TST_ADMIN_SECTION_AUDIT">
+              <PropertyRef Name="ADMIN_SECTION_ID" />
+            </Principal>
+            <Dependent Role="TST_USER_HISTORY_CHANGESET_AUDIT">
+              <PropertyRef Name="ADMIN_SECTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AuditTrailModelStoreContainer">
+          <EntitySet Name="TST_ADMIN_HISTORY_CHANGESET_AUDIT" EntityType="Self.TST_ADMIN_HISTORY_CHANGESET_AUDIT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TST_ADMIN_HISTORY_DETAILS_AUDIT" EntityType="Self.TST_ADMIN_HISTORY_DETAILS_AUDIT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TST_ADMIN_SECTION_AUDIT" EntityType="Self.TST_ADMIN_SECTION_AUDIT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TST_HISTORY_CHANGESET" EntityType="Self.TST_HISTORY_CHANGESET" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TST_HISTORY_DETAIL" EntityType="Self.TST_HISTORY_DETAIL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TST_USER_ACTIVITY_LOG_AUDIT" EntityType="Self.TST_USER_ACTIVITY_LOG_AUDIT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TST_USER_HISTORY_CHANGESET_AUDIT" EntityType="Self.TST_USER_HISTORY_CHANGESET_AUDIT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RPT_HISTORYCHANGESETS" EntityType="Self.RPT_HISTORYCHANGESETS" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[RPT_HISTORYCHANGESETS].[CHANGESET_ID] AS [CHANGESET_ID], 
+[RPT_HISTORYCHANGESETS].[USER_ID] AS [USER_ID], 
+[RPT_HISTORYCHANGESETS].[ARTIFACT_TYPE_ID] AS [ARTIFACT_TYPE_ID], 
+[RPT_HISTORYCHANGESETS].[ARTIFACT_ID] AS [ARTIFACT_ID], 
+[RPT_HISTORYCHANGESETS].[CHANGE_DATE] AS [CHANGE_DATE], 
+[RPT_HISTORYCHANGESETS].[CHANGETYPE_ID] AS [CHANGETYPE_ID], 
+[RPT_HISTORYCHANGESETS].[PROJECT_ID] AS [PROJECT_ID], 
+[RPT_HISTORYCHANGESETS].[REVERT_ID] AS [REVERT_ID], 
+[RPT_HISTORYCHANGESETS].[ARTIFACT_DESC] AS [ARTIFACT_DESC], 
+[RPT_HISTORYCHANGESETS].[SIGNATURE_HASH] AS [SIGNATURE_HASH], 
+[RPT_HISTORYCHANGESETS].[MEANING] AS [MEANING], 
+[RPT_HISTORYCHANGESETS].[CHANGETYPE_NAME] AS [CHANGETYPE_NAME], 
+[RPT_HISTORYCHANGESETS].[USER_NAME] AS [USER_NAME], 
+[RPT_HISTORYCHANGESETS].[ARTIFACT_TYPE_NAME] AS [ARTIFACT_TYPE_NAME]
+FROM [dbo].[RPT_HISTORYCHANGESETS] AS [RPT_HISTORYCHANGESETS]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="RPT_HISTORYDETAILS" EntityType="Self.RPT_HISTORYDETAILS" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[RPT_HISTORYDETAILS].[ARTIFACT_HISTORY_ID] AS [ARTIFACT_HISTORY_ID], 
+[RPT_HISTORYDETAILS].[FIELD_NAME] AS [FIELD_NAME], 
+[RPT_HISTORYDETAILS].[FIELD_CAPTION] AS [FIELD_CAPTION], 
+[RPT_HISTORYDETAILS].[OLD_VALUE] AS [OLD_VALUE], 
+[RPT_HISTORYDETAILS].[NEW_VALUE] AS [NEW_VALUE], 
+[RPT_HISTORYDETAILS].[OLD_VALUE_INT] AS [OLD_VALUE_INT], 
+[RPT_HISTORYDETAILS].[NEW_VALUE_INT] AS [NEW_VALUE_INT], 
+[RPT_HISTORYDETAILS].[OLD_VALUE_DATE] AS [OLD_VALUE_DATE], 
+[RPT_HISTORYDETAILS].[NEW_VALUE_DATE] AS [NEW_VALUE_DATE], 
+[RPT_HISTORYDETAILS].[CHANGESET_ID] AS [CHANGESET_ID], 
+[RPT_HISTORYDETAILS].[FIELD_ID] AS [FIELD_ID], 
+[RPT_HISTORYDETAILS].[CUSTOM_PROPERTY_ID] AS [CUSTOM_PROPERTY_ID], 
+[RPT_HISTORYDETAILS].[ARTIFACT_ID] AS [ARTIFACT_ID], 
+[RPT_HISTORYDETAILS].[USER_ID] AS [USER_ID], 
+[RPT_HISTORYDETAILS].[ARTIFACT_TYPE_ID] AS [ARTIFACT_TYPE_ID], 
+[RPT_HISTORYDETAILS].[CHANGE_DATE] AS [CHANGE_DATE], 
+[RPT_HISTORYDETAILS].[CHANGER_NAME] AS [CHANGER_NAME], 
+[RPT_HISTORYDETAILS].[CHANGE_NAME] AS [CHANGE_NAME], 
+[RPT_HISTORYDETAILS].[CHANGETYPE_ID] AS [CHANGETYPE_ID], 
+[RPT_HISTORYDETAILS].[ARTIFACT_FIELD_TYPE_ID] AS [ARTIFACT_FIELD_TYPE_ID]
+FROM [dbo].[RPT_HISTORYDETAILS] AS [RPT_HISTORYDETAILS]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="RPT_PROJECT" EntityType="Self.RPT_PROJECT" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[RPT_PROJECT].[PROJECT_ID] AS [PROJECT_ID], 
+[RPT_PROJECT].[PROJECT_GROUP_ID] AS [PROJECT_GROUP_ID], 
+[RPT_PROJECT].[PROJECT_TEMPLATE_ID] AS [PROJECT_TEMPLATE_ID], 
+[RPT_PROJECT].[NAME] AS [NAME], 
+[RPT_PROJECT].[DESCRIPTION] AS [DESCRIPTION], 
+[RPT_PROJECT].[CREATION_DATE] AS [CREATION_DATE], 
+[RPT_PROJECT].[WEBSITE] AS [WEBSITE], 
+[RPT_PROJECT].[IS_ACTIVE] AS [IS_ACTIVE], 
+[RPT_PROJECT].[WORKING_HOURS] AS [WORKING_HOURS], 
+[RPT_PROJECT].[WORKING_DAYS] AS [WORKING_DAYS], 
+[RPT_PROJECT].[NON_WORKING_HOURS] AS [NON_WORKING_HOURS], 
+[RPT_PROJECT].[IS_TIME_TRACK_INCIDENTS] AS [IS_TIME_TRACK_INCIDENTS], 
+[RPT_PROJECT].[IS_TIME_TRACK_TASKS] AS [IS_TIME_TRACK_TASKS], 
+[RPT_PROJECT].[IS_EFFORT_INCIDENTS] AS [IS_EFFORT_INCIDENTS], 
+[RPT_PROJECT].[IS_EFFORT_TASKS] AS [IS_EFFORT_TASKS], 
+[RPT_PROJECT].[IS_TASKS_AUTO_CREATE] AS [IS_TASKS_AUTO_CREATE], 
+[RPT_PROJECT].[REQ_DEFAULT_ESTIMATE] AS [REQ_DEFAULT_ESTIMATE], 
+[RPT_PROJECT].[REQ_POINT_EFFORT] AS [REQ_POINT_EFFORT], 
+[RPT_PROJECT].[TASK_DEFAULT_EFFORT] AS [TASK_DEFAULT_EFFORT], 
+[RPT_PROJECT].[IS_REQ_STATUS_BY_TASKS] AS [IS_REQ_STATUS_BY_TASKS], 
+[RPT_PROJECT].[IS_REQ_STATUS_BY_TEST_CASES] AS [IS_REQ_STATUS_BY_TEST_CASES], 
+[RPT_PROJECT].[IS_EFFORT_TEST_CASES] AS [IS_EFFORT_TEST_CASES], 
+[RPT_PROJECT].[IS_REQ_STATUS_AUTO_PLANNED] AS [IS_REQ_STATUS_AUTO_PLANNED], 
+[RPT_PROJECT].[START_DATE] AS [START_DATE], 
+[RPT_PROJECT].[END_DATE] AS [END_DATE], 
+[RPT_PROJECT].[PERCENT_COMPLETE] AS [PERCENT_COMPLETE], 
+[RPT_PROJECT].[REQUIREMENT_COUNT] AS [REQUIREMENT_COUNT]
+FROM [dbo].[RPT_PROJECT] AS [RPT_PROJECT]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__TST_ADMIN__ADMIN__571DF1D5" Association="Self.FK__TST_ADMIN__ADMIN__571DF1D5">
+            <End Role="TST_ADMIN_SECTION_AUDIT" EntitySet="TST_ADMIN_SECTION_AUDIT" />
+            <End Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT" EntitySet="TST_ADMIN_HISTORY_CHANGESET_AUDIT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TST_ADMIN__ADMIN__5812160E" Association="Self.FK__TST_ADMIN__ADMIN__5812160E">
+            <End Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT" EntitySet="TST_ADMIN_HISTORY_CHANGESET_AUDIT" />
+            <End Role="TST_ADMIN_HISTORY_DETAILS_AUDIT" EntitySet="TST_ADMIN_HISTORY_DETAILS_AUDIT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TST_USER___ADMIN__6383C8BA" Association="Self.FK__TST_USER___ADMIN__6383C8BA">
+            <End Role="TST_ADMIN_SECTION_AUDIT" EntitySet="TST_ADMIN_SECTION_AUDIT" />
+            <End Role="TST_USER_HISTORY_CHANGESET_AUDIT" EntitySet="TST_USER_HISTORY_CHANGESET_AUDIT" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AuditTrailModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityType Name="TST_ADMIN_HISTORY_CHANGESET_AUDIT">
+          <Key>
+            <PropertyRef Name="CHANGESET_ID" />
+          </Key>
+          <Property Name="CHANGESET_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ADMIN_USER_ID" Type="Int32" />
+          <Property Name="CHANGE_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ADMIN_SECTION_ID" Type="Int32" Nullable="false" />
+          <Property Name="HISTORY_CHANGESET_TYPE_ID" Type="Int32" />
+          <Property Name="ACTION_DESCRIPTION" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ARTIFACT_ID" Type="Int32" />
+          <Property Name="ARTIFACT_GUID_ID" Type="Guid" />
+          <NavigationProperty Name="TST_ADMIN_SECTION_AUDIT" Relationship="Self.FK__TST_ADMIN__ADMIN__571DF1D5" FromRole="TST_ADMIN_HISTORY_CHANGESET_AUDIT" ToRole="TST_ADMIN_SECTION_AUDIT" />
+          <NavigationProperty Name="TST_ADMIN_HISTORY_DETAILS_AUDIT" Relationship="Self.FK__TST_ADMIN__ADMIN__5812160E" FromRole="TST_ADMIN_HISTORY_CHANGESET_AUDIT" ToRole="TST_ADMIN_HISTORY_DETAILS_AUDIT" />
+        </EntityType>
+        <EntityType Name="TST_ADMIN_HISTORY_DETAILS_AUDIT">
+          <Key>
+            <PropertyRef Name="ADMIN_HISTORY_DETAIL_ID" />
+          </Key>
+          <Property Name="ADMIN_HISTORY_DETAIL_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ADMIN_PROPERTY_NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OLD_VALUE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NEW_VALUE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OLD_VALUE_INT" Type="Int32" />
+          <Property Name="NEW_VALUE_INT" Type="Int32" />
+          <Property Name="OLD_VALUE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="NEW_VALUE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="ADMIN_USER_ID" Type="Int32" />
+          <Property Name="ADMIN_ARTIFACT_FIELD_ID" Type="Int32" />
+          <Property Name="ADMIN_CUSTOM_PROPERTY_ID" Type="Int32" />
+          <Property Name="ADMIN_CHANGESET_ID" Type="Int64" Nullable="false" />
+          <Property Name="ADMIN_ARTIFACT_FIELD_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADMIN_ARTIFACT_FIELD_CAPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TST_ADMIN_HISTORY_CHANGESET_AUDIT" Relationship="Self.FK__TST_ADMIN__ADMIN__5812160E" FromRole="TST_ADMIN_HISTORY_DETAILS_AUDIT" ToRole="TST_ADMIN_HISTORY_CHANGESET_AUDIT" />
+        </EntityType>
+        <EntityType Name="TST_ADMIN_SECTION_AUDIT">
+          <Key>
+            <PropertyRef Name="ADMIN_SECTION_ID" />
+          </Key>
+          <Property Name="ADMIN_SECTION_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PARENT_ID" Type="Int32" />
+          <Property Name="IS_ACTIVE" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TST_ADMIN_HISTORY_CHANGESET_AUDIT" Relationship="Self.FK__TST_ADMIN__ADMIN__571DF1D5" FromRole="TST_ADMIN_SECTION_AUDIT" ToRole="TST_ADMIN_HISTORY_CHANGESET_AUDIT" />
+          <NavigationProperty Name="TST_USER_HISTORY_CHANGESET_AUDIT" Relationship="AuditTrailModel.FK__TST_USER___ADMIN__6383C8BA" FromRole="TST_ADMIN_SECTION_AUDIT" ToRole="TST_USER_HISTORY_CHANGESET_AUDIT" />
+        </EntityType>
+        <EntityType Name="TST_HISTORY_CHANGESET">
+          <Key>
+            <PropertyRef Name="CHANGESET_ID" />
+          </Key>
+          <Property Name="CHANGESET_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="ARTIFACT_TYPE_ID" Type="Int32" Nullable="false" />
+          <Property Name="ARTIFACT_ID" Type="Int32" Nullable="false" />
+          <Property Name="CHANGE_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CHANGETYPE_ID" Type="Int32" Nullable="false" />
+          <Property Name="PROJECT_ID" Type="Int32" />
+          <Property Name="REVERT_ID" Type="Int64" />
+          <Property Name="ARTIFACT_DESC" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SIGNATURE_HASH" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MEANING" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TST_HISTORY_DETAIL">
+          <Key>
+            <PropertyRef Name="ARTIFACT_HISTORY_ID" />
+          </Key>
+          <Property Name="ARTIFACT_HISTORY_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OLD_VALUE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FIELD_CAPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NEW_VALUE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OLD_VALUE_INT" Type="Int32" />
+          <Property Name="OLD_VALUE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="NEW_VALUE_INT" Type="Int32" />
+          <Property Name="NEW_VALUE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="CHANGESET_ID" Type="Int64" Nullable="false" />
+          <Property Name="FIELD_ID" Type="Int32" />
+          <Property Name="CUSTOM_PROPERTY_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="RPT_HISTORYCHANGESETS">
+          <Key>
+            <PropertyRef Name="CHANGESET_ID" />
+            <PropertyRef Name="USER_ID" />
+            <PropertyRef Name="ARTIFACT_TYPE_ID" />
+            <PropertyRef Name="ARTIFACT_ID" />
+            <PropertyRef Name="CHANGE_DATE" />
+            <PropertyRef Name="CHANGETYPE_ID" />
+            <PropertyRef Name="CHANGETYPE_NAME" />
+            <PropertyRef Name="ARTIFACT_TYPE_NAME" />
+          </Key>
+          <Property Name="CHANGESET_ID" Type="Int64" Nullable="false" />
+          <Property Name="USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="ARTIFACT_TYPE_ID" Type="Int32" Nullable="false" />
+          <Property Name="ARTIFACT_ID" Type="Int32" Nullable="false" />
+          <Property Name="CHANGE_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CHANGETYPE_ID" Type="Int32" Nullable="false" />
+          <Property Name="PROJECT_ID" Type="Int32" />
+          <Property Name="REVERT_ID" Type="Int64" />
+          <Property Name="ARTIFACT_DESC" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SIGNATURE_HASH" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MEANING" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CHANGETYPE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="USER_NAME" Type="String" MaxLength="103" FixedLength="false" Unicode="true" />
+          <Property Name="ARTIFACT_TYPE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RPT_HISTORYDETAILS">
+          <Key>
+            <PropertyRef Name="ARTIFACT_HISTORY_ID" />
+            <PropertyRef Name="FIELD_NAME" />
+            <PropertyRef Name="CHANGESET_ID" />
+            <PropertyRef Name="ARTIFACT_ID" />
+            <PropertyRef Name="USER_ID" />
+            <PropertyRef Name="ARTIFACT_TYPE_ID" />
+            <PropertyRef Name="CHANGE_DATE" />
+            <PropertyRef Name="CHANGE_NAME" />
+            <PropertyRef Name="CHANGETYPE_ID" />
+          </Key>
+          <Property Name="ARTIFACT_HISTORY_ID" Type="Int64" Nullable="false" />
+          <Property Name="FIELD_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FIELD_CAPTION" Type="String" MaxLength="95" FixedLength="false" Unicode="true" />
+          <Property Name="OLD_VALUE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NEW_VALUE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OLD_VALUE_INT" Type="Int32" />
+          <Property Name="NEW_VALUE_INT" Type="Int32" />
+          <Property Name="OLD_VALUE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="NEW_VALUE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="CHANGESET_ID" Type="Int64" Nullable="false" />
+          <Property Name="FIELD_ID" Type="Int32" />
+          <Property Name="CUSTOM_PROPERTY_ID" Type="Int32" />
+          <Property Name="ARTIFACT_ID" Type="Int32" Nullable="false" />
+          <Property Name="USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="ARTIFACT_TYPE_ID" Type="Int32" Nullable="false" />
+          <Property Name="CHANGE_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CHANGER_NAME" Type="String" MaxLength="103" FixedLength="false" Unicode="true" />
+          <Property Name="CHANGE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CHANGETYPE_ID" Type="Int32" Nullable="false" />
+          <Property Name="ARTIFACT_FIELD_TYPE_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="RPT_PROJECT">
+          <Key>
+            <PropertyRef Name="PROJECT_ID" />
+            <PropertyRef Name="PROJECT_GROUP_ID" />
+            <PropertyRef Name="PROJECT_TEMPLATE_ID" />
+            <PropertyRef Name="NAME" />
+            <PropertyRef Name="CREATION_DATE" />
+            <PropertyRef Name="IS_ACTIVE" />
+            <PropertyRef Name="WORKING_HOURS" />
+            <PropertyRef Name="WORKING_DAYS" />
+            <PropertyRef Name="NON_WORKING_HOURS" />
+            <PropertyRef Name="IS_TIME_TRACK_INCIDENTS" />
+            <PropertyRef Name="IS_TIME_TRACK_TASKS" />
+            <PropertyRef Name="IS_EFFORT_INCIDENTS" />
+            <PropertyRef Name="IS_EFFORT_TASKS" />
+            <PropertyRef Name="IS_TASKS_AUTO_CREATE" />
+            <PropertyRef Name="REQ_POINT_EFFORT" />
+            <PropertyRef Name="IS_REQ_STATUS_BY_TASKS" />
+            <PropertyRef Name="IS_REQ_STATUS_BY_TEST_CASES" />
+            <PropertyRef Name="IS_EFFORT_TEST_CASES" />
+            <PropertyRef Name="IS_REQ_STATUS_AUTO_PLANNED" />
+            <PropertyRef Name="PERCENT_COMPLETE" />
+            <PropertyRef Name="REQUIREMENT_COUNT" />
+          </Key>
+          <Property Name="PROJECT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PROJECT_GROUP_ID" Type="Int32" Nullable="false" />
+          <Property Name="PROJECT_TEMPLATE_ID" Type="Int32" Nullable="false" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CREATION_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="WEBSITE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="IS_ACTIVE" Type="Boolean" Nullable="false" />
+          <Property Name="WORKING_HOURS" Type="Int32" Nullable="false" />
+          <Property Name="WORKING_DAYS" Type="Int32" Nullable="false" />
+          <Property Name="NON_WORKING_HOURS" Type="Int32" Nullable="false" />
+          <Property Name="IS_TIME_TRACK_INCIDENTS" Type="Boolean" Nullable="false" />
+          <Property Name="IS_TIME_TRACK_TASKS" Type="Boolean" Nullable="false" />
+          <Property Name="IS_EFFORT_INCIDENTS" Type="Boolean" Nullable="false" />
+          <Property Name="IS_EFFORT_TASKS" Type="Boolean" Nullable="false" />
+          <Property Name="IS_TASKS_AUTO_CREATE" Type="Boolean" Nullable="false" />
+          <Property Name="REQ_DEFAULT_ESTIMATE" Type="Decimal" Precision="4" Scale="1" />
+          <Property Name="REQ_POINT_EFFORT" Type="Int32" Nullable="false" />
+          <Property Name="TASK_DEFAULT_EFFORT" Type="Int32" />
+          <Property Name="IS_REQ_STATUS_BY_TASKS" Type="Boolean" Nullable="false" />
+          <Property Name="IS_REQ_STATUS_BY_TEST_CASES" Type="Boolean" Nullable="false" />
+          <Property Name="IS_EFFORT_TEST_CASES" Type="Boolean" Nullable="false" />
+          <Property Name="IS_REQ_STATUS_AUTO_PLANNED" Type="Boolean" Nullable="false" />
+          <Property Name="START_DATE" Type="DateTime" Precision="3" />
+          <Property Name="END_DATE" Type="DateTime" Precision="3" />
+          <Property Name="PERCENT_COMPLETE" Type="Int32" Nullable="false" />
+          <Property Name="REQUIREMENT_COUNT" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__TST_ADMIN__ADMIN__571DF1D5">
+          <End Role="TST_ADMIN_SECTION_AUDIT" Type="Self.TST_ADMIN_SECTION_AUDIT" Multiplicity="1" />
+          <End Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT" Type="Self.TST_ADMIN_HISTORY_CHANGESET_AUDIT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TST_ADMIN_SECTION_AUDIT">
+              <PropertyRef Name="ADMIN_SECTION_ID" />
+            </Principal>
+            <Dependent Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT">
+              <PropertyRef Name="ADMIN_SECTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TST_ADMIN__ADMIN__5812160E">
+          <End Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT" Type="Self.TST_ADMIN_HISTORY_CHANGESET_AUDIT" Multiplicity="1" />
+          <End Role="TST_ADMIN_HISTORY_DETAILS_AUDIT" Type="Self.TST_ADMIN_HISTORY_DETAILS_AUDIT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT">
+              <PropertyRef Name="CHANGESET_ID" />
+            </Principal>
+            <Dependent Role="TST_ADMIN_HISTORY_DETAILS_AUDIT">
+              <PropertyRef Name="ADMIN_CHANGESET_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AuditTrailEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TST_ADMIN_HISTORY_CHANGESET_AUDIT" EntityType="Self.TST_ADMIN_HISTORY_CHANGESET_AUDIT" />
+          <EntitySet Name="TST_ADMIN_HISTORY_DETAILS_AUDIT" EntityType="Self.TST_ADMIN_HISTORY_DETAILS_AUDIT" />
+          <EntitySet Name="TST_ADMIN_SECTION_AUDIT" EntityType="Self.TST_ADMIN_SECTION_AUDIT" />
+          <EntitySet Name="TST_HISTORY_CHANGESET" EntityType="Self.TST_HISTORY_CHANGESET" />
+          <EntitySet Name="TST_HISTORY_DETAIL" EntityType="Self.TST_HISTORY_DETAIL" />
+          <EntitySet Name="RPT_HISTORYCHANGESETS" EntityType="Self.RPT_HISTORYCHANGESETS" />
+          <EntitySet Name="RPT_HISTORYDETAILS" EntityType="Self.RPT_HISTORYDETAILS" />
+          <EntitySet Name="RPT_PROJECT" EntityType="Self.RPT_PROJECT" />
+          <AssociationSet Name="FK__TST_ADMIN__ADMIN__571DF1D5" Association="Self.FK__TST_ADMIN__ADMIN__571DF1D5">
+            <End Role="TST_ADMIN_SECTION_AUDIT" EntitySet="TST_ADMIN_SECTION_AUDIT" />
+            <End Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT" EntitySet="TST_ADMIN_HISTORY_CHANGESET_AUDIT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TST_ADMIN__ADMIN__5812160E" Association="Self.FK__TST_ADMIN__ADMIN__5812160E">
+            <End Role="TST_ADMIN_HISTORY_CHANGESET_AUDIT" EntitySet="TST_ADMIN_HISTORY_CHANGESET_AUDIT" />
+            <End Role="TST_ADMIN_HISTORY_DETAILS_AUDIT" EntitySet="TST_ADMIN_HISTORY_DETAILS_AUDIT" />
+          </AssociationSet>
+          <EntitySet Name="TST_USER_ACTIVITY_LOG_AUDIT" EntityType="AuditTrailModel.TST_USER_ACTIVITY_LOG_AUDIT" />
+          <EntitySet Name="TST_USER_HISTORY_CHANGESET_AUDIT" EntityType="AuditTrailModel.TST_USER_HISTORY_CHANGESET_AUDIT" />
+          <AssociationSet Name="FK__TST_USER___ADMIN__6383C8BA" Association="AuditTrailModel.FK__TST_USER___ADMIN__6383C8BA">
+            <End Role="TST_ADMIN_SECTION_AUDIT" EntitySet="TST_ADMIN_SECTION_AUDIT" />
+            <End Role="TST_USER_HISTORY_CHANGESET_AUDIT" EntitySet="TST_USER_HISTORY_CHANGESET_AUDIT" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="TST_USER_ACTIVITY_LOG_AUDIT">
+          <Key>
+            <PropertyRef Name="USER_ACTIVITY_LOG_ID" />
+          </Key>
+          <Property Name="USER_ACTIVITY_LOG_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="LOGIN_DATE" Type="DateTime" Precision="3" />
+          <Property Name="LOGOUT_DATE" Type="DateTime" Precision="3" />
+          <Property Name="ACTIVITY_DESCRIPTION" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TST_USER_HISTORY_CHANGESET_AUDIT">
+          <Key>
+            <PropertyRef Name="CHANGESET_ID" />
+          </Key>
+          <Property Name="CHANGESET_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="UPDATED_BY_USERID" Type="Int32" Nullable="false" />
+          <Property Name="CHANGE_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EVENT_DESCRIPTION" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PROPERTY_NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OLD_VALUE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NEW_VALUE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="HISTORY_CHANGESET_TYPE_ID" Type="Int32" Nullable="false" />
+          <Property Name="ADMIN_SECTION_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TST_ADMIN_SECTION_AUDIT" Relationship="AuditTrailModel.FK__TST_USER___ADMIN__6383C8BA" FromRole="TST_USER_HISTORY_CHANGESET_AUDIT" ToRole="TST_ADMIN_SECTION_AUDIT" />
+        </EntityType>
+        <Association Name="FK__TST_USER___ADMIN__6383C8BA">
+          <End Type="AuditTrailModel.TST_ADMIN_SECTION_AUDIT" Role="TST_ADMIN_SECTION_AUDIT" Multiplicity="1" />
+          <End Type="AuditTrailModel.TST_USER_HISTORY_CHANGESET_AUDIT" Role="TST_USER_HISTORY_CHANGESET_AUDIT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TST_ADMIN_SECTION_AUDIT">
+              <PropertyRef Name="ADMIN_SECTION_ID" />
+            </Principal>
+            <Dependent Role="TST_USER_HISTORY_CHANGESET_AUDIT">
+              <PropertyRef Name="ADMIN_SECTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AuditTrailModelStoreContainer" CdmEntityContainer="AuditTrailEntities">
+          <EntitySetMapping Name="TST_ADMIN_HISTORY_CHANGESET_AUDIT">
+            <EntityTypeMapping TypeName="AuditTrailModel.TST_ADMIN_HISTORY_CHANGESET_AUDIT">
+              <MappingFragment StoreEntitySet="TST_ADMIN_HISTORY_CHANGESET_AUDIT">
+                <ScalarProperty Name="CHANGESET_ID" ColumnName="CHANGESET_ID" />
+                <ScalarProperty Name="ADMIN_USER_ID" ColumnName="ADMIN_USER_ID" />
+                <ScalarProperty Name="CHANGE_DATE" ColumnName="CHANGE_DATE" />
+                <ScalarProperty Name="ADMIN_SECTION_ID" ColumnName="ADMIN_SECTION_ID" />
+                <ScalarProperty Name="HISTORY_CHANGESET_TYPE_ID" ColumnName="HISTORY_CHANGESET_TYPE_ID" />
+                <ScalarProperty Name="ACTION_DESCRIPTION" ColumnName="ACTION_DESCRIPTION" />
+                <ScalarProperty Name="ARTIFACT_ID" ColumnName="ARTIFACT_ID" />
+                <ScalarProperty Name="ARTIFACT_GUID_ID" ColumnName="ARTIFACT_GUID_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TST_ADMIN_HISTORY_DETAILS_AUDIT">
+            <EntityTypeMapping TypeName="AuditTrailModel.TST_ADMIN_HISTORY_DETAILS_AUDIT">
+              <MappingFragment StoreEntitySet="TST_ADMIN_HISTORY_DETAILS_AUDIT">
+                <ScalarProperty Name="ADMIN_HISTORY_DETAIL_ID" ColumnName="ADMIN_HISTORY_DETAIL_ID" />
+                <ScalarProperty Name="ADMIN_PROPERTY_NAME" ColumnName="ADMIN_PROPERTY_NAME" />
+                <ScalarProperty Name="OLD_VALUE" ColumnName="OLD_VALUE" />
+                <ScalarProperty Name="NEW_VALUE" ColumnName="NEW_VALUE" />
+                <ScalarProperty Name="OLD_VALUE_INT" ColumnName="OLD_VALUE_INT" />
+                <ScalarProperty Name="NEW_VALUE_INT" ColumnName="NEW_VALUE_INT" />
+                <ScalarProperty Name="OLD_VALUE_DATE" ColumnName="OLD_VALUE_DATE" />
+                <ScalarProperty Name="NEW_VALUE_DATE" ColumnName="NEW_VALUE_DATE" />
+                <ScalarProperty Name="ADMIN_USER_ID" ColumnName="ADMIN_USER_ID" />
+                <ScalarProperty Name="ADMIN_ARTIFACT_FIELD_ID" ColumnName="ADMIN_ARTIFACT_FIELD_ID" />
+                <ScalarProperty Name="ADMIN_CUSTOM_PROPERTY_ID" ColumnName="ADMIN_CUSTOM_PROPERTY_ID" />
+                <ScalarProperty Name="ADMIN_CHANGESET_ID" ColumnName="ADMIN_CHANGESET_ID" />
+                <ScalarProperty Name="ADMIN_ARTIFACT_FIELD_NAME" ColumnName="ADMIN_ARTIFACT_FIELD_NAME" />
+                <ScalarProperty Name="ADMIN_ARTIFACT_FIELD_CAPTION" ColumnName="ADMIN_ARTIFACT_FIELD_CAPTION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TST_ADMIN_SECTION_AUDIT">
+            <EntityTypeMapping TypeName="AuditTrailModel.TST_ADMIN_SECTION_AUDIT">
+              <MappingFragment StoreEntitySet="TST_ADMIN_SECTION_AUDIT">
+                <ScalarProperty Name="ADMIN_SECTION_ID" ColumnName="ADMIN_SECTION_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="PARENT_ID" ColumnName="PARENT_ID" />
+                <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TST_HISTORY_CHANGESET">
+            <EntityTypeMapping TypeName="AuditTrailModel.TST_HISTORY_CHANGESET">
+              <MappingFragment StoreEntitySet="TST_HISTORY_CHANGESET">
+                <ScalarProperty Name="CHANGESET_ID" ColumnName="CHANGESET_ID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="ARTIFACT_TYPE_ID" ColumnName="ARTIFACT_TYPE_ID" />
+                <ScalarProperty Name="ARTIFACT_ID" ColumnName="ARTIFACT_ID" />
+                <ScalarProperty Name="CHANGE_DATE" ColumnName="CHANGE_DATE" />
+                <ScalarProperty Name="CHANGETYPE_ID" ColumnName="CHANGETYPE_ID" />
+                <ScalarProperty Name="PROJECT_ID" ColumnName="PROJECT_ID" />
+                <ScalarProperty Name="REVERT_ID" ColumnName="REVERT_ID" />
+                <ScalarProperty Name="ARTIFACT_DESC" ColumnName="ARTIFACT_DESC" />
+                <ScalarProperty Name="SIGNATURE_HASH" ColumnName="SIGNATURE_HASH" />
+                <ScalarProperty Name="MEANING" ColumnName="MEANING" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TST_HISTORY_DETAIL">
+            <EntityTypeMapping TypeName="AuditTrailModel.TST_HISTORY_DETAIL">
+              <MappingFragment StoreEntitySet="TST_HISTORY_DETAIL">
+                <ScalarProperty Name="ARTIFACT_HISTORY_ID" ColumnName="ARTIFACT_HISTORY_ID" />
+                <ScalarProperty Name="FIELD_NAME" ColumnName="FIELD_NAME" />
+                <ScalarProperty Name="OLD_VALUE" ColumnName="OLD_VALUE" />
+                <ScalarProperty Name="FIELD_CAPTION" ColumnName="FIELD_CAPTION" />
+                <ScalarProperty Name="NEW_VALUE" ColumnName="NEW_VALUE" />
+                <ScalarProperty Name="OLD_VALUE_INT" ColumnName="OLD_VALUE_INT" />
+                <ScalarProperty Name="OLD_VALUE_DATE" ColumnName="OLD_VALUE_DATE" />
+                <ScalarProperty Name="NEW_VALUE_INT" ColumnName="NEW_VALUE_INT" />
+                <ScalarProperty Name="NEW_VALUE_DATE" ColumnName="NEW_VALUE_DATE" />
+                <ScalarProperty Name="CHANGESET_ID" ColumnName="CHANGESET_ID" />
+                <ScalarProperty Name="FIELD_ID" ColumnName="FIELD_ID" />
+                <ScalarProperty Name="CUSTOM_PROPERTY_ID" ColumnName="CUSTOM_PROPERTY_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RPT_HISTORYCHANGESETS">
+            <EntityTypeMapping TypeName="AuditTrailModel.RPT_HISTORYCHANGESETS">
+              <MappingFragment StoreEntitySet="RPT_HISTORYCHANGESETS">
+                <ScalarProperty Name="CHANGESET_ID" ColumnName="CHANGESET_ID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="ARTIFACT_TYPE_ID" ColumnName="ARTIFACT_TYPE_ID" />
+                <ScalarProperty Name="ARTIFACT_ID" ColumnName="ARTIFACT_ID" />
+                <ScalarProperty Name="CHANGE_DATE" ColumnName="CHANGE_DATE" />
+                <ScalarProperty Name="CHANGETYPE_ID" ColumnName="CHANGETYPE_ID" />
+                <ScalarProperty Name="PROJECT_ID" ColumnName="PROJECT_ID" />
+                <ScalarProperty Name="REVERT_ID" ColumnName="REVERT_ID" />
+                <ScalarProperty Name="ARTIFACT_DESC" ColumnName="ARTIFACT_DESC" />
+                <ScalarProperty Name="SIGNATURE_HASH" ColumnName="SIGNATURE_HASH" />
+                <ScalarProperty Name="MEANING" ColumnName="MEANING" />
+                <ScalarProperty Name="CHANGETYPE_NAME" ColumnName="CHANGETYPE_NAME" />
+                <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+                <ScalarProperty Name="ARTIFACT_TYPE_NAME" ColumnName="ARTIFACT_TYPE_NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RPT_HISTORYDETAILS">
+            <EntityTypeMapping TypeName="AuditTrailModel.RPT_HISTORYDETAILS">
+              <MappingFragment StoreEntitySet="RPT_HISTORYDETAILS">
+                <ScalarProperty Name="ARTIFACT_HISTORY_ID" ColumnName="ARTIFACT_HISTORY_ID" />
+                <ScalarProperty Name="FIELD_NAME" ColumnName="FIELD_NAME" />
+                <ScalarProperty Name="FIELD_CAPTION" ColumnName="FIELD_CAPTION" />
+                <ScalarProperty Name="OLD_VALUE" ColumnName="OLD_VALUE" />
+                <ScalarProperty Name="NEW_VALUE" ColumnName="NEW_VALUE" />
+                <ScalarProperty Name="OLD_VALUE_INT" ColumnName="OLD_VALUE_INT" />
+                <ScalarProperty Name="NEW_VALUE_INT" ColumnName="NEW_VALUE_INT" />
+                <ScalarProperty Name="OLD_VALUE_DATE" ColumnName="OLD_VALUE_DATE" />
+                <ScalarProperty Name="NEW_VALUE_DATE" ColumnName="NEW_VALUE_DATE" />
+                <ScalarProperty Name="CHANGESET_ID" ColumnName="CHANGESET_ID" />
+                <ScalarProperty Name="FIELD_ID" ColumnName="FIELD_ID" />
+                <ScalarProperty Name="CUSTOM_PROPERTY_ID" ColumnName="CUSTOM_PROPERTY_ID" />
+                <ScalarProperty Name="ARTIFACT_ID" ColumnName="ARTIFACT_ID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="ARTIFACT_TYPE_ID" ColumnName="ARTIFACT_TYPE_ID" />
+                <ScalarProperty Name="CHANGE_DATE" ColumnName="CHANGE_DATE" />
+                <ScalarProperty Name="CHANGER_NAME" ColumnName="CHANGER_NAME" />
+                <ScalarProperty Name="CHANGE_NAME" ColumnName="CHANGE_NAME" />
+                <ScalarProperty Name="CHANGETYPE_ID" ColumnName="CHANGETYPE_ID" />
+                <ScalarProperty Name="ARTIFACT_FIELD_TYPE_ID" ColumnName="ARTIFACT_FIELD_TYPE_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RPT_PROJECT">
+            <EntityTypeMapping TypeName="AuditTrailModel.RPT_PROJECT">
+              <MappingFragment StoreEntitySet="RPT_PROJECT">
+                <ScalarProperty Name="PROJECT_ID" ColumnName="PROJECT_ID" />
+                <ScalarProperty Name="PROJECT_GROUP_ID" ColumnName="PROJECT_GROUP_ID" />
+                <ScalarProperty Name="PROJECT_TEMPLATE_ID" ColumnName="PROJECT_TEMPLATE_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="CREATION_DATE" ColumnName="CREATION_DATE" />
+                <ScalarProperty Name="WEBSITE" ColumnName="WEBSITE" />
+                <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+                <ScalarProperty Name="WORKING_HOURS" ColumnName="WORKING_HOURS" />
+                <ScalarProperty Name="WORKING_DAYS" ColumnName="WORKING_DAYS" />
+                <ScalarProperty Name="NON_WORKING_HOURS" ColumnName="NON_WORKING_HOURS" />
+                <ScalarProperty Name="IS_TIME_TRACK_INCIDENTS" ColumnName="IS_TIME_TRACK_INCIDENTS" />
+                <ScalarProperty Name="IS_TIME_TRACK_TASKS" ColumnName="IS_TIME_TRACK_TASKS" />
+                <ScalarProperty Name="IS_EFFORT_INCIDENTS" ColumnName="IS_EFFORT_INCIDENTS" />
+                <ScalarProperty Name="IS_EFFORT_TASKS" ColumnName="IS_EFFORT_TASKS" />
+                <ScalarProperty Name="IS_TASKS_AUTO_CREATE" ColumnName="IS_TASKS_AUTO_CREATE" />
+                <ScalarProperty Name="REQ_DEFAULT_ESTIMATE" ColumnName="REQ_DEFAULT_ESTIMATE" />
+                <ScalarProperty Name="REQ_POINT_EFFORT" ColumnName="REQ_POINT_EFFORT" />
+                <ScalarProperty Name="TASK_DEFAULT_EFFORT" ColumnName="TASK_DEFAULT_EFFORT" />
+                <ScalarProperty Name="IS_REQ_STATUS_BY_TASKS" ColumnName="IS_REQ_STATUS_BY_TASKS" />
+                <ScalarProperty Name="IS_REQ_STATUS_BY_TEST_CASES" ColumnName="IS_REQ_STATUS_BY_TEST_CASES" />
+                <ScalarProperty Name="IS_EFFORT_TEST_CASES" ColumnName="IS_EFFORT_TEST_CASES" />
+                <ScalarProperty Name="IS_REQ_STATUS_AUTO_PLANNED" ColumnName="IS_REQ_STATUS_AUTO_PLANNED" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="PERCENT_COMPLETE" ColumnName="PERCENT_COMPLETE" />
+                <ScalarProperty Name="REQUIREMENT_COUNT" ColumnName="REQUIREMENT_COUNT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TST_USER_ACTIVITY_LOG_AUDIT">
+            <EntityTypeMapping TypeName="AuditTrailModel.TST_USER_ACTIVITY_LOG_AUDIT">
+              <MappingFragment StoreEntitySet="TST_USER_ACTIVITY_LOG_AUDIT">
+                <ScalarProperty Name="ACTIVITY_DESCRIPTION" ColumnName="ACTIVITY_DESCRIPTION" />
+                <ScalarProperty Name="LOGOUT_DATE" ColumnName="LOGOUT_DATE" />
+                <ScalarProperty Name="LOGIN_DATE" ColumnName="LOGIN_DATE" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="USER_ACTIVITY_LOG_ID" ColumnName="USER_ACTIVITY_LOG_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TST_USER_HISTORY_CHANGESET_AUDIT">
+            <EntityTypeMapping TypeName="AuditTrailModel.TST_USER_HISTORY_CHANGESET_AUDIT">
+              <MappingFragment StoreEntitySet="TST_USER_HISTORY_CHANGESET_AUDIT">
+                <ScalarProperty Name="ADMIN_SECTION_ID" ColumnName="ADMIN_SECTION_ID" />
+                <ScalarProperty Name="HISTORY_CHANGESET_TYPE_ID" ColumnName="HISTORY_CHANGESET_TYPE_ID" />
+                <ScalarProperty Name="NEW_VALUE" ColumnName="NEW_VALUE" />
+                <ScalarProperty Name="OLD_VALUE" ColumnName="OLD_VALUE" />
+                <ScalarProperty Name="PROPERTY_NAME" ColumnName="PROPERTY_NAME" />
+                <ScalarProperty Name="EVENT_DESCRIPTION" ColumnName="EVENT_DESCRIPTION" />
+                <ScalarProperty Name="CHANGE_DATE" ColumnName="CHANGE_DATE" />
+                <ScalarProperty Name="UPDATED_BY_USERID" ColumnName="UPDATED_BY_USERID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="CHANGESET_ID" ColumnName="CHANGESET_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <edmx:DesignerProperty Name="EnablePluralization" Value="true" />
+        <edmx:DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <edmx:DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <edmx:DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams />
+  </edmx:Designer>
+</edmx:Edmx>

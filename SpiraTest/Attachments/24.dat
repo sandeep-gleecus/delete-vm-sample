@@ -1,0 +1,15 @@
+'Sample Script
+Sync(60."Smarte ATM : Login"."User Name");
+
+Info("Smarte ATM : Login"."Maximize".WindowState.ReturnVar);
+
+If(ReturnVar == "RESTORE")
+
+   Click("Smarte ATM : Login"."Maximize".Lclick);
+   5Shell(EXE."IEXPLORE.EXE http://demo.smartesoft.com");
+
+   5Shell(EXE."IEXPLORE.EXE http://demo.smartesoft.com");
+
+End If
+
+

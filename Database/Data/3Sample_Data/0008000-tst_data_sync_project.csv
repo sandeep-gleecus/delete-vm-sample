@@ -1,0 +1,5 @@
+data_sync_system_id:Normal,project_id:Normal,external_key:String,active_yn:String
+1,1,LIS,N
+1,2,SMP,N
+2,1,library,N
+3,1,Library Information System,N

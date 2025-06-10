@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Dashboard.master" AutoEventWireup="true" CodeBehind="ProjectDashboard.master.cs" Inherits="Inflectra.SpiraTest.Web.MasterPages.ProjectDashboard" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cplHead" runat="server">
+    <asp:ContentPlaceHolder ID="cplHead" runat="server" />
+    <script type="text/javascript">
+        //This is the collection of items that need to be called when data is returned
+        var g_project_workspaceLoadCallbacks = new Array();
+    </script>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="cplMainContent" runat="server">
+    <asp:ContentPlaceHolder ID="cplMainContent" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="cplScripts" runat="server">
+    <tstsc:ScriptManagerProxyEx ID="ajxScriptManager" runat="server"> 
+        <Services>
+            <asp:ServiceReference Path="~/Services/Ajax/ProjectService.svc" />
+        </Services>
+    </tstsc:ScriptManagerProxyEx>  
+    <script type="text/javascript">
+        function projectDashboard_loadWorkspaceData()
+        {
+            //load the dashboard workspace overall data
+            var projectId = <%=GetProjectId()%>;
+            Inflectra.SpiraTest.Web.Services.Ajax.ProjectService.Workspace_RetrieveCompletionData(
+                projectId,
+                function (workspaceData) {
+
+                    //Add the workspace type to the data
+                    workspaceData.workspaceType = SpiraContext.WorkspaceEnums.product;
+                    workspaceData.workspaceEnums = SpiraContext.WorkspaceEnums;
+
+                    //Load each of the widgets on the page in turn that need this data
+                    for (var i = 0; i < g_project_workspaceLoadCallbacks.length; i++)
+                    {
+                        g_project_workspaceLoadCallbacks[i](workspaceData);
+                    }
+                },
+                function (ex) {
+                    //Display the error message
+                    globalFunctions.display_error(null, ex);
+                }
+            );
+        }
+        $(document).ready(function ()
+        {
+            //register a handler so that the workspace data is reloaded if the update panel refreshes - only if the user can view requirements
+            var authorizedViewRequirements = globalFunctions.isAuthorized(globalFunctions.permissionEnum.View, globalFunctions.artifactTypeEnum.requirement);
+            if (authorizedViewRequirements !== globalFunctions.authorizationStateEnum.prohibited)
+            {
+                var pageRequestManager = Sys.WebForms.PageRequestManager.getInstance();
+                pageRequestManager.add_endRequest(projectDashboard_loadWorkspaceData);
+
+                //Load the intial set of workspace data
+                projectDashboard_loadWorkspaceData();
+            }
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="cplScripts" runat="server" />
+</asp:Content>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+  <xsl:template match="/RequirementData">
+    <table class="DataGrid" style="width:100%">
+      <tr>
+        <th>Req #</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Release #</th>
+        <th>Test Traceability</th>
+        <th>Requirements Traceability</th>
+      </tr>
+      <xsl:for-each select="Requirement">
+        <tr>
+          <td>
+            RQ<xsl:value-of select="RequirementId"/>
+          </td>
+          <td>
+            <xsl:attribute name="style">
+              padding-left: <xsl:value-of select="string-length(IndentLevel)*2"/>px;
+            </xsl:attribute>
+            <xsl:if test="IsSummary='True'">
+              <b>
+                <xsl:value-of select="Name"/>
+              </b>
+            </xsl:if>
+            <xsl:if test="IsSummary='False'">
+              <xsl:value-of select="Name"/>
+            </xsl:if>
+          </td>
+          <td>
+            <xsl:value-of select="RequirementTypeName"/>
+          </td>
+          <td>
+            <xsl:value-of select="RequirementStatusName"/>
+          </td>
+          <td>
+            <xsl:value-of select="ReleaseVersionNumber"/>
+          </td>
+          <td>
+            <xsl:for-each select="TestCases/TestCase">
+              <xsl:if test="position() > 1">
+                , TC<xsl:value-of select="TestCaseId"/>
+              </xsl:if>
+              <xsl:if test="position() = 1">
+                TC<xsl:value-of select="TestCaseId"/>
+              </xsl:if>
+            </xsl:for-each>
+          </td>
+          <td>
+            <xsl:for-each select="Requirements/ArtifactLink">
+              <xsl:if test="position() > 1">
+                , RQ<xsl:value-of select="ArtifactId"/>
+              </xsl:if>
+              <xsl:if test="position() = 1">
+                RQ<xsl:value-of select="ArtifactId"/>
+              </xsl:if>
+            </xsl:for-each>
+          </td>
+        </tr>
+      </xsl:for-each>
+    </table>
+  </xsl:template>
+</xsl:stylesheet>
+

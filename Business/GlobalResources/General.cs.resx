@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Global_NoneFlag" xml:space="preserve">
+    <value>{Žádné}</value>
+  </data>
+	<data name="TestRun_VariousTestCases" xml:space="preserve">
+    <value>Různé testovací případy</value>
+  </data>
+	<data name="Task_ProgressNotStarted" xml:space="preserve">
+    <value>nezahájeno</value>
+  </data>
+	<data name="Task_ProgressPercentComplete" xml:space="preserve">
+    <value>% dokončeno</value>
+  </data>
+	<data name="Task_ProgressScheduledEndOn" xml:space="preserve">
+    <value>konec plánován na</value>
+  </data>
+	<data name="Task_ProgressShouldHaveStartedOn" xml:space="preserve">
+    <value>mělo být zahájeno</value>
+  </data>
+	<data name="Task_Progress_ShouldHaveFinishedOn" xml:space="preserve">
+    <value>mělo být dokončeno</value>
+  </data>
+	<data name="Global_NoTasks" xml:space="preserve">
+    <value>Žádné úkoly</value>
+  </data>
+	<data name="Global_Tasks" xml:space="preserve">
+    <value>Úkoly</value>
+  </data>
+	<data name="Task_NotStarted" xml:space="preserve">
+    <value>Nezahájeno</value>
+  </data>
+	<data name="Task_OnSchedule" xml:space="preserve">
+    <value>Dle plánu</value>
+  </data>
+	<data name="Task_RunningLate" xml:space="preserve">
+    <value>Má zpoždění</value>
+  </data>
+	<data name="Task_StartingLate" xml:space="preserve">
+    <value>Zpožděný začátek</value>
+  </data>
+	<data name="TestCase_NewTestCase" xml:space="preserve">
+    <value>Nový Testovací případ</value>
+  </data>
+	<data name="TestCase_NewTestCaseComment" xml:space="preserve">
+    <value>Nový testovací případ vytvořený z požadavku</value>
+  </data>
+	<data name="TestSet_NewTestSetBasedOnRelease" xml:space="preserve">
+    <value>Nová testovací sada vytvořená na základě verze</value>
+  </data>
+	<data name="TestSet_NewTestSetBasedOnRequirements" xml:space="preserve">
+    <value>Nová testovací sada vytvořená na základě vybraných požadavků</value>
+  </data>
+	<data name="Requirement_NotCovered" xml:space="preserve">
+    <value>Nepokryto</value>
+  </data>
+	<data name="TestCase_Blocked" xml:space="preserve">
+    <value>Blokováno</value>
+  </data>
+	<data name="TestCase_Caution" xml:space="preserve">
+    <value>Pozor</value>
+  </data>
+	<data name="TestCase_Failed" xml:space="preserve">
+    <value>Selhalo</value>
+  </data>
+	<data name="TestCase_NotRun" xml:space="preserve">
+    <value>Nespuštěno</value>
+  </data>
+	<data name="TestCase_Passed" xml:space="preserve">
+    <value>Prošlo</value>
+  </data>
+	<data name="TestCase_Run" xml:space="preserve">
+    <value>Běh</value>
+  </data>
+	<data name="Global_No" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+	<data name="Global_Yes" xml:space="preserve">
+    <value>Ano</value>
+  </data>
+	<data name="Global_Copy" xml:space="preserve">
+    <value>Kopírovat</value>
+  </data>
+	<data name="Global_CopyOf" xml:space="preserve">
+    <value>Kopie</value>
+  </data>
+	<data name="Task_Completed" xml:space="preserve">
+    <value>Dokončeno</value>
+  </data>
+	<data name="Requirement_ReqCreatedFromIncident" xml:space="preserve">
+    <value>Požadavek vytvořen ze stávajícího incidentu.</value>
+  </data>
+	<data name="TestCase_Call" xml:space="preserve">
+    <value>Volání</value>
+  </data>
+	<data name="Incident_Complete" xml:space="preserve">
+    <value>kompletní</value>
+  </data>
+	<data name="Incident_NotStarted" xml:space="preserve">
+    <value>nezahájeno</value>
+  </data>
+	<data name="Incident_ShouldHaveStartedOn" xml:space="preserve">
+    <value>mělo být zahájeno</value>
+  </data>
+	<data name="GraphDescription_IncidentAging" xml:space="preserve">
+    <value>Graf Stárnutí incidentů (Incident Aging) zobrazuje počet dní, kdy byly incidenty otevřené v systému.</value>
+  </data>
+	<data name="GraphDescription_IncidentCumulativeCount" xml:space="preserve">
+    <value>Graf Kumulativní počet chyb zobrazuje kumulativní součet incidentů zadaných do systému pro tento produkt během daného časového období</value>
+  </data>
+	<data name="GraphDescription_IncidentOpenCount" xml:space="preserve">
+    <value>Graf Počet otevřených incidentů zobrazuje celkový počet otevřených incidentů v systému pro aktuální produkt během daného časového období. Incidenty jsou setříděny dle priority.</value>
+  </data>
+	<data name="GraphDescription_IncidentProgressRate" xml:space="preserve">
+    <value>Graf vývoje incidentů zobrazuje celkový počet vytvořených a uzavřených incidentů pro aktuální produkt během daného časového období.</value>
+  </data>
+	<data name="GraphDescription_IncidentSummary" xml:space="preserve">
+    <value>Graf přehledu Incidentů ukazuje, kolik incidentů je v současné době v produktu. Počet incidentů je zobrazen podle kritérií, která zadáte. Můžete zadat druh údajů zobrazovaných podél osy x, a typ informace, podle které budou incidenty seskupeny.</value>
+  </data>
+	<data name="GraphDescription_IncidentTurnaround" xml:space="preserve">
+    <value>Graf Doba vyřešení incidentu zobrazuje, kolik dní trvalo uzavření incidentů v systému (od doby, kdy byly poprvé zadány).</value>
+  </data>
+	<data name="GraphDescription_RequirementCoverage" xml:space="preserve">
+    <value>Graf pokrytí požadavků zobrazuje aktuální požadavky v produktu, podle jejich pokrytí testy.</value>
+  </data>
+	<data name="GraphDescription_RequirementSummary" xml:space="preserve">
+    <value>Graf shrnutí požadavků zobrazuje, kolik požadavků je aktuálně v produktu. Počet požadavků je zobrazen podle kritérií, která zadáte. Můžete zadat druh údajů zobrazovaných na ose X a typ informace, podle které budou požadavky seskupeny.</value>
+  </data>
+	<data name="GraphDescription_TaskBurnDown" xml:space="preserve">
+    <value>Graf hotových úkolů zobrazuje zbývající práci, kterou je třeba vykonat pro každou verzi/sprint v rámci produktu.</value>
+  </data>
+	<data name="GraphDescription_TaskBurnUp" xml:space="preserve">
+    <value>Graf úkolů k vyřešení zobrazuje kumulativní nárůst práce pro každou verzi/sprint v rámci produktu. Zobrazuje procento úkolů, které jsou dle plánu, pozdě začaly či byly pozdě dokončeny.</value>
+  </data>
+	<data name="GraphDescription_TaskSummary" xml:space="preserve">
+    <value>Graf Souhrnu úkolů zobrazuje, kolik úkolů je v současné době v produktu. Počet úkolů je zobrazen podle kritérií, která zadáte. Můžete zadat druh údajů zobrazovaných na ose x a typ informace, podle které budou úkoly seskupeny.</value>
+  </data>
+	<data name="GraphDescription_TaskVelocity" xml:space="preserve">
+    <value>Graf rozdělení pracností úkolů zobrazuje celkové odhadované a skutečné pracnosti uvedené pro každou verzi/sprint v produktu.</value>
+  </data>
+	<data name="GraphDescription_TestCaseSummary" xml:space="preserve">
+    <value>Graf souhrnu testovacích případů zobrazuje, kolik testovacích případů je aktuálně v produktu. Počet testovacích případů je zobrazen podle kritérií, která zadáte. Můžete zadat druh údajů zobrazovaných na ose x a typ informace, podle které budou testovací případy seskupeny.</value>
+  </data>
+	<data name="GraphDescription_TestRunProgressRate" xml:space="preserve">
+    <value>Graf vývoje běhů testů zobrazuje kolik testů bylo vykonáno v daném období a jaký byl zaznamenaný výsledek. </value>
+  </data>
+	<data name="GraphDescription_TestRunSummary" xml:space="preserve">
+    <value>Graf shrnutí běhů testů zobrazuje, kolik testů bylo provedeno v produktu. Počet běhů testů se zobrazuje podle kritérií, která zadáte. Můžete zadat druh údajů zobrazovaných na ose x a typ informace, podle které budou běhy testů seskupeny.</value>
+  </data>
+	<data name="GraphName_IncidentAging" xml:space="preserve">
+    <value>Stárnutí incidentů</value>
+  </data>
+	<data name="GraphName_IncidentCumulativeCount" xml:space="preserve">
+    <value>Kumulativní počet incidentů</value>
+  </data>
+	<data name="GraphName_IncidentOpenCount" xml:space="preserve">
+    <value>Počet otevřených incidentů</value>
+  </data>
+	<data name="GraphName_IncidentProgressRate" xml:space="preserve">
+    <value>Vývoj incidentů</value>
+  </data>
+	<data name="GraphName_IncidentSummary" xml:space="preserve">
+    <value>Shrnutí incidentů</value>
+  </data>
+	<data name="GraphName_IncidentTurnaround" xml:space="preserve">
+    <value>Doba vyřešení incidentů</value>
+  </data>
+	<data name="GraphName_RequirementCoverage" xml:space="preserve">
+    <value>Pokrytí požadavků</value>
+  </data>
+	<data name="GraphName_RequirementSummary" xml:space="preserve">
+    <value>Shrnutí Požadavků</value>
+  </data>
+	<data name="GraphName_TaskBurnDown" xml:space="preserve">
+    <value>Úkoly vykonané</value>
+  </data>
+	<data name="GraphName_TaskBurnUp" xml:space="preserve">
+    <value>Úkoly k vyřešení</value>
+  </data>
+	<data name="GraphName_TaskSummary" xml:space="preserve">
+    <value>Shrnutí Úkolů</value>
+  </data>
+	<data name="GraphName_TaskVelocity" xml:space="preserve">
+    <value>Pracnosti úkolů</value>
+  </data>
+	<data name="GraphName_TestCaseSummary" xml:space="preserve">
+    <value>Shrnutí testovacích případů</value>
+  </data>
+	<data name="GraphName_TestRunProgressRate" xml:space="preserve">
+    <value>Vývoj běhů testů</value>
+  </data>
+	<data name="GraphName_TestRunSummary" xml:space="preserve">
+    <value>Shrnutí běhů testů</value>
+  </data>
+	<data name="Graph_ClosedCount" xml:space="preserve">
+    <value>Počet uzavřených</value>
+  </data>
+	<data name="Graph_Date" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+	<data name="Graph_DiscoveredCount" xml:space="preserve">
+    <value>Počet nalezených</value>
+  </data>
+	<data name="Graph_OpenCount" xml:space="preserve">
+    <value>Počet otevřených</value>
+  </data>
+	<data name="Graph_TotalCount" xml:space="preserve">
+    <value>Počet celkem</value>
+  </data>
+	<data name="Global_None" xml:space="preserve">
+    <value>(Žádný)</value>
+  </data>
+	<data name="GraphDescription_TestSetSummary" xml:space="preserve">
+    <value>Graf shrnutí testovacích sad zobrazuje, kolik testovacích sad je aktuálně v produktu. Počet testovacích sad se zobrazuje podle kritérií, která zadáte. Můžete zadat druh údajů zobrazovaných na ose x a typ informace, podle které budou testovací sady seskupeny.</value>
+  </data>
+	<data name="GraphName_TestSetSummary" xml:space="preserve">
+    <value>Shrnutí testovacích sad</value>
+  </data>
+	<data name="Graph_Age" xml:space="preserve">
+    <value>Věk</value>
+  </data>
+	<data name="Graph_Turnaround" xml:space="preserve">
+    <value>Doba vyřešení</value>
+  </data>
+	<data name="Graph_Iteration" xml:space="preserve">
+    <value>Sprint</value>
+  </data>
+	<data name="Graph_Release" xml:space="preserve">
+    <value>Verze</value>
+  </data>
+	<data name="Graphs_CompletedEffort" xml:space="preserve">
+    <value>Proacnosti dokončených</value>
+  </data>
+	<data name="Graphs_EstimatedEffort" xml:space="preserve">
+    <value>Odhadnuté pracnosti</value>
+  </data>
+	<data name="Graphs_IdealEffort" xml:space="preserve">
+    <value>Ideální pracnosti</value>
+  </data>
+	<data name="Graphs_RemainingEffort" xml:space="preserve">
+    <value>Zbývající pracnost</value>
+  </data>
+	<data name="Graphs_ActualVelocity" xml:space="preserve">
+    <value>Skutečné pracnosti</value>
+  </data>
+	<data name="Graphs_ExpectedVelocity" xml:space="preserve">
+    <value>Očekávané pracnosti</value>
+  </data>
+	<data name="Graph_Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+	<data name="Graph_CoverageStatus" xml:space="preserve">
+    <value>Stav pokrytí</value>
+  </data>
+	<data name="Project_ResourceAllocated" xml:space="preserve">
+    <value>Přidělené zdroje</value>
+  </data>
+	<data name="Requirement_NewRequirement" xml:space="preserve">
+    <value>Nový požadavek</value>
+  </data>
+	<data name="Requirement_NewRequirementComment" xml:space="preserve">
+    <value>Nový požadavek vytvořený z testovacího případu</value>
+  </data>
+	<data name="Global_Incident" xml:space="preserve">
+    <value>Incident</value>
+  </data>
+	<data name="Global_Incident" xml:space="preserve">
+    <value>Incident</value>
+  </data>
+	<data name="Global_Incident" xml:space="preserve">
+    <value>Incident</value>
+  </data>
+	<data name="Global_Incident" xml:space="preserve">
+    <value>Incident</value>
+  </data>
+	<data name="Workflow_ChangeStatusSubject" xml:space="preserve">
+    <value>změněn stav z '{0}' na '{1}'</value>
+  </data>
+	<data name="Global_ImportedFrom" xml:space="preserve">
+    <value>Importované z produktu # {0}, {1} # {2}</value>
+  </data>
+	<data name="Global_ExportedTo" xml:space="preserve">
+    <value>Exportovat do produktu # {0}, {1} # {2}</value>
+  </data>
+	<data name="Workflow_DefaultWorflow" xml:space="preserve">Standardní workflow</data><data name="TestStep_Step" xml:space="preserve">Krok</data><data name="Global_Revision" xml:space="preserve">Revize</data><data name="Global_Report" xml:space="preserve">Report</data><data name="Workflow_DefaultWorflow" xml:space="preserve"><value>Standardní workflow</value></data><data name="TestStep_Step" xml:space="preserve"><value>Krok</value></data><data name="Global_Revision" xml:space="preserve"><value>Revize</value></data><data name="Global_Report" xml:space="preserve"><value>Report</value></data><data name="History_ArtifactIdFormat" xml:space="preserve"><value>Artefakt [{0}:{1}]</value></data><data name="History_PurgeProgress_AutomationHosts" xml:space="preserve"><value>Čistím hostitele automatizace…</value></data><data name="History_PurgeProgress_Complete" xml:space="preserve"><value>Hotovo!</value></data><data name="History_PurgeProgress_Incidents" xml:space="preserve"><value>Čistím Incidenty…</value></data><data name="History_PurgeProgress_Releases" xml:space="preserve"><value>Čistím Verze…</value></data><data name="History_PurgeProgress_Requirements" xml:space="preserve"><value>Čistím Požadavky…</value></data><data name="History_PurgeProgress_RequirementSteps" xml:space="preserve"><value>Čistím kroky Požadavků…</value></data><data name="History_PurgeProgress_Tasks" xml:space="preserve"><value>Čistím Úkoly…</value></data><data name="History_PurgeProgress_TestCases" xml:space="preserve"><value>Čistím Testovací Případy…</value></data><data name="History_PurgeProgress_TestSets" xml:space="preserve"><value>Čistím Testovací sady…</value></data><data name="History_PurgeProgress_TestSteps" xml:space="preserve"><value>Čistím Testovací Kroky…</value></data><data name="TestCase_NotApplicable" xml:space="preserve"><value>Nelze Použít</value></data><data name="NotificationManager_SendIndivNotification" xml:space="preserve"><value>{0} - Tento {1} vyžaduje Vaši pozornost!</value></data><data name="SourceCode_SourceCodeCommit" xml:space="preserve"><value>Úpravy (Commit) zdrojového kódu</value></data><data name="SourceCode_NoProvidersLoaded" xml:space="preserve"><value>Pro produkt #{0} nelze načíst žádného poskytovatele zdrojového kódu.</value></data><data name="SourceCode_CouldNotLogin" xml:space="preserve"><value>Nelze se ověřit u poskytovatele zdrojového kódu.</value></data><data name="SourceCode_NoProvidersEnabled" xml:space="preserve"><value>U produktu #{0} nejsou povoleni žádní poskytovatelé zdrojového kódu.</value></data><data name="SouceCode_UnableToLoadDLL" xml:space="preserve"><value>Nelze načíst poskytovatele správy verzí '{0}'.</value></data><data name="SourceCode_CouldNotIni" xml:space="preserve"><value>Nelze inicializovat knihovnu poskytovatele '{0}'.</value></data><data name="SourceCode_InvalidCache" xml:space="preserve"><value>Knihovna pro správu verzí aktualizuje mezipaměť.</value></data><data name="GraphDescription_RequirementBurnDown" xml:space="preserve"><value>Burndown graf Požadavků zobrazuje zbývající počet bodů příběhu, které je třeba udělat pro každou Verzi/sprint v Produktu.</value></data><data name="GraphDescription_RequirementBurnUp" xml:space="preserve"><value>Burnup graf Požadavků ukazuje kumulativní počet bodů příběhu pro každou Verzi/Sprint v Produktu s počtem dokončených bodů příběhu označených pro každý interval.</value></data><data name="GraphDescription_RequirementVelocity" xml:space="preserve"><value>Graf pracnosti Požadavků zobrazuje skutečný počet bodů příběhu dodaných v každé Verzi produktu nebo Sprintu ve srovnání s průměrem.</value></data><data name="GraphName_RequirementBurnDown" xml:space="preserve"><value>Burndown Požadavku</value></data><data name="GraphName_RequirementBurnUp" xml:space="preserve"><value>Burnup Požadavku</value></data><data name="GraphName_RequirementVelocity" xml:space="preserve"><value>Pracnost Požadavku</value></data><data name="Graphs_ActualBurnup" xml:space="preserve"><value>Aktuální Burnup</value></data><data name="Graphs_AverageVelocity" xml:space="preserve"><value>Průměrná pracnost</value></data><data name="Graphs_CompletedPoints" xml:space="preserve"><value>Dokončené body</value></data><data name="Graphs_IdealBurndown" xml:space="preserve"><value>Ideální Burndown</value></data><data name="Graphs_IdealBurnup" xml:space="preserve"><value>Ideální Burnup</value></data><data name="Graphs_RemainingPoints" xml:space="preserve"><value>Zbývající body</value></data><data name="Graphs_RollingAverage" xml:space="preserve"><value>Klouzavý průměr</value></data><data name="Global_Multiple" xml:space="preserve"><value>Násobek</value></data><data name="Project_ResourceAllocatedOpen" xml:space="preserve"><value>Přiděleno otevřeným Artefaktům</value></data><data name="History_Exported" xml:space="preserve"><value>Exportováno</value></data><data name="History_Imported" xml:space="preserve"><value>Importováno</value></data><data name="Exception_BadRequest" xml:space="preserve"><value>Pole v požadavku bylo neplatné.</value></data><data name="Exception_Conflict" xml:space="preserve"><value>Položka s tímto jménem/e-mailem již existuje.</value></data><data name="Exception_Unauthorized" xml:space="preserve"><value>Účet nemá povoleno provádět tuto akci.</value></data><data name="Exception_Unknown" xml:space="preserve"><value>Došlo k neznámé chybě komunikace ({0}). {1}</value></data><data name="Exceptioon_MethodNotAllowed" xml:space="preserve"><value>Akci nelze v tuto chvíli provést.</value></data><data name="TestCase_DefaultTestStepExpectedResult" xml:space="preserve"><value>Funguje dle očekávání.</value></data><data name="TestStep_WorksAsExpected" xml:space="preserve"><value>Funguje dle očekávání.</value></data><data name="Task_NewTask" xml:space="preserve"><value>Nový Úkol</value></data><data name="TestSet_NewTestSet" xml:space="preserve"><value>Nová Testovací sada</value></data><data name="Description" xml:space="preserve"><value>Popis</value></data><data name="GraphDescription_IncidentCountByStatus" xml:space="preserve"><value>Graf Počet incidentů podle stavu zobrazuje kumulativní celkový počet Incidentů zaznamenaných v systému pro aktuální produkt za konkrétní časové období, seskupený podle stavu.</value></data><data name="GraphDescription_TestCaseProgress" xml:space="preserve"><value>Graf Splnění Testovacích Případů ukazuje, kolik jedinečných Testovacích Případů bylo provedeno během určitého časového období a jaký byl zaznamenán stav vykonání.</value></data><data name="GraphDescription_TestCaseProgressCumulative" xml:space="preserve"><value>Graf Kumulativního splnění Testovacích Případů ukazuje průběh stavu vykonání Testovacích Případů za časové období oproti celkovému počtu nespuštěných Testovacích Případů.</value></data><data name="GraphName_IncidentCountByStatus" xml:space="preserve"><value>Počty Incidentů podle stavu</value></data><data name="GraphName_TestCaseProgress" xml:space="preserve"><value>Míra splnění Testovacích Případů</value></data><data name="GraphName_TestCaseProgressCumulative" xml:space="preserve"><value>Kumulativní míra splnění Testovacích Případů</value></data><data name="TestSet_Future" xml:space="preserve"><value>Budoucí</value></data><data name="TestSet_Overdue" xml:space="preserve"><value>Zpožděné</value></data><data name="TestSet_Unscheduled" xml:space="preserve"><value>Nenaplánované</value></data><data name="Global_NoRequirements" xml:space="preserve"><value>Žádné Požadavky</value></data><data name="Global_Complete" xml:space="preserve"><value>Hotovo</value></data><data name="Global_Requirements" xml:space="preserve"><value>Požadavek(y)</value></data><data name="Global_Verify" xml:space="preserve"><value>Ověřit</value></data><data name="Incident_IncidentCreatedFromTask" xml:space="preserve"><value>Incident vytvořený z existujícího Úkolu.</value></data></root>

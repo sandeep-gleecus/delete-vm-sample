@@ -1,0 +1,29 @@
+report_section_id:Key,token:String,artifact_type_id:Normal,name:String,description:String,default_template:Ref,is_active:Normal
+1,ProjectOverview,NULL,Project Overview,This section displays the name and description of the current project.,..\Refs\reportSection_ProjectOverview.xml,1
+2,RequirementList,1,Requirements List,This section displays a simple table containing all the requirements with a column for each of their standard and custom fields.,..\Refs\reportSection_RequirementList.xml,1
+3,RequirementDetails,1,Requirements Details,This section displays all of the requirements in a document format with embedded tables for each of the associated elements.,..\Refs\reportSection_RequirementDetails.xml,1
+4,RequirementPlan,1,Requirements Plan,This section displays a table that contains all of the requirements in the project together with the incidents and tasks arranged in a single GANTT view.,..\Refs\reportSection_RequirementPlan.xml,1
+5,TestCaseList,2,Test Case List,This section displays a simple table containing all the test cases with a column for each of their standard and custom fields.,..\Refs\reportSection_TestCaseList.xml,1
+6,TestCaseDetails,2,Test Case Details,This section displays all of the test cases in a document format with embedded tables for each of the associated elements.,..\Refs\reportSection_TestCaseDetails.xml,1
+7,TestSetList,8,Test Set List,This section displays a simple table containing all the test sets with a column for each of their standard and custom fields.,..\Refs\reportSection_TestSetList.xml,1
+8,TestSetDetails,8,Test Set Details,This section displays all of the test sets in a document format with embedded tables for each of the associated elements.,..\Refs\reportSection_TestSetDetails.xml,1
+9,TestPrintable,2,Printable Test Scripts,This section displays the selected test cases in a format that is designed for printing and handing to testers. It traverses all the linked test cases and recursively adds them to the test step list.,..\Refs\reportSection_TestPrintable.xml,1
+10,TestRunList,5,Test Run List,This section displays a simple table containing all the test runs with a column for each of their standard and custom fields.,..\Refs\reportSection_TestRunList.xml,1
+11,TestRunDetails,5,Test Run Details,This section displays all of the test runs in a document format with embedded tables for each of the associated elements.,..\Refs\reportSection_TestRunDetails.xml,1
+12,IncidentList,3,Incident List,This section displays a simple table containing all the incidents with a column for each of their standard and custom fields.,..\Refs\reportSection_IncidentList.xml,1
+13,IncidentDetails,3,Incident Details,This section displays all of the incidents in a document format with embedded tables for each of the associated elements.,..\Refs\reportSection_IncidentDetails.xml,1
+14,TaskList,6,Task List,This section displays a simple table containing all the tasks with a column for each of their standard and custom fields.,..\Refs\reportSection_TaskList.xml,1
+15,TaskDetails,6,Task Details,This section displays all of the tasks in a document format with embedded tables for each of the associated elements.,..\Refs\reportSection_TaskDetails.xml,1
+16,ReleaseList,4,Release List,This section displays a simple table containing all the releases with a column for each of their standard and custom fields.,..\Refs\reportSection_ReleaseList.xml,1
+17,ReleaseDetails,4,Release Details,This section displays all of the releases in a document format with embedded tables for each of the associated elements.,..\Refs\reportSection_ReleaseDetails.xml,1
+18,ReleasePlan,4,Release Plan,"This section displays a table that contains all of the releases and iterations in the project together with the requirements, incidents and tasks arranged in a single GANTT view.",..\Refs\reportSection_ReleasePlan.xml,1
+19,RequirementTrace,1,Requirement Traceability,This section displays a summary grid that shows the traceability from requirements > cases.,..\Refs\reportSection_RequirementTrace.xml,1
+20,TestCaseTrace,2,Test Case Traceability,This section displays a summary grid that shows the traceability from test cases > requirements.,..\Refs\reportSection_TestCaseTrace.xml,1
+21,TestCaseTrace2,2,Test Case Traceability,"This section displays a summary grid that shows the traceability from test cases > releases, incidents and test sets.",..\Refs\reportSection_TestCaseTrace2.xml,1
+22,RiskList,14,Risk List,This section displays a simple table containing all the risks with a column for each of their standard and custom fields.,..\Refs\reportSection_RiskList.xml,1
+23,RiskDetails,14,Risk Details,This section displays all of the risks in a document format with embedded tables for each of the associated elements.,..\Refs\reportSection_RiskDetails.xml,1
+24,ProjectAuditTrail,16,Project Audit Trail,This section displays a history grid that shows the histroy from Product History Changes.,..\Refs\reportsection_ProjectAuditTrail.xml,1
+25,AllHistoryList,19,Audit Trail,This section displays a history grid that shows the histroy from Product History Changes.,..\Refs\reportsection_AuditTrail.xml,1
+26,AdminAuditTrail,20,Admin Audit Trail ,This section displays a history grid that shows the histroy from Admin History Changes.,..\Refs\reportsection_AdminAuditTrail.xml,1
+27,UserAuditTrail,22,User Audit Trail,This section displays a history grid that shows the histroy from User History Changes.,..\Refs\reportsection_UserAuditTrail.xml,1
+28,SystemUsageReport,34,System Usage Report,This section displays a Systenm Usage Report.,..\Refs\reportsection_SystemUsageReport.xml,1

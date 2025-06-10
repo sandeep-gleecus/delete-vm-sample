@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="04b1f24e8054421d85f3fe44a7d64f6c" Name="Diagram1">
+        <EntityTypeShape EntityType="AuditTrailModel.TST_ADMIN_HISTORY_CHANGESET_AUDIT" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AuditTrailModel.TST_ADMIN_HISTORY_DETAILS_AUDIT" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AuditTrailModel.TST_ADMIN_SECTION_AUDIT" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AuditTrailModel.TST_HISTORY_CHANGESET" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AuditTrailModel.TST_HISTORY_DETAIL" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AuditTrailModel.RPT_HISTORYCHANGESETS" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AuditTrailModel.RPT_HISTORYDETAILS" Width="1.5" PointX="6.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AuditTrailModel.RPT_PROJECT" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="AuditTrailModel.FK__TST_ADMIN__ADMIN__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="AuditTrailModel.FK__TST_ADMIN__ADMIN__5812160E" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AuditTrailModel.TST_USER_ACTIVITY_LOG_AUDIT" Width="1.5" PointX="9.75" PointY="7.75" />
+        <EntityTypeShape EntityType="AuditTrailModel.TST_USER_HISTORY_CHANGESET_AUDIT" Width="1.5" PointX="0.75" PointY="10.75" />
+        <AssociationConnector Association="AuditTrailModel.FK__TST_USER___ADMIN__6383C8BA" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

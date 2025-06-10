@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Inflectra.SpiraTest.Web.Services.Ajax.AutomationHostService" CodeBehind="AutomationHostService.svc.cs" Factory="Inflectra.SpiraTest.Web.Services.Ajax.Activation.AjaxServiceHostFactory" %>

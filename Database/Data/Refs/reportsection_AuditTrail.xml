@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+    <xsl:template match="/ProductHistoryData">
+        <table class="DataGrid" style="width:100%">
+            <tr>
+				<th>Change ID</th>
+				<th>Project Name</th> 
+				<th>Record Id</th>	
+				<th>Field/Record Name</th>
+				<th>Record Type</th>				
+				<th>Change Date</th>
+				<th>Time</th>
+                <th>Time Zone</th>
+				<th>Changed By</th> 
+				<th>Action</th>
+				<th>Before Value</th>
+				<th>After Value</th>				 
+				<th>Signed</th>
+				<th>Name of the signer</th>
+				<th>Meaning of the signature</th>										
+            </tr>
+            <xsl:for-each select="ProductHistory">
+                <tr>
+                    <td>
+                        <xsl:value-of select="ChangeSetId"/>
+                    </td>
+					<td>
+                        <xsl:value-of select="ProjectName" />
+                    </td> 	
+					<td>
+                        <xsl:value-of select="FieldId"/>
+                    </td>
+					<td>
+                        <xsl:value-of select="FieldName"/>
+                    </td>
+					<td>
+                        <xsl:value-of select="ArtifactTypeName"/>
+                    </td>
+					<td class="Date">
+						<xsl:call-template name="format-date">
+						<xsl:with-param name="datetime" select="ChangeDate" />
+						</xsl:call-template>
+					</td>
+					<td>
+						<xsl:call-template name="format-time">
+						<xsl:with-param name="time" select="Time" />
+						</xsl:call-template>
+					</td>
+					<td>
+					  UTC
+                    </td>
+					<td>
+                        <xsl:value-of select="UserName" />
+                    </td>
+					<td>
+                        <xsl:value-of select="ChangeTypeName"/>
+                    </td> 					
+					<td>
+                        <xsl:value-of select="OldValue"/>
+                    </td>
+					<td>
+                        <xsl:value-of select="NewValue"/>
+                    </td>					
+					<td>
+                        <xsl:value-of select="SignedValue"/>
+                    </td>
+					<td>
+					  <xsl:value-of select="NameOfSigner"/>
+                    </td> 
+					<td>
+					  <xsl:value-of select="Meaning"/>
+                    </td> 
+									
+                </tr>
+            </xsl:for-each>
+        </table>
+    </xsl:template>
+   <xsl:template name="format-date">
+    <xsl:param name="datetime"/>
+    <xsl:variable name="date" select="substring-before($datetime, 'T')" />
+    <xsl:variable name="year" select="substring-before($date, '-')" />
+    <xsl:variable name="month" select="substring-before(substring-after($date, '-'), '-')" />
+    <xsl:variable name="day" select="substring-after(substring-after($date, '-'), '-')" />
+    <xsl:variable name="time" select="substring-after($datetime, 'T')" />
+    <xsl:variable name="monthname">
+      <xsl:choose>
+        <xsl:when test="$month='01'">
+          <xsl:value-of select="'Jan'"/>
+        </xsl:when>
+        <xsl:when test="$month='02'">
+          <xsl:value-of select="'Feb'"/>
+        </xsl:when>
+        <xsl:when test="$month='03'">
+          <xsl:value-of select="'Mar'"/>
+        </xsl:when>
+        <xsl:when test="$month='04'">
+          <xsl:value-of select="'Apr'"/>
+        </xsl:when>
+        <xsl:when test="$month='05'">
+          <xsl:value-of select="'May'"/>
+        </xsl:when>
+        <xsl:when test="$month='06'">
+          <xsl:value-of select="'Jun'"/>
+        </xsl:when>
+        <xsl:when test="$month='07'">
+          <xsl:value-of select="'Jul'"/>
+        </xsl:when>
+        <xsl:when test="$month='08'">
+          <xsl:value-of select="'Aug'"/>
+        </xsl:when>
+        <xsl:when test="$month='09'">
+          <xsl:value-of select="'Sep'"/>
+        </xsl:when>
+        <xsl:when test="$month='10'">
+          <xsl:value-of select="'Oct'"/>
+        </xsl:when>
+        <xsl:when test="$month='11'">
+          <xsl:value-of select="'Nov'"/>
+        </xsl:when>
+        <xsl:when test="$month='12'">
+          <xsl:value-of select="'Dec'"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="''" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:value-of select="concat($day, '-' ,$monthname, '-', $year)" />
+  </xsl:template>
+  <xsl:template name="format-time">
+    <xsl:param name="time"/>
+	<xsl:variable name="time-ampm" select="substring-after($time, '')"/>
+      <xsl:variable name="time1" select="substring-before($time-ampm, ' ')"/>
+      <xsl:variable name="ampm" select="substring-after($time-ampm, ' ')"/>
+      <xsl:variable name="h" select="substring-before($time1, ':')"/>
+      <xsl:variable name="m-s" select="substring-after($time1, ':')"/>
+      <xsl:variable name="m" select="substring-before($m-s, ':')"/>
+      <xsl:variable name="s" select="substring-after($m-s, ':')"/>
+
+      <xsl:variable name="hh">
+        <xsl:choose>
+          <xsl:when test="$ampm = 'PM'">
+            <xsl:value-of select="format-number($h + 12, '00')"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="format-number($h, '00')"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>     
+      <xsl:value-of select="concat($time-ampm,';')"/>
+
+  </xsl:template>
+</xsl:stylesheet>

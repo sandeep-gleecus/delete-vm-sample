@@ -1,0 +1,2 @@
+user_id:Normal,first_name:String,last_name:String,middle_initial:String,last_opened_project_id:Normal,is_admin:Normal,is_email_enabled:Normal,department:String,last_update_date:Date,is_busy:Normal,is_away:Normal,unread_messages:Normal,is_resource_admin:Normal,is_portfolio_admin:Normal,is_restricted:Normal,is_report_admin:Normal
+1,System,Administrator,NULL,NULL,1,1,NULL,1/1/2011,0,0,0,0,1,0,1

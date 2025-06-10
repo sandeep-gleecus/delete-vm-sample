@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TestSet_TestCasePositionInUse" xml:space="preserve">
+    <value>Указанное положение тестового случая уже используется</value>
+  </data>
+  <data name="TestSet_TestSetTestCaseIdNotExist" xml:space="preserve">
+    <value>Пройденный в testSetId и testSetTestCaseId тест не соответствует совпадающему маппируемому тестовому регистру в тестовом наборе!</value>
+  </data>
+  <data name="Incident_ClosedDateCannotBeBeforeDetected" xml:space="preserve">
+    <value>Закрытая дата не может быть до даты обнаружения.</value>
+  </data>
+  <data name="Incident_ClosedDateCannotBeBeforeStart" xml:space="preserve">
+    <value>Закрытая дата не может быть до даты начала</value>
+  </data>
+  <data name="Task_EndDateCannotBeBeforeStartDate" xml:space="preserve">
+    <value>Дата окончания не может быть до даты начала</value>
+  </data>
+  <data name="Task_EndDateOutsideReleaseRange" xml:space="preserve">
+    <value>Дата окончания этой задачи не может быть за пределами диапазона дат связанного с ней спринта/освобождения</value>
+  </data>
+  <data name="Task_EstimatedEffortNeededForInProgress" xml:space="preserve">
+    <value>Нужно задать оценочное усилие, чтобы перевести задачу в режим "В процессе выполнения".</value>
+  </data>
+  <data name="Task_NeedActualEffortForCompleted" xml:space="preserve">
+    <value>Вам необходимо предоставить Фактические усилия, чтобы задача была выполнена.</value>
+  </data>
+  <data name="Task_NeedEndDateForCompleted" xml:space="preserve">
+    <value>Вы должны указать дату окончания, чтобы задача была выполнена.</value>
+  </data>
+  <data name="Task_NeedEndDateForInProgress" xml:space="preserve">
+    <value>Вам необходимо указать предполагаемую дату окончания, чтобы задача была выполнена.</value>
+  </data>
+  <data name="Task_NeedEstimatedEffortForCompleted" xml:space="preserve">
+    <value>Вы должны предоставить оценку усилий, чтобы задача была выполнена.</value>
+  </data>
+  <data name="Task_NeedReleaseForCompleted" xml:space="preserve">
+    <value>Вам необходимо связать задачу с релизом/отпечатком, чтобы она была выполнена.</value>
+  </data>
+  <data name="Task_NeedReleaseForInProgress" xml:space="preserve">
+    <value>Необходимо связать задачу с выпуском/отпечатком, чтобы она стала In-Progress.</value>
+  </data>
+  <data name="Task_NeedStartDateForCompleted" xml:space="preserve">
+    <value>Вы должны указать дату начала, чтобы задача была выполнена.</value>
+  </data>
+  <data name="Task_NeedStartDateForInProgress" xml:space="preserve">
+    <value>Для выполнения задачи в процессе работы необходимо указать дату начала.</value>
+  </data>
+  <data name="Task_PercentCompleteNotInRange" xml:space="preserve">
+    <value>% Полное значение должно быть в диапазоне 0-100%.</value>
+  </data>
+  <data name="Task_RemainingEffortNeededForInProgress" xml:space="preserve">
+    <value>Нужно установить Остаточные усилия, чтобы перенести задание на выполнение.</value>
+  </data>
+  <data name="Task_StartDateOutsideReleaseRange" xml:space="preserve">
+    <value>Дата начала этой задачи не может быть за пределами диапазона дат связанного с ней спринта/освобождения</value>
+  </data>
+  <data name="TestRun_TestSetNotContainTestCases" xml:space="preserve">
+    <value>Переданный в тестовом наборе не содержит тестовых случаев</value>
+  </data>
+  <data name="TestSet_TestSetCannotHaveChildItems" xml:space="preserve">
+    <value>Тестовые наборы не могут иметь дочерние тестовые наборы или папки.</value>
+  </data>
+  <data name="Project_ArtifactNotExists" xml:space="preserve">
+    <value>Продукта {0} больше нет в системе.</value>
+  </data>
+  <data name="Project_Copy_Attachments" xml:space="preserve">
+    <value>Копирование приложений к продукту</value>
+  </data>
+  <data name="Project_Copy_CreateShell" xml:space="preserve">
+    <value>Создание нового продукта на основе существующего.</value>
+  </data>
+  <data name="Project_Copy_CustomProperties" xml:space="preserve">
+    <value>Копирование пользовательских свойств артефакта</value>
+  </data>
+  <data name="Project_Copy_Mappings" xml:space="preserve">
+    <value>Копирование требования, выпуск и отображение тестового случая</value>
+  </data>
+  <data name="Project_Copy_Releases" xml:space="preserve">
+    <value>Копирование релизов продуктов</value>
+  </data>
+  <data name="Project_Copy_Requirements" xml:space="preserve">
+    <value>Копирование требований к продукту</value>
+  </data>
+  <data name="Project_Copy_TestCases" xml:space="preserve">
+    <value>Копирование тестовых кейсов продукта</value>
+  </data>
+  <data name="Project_Copy_TestSets" xml:space="preserve">
+    <value>Копирование наборов для тестирования продуктов</value>
+  </data>
+  <data name="Project_Delete_Associations" xml:space="preserve">
+    <value>Удаление ассоциаций артефактов</value>
+  </data>
+  <data name="Project_Delete_Attachments" xml:space="preserve">
+    <value>Удаление вложений продукта</value>
+  </data>
+  <data name="Project_Delete_DataMappings" xml:space="preserve">
+    <value>Удаление отображений синхронизации данных</value>
+  </data>
+  <data name="Project_Delete_IncidentWorkflows" xml:space="preserve">
+    <value>Удаление случайных рабочих процессов</value>
+  </data>
+  <data name="Project_Delete_Project" xml:space="preserve">
+    <value>Удаление самого продукта</value>
+  </data>
+  <data name="Project_Delete_Releases" xml:space="preserve">
+    <value>Удаление релизов</value>
+  </data>
+  <data name="Project_Delete_Reports" xml:space="preserve">
+    <value>Удаление отчётов</value>
+  </data>
+  <data name="Project_Delete_Requirements" xml:space="preserve">
+    <value>Требования к удалению</value>
+  </data>
+  <data name="Project_Delete_TestCases" xml:space="preserve">
+    <value>Удаление тестовых случаев</value>
+  </data>
+  <data name="Project_Delete_TestRuns" xml:space="preserve">
+    <value>Удаление пробных запусков</value>
+  </data>
+  <data name="Project_Delete_TestSets" xml:space="preserve">
+    <value>Удаление наборов тестов</value>
+  </data>
+  <data name="TestRun_CreatingTestRuns" xml:space="preserve">
+    <value>Создание тестовых запусков из тестового случая(ов).</value>
+  </data>
+  <data name="TestRun_CreationCompleted" xml:space="preserve">
+    <value>Создание тестовых запусков завершено.</value>
+  </data>
+  <data name="TestRun_SavingPendingEntry" xml:space="preserve">
+    <value>Сохранение ожидающих входа тестовых запусков.</value>
+  </data>
+  <data name="BuildManager_BuildNotExists" xml:space="preserve">
+    <value>Построить '{0}' больше не существует в системе.</value>
+  </data>
+  <data name="BuildManager_BuildNotExistsForRevision" xml:space="preserve">
+    <value>Невозможно найти сборку для ревизии исходных текстов '{0}'.</value>
+  </data>
+  <data name="BuildManager_ReleaseNotExists" xml:space="preserve">
+    <value>Связанный с ним релиз/спинт RL{0} не существует в текущем продукте.</value>
+  </data>
+  <data name="CustomProperty_MaxValueError" xml:space="preserve">
+    <value>Введенное значение для '%field%' больше максимально допустимого значения %.</value>
+  </data>
+  <data name="CustomProperty_MinLengthError" xml:space="preserve">
+    <value>Минимальная длина для '%поле%' - %min% символов. Введенная строка имела символы %act%.</value>
+  </data>
+  <data name="CustomProperty_MinValueError" xml:space="preserve">
+    <value>Введенное значение для '%field%' меньше минимально допустимого значения %.</value>
+  </data>
+  <data name="CustomProperty_RegExError" xml:space="preserve">
+    <value>Введенное значение для '%field%' не соответствовало требуемому регулярному выражению.</value>
+  </data>
+  <data name="CustomProperty_RegExException_CannotChange" xml:space="preserve">
+    <value>Вы не можете изменить системное регулярное выражение.</value>
+  </data>
+  <data name="CustomProperty_RegExException_CannotDelete" xml:space="preserve">
+    <value>Вы не можете удалить системное регулярное выражение.</value>
+  </data>
+  <data name="CustomProperty_ValueNullError" xml:space="preserve">
+    <value>Поле "%поле%" требует значения.</value>
+  </data>
+  <data name="Incident_CompletionPercentOutOfRange" xml:space="preserve">
+    <value>Завершение Процент должен быть в диапазоне 0-100%</value>
+  </data>
+  <data name="Report_CannotDeleteDefaultReport" xml:space="preserve">
+    <value>Вы не можете удалить стандартный отчет/отчет по умолчанию.</value>
+  </data>
+  <data name="Report_ReportGenerationComplete" xml:space="preserve">
+    <value>Формирование отчета завершено.</value>
+  </data>
+  <data name="Report_ReportNotExist" xml:space="preserve">
+    <value>Отчета с id '{0}' в системе не существует!</value>
+  </data>
+  <data name="Report_StartGeneratingReport" xml:space="preserve">
+    <value>Начинаю генерацию отчетов.</value>
+  </data>
+  <data name="UserManager_NotResetLDAP" xml:space="preserve">
+    <value>Вы не можете сбросить пароль LDAP-пользователя через {0}!</value>
+  </data>
+  <data name="UserManager_SettingNotExists" xml:space="preserve">
+    <value>Коллекция пользовательских настроек '{0}' в системе не существует!</value>
+  </data>
+  <data name="ComponentManager_ArtifactNotExists" xml:space="preserve">
+    <value>Невозможно извлечь компонент с ID={0}.</value>
+  </data>
+  <data name="Project_Copy_AutomationHosts" xml:space="preserve">
+    <value>Копирование хостов автоматизации продукта</value>
+  </data>
+  <data name="Requirement_StepNotExists" xml:space="preserve">
+    <value>Невозможно извлечь шаг требования с ID={0}</value>
+  </data>
+  <data name="TaskManager_FolderNotExists" xml:space="preserve">
+    <value>Папка задач с ID={0} в системе не существует!</value>
+  </data>
+  <data name="Project_Copy_Components" xml:space="preserve">
+    <value>Копирование компонентов продукта</value>
+  </data>
+  <data name="Project_Copy_Tasks" xml:space="preserve">
+    <value>Копирование задач продукта</value>
+  </data>
+  <data name="SourceCode_BranchKeyNotFound" xml:space="preserve">
+    <value>Ключ ветки '{0}' не был найден таким обновляющим кэшем.</value>
+  </data>
+  <data name="SourceCode_BranchKeyNull" xml:space="preserve">
+    <value>Ключом ветки был NULL, так что освежающий кэш</value>
+  </data>
+  <data name="SourceCode_InvalidCacheLongMessage" xml:space="preserve">
+    <value>Кэш исходных текстов библиотеки управления версиями устарел и обновляется.</value>
+  </data>
+  <data name="DiscussionManager_CannotDeletePermanentDiscussion" xml:space="preserve">
+    <value>Вы не можете удалить этот комментарий, так как он отмечен как постоянный!</value>
+  </data>
+  <data name="Incident_StartDateCannotBeBeforeDetected" xml:space="preserve">
+    <value>Дата начала не может быть до даты обнаружения.</value>
+  </data>
+  <data name="Project_Copy_TestCaseFolders" xml:space="preserve">
+    <value>Копирование папок с пробными футлярами</value>
+  </data>
+  <data name="Project_Copy_TestSetFolders" xml:space="preserve">
+    <value>Копирование папок с набором для тестирования продуктов</value>
+  </data>
+  <data name="ReleaseManager_CreatingFakeVersionNumber" xml:space="preserve">
+    <value>Указанный номер версии не является уникальным, поэтому создание вымышленной версии</value>
+  </data>
+  <data name="ReleaseManager_IterationSummaryException" xml:space="preserve">
+    <value>У вас не может быть пункта спринтовой сводки.</value>
+  </data>
+  <data name="ReleaseManager_PhaseSummaryException" xml:space="preserve">
+    <value>У вас не может быть пункта с кратким описанием фазы.</value>
+  </data>
+  <data name="ReleaseManager_ReleaseIterationNotExistsForAssociation" xml:space="preserve">
+    <value>Релиз/отпечаток, с которым вы пытаетесь связать себя, больше не существует.</value>
+  </data>
+  <data name="ReleaseManager_VersionNumberNotUnique" xml:space="preserve">
+    <value>Указанный номер версии не является уникальным</value>
+  </data>
+  <data name="Releases_CannotRetrieveExistingRelease" xml:space="preserve">
+    <value>Не удается извлечь существующий релиз</value>
+  </data>
+  <data name="HierarchicalItem_CannotMoveUnderItself" xml:space="preserve">
+    <value>Была предпринята попытка переместить предмет под себя!</value>
+  </data>
+  <data name="Report_ReportConvertingToPdf" xml:space="preserve">
+    <value>Преобразование отчета в формат PDF</value>
+  </data>
+  <data name="TestConfigurationManager_TestConfigurationIdNotExist" xml:space="preserve">
+    <value>Указанная тестовая конфигурация не существует</value>
+  </data>
+  <data name="TestConfigurationManager_TestConfigurationPositionInUse" xml:space="preserve">
+    <value>Указанное положение тестовой конфигурации уже используется</value>
+  </data>
+  <data name="TestConfigurationManager_TestConfigurationSetIdNotExist" xml:space="preserve">
+    <value>Указанный набор тестовых конфигураций ({0}) не существует.</value>
+  </data>
+  <data name="GraphManager_GraphNotExist" xml:space="preserve">
+    <value>Указанного пользовательского графа с ID {0} в системе не существует!</value>
+  </data>
+  <data name="GraphManager_InvalidColumn" xml:space="preserve">
+    <value>Столбец '{0}' содержит нецифровые данные и не может быть взломан!</value>
+  </data>
+  <data name="ProjectTemplate_CannotDeleteActive" xml:space="preserve">
+    <value>Вы не можете удалить шаблон продукта, который используется продуктами!</value>
+  </data>
+  <data name="Project_Delete_Risks" xml:space="preserve">
+    <value>Удаление рисков</value>
+  </data>
+  <data name="Requirement_CannotSplitSummaryRequirement" xml:space="preserve">
+    <value>Вы не можете разделить суммарное требование!</value>
+  </data>
+  <data name="Requirement_NoDefaultTypeForProjectTemplate" xml:space="preserve">
+    <value>Для шаблона изделия PT{0} тип требования по умолчанию не найден!</value>
+  </data>
+  <data name="Risk_ClosedDateCannotBeBeforeCreated" xml:space="preserve">
+    <value>Закрытая дата не может быть до даты создания</value>
+  </data>
+  <data name="Risk_MitigationNotExists" xml:space="preserve">
+    <value>Невозможно получить информацию о снижении рисков с помощью ID={0}.</value>
+  </data>
+  <data name="Risk_NoDefaultTypeForProjectTemplate" xml:space="preserve">
+    <value>Для шаблона продукта PT{0} тип риска по умолчанию не найден!</value>
+  </data>
+  <data name="Risk_ReviewDateCannotBeBeforeCreated" xml:space="preserve">
+    <value>Дата просмотра не может быть до даты создания</value>
+  </data>
+  <data name="SourceCode_CannotDeleteCacheBecauseUpdateRunning" xml:space="preserve">
+    <value>Невозможно очистить кэш, так как обновление уже запущено.</value>
+  </data>
+  <data name="Task_CannotMakeParentChildOfCurrentTask" xml:space="preserve">
+    <value>Вы не можете сделать родительскую папку задачи одной из своих дочерних!</value>
+  </data>
+  <data name="Task_NoDefaultTypeForProjectTemplate" xml:space="preserve">
+    <value>Для шаблона продукта PT{0} тип задачи по умолчанию не найден!</value>
+  </data>
+  <data name="TestCase_CannotMakeParentChildOfCurrentTestCase" xml:space="preserve">
+    <value>Вы не можете сделать родительскую тестовую папку одним из своих детей!</value>
+  </data>
+  <data name="TestCase_NoDefaultTypeForProjectTemplate" xml:space="preserve">
+    <value>Для шаблона продукта PT{0} тип тестового случая по умолчанию не найден!</value>
+  </data>
+  <data name="TestSet_CannotMakeParentChildOfCurrentTestSet" xml:space="preserve">
+    <value>Вы не можете сделать папку с родительским набором тестов одной из своих дочерних!</value>
+  </data>
+  <data name="Template_Remap_Completed" xml:space="preserve">
+    <value>Изменение шаблона готового проекта</value>
+  </data>
+  <data name="Template_Remap_CustomFieldsFields_Completed" xml:space="preserve">
+    <value>Пользовательские поля удалены</value>
+  </data>
+  <data name="Template_Remap_DataSyncDisabled" xml:space="preserve">
+    <value>Отключены услуги синхронизации данных</value>
+  </data>
+  <data name="Template_Remap_DataSyncMappingsCleared" xml:space="preserve">
+    <value>Синхронизация данных Отображение полей синхронизации очищено</value>
+  </data>
+  <data name="Template_Remap_StandardFields_Completed" xml:space="preserve">
+    <value>Стандартные поля удалены</value>
+  </data>
+  <data name="Template_Remap_Starting" xml:space="preserve">
+    <value>Начало смены шаблона проекта</value>
+  </data>
+  <data name="Template_Remap_TestConfigurations_Completed" xml:space="preserve">
+    <value>Тестовые конфигурации перенесены</value>
+  </data>
+  <data name="ProjectTemplate_NotActive" xml:space="preserve">
+    <value>Указанный шаблон продукта {0} не активен и должен быть!</value>
+  </data>
+  <data name="ProjectTemplate_NotExists" xml:space="preserve">
+    <value>Указанного шаблона продукта {0} не существует!</value>
+  </data>
+  <data name="ProjectTemplate_ProjectTemplateIdTheSame" xml:space="preserve">
+    <value>Была сделана попытка изменить шаблон продукта на тот же шаблон и поэтому была проигнорирована!</value>
+  </data>
+  <data name="Template_Remap_FinishingInfo" xml:space="preserve">
+    <value>Успешно изменен продукт PR{0} с шаблона {1} на шаблон {2}.</value>
+  </data>
+  <data name="Template_Remap_StartingInfo" xml:space="preserve">
+    <value>Запуск процесса изменения продукта PR{0} с шаблона {1} на шаблон {2}.</value>
+  </data>
+  <data name="Template_Remap_UserViewSettingsCleared" xml:space="preserve">
+    <value>Очищены настройки просмотра пользователем продукта, сохранены фильтры и сортировки</value>
+  </data>
+  <data name="Template_Remap_CustomFieldForArtifactType_Completed" xml:space="preserve">
+    <value>Пользовательские поля удалены для {0}</value>
+  </data>
+  <data name="SavedFilterManager_UnableToRetrieveFilter" xml:space="preserve">
+    <value>Невозможно получить сохраненный фильтр с ID = {0}.</value>
+  </data>
+  <data name="TestRun_TestConfigurationBlank" xml:space="preserve">
+    <value>Этот тестовый набор не может быть выполнен, так как выбранная тестовая конфигурация не имеет записей.</value>
+  </data>
+  <data name="UserManager_NewUserEmail_Approved" xml:space="preserve">
+    <value>Для вас была создана учетная запись {0} со следующей информацией о входе в систему:
+
+URL-АДРЕС: {1}
+Имя пользователя: {2}
+Пароль: {3}
+
+По всем вопросам обращайтесь к Системному администратору.</value>
+  </data>
+  <data name="UserManager_NewUserEmail_Approved_LDAPPass" xml:space="preserve">
+    <value>(сетевой пароль)</value>
+  </data>
+  <data name="UserManager_NewUserEmail_Oauth" xml:space="preserve">
+    <value>Учетная запись {0} была создана для вас со следующей информацией о входе в систему, используя ваш логин {4}, at: {1}
+
+Как только аккаунт будет одобрен, вы получите отдельное письмо по электронной почте, в котором будет указано, что аккаунт активен и готов к использованию.
+По всем вопросам обращайтесь к Системному администратору.</value>
+  </data>
+  <data name="UserManager_NewUserEmail_Unapproved" xml:space="preserve">
+    <value>Для вас была создана учетная запись {0} со следующей информацией о входе в систему:
+
+URL-АДРЕС: {1}
+Имя пользователя: {2}
+
+Как только аккаунт будет одобрен, вы получите отдельное письмо по электронной почте, в котором будет указано, что аккаунт активен и готов к использованию.
+По всем вопросам обращайтесь к Системному администратору.</value>
+  </data>
+</root>

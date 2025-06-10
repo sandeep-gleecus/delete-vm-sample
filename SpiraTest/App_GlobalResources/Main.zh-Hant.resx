@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Admin_EditWorkflows" xml:space="preserve">
+    <value>編輯工作流程</value>
+  </data>
+	<data name="Admin_Notification_ArtifactFields" xml:space="preserve">
+    <value>項目欄位</value>
+  </data>
+	<data name="Admin_Notification_ArtifactNotificationEnabled" xml:space="preserve">
+    <value>已啟動？</value>
+  </data>
+	<data name="Admin_Notification_ArtifactOpener" xml:space="preserve">
+    <value>項目開啟者/建立者：</value>
+  </data>
+	<data name="Admin_Notification_ArtifactOwner" xml:space="preserve">
+    <value>項目擁有者：</value>
+  </data>
+	<data name="Admin_Notification_ArtifactPrefix" xml:space="preserve">
+    <value>前綴</value>
+  </data>
+	<data name="Admin_Notification_ArtifactType" xml:space="preserve">
+    <value>項目類型</value>
+  </data>
+	<data name="Admin_Notification_ArtifactUsers" xml:space="preserve">
+    <value>使用者和專案角色</value>
+  </data>
+	<data name="Admin_Notification_ArtifactUsersRoles" xml:space="preserve">
+    <value>使用者 / 專案角色</value>
+  </data>
+	<data name="Admin_Notification_BackToNotificationList" xml:space="preserve">
+    <value>回到通知事件清單</value>
+  </data>
+	<data name="Global_Edit" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+	<data name="Admin_Notification_EMailServerSettings" xml:space="preserve">
+    <value>電子郵件設定</value>
+  </data>
+	<data name="Admin_Notification_EventName" xml:space="preserve">
+    <value>事件名稱</value>
+  </data>
+	<data name="Admin_Notification_NavHeader" xml:space="preserve">
+    <value>通知</value>
+  </data>
+	<data name="Admin_Notification_NewEvent" xml:space="preserve">
+    <value>新增事件</value>
+  </data>
+	<data name="Admin_Notification_NotifyOnChange" xml:space="preserve">
+    <value>變更時通知？</value>
+  </data>
+	<data name="Admin_Notification_OnCreation" xml:space="preserve">
+    <value>建立時？</value>
+  </data>
+	<data name="Admin_Notification_ProjectRoles" xml:space="preserve">
+    <value>專案角色：</value>
+  </data>
+	<data name="Global_Test" xml:space="preserve">
+    <value>測試</value>
+  </data>
+	<data name="Admin_Notification_ViewEditNotification" xml:space="preserve">
+    <value>通知事件</value>
+  </data>
+	<data name="Admin_Notification_ViewEditNotificationEvent" xml:space="preserve">
+    <value>通知事件詳細資訊</value>
+  </data>
+	<data name="Admin_Notification_ViewNotificationTemplates" xml:space="preserve">
+    <value>通知範本</value>
+  </data>
+	<data name="Global_Active" xml:space="preserve">
+    <value>使用中？</value>
+  </data>
+	<data name="Global_Artifact" xml:space="preserve">
+    <value>項目</value>
+  </data>
+	<data name="Global_DisplayDataFor" xml:space="preserve">
+    <value>顯示資料</value>
+  </data>
+	<data name="Global_GoTo" xml:space="preserve">
+    <value>到 (G)</value>
+  </data>
+	<data name="Global_Operations" xml:space="preserve">
+    <value>操作</value>
+  </data>
+	<data name="Global_SelectedRelease" xml:space="preserve">
+    <value>選擇版本：</value>
+  </data>
+	<data name="Global_Step" xml:space="preserve">
+    <value>步驟</value>
+  </data>
+	<data name="Global_Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="IterationPlan_MainLegend" xml:space="preserve">
+    <value>顯示已選擇版本的迭代計畫：</value>
+  </data>
+	<data name="Login_DontHaveAccount" xml:space="preserve">
+    <value>沒有帳號？</value>
+  </data>
+	<data name="Login_EnterUserNamePassword" xml:space="preserve">
+    <value>請輸入您的名稱與密碼並按下登入按鈕</value>
+  </data>
+	<data name="Login_ForgotPassword" xml:space="preserve">
+    <value>忘記您的密碼？</value>
+  </data>
+	<data name="Login_KeepLoggedIn" xml:space="preserve">
+    <value>保持登錄</value>
+  </data>
+	<data name="Login_Password" xml:space="preserve">
+    <value>密碼</value>
+  </data>
+	<data name="Login_UserName" xml:space="preserve">
+    <value>使用者名稱</value>
+  </data>
+	<data name="ProjectList_AddItems" xml:space="preserve">
+    <value>新增心目</value>
+  </data>
+	<data name="ProjectList_AllProjects" xml:space="preserve">
+    <value>所有專案</value>
+  </data>
+	<data name="ProjectList_BrowseView" xml:space="preserve">
+    <value>反為一般檢視</value>
+  </data>
+	<data name="ProjectList_CurrentProject" xml:space="preserve">
+    <value>目前專案</value>
+  </data>
+	<data name="ProjectList_DesignView" xml:space="preserve">
+    <value>修改佈局/設定</value>
+  </data>
+	<data name="ProjectList_MyAssignedIncidents" xml:space="preserve">
+    <value>我的已指派事件</value>
+  </data>
+	<data name="ProjectList_MyAssignedRequirements" xml:space="preserve">
+    <value>我的已指派需求</value>
+  </data>
+	<data name="ProjectList_MyAssignedTasks" xml:space="preserve">
+    <value>我的已指派任務</value>
+  </data>
+	<data name="ProjectList_MyAssignedTestCases" xml:space="preserve">
+    <value>我的已指派測試案例</value>
+  </data>
+	<data name="ProjectList_MyAssignedTestSets" xml:space="preserve">
+    <value>我的已指派測試集</value>
+  </data>
+	<data name="ProjectList_MyDetectedIncidents" xml:space="preserve">
+    <value>我的已檢測事件</value>
+  </data>
+	<data name="ProjectList_MyPage" xml:space="preserve">
+    <value>我的頁面</value>
+  </data>
+	<data name="ProjectList_MyPendingTestRuns" xml:space="preserve">
+    <value>我的未完成測試執行</value>
+  </data>
+	<data name="ProjectList_MyProjects" xml:space="preserve">
+    <value>我的專案</value>
+  </data>
+	<data name="ProjectList_MySavedReports" xml:space="preserve">
+    <value>我已儲存的報表</value>
+  </data>
+	<data name="ProjectList_MySavedSearches" xml:space="preserve">
+    <value>我已儲存的查詢</value>
+  </data>
+	<data name="ProjectList_MyWeather" xml:space="preserve">
+    <value>我的天氣</value>
+  </data>
+	<data name="ProjectList_WelcomePrefix" xml:space="preserve">
+    <value>歡迎</value>
+  </data>
+	<data name="ProjectList_WelcomeSuffix" xml:space="preserve">
+    <value>到您的儀表板</value>
+  </data>
+	<data name="TestCaseExecution_ActualResult" xml:space="preserve">
+    <value>實際結果</value>
+  </data>
+	<data name="TestCaseExecution_ActualResult2" xml:space="preserve">
+    <value>若有差異時請輸入實際測試結果，並按下適當按鈕：</value>
+  </data>
+	<data name="TestCaseExecution_ExistingIncidents" xml:space="preserve">
+    <value>此測試步驟已記錄下列的事件：</value>
+  </data>
+	<data name="TestCaseExecution_ExpectedResult" xml:space="preserve">
+    <value>預期結果：</value>
+  </data>
+	<data name="TestCaseExecution_FollowDirections" xml:space="preserve">
+    <value>請按照下框中的指示說明：</value>
+  </data>
+	<data name="TestCaseExecution_IncidentCustomProperties" xml:space="preserve">
+    <value>且為新事件輸入下列自訂屬性：</value>
+  </data>
+	<data name="TestCaseExecution_SampleData" xml:space="preserve">
+    <value>範例資料：</value>
+  </data>
+	<data name="TestExecutionService_IncidentText_ActualResult" xml:space="preserve">
+    <value>實際結果</value>
+  </data>
+	<data name="TestExecutionService_IncidentText_Description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+	<data name="TestExecutionService_IncidentText_ExpectedResult" xml:space="preserve">
+    <value>預期結果</value>
+  </data>
+	<data name="TestSetDetails_TestCaseDragDropLegend" xml:space="preserve">
+    <value>若要更改測試案例順序，請按下測試案例圖示並拖曳到適當位置。</value>
+  </data>
+	<data name="Login_LicensedTo" xml:space="preserve">
+    <value>授權給：</value>
+  </data>
+	<data name="Notifications_EnterListofEmails" xml:space="preserve">
+    <value>區分電子郵件清單；</value>
+  </data>
+	<data name="Notifications_SelectProjectUser" xml:space="preserve">
+    <value>從專案中選擇將發送至的使用者。</value>
+  </data>
+	<data name="Notifications_SendEmailTo" xml:space="preserve">
+    <value>寄送此項目至</value>
+  </data>
+	<data name="Global_BlankforDefault" xml:space="preserve">
+    <value>保留預設值為空。</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_Intro" xml:space="preserve">
+    <value>請輸入/編輯下列測試自動化引擎資訊。必要欄位以 &lt;b&gt;粗體&lt;/b&gt; 表示：</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_LinkHome" xml:space="preserve">
+    <value>&lt;&lt; 返回至測試自動化引擎首頁</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_NewProvider" xml:space="preserve">
+    <value>新增引擎</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_Title" xml:space="preserve">
+    <value>編輯自動化引擎</value>
+  </data>
+	<data name="Admin_AutomationEngines_Intro1" xml:space="preserve">
+    <value>可與多種有彈性、開放架構、有效的測試系統引擎庫的外部測試自動化系統整合</value>
+  </data>
+	<data name="Admin_AutomationEngines_Intro2" xml:space="preserve">
+    <value>此頁允許您檢視、新增、修改測試自動化引擎的清單與修改其設定</value>
+  </data>
+	<data name="Admin_AutomationEngines_Title" xml:space="preserve">
+    <value>測試自動化引擎</value>
+  </data>
+	<data name="Global_AddDiscussion" xml:space="preserve">
+    <value>欲新增評論，請於下方輸入後按下[儲存]或[新增評論]：</value>
+  </data>
+	<data name="Global_Discussion" xml:space="preserve">
+    <value>評論</value>
+  </data>
+	<data name="Global_ExistingDiscussion" xml:space="preserve">
+    <value>已存在的評論</value>
+  </data>
+	<data name="Global_hours" xml:space="preserve">
+    <value>小時</value>
+  </data>
+	<data name="Global_BackTo" xml:space="preserve">
+    <value>&amp;lt;&amp;lt; 回到</value>
+  </data>
+	<data name="Resources_ResourceList" xml:space="preserve">
+    <value>資源列表</value>
+  </data>
+	<data name="IterationPlan_IncludeTasks" xml:space="preserve">
+    <value>包含任務</value>
+  </data>
+	<data name="UserProfile_ConfirmNewPassword" xml:space="preserve">
+    <value>確認密碼：</value>
+  </data>
+	<data name="UserProfile_CurrentPassword" xml:space="preserve">
+    <value>目前密碼：</value>
+  </data>
+	<data name="UserProfile_EmailAddress" xml:space="preserve">
+    <value>電子郵件地址：</value>
+  </data>
+	<data name="UserProfile_EnableNotifications" xml:space="preserve">
+    <value>啟用電子郵件通知：</value>
+  </data>
+	<data name="UserProfile_FirstName" xml:space="preserve">
+    <value>名：</value>
+  </data>
+	<data name="UserProfile_LastName" xml:space="preserve">
+    <value>姓：</value>
+  </data>
+	<data name="UserProfile_LDAPDN" xml:space="preserve">
+    <value>LDAP 網域名稱：</value>
+  </data>
+	<data name="UserProfile_MiddleInitial" xml:space="preserve">
+    <value>中間名：</value>
+  </data>
+	<data name="UserProfile_NameId" xml:space="preserve">
+    <value>使用者名稱/編號：</value>
+  </data>
+	<data name="UserProfile_NewPassword" xml:space="preserve">
+    <value>新密碼：</value>
+  </data>
+	<data name="UserProfile_TabChangePassword" xml:space="preserve">
+    <value>更改密碼</value>
+  </data>
+	<data name="UserProfile_TabEmailPreferences" xml:space="preserve">
+    <value>電子郵件偏好</value>
+  </data>
+	<data name="UserProfile_TabLDAPSettings" xml:space="preserve">
+    <value>LDAP 設定</value>
+  </data>
+	<data name="Attachment_NotExistError" xml:space="preserve">
+    <value>找不到附件檔案。({0})</value>
+  </data>
+	<data name="TestRunDetails_ActualDuration" xml:space="preserve">
+    <value>實際工期：</value>
+  </data>
+	<data name="TestRunDetails_EstimatedDuration" xml:space="preserve">
+    <value>預估工期：</value>
+  </data>
+	<data name="TestRunDetails_AutomationHost" xml:space="preserve">
+    <value>自動化主機：</value>
+  </data>
+	<data name="TestRunDetails_ExecutionDate" xml:space="preserve">
+    <value>執行日期：</value>
+  </data>
+	<data name="TestRunDetails_ExecutionStatus" xml:space="preserve">
+    <value>執行狀態：</value>
+  </data>
+	<data name="TestRunDetails_Release" xml:space="preserve">
+    <value>版本 #：</value>
+  </data>
+	<data name="TestRunDetails_TestCase" xml:space="preserve">
+    <value>測試案例 #：</value>
+  </data>
+	<data name="TestRunDetails_TesterName" xml:space="preserve">
+    <value>測試者名稱：</value>
+  </data>
+	<data name="TestRunDetails_TestRunType" xml:space="preserve">
+    <value>測試執行類型：</value>
+  </data>
+	<data name="TestRunDetails_TestSet" xml:space="preserve">
+    <value>測試集：</value>
+  </data>
+	<data name="UserProfile_RegionalSettings" xml:space="preserve">
+    <value>區域設定</value>
+  </data>
+	<data name="UserDetails_ToChangeCultureSettings" xml:space="preserve">
+    <value>請從下方清單中選擇區域。此設定會決定此系統數字、日期的格式、套用的語言。若您沒有選擇任一區域時，系統自動套用預設值。</value>
+  </data>
+	<data name="UserProfile_UserCulture" xml:space="preserve">
+    <value>使用者文化：</value>
+  </data>
+	<data name="Global_Copyright" xml:space="preserve">
+    <value>版權所有</value>
+  </data>
+	<data name="EmailPassword_EnterUserName" xml:space="preserve">
+    <value>請輸入您的使用者名稱和電子郵寄地址，然後按一下重新開機按鈕 [重置]您的密碼。</value>
+  </data>
+	<data name="EmailPassword_NewPasswordWillBeSent" xml:space="preserve">
+    <value>新密碼將會發送給您，您的設定檔中存儲的電子郵寄地址。</value>
+  </data>
+	<data name="EmailPassword_ReturnToLogin" xml:space="preserve">
+    <value>返回登錄頁</value>
+  </data>
+	<data name="EmailPassword_Title" xml:space="preserve">
+    <value>忘記密碼</value>
+  </data>
+	<data name="ForceSession_Body1" xml:space="preserve">
+    <value>您可選擇</value>
+  </data>
+	<data name="ForceSession_Body2" xml:space="preserve">
+    <value>嘗試其他使用者名稱或</value>
+  </data>
+	<data name="ForceSession_Body3" xml:space="preserve">
+    <value>強制登出其他位置。</value>
+  </data>
+	<data name="ForceSession_Title" xml:space="preserve">
+    <value>已在其他位置登入。</value>
+  </data>
+	<data name="GlobalNavigation_Administration" xml:space="preserve">
+    <value>管理</value>
+  </data>
+	<data name="GlobalNavigation_Help" xml:space="preserve">
+    <value>說明？</value>
+  </data>
+	<data name="GlobalNavigation_HelpTooltip" xml:space="preserve">
+    <value>啟動線上說明</value>
+  </data>
+	<data name="GlobalNavigation_MyProfile" xml:space="preserve">
+    <value>我的設定</value>
+  </data>
+	<data name="Global_NumberRowsToDisplay" xml:space="preserve">
+    <value>顯示的行數</value>
+  </data>
+	<data name="Global_NumberRowsToDisplayTooltip" xml:space="preserve">
+    <value>此屬性限制可顯示的資料行數</value>
+  </data>
+	<data name="Global_Welcome" xml:space="preserve">
+    <value>歡迎</value>
+  </data>
+	<data name="Global_WelcomeTo" xml:space="preserve">
+    <value>歡迎來到</value>
+  </data>
+	<data name="NeedAccount_EnterInfo" xml:space="preserve">
+    <value>請在下麵的表單中輸入您的姓名和電子郵寄地址。 &lt; br / 〉一封電子郵件將發送給管理員請求一個新的帳戶：</value>
+  </data>
+	<data name="NeedAccount_Heading1" xml:space="preserve">
+    <value>新 {0} 帳戶</value>
+  </data>
+	<data name="NeedAccount_Title" xml:space="preserve">
+    <value>請求新的帳戶</value>
+  </data>
+	<data name="SiteMap_AutomationHosts" xml:space="preserve">
+    <value>自動化主機</value>
+  </data>
+	<data name="SiteMap_Documents" xml:space="preserve">
+    <value>文件</value>
+  </data>
+	<data name="SiteMap_Incidents" xml:space="preserve">
+    <value>事件名稱</value>
+  </data>
+	<data name="SiteMap_Iterations" xml:space="preserve">
+    <value>迭代</value>
+  </data>
+	<data name="SiteMap_MyPage" xml:space="preserve">
+    <value>我的頁面</value>
+  </data>
+	<data name="SiteMap_Planning" xml:space="preserve">
+    <value>計畫</value>
+  </data>
+	<data name="SiteMap_ProjectGroupHome" xml:space="preserve">
+    <value>專案群組首頁</value>
+  </data>
+	<data name="SiteMap_ProjectHome" xml:space="preserve">
+    <value>專案首頁</value>
+  </data>
+	<data name="SiteMap_Releases" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="SiteMap_Reporting" xml:space="preserve">
+    <value>報表</value>
+  </data>
+	<data name="SiteMap_Requirements" xml:space="preserve">
+    <value>需求</value>
+  </data>
+	<data name="SiteMap_Resources" xml:space="preserve">
+    <value>資源</value>
+  </data>
+	<data name="SiteMap_SourceCode" xml:space="preserve">
+    <value>原始碼</value>
+  </data>
+	<data name="SiteMap_Tasks" xml:space="preserve">
+    <value>任務</value>
+  </data>
+	<data name="SiteMap_TestCases" xml:space="preserve">
+    <value>測試案例 #：</value>
+  </data>
+	<data name="SiteMap_Testing" xml:space="preserve">
+    <value>測試</value>
+  </data>
+	<data name="SiteMap_TestRuns" xml:space="preserve">
+    <value>測試執行</value>
+  </data>
+	<data name="SiteMap_TestSets" xml:space="preserve">
+    <value>測試集</value>
+  </data>
+	<data name="SiteMap_Tracking" xml:space="preserve">
+    <value>追蹤</value>
+  </data>
+	<data name="ErrorPage_MyPage" xml:space="preserve">
+    <value>我的頁面</value>
+  </data>
+	<data name="ErrorPage_PleaseClick" xml:space="preserve">
+    <value>發生系統錯誤…請點擊</value>
+  </data>
+	<data name="ErrorPage_ReturnToApp" xml:space="preserve">
+    <value>返回應用程式的連結</value>
+  </data>
+	<data name="ErrorPage_Title" xml:space="preserve">
+    <value>系統錯誤</value>
+  </data>
+	<data name="InvalidDatabase_Title" xml:space="preserve">
+    <value>無效的資料庫修訂版本</value>
+  </data>
+	<data name="InvalidLicense_Change" xml:space="preserve">
+    <value>更改</value>
+  </data>
+	<data name="InvalidLicense_LicenseDetails" xml:space="preserve">
+    <value>授權詳細資訊</value>
+  </data>
+	<data name="InvalidLicense_Login" xml:space="preserve">
+    <value>登入</value>
+  </data>
+	<data name="InvalidLicense_Page" xml:space="preserve">
+    <value>頁。</value>
+  </data>
+	<data name="InvalidLicense_ReturnTo" xml:space="preserve">
+    <value>返回</value>
+  </data>
+	<data name="InvalidLicense_Title" xml:space="preserve">
+    <value>無效的伺服器授權</value>
+  </data>
+	<data name="WeatherBox_AsOf" xml:space="preserve">
+    <value>作為的</value>
+  </data>
+	<data name="WeatherBox_ClosestWeatherStation" xml:space="preserve">
+    <value>最接近的氣象站，為您的 location,"{0}"was: &lt;br /&gt; Station: {1} {2} 在 &lt;br/&gt; 以下 {3}</value>
+  </data>
+	<data name="WeatherBox_CurrentlyIn" xml:space="preserve">
+    <value>目前在</value>
+  </data>
+	<data name="WeatherBox_CurrentTemperature" xml:space="preserve">
+    <value>當前溫度</value>
+  </data>
+	<data name="WeatherBox_FeelsLike" xml:space="preserve">
+    <value>感覺</value>
+  </data>
+	<data name="WeatherBox_Humidity" xml:space="preserve">
+    <value>濕度</value>
+  </data>
+	<data name="WeatherBox_LocationSetting" xml:space="preserve">
+    <value>位置</value>
+  </data>
+	<data name="WeatherBox_LocationSettingTooltip" xml:space="preserve">
+    <value>您所在的位置： 郵遞區號，市科技州/省，或"Lat，Lon"</value>
+  </data>
+	<data name="WeatherBox_MetricSetting" xml:space="preserve">
+    <value>公制單位？</value>
+  </data>
+	<data name="WeatherBox_MetricSettingTooltip" xml:space="preserve">
+    <value>如果選中，則報告度量單位。</value>
+  </data>
+	<data name="WeatherBox_MyWeather" xml:space="preserve">
+    <value>我的天氣</value>
+  </data>
+	<data name="WeatherBox_PredictedHigh" xml:space="preserve">
+    <value>高預測</value>
+  </data>
+	<data name="WeatherBox_PredictedLow" xml:space="preserve">
+    <value>預測低</value>
+  </data>
+	<data name="WeatherBox_Tomorrow" xml:space="preserve">
+    <value>明天</value>
+  </data>
+	<data name="WeatherBox_TomorrowsHigh" xml:space="preserve">
+    <value>明天的高</value>
+  </data>
+	<data name="WeatherBox_TomorrowsLow" xml:space="preserve">
+    <value>明天的低</value>
+  </data>
+	<data name="WeatherBox_Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+	<data name="WeatherBox_WeatherFor" xml:space="preserve">
+    <value>天氣</value>
+  </data>
+	<data name="WeatherBox_Wind" xml:space="preserve">
+    <value>風</value>
+  </data>
+	<data name="WeatherBox_YourLocalWeatherReport" xml:space="preserve">
+    <value>您當地的天氣報告</value>
+  </data>
+	<data name="Global_ViewAll" xml:space="preserve">
+    <value>檢視全部</value>
+  </data>
+	<data name="Global_ViewDetails" xml:space="preserve">
+    <value>檢視詳細資訊</value>
+  </data>
+	<data name="ProjectHome_AddItems" xml:space="preserve">
+    <value>新增項目</value>
+  </data>
+	<data name="ProjectHome_IncidentAging" xml:space="preserve">
+    <value>事件老化過程</value>
+  </data>
+	<data name="ProjectHome_IncidentTestCoverage" xml:space="preserve">
+    <value>事件測試涵蓋範圍</value>
+  </data>
+	<data name="ProjectHome_LateFinishingTasks" xml:space="preserve">
+    <value>延遲完成任務</value>
+  </data>
+	<data name="ProjectHome_LateStartingTasks" xml:space="preserve">
+    <value>延遲開始任務</value>
+  </data>
+	<data name="ProjectHome_ModifyLayoutSettings" xml:space="preserve">
+    <value>修改佈局/設定</value>
+  </data>
+	<data name="ProjectHome_ProjectOverview" xml:space="preserve">
+    <value>專案概述</value>
+  </data>
+	<data name="ProjectHome_ReleaseTaskProgress" xml:space="preserve">
+    <value>發佈任務進度</value>
+  </data>
+	<data name="ProjectHome_RequirementsCoverage" xml:space="preserve">
+    <value>需求涵蓋範圍</value>
+  </data>
+	<data name="ProjectHome_RequirementsRegressionCoverage" xml:space="preserve">
+    <value>需求迴歸涵蓋範圍</value>
+  </data>
+	<data name="ProjectHome_RequirementsSummary" xml:space="preserve">
+    <value>需求摘要</value>
+  </data>
+	<data name="ProjectHome_ReturntoNormalView" xml:space="preserve">
+    <value>返回至一般檢視</value>
+  </data>
+	<data name="ProjectHome_TestSetStatus" xml:space="preserve">
+    <value>測試集狀態</value>
+  </data>
+	<data name="Global_UsePrioritySeveritySetting" xml:space="preserve">
+    <value>使用優先權或重要性</value>
+  </data>
+	<data name="Global_UsePrioritySeveritySettingTooltip" xml:space="preserve">
+    <value>決定是否以已顯示/已排序的欄位顯示優先權或重要性</value>
+  </data>
+	<data name="Global_ViewReleaseDetails" xml:space="preserve">
+    <value>檢視發佈詳細資訊</value>
+  </data>
+	<data name="IncidentAging_AgingIntervalSetting" xml:space="preserve">
+    <value>老化間隔(天)</value>
+  </data>
+	<data name="IncidentAging_AgingIntervalSettingTooltip" xml:space="preserve">
+    <value>儲存使用的時間間隔(# 天內)</value>
+  </data>
+	<data name="IncidentAging_AgingRangeSetting" xml:space="preserve">
+    <value>老化範圍(天)</value>
+  </data>
+	<data name="IncidentAging_AgingRangeSettingTooltip" xml:space="preserve">
+    <value>儲存顯示於圖表的最大老化</value>
+  </data>
+	<data name="IncidentSummary_DisplayingForIncidentType" xml:space="preserve">
+    <value>顯示事件類型:</value>
+  </data>
+	<data name="ProjectHome_IncidentOpenCount" xml:space="preserve">
+    <value>事件開啟次數</value>
+  </data>
+	<data name="ProjectHome_IncidentSummary" xml:space="preserve">
+    <value>事件摘要</value>
+  </data>
+	<data name="ProjectHome_ReleaseTestSummary" xml:space="preserve">
+    <value>發佈測試摘要</value>
+  </data>
+	<data name="ProjectHome_RequirementIncidentCount" xml:space="preserve">
+    <value>需求事件次數</value>
+  </data>
+	<data name="ProjectHome_TestExecutionStatus" xml:space="preserve">
+    <value>測試執行狀態</value>
+  </data>
+	<data name="ProjectHome_TopOpenIssues" xml:space="preserve">
+    <value>熱門的未解決事件</value>
+  </data>
+	<data name="ProjectHome_TopOpenRisks" xml:space="preserve">
+    <value>熱門的未解決風險</value>
+  </data>
+	<data name="RequirementIncidentCount_OnlyIncludeOpenSetting" xml:space="preserve">
+    <value>只包含未解決的事件列</value>
+  </data>
+	<data name="RequirementIncidentCount_OnlyIncludeOpenSettingTooltip" xml:space="preserve">
+    <value>是否顯示全部有事件的需求，或僅顯示未解決的事件</value>
+  </data>
+	<data name="TestExecutionStatus_DailyRunCount" xml:space="preserve">
+    <value>每日執行次數:</value>
+  </data>
+	<data name="TestExecutionStatus_TotalNumRuns" xml:space="preserve">
+    <value>總計執行 # 次</value>
+  </data>
+	<data name="TestSetStatus_OverdueTestSets" xml:space="preserve">
+    <value>逾期的測試集</value>
+  </data>
+	<data name="Global_NumReqs" xml:space="preserve">
+    <value># 需求</value>
+  </data>
+	<data name="Global_NumRuns" xml:space="preserve">
+    <value># 執行</value>
+  </data>
+	<data name="Global_NumTests" xml:space="preserve">
+    <value># 測試</value>
+  </data>
+	<data name="ProjectGroupHome_DisplayProjectDetailSetting" xml:space="preserve">
+    <value>顯示專案詳細資訊：</value>
+  </data>
+	<data name="ProjectGroupHome_DisplayProjectDetailSettingTooltip" xml:space="preserve">
+    <value>是否應顯示個別的詳細記錄</value>
+  </data>
+	<data name="ProjectGroupHome_DisplaySummaryGraphSetting" xml:space="preserve">
+    <value>顯示摘要圖形：</value>
+  </data>
+	<data name="ProjectGroupHome_DisplaySummaryGraphSettingTooltip" xml:space="preserve">
+    <value>是否應顯示專案群組匯總圖</value>
+  </data>
+	<data name="ProjectGroupHome_GroupOverview" xml:space="preserve">
+    <value>群組概要</value>
+  </data>
+	<data name="ProjectGroupHome_IncidentAging" xml:space="preserve">
+    <value>事件的老化</value>
+  </data>
+	<data name="ProjectGroupHome_ProjectList" xml:space="preserve">
+    <value>專案清單</value>
+  </data>
+	<data name="ProjectGroupHome_RequirementsCoverage" xml:space="preserve">
+    <value>需求涵蓋範圍</value>
+  </data>
+	<data name="ProjectGroupHome_TaskProgress" xml:space="preserve">
+    <value>任務進度</value>
+  </data>
+	<data name="ProjectGroupHome_TestExecutionStatus" xml:space="preserve">
+    <value>測試執行狀態</value>
+  </data>
+	<data name="ProjectGroupHome_TopOpenIssues" xml:space="preserve">
+    <value>熱門的未解決事件</value>
+  </data>
+	<data name="ProjectGroupHome_TopOpenRisks" xml:space="preserve">
+    <value>熱門的未解決風險</value>
+  </data>
+	<data name="Global_NewRequirement" xml:space="preserve">
+    <value>新需求</value>
+  </data>
+	<data name="AutomationHosts_AutomationHostsForProject" xml:space="preserve">
+    <value>此專案的自動化主機</value>
+  </data>
+	<data name="Global_Displaying" xml:space="preserve">
+    <value>顯示</value>
+  </data>
+	<data name="Global_OutOf" xml:space="preserve">
+    <value>超過</value>
+  </data>
+	<data name="IncidentList_IncidentsForProject" xml:space="preserve">
+    <value>此專案的事件</value>
+  </data>
+	<data name="ResourceList_DisplayingResourceUsage" xml:space="preserve">
+    <value>顯示目前的專案或選擇的版本資源使用狀況</value>
+  </data>
+	<data name="TaskList_TasksForProject" xml:space="preserve">
+    <value>此專案的任務</value>
+  </data>
+	<data name="TestCaseList_TestCasesForRelease" xml:space="preserve">
+    <value>此版本的測試案例</value>
+  </data>
+	<data name="TestRunList_TestRunsForProject" xml:space="preserve">
+    <value>此專案的測試執行</value>
+  </data>
+	<data name="ArtifactEmail_EmailAddresses" xml:space="preserve">
+    <value>電子郵件地址：</value>
+  </data>
+	<data name="ArtifactEmail_MessageSubject" xml:space="preserve">
+    <value>訊息主旨：</value>
+  </data>
+	<data name="ArtifactEmail_ProjectUser" xml:space="preserve">
+    <value>專案使用者：</value>
+  </data>
+	<data name="CustomPropertyPanel_ArtifactCustomProperties" xml:space="preserve">
+    <value>以下是此工作的自訂屬性：</value>
+  </data>
+	<data name="CustomPropertyPanel_FieldIsRequired" xml:space="preserve">
+    <value>{0} 為必填欄位</value>
+  </data>
+	<data name="TestCaseSelector_AvailableTestCases" xml:space="preserve">
+    <value>可用的測試案例：</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestCaseFromRequirement" xml:space="preserve">
+    <value>為此需求建立測試案例</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestCaseFromRequirementTooltip" xml:space="preserve">
+    <value>按下此連結在關聯的案例樹下建立新測試案例</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestSetFromRelease" xml:space="preserve">
+    <value>從此版本建立測試集</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestSetFromReleaseTooltip" xml:space="preserve">
+    <value>按下此連結在測試集列表中建立測試集，此測試集包含從此版本匯入的測試案例</value>
+  </data>
+	<data name="TestCaseSelector_ReleaseLegend1" xml:space="preserve">
+    <value>測試涵蓋範圍框表示測試案例目前對應的版本</value>
+  </data>
+	<data name="TestCaseSelector_ReleaseLegend2" xml:space="preserve">
+    <value>欲新增測試案例至此版本，請從上方列表選擇後並按下[新增]</value>
+  </data>
+	<data name="TestCaseSelector_ReleaseLegend3" xml:space="preserve">
+    <value>您可使用[移除]和[全部移除]按鈕來移除除此不再涵蓋此版本的測試。</value>
+  </data>
+	<data name="TestCaseSelector_RequirementLegend1" xml:space="preserve">
+    <value>測試涵蓋範圍框表示測試案例目前對應的需求</value>
+  </data>
+	<data name="TestCaseSelector_RequirementLegend2" xml:space="preserve">
+    <value>欲新增測試案例至此需求，請從上方列表選擇後並按下[新增]</value>
+  </data>
+	<data name="TestCaseSelector_RequirementLegend3" xml:space="preserve">
+    <value>您可使用[移除]和[全部移除]按鈕來移除此不再涵蓋此需求的測試案例。</value>
+  </data>
+	<data name="TestCaseSelector_TestCoverage" xml:space="preserve">
+    <value>測試涵蓋範圍：</value>
+  </data>
+	<data name="RequirementDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至需求列表</value>
+  </data>
+	<data name="ReleaseDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;返回至版本列表</value>
+  </data>
+	<data name="Global_PersonDays" xml:space="preserve">
+    <value>人天數</value>
+  </data>
+	<data name="ReleaseDetails_DisplayIncidents" xml:space="preserve">
+    <value>顯示事件列表：</value>
+  </data>
+	<data name="TestCaseDetails_AddNewParameterToTestCase" xml:space="preserve">
+    <value>新增新參數至測試案例：</value>
+  </data>
+	<data name="TestCaseDetails_AutomatedSectionIntro" xml:space="preserve">
+    <value>此節定義自動化測試腳本關聯的測試案例：</value>
+  </data>
+	<data name="TestCaseDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt;返回至測試列表</value>
+  </data>
+	<data name="TestCaseDetails_EditTestCaseParameters" xml:space="preserve">
+    <value>編輯測試案例參數</value>
+  </data>
+	<data name="TestCaseDetails_ParametersDefinedForTestCase" xml:space="preserve">
+    <value>此測試案例已定義以下參數：</value>
+  </data>
+	<data name="TestCaseDetails_ToChangeOrder" xml:space="preserve">
+    <value>欲更改測試步驟順序，請按下測試步驟/連結圖示並拖拉至列表中適當的位置。</value>
+  </data>
+	<data name="ReleaseSelector_AvailableReleases" xml:space="preserve">
+    <value>可用版本：</value>
+  </data>
+	<data name="ReleaseSelector_Legend1" xml:space="preserve">
+    <value>版本涵蓋範圍框表示版本目前對應的測試案例</value>
+  </data>
+	<data name="ReleaseSelector_Legend2" xml:space="preserve">
+    <value>欲連結版本至此測試案例，請從上方列表選擇後並按下[新增]</value>
+  </data>
+	<data name="ReleaseSelector_Legend3" xml:space="preserve">
+    <value>您可使用[移除]和[全部移除]按鈕來移除此不再涵蓋此版本的測試案例。</value>
+  </data>
+	<data name="ReleaseSelector_MappedReleases" xml:space="preserve">
+    <value>對應版本：</value>
+  </data>
+	<data name="RequirementSelector_AvailableRequirements" xml:space="preserve">
+    <value>可用需求：</value>
+  </data>
+	<data name="RequirementSelector_CreateRequirementFromTestCase" xml:space="preserve">
+    <value>從此案例建立需求</value>
+  </data>
+	<data name="RequirementSelector_CreateRequirementFromTestCaseTooltip" xml:space="preserve">
+    <value>按下此連結在關聯測試案例的需求樹下建立需求</value>
+  </data>
+	<data name="RequirementSelector_Legend1" xml:space="preserve">
+    <value>需求涵蓋範圍框表示需求目前對應的測試案例</value>
+  </data>
+	<data name="RequirementSelector_Legend2" xml:space="preserve">
+    <value>欲新增需求至此測試案例，請從上方列表選擇後並按下[新增]</value>
+  </data>
+	<data name="RequirementSelector_Legend3" xml:space="preserve">
+    <value>您可使用[移除]和[全部移除]按鈕來移除此不再涵蓋此需求的測試案例。</value>
+  </data>
+	<data name="RequirementSelector_RequirementsCoverage" xml:space="preserve">
+    <value>需求涵蓋範圍：</value>
+  </data>
+	<data name="TestStepService_Call" xml:space="preserve">
+    <value>呼叫</value>
+  </data>
+	<data name="TestStepService_With" xml:space="preserve">
+    <value>與</value>
+  </data>
+	<data name="AutomationHostDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至主機列表</value>
+  </data>
+	<data name="TestRunDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至測試執行列表</value>
+  </data>
+	<data name="TestRunDetails_TestCaseAndTestStep" xml:space="preserve">
+    <value>測試 # / 步驟 #</value>
+  </data>
+	<data name="TestRunDetails_ViewIncidents" xml:space="preserve">
+    <value>&gt; 檢視事件</value>
+  </data>
+	<data name="TestSetDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至測試集列表</value>
+  </data>
+	<data name="TestStepDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至測試步驟列表</value>
+  </data>
+	<data name="Admin_FileTypes_List" xml:space="preserve">
+    <value>檔案類型列表</value>
+  </data>
+	<data name="Admin_FileTypes_Description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+	<data name="Admin_FileTypes_Extension" xml:space="preserve">
+    <value>擴展</value>
+  </data>
+	<data name="Admin_FileTypes_Icon" xml:space="preserve">
+    <value>圖示</value>
+  </data>
+	<data name="Admin_FileTypes_MimeType" xml:space="preserve">
+    <value>Mime 類型</value>
+  </data>
+	<data name="Global_WorkflowOperations" xml:space="preserve">
+    <value>工作流程操作</value>
+  </data>
+	<data name="IncidentDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回事件列表</value>
+  </data>
+	<data name="Admin_FileTypes_SureDelete" xml:space="preserve">
+    <value>您確定要從清單中刪除此文件類型？</value>
+  </data>
+	<data name="IncidentDetails_YouNeedTo" xml:space="preserve">
+    <value>您需求</value>
+  </data>
+	<data name="IncidentDetails_YouNeedToEnding" xml:space="preserve">
+    <value>此事件之前您可新增附件。</value>
+  </data>
+	<data name="TaskDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至任務列表</value>
+  </data>
+	<data name="Admin_FileTypes_EditFileType" xml:space="preserve">
+    <value>編輯 / 新增文件類型</value>
+  </data>
+	<data name="Admin_FileTypes_FileDescription" xml:space="preserve">
+    <value>文件描述：</value>
+  </data>
+	<data name="Admin_FileTypes_FileExtension" xml:space="preserve">
+    <value>副檔名：</value>
+  </data>
+	<data name="Admin_FileTypes_FileIconImage" xml:space="preserve">
+    <value>文件圖示：</value>
+  </data>
+	<data name="Admin_FileTypes_FileMimeType" xml:space="preserve">
+    <value>Mime 類型：</value>
+  </data>
+	<data name="Admin_FileTypes_FileTypeID" xml:space="preserve">
+    <value>文件類型編號：</value>
+  </data>
+	<data name="ResourceDetails_ResourceDetails" xml:space="preserve">
+    <value>資源詳細資料</value>
+  </data>
+	<data name="ResourceDetails_CurrentPlanningSettings" xml:space="preserve">
+    <value>目前專案規劃設定</value>
+  </data>
+	<data name="ResourceDetails_DaysPerWeek" xml:space="preserve">
+    <value>天 / 週</value>
+  </data>
+	<data name="ResourceDetails_HousePerDay" xml:space="preserve">
+    <value>小時 / 天</value>
+  </data>
+	<data name="ResourceDetails_NonWorkHoursPerMonth" xml:space="preserve">
+    <value>非工作小時 / 月</value>
+  </data>
+	<data name="SourceCodeList_NoFolderSelected" xml:space="preserve">
+    <value>無選擇的資料夾</value>
+  </data>
+	<data name="SourceCodeList_OtherOperations" xml:space="preserve">
+    <value>其他操作</value>
+  </data>
+	<data name="SourceCodeList_RepositoryBrowser" xml:space="preserve">
+    <value>儲存庫瀏覽器</value>
+  </data>
+	<data name="SourceCodeList_RevisionLog" xml:space="preserve">
+    <value>檢視修訂版本日誌</value>
+  </data>
+	<data name="SourceCodeList_Title" xml:space="preserve">
+    <value>原始碼儲存庫</value>
+  </data>
+	<data name="Admin_FileTypes_Adding" xml:space="preserve">
+    <value>新增</value>
+  </data>
+	<data name="Admin_FileTypes_ErrorAction" xml:space="preserve">
+    <value>文件類型錯誤 {0}。</value>
+  </data>
+	<data name="Admin_FileTypes_Updating" xml:space="preserve">
+    <value>更新</value>
+  </data>
+	<data name="SourceCodeRevisions_BackToRepository" xml:space="preserve">
+    <value>返回至原始碼</value>
+  </data>
+	<data name="SourceCodeRevisions_Title" xml:space="preserve">
+    <value>原始碼修訂版本</value>
+  </data>
+	<data name="Admin_FileTypes_NavHeaderFileIcon" xml:space="preserve">
+    <value>文件類型圖示</value>
+  </data>
+	<data name="SourceCodeFileDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至文件列表</value>
+  </data>
+	<data name="SourceCodeFileDetails_SourceCodeFile" xml:space="preserve">
+    <value>原始碼文件</value>
+  </data>
+	<data name="ReportConfiguration_BackToHome" xml:space="preserve">
+    <value>&lt;&lt; 返回至報表首頁</value>
+  </data>
+	<data name="ReportsConfiguration_CustomPropertyFilters" xml:space="preserve">
+    <value>自訂屬性篩選器</value>
+  </data>
+	<data name="ReportsConfiguration_Legend1" xml:space="preserve">
+    <value>請選擇以下的各種選項來呈現報表。</value>
+  </data>
+	<data name="ReportsConfiguration_Legend2" xml:space="preserve">
+    <value>您可選擇多種參數篩選測試結果，以及選擇報表欲顯示的項目。</value>
+  </data>
+	<data name="ReportsConfiguration_ReportElements" xml:space="preserve">
+    <value>報告項目</value>
+  </data>
+	<data name="ReportsConfiguration_ReportFormat" xml:space="preserve">
+    <value>報告格式</value>
+  </data>
+	<data name="ReportsConfiguration_SaveReportLegend" xml:space="preserve">
+    <value>儲存此報表供未來使用，請於下方指定一個名稱並按下[建立報表]按鈕：</value>
+  </data>
+	<data name="ReportsConfiguration_ShareReport" xml:space="preserve">
+    <value>欲分享此報表給其他專案成員</value>
+  </data>
+	<data name="ReportsConfiguration_SortAscending" xml:space="preserve">
+    <value>升冪排序</value>
+  </data>
+	<data name="ReportsConfiguration_SortOptions" xml:space="preserve">
+    <value>排序選項</value>
+  </data>
+	<data name="ReportsConfiguration_StandardFieldFilters" xml:space="preserve">
+    <value>標準欄位篩選器</value>
+  </data>
+	<data name="Reports_NoneAvailable" xml:space="preserve">
+    <value>不可用</value>
+  </data>
+	<data name="Reports_SavedReports" xml:space="preserve">
+    <value>儲存報告</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至修訂版本列表</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_SourceCodeRevision" xml:space="preserve">
+    <value>原始檔修訂版本</value>
+  </data>
+	<data name="TestCaseExecution_BackToTests" xml:space="preserve">
+    <value>&lt;&lt; 返回至測試</value>
+  </data>
+	<data name="TestCaseExecution_ChooseRelease" xml:space="preserve">
+    <value>請選擇欲執行的版本：</value>
+  </data>
+	<data name="TestCaseExecution_ChooseTestStep1" xml:space="preserve">
+    <value>請從瀏覽列的清單選擇不同測試步驟，或按下</value>
+  </data>
+	<data name="TestCaseExecution_ChooseTestStep2" xml:space="preserve">
+    <value>返回至測試</value>
+  </data>
+	<data name="TestCaseExecution_ChooseTestStep3" xml:space="preserve">
+    <value>執行另一個測試案例。</value>
+  </data>
+	<data name="TestCaseExecution_CustomPropertiesPresetLegend" xml:space="preserve">
+    <value>（註：任何唯讀自訂屬性已填充至測試集。）</value>
+  </data>
+	<data name="TestCaseExecution_EnterIncidentInfo" xml:space="preserve">
+    <value>請輸入以下資訊為此測試步驟記錄一個事件：</value>
+  </data>
+	<data name="TestCaseExecution_NoStepSelected" xml:space="preserve">
+    <value>無選擇的測試步驟！</value>
+  </data>
+	<data name="TestCaseExecution_TestExecutionWizard" xml:space="preserve">
+    <value>測試執行精靈</value>
+  </data>
+	<data name="TestCaseExecution_TestRunCustomProperties" xml:space="preserve">
+    <value>現在為此測試執行輸入以下屬性：</value>
+  </data>
+	<data name="TestCaseExecution_Title" xml:space="preserve">
+    <value>測試案例執行</value>
+  </data>
+	<data name="DocumentDetails_AddNewAssociation" xml:space="preserve">
+    <value>新增新關聯</value>
+  </data>
+	<data name="DocumentDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至文件列表</value>
+  </data>
+	<data name="DocumentDetails_ChooseArtifact" xml:space="preserve">
+    <value>請選擇您欲新增關聯的項目：</value>
+  </data>
+	<data name="DocumentDetails_MakeThisActiveVersion" xml:space="preserve">
+    <value>激活此版本</value>
+  </data>
+	<data name="DocumentDetails_Title" xml:space="preserve">
+    <value>文件詳細資訊</value>
+  </data>
+	<data name="DocumentDetails_UploadNewVersion" xml:space="preserve">
+    <value>上傳新版本</value>
+  </data>
+	<data name="Documents_DocumentFolders" xml:space="preserve">
+    <value>文件資料夾</value>
+  </data>
+	<data name="Documents_TagCloud" xml:space="preserve">
+    <value>標籤雲</value>
+  </data>
+	<data name="Admin_HistoryChangeset" xml:space="preserve">
+    <value>專案歷史異動</value>
+  </data>
+	<data name="Admin_HistoryChangeDetails" xml:space="preserve">
+    <value>歷史詳細資訊</value>
+  </data>
+	<data name="Reports_CreateNewReport" xml:space="preserve">
+    <value>建立報表</value>
+  </data>
+	<data name="Reports_ReportsCenter" xml:space="preserve">
+    <value>報表中心</value>
+  </data>
+	<data name="Reports_IncidentDateRangeGraphs" xml:space="preserve">
+    <value>事件日期範圍圖例</value>
+  </data>
+	<data name="Reports_DateRange" xml:space="preserve">
+    <value>日期範圍</value>
+  </data>
+	<data name="Reports_GraphName" xml:space="preserve">
+    <value>圖例名稱</value>
+  </data>
+	<data name="Global_Items" xml:space="preserve">
+    <value>項目</value>
+  </data>
+	<data name="Admin_History_CustomLabel" xml:space="preserve">
+    <value>自訂欄位</value>
+  </data>
+	<data name="Admin_Histoy_StandardLabel" xml:space="preserve">
+    <value>標準欄位篩選器</value>
+  </data>
+	<data name="Global_SelectedDateRange" xml:space="preserve">
+    <value>選擇的日期範圍</value>
+  </data>
+	<data name="Global_SelectedGraph" xml:space="preserve">
+    <value>選擇的圖例</value>
+  </data>
+	<data name="Reports_TestingDateRangeGraphs" xml:space="preserve">
+    <value>測試日期範圍圖例</value>
+  </data>
+	<data name="Reports_RequirementSummaryGraph" xml:space="preserve">
+    <value>需求匯總圖例</value>
+  </data>
+	<data name="Reports_GroupedBy" xml:space="preserve">
+    <value>依群組：</value>
+  </data>
+	<data name="Reports_TestCaseSummaryGraph" xml:space="preserve">
+    <value>測試案例匯總圖例</value>
+  </data>
+	<data name="Reports_XAxis" xml:space="preserve">
+    <value>X 軸</value>
+  </data>
+	<data name="Reports_IncidentSummaryGraph" xml:space="preserve">
+    <value>事件匯總圖例</value>
+  </data>
+	<data name="Reports_TaskSummaryGraph" xml:space="preserve">
+    <value>任務匯總圖例</value>
+  </data>
+	<data name="Reports_TestRunSummaryGraph" xml:space="preserve">
+    <value>測試執行匯總圖例</value>
+  </data>
+	<data name="Reports_TestSetSummaryGraph" xml:space="preserve">
+    <value>測試集匯總圖例</value>
+  </data>
+	<data name="Admin_History_ToChange" xml:space="preserve">
+    <value>欲改變 #{0}</value>
+  </data>
+	<data name="Reports_IncidentGraphs" xml:space="preserve">
+    <value>事件圖例</value>
+  </data>
+	<data name="Reports_TaskGraphs" xml:space="preserve">
+    <value>任務圖例</value>
+  </data>
+	<data name="Reports_RequirementGraphs" xml:space="preserve">
+    <value>需求圖例</value>
+  </data>
+	<data name="Reports_GraphViewer" xml:space="preserve">
+    <value>圖例檢視器</value>
+  </data>
+	<data name="SiteMap_PlanningBoard" xml:space="preserve">
+    <value>計畫板</value>
+  </data>
+	<data name="IterationPlan_IncludeIncidents" xml:space="preserve">
+    <value>包含事件</value>
+  </data>
+	<data name="SiteMap_MyTimecard" xml:space="preserve">
+    <value>我的時間卡</value>
+  </data>
+	<data name="Timecard_InstructionText" xml:space="preserve">
+    <value>以下為指派給您的未解決項目。&lt;br /&gt;請輸入工作的小時與剩餘小時至以下對應的輸入框：</value>
+  </data>
+	<data name="UserProfile_EnableRSSFeeds" xml:space="preserve">
+    <value>啟用 RSS 種子</value>
+  </data>
+	<data name="UserProfile_RssToken" xml:space="preserve">
+    <value>RSS 標記：</value>
+  </data>
+	<data name="ResourceDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至資源列表</value>
+  </data>
+	<data name="SourceCodeFileDetails_Title" xml:space="preserve">
+    <value>文件詳細資訊</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_Title" xml:space="preserve">
+    <value>修訂版本詳細資訊</value>
+  </data>
+	<data name="Syndication_SavedSearchesDescription" xml:space="preserve">
+    <value>顯示訂閱者設定符合儲存的查詢/篩選條件項目列表。</value>
+  </data>
+	<data name="ProjectList_MyNewsFeeds" xml:space="preserve">
+    <value>我的新聞來源</value>
+  </data>
+	<data name="ProjectList_MySubscribedArtifacts" xml:space="preserve">
+    <value>我已訂閱的項目</value>
+  </data>
+	<data name="ProjectList_QuickLaunch" xml:space="preserve">
+    <value>快速啟動</value>
+  </data>
+	<data name="QuickLaunch_CreateIncidentIn" xml:space="preserve">
+    <value>建立事件於：</value>
+  </data>
+	<data name="NewsReader_FeedTitle" xml:space="preserve">
+    <value>來源標題</value>
+  </data>
+	<data name="NewsReader_FeedTitleTooltip" xml:space="preserve">
+    <value>輸入於我的頁面中您喜歡的新聞來源顯示名稱</value>
+  </data>
+	<data name="NewsReader_FeedUrl" xml:space="preserve">
+    <value>來源 URL</value>
+  </data>
+	<data name="NewsReader_FeedUrlTooltip" xml:space="preserve">
+    <value>輸入您欲訂閱 RSS 2.0 的 URL 或 ATOM 1.0 的新聞來源</value>
+  </data>
+	<data name="NewsReader_HeadlineLength" xml:space="preserve">
+    <value>標題長度</value>
+  </data>
+	<data name="NewsReader_HeadlineLengthTooltip" xml:space="preserve">
+    <value>被截斷前標題可顯示的字元數</value>
+  </data>
+	<data name="Admin_RoleDetails_ArtifactPermissions" xml:space="preserve">
+    <value>項目權限</value>
+  </data>
+	<data name="Admin_RoleDetails_OtherPermissions" xml:space="preserve">
+    <value>其他權限</value>
+  </data>
+	<data name="Admin_RoleDetails_Text1" xml:space="preserve">
+    <value>請檢視以下列出的資訊，若必要請進行更改。</value>
+  </data>
+	<data name="Admin_RoleDetails_Text2" xml:space="preserve">
+    <value>一旦您完成，按下[更新]以確認。</value>
+  </data>
+	<data name="Admin_RoleDetails_Text3" xml:space="preserve">
+    <value>此角色可對多種項目執行下列的操作：</value>
+  </data>
+	<data name="Admin_RoleDetails_Text4" xml:space="preserve">
+    <value>此角色可於此系統執行以下操作：</value>
+  </data>
+	<data name="Admin_RoleList_NewProjectRole" xml:space="preserve">
+    <value>新增專案角色</value>
+  </data>
+	<data name="SiteMap_EditRoleDetails" xml:space="preserve">
+    <value>編輯角色詳細資訊</value>
+  </data>
+	<data name="SiteMap_Enterprise" xml:space="preserve">
+		<value>企業</value>
+	</data>
+	<data name="SiteMap_Dashboard" xml:space="preserve">
+		<value>儀表板</value>
+	</data>
+	<data name="SiteMap_Portal" xml:space="preserve">
+		<value>門戶網站</value>
+	</data>
+	<data name="SiteMap_Support" xml:space="preserve">
+		<value>支持</value>
+	</data>
+	<data name="SiteMap_Teams" xml:space="preserve">
+		<value>團隊</value>
+	</data>
+	<data name="SiteMap_ViewEditRoles" xml:space="preserve">
+    <value>檢視 / 編輯角色</value>
+  </data>
+	<data name="TestSetDetails_Title" xml:space="preserve">
+    <value>測試集詳細資訊</value>
+  </data>
+	<data name="TestSetDetails_RecurrenceNone" xml:space="preserve">
+    <value>-- 一次 --</value>
+  </data>
+	<data name="GlobalNavigation_Search" xml:space="preserve">
+    <value>查詢</value>
+  </data>
+	<data name="GlobalNavigation_SearchResults" xml:space="preserve">
+    <value>查詢結果</value>
+  </data>
+	<data name="GlobalNavigation_SearchResultsLegend1" xml:space="preserve">
+    <value>以下</value>
+  </data>
+	<data name="GlobalNavigation_SearchResultsLegend2" xml:space="preserve">
+    <value>結果符合您的關鍵字</value>
+  </data>
+	<data name="BuildDetails_BackToList" xml:space="preserve">
+    <value>&lt;&lt; 返回至建置列表</value>
+  </data>
+	<data name="BuildDetails_Title" xml:space="preserve">
+    <value>建置詳細資訊</value>
+  </data>
+	<data name="Global_With" xml:space="preserve">
+    <value>與</value>
+  </data>
+	<data name="HistoryPanel_AdminViewTooltip" xml:space="preserve">
+    <value>開啟管理者區域的歷史記錄列表可還原異動、清除歷史資訊、檢視更多異動集的詳細資訊</value>
+  </data>
+	<data name="ProjectHome_RecentBuilds" xml:space="preserve">
+    <value>最近的建置</value>
+  </data>
+	<data name="TestCaseDetails_Repository" xml:space="preserve">
+    <value>儲存庫</value>
+  </data>
+	<data name="WorkflowTransition_RequireSignatory" xml:space="preserve">
+    <value>HOLDER-SIGNATORY</value>
+  </data>
+	<data name="Admin_AssignedApprovers_Title" xml:space="preserve">
+    <value>Assigned Approvers</value>
+  </data>
+	<data name="Admin_AssignedApprovers_String1" xml:space="preserve">
+    <value>The following users are assigned approvers of this product. To change their role, just select the value in the dropdown and click Update.</value>
+  </data>
+	<data name="Admin_AssignedApprovers_String2" xml:space="preserve">
+    <value>To add a new approver to the product, click [Add]. To remove existing users, select their checkboxes and click [Delete].</value>
+  </data>
+	 
+	<data name="Register_Title" xml:space="preserve"><value>請求新帳號</value></data><data name="Login_RegisterForAccount" xml:space="preserve"><value>註冊帳號</value></data><data name="ResetPassword_AnswerQuestionInstructions" xml:space="preserve"><value>回答以下問題以取得密碼</value></data><data name="ResetPassword_EnterUserNameText" xml:space="preserve"><value>請輸入您的使用者名稱以取得密碼</value></data><data name="ResetPassword_ForgotPassword" xml:space="preserve"><value>忘記密碼</value></data><data name="ResetPassword_ForgotYourPassword" xml:space="preserve"><value>忘記您的密碼？</value></data><data name="ResetPassword_IdentityConfirmation" xml:space="preserve"><value>身份確認</value></data><data name="ResetPassword_ReturnLink" xml:space="preserve"><value>回到登入頁面</value></data><data name="ResetPassword_SuccessTitle" xml:space="preserve"><value>您的密碼已寄送。</value></data><data name="ResetPassword_Title" xml:space="preserve"><value>重製密碼</value></data><data name="Register_EmailSubject" xml:space="preserve"><value>新帳號{0}已申請</value></data><data name="Register_Heading" xml:space="preserve"><value>申請新帳號</value></data><data name="Register_InstructionText" xml:space="preserve"><value>使用下方的表格申請新帳號。</value></data><data name="Register_PasswordMinLength" xml:space="preserve"><value>密碼最小長度不可少於{0}個字元</value></data><data name="Register_CompleteLegend" xml:space="preserve"><value>您申請新帳號資訊已寄送給系統管理者。一旦您的申請核准，您會收到通知告知帳號已啟用。</value></data><data name="Register_CompleteTitle" xml:space="preserve"><value>申請新帳號</value></data><data name="UserProfile_ChangePasswordQuestionAnswer" xml:space="preserve"><value>改變密碼的問題/回答</value></data><data name="UserProfile_TabPasswords" xml:space="preserve"><value>密碼 &amp; 安全</value></data><data name="UserList_ImportFromLDAP" xml:space="preserve"><value>從 LDAP 伺服器匯入使用者</value></data><data name="UserList_Legend1" xml:space="preserve"><value>以下為在系統中已核准的使用者。若要編輯已存在的使用者，請按下名稱旁的「編輯」連結。&lt;br /&gt;建立新使用者，可按下[新增]按鈕或選擇從 LDAP 伺服器匯入。</value></data><data name="UserList_Legend2" xml:space="preserve"><value>按下左方瀏覽的「擱置申請」項目可檢視擱置中的新使用者申請。</value></data><data name="UserList_Title" xml:space="preserve"><value>檢視 / 編輯使用者</value></data><data name="ProjectMembership_Title" xml:space="preserve"><value>專案成員</value></data><data name="UserDetails_AddEditUser" xml:space="preserve"><value>新增 / 編輯使用者</value></data><data name="UserDetails_AddEditUser_Legend" xml:space="preserve"><value>請複核下列的資訊，若需要可變更。&lt;br /&gt;完成後，請按下[更新/插入]以確認。</value></data><data name="UserDetails_ChangePassword" xml:space="preserve"><value>更改密碼</value></data><data name="UserDetails_ChangePasswordQuestionAnswer" xml:space="preserve"><value>更改密碼問題 &amp; 回答</value></data><data name="UserDetails_LdapManagedUser" xml:space="preserve"><value>LDAP 管理帳號</value></data><data name="UserDetails_NewUser" xml:space="preserve"><value>新使用者</value></data><data name="UserDetails_TabDataMapping" xml:space="preserve"><value>資料對應</value></data><data name="Global_Minutes" xml:space="preserve"><value>分</value></data><data name="Register_PasswordMinNonAlphaChars" xml:space="preserve"><value>密碼最少需包含{0}個非字母數字的字元</value></data><data name="SecuritySettings_AllowUserRegistration" xml:space="preserve"><value></value></data><data name="SecuritySettings_AllowUserRegistrationNotes" xml:space="preserve"><value>允許申請使用者</value></data><data name="SecuritySettings_Legend1" xml:space="preserve"><value>此頁面允許您修改</value></data><data name="SecuritySettings_Legend2" xml:space="preserve"><value>應用程式安全性設定：</value></data><data name="SecuritySettings_MaxInvalidPasswordAttempts" xml:space="preserve"><value>最大非法密碼嘗試次數</value></data><data name="SecuritySettings_MaxInvalidPasswordAttemptsNotes" xml:space="preserve"><value>帳號被鎖定前使用者可輸入錯誤密碼的次數</value></data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters" xml:space="preserve"><value>特殊字元最小需求</value></data><data name="SecuritySettings_MinRequiredNonalphanumericCharactersNotes" xml:space="preserve"><value>使用者密碼最小非字母數字的字元數</value></data><data name="SecuritySettings_MinRequiredPasswordLength" xml:space="preserve"><value>最小密碼長度</value></data><data name="SecuritySettings_MinRequiredPasswordLengthNotes" xml:space="preserve"><value>最小使用者選擇密碼的長度</value></data><data name="SecuritySettings_PasswordAttemptWindow" xml:space="preserve"><value>密碼嘗試次數視窗</value></data><data name="SecuritySettings_PasswordAttemptWindowNotes" xml:space="preserve"><value>使用者帳號自動解鎖後的時間</value></data><data name="SecuritySettings_Title" xml:space="preserve"><value>安全性設定</value></data><data name="UserLdapImport_BackToUserList" xml:space="preserve"><value>返回至使用者列表</value></data><data name="UserLdapImport_LdapConfigLink" xml:space="preserve"><value>LDAP 設定</value></data><data name="UserLdapImport_Legend1" xml:space="preserve"><value>使用目前</value></data><data name="UserLdapImport_Legend2" xml:space="preserve"><value>以下新使用者可匯入至</value></data><data name="UserLdapImport_Legend3" xml:space="preserve"><value>請標注您欲匯入的項目並按下[匯入]按鈕：</value></data><data name="UserLdapImport_Title" xml:space="preserve"><value>從 LDAP 伺服器匯入使用者</value></data><data name="UserRequests_Legend" xml:space="preserve"><value>下列為已存在的新使用者申請。欲核准該使用者，請按下「核准」連結；拒絕請按下「刪除」連結。</value></data><data name="UserRequests_Title" xml:space="preserve"><value>擱置申請</value></data><data name="UserRequests_TitleLong" xml:space="preserve"><value>檢視使用者擱置申請</value></data><data name="GeneralSettings_AttachmentFolderNotes" xml:space="preserve"><value>文件附件儲存資料夾（例如：</value></data><data name="GeneralSettings_AttachmentsFolder" xml:space="preserve"><value>附件資料夾</value></data><data name="GeneralSettings_DefaultCulture" xml:space="preserve"><value>預設文化</value></data><data name="GeneralSettings_DefaultCultureNotes" xml:space="preserve"><value>文化用以決定使用的數字/日期格式與語言</value></data><data name="GeneralSettings_DefaultTimezone" xml:space="preserve"><value>預設時區</value></data><data name="GeneralSettings_DefaultTimezoneNotes" xml:space="preserve"><value>時區用以決定日期與時間在系統如何顯示。</value></data><data name="GeneralSettings_Legend1" xml:space="preserve"><value>此頁允許您修改一般設定</value></data><data name="GeneralSettings_Legend2" xml:space="preserve"><value>系統設定：</value></data><data name="GeneralSettings_RichTextArtifactNotes" xml:space="preserve"><value>使用多文本格式編輯項目描述</value></data><data name="GeneralSettings_RichTextEditing" xml:space="preserve"><value>多文本格式編輯</value></data><data name="GeneralSettings_RichTextTestStepNotes" xml:space="preserve"><value>使用多文本格式編輯測試步驟列表</value></data><data name="GeneralSettings_Title" xml:space="preserve"><value>一般設定</value></data><data name="GeneralSettings_WebServerUrl" xml:space="preserve"><value>網頁伺服器網址</value></data><data name="GeneralSettings_WebServerUrlNotes" xml:space="preserve"><value>用以存取的基本網址</value></data><data name="UserProfile_UserTimezone" xml:space="preserve"><value>使用者時區</value></data><data name="UserProfile_ChangeLogoTitle" xml:space="preserve"><value>更改使用者標識</value></data><data name="UserProfile_Department" xml:space="preserve"><value>部門</value></data><data name="UserProfile_Logo" xml:space="preserve"><value>使用者標識</value></data><data name="EventLog_Legend" xml:space="preserve"><value>以下系統事件已記錄於系統：</value></data><data name="EventLog_Title" xml:space="preserve"><value>事件記錄</value></data><data name="EventLog_TitleLong" xml:space="preserve"><value>系統事件記錄</value></data><data name="GeneralSettings_EventDaysToKeep" xml:space="preserve"><value>保留事件記錄</value></data><data name="GeneralSettings_EventDaysToKeepNotes" xml:space="preserve"><value>錯誤訊息於系統事件記錄的保留天數</value></data><data name="GeneralSettings_EventDaysToKeepUnits" xml:space="preserve"><value>天</value></data><data name="EventLog_EventDetails" xml:space="preserve"><value>事件詳細資訊</value></data><data name="EventLog_Exception" xml:space="preserve"><value>例外</value></data><data name="DataSynchronization_ViewErrors" xml:space="preserve"><value>檢視錯誤</value></data><data name="VersionControlProviderDetails_ViewEvents" xml:space="preserve"><value>檢視事件</value></data><data name="Permission_Create" xml:space="preserve"><value>建立</value></data><data name="Permission_Delete" xml:space="preserve"><value>刪除</value></data><data name="Permission_LimitedModify" xml:space="preserve"><value>修改所屬</value></data><data name="Permission_Modify" xml:space="preserve"><value>修改所有</value></data><data name="Permission_View" xml:space="preserve"><value>檢視</value></data><data name="RoleDetails_ActiveNotes" xml:space="preserve"><value>表示此角色是否為啟動</value></data><data name="RoleDetails_AdminNotes" xml:space="preserve"><value>表示此角色是否有專案管理權限</value></data><data name="RoleDetails_LimitedView" xml:space="preserve"><value>限制檢視</value></data><data name="RoleDetails_LimitedViewNotes" xml:space="preserve"><value>表示此角色是否有限制檢視權限。此角色用以限制他們在該專案中僅可檢視自己建立/被指派的事件，其他皆無法檢視。</value></data><data name="AutomationHostDetails_Title" xml:space="preserve"><value>自動化主機詳細資訊</value></data><data name="IncidentDetails_Title" xml:space="preserve"><value>事件詳細資訊</value></data><data name="ReleaseDetails_Title" xml:space="preserve"><value>版本詳細資訊</value></data><data name="RequirementDetails_Title" xml:space="preserve"><value>需求詳細資訊</value></data><data name="ResourceDetails_Title" xml:space="preserve"><value>資源詳細資訊</value></data><data name="TaskDetails_Title" xml:space="preserve"><value>任務詳細資訊</value></data><data name="TestCaseDetails_Title" xml:space="preserve"><value>測試案例詳細資訊</value></data><data name="TestRunDetails_Title" xml:space="preserve"><value>測試執行詳細資訊</value></data><data name="TestStepDetails_Title" xml:space="preserve"><value>測試步驟詳細資訊</value></data><data name="CustomLists_Title" xml:space="preserve"><value>編輯自訂列表</value></data><data name="CustomProperties_Title" xml:space="preserve"><value>編輯自訂屬性</value></data><data name="Administration_ChangeProject" xml:space="preserve"><value>(更改專案)</value></data><data name="Admin_CustomPropertyDefinition" xml:space="preserve"><value>定義</value></data><data name="Admin_CustomPropertyDefinition_AddDefinition" xml:space="preserve"><value>新增定義</value></data><data name="Admin_CustomPropertyDefinition_Alias" xml:space="preserve"><value>名稱</value></data><data name="Admin_CustomPropertyDefinition_CustomList" xml:space="preserve"><value>自訂列表</value></data><data name="Admin_CustomPropertyDefinition_EditDefinition" xml:space="preserve"><value>編輯定義</value></data><data name="Admin_CustomPropertyDefinition_Intro" xml:space="preserve"><value>下列自訂屬性目前已定義於已選擇的項目類型。為了檢視不同類型的自訂屬性，請選擇其他下列下拉式選單的項目。&lt;br /&gt;您可在下方表格中按下適當地連結來新增、編輯、移除自訂屬性定義。</value></data><data name="Admin_CustomPropertyDefinition_Type" xml:space="preserve"><value>類型</value></data><data name="Admin_CustomPropertyOptions" xml:space="preserve"><value>選項</value></data><data name="Admin_CustomPropertyOptions_AllowNull" xml:space="preserve"><value>允許為空</value></data><data name="Admin_CustomPropertyOptions_Default" xml:space="preserve"><value>預設</value></data><data name="Admin_CustomPropertyOptions_MaxLength" xml:space="preserve"><value>最大長度</value></data><data name="Admin_CustomPropertyOptions_MaxValue" xml:space="preserve"><value>最大值</value></data><data name="Admin_CustomPropertyOptions_MinLength" xml:space="preserve"><value>最小長度</value></data><data name="Admin_CustomPropertyOptions_MinValue" xml:space="preserve"><value>最小值</value></data><data name="Admin_CustomPropertyOptions_Precision" xml:space="preserve"><value>精確度</value></data><data name="Admin_CustomPropertyOptions_RichText" xml:space="preserve"><value>多文本格式</value></data><data name="Admin_System_CustomListValue_AddValue" xml:space="preserve"><value>新增值</value></data><data name="Admin_System_CustomListValue_ConfirmDeleteValue" xml:space="preserve"><value>您確定要移除此值？\n任何設定於這些欄位會被重置為第一個項目值或空值。</value></data><data name="Admin_System_CustomListValue_Description" xml:space="preserve"><value>列表描述</value></data><data name="Admin_System_CustomListValue_ErrorNameRequired" xml:space="preserve"><value>自訂列表必須輸入名稱。</value></data><data name="Admin_System_CustomListValue_ErrorValueRequired" xml:space="preserve"><value>顯示於列表欄位值為必須。</value></data><data name="Admin_System_CustomListValue_Error_CustomListNameExists" xml:space="preserve"><value>已有其他列表使用此名稱。請使用其他名稱。</value></data><data name="Admin_System_CustomListValue_Error_CustomListNameIsEmpty" xml:space="preserve"><value>自訂列表必須有名稱。</value></data><data name="Admin_System_CustomListValue_Error_SavingCustomList" xml:space="preserve"><value>儲存列表時發生問題。嘗試使用其他名稱儲存。</value></data><data name="Admin_System_CustomListValue_Error_ValueNameIsDuplicate" xml:space="preserve"><value>您不可使用重複的值。此值為「{0}」</value></data><data name="Admin_System_CustomListValue_Error_ValueNameIsEmpty" xml:space="preserve"><value>您不可使用空值。</value></data><data name="Admin_System_CustomListValue_HeaderValueId" xml:space="preserve"><value>列表值 ＃</value></data><data name="Admin_System_CustomListValue_HeaderValueName" xml:space="preserve"><value>值</value></data><data name="Admin_System_CustomListValue_NoValuesDefined" xml:space="preserve"><value>列表值未定義。</value></data><data name="Admin_System_CustomListValue_SortBy" xml:space="preserve"><value>顯示排序選擇器</value></data><data name="Admin_System_CustomList_AddList" xml:space="preserve"><value>新增列表</value></data><data name="Admin_System_CustomList_HeaderActions" xml:space="preserve"><value>動作</value></data><data name="Admin_System_CustomList_HeaderActions_ActionEditValue" xml:space="preserve"><value>編輯值</value></data><data name="Admin_System_CustomList_HeaderDisplayName" xml:space="preserve"><value>列表名稱</value></data><data name="Admin_System_CustomList_HeaderListId" xml:space="preserve"><value>列表 #</value></data><data name="Admin_System_CustomList_HeaderValues" xml:space="preserve"><value># 值</value></data><data name="Admin_System_CustomList_NoListsDefined" xml:space="preserve"><value>無定義自訂列表。</value></data><data name="Admin_System_CustomList_NoListsDefinedDrop" xml:space="preserve"><value>-- 無定義列表 --</value></data><data name="Admin_System_CustomList_NoListsDefinedDrop1" xml:space="preserve"><value>-- 無定義列表 --</value></data><data name="CustomListDetails_BackToLists" xml:space="preserve"><value>&lt;&lt; 返回至自訂列表</value></data><data name="CustomListDetails_IntroText" xml:space="preserve"><value>下列自訂值已新增至此列表。請修改後並按下「儲存」。&lt;br /&gt;欲移除已存在的自訂列表值請按下「移除」連結。&lt;br /&gt;欲新增新值，於表格下方按下「新增值」連結。</value></data><data name="CustomListDetails_Title" xml:space="preserve"><value>編輯自訂列表值</value></data><data name="CustomListSort_Alphabetical" xml:space="preserve"><value>照字母排序</value></data><data name="CustomLists_IntroText" xml:space="preserve"><value>下列自訂列表已在專案中建立。欲新增新自訂列表，請按下「新增列表」選項。欲移除自訂列表，按下「移除」按鈕。欲編輯列表（包含值），請按下「編輯值」按鈕。</value></data><data name="CustomLists_NewList" xml:space="preserve"><value>新列表</value></data><data name="Global_No" xml:space="preserve"><value>否</value></data><data name="Global_Yes" xml:space="preserve"><value>是</value></data><data name="Global_Multiple" xml:space="preserve"><value>多</value></data><data name="Admin_EditWorkflows_Title" xml:space="preserve"><value>編輯工作流程</value></data><data name="Admin_WorkflowDetails_AddNewTransitionTitle" xml:space="preserve"><value>加入新轉換</value></data><data name="Admin_WorkflowDetails_BackToList" xml:space="preserve"><value>&lt;&lt; 返回至工作流程列表</value></data><data name="Admin_WorkflowDetails_Default" xml:space="preserve"><value>（預設）</value></data><data name="Admin_WorkflowDetails_Delete" xml:space="preserve"><value>（刪除）</value></data><data name="Admin_WorkflowDetails_DestinationStep" xml:space="preserve"><value>目的步驟</value></data><data name="Admin_WorkflowDetails_Intro" xml:space="preserve"><value>此顯示特定工作列表的所有事件狀態步驟：</value></data><data name="Admin_WorkflowDetails_OriginatingStep" xml:space="preserve"><value>原先步驟</value></data><data name="Admin_WorkflowDetails_Title" xml:space="preserve"><value>檢視 / 編輯工作流程步驟</value></data><data name="Admin_WorkflowStep_BackToStepsList" xml:space="preserve"><value>&lt;&lt; 返回至工作流程步驟列表</value></data><data name="Admin_WorkflowStep_IncidentCustomProperties" xml:space="preserve"><value>事件自訂屬性</value></data><data name="Admin_WorkflowStep_IncidentCustomPropertiesIntro" xml:space="preserve"><value>下列事件自訂屬性於工作流程的此步驟已被隱藏/取消啟用/為必須：</value></data><data name="Admin_WorkflowStep_IncidentFields" xml:space="preserve"><value>事件欄位</value></data><data name="Admin_WorkflowStep_IncidentFieldsIntro" xml:space="preserve"><value>下列事件欄位於工作流程的此步驟已被隱藏/取消啟用/為必須：</value></data><data name="Admin_WorkflowStep_Title" xml:space="preserve"><value>編輯工作步驟詳細資訊</value></data><data name="Admin_Workflows_Intro" xml:space="preserve"><value>一個專案中可包含多個工作流程。欲新增新的工作流程，請按下「新增」按鈕。欲編輯已存在工作流程，請按下步驟的超連結。</value></data><data name="Admin_Workflows_NewWorkflowName" xml:space="preserve"><value>新工作流程</value></data><data name="Admin_WorkflowTransition_BackToSteps" xml:space="preserve"><value>&lt;&lt; 返回至工作流程步驟列表</value></data><data name="Admin_WorkflowTransition_ConditionData" xml:space="preserve"><value>條件資料</value></data><data name="Admin_WorkflowTransition_Conditions" xml:space="preserve"><value>條件</value></data><data name="Admin_WorkflowTransition_ConditionsIntro" xml:space="preserve"><value>下列使用者 / 角色允許執行此轉換：</value></data><data name="Admin_WorkflowTransition_ConditionType" xml:space="preserve"><value>條件類型</value></data><data name="Admin_WorkflowTransition_DetailsSection" xml:space="preserve"><value>工作流程轉換詳細資訊</value></data><data name="Admin_WorkflowTransition_DetectorExecuteLabel" xml:space="preserve"><value>此事件的檢測器可執行</value></data><data name="Admin_WorkflowTransition_DetectorNotifyLabel" xml:space="preserve"><value>此事件的檢測器已通知</value></data><data name="Admin_WorkflowTransition_DisplayTokens" xml:space="preserve"><value>（顯示郵件標題特殊標記）</value></data><data name="Admin_WorkflowTransition_EmailTokens" xml:space="preserve"><value>郵件通知標記</value></data><data name="Admin_WorkflowTransition_NotificationData" xml:space="preserve"><value>通知資料</value></data><data name="Admin_WorkflowTransition_Notifications" xml:space="preserve"><value>通知</value></data><data name="Admin_WorkflowTransition_NotificationsIntro" xml:space="preserve"><value>當轉換執行後，寄送郵件給下列使用者 / 角色：</value></data><data name="Admin_WorkflowTransition_NotificationType" xml:space="preserve"><value>通知類型</value></data><data name="Admin_WorkflowTransition_OwnerExecuteLabel" xml:space="preserve"><value>此事件的擁有者可執行</value></data><data name="Admin_WorkflowTransition_OwnerNotifyLabel" xml:space="preserve"><value>此事件的擁有者可被通知</value></data><data name="Admin_WorkflowTransition_RolesExecuteLabel" xml:space="preserve"><value>為特定角色的使用者可執行</value></data><data name="Admin_WorkflowTransition_RolesNotifyLabel" xml:space="preserve"><value>為特定角色的使用者可被通知</value></data><data name="Admin_WorkflowTransition_Title" xml:space="preserve"><value>編輯工作流程轉換</value></data><data name="AttachmentPanel_Attachments" xml:space="preserve"><value>附件</value></data><data name="ArtifactLinkPanel_Associations" xml:space="preserve"><value>關聯</value></data><data name="HistoryPanel_Changes" xml:space="preserve"><value>更改</value></data><data name="Requirements_RequirementsForProject" xml:space="preserve"><value>此專案的需求</value></data><data name="Releases_ReleasesForProject" xml:space="preserve"><value>此專案的版本</value></data><data name="TestSetList_TestSetsForProject" xml:space="preserve"><value>此專案的測試集</value></data><data name="TestCaseExecution_ChooseReleaseAndCustomProps" xml:space="preserve"><value>請選擇欲執行的版本、自訂屬性：</value></data><data name="TestCaseExecution_TestCaseInfo" xml:space="preserve"><value>測試案例資訊</value></data><data name="TestCaseExecution_TestStepInfo" xml:space="preserve"><value>測試步驟資訊</value></data><data name="TaskListPanel_Tasks" xml:space="preserve"><value>任務詳細資訊</value></data><data name="ReleaseDetails_BuildsInRelease" xml:space="preserve"><value>此版本/迭代內的建置</value></data><data name="ReleaseDetails_Incidents" xml:space="preserve"><value>此版本/迭代內的事件</value></data><data name="RequirementTaskPanel_Items" xml:space="preserve"><value>項目</value></data><data name="TestRunListPanel_TestRuns" xml:space="preserve"><value>測試執行</value></data><data name="TestCaseDetails_Incidents" xml:space="preserve"><value>連結至此測試案例的事件</value></data><data name="TestStepDetails_Incidents" xml:space="preserve"><value>連結至此測試步驟的事件</value></data><data name="TestRunDetails_NothingReported" xml:space="preserve"><value>無回報。</value></data><data name="TestRunDetails_Incidents" xml:space="preserve"><value>連結至此測試執行的事件</value></data><data name="TestSetDetails_Incidents" xml:space="preserve"><value>連結至此測試集的事件</value></data><data name="BuildDetails_Incidents" xml:space="preserve"><value>目前建置中的事件</value></data><data name="BuildDetails_TestRuns" xml:space="preserve"><value>目前建置中的測試執行</value></data><data name="Documents_Documents" xml:space="preserve"><value>目前資料夾中的文件</value></data><data name="Global_ReturnToMobile" xml:space="preserve"><value>返回至可移動式網站</value></data><data name="UserProfile_StartPage" xml:space="preserve"><value>開始頁面</value></data><data name="UserProfile_StartPage_MyPage" xml:space="preserve"><value>我的頁面</value></data><data name="UserProfile_StartPage_ProjectGroupHome" xml:space="preserve"><value>最後開啟的專案群組</value></data><data name="UserProfile_StartPage_ProjectHome" xml:space="preserve"><value>最後開啟的專案</value></data><data name="GeneralSettings_TestAutoUnassign" xml:space="preserve"><value>自動未指派測試</value></data><data name="GeneralSettings_TestCaseAutoUnassign_Notes" xml:space="preserve"><value>從擁有者取消指派已通過的測試案例</value></data><data name="GeneralSettings_TestSetAutoUnassign_Notes" xml:space="preserve"><value>從擁有者取消指派已完成的測試集</value></data><data name="Login_Title" xml:space="preserve"><value>登入</value></data><data name="Mobile_ViewFullSite" xml:space="preserve"><value>檢視全網站</value></data><data name="ReportViewer_ReportBeingGenerated" xml:space="preserve"><value>您的報表正在產生中…</value></data><data name="ReportViewer_ClickToDisplayReport" xml:space="preserve"><value>按下此處以檢視報表</value></data><data name="ReportViewer_ClickToRegenerateReport" xml:space="preserve"><value>按下此處以重載報表</value></data><data name="ReportViewer_GenerationComplete" xml:space="preserve"><value>您的記錄已成功產生。</value></data><data name="ReportViewer_BackToReportConfiguration" xml:space="preserve"><value>&lt;&lt; 修改報表設定</value></data><data name="TestCaseExecution_Navigation" xml:space="preserve"><value>測試執行瀏覽</value></data><data name="Admin_Reports" xml:space="preserve"><value>編輯報表</value></data><data name="Admin_Reports_AddNewReport" xml:space="preserve"><value>新增新報表</value></data><data name="Admin_Reports_Intro" xml:space="preserve"><value>此頁顯示多種於系統可使用的報表。被列為「預設」的報表不可被修改。然而您可新增一報表，或從已存在的報表複製並使用下方選項修改：</value></data><data name="Admin_ReportDetails" xml:space="preserve"><value>報表詳細資訊</value></data><data name="Admin_ReportDetails_Intro" xml:space="preserve"><value>此頁顯示特定報表的詳細資訊。使用者自訂報表可指定格式、定義段落、提供頁首頁尾，應包含：</value></data><data name="Admin_ReportDetails_CustomSections" xml:space="preserve"><value>自訂段落</value></data><data name="Admin_ReportDetails_StandardSections" xml:space="preserve"><value>標準段落</value></data><data name="Admin_ReportDetails_AddNewCustomSection" xml:space="preserve"><value>新增新自訂段落</value></data><data name="Admin_ReportDetails_AddNewStandardSection" xml:space="preserve"><value>新增新標準段落</value></data><data name="ReportDetails_AddEditCustomSection" xml:space="preserve"><value>新增/編輯自訂段落</value></data><data name="ReportDetails_AddEditStandardSection" xml:space="preserve"><value>新增/編輯自訂段落</value></data><data name="ReportDetails_CustomQueryResults" xml:space="preserve"><value>自訂查詢結果</value></data><data name="ReportDetails_NewReport" xml:space="preserve"><value>新報表</value></data><data name="ResourceList_AllProjectsIn" xml:space="preserve"><value>所有專案在</value></data><data name="ResourceList_ResourcesInGroupOrProject" xml:space="preserve"><value>目前專案 / 群組的資源</value></data><data name="SecuritySettings_AuthenticationExpiration" xml:space="preserve"><value>認證過期</value></data><data name="SecuritySettings_AuthenticationExpirationNotes" xml:space="preserve"><value>此表示使用者無活動後被登出的時間（分鐘）</value></data><data name="SecuritySettings_AuthenticationExpirationRememberMe" xml:space="preserve"><value>保持我登入的期限</value></data><data name="SecuritySettings_AuthenticationExpirationRememberMeNotes" xml:space="preserve"><value>此表示使用者無活動後被登出的時間（分鐘），若他們有選擇登入時「保持登入」選項。</value></data><data name="CustomListSort_ById" xml:space="preserve"><value>依編號</value></data><data name="Admin_ActiveSessions" xml:space="preserve"><value>活動中的連線</value></data><data name="Admin_AddOns_Downloads" xml:space="preserve"><value>增益集 &amp; 下載</value></data><data name="Admin_CustomProperties" xml:space="preserve"><value>自訂屬性</value></data><data name="Admin_DataSynchronization" xml:space="preserve"><value>資料同步</value></data><data name="Admin_DataTools" xml:space="preserve"><value>資料工具</value></data><data name="Admin_Documents" xml:space="preserve"><value>文件</value></data><data name="Admin_EditFolders" xml:space="preserve"><value>編輯資料夾</value></data><data name="Admin_EditPriorities" xml:space="preserve"><value>編輯屬性</value></data><data name="Admin_EditProjectGroups" xml:space="preserve"><value>編輯專案群組</value></data><data name="Admin_EditSeverities" xml:space="preserve"><value>編輯嚴重性</value></data><data name="Admin_EditStatuses" xml:space="preserve"><value>編輯狀態</value></data><data name="Admin_EditTypes" xml:space="preserve"><value>編輯類型</value></data><data name="Admin_Incidents" xml:space="preserve"><value>事件</value></data><data name="Admin_Integration" xml:space="preserve"><value>整合</value></data><data name="Admin_LDAPConfiguration" xml:space="preserve"><value>LDAP 設定</value></data><data name="Admin_LicenseDetails" xml:space="preserve"><value>授權詳細資訊</value></data><data name="Admin_Notifications" xml:space="preserve"><value>通知</value></data><data name="Admin_PlanningOptions" xml:space="preserve"><value>計畫選項</value></data><data name="Admin_ProjectMembership" xml:space="preserve"><value>專案成員</value></data><data name="Admin_Projects" xml:space="preserve"><value>專案</value></data><data name="Admin_System" xml:space="preserve"><value>系統</value></data><data name="Admin_TestAutomation" xml:space="preserve"><value>測試自動化</value></data><data name="Admin_Users" xml:space="preserve"><value>使用者</value></data><data name="Admin_VersionControl" xml:space="preserve"><value>版本控管</value></data><data name="Admin_ViewEditProjects" xml:space="preserve"><value>檢視 / 編輯專案</value></data><data name="DocumentFolders_Intro" xml:space="preserve"><value>下列文件資料夾已在此專案中建立。請按下連結編輯已存在資料夾，或按下[新增]按鈕來建立專案中新資料夾：</value></data><data name="DocumentFolders_Title" xml:space="preserve"><value>編輯文件資料夾</value></data><data name="DocumentTypes_Intro" xml:space="preserve"><value>下列文件資料夾已在此專案中建立。請異動後按下[新增]或[更新]。&lt;br /&gt;欲咦除以存在文件類型，請設定啟動旗標為否。</value></data><data name="DocumentTypes_Title" xml:space="preserve"><value>編輯文件類型</value></data><data name="Global_NotApplicable" xml:space="preserve"><value>無</value></data><data name="IncidentPriorities_Intro" xml:space="preserve"><value>下列事件屬性已被定義在目前專案：</value></data><data name="IncidentPriorities_Title" xml:space="preserve"><value>編輯事件屬性</value></data><data name="IncidentSeverities_Intro" xml:space="preserve"><value>下列事件嚴重性已被定義在目前專案：</value></data><data name="IncidentSeverities_Title" xml:space="preserve"><value>編輯事件嚴重性</value></data><data name="IncidentStatuses_Intro" xml:space="preserve"><value>下列事件狀態已被定義在目前專案：</value></data><data name="IncidentStatuses_Title" xml:space="preserve"><value>編輯事件狀態</value></data><data name="IncidentTypes_Intro" xml:space="preserve"><value>下列事件類型已被定義在目前專案：</value></data><data name="IncidentTypes_Title" xml:space="preserve"><value>編輯事件類型</value></data><data name="LicenseDetails_EnterpriseLicense" xml:space="preserve"><value>企業授權</value></data><data name="LicenseDetails_EvaluationLicense" xml:space="preserve"><value>評估授權</value></data><data name="LicenseDetails_Expiration" xml:space="preserve"><value>過期</value></data><data name="LicenseDetails_LicenseType" xml:space="preserve"><value>授權類型</value></data><data name="LicenseDetails_LicenseVersionNumber" xml:space="preserve"><value>授權版本 #</value></data><data name="LicenseDetails_NumConcurrentUsers" xml:space="preserve"><value># 同時使用授權使用者</value></data><data name="LicenseDetails_Title" xml:space="preserve"><value>授權詳細資訊</value></data><data name="LicenseDetails_UnlicensedDoNotUse" xml:space="preserve"><value>未授權版本 | 不使用</value></data><data name="LicenseDetails_UsersConcurrent" xml:space="preserve"><value>同時 {0} 使用者</value></data><data name="LicenseDetail_CustomerHomePage" xml:space="preserve"><value>客戶首頁</value></data><data name="LicenseDetail_Legend1" xml:space="preserve"><value>備註：</value></data><data name="LicenseDetail_Legend2" xml:space="preserve"><value>授權金鑰和組織名稱必須相符，可找到於</value></data><data name="LicenseDetail_Legend3" xml:space="preserve"><value>若您仍未有此軟體授權，您可</value></data><data name="LicenseDetail_Legend4" xml:space="preserve"><value>今日上線</value></data><data name="LicenseDetail_LicenseKey" xml:space="preserve"><value>授權金鑰</value></data><data name="LicenseDetail_Organization" xml:space="preserve"><value>組織</value></data><data name="LicenseDetail_PurchaseOne" xml:space="preserve"><value>採購</value></data><data name="Admin_EditProjects_String1" xml:space="preserve"><value>下列專案已被建立於系統。欲編輯已存在專案，請按下「編輯」連結。</value></data><data name="Admin_EditProjects_String2" xml:space="preserve"><value>欲建立新專案，請按下[新增]按鈕</value></data><data name="Admin_EditProjects_Title" xml:space="preserve"><value>檢視 / 編輯專案</value></data><data name="Admin_Home_Title" xml:space="preserve"><value>管理者首頁</value></data><data name="Admin_PlanningOptions_DataCaching" xml:space="preserve"><value>資料快取</value></data><data name="Admin_PlanningOptions_String1" xml:space="preserve"><value>下列時程表和日曆選項目前已被此專案使用。欲變更設定，僅需修改值後按下[更新]按鈕提交變動。</value></data><data name="Admin_PlanningOptions_String2" xml:space="preserve"><value>一旦您滿意此修改，建議您透過重整專案中的排程、進度資訊</value></data><data name="Admin_PlanningOptions_String3" xml:space="preserve"><value>管理螢幕</value></data><data name="Admin_PlanningOptions_Title" xml:space="preserve"><value>計畫選項</value></data><data name="Admin_PlanningOptions_WorkHoursPerDay" xml:space="preserve"><value>每日工作時數</value></data><data name="Admin_ProjectDetails_BackToList" xml:space="preserve"><value>&lt;&lt; 返回至專案列表</value></data><data name="Admin_ProjectDetails_NewProject" xml:space="preserve"><value>新專案</value></data><data name="Admin_ProjectDetails_String1" xml:space="preserve"><value>請檢閱下列的資訊，若有需要可進行異動。</value></data><data name="Admin_ProjectDetails_String2" xml:space="preserve"><value>完成後，請按下[更新/插入]以確認。</value></data><data name="Admin_ProjectDetails_TemplateDefault" xml:space="preserve"><value>預設</value></data><data name="Admin_ProjectDetails_TemplateExistingProject" xml:space="preserve"><value>基於已存在專案</value></data><data name="Admin_ProjectDetails_TemplateNotes" xml:space="preserve"><value>選擇預設範本載入標準工作流程和事件列表。選擇為範本的已存在專案會將專案的自訂屬性、工作流程、事件欄位複製到新專案。</value></data><data name="Admin_ProjectDetails_Title" xml:space="preserve"><value>編輯專案詳細資訊</value></data><data name="Admin_ProjectGroupDetails_BackToList" xml:space="preserve"><value>&lt;&lt; 返回至專案群組列表</value></data><data name="Admin_ProjectGroupDetails_NewProjectGroup" xml:space="preserve"><value>新專案群組</value></data><data name="Admin_ProjectGroupDetails_String1" xml:space="preserve"><value>請檢閱下列的資訊，若有需要可進行異動。</value></data><data name="Admin_ProjectGroupDetails_String2" xml:space="preserve"><value>完成後，請按下[更新/插入]以確認。</value></data><data name="Admin_ProjectGroupDetails_Title" xml:space="preserve"><value>專案群組詳細資訊</value></data><data name="Admin_ProjectGroups_String1" xml:space="preserve"><value>下列專案群組已被新增至系統。欲編輯已存在專案群組，請按下[編輯]連結。</value></data><data name="Admin_ProjectGroups_String2" xml:space="preserve"><value>欲建立新專案群組，請按下[新增]按鈕</value></data><data name="Admin_ProjectGroups_Title" xml:space="preserve"><value>編輯專案群組</value></data><data name="LdapConfiguration_Attributes" xml:space="preserve"><value>屬性</value></data><data name="LdapConfiguration_BaseDn" xml:space="preserve"><value>基本識別名稱</value></data><data name="LdapConfiguration_BaseDnNotes" xml:space="preserve"><value>用以搜尋使用者的 LDAP 根節點名稱</value></data><data name="LdapConfiguration_BindDn" xml:space="preserve"><value>綁定識別名稱</value></data><data name="LdapConfiguration_BindDnNotes1" xml:space="preserve"><value>用以登入目錄服務伺服氣得使用者識別名稱</value></data><data name="LdapConfiguration_BindDnNotes2" xml:space="preserve"><value>或匿名留下空白</value></data><data name="LdapConfiguration_BindPassword" xml:space="preserve"><value>綁定密碼</value></data><data name="LdapConfiguration_BindPasswordNotes" xml:space="preserve"><value>用以登入目錄服務伺服器的使用者識別名稱，或匿名留下空白</value></data><data name="LdapConfiguration_EmailAddress" xml:space="preserve"><value>電子郵件地址</value></data><data name="LdapConfiguration_EmailAddressNotes" xml:space="preserve"><value>LDAP 屬性用以保存電子郵件地址（例如：mail）</value></data><data name="LdapConfiguration_FirstName" xml:space="preserve"><value>名</value></data><data name="LdapConfiguration_FirstNameNotes" xml:space="preserve"><value>LDAP 屬性用以保存使用者的名（例如：givenName）</value></data><data name="LdapConfiguration_LastName" xml:space="preserve"><value>姓</value></data><data name="LdapConfiguration_LastNameNotes" xml:space="preserve"><value>LDAP 屬性用以保存使用者的姓（例如：sn）</value></data><data name="LdapConfiguration_LdapHost" xml:space="preserve"><value>LDAP 主機</value></data><data name="LdapConfiguration_LdapHostNotes" xml:space="preserve"><value>執行LDAP 的伺服器名稱（選填）</value></data><data name="LdapConfiguration_Login" xml:space="preserve"><value>登入</value></data><data name="LdapConfiguration_LoginNotes" xml:space="preserve"><value>LDAP 屬性用以保存登入名稱</value></data><data name="LdapConfiguration_MiddleInitial" xml:space="preserve"><value>中間名</value></data><data name="LdapConfiguration_MiddleInitialNotes" xml:space="preserve"><value>LDAP 屬性用以保存使用者中間名</value></data><data name="LdapConfiguration_SamplePassword" xml:space="preserve"><value>密碼範例</value></data><data name="LdapConfiguration_SampleUser" xml:space="preserve"><value>使用者範例</value></data><data name="LdapConfiguration_SampleUserNotes" xml:space="preserve"><value>範例使用者的識別名稱，用以測試認證</value></data><data name="LdapConfiguration_String1" xml:space="preserve"><value>此頁面允許您設定</value></data><data name="LdapConfiguration_String2" xml:space="preserve"><value>欲透過目錄服務伺服器認證使用者，此允許您避免儲存密碼於使用者的</value></data><data name="LdapConfiguration_String3" xml:space="preserve"><value>概述。您可同時有兩種已存在的使用者類型 - </value></data><data name="LdapConfiguration_String4" xml:space="preserve"><value>使用者儲存密碼在內部</value></data><data name="LdapConfiguration_String5" xml:space="preserve"><value>LDAP 使用者使用 LDAP 的密碼</value></data><data name="LdapConfiguration_String6" xml:space="preserve"><value>請檢視/編輯下列您 LDAP 伺服器設定詳細資訊</value></data><data name="LdapConfiguration_String7" xml:space="preserve"><value>當您按下[更新]，您可選擇性輸入範例使用者用以認證</value></data><data name="LdapConfiguration_String8" xml:space="preserve"><value>在更新 LDAP 設定前會測試認證此使用者</value></data><data name="LdapConfiguration_Title" xml:space="preserve"><value>LDAP 設定</value></data><data name="LdapConfiguration_UseSSL" xml:space="preserve"><value>使用安全通訊端層協定(SSL)</value></data><data name="Admin_DataTools_Title" xml:space="preserve"><value>資料工具</value></data><data name="Admin_PlanningOptions_AutoCreateTasks" xml:space="preserve"><value>自動建立任務</value></data><data name="Admin_PlanningOptions_AutoCreateTasksLabel" xml:space="preserve"><value>當需求成為進行中時，建立新任務</value></data><data name="Admin_PlanningOptions_DefaultEffort" xml:space="preserve"><value>預設工時</value></data><data name="Admin_PlanningOptions_DefaultEffort_Requirements" xml:space="preserve"><value>需求（計畫工時）</value></data><data name="Admin_PlanningOptions_DefaultEffort_Tasks" xml:space="preserve"><value>任務（預估工時）</value></data><data name="Admin_PlanningOptions_EffortCalculations" xml:space="preserve"><value>工時計算</value></data><data name="Admin_PlanningOptions_EnabledForIncidents" xml:space="preserve"><value>啟用事件</value></data><data name="Admin_PlanningOptions_EnabledForTasks" xml:space="preserve"><value>啟用任務</value></data><data name="Admin_PlanningOptions_IncludeIncidentEffort" xml:space="preserve"><value>包含事件工時</value></data><data name="Admin_PlanningOptions_IncludeTaskEffort" xml:space="preserve"><value>包含任務工時</value></data><data name="Admin_PlanningOptions_NonWorkingHoursPerMonth" xml:space="preserve"><value>每月非工作時數</value></data><data name="Admin_PlanningOptions_TimeTracking" xml:space="preserve"><value>時間追蹤</value></data><data name="Admin_PlanningOptions_WorkDaysPerWeek" xml:space="preserve"><value>每週工作天數</value></data><data name="Admin_ProjectGroupMembershipAdd_BackToList" xml:space="preserve"><value>&lt;&lt; 返回至專案群組成員</value></data><data name="Admin_ProjectGroupMembershipAdd_String1" xml:space="preserve"><value>下列使用者非專案群組成員</value></data><data name="Admin_ProjectGroupMembershipAdd_String2" xml:space="preserve"><value>請選擇欲新增使用者的專案群組，並按下[新增]：</value></data><data name="Admin_ProjectGroupMembershipAdd_Title" xml:space="preserve"><value>新增專案群組成員</value></data><data name="Admin_ProjectMembershipAdd_BackToList" xml:space="preserve"><value>&lt;&lt; 返回至專案成員</value></data><data name="Admin_ProjectMembershipAdd_String1" xml:space="preserve"><value>下列使用者非專案成員</value></data><data name="Admin_ProjectMembershipAdd_String2" xml:space="preserve"><value>請選擇欲新增使用者的專案角色，並按下[新增]：</value></data><data name="Admin_ProjectMembershipAdd_Title" xml:space="preserve"><value>新增專案成員</value></data><data name="Admin_ProjectMembership_String1" xml:space="preserve"><value>下列使用者為專案成員。欲變更角色，請選擇下拉式選單中的值，並按下[更新]。</value></data><data name="Admin_ProjectMembership_String2" xml:space="preserve"><value>欲新增專案中新使用者，請按下[新增]。欲移除已存在使用者，請勾起該使用者的核准方塊，並按下[刪除]。</value></data>
+	<data name="Admin_ProjectMembership_Title" xml:space="preserve"><value>專案成員</value></data><data name="Admin_ActiveSessions_Title" xml:space="preserve"><value>活動中使用者連線</value></data><data name="Admin_ActiveSessions_Intro" xml:space="preserve"><value>下列使用者目前有活動中的連線</value></data><data name="Admin_ActiveSessions_Notes" xml:space="preserve"><value>欲結束使用者連線，請按下上方[結束連線]連結。</value></data><data name="Admin_ActiveSessions_UsageConcurrent" xml:space="preserve"><value>您目前已使用 {0}，超過 {1} 同時使用授權數量。</value></data><data name="Admin_ActiveSessions_UsageEnterprise" xml:space="preserve"><value>目前系統中有{0}活動中使用者。</value></data><data name="Admin_Custom_01" xml:space="preserve"><value>自訂01</value></data><data name="Admin_Custom_02" xml:space="preserve"><value>自訂02</value></data><data name="Admin_Custom_03" xml:space="preserve"><value>自訂03</value></data><data name="Admin_Custom_04" xml:space="preserve"><value>自訂04</value></data><data name="Admin_Custom_05" xml:space="preserve"><value>自訂05</value></data><data name="Admin_DataSyncCustomPropertyMapping_CustomValueMapping" xml:space="preserve"><value>自訂值對應</value></data><data name="Admin_DataSyncCustomPropertyMapping_Intro1" xml:space="preserve"><value>欲設定自訂屬性的資料對應，請填</value></data><data name="Admin_DataSyncCustomPropertyMapping_Intro2" xml:space="preserve"><value>下方自訂屬性的外部鍵值。若此為&lt;b&gt;自訂列表&lt;/b&gt;屬性，您也必須填滿每一自訂屬性值的外部鍵。</value></data><data name="Admin_DataSyncCustomPropertyMapping_Title" xml:space="preserve"><value>編輯自訂屬性資料對應</value></data><data name="Admin_DataSyncDetails_AutoMapUsers" xml:space="preserve"><value>自動對應使用者</value></data><data name="Admin_DataSyncDetails_BackToHome" xml:space="preserve"><value>&lt;&lt; 返回至資料同步首頁</value></data><data name="Admin_DataSyncDetails_Intro" xml:space="preserve"><value>請輸入/編輯下列外掛程式資訊。每一外掛程式皆需輸入確切的資訊，且您應參考外掛程式的說明文件：</value></data><data name="Admin_DataSyncDetails_NewPlugIn" xml:space="preserve"><value>新外掛程式</value></data><data name="Admin_DataSyncDetails_TimeOffset" xml:space="preserve"><value>時間偏移</value></data><data name="Admin_DataSyncDetails_Title" xml:space="preserve"><value>編輯外掛程式</value></data><data name="Admin_DataSyncFieldMapping_BackToMappings" xml:space="preserve"><value>&lt;&lt; 返回至專案對應</value></data><data name="Admin_DataSyncFieldMapping_Intro" xml:space="preserve"><value>欲編輯此欄位的資料對應，請為{0}外掛程式填入外部鍵值緊接著每一{1}值</value></data><data name="Admin_DataSyncFieldMapping_Title" xml:space="preserve"><value>編輯標準欄位資料對應</value></data><data name="Admin_DataSynchronization_DataMapping" xml:space="preserve"><value>資料對應</value></data><data name="Admin_DataSynchronization_Intro1" xml:space="preserve"><value>可使用背景資料同步服務、文庫與多種外部系統與應用程式的外掛程式連結。</value></data><data name="Admin_DataSynchronization_Intro2" xml:space="preserve"><value>此頁允許您檢視、新增、修改外掛程式列表，修改設定，和驗證最新同步狀態。並且，您可重設最後同步日期，強制特定外掛程式執行完整資料同步。</value></data><data name="Admin_DataSynchronization_PlugIn" xml:space="preserve"><value>外掛程式</value></data><data name="Admin_DataSynchronization_Title" xml:space="preserve"><value>資料同步</value></data><data name="Admin_DataSyncProjects_ArtifactFieldMapping" xml:space="preserve"><value>項目欄位對應</value></data><data name="Admin_DataSyncProjects_ArtifactFieldMapping_Intro" xml:space="preserve"><value>請按下每一個下方連結設定每一個專案中同步項目類型的欄位階層資料對應。</value></data><data name="Admin_DataSyncProjects_CustomProperties" xml:space="preserve"><value>自訂屬性</value></data><data name="Admin_DataSyncProjects_Intro1" xml:space="preserve"><value>欲設定與此專案的資料對應</value></data><data name="Admin_DataSyncProjects_Intro2" xml:space="preserve"><value>外掛程式，您需只指定外部系統的專案鍵值/編號，並按下下方的連結來設定不同的同步操作對應的欄位：</value></data><data name="Admin_DataSyncProjects_ProjectDataMapping" xml:space="preserve"><value>專案資料對應</value></data><data name="Admin_DataSyncProjects_StandardFields" xml:space="preserve"><value>標準欄位</value></data><data name="Admin_DataSyncProjects_Title" xml:space="preserve"><value>檢視/編輯資料對應</value></data><data name="Admin_DataSyncProjects_Unselected" xml:space="preserve"><value>（未選擇）</value></data><data name="Admin_DocumentFolderDetails_String1" xml:space="preserve"><value>請檢閱下列列表資訊，若需要可變更。</value></data><data name="Admin_DocumentFolderDetails_String2" xml:space="preserve"><value>完成後，請按下[更新/插入]以確認。</value></data><data name="Admin_DocumentFolderDetails_Title" xml:space="preserve"><value>新增/編輯文件資料夾</value></data><data name="Admin_EmailConfiguration_ActiveNotes1" xml:space="preserve"><value>若取消啟動，</value></data><data name="Admin_EmailConfiguration_ActiveNotes2" xml:space="preserve"><value>不會寄送任何訊息</value></data><data name="Admin_EmailConfiguration_ActiveYn" xml:space="preserve"><value>啟動電子郵件通知？</value></data><data name="Admin_EmailConfiguration_AllowUserControlNotes" xml:space="preserve"><value>若啟動，使用者可使用選項來拒絕接收系統的電子郵件。</value></data><data name="Admin_EmailConfiguration_AllowUsersControl" xml:space="preserve"><value>允許使用者控制接收電子郵件？</value></data><data name="Admin_EmailConfiguration_FromAddressNotes" xml:space="preserve"><value>電子郵件寄件來源位址。回覆至此位址不會被監控。</value></data><data name="Admin_EmailConfiguration_FromEmailAddress" xml:space="preserve"><value>電子郵件地址來源</value></data><data name="Admin_EmailConfiguration_HostName" xml:space="preserve"><value>主機名稱</value></data><data name="Admin_EmailConfiguration_MailHostNotes" xml:space="preserve"><value>郵件伺服器 SMTP 主機名稱</value></data><data name="Admin_EmailConfiguration_MailServer" xml:space="preserve"><value>郵件伺服器</value></data><data name="Admin_EmailConfiguration_MailServerIntro" xml:space="preserve"><value>欲使用預設 IIS SMPT 虛擬伺服器，請將下列欄位留空。</value></data><data name="Admin_EmailConfiguration_Password" xml:space="preserve"><value>密碼</value></data><data name="Admin_EmailConfiguration_PasswordNotes" xml:space="preserve"><value>若 SMTP 伺服器需認證，請用您的密碼。</value></data><data name="Admin_EmailConfiguration_PortNumber" xml:space="preserve"><value>埠號</value></data><data name="Admin_EmailConfiguration_PortNumberNotes" xml:space="preserve"><value>SMTP 埠號。使用預設 25 請留空。</value></data><data name="Admin_EmailConfiguration_ReplyToAddressNotes" xml:space="preserve"><value>信件包含[回覆至]欄位值。當值為空時，訊息中標頭會為空。</value></data><data name="Admin_EmailConfiguration_ReplyToEmailAddress" xml:space="preserve"><value>回覆至電子郵件位址</value></data><data name="Admin_EmailConfiguration_SendHtml" xml:space="preserve"><value>寄送 HTML 郵件</value></data><data name="Admin_EmailConfiguration_SendInHtmlNotes" xml:space="preserve"><value>若啟動，信件會使用 HTML 格式。否則為存文字格式。</value></data><data name="Admin_EmailConfiguration_SslConnection" xml:space="preserve"><value>SSL 連線</value></data><data name="Admin_EmailConfiguration_String1" xml:space="preserve"><value>依預設</value></data><data name="Admin_EmailConfiguration_String2" xml:space="preserve"><value>使用預設 IIS SMTP 虛擬伺服器寄送往外郵件通知給使用者。然而也可設定通過外部SMTP伺服器直接寄送。</value></data><data name="Admin_EmailConfiguration_String3" xml:space="preserve"><value>此頁允許您修改郵件伺服器設定:</value></data><data name="Admin_EmailConfiguration_UserName" xml:space="preserve"><value>使用者名稱</value></data><data name="Admin_EmailConfiguration_UserNameNotes" xml:space="preserve"><value>若您的 SMTP 伺服器需認證，此為您的使用者名稱</value></data><data name="Admin_Notification_ArtifactFieldsIntro" xml:space="preserve"><value>若任何已選擇的欄位被異動，此事件會被啟動。</value></data><data name="Admin_Notification_ArtifactTypeNotes" xml:space="preserve"><value>此事件會被附加至此項目類型。</value></data><data name="Admin_Notification_ArtifactUsersIntro" xml:space="preserve"><value>當選擇欄位異動會通知以下使用者、角色</value></data><data name="Admin_Notification_Intro" xml:space="preserve"><value>以下通知事件已被定義於此專案。啟動或取消啟動事件，或異動已指派的欄位或使用者，請按下「編輯」連結。</value></data><data name="Admin_Notification_IsActiveNotes" xml:space="preserve"><value>此事件是否啟動。</value></data><data name="Admin_Notification_OnCreationNotes" xml:space="preserve"><value>此事件是否啟動一新項目建立。</value></data><data name="Admin_Notification_ReturnToTemplateList" xml:space="preserve"><value>&lt;&lt; 返回至範本列表</value></data><data name="Admin_Notification_SubjectLine" xml:space="preserve"><value>標題線</value></data><data name="Admin_Notification_SubjectLineNotes" xml:space="preserve"><value>信件通知的標題線。信件範本中的標誌可被用於標題線。</value></data><data name="Admin_RoleList_Intro" xml:space="preserve"><value>以下角色已被定義。</value></data><data name="Admin_VersionControlProject_ActiveForProject" xml:space="preserve"><value>啟動專案</value></data><data name="Admin_VersionControlProject_Intro1" xml:space="preserve"><value>請編輯以下專案特殊的設定</value></data><data name="Admin_VersionControlProject_Intro2" xml:space="preserve"><value>版本控制提供器。若欄位為空會使用提供器預設設定。欲停止使用此專案中的提供器，僅需設定啟動旗標為否：</value></data><data name="Admin_VersionControlProject_LongTitle" xml:space="preserve"><value>版本控制專案設定</value></data><data name="Admin_VersionControlProject_Title" xml:space="preserve"><value>專案設定</value></data><data name="Admin_VersionControlProject_Unselected" xml:space="preserve"><value>(未選擇)</value></data><data name="Admin_VersionControlProvider_BackToHome" xml:space="preserve"><value>&lt;&lt; 返回至版本控制首頁</value></data><data name="Admin_VersionControlProvider_DefaultSettings" xml:space="preserve"><value>預設設定</value></data><data name="Admin_VersionControlProvider_Intro" xml:space="preserve"><value>請輸入/編輯下列提供器資訊。每一提供者皆需輸入確切的資訊，且您應參考提供器的說明文件：</value></data><data name="Admin_VersionControlProvider_Intro2" xml:space="preserve"><value>以下任何專案使用的設定無定義各自的設定：</value></data><data name="Admin_VersionControlProvider_NewProvider" xml:space="preserve"><value>新提供器</value></data><data name="Admin_VersionControlProvider_Title" xml:space="preserve"><value>編輯版本控制提供器</value></data><data name="Admin_VersionControl_Intro" xml:space="preserve"><value>可整合多種有彈性、開放架構、可使用版本控制提供器軟件庫的版本控制提供器外部版本控制系統</value></data><data name="Admin_VersionControl_Intro2" xml:space="preserve"><value>此頁允許您檢視、新增、修改版本控制提供器列表，改變其設定並指定任何專案特殊設定值。</value></data><data name="Admin_VersionControl_Title" xml:space="preserve"><value>版本控制整合</value></data><data name="Notification_ID" xml:space="preserve"><value>項目的編號#</value></data><data name="Notification_NotifyTo" xml:space="preserve"><value>通知收件者名稱</value></data><data name="Notification_Product" xml:space="preserve"><value>應用程式名稱</value></data><data name="Notification_Project" xml:space="preserve"><value>專案名稱</value></data><data name="Notification_URL" xml:space="preserve"><value>項目連結 URL</value></data><data name="GlobalNavigation_SearchTooltip" xml:space="preserve"><value>您可使用關鍵字查詢或輸入項目的唯一識別符 （如 IN45 代表事件 45）</value></data><data name="Admin_PlanningOptions_DefaultEstimate" xml:space="preserve"><value>預設預估</value></data><data name="Admin_PlanningOptions_General" xml:space="preserve"><value>一般</value></data><data name="Admin_PlanningOptions_PointEffort" xml:space="preserve"><value>點工時</value></data><data name="Admin_PlanningOptions_PointEffortNotes" xml:space="preserve"><value>此為用來決定每預估點的人力工時的換算係數</value></data><data name="Admin_PlanningOptions_Requirements" xml:space="preserve"><value>需求</value></data><data name="Admin_PlanningOptions_TasksIncidents" xml:space="preserve"><value>任務、事件</value></data><data name="Global_Days" xml:space="preserve"><value>天</value></data><data name="Global_Points" xml:space="preserve"><value>點</value></data><data name="Admin_Components_AddComponent" xml:space="preserve"><value>新增模組</value></data><data name="Admin_Components_NoComponentsDefined" xml:space="preserve"><value>此專案無定義模組。請按下「新增模組」新增一模組。</value></data><data name="Admin_EditComponents" xml:space="preserve"><value>編輯模組</value></data><data name="Admin_EditComponents_Intro" xml:space="preserve"><value>以下模組已被定義在此專案。請異動後按下[儲存]提交結果：</value></data><data name="Admin_Requirements" xml:space="preserve"><value>需求</value></data><data name="Admin_UserDetailsAddProjectMembership_BackToUserDetails" xml:space="preserve"><value>&lt;&lt; 返回至使用者詳細資訊</value></data><data name="Admin_UserDetailsAddProjectMembership_Legend1" xml:space="preserve"><value>此使用者不為以下任一專案的成員。</value></data><data name="Admin_UserDetailsAddProjectMembership_Legend2" xml:space="preserve"><value>請選擇欲新增此使用者的專案，並按下[新增]：</value></data><data name="Admin_UserDetailsAddProjectMembership_Title" xml:space="preserve"><value>新增使用者專案成員</value></data><data name="Global_Deleted" xml:space="preserve"><value>已刪除</value></data><data name="Global_Inactive" xml:space="preserve"><value>不啟動</value></data><data name="Admin_RequirementTypes_Intro" xml:space="preserve"><value>以下需求類型已存在此系統。您可指定專案，工作流程被使用任一需求類型：</value></data><data name="Admin_RequirementWorkflowDetails_Intro" xml:space="preserve"><value>此顯示所有特定工作流程的需求狀態步驟：</value></data><data name="Admin_RequirementWorkflowStep_RequirementCustomProperties" xml:space="preserve"><value>需求自訂屬性</value></data><data name="Admin_RequirementWorkflowStep_RequirementCustomPropertiesIntro" xml:space="preserve"><value>以下需求自訂屬性在此步驟的工作流程為隱藏/關閉/必須：</value></data><data name="Admin_RequirementWorkflowStep_RequirementFields" xml:space="preserve"><value>需求欄位</value></data><data name="Admin_RequirementWorkflowStep_RequirementFieldsIntro" xml:space="preserve"><value>以下需求欄位在此步驟的工作流程為隱藏/關閉/必須：</value></data><data name="Admin_RequirementWorkflows_Intro" xml:space="preserve"><value>此專案中有多種可使用的需求流程。欲新增一工作流程，按下[新增工作流程]連結，欲編輯已存在工作流程，按下步驟的超連結：</value></data><data name="Admin_Workflows_AddWorkflow" xml:space="preserve"><value>新增工作流程</value></data><data name="Admin_PlanningOptions_ReqStatusChangedByTasks" xml:space="preserve"><value>使用任務狀態</value></data><data name="Admin_PlanningOptions_ReqStatusChangedByTasksLabel" xml:space="preserve"><value>當所有任務轉為已完成，已連結的需求狀態會自動切換至已開發。</value></data><data name="Admin_PlanningOptions_ReqStatusChangedByTestCase" xml:space="preserve"><value>使用測試狀態</value></data><data name="Admin_PlanningOptions_ReqStatusChangedByTestCaseLabel" xml:space="preserve"><value>當所有測試案例通過，已連結的需求狀態會自動切換至已測試。</value></data><data name="Admin_RequirementWorkflowTransition_AuthorExecuteLabel" xml:space="preserve"><value>此需求作者可執行：</value></data><data name="Admin_RequirementWorkflowTransition_OwnerExecuteLabel" xml:space="preserve"><value>此需求擁有者可執行：</value></data><data name="Global_Components" xml:space="preserve"><value>模組</value></data><data name="QuickFilterPanel_MyFilters" xml:space="preserve"><value>我的篩選器：</value></data><data name="QuickFilterPanel_NoFilters" xml:space="preserve"><value>（無可用篩選器）</value></data><data name="QuickFilterPanel_SharedFilters" xml:space="preserve"><value>共享篩選器</value></data><data name="Admin_EditTaskWorkflows_Title" xml:space="preserve"><value>任務工作流程</value></data><data name="Admin_Planning" xml:space="preserve"><value>計畫</value></data><data name="Admin_TaskTypes_Intro" xml:space="preserve"><value>以下任務類型已存在於系統。您可指定專案，工作流程可被使用於任一工作類型：</value></data><data name="Admin_TaskWorkflowDetails_Intro" xml:space="preserve"><value>此顯示所有特定工作流程的任務狀態步驟：</value></data><data name="Admin_TaskWorkflowStep_TaskCustomProperties" xml:space="preserve"><value>任務自訂屬性</value></data><data name="Admin_TaskWorkflowStep_TaskCustomPropertiesIntro" xml:space="preserve"><value>以下任務自訂屬性在此步驟的工作流程為隱藏/關閉/必須：</value></data><data name="Admin_TaskWorkflowStep_TaskFields" xml:space="preserve"><value>任務欄位</value></data><data name="Admin_TaskWorkflowStep_TaskFieldsIntro" xml:space="preserve"><value>以下任務欄位在此步驟的工作流程為隱藏/關閉/必須：</value></data><data name="Admin_TaskWorkflows_Intro" xml:space="preserve"><value>此專案中有多種可使用的任務流程。欲新增一工作流程，按下[新增工作流程]連結，欲編輯已存在工作流程，按下步驟的超連結：</value></data><data name="Admin_TaskWorkflowTransition_AuthorExecuteLabel" xml:space="preserve"><value>此任務作者可執行：</value></data><data name="Admin_TaskWorkflowTransition_OwnerExecuteLabel" xml:space="preserve"><value>此任務擁有者可執行：</value></data><data name="Global_Folders" xml:space="preserve"><value>資料夾</value></data><data name="Tasks_AllTasks" xml:space="preserve"><value>（所有任務）</value></data><data name="Global_Root" xml:space="preserve"><value>根</value></data><data name="TaskDetails_ChangeRequirement" xml:space="preserve"><value>更改需求</value></data><data name="TaskDetails_ChangeRequirement_Intro" xml:space="preserve"><value>請選擇此任務關聯的需求:</value></data><data name="Global_Unknown" xml:space="preserve"><value>未知</value></data><data name="UserProfile_Avatar" xml:space="preserve"><value>頭像</value></data><data name="ProjectList_Contacts" xml:space="preserve"><value>我的聯絡方式</value></data><data name="UserProfile_Avatar_DeleteExisting" xml:space="preserve"><value>移除</value></data><data name="UserProfile_Avatar_Notes" xml:space="preserve"><value>頭像圖片大小不可大於100k、大於100x100 像素。僅支援 JPG、GIF、PNG圖片類型。您需清除瀏覽器快取檢視新的頭像。</value></data><data name="UserProfile_Avatar_UploadNew" xml:space="preserve"><value>上傳新</value></data><data name="UserProfile_Avatar_UploadNewTooltip" xml:space="preserve"><value>選擇檔案，並按下下方[更新]按鈕</value></data><data name="Admin_PlanningOptions_IncludeTestCaseEffort" xml:space="preserve"><value>包含測試案例工時</value></data><data name="Admin_PlanningOptions_ReqStatusAutoPlanned" xml:space="preserve"><value>自動計畫</value></data><data name="Admin_PlanningOptions_ReqStatusAutoPlannedLabel" xml:space="preserve"><value>當您為需求指定版本將自動更換狀態至「已計畫」。</value></data><data name="GeneralSettings_InstantMessenger" xml:space="preserve"><value>即時訊息</value></data><data name="GeneralSettings_InstantMessengerNotes" xml:space="preserve"><value>開啟即時訊息整合。</value></data><data name="GeneralSettings_InstantMessengerRetention" xml:space="preserve"><value>已讀即時訊息保留在系統的天數。</value></data><data name="IterationPlan_IncludeTestCases" xml:space="preserve"><value>包含測試案例</value></data><data name="TestCaseList_TestCasesForProject" xml:space="preserve"><value>此專案的測試案例</value></data><data name="TestCaseList_TestCasesNotAssociatedWithRelease" xml:space="preserve"><value>測試案例無關聯至此版本</value></data><data name="ProjectHome_SharedSearches" xml:space="preserve"><value>共享的查詢</value></data><data name="TestCaseExecution_NoStepsAvailableForTestCase" xml:space="preserve"><value>此案例無定義的測試步驟</value></data><data name="Admin_EmailConfiguration_SendEmailFromUsers" xml:space="preserve"><value>信件來至使用者地址？</value></data><data name="Admin_EmailConfiguration_SendEmailFromUsersNotes" xml:space="preserve"><value>若啟用，任何使用信件按鈕寄出的訊息事由使用者發起而非系統管理者。</value></data><data name="Admin_VersionControl_TaraVault" xml:space="preserve"><value>TaraVault</value></data><data name="Admin_TaraVaultConfig" xml:space="preserve"><value>TaraVault 設定</value></data><data name="Admin_TaraVaultConfig_Intro1" xml:space="preserve"><value>TaraVault 是 OnShore Technology Group 提供的託管原始碼儲存庫和軟體設定管理系統。</value></data><data name="Admin_TaraVault_Config_AccountName" xml:space="preserve"><value>TaraVault 帳號名稱</value></data><data name="Admin_TaraVault_Config_Active" xml:space="preserve"><value>TaraVault 啟動？</value></data><data name="Admin_TaraVault_Config_NumberUsers" xml:space="preserve"><value>可用的 TaraVault 使用者</value></data><data name="Admin_TaraVault_Config_ProjName" xml:space="preserve"><value>TaraVault 專案名稱</value></data><data name="Admin_TaraVault_Config_ProjType" xml:space="preserve"><value>TaraVault 專案類型</value></data><data name="Admin_TaraVault_Config_ProjUsers" xml:space="preserve"><value>此專案指派的使用者</value></data><data name="Admin_TaraVault_Confirm_Deactivate" xml:space="preserve"><value>一旦 TaraVault 取消啟動，您將失去所有版本控制文件和使用者對應。您確定要繼續？</value></data><data name="Admin_TaraVault_Confirm_ProjActivate" xml:space="preserve"><value>一旦專案啟動，任何設定將無法更改。您確定要啟動此專案？</value></data><data name="Admin_TaraVault_Confirm_ProjDeactivate" xml:space="preserve"><value>取消啟動此專案將移除所有來源控制文件。您確定要繼續？</value></data><data name="Admin_TaraVault_ProjectSummary" xml:space="preserve"><value>TaraVault 專案設定</value></data><data name="Admin_TaraVault_SelectProject" xml:space="preserve"><value>您需選擇一專案來設定專案組態。</value></data><data name="Admin_TaraVault_SystemSummary" xml:space="preserve"><value>TaraVault 全域設定</value></data><data name="Admin_UserDetails_TabTaraVault" xml:space="preserve"><value>TaraVault 成員</value></data><data name="Global_ChooseReleaseTypeSetting" xml:space="preserve"><value>版本篩選</value></data><data name="Global_ChooseReleaseTypeSettingTooltip" xml:space="preserve"><value>決定資料是否基於檢測到的版本或解決的版本。</value></data><data name="PlanningBoard_ProductBacklog" xml:space="preserve"><value>-- 產品未完成項目 --</value></data><data name="PlanningBoard_GroupBy" xml:space="preserve"><value>依群組</value></data><data name="PlanningBoard_IncludeDetails" xml:space="preserve"><value>詳細資訊檢視</value></data><data name="TestCaseDetails_ObjectsPath" xml:space="preserve"><value>物件路徑</value></data><data name="TestCaseDetails_ProjectFile" xml:space="preserve"><value>專案文件</value></data><data name="TestCaseDetails_ScriptPath" xml:space="preserve"><value>腳本路徑</value></data><data name="TestCaseDetails_UserFunctionsPath" xml:space="preserve"><value>使用者功能路徑</value></data><data name="SourceCodeList_CurrentBranch" xml:space="preserve"><value>目前分支</value></data><data name="SourceCodeList_Files" xml:space="preserve"><value>目前資料夾內的文件</value></data><data name="SourceCodeRevisions_Revisions" xml:space="preserve"><value>目前儲存庫的修訂版本</value></data><data name="Admin_User_NoTaraProjects" xml:space="preserve"><value>此時 TaraVault 專案無任何指派的使用者。</value></data><data name="Admin_User_TaraEnable" xml:space="preserve"><value>啟動 TaraVault 使用者？</value></data><data name="Admin_User_TaraVaultLogin" xml:space="preserve"><value>TaraVault 使用者登入</value></data><data name="Admin_User_TaraVaultPass" xml:space="preserve"><value>TaraVault 使用者密碼</value></data><data name="Admin_User_TaraVaultProjects" xml:space="preserve"><value>為使用者啟動專案</value></data><data name="PlanningBoard_AddRequirement" xml:space="preserve"><value>新增需求</value></data><data name="Admin_UserDetailsAddTaraVaultProject_Legend1" xml:space="preserve"><value>使用者&lt;b&gt;不是&lt;/b&gt;下列 TaraVault 專案的成員</value></data><data name="Admin_UserDetailsAddTaraVaultProject_Legend2" xml:space="preserve"><value>選增欲新增至專案的使用者，並按下「新增」按鈕。</value></data><data name="Admin_User_TaraVault_AddProject" xml:space="preserve"><value>新增專案使用者？</value></data><data name="Admin_GeneralSettings_CacheFolder" xml:space="preserve"><value>快取資料夾</value></data><data name="Admin_GeneralSettings_CacheFolderNotes" xml:space="preserve"><value>本機資料夾用於儲存網頁流程快取資料。預設或錯誤的資料夾為 &lt;span style="font-family: monospace"&gt;{0}&lt;/span&gt;</value></data><data name="Admin_TaraVaultConfig_Intro2" xml:space="preserve"><value>於 {0} 的專案可在 TaraVault 啟動用於儲存專案程式碼文件和修訂版本。TaraVault 根據特定的使用者啟動數量來供應。</value></data><data name="Admin_TaraVaultConfig_Intro3" xml:space="preserve"><value>您可更改哪些在{0}螢幕上啟動原始碼管理的使用者。</value></data><data name="GeneralSettings_WorXEnabled" xml:space="preserve"><value>WorX 整合</value></data><data name="GeneralSettings_WorXEnabledNotes" xml:space="preserve"><value>設定為「是」開啟Autom8 WorX 手動測試工具整合</value></data><data name="TaskDetails_SplitTask" xml:space="preserve"><value>切割任務</value></data><data name="TaskDetails_SplitTask_Intro" xml:space="preserve"><value>請輸入新任務的名稱和您希望指派的擁有者與工時百分比：</value></data><data name="TaskDetails_SplitTask_Notes" xml:space="preserve"><value>若工時百分比為空，系統會將剩餘工時移至新任務（若任務進行中）或簡易分割 50/50 若任務仍為開始或完成。</value></data><data name="TestCaseExecution_LinkExisting" xml:space="preserve"><value>連結存在的事件</value></data><data name="ProjectHome_ActivityStream" xml:space="preserve"><value>活動串流</value></data><data name="ActivityList_Title" xml:space="preserve"><value>活動串流</value></data><data name="WorkflowTransition_RequireSignature" xml:space="preserve"><value>需電子簽名</value></data></root>

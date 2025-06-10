@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="TestSet_TestCasePositionInUse" xml:space="preserve">
+    <value>特别的测试用例位置已经在使用了</value>
+  </data>
+	<data name="TestSet_TestSetTestCaseIdNotExist" xml:space="preserve">
+    <value>通过在 testSetId 和 testSetTestCaseId 不对应匹配映射测试用例的测试集 ！</value>
+  </data>
+	<data name="Incident_ClosedDateCannotBeBeforeDetected" xml:space="preserve">
+    <value>关闭日期不能早于检测日期</value>
+  </data>
+	<data name="Incident_ClosedDateCannotBeBeforeStart" xml:space="preserve">
+    <value>关闭日期不能早于开始日期</value>
+  </data>
+	<data name="Task_EndDateCannotBeBeforeStartDate" xml:space="preserve">
+    <value>结束日期不能早于开始日期</value>
+  </data>
+	<data name="Task_EndDateOutsideReleaseRange" xml:space="preserve">
+    <value>此任务的结束日期不能为其关联的迭代/发行的日期范围之外</value>
+  </data>
+	<data name="Task_EstimatedEffortNeededForInProgress" xml:space="preserve">
+    <value>您需要设置一个估计工作来移动任务到正在进行中</value>
+  </data>
+	<data name="Task_NeedActualEffortForCompleted" xml:space="preserve">
+    <value>您需要提供一个"实际工作量"使任务完成</value>
+  </data>
+	<data name="Task_NeedEndDateForCompleted" xml:space="preserve">
+    <value>您需要提供结束日期来使任务完成</value>
+  </data>
+	<data name="Task_NeedEndDateForInProgress" xml:space="preserve">
+    <value>您需要提供结止日期使任务完成</value>
+  </data>
+	<data name="Task_NeedEstimatedEffortForCompleted" xml:space="preserve">
+    <value>您需要提供估计工作使任务完成</value>
+  </data>
+	<data name="Task_NeedReleaseForCompleted" xml:space="preserve">
+    <value>您需要发行/迭代来关联任务，使它完成</value>
+  </data>
+	<data name="Task_NeedReleaseForInProgress" xml:space="preserve">
+    <value>您需要发行/迭代来关联任务，使它正在进行</value>
+  </data>
+	<data name="Task_NeedStartDateForCompleted" xml:space="preserve">
+    <value>您需要提供一个开始日期来完成任务</value>
+  </data>
+	<data name="Task_NeedStartDateForInProgress" xml:space="preserve">
+    <value>您需要提供一个开始日期来使任务正在进行</value>
+  </data>
+	<data name="Task_PercentCompleteNotInRange" xml:space="preserve">
+    <value>%完成值需要在范围 0-100%</value>
+  </data>
+	<data name="Task_RemainingEffortNeededForInProgress" xml:space="preserve">
+    <value>您需要再加把油是任务继续下去</value>
+  </data>
+	<data name="Task_StartDateOutsideReleaseRange" xml:space="preserve">
+    <value>此任务的开始日期不能为其关联的迭代/发行的日期范围之外</value>
+  </data>
+	<data name="TestRun_TestSetNotContainTestCases" xml:space="preserve">
+    <value>通过在测试设置中通过的不包含任何测试用例</value>
+  </data>
+	<data name="TestSet_TestSetCannotHaveChildItems" xml:space="preserve">
+    <value>测试集不能有子测试集或文件夹。</value>
+  </data>
+	<data name="Project_ArtifactNotExists" xml:space="preserve">
+    <value>项目 {0} 不再存在于系统中。</value>
+  </data>
+	<data name="Project_Copy_Attachments" xml:space="preserve">
+    <value>复制项目附件</value>
+  </data>
+	<data name="Project_Copy_CreateShell" xml:space="preserve">
+    <value>创建基于现有的新项目。</value>
+  </data>
+	<data name="Project_Copy_CustomProperties" xml:space="preserve">
+    <value>复制工件的自定义属性</value>
+  </data>
+	<data name="Project_Copy_Mappings" xml:space="preserve">
+    <value>复制满足要求、 发行和测试用例的映射</value>
+  </data>
+	<data name="Project_Copy_Releases" xml:space="preserve">
+    <value>复制项目发布</value>
+  </data>
+	<data name="Project_Copy_Requirements" xml:space="preserve">
+    <value>复制项目要求</value>
+  </data>
+	<data name="Project_Copy_TestCases" xml:space="preserve">
+    <value>复制项目测试用例</value>
+  </data>
+	<data name="Project_Copy_TestSets" xml:space="preserve">
+    <value>复制项目测试设置</value>
+  </data>
+	<data name="Project_Delete_Associations" xml:space="preserve">
+    <value>删除工件的关联</value>
+  </data>
+	<data name="Project_Delete_Attachments" xml:space="preserve">
+    <value>删除项目附件</value>
+  </data>
+	<data name="Project_Delete_DataMappings" xml:space="preserve">
+    <value>删除数据同步映射</value>
+  </data>
+	<data name="Project_Delete_IncidentWorkflows" xml:space="preserve">
+    <value>删除事件的工作流</value>
+  </data>
+	<data name="Project_Delete_Project" xml:space="preserve">
+    <value>删除项目本身</value>
+  </data>
+	<data name="Project_Delete_Releases" xml:space="preserve">
+    <value>删除发行</value>
+  </data>
+	<data name="Project_Delete_Reports" xml:space="preserve">
+    <value>删除报告</value>
+  </data>
+	<data name="Project_Delete_Requirements" xml:space="preserve">
+    <value>删除要求项目</value>
+  </data>
+	<data name="Project_Delete_TestCases" xml:space="preserve">
+    <value>删除测试用例</value>
+  </data>
+	<data name="Project_Delete_TestRuns" xml:space="preserve">
+    <value>删除测试运行项</value>
+  </data>
+	<data name="Project_Delete_TestSets" xml:space="preserve">
+    <value>删除测试设置项</value>
+  </data>
+	<data name="TestRun_CreatingTestRuns" xml:space="preserve">
+    <value>從测试用例创建测试运行。</value>
+  </data>
+	<data name="TestRun_CreationCompleted" xml:space="preserve">
+    <value>创建测试运行完成。</value>
+  </data>
+	<data name="TestRun_SavingPendingEntry" xml:space="preserve">
+    <value>保存待定的测试运行条目。</value>
+  </data>
+	<data name="BuildManager_BuildNotExists" xml:space="preserve">
+    <value>生成 '{0}' 后不再存在于系统</value>
+  </data>
+	<data name="BuildManager_BuildNotExistsForRevision" xml:space="preserve">
+    <value>找不到生成的代码修改源 '{0}'</value>
+  </data>
+	<data name="BuildManager_ReleaseNotExists" xml:space="preserve">
+    <value>当前项目中不存在关联的释放/迭代 RL {0}</value>
+  </data>
+	<data name="CustomProperty_MaxValueError" xml:space="preserve"> '%field%' 的输入值超过%value%的最大允许值.</data><data name="CustomProperty_MinLengthError" xml:space="preserve">输入的字符串包含"%act% "字符，'%field%' 最少需要 %min% 字符.</data><data name="CustomProperty_MinValueError" xml:space="preserve"> '%field%' 的输入值小于%value%的最小允许值.</data><data name="CustomProperty_RegExError" xml:space="preserve"> '%field%' 的输入值不符合系统规定</data><data name="CustomProperty_RegExException_CannotChange" xml:space="preserve">您不能更改系统正则表达式</data><data name="CustomProperty_RegExException_CannotDelete" xml:space="preserve">您不能删除系统系统正则表达式</data><data name="CustomProperty_ValueNullError" xml:space="preserve">请输入'%field%' 值</data><data name="Incident_CompletionPercentOutOfRange" xml:space="preserve">完成进度需要在0-100%之间</data><data name="Report_CannotDeleteDefaultReport" xml:space="preserve">您不能删除一个标准/默认报告</data><data name="Report_ReportGenerationComplete" xml:space="preserve">报告生成完毕</data><data name="Report_ReportNotExist" xml:space="preserve">报告中id '{0}'系统中不存在</data><data name="Report_StartGeneratingReport" xml:space="preserve">开始生成报告</data><data name="UserManager_NotResetLDAP" xml:space="preserve">你无权通过{0}重置LDAP用户密码</data><data name="UserManager_SettingNotExists" xml:space="preserve">系统中不存在用户设置收集'{0}' </data><data name="CustomProperty_MaxValueError" xml:space="preserve"><value> '%field%' 的输入值超过%value%的最大允许值.</value></data><data name="CustomProperty_MinLengthError" xml:space="preserve"><value>输入的字符串包含"%act% "字符，'%field%' 最少需要 %min% 字符.</value></data><data name="CustomProperty_MinValueError" xml:space="preserve"><value> '%field%' 的输入值小于%value%的最小允许值.</value></data><data name="CustomProperty_RegExError" xml:space="preserve"><value> '%field%' 的输入值不符合系统规定</value></data><data name="CustomProperty_RegExException_CannotChange" xml:space="preserve"><value>您不能更改系统正则表达式</value></data><data name="CustomProperty_RegExException_CannotDelete" xml:space="preserve"><value>您不能删除系统系统正则表达式</value></data><data name="CustomProperty_ValueNullError" xml:space="preserve"><value>请输入'%field%' 值</value></data><data name="Incident_CompletionPercentOutOfRange" xml:space="preserve"><value>完成进度需要在0-100%之间</value></data><data name="Report_CannotDeleteDefaultReport" xml:space="preserve"><value>您不能删除一个标准/默认报告</value></data><data name="Report_ReportGenerationComplete" xml:space="preserve"><value>报告生成完毕</value></data><data name="Report_ReportNotExist" xml:space="preserve"><value>报告中id '{0}'系统中不存在</value></data><data name="Report_StartGeneratingReport" xml:space="preserve"><value>开始生成报告</value></data><data name="UserManager_NotResetLDAP" xml:space="preserve"><value>你无权通过{0}重置LDAP用户密码</value></data><data name="UserManager_SettingNotExists" xml:space="preserve"><value>系统中不存在用户设置收集'{0}' </value></data></root>

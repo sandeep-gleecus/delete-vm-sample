@@ -1,0 +1,3 @@
+test_set_folder_id:Normal,project_id:Normal,name:String,parent_test_set_folder_id:Normal,hierarchy_level:Normal,indent_level:String
+1,1,Functional Test Sets,NULL,1,AAA
+2,1,Regression Test Sets,NULL,1,AAB

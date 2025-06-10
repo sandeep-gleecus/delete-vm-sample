@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnitTestAdapter.2.3.0\build\NUnitTestAdapter.props" Condition="Exists('..\packages\NUnitTestAdapter.2.3.0\build\NUnitTestAdapter.props')" />
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED1AABEB-840E-4C4D-83CD-0191A184BC2D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TestSuite</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Inflectra.SpiraTest.TestSuite</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/TestSuite/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ValidationMaster\Web.csproj">
+      <Project>{da4e274a-73ef-46a9-9194-003913951b2b}</Project>
+      <Name>Web</Name>
+    </ProjectReference>
+    <Reference Include="DiffPlex, Version=1.6.3.0, Culture=neutral, PublicKeyToken=1d35e91d1bd7bc0f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Business\Assemblies\DiffPlex.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.5.10112, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SpiraTestFramework, Version=1.0.2746.16021, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\SpiraTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Name>Business</Name>
+      <Project>{DDBE8B78-E613-4A84-8267-AF81A7CCFEE6}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{80D5A03B-BE61-4171-9D01-B8A492E49041}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{3A6B00CE-2665-4BAF-9CFC-4D08CE6D8446}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArtifactLinkTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArtifactManagerTest.cs" />
+    <Compile Include="AutomationTest.cs" />
+    <Compile Include="BaselineManagerTest.cs" />
+    <Compile Include="BuildManagerTest.cs" />
+    <Compile Include="ComponentManagerTest.cs" />
+    <Compile Include="DocumentWorkflowManagerTest.cs" />
+    <Compile Include="HttpSimulator\HttpSimulator.cs" />
+    <Compile Include="HttpSimulator\ReflectionHelper.cs" />
+    <Compile Include="HttpSimulator\SimulatedHttpRequest.cs" />
+    <Compile Include="MessageManagerTest.cs" />
+    <Compile Include="PortfolioTest.cs" />
+    <Compile Include="OAuthManagerTest.cs" />
+    <Compile Include="PullRequestManagerTest.cs" />
+    <Compile Include="ReleaseWorkflowManagerTest.cs" />
+    <Compile Include="RiskManagerTest.cs" />
+    <Compile Include="SessionManagerTest.cs" />
+    <Compile Include="RiskWorkflowManagerTest.cs" />
+    <Compile Include="TaskWorkflowManagerTest.cs" />
+    <Compile Include="EventManagerTest.cs" />
+    <Compile Include="PlaceholderTest.cs" />
+    <Compile Include="Provider Tests\ConfigurationSettingsTest.cs" />
+    <Compile Include="DiscussionTests.cs" />
+    <Compile Include="FiletypeTest.cs" />
+    <Compile Include="GraphTest.cs" />
+    <Compile Include="NotificationTest.cs" />
+    <Compile Include="DashboardTest.cs" />
+    <Compile Include="ProjectAttachmentTest.cs" />
+    <Compile Include="ProjectGroupTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttachmentTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoverageTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomPropertyTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataMappingTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistoryTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IncidentTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InternalRoutines.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LicenseTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectManagerTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Provider Tests\MembershipProviderTest.cs" />
+    <Compile Include="Provider Tests\ProfileProviderTest.cs" />
+    <Compile Include="ReleaseTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportTest.cs" />
+    <Compile Include="RequirementManagerTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RequirementWorkflowManagerTest.cs" />
+    <Compile Include="SavedFilterTest.cs" />
+    <Compile Include="SourceCodeTest.cs" />
+    <Compile Include="TaskManagerTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TemplateManagerTest.cs" />
+    <Compile Include="TestCaseTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestCaseWorkflowTest.cs" />
+    <Compile Include="TestConfigurationTest.cs" />
+    <Compile Include="TestRunTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestSetTest.cs" />
+    <Compile Include="UserManagerTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkflowManagerTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Data\ReleaseRollups.xlsx" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteAssociation.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteCustomList.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteCustomListValue.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteCustomProperty.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteDataMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteDocument.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteIncident.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteIncidentPriority.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteIncidentResolution.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteIncidentSeverity.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteIncidentStatus.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteIncidentType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteProject.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteProjectRole.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteProjectUser.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteRelease.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteRequirement.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteSetting.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteTask.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteTestCase.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteTestCaseParameter.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteTestSet.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteTestStep.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteUser.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteVersion.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteWorkflowIncidentCustomProperties.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteWorkflowIncidentFields.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v3_0.DataObjects.RemoteWorkflowIncidentTransition.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteAssociation.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteAutomatedTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteAutomationEngine.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteAutomationHost.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteBuild.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteComment.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteCustomList.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteCustomListValue.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteCustomProperty.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteDataMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteDataSyncSystem.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteDataSyncSystem1.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteDocument.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteDocumentFolder.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteDocumentType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteDocumentVersion.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteIncident.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteIncidentPriority.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteIncidentSeverity.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteIncidentStatus.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteIncidentType.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteManualTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteProject.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteProjectRole.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteProjectUser.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteRelease.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteReleaseTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteRequirement.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteRequirementTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteSetting.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteTask.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteTestCase.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteTestCaseParameter.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteTestRun.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteTestSet.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteTestSetTestCaseMapping.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteTestStep.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteUser.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteVersion.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteWorkflowIncidentCustomProperties.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteWorkflowIncidentFields.datasource" />
+    <None Include="Properties\DataSources\Inflectra.SpiraTest.Web.Services.v4_0.DataObjects.RemoteWorkflowIncidentTransition.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="False" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_ConfigurationName="Release" BuildVersion_BuildVersioningStyle="None.None.None.Increment" BuildVersion_IncrementBeforeBuild="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnitTestAdapter.2.3.0\build\NUnitTestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnitTestAdapter.2.3.0\build\NUnitTestAdapter.props'))" />
+  </Target>
+</Project>

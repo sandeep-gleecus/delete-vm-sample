@@ -1,0 +1,51 @@
+workflow_transition_id:Key,risk_workflow_id:Normal,name:String,is_execute_by_creator:Normal,is_execute_by_owner:Normal,is_signature_required:Normal,input_risk_status_id:Normal,output_risk_status_id:Normal
+1,1,Analyze Risk,1,1,0,1,2
+2,1,Evaluate Risk,0,1,0,2,3
+3,1,Treat Risk,0,1,0,3,4
+4,1,Close Risk,0,1,0,4,5
+5,1,Reject Risk,0,1,0,1,6
+6,1,Reject Risk,0,1,0,2,6
+7,1,Reject Risk,0,1,0,3,6
+8,1,Reject Risk,0,1,0,4,6
+9,1,Reopen Risk,0,1,0,5,4
+10,1,Reopen Risk,1,1,0,6,1
+11,2,Analyze Risk,1,1,0,7,8
+12,2,Evaluate Risk,0,1,0,8,9
+13,2,Treat Risk,0,1,0,9,10
+14,2,Close Risk,0,1,0,10,11
+15,2,Reject Risk,0,1,0,7,12
+16,2,Reject Risk,0,1,0,8,12
+17,2,Reject Risk,0,1,0,9,12
+18,2,Reject Risk,0,1,0,10,12
+19,2,Reopen Risk,0,1,0,11,10
+20,2,Reopen Risk,1,1,0,12,7
+21,3,Analyze Risk,1,1,0,13,14
+22,3,Evaluate Risk,0,1,0,14,15
+23,3,Treat Risk,0,1,1,15,16
+24,3,Close Risk,0,1,1,16,17
+25,3,Reject Risk,0,1,1,13,18
+26,3,Reject Risk,0,1,1,14,18
+27,3,Reject Risk,0,1,1,15,18
+28,3,Reject Risk,0,1,1,16,18
+29,3,Reopen Risk,0,1,0,17,16
+30,3,Reopen Risk,0,1,0,18,13
+31,4,Analyzed,1,1,0,19,20
+34,4,Closed,1,1,0,22,23
+35,4,Rejected,1,1,0,19,24
+36,4,Rejected,1,1,0,20,24
+38,4,Rejected,1,1,0,22,24
+39,4,Open,1,1,0,23,22
+40,4,Identified,1,1,0,24,19
+41,4,Open,1,1,0,19,22
+42,4,Closed,1,1,0,19,23
+43,4,Identified,1,1,0,20,19
+44,4,Identified,1,1,0,22,19
+45,4,Identified,1,1,0,23,19
+46,4,Closed,1,1,0,24,23
+48,4,Analyzed,1,1,0,22,20
+49,4,Analyzed,1,1,0,23,20
+50,4,Analyzed,1,1,0,24,20
+51,4,Open,1,1,0,20,22
+52,4,Rejected,1,1,0,23,24
+53,4,Open,1,1,0,24,22
+54,4,Closed,1,1,0,20,23

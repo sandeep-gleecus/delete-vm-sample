@@ -1,0 +1,257 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ assembly name="$(ProjectDir)/Assemblies/Newtonsoft.Json.dll" #>
+<#@ import namespace="Newtonsoft.Json" #>
+<#@ import namespace="Newtonsoft.Json.Linq" #>
+<#@ output extension=".cs" #>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+using Inflectra.SpiraTest.ApiTestSuite.Rest_Code_Generation;
+
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+namespace Inflectra.SpiraTest.ApiTestSuite.Rest_Code_Generation.SpiraRestService60
+{
+<#
+	//We need to open up the JSON file and first create the various JSON wrapper methods from the resources/methods
+	JObject jDefinition = JObject.Parse(File.ReadAllText(@"C:\Git\SpiraTeam\ApiTestSuite\Rest References\Inflectra.SpiraTest.Web.Services.v6_0.RestServiceDescription.json"));
+	string baseUrl = (string)jDefinition["base"];
+	string baseNamespace = (string)jDefinition["id"];
+	string dataObjectsNamespace = baseNamespace.Replace("RestServiceDescription", "DataObjects");
+
+	//Store the list of unique data objects for later
+	Dictionary<string, JObject> dataObjects = new Dictionary<string, JObject>();
+
+#>
+    /// <summary>
+    /// The auto-generated wrapper for calling Spira REST web services
+    /// </summary>
+	public partial class SpiraRestClient60
+	{
+		protected string baseUrl = "<#=baseUrl#>";
+
+<#
+	foreach (JProperty resource in jDefinition["resources"])
+	{
+		foreach (JProperty method in resource.Value["methods"])
+		{
+			string methodName = method.Name;
+			string returnType = "void";
+			JObject response = (JObject)(method.Value["response"]);
+			if (response != null)
+			{
+				JToken representation = (response["representation"]);
+				if (representation != null)
+				{
+					if (representation is JObject)
+					{
+						JObject representationObj = (JObject)representation;
+						returnType = (string)(representationObj["type"]);
+						if (representationObj["members"] != null && representationObj["members"].HasValues && !dataObjects.ContainsKey(returnType))
+						{
+							dataObjects.Add(returnType, representationObj);
+						}
+					}
+					if (representation is JArray)
+					{
+						JArray representationArr = (JArray)representation;
+						JObject representationObj = (JObject)representationArr[0];
+						if (representationObj["members"] != null && representationObj["members"].HasValues && !dataObjects.ContainsKey((string)(representationObj["type"])))
+						{
+							dataObjects.Add((string)(representationObj["type"]), representationObj);
+						}
+						returnType = (string)(representationObj["type"]) + "[]";
+					}
+				}
+			}
+
+			string parametersMapping = "";
+			string parameterList = "RemoteCredentials credentials";
+			JObject request = (JObject)(method.Value["request"]);
+			string bodyObjectName = "";
+			if (request != null)
+			{
+				foreach (JProperty parameter in request["parameters"])
+				{
+					if (parameterList == "")
+					{
+						parameterList += "object " + parameter.Name;
+					}
+					else
+					{
+						parameterList += ", object " + parameter.Name;
+					}
+
+					//Add the mapping C# code
+					parametersMapping += "AddRequestParameter(request, \"" + parameter.Name + "\", " + parameter.Name + ");\n\t\t\t";
+				}
+
+				JToken representation = (request["representation"]);
+				if (representation != null)
+				{
+					string requestType = "";
+					string requestName = "";
+					JProperty first = (JProperty)(representation.First);
+					requestName = first.Name;
+					if (first.Value is JObject)
+					{
+						JObject representationObj = (JObject)first.Value ;
+						requestType = (string)representationObj["type"];
+						if (representationObj["members"] != null && representationObj["members"].HasValues && !dataObjects.ContainsKey(requestType))
+						{
+							dataObjects.Add(requestType, representationObj);
+						}
+					}
+					if (first.Value is JArray)
+					{
+						JArray representationArr = (JArray)first.Value;
+						JObject representationObj = (JObject)representationArr[0];
+						if (representationObj["members"] != null && representationObj["members"].HasValues && !dataObjects.ContainsKey((string)(representationObj["type"])))
+						{
+							dataObjects.Add((string)(representationObj["type"]), representationObj);
+						}
+						requestType = (string)(representationObj["type"]) + "[]";
+					}
+					if (!String.IsNullOrEmpty(requestType))
+					{
+						if (parameterList == "")
+						{
+							parameterList += requestType + " " + requestName;
+						}
+						else
+						{
+							parameterList += ", " + requestType + " " + requestName;
+						}
+						bodyObjectName = requestName;
+					}
+				}
+			}
+#>
+		public <#=returnType#> <#=methodName#>(<#=parameterList#>)
+		{
+			string path = "<#=method.Value["path"]#>";
+
+            //Create the request
+            RestRequest request = new RestRequest("<#=methodName#>");
+			if (credentials != null)
+			{
+				request.Credential = new System.Net.NetworkCredential();
+				request.Credential.UserName = credentials.UserName;
+				request.Credential.Password = credentials.ApiKey;
+			}
+            request.Method = "<#=method.Value["name"]#>";
+            request.Url = baseUrl + "/" + path;
+            request.Headers.Add(new RestHeader() { Name = StandardHeaders.Content_Type, Value = "application/json" });
+
+			//Map the parameters
+			<#=parametersMapping#>
+
+			//Specify the body (if appropriate)
+<#
+			if (String.IsNullOrEmpty(bodyObjectName))
+			{
+#>
+			request.Body = "";
+<#
+			}
+			else
+			{
+#>
+			if (<#=bodyObjectName#> == null)
+			{
+				request.Body = "";
+			}
+			else
+			{
+				request.Body = JsonConvert.SerializeObject(<#=bodyObjectName#>);
+				Common.Logger.LogTraceEvent("<#=methodName#>", request.Body);
+
+			}
+<#
+			}
+#>
+
+			//Instantiate the rest client and call the method
+            RestClient restClient = new RestClient(request);
+            RestResponse response = restClient.SendRequest();
+            if (!response.IsErrorStatus && response.Headers.FirstOrDefault(h => h.Name == Properties.Resources.Rest_StatusCode).Value == "200 OK")
+            {
+<#
+			if (returnType != "void")
+			{
+#>
+				if (String.IsNullOrEmpty(response.Body))
+				{
+					JsonSerializerSettings settings = new JsonSerializerSettings() {DateFormatHandling= DateFormatHandling.MicrosoftDateFormat};
+					<#=returnType#> responseObj = JsonConvert.DeserializeObject<<#=returnType#>>("", settings);
+					return responseObj;
+				}
+				else
+				{
+					//Deserialize the response
+					Common.Logger.LogTraceEvent("<#=methodName#>", response.Body);
+					<#=returnType#> responseObj = JsonConvert.DeserializeObject<<#=returnType#>>(response.Body);
+
+					return responseObj;
+				}
+<#
+			}
+#>
+            }
+			else
+			{
+				throw new Exception(response.Headers.FirstOrDefault(h => h.Name == Properties.Resources.Rest_StatusCode).Value);
+			}
+		}
+
+<#
+		}
+	}
+#>
+	}
+
+	#region Data Objects
+
+<#
+	foreach (KeyValuePair<string, JObject> dataObject in dataObjects)
+	{
+		//Don't render any of the built in types
+		if (dataObject.Key.StartsWith("Remote"))
+		{
+
+#>
+	public class <#=dataObject.Key#>
+	{
+<#
+			JObject jObject = dataObject.Value;
+			JObject members = (JObject)jObject["members"];
+			foreach (KeyValuePair<string, JToken> property in members)
+			{
+				string typeName = (string)property.Value["namespace"];
+				//Remove any Inflectra namespaces to make it easier to work with
+				if (typeName.Contains(dataObjectsNamespace + "."))
+				{
+					typeName = typeName.Replace("Inflectra.SpiraTest.Web.Services.v6_0.DataObjects.", "");
+				}
+				string propName = property.Key;
+#>
+			public <#=typeName#> <#=propName#> { get; set; }
+<#
+			}
+#>
+	}
+
+<#
+		}
+	}
+#>
+
+	#endregion
+}

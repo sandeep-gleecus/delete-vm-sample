@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="BuildManager_BuildNotExists" xml:space="preserve"><value>Compilação '{0}' já não existe no sistema.</value></data><data name="BuildManager_BuildNotExistsForRevision" xml:space="preserve"><value>Não é possível localizar compilação para revisão de código  fonte '{0}'</value></data><data name="BuildManager_ReleaseNotExists" xml:space="preserve"><value>A entrega/iteração associada RL {0} não existe no projeto atual</value></data><data name="ComponentManager_ArtifactNotExists" xml:space="preserve"><value>Não é possivel recuperar componente com ID={0}</value></data><data name="CustomProperty_MaxValueError" xml:space="preserve"><value>O valor inserido para %field% é maior que o máximo permitido de %value%</value></data><data name="CustomProperty_MinLengthError" xml:space="preserve"><value>O tamanho minimo para %field% é %min% caracteres. A string inserida tinha %act% caracteres.</value></data><data name="CustomProperty_MinValueError" xml:space="preserve"><value>O valor inserido para %field% é menor que omínimo permitido de %value%.</value></data><data name="CustomProperty_RegExError" xml:space="preserve"><value>O valor inserido para %field% não corresponde à expressão normal requerida.</value></data><data name="CustomProperty_RegExException_CannotChange" xml:space="preserve"><value>Não pode alterar a expressão normal do sistema</value></data><data name="CustomProperty_RegExException_CannotDelete" xml:space="preserve"><value>Não pode eliminar a expressão normal do sistema</value></data><data name="CustomProperty_ValueNullError" xml:space="preserve"><value>O campo %field% requer um valor.</value></data><data name="Incident_ClosedDateCannotBeBeforeDetected" xml:space="preserve"><value>Data de fecho não pode ser anterior à data detetada.</value></data><data name="Incident_ClosedDateCannotBeBeforeStart" xml:space="preserve"><value>A data de fecho não pode ser anterior a data de início</value></data><data name="Incident_CompletionPercentOutOfRange" xml:space="preserve"><value>A percentagem de conclusão deve estar no intervalo de 0-100%.</value></data><data name="Project_ArtifactNotExists" xml:space="preserve"><value>O projeto {0} já não existe no sistema.</value></data><data name="Project_Copy_Attachments" xml:space="preserve"><value>A copiar os anexos do projeto</value></data><data name="Project_Copy_AutomationHosts" xml:space="preserve"><value>A copiar os ambientes de automação do produto</value></data><data name="Project_Copy_Components" xml:space="preserve"><value>A copiar componentes do projeto</value></data><data name="Project_Copy_CreateShell" xml:space="preserve"><value>A criar o novo projeto com base no existente.</value></data><data name="Project_Copy_CustomProperties" xml:space="preserve"><value>A copiar as propriedades personalizadas do artefacto</value></data><data name="Project_Copy_Mappings" xml:space="preserve"><value>A copiar os requisitos, entrega e mapeamentos de casos de teste</value></data><data name="Project_Copy_Releases" xml:space="preserve"><value>A copiar entregas do projeto</value></data><data name="Project_Copy_Requirements" xml:space="preserve"><value>Acopiar requisitos do projeto</value></data><data name="Project_Copy_Tasks" xml:space="preserve"><value>A copiar tarefas do projeto</value></data><data name="Project_Copy_TestCases" xml:space="preserve"><value>A copiar casos de teste do projeto</value></data><data name="Project_Copy_TestSets" xml:space="preserve"><value>A copiar conjuntos de testes do projeto</value></data><data name="Project_Delete_Associations" xml:space="preserve"><value>A eliminar associações do artefacto</value></data><data name="Project_Delete_Attachments" xml:space="preserve"><value>A eliminar anexos do projeto</value></data><data name="Project_Delete_DataMappings" xml:space="preserve"><value>A eliminar mapeamentos de sincronização de dados</value></data><data name="Project_Delete_IncidentWorkflows" xml:space="preserve"><value>A eliminar workflows de defeito</value></data><data name="Project_Delete_Project" xml:space="preserve"><value>A eliminar o próprio projecto</value></data><data name="Project_Delete_Releases" xml:space="preserve"><value>A eliminar entregas</value></data><data name="Project_Delete_Reports" xml:space="preserve"><value>A eliminar relatórios</value></data><data name="Project_Delete_Requirements" xml:space="preserve"><value>A eliminar requisitos</value></data><data name="Project_Delete_TestCases" xml:space="preserve"><value>A eliminar casos de teste</value></data><data name="Project_Delete_TestRuns" xml:space="preserve"><value>A eliminar execuções de teste</value></data><data name="Project_Delete_TestSets" xml:space="preserve"><value>A eliminar conjuntos de teste</value></data><data name="Report_CannotDeleteDefaultReport" xml:space="preserve"><value>Não pode eliminar um relatório padrão/por defeito.</value></data><data name="Report_ReportGenerationComplete" xml:space="preserve"><value>Geração de relatório completa.</value></data><data name="Report_ReportNotExist" xml:space="preserve"><value>O relatório com o id '{0}' não existe no sistema!</value></data><data name="Report_StartGeneratingReport" xml:space="preserve"><value>A iniciar geração de relatório.</value></data><data name="Requirement_StepNotExists" xml:space="preserve"><value>Não é possível recuperar o passo do requisito com o ID={0}</value></data><data name="SourceCode_InvalidCacheLongMessage" xml:space="preserve"><value>O cache do código fonte de controlo da versão está desatualizado e está a ser refrescado.</value></data><data name="TaskManager_FolderNotExists" xml:space="preserve"><value> A pasta da tarefa com o ID={0} não existe no sistema!</value></data><data name="Task_EndDateCannotBeBeforeStartDate" xml:space="preserve"><value>A data de fim não pode ser anterior à data de início</value></data><data name="Task_EndDateOutsideReleaseRange" xml:space="preserve"><value>A data de fim desta tarefa não pode estar fora do intervalo de data da entrega/iteração associada</value></data><data name="Task_EstimatedEffortNeededForInProgress" xml:space="preserve"><value>Necessita definir um Esforço Estimado para mover uma tarefa para Em-Progresso</value></data><data name="Task_NeedActualEffortForCompleted" xml:space="preserve"><value>Necessita fornecer um Esforço Atual para indicar a tarefa em Concluída</value></data><data name="Task_NeedEndDateForCompleted" xml:space="preserve"><value>Necessita fornecer uma data fim para indicar a tarefa como Concluída</value></data><data name="Task_NeedEndDateForInProgress" xml:space="preserve"><value>Necessita fornecer uma data fim estimada para indicar a tarefa como Em-Progresso</value></data><data name="Task_NeedEstimatedEffortForCompleted" xml:space="preserve"><value>Necessita fornecer um Esforço Estimado para indicar a tarefa como Concluída</value></data><data name="Task_NeedReleaseForCompleted" xml:space="preserve"><value>Necessita associar a tarefa com uma Entrega/Iteração para que fique Concluída</value></data><data name="Task_NeedReleaseForInProgress" xml:space="preserve"><value>Necessita associar a tarefa com uma Entrega/Iteração para torná-la Em-Progresso</value></data><data name="Task_NeedStartDateForCompleted" xml:space="preserve"><value>Necessita fornecer uma data de início para tornar a tarefa como Concluída</value></data><data name="Task_NeedStartDateForInProgress" xml:space="preserve"><value>Necessita fornecer uma data de início para tornar a tarefa como Em-Progresso</value></data><data name="Task_PercentCompleteNotInRange" xml:space="preserve"><value>O valor % Completo deve estar no intervalo de 0-100%</value></data><data name="Task_RemainingEffortNeededForInProgress" xml:space="preserve"><value>Necessita definir um Esforço Remanescente para tornar uma tarefa para Em-Progresso</value></data><data name="Task_StartDateOutsideReleaseRange" xml:space="preserve"><value>A data de início desta tarefa não pode estar fora do intervalo de data da entrega/iteração associada</value></data><data name="TestRun_CreatingTestRuns" xml:space="preserve"><value>A criar Execuções de Teste a partir de caso(s) de teste.</value></data><data name="TestRun_CreationCompleted" xml:space="preserve"><value>Criação de Execuções de Teste concluídas.</value></data><data name="TestRun_SavingPendingEntry" xml:space="preserve"><value>A gravar entradas de Execuções de Teste pendentes.</value></data><data name="TestRun_TestSetNotContainTestCases" xml:space="preserve"><value>Os Conjuntos de Testes passados não contêm quaisquer Casos de Teste</value></data><data name="TestSet_TestCasePositionInUse" xml:space="preserve"><value>A posição de Caso de Teste especificada já está em uso</value></data><data name="TestSet_TestSetCannotHaveChildItems" xml:space="preserve"><value>Conjuntos de Teste não podem ter como dependentes Conjuntos de Testes ou Pastas.</value></data><data name="TestSet_TestSetTestCaseIdNotExist" xml:space="preserve"><value>Os testSetId e testSetTestCaseId passados não correspondem a um Caso de Teste mapeado correspondente no Conjunto de Teste!</value></data><data name="UserManager_NotResetLDAP" xml:space="preserve"><value>Não pode repor a password de um utilizador LDAP através de {0}!</value></data><data name="UserManager_SettingNotExists" xml:space="preserve"><value>A coleção '{0}' de configurações do utilizador não existem no sistema!</value></data><data name="DiscussionManager_CannotDeletePermanentDiscussion" xml:space="preserve"><value>Data de fecho não pode ser anterior à data detetada.</value></data><data name="ReleaseManager_CreatingFakeVersionNumber" xml:space="preserve"><value>Geração de relatório completa.</value></data><data name="ReleaseManager_IterationSummaryException" xml:space="preserve"><value>O relatório com o id '{0}' não existe no sistema!</value></data><data name="ReleaseManager_PhaseSummaryException" xml:space="preserve"><value>A iniciar geração de relatório.</value></data><data name="ReleaseManager_ReleaseIterationNotExistsForAssociation" xml:space="preserve"><value>Não é possível recuperar o passo do requisito com o ID={0}</value></data><data name="ReleaseManager_VersionNumberNotUnique" xml:space="preserve"><value>O cache do código fonte de controlo da versão está desatualizado e está a ser refrescado.</value></data><data name="Releases_CannotRetrieveExistingRelease" xml:space="preserve"><value> A pasta da tarefa com o ID={0} não existe no sistema!</value></data><data name="SourceCode_BranchKeyNotFound" xml:space="preserve"><value>Necessita fornecer uma data fim estimada para indicar a tarefa como Em-Progresso</value></data><data name="SourceCode_BranchKeyNull" xml:space="preserve"><value>Necessita fornecer um Esforço Estimado para indicar a tarefa como Concluída</value></data><data name="Incident_StartDateCannotBeBeforeDetected" xml:space="preserve"><value>O projeto {0} já não existe no sistema.</value></data><data name="HierarchicalItem_CannotMoveUnderItself" xml:space="preserve"><value>Data de fecho não pode ser anterior à data detetada.</value></data><data name="Project_Copy_TestCaseFolders" xml:space="preserve"><value>A copiar conjuntos de testes do projeto</value></data><data name="Project_Copy_TestSetFolders" xml:space="preserve"><value>A eliminar anexos do projeto</value></data><data name="Report_ReportConvertingToPdf" xml:space="preserve"><value>Não é possível recuperar o passo do requisito com o ID={0}</value></data><data name="TestConfigurationManager_TestConfigurationIdNotExist" xml:space="preserve"><value>A posição de Caso de Teste especificada já está em uso</value></data><data name="TestConfigurationManager_TestConfigurationPositionInUse" xml:space="preserve"><value>Conjuntos de Teste não podem ter como dependentes Conjuntos de Testes ou Pastas.</value></data><data name="TestConfigurationManager_TestConfigurationSetIdNotExist" xml:space="preserve"><value>Os testSetId e testSetTestCaseId passados não correspondem a um Caso de Teste mapeado correspondente no Conjunto de Teste!</value></data><data name="GraphManager_GraphNotExist" xml:space="preserve"><value>O gráfico especificado com o ID {o} não existe no sistema!</value></data><data name="GraphManager_InvalidColumn" xml:space="preserve"><value>A coluna '{0}' tem valores não numéricos e por isso o gráfico não pode ser apresentado!</value></data><data name="ProjectTemplate_CannotDeleteActive" xml:space="preserve"><value>Não é possível apagar um modelo de produto que esteja em utilização!</value></data><data name="ProjectTemplate_NotActive" xml:space="preserve"><value>O modelo de produto {0} especificado não está ativo!</value></data><data name="ProjectTemplate_NotExists" xml:space="preserve"><value>O modelo de produto {0} especificado não existe!</value></data><data name="Project_Delete_Risks" xml:space="preserve"><value>A eliminar riscos</value></data></root>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ms="urn:schemas-microsoft-com:xslt">
+  <xsl:template match="ReleaseData">
+    <table class="DataGrid" style="width:100%">
+      <tr>
+        <th>ID #</th>
+        <th colspan="2">Name</th>
+        <th>Artifact</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Priority</th>
+        <th>Owner</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>% Complete</th>
+        <th>Plan Effort</th>
+        <th>Est. Effort</th>
+        <th>Actual Effort</th>
+        <th>Rem. Effort</th>
+        <th>Proj. Effort</th>
+      </tr>
+      <xsl:for-each select="Release">
+        <tr>
+          <xsl:attribute name="class">
+            <xsl:if test="IsIterationOrPhase='False'">
+              BoldRow
+            </xsl:if>
+          </xsl:attribute>
+          <td>
+            RL<xsl:value-of select="ReleaseId"/>
+          </td>
+          <td colspan="2">
+            <xsl:attribute name="style">
+              padding-left: <xsl:value-of select="string-length(IndentLevel)*4"/>px;
+            </xsl:attribute>
+            <xsl:value-of select="VersionNumber"/> - <xsl:value-of select="Name"/>
+          </td>
+          <td>
+            Release
+          </td>
+          <td>
+            <xsl:value-of select="ReleaseTypeName"/>
+          </td>
+          <td>
+            <xsl:value-of select="ReleaseStatusName"/>
+          </td>
+          <td></td>
+          <td>
+            <xsl:value-of select="OwnerName"/>
+          </td>
+          <td class="Date">
+            <xsl:call-template name="format-date">
+              <xsl:with-param name="datetime" select="StartDate" />
+            </xsl:call-template>
+          </td>
+          <td class="Date">
+            <xsl:call-template name="format-date">
+              <xsl:with-param name="datetime" select="EndDate" />
+            </xsl:call-template>
+          </td>
+          <td></td>
+          <td class="Timespan">
+            <xsl:value-of select="PlannedEffort"/>
+          </td>
+          <td class="Timespan">
+            <xsl:value-of select="TaskEstimatedEffort"/>
+          </td>
+          <td class="Timespan">
+            <xsl:value-of select="TaskActualEffort"/>
+          </td>
+          <td class="Timespan">
+            <xsl:value-of select="TaskRemainingEffort"/>
+          </td>
+          <td class="Timespan">
+            <xsl:value-of select="TaskProjectedEffort"/>
+          </td>
+        </tr>
+        <xsl:for-each select="Requirements/Requirement">
+          <tr class="SmallRow">
+            <td>
+              RQ<xsl:value-of select="RequirementId"/>
+            </td>
+            <td style="width:50px"></td>
+            <td>
+              <xsl:value-of select="Name"/>
+            </td>
+            <td>
+              Requirement
+            </td>
+            <td>
+              <xsl:value-of select="RequirementTypeName"/>
+            </td>
+            <td>
+              <xsl:value-of select="RequirementStatusName"/>
+            </td>
+            <td>
+              <xsl:value-of select="ImportanceName"/>
+            </td>
+            <td>
+              <xsl:value-of select="OwnerName"/>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="EstimatedEffort"/>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="TaskEstimatedEffort"/>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="TaskActualEffort"/>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="TaskRemainingEffort"/>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="TaskProjectedEffort"/>
+            </td>
+          </tr>
+        </xsl:for-each>
+        <xsl:for-each select="Tasks/Task">
+          <tr class="SmallRow">
+            <td>
+              TK<xsl:value-of select="TaskId"/>
+            </td>
+            <td style="width:50px"></td>
+            <td>
+              <xsl:value-of select="Name"/>
+            </td>
+            <td>
+              Task
+            </td>
+            <td>
+              <xsl:value-of select="TaskTypeName"/>
+            </td>
+            <td>
+              <xsl:value-of select="TaskStatusName"/>
+            </td>
+            <td>
+              <xsl:value-of select="TaskPriorityName"/>
+            </td>
+            <td>
+              <xsl:value-of select="OwnerName"/>
+            </td>
+            <td class="Date">
+              <xsl:call-template name="format-date">
+                <xsl:with-param name="datetime" select="StartDate" />
+              </xsl:call-template>
+            </td>
+            <td class="Date">
+              <xsl:call-template name="format-date">
+                <xsl:with-param name="datetime" select="EndDate" />
+              </xsl:call-template>
+            </td>
+            <td>
+              <xsl:value-of select="CompletionPercent"/> %
+            </td>
+            <td></td>
+            <td class="Timespan">
+              <xsl:value-of select="EstimatedEffort"/>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="ActualEffort"/>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="RemainingEffort"/>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="ProjectedEffort"/>
+            </td>
+          </tr>
+        </xsl:for-each>
+        <xsl:for-each select="Incidents/Incident">
+          <tr class="SmallItalicRow">
+            <td>
+              IN<xsl:value-of select="IncidentId"/>
+            </td>
+            <td style="width:50px"></td>
+            <td>
+              <xsl:value-of select="Name"/>
+            </td>
+            <td>
+              Incident
+            </td>
+            <td>
+              <xsl:value-of select="IncidentTypeName"/>
+            </td>
+            <td>
+              <xsl:value-of select="IncidentStatusName"/>
+            </td>
+            <td>
+              <xsl:value-of select="PriorityName"/>
+            </td>
+            <td>
+              <xsl:value-of select="OwnerName"/>
+            </td>
+            <td class="Date">
+              <xsl:call-template name="format-date">
+                <xsl:with-param name="datetime" select="StartDate" />
+              </xsl:call-template>
+            </td>
+            <td class="Date">
+              <xsl:call-template name="format-date">
+                <xsl:with-param name="datetime" select="ClosedDate" />
+              </xsl:call-template>
+            </td>
+            <td>
+              <xsl:value-of select="CompletionPercent"/> %
+            </td>
+            <td></td>
+            <td class="Timespan">
+              <xsl:value-of select="EstimatedEffort"/>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="ActualEffort"/>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="RemainingEffort"/>
+            </td>
+            <td class="Timespan">
+              <xsl:value-of select="ProjectedEffort"/>
+            </td>
+          </tr>
+        </xsl:for-each>
+      </xsl:for-each>
+    </table>
+  </xsl:template>
+  <xsl:template name="format-date">
+    <xsl:param name="datetime"/>
+    <xsl:variable name="date" select="substring-before($datetime, 'T')" />
+    <xsl:variable name="year" select="substring-before($date, '-')" />
+    <xsl:variable name="month" select="substring-before(substring-after($date, '-'), '-')" />
+    <xsl:variable name="day" select="substring-after(substring-after($date, '-'), '-')" />
+    <xsl:variable name="time" select="substring-before(substring-after($datetime, 'T'), '.')" />
+    <xsl:variable name="monthname">
+      <xsl:choose>
+        <xsl:when test="$month='01'">
+          <xsl:value-of select="'Jan'"/>
+        </xsl:when>
+        <xsl:when test="$month='02'">
+          <xsl:value-of select="'Feb'"/>
+        </xsl:when>
+        <xsl:when test="$month='03'">
+          <xsl:value-of select="'Mar'"/>
+        </xsl:when>
+        <xsl:when test="$month='04'">
+          <xsl:value-of select="'Apr'"/>
+        </xsl:when>
+        <xsl:when test="$month='05'">
+          <xsl:value-of select="'May'"/>
+        </xsl:when>
+        <xsl:when test="$month='06'">
+          <xsl:value-of select="'Jun'"/>
+        </xsl:when>
+        <xsl:when test="$month='07'">
+          <xsl:value-of select="'Jul'"/>
+        </xsl:when>
+        <xsl:when test="$month='08'">
+          <xsl:value-of select="'Aug'"/>
+        </xsl:when>
+        <xsl:when test="$month='09'">
+          <xsl:value-of select="'Sep'"/>
+        </xsl:when>
+        <xsl:when test="$month='10'">
+          <xsl:value-of select="'Oct'"/>
+        </xsl:when>
+        <xsl:when test="$month='11'">
+          <xsl:value-of select="'Nov'"/>
+        </xsl:when>
+        <xsl:when test="$month='12'">
+          <xsl:value-of select="'Dec'"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="''" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:value-of select="concat($day, '-' ,$monthname, '-', $year , ' ', $time)" />
+  </xsl:template>
+</xsl:stylesheet>

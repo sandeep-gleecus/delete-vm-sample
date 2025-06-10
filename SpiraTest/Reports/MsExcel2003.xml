@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40"
+  xml:space="default">
+  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+    <Title><!--REPORT-TITLE--></Title>
+    <Subject><!--REPORT-TITLE--></Subject>
+  </DocumentProperties>
+  <Styles>
+    <Style ss:ID="sHeader">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="0"/>
+      <Font ss:FontName="Arial Unicode MS" ss:Bold="1"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+    </Style>
+    <Style ss:ID="sNormal">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="0"/>
+      <Font ss:FontName="Arial Unicode MS"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+    </Style>
+    <Style ss:ID="sSummary">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="0"/>
+      <Font ss:FontName="Arial Unicode MS" ss:Bold="1"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+    </Style>
+    <Style ss:ID="sTitle">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="0"/>
+      <Font ss:FontName="Arial Unicode MS" ss:Size="18" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="sSubTitle">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="0"/>
+      <Font ss:FontName="Arial Unicode MS" ss:Size="14" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="sDecimal">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="0"/>
+      <Font ss:FontName="Arial Unicode MS"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <NumberFormat ss:Format="0.00"/>
+    </Style>
+    <Style ss:ID="sDateTime">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="0"/>
+      <Font ss:FontName="Arial Unicode MS"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <NumberFormat ss:Format="Short Date"/>
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="<!--REPORT-TITLE-->">
+    <Table>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Column ss:AutoFitWidth="1"/>
+      <Row/>
+      <Row>
+        <Cell ss:StyleID="sTitle">
+          <Data ss:Type="String"><!--REPORT-TITLE--></Data>
+        </Cell>
+      </Row>
+      <!--REPORT-BODY-->
+    </Table>
+  </Worksheet>
+</Workbook>

@@ -1,0 +1,6 @@
+test_case_folder_id:Key,parent_test_case_folder_id:Normal,name:String,description:String,project_id:Normal,last_update_date:Normal,execution_date:Normal,estimated_duration:Normal,actual_duration:Normal,count_passed:Normal,count_failed:Normal,count_caution:Normal,count_blocked:Normal,count_not_run:Normal,count_not_applicable:Normal
+1,NULL,Functional Tests,NULL,1,"DATEADD(day, -146, SYSUTCDATETIME())","DATEADD(day, -60, SYSUTCDATETIME())",36,365,1,2,2,0,0,0
+2,NULL,Regression Tests,NULL,1,"DATEADD(day, -146, SYSUTCDATETIME())","DATEADD(day, -10, SYSUTCDATETIME())",8,75,2,0,0,0,0,0
+3,NULL,Scenario Tests,NULL,1,"DATEADD(day, -139, SYSUTCDATETIME())","DATEADD(day, -15, SYSUTCDATETIME())",NULL,1,1,0,0,0,3,0
+4,3,Exception Scenario Tests,NULL,1,"DATEADD(day, -139, SYSUTCDATETIME())","DATEADD(day, -15, SYSUTCDATETIME())",NULL,1,1,0,0,0,1,0
+5,NULL,Common Tests,NULL,1,"DATEADD(day, -146, SYSUTCDATETIME())",NULL,NULL,NULL,0,0,0,0,4,0

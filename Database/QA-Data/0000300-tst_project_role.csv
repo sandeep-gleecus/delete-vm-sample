@@ -1,0 +1,5 @@
+project_role_id:Key,name:String,is_active:Normal,description:String,is_admin:Normal,is_discussions_add:Normal,is_source_code_view:Normal,is_source_code_edit:Normal,is_document_folders_edit:Normal,is_limited_view:Normal,is_template_admin:Normal
+8,Proj Admin,1,Can do almost everything. Has project admin. Does NOT have template admin.,1,1,1,1,1,0,0
+9,Maximum,1,"Has ALL permissions, including both template and project admin.",1,1,1,1,1,0,1
+10,Template Specialist,1,"View everything. Has template admin. Does not have project admin. Has mod all, but no bulk edit or delete..",0,1,1,0,1,0,1
+11,Limited Tester,1,Has limited view on. Can edit and run tests.,0,1,0,0,0,1,0

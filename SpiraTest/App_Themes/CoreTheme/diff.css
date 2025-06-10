@@ -1,0 +1,115 @@
+﻿/* https://github.com/mmanela/diffplex */
+#diffBar {
+    width: 3%;
+    height: 100%;
+    float: left;
+    position: relative;
+    background: #DDDDDD;
+}
+
+.diffBarLineLeft, .diffBarLineRight {
+    width: 50%;
+    float: left;
+    height: 0px;
+    cursor: pointer;
+}
+
+#activeBar {
+    position: absolute;
+    top: 0px;
+    background-color: #6699FF;
+    opacity: 0.5;
+}
+
+/*ROW DISPLAY MANAGEMENT - FOR COLLAPSING*/
+/* hide all rows that are not explictly set to show when the view should show as collapsed*/
+.diff-is-collapsed tr:not(.diff-row-show) {
+    display: none;
+}
+
+/* hide the summary rows by default - only show when things are collapsed*/
+.diff-row-summary {
+    display: none;
+}
+.diff-is-collapsed .diff-row-summary {
+    display: table-row;
+}
+
+/* LINE TYPES */
+.diff-line-Inserted  { background-color: #e6ffed; background-color: var(--diff-insert);}
+.diff-line-Deleted   { background-color: #fbe9eb; background-color: var(--diff-remove); }
+.diff-line-Modified  { background-color: #f3fbfd; background-color: var(--diff-change); }
+.diff-line-Unchanged { background-color: #fff; background-color: var(--white); }
+.diff-line-Imaginary {
+    background: repeating-linear-gradient( 90deg, #fff, #fff 5px, #f5f5f5 5px, #f5f5f5 8px );
+    background: repeating-linear-gradient( 90deg, var(--white), var(--white) 5px, var(--off-white) 5px, var(--off-white) 8px );
+}
+
+td[class^='diff-line-'] .diff-lineText:before {
+    padding-right: .25rem;
+    width: 1rem;
+}
+
+.diff-line-Inserted .diff-lineText:before  { content: "+"; color: #00a573; color: var(--mint);}
+.diff-line-Deleted .diff-lineText:before   { content: "-"; color: #06d6a0; color: var(--art-tasks);}
+.diff-line-Modified .diff-lineText:before  { content: "~"; color: #8b4789; color: var(--purple);}
+.diff-line-Unchanged .diff-lineText:before { content: "."; visibility: hidden; }
+.diff-line-Imaginary .diff-lineText:before { content: "."; visibility: hidden; }
+
+.diff-line-Inserted .diff-lineText:before,
+.diff-line-Deleted .diff-lineText:before,
+.diff-line-Modified .diff-lineText:before,
+.diff-line-Unchanged .diff-lineText:before,
+.diff-line-Imaginary .diff-lineText:before {
+    margin-left: -.5rem;
+    margin-right: .5rem;
+}
+
+
+/* LINE NUMBER TYPES */
+.diff-lineNumber-Inserted {
+    background-color: #cdf1cc;
+    background-color: var(--diff-insert-accent);
+}
+.diff-lineNumber-Deleted   { background-color: #f1c7cd; background-color: var(--diff-remove-accent); }
+.diff-lineNumber-Modified  { background-color: #e6ebf1; background-color: var(--diff-change-accent); }
+.diff-lineNumber-Unchanged, .diff-lineNumber-Imaginary { background-color: #fafafa; background-color: var(--off2-white); }
+
+/* CHARACTER TYPES */
+.diff-piece-Inserted  { background-color: #cdf1cc;  background-color: var(--diff-insert-accent);}
+.diff-piece-Deleted   { background-color: #f1c7cd; background-color: var(--diff-remove-accent); }
+.diff-piece-Modified  { background-color: #d7dee6; background-color: var(--diff-change-accent); }
+.diff-piece-Unchanged { }
+.diff-piece-Imaginary { }
+
+
+/* FOR SHOWN ROWS WHEN COLLAPSED */
+.diff-lineNumber-collapse-summary {
+    background-color: #f1f1f1;
+    background-color: var(--near-white);
+    color: #ccc;
+    color: var(--light-gray);
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.diff-line-collapse-summary {
+    background-color: #f5f5f5;
+    background-color: var(--off2-white);
+    color: #ccc;
+    color: var(--light-gray);
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.diff-lineNumber-collapse-summary:before,
+.diff-lineNumber-collapse-summary:after {
+    font-family: "Font Awesome 5 Pro";
+    display: block;
+}
+.diff-lineNumber-collapse-summary:before {
+    content: "\f345";
+}
+.diff-lineNumber-collapse-summary:after {
+    content: "\f342";
+}

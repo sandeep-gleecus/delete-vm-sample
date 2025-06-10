@@ -1,0 +1,158 @@
+/***************************************************************
+**	Insert script for table TST_TASK
+***************************************************************/
+SET IDENTITY_INSERT TST_TASK ON; 
+
+INSERT INTO TST_TASK
+(
+TASK_ID, NAME, DESCRIPTION, PROJECT_ID, TASK_TYPE_ID, TASK_FOLDER_ID, TASK_STATUS_ID, REQUIREMENT_ID, RISK_ID, RELEASE_ID, CREATOR_ID, OWNER_ID, TASK_PRIORITY_ID, CREATION_DATE, LAST_UPDATE_DATE, CONCURRENCY_DATE, START_DATE, END_DATE, COMPLETION_PERCENT, ESTIMATED_EFFORT, ACTUAL_EFFORT, PROJECTED_EFFORT, REMAINING_EFFORT, IS_ATTACHMENTS
+)
+VALUES
+(
+1, 'Develop new book entry screen', 'Create a new dynamic page that allows the user to enter the details of a new book', 1, 1, 2, 3, 4, NULL, 8, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -36, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(hour, -1009, SYSUTCDATETIME()), DATEADD(day, -36, SYSUTCDATETIME()), 100, 480, 440, 440, 0, 0
+),
+(
+2, 'Create book object insert method', 'Code the business object that inserts a new book row in the database', 1, 1, 3, 3, 4, NULL, 8, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -41, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(hour, -1008, SYSUTCDATETIME()), DATEADD(day, -41, SYSUTCDATETIME()), 100, 300, 320, 320, 0, 0
+),
+(
+3, 'Write book object insert queries', 'The SQL statement that actually inserts a new book into the system', 1, 1, 3, 3, 4, NULL, 8, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -39, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(hour, -1007, SYSUTCDATETIME()), DATEADD(day, -39, SYSUTCDATETIME()), 100, 180, 170, 170, 0, 0
+),
+(
+4, 'Develop edit book details screen', 'Using the existing ''new book'' page as a template, create a similar page that handle the case of editing an existing book', 1, 1, 2, 3, 5, NULL, 8, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -37, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -40, SYSUTCDATETIME()), DATEADD(day, -37, SYSUTCDATETIME()), 100, 480, 440, 440, 0, 0
+),
+(
+5, 'Create book object update method', 'Code the business object that updates an existing book record in the database', 1, 1, 3, 3, 5, NULL, 8, 2, 3, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -37, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -38, SYSUTCDATETIME()), DATEADD(day, -37, SYSUTCDATETIME()), 100, 300, 360, 360, 0, 0
+),
+(
+6, 'Write book object update queries', 'The SQL statement that actually updates an existing book into the system', 1, 1, 3, 3, 5, NULL, 8, 2, 3, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -36, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -38, SYSUTCDATETIME()), DATEADD(day, -36, SYSUTCDATETIME()), 100, 180, 210, 210, 0, 0
+),
+(
+7, 'Refactor book screen to include delete button', NULL, 1, 1, 2, 3, 6, NULL, 9, 2, 3, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -29, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -36, SYSUTCDATETIME()), DATEADD(day, -29, SYSUTCDATETIME()), 100, 480, 460, 460, 0, 0
+),
+(
+8, 'Create book object delete method', NULL, 1, 1, 3, 3, 6, NULL, 9, 2, 3, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -33, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -36, SYSUTCDATETIME()), DATEADD(day, -33, SYSUTCDATETIME()), 100, 300, 250, 250, 0, 0
+),
+(
+9, 'Write book object delete query', NULL, 1, 1, 3, 3, 6, NULL, 9, 2, 3, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -28, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -33, SYSUTCDATETIME()), DATEADD(day, -28, SYSUTCDATETIME()), 100, 180, 200, 200, 0, 0
+),
+(
+10, 'Develop book-subject association screen', NULL, 1, 1, 2, 3, 7, NULL, 17, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -15, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -21, SYSUTCDATETIME()), DATEADD(day, -15, SYSUTCDATETIME()), 100, 480, 500, 500, 0, 0
+),
+(
+11, 'Create book-subject mapping insert method', NULL, 1, 1, 3, 3, 7, NULL, 17, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -18, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -21, SYSUTCDATETIME()), DATEADD(day, -18, SYSUTCDATETIME()), 100, 300, 260, 260, 0, 0
+),
+(
+12, 'Create book-subject mapping delete method', NULL, 1, 1, 3, 3, 7, NULL, 17, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -8, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -19, SYSUTCDATETIME()), DATEADD(day, -8, SYSUTCDATETIME()), 100, 180, 170, 170, 0, 0
+),
+(
+13, 'Create book-subject mapping queries', NULL, 1, 1, 3, 3, 7, NULL, 17, 2, 3, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -8, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -10, SYSUTCDATETIME()), DATEADD(day, -8, SYSUTCDATETIME()), 100, 120, 120, 120, 0, 0
+),
+(
+14, 'Refactor book details screen to include author drop-down', NULL, 1, 1, 2, 3, 8, NULL, 17, 2, 3, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -12, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -18, SYSUTCDATETIME()), DATEADD(day, -12, SYSUTCDATETIME()), 100, 360, 370, 370, 0, 0
+),
+(
+15, 'Modify book insert/update queries to include author', NULL, 1, 1, 3, 3, 8, NULL, 17, 2, 3, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -10, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -16, SYSUTCDATETIME()), DATEADD(day, -10, SYSUTCDATETIME()), 100, 300, 300, 300, 0, 0
+),
+(
+16, 'Refactor book details screen to include edition drop-down', NULL, 1, 1, 2, 3, 9, NULL, 18, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 0, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -2, SYSUTCDATETIME()), DATEADD(day, 0, SYSUTCDATETIME()), 100, 180, 170, 170, 0, 0
+),
+(
+17, 'Modify book insert/update queries to include edition', NULL, 1, 1, 3, 3, 9, NULL, 18, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 11, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 0, SYSUTCDATETIME()), DATEADD(day, 11, SYSUTCDATETIME()), 100, 360, 390, 390, 0, 0
+),
+(
+18, 'Add ''delete all'' button to book list screen', NULL, 1, 1, 2, 3, 10, NULL, 19, 2, 3, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 3, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 0, SYSUTCDATETIME()), DATEADD(day, 3, SYSUTCDATETIME()), 100, 300, 310, 310, 0, 0
+),
+(
+19, 'Create book object delete all method', NULL, 1, 1, 3, 3, 10, NULL, 19, 2, 3, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 7, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 0, SYSUTCDATETIME()), DATEADD(day, 7, SYSUTCDATETIME()), 100, 180, 160, 160, 0, 0
+),
+(
+20, 'Write book object delete all queries', NULL, 1, 1, 3, 3, 10, NULL, 19, 2, 3, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 5, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 2, SYSUTCDATETIME()), DATEADD(day, 5, SYSUTCDATETIME()), 100, 120, 100, 100, 0, 0
+),
+(
+21, 'Develop new edition entry screen', NULL, 1, 1, 2, 3, 12, NULL, 10, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -14, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -28, SYSUTCDATETIME()), DATEADD(day, -14, SYSUTCDATETIME()), 100, 480, 420, 420, 0, 0
+),
+(
+22, 'Create edition object insert method', NULL, 1, 1, 3, 3, 12, NULL, 10, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -7, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -20, SYSUTCDATETIME()), DATEADD(day, -7, SYSUTCDATETIME()), 100, 300, 200, 200, 0, 0
+),
+(
+23, 'Write edition object insert queries', NULL, 1, 1, 3, 3, 12, NULL, 10, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -10, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -14, SYSUTCDATETIME()), DATEADD(day, -10, SYSUTCDATETIME()), 100, 180, NULL, 180, 0, 0
+),
+(
+24, 'Develop edit author details screen', NULL, 1, 1, 2, 1, 15, NULL, 9, 3, 3, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -30, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -32, SYSUTCDATETIME()), DATEADD(day, -30, SYSUTCDATETIME()), 0, 480, NULL, 480, 480, 0
+),
+(
+25, 'Create author object update method', NULL, 1, 1, 3, 1, 15, NULL, 9, 3, 3, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -31, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -32, SYSUTCDATETIME()), DATEADD(day, -31, SYSUTCDATETIME()), 0, 300, NULL, 300, 300, 0
+),
+(
+26, 'Write author object update queries', NULL, 1, 1, 3, 1, 15, NULL, 9, 3, 3, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -29, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -31, SYSUTCDATETIME()), DATEADD(day, -29, SYSUTCDATETIME()), 0, 180, NULL, 180, 180, 0
+),
+(
+27, 'Refactor author screen to include delete button', NULL, 1, 1, 2, 3, 16, NULL, 10, 3, 2, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -18, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -24, SYSUTCDATETIME()), DATEADD(day, -18, SYSUTCDATETIME()), 100, 360, NULL, 360, 0, 0
+),
+(
+28, 'Create author object delete method', NULL, 1, 1, 3, 3, 16, NULL, 10, 3, 2, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -2, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -7, SYSUTCDATETIME()), DATEADD(day, -2, SYSUTCDATETIME()), 100, 300, 140, 140, 0, 0
+),
+(
+29, 'Write author object delete query', NULL, 1, 1, 3, 3, 16, NULL, 10, 3, 2, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -2, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -4, SYSUTCDATETIME()), DATEADD(day, -2, SYSUTCDATETIME()), 100, 180, 50, 50, 0, 0
+),
+(
+30, 'Refactor author details page to include contact info', NULL, 1, 1, 2, 1, 17, NULL, NULL, 3, NULL, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, 0
+),
+(
+31, 'Update author select query to include contact info', NULL, 1, 1, 3, 1, 17, NULL, NULL, 3, NULL, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, 0
+),
+(
+32, 'Update author update/insert queries to include contact info', NULL, 1, 1, 3, 1, 17, NULL, NULL, 3, NULL, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, 0
+),
+(
+33, 'Develop author-subject association screen', NULL, 1, 1, 2, 3, 18, NULL, 18, 3, 2, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 5, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 0, SYSUTCDATETIME()), DATEADD(day, 5, SYSUTCDATETIME()), 100, 480, 430, 430, 0, 0
+),
+(
+34, 'Create author-subject mapping insert method', NULL, 1, 1, 3, 3, 18, NULL, 18, 3, 2, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 7, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 2, SYSUTCDATETIME()), DATEADD(day, 7, SYSUTCDATETIME()), 100, 300, 320, 320, 0, 0
+),
+(
+35, 'Create author-subject mapping delete method', NULL, 1, 1, 3, 3, 18, NULL, 18, 3, 2, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 11, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 4, SYSUTCDATETIME()), DATEADD(day, 11, SYSUTCDATETIME()), 100, 180, 160, 160, 0, 0
+),
+(
+36, 'Create author-subject mapping queries', NULL, 1, 1, 3, 3, 18, NULL, 18, 3, 2, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 9, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 7, SYSUTCDATETIME()), DATEADD(day, 9, SYSUTCDATETIME()), 100, 120, 150, 150, 0, 0
+),
+(
+37, 'Develop new subject entry screen', NULL, 1, 1, 2, 1, 20, NULL, 19, 3, 3, 3, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 6, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 4, SYSUTCDATETIME()), DATEADD(day, 6, SYSUTCDATETIME()), 0, 420, NULL, 420, 420, 0
+),
+(
+38, 'Create subject object insert method', NULL, 1, 1, 3, 1, 20, NULL, 19, 3, 3, 3, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 7, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 5, SYSUTCDATETIME()), DATEADD(day, 7, SYSUTCDATETIME()), 0, 300, NULL, 300, 300, 0
+),
+(
+39, 'Write subject object insert queries', NULL, 1, 1, 3, 1, 20, NULL, 19, 3, 3, 3, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 7, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 6, SYSUTCDATETIME()), DATEADD(day, 7, SYSUTCDATETIME()), 0, 180, NULL, 180, 180, 0
+),
+(
+40, 'Develop edit subject details screen', NULL, 1, 1, 2, 1, 21, NULL, 19, 3, 2, 3, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 4, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 1, SYSUTCDATETIME()), DATEADD(day, 4, SYSUTCDATETIME()), 0, 420, NULL, 420, 420, 0
+),
+(
+41, 'Create subject object update method', NULL, 1, 1, 3, 1, 21, NULL, 19, 3, 2, 3, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 6, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 3, SYSUTCDATETIME()), DATEADD(day, 6, SYSUTCDATETIME()), 0, 300, NULL, 300, 300, 0
+),
+(
+42, 'Write subject object update queries', NULL, 1, 1, 3, 1, 21, NULL, 19, 3, 2, 3, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 6, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, 3, SYSUTCDATETIME()), DATEADD(day, 6, SYSUTCDATETIME()), 0, 180, NULL, 180, 180, 0
+),
+(
+43, 'Make sure that testing environment ready', NULL, 1, 4, NULL, 1, NULL, NULL, NULL, 3, 3, 4, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -5, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -10, SYSUTCDATETIME()), DATEADD(day, -5, SYSUTCDATETIME()), 0, 180, NULL, 180, 180, 0
+),
+(
+44, 'Schedule meeting with customer to discuss scope', NULL, 1, 3, 4, 1, NULL, 1, 4, 2, 2, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, 0
+),
+(
+45, 'Meet with resource manager to see if we have available resources', NULL, 1, 3, 4, 1, NULL, 1, 4, 2, 3, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, 0
+),
+(
+46, 'Meet with customer to verify release date', NULL, 1, 3, 4, 1, NULL, 1, 4, 2, 3, 1, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, 0
+),
+(
+47, 'Plan marketing efforts for initial product release', NULL, 1, 3, 4, 1, NULL, 2, 1, 2, 2, 2, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, 0
+),
+(
+48, 'Contact marketing data providers to get database of authors', NULL, 1, 3, 4, 1, NULL, 2, 1, 2, 3, 3, DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), DATEADD(day, -120, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, 0
+)
+GO
+
+SET IDENTITY_INSERT TST_TASK OFF; 
+

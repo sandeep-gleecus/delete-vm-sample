@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Inflectra.SpiraTest.DataModel
+{
+    /// <summary>
+    /// Extensions to the TestSetFolder artifact
+    /// </summary>
+    public partial class TestSetFolder : Artifact
+    {
+        /// <summary>
+        /// Returns the artifact prefix
+        /// </summary>
+        public override string ArtifactPrefix
+        {
+            get
+            {
+                return "";
+            }
+        }
+
+        /// <summary>
+        /// Returns the artifact type enumeration
+        /// </summary>
+        public override Artifact.ArtifactTypeEnum ArtifactType
+        {
+            get
+            {
+                return ArtifactTypeEnum.TestSet;
+            }
+        }
+
+        /// <summary>The Artifact's token.</summary>
+        public override string ArtifactToken
+        {
+            get
+            {
+                return this.TestSetFolderId.ToString();
+            }
+        }
+
+        /// <summary>The Artifact's ID</summary>
+        public override int ArtifactId
+        {
+            get
+            {
+                return this.TestSetFolderId;
+            }
+        }
+
+        /// <summary>
+        /// Dummy field used to allow folders to display execution status in list view
+        /// </summary>
+        public int ExecutionStatusId
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// The total count of all statuses
+        /// </summary>
+        public int TotalCount
+        {
+            get
+            {
+                return CountBlocked + CountCaution + CountFailed + CountNotApplicable + CountNotRun + CountPassed;
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+discussion_id:Key,artifact_id:Normal,text:String,creator_id:Normal,creation_date:Normal,is_deleted:Normal,is_permanent:Normal
+1,1,"This is the first version of the system, we need to make sure we have a good feedback process in place.",2,"DATEADD(minute, -215083, SYSUTCDATETIME())",0,0
+2,1,We will use the incident tracking module to capture the feedback and the cycle the items back into the next release.,3,"DATEADD(minute, -213973, SYSUTCDATETIME())",0,0
+3,1,That sounds like a good plan!,2,"DATEADD(minute, -213833, SYSUTCDATETIME())",0,0

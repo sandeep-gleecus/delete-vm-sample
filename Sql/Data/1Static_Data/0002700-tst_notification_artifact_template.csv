@@ -1,0 +1,9 @@
+notification_template_id:Key,artifact_type_id:Normal,project_template_id:Normal,template_text:Ref
+1,1,NULL,..\..\..\Business\NotificationTemplates\emailTemplate_requirements_inline_default.htm
+2,2,NULL,..\..\..\Business\NotificationTemplates\emailTemplate_testCase_inline_default.htm
+3,3,NULL,..\..\..\Business\NotificationTemplates\emailTemplate_incidents_inline_default.htm
+4,6,NULL,..\..\..\Business\NotificationTemplates\emailTemplate_tasks_inline_default.htm
+5,8,NULL,..\..\..\Business\NotificationTemplates\emailTemplate_testSet_inline_default.htm
+6,13,NULL,..\..\..\Business\NotificationTemplates\emailTemplate_documents_inline_default.htm
+7,14,NULL,..\..\..\Business\NotificationTemplates\emailTemplate_risks_inline_default.htm
+36,4,NULL,..\..\..\Business\NotificationTemplates\emailTemplate_releases_inline_default.htm

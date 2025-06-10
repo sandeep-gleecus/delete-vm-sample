@@ -1,0 +1,245 @@
+﻿<%-- ValidationMaster Theme Skins--%>
+<tstsc:HyperLinkEx SkinID="CompanyName" Runat="server" Text="OnShore" NavigateUrl="http://www.onshoretech.com" />
+<tstsc:HyperLinkEx SkinID="AddOnsDownloads" NavigateUrl="http://www.onshoretech.com/Products/Downloads.aspx" Target="_blank" Runat="server" />
+<tstsc:HyperLinkEx SkinID="CustomerArea" NavigateUrl="https://www.onshoretech.com/CustomerArea" Target="_blank" Runat="server" />
+<tstsc:HyperLinkEx SkinID="ProductPurchase" NavigateUrl="https://www.onshoretech.com/Purchase" Target="_blank" Runat="server" />
+<tstsc:HyperLinkEx SkinID="CustomerSupport" NavigateUrl="http://www.onshoretech.com/Support" Target="_blank" Runat="server" />
+<tstsc:HyperLinkEx SkinID="HelpLink" Runat="server" Visible="true" />
+<tstsc:LabelEx runat="server" SkinID="DefaultRssUrl" Style="display:none" Text="http://www.onshoretech.com/Feeds/Atom.aspx" />
+<tstsc:ImageEx runat="server" SkinID="RepositoryTest" ImageUrl="Images/artifact-RepositoryTest.svg" AlternateText="Rapise" Tooltip="Rapise" />
+<%-- Generic Skins --%>
+<asp:Image runat="server" SkinID="Series1Point" ImageUrl="Images/Graphs/Series1Point.gif" />
+<asp:Image runat="server" SkinID="Series2Point" ImageUrl="Images/Graphs/Series2Point.gif" />
+<tstsc:MessageBox SkinID="MessageBox" Runat="server" HiddenCssClass="alert alert-hidden" InformationCssClass="alert alert-info"
+    ErrorCssClass="alert alert-danger" SuccessCssClass="alert alert-success" WarningCssClass="alert alert-warning" />
+<tstsc:MessageBox 
+    SkinID="UnityMessageBox" 
+    Runat="server" 
+    HiddenCssClass="dn" 
+    InformationCssClass="br3 my3 px5 py4 near-black bg-peach"
+    ErrorCssClass="br3 my3 px5 py4 near-black bg-pale-red" 
+    SuccessCssClass="br3 my3 px5 py4 bg-palegreen off-white" 
+    WarningCssClass="br3 my3 px5 py4 near-black bg-pale-red" 
+    />
+<tstsc:MessageBox SkinID="MessageBoxNarrowWithMargin" Runat="server" HiddenCssClass="alert alert-hidden alert-narrow ma3" InformationCssClass="alert alert-info alert-narrow ma3"
+    ErrorCssClass="alert alert-danger alert-narrow ma3" SuccessCssClass="alert alert-success alert-narrow ma3" WarningCssClass="alert alert-warning alert-narrow ma3" />
+<tstsc:CheckBoxEx Runat="server" CssClass="CheckBox" />
+<asp:Label Runat="server" SkinID="FancyCheckbox" CssClass="fancy-checkbox-label" />
+<tstsc:DropDownListEx Runat="server" CssClass="DropDownList DropDown" DisabledCssClass="Disabled DropDownList DropDown" />
+<tstsc:DropDownListEx Runat="server" SkinID="NarrowControl" CssClass="DropDownList DropDown narrow" DisabledCssClass="DropDownList DropDown narrow disabled" Role="narrow"/>
+<tstsc:DropDownListEx Runat="server" SkinID="NarrowPlusControl" CssClass="DropDownList DropDown narrow-plus" DisabledCssClass="DropDownList DropDown narrow-plus disabled" Role="narrow-plus"/>
+<tstsc:DropDownListEx Runat="server" SkinID="WideControl" CssClass="DropDownList DropDown input-wide" DisabledCssClass="DropDownList DropDown input-wide disabled" Role="wide"/>
+<tstsc:WebPartZoneEx Runat="server" SkinID="WebPartZone" DragHighlightColor="#F26722" DragZoneColor="#f9f9f9" PartChromePadding="2px" CssClass="WebPartZone">
+    <PartStyle CssClass="Part" />
+    <PartTitleStyle CssClass="Title" />
+    <PartChromeStyle CssClass="Chrome u-help-box" />
+    <SelectedPartChromeStyle CssClass="ChromeSelected Chrome" />
+    <HeaderStyle CssClass="Header" />
+    <FooterStyle CssClass="Footer" />
+    <EmptyZoneTextStyle CssClass="Empty" />
+    <ErrorStyle CssClass="Error" />
+    <MenuPopupStyle CssClass="MenuPopup" />
+</tstsc:WebPartZoneEx>
+<asp:CatalogZone Runat="server" SkinID="CatalogZone" CssClass="CatalogZone">
+    <HeaderVerbStyle CssClass="HeaderVerbStyle" />
+    <PartTitleStyle CssClass="PartTitleStyle" />
+    <FooterStyle CssClass="FooterStyle" />
+    <PartChromeStyle CssClass="PartChromeStyle" BorderColor="Silver" />
+    <InstructionTextStyle CssClass="InstructionTextStyle" />
+    <LabelStyle CssClass="LabelStyle" />
+    <PartLinkStyle CssClass="PartLinkStyle" />
+    <SelectedPartLinkStyle CssClass="SelectedPartLinkStyle" />
+    <VerbStyle CssClass="VerbStyle" />
+    <HeaderStyle CssClass="HeaderStyle" />
+    <EmptyZoneTextStyle CssClass="EmptyZoneTextStyle" />
+    <EditUIStyle CssClass="EditUIStyle" />
+    <PartStyle CssClass="PartStyle" />
+</asp:CatalogZone>
+<asp:EditorZone runat="server" SkinID="EditorZone" CssClass="EditorZone">
+    <LabelStyle CssClass="LabelStyle" />
+    <HeaderStyle CssClass="HeaderStyle" />
+    <HeaderVerbStyle CssClass="HeaderVerbStyle" />
+    <PartChromeStyle CssClass="PartChromeStyle" />
+    <PartStyle CssClass="PartStyle" />
+    <FooterStyle CssClass="FooterStyle" />
+    <EditUIStyle CssClass="EditUIStyle" />
+    <InstructionTextStyle CssClass="InstructionTextStyle" />
+    <ErrorStyle CssClass="ErrorStyle" />
+    <VerbStyle CssClass="VerbStyle" />
+    <EmptyZoneTextStyle CssClass="EmptyZoneTextStyle" />
+    <PartTitleStyle CssClass="PartTitleStyle" />
+</asp:EditorZone>
+<tstsc:GridViewEx Runat="server" SkinID="WidgetGrid" AutoGenerateColumns="False" Width="100%" CssClass="WidgetGrid" GridLines="None" />
+<tstsc:GridViewEx Runat="server" SkinID="WidgetTable" AutoGenerateColumns="False" Width="100%" CssClass="WidgetTable" GridLines="None" />
+<tstsc:DropDownHierarchy Runat="server" CssClass="DropDownHierarchy DropDown" DisabledCssClass="DropDownHierarchy Disabled DropDown" />
+<tstsc:DropDownUserList Runat="server" CssClass="DropDownHierarchy DropDownUser DropDown" DisabledCssClass="DropDownHierarchy DropDownUser Disabled DropDown" ActiveItemField="IsActive" />
+<tstsc:DateControl Runat="server" CssClass="DatePicker" DisabledCssClass="DatePicker Disabled" />
+<tstsc:TextBoxEx Runat="server" CssClass="text-box" DisabledCssClass="text-box disabled" />
+<tstsc:TextBoxEx Runat="server" SkinID="WideControl" CssClass="text-box wide" DisabledCssClass="text-box wide disabled" Role="wide" />
+<tstsc:TextBoxEx Runat="server" SkinID="NarrowControl" CssClass="text-box narrow" DisabledCssClass="text-box narrow disabled" Role="narrow"/>
+<tstsc:TextBoxEx Runat="server" SkinID="NarrowControlMin" CssClass="text-box narrow-min" DisabledCssClass="text-box narrow-min disabled" Role="narrow-min"/>
+<tstsc:TextBoxEx Runat="server" SkinID="NarrowPlusFormControl" CssClass="text-box narrow-plus form-control" DisabledCssClass="text-box form-control narrow-plus disabled" Role="narrow-plus"/>
+<tstsc:TextBoxEx Runat="server" SkinID="NarrowPlusFormControlMin" CssClass="text-box narrow-plus-min form-control" DisabledCssClass="text-box form-control narrow-plus-min disabled" Role="narrow-plus"/>
+<tstsc:TextBoxEx Runat="server" SkinID="NarrowControlTime" CssClass="timepicker-input text-box narrow" DisabledCssClass="timepicker-input text-box narrow disabled" Role="narrow"/>
+<tstsc:TextBoxEx Runat="server" SkinID="FormControl" CssClass="form-control" />
+<tstsc:TextBoxEx Runat="server" SkinID="FormControlThin" CssClass="form-control form-control-thin" />
+<tstsc:TextBoxEx Runat="server" SkinID="FormControlTop" CssClass="form-control form-control-top" />
+<tstsc:TextBoxEx Runat="server" SkinID="FormControlBottom" CssClass="form-control form-control-bottom" />
+<tstsc:TextBoxEx Runat="server" SkinID="FormControlObscured" CssClass="form-control text-obscured" />
+<asp:RequiredFieldValidator Runat="server" Display="None" />
+<asp:RegularExpressionValidator Runat="server" Display="None" />
+<tstsc:RequiredFieldValidatorEx Runat="server" Display="None" />
+<tstsc:DropMenu runat="server" MenuCssClass="drop-menu-popup" CssClass="btn btn-default drop-menu" />
+<tstsc:DropMenu runat="server" SkinID="HideOnScroll" MenuCssClass="drop-menu-popup" CssClass="btn btn-default drop-menu hide-on-scroll" />
+<tstsc:DropMenu runat="server" SkinID="ButtonPrimary" MenuCssClass="drop-menu-popup" CssClass="btn btn-primary drop-menu" />
+<asp:ValidationSummary CssClass="validation-summary" ShowMessageBox="False" ShowSummary="True" DisplayMode="BulletList" Runat="server" />
+<tstsc:Equalizer runat="server" CssClass="Equalizer" />
+<tstsc:ButtonEx runat="server" CssClass="btn btn-default" />
+<tstsc:ButtonEx runat="server" SkinID="Btn_withComments" CssClass="btn btn-primary py1 br0-top" />
+<tstsc:ButtonEx runat="server" SkinID="AvatarDelete" CssClass="btnDeleteAvatar"/>
+<tstsc:LinkButtonEx runat="server" CssClass="btn btn-default" />
+<tstsc:LinkButtonEx runat="server" SkinID="ButtonPrimary" CssClass="btn btn-primary" />
+<tstsc:LinkButtonEx runat="server" SkinID="ButtonLink" CssClass="btn btn-link" />
+<tstsc:LinkButtonEx runat="server" SkinID="ButtonLinkNoVerticalAlign" CssClass="btn btn-link" Style="vertical-align: initial" />
+<tstsc:LinkButtonEx runat="server" SkinID="ButtonDropdown" CssClass="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+<tstsc:LinkButtonEx runat="server" SkinID="ButtonLinkChevron" CssClass="btn btn-link btn-link-chevron" />
+<tstsc:LinkButtonEx runat="server" SkinID="ButtonLinkAdd" CssClass="btn btn-link btn-link-add" />
+<tstsc:LinkButtonEx runat="server" SkinID="ButtonAdd" CssClass="btn btn-default btn-add" />
+<tstsc:LinkButtonEx runat="server" SkinID="HyperLink" CssClass="hyperlink" />
+<tstsc:LinkButtonEx runat="server" SkinID="NoStyling" CssClass="" />
+<tstsc:LinkButtonEx runat="server" SkinID="ButtonSmall" CssClass="btn btn-default py1 px3 fs-90" />
+<tstsc:NavigationBar runat="server" CssClass="panel panel-default navigation-bar" />
+<tstsc:SidebarPanel runat="server" CssClass="panel panel-default navigation-bar" />
+<tstsc:SidebarPanel runat="server" SkinID="RelativeSidebarPanel" CssClass="panel panel-default navigation-bar relative" />
+<tstsc:ButtonEx runat="server" SkinID="PassButton" CssClass="btn btn-default PassButton" />
+<tstsc:ButtonEx runat="server" SkinID="PassAllButton" CssClass="btn btn-default PassAllButton" />
+<tstsc:ButtonEx runat="server" SkinID="BlockedButton" CssClass="btn btn-default BlockedButton" />
+<tstsc:ButtonEx runat="server" SkinID="CautionButton" CssClass="btn btn-default CautionButton" />
+<tstsc:ButtonEx runat="server" SkinID="ButtonPrimary" CssClass="btn btn-primary" />
+<tstsc:HyperLinkEx runat="server" SkinID="ButtonPrimary" CssClass="btn btn-primary" />
+<tstsc:HyperLinkEx runat="server" SkinID="ButtonDefault" CssClass="btn btn-default" />
+<tstsc:HyperLinkEx runat="server" SkinID="ButtonLaunch" CssClass="btn btn-launch" />
+<tstsc:HyperLinkEx runat="server" SkinID="ButtonDefaultSmall" CssClass="btn btn-default btn-sm" />
+<tstsc:HyperLinkEx runat="server" SkinID="ButtonPrimaryWrap" CssClass="btn btn-primary white-space-normal" />
+<tstsc:HyperLinkEx runat="server" SkinID="ButtonDefaultWrap" CssClass="btn btn-default white-space-normal" />
+<tstsc:HyperLinkEx runat="server" SkinID="ButtonLink" CssClass="btn btn-link" />
+<tstsc:HyperLinkEx runat="server" SkinID="ButtonLinkAdd" CssClass="btn btn-link btn-link-add" />
+<tstsc:ButtonEx runat="server" SkinID="FailButton" CssClass="btn btn-default FailButton" />
+<tstsc:ButtonEx runat="server" SkinID="NotApplicableButton" CssClass="btn btn-default NotApplicableButton" />
+<tstsc:TagCloud runat="server" SkinID="TagCloud" CssClass="TagCloud" MinFontSize="5" MaxFontSize="26" MinColor="#555555" MaxColor="#000000" />
+<tstsc:BackgroundProcessManager runat="server" CssClass="DialogBox" Height="150px" Width="310px" Modal="true" />
+<tstsc:SearchResults runat="server" CssClass="SearchResults" />
+<tstsc:LoginEx SkinID="LoginForm" runat="server" RenderOuterTable="false" />
+<tstsc:DialogBoxPanel runat="server" CssClass="PopupPanel" />
+<tstsc:DialogBoxPanel runat="server" CssClass="PopupPanel overflow-visible" SkinID="PopupOverflowVisible" />
+<tstsc:TabControl runat="server" CssClass="TabControl" TabHeight="30" TabCssClass="Tab" SelectedTabCssClass="TabSelected" DividerCssClass="Divider" />
+<tstsc:WorkflowOperations Runat="server" CssClass="WorkflowOperations" />
+<tstsc:DropDownMultiList Runat="server" CssClass="DropDownList DropDown" DisabledCssClass="DropDownList Disabled DropDown" />
+<tstsc:CommentList runat="server" CssClass="CommentList" />
+<tstsc:ThemeStylePlaceHolder runat="server" SkinID="MainStylesheet" FavIconFilename="FavIcon.ico">
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/CoreTheme/Bootstrap.min.css" />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/CoreTheme/bootstrap-switch.min.css" />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/CoreTheme/font-awesome.min.css" />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/CoreTheme/hopscotch.css" />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/CoreTheme/c3.css" />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/CoreTheme/dhtmlx-gantt.css"  />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css" />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css" />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css" />
+</tstsc:ThemeStylePlaceHolder>
+<tstsc:ThemeStylePlaceHolder runat="server" SkinID="LoginStylesheet" FavIconFilename="FavIcon.ico">
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css" />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css" />
+</tstsc:ThemeStylePlaceHolder>
+<tstsc:ThemeStylePlaceHolder runat="server" SkinID="DashboardStylesheet" FavIconFilename="FavIcon.ico">
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css"  />
+</tstsc:ThemeStylePlaceHolder>
+<tstsc:ThemeStylePlaceHolder runat="server" SkinID="AdministrationStylesheet" FavIconFilename="FavIcon.ico">
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css"  />
+</tstsc:ThemeStylePlaceHolder>
+<tstsc:ThemeStylePlaceHolder runat="server" SkinID="TestExecutionStylesheet" FavIconFilename="FavIcon.ico">
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css"  />
+</tstsc:ThemeStylePlaceHolder>
+<tstsc:ThemeStylePlaceHolder runat="server" SkinID="PlanningBoardStylesheet" FavIconFilename="FavIcon.ico">
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css"  />
+</tstsc:ThemeStylePlaceHolder>
+<tstsc:ThemeStylePlaceHolder runat="server" SkinID="HelpStylesheet" FavIconFilename="FavIcon.ico">
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/CoreTheme/Bootstrap.min.css" />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/CoreTheme/font-awesome.min.css" />
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css" />
+</tstsc:ThemeStylePlaceHolder>
+<tstsc:ThemeStylePlaceHolder runat="server" SkinID="DiagramsStylesheet" FavIconFilename="FavIcon.ico">
+    <tstsc:ThemeStyle CssUrl="~/App_Themes/ValidationMasterTheme/ValidationMasterTheme.css"  />
+</tstsc:ThemeStylePlaceHolder>
+<tstsc:StatusBox runat="server" CssClass="StatusBox" />
+<tstsc:GridViewEx runat="server" SkinID="DataGrid" CssClass="DataGrid" AutoGenerateColumns="false">
+    <HeaderStyle CssClass="Header" />
+    <SubHeaderStyle CssClass="SubHeader" />
+    <RowStyle CssClass="Normal" />
+</tstsc:GridViewEx>
+<tstsc:DecimalRangeFilter runat="server" CssClass="NumberRangeFilter" />
+<tstsc:IntRangeFilter runat="server" CssClass="NumberRangeFilter" />
+<tstsc:EffortRangeFilter runat="server" CssClass="NumberRangeFilter" />
+<tstsc:UserNameAvatar runat="server" CssClass="UserNameAvatar" />
+<tstsc:UserOnlineStatus runat="server" CssClass="UserOnlineStatus" />
+<tstsc:ScreenshotCapture runat="server" CssClass="ScreenshotCapture" Width="250px" Height="100px" />
+<tstsc:DropDownListEx runat="server" SkinID="UnityDropDownList" CssClass="DropDownList DropDown u-dropdown" />
+<tstsc:DropDownHierarchy Runat="server" SkinID="ReleaseDropDownList"
+    CssClass="DropDownHierarchy DropDown" DisabledCssClass="DropDownHierarchy DropDown Disabled"
+    IndentLevelField="IndentLevel" ItemImage="Images/artifact-Release.svg"
+     SummaryItemImage="Images/artifact-Release.svg" AlternateItemImage="Images/artifact-Iteration.svg"
+    SummaryItemField="IsSummary" AlternateItemField="IsIterationOrPhase">
+</tstsc:DropDownHierarchy>
+<tstsc:DropDownHierarchy Runat="server" SkinID="ReleaseDropDownListWide"
+    CssClass="DropDownHierarchy DropDown input-wide" DisabledCssClass="DropDownHierarchy DropDown Disabled input-wide"
+    IndentLevelField="IndentLevel" ItemImage="Images/artifact-Release.svg"
+     SummaryItemImage="Images/artifact-Release.svg" AlternateItemImage="Images/artifact-Iteration.svg"
+    SummaryItemField="IsSummary" AlternateItemField="IsIterationOrPhase">
+</tstsc:DropDownHierarchy>
+<tstsc:DropDownHierarchy Runat="server" SkinID="ReleaseDropDownListFarRight"
+    CssClass="DropDownHierarchy DropDown DropDown-far-right" DisabledCssClass="DropDownHierarchy DropDown Disabled"
+    IndentLevelField="IndentLevel" ItemImage="Images/artifact-Release.svg"
+     SummaryItemImage="Images/artifact-Release.svg" AlternateItemImage="Images/artifact-Iteration.svg"
+    SummaryItemField="IsSummary" AlternateItemField="IsIterationOrPhase">
+</tstsc:DropDownHierarchy>
+<tstsc:UnityDropDownHierarchy Runat="server"
+    CssClass="u-dropdown u-dropdown_hierarchy" DisabledCssClass="u-dropdown u-dropdown-hierarchy disabled"
+    IndentLevelField="IndentLevel" ItemImage="Images/artifact-Release.svg"
+     SummaryItemImage="Images/artifact-Release.svg" AlternateItemImage="Images/artifact-Iteration.svg"
+    SummaryItemField="IsSummary" AlternateItemField="IsIterationOrPhase">
+</tstsc:UnityDropDownHierarchy>
+<tstsc:UnityDropDownHierarchy Runat="server"
+    SkinID="UnityDropDownList_Release"
+    CssClass="u-dropdown u-dropdown_hierarchy" DisabledCssClass="u-dropdown u-dropdown-hierarchy disabled"
+    IndentLevelField="IndentLevel" ItemImage="Images/artifact-Release.svg"
+     SummaryItemImage="Images/artifact-Release.svg" AlternateItemImage="Images/artifact-Iteration.svg"
+    SummaryItemField="IsSummary" AlternateItemField="IsIterationOrPhase">
+</tstsc:UnityDropDownHierarchy>
+<tstsc:UnityDropDownHierarchy Runat="server"
+    SkinID="UnityDropDownList_ReleaseInQuickFilterPanel"
+    CssClass="u-dropdown u-dropdown_hierarchy static" DisabledCssClass="u-dropdown u-dropdown-hierarchy disabled static"
+    IndentLevelField="IndentLevel" ItemImage="Images/artifact-Release.svg"
+     SummaryItemImage="Images/artifact-Release.svg" AlternateItemImage="Images/artifact-Iteration.svg"
+    SummaryItemField="IsSummary" AlternateItemField="IsIterationOrPhase">
+</tstsc:UnityDropDownHierarchy>
+<tstsc:UnityDropDownHierarchy Runat="server"
+    CssClass="u-dropdown u-dropdown_hierarchy u-dropdown_list-on-right" 
+    DisabledCssClass="u-dropdown u-dropdown-hierarchy disabled"
+    IndentLevelField="IndentLevel" 
+    ItemImage="Images/artifact-Release.svg"
+    SkinID="UnityDropDownList_ListOnRight"
+    SummaryItemImage="Images/artifact-Release.svg" 
+    AlternateItemImage="Images/artifact-Iteration.svg"
+    SummaryItemField="IsSummary" 
+    AlternateItemField="IsIterationOrPhase"
+    >
+</tstsc:UnityDropDownHierarchy>
+<tstsc:UnityDropDownHierarchy Runat="server" SkinID="UnityDropDownListAttachments"
+    CssClass="u-dropdown u-dropdown_hierarchy" DisabledCssClass="u-dropdown u-dropdown-hierarchy disabled"
+    IndentLevelField="IndentLevel" ItemImage="Images/Folder.svg">
+</tstsc:UnityDropDownHierarchy>
+<tstsc:RichTextBoxJ runat="server" ShowBottomBar="true" />
+<tstsc:DateTimePicker Runat="server" CssClass="datepicker" />
+<tstsc:UnityDateTimePicker Runat="server" CssClass="u-datepicker" />
+<asp:ChangePassword runat="server" RenderOuterTable="false" />
+<tstsc:ChangePasswordEx runat="server" RenderOuterTable="false" />

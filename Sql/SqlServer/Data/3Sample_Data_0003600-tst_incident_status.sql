@@ -1,0 +1,110 @@
+/***************************************************************
+**	Insert script for table TST_INCIDENT_STATUS
+***************************************************************/
+SET IDENTITY_INSERT TST_INCIDENT_STATUS ON; 
+
+INSERT INTO TST_INCIDENT_STATUS
+(
+INCIDENT_STATUS_ID, PROJECT_TEMPLATE_ID, NAME, IS_ACTIVE, IS_OPEN_STATUS, IS_DEFAULT
+)
+VALUES
+(
+1, '1', 'New', 1, 1, 1
+),
+(
+2, '1', 'Open', 1, 1, 0
+),
+(
+3, '1', 'Assigned', 1, 1, 0
+),
+(
+4, '1', 'Resolved', 1, 0, 0
+),
+(
+5, '1', 'Closed', 1, 0, 0
+),
+(
+6, '1', 'Not Reproducible', 1, 0, 0
+),
+(
+7, '1', 'Duplicate', 1, 0, 0
+),
+(
+8, '1', 'Reopen', 1, 1, 0
+),
+(
+9, '2', 'New', 1, 1, 1
+),
+(
+10, '2', 'Open', 1, 1, 0
+),
+(
+11, '2', 'Assigned', 1, 1, 0
+),
+(
+12, '2', 'Resolved', 1, 0, 0
+),
+(
+13, '2', 'Closed', 1, 0, 0
+),
+(
+14, '2', 'Not Reproducible', 1, 0, 0
+),
+(
+15, '2', 'Duplicate', 1, 0, 0
+),
+(
+16, '2', 'Reopen', 1, 1, 0
+),
+(
+17, '3', 'New', 1, 1, 1
+),
+(
+18, '3', 'Open', 1, 1, 0
+),
+(
+19, '3', 'Assigned', 1, 1, 0
+),
+(
+20, '3', 'Resolved', 1, 0, 0
+),
+(
+21, '3', 'Closed', 1, 0, 0
+),
+(
+22, '3', 'Not Reproducible', 1, 0, 0
+),
+(
+23, '3', 'Duplicate', 1, 0, 0
+),
+(
+24, '3', 'Reopen', 1, 1, 0
+),
+(
+25, '4', 'New', 1, 1, 1
+),
+(
+26, '4', 'Open', 1, 1, 0
+),
+(
+27, '4', 'Assigned', 0, 1, 0
+),
+(
+28, '4', 'Resolved', 0, 0, 0
+),
+(
+29, '4', 'Closed', 1, 0, 0
+),
+(
+30, '4', 'Not Reproducible', 1, 0, 0
+),
+(
+31, '4', 'Duplicate', 1, 0, 0
+),
+(
+32, '4', 'Reopen', 0, 1, 0
+)
+GO
+
+SET IDENTITY_INSERT TST_INCIDENT_STATUS OFF; 
+

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Add" xml:space="preserve">
+    <value>Lisää</value>
+  </data>
+	<data name="Cancel" xml:space="preserve">
+    <value>Peruuta</value>
+  </data>
+	<data name="LogIn" xml:space="preserve">
+    <value>Kirjaudu Sisään</value>
+  </data>
+	<data name="Reset" xml:space="preserve">
+    <value>Alusta</value>
+  </data>
+	<data name="Submit" xml:space="preserve">
+    <value>Toimita</value>
+  </data>
+	<data name="LogOut" xml:space="preserve">
+    <value>Kirjaudu Ulos</value>
+  </data>
+	<data name="SignOffOtherLocations" xml:space="preserve">
+    <value>Kirjaa ulos muut Istunnot</value>
+  </data>
+	<data name="Apply" xml:space="preserve">
+    <value>Käytä</value>
+  </data>
+	<data name="Close" xml:space="preserve">
+    <value>Sulje</value>
+  </data>
+	<data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+	<data name="Delete" xml:space="preserve">
+    <value>Poista</value>
+  </data>
+	<data name="Execute" xml:space="preserve">
+    <value>Suorita</value>
+  </data>
+	<data name="Resume" xml:space="preserve">
+    <value>Jatka</value>
+  </data>
+	<data name="ApplyFilter" xml:space="preserve">
+    <value>Käytä Suodatinta</value>
+  </data>
+	<data name="ClearFilter" xml:space="preserve">
+    <value>Tyhjennä Suodatin</value>
+  </data>
+	<data name="CopyItems" xml:space="preserve">
+    <value>Kopioi Kohteet</value>
+  </data>
+	<data name="CutItems" xml:space="preserve">
+    <value>Leikkaa Kohteet</value>
+  </data>
+	<data name="Edit" xml:space="preserve">
+    <value>Muokkaa</value>
+  </data>
+	<data name="Export" xml:space="preserve">
+    <value>Vie</value>
+  </data>
+	<data name="Filter" xml:space="preserve">
+    <value>Suodatin</value>
+  </data>
+	<data name="Indent" xml:space="preserve">
+    <value>Sisennä</value>
+  </data>
+	<data name="Insert" xml:space="preserve">
+    <value>Lisää</value>
+  </data>
+	<data name="Outdent" xml:space="preserve">
+    <value>Ulonna</value>
+  </data>
+	<data name="PasteItems" xml:space="preserve">
+    <value>Liitä Kohteita</value>
+  </data>
+	<data name="Refresh" xml:space="preserve">
+    <value>Virkistä</value>
+  </data>
+	<data name="RetrieveFilter" xml:space="preserve">
+    <value>Hae Suodatin</value>
+  </data>
+	<data name="SaveFilter" xml:space="preserve">
+    <value>Tallenna Suodatin</value>
+  </data>
+	<data name="OpenItem" xml:space="preserve">
+    <value>Avaa kohde</value>
+  </data>
+	<data name="OpenItemNewTab" xml:space="preserve">
+    <value>Avaa uudessa Välilehdessä</value>
+  </data>
+	<data name="EditItems" xml:space="preserve">
+    <value>Muokkaa Kohteita</value>
+  </data>
+	<data name="Tools" xml:space="preserve">
+    <value>Työkalut</value>
+  </data>
+	<data name="Copy" xml:space="preserve">
+    <value>Kopioi</value>
+  </data>
+	<data name="Email" xml:space="preserve">
+    <value>Sähköposti</value>
+  </data>
+	<data name="Print" xml:space="preserve">
+    <value>Tulosta</value>
+  </data>
+	<data name="Save" xml:space="preserve">
+    <value>Tallenna</value>
+  </data>
+	<data name="SaveAndClose" xml:space="preserve">
+    <value>Tallenna ja Sulje</value>
+  </data>
+	<data name="SaveAndNew" xml:space="preserve">
+    <value>Tallenna ja Uusi</value>
+  </data>
+	<data name="Subscribe" xml:space="preserve">
+    <value>Tilaa</value>
+  </data>
+	<data name="Unsubscribe" xml:space="preserve">
+    <value>Lopeta tilaus</value>
+  </data>
+	<data name="Send" xml:space="preserve">
+    <value>Lähetä</value>
+  </data>
+	<data name="Update" xml:space="preserve">
+    <value>Päivitä</value>
+  </data>
+	<data name="Remove" xml:space="preserve">
+    <value>Poista</value>
+  </data>
+	<data name="Upload" xml:space="preserve">
+    <value>Lataa</value>
+  </data>
+	<data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopioi Leikepöydälle</value>
+  </data>
+	<data name="InsertLink" xml:space="preserve">
+    <value>Lisää Linkki</value>
+  </data>
+	<data name="InsertStep" xml:space="preserve">
+    <value>Lisää Askel</value>
+  </data>
+	<data name="Find" xml:space="preserve">
+    <value>Etsi</value>
+  </data>
+	<data name="Revert" xml:space="preserve">
+    <value>Palauta</value>
+  </data>
+	<data name="New" xml:space="preserve">
+    <value>Uusi</value>
+  </data>
+	<data name="Blocked" xml:space="preserve">
+    <value>Estetty</value>
+  </data>
+	<data name="Caution" xml:space="preserve">
+    <value>Huomautus</value>
+  </data>
+	<data name="CreateReport" xml:space="preserve">
+    <value>Luo Raportti</value>
+  </data>
+	<data name="Fail" xml:space="preserve">
+    <value>Hylkää</value>
+  </data>
+	<data name="Finish" xml:space="preserve">
+    <value>Lopeta</value>
+  </data>
+	<data name="Next" xml:space="preserve">
+    <value>Seuraava</value>
+  </data>
+	<data name="Pass" xml:space="preserve">
+    <value>Hyväksy</value>
+  </data>
+	<data name="PassAll" xml:space="preserve">
+    <value>Hyväksy Kaikki</value>
+  </data>
+	<data name="Pause" xml:space="preserve">
+    <value>Keskeytä</value>
+  </data>
+	<data name="AddAssociation" xml:space="preserve">
+    <value>Lisää Yhteys</value>
+  </data>
+	<data name="MakeActive" xml:space="preserve">
+    <value>Aktivoi</value>
+  </data>
+	<data name="BackList" xml:space="preserve">
+    <value>Takaisin Listaan</value>
+  </data>
+	<data name="Details" xml:space="preserve">
+    <value>Lisätiedot</value>
+  </data>
+	<data name="GenerateNew" xml:space="preserve">
+    <value>Luo Uusi</value>
+  </data>
+	<data name="Purge" xml:space="preserve">
+    <value>Siivoa</value>
+  </data>
+	<data name="Restore" xml:space="preserve">
+    <value>Palauta</value>
+  </data>
+	<data name="SubmitTimecard" xml:space="preserve">
+    <value>Toimita Kellokortti</value>
+  </data>
+	<data name="ViewItem" xml:space="preserve">
+    <value>Näytä Kohde</value>
+  </data>
+	<data name="AddRole" xml:space="preserve">
+    <value>Lisää Rooli</value>
+  </data>
+	<data name="Create" xml:space="preserve">
+    <value>Luo</value>
+  </data>
+	<data name="AddTransition" xml:space="preserve">Lisää </data><data name="AddWorkflow" xml:space="preserve">Lisää Tilamalli</data><data name="AdminView" xml:space="preserve">Ylläpitonäkymä</data><data name="Approve" xml:space="preserve">Hyväksy</data><data name="Change" xml:space="preserve">Muutos</data><data name="ClearLog" xml:space="preserve">Tyhjennä Logi</data><data name="Continue" xml:space="preserve">Jatka</data><data name="Customize" xml:space="preserve">Kustomoi</data><data name="Import" xml:space="preserve">Tuo</data><data name="InsertAndClose" xml:space="preserve">Lisää ja Sulje</data><data name="Revert_Parenthesis" xml:space="preserve">(Peru)</data><data name="Steps" xml:space="preserve">Askeleet</data><data name="Test" xml:space="preserve">Testaa</data><data name="UpdateAndClose" xml:space="preserve">Päivitä ja Sulje</data><data name="View" xml:space="preserve">Näytä</data><data name="AddTransition" xml:space="preserve"><value>Lisää Tilasiirtymä</value></data><data name="AddWorkflow" xml:space="preserve"><value>Lisää Tilamalli</value></data><data name="AdminView" xml:space="preserve"><value>Ylläpitonäkymä</value></data><data name="Approve" xml:space="preserve"><value>Hyväksy</value></data><data name="Change" xml:space="preserve"><value>Muutos</value></data><data name="ClearLog" xml:space="preserve"><value>Tyhjennä Loki</value></data><data name="Continue" xml:space="preserve"><value>Jatka</value></data><data name="Customize" xml:space="preserve"><value>Kustomoi</value></data><data name="Import" xml:space="preserve"><value>Tuo</value></data><data name="InsertAndClose" xml:space="preserve"><value>Lisää ja Sulje</value></data><data name="Revert_Parenthesis" xml:space="preserve"><value>(Palauta)</value></data><data name="Steps" xml:space="preserve"><value>Askeleet</value></data><data name="Test" xml:space="preserve"><value>Testaa</value></data><data name="UpdateAndClose" xml:space="preserve"><value>Päivitä ja Sulje</value></data><data name="View" xml:space="preserve"><value>Näytä</value></data><data name="Activate" xml:space="preserve"><value>Aktivoi</value></data><data name="ActivateTara" xml:space="preserve"><value>Aktivoi TaraVault</value></data><data name="AddComment" xml:space="preserve"><value>Lisää Kommentti</value></data><data name="AddContact" xml:space="preserve"><value>Lisää Kontakti</value></data><data name="AddUsers" xml:space="preserve"><value>Lisää Käyttäjiä</value></data><data name="ClearCache" xml:space="preserve"><value>Tyhjennä Välimuisti</value></data><data name="Deactivate" xml:space="preserve"><value>Passivoi</value></data><data name="EndSession" xml:space="preserve"><value>Lopeta Istunto</value></data><data name="ForceReSync" xml:space="preserve"><value>Pakotettu Synkronointi</value></data><data name="PurgeAll" xml:space="preserve"><value>Siivoa kaikki</value></data><data name="Refresh_Parenthesis" xml:space="preserve"><value>(Virkistä)</value></data><data name="RemoveContact" xml:space="preserve"><value>Poista Yhteys</value></data><data name="Select" xml:space="preserve"><value>Valitse</value></data><data name="SendMessage" xml:space="preserve"><value>Lähetä viesti</value></data><data name="Suggest" xml:space="preserve"><value>Ehdota</value></data><data name="Undelete" xml:space="preserve"><value>Kumoa poisto</value></data><data name="ViewProjectMappings" xml:space="preserve"><value>Näytä Projektimäppäykset</value></data><data name="ActivateUsers" xml:space="preserve"><value>Aktivoi Käyttäjä</value></data><data name="AddProjects" xml:space="preserve"><value>Lisää Projekteja</value></data><data name="Clone" xml:space="preserve"><value>Kloonaa</value></data><data name="EditUsers" xml:space="preserve"><value>Muokkaa Käyttäjiä</value></data><data name="FocusOn" xml:space="preserve"><value>Kohdista</value></data><data name="InsertAtCursor" xml:space="preserve"><value>Uusi</value></data><data name="Leave" xml:space="preserve"><value>Poistu</value></data><data name="Link" xml:space="preserve"><value>Linkitä</value></data><data name="Mini" xml:space="preserve"><value>Mini</value></data><data name="NotApplicable" xml:space="preserve"><value>N/A</value></data><data name="ShowGuidedTour" xml:space="preserve"><value>Näytä Opastettu kierros</value></data><data name="Split" xml:space="preserve"><value>Jaettu</value></data><data name="Table" xml:space="preserve"><value>Taulukko</value></data><data name="ReTest" xml:space="preserve"><value>Uusi ajo</value></data><data name="AddFollower" xml:space="preserve"><value>Lisää Seuraaja</value></data><data name="Assign" xml:space="preserve"><value>Osoita</value></data><data name="Development" xml:space="preserve"><value>Toteutus</value></data><data name="General" xml:space="preserve"><value>Yleinen</value></data><data name="Testing" xml:space="preserve"><value>Testaus</value></data></root>

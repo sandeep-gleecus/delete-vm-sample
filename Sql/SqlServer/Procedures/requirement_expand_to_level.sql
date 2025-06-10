@@ -1,0 +1,107 @@
+-- =============================================
+-- Author:			Inflectra Corporation
+-- Business Object: Requirement
+-- Description:		Expands the hierarchy to a specific level
+-- =============================================
+IF OBJECT_ID ( 'REQUIREMENT_EXPAND_TO_LEVEL', 'P' ) IS NOT NULL 
+    DROP PROCEDURE REQUIREMENT_EXPAND_TO_LEVEL;
+GO
+CREATE PROCEDURE REQUIREMENT_EXPAND_TO_LEVEL
+	@UserId INT,
+	@ProjectId INT,
+	@Level INT
+AS
+BEGIN
+	--Make all items that are the requested level or less visible, the others hidden
+	
+	--Show
+	UPDATE TST_REQUIREMENT_USER
+		SET IS_VISIBLE = 1
+		WHERE USER_ID = @UserId
+		AND REQUIREMENT_ID IN (
+			SELECT REQUIREMENT_ID
+			FROM TST_REQUIREMENT
+			WHERE PROJECT_ID = @ProjectId
+			AND LEN(INDENT_LEVEL) <= (@Level * 3) 
+			AND IS_DELETED = 0
+			)
+			
+	--Hide
+	UPDATE TST_REQUIREMENT_USER
+		SET IS_VISIBLE = 0
+		WHERE USER_ID = @UserId
+		AND REQUIREMENT_ID IN (
+			SELECT REQUIREMENT_ID
+			FROM TST_REQUIREMENT
+			WHERE PROJECT_ID = @ProjectId
+			AND LEN(INDENT_LEVEL) > (@Level * 3) 
+			AND IS_DELETED = 0
+			)
+	
+	--Those folder items that are less than the requested level only, expand
+	
+	--Expand
+	UPDATE TST_REQUIREMENT_USER
+		SET IS_EXPANDED = 1
+		WHERE USER_ID = @UserId
+		AND REQUIREMENT_ID IN (
+			SELECT REQUIREMENT_ID
+			FROM TST_REQUIREMENT
+			WHERE PROJECT_ID = @ProjectId
+			AND LEN(INDENT_LEVEL) < (@Level * 3) 
+			AND IS_DELETED = 0
+			)
+			
+	--Collapse
+	UPDATE TST_REQUIREMENT_USER
+		SET IS_EXPANDED = 0
+		WHERE USER_ID = @UserId
+		AND REQUIREMENT_ID IN (
+			SELECT REQUIREMENT_ID
+			FROM TST_REQUIREMENT
+			WHERE PROJECT_ID = @ProjectId
+			AND LEN(INDENT_LEVEL) >= (@Level * 3) 
+			AND IS_DELETED = 0
+			)
+
+	--Now do the inserts for the case where user has no existing settings
+	--Visible and Expanded
+	INSERT INTO TST_REQUIREMENT_USER
+		(USER_ID, IS_EXPANDED, IS_VISIBLE, REQUIREMENT_ID)
+	SELECT @UserId, 1, 1, REQUIREMENT_ID
+	FROM TST_REQUIREMENT
+			WHERE PROJECT_ID = @ProjectId
+			AND LEN(INDENT_LEVEL) < (@Level * 3)
+			AND REQUIREMENT_ID NOT IN (
+				SELECT REQUIREMENT_ID
+				FROM TST_REQUIREMENT_USER
+				WHERE USER_ID = @UserId)
+			AND IS_DELETED = 0
+						
+	--Visible but not Expanded
+	INSERT INTO TST_REQUIREMENT_USER
+		(USER_ID, IS_EXPANDED, IS_VISIBLE, REQUIREMENT_ID)
+	SELECT @UserId, 0, 1, REQUIREMENT_ID
+	FROM TST_REQUIREMENT
+			WHERE PROJECT_ID = @ProjectId
+			AND LEN(INDENT_LEVEL) = (@Level * 3)
+			AND REQUIREMENT_ID NOT IN (
+				SELECT REQUIREMENT_ID
+				FROM TST_REQUIREMENT_USER
+				WHERE USER_ID = @UserId)
+			AND IS_DELETED = 0
+						
+	--Hidden and Collapsed
+	INSERT INTO TST_REQUIREMENT_USER
+		(USER_ID, IS_EXPANDED, IS_VISIBLE, REQUIREMENT_ID)
+	SELECT @UserId, 0, 0, REQUIREMENT_ID
+	FROM TST_REQUIREMENT
+			WHERE PROJECT_ID = @ProjectId
+			AND LEN(INDENT_LEVEL) > (@Level * 3)
+			AND REQUIREMENT_ID NOT IN (
+				SELECT REQUIREMENT_ID
+				FROM TST_REQUIREMENT_USER
+				WHERE USER_ID = @UserId)
+			AND IS_DELETED = 0
+END
+GO

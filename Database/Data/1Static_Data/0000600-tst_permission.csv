@@ -1,0 +1,7 @@
+permission_id:Key,name:String,is_active:Normal
+1,Permission_Create,1
+2,Permission_Modify,1
+3,Permission_Delete,1
+4,Permission_View,1
+5,Permission_LimitedModify,1
+6,Permission_BulkEdit,1

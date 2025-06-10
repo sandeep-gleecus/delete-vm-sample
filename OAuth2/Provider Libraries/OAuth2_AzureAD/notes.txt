@@ -1,0 +1,16 @@
+﻿See here:
+https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-windows-desktop
+
+
+Client ID:	185c17d0-b1e6-4f90-b56b-32cb32e480c6
+Secret Key:	v:Q7aZ[KSEp3m-Ll?ahnk1iYhielPFZ4
+Auth URL:	https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+Token URL:	https://login.microsoftonline.com/common/oauth2/v2.0/token
+Profile URL:https://graph.microsoft.com/oidc/userinfo
+
+
+
+Can set up an App in AzureAD using:
+https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-windows-desktop#option-2-register-and-manually-configure-your-application-and-code-sample
+Client ID is the "Application (client) ID". 
+For the Secret Key, go to Certificate and Secrets, and create a "New Client Secret".

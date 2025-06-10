@@ -1,0 +1,31 @@
+
+function TestInit()
+{
+	//Input variables - allows SpiraTest to configure as parameters
+	//Provide backup values if not defined
+	if ('undefined' == typeof(g_author_age))
+	{
+		g_author_age = 35;
+	}
+	if ('undefined' == typeof(g_author_name))
+	{
+		g_author_name = 'Roger Hammersmith';
+	}
+	
+	Tester.SetReportAttribute("Browser", g_browserLibrary);
+	KillBrowser();
+}
+
+
+//########## Script Steps ##############
+
+function Test()
+{
+	Login();
+	CreateAuthor(g_author_name, g_author_age);
+	Logout();
+}
+
+g_load_libraries=["%g_browserLibrary:Internet Explorer HTML%"];
+
+

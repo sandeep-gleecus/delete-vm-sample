@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<samplerepo>
+  <branches>
+    <branch is-head="true" name="main">
+      <revisions>
+        <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+        <revisionref key="0008" />
+        <revisionref key="0009" />
+        <revisionref key="0010" />
+        <revisionref key="0011" />
+        <revisionref key="0012" />
+      </revisions>
+    </branch>
+    <branch name="develop">
+      <revisions>
+        <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+        <revisionref key="0008" />
+        <revisionref key="0009" />
+        <revisionref key="0010" />
+        <revisionref key="0011" />
+        <revisionref key="0012" />
+        <revisionref key="0013" />
+        <revisionref key="0014" />
+        <revisionref key="0015" />
+        <revisionref key="0016" />
+      </revisions>
+    </branch>
+    <branch name="feature/sprint-2">
+      <revisions>
+        <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+        <revisionref key="0008" />
+        <revisionref key="0009" />
+        <revisionref key="0010" />
+        <revisionref key="0011" />
+        <revisionref key="0012" />
+        <revisionref key="0013" />
+        <revisionref key="0014" />
+      </revisions>
+    </branch>
+    <branch name="feature/sprint-3">
+      <revisions>
+        <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+        <revisionref key="0008" />
+        <revisionref key="0009" />
+        <revisionref key="0010" />
+        <revisionref key="0011" />
+        <revisionref key="0012" />
+        <revisionref key="0015" />
+        <revisionref key="0016" />
+      </revisions>
+    </branch>
+    <branch name="release/1.0.0.0">
+      <revisions>
+       <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+      </revisions>
+    </branch>
+    <branch name="release/1.0.1.0">
+      <revisions>
+       <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+        <revisionref key="0008" />
+      </revisions>
+    </branch>
+    <branch name="release/1.0.2.0">
+      <revisions>
+       <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+        <revisionref key="0008" />
+        <revisionref key="0009" />
+      </revisions>
+    </branch>
+    <branch name="release/1.1.0.0">
+      <revisions>
+       <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+        <revisionref key="0008" />
+        <revisionref key="0009" />
+        <revisionref key="0010" />
+      </revisions>
+    </branch>
+    <branch name="release/1.1.1.0">
+      <revisions>
+       <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+        <revisionref key="0008" />
+        <revisionref key="0009" />
+        <revisionref key="0010" />
+        <revisionref key="0011" />
+      </revisions>
+    </branch>
+    <branch name="release/1.2.0.0">
+      <revisions>
+       <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+        <revisionref key="0008" />
+        <revisionref key="0009" />
+        <revisionref key="0010" />
+        <revisionref key="0011" />
+        <revisionref key="0012" />
+      </revisions>
+    </branch>
+    <branch name="hotfix/IN-7-subscript-range-fix">
+      <revisions>
+        <revisionref key="0000" />
+        <revisionref key="0001" />
+        <revisionref key="0002" />
+        <revisionref key="0003" />
+        <revisionref key="0004" />
+        <revisionref key="0005" />
+        <revisionref key="0006" />
+        <revisionref key="0007" />
+        <revisionref key="0008" />
+        <revisionref key="0009" />
+        <revisionref key="0010" />
+        <revisionref key="0011" />
+        <revisionref key="0012" />
+        <revisionref key="0017" />
+      </revisions>
+    </branch>
+  </branches>
+  <filesystem>
+    <folders>
+      <folder key="/Root/Code" name="Code">
+        <folders>
+          <folder key="/Root/Code/samples" name="samples">
+            <files>
+              <file key="/Root/Code/samples/package-info.java" name="package-info.java" />
+              <file key="/Root/Code/samples/SimpleTest.java" name="SimpleTest.java" />
+            </files>
+          </folder>
+          <folder key="/Root/Code/api" name="api">
+            <files>
+              <file key="/Root/Code/api/package-info.java" name="package-info.java" />
+              <file key="/Root/Code/api/IImportExport.java" name="IImportExport.java" />
+            </files>
+          </folder>
+        </folders>
+        <files>
+          <file key="/Root/Code/package-info.java" name="package-info.java" />
+          <file key="/Root/Code/SpiraTestCase.java" name="SpiraTestCase.java" />
+          <file key="/Root/Code/SpiraTestConfiguration.java" name="SpiraTestConfiguration.java" />
+          <file key="/Root/Code/SpiraTestExecute.java" name="SpiraTestExecute.java" />
+          <file key="/Root/Code/SpiraTestListener.java" name="SpiraTestListener.java" />
+          <file key="/Root/Code/SSLUtilities.java" name="SSLUtilities.java" />
+          <file key="/Root/Code/TestRun.java" name="TestRun.java" />
+        </files>
+      </folder>
+      <folder key="/Root/Samples" name="Samples">
+        <files>
+          <file key="/Root/Samples/SampleFile.bat" name="SampleFile.bat" />
+          <file key="/Root/Samples/SampleFile.cpp" name="SampleFile.cpp" />
+          <file key="/Root/Samples/SampleFile.cs" name="SampleFile.cs" />
+          <file key="/Root/Samples/SampleFile.feature" name="SampleFile.feature" />
+          <file key="/Root/Samples/SampleFile.java" name="SampleFile.java" />
+          <file key="/Root/Samples/SampleFile.json" name="SampleFile.json" />
+          <file key="/Root/Samples/SampleFile.php" name="SampleFile.php" />
+          <file key="/Root/Samples/SampleFile.pl" name="SampleFile.pl" />
+          <file key="/Root/Samples/SampleFile.py" name="SampleFile.py" />
+          <file key="/Root/Samples/SampleFile.rb" name="SampleFile.rb" />
+          <file key="/Root/Samples/SampleFile.svg" name="SampleFile.svg" />
+          <file key="/Root/Samples/SampleFile.ts" name="SampleFile.ts" />
+          <file key="/Root/Samples/SampleFile.tsx" name="SampleFile.tsx" />
+          <file key="/Root/Samples/SampleFile.xml" name="SampleFile.xml" />
+          <file key="/Root/Samples/SampleFile.yml" name="SampleFile.yml" />
+        </files>
+      </folder>
+      <folder key="/Root/Documentation" name="Documentation">
+        <files>
+          <file key="/Root/Documentation/Overview.txt" name="Overview.txt" />
+          <file key="/Root/Documentation/Examples.md" name="Examples.md" />
+          <file key="/Root/Documentation/License.txt" name="License.txt" />
+        </files>
+      </folder>
+      <folder key="/Root/Tests" name="Tests">
+        <files>
+          <file key="/Root/Tests/package-info.java" name="package-info.java" />
+          <file key="/Root/Tests/UnitTestFixture.java" name="UnitTestFixture.java" />
+        </files>
+      </folder>
+    </folders>
+    <files>
+      <file key="/Root/README.md" name="README.md" />
+      <file key="/Root/.gitignore" name=".gitignore" />
+    </files>
+  </filesystem>
+  <revisions>
+    <revision key="0000" name="rev0000" author="System Administrator" timeOffset="0" contentChanged="true" propertiesChanged="true" message="Initial upload of code to the repository">
+      <files>
+        <fileref key="/Root/Code/samples/package-info.java" action="add" />
+        <fileref key="/Root/Code/samples/SimpleTest.java" action="add" />
+        <fileref key="/Root/Code/api/package-info.java" action="add" />
+        <fileref key="/Root/Code/api/IImportExport.java" action="add" />
+        <fileref key="/Root/Code/package-info.java" action="add" />
+        <fileref key="/Root/Code/SpiraTestCase.java" action="add" />
+        <fileref key="/Root/Code/SpiraTestConfiguration.java" action="add" />
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="add" />
+        <fileref key="/Root/Code/SpiraTestListener.java" action="add" />
+        <fileref key="/Root/Code/SSLUtilities.java" action="add" />
+        <fileref key="/Root/Code/TestRun.java" action="add" />
+        <fileref key="/Root/Samples/SampleFile.bat" action="add" />
+        <fileref key="/Root/Samples/SampleFile.cpp" action="add" />
+        <fileref key="/Root/Samples/SampleFile.cs" action="add" />
+        <fileref key="/Root/Samples/SampleFile.feature" action="add" />
+        <fileref key="/Root/Samples/SampleFile.java" action="add" />
+        <fileref key="/Root/Samples/SampleFile.json" action="add" />
+        <fileref key="/Root/Samples/SampleFile.php" action="add" />
+        <fileref key="/Root/Samples/SampleFile.pl" action="add" />
+        <fileref key="/Root/Samples/SampleFile.py" action="add" />
+        <fileref key="/Root/Samples/SampleFile.rb" action="add" />
+        <fileref key="/Root/Samples/SampleFile.svg" action="add" />
+        <fileref key="/Root/Samples/SampleFile.ts" action="add" />
+        <fileref key="/Root/Samples/SampleFile.tsx" action="add" />
+        <fileref key="/Root/Samples/SampleFile.xml" action="add" />
+        <fileref key="/Root/Samples/SampleFile.yml" action="add" />
+        <fileref key="/Root/Documentation/Overview.txt" action="add" />
+        <fileref key="/Root/Documentation/Examples.md" action="add" />
+        <fileref key="/Root/Documentation/License.txt" action="add" />
+        <fileref key="/Root/README.md" action="add" />
+        <fileref key="/Root/.gitignore" action="add" />
+      </files>
+    </revision>
+    <revision key="0001" name="rev0001" author="Fred Bloggs" timeOffset="1" contentChanged="true" propertiesChanged="true" message="[RQ:4] Develop new book entry screen [TK:1] and Create book object insert method [TK:2]">
+      <files>
+        <fileref key="/Root/Code/TestRun.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestListener.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestConfiguration.java" action="modify" />
+      </files>      
+    </revision>
+    <revision key="0002" name="rev0002" author="Joe Smith" timeOffset="2" contentChanged="true" propertiesChanged="false" message="[RQ:6] Create book object delete method [TK:8] and Write book object delete query [TK:9]">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+        <fileref key="/Root/Code/TestRun.java" action="modify" />
+        <fileref key="/Root/Code/samples/SimpleTest.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0003" name="rev0003" author="Fred Bloggs" timeOffset="3" contentChanged="true" propertiesChanged="false" message="Fixes [IN:7] and [IN:8] and implements requirement [RQ:5].">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestConfiguration.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0004" name="rev0004" author="Fred Bloggs" timeOffset="4" contentChanged="true" propertiesChanged="true" message="[RQ:15] Develop edit author details screen [TK:24], Create author object update method [TK:25], and Write author object update queries [TK:26]">
+      <files>
+        <fileref key="/Root/Code/TestRun.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestListener.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0005" name="rev0005" author="Ricky Pond" timeOffset="5" contentChanged="true" propertiesChanged="true" message="Completes task [TK:2] for requirement [RQ:4] and fixes bug [IN:7].">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestListener.java" action="modify" />
+        <fileref key="/Root/Code/api/IImportExport.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0006" name="rev0006" author="Melody Brooks" timeOffset="6" contentChanged="true" propertiesChanged="true" message="Added the unit tests to the repository">
+      <files>
+        <fileref key="/Root/Tests/package-info.java" action="add" />
+        <fileref key="/Root/Tests/UnitTestFixture.java" action="add" />
+      </files>
+    </revision>
+    <revision key="0007" name="rev0007" author="Fred Bloggs" timeOffset="7" contentChanged="true" propertiesChanged="true" message="[RQ:16] Create author object delete method [TK:28], Write author object delete query [TK:29]">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+        <fileref key="/Root/Code/TestRun.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0008" name="rev0008" author="Amy Jones" timeOffset="8" contentChanged="true" propertiesChanged="true" message="[IN:5] fix cannot install system on Oracle 9i and [IN:6] fix the book listing screen doesn't sort">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0009" name="rev0009" author="Fred Bloggs" timeOffset="9" contentChanged="true" propertiesChanged="true" message="[IN:3] fix clicking on link throws fatal error and [IN:4] fix database not backing up correctly">
+      <files>
+        <fileref key="/Root/Code/TestRun.java" action="modify" />
+        <fileref key="/Root/Code/SSLUtilities.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0010" name="rev0010" author="Fred Bloggs" timeOffset="10" contentChanged="true" propertiesChanged="false" message="[RQ:7] Ability to associate books with different subjects and [RQ:8] Ability to associate books with different authors">
+      <files>
+        <fileref key="/Root/Code/samples/SimpleTest.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestListener.java" action="modify" />
+        <fileref key="/Root/Code/api/IImportExport.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0011" name="rev0011" author="Donna Marshall" timeOffset="11" contentChanged="true" propertiesChanged="true" message="[IN:10] fix doesn't let me add a new category and [IN:11] fix validation on the edit book page">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+        <fileref key="/Root/Code/samples/SimpleTest.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0012" name="rev0012" author="Donna Marshall" timeOffset="12" contentChanged="true" propertiesChanged="false" message="[IN:12] fix quote handling issues throughout and [IN:13] fix the tables get cutoff on low-res modes">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+        <fileref key="/Root/Code/TestRun.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0013" name="rev0013" author="Fred Bloggs" timeOffset="13" contentChanged="true" propertiesChanged="true" message="[RQ:18] Develop author-subject association screen [TK:33]">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestListener.java" action="modify" />
+        <fileref key="/Root/Code/TestRun.java" action="modify" />
+        <fileref key="/Root/Code/samples/SimpleTest.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0014" name="rev0014" author="Joe Smith" timeOffset="14" contentChanged="true" propertiesChanged="true" message="[RQ:9] Refactor book details screen to include edition drop-down [TK:16]">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestListener.java" action="modify" />
+        <fileref key="/Root/Code/TestRun.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0015" name="rev0015" author="Fred Bloggs" timeOffset="15" contentChanged="true" propertiesChanged="true" message="[RQ:17] Create subject object insert method [TK:38]">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestListener.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0016" name="rev0016" author="Roger Ramjet" timeOffset="16" contentChanged="true" propertiesChanged="false" message="[RQ:10] Add 'delete all' button to book list screen [TK:18]">
+      <files>
+        <fileref key="/Root/Code/SpiraTestCase.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+        <fileref key="/Root/Code/SpiraTestListener.java" action="modify" />
+      </files>
+    </revision>
+    <revision key="0017" name="rev0017" author="Ricky Pond" timeOffset="17" contentChanged="true" propertiesChanged="false" message="[IN:7] Fix array bounds error">
+      <files>
+        <fileref key="/Root/Code/SpiraTestExecute.java" action="modify" />
+      </files>
+    </revision>
+  </revisions>
+</samplerepo>

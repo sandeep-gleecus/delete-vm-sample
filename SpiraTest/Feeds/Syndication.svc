@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Inflectra.SpiraTest.Web.Feeds.Syndication" CodeBehind="Syndication.svc.cs" Factory="Inflectra.SpiraTest.Web.Feeds.SyndicationHostFactory" %>

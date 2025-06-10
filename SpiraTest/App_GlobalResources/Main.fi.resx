@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Admin_EditWorkflows" xml:space="preserve">
+    <value>Muokkaa Tilamalleja</value>
+  </data>
+	<data name="Admin_Notification_ArtifactFields" xml:space="preserve">
+    <value>Asian kentät</value>
+  </data>
+	<data name="Admin_Notification_ArtifactNotificationEnabled" xml:space="preserve">
+    <value>Aktivoitu?</value>
+  </data>
+	<data name="Admin_Notification_ArtifactOpener" xml:space="preserve">
+    <value>Asian avaaja tai luoja:</value>
+  </data>
+	<data name="Admin_Notification_ArtifactOwner" xml:space="preserve">
+    <value>Asian Omistaja:</value>
+  </data>
+	<data name="Admin_Notification_ArtifactPrefix" xml:space="preserve">
+    <value>Etuliite</value>
+  </data>
+	<data name="Admin_Notification_ArtifactType" xml:space="preserve">
+    <value>Asian tyyppi</value>
+  </data>
+	<data name="Admin_Notification_ArtifactUsers" xml:space="preserve">
+    <value>Käyttäjät ja Projektiroolit</value>
+  </data>
+	<data name="Admin_Notification_ArtifactUsersRoles" xml:space="preserve">
+    <value>Käyttäjä / Projektirooli</value>
+  </data>
+	<data name="Admin_Notification_BackToNotificationList" xml:space="preserve">
+    <value>Takaisin Ilmoitustapahtuma-listaan</value>
+  </data>
+	<data name="Global_Edit" xml:space="preserve">
+    <value>Muokkaa</value>
+  </data>
+	<data name="Admin_Notification_EMailServerSettings" xml:space="preserve">
+    <value>Sähköpostin määritykset</value>
+  </data>
+	<data name="Admin_Notification_EventName" xml:space="preserve">
+    <value>Tapahtuman nimi</value>
+  </data>
+	<data name="Admin_Notification_NavHeader" xml:space="preserve">
+    <value>Ilmoitukset</value>
+  </data>
+	<data name="Admin_Notification_NewEvent" xml:space="preserve">
+    <value>Uusi tapahtuma</value>
+  </data>
+	<data name="Admin_Notification_NotifyOnChange" xml:space="preserve">
+    <value>Ilmoita muutoksesta?</value>
+  </data>
+	<data name="Admin_Notification_OnCreation" xml:space="preserve">
+    <value>Luotaessa?</value>
+  </data>
+	<data name="Admin_Notification_ProjectRoles" xml:space="preserve">
+    <value>Projektiroolit:</value>
+  </data>
+	<data name="Global_Test" xml:space="preserve">
+    <value>Testi</value>
+  </data>
+	<data name="Admin_Notification_ViewEditNotification" xml:space="preserve">
+    <value>Ilmoitustapahtumat</value>
+  </data>
+	<data name="Admin_Notification_ViewEditNotificationEvent" xml:space="preserve">
+    <value>Ilmoitustapahtuman tiedot</value>
+  </data>
+	<data name="Admin_Notification_ViewNotificationTemplates" xml:space="preserve">
+    <value>Ilmoituksen mallit</value>
+  </data>
+	<data name="Global_Active" xml:space="preserve">
+    <value>Aktiivinen?</value>
+  </data>
+	<data name="Global_Artifact" xml:space="preserve">
+    <value>Asia</value>
+  </data>
+	<data name="Global_DisplayDataFor" xml:space="preserve">
+    <value>Näytä tiedot</value>
+  </data>
+	<data name="Global_GoTo" xml:space="preserve">
+    <value>Siirry</value>
+  </data>
+	<data name="Global_Operations" xml:space="preserve">
+    <value>Toiminnot</value>
+  </data>
+	<data name="Global_SelectedRelease" xml:space="preserve">
+    <value>Valittu Julkaisu:</value>
+  </data>
+	<data name="Global_Step" xml:space="preserve">
+    <value>Askel</value>
+  </data>
+	<data name="Global_Version" xml:space="preserve">
+    <value>Versio</value>
+  </data>
+	<data name="IterationPlan_MainLegend" xml:space="preserve">
+    <value>Näyttää valitun Julkaisun iteraatiosuunnitelman:</value>
+  </data>
+	<data name="Login_DontHaveAccount" xml:space="preserve">
+    <value>Eikö sinulla ole käyttäjätiliä?</value>
+  </data>
+	<data name="Login_EnterUserNamePassword" xml:space="preserve">
+    <value>Anna käyttäjätunnus ja salasana, klikkaa sitten Kirjaudu sisään -painiketta.</value>
+  </data>
+	<data name="Login_ForgotPassword" xml:space="preserve">
+    <value>Unohtuiko salasana?</value>
+  </data>
+	<data name="Login_KeepLoggedIn" xml:space="preserve">
+    <value>Pidä minut sisäänkirjautuneena</value>
+  </data>
+	<data name="Login_Password" xml:space="preserve">
+    <value>Salasana</value>
+  </data>
+	<data name="Login_UserName" xml:space="preserve">
+    <value>Käyttäjätunnus</value>
+  </data>
+	<data name="ProjectList_AddItems" xml:space="preserve">
+    <value>Lisää Kohteet</value>
+  </data>
+	<data name="ProjectList_AllProjects" xml:space="preserve">
+    <value>Kaikki Projektit</value>
+  </data>
+	<data name="ProjectList_BrowseView" xml:space="preserve">
+    <value>Palaa normaalinäkymään</value>
+  </data>
+	<data name="ProjectList_CurrentProject" xml:space="preserve">
+    <value>Nykyinen Projekti</value>
+  </data>
+	<data name="ProjectList_DesignView" xml:space="preserve">
+    <value>Muokkaa ulkoasua/asetuksia</value>
+  </data>
+	<data name="ProjectList_MyAssignedIncidents" xml:space="preserve">
+    <value>Omat osoitetut Havainnot</value>
+  </data>
+	<data name="ProjectList_MyAssignedRequirements" xml:space="preserve">
+    <value>Omat osoitetut Vaatimukset</value>
+  </data>
+	<data name="ProjectList_MyAssignedTasks" xml:space="preserve">
+    <value>Omat osoitetut Tehtävät</value>
+  </data>
+	<data name="ProjectList_MyAssignedTestCases" xml:space="preserve">
+    <value>Omat osoitetut Testitapaukset</value>
+  </data>
+	<data name="ProjectList_MyAssignedTestSets" xml:space="preserve">
+    <value>Omat osoitetut Testijoukot</value>
+  </data>
+	<data name="ProjectList_MyDetectedIncidents" xml:space="preserve">
+    <value>Omat tehdyt Havainnot</value>
+  </data>
+	<data name="ProjectList_MyPage" xml:space="preserve">
+    <value>Oma Sivu</value>
+  </data>
+	<data name="ProjectList_MyPendingTestRuns" xml:space="preserve">
+    <value>Omat odottavat Testiajot</value>
+  </data>
+	<data name="ProjectList_MyProjects" xml:space="preserve">
+    <value>Omat Projektit</value>
+  </data>
+	<data name="ProjectList_MySavedReports" xml:space="preserve">
+    <value>Omat talletetut Raportit</value>
+  </data>
+	<data name="ProjectList_MySavedSearches" xml:space="preserve">
+    <value>Omat talletetut Haut</value>
+  </data>
+	<data name="ProjectList_MyWeather" xml:space="preserve">
+    <value>Oma Sää</value>
+  </data>
+	<data name="ProjectList_WelcomePrefix" xml:space="preserve">
+    <value>Tervetuloa</value>
+  </data>
+	<data name="ProjectList_WelcomeSuffix" xml:space="preserve">
+    <value>Dashboardiisi</value>
+  </data>
+	<data name="TestCaseExecution_ActualResult" xml:space="preserve">
+    <value>Todellinen tulos</value>
+  </data>
+	<data name="TestCaseExecution_ActualResult2" xml:space="preserve">
+    <value>Syötä testin todellinen tulos jos se eroaa odotetusta ja klikkaa haluttua painiketta:</value>
+  </data>
+	<data name="TestCaseExecution_ExistingIncidents" xml:space="preserve">
+    <value>Seuraavat havainnot on jo kirjattu tähän testiaskeleeseen:</value>
+  </data>
+	<data name="TestCaseExecution_ExpectedResult" xml:space="preserve">
+    <value>Odotettu tulos:</value>
+  </data>
+	<data name="TestCaseExecution_FollowDirections" xml:space="preserve">
+    <value>Seuraa alla olevassa laatikossa esitettyjä ohjeita:</value>
+  </data>
+	<data name="TestCaseExecution_IncidentCustomProperties" xml:space="preserve">
+    <value>Syötä myös seuraavat kustomoidut ominaisuudet tälle uudelle havainnolle:</value>
+  </data>
+	<data name="TestCaseExecution_SampleData" xml:space="preserve">
+    <value>Esimerkkitieto:</value>
+  </data>
+	<data name="TestExecutionService_IncidentText_ActualResult" xml:space="preserve">
+    <value>Todellinen tulos</value>
+  </data>
+	<data name="TestExecutionService_IncidentText_Description" xml:space="preserve">
+    <value>Kuvaus</value>
+  </data>
+	<data name="TestExecutionService_IncidentText_ExpectedResult" xml:space="preserve">
+    <value>Odotettu tulos</value>
+  </data>
+	<data name="TestSetDetails_TestCaseDragDropLegend" xml:space="preserve">
+    <value>Muuttaaksesi testitapausten järjestystä klikkaa testitapauksen kuvaketta ja vedä se sopivaan paikkaan listassa.</value>
+  </data>
+	<data name="Login_LicensedTo" xml:space="preserve">
+    <value>Lisensoitu:</value>
+  </data>
+	<data name="Notifications_EnterListofEmails" xml:space="preserve">
+    <value>Lista sähköpostiosoitteita erotettuna puolipisteellä</value>
+  </data>
+	<data name="Notifications_SelectProjectUser" xml:space="preserve">
+    <value>Valitse projektin käyttäjä jolle lähetetään.</value>
+  </data>
+	<data name="Notifications_SendEmailTo" xml:space="preserve">
+    <value>Lähetä tämä Havainto</value>
+  </data>
+	<data name="Global_BlankforDefault" xml:space="preserve">
+    <value>Jätä oletuksena tyhjäksi.</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_Intro" xml:space="preserve">
+    <value>Syötä / edit seuraavat tiedot testiautomaatio-konetta varten. Pakolliset kentät on &lt;b&gt;lihavoitu:&lt;/b&gt;</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_LinkHome" xml:space="preserve">
+    <value>Takaisin Testiautomaatio-koneen etusivulle</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_NewProvider" xml:space="preserve">
+    <value>Uusi kone</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_Title" xml:space="preserve">
+    <value>Muokkaa Konetta</value>
+  </data>
+	<data name="Admin_AutomationEngines_Intro1" xml:space="preserve">
+    <value>Voidaan integroida erilaisiin ulkoisiin testauksen automatisointi Järjestelmiin käyttäen sen joustavaa, avointa arkkitehtuuria ja käytettävissä olevien testausautomaatio-koneiden kirjastoa.</value>
+  </data>
+	<data name="Admin_AutomationEngines_Intro2" xml:space="preserve">
+    <value>Tällä sivulla voit tarkastella, lisätä ja muokata testausautomaatio-koneiden listaa ja tehdä muutoksia niiden konfiguraatioihin:</value>
+  </data>
+	<data name="Admin_AutomationEngines_Title" xml:space="preserve">
+    <value>Testiautomaatio-koneet</value>
+  </data>
+	<data name="Global_AddDiscussion" xml:space="preserve">
+    <value>lisätäksesi uuden kommentin, kirjoita se alle ja klikkaa joko [Talleta] tai [Lisää Kommentti]:</value>
+  </data>
+	<data name="Global_Discussion" xml:space="preserve">
+    <value>Kommentit</value>
+  </data>
+	<data name="Global_ExistingDiscussion" xml:space="preserve">
+    <value>Olemassa olevat kommentit</value>
+  </data>
+	<data name="Global_hours" xml:space="preserve">
+    <value>tuntia</value>
+  </data>
+	<data name="Global_BackTo" xml:space="preserve">
+    <value>Takaisin</value>
+  </data>
+	<data name="Resources_ResourceList" xml:space="preserve">
+    <value>Resurssilista</value>
+  </data>
+	<data name="IterationPlan_IncludeTasks" xml:space="preserve">
+    <value>Sisällytä Tehtävät</value>
+  </data>
+	<data name="UserProfile_ConfirmNewPassword" xml:space="preserve">
+    <value>Vahvista salasana:</value>
+  </data>
+	<data name="UserProfile_CurrentPassword" xml:space="preserve">
+    <value>Nykyinen salasana:</value>
+  </data>
+	<data name="UserProfile_EmailAddress" xml:space="preserve">
+    <value>Sähköpostiosoite:</value>
+  </data>
+	<data name="UserProfile_EnableNotifications" xml:space="preserve">
+    <value>Aktivoi sähköposti-ilmoitukset:</value>
+  </data>
+	<data name="UserProfile_FirstName" xml:space="preserve">
+    <value>Etunimi:</value>
+  </data>
+	<data name="UserProfile_LastName" xml:space="preserve">
+    <value>Sukunimi:</value>
+  </data>
+	<data name="UserProfile_LDAPDN" xml:space="preserve">
+    <value>LDAP DN:</value>
+  </data>
+	<data name="UserProfile_MiddleInitial" xml:space="preserve">
+    <value>Toisen nimen alkukirjain:</value>
+  </data>
+	<data name="UserProfile_NameId" xml:space="preserve">
+    <value>Käyttäjätunnus/ID:</value>
+  </data>
+	<data name="UserProfile_NewPassword" xml:space="preserve">
+    <value>Uusi Salasana:</value>
+  </data>
+	<data name="UserProfile_TabChangePassword" xml:space="preserve">
+    <value>Vaihda Salasana</value>
+  </data>
+	<data name="UserProfile_TabEmailPreferences" xml:space="preserve">
+    <value>Sähköpostiasetukset</value>
+  </data>
+	<data name="UserProfile_TabLDAPSettings" xml:space="preserve">
+    <value>LDAP-asetukset</value>
+  </data>
+	<data name="Attachment_NotExistError" xml:space="preserve">
+    <value>Liitetiedostoa ei löytynyt. ({0})</value>
+  </data>
+	<data name="TestRunDetails_ActualDuration" xml:space="preserve">
+    <value>Todellinen kesto:</value>
+  </data>
+	<data name="TestRunDetails_EstimatedDuration" xml:space="preserve">
+    <value>Arvioitu kesto:</value>
+  </data>
+	<data name="TestRunDetails_AutomationHost" xml:space="preserve">
+    <value>Automaatio-isäntä:</value>
+  </data>
+	<data name="TestRunDetails_ExecutionDate" xml:space="preserve">
+    <value>Suorituksen pvm:</value>
+  </data>
+	<data name="TestRunDetails_ExecutionStatus" xml:space="preserve">
+    <value>Suorituksen Tila:</value>
+  </data>
+	<data name="TestRunDetails_Release" xml:space="preserve">
+    <value>Julkaisu #:</value>
+  </data>
+	<data name="TestRunDetails_TestCase" xml:space="preserve">
+    <value>Testitapaus #:</value>
+  </data>
+	<data name="TestRunDetails_TesterName" xml:space="preserve">
+    <value>Testaajan nimi:</value>
+  </data>
+	<data name="TestRunDetails_TestRunType" xml:space="preserve">
+    <value>Testiajon Tyyppi:</value>
+  </data>
+	<data name="TestRunDetails_TestSet" xml:space="preserve">
+    <value>Testijoukko:</value>
+  </data>
+	<data name="UserProfile_RegionalSettings" xml:space="preserve">
+    <value>Aluekohtaiset asetukset</value>
+  </data>
+	<data name="UserDetails_ToChangeCultureSettings" xml:space="preserve">
+    <value>Valitse haluamasi alue alla olevasta listasta. Tämä asetus määrittää mitä numero/päivämäärämuotoa ja mitä kieltä sovelluksessa käytetään. Jos et valitse mitään, käytetään sovelluksen oletusta.</value>
+  </data>
+	<data name="UserProfile_UserCulture" xml:space="preserve">
+    <value>Käyttäjän kulttuuri:</value>
+  </data>
+	<data name="Global_Copyright" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+	<data name="EmailPassword_EnterUserName" xml:space="preserve">
+    <value>Syötä käyttäjätunnuksesi ja sähköpostiosoitteesi ja paina [Reset]-painiketta nollataksesi.</value>
+  </data>
+	<data name="EmailPassword_NewPasswordWillBeSent" xml:space="preserve">
+    <value>Uusi salasana lähetetään sinulle profiiliisi talletettuun sähköpostiosoitteeseen.</value>
+  </data>
+	<data name="EmailPassword_ReturnToLogin" xml:space="preserve">
+    <value>Palaa sisäänkirjautumissivulle</value>
+  </data>
+	<data name="EmailPassword_Title" xml:space="preserve">
+    <value>Salasana unohtunut</value>
+  </data>
+	<data name="ForceSession_Body1" xml:space="preserve">
+    <value>Voit joko</value>
+  </data>
+	<data name="ForceSession_Body2" xml:space="preserve">
+    <value>ja kokeile eri käyttäjätunnusta tai:</value>
+  </data>
+	<data name="ForceSession_Body3" xml:space="preserve">
+    <value>pakottaaksesi muut istunnot kirjautumaan ulos.</value>
+  </data>
+	<data name="ForceSession_Title" xml:space="preserve">
+    <value>Kirjautunut jo sisälle muualla</value>
+  </data>
+	<data name="GlobalNavigation_Administration" xml:space="preserve">
+    <value>Ylläpito</value>
+  </data>
+	<data name="GlobalNavigation_Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+	<data name="GlobalNavigation_HelpTooltip" xml:space="preserve">
+    <value>Käynnistä Online Help</value>
+  </data>
+	<data name="GlobalNavigation_MyProfile" xml:space="preserve">
+    <value>Oma profiili</value>
+  </data>
+	<data name="Global_NumberRowsToDisplay" xml:space="preserve">
+    <value># Näytettäviä rivejä</value>
+  </data>
+	<data name="Global_NumberRowsToDisplayTooltip" xml:space="preserve">
+    <value>Tämä ominaisuus rajoittaa näkyvien tietorivien määrää</value>
+  </data>
+	<data name="Global_Welcome" xml:space="preserve">
+    <value>Tervetuloa</value>
+  </data>
+	<data name="Global_WelcomeTo" xml:space="preserve">
+    <value>Tervetuloa</value>
+  </data>
+	<data name="NeedAccount_EnterInfo" xml:space="preserve">
+    <value>Syötä nimesi ja sähköpostiosoitteesi alla olevaan lomakkeeseen. &lt;br /&gt; Ylläpitäjälle lähetetään sähköpostitse pyyntö lisätä uusi käyttäjätili:</value>
+  </data>
+	<data name="NeedAccount_Heading1" xml:space="preserve">
+    <value>Uusi {0} Käyttäjätili</value>
+  </data>
+	<data name="NeedAccount_Title" xml:space="preserve">
+    <value>Pyydä uusi käyttäjätili</value>
+  </data>
+	<data name="SiteMap_AutomationHosts" xml:space="preserve">
+    <value>Automaatio-isäntä</value>
+  </data>
+	<data name="SiteMap_Documents" xml:space="preserve">
+    <value>Dokumentit</value>
+  </data>
+	<data name="SiteMap_Incidents" xml:space="preserve">
+    <value>Havainnot</value>
+  </data>
+	<data name="SiteMap_Iterations" xml:space="preserve">
+    <value>Iteraatiot</value>
+  </data>
+	<data name="SiteMap_MyPage" xml:space="preserve">
+    <value>Oma sivu</value>
+  </data>
+	<data name="SiteMap_Planning" xml:space="preserve">
+    <value>Suunnittelu</value>
+  </data>
+	<data name="SiteMap_ProjectGroupHome" xml:space="preserve">
+    <value>Projektiryhmän koti</value>
+  </data>
+	<data name="SiteMap_ProjectHome" xml:space="preserve">
+    <value>Projektin koti</value>
+  </data>
+	<data name="SiteMap_Releases" xml:space="preserve">
+    <value>Julkaisut</value>
+  </data>
+	<data name="SiteMap_Reporting" xml:space="preserve">
+    <value>Raportointi</value>
+  </data>
+	<data name="SiteMap_Requirements" xml:space="preserve">
+    <value>Vaatimukset</value>
+  </data>
+	<data name="SiteMap_Resources" xml:space="preserve">
+    <value>Resurssit</value>
+  </data>
+	<data name="SiteMap_SourceCode" xml:space="preserve">
+    <value>Lähdekoodi</value>
+  </data>
+	<data name="SiteMap_Tasks" xml:space="preserve">
+    <value>Tehtävät</value>
+  </data>
+	<data name="SiteMap_TestCases" xml:space="preserve">
+    <value>Testitapaukset</value>
+  </data>
+	<data name="SiteMap_Testing" xml:space="preserve">
+    <value>Testaus</value>
+  </data>
+	<data name="SiteMap_TestRuns" xml:space="preserve">
+    <value>Testiajot</value>
+  </data>
+	<data name="SiteMap_TestSets" xml:space="preserve">
+    <value>Testijoukot</value>
+  </data>
+	<data name="SiteMap_Tracking" xml:space="preserve">
+    <value>Seuranta</value>
+  </data>
+	<data name="ErrorPage_MyPage" xml:space="preserve">
+    <value>Oma Sivu'</value>
+  </data>
+	<data name="ErrorPage_PleaseClick" xml:space="preserve">
+    <value>Tapahtui järjestelmävirhe ... Klikkaa</value>
+  </data>
+	<data name="ErrorPage_ReturnToApp" xml:space="preserve">
+    <value>paluu-linkkiä päästäksesi takaisin sovellukseen</value>
+  </data>
+	<data name="ErrorPage_Title" xml:space="preserve">
+    <value>Järjestelmävirhe</value>
+  </data>
+	<data name="InvalidDatabase_Title" xml:space="preserve">
+    <value>Virheellinen tietokannan Versio</value>
+  </data>
+	<data name="InvalidLicense_Change" xml:space="preserve">
+    <value>Muuta</value>
+  </data>
+	<data name="InvalidLicense_LicenseDetails" xml:space="preserve">
+    <value>Lisenssin yksityiskohdat</value>
+  </data>
+	<data name="InvalidLicense_Login" xml:space="preserve">
+    <value>Kirjautuminen</value>
+  </data>
+	<data name="InvalidLicense_Page" xml:space="preserve">
+    <value>sivu.</value>
+  </data>
+	<data name="InvalidLicense_ReturnTo" xml:space="preserve">
+    <value>Palaa</value>
+  </data>
+	<data name="InvalidLicense_Title" xml:space="preserve">
+    <value>Palvelimella on virheellinen lisenssi</value>
+  </data>
+	<data name="WeatherBox_AsOf" xml:space="preserve">
+    <value>Kello</value>
+  </data>
+	<data name="WeatherBox_ClosestWeatherStation" xml:space="preserve">
+    <value>Lähin sääasema sijaintisi nähden, "{0}" oli: &lt;br /&gt; Asema: {1} ja {2} &lt;br/&gt; Nimi: {3}</value>
+  </data>
+	<data name="WeatherBox_CurrentlyIn" xml:space="preserve">
+    <value>Tällä hetkellä</value>
+  </data>
+	<data name="WeatherBox_CurrentTemperature" xml:space="preserve">
+    <value>Nykyinen lämpötila</value>
+  </data>
+	<data name="WeatherBox_FeelsLike" xml:space="preserve">
+    <value>Tuntuu kuin</value>
+  </data>
+	<data name="WeatherBox_Humidity" xml:space="preserve">
+    <value>Kosteus</value>
+  </data>
+	<data name="WeatherBox_LocationSetting" xml:space="preserve">
+    <value>Sijainti</value>
+  </data>
+	<data name="WeatherBox_LocationSettingTooltip" xml:space="preserve">
+    <value>Sijaintisi: postinumero, postitoimipaikka</value>
+  </data>
+	<data name="WeatherBox_MetricSetting" xml:space="preserve">
+    <value>Metriset yksiköt?</value>
+  </data>
+	<data name="WeatherBox_MetricSettingTooltip" xml:space="preserve">
+    <value>Jos valittu, raportit yksiköt metrijärjestelmän.</value>
+  </data>
+	<data name="WeatherBox_MyWeather" xml:space="preserve">
+    <value>Oma Sää</value>
+  </data>
+	<data name="WeatherBox_PredictedHigh" xml:space="preserve">
+    <value>Ennustettu Korkea</value>
+  </data>
+	<data name="WeatherBox_PredictedLow" xml:space="preserve">
+    <value>Ennustettu Matala</value>
+  </data>
+	<data name="WeatherBox_Tomorrow" xml:space="preserve">
+    <value>Huomenna</value>
+  </data>
+	<data name="WeatherBox_TomorrowsHigh" xml:space="preserve">
+    <value>Huomisen Korkea</value>
+  </data>
+	<data name="WeatherBox_TomorrowsLow" xml:space="preserve">
+    <value>Huomisen Matala</value>
+  </data>
+	<data name="WeatherBox_Unknown" xml:space="preserve">
+    <value>Tuntematon</value>
+  </data>
+	<data name="WeatherBox_WeatherFor" xml:space="preserve">
+    <value>Sää</value>
+  </data>
+	<data name="WeatherBox_Wind" xml:space="preserve">
+    <value>Tuuli</value>
+  </data>
+	<data name="WeatherBox_YourLocalWeatherReport" xml:space="preserve">
+    <value>Paikallinen säätiedotus</value>
+  </data>
+	<data name="Global_ViewAll" xml:space="preserve">
+    <value>Näytä Kaikki</value>
+  </data>
+	<data name="Global_ViewDetails" xml:space="preserve">
+    <value>Näytä Yksityiskohdat</value>
+  </data>
+	<data name="ProjectHome_AddItems" xml:space="preserve">
+    <value>Lisää Kohde</value>
+  </data>
+	<data name="ProjectHome_IncidentAging" xml:space="preserve">
+    <value>Havainnon ikääntyminen</value>
+  </data>
+	<data name="ProjectHome_IncidentTestCoverage" xml:space="preserve">
+    <value>Havainnon testauskattavuus</value>
+  </data>
+	<data name="ProjectHome_LateFinishingTasks" xml:space="preserve">
+    <value>Myöhässä valmistuvat Tehtävät</value>
+  </data>
+	<data name="ProjectHome_LateStartingTasks" xml:space="preserve">
+    <value>Myöhässä alkavat Tehtävät</value>
+  </data>
+	<data name="ProjectHome_ModifyLayoutSettings" xml:space="preserve">
+    <value>Muokkaa ulkoasua/asetuksia</value>
+  </data>
+	<data name="ProjectHome_ProjectOverview" xml:space="preserve">
+    <value>Projektin yleiskatsaus</value>
+  </data>
+	<data name="ProjectHome_ReleaseTaskProgress" xml:space="preserve">
+    <value>Julkaisun Tehtävien edistyminen</value>
+  </data>
+	<data name="ProjectHome_RequirementsCoverage" xml:space="preserve">
+    <value>Vaatimusten kattavuus</value>
+  </data>
+	<data name="ProjectHome_RequirementsRegressionCoverage" xml:space="preserve">
+    <value>Vaatimusten regressiokattavuus</value>
+  </data>
+	<data name="ProjectHome_RequirementsSummary" xml:space="preserve">
+    <value>Vaatimusten yhteenveto</value>
+  </data>
+	<data name="ProjectHome_ReturntoNormalView" xml:space="preserve">
+    <value>Paluu normaalinäkymään</value>
+  </data>
+	<data name="ProjectHome_TestSetStatus" xml:space="preserve">
+    <value>Testisetin Tila</value>
+  </data>
+	<data name="Global_UsePrioritySeveritySetting" xml:space="preserve">
+    <value>Käytä Prioriteettia tai Vakavuutta</value>
+  </data>
+	<data name="Global_UsePrioritySeveritySettingTooltip" xml:space="preserve">
+    <value>Määrittää näkyykö prioriteetti vai vakavuus näytettynä/lajiteltuna sarakkeena</value>
+  </data>
+	<data name="Global_ViewReleaseDetails" xml:space="preserve">
+    <value>Näytä Julkaisun yksityiskohdat</value>
+  </data>
+	<data name="IncidentAging_AgingIntervalSetting" xml:space="preserve">
+    <value>Ikääntymisaikaväli (päivää)</value>
+  </data>
+	<data name="IncidentAging_AgingIntervalSettingTooltip" xml:space="preserve">
+    <value>Tallentaa käytettävän aikavälin (päivissä)</value>
+  </data>
+	<data name="IncidentAging_AgingRangeSetting" xml:space="preserve">
+    <value>Ikääntymisraja (päivää)</value>
+  </data>
+	<data name="IncidentAging_AgingRangeSettingTooltip" xml:space="preserve">
+    <value>Tallentaa suurimman ikääntymisen, joka näkyy kuvaajassa</value>
+  </data>
+	<data name="IncidentSummary_DisplayingForIncidentType" xml:space="preserve">
+    <value>Näyttää Havainnon tyypin:</value>
+  </data>
+	<data name="ProjectHome_IncidentOpenCount" xml:space="preserve">
+    <value>Avoimien Havaintojen lukumäärä</value>
+  </data>
+	<data name="ProjectHome_IncidentSummary" xml:space="preserve">
+    <value>Havainnon yhteenveto</value>
+  </data>
+	<data name="ProjectHome_ReleaseTestSummary" xml:space="preserve">
+    <value>Julkaisun Testausyhteenveto</value>
+  </data>
+	<data name="ProjectHome_RequirementIncidentCount" xml:space="preserve">
+    <value>Vaatimuksen Havaintojen lukumäärä</value>
+  </data>
+	<data name="ProjectHome_TestExecutionStatus" xml:space="preserve">
+    <value>Testauksen suorittamisen Tila</value>
+  </data>
+	<data name="ProjectHome_TopOpenIssues" xml:space="preserve">
+    <value>Tärkeimmät avoimet Ongelmat</value>
+  </data>
+	<data name="ProjectHome_TopOpenRisks" xml:space="preserve">
+    <value>Tärkeimmät avoimet Riskit</value>
+  </data>
+	<data name="RequirementIncidentCount_OnlyIncludeOpenSetting" xml:space="preserve">
+    <value>Sisällytä vain rivit avoimista havainnoista</value>
+  </data>
+	<data name="RequirementIncidentCount_OnlyIncludeOpenSettingTooltip" xml:space="preserve">
+    <value>Pitäisikö meidän näyttää kaikki vaatimukset joihin on havaintoja, vai vain ne joilla on avoimia havaintoja</value>
+  </data>
+	<data name="TestExecutionStatus_DailyRunCount" xml:space="preserve">
+    <value>Päivittäinen ajomäärä:</value>
+  </data>
+	<data name="TestExecutionStatus_TotalNumRuns" xml:space="preserve">
+    <value>Ajojen yhteismäärä:</value>
+  </data>
+	<data name="TestSetStatus_OverdueTestSets" xml:space="preserve">
+    <value>Myöhässä oleva Testijoukko</value>
+  </data>
+	<data name="Global_NumReqs" xml:space="preserve">
+    <value># Vaatimukset</value>
+  </data>
+	<data name="Global_NumRuns" xml:space="preserve">
+    <value># Ajot</value>
+  </data>
+	<data name="Global_NumTests" xml:space="preserve">
+    <value># Testit</value>
+  </data>
+	<data name="ProjectGroupHome_DisplayProjectDetailSetting" xml:space="preserve">
+    <value>Näytä Projektin yksityiskohdat:</value>
+  </data>
+	<data name="ProjectGroupHome_DisplayProjectDetailSettingTooltip" xml:space="preserve">
+    <value>Pitäisikö meidän näyttää jokaisen projektin yksittäiset yksityiskohtaiset tallenteet</value>
+  </data>
+	<data name="ProjectGroupHome_DisplaySummaryGraphSetting" xml:space="preserve">
+    <value>Näytä yhteenvetokuvaaja:</value>
+  </data>
+	<data name="ProjectGroupHome_DisplaySummaryGraphSettingTooltip" xml:space="preserve">
+    <value>Pitäisikö meidän näyttää projektiryhmän yhteenvetokuvaaja</value>
+  </data>
+	<data name="ProjectGroupHome_GroupOverview" xml:space="preserve">
+    <value>Ryhmän yleiskatsaus</value>
+  </data>
+	<data name="ProjectGroupHome_IncidentAging" xml:space="preserve">
+    <value>Havainnon ikääntyminen</value>
+  </data>
+	<data name="ProjectGroupHome_ProjectList" xml:space="preserve">
+    <value>Projektiluettelo</value>
+  </data>
+	<data name="ProjectGroupHome_RequirementsCoverage" xml:space="preserve">
+    <value>Vaatimusten kattavuus</value>
+  </data>
+	<data name="ProjectGroupHome_TaskProgress" xml:space="preserve">
+    <value>Tehtävän edistyminen</value>
+  </data>
+	<data name="ProjectGroupHome_TestExecutionStatus" xml:space="preserve">
+    <value>Testien suorittamisen Tila</value>
+  </data>
+	<data name="ProjectGroupHome_TopOpenIssues" xml:space="preserve">
+    <value>Tärkeimmät avoimet Ongelmat</value>
+  </data>
+	<data name="ProjectGroupHome_TopOpenRisks" xml:space="preserve">
+    <value>Tärkeimmät avoimet Riskit</value>
+  </data>
+	<data name="Global_NewRequirement" xml:space="preserve">
+    <value>Uusi Vaatimus</value>
+  </data>
+	<data name="AutomationHosts_AutomationHostsForProject" xml:space="preserve">
+    <value>Automaatioisännät tähän projektiin</value>
+  </data>
+	<data name="Global_Displaying" xml:space="preserve">
+    <value>Näyttää</value>
+  </data>
+	<data name="Global_OutOf" xml:space="preserve">
+    <value>/</value>
+  </data>
+	<data name="IncidentList_IncidentsForProject" xml:space="preserve">
+    <value>Tämän projektin havainnot</value>
+  </data>
+	<data name="ResourceList_DisplayingResourceUsage" xml:space="preserve">
+    <value>Näyttää Resurssin kuormituksen nykyisessä Projektissa tai valittussa Julkaisussa:</value>
+  </data>
+	<data name="TaskList_TasksForProject" xml:space="preserve">
+    <value>Projektin tehtävä(t)</value>
+  </data>
+	<data name="TestCaseList_TestCasesForRelease" xml:space="preserve">
+    <value>tämän Julkaisun testitapaukset</value>
+  </data>
+	<data name="TestRunList_TestRunsForProject" xml:space="preserve">
+    <value>projektin testiajo(t)</value>
+  </data>
+	<data name="ArtifactEmail_EmailAddresses" xml:space="preserve">
+    <value>Sähköpostiosoitteet:</value>
+  </data>
+	<data name="ArtifactEmail_MessageSubject" xml:space="preserve">
+    <value>Viestin otsikko:</value>
+  </data>
+	<data name="ArtifactEmail_ProjectUser" xml:space="preserve">
+    <value>Projektin käyttäjä:</value>
+  </data>
+	<data name="CustomPropertyPanel_ArtifactCustomProperties" xml:space="preserve">
+    <value>Tämän asian kustomoidut ominaisuudet:</value>
+  </data>
+	<data name="CustomPropertyPanel_FieldIsRequired" xml:space="preserve">
+    <value>{0}' on pakollinen kenttä.</value>
+  </data>
+	<data name="TestCaseSelector_AvailableTestCases" xml:space="preserve">
+    <value>Käytettävissä olevat Testitapaukset:</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestCaseFromRequirement" xml:space="preserve">
+    <value>Luo Testitapaus tästä Vaatimuksesta</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestCaseFromRequirementTooltip" xml:space="preserve">
+    <value>Klikkaa tästä luodaksesi uuden testitapauksen testitapauspuuhun, joka on linkitetty tähän vaatimukseen</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestSetFromRelease" xml:space="preserve">
+    <value>Luo Testijoukko tästä Julkaisusta</value>
+  </data>
+	<data name="TestCaseSelector_CreateTestSetFromReleaseTooltip" xml:space="preserve">
+    <value>Klikkaa tästä luodaksesi uuden testijoukon testijoukko-listaan, jossa on tästä julkaisusta tuotuja testitapauksia</value>
+  </data>
+	<data name="TestCaseSelector_ReleaseLegend1" xml:space="preserve">
+    <value>Testauksen kattavuus -laatikko näyttää testitapaukset, jotka on liitetty julkaisuun.</value>
+  </data>
+	<data name="TestCaseSelector_ReleaseLegend2" xml:space="preserve">
+    <value>Lisätäksesi testitapauksia tähän julkaisuun, valitse ne yllä olevasta listasta ja klikkaa [Lisää].</value>
+  </data>
+	<data name="TestCaseSelector_ReleaseLegend3" xml:space="preserve">
+    <value>Voit käyttää [Poista] ja [Poista kaikki] painikkeita poistaaksesi testit, jotka eivät enää kata tätä vaatimusta.</value>
+  </data>
+	<data name="TestCaseSelector_RequirementLegend1" xml:space="preserve">
+    <value>Testauksen kattavuus -laatikko näyttää testitapaukset, jotka on tällä hetkellä liitetty vaatimukseen.</value>
+  </data>
+	<data name="TestCaseSelector_RequirementLegend2" xml:space="preserve">
+    <value>Lisätäksesi Testitapauksia tähän vaatimukseen, valitse ne yllä olevasta listasta ja klikkaa [Lisää].</value>
+  </data>
+	<data name="TestCaseSelector_RequirementLegend3" xml:space="preserve">
+    <value>Voit käyttää [Poista] ja [Poista kaikki] painikkeita poistaaksesi testit, jotka eivät enää kata tätä vaatimusta.</value>
+  </data>
+	<data name="TestCaseSelector_TestCoverage" xml:space="preserve">
+    <value>Testauksen kattavuus:</value>
+  </data>
+	<data name="RequirementDetails_BackToList" xml:space="preserve">
+    <value>Takaisin Vaatimukset Listaan</value>
+  </data>
+	<data name="ReleaseDetails_BackToList" xml:space="preserve">
+    <value>Takaisin Julkaisulistaan</value>
+  </data>
+	<data name="Global_PersonDays" xml:space="preserve">
+    <value>Henkilötyöpäivää</value>
+  </data>
+	<data name="ReleaseDetails_DisplayIncidents" xml:space="preserve">
+    <value>Näytä lista Havainnosta:</value>
+  </data>
+	<data name="TestCaseDetails_AddNewParameterToTestCase" xml:space="preserve">
+    <value>Lisää uusi parametri tähän testitapaukseen:</value>
+  </data>
+	<data name="TestCaseDetails_AutomatedSectionIntro" xml:space="preserve">
+    <value>Tässä osassa määritellään automatisoidut testiskriptit, jotka liittyvät tähän testitapaukseen:</value>
+  </data>
+	<data name="TestCaseDetails_BackToList" xml:space="preserve">
+    <value>Takaisin Testilistaan</value>
+  </data>
+	<data name="TestCaseDetails_EditTestCaseParameters" xml:space="preserve">
+    <value>Muokkaa Testitapauksen parametreja</value>
+  </data>
+	<data name="TestCaseDetails_ParametersDefinedForTestCase" xml:space="preserve">
+    <value>Seuraavat parametrit on määritelty tälle testitapaukselle:</value>
+  </data>
+	<data name="TestCaseDetails_ToChangeOrder" xml:space="preserve">
+    <value>Muuttaaksesi testiaskeleiden järjestystä klikkaa testiaskelta/linkkikuvaketta ja vedä se sopivaan paikkaan listassa.</value>
+  </data>
+	<data name="ReleaseSelector_AvailableReleases" xml:space="preserve">
+    <value>Käytettävissä olevat Julkaisut:</value>
+  </data>
+	<data name="ReleaseSelector_Legend1" xml:space="preserve">
+    <value>Valitut julkaisut -ruudussa kerrotaan ne julkaisut, jotka on tällä hetkellä liitetty Testitapaukseen.</value>
+  </data>
+	<data name="ReleaseSelector_Legend2" xml:space="preserve">
+    <value>Voit yhdistää Julkaisun tähän testitapaukseen, valitse yllä olevasta luettelosta ja klikkaa [Lisää].</value>
+  </data>
+	<data name="ReleaseSelector_Legend3" xml:space="preserve">
+    <value>Voit käyttää [Poista] ja [Poista kaikki] painikkeita poistaaksesi julkaisut, joita ei enää kateta tällä testitapauksella.</value>
+  </data>
+	<data name="ReleaseSelector_MappedReleases" xml:space="preserve">
+    <value>Valitut Julkaisut:</value>
+  </data>
+	<data name="RequirementSelector_AvailableRequirements" xml:space="preserve">
+    <value>Käytettävissä olevat Vaatimukset:</value>
+  </data>
+	<data name="RequirementSelector_CreateRequirementFromTestCase" xml:space="preserve">
+    <value>Luo vaatimus tästä Testitapauksesta</value>
+  </data>
+	<data name="RequirementSelector_CreateRequirementFromTestCaseTooltip" xml:space="preserve">
+    <value>Klikkaa tästä luodaksesi uuden vaatimuksen vaatimuspuuhun, joka linkittyy tähän testitapaukseen</value>
+  </data>
+	<data name="RequirementSelector_Legend1" xml:space="preserve">
+    <value>Vaatimusten kattavuus -laatikossa näytetään vaatimukset, jotka tällä hetkellä linkittyy tähän testitapaukseen.</value>
+  </data>
+	<data name="RequirementSelector_Legend2" xml:space="preserve">
+    <value>Lisätäksesi vaatimuksia tähän testitapaukseen, valitse yllä olevasta listasta ja klikkaa [Lisää].</value>
+  </data>
+	<data name="RequirementSelector_Legend3" xml:space="preserve">
+    <value>Voit käyttää [Poista] ja [Poista kaikki] painikkeita poistaaksesi vaatimukset, joita ei enää kateta tällä testitapauksella.</value>
+  </data>
+	<data name="RequirementSelector_RequirementsCoverage" xml:space="preserve">
+    <value>Vaatimusten kattavuus:</value>
+  </data>
+	<data name="TestStepService_Call" xml:space="preserve">
+    <value>Kutsu</value>
+  </data>
+	<data name="TestStepService_With" xml:space="preserve">
+    <value>kanssa</value>
+  </data>
+	<data name="AutomationHostDetails_BackToList" xml:space="preserve">
+    <value>Takaisin isäntä-listaan</value>
+  </data>
+	<data name="TestRunDetails_BackToList" xml:space="preserve">
+    <value>Takaisin Testiajolistaan</value>
+  </data>
+	<data name="TestRunDetails_TestCaseAndTestStep" xml:space="preserve">
+    <value>Testi# / Askel#</value>
+  </data>
+	<data name="TestRunDetails_ViewIncidents" xml:space="preserve">
+    <value>Näytä Havainnot</value>
+  </data>
+	<data name="TestSetDetails_BackToList" xml:space="preserve">
+    <value>Takaisin Testijoukko-listaan</value>
+  </data>
+	<data name="TestStepDetails_BackToList" xml:space="preserve">
+    <value>Takaisin Testiaskel-listaan</value>
+  </data>
+	<data name="Admin_FileTypes_List" xml:space="preserve">
+    <value>Tiedostotyyppien lista</value>
+  </data>
+	<data name="Admin_FileTypes_Description" xml:space="preserve">
+    <value>Kuvaus</value>
+  </data>
+	<data name="Admin_FileTypes_Extension" xml:space="preserve">
+    <value>Laajennos</value>
+  </data>
+	<data name="Admin_FileTypes_Icon" xml:space="preserve">
+    <value>Kuvake</value>
+  </data>
+	<data name="Admin_FileTypes_MimeType" xml:space="preserve">
+    <value>Mime-tyyppi</value>
+  </data>
+	<data name="Global_WorkflowOperations" xml:space="preserve">
+    <value>Tilamalli Operaatiot</value>
+  </data>
+	<data name="IncidentDetails_BackToList" xml:space="preserve">
+    <value>Takaisin Havaintolistaan</value>
+  </data>
+	<data name="Admin_FileTypes_SureDelete" xml:space="preserve">
+    <value>Oletko varma että haluat poistaa tämän tiedostotyypin listasta?</value>
+  </data>
+	<data name="IncidentDetails_YouNeedTo" xml:space="preserve">
+    <value>Sinun täytyy</value>
+  </data>
+	<data name="IncidentDetails_YouNeedToEnding" xml:space="preserve">
+    <value>tämä Havainto ennen kuin voit lisätä liitetiedostoja.</value>
+  </data>
+	<data name="TaskDetails_BackToList" xml:space="preserve">
+    <value>Takaisin Tehtävälistaan</value>
+  </data>
+	<data name="Admin_FileTypes_EditFileType" xml:space="preserve">
+    <value>Muokkaa / Lisää tiedostotyyppi</value>
+  </data>
+	<data name="Admin_FileTypes_FileDescription" xml:space="preserve">
+    <value>Tiedostokuvaus:</value>
+  </data>
+	<data name="Admin_FileTypes_FileExtension" xml:space="preserve">
+    <value>Tiedoston tunniste:</value>
+  </data>
+	<data name="Admin_FileTypes_FileIconImage" xml:space="preserve">
+    <value>Tiedoston kuvakekuva:</value>
+  </data>
+	<data name="Admin_FileTypes_FileMimeType" xml:space="preserve">
+    <value>Mime-tyyppi:</value>
+  </data>
+	<data name="Admin_FileTypes_FileTypeID" xml:space="preserve">
+    <value>Tiedostotyyppi ID:</value>
+  </data>
+	<data name="ResourceDetails_ResourceDetails" xml:space="preserve">
+    <value>Resurssin tiedot</value>
+  </data>
+	<data name="ResourceDetails_CurrentPlanningSettings" xml:space="preserve">
+    <value>Nykyiset projektisuunnittelun asetukset</value>
+  </data>
+	<data name="ResourceDetails_DaysPerWeek" xml:space="preserve">
+    <value>Päivää / viikko</value>
+  </data>
+	<data name="ResourceDetails_HousePerDay" xml:space="preserve">
+    <value>Tuntia / päivä</value>
+  </data>
+	<data name="ResourceDetails_NonWorkHoursPerMonth" xml:space="preserve">
+    <value>Ei-työtunteja / kuukausi</value>
+  </data>
+	<data name="SourceCodeList_NoFolderSelected" xml:space="preserve">
+    <value>Kansio valitsematta</value>
+  </data>
+	<data name="SourceCodeList_OtherOperations" xml:space="preserve">
+    <value>Muut toiminteet</value>
+  </data>
+	<data name="SourceCodeList_RepositoryBrowser" xml:space="preserve">
+    <value>Tietokanta-selain</value>
+  </data>
+	<data name="SourceCodeList_RevisionLog" xml:space="preserve">
+    <value>Näytä Versiologi</value>
+  </data>
+	<data name="SourceCodeList_Title" xml:space="preserve">
+    <value>Lähdekoodi-tietokanta</value>
+  </data>
+	<data name="Admin_FileTypes_Adding" xml:space="preserve">
+    <value>lisää</value>
+  </data>
+	<data name="Admin_FileTypes_ErrorAction" xml:space="preserve">
+    <value>Virheellinen {0} tiedostotyyppi.</value>
+  </data>
+	<data name="Admin_FileTypes_Updating" xml:space="preserve">
+    <value>Päivittää</value>
+  </data>
+	<data name="SourceCodeRevisions_BackToRepository" xml:space="preserve">
+    <value>Takaisin lähdekoodi-tietokantaan</value>
+  </data>
+	<data name="SourceCodeRevisions_Title" xml:space="preserve">
+    <value>Lähdekoodin versiot</value>
+  </data>
+	<data name="Admin_FileTypes_NavHeaderFileIcon" xml:space="preserve">
+    <value>Tiedostotyypin kuvakkeet</value>
+  </data>
+	<data name="SourceCodeFileDetails_BackToList" xml:space="preserve">
+    <value>Takaisin tiedostolistaan</value>
+  </data>
+	<data name="SourceCodeFileDetails_SourceCodeFile" xml:space="preserve">
+    <value>Lähdekooditiedosto</value>
+  </data>
+	<data name="ReportConfiguration_BackToHome" xml:space="preserve">
+    <value>Takaisin Raporttien etusivulle</value>
+  </data>
+	<data name="ReportsConfiguration_CustomPropertyFilters" xml:space="preserve">
+    <value>Kustomoitujen ominaisuuksien suodattimet</value>
+  </data>
+	<data name="ReportsConfiguration_Legend1" xml:space="preserve">
+    <value>Ole hyvä ja valitse eri vaihtoehdoista alla, miten haluaisit tämän Raportin näkyvän.</value>
+  </data>
+	<data name="ReportsConfiguration_Legend2" xml:space="preserve">
+    <value>Voit suodattaa tulokset näkyviin eri parametrien mukaan ja valita mitä tietoja Raportissa näkyy.</value>
+  </data>
+	<data name="ReportsConfiguration_ReportElements" xml:space="preserve">
+    <value>Raportin elementit</value>
+  </data>
+	<data name="ReportsConfiguration_ReportFormat" xml:space="preserve">
+    <value>Raportin muoto</value>
+  </data>
+	<data name="ReportsConfiguration_SaveReportLegend" xml:space="preserve">
+    <value>Jos haluat tallettaa tämä Raportin tulevaa käyttöä varten, anna sille nimi alla ennen kuin klikkaat [Luo raportti]-painiketta:</value>
+  </data>
+	<data name="ReportsConfiguration_ShareReport" xml:space="preserve">
+    <value>Haluan jakaa tämän raportin muiden projektin jäsenten kanssa</value>
+  </data>
+	<data name="ReportsConfiguration_SortAscending" xml:space="preserve">
+    <value>Järjestä nousevasti</value>
+  </data>
+	<data name="ReportsConfiguration_SortOptions" xml:space="preserve">
+    <value>Järjestely valinnat</value>
+  </data>
+	<data name="ReportsConfiguration_StandardFieldFilters" xml:space="preserve">
+    <value>Vakiokenttien suodattimet</value>
+  </data>
+	<data name="Reports_NoneAvailable" xml:space="preserve">
+    <value>Ei saatavilla</value>
+  </data>
+	<data name="Reports_SavedReports" xml:space="preserve">
+    <value>Talletetut raportit</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_BackToList" xml:space="preserve">
+    <value>Takaisin versiolistaan</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_SourceCodeRevision" xml:space="preserve">
+    <value>Lähdekoodin versio</value>
+  </data>
+	<data name="TestCaseExecution_BackToTests" xml:space="preserve">
+    <value>Takaisin Testeihin</value>
+  </data>
+	<data name="TestCaseExecution_ChooseRelease" xml:space="preserve">
+    <value>Valitse julkaisu, jota vastaan suoritetaan:</value>
+  </data>
+	<data name="TestCaseExecution_ChooseTestStep1" xml:space="preserve">
+    <value>Valitse testiaskel navigointipalkin listasta tai klikkaa</value>
+  </data>
+	<data name="TestCaseExecution_ChooseTestStep2" xml:space="preserve">
+    <value>Takaisin Testeihin'</value>
+  </data>
+	<data name="TestCaseExecution_ChooseTestStep3" xml:space="preserve">
+    <value>suorittaaksesi toisen Testitapauksen.</value>
+  </data>
+	<data name="TestCaseExecution_CustomPropertiesPresetLegend" xml:space="preserve">
+    <value>(Huom: Kaikki kustomoidut ominaisuudet, joihin on vain luku-oikeus, on jo asetettu Testijoukosta.)</value>
+  </data>
+	<data name="TestCaseExecution_EnterIncidentInfo" xml:space="preserve">
+    <value>Syötä seuraavat tiedot kirjataksesi havainnon tästä testiaskeleesta:</value>
+  </data>
+	<data name="TestCaseExecution_NoStepSelected" xml:space="preserve">
+    <value>Yhtään Testiaskelta ei ole valittu!</value>
+  </data>
+	<data name="TestCaseExecution_TestExecutionWizard" xml:space="preserve">
+    <value>Testien suoritus</value>
+  </data>
+	<data name="TestCaseExecution_TestRunCustomProperties" xml:space="preserve">
+    <value>Anna nyt seuraavat ominaisuudet tälle testiajolle:</value>
+  </data>
+	<data name="TestCaseExecution_Title" xml:space="preserve">
+    <value>Testitapauksen suorittaminen</value>
+  </data>
+	<data name="DocumentDetails_AddNewAssociation" xml:space="preserve">
+    <value>Lisää uusi yhteys</value>
+  </data>
+	<data name="DocumentDetails_BackToList" xml:space="preserve">
+    <value>Takaisin tiedosto-listaan</value>
+  </data>
+	<data name="DocumentDetails_ChooseArtifact" xml:space="preserve">
+    <value>Valitse asia, johon haluat lisätä yhteyden:</value>
+  </data>
+	<data name="DocumentDetails_MakeThisActiveVersion" xml:space="preserve">
+    <value>Tee tästä aktiivinen versio</value>
+  </data>
+	<data name="DocumentDetails_Title" xml:space="preserve">
+    <value>Dokumentin tiedot</value>
+  </data>
+	<data name="DocumentDetails_UploadNewVersion" xml:space="preserve">
+    <value>Lataa uusi versio</value>
+  </data>
+	<data name="Documents_DocumentFolders" xml:space="preserve">
+    <value>Dokumentti-kansiot</value>
+  </data>
+	<data name="Documents_TagCloud" xml:space="preserve">
+    <value>Tunnistepilvi</value>
+  </data>
+	<data name="Admin_HistoryChangeset" xml:space="preserve">
+    <value>Projektin muutoshistoria</value>
+  </data>
+	<data name="Admin_HistoryChangeDetails" xml:space="preserve">
+    <value>Historiatiedot</value>
+  </data>
+	<data name="Reports_CreateNewReport" xml:space="preserve">
+    <value>Luo Raportti</value>
+  </data>
+	<data name="Reports_ReportsCenter" xml:space="preserve">
+    <value>Raporttikeskus</value>
+  </data>
+	<data name="Reports_IncidentDateRangeGraphs" xml:space="preserve">
+    <value>Havainnot ajanjaksolla -kuvaajat</value>
+  </data>
+	<data name="Reports_DateRange" xml:space="preserve">
+    <value>Ajanjakso</value>
+  </data>
+	<data name="Reports_GraphName" xml:space="preserve">
+    <value>Kuvaajan nimi</value>
+  </data>
+	<data name="Global_Items" xml:space="preserve">
+    <value>Kohteet</value>
+  </data>
+	<data name="Admin_History_CustomLabel" xml:space="preserve">
+    <value>Kustomoidut kentät</value>
+  </data>
+	<data name="Admin_Histoy_StandardLabel" xml:space="preserve">
+    <value>Vakiokentät</value>
+  </data>
+	<data name="Global_SelectedDateRange" xml:space="preserve">
+    <value>Valittu ajanjakso</value>
+  </data>
+	<data name="Global_SelectedGraph" xml:space="preserve">
+    <value>Valittu kuvaaja</value>
+  </data>
+	<data name="Reports_TestingDateRangeGraphs" xml:space="preserve">
+    <value>Testaus ajanjaksolla -Kuvaaja</value>
+  </data>
+	<data name="Reports_RequirementSummaryGraph" xml:space="preserve">
+    <value>Vaatimusten yhteenveto -Kuvaaja</value>
+  </data>
+	<data name="Reports_GroupedBy" xml:space="preserve">
+    <value>Ryhmitä:</value>
+  </data>
+	<data name="Reports_TestCaseSummaryGraph" xml:space="preserve">
+    <value>Testitapausten yhteenveto -Kuvaaja</value>
+  </data>
+	<data name="Reports_XAxis" xml:space="preserve">
+    <value>X-akseli</value>
+  </data>
+	<data name="Reports_IncidentSummaryGraph" xml:space="preserve">
+    <value>Havaintojen yhteenveto -Kuvaaja</value>
+  </data>
+	<data name="Reports_TaskSummaryGraph" xml:space="preserve">
+    <value>Tehtävien yhteenveto -Kuvaaja</value>
+  </data>
+	<data name="Reports_TestRunSummaryGraph" xml:space="preserve">
+    <value>Testiajojen yhteenveto -Kuvaaja</value>
+  </data>
+	<data name="Reports_TestSetSummaryGraph" xml:space="preserve">
+    <value>Testijoukkojen yhteenveto -Kuvaaja</value>
+  </data>
+	<data name="Admin_History_ToChange" xml:space="preserve">
+    <value>Muuttaa #{0}</value>
+  </data>
+	<data name="Reports_IncidentGraphs" xml:space="preserve">
+    <value>Havainto-kuvaajat</value>
+  </data>
+	<data name="Reports_TaskGraphs" xml:space="preserve">
+    <value>Tehtävä-Kuvaajat</value>
+  </data>
+	<data name="Reports_RequirementGraphs" xml:space="preserve">
+    <value>Vaatimus-kuvaajat</value>
+  </data>
+	<data name="Reports_GraphViewer" xml:space="preserve">
+    <value>Kuvaajakatselin</value>
+  </data>
+	<data name="SiteMap_PlanningBoard" xml:space="preserve">
+    <value>Suunnittelutaulu</value>
+  </data>
+	<data name="IterationPlan_IncludeIncidents" xml:space="preserve">
+    <value>Sisällytä Havainnot</value>
+  </data>
+	<data name="SiteMap_MyTimecard" xml:space="preserve">
+    <value>Oma Kellokortti</value>
+  </data>
+	<data name="Timecard_InstructionText" xml:space="preserve">
+    <value>Sinulle on osoitettuna tällä hetkellä seuraavia avoimia Asioita. &lt;br /&gt; Syötä käytetyt ja jäljellä olevat työtunnit asianmukaisin kenttiin alla:</value>
+  </data>
+	<data name="UserProfile_EnableRSSFeeds" xml:space="preserve">
+    <value>Aktivoi RSS-syötteet</value>
+  </data>
+	<data name="UserProfile_RssToken" xml:space="preserve">
+    <value>RSS tunniste:</value>
+  </data>
+	<data name="ResourceDetails_BackToList" xml:space="preserve">
+    <value>Takaisin resurssilistaan</value>
+  </data>
+	<data name="SourceCodeFileDetails_Title" xml:space="preserve">
+    <value>Tiedoston Tiedot</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_Title" xml:space="preserve">
+    <value>Version tiedot</value>
+  </data>
+	<data name="Syndication_SavedSearchesDescription" xml:space="preserve">
+    <value>Tämä syöte näyttää listan asioista tilaajan tallettaman haun/suodattimen mukaan.</value>
+  </data>
+	<data name="ProjectList_MyNewsFeeds" xml:space="preserve">
+    <value>Omat Uutissyötteet</value>
+  </data>
+	<data name="ProjectList_MySubscribedArtifacts" xml:space="preserve">
+    <value>Omat tilatut Asiat</value>
+  </data>
+	<data name="ProjectList_QuickLaunch" xml:space="preserve">
+    <value>Pikalähtö</value>
+  </data>
+	<data name="QuickLaunch_CreateIncidentIn" xml:space="preserve">
+    <value>Luo Havainto:</value>
+  </data>
+	<data name="NewsReader_FeedTitle" xml:space="preserve">
+    <value>Syötteen otsikko</value>
+  </data>
+	<data name="NewsReader_FeedTitleTooltip" xml:space="preserve">
+    <value>Anna nimi uutissyötteelle, jonka haluat näkyvän omalla sivullasi.</value>
+  </data>
+	<data name="NewsReader_FeedUrl" xml:space="preserve">
+    <value>Syötteen URL</value>
+  </data>
+	<data name="NewsReader_FeedUrlTooltip" xml:space="preserve">
+    <value>Anna URL-osoite RSS 2.0 tai Atom 1.0 uutissyötteelle, jonka haluat tilata</value>
+  </data>
+	<data name="NewsReader_HeadlineLength" xml:space="preserve">
+    <value>Otsikon pituus</value>
+  </data>
+	<data name="NewsReader_HeadlineLengthTooltip" xml:space="preserve">
+    <value>Näkyvien merkkien määrää otsikossa ennen katkaisua</value>
+  </data>
+	<data name="Admin_RoleDetails_ArtifactPermissions" xml:space="preserve">
+    <value>Asian oikeudet</value>
+  </data>
+	<data name="Admin_RoleDetails_OtherPermissions" xml:space="preserve">
+    <value>Muut oikeudet</value>
+  </data>
+	<data name="Admin_RoleDetails_Text1" xml:space="preserve">
+    <value>Tarkista tiedot alla ja tee muutoksia tarvittaessa.</value>
+  </data>
+	<data name="Admin_RoleDetails_Text2" xml:space="preserve">
+    <value>Kun olet valmis, vahvista klikkaamalla  [Talleta].</value>
+  </data>
+	<data name="Admin_RoleDetails_Text3" xml:space="preserve">
+    <value>Tämä rooli voi suorittaa seuraavat toiminnot eri Asioille:</value>
+  </data>
+	<data name="Admin_RoleDetails_Text4" xml:space="preserve">
+    <value>Tämä rooli voi suorittaa seuraavat toiminnot koko järjestelmässä:</value>
+  </data>
+	<data name="Admin_RoleList_NewProjectRole" xml:space="preserve">
+    <value>Uusi Projektirooli</value>
+  </data>
+	<data name="SiteMap_EditRoleDetails" xml:space="preserve">
+    <value>Muokkaa Roolin tietoja</value>
+  </data>
+	<data name="SiteMap_ViewEditRoles" xml:space="preserve">
+    <value>Näytä / Muokkaa rooleja</value>
+  </data>
+	<data name="TestSetDetails_Title" xml:space="preserve">
+    <value>Testijoukon yksityiskohdat</value>
+  </data>
+	<data name="TestSetDetails_RecurrenceNone" xml:space="preserve">
+    <value>-- Kerran --</value>
+  </data>
+	<data name="GlobalNavigation_Search" xml:space="preserve">
+    <value>Haku</value>
+  </data>
+	<data name="GlobalNavigation_SearchResults" xml:space="preserve">
+    <value>Hakutulokset</value>
+  </data>
+	<data name="GlobalNavigation_SearchResultsLegend1" xml:space="preserve">
+    <value>Seuraavat</value>
+  </data>
+	<data name="GlobalNavigation_SearchResultsLegend2" xml:space="preserve">
+    <value>tulokset vastaavat hakusi avainsanoja</value>
+  </data>
+	<data name="BuildDetails_BackToList" xml:space="preserve">
+    <value>Takaisin Build-listaan</value>
+  </data>
+	<data name="BuildDetails_Title" xml:space="preserve">
+    <value>Buildin yksityiskohdat</value>
+  </data>
+	<data name="Global_With" xml:space="preserve">
+    <value>kanssa </value>
+  </data>
+	<data name="HistoryPanel_AdminViewTooltip" xml:space="preserve">
+    <value>Aukaisee historialistan Ylläpito-osioon, jossa voit perua muutoksia tai siivota historiaa ja nähdä lisätietoja jokaisesta muutosjoukosta.</value>
+  </data>
+	<data name="ProjectHome_RecentBuilds" xml:space="preserve">
+    <value>Viimeiset Buildit</value>
+  </data>
+	<data name="TestCaseDetails_Repository" xml:space="preserve">
+    <value>Tietovarasto</value>
+  </data>
+	<data name="Admin_AssignedApprovers_Title" xml:space="preserve"><value>Assigned Approvers</value></data>
+	<data name="Register_Title" xml:space="preserve">Tilaa uusi Käyttäjätili</data><data name="Login_RegisterForAccount" xml:space="preserve">Rekisteröidy Käyttäjätiliä varten</data><data name="ResetPassword_AnswerQuestionInstructions" xml:space="preserve">Vastaa seuraaviin kysymyksiin saadaksesi salasanasi.</data><data name="ResetPassword_EnterUserNameText" xml:space="preserve">Anna käyttäjätunnuksesi saadaksesis salasanasi, kiitos.</data><data name="ResetPassword_ForgotPassword" xml:space="preserve">Unohtunut salasana</data><data name="ResetPassword_ForgotYourPassword" xml:space="preserve">Unohditko salasanasi?</data><data name="ResetPassword_IdentityConfirmation" xml:space="preserve">Identiteetin varmistus</data><data name="ResetPassword_ReturnLink" xml:space="preserve">Palaa kirjautumissivulle</data><data name="ResetPassword_SuccessTitle" xml:space="preserve">Salasanasi on lähetetty sinulle.</data><data name="ResetPassword_Title" xml:space="preserve">Alusta salasanani</data><data name="Register_EmailSubject" xml:space="preserve">Uusi {0} Käyttäjätilipyyntö</data><data name="Register_Heading" xml:space="preserve">Tilaa uusi Käyttäjätili</data><data name="Register_InstructionText" xml:space="preserve">Tilaa uusi Käyttäjätili täyttämällä alla oleva lomake.</data><data name="Register_PasswordMinLength" xml:space="preserve">Salasanojen tulee olla vähintään {0} merkkiä pitkiä.</data><data name="Register_CompleteLegend" xml:space="preserve">Käyttätilipyyntösi on lähetetty järjestelmä ylääpitäjälle. Kun pyyntösi on hyväksytty saat ilmoituksen käyttäjätilin aktivoinnista.</data><data name="Register_CompleteTitle" xml:space="preserve">Tilaa uusi Käyttäjätili</data><data name="UserProfile_ChangePasswordQuestionAnswer" xml:space="preserve">Muuta Salasana Kysymys/Vastaus</data><data name="UserProfile_TabPasswords" xml:space="preserve">Salasanat &amp; Turvallisuus</data><data name="UserList_ImportFromLDAP" xml:space="preserve">Tuo käyttäjät LDAP-serveriltä</data><data name="UserList_Legend1" xml:space="preserve">Järjestelmässä on seuraavat hyväksytyt käyttäjät. Muokataksesi olemassaolevaa käyttäjää valitse 'Muokkaa' linkki nimen vierestä.&lt;br /&gt;Luodaksesi uuden käyttäjän valitse joko [Lisää] -nappi tai tuo LDAP-serveriltä.</data><data name="UserList_Legend2" xml:space="preserve">Paina 'Odottavat Käyttäjätilipyynnöt' vasemmasta navigaatiosta nähdäksesi odottavat käyttäjätilipyynnöt </data><data name="UserList_Title" xml:space="preserve">Näytä / Muokkaa käyttäjiä</data><data name="ProjectMembership_Title" xml:space="preserve">Projektin jäsenyys</data><data name="UserDetails_AddEditUser" xml:space="preserve">Lisää / Muokkaa käyttäjää</data><data name="UserDetails_AddEditUser_Legend" xml:space="preserve">Tarkista tiedot alla ja tee muutoksia tarvittaessa.&lt;br /&gt;Kun olet valmis paina [Päivitä/Lisää] vahvistaaksesi muuitoksesi.</data><data name="UserDetails_ChangePassword" xml:space="preserve">Muuta Salasana</data><data name="UserDetails_ChangePasswordQuestionAnswer" xml:space="preserve">Muuta Salasana Kysymys/Vastaus</data><data name="UserDetails_LdapManagedUser" xml:space="preserve">LDAP hallittu käyttäjä</data><data name="UserDetails_NewUser" xml:space="preserve">Uusi käyttäjä</data><data name="UserDetails_TabDataMapping" xml:space="preserve">Datan mäppäys</data><data name="Global_Minutes" xml:space="preserve">minuutit</data><data name="Register_PasswordMinNonAlphaChars" xml:space="preserve">Salasanassa pitää olla vähintään {0} ei-numeerista merkkiä.</data><data name="SecuritySettings_AllowUserRegistration" xml:space="preserve">Salli käyttäjän rekisteröityminen</data><data name="SecuritySettings_AllowUserRegistrationNotes" xml:space="preserve">Aseta tämä todeksi jos haluat antaa käyttäjille mahdollisuuden kirjata Käyttäjätilinsä itse. </data><data name="SecuritySettings_Legend1" xml:space="preserve">Tämä sivu antaa sinulle mahdollisuuden muokata</data><data name="SecuritySettings_Legend2" xml:space="preserve">sovelluksen tietoturva asetukset:</data><data name="SecuritySettings_MaxInvalidPasswordAttempts" xml:space="preserve">Maksimi # epäonnistuneita kirjautumisyrityksiä</data><data name="SecuritySettings_MaxInvalidPasswordAttemptsNotes" xml:space="preserve">Väärän salasanan syöttökertojen määrä ennen kuin käyttäjätili lukitaan.</data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters" xml:space="preserve">Minimimäärä spesiaalimerkkejä</data><data name="SecuritySettings_MinRequiredNonalphanumericCharactersNotes" xml:space="preserve">Vaadittu minimimäärä ei-numeerisia merkkejä käyttäjän salasanassa</data><data name="SecuritySettings_MinRequiredPasswordLength" xml:space="preserve">Vaadittu salasanan minimipituus</data><data name="SecuritySettings_MinRequiredPasswordLengthNotes" xml:space="preserve">Käyttäjän valitseman salasanan minimipituus</data><data name="SecuritySettings_PasswordAttemptWindow" xml:space="preserve">Salasanan syöttämisen aikaikkuna</data><data name="SecuritySettings_PasswordAttemptWindowNotes" xml:space="preserve">Aikaraja jonka jälkeen käyttäjätili avautuu automaattisesti</data><data name="SecuritySettings_Title" xml:space="preserve">Turva-asetukset</data><data name="UserLdapImport_BackToUserList" xml:space="preserve">Takaisin käyttäjälistaan</data><data name="UserLdapImport_LdapConfigLink" xml:space="preserve">LDAP-määritykset</data><data name="UserLdapImport_Legend1" xml:space="preserve">Käyttäen nykyistä</data><data name="UserLdapImport_Legend2" xml:space="preserve">Seuraavat uudet käyttäjät valittavina tuontia varten</data><data name="UserLdapImport_Legend3" xml:space="preserve">Valitse käyttäjät, jotka haluat tuoda ja paina [Tuo]:</data><data name="UserLdapImport_Title" xml:space="preserve">LDAP-palvelimelta tuodut käyttäjät</data><data name="UserRequests_Legend" xml:space="preserve">Järjestelmässä on seuraavia uusia käyttäjäpyyntöjä. Hyväksyäksesi paina 'Hyväksy'-linkkiä ja hylätäksesi paina 'Poista'-linkkiä.</data><data name="UserRequests_Title" xml:space="preserve">Odottavat pyynnöt</data><data name="UserRequests_TitleLong" xml:space="preserve">Katsele odottavia käyttäjäpyyntöjä</data><data name="GeneralSettings_AttachmentFolderNotes" xml:space="preserve">Kansio johon tallennetaan liite-tiedostot (e.g.</data><data name="GeneralSettings_AttachmentsFolder" xml:space="preserve">Liite-kansio</data><data name="GeneralSettings_DefaultCulture" xml:space="preserve">Oletus kulttuuri</data><data name="GeneralSettings_DefaultCultureNotes" xml:space="preserve">Kulttuuri joka määrittää käytettävän numero/päivämääräformaatin ja kielen</data><data name="GeneralSettings_DefaultTimezone" xml:space="preserve">Oletus aikavyöhyke</data><data name="GeneralSettings_DefaultTimezoneNotes" xml:space="preserve">Aikavyöhyke joka määrittää miten aika ja päivämäärä näytetään järjestelmässä</data><data name="GeneralSettings_Legend1" xml:space="preserve">Tämä sivu antaa sinulle mahdollisuuden muokata</data><data name="GeneralSettings_Legend2" xml:space="preserve">Järjestelmän asetuksia:</data><data name="GeneralSettings_RichTextArtifactNotes" xml:space="preserve">Käytä rich-text (RTF) muokkausta Asian kuvauksiin</data><data name="GeneralSettings_RichTextEditing" xml:space="preserve">Rich-text (TRF) muokkaus</data><data name="GeneralSettings_RichTextTestStepNotes" xml:space="preserve">Käytä rich-text (RTF) muokkausta testisteppien listassa</data><data name="GeneralSettings_Title" xml:space="preserve">Yleiset määritykset</data><data name="GeneralSettings_WebServerUrl" xml:space="preserve">Web-serverin URL</data><data name="GeneralSettings_WebServerUrlNotes" xml:space="preserve">Sisäänpääsemiseen käytettävä URL</data><data name="UserProfile_UserTimezone" xml:space="preserve">Käyttäjän aikavyöhyke</data><data name="UserProfile_ChangeLogoTitle" xml:space="preserve">Muuta käyttäjän logoa</data><data name="UserProfile_Department" xml:space="preserve">Ryhmä</data><data name="UserProfile_Logo" xml:space="preserve">Käyttäjän logo</data><data name="EventLog_Legend" xml:space="preserve">Seuraavat järjestelmän tapahtumat on kirjattu:</data><data name="EventLog_Title" xml:space="preserve">Tapahtumalogi</data><data name="EventLog_TitleLong" xml:space="preserve">Järjestelmän tapahtumalogi</data><data name="GeneralSettings_EventDaysToKeep" xml:space="preserve">Tapahtumalogin säilyttäminen</data><data name="GeneralSettings_EventDaysToKeepNotes" xml:space="preserve">Virheilmoitusten säilyminen päivinä järjestelmän tapahtumalogissa.</data><data name="GeneralSettings_EventDaysToKeepUnits" xml:space="preserve">Päivää</data><data name="EventLog_EventDetails" xml:space="preserve">Tapahtuman yksityiskohdat</data><data name="EventLog_Exception" xml:space="preserve">Poikkeus</data><data name="DataSynchronization_ViewErrors" xml:space="preserve">Katsele virheitä</data><data name="VersionControlProviderDetails_ViewEvents" xml:space="preserve">Katsele tapahtumia</data><data name="Permission_Create" xml:space="preserve">Luo</data><data name="Permission_Delete" xml:space="preserve">Poista</data><data name="Permission_LimitedModify" xml:space="preserve">Muokkaa omistamani</data><data name="Permission_Modify" xml:space="preserve">Muokkaa kaikki</data><data name="Permission_View" xml:space="preserve">Katsele</data><data name="RoleDetails_ActiveNotes" xml:space="preserve">Määrittää onko kyseinen rooli aktiivinen vai ei</data><data name="RoleDetails_AdminNotes" xml:space="preserve">Määrittää onko roolilla projektin ylläpito-oikeuksia</data><data name="RoleDetails_LimitedView" xml:space="preserve">Rajoitettu näkyvyys</data><data name="RoleDetails_LimitedViewNotes" xml:space="preserve">Määrittää onko roolilla rajoitetut katselu-oikeudet. Käytä projektissa rooleille joiden ei pitäisi nähdä kuin omat tehdyt/osoitetut asiat.</data><data name="AutomationHostDetails_Title" xml:space="preserve">Automaatio-isännän määritykset</data><data name="IncidentDetails_Title" xml:space="preserve">Havainnon määritykset</data><data name="ReleaseDetails_Title" xml:space="preserve">Julkaisun määritykset</data><data name="RequirementDetails_Title" xml:space="preserve">Vaatimuksen määritykset</data><data name="ResourceDetails_Title" xml:space="preserve">Resurssin määritykset</data><data name="TaskDetails_Title" xml:space="preserve">Tehtävän määritykset</data><data name="TestCaseDetails_Title" xml:space="preserve">Testitapauksen määritykset</data><data name="TestRunDetails_Title" xml:space="preserve">Testiajon määritykset</data><data name="TestStepDetails_Title" xml:space="preserve">Testiaskeleen määritykset</data><data name="CustomLists_Title" xml:space="preserve">Muokkaa muokattavia listoja</data><data name="CustomProperties_Title" xml:space="preserve">Muokkaa muokattavia ominaisuuksia</data><data name="Administration_ChangeProject" xml:space="preserve">(Vaihda projektia)</data><data name="Admin_CustomPropertyDefinition" xml:space="preserve">Kuvaus</data><data name="Admin_CustomPropertyDefinition_AddDefinition" xml:space="preserve">Lisää kuvaus</data><data name="Admin_CustomPropertyDefinition_Alias" xml:space="preserve">Nimi</data><data name="Admin_CustomPropertyDefinition_CustomList" xml:space="preserve">Muokattava lista</data><data name="Admin_CustomPropertyDefinition_EditDefinition" xml:space="preserve">Muokkaa kuvausta</data><data name="Admin_CustomPropertyDefinition_Intro" xml:space="preserve">Seuraavat muokattavat ominaisuudet on tällä hetkellä määritelty kyseiselle Asia-tyypille.&lt;br/&gt;Voit lisätä, muokata tai poistaa muokattavien ominaisuuksien määrityksiä valitsemalla linkin alla olevasta ruudukosta. </data><data name="Admin_CustomPropertyDefinition_Type" xml:space="preserve">Tyyppi</data><data name="Admin_CustomPropertyOptions" xml:space="preserve">Valinnat</data><data name="Admin_CustomPropertyOptions_AllowNull" xml:space="preserve">Salli tyhjä</data><data name="Admin_CustomPropertyOptions_Default" xml:space="preserve">Oletus</data><data name="Admin_CustomPropertyOptions_MaxLength" xml:space="preserve">Maksimipituus</data><data name="Admin_CustomPropertyOptions_MaxValue" xml:space="preserve">Maksimiarvo</data><data name="Admin_CustomPropertyOptions_MinLength" xml:space="preserve">Minimipituus</data><data name="Admin_CustomPropertyOptions_MinValue" xml:space="preserve">Minimiarvo</data><data name="Admin_CustomPropertyOptions_Precision" xml:space="preserve">Tarkkuus</data><data name="Admin_CustomPropertyOptions_RichText" xml:space="preserve">Rich Text (RTF)</data><data name="Admin_System_CustomListValue_AddValue" xml:space="preserve">Lisää arvo</data><data name="Admin_System_CustomListValue_ConfirmDeleteValue" xml:space="preserve">Oletko varma että haluat poistaa tämän arvon?\nKaikki kentät asetettuna tähän arvoon saavat listan ensimmäisen arvon tai nollataan.</data><data name="Admin_System_CustomListValue_Description" xml:space="preserve">Listan kuvaus</data><data name="Admin_System_CustomListValue_ErrorNameRequired" xml:space="preserve">Sinun on syötettävä nimi muokattavalle listalle.</data><data name="Admin_System_CustomListValue_ErrorValueRequired" xml:space="preserve">Arvo on pakollinen, jotta lista voidaan näyttää</data><data name="Admin_System_CustomListValue_Error_CustomListNameExists" xml:space="preserve">Kyseisellä nimellä on jo olemassa lista. Anna uusi nimi, kiitos.</data><data name="Admin_System_CustomListValue_Error_CustomListNameIsEmpty" xml:space="preserve">Muokattavalla listalla on oltava nimi.</data><data name="Admin_System_CustomListValue_Error_SavingCustomList" xml:space="preserve">Ongelma tallennettaessa listaa. Yritä tallentaa se toiselle nimelle.</data><data name="Admin_System_CustomListValue_Error_ValueNameIsDuplicate" xml:space="preserve">Ei voi olla samoja arvoja. Arvo: '{0}'</data><data name="Admin_System_CustomListValue_Error_ValueNameIsEmpty" xml:space="preserve">Arvo ei voi olla tyhjä.</data><data name="Admin_System_CustomListValue_HeaderValueId" xml:space="preserve">Listan arvo #</data><data name="Admin_System_CustomListValue_HeaderValueName" xml:space="preserve">Arvo</data><data name="Admin_System_CustomListValue_NoValuesDefined" xml:space="preserve">Listan arvot määrittelemättä</data><data name="Admin_System_CustomListValue_SortBy" xml:space="preserve">Näytön lajitteluvalitsin</data><data name="Admin_System_CustomList_AddList" xml:space="preserve">Lisää lista</data><data name="Admin_System_CustomList_HeaderActions" xml:space="preserve">Toiminnot</data><data name="Admin_System_CustomList_HeaderActions_ActionEditValue" xml:space="preserve">Muokkaa arvoja</data><data name="Admin_System_CustomList_HeaderDisplayName" xml:space="preserve">Listan nimi</data><data name="Admin_System_CustomList_HeaderListId" xml:space="preserve">Lista #</data><data name="Admin_System_CustomList_HeaderValues" xml:space="preserve"># arvot</data><data name="Admin_System_CustomList_NoListsDefined" xml:space="preserve">Muokattavia listoja ei ole määritelty.</data><data name="Admin_System_CustomList_NoListsDefinedDrop" xml:space="preserve">-- Ei määriteltyjä listoja --</data><data name="Admin_System_CustomList_NoListsDefinedDrop1" xml:space="preserve">-- Ei määriteltyjä listoja --</data><data name="CustomListDetails_BackToLists" xml:space="preserve">Takasin muokattavaan listaan</data><data name="CustomListDetails_IntroText" xml:space="preserve">Seuraavat muokaatavat arvot on luotu tätä listaa varten. Tee muutokset ja paina [Tallenna].&lt;br\&gt;Poistaaksesi arvon listasta paina [Poista] linkkiä.&lt;br\&gt;Lisätäksesi uuden arvon paina 'Lisää arvo' linkkiä ruudukon alaosasta.</data><data name="CustomListDetails_Title" xml:space="preserve">Muokkaa muokattavan listan arvoja</data><data name="CustomListSort_Alphabetical" xml:space="preserve">Aakkosellinen</data><data name="CustomLists_IntroText" xml:space="preserve">Tälle projektille on luotu seuraava muokattava lista. Lisätäksesi uuden muokattavan listan paina "Lisää Lista" valintaa, Poistaaksesi muokattavan listan paina "Poista". Muokataksesi listaa (ja sen arvoja) paina "Muokkaa arvoja".</data><data name="CustomLists_NewList" xml:space="preserve">Uusi lista</data><data name="Global_No" xml:space="preserve">Ei</data><data name="Global_Yes" xml:space="preserve">Kyllä</data><data name="Global_Multiple" xml:space="preserve">Moni</data><data name="Admin_EditWorkflows_Title" xml:space="preserve">Muokkaa työnkulkuja</data><data name="Admin_WorkflowDetails_AddNewTransitionTitle" xml:space="preserve">Lisää uusi tilasiirtymä</data><data name="Admin_WorkflowDetails_BackToList" xml:space="preserve">Takaisin Tilamalli-listaan</data><data name="Admin_WorkflowDetails_Default" xml:space="preserve">(Oletus)</data><data name="Admin_WorkflowDetails_Delete" xml:space="preserve">(Poista)</data><data name="Admin_WorkflowDetails_DestinationStep" xml:space="preserve">Lähtevä askel</data><data name="Admin_WorkflowDetails_Intro" xml:space="preserve">Tämä näyttää Kaikki havaintojen tilat kyseisessä tilamallissa</data><data name="Admin_WorkflowDetails_OriginatingStep" xml:space="preserve">Tuleva askel</data><data name="Admin_WorkflowDetails_Title" xml:space="preserve">Katsele/Muokkaa Tilamallin askeleita</data><data name="Admin_WorkflowStep_BackToStepsList" xml:space="preserve">Takaisin Tilamallin askel-listaan</data><data name="Admin_WorkflowStep_IncidentCustomProperties" xml:space="preserve">Havainnon muokattavat ominaisuudet</data><data name="Admin_WorkflowStep_IncidentCustomPropertiesIntro" xml:space="preserve">Seuraavat Havainnot muokattavat ominaisuudet ovat piilotettuja/estettyjä/pakollisia tässä Tilamallin askeleessa:</data><data name="Admin_WorkflowStep_IncidentFields" xml:space="preserve">Havainnon kentät</data><data name="Admin_WorkflowStep_IncidentFieldsIntro" xml:space="preserve">Seuraavat Havainnot kentät ovat piilotettuja/estettyjä/pakollisia tässä Tilamallin askeleessa:</data><data name="Admin_WorkflowStep_Title" xml:space="preserve">Muokkaa Tilamallin askeleen tietoja</data><data name="Admin_Workflows_Intro" xml:space="preserve">Projektissa on useita valittavia Tilamalleja. Lisätäksesi uuden Tilamallin paina Lisää-nappia. Muokataksesi olemassaolevaa paina askeleen linkkiä.</data><data name="Admin_Workflows_NewWorkflowName" xml:space="preserve">Uusi Tilamalli</data><data name="Admin_WorkflowTransition_BackToSteps" xml:space="preserve">Takaisin Tilamallin askel-listaan</data><data name="Admin_WorkflowTransition_ConditionData" xml:space="preserve">Ehdon tiedot</data><data name="Admin_WorkflowTransition_Conditions" xml:space="preserve">Ehdot</data><data name="Admin_WorkflowTransition_ConditionsIntro" xml:space="preserve">Seuraavat käyttäjät / roolit saavat suorittaa tämän tilasiirtymän:</data><data name="Admin_WorkflowTransition_ConditionType" xml:space="preserve">Ehdon tyyppi</data><data name="Admin_WorkflowTransition_DetailsSection" xml:space="preserve">Tilamallin tilasiirtymän tiedot</data><data name="Admin_WorkflowTransition_DetectorExecuteLabel" xml:space="preserve">Havainnon tekijä voi suorittaa</data><data name="Admin_WorkflowTransition_DetectorNotifyLabel" xml:space="preserve">Havainnon tekijälle ilmoitetaan</data><data name="Admin_WorkflowTransition_DisplayTokens" xml:space="preserve">(Näytä erikoismerkit sähköpostin otsikossa)</data><data name="Admin_WorkflowTransition_EmailTokens" xml:space="preserve">Sähköposti-ilmoituksen merkit</data><data name="Admin_WorkflowTransition_NotificationData" xml:space="preserve">Ilmoituksen tiedot</data><data name="Admin_WorkflowTransition_Notifications" xml:space="preserve">Ilmoitukset</data><data name="Admin_WorkflowTransition_NotificationsIntro" xml:space="preserve">Seuraaville käyttäjille / rooleille ilmoitetaan sähköpostilla kun tilasiirtymä suoritetaan: </data><data name="Admin_WorkflowTransition_NotificationType" xml:space="preserve">Ilmoituksen tyyppi</data><data name="Admin_WorkflowTransition_OwnerExecuteLabel" xml:space="preserve">Havainnon omistaja voi suorittaa</data><data name="Admin_WorkflowTransition_OwnerNotifyLabel" xml:space="preserve">Havainnon omistajalle ilmoitetaan</data><data name="Admin_WorkflowTransition_RolesExecuteLabel" xml:space="preserve">Käyttäjät seuraavissa rooleissa voivat suorittaa</data><data name="Admin_WorkflowTransition_RolesNotifyLabel" xml:space="preserve">Käyttäjille seuraavissa rooleissa ilmoitetaan</data><data name="Admin_WorkflowTransition_Title" xml:space="preserve">Muokkaa Tilamallin tilasiirtymää</data><data name="AttachmentPanel_Attachments" xml:space="preserve">liitteet</data><data name="ArtifactLinkPanel_Associations" xml:space="preserve">viitteet</data><data name="HistoryPanel_Changes" xml:space="preserve">muutokset</data><data name="Requirements_RequirementsForProject" xml:space="preserve">projektin vaatimukset</data><data name="Releases_ReleasesForProject" xml:space="preserve">projektin julkaisut</data><data name="TestSetList_TestSetsForProject" xml:space="preserve">projektin testijoukot</data><data name="TestCaseExecution_ChooseReleaseAndCustomProps" xml:space="preserve">Valitse julkaisu ja muokattava ominaisuus, joita vasten suoritetaan:</data><data name="TestCaseExecution_TestCaseInfo" xml:space="preserve">Testitapauksen tiedot</data><data name="TestCaseExecution_TestStepInfo" xml:space="preserve">Testiaskeleen tiedot</data><data name="TaskListPanel_Tasks" xml:space="preserve">tehtävät</data><data name="ReleaseDetails_BuildsInRelease" xml:space="preserve">julkaisun/iteraation buildit</data><data name="ReleaseDetails_Incidents" xml:space="preserve">julkaisun/iteraation havainnot</data><data name="RequirementTaskPanel_Items" xml:space="preserve">Kohteet</data><data name="TestRunListPanel_TestRuns" xml:space="preserve">testiajot</data><data name="TestCaseDetails_Incidents" xml:space="preserve">testitapaukseen linkitetyt havainnot</data><data name="TestStepDetails_Incidents" xml:space="preserve">testiaskeleeseen linkitetyt havainnot</data><data name="TestRunDetails_NothingReported" xml:space="preserve">Ei raportteja</data><data name="TestRunDetails_Incidents" xml:space="preserve">testiajoon linkitetyt havainnot</data><data name="TestSetDetails_Incidents" xml:space="preserve">testijoukkoon linkitetyt havainnot</data><data name="BuildDetails_Incidents" xml:space="preserve">nykyiseen buildiin linkitetyt havainnot</data><data name="BuildDetails_TestRuns" xml:space="preserve">nykyiseen buildiin linkitetyt testiajot</data><data name="Documents_Documents" xml:space="preserve">Nykyisen kansion dokumentit</data><data name="Global_ReturnToMobile" xml:space="preserve">Palaa mobiili-sivustolle</data><data name="UserProfile_StartPage" xml:space="preserve">Aloitussivu</data><data name="UserProfile_StartPage_MyPage" xml:space="preserve">Oma sivu</data><data name="UserProfile_StartPage_ProjectGroupHome" xml:space="preserve">Viimeisin avattu Projekti-ryhmä</data><data name="UserProfile_StartPage_ProjectHome" xml:space="preserve">Viimeisin avattu Projekti</data><data name="GeneralSettings_TestAutoUnassign" xml:space="preserve">Pura testien osoittaminen automaattisesti</data><data name="GeneralSettings_TestCaseAutoUnassign_Notes" xml:space="preserve">Testitapauksen siirtäminen purkaa omistaja-tiedon</data><data name="GeneralSettings_TestSetAutoUnassign_Notes" xml:space="preserve">Testijoukon suorittaminen purkaa omistaja-tiedon</data><data name="Login_Title" xml:space="preserve">Sisäänkirjautuminen</data><data name="Mobile_ViewFullSite" xml:space="preserve">Näytä koko sivusto</data><data name="ReportViewer_ReportBeingGenerated" xml:space="preserve">Raporttiasi luodaan…</data><data name="ReportViewer_ClickToDisplayReport" xml:space="preserve">Paina tästä nähdäksesi Raportin</data><data name="ReportViewer_ClickToRegenerateReport" xml:space="preserve">Paina tästä ladataksesi Raportin uudelleen</data><data name="ReportViewer_GenerationComplete" xml:space="preserve">Asiakirjasi on luotu onnistuneesti.</data><data name="ReportViewer_BackToReportConfiguration" xml:space="preserve">Muokkaa Raportin määritykset</data><data name="TestCaseExecution_Navigation" xml:space="preserve">Testiajon navigaatio</data><data name="Admin_Reports" xml:space="preserve">Muokkaa Raportteja</data><data name="Admin_Reports_AddNewReport" xml:space="preserve">Lisää uusi Raportti</data><data name="Admin_Reports_Intro" xml:space="preserve">Tämä sivu näyttää Järjestelmän erilaiset käytettävissä olevat Raportit. 'Oletus'-osion alla olevia raportteja ei voi muokata, kuitenkin voit luoda uuden tai kopioida olemassa olevan ja muokata sitä alla olevien vaihtoehtojen mukaisesti:</data><data name="Admin_ReportDetails" xml:space="preserve">Raportin tiedot</data><data name="Admin_ReportDetails_Intro" xml:space="preserve">Tämä sivu näytää tietyn Raportin tiedot. Käyttäjän määrittelemiin raportteihin voit määritellä muotoilun. Määritä haluamasi osat ja anna ylä/alatunniste:</data><data name="Admin_ReportDetails_CustomSections" xml:space="preserve">Muokattavat osat</data><data name="Admin_ReportDetails_StandardSections" xml:space="preserve">perusosa</data><data name="Admin_ReportDetails_AddNewCustomSection" xml:space="preserve">Lisää uusi muokattava osa</data><data name="Admin_ReportDetails_AddNewStandardSection" xml:space="preserve">Lisää uusi perusosa</data><data name="ReportDetails_AddEditCustomSection" xml:space="preserve">Lisää/Muokkaa muokattava(a) osa(a)</data><data name="ReportDetails_AddEditStandardSection" xml:space="preserve">Lisää/Muokkaa perusosa(a)</data><data name="ReportDetails_CustomQueryResults" xml:space="preserve">Muokattavan kyselyn tulokset</data><data name="ReportDetails_NewReport" xml:space="preserve">Uusi Raportti</data><data name="ResourceList_AllProjectsIn" xml:space="preserve">Kaikki Projektit</data><data name="ResourceList_ResourcesInGroupOrProject" xml:space="preserve">Projektin / ryhmän resurssit</data><data name="Register_Title" xml:space="preserve"><value>Tilaa uusi Käyttäjätili</value></data><data name="Login_RegisterForAccount" xml:space="preserve"><value>Rekisteröidy Käyttäjätiliä varten</value></data><data name="ResetPassword_AnswerQuestionInstructions" xml:space="preserve"><value>Vastaa seuraaviin kysymyksiin saadaksesi salasanasi.</value></data><data name="ResetPassword_EnterUserNameText" xml:space="preserve"><value>Anna käyttäjätunnuksesi saadaksesis salasanasi, kiitos.</value></data><data name="ResetPassword_ForgotPassword" xml:space="preserve"><value>Unohtunut salasana</value></data><data name="ResetPassword_ForgotYourPassword" xml:space="preserve"><value>Unohditko Salasanasi?</value></data><data name="ResetPassword_IdentityConfirmation" xml:space="preserve"><value>Identiteetin varmistus</value></data><data name="ResetPassword_ReturnLink" xml:space="preserve"><value>Palaa kirjautumissivulle</value></data><data name="ResetPassword_SuccessTitle" xml:space="preserve"><value>Salasanasi on lähetetty sinulle.</value></data><data name="ResetPassword_Title" xml:space="preserve"><value>Alusta salasanani</value></data><data name="Register_EmailSubject" xml:space="preserve"><value>Uusi {0} Käyttäjätilipyyntö</value></data><data name="Register_Heading" xml:space="preserve"><value>Tilaa uusi Käyttäjätili</value></data><data name="Register_InstructionText" xml:space="preserve"><value>Tilaa uusi Käyttäjätili täyttämällä alla oleva lomake.</value></data><data name="Register_PasswordMinLength" xml:space="preserve"><value>Salasanojen tulee olla vähintään {0} merkkiä pitkiä.</value></data><data name="Register_CompleteLegend" xml:space="preserve"><value>Käyttätilipyyntösi on lähetetty järjestelmä ylääpitäjälle. Kun pyyntösi on hyväksytty saat ilmoituksen käyttäjätilin aktivoinnista.</value></data><data name="Register_CompleteTitle" xml:space="preserve"><value>Tilaa uusi Käyttäjätili</value></data><data name="UserProfile_ChangePasswordQuestionAnswer" xml:space="preserve"><value>Muuta Salasana Kysymys/Vastaus</value></data><data name="UserProfile_TabPasswords" xml:space="preserve"><value>Salasanat &amp; Turvallisuus</value></data><data name="UserList_ImportFromLDAP" xml:space="preserve"><value>Tuo käyttäjät LDAP-serveriltä</value></data><data name="UserList_Legend1" xml:space="preserve"><value>Järjestelmässä on seuraavat hyväksytyt käyttäjät. Muokataksesi olemassaolevaa käyttäjää valitse 'Muokkaa' linkki nimen vierestä.&lt;br /&gt;Luodaksesi uuden käyttäjän valitse joko [Lisää] -painike tai tuo LDAP-serveriltä.</value></data><data name="UserList_Legend2" xml:space="preserve"><value>Klikkaa 'Odottavat Käyttäjätilipyynnöt' vasemmasta navigaatiosta nähdäksesi odottavat käyttäjätilipyynnöt </value></data><data name="UserList_Title" xml:space="preserve"><value>Näytä / Muokkaa käyttäjiä</value></data><data name="ProjectMembership_Title" xml:space="preserve"><value>Projektin jäsenyys</value></data><data name="UserDetails_AddEditUser" xml:space="preserve"><value>Lisää / Muokkaa käyttäjää</value></data><data name="UserDetails_AddEditUser_Legend" xml:space="preserve"><value>Tarkista tiedot alla ja tee muutoksia tarvittaessa.&lt;br /&gt;Kun olet valmis klikkaa [Talleta/Lisää] vahvistaaksesi muuitoksesi.</value></data><data name="UserDetails_ChangePassword" xml:space="preserve"><value>Muuta Salasana</value></data><data name="UserDetails_ChangePasswordQuestionAnswer" xml:space="preserve"><value>Muuta Salasana Kysymys/Vastaus</value></data><data name="UserDetails_LdapManagedUser" xml:space="preserve"><value>LDAP hallittu Käyttäjä</value></data><data name="UserDetails_NewUser" xml:space="preserve"><value>Uusi Käyttäjä</value></data><data name="UserDetails_TabDataMapping" xml:space="preserve"><value>Datan mäppäys</value></data><data name="Global_Minutes" xml:space="preserve"><value>Minuuttia</value></data><data name="Register_PasswordMinNonAlphaChars" xml:space="preserve"><value>Salasanassa pitää olla vähintään {0} ei-numeerista merkkiä.</value></data><data name="SecuritySettings_AllowUserRegistration" xml:space="preserve"><value>Salli käyttäjän rekisteröityminen</value></data><data name="SecuritySettings_AllowUserRegistrationNotes" xml:space="preserve"><value>Aseta tämä todeksi jos haluat antaa käyttäjille mahdollisuuden kirjata Käyttäjätilinsä itse. </value></data><data name="SecuritySettings_Legend1" xml:space="preserve"><value>Tämä sivu antaa sinulle mahdollisuuden muokata</value></data><data name="SecuritySettings_Legend2" xml:space="preserve"><value>sovelluksen tietoturva asetukset:</value></data><data name="SecuritySettings_MaxInvalidPasswordAttempts" xml:space="preserve"><value>Maksimi # epäonnistuneita kirjautumisyrityksiä</value></data><data name="SecuritySettings_MaxInvalidPasswordAttemptsNotes" xml:space="preserve"><value>Väärän salasanan syöttökertojen määrä ennen kuin käyttäjätili lukitaan.</value></data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters" xml:space="preserve"><value>Minimimäärä spesiaalimerkkejä</value></data><data name="SecuritySettings_MinRequiredNonalphanumericCharactersNotes" xml:space="preserve"><value>Vaadittu minimimäärä ei-numeerisia merkkejä käyttäjän salasanassa</value></data><data name="SecuritySettings_MinRequiredPasswordLength" xml:space="preserve"><value>Vaadittu salasanan minimipituus</value></data><data name="SecuritySettings_MinRequiredPasswordLengthNotes" xml:space="preserve"><value>Käyttäjän valitseman salasanan minimipituus</value></data><data name="SecuritySettings_PasswordAttemptWindow" xml:space="preserve"><value>Salasanan syöttämisen aikaikkuna</value></data><data name="SecuritySettings_PasswordAttemptWindowNotes" xml:space="preserve"><value>Aikaraja jonka jälkeen käyttäjätili avautuu automaattisesti</value></data><data name="SecuritySettings_Title" xml:space="preserve"><value>Turva-asetukset</value></data><data name="UserLdapImport_BackToUserList" xml:space="preserve"><value>Takaisin käyttäjälistaan</value></data><data name="UserLdapImport_LdapConfigLink" xml:space="preserve"><value>LDAP-määritykset</value></data><data name="UserLdapImport_Legend1" xml:space="preserve"><value>Käyttäen nykyistä</value></data><data name="UserLdapImport_Legend2" xml:space="preserve"><value>Seuraavat uudet käyttäjät valittavina tuontia varten</value></data><data name="UserLdapImport_Legend3" xml:space="preserve"><value>Valitse käyttäjät, jotka haluat tuoda ja klikkaa [Tuo]:</value></data><data name="UserLdapImport_Title" xml:space="preserve"><value>LDAP-palvelimelta tuodut käyttäjät</value></data><data name="UserRequests_Legend" xml:space="preserve"><value>Järjestelmässä on seuraavia uusia käyttäjäpyyntöjä. Hyväksyäksesi klikkaa 'Hyväksy'-linkkiä ja hylätäksesi klikkaa 'Poista'-linkkiä.</value></data><data name="UserRequests_Title" xml:space="preserve"><value>Odottavat pyynnöt</value></data><data name="UserRequests_TitleLong" xml:space="preserve"><value>Katsele odottavia käyttäjäpyyntöjä</value></data><data name="GeneralSettings_AttachmentFolderNotes" xml:space="preserve"><value>Kansio johon tallennetaan liite-tiedostot (esim.</value></data><data name="GeneralSettings_AttachmentsFolder" xml:space="preserve"><value>Liite-kansio</value></data><data name="GeneralSettings_DefaultCulture" xml:space="preserve"><value>Oletus kulttuuri</value></data><data name="GeneralSettings_DefaultCultureNotes" xml:space="preserve"><value>Kulttuuri joka määrittää käytettävän numero/päivämääräformaatin ja kielen</value></data><data name="GeneralSettings_DefaultTimezone" xml:space="preserve"><value>Oletus aikavyöhyke</value></data><data name="GeneralSettings_DefaultTimezoneNotes" xml:space="preserve"><value>Aikavyöhyke joka määrittää miten aika ja päivämäärä näytetään järjestelmässä</value></data><data name="GeneralSettings_Legend1" xml:space="preserve"><value>Tämä sivu antaa sinulle mahdollisuuden muokata</value></data><data name="GeneralSettings_Legend2" xml:space="preserve"><value>Järjestelmän asetuksia:</value></data><data name="GeneralSettings_RichTextArtifactNotes" xml:space="preserve"><value>Käytä rich-text (RTF) muokkausta Asian kuvauksiin</value></data><data name="GeneralSettings_RichTextEditing" xml:space="preserve"><value>Rich-text (TRF) muokkaus</value></data><data name="GeneralSettings_RichTextTestStepNotes" xml:space="preserve"><value>Käytä rich-text (RTF) muokkausta testisteppien listassa</value></data><data name="GeneralSettings_Title" xml:space="preserve"><value>Yleiset määritykset</value></data><data name="GeneralSettings_WebServerUrl" xml:space="preserve"><value>Web-serverin URL</value></data><data name="GeneralSettings_WebServerUrlNotes" xml:space="preserve"><value>Sisäänpääsemiseen käytettävä URL</value></data><data name="UserProfile_UserTimezone" xml:space="preserve"><value>Käyttäjän aikavyöhyke</value></data><data name="UserProfile_ChangeLogoTitle" xml:space="preserve"><value>Muuta käyttäjän logoa</value></data><data name="UserProfile_Department" xml:space="preserve"><value>Ryhmä</value></data><data name="UserProfile_Logo" xml:space="preserve"><value>Käyttäjän logo</value></data><data name="EventLog_Legend" xml:space="preserve"><value>Seuraavat järjestelmän tapahtumat on kirjattu:</value></data><data name="EventLog_Title" xml:space="preserve"><value>Tapahtumalogi</value></data><data name="EventLog_TitleLong" xml:space="preserve"><value>Järjestelmän tapahtumalogi</value></data><data name="GeneralSettings_EventDaysToKeep" xml:space="preserve"><value>Tapahtumalogin säilyttäminen</value></data><data name="GeneralSettings_EventDaysToKeepNotes" xml:space="preserve"><value>Virheilmoitusten säilyminen päivinä järjestelmän tapahtumalogissa.</value></data><data name="GeneralSettings_EventDaysToKeepUnits" xml:space="preserve"><value>Päivää</value></data><data name="EventLog_EventDetails" xml:space="preserve"><value>Tapahtuman yksityiskohdat</value></data><data name="EventLog_Exception" xml:space="preserve"><value>Poikkeus</value></data><data name="DataSynchronization_ViewErrors" xml:space="preserve"><value>Katsele virheitä</value></data><data name="VersionControlProviderDetails_ViewEvents" xml:space="preserve"><value>Katsele tapahtumia</value></data><data name="Permission_Create" xml:space="preserve"><value>Luo</value></data><data name="Permission_Delete" xml:space="preserve"><value>Poista</value></data><data name="Permission_LimitedModify" xml:space="preserve"><value>Muokkaa omistamani</value></data><data name="Permission_Modify" xml:space="preserve"><value>Muokkaa kaikki</value></data><data name="Permission_View" xml:space="preserve"><value>Katsele</value></data><data name="RoleDetails_ActiveNotes" xml:space="preserve"><value>Määrittää onko kyseinen rooli aktiivinen vai ei</value></data><data name="RoleDetails_AdminNotes" xml:space="preserve"><value>Määrittää onko roolilla projektin ylläpito-oikeuksia</value></data><data name="RoleDetails_LimitedView" xml:space="preserve"><value>Rajoitettu näkyvyys</value></data><data name="RoleDetails_LimitedViewNotes" xml:space="preserve"><value>Määrittää onko roolilla rajoitetut katselu-oikeudet. Käytä projektissa rooleille joiden ei pitäisi nähdä kuin omat tehdyt/osoitetut asiat.</value></data><data name="AutomationHostDetails_Title" xml:space="preserve"><value>Automaatio-isännän määritykset</value></data><data name="IncidentDetails_Title" xml:space="preserve"><value>Havainnon määritykset</value></data><data name="ReleaseDetails_Title" xml:space="preserve"><value>Julkaisun määritykset</value></data><data name="RequirementDetails_Title" xml:space="preserve"><value>Vaatimuksen määritykset</value></data><data name="ResourceDetails_Title" xml:space="preserve"><value>Resurssin määritykset</value></data><data name="TaskDetails_Title" xml:space="preserve"><value>Tehtävän määritykset</value></data><data name="TestCaseDetails_Title" xml:space="preserve"><value>Testitapauksen määritykset</value></data><data name="TestRunDetails_Title" xml:space="preserve"><value>Testiajon määritykset</value></data><data name="TestStepDetails_Title" xml:space="preserve"><value>Testiaskeleen määritykset</value></data><data name="CustomLists_Title" xml:space="preserve"><value>Muokkaa kustomoituja listoja</value></data><data name="CustomProperties_Title" xml:space="preserve"><value>Muokkaa kustomoituja ominaisuuksia</value></data><data name="Administration_ChangeProject" xml:space="preserve"><value>(Vaihda projektia)</value></data><data name="Admin_CustomPropertyDefinition" xml:space="preserve"><value>Kuvaus</value></data><data name="Admin_CustomPropertyDefinition_AddDefinition" xml:space="preserve"><value>Lisää kuvaus</value></data><data name="Admin_CustomPropertyDefinition_Alias" xml:space="preserve"><value>Nimi</value></data><data name="Admin_CustomPropertyDefinition_CustomList" xml:space="preserve"><value>Kustomoitu lista</value></data><data name="Admin_CustomPropertyDefinition_EditDefinition" xml:space="preserve"><value>Muokkaa kuvausta</value></data><data name="Admin_CustomPropertyDefinition_Intro" xml:space="preserve"><value>Seuraavat kustomoidut ominaisuudet on tällä hetkellä määritelty kyseiselle asia-tyypille. Nähdäksesi toisen asia-tyyppin kustomoidut ominaisuudet vaihda tyyppi dropdown-listasta alla.&lt;br/&gt;Voit lisätä, muokata tai poistaa kustomoitujen ominaisuuksien määrityksiä valitsemalla linkin alla olevasta ruudukosta. </value></data><data name="Admin_CustomPropertyDefinition_Type" xml:space="preserve"><value>Tyyppi</value></data><data name="Admin_CustomPropertyOptions" xml:space="preserve"><value>Valinnat</value></data><data name="Admin_CustomPropertyOptions_AllowNull" xml:space="preserve"><value>Salli tyhjä</value></data><data name="Admin_CustomPropertyOptions_Default" xml:space="preserve"><value>Oletus</value></data><data name="Admin_CustomPropertyOptions_MaxLength" xml:space="preserve"><value>Maksimipituus</value></data><data name="Admin_CustomPropertyOptions_MaxValue" xml:space="preserve"><value>Maksimiarvo</value></data><data name="Admin_CustomPropertyOptions_MinLength" xml:space="preserve"><value>Minimipituus</value></data><data name="Admin_CustomPropertyOptions_MinValue" xml:space="preserve"><value>Minimiarvo</value></data><data name="Admin_CustomPropertyOptions_Precision" xml:space="preserve"><value>Tarkkuus</value></data><data name="Admin_CustomPropertyOptions_RichText" xml:space="preserve"><value>Rich Text (RTF)</value></data><data name="Admin_System_CustomListValue_AddValue" xml:space="preserve"><value>Lisää arvo</value></data><data name="Admin_System_CustomListValue_ConfirmDeleteValue" xml:space="preserve"><value>Oletko varma että haluat poistaa tämän arvon?\nKaikki kentät asetettuna tähän arvoon saavat listan ensimmäisen arvon tai nollataan.</value></data><data name="Admin_System_CustomListValue_Description" xml:space="preserve"><value>Listan kuvaus</value></data><data name="Admin_System_CustomListValue_ErrorNameRequired" xml:space="preserve"><value>Sinun on syötettävä nimi kustomoidulle listalle.</value></data><data name="Admin_System_CustomListValue_ErrorValueRequired" xml:space="preserve"><value>Arvo on pakollinen, jotta lista voidaan näyttää</value></data><data name="Admin_System_CustomListValue_Error_CustomListNameExists" xml:space="preserve"><value>Kyseisellä nimellä on jo olemassa lista. Anna uusi nimi, kiitos.</value></data><data name="Admin_System_CustomListValue_Error_CustomListNameIsEmpty" xml:space="preserve"><value>Kustomoidulla listalla on oltava nimi.</value></data><data name="Admin_System_CustomListValue_Error_SavingCustomList" xml:space="preserve"><value>Ongelma tallennettaessa listaa. Yritä tallentaa se toiselle nimelle.</value></data><data name="Admin_System_CustomListValue_Error_ValueNameIsDuplicate" xml:space="preserve"><value>Ei voi olla samoja arvoja. Arvo: '{0}'</value></data><data name="Admin_System_CustomListValue_Error_ValueNameIsEmpty" xml:space="preserve"><value>Arvo ei voi olla tyhjä.</value></data><data name="Admin_System_CustomListValue_HeaderValueId" xml:space="preserve"><value>Listan arvo #</value></data><data name="Admin_System_CustomListValue_HeaderValueName" xml:space="preserve"><value>Arvo</value></data><data name="Admin_System_CustomListValue_NoValuesDefined" xml:space="preserve"><value>Listan arvot määrittelemättä</value></data><data name="Admin_System_CustomListValue_SortBy" xml:space="preserve"><value>Näytön lajitteluvalitsin</value></data><data name="Admin_System_CustomList_AddList" xml:space="preserve"><value>Lisää lista</value></data><data name="Admin_System_CustomList_HeaderActions" xml:space="preserve"><value>Toiminnot</value></data><data name="Admin_System_CustomList_HeaderActions_ActionEditValue" xml:space="preserve"><value>Muokkaa arvoja</value></data><data name="Admin_System_CustomList_HeaderDisplayName" xml:space="preserve"><value>Listan nimi</value></data><data name="Admin_System_CustomList_HeaderListId" xml:space="preserve"><value>Lista #</value></data><data name="Admin_System_CustomList_HeaderValues" xml:space="preserve"><value># arvot</value></data><data name="Admin_System_CustomList_NoListsDefined" xml:space="preserve"><value>Kustomoituja listoja ei ole määritelty.</value></data><data name="Admin_System_CustomList_NoListsDefinedDrop" xml:space="preserve"><value>-- Ei määriteltyjä listoja --</value></data><data name="Admin_System_CustomList_NoListsDefinedDrop1" xml:space="preserve"><value>-- Ei määriteltyjä listoja --</value></data><data name="CustomListDetails_BackToLists" xml:space="preserve"><value>&amp;lt;&amp;lt; Takasin kustomoituihin listoihin</value></data><data name="CustomListDetails_IntroText" xml:space="preserve"><value>Seuraavat kustomoidut arvot on luotu tätä listaa varten. Tee muutokset ja klikkaa [Talleta].&lt;br\&gt;Poistaaksesi arvon listasta Klikkaa [Poista] linkkiä.&lt;br\&gt;Lisätäksesi uuden arvon klikkaa 'Lisää arvo' linkkiä ruudukon alaosasta.</value></data><data name="CustomListDetails_Title" xml:space="preserve"><value>Muokkaa kustomoidun listan arvoja</value></data><data name="CustomListSort_Alphabetical" xml:space="preserve"><value>Aakkosellinen</value></data><data name="CustomLists_IntroText" xml:space="preserve"><value>Tälle projektille on luotu seuraava kustomoitu lista. Lisätäksesi uuden listan klikkaa "Lisää Lista" valintaa, Poistaaksesi kustomoidun listan klikkaa "Poista". Muokataksesi listaa (ja sen arvoja) klikkaa "Muokkaa arvoja".</value></data><data name="CustomLists_NewList" xml:space="preserve"><value>Uusi lista</value></data><data name="Global_No" xml:space="preserve"><value>Ei</value></data><data name="Global_Yes" xml:space="preserve"><value>Kyllä</value></data><data name="Global_Multiple" xml:space="preserve"><value>Moni</value></data><data name="Admin_EditWorkflows_Title" xml:space="preserve"><value>Muokkaa Tilamalleja</value></data><data name="Admin_WorkflowDetails_AddNewTransitionTitle" xml:space="preserve"><value>Lisää uusi tilasiirtymä</value></data><data name="Admin_WorkflowDetails_BackToList" xml:space="preserve"><value>&amp;lt;&amp;lt; Takaisin Tilamalli-listaan</value></data><data name="Admin_WorkflowDetails_Default" xml:space="preserve"><value>Oletus</value></data><data name="Admin_WorkflowDetails_Delete" xml:space="preserve"><value>(Poista)</value></data><data name="Admin_WorkflowDetails_DestinationStep" xml:space="preserve"><value>kohde askel</value></data><data name="Admin_WorkflowDetails_Intro" xml:space="preserve"><value>Tämä näyttää Kaikki havaintojen tilat kyseisessä tilamallissa</value></data><data name="Admin_WorkflowDetails_OriginatingStep" xml:space="preserve"><value>aloittava askel</value></data><data name="Admin_WorkflowDetails_Title" xml:space="preserve"><value>Katsele/Muokkaa Tilamallin askeleita</value></data><data name="Admin_WorkflowStep_BackToStepsList" xml:space="preserve"><value>&amp;lt;&amp;lt; Takaisin Tilamallin askel-listaan</value></data><data name="Admin_WorkflowStep_IncidentCustomProperties" xml:space="preserve"><value>Havainnon kustomoidut ominaisuudet</value></data><data name="Admin_WorkflowStep_IncidentCustomPropertiesIntro" xml:space="preserve"><value>Seuraavat Havainnot kustomoidut ominaisuudet ovat piilotettuja/estettyjä/pakollisia tässä Tilamallin askeleessa:</value></data><data name="Admin_WorkflowStep_IncidentFields" xml:space="preserve"><value>Havainnon kentät</value></data><data name="Admin_WorkflowStep_IncidentFieldsIntro" xml:space="preserve"><value>Seuraavat Havainnot kentät ovat piilotettuja/estettyjä/pakollisia tässä Tilamallin askeleessa:</value></data><data name="Admin_WorkflowStep_Title" xml:space="preserve"><value>Muokkaa Tilamallin askeleen tietoja</value></data><data name="Admin_Workflows_Intro" xml:space="preserve"><value>Projektissa on useita valittavia Tilamalleja. Lisätäksesi uuden Tilamallin klikkaa Lisää-painiketta. Muokataksesi olemassaolevaa klikkaa 'askeleet' linkkiä.</value></data><data name="Admin_Workflows_NewWorkflowName" xml:space="preserve"><value>Uusi Tilamalli</value></data><data name="Admin_WorkflowTransition_BackToSteps" xml:space="preserve"><value>&amp;lt;&amp;lt; Takaisin Tilamallin askel-listaan</value></data><data name="Admin_WorkflowTransition_ConditionData" xml:space="preserve"><value>Ehdon tiedot</value></data><data name="Admin_WorkflowTransition_Conditions" xml:space="preserve"><value>Ehdot</value></data><data name="Admin_WorkflowTransition_ConditionsIntro" xml:space="preserve"><value>Seuraavat käyttäjät / roolit saavat suorittaa tämän tilasiirtymän:</value></data><data name="Admin_WorkflowTransition_ConditionType" xml:space="preserve"><value>Ehdon tyyppi</value></data><data name="Admin_WorkflowTransition_DetailsSection" xml:space="preserve"><value>Tilamallin tilasiirtymän tiedot</value></data><data name="Admin_WorkflowTransition_DetectorExecuteLabel" xml:space="preserve"><value>Havainnon tekijä voi suorittaa</value></data><data name="Admin_WorkflowTransition_DetectorNotifyLabel" xml:space="preserve"><value>Havainnon tekijälle ilmoitetaan</value></data><data name="Admin_WorkflowTransition_DisplayTokens" xml:space="preserve"><value>(Näytä erikoistunnisteet sähköpostin otsikossa)</value></data><data name="Admin_WorkflowTransition_EmailTokens" xml:space="preserve"><value>Sähköposti-ilmoituksen tunnisteet</value></data><data name="Admin_WorkflowTransition_NotificationData" xml:space="preserve"><value>Ilmoituksen tiedot</value></data><data name="Admin_WorkflowTransition_Notifications" xml:space="preserve"><value>Ilmoitukset</value></data><data name="Admin_WorkflowTransition_NotificationsIntro" xml:space="preserve"><value>Seuraaville käyttäjille / rooleille ilmoitetaan sähköpostilla kun tilasiirtymä suoritetaan: </value></data><data name="Admin_WorkflowTransition_NotificationType" xml:space="preserve"><value>Ilmoituksen tyyppi</value></data><data name="Admin_WorkflowTransition_OwnerExecuteLabel" xml:space="preserve"><value>Havainnon omistaja voi suorittaa</value></data><data name="Admin_WorkflowTransition_OwnerNotifyLabel" xml:space="preserve"><value>Havainnon omistajalle ilmoitetaan</value></data><data name="Admin_WorkflowTransition_RolesExecuteLabel" xml:space="preserve"><value>Käyttäjät seuraavissa rooleissa voivat suorittaa</value></data><data name="Admin_WorkflowTransition_RolesNotifyLabel" xml:space="preserve"><value>Käyttäjille seuraavissa rooleissa ilmoitetaan</value></data><data name="Admin_WorkflowTransition_Title" xml:space="preserve"><value>Muokkaa Tilamallin tilasiirtymää</value></data><data name="AttachmentPanel_Attachments" xml:space="preserve"><value>liitteet</value></data><data name="ArtifactLinkPanel_Associations" xml:space="preserve"><value>viitteet</value></data><data name="HistoryPanel_Changes" xml:space="preserve"><value>muutokset</value></data><data name="Requirements_RequirementsForProject" xml:space="preserve"><value>projektin vaatimukset</value></data><data name="Releases_ReleasesForProject" xml:space="preserve"><value>projektin julkaisut</value></data><data name="TestSetList_TestSetsForProject" xml:space="preserve"><value>projektin testijoukot</value></data><data name="TestCaseExecution_ChooseReleaseAndCustomProps" xml:space="preserve"><value>Valitse julkaisu ja kustomoitu ominaisuus, joita vasten suoritetaan:</value></data><data name="TestCaseExecution_TestCaseInfo" xml:space="preserve"><value>Testitapauksen tiedot</value></data><data name="TestCaseExecution_TestStepInfo" xml:space="preserve"><value>Testiaskeleen tiedot</value></data><data name="TaskListPanel_Tasks" xml:space="preserve"><value>tehtävät</value></data><data name="ReleaseDetails_BuildsInRelease" xml:space="preserve"><value>julkaisun/iteraation buildit</value></data><data name="ReleaseDetails_Incidents" xml:space="preserve"><value>julkaisun/iteraation havainnot</value></data><data name="RequirementTaskPanel_Items" xml:space="preserve"><value>Kohteet</value></data><data name="TestRunListPanel_TestRuns" xml:space="preserve"><value>testiajot</value></data><data name="TestCaseDetails_Incidents" xml:space="preserve"><value>testitapaukseen linkitetyt havainnot</value></data><data name="TestStepDetails_Incidents" xml:space="preserve"><value>testiaskeleeseen linkitetyt havainnot</value></data><data name="TestRunDetails_NothingReported" xml:space="preserve"><value>Ei raportteja</value></data><data name="TestRunDetails_Incidents" xml:space="preserve"><value>testiajoon linkitetyt havainnot</value></data><data name="TestSetDetails_Incidents" xml:space="preserve"><value>testijoukkoon linkitetyt havainnot</value></data><data name="BuildDetails_Incidents" xml:space="preserve"><value>nykyiseen buildiin linkitetyt havainnot</value></data><data name="BuildDetails_TestRuns" xml:space="preserve"><value>nykyiseen buildiin linkitetyt testiajot</value></data><data name="Documents_Documents" xml:space="preserve"><value>Nykyisen kansion dokumentit</value></data><data name="Global_ReturnToMobile" xml:space="preserve"><value>Palaa mobiili-sivustolle</value></data><data name="UserProfile_StartPage" xml:space="preserve"><value>Aloitussivu</value></data><data name="UserProfile_StartPage_MyPage" xml:space="preserve"><value>Oma Sivu</value></data><data name="UserProfile_StartPage_ProjectGroupHome" xml:space="preserve"><value>Viimeisin avattu Projektiryhmä</value></data><data name="UserProfile_StartPage_ProjectHome" xml:space="preserve"><value>Viimeisin avattu Projekti</value></data><data name="GeneralSettings_TestAutoUnassign" xml:space="preserve"><value>Pura testien osoittaminen automaattisesti</value></data><data name="GeneralSettings_TestCaseAutoUnassign_Notes" xml:space="preserve"><value>Testitapauksen siirtäminen purkaa omistaja-tiedon</value></data><data name="GeneralSettings_TestSetAutoUnassign_Notes" xml:space="preserve"><value>Testijoukon suorittaminen purkaa omistaja-tiedon</value></data><data name="Login_Title" xml:space="preserve"><value>Sisäänkirjautuminen</value></data><data name="Mobile_ViewFullSite" xml:space="preserve"><value>Näytä koko sivusto</value></data><data name="ReportViewer_ReportBeingGenerated" xml:space="preserve"><value>Raporttiasi luodaan…</value></data><data name="ReportViewer_ClickToDisplayReport" xml:space="preserve"><value>Klikkaa tästä nähdäksesi Raportin</value></data><data name="ReportViewer_ClickToRegenerateReport" xml:space="preserve"><value>Klikkaa tästä ladataksesi Raportin uudelleen</value></data><data name="ReportViewer_GenerationComplete" xml:space="preserve"><value>Asiakirjasi on luotu onnistuneesti.</value></data><data name="ReportViewer_BackToReportConfiguration" xml:space="preserve"><value>&amp;lt;&amp;lt; Muokkaa Raportin määritykset</value></data><data name="TestCaseExecution_Navigation" xml:space="preserve"><value>Testiajon navigaatio</value></data><data name="Admin_Reports" xml:space="preserve"><value>Muokkaa Raportteja</value></data><data name="Admin_Reports_AddNewReport" xml:space="preserve"><value>Lisää uusi Raportti</value></data><data name="Admin_Reports_Intro" xml:space="preserve"><value>Tämä sivu näyttää Järjestelmän erilaiset käytettävissä olevat Raportit. 'Oletus'-osion alla olevia raportteja ei voi muokata, kuitenkin voit luoda uuden tai kopioida olemassa olevan ja muokata sitä alla olevien vaihtoehtojen mukaisesti:</value></data><data name="Admin_ReportDetails" xml:space="preserve"><value>Raportin tiedot</value></data><data name="Admin_ReportDetails_Intro" xml:space="preserve"><value>Tämä sivu näytää tietyn Raportin tiedot. Käyttäjän määrittelemiin raportteihin voit määritellä muotoilun. Määritä haluamasi osat ja anna ylä/alatunniste:</value></data><data name="Admin_ReportDetails_CustomSections" xml:space="preserve"><value>Kustomoidut osat</value></data><data name="Admin_ReportDetails_StandardSections" xml:space="preserve"><value>perusosat</value></data><data name="Admin_ReportDetails_AddNewCustomSection" xml:space="preserve"><value>Lisää uusi kustomoitu osa</value></data><data name="Admin_ReportDetails_AddNewStandardSection" xml:space="preserve"><value>Lisää uusi perusosa</value></data><data name="ReportDetails_AddEditCustomSection" xml:space="preserve"><value>Lisää/Muokkaa kustomoitava(a) osa(a)</value></data><data name="ReportDetails_AddEditStandardSection" xml:space="preserve"><value>Lisää/Muokkaa perusosa(a)</value></data><data name="ReportDetails_CustomQueryResults" xml:space="preserve"><value>Kustomoidun kyselyn tulokset</value></data><data name="ReportDetails_NewReport" xml:space="preserve"><value>Uusi Raportti</value></data><data name="ResourceList_AllProjectsIn" xml:space="preserve"><value>Kaikki Projektit</value></data><data name="ResourceList_ResourcesInGroupOrProject" xml:space="preserve"><value>Projektin / ryhmän resurssit</value></data><data name="SecuritySettings_AuthenticationExpiration" xml:space="preserve"><value>Autentikoinnin vanhenemisaika</value></data><data name="SecuritySettings_AuthenticationExpirationNotes" xml:space="preserve"><value>Määrittää passiivisen käyttöajan (minuuteissa), joka aiheuttaa käyttäjän uloskirjaamisen.</value></data><data name="SecuritySettings_AuthenticationExpirationRememberMe" xml:space="preserve"><value>Pidä minut kirjautuneena vanhenemisaika</value></data><data name="SecuritySettings_AuthenticationExpirationRememberMeNotes" xml:space="preserve"><value>Määrittää passiivisen käyttöajan (minuuteissa), joka aiheuttaa käyttäjän uloskirjaamisen silloin kun 'pidä minut kirjautuneena' on valittu.</value></data><data name="CustomListSort_ById" xml:space="preserve"><value>IDn mukaan</value></data><data name="Admin_ActiveSessions" xml:space="preserve"><value>Aktiiviset Istunnot</value></data><data name="Admin_AddOns_Downloads" xml:space="preserve"><value>Lisäkkeet ja Lataukset</value></data><data name="Admin_CustomProperties" xml:space="preserve"><value>Kustomoidut Ominaisuudet</value></data><data name="Admin_DataSynchronization" xml:space="preserve"><value>Tiedon synkronointi</value></data><data name="Admin_DataTools" xml:space="preserve"><value>Datatyökalut</value></data><data name="Admin_Documents" xml:space="preserve"><value>Dokumentit</value></data><data name="Admin_EditFolders" xml:space="preserve"><value>Muokkaa Kansioita</value></data><data name="Admin_EditPriorities" xml:space="preserve"><value>Muokkaa Prioriteettejä</value></data><data name="Admin_EditProjectGroups" xml:space="preserve"><value>Muokkaa Projektiryhmiä</value></data><data name="Admin_EditSeverities" xml:space="preserve"><value>Muokkaa Severiteettejä</value></data><data name="Admin_EditStatuses" xml:space="preserve"><value>Muokkaa Tiloja</value></data><data name="Admin_EditTypes" xml:space="preserve"><value>Muokkaa Tyyppejä</value></data><data name="Admin_Incidents" xml:space="preserve"><value>Havainnot</value></data><data name="Admin_Integration" xml:space="preserve"><value>Integraatio</value></data><data name="Admin_LDAPConfiguration" xml:space="preserve"><value>LDAP konfiguraatio</value></data><data name="Admin_LicenseDetails" xml:space="preserve"><value>Lisenssitiedot</value></data><data name="Admin_Notifications" xml:space="preserve"><value>Ilmoitukset</value></data><data name="Admin_PlanningOptions" xml:space="preserve"><value>Suunnitteluoptiot</value></data><data name="Admin_ProjectMembership" xml:space="preserve"><value>Projektijäsenyys</value></data><data name="Admin_Projects" xml:space="preserve"><value>Projektit</value></data><data name="Admin_System" xml:space="preserve"><value>Järjestelmä</value></data><data name="Admin_TestAutomation" xml:space="preserve"><value>Testiautomaatio </value></data><data name="Admin_Users" xml:space="preserve"><value>Käyttäjät  </value></data><data name="Admin_VersionControl" xml:space="preserve"><value>Versionhallinta</value></data><data name="Admin_ViewEditProjects" xml:space="preserve"><value>Katso / Muokkaa Projekteja</value></data><data name="DocumentFolders_Intro" xml:space="preserve"><value>Tähän projektiin on luotu seuraavat kansiot. Klikkaa linkkiä muokataksesi olemassa olevaa kansiota, tai klikkaa [Lisää] luodaksesi projektiin uuden kansion:</value></data><data name="DocumentFolders_Title" xml:space="preserve"><value>Muokkaa dokumenttikansioita</value></data><data name="DocumentTypes_Intro" xml:space="preserve"><value>Tähän projektiin on luotu seuraavat dokumenttityypit. Muokkaa dokumenttityyppejä klikkaamalla [Lisää] tai [Talleta]. &lt;br /&gt; Poistaaksesi olemassa olevan dokumenttityypin, aseta se passiiviseksi muuttamalla sen aktiivisuus-lipun arvoksi Ei.</value></data><data name="DocumentTypes_Title" xml:space="preserve"><value>Muokkaa dokumenttityyppejä</value></data><data name="Global_NotApplicable" xml:space="preserve"><value>n/a</value></data><data name="IncidentPriorities_Intro" xml:space="preserve"><value>Nykyiselle projektille on määritelty seuraavat havainnon prioriteetit:</value></data><data name="IncidentPriorities_Title" xml:space="preserve"><value>Muokkaa Havainnon prioriteetteja</value></data><data name="IncidentSeverities_Intro" xml:space="preserve"><value>Nykyiselle projektille on määritelty seuraavat havainnon vakavuudet:</value></data><data name="IncidentSeverities_Title" xml:space="preserve"><value>Muokkaa Havainnon vakavuuksia</value></data><data name="IncidentStatuses_Intro" xml:space="preserve"><value>Kyseiselle projektille on määritelty seuraavat havainnon tilat:</value></data><data name="IncidentStatuses_Title" xml:space="preserve"><value>Muokkaa Havainnon tiloja</value></data><data name="IncidentTypes_Intro" xml:space="preserve"><value>Nykyiselle projektille on määritelty seuraavat havainto-tyypit:</value></data><data name="IncidentTypes_Title" xml:space="preserve"><value>Muokkaa Havainnon tyyppejä</value></data><data name="LicenseDetails_EnterpriseLicense" xml:space="preserve"><value>Yrityslisenssi</value></data><data name="LicenseDetails_EvaluationLicense" xml:space="preserve"><value>Arviointilisenssi</value></data><data name="LicenseDetails_Expiration" xml:space="preserve"><value>Lisenssi umpeutuu</value></data><data name="LicenseDetails_LicenseType" xml:space="preserve"><value>Lisenssityyppi</value></data><data name="LicenseDetails_LicenseVersionNumber" xml:space="preserve"><value>Lisenssiversio #</value></data><data name="LicenseDetails_NumConcurrentUsers" xml:space="preserve"><value># yhtäaikaista käyttäjää</value></data><data name="LicenseDetails_Title" xml:space="preserve"><value>Lisenssitiedot</value></data><data name="LicenseDetails_UnlicensedDoNotUse" xml:space="preserve"><value>Lisensoimaton versio | Älä käytä</value></data><data name="LicenseDetails_UsersConcurrent" xml:space="preserve"><value>{0}- Käyttäjää järjestelmässä</value></data><data name="LicenseDetail_CustomerHomePage" xml:space="preserve"><value>Asiakkaan kotisivu</value></data><data name="LicenseDetail_Legend1" xml:space="preserve"><value>Huomaa:</value></data><data name="LicenseDetail_Legend2" xml:space="preserve"><value>Lisenssiavaimen ja organisaation nimen täytyy löytyä: </value></data><data name="LicenseDetail_Legend3" xml:space="preserve"><value>Jos sinulla ei ole hankittuna ohjelmistolisenssiä, </value></data><data name="LicenseDetail_Legend4" xml:space="preserve"><value>verkosta tänään</value></data><data name="LicenseDetail_LicenseKey" xml:space="preserve"><value>Lisenssiavain</value></data><data name="LicenseDetail_Organization" xml:space="preserve"><value>Organisaatio</value></data><data name="LicenseDetail_PurchaseOne" xml:space="preserve"><value>hanki se</value></data><data name="Admin_EditProjects_String1" xml:space="preserve"><value>Järjestelmään on luotu seuraavat projektit. Muokataksesi olemassa olevaa projektia, klikkaa 'Muokkaa'-linkkiä.</value></data><data name="Admin_EditProjects_String2" xml:space="preserve"><value>Lisätäksesi uusi projekti, klikkaa [Lisää].</value></data><data name="Admin_EditProjects_Title" xml:space="preserve"><value>Katsele / Muokkaa projekteja</value></data><data name="Admin_Home_Title" xml:space="preserve"><value>Ylläpidon kotisivu</value></data><data name="Admin_PlanningOptions_DataCaching" xml:space="preserve"><value>Datan välimuistin</value></data><data name="Admin_PlanningOptions_String1" xml:space="preserve"><value>Projekti käyttää seuraavia aikataulu- ja kalenteriasetuksia. Muuttaaksesi asetuksia, muokkaa niiden arvoja ja klikkaa [Talleta] päivittääksesi muutokset.</value></data><data name="Admin_PlanningOptions_String2" xml:space="preserve"><value>Kun olet tyytyväinen muutoksiisi, on suositeltavaa virkistää projektin aikataulu ja etenemistiedot </value></data><data name="Admin_PlanningOptions_String3" xml:space="preserve"><value>ylläpitonäyttöllä.</value></data><data name="Admin_PlanningOptions_Title" xml:space="preserve"><value>Suunnitteluoptiot</value></data><data name="Admin_PlanningOptions_WorkHoursPerDay" xml:space="preserve"><value>Työtunteja päivässä</value></data><data name="Admin_ProjectDetails_BackToList" xml:space="preserve"><value>&amp;lt;&amp;lt; Palaa projektilistaan</value></data><data name="Admin_ProjectDetails_NewProject" xml:space="preserve"><value>Uusi projekti</value></data><data name="Admin_ProjectDetails_String1" xml:space="preserve"><value>Tarkasta alla olevat tiedot, ja muuta niitä mikäli tarpeen.</value></data><data name="Admin_ProjectDetails_String2" xml:space="preserve"><value>Kun olet valmis, klikkaa [Talleta/Lisää] vahvistaaksesi.</value></data><data name="Admin_ProjectDetails_TemplateDefault" xml:space="preserve"><value>Oletus</value></data><data name="Admin_ProjectDetails_TemplateExistingProject" xml:space="preserve"><value>Pohjautuu olemassa olevaan projektiin</value></data><data name="Admin_ProjectDetails_TemplateNotes" xml:space="preserve"><value>Valitse oletustemplaatti latamaan standardityövirrat ja -havaintolistat. Valittaessa olemassa oleva projekti pohjaksi, projektin kustomoituja asetuksia, työvirtoja, sekä havaintokenttiä käytetään uudessa projektissa. </value></data><data name="Admin_ProjectDetails_Title" xml:space="preserve"><value>Muokkaa projektin tietoja</value></data><data name="Admin_ProjectGroupDetails_BackToList" xml:space="preserve"><value>&amp;lt;&amp;lt; Palaa projektiryhmälistaan</value></data><data name="Admin_ProjectGroupDetails_NewProjectGroup" xml:space="preserve"><value>Uusi projektiryhmä</value></data><data name="Admin_ProjectGroupDetails_String1" xml:space="preserve"><value>Tarkasta alla olevat tiedot, ja muuta niitä mikäli on tarpeen.</value></data><data name="Admin_ProjectGroupDetails_String2" xml:space="preserve"><value>Kun olet valmis, klikkaa [Talleta/Lisää] vahvistaaksesi.</value></data><data name="Admin_ProjectGroupDetails_Title" xml:space="preserve"><value>Projektiryhmän tiedot</value></data><data name="Admin_ProjectGroups_String1" xml:space="preserve"><value>Järjestelmään on luotu seuraavat projektiryhmät. Muokataksesi olemassa olevaa projektiryhmää, klikkaa 'Muokkaa'-linkkiä.</value></data><data name="Admin_ProjectGroups_String2" xml:space="preserve"><value>Klikkaa [Lisää] lisätäksesi uuden projektiryhmän.</value></data><data name="Admin_ProjectGroups_Title" xml:space="preserve"><value>Muokkaa projektiryhmiä</value></data><data name="LdapConfiguration_Attributes" xml:space="preserve"><value>Attribuutit</value></data><data name="LdapConfiguration_BaseDn" xml:space="preserve"><value>Base DN</value></data><data name="LdapConfiguration_BaseDnNotes" xml:space="preserve"><value>LDAPin juurinoodin nimi, josta käyttäjiä etsitään</value></data><data name="LdapConfiguration_BindDn" xml:space="preserve"><value>Bind DN</value></data><data name="LdapConfiguration_BindDnNotes1" xml:space="preserve"><value>Käytäjälle määritelty nimi, jolla hän kirjautuu hakemistopalvelimelle</value></data><data name="LdapConfiguration_BindDnNotes2" xml:space="preserve"><value>tai jätä tyhjäksi anonyymikäyttäjiä varten</value></data><data name="LdapConfiguration_BindPassword" xml:space="preserve"><value>Bind salasana</value></data><data name="LdapConfiguration_BindPasswordNotes" xml:space="preserve"><value>Salasana, jolla käyttäjä kirjautuu hakemistopalvelimelle. Voit myös jättää arvon tyhjäksi anonyymikäyttäjiä varten.</value></data><data name="LdapConfiguration_EmailAddress" xml:space="preserve"><value>Sähköpostiosoite</value></data><data name="LdapConfiguration_EmailAddressNotes" xml:space="preserve"><value>LDAP-attribuutti, joka sisältää käyttäjän sähköpostiosoitteen (esimerkiksi mail)</value></data><data name="LdapConfiguration_FirstName" xml:space="preserve"><value>Etunimi</value></data><data name="LdapConfiguration_FirstNameNotes" xml:space="preserve"><value>LDAP-attribuutti, joka sisältää käyttäjän etunimen (esimerkiksi givenName)</value></data><data name="LdapConfiguration_LastName" xml:space="preserve"><value>Sukunimi</value></data><data name="LdapConfiguration_LastNameNotes" xml:space="preserve"><value>LDAP-attribuutti, joka sisältää käyttäjän sukunimen (esimerkiksi sn)</value></data><data name="LdapConfiguration_LdapHost" xml:space="preserve"><value>LDAP-isäntä</value></data><data name="LdapConfiguration_LdapHostNotes" xml:space="preserve"><value>LDAP-serverin nimi (ja mahdollinen porttinumero)</value></data><data name="LdapConfiguration_Login" xml:space="preserve"><value>Login</value></data><data name="LdapConfiguration_LoginNotes" xml:space="preserve"><value>LDAP-attribuutti, joka sisältää kirjautumisnimen</value></data><data name="LdapConfiguration_MiddleInitial" xml:space="preserve"><value>Keskikirjain</value></data><data name="LdapConfiguration_MiddleInitialNotes" xml:space="preserve"><value>LDAP-attribuutti, joka sisältää käyttäjän nimen mahdolliset keskikirjaimet (esimerkiksi initials)</value></data><data name="LdapConfiguration_SamplePassword" xml:space="preserve"><value>Mallisalasana</value></data><data name="LdapConfiguration_SampleUser" xml:space="preserve"><value>Mallikäyttäjä</value></data><data name="LdapConfiguration_SampleUserNotes" xml:space="preserve"><value>Koekäyttäjälle määritelty nimi, jota voi käyttää autentikoinnin testauksessa</value></data><data name="LdapConfiguration_String1" xml:space="preserve"><value>Tällä sivulla voit konfiguroida</value></data><data name="LdapConfiguration_String2" xml:space="preserve"><value>autentikoida käyttäjät LDAP-hakemistopalvelimelta. Näin voit välttää salasanojen tallentamista käyttäjän</value></data><data name="LdapConfiguration_String3" xml:space="preserve"><value>profiiliin. Voit käyttää molempia käyttäjätyypejä yhtä aikaa -</value></data><data name="LdapConfiguration_String4" xml:space="preserve"><value>käyttäjiä, jotka tallentavat salasanansa</value></data><data name="LdapConfiguration_String5" xml:space="preserve"><value>ja LDAP-käyttäjiä, jotka käyttävät olemassa olevia LDAP-salasanojaan.</value></data><data name="LdapConfiguration_String6" xml:space="preserve"><value>Voit tarkastaa/muokata LDAP-palvelimesi konfigurointitietoja alla:</value></data><data name="LdapConfiguration_String7" xml:space="preserve"><value>Voit halutessasi lisätä autentikointiin esimerkkikäyttäjän. Kun klikkaat [Talleta]</value></data><data name="LdapConfiguration_String8" xml:space="preserve"><value>yrittää autentikoida käyttäjän, ennen kuin se päivittää LDAP-konfiguraation.</value></data><data name="LdapConfiguration_Title" xml:space="preserve"><value>LDAP-konfiguraatio</value></data><data name="LdapConfiguration_UseSSL" xml:space="preserve"><value>Käytä salattua yhteyttä (SSL)</value></data><data name="Admin_DataTools_Title" xml:space="preserve"><value>Datatyökalut</value></data><data name="Admin_PlanningOptions_AutoCreateTasks" xml:space="preserve"><value>Luo tehtävät automaattisesti</value></data><data name="Admin_PlanningOptions_AutoCreateTasksLabel" xml:space="preserve"><value>Luo uusi tehtävä, kun vaatimus muuttuu tilaan "In-Progress"</value></data><data name="Admin_PlanningOptions_DefaultEffort" xml:space="preserve"><value>Oletustyömäärä</value></data><data name="Admin_PlanningOptions_DefaultEffort_Requirements" xml:space="preserve"><value>Vaatimukset (suunniteltu työmäärä)</value></data><data name="Admin_PlanningOptions_DefaultEffort_Tasks" xml:space="preserve"><value>Tehtävät (arvioitu työmäärä)</value></data><data name="Admin_PlanningOptions_EffortCalculations" xml:space="preserve"><value>Työmäärälaskelmat</value></data><data name="Admin_PlanningOptions_EnabledForIncidents" xml:space="preserve"><value>Havainnoille aktivoidut</value></data><data name="Admin_PlanningOptions_EnabledForTasks" xml:space="preserve"><value>Tehtäville aktivoidut</value></data><data name="Admin_PlanningOptions_IncludeIncidentEffort" xml:space="preserve"><value>Lisää Havainnon työmäärä</value></data><data name="Admin_PlanningOptions_IncludeTaskEffort" xml:space="preserve"><value>Lisää Tehtävän työmäärä</value></data><data name="Admin_PlanningOptions_NonWorkingHoursPerMonth" xml:space="preserve"><value>Kuukauden muut tunnit</value></data><data name="Admin_PlanningOptions_TimeTracking" xml:space="preserve"><value>Ajanseuranta</value></data><data name="Admin_PlanningOptions_WorkDaysPerWeek" xml:space="preserve"><value>Työpäiviä viikossa</value></data><data name="Admin_ProjectGroupMembershipAdd_BackToList" xml:space="preserve"><value>&amp;lt;&amp;lt; Palaa Projektiryhmän jäsenyyksiin</value></data><data name="Admin_ProjectGroupMembershipAdd_String1" xml:space="preserve"><value>Seuraavat käyttäjät EIVÄT ole tämän projektiryhmän jäseniä.</value></data><data name="Admin_ProjectGroupMembershipAdd_String2" xml:space="preserve"><value>Valitse roolit niille käyttäjille, jotka haluat lisätä projektiryhmään, ja klikkaa [Lisää]:</value></data><data name="Admin_ProjectGroupMembershipAdd_Title" xml:space="preserve"><value>Lisää Projektiryhmän jäsenyys</value></data><data name="Admin_ProjectMembershipAdd_BackToList" xml:space="preserve"><value>&amp;lt;&amp;lt; Palaa Projektin jäsenyyksiin</value></data><data name="Admin_ProjectMembershipAdd_String1" xml:space="preserve"><value>Seuraavat käyttäjät EIVÄT ole tämän projektin jäseniä.</value></data><data name="Admin_ProjectMembershipAdd_String2" xml:space="preserve"><value>Valitse projektiin lisättäville käyttäjille heidän roolinsa ja klikkaa [Lisää]:</value></data><data name="Admin_ProjectMembershipAdd_Title" xml:space="preserve"><value>Lisää Projektin jäsenyys</value></data><data name="Admin_ProjectMembership_String1" xml:space="preserve"><value>Seuraavat käyttäjät ovat tämän projektin jäseniä. Jos haluat muuttaa heidän roolejaan, valitse alasvetovalikosta oikea arvo, ja klikkaa Päivitä.</value></data><data name="Admin_ProjectMembership_String2" xml:space="preserve"><value>Lisätäksesi uusi käyttäjä projektiin, klikkaa [Lisää]. Poistaaksesi olemassa olevia käyttäjiä, valitse heidän valintaruutunsa ja klikkaa [Poista].</value></data><data name="Admin_ProjectMembership_Title" xml:space="preserve"><value>Projektijäsenyys</value></data><data name="Admin_ActiveSessions_Title" xml:space="preserve"><value>Aktiviset käyttäjäistunnot</value></data><data name="Admin_ActiveSessions_Intro" xml:space="preserve"><value>Seuraavilla käyttäjillä on aktiviisia istuntoja</value></data><data name="Admin_ActiveSessions_Notes" xml:space="preserve"><value>Lopettaaksesi tietyn käyttäjän istunnon, klikkaa "Lopeta istunto" linkkiä.</value></data><data name="Admin_ActiveSessions_UsageConcurrent" xml:space="preserve"><value>Käytössäsi on tällä hetkellä {0} kappaletta {1} yhtäaikaisesta käyttäjälisenssistäsi.</value></data><data name="Admin_ActiveSessions_UsageEnterprise" xml:space="preserve"><value>Järjestelmässä on tällä hetkellä {0} aktiivista käyttäjää.</value></data><data name="Admin_Custom_01" xml:space="preserve"><value>Kustomoitu 01</value></data><data name="Admin_Custom_02" xml:space="preserve"><value>Kustomoitu 02</value></data><data name="Admin_Custom_03" xml:space="preserve"><value>Kustomoitu 03</value></data><data name="Admin_Custom_04" xml:space="preserve"><value>Kustomoitu 04</value></data><data name="Admin_Custom_05" xml:space="preserve"><value>Kustomoitu 05</value></data><data name="Admin_DataSyncCustomPropertyMapping_CustomValueMapping" xml:space="preserve"><value>Kustomoitavien arvojen mäppäys</value></data><data name="Admin_DataSyncCustomPropertyMapping_Intro1" xml:space="preserve"><value>Konfiguroidaksesi tämän kustomoidun ominaisuuden datamäppäyksen, lisää</value></data><data name="Admin_DataSyncCustomPropertyMapping_Intro2" xml:space="preserve"><value>alle sen ulkoiset avainarvot. Jos kyseessä on &lt;b&gt;kustomoidun listan&lt;/b&gt; ominaisuus, sinun täytyy lisäksi lisätä ulkoinen avain myös jokaiselle kustomoidun ominaisuuden arvolle:</value></data><data name="Admin_DataSyncCustomPropertyMapping_Title" xml:space="preserve"><value>Muuta kustomoitujen ominaisuuksien datamäppäystä</value></data><data name="Admin_DataSyncDetails_AutoMapUsers" xml:space="preserve"><value>Kartoita käyttäjät automaattisesti</value></data><data name="Admin_DataSyncDetails_BackToHome" xml:space="preserve"><value>&amp;lt;&amp;lt; Palaa Tietojen sykronointi-sivulle</value></data><data name="Admin_DataSyncDetails_Intro" xml:space="preserve"><value>Lisää/muokkaa seuraavat liitännäisen tarvitsemat tiedot. Tutki liitännäisen omaa dokumentaatiota saadaksesi lisätietoa lisättävistä/muokattavista tiedoista.</value></data><data name="Admin_DataSyncDetails_NewPlugIn" xml:space="preserve"><value>Uusi liitännäinen</value></data><data name="Admin_DataSyncDetails_TimeOffset" xml:space="preserve"><value>Aikaero</value></data><data name="Admin_DataSyncDetails_Title" xml:space="preserve"><value>Muokkaa liitännäistä</value></data><data name="Admin_DataSyncFieldMapping_BackToMappings" xml:space="preserve"><value>&amp;lt;&amp;lt; Palaa projektimäppäyksiin</value></data><data name="Admin_DataSyncFieldMapping_Intro" xml:space="preserve"><value>Muuttaaksesi tämän kentän datamäppäyksiä, lisää ulkoisen avaimen arvo liitännäiselle {0} jokaisen {1} arvon jälkeen.</value></data><data name="Admin_DataSyncFieldMapping_Title" xml:space="preserve"><value>Muokkaa peruskenttien datamäppäystä</value></data><data name="Admin_DataSynchronization_DataMapping" xml:space="preserve"><value>Datamäppäys</value></data><data name="Admin_DataSynchronization_Intro1" xml:space="preserve"><value>pystyy kommunikoimaan monien ulkoisten järjestelmien ja sovellusten kanssa, käyttäen omaa taustalla toimivaa tiedon synkronointipalveluaan ja liitännäiskirjastoaan.</value></data><data name="Admin_DataSynchronization_Intro2" xml:space="preserve"><value>Tällä sivulla voit tutkia, lisätä ja muuttaa liitännäislistaa, tehdä muutoksia niiden konfiguraatioihin, ja varmistaa viimeisimmän synkronisoinnin tilan. Lisäksi voit asettaa tietyn liitännäisen suorittamaan täydellisen datasynkronoinnin, nollaamalla sen viimeisimmän suorituspäivämäärän:</value></data><data name="Admin_DataSynchronization_PlugIn" xml:space="preserve"><value>Liitännäinen</value></data><data name="Admin_DataSynchronization_Title" xml:space="preserve"><value>Tiedon synkronointi</value></data><data name="Admin_DataSyncProjects_ArtifactFieldMapping" xml:space="preserve"><value>Asiakenttien mäppäys</value></data><data name="Admin_DataSyncProjects_ArtifactFieldMapping_Intro" xml:space="preserve"><value>Klikkaa jokaista alla olevaa linkkiä, määritelläksesi kenttä-tason datan mäppäyksen jokaiselle tässä projektissa synkronoitavalle asia-tyypille:</value></data><data name="Admin_DataSyncProjects_CustomProperties" xml:space="preserve"><value>Kustomoidut Ominaisuudet</value></data><data name="Admin_DataSyncProjects_Intro1" xml:space="preserve"><value>Konfiguroidaksesi tämän projektin suorittamaan datan mäppäyksen käyttäen </value></data><data name="Admin_DataSyncProjects_Intro2" xml:space="preserve"><value>liitännäistä, sinun täytyy määritellä projektin avain/id ulkoiselle järjestelmälle, ja sen jälkeen klikata alla olevia linkkejä määritelläksesi kentät, jotka täytyy mapata, jotta synkronisointi toimii:</value></data><data name="Admin_DataSyncProjects_ProjectDataMapping" xml:space="preserve"><value>Projektin datamäppäys</value></data><data name="Admin_DataSyncProjects_StandardFields" xml:space="preserve"><value>Peruskentät</value></data><data name="Admin_DataSyncProjects_Title" xml:space="preserve"><value>Tarkastele/muokkaa datan mäppäystä</value></data><data name="Admin_DataSyncProjects_Unselected" xml:space="preserve"><value>(Ei valittu)</value></data><data name="Admin_DocumentFolderDetails_String1" xml:space="preserve"><value>Tarkasta alla olevat tiedot, ja muuta niitä mikäli tarpeen.</value></data><data name="Admin_DocumentFolderDetails_String2" xml:space="preserve"><value>Kun olet valmis, vahvista muutokset klikkaamalla [Talleta/Lisää].</value></data><data name="Admin_DocumentFolderDetails_Title" xml:space="preserve"><value>Lisää/Muokkaa dokumenttikansiota</value></data><data name="Admin_EmailConfiguration_ActiveNotes1" xml:space="preserve"><value>Jos deaktivoitu,</value></data><data name="Admin_EmailConfiguration_ActiveNotes2" xml:space="preserve"><value>ei lähetä viestejä.</value></data><data name="Admin_EmailConfiguration_ActiveYn" xml:space="preserve"><value>Sähköposti-ilmoitukset aktivoitu?</value></data><data name="Admin_EmailConfiguration_AllowUserControlNotes" xml:space="preserve"><value>Jos valinta on aktivoitu, käyttäjille annetaan mahdollisuus kieltäytyä ottamasta vastaan sähköposteja järjestelmältä.</value></data><data name="Admin_EmailConfiguration_AllowUsersControl" xml:space="preserve"><value>Salli käyttäjien kontrolloida sähköpostien vastaanottoa?</value></data><data name="Admin_EmailConfiguration_FromAddressNotes" xml:space="preserve"><value>Osoite, josta sähköpostit lähetetään. Vastauksia tähän osoitteeseen ei seurata.</value></data><data name="Admin_EmailConfiguration_FromEmailAddress" xml:space="preserve"><value>Sähköpostiosoitteesta </value></data><data name="Admin_EmailConfiguration_HostName" xml:space="preserve"><value>Isännän nimi</value></data><data name="Admin_EmailConfiguration_MailHostNotes" xml:space="preserve"><value>Sähköpostipalvelimesi SMTP-isännän nimi.</value></data><data name="Admin_EmailConfiguration_MailServer" xml:space="preserve"><value>Sähköpostipalvelin</value></data><data name="Admin_EmailConfiguration_MailServerIntro" xml:space="preserve"><value>Jätä kaikki seuraavat kentät tyhjiksi, jos haluat käyttää oletus IIS SMTP Virtual Serveriä:</value></data><data name="Admin_EmailConfiguration_Password" xml:space="preserve"><value>Salasana</value></data><data name="Admin_EmailConfiguration_PasswordNotes" xml:space="preserve"><value>Jos SMTP-palvelimesi vaatii autentikointia, tämä on salasanasi.</value></data><data name="Admin_EmailConfiguration_PortNumber" xml:space="preserve"><value>Porttinumero</value></data><data name="Admin_EmailConfiguration_PortNumberNotes" xml:space="preserve"><value>Käytössä oleva SMTP-porttinumero. Jos kenttä on tyhjä, käytetään oletusarvoa 25.</value></data><data name="Admin_EmailConfiguration_ReplyToAddressNotes" xml:space="preserve"><value>Lähetettyjen sähköpostien Vastaa-kenttä. Jos sihen ei kirjoiteta mitään,  jää sähköpostin otsikkokenttä tyhjäksi.</value></data><data name="Admin_EmailConfiguration_ReplyToEmailAddress" xml:space="preserve"><value>Vastaukset sähköpostiosoite </value></data><data name="Admin_EmailConfiguration_SendHtml" xml:space="preserve"><value>Lähetä sähköpostit HTML-muodossa</value></data><data name="Admin_EmailConfiguration_SendInHtmlNotes" xml:space="preserve"><value>Jos valinta on aktivoitu, sähköpostit lähetetään HTML-muodossa. Muussa tapauksessa ne lähetetään teksti-muodossa.</value></data><data name="Admin_EmailConfiguration_SslConnection" xml:space="preserve"><value>SSL-yhteys</value></data><data name="Admin_EmailConfiguration_String1" xml:space="preserve"><value>Oletuksena, </value></data><data name="Admin_EmailConfiguration_String2" xml:space="preserve"><value>lähetettäessä sähköposti-ilmoituksia järjestelmän käyttäjille, käytetään IIS SMTP-virtuaalipalvelinta. Järjestelmä voidaan kuitenkin myös konfiguroida lähettämään sähköpostit suoraan ulkoisen SMTP-palvelimen kautta.</value></data><data name="Admin_EmailConfiguration_String3" xml:space="preserve"><value>Tällä sivulla voit muuttaa seuraavia sähköpostipalvelimen asetuksia:</value></data><data name="Admin_EmailConfiguration_UserName" xml:space="preserve"><value>Käyttäjänimi</value></data><data name="Admin_EmailConfiguration_UserNameNotes" xml:space="preserve"><value>Jos SMTP-palvelimesi vaatii autentikointia, tämä on käyttäjänimesi.</value></data><data name="Admin_Notification_ArtifactFieldsIntro" xml:space="preserve"><value>Tämä valinta on aktiivisena, jos jotain valituista kentistä on muutettu.</value></data><data name="Admin_Notification_ArtifactTypeNotes" xml:space="preserve"><value>Tapahtuma liitetään tähän asian tyyppiin.</value></data><data name="Admin_Notification_ArtifactUsersIntro" xml:space="preserve"><value>Kun valittua kenttää muutetaan, seuraavia käyttäjiä tai rooleja tiedotetaan asiasta.</value></data><data name="Admin_Notification_Intro" xml:space="preserve"><value>Seuraavat ilmoitustapahtumat on määritelty tälle projektille. Aktivoidaksesi tai deaktivoidaksesi tapahtuman tai muuttaaksesi kenttiä tai käyttäjiä, klikkaa "Muokkaa"-linkkiä.</value></data><data name="Admin_Notification_IsActiveNotes" xml:space="preserve"><value>Onko tapahtuma aktiivinen vai ei.</value></data><data name="Admin_Notification_OnCreationNotes" xml:space="preserve"><value>Aktivoituuko tämä tapahtuma uuden asian luomisen yhteydessä.</value></data><data name="Admin_Notification_ReturnToTemplateList" xml:space="preserve"><value>&amp;lt;&amp;lt; Paluu templaatti-listaan</value></data><data name="Admin_Notification_SubjectLine" xml:space="preserve"><value>Otsikkorivi</value></data><data name="Admin_Notification_SubjectLineNotes" xml:space="preserve"><value>Sähköposti-ilmoituksen otsikko. Sähköpostipohjassa käytettyja tunnisteita voidaan käyttää otsikkorivillä.</value></data><data name="Admin_RoleList_Intro" xml:space="preserve"><value>Järjestelmään on määritelty seuraavat roolit:</value></data><data name="Admin_VersionControlProject_ActiveForProject" xml:space="preserve"><value>Projektissa aktiivisena</value></data><data name="Admin_VersionControlProject_Intro1" xml:space="preserve"><value>Muokkaa seuraavia projektikohtaisia asetuksia </value></data><data name="Admin_VersionControlProject_Intro2" xml:space="preserve"><value>koskien versionhallinnan tarjoajaa. Jos jätät kenttiä tyhjiksi, arvot otetaan tarjoajan oletusarvoista. Lopettaaksesi ao. tarjoajan käyttämisen tässä projektissa, aseta alla oleva Aktiivisuus-lippu arvoon Ei.</value></data><data name="Admin_VersionControlProject_LongTitle" xml:space="preserve"><value>Projektin versionhallinta-asetukset</value></data><data name="Admin_VersionControlProject_Title" xml:space="preserve"><value>Projektin asetukset</value></data><data name="Admin_VersionControlProject_Unselected" xml:space="preserve"><value>(Ei valittu)</value></data><data name="Admin_VersionControlProvider_BackToHome" xml:space="preserve"><value>&amp;lt;&amp;lt; Palaa versionhallinta-sivulle</value></data><data name="Admin_VersionControlProvider_DefaultSettings" xml:space="preserve"><value>Oletusarvot</value></data><data name="Admin_VersionControlProvider_Intro" xml:space="preserve"><value>Lisää/muokkaa tarjoajan tietoja. Tarkat syötettävät tiedot vaihtelevat tarjoajakohtaisesti, joten tarkasta yksityiskohdat tarjoajan dokumenteista ennen tietojen lisäämistä tai muokkaamista: </value></data><data name="Admin_VersionControlProvider_Intro2" xml:space="preserve"><value>Seuraavia asetuksia käytetään niissä projekteissa, joilla ei ole omia asetuksiaan:</value></data><data name="Admin_VersionControlProvider_NewProvider" xml:space="preserve"><value>Uusi tarjoaja</value></data><data name="Admin_VersionControlProvider_Title" xml:space="preserve"><value>Muokkaa versionhallinnan tarjoajaa</value></data><data name="Admin_VersionControl_Intro" xml:space="preserve"><value>toimii yhdessä monien versionhallintajärjestelmien kanssa, hyödyntäen joustavaa, avointa arkkitehtuuriaan ja versionhallinnantuottajakirjastoaan.</value></data><data name="Admin_VersionControl_Intro2" xml:space="preserve"><value>Tällä sivulla voit katsoa, lisätä, ja muokata listaa versionhallinnan tarjoajista</value></data><data name="Admin_VersionControl_Title" xml:space="preserve"><value>Versionhallinnan integrointi</value></data><data name="Notification_ID" xml:space="preserve"><value>Kohteen ID#</value></data><data name="Notification_NotifyTo" xml:space="preserve"><value>Ilmoituksen vastaanottajan nimi.</value></data><data name="Notification_Product" xml:space="preserve"><value>Sovelluksen nimi.</value></data><data name="Notification_Project" xml:space="preserve"><value>Projektin nimi.</value></data><data name="Notification_URL" xml:space="preserve"><value>Asiaan linkattava URL.</value></data><data name="GlobalNavigation_SearchTooltip" xml:space="preserve"><value>Voit suorittaa hakuja käyttämällä avainsanoja tai syöttämällä asian spesifisen koodin (esimerkiksi IN45 löydökselle 45)</value></data><data name="Admin_PlanningOptions_DefaultEstimate" xml:space="preserve"><value>Oletusarvio</value></data><data name="Admin_PlanningOptions_General" xml:space="preserve"><value>Yleinen</value></data><data name="Admin_PlanningOptions_PointEffort" xml:space="preserve"><value>Työmäärä pistettä kohden</value></data><data name="Admin_PlanningOptions_PointEffortNotes" xml:space="preserve"><value>Tämä on konversiotekijä, jota käytetään määrittelemään henkilötyötuntien määrää arvioitua pistettä kohden.</value></data><data name="Admin_PlanningOptions_Requirements" xml:space="preserve"><value>Vaatimukset</value></data><data name="Admin_PlanningOptions_TasksIncidents" xml:space="preserve"><value>Tehtävät &amp;amp; Huomiot</value></data><data name="Global_Days" xml:space="preserve"><value>päivää</value></data><data name="Global_Points" xml:space="preserve"><value>pistettä</value></data><data name="Admin_Components_AddComponent" xml:space="preserve"><value>Lisää komponentti</value></data><data name="Admin_Components_NoComponentsDefined" xml:space="preserve"><value>Tälle projektille ei ole määritelty komponentteja. Klikkaa "Lisää komponentti" lisätäksesi uusi komponentti.</value></data><data name="Admin_EditComponents" xml:space="preserve"><value>Muokkaa komponentteja</value></data><data name="Admin_EditComponents_Intro" xml:space="preserve"><value>Seuraavat komponentit on määritelty tälle projektille. Muokkaa niitä tarpeen mukaan, ja klikkaa "Talleta" aktivoidaksesi muutokset:</value></data><data name="Admin_Requirements" xml:space="preserve"><value>Vaatimukset   </value></data><data name="Admin_UserDetailsAddProjectMembership_BackToUserDetails" xml:space="preserve"><value>&amp;lt;&amp;lt; Paluu käyttäjän tietoihin</value></data><data name="Admin_UserDetailsAddProjectMembership_Legend1" xml:space="preserve"><value>Käyttäjä ei ole seuraavien projektien jäsen.</value></data><data name="Admin_UserDetailsAddProjectMembership_Legend2" xml:space="preserve"><value>Valitse rooli niille projekteille, joihin haluat käyttäjän lisätä ja klikkaa [Lisää]:</value></data><data name="Admin_UserDetailsAddProjectMembership_Title" xml:space="preserve"><value>Lisää käyttäjän projektijäsenyys</value></data><data name="Global_Deleted" xml:space="preserve"><value>Poistettu</value></data><data name="Global_Inactive" xml:space="preserve"><value>Ei aktiivinen</value></data><data name="Admin_RequirementTypes_Intro" xml:space="preserve"><value>Järjestelmään on määritelty seuraavat vaatimustyypit. Voit määritellä projektille, mitä tilamallia millekin vaatimustyypille käytetään:</value></data><data name="Admin_RequirementWorkflowDetails_Intro" xml:space="preserve"><value>Tässä näytetään kaikki vaatimuksen tila-askeleet tälle tilamallille:</value></data><data name="Admin_RequirementWorkflowStep_RequirementCustomProperties" xml:space="preserve"><value>Vaatimuksen kustomoidut ominaisuudet</value></data><data name="Admin_RequirementWorkflowStep_RequirementCustomPropertiesIntro" xml:space="preserve"><value>Seuraavat vaatimusten kustomoidut ominaisuudet on piilotettu/poistettu käytöstä/vaaditaan tässä työnkulun askeleessa:</value></data><data name="Admin_RequirementWorkflowStep_RequirementFields" xml:space="preserve"><value>Vaatimuskentät</value></data><data name="Admin_RequirementWorkflowStep_RequirementFieldsIntro" xml:space="preserve"><value>Seuraavat vaatimuskentät on piilotettu/poistettu käytöstä/vaaditaan tässä työnkulun askeleessa:</value></data><data name="Admin_RequirementWorkflows_Intro" xml:space="preserve"><value>Projektissa on valittavana useita erilaisia vaatimusten tilamalleja. Lisätäksesi uuden tilamallin, klikkaa Lisää Työnkulku-linkkiä, tai muokataksesi olemassa olevaa tilamallia, klikkaa Askeleet-linkkiä:</value></data><data name="Admin_Workflows_AddWorkflow" xml:space="preserve"><value>Lisää Tilamalli</value></data><data name="Admin_PlanningOptions_ReqStatusChangedByTasks" xml:space="preserve"><value>Käytä Tehtävän Tilaa</value></data><data name="Admin_PlanningOptions_ReqStatusChangedByTestCase" xml:space="preserve"><value>Käytä Testin Tilaa</value></data><data name="Admin_PlanningOptions_ReqStatusChangedByTestCaseLabel" xml:space="preserve"><value>Kun kaikki testitapaukset on suoritettu onnistuneesti, niihin liittyvä vaatimus muuttuu automaattisesti tilaan Testattu.</value></data><data name="Admin_RequirementWorkflowTransition_AuthorExecuteLabel" xml:space="preserve"><value>Tämän vaatimuksen tekijä voi suorittaa:</value></data><data name="Admin_RequirementWorkflowTransition_OwnerExecuteLabel" xml:space="preserve"><value>Tämän vaatimuksen omistaja voi suorittaa:</value></data><data name="Global_Components" xml:space="preserve"><value>Komponentit</value></data><data name="QuickFilterPanel_MyFilters" xml:space="preserve"><value>Omat Suodattimet</value></data><data name="QuickFilterPanel_NoFilters" xml:space="preserve"><value>(Ei käytettävissä olevia suodattimia)</value></data><data name="QuickFilterPanel_SharedFilters" xml:space="preserve"><value>Jaetut Suodattimet</value></data><data name="Admin_EditTaskWorkflows_Title" xml:space="preserve"><value>Tehtävien Työnkulut</value></data><data name="Admin_Planning" xml:space="preserve"><value>Suunnittelu</value></data><data name="Admin_TaskTypes_Intro" xml:space="preserve"><value>Järjestelmässä on olemassa seuraavat tehtävätyypit. Voit määritellä tälle projektille, mitä tilamalleja käytetään eri tehtävätypeille:</value></data><data name="Admin_TaskWorkflowDetails_Intro" xml:space="preserve"><value>Tässä näytetään kaikki Tehtävän tila-askeleet tälle työnkululle</value></data><data name="Admin_TaskWorkflowStep_TaskCustomProperties" xml:space="preserve"><value>Tehtävän kustomoidut ominaisuudet</value></data><data name="Admin_TaskWorkflowStep_TaskCustomPropertiesIntro" xml:space="preserve"><value>Seuraavat Tehtävän kustomoidut ominaisuudet on piilotettu/poistettu käytöstä/vaaditaan tässä työnkulun askeleessa:</value></data><data name="Admin_TaskWorkflowStep_TaskFields" xml:space="preserve"><value>Tehtävän kentät</value></data><data name="Admin_TaskWorkflowStep_TaskFieldsIntro" xml:space="preserve"><value>Seuraavat tehtäväkentät on piilotettu/poistettu käytöstä/vaaditaan tässä työnkulun askeleessa:</value></data><data name="Admin_TaskWorkflows_Intro" xml:space="preserve"><value>Projektissa on valittavana useita eri tehtävätilamalleja. Lisätäksesi uuden tilamallin, klikkaa Lisää Työnkulku-linkkiä, tai muokataksesi olemassa olevaa tilamallia, klikkaa Askeleet-linkkiä:</value></data><data name="Admin_TaskWorkflowTransition_AuthorExecuteLabel" xml:space="preserve"><value>Tämän tehtävän luoja voi suorittaa:</value></data><data name="Admin_TaskWorkflowTransition_OwnerExecuteLabel" xml:space="preserve"><value>Tämän tehtävän omistaja voi suorittaa:</value></data><data name="Global_Folders" xml:space="preserve"><value>Kansiot</value></data><data name="Tasks_AllTasks" xml:space="preserve"><value>(Kaikki tehtävät)</value></data><data name="Global_Root" xml:space="preserve"><value>Juuri</value></data><data name="TaskDetails_ChangeRequirement" xml:space="preserve"><value>Muuta Vaatimusta</value></data><data name="TaskDetails_ChangeRequirement_Intro" xml:space="preserve"><value>Valitse vaatimus, johon tämä tehtävä liittyy: </value></data><data name="Global_Unknown" xml:space="preserve"><value>Tuntematon</value></data><data name="UserProfile_Avatar" xml:space="preserve"><value>Profiilikuva</value></data><data name="ProjectList_Contacts" xml:space="preserve"><value>Kontaktini</value></data><data name="UserProfile_Avatar_DeleteExisting" xml:space="preserve"><value>Poista</value></data><data name="UserProfile_Avatar_Notes" xml:space="preserve"><value>Profiilikuvasi ei voi olla suurempi kuin 100k eikä kooltaan suurempi kuin 100x100 pikseliä. Vain JPG, GIF, ja PNG sallitaan. Nähdäksesi uuden profiilikuvasi, tyhjennä selaimesi välimuisti.</value></data><data name="UserProfile_Avatar_UploadNew" xml:space="preserve"><value>Lataa uusi</value></data><data name="UserProfile_Avatar_UploadNewTooltip" xml:space="preserve"><value>Valitse Tiedosto, ja klikkaa alla olevaa Päivitä-painiketta.</value></data><data name="Admin_PlanningOptions_IncludeTestCaseEffort" xml:space="preserve"><value>Lisää Testitapausten työmäärä</value></data><data name="Admin_PlanningOptions_ReqStatusAutoPlanned" xml:space="preserve"><value>Automaattisesti suunniteltu</value></data><data name="Admin_PlanningOptions_ReqStatusAutoPlannedLabel" xml:space="preserve"><value>Linkatessasi julkaisun vaatimukseen, se muuttuu automaattisesti "Suunniteltu"-tilaan.</value></data><data name="GeneralSettings_InstantMessenger" xml:space="preserve"><value>Pikaviestin</value></data><data name="GeneralSettings_InstantMessengerNotes" xml:space="preserve"><value>Mahdollistaa sisäisen pikaviestimen käytön.</value></data><data name="GeneralSettings_InstantMessengerRetention" xml:space="preserve"><value>Niiden päivien lukumäärä, jonka ajan luetut pikaviestit säilyvät järjestelmässä.</value></data><data name="IterationPlan_IncludeTestCases" xml:space="preserve"><value>Lisää Testitapaukset</value></data><data name="TestCaseList_TestCasesForProject" xml:space="preserve"><value>tämän projektin testitapaukset</value></data><data name="TestCaseList_TestCasesNotAssociatedWithRelease" xml:space="preserve"><value>tähän julkaisuun liittymättömät testitapaukset</value></data><data name="ProjectHome_SharedSearches" xml:space="preserve"><value>Jaetut Haut</value></data><data name="TestCaseExecution_NoStepsAvailableForTestCase" xml:space="preserve"><value>Testitapauksessa ei ole määriteltyjä Testiaskeleita.</value></data><data name="Admin_EmailConfiguration_SendEmailFromUsers" xml:space="preserve"><value>Sähköposteja käyttäjäosoitteista?</value></data><data name="Admin_EmailConfiguration_SendEmailFromUsersNotes" xml:space="preserve"><value>Jos valinta on aktivoitu, viestit jotka on lähetetty Email-painikkeen kautta näyttävät saapuvan mailin lähettäjältä, eivät järjestelmävalvojalta.</value></data><data name="Admin_VersionControl_TaraVault" xml:space="preserve"><value>TaraVault</value></data><data name="Admin_TaraVaultConfig" xml:space="preserve"><value>TaraVaultin konfigurointi</value></data><data name="Admin_TaraVaultConfig_Intro1" xml:space="preserve"><value>TaraVault on OnShore Technology Groupn tekemä ohjelmistokoodin säilytyspaikka ja SCM järjestelmä.</value></data><data name="Admin_TaraVault_Config_AccountName" xml:space="preserve"><value>TaraVault-tilin nimi</value></data><data name="Admin_TaraVault_Config_Active" xml:space="preserve"><value>TaraVault aktivoitu?</value></data><data name="Admin_TaraVault_Config_NumberUsers" xml:space="preserve"><value>Käytettävissä olevat TaraVault-käyttäjät</value></data><data name="Admin_TaraVault_Config_ProjName" xml:space="preserve"><value>TaraVault-projektin nimi</value></data><data name="Admin_TaraVault_Config_ProjType" xml:space="preserve"><value>TaraVault-projektin tyyppi</value></data><data name="Admin_TaraVault_Config_ProjUsers" xml:space="preserve"><value>Tähän projektiin liitetyt käyttäjät</value></data><data name="Admin_TaraVault_Confirm_Deactivate" xml:space="preserve"><value>Jos deaktivoit TaraVaultin, menetät kaikki versiokontrollitiedostot ja käyttäjämäppäykset. Haluatko varmasti jatkaa?</value></data><data name="Admin_TaraVault_Confirm_ProjActivate" xml:space="preserve"><value>Jos projekti aktivoidaan, sen konfiguraatioon ei voida enää tehdä muutoksia. Oletko varma, että haluat aktivoida tämän projektin?</value></data><data name="Admin_TaraVault_Confirm_ProjDeactivate" xml:space="preserve"><value>Tämän projektin deaktivointi poistaa kaikki versionhallintatiedostot. Haluatko varmasti jatkaa?</value></data><data name="Admin_TaraVault_ProjectSummary" xml:space="preserve"><value>TaraVault-projektiasetukset</value></data><data name="Admin_TaraVault_SelectProject" xml:space="preserve"><value>Valitse projekti voidaksesi muuttaa sen asetuksia.</value></data><data name="Admin_TaraVault_SystemSummary" xml:space="preserve"><value>TaraVault-yleisasetukset</value></data><data name="Admin_UserDetails_TabTaraVault" xml:space="preserve"><value>TaraVault-jäsenyys</value></data><data name="Global_ChooseReleaseTypeSetting" xml:space="preserve"><value>Julkaisujen suodatin</value></data><data name="Global_ChooseReleaseTypeSettingTooltip" xml:space="preserve"><value>Määrittää sen, koskevatko vikalöydöksen tiedot julkaisua, jossa se löydettiin, vai julkaisua, jossa se korjattiin. </value></data><data name="PlanningBoard_ProductBacklog" xml:space="preserve"><value>-- Tuotannon Backlogi --</value></data><data name="PlanningBoard_GroupBy" xml:space="preserve"><value>Ryhmiteltynä</value></data><data name="PlanningBoard_IncludeDetails" xml:space="preserve"><value>Yksityiskohtainen näkyma</value></data><data name="TestCaseDetails_ObjectsPath" xml:space="preserve"><value>Objektin polku</value></data><data name="TestCaseDetails_ProjectFile" xml:space="preserve"><value>Projektitiedosto</value></data><data name="TestCaseDetails_ScriptPath" xml:space="preserve"><value>Skriptipolku</value></data><data name="TestCaseDetails_UserFunctionsPath" xml:space="preserve"><value>Polku käyttäjän toiminteisiin</value></data><data name="SourceCodeList_CurrentBranch" xml:space="preserve"><value>Nykyinen haara</value></data><data name="SourceCodeList_Files" xml:space="preserve"><value>tiedostoa nykyisessä kansiossa</value></data><data name="SourceCodeRevisions_Revisions" xml:space="preserve"><value>versio(ta) nykyisessä tallennuskohteessa</value></data><data name="Admin_User_NoTaraProjects" xml:space="preserve"><value>Käyttäjää ei ole tällä hetkellä  määritetty mihinkään TaraVault-projektiin.</value></data><data name="Admin_User_TaraEnable" xml:space="preserve"><value>Aktivoidaanko käyttäjä TaraVaultiin?</value></data><data name="Admin_User_TaraVaultLogin" xml:space="preserve"><value>TaraVault-käyttäjätunnus</value></data><data name="Admin_User_TaraVaultPass" xml:space="preserve"><value>TaraVault-käyttäjäsalasana</value></data><data name="Admin_User_TaraVaultProjects" xml:space="preserve"><value>Tälle käyttäjälle aktivoidut Projektit</value></data><data name="PlanningBoard_AddRequirement" xml:space="preserve"><value>Lisää Vaatimus</value></data><data name="Admin_UserDetailsAddTaraVaultProject_Legend1" xml:space="preserve"><value>Käyttäjä &lt;b&gt;ei&lt;/b&gt; ole seuraavien TaraVault-projektien jäsen.</value></data><data name="Admin_UserDetailsAddTaraVaultProject_Legend2" xml:space="preserve"><value>Valitse käyttäjät liitettäväksi projekteihin, ja klikkaa "Lisää"</value></data><data name="Admin_User_TaraVault_AddProject" xml:space="preserve"><value>Haluatko lisätä käyttäjän projektiin?</value></data><data name="Admin_GeneralSettings_CacheFolder" xml:space="preserve"><value>Välimuistikansio</value></data><data name="Admin_GeneralSettings_CacheFolderNotes" xml:space="preserve"><value>Paikallinen kansio, johon verkkoprosessi tallentaa välimuistitietoa. Oletusarvoisesti tai virhetilanteissa, kansio on &lt;span style="font-family: monospace"&gt;{0}&lt;/span&gt;</value></data><data name="Admin_TaraVaultConfig_Intro2" xml:space="preserve"><value>{0} olevat projektit voidaan aktivoida TaraVaultiin tallentamaan projektin lähdekooditiedostot ja versiot. TaraVault aktivoidaan tietylle määrälle aktiivisia käyttäjiä</value></data><data name="Admin_TaraVaultConfig_Intro3" xml:space="preserve"><value>Voit valita aktiviiset lähdekoodin hallinnan käyttäjät {0} näytöllä.</value></data><data name="GeneralSettings_WorXEnabled" xml:space="preserve"><value>WorX integraatio</value></data><data name="GeneralSettings_WorXEnabledNotes" xml:space="preserve"><value>Valitessasi "Kyllä", aktivoit integraation Autom8 WorX manuaaliseen testaustyökaluun.</value></data><data name="TaskDetails_SplitTask" xml:space="preserve"><value>Jaa Tehtävä</value></data><data name="TaskDetails_SplitTask_Intro" xml:space="preserve"><value>Syötä nimi uudelle taskille. Tämän lisäksi syötä omistaja ja % työmäärä jotka haluat kiinnittää uuteen tehtävään:</value></data><data name="TaskDetails_SplitTask_Notes" xml:space="preserve"><value>Jos jätät % työmäärän tyhjäksi, järjestelmä joko siirtää jäljellä olevan työmäärä uudelle tehtävälle (jos Tehtävä on auki) tai yksinkertaisesti jakaa sen 50/50 jos tehtävä ei ole aloitettu tai on valmis.</value></data><data name="TestCaseExecution_LinkExisting" xml:space="preserve"><value>Linkitä olemassa olevaan Havaintoon</value></data><data name="ProjectHome_ActivityStream" xml:space="preserve"><value>Aktiviteettivirta</value></data><data name="ActivityList_Title" xml:space="preserve"><value>Aktiviteettivirta</value></data><data name="WorkflowTransition_RequireSignature" xml:space="preserve"><value>Vaadi sähköinen allekirjoitus</value></data><data name="Permission_BulkEdit" xml:space="preserve"><value>Massaeditointi</value></data><data name="Admin_TaraVault_MaxUsers" xml:space="preserve"><value>Maksimimäärä käyttäjiä on jo aktivoitu TaraVaultille.</value></data><data name="UserProfile_TabTaraV" xml:space="preserve"><value>TaraVault yhteys</value></data><data name="UserProfile_TaravaultClickToShowPass" xml:space="preserve"><value>Klikkaa nähdäksesi salasanan.</value></data><data name="UserProfile_TaravaultConn" xml:space="preserve"><value>Projektin yhteys</value></data><data name="UserProfile_TaravaultPass" xml:space="preserve"><value>Käyttäjän salasana</value></data><data name="UserProfile_TaravaultUser" xml:space="preserve"><value>Käyttäjän tunnus</value></data><data name="Admin_TaraVault_Config_ProjActive" xml:space="preserve"><value>TaraVault projekti aktiivinen</value></data><data name="Admin_TaraVault_Config_ProjConnect" xml:space="preserve"><value>Client yhteys</value></data><data name="Admin_TaraVault_Config_ActiveUsers" xml:space="preserve"><value>Aktiiviset TaraVault käyttäjät</value></data><data name="Admin_TaraVault_Config_ActiveUsers_ViewList" xml:space="preserve"><value>Katso listaa</value></data><data name="Admin_TaraVault_Config_NoUsersEnabled" xml:space="preserve"><value>Yhtään käyttäjää ei ole aktivoitu tähän projektiiin.</value></data><data name="Admin_TaraVaultUsers" xml:space="preserve"><value>TaraVault käyttäjät</value></data><data name="Admin_TaraVaultUsers_Intro" xml:space="preserve"><value>Tämä näyttö listaa kaikki määritellyt TaraVaultia käyttävät ja mitkä käyttäjät on aktivoitu tähän projektiin. </value></data><data name="Admin_TaraVault_Config_NoUsersActivated" xml:space="preserve"><value>TaraVault ei ole aktiivinen yhdelläkään käyttäjällä!</value></data><data name="Admin_WebServices" xml:space="preserve"><value>Verkkopalvelut</value></data><data name="SecuritySettings_AllowedDomains" xml:space="preserve"><value>Sallitut Verkko-osoitteet</value></data><data name="SecuritySettings_AllowedDomainsNotes" xml:space="preserve"><value>Sinun pitää lisätä tähän lista verkko-osoitteista, joista on sallittua tehdä CORS REST API kutsuja tähän kohteeseen. Voit määritellä useita URLiä pilkulla erotettuna (esim. https://www.domain1.com, http://www.domain2.com) tai sallia kaikki: * (tähti).</value></data><data name="Admin_EditReleaseWorkflows_Title" xml:space="preserve"><value>Julkaisun Tilamallit</value></data><data name="Admin_ReleaseTypes_Intro" xml:space="preserve"><value>Seuraavat julkaisutyypit ovat olemassa järjestelmässä. Voit määritellä projektille, mitä tilamalleja käytetään millekin julkaisutyypille:</value></data><data name="Admin_ReleaseWorkflows_Intro" xml:space="preserve"><value>Projektissa on useita tilamalleja valittavana julkaisulle. Lisätäkseni uuden, klikkaa Lisää Tilamalli -linkkiä. Muokataksesi olemassa olevaa, klikkaa Askeleet-linkkiä:</value></data><data name="Admin_ReleaseWorkflowDetails_Intro" xml:space="preserve"><value>Näyttää kaikki julkaisun tilasiirtymät kyseiselle tilamallille:</value></data><data name="Admin_ReleaseWorkflowStep_ReleaseCustomProperties" xml:space="preserve"><value>Julkaisun kustomoidut ominaisuudet</value></data><data name="Admin_ReleaseWorkflowStep_ReleaseCustomPropertiesIntro" xml:space="preserve"><value>Seuraavat julkaisun kustomoidut ominaisuudet on piilotettu/ei-aktiivinen/pakollinen tässä tilamallin askeleessa:</value></data><data name="Admin_ReleaseWorkflowStep_ReleaseFields" xml:space="preserve"><value>Julkaisun Kentät</value></data><data name="Admin_ReleaseWorkflowStep_ReleaseFieldsIntro" xml:space="preserve"><value>Seuraavat julkaisun kentät on piilotettu/ei-aktiivinen/pakollinen tässä tilamallin askeleessa:</value></data><data name="Admin_ReleaseWorkflowTransition_CreatorExecuteLabel" xml:space="preserve"><value>Julkaisun laatija voi suorittaa:</value></data><data name="Admin_ReleaseWorkflowTransition_OwnerExecuteLabel" xml:space="preserve"><value>Julkaisun omistaja voi suorittaa:</value></data><data name="UserProfile_Organization" xml:space="preserve"><value>Organisaatio</value></data><data name="Admin_Notification_DisplayTokens" xml:space="preserve"><value>(Näytä erikoistunnisteet sähköpostin otsikossa)</value></data><data name="Admin_Notification_EmailTokens" xml:space="preserve"><value>Sähköposti-ilmoituksen tunnisteet</value></data><data name="Login_PleaseLogin" xml:space="preserve"><value>Kirjaudu, kiitos</value></data><data name="Admin_GeneralSettings_AdminMessage" xml:space="preserve"><value>Ylläpitoviesti</value></data><data name="Admin_GeneralSettings_AdminMessageNotes" xml:space="preserve"><value>Tilapäinen huomautus kirjautumisruutuun kaikille käyttäjille (muista poistaa kun ei enää tarvetta)</value></data><data name="Admin_GeneralSettings_LoginNotice" xml:space="preserve"><value>Kirjautumisen viesti</value></data><data name="Admin_GeneralSettings_LoginNoticeNotes" xml:space="preserve"><value>Pysyvä viesti kirjautumisruudun alalaitaan kaikille käyttäjille (esimerkiksi yhtiön vastuuvapauslauseke)</value></data><data name="Admin_EditTestCaseWorkflows_Title" xml:space="preserve"><value>Testitapauksen Tilamallit</value></data><data name="Admin_Testing" xml:space="preserve"><value>Testaus</value></data><data name="Admin_TestCaseTypes_Intro" xml:space="preserve"><value>Seuraavat testitapauksen tyypit on olemassa. Voit määrittää projektiin mitä testitapauksen tyyppiä mikäkin tilamalli koskee:</value></data><data name="Admin_TestCaseWorkflowDetails_Intro" xml:space="preserve"><value>Näyttää kaikki testitapauksen tilasiirtymät kyseiselle tilamallille:</value></data><data name="Admin_TestCaseWorkflowStep_TestCaseCustomProperties" xml:space="preserve"><value>Testitapauksen kustomoidut ominaisuudet</value></data><data name="Admin_TestCaseWorkflowStep_TestCaseCustomPropertiesIntro" xml:space="preserve"><value>Seuraavat testitapauksen kustomoidut ominaisuudet on piilotettu/ei-aktiivinen/pakollinen tässä tilamallin askeleessa:</value></data><data name="Admin_TestCaseWorkflowStep_TestCaseFields" xml:space="preserve"><value>Testitapauksen Kentät</value></data><data name="Admin_TestCaseWorkflowStep_TestCaseFieldsIntro" xml:space="preserve"><value>Seuraavat testitapauksen kentät on piilotettu/ei-aktiivinen/pakollinen tässä tilamallin askeleessa:</value></data><data name="Admin_TestCaseWorkflows_Intro" xml:space="preserve"><value>Projektissa on useita tilamalleja valittavana testitapaukselle. Lisätäkseni uuden, klikkaa Lisää Tilamalli -linkkiä. Muokataksesi olemassa olevaa, klikkaa Askeleet-linkkiä:</value></data><data name="Admin_TestCaseWorkflowTransition_CreatorExecuteLabel" xml:space="preserve"><value>Testitapauksen laatija voi suorittaa:</value></data><data name="Admin_TestCaseWorkflowTransition_OwnerExecuteLabel" xml:space="preserve"><value>Testitapauksen omistaja voi suorittaa:</value></data><data name="Admin_EditIncidentWorkflows_Title" xml:space="preserve"><value>Havainnon Tilamallit</value></data><data name="Admin_WorkflowTransition_Intro" xml:space="preserve"><value>Voit muuttaa tilamallin operaation nimen ja liitetyt oikeudet:</value></data><data name="TestCases_AllTestCases" xml:space="preserve"><value>(Kaikki testitapaukset)</value></data><data name="UserDetails_AddUser" xml:space="preserve"><value>Lisää Käyttäjä</value></data><data name="UserDetails_EditUser" xml:space="preserve"><value>Muokkaa Käyttäjää</value></data><data name="Settings" xml:space="preserve"><value>Asetukset</value></data><data name="UserDetails_UserInformation" xml:space="preserve"><value>Käyttäjätiedot</value></data><data name="UserDetails_MembershipMapping" xml:space="preserve"><value>Jäsenyydet ja Mäppäykset</value></data><data name="Admin_EditRequirementWorkflows_Title" xml:space="preserve"><value>Vaatimuksen Tilamallit</value></data><data name="Admin_PlanningOptions_PointEffortSuggestExplanation" xml:space="preserve"><value>Kyseisen projektin tehtävien työmäärän perusteella ehdotetaan seuraavaa työmäärää pisteelle</value></data><data name="Admin_ReportDetails_BackToList" xml:space="preserve"><value>Takaisin Raporttilistaan</value></data><data name="Admin_DataTools_DatabaseIndexes" xml:space="preserve"><value>Tietokannan indeksit</value></data><data name="Admin_LicenseDetails_ViewActiveSessions" xml:space="preserve"><value>Katso aktiiviset istunnot</value></data><data name="Admin_TaraVaultConfig_IsActive" xml:space="preserve"><value>TaraVault tilauksesi on aktiivinen.</value></data><data name="GeneralSettings_VersionControlCacheRetentionNotes" xml:space="preserve"><value>Aika tunteina, jonka jälkeen lähdekoodin versio automaattisesti virkistetään välimuistissa.</value></data><data name="TestRunDetails_LinkExisting" xml:space="preserve"><value>Linkitä Havainto</value></data><data name="TestCaseDetails_TestSets" xml:space="preserve"><value>Testijoukot jotka sisältävät tämän testitapauksen</value></data><data name="TestCaseExecution_NoExistingIncident" xml:space="preserve"><value>Yhtään Havaintoa ei ole tällä hetkellä linkitetty tähän Testiaskeleeseen.</value></data><data name="TestingSettings_CreateDefaultTestStep" xml:space="preserve"><value>Luo oletus Testiaskel</value></data><data name="TestingSettings_CreateDefaultTestStepNotes" xml:space="preserve"><value>Kyllä' valinta luo oletuksena testiaskeleen jokaiseen luomaasi testitapaukseen</value></data><data name="TestingSettings_Legend1" xml:space="preserve"><value>Tällä sivulla voi muokata</value></data><data name="TestingSettings_Legend2" xml:space="preserve"><value>testauksen asetuksia</value></data><data name="TestingSettings_Title" xml:space="preserve"><value>Testauksen asetukset</value></data><data name="TestSetDetails_AddParameterValue" xml:space="preserve"><value>Lisää parametrin arvo</value></data><data name="TestSetDetails_ParametersIntro" xml:space="preserve"><value>Testijoukkotasolle on määritelty seuraavat parametrit:</value></data><data name="TestSetDetails_TestSetValue" xml:space="preserve"><value>Testijoukon arvo</value></data><data name="TestCaseExecution_AddNewAttachment" xml:space="preserve"><value>Lisää uusi Liite</value></data><data name="TestCaseExecution_LinkExistingAttachment" xml:space="preserve"><value>Linkitä olemassa oleva Liite</value></data><data name="TestCaseExecution_AlwaysShowTestCase" xml:space="preserve"><value>Näytä aina testitapaus</value></data><data name="TestCaseExecution_Complete" xml:space="preserve"><value>Valmis</value></data><data name="TestCaseExecution_TestExecutionResume" xml:space="preserve"><value>Jatka testien suorittamista</value></data><data name="Admin_Notification_EditTemplate_Tokens" xml:space="preserve"><value>(Näytä erikoismerkit sähköpostin pohjassa)</value></data><data name="Help_AdministrationGuide" xml:space="preserve"><value>Ylläpito-opas</value></data><data name="Help_HelpViewer" xml:space="preserve"><value>Helpin katselin</value></data><data name="Help_UserManual" xml:space="preserve"><value>Käyttöopas</value></data><data name="TestRunDetails_ChangeTestSet" xml:space="preserve"><value>Muuta Testijoukkoa</value></data><data name="TestRunDetails_ChangeTestSet_Intro" xml:space="preserve"><value>Valitse Testijoukko johon tämä Testiajo on liitetty:</value></data><data name="ReportConfiguration_DefaultSortDDL" xml:space="preserve"><value>--oletusryhmittely--</value></data><data name="TestCaseExecution_ShowCustomProperties" xml:space="preserve"><value>Näytä kustomoidut parametrit</value></data><data name="GlobalNavigation_KeyboardShortcuts" xml:space="preserve"><value>Näppäimistön pikavalinnat</value></data><data name="Admin_TestingSettings_DisplayBuildDuringExecution" xml:space="preserve"><value>Näytä build testien suorituksessa</value></data><data name="DataSyncDetails_Notes_Caption" xml:space="preserve"><value>Liitännäisen nimi (e.g. Sisäinen Jira), jota voidaan käyttää erottamaan useat saman liitännäistyypin edustajat</value></data><data name="DataSyncDetails_Notes_Connection" xml:space="preserve"><value>URL tai muu yhteysosoite ulkoiseen havaintojenhallintavälineeseen kytkeytymiseksi</value></data><data name="DataSyncDetails_Notes_Description" xml:space="preserve"><value>Liitännäisen pitkä kuvaus (esim. 'kytkeytyy talon omaan havaintojenhallintavälineeseen')</value></data><data name="DataSyncDetails_Notes_LoginPasswordTo" xml:space="preserve"><value>Käyttäjätunnus ja salasana, joita käytetään kytkeytymiseen: </value></data><data name="DataSyncDetails_Notes_Name" xml:space="preserve"><value>Liitännäisen fyysinen nimi (esim. JiraDatasync), joka vastaa käytettävää DLL:ää</value></data><data name="DataSyncDetails_Notes_TimeOffset" xml:space="preserve"><value>Tunteja, joiden aikana voidaan palata synkronoituun tietoon. Normaalisti pitäisi olla nolla (0), paitsi jos löydät muutoksia, joita ei ole synkronoitu.</value></data><data name="GeneralSettings_FreeTextIndexingEnabled" xml:space="preserve"><value>Aktivoi vapaan tekstin indeksit</value></data><data name="GeneralSettings_FreeTextIndexingEnabledNotes" xml:space="preserve"><value>Aktivoituna käyttää SQL serverin vapaan tekstin indeksejä parantaakseen teksti-hakujen suorituskykyä.</value></data><data name="Global_Of" xml:space="preserve"><value>/</value></data><data name="Admin_ProjectAssociations" xml:space="preserve"><value>Projektin yhteydet</value></data><data name="Admin_ProjectAssociations_ArtifactTypes" xml:space="preserve"><value>Asian tyypit</value></data><data name="Admin_ProjectAssociations_AddAssociation" xml:space="preserve"><value>Lisää uusi Projektin yhteys</value></data><data name="Admin_ProjectAssociations_AddAssociation_Intro" xml:space="preserve"><value>Valitse asian tyypit ja projekti jolle haluat jakaa:</value></data><data name="Admin_ProjectAssociations_EditAssociation" xml:space="preserve"><value>Muokkaa olemassa olevaa projektin yhteyttä</value></data><data name="Admin_ProjectAssociations_EditAssociation_Intro" xml:space="preserve"><value>Valitse mitkä asian tyypit haluat jakaa tälle projektille:</value></data><data name="Admin_ProjectAssociations_Intro" xml:space="preserve"><value>Seuraavilla projekteilla on pääsy  &lt;strong&gt;tämän projektin&lt;/strong&gt; asioihin osana omia tietojaan:</value></data><data name="Admin_ProjectAssociations_Notes" xml:space="preserve"><value>Huomio: Muut projektit saavat vain luku-oikeudet tämän projektin asioihin.</value></data><data name="PlanningBoard_GroupBacklog" xml:space="preserve"><value>-- Programmin Backlog --</value></data><data name="Global_Seconds" xml:space="preserve"><value>sekuntia</value></data><data name="Followers_SelectProjectUser" xml:space="preserve"><value>Valitse projektin käyttäjä seuraamaan tätä Asiaa</value></data><data name="PendingTestRuns_Reassign" xml:space="preserve"><value>Osoita Testiajo uudelleen</value></data><data name="ProjectHome_PendingTestRuns" xml:space="preserve"><value>Kaikki odottavat Testiajot</value></data><data name="ProjectHome_ForDevelopment" xml:space="preserve"><value>toteutukselle</value></data><data name="ProjectHome_ForTesting" xml:space="preserve"><value>testaukselle</value></data><data name="ProjectHome_SourceCodeCommits" xml:space="preserve"><value>Lähdekoodin luovutukset</value></data><data name="ProjectHome_TestRunProgress" xml:space="preserve"><value>Testiajojen edistyminen</value></data><data name="SourceCodeCommits_PleaseEnableSourceCode" xml:space="preserve"><value>Sinun pitää aktivoida lähdekoodin hallinta tälle projektille</value></data></root>

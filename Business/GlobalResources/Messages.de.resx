@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="TestSet_TestCasePositionInUse" xml:space="preserve">
+    <value>Die angegebene Position des Testfalls ist bereits in Verwendung</value>
+  </data>
+	<data name="TestSet_TestSetTestCaseIdNotExist" xml:space="preserve">
+    <value>Die übergebenen testSetId und testSetTestCaseId entsprechen nicht einem passenden zugehörigen Testfall in der Testreihe!</value>
+  </data>
+	<data name="Incident_ClosedDateCannotBeBeforeDetected" xml:space="preserve">
+    <value>Das Abschlussdatum kann nicht vor dem Erfassungsdatum liegen</value>
+  </data>
+	<data name="Incident_ClosedDateCannotBeBeforeStart" xml:space="preserve">
+    <value>Das Abschlussdatum kann nicht vor dem Startdatum liegen</value>
+  </data>
+	<data name="Task_EndDateCannotBeBeforeStartDate" xml:space="preserve">
+    <value>Das Enddatum kann nicht vor dem Startdatum liegen</value>
+  </data>
+	<data name="Task_EndDateOutsideReleaseRange" xml:space="preserve">
+    <value>Das Enddatum dieser Aufgabe kann nicht außerhalb des Zeitraums der verknüpften Sprint / Release sein</value>
+  </data>
+	<data name="Task_EstimatedEffortNeededForInProgress" xml:space="preserve">
+    <value>Sie müssen einen geschätzten Aufwand festlegen, um den Status der Aufgabe auf 'In-Bearbeitung' setzen zu können</value>
+  </data>
+	<data name="Task_NeedActualEffortForCompleted" xml:space="preserve">
+    <value>Sie müssen einen tatsächlichen Aufwand angeben, um die Aufgabe abschließen zu können</value>
+  </data>
+	<data name="Task_NeedEndDateForCompleted" xml:space="preserve">
+    <value>Sie müssen ein Enddatum angeben, um die Aufgabe abschließen zu können</value>
+  </data>
+	<data name="Task_NeedEndDateForInProgress" xml:space="preserve">
+    <value>Sie müssen ein geschätztes Enddatum angeben, um die Aufgabe auf den Status 'In-Bearbeitung' zu setzen</value>
+  </data>
+	<data name="Task_NeedEstimatedEffortForCompleted" xml:space="preserve">
+    <value>Sie müssen einen geschätzten Aufwand angeben, um die Aufgabe abschließen zu können</value>
+  </data>
+	<data name="Task_NeedReleaseForCompleted" xml:space="preserve">
+    <value>Sie müssen die Aufgabe mit einem Release / Sprint verknüpfen, um sie abschließen zu können</value>
+  </data>
+	<data name="Task_NeedReleaseForInProgress" xml:space="preserve">
+    <value>Sie müssen die Aufgabe mit einem Release / Sprint verknüpfen, um sie auf den Status  'In-Bearbeitung' zu setzen</value>
+  </data>
+	<data name="Task_NeedStartDateForCompleted" xml:space="preserve">
+    <value>Sie müssen ein Startdatum angeben, um die Aufgabe abschließen zu können</value>
+  </data>
+	<data name="Task_NeedStartDateForInProgress" xml:space="preserve">
+    <value>Sie müssen ein Startdatum angeben, um die Aufgabe auf den Status  'In-Bearbeitung' zu setzen</value>
+  </data>
+	<data name="Task_PercentCompleteNotInRange" xml:space="preserve">
+    <value>Der Fertigstellungsgrad muss im Bereich von 0-100% liegen</value>
+  </data>
+	<data name="Task_RemainingEffortNeededForInProgress" xml:space="preserve">
+    <value>Sie müssen einen verbleibenden Aufwand angeben, um die Aufgabe auf den Status  'In-Bearbeitung' zu setzen</value>
+  </data>
+	<data name="Task_StartDateOutsideReleaseRange" xml:space="preserve">
+    <value>Das Startdatum dieser Aufgabe kann nicht außerhalb des Zeitraums der verknüpften Sprint / Release liegen</value>
+  </data>
+	<data name="TestRun_TestSetNotContainTestCases" xml:space="preserve">
+    <value>Die übergebene Testreihe beinhaltet keine Testfälle.</value>
+  </data>
+	<data name="TestSet_TestSetCannotHaveChildItems" xml:space="preserve">
+    <value>Testreihen können keine untergeordneten Testreihen oder Ordner haben</value>
+  </data>
+	<data name="Project_ArtifactNotExists" xml:space="preserve">
+    <value>Das Produkt {0} ist nicht mehr im System vorhanden.</value>
+  </data>
+	<data name="Project_Copy_Attachments" xml:space="preserve">
+    <value>Kopieren der Produktanhänge</value>
+  </data>
+	<data name="Project_Copy_CreateShell" xml:space="preserve">
+    <value>Erstellen eines neuen Produkts basierend auf dem Bestehenden.</value>
+  </data>
+	<data name="Project_Copy_CustomProperties" xml:space="preserve">
+    <value>Kopieren der benutzerdefinierten Artefakteigenschaften</value>
+  </data>
+	<data name="Project_Copy_Mappings" xml:space="preserve">
+    <value>Kopieren der Zuordnungen der Anforderungen, Releases und Testfälle</value>
+  </data>
+	<data name="Project_Copy_Releases" xml:space="preserve">
+    <value>Kopieren der Releases des Produkts</value>
+  </data>
+	<data name="Project_Copy_Requirements" xml:space="preserve">
+    <value>Kopieren der Anforderungen des Produkts</value>
+  </data>
+	<data name="Project_Copy_TestCases" xml:space="preserve">
+    <value>Kopieren der Testfälle des Produkts</value>
+  </data>
+	<data name="Project_Copy_TestSets" xml:space="preserve">
+    <value>Kopieren der Testreihen des Produkts</value>
+  </data>
+	<data name="Project_Delete_Associations" xml:space="preserve">
+    <value>Löschen der Artefaktverknüpfungen</value>
+  </data>
+	<data name="Project_Delete_Attachments" xml:space="preserve">
+    <value>Löschen der Produktanhänge</value>
+  </data>
+	<data name="Project_Delete_DataMappings" xml:space="preserve">
+    <value>Löschen der Zuordnungen von Synchronisationsdaten</value>
+  </data>
+	<data name="Project_Delete_IncidentWorkflows" xml:space="preserve">
+    <value>Löschen der Vorfallworkflows</value>
+  </data>
+	<data name="Project_Delete_Project" xml:space="preserve">
+    <value>Löschen des Produkts</value>
+  </data>
+	<data name="Project_Delete_Releases" xml:space="preserve">
+    <value>Löschen der Releases</value>
+  </data>
+	<data name="Project_Delete_Reports" xml:space="preserve">
+    <value>Löschen der Berichte</value>
+  </data>
+	<data name="Project_Delete_Requirements" xml:space="preserve">
+    <value>Löschen der Anforderungen</value>
+  </data>
+	<data name="Project_Delete_TestCases" xml:space="preserve">
+    <value>Löschen der Testfälle</value>
+  </data>
+	<data name="Project_Delete_TestRuns" xml:space="preserve">
+    <value>Löschen der Testläufe</value>
+  </data>
+	<data name="Project_Delete_TestSets" xml:space="preserve">
+    <value>Löschen der Testreihen</value>
+  </data>
+	<data name="TestRun_CreatingTestRuns" xml:space="preserve">
+    <value>Testläufe erstellen aus Testfällen.</value>
+  </data>
+	<data name="TestRun_CreationCompleted" xml:space="preserve">
+    <value>Erstellen von Testläufen abgeschlossen</value>
+  </data>
+	<data name="TestRun_SavingPendingEntry" xml:space="preserve">
+    <value>Speichern von ausstehenden Testlaufeinträgen.</value>
+  </data>
+	<data name="BuildManager_BuildNotExists" xml:space="preserve">
+    <value>Build '{0}' existiert nicht mehr im System.</value>
+  </data>
+	<data name="BuildManager_BuildNotExistsForRevision" xml:space="preserve">
+    <value>Der Build von Quellcodeversion '{0}' konnte nicht gefunden werden</value>
+  </data>
+	<data name="BuildManager_ReleaseNotExists" xml:space="preserve">
+    <value>Das verknüpfte Release / der Sprint RL'{0}' existiert nicht im aktuellen Produkt</value>
+  </data>
+	<data name="CustomProperty_MaxValueError" xml:space="preserve">
+    <value>Der eingegebene Wert für '%field%'  ist mehr als das erlaubte Maximum von %value%.</value>
+  </data>
+	<data name="CustomProperty_MinLengthError" xml:space="preserve">
+    <value>Die minimale Anzahl von Zeichen für '%field%' ist %min%. Die eingegeben Zeichenkette hatte %act% Zeichen.</value>
+  </data>
+	<data name="CustomProperty_MinValueError" xml:space="preserve">
+    <value>Der eingegebene Wert für  '%field%'  ist weniger als das erlaubte Minimum von %value%.</value>
+  </data>
+	<data name="CustomProperty_RegExError" xml:space="preserve">
+    <value>Der eingegebene Wert für  '%field%'  stimmt nicht mit dem erwarteten regulären Ausdruck überein.</value>
+  </data>
+	<data name="CustomProperty_RegExException_CannotChange" xml:space="preserve">
+    <value>Sie können keinen regulären Systemausdruck ändern.</value>
+  </data>
+	<data name="CustomProperty_RegExException_CannotDelete" xml:space="preserve">
+    <value>Sie können keinen irreguläreren Systemausdruck löschen.</value>
+  </data>
+	<data name="CustomProperty_ValueNullError" xml:space="preserve">
+    <value>Das Feld '%field%' benötigt einen Wert.</value>
+  </data>
+	<data name="Incident_CompletionPercentOutOfRange" xml:space="preserve">
+    <value>Die Fertigstellung gemessen in Prozent muss im Bereich von 0-100% liegen</value>
+  </data>
+	<data name="Report_CannotDeleteDefaultReport" xml:space="preserve">
+    <value>Sie können keinen Standardbericht löschen.</value>
+  </data>
+	<data name="Report_ReportGenerationComplete" xml:space="preserve">
+    <value>Berichtgenerierung abgeschlossen.</value>
+  </data>
+	<data name="Report_ReportNotExist" xml:space="preserve">
+    <value>Der Bericht mit der ID '{0}' existiert nicht im System!</value>
+  </data>
+	<data name="Report_StartGeneratingReport" xml:space="preserve">
+    <value>Berichtgenerierung wird gestartet.</value>
+  </data>
+	<data name="UserManager_NotResetLDAP" xml:space="preserve">
+    <value>Sie können das Password eines LDAP-Benutzers nicht zurücksetzen.</value>
+  </data>
+	<data name="UserManager_SettingNotExists" xml:space="preserve">
+    <value>Die Auswahl '{0}' der Benutzereinstellungen existiert nicht im System.</value>
+  </data>
+	<data name="ComponentManager_ArtifactNotExists" xml:space="preserve">
+    <value>Es ist nicht möglich die Komponente mit der ID={0} abzurufen.</value>
+  </data>
+	<data name="Project_Copy_AutomationHosts" xml:space="preserve">
+    <value>Kopieren des Automatisierungshosts des Produkts</value>
+  </data>
+	<data name="Requirement_StepNotExists" xml:space="preserve">
+    <value>Es ist nicht möglich den Anforderungsschritt mit der ID={0} abzurufen.</value>
+  </data>
+	<data name="TaskManager_FolderNotExists" xml:space="preserve">
+    <value>Der Aufgabenordner mit der ID={0} existiert nicht mehr im System!</value>
+  </data>
+	<data name="Project_Copy_Components" xml:space="preserve">
+    <value>Kopieren der Produktkomponenten</value>
+  </data>
+	<data name="Project_Copy_Tasks" xml:space="preserve">
+    <value>Kopieren der Aufgaben des Produkts</value>
+  </data>
+	<data name="SourceCode_BranchKeyNotFound" xml:space="preserve">
+    <value>Der branch key '{0}' wurde nicht gefunden. Bitte aktualisieren Sie den Cache.</value>
+  </data>
+	<data name="SourceCode_BranchKeyNull" xml:space="preserve">
+    <value>Der branch key war NULL. Bitte aktualisieren Sie den Cache.</value>
+  </data>
+	<data name="SourceCode_InvalidCacheLongMessage" xml:space="preserve">
+    <value>Der Quellcode der Bibliothek der Versionskontrolle ist veraltet und wird aktualisiert.</value>
+  </data>
+	<data name="DiscussionManager_CannotDeletePermanentDiscussion" xml:space="preserve">
+    <value>Das Abschlussdatum kann nicht vor dem Erfassungsdatum liegen</value>
+  </data>
+	<data name="Incident_StartDateCannotBeBeforeDetected" xml:space="preserve">
+    <value>Das Startdatum kann nicht vor dem Erstellungsdatum liegen</value>
+  </data>
+	<data name="Project_Copy_TestCaseFolders" xml:space="preserve">
+    <value>Löschen der Artefaktverknüpfungen</value>
+  </data>
+	<data name="Project_Copy_TestSetFolders" xml:space="preserve">
+    <value>Löschen der Zuordnungen von Synchronisationsdaten</value>
+  </data>
+	<data name="ReleaseManager_CreatingFakeVersionNumber" xml:space="preserve">
+    <value>Es ist nicht möglich den Anforderungsschritt mit der ID={0} abzurufen.</value>
+  </data>
+	<data name="ReleaseManager_IterationSummaryException" xml:space="preserve">
+    <value>Der branch key '{0}' wurde nicht gefunden. Bitte aktualisieren Sie den Cache.</value>
+  </data>
+	<data name="ReleaseManager_PhaseSummaryException" xml:space="preserve">
+    <value>Der branch key war NULL. Bitte aktualisieren Sie den Cache.</value>
+  </data>
+	<data name="ReleaseManager_ReleaseIterationNotExistsForAssociation" xml:space="preserve">
+    <value>Der Quellcode der Bibliothek der Versionskontrolle ist veraltet und wird aktualisiert.</value>
+  </data>
+	<data name="ReleaseManager_VersionNumberNotUnique" xml:space="preserve">
+    <value>Der Aufgabenordner mit der ID={0} existiert nicht mehr im System!</value>
+  </data>
+	<data name="Releases_CannotRetrieveExistingRelease" xml:space="preserve">
+    <value>Das Enddatum kann nicht vor dem Startdatum liegen</value>
+  </data>
+	<data name="HierarchicalItem_CannotMoveUnderItself" xml:space="preserve">
+    <value>Es wurde versucht, einen Gegenstand unter sich selbst zu bewegen!</value>
+  </data>
+	<data name="Report_ReportConvertingToPdf" xml:space="preserve">
+    <value>Bericht in PDF Format umwandeln</value>
+  </data>
+	<data name="TestConfigurationManager_TestConfigurationIdNotExist" xml:space="preserve"><value>Die angegebene Testkonfiguration ist nicht vorhanden.</value></data><data name="TestConfigurationManager_TestConfigurationPositionInUse" xml:space="preserve"><value>Die angegebene Testkonfigurationsposition ist bereits belegt.</value></data><data name="TestConfigurationManager_TestConfigurationSetIdNotExist" xml:space="preserve"><value>Der angegebene Testkonfigurationssatz ({0}) existiert nicht.</value></data><data name="GraphManager_GraphNotExist" xml:space="preserve"><value>Der angegebene benutzerdefinierte Graph mit der ID {0} ist im System nicht vorhanden!</value></data><data name="GraphManager_InvalidColumn" xml:space="preserve"><value>Die Spalte'{0}' hat nicht-numerische Daten und kann nicht dargestellt werden!</value></data><data name="ProjectTemplate_CannotDeleteActive" xml:space="preserve"><value>Sie können eine Produktvorlage, die von Produkten verwendet wird, nicht löschen!</value></data><data name="Project_Delete_Risks" xml:space="preserve"><value>Löschen der Risiken</value></data><data name="Requirement_CannotSplitSummaryRequirement" xml:space="preserve"><value>Sie können eine Sammelanforderung nicht aufteilen!</value></data><data name="Requirement_NoDefaultTypeForProjectTemplate" xml:space="preserve"><value>Für die Produktvorlage PT{0} wurde kein Standardanforderungstyp gefunden!</value></data><data name="Risk_ClosedDateCannotBeBeforeCreated" xml:space="preserve"><value>Das Abschlussdatum darf nicht vor dem Erstellungsdatum liegen.</value></data><data name="Risk_MitigationNotExists" xml:space="preserve"><value>Risikominderung kann mit ID={0} nicht abgerufen werden.</value></data><data name="Risk_NoDefaultTypeForProjectTemplate" xml:space="preserve"><value>Kein Standard-Risikotyp für die Produktvorlage PT{0} gefunden!</value></data><data name="Risk_ReviewDateCannotBeBeforeCreated" xml:space="preserve"><value>Das Überprüfungsdatum darf nicht vor dem Erstellungsdatum liegen.</value></data><data name="SourceCode_CannotDeleteCacheBecauseUpdateRunning" xml:space="preserve"><value>Das Leeren des Cache ist nicht möglich, da ein Update bereits ausgeführt wird.</value></data><data name="Task_CannotMakeParentChildOfCurrentTask" xml:space="preserve"><value>Sie können den übergeordneten Aufgabenordner nicht zu einem seiner untergeordneten Ordner machen!</value></data><data name="Task_NoDefaultTypeForProjectTemplate" xml:space="preserve"><value>Kein Standardaufgabentyp für die Produktvorlage PT{0} gefunden!</value></data><data name="TestCase_CannotMakeParentChildOfCurrentTestCase" xml:space="preserve"><value>Sie können den übergeordneten Testfallordner nicht zu einem seiner Kinder machen!</value></data><data name="TestCase_NoDefaultTypeForProjectTemplate" xml:space="preserve"><value>Kein Standard-Testfalltyp für die Produktvorlage PT{0} gefunden!</value></data><data name="Admin_EventLog_ClearUserName" xml:space="preserve"><value>Unbekannt</value></data><data name="Admin_EventLog_ClearUserNameMessage" xml:space="preserve"><value>Ereignisprotokoll wurde von Benutzer '{0}' gelöscht.</value></data><data name="BaselineManager_CannotCreateWithoutChangeset" xml:space="preserve"><value>Eine Baseline kann nicht für ein Projekt ohne Projekthistorie erstellt werden.</value></data><data name="ProjectTemplate_NotActive" xml:space="preserve"><value>Die angegebene Produktvorlage {0} ist nicht aktiv und muss es sein!</value></data><data name="ProjectTemplate_NotExists" xml:space="preserve"><value>Die angegebene Produktvorlage {0} existiert nicht!</value></data><data name="ProjectTemplate_ProjectTemplateIdTheSame" xml:space="preserve"><value>Es wurde versucht, die Vorlage eines Produktes in die gleiche Vorlage zu ändern und wurde daher ignoriert!</value></data><data name="Report_NeedToProvideAnXsltTemplate" xml:space="preserve"><value>Sie müssen eine XSLT-Vorlage für den benutzerdefinierten Berichtsabschnitt bereitstellen!</value></data><data name="SavedFilterManager_UnableToRetrieveFilter" xml:space="preserve"><value>Gespeicherte Filter mit ID = {0} können nicht abgerufen werden</value></data><data name="System_FinishingToClearSampleData" xml:space="preserve"><value>Die Löschung der Probendaten aus dem System wurde abgeschlossen.</value></data><data name="System_StartingToClearSampleData" xml:space="preserve"><value>Beginn der Löschung von Probendaten aus dem System.</value></data><data name="Template_Remap_Completed" xml:space="preserve"><value>Änderung der Projektvorlage abgeschlossen</value></data><data name="Template_Remap_CustomFieldForArtifactType_Completed" xml:space="preserve"><value>Benutzerdefinierte Felder neu zugeordnet für {0}</value></data><data name="Template_Remap_CustomFieldsFields_Completed" xml:space="preserve"><value>Benutzerdefinierte Felder neu zugeordnet</value></data><data name="Template_Remap_DataSyncDisabled" xml:space="preserve"><value>Datensynchronisationsdienste deaktiviert</value></data><data name="Template_Remap_DataSyncMappingsCleared" xml:space="preserve"><value>Zuordnungen von Datensynchronisationsfeldern gelöscht</value></data><data name="Template_Remap_FinishingInfo" xml:space="preserve"><value>Erfolgreiche Änderung der Produkt-PR{0} von Vorlage {1} zu Vorlage {2}.</value></data><data name="Template_Remap_StandardFields_Completed" xml:space="preserve"><value>Standard-Felder neu zugeordnet</value></data><data name="Template_Remap_Starting" xml:space="preserve"><value>Projektvorlagenänderung starten</value></data><data name="Template_Remap_StartingInfo" xml:space="preserve"><value>Starten des Prozesses zur Änderung von Produkt PR{0} von Vorlage {1} in Vorlage {2}.</value></data><data name="Template_Remap_TestConfigurations_Completed" xml:space="preserve"><value>Testkonfigurationen neu zugeordnet</value></data><data name="Template_Remap_UserViewSettingsCleared" xml:space="preserve"><value>Löschte die Einstellungen der Produktbenutzeransicht, gespeicherte Filter und Sortierungen</value></data><data name="TestRun_TestConfigurationBlank" xml:space="preserve"><value>Diese Testreihne kann nicht ausgeführt werden, weil die gewählte Testkonfiguration keine Einträge hat.</value></data><data name="TestSet_CannotMakeParentChildOfCurrentTestSet" xml:space="preserve"><value>Sie können einen überordneten Testreihen-Ordner nicht zu einem seiner untergeordneten Ordner machen.</value></data><data name="UserManager_NewUserEmail_Approved" xml:space="preserve"><value>Ein {0} Konto wurde für Sie erstellt. Es hat die folgenden Anmeldeinformationen:
+
+URL:  {1}
+Benutzername:  {2}
+Passwort:  {3}
+
+Bei Fragen kontaktieren Sie bitte ihren Systemadministrator.</value></data><data name="UserManager_NewUserEmail_Approved_LDAPPass" xml:space="preserve"><value>(Netzwerk Passwort)</value></data><data name="UserManager_NewUserEmail_Oauth" xml:space="preserve"><value>Ein {0} Konto wurde für Sie mit den folgenden Anmeldedaten unter Verwendung Ihrer {4}-Anmeldedaten erstellt, at: {1}
+
+Sobald das Konto genehmigt wurde, erhalten Sie eine separate E-Mail, in der Sie darüber informiert werden, dass das Konto aktiv und einsatzbereit ist.
+Bei Fragen wenden Sie sich bitte an den Systemadministrator.</value></data><data name="UserManager_NewUserEmail_Unapproved" xml:space="preserve"><value>Es wurde ein {0} Konto mit den folgenden Anmeldeinformationen für Sie eingerichtet:
+
+URL: {1}
+Benutzername: {2}
+
+Sobald das Konto genehmigt wurde, erhalten Sie eine separate E-Mail, in der Sie darüber informiert werden, dass das Konto aktiv und einsatzbereit ist.
+Bei Fragen wenden Sie sich bitte an den Systemadministrator.</value></data></root>

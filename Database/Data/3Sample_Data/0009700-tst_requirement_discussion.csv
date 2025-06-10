@@ -1,0 +1,4 @@
+discussion_id:Key,artifact_id:Normal,text:String,creator_id:Normal,creation_date:Normal,is_deleted:Normal,is_permanent:Normal
+1,4,"Need to write a better definition of this requirement, it has too many loose-ends.",2,"DATEADD(minute, -213755, SYSUTCDATETIME())",0,0
+2,4,"You're right, I have added some more detail and linked to some test cases that define how the functionality is expected to work.",3,"DATEADD(minute, -213653, SYSUTCDATETIME())",0,0
+3,4,"OK, that's much better, thanks for adding the additional information.",2,"DATEADD(minute, -212466, SYSUTCDATETIME())",0,0

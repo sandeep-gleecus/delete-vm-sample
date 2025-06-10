@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="CatalogZone_AddRemoveItems" xml:space="preserve">
+    <value>Lisää/Poista Kohteet</value>
+  </data>
+	<data name="CatalogZone_AddVerbDescription" xml:space="preserve">
+    <value>Lisää uuden widgetin Dashboardille</value>
+  </data>
+	<data name="CatalogZone_CloseVerbDescription" xml:space="preserve">
+    <value>Sulkee tämän valintaikkunan</value>
+  </data>
+	<data name="CatalogZone_InstructionText" xml:space="preserve">
+    <value>Valitse, mitkä Kohteet haluat lisätä:</value>
+  </data>
+	<data name="EditorZone_ApplyVerbDescription" xml:space="preserve">
+    <value>Koskee muutoksia</value>
+  </data>
+	<data name="EditorZone_CancelVerbDescription" xml:space="preserve">
+    <value>Peruuttaa muutokset ja sulkee editorin</value>
+  </data>
+	<data name="EditorZone_CloseVerbDescription" xml:space="preserve">
+    <value>Peruuttaa muutokset ja sulkee editorin</value>
+  </data>
+	<data name="EditorZone_DashboardSettings" xml:space="preserve">
+    <value>Dashboardin asetukset</value>
+  </data>
+	<data name="EditorZone_InstructionText" xml:space="preserve">
+    <value>Muokkaa Widgetin ominaisuuksia, klikkaa OK tai Aseta ottaaksesi muutokset käyttöön</value>
+  </data>
+	<data name="EditorZone_OKVerbDescription" xml:space="preserve">
+    <value>Asettaa muutokset ja sulkee editorin</value>
+  </data>
+	<data name="IncidentReleaseType_DetectedRelease" xml:space="preserve">
+    <value>Tässä Julkaisussa havaitut</value>
+  </data>
+	<data name="IncidentReleaseType_ResolvedRelease" xml:space="preserve">
+    <value>Tässä Julkaisussa ratkaistut</value>
+  </data>
+	<data name="IncidentReleaseType_VerifiedRelease" xml:space="preserve">
+    <value>Tässä Julkaisussa varmistetut</value>
+  </data>
+	<data name="RichTextBox_BorderThickness" xml:space="preserve">
+    <value>Rajan paksuus</value>
+  </data>
+	<data name="RichTextBox_Cancel" xml:space="preserve">
+    <value>Peruuta</value>
+  </data>
+	<data name="RichTextBox_CellPadding" xml:space="preserve">
+    <value>Solujen täyttö</value>
+  </data>
+	<data name="RichTextBox_CellSpacing" xml:space="preserve">
+    <value>Solujen välit</value>
+  </data>
+	<data name="RichTextBox_Columns" xml:space="preserve">
+    <value>Sarakkeet</value>
+  </data>
+	<data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>Lisää taulukko</value>
+  </data>
+	<data name="RichTextBox_Percent" xml:space="preserve">
+    <value>prosenttia</value>
+  </data>
+	<data name="RichTextBox_Pixels" xml:space="preserve">
+    <value>pikseliä</value>
+  </data>
+	<data name="RichTextBox_Rows" xml:space="preserve">
+    <value>Riviä</value>
+  </data>
+	<data name="RichTextBox_TableWidth" xml:space="preserve">
+    <value>Taulukon leveys</value>
+  </data>
+	<data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>Tekstin väri</value>
+  </data>
+	<data name="TabControl_Associations" xml:space="preserve">
+    <value>Yhteydet</value>
+  </data>
+	<data name="TabControl_Attachments" xml:space="preserve">
+    <value>Liitteet</value>
+  </data>
+	<data name="TabControl_Automation" xml:space="preserve">
+    <value>Automaatio</value>
+  </data>
+	<data name="TabControl_Comments" xml:space="preserve">
+    <value>kommentit</value>
+  </data>
+	<data name="TabControl_CustomProperties" xml:space="preserve">
+    <value>Kust ominaisuudet</value>
+  </data>
+	<data name="TabControl_History" xml:space="preserve">
+    <value>Historia</value>
+  </data>
+	<data name="TabControl_IncidentAssociations" xml:space="preserve">
+    <value>Havainnon Yhteydet</value>
+  </data>
+	<data name="TabControl_Incidents" xml:space="preserve">
+    <value>Havainnot</value>
+  </data>
+	<data name="TabControl_Releases" xml:space="preserve">
+    <value>Julkaisut</value>
+  </data>
+	<data name="TabControl_ReqCoverage" xml:space="preserve">
+    <value>Vaatimuksen kattavuus</value>
+  </data>
+	<data name="TabControl_ReqsTasks" xml:space="preserve">
+    <value>Vaatimukset&amp;Tehtävät</value>
+  </data>
+	<data name="TabControl_Tasks" xml:space="preserve">
+    <value>Tehtävät</value>
+  </data>
+	<data name="TabControl_TestCases" xml:space="preserve">
+    <value>Testitapaukset</value>
+  </data>
+	<data name="TabControl_TestCoverage" xml:space="preserve">
+    <value>Testauksen kattavuus</value>
+  </data>
+	<data name="TabControl_TestRuns" xml:space="preserve">
+    <value>Testiajot</value>
+  </data>
+	<data name="TabControl_TestRunSteps" xml:space="preserve">
+    <value>Testiajon askeleet</value>
+  </data>
+	<data name="TabControl_TestSteps" xml:space="preserve">
+    <value>Testiaskeleet</value>
+  </data>
+	<data name="WebPartChrome_ChangeSettings" xml:space="preserve">
+    <value>Muuta asetuksia</value>
+  </data>
+	<data name="WebPartChrome_CloseWidget" xml:space="preserve">
+    <value>Sulje Widgetti</value>
+  </data>
+	<data name="WebPartChrome_MinimizeWidget" xml:space="preserve">
+    <value>Minimoi Widgetti</value>
+  </data>
+	<data name="WebPartChrome_RestoreWidget" xml:space="preserve">
+    <value>Palauta Widgetti</value>
+  </data>
+	<data name="WebPartZone_LeftSide" xml:space="preserve">
+    <value>Vasen puoli</value>
+  </data>
+	<data name="WebPartZone_RightSide" xml:space="preserve">
+    <value>Oikea puoli</value>
+  </data>
+	<data name="TabControl_Schedule" xml:space="preserve">
+    <value>Aikataulu</value>
+  </data>
+	<data name="TabControl_TestSets" xml:space="preserve">
+    <value>Testijoukot</value>
+  </data>
+	<data name="TabControl_Files" xml:space="preserve">
+    <value>Tiedostot</value>
+  </data>
+	<data name="TabControl_Revisions" xml:space="preserve">
+    <value>Versiot</value>
+  </data>
+	<data name="TabControl_Versions" xml:space="preserve">
+    <value>Versiot</value>
+  </data>
+	<data name="TagCloud_DefaultFormat" xml:space="preserve">
+    <value>%k tapahtui %c kertaa</value>
+  </data>
+	<data name="TagCloud_Error" xml:space="preserve">
+    <value>Virhe luotaessa pilveä</value>
+  </data>
+	<data name="TagCloud_NoValues" xml:space="preserve">
+    <value>Ei arvoja pilven luontia varten</value>
+  </data>
+	<data name="WebPartZone_SideBar" xml:space="preserve">
+    <value>Sivupalkki</value>
+  </data>
+	<data name="WebPartZone_Top" xml:space="preserve">
+    <value>Yläosa</value>
+  </data>
+	<data name="PlanningBoard_Resource" xml:space="preserve">
+    <value>Resurssi:</value>
+  </data>
+	<data name="TabControl_Builds" xml:space="preserve">Buildit</data><data name="CatalogZone_SelectTargetZoneText" xml:space="preserve">Lisää</data><data name="TabControl_Overview" xml:space="preserve">Yleiskuva</data><data name="TabControl_Description" xml:space="preserve">Kuvaus</data><data name="TabControl_Details" xml:space="preserve">Yksityiskohdat</data><data name="TimeExtender_SelectCurrentTime" xml:space="preserve">Paina valitaksesi tämänhetkinen aika</data><data name="TabControl_Console" xml:space="preserve">Konsolituloste</data><data name="TabControl_Builds" xml:space="preserve"><value>Buildit</value></data><data name="CatalogZone_SelectTargetZoneText" xml:space="preserve"><value>Lisää</value></data><data name="TabControl_Overview" xml:space="preserve"><value>Yleiskuva</value></data><data name="TabControl_Description" xml:space="preserve"><value>Kuvaus</value></data><data name="TabControl_Details" xml:space="preserve"><value>Yksityiskohdat</value></data><data name="TimeExtender_SelectCurrentTime" xml:space="preserve"><value>Klikkaa valitaksesi tämänhetkinen aika</value></data><data name="TabControl_Console" xml:space="preserve"><value>Konsolituloste</value></data><data name="GridViewEx_SortByAscending" xml:space="preserve"><value>Järjestä pienimmästä alkaen</value></data><data name="GridViewEx_SortByDescending" xml:space="preserve"><value>Järjestä suurimmasta alkaen</value></data><data name="GridViewEx_SortByFieldAscending" xml:space="preserve"><value>Järjestä pienimmästä {0} mukaan</value></data><data name="GridViewEx_SortByFieldDescending" xml:space="preserve"><value>Järjestä suurimmasta {0} mukaan</value></data><data name="TabControl_ProjectList" xml:space="preserve"><value>Projektilista</value></data><data name="TabControl_UserMembership" xml:space="preserve"><value>Käyttäjän jäsenyydet</value></data><data name="TabControl_ChangeActions" xml:space="preserve"><value>Muutostoiminnot</value></data><data name="TabControl_Scenario" xml:space="preserve"><value>Skenaario</value></data><data name="PlanningBoard_ByComponent" xml:space="preserve"><value>Komponentin mukaan</value></data><data name="PlanningBoard_ByIteration" xml:space="preserve"><value>Iteraation mukaan</value></data><data name="PlanningBoard_ByPackage" xml:space="preserve"><value>Paketin mukaan</value></data><data name="PlanningBoard_ByPerson" xml:space="preserve"><value>Henkilön mukaan</value></data><data name="PlanningBoard_ByPriority" xml:space="preserve"><value>Prioriteetin mukaan</value></data><data name="PlanningBoard_ByRelease" xml:space="preserve"><value>Julkaisun mukaan</value></data><data name="PlanningBoard_TasksByPerson" xml:space="preserve"><value>Tehtävät henkilön mukaan</value></data><data name="PlanningBoard_ByStatus" xml:space="preserve"><value>Tilan mukaan</value></data><data name="TabControl_Preview" xml:space="preserve"><value>Esikatselu</value></data><data name="TabControl_ExistingIncidents" xml:space="preserve"><value>Olemassaolevat Havainnot</value></data><data name="TabControl_NewIncident" xml:space="preserve"><value>Uusi Havainto</value></data><data name="PlanningBoard_TasksByStatus" xml:space="preserve"><value>Tehtävät tilojen mukaan</value></data><data name="TabControl_Requirements" xml:space="preserve"><value>Vaatimukset</value></data><data name="TabControl_Parameters" xml:space="preserve"><value>Parametrit</value></data><data name="GridViewEx_DisplayingPage" xml:space="preserve"><value>Näyttää sivua</value></data><data name="GridViewEx_RowsPerPage" xml:space="preserve"><value>riviä sivulla</value></data><data name="PlanningBoard_ByProject" xml:space="preserve"><value>Projektin mukaan</value></data></root>

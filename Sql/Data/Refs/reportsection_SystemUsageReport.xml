@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+	<xsl:template match="/SystemUsageData">
+		<table class="DataGrid" style="width:100%">
+			<tr>
+				<th>Month Name</th>
+				<th># of Active Accounts</th>
+				<th>Active User %</th>
+				<th>Avg No. of Connection PerDay</th>
+				<th>Avg No. of Connection PerWeek</th>
+				<th>Avg No. of Connection PerMonth</th>
+				<th>Avg Conn Time PerDay</th>
+				<th>Avg Conn Time PerWeek</th>
+				<th>Avg Conn Time PerMonth</th>
+			</tr>
+			<xsl:for-each select="SystemUsage">
+				<tr>
+					<td>
+						<xsl:value-of select="MonthName"/>
+					</td>
+					<td>
+						<xsl:value-of select="ActiveAccount" />
+					</td>
+					<td>
+						<xsl:value-of select="ActiveUserPercentage"/>
+					</td>
+					<td>
+						<xsl:value-of select="AvgNoOfConnPerDay"/>
+					</td>
+					<td>
+						<xsl:value-of select="AvgNoOfConnPerWeek"/>
+					</td>
+					<td>
+						<xsl:value-of select="AvgNoOfConnPerMonth"/>
+					</td>
+					<td>
+						<xsl:value-of select="AvgConnTimePerDay"/>
+					</td>
+					<td>
+						<xsl:value-of select="AvgConnTimePerWeek"/>
+					</td>
+					<td>
+						<xsl:value-of select="AvgConnTimePerMonth"/>
+					</td>
+				</tr>
+			</xsl:for-each>
+		</table>
+	</xsl:template>
+</xsl:stylesheet>

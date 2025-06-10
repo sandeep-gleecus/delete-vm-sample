@@ -1,0 +1,17 @@
+risk_impact_id:Key,project_template_id:Normal,name:String,color:String,is_active:Normal,position:Normal,score:Normal
+1,1,Catastrophic,A23520,1,1,4
+2,1,Critical,D8472B,1,2,3
+3,1,Marginal,E27560,1,3,2
+4,1,Negligible,ECA395,1,4,1
+5,2,Catastrophic,A23520,1,1,4
+6,2,Critical,D8472B,1,2,3
+7,2,Marginal,E27560,1,3,2
+8,2,Negligible,ECA395,1,4,1
+9,3,Catastrophic,A23520,1,1,4
+10,3,Critical,D8472B,1,2,3
+11,3,Marginal,E27560,1,3,2
+12,3,Negligible,ECA395,1,4,1
+13,4,Catastrophic,A23520,1,1,4
+14,4,Critical,D8472B,1,2,3
+15,4,Marginal,E27560,1,3,2
+16,4,Negligible,ECA395,1,4,1

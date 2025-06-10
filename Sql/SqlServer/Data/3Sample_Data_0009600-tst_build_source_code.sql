@@ -1,0 +1,58 @@
+/***************************************************************
+**	Insert script for table TST_BUILD_SOURCE_CODE
+***************************************************************/
+INSERT INTO TST_BUILD_SOURCE_CODE
+(
+BUILD_ID, REVISION_KEY, CREATION_DATE
+)
+VALUES
+(
+1, '0001', DATEADD(day, -144, SYSUTCDATETIME())
+),
+(
+2, '0002', DATEADD(day, -143, SYSUTCDATETIME())
+),
+(
+3, '0003', DATEADD(day, -142, SYSUTCDATETIME())
+),
+(
+4, '0004', DATEADD(day, -142, SYSUTCDATETIME())
+),
+(
+4, '0005', DATEADD(day, -142, SYSUTCDATETIME())
+),
+(
+5, '0006', DATEADD(day, -141, SYSUTCDATETIME())
+),
+(
+6, '0007', DATEADD(day, -141, SYSUTCDATETIME())
+),
+(
+7, '0008', DATEADD(day, -140, SYSUTCDATETIME())
+),
+(
+8, '0009', DATEADD(day, -139, SYSUTCDATETIME())
+),
+(
+9, '0010', DATEADD(day, -138, SYSUTCDATETIME())
+),
+(
+10, '0011', DATEADD(day, -137, SYSUTCDATETIME())
+),
+(
+11, '0012', DATEADD(day, -137, SYSUTCDATETIME())
+),
+(
+12, '0013', DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+13, '0014', DATEADD(day, -135, SYSUTCDATETIME())
+),
+(
+14, '0015', DATEADD(day, -134, SYSUTCDATETIME())
+),
+(
+15, '0016', DATEADD(day, -133, SYSUTCDATETIME())
+)
+GO
+

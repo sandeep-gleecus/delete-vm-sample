@@ -1,0 +1,277 @@
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript+apl+applescript+aspnet+bash+basic+batch+c+csharp+cpp+diff+erlang+go+groovy+java+json+json5+jsonp+markup-templating+perl+php+powershell+python+r+ruby+sass+scala+sql+typescript+vbnet+yaml&plugins=line-numbers */
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+
+/*
+SOLARIZED HEX
+--------- -------
+base03    #002b36
+base02    #073642
+base01    #586e75
+base00    #657b83
+base0     #839496
+base1     #93a1a1
+base2     #eee8d5
+base3     #fdf6e3
+yellow    #b58900
+orange    #cb4b16
+red       #dc322f
+magenta   #d33682
+violet    #6c71c4
+blue      #268bd2
+cyan      #2aa198
+green     #859900
+*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #657b83; /* base00 */
+	font-family: SFMono-Regular, Consolas, Menlo, monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	background: #073642; /* base02 */
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	background: #073642; /* base02 */
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #fdf6e3; /* base3 */
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #93a1a1; /* base1 */
+}
+
+.token.punctuation {
+	color: #586e75; /* base01 */
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #268bd2; /* blue */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
+	color: #2aa198; /* cyan */
+}
+
+.token.entity {
+	color: #657b83; /* base00 */
+	background: #eee8d5; /* base2 */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #859900; /* green */
+}
+
+.token.function,
+.token.class-name {
+	color: #b58900; /* yellow */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #cb4b16; /* orange */
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+pre[class*="language-"].line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+	position: relative;
+	white-space: inherit;
+}
+
+
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+.line-numbers-rows > span {
+	display: block;
+	counter-increment: linenumber;
+}
+
+	.line-numbers-rows > span:before {
+		content: counter(linenumber);
+		color: #999;
+		display: block;
+		padding-right: 0.8em;
+		text-align: right;
+	}
+
+
+
+/* DARK MODE */
+body[data-colorscheme="dark"] code[class*="language-"],
+body[data-colorscheme="dark"] pre[class*="language-"] {
+	color: #f8f8f2;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+body[data-colorscheme="dark"] :not(pre) > code[class*="language-"],
+body[data-colorscheme="dark"] pre[class*="language-"] {
+	background: #222;
+}
+
+/* Inline code */
+body[data-colorscheme="dark"] .token.comment,
+body[data-colorscheme="dark"] .token.prolog,
+body[data-colorscheme="dark"] .token.doctype,
+body[data-colorscheme="dark"] .token.cdata {
+	color: #8292a2;
+}
+
+body[data-colorscheme="dark"] .token.punctuation {
+	color: #f8f8f2;
+}
+
+body[data-colorscheme="dark"] .token.namespace {
+	opacity: .7;
+}
+
+body[data-colorscheme="dark"] .token.property,
+body[data-colorscheme="dark"] .token.tag,
+body[data-colorscheme="dark"] .token.constant,
+body[data-colorscheme="dark"] .token.symbol,
+body[data-colorscheme="dark"] .token.deleted {
+	color: #f92672;
+}
+
+body[data-colorscheme="dark"] .token.boolean,
+body[data-colorscheme="dark"] .token.number {
+	color: #ae81ff;
+}
+
+body[data-colorscheme="dark"] .token.selector,
+body[data-colorscheme="dark"] .token.attr-name,
+body[data-colorscheme="dark"] .token.string,
+body[data-colorscheme="dark"] .token.char,
+body[data-colorscheme="dark"] .token.builtin,
+body[data-colorscheme="dark"] .token.inserted {
+	color: #a6e22e;
+}
+
+body[data-colorscheme="dark"] .token.operator,
+body[data-colorscheme="dark"] .token.entity,
+body[data-colorscheme="dark"] .token.url,
+body[data-colorscheme="dark"] .language-css .token.string,
+body[data-colorscheme="dark"] .style .token.string,
+body[data-colorscheme="dark"] .token.variable {
+	color: #f8f8f2;
+}
+
+body[data-colorscheme="dark"] .token.atrule,
+body[data-colorscheme="dark"] .token.attr-value,
+body[data-colorscheme="dark"] .token.function,
+body[data-colorscheme="dark"] .token.class-name {
+	color: #e6db74;
+}
+
+body[data-colorscheme="dark"] .token.keyword {
+	color: #66d9ef;
+}
+
+body[data-colorscheme="dark"] .token.regex,
+body[data-colorscheme="dark"] .token.important {
+	color: #fd971f;
+}
+
+body[data-colorscheme="dark"] .line-numbers .line-numbers-rows {
+	border-right: 1px solid #555;
+}
+
+body[data-colorscheme="dark"] .line-numbers-rows > span:before {
+	color: #555;
+	}

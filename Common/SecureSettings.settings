@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Inflectra.SpiraTest.Common" GeneratedClassName="SecureSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EmailSettings_SmtpPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Ldap_BindPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TestSecureSetting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ClearValue</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

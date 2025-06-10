@@ -1,0 +1,4 @@
+test_configuration_set_id:Key,project_id:Normal,name:String,description:String,is_active:Normal,is_deleted:Normal,creation_date:Normal,last_updated_date:Normal,concurrency_date:Normal
+1,1,Target web browsers and operating systems,This set of data consists of all the web browsers and operating systems that the application needs to be tested with,1,0,"DATEADD(day, -151, SYSUTCDATETIME())","DATEADD(day, -151, SYSUTCDATETIME())","DATEADD(day, -151, SYSUTCDATETIME())"
+2,1,List of library information system logins and passwords,NULL,1,0,"DATEADD(day, -150, SYSUTCDATETIME())","DATEADD(day, -150, SYSUTCDATETIME())","DATEADD(day, -150, SYSUTCDATETIME())"
+3,1,"Complete testing data, with browsers, operating systems and logins","This is the complete set of test data that we need to use. It comprises the logins, web browsers and operating systems",1,0,"DATEADD(day, -150, SYSUTCDATETIME())","DATEADD(day, -150, SYSUTCDATETIME())","DATEADD(day, -150, SYSUTCDATETIME())"

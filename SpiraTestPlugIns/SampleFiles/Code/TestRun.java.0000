@@ -1,0 +1,20 @@
+package com.inflectra.spiratest.addons.junitextension;
+
+/**
+ * This defines the 'TestRun' class that's used to store
+ * the information relating to a single test run
+ * 
+ * @author		Inflectra Corporation
+ * @version		3.0.0
+ *
+ */
+public class TestRun
+{
+	public Integer testCaseId;
+	public String message;
+	public Integer executionStatusId;
+	public String url;
+	public String userName;
+	public String password;
+	public int projectId;
+}

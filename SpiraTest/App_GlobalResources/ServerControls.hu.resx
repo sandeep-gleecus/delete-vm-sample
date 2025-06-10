@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="CatalogZone_AddRemoveItems" xml:space="preserve">
+    <value>Elemek hozzáadása / eltávolítása</value>
+  </data>
+	<data name="CatalogZone_AddVerbDescription" xml:space="preserve">
+    <value>Új Widget hozzáadása a Dashboardhoz</value>
+  </data>
+	<data name="CatalogZone_CloseVerbDescription" xml:space="preserve">
+    <value>Bezárja a párbeszédablakot</value>
+  </data>
+	<data name="CatalogZone_InstructionText" xml:space="preserve">
+    <value>Válassza ki, melyik elemeket szeretné hozzáadni:</value>
+  </data>
+	<data name="EditorZone_ApplyVerbDescription" xml:space="preserve">
+    <value>Változtatások alkalmazása</value>
+  </data>
+	<data name="EditorZone_CancelVerbDescription" xml:space="preserve">
+    <value>Változtatások visszavonása majd az ablak bezárása</value>
+  </data>
+	<data name="EditorZone_CloseVerbDescription" xml:space="preserve">
+    <value>Változtatások visszavonása majd az ablak bezárása</value>
+  </data>
+	<data name="EditorZone_DashboardSettings" xml:space="preserve">
+    <value>Dashboard beállítások</value>
+  </data>
+	<data name="EditorZone_InstructionText" xml:space="preserve">
+    <value>Módosítsa a Widget tulajdonságait, majd kattintson az Ok vagy az Alkalmaz gombra az érvényesítéshez</value>
+  </data>
+	<data name="EditorZone_OKVerbDescription" xml:space="preserve">
+    <value>Változtatások alkalmazása majd az ablak bezárása</value>
+  </data>
+	<data name="IncidentReleaseType_DetectedRelease" xml:space="preserve">
+    <value>Detektálva ebben a release-ben</value>
+  </data>
+	<data name="IncidentReleaseType_ResolvedRelease" xml:space="preserve">
+    <value>Megoldva ebben a release-ben</value>
+  </data>
+	<data name="IncidentReleaseType_VerifiedRelease" xml:space="preserve">
+    <value>Ellenőrzive ebben a release-ben</value>
+  </data>
+	<data name="RichTextBox_BorderThickness" xml:space="preserve">
+    <value>Keret vastagsága</value>
+  </data>
+	<data name="RichTextBox_Cancel" xml:space="preserve">
+    <value>Mégse</value>
+  </data>
+	<data name="RichTextBox_CellPadding" xml:space="preserve">
+    <value>Cella padding</value>
+  </data>
+	<data name="RichTextBox_CellSpacing" xml:space="preserve">
+    <value>Cella térköz</value>
+  </data>
+	<data name="RichTextBox_Columns" xml:space="preserve">
+    <value>Oszlopok</value>
+  </data>
+	<data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>Táblázat beszúrása</value>
+  </data>
+	<data name="RichTextBox_Percent" xml:space="preserve">
+    <value>százalék</value>
+  </data>
+	<data name="RichTextBox_Pixels" xml:space="preserve">
+    <value>képpont</value>
+  </data>
+	<data name="RichTextBox_Rows" xml:space="preserve">
+    <value>Sorok</value>
+  </data>
+	<data name="RichTextBox_TableWidth" xml:space="preserve">
+    <value>Táblázat szélessége</value>
+  </data>
+	<data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>Szöveg színe</value>
+  </data>
+	<data name="TabControl_Associations" xml:space="preserve">
+    <value>Társítások</value>
+  </data>
+	<data name="TabControl_Attachments" xml:space="preserve">
+    <value>Mellékletek</value>
+  </data>
+	<data name="TabControl_Automation" xml:space="preserve">
+    <value>Automatizációs</value>
+  </data>
+	<data name="TabControl_Comments" xml:space="preserve">
+    <value>Hozzászólások</value>
+  </data>
+	<data name="TabControl_CustomProperties" xml:space="preserve">
+    <value>Egyéni tulajdonságok</value>
+  </data>
+	<data name="TabControl_History" xml:space="preserve">
+    <value>Napló</value>
+  </data>
+	<data name="TabControl_IncidentAssociations" xml:space="preserve">
+    <value>Incidens társítás</value>
+  </data>
+	<data name="TabControl_Incidents" xml:space="preserve">
+    <value>Incidensek</value>
+  </data>
+	<data name="TabControl_Releases" xml:space="preserve">
+    <value>release-k</value>
+  </data>
+	<data name="TabControl_ReqCoverage" xml:space="preserve">
+    <value>Követelmény lefedettség</value>
+  </data>
+	<data name="TabControl_ReqsTasks" xml:space="preserve">
+    <value>Követelmények, feladatok</value>
+  </data>
+	<data name="TabControl_Tasks" xml:space="preserve">
+    <value>Feladatok</value>
+  </data>
+	<data name="TabControl_TestCases" xml:space="preserve">
+    <value>tesztesetek</value>
+  </data>
+	<data name="TabControl_TestCoverage" xml:space="preserve">
+    <value>Teszt lefedettség</value>
+  </data>
+	<data name="TabControl_TestRuns" xml:space="preserve">
+    <value>Teszt futások</value>
+  </data>
+	<data name="TabControl_TestRunSteps" xml:space="preserve">
+    <value>Test futtatás lépései</value>
+  </data>
+	<data name="TabControl_TestSteps" xml:space="preserve">
+    <value>Test lépések</value>
+  </data>
+	<data name="WebPartChrome_ChangeSettings" xml:space="preserve">
+    <value>Beállítások módosítása</value>
+  </data>
+	<data name="WebPartChrome_CloseWidget" xml:space="preserve">
+    <value>Widget bezárása</value>
+  </data>
+	<data name="WebPartChrome_MinimizeWidget" xml:space="preserve">
+    <value>Widget minimalizálása</value>
+  </data>
+	<data name="WebPartChrome_RestoreWidget" xml:space="preserve">
+    <value>Widget visszaálíltása</value>
+  </data>
+	<data name="WebPartZone_LeftSide" xml:space="preserve">
+    <value>Bal oldali</value>
+  </data>
+	<data name="WebPartZone_RightSide" xml:space="preserve">
+    <value>Jobb oldali</value>
+  </data>
+	<data name="TabControl_Schedule" xml:space="preserve">
+    <value>Ütemterv</value>
+  </data>
+	<data name="TabControl_TestSets" xml:space="preserve">
+    <value>Test szett</value>
+  </data>
+	<data name="TabControl_Files" xml:space="preserve">
+    <value>Fájlok</value>
+  </data>
+	<data name="TabControl_Revisions" xml:space="preserve">
+    <value>Revíziók</value>
+  </data>
+	<data name="TabControl_Versions" xml:space="preserve">
+    <value>Verziók</value>
+  </data>
+	<data name="TagCloud_DefaultFormat" xml:space="preserve">
+    <value>%k történt %c alkalommal</value>
+  </data>
+	<data name="TagCloud_Error" xml:space="preserve">
+    <value>Hiba történt a felhő létrehozásakor</value>
+  </data>
+	<data name="TagCloud_NoValues" xml:space="preserve">
+    <value>Nincs érték a felhő létrehozásához</value>
+  </data>
+	<data name="WebPartZone_SideBar" xml:space="preserve">
+    <value>Oldalsáv</value>
+  </data>
+	<data name="WebPartZone_Top" xml:space="preserve">
+    <value>Felső</value>
+  </data>
+	<data name="PlanningBoard_Resource" xml:space="preserve">
+    <value>Erőforrás:</value>
+  </data>
+	<data name="TabControl_Builds" xml:space="preserve">
+    <value>Build</value>
+  </data>
+	<data name="CatalogZone_SelectTargetZoneText" xml:space="preserve">Hozzáadás...</data><data name="TabControl_Overview" xml:space="preserve">Áttekintés</data><data name="TabControl_Description" xml:space="preserve">Leírás</data><data name="TabControl_Details" xml:space="preserve">Részletek</data><data name="TimeExtender_SelectCurrentTime" xml:space="preserve">Kattintson az jelenlegi idö kiválasztásához</data><data name="TabControl_Console" xml:space="preserve">Konzol kimenet</data><data name="CatalogZone_SelectTargetZoneText" xml:space="preserve"><value>Hozzáadás...</value></data><data name="TabControl_Overview" xml:space="preserve"><value>Áttekintés</value></data><data name="TabControl_Description" xml:space="preserve"><value>Leírás</value></data><data name="TabControl_Details" xml:space="preserve"><value>Részletek</value></data><data name="TimeExtender_SelectCurrentTime" xml:space="preserve"><value>Kattintson az jelenlegi idö kiválasztásához</value></data><data name="TabControl_Console" xml:space="preserve"><value>Konzol kimenet</value></data><data name="Incidentrelease-type_DetectedRelease" xml:space="preserve"><value>Detektálva ebben a release-ben</value></data><data name="Incidentrelease-type_ResolvedRelease" xml:space="preserve"><value>Megoldva ebben a release-ben</value></data><data name="Incidentrelease-type_VerifiedRelease" xml:space="preserve"><value>Ellenőrzive ebben a release-ben</value></data><data name="GridViewEx_SortByAscending" xml:space="preserve"><value>Rendezés növekvő sorrendben</value></data><data name="GridViewEx_SortByDescending" xml:space="preserve"><value>Rendezés csökkenő sorrendben</value></data><data name="GridViewEx_SortByFieldAscending" xml:space="preserve"><value>{0} rendezése növekvő sorrendben</value></data><data name="GridViewEx_SortByFieldDescending" xml:space="preserve"><value>{0} rendezése csökkenő sorrendben</value></data><data name="TabControl_ProjectList" xml:space="preserve"><value>projektlista</value></data><data name="TabControl_UserMembership" xml:space="preserve"><value>Felhasználói tagság</value></data><data name="TabControl_ChangeActions" xml:space="preserve"><value>Műveletek módosítása</value></data><data name="TabControl_Scenario" xml:space="preserve"><value>Forgatókönyv</value></data><data name="PlanningBoard_ByComponent" xml:space="preserve"><value>Összetevőnként</value></data><data name="PlanningBoard_ByIteration" xml:space="preserve"><value>Sprintenként</value></data><data name="PlanningBoard_ByPackage" xml:space="preserve"><value>Csomagonként</value></data><data name="PlanningBoard_ByPerson" xml:space="preserve"><value>Személyenként</value></data><data name="PlanningBoard_ByPriority" xml:space="preserve"><value>Prioritásonként</value></data><data name="PlanningBoard_ByRelease" xml:space="preserve"><value>Releasenként</value></data><data name="PlanningBoard_TasksByPerson" xml:space="preserve"><value>Feladatok személyre bontva</value></data><data name="PlanningBoard_ByStatus" xml:space="preserve"><value>Állapotonként</value></data><data name="TabControl_Preview" xml:space="preserve"><value>Előnézet</value></data><data name="TabControl_ExistingIncidents" xml:space="preserve"><value>Meglévő incidensek</value></data><data name="TabControl_NewIncident" xml:space="preserve"><value>Új incidens</value></data><data name="PlanningBoard_TasksByStatus" xml:space="preserve"><value>Feladat állapotra bontva</value></data><data name="TabControl_Requirements" xml:space="preserve"><value>Követelmények</value></data><data name="TabControl_Parameters" xml:space="preserve"><value>Paraméterek</value></data><data name="GridViewEx_DisplayingPage" xml:space="preserve"><value>Oldal megjelenítése</value></data><data name="GridViewEx_RowsPerPage" xml:space="preserve"><value>sorok oldalanként</value></data><data name="PlanningBoard_ByProject" xml:space="preserve"><value>projektenként</value></data><data name="TabControl_TestConfigurationEntries" xml:space="preserve"><value>Tesztkonfigurációs bejegyzések</value></data><data name="TabControl_Mitigations" xml:space="preserve"><value>Csökkentések</value></data><data name="TabControl_Diagram" xml:space="preserve"><value>Diagram</value></data><data name="PlanningBoard_ByRequirement" xml:space="preserve"><value>Követelményenként</value></data></root>

@@ -1,0 +1,2 @@
+portfolio_id:Key,name:String,description:String,is_active:Normal,start_date:Normal,end_date:Normal,percent_complete:Normal,requirement_count:Normal
+1,Core Services,Contains core programs and products that cover specific types of application and systems that are not industry specific.,1,"DATEADD(day, -220, SYSUTCDATETIME())","DATEADD(day, 275, SYSUTCDATETIME())",23,235

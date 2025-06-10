@@ -1,0 +1,5 @@
+attachment_type_id:Key,name:String,is_active:Normal
+1,File,1
+2,URL,1
+3,HTML,1
+4,Markdown,1

@@ -1,0 +1,39 @@
+DECLARE @objname VARCHAR(500)
+DECLARE CUR1 CURSOR 
+
+FOR SELECT SCH.name + '.' + OBJ.name AS NAME FROM sys.objects OBJ INNER JOIN sys.schemas SCH ON OBJ.schema_id = SCH.schema_id WHERE type = 'P' AND SCH.name = 'dbo'
+OPEN CUR1
+FETCH NEXT FROM CUR1 INTO @objname
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    EXEC('DROP PROCEDURE ' + @objname)
+    FETCH NEXT FROM CUR1 INTO @objname
+END
+CLOSE CUR1
+DEALLOCATE CUR1
+
+DECLARE CUR2 CURSOR 
+
+FOR SELECT SCH.name + '.' + OBJ.name AS NAME FROM sys.objects OBJ INNER JOIN sys.schemas SCH ON OBJ.schema_id = SCH.schema_id WHERE (type = 'TF' OR type = 'FN') AND SCH.name = 'dbo'
+OPEN CUR2
+FETCH NEXT FROM CUR2 INTO @objname
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    EXEC('DROP FUNCTION ' + @objname)
+    FETCH NEXT FROM CUR2 INTO @objname
+END
+CLOSE CUR2
+DEALLOCATE CUR2
+
+DECLARE CUR3 CURSOR 
+
+FOR SELECT SCH.name + '.' + OBJ.name AS NAME FROM sys.objects OBJ INNER JOIN sys.schemas SCH ON OBJ.schema_id = SCH.schema_id WHERE type = 'V' AND SCH.name = 'dbo'
+OPEN CUR3
+FETCH NEXT FROM CUR3 INTO @objname
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    EXEC('DROP VIEW ' + @objname)
+    FETCH NEXT FROM CUR3 INTO @objname
+END
+CLOSE CUR3
+DEALLOCATE CUR3

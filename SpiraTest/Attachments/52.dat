@@ -1,0 +1,316 @@
+var saved_script_objects={
+	Log_In:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Inflectra | Library Information System - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "param:object_name",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "Link",
+	"object_name": "Log In",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Inflectra | Library Information System - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[2]/div[1]/div[2]/a[@id='HeadLoginView_HeadLoginStatus']",
+	"title": "Inflectra | Library Information System",
+	"url": "http://www.libraryinformationsystem.org/"
+},
+	Username_:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Library Information System | Log In - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "Text",
+	"object_name": "Username:",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Library Information System | Log In - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/div[2]/fieldset/p[1]/input[@id='MainContent_LoginUser_UserName' and @name='ctl00$MainContent$LoginUser$UserName']",
+	"title": "Library Information System | Log In",
+	"url": "http://www.libraryinformationsystem.org/Account/Login.aspx"
+},
+	Password_:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Library Information System | Log In - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "Text",
+	"object_name": "Password:",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Library Information System | Log In - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/div[2]/fieldset/p[2]/input[@id='MainContent_LoginUser_Password' and @name='ctl00$MainContent$LoginUser$Password']",
+	"title": "Library Information System | Log In",
+	"url": "http://www.libraryinformationsystem.org/Account/Login.aspx"
+},
+	ctl00$MainContent$LoginUser$Logi:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Library Information System | Log In - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "Button",
+	"object_name": "ctl00$MainContent$LoginUser$LoginButton",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Library Information System | Log In - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/div[2]/p/input[@id='MainContent_LoginUser_LoginButton' and @name='ctl00$MainContent$LoginUser$LoginButton']",
+	"title": "Library Information System | Log In",
+	"url": "http://www.libraryinformationsystem.org/Account/Login.aspx"
+},
+	Book_Management:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Inflectra | Library Information System - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "param:object_name",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "Link",
+	"object_name": "Book Management",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Inflectra | Library Information System - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[1]/div[3]/div[@id='NavigationMenu']/ul/li[2]/a",
+	"title": "Inflectra | Library Information System",
+	"url": "http://www.libraryinformationsystem.org/default.aspx"
+},
+	_Create_new_book__:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Library Information System | Book Management - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "param:object_name",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "Link",
+	"object_name": "(Create new book) ",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Library Information System | Book Management - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/p/a",
+	"title": "Library Information System | Book Management",
+	"url": "http://www.libraryinformationsystem.org/Books.aspx"
+},
+	Name_:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Inflectra | Library Information System - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "Text",
+	"object_name": "Name:",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Inflectra | Library Information System - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/fieldset/table/tbody/tr[1]/td[2]/input[@id='MainContent_txtName' and @name='ctl00$MainContent$txtName']",
+	"title": "Inflectra | Library Information System",
+	"url": "http://www.libraryinformationsystem.org/BookEdit.aspx"
+},
+	Author_:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Inflectra | Library Information System - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "Ian McEwanCharles DickensArthur Conan DoyleAgatha Christie",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "ComboBox",
+	"object_name": "Author:",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Inflectra | Library Information System - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/fieldset/table/tbody/tr[2]/td[2]/select[@id='MainContent_ddlAuthor' and @name='ctl00$MainContent$ddlAuthor']",
+	"title": "Inflectra | Library Information System",
+	"url": "http://www.libraryinformationsystem.org/BookEdit.aspx"
+},
+	ctl00$MainContent$btnSubmit:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Inflectra | Library Information System - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "Button",
+	"object_name": "ctl00$MainContent$btnSubmit",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Inflectra | Library Information System - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/fieldset/input[@id='MainContent_btnSubmit' and @name='ctl00$MainContent$btnSubmit']",
+	"title": "Inflectra | Library Information System",
+	"url": "http://www.libraryinformationsystem.org/BookEdit.aspx"
+},
+	Genre_:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Inflectra | Library Information System - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "Science FictionMurder & MysteryHistorical FictionContemporary FictionNon Fiction",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "ComboBox",
+	"object_name": "Genre:",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Inflectra | Library Information System - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/fieldset/table/tbody/tr[3]/td[2]/select[@id='MainContent_ddlGenre' and @name='ctl00$MainContent$ddlGenre']",
+	"title": "Inflectra | Library Information System",
+	"url": "http://www.libraryinformationsystem.org/BookEdit.aspx"
+},
+	MainContent_grdBooks:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Library Information System | Book Management - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "\r\n\r\nID\r\n\r\nName\r\n\r\nAuthor\r\n\r\nGenre\r\n\r\nEdit\r\n\r\n\r\n\r\n1\r\n\r\nHound of the Baskervilles\r\n\r\nArthur Conan Doyle\r\n\r\nMurder & Myster...",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "Generic",
+	"object_name": "MainContent_grdBooks",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Library Information System | Book Management - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/div/table[@id='MainContent_grdBooks']",
+	"title": "Library Information System | Book Management",
+	"url": "http://www.libraryinformationsystem.org/Books.aspx"
+},
+//========== Recorded at Saturday, September 10, 2011 8:29:30 AM: ======
+
+	"Log_Out":{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_text": "Library Information System | Book Management - Windows Internet Explorer",
+	"window_class": "IEFrame",
+	"object_text": "param:object_name",
+	"object_role": "ROLE_SYSTEM_CLIENT",
+	"object_class": "Internet Explorer_Server",
+	"version": 0,
+	"object_type": "HTMLObject",
+	"object_flavor": "Link",
+	"object_name": "Log Out",
+	"object_library": "Internet Explorer HTML",
+	"window_name": "Library Information System | Book Management - Windows Internet Explorer",
+	"xpath": "/html/body/form[@id='ctl01']/div[3]/div[1]/div[2]/a[@id='HeadLoginView_HeadLoginStatus']",
+	"title": "Library Information System | Book Management",
+	"url": "http://www.libraryinformationsystem.org/Books.aspx"
+}
+};

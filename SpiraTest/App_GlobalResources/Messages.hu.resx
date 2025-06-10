@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Services_AttachmentIdNotNull" xml:space="preserve">
+    <value>Egy dokumentum elem létrehozásához az AttachmentId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_CannotConnectToProject" xml:space="preserve">
+    <value>Hiba történt a projekthez való csatlakozás során. Ellenőrizze, hogy tagja-e a projektnek, az létezik-e, illetve, hogy aktív-e</value>
+  </data>
+	<data name="Services_CustomListIdNotNull" xml:space="preserve">
+    <value>Egyéni lista létrehozásához az CustomPropertyListId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_CustomPropertyValueIdNotNull" xml:space="preserve">
+    <value>Egyéni lista érték létrehozásához az CustomPropertyListId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_IncidentIdMissing" xml:space="preserve">
+    <value>Az incidens IncidentId mezőjének kitöltése kötelező</value>
+  </data>
+	<data name="Services_IncidentIdNotNull" xml:space="preserve">
+    <value>Incidens elem létrehozásához az IncidentId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_LicenseViolationException" xml:space="preserve">
+    <value>A licence nem teszi lehetővé, hogy ezt az API-t elérje a felhasználóval</value>
+  </data>
+	<data name="Services_NotAuthorizedAddCustomLists" xml:space="preserve">
+    <value>Nincs jogosultsága Egyéni lista hozzáadásához - Projekt tulajdonosnak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedAddCustomListValues" xml:space="preserve">
+    <value>Nincs jogosultsága Egyéni lista érték hozzáadásához - Projekt tulajdonosnak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedAddDocuments" xml:space="preserve">
+    <value>Nincs jogosultsága dokumentum hozzáadásához a projekten</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentPriorities" xml:space="preserve">
+    <value>Nincs jogosultsága Incidens prioritás hozzáadásához - Projekt tulajdonosnak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentSeverities" xml:space="preserve">
+    <value>Nincs jogosultsága Incidens súlyosság hozzáadásához - Projekt tulajdonosnak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentStatuses" xml:space="preserve">
+    <value>Nincs jogosultsága Incidens státusz hozzáadásához - Projekt tulajdonosnak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedAddIncidentTypes" xml:space="preserve">
+    <value>Nincs jogosultsága Incidens státusz hozzáadásához - Projekt tulajdonosnak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateIncidents" xml:space="preserve">
+    <value>Nincs jogosultsága Incidens létrehozásához</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateProjects" xml:space="preserve">
+    <value>Nincs jogosultsága Projekt létrehozásához - Rendszer adminisztrátornak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateReleases" xml:space="preserve">
+    <value>Nincs jogosultsága Release létrehozásához</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateRequirements" xml:space="preserve">
+    <value>Nincs jogosultsága Követelmény létrehozásához</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTasks" xml:space="preserve">
+    <value>Nincs jogosultsága Feladat létrehozásához</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestCases" xml:space="preserve">
+    <value>Nincs jogosultsága Teszteset létrehozásához</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestFolders" xml:space="preserve">
+    <value>Nincs jogosultsága Teszt mappa létrehozásához</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestRuns" xml:space="preserve">
+    <value>Nincs jogosultsága Teszt futtatáshoz</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestSets" xml:space="preserve">
+    <value>Nincs jogosultsága Teszt szett létrehozásához</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateTestSteps" xml:space="preserve">
+    <value>Nincs jogosultsága Teszt lépés létrehozásához</value>
+  </data>
+	<data name="Services_NotAuthorizedCreateUsers" xml:space="preserve">
+    <value>Nincs jogosultsága felhasználók létrehozásához - Rendszeradminisztrátornak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteProjects" xml:space="preserve">
+    <value>Nincs jogosultsága projekt törléséhez - Rendszer adminisztrátornak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyIncidents" xml:space="preserve">
+    <value>Nincs jogosultsága Incidens módosításához</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyReleases" xml:space="preserve">
+    <value>Nincs jogosultsága release módosításához</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyRequirements" xml:space="preserve">
+    <value>Nincs jogosultsága követelmény módosításához</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyTasks" xml:space="preserve">
+    <value>Nincs jogosultsága feladat módosításához</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyTestCases" xml:space="preserve">
+    <value>Nincs jogosultsága teszteset módosításához</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyTestSets" xml:space="preserve">
+    <value>Nincs jogosultsága teszt szett módosításához</value>
+  </data>
+	<data name="Services_NotAuthorizedUpdateCustomProperties" xml:space="preserve">
+    <value>Nincs jogosultsága a Projekt egyedi mezőinek módosításához - Projekt tulajdonosnak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedViewCustomProperties" xml:space="preserve">
+    <value>Nincs jogosultsága a Projekt egyedi mezőinek megtekintéséhez - Projekt tulajdonosnak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedViewIncidents" xml:space="preserve">
+    <value>Nincs jogosultsága incidens megtekintéséhez</value>
+  </data>
+	<data name="Services_NotAuthorizedViewReleases" xml:space="preserve">
+    <value>Nincs jogosultsága release megtekintéséhez</value>
+  </data>
+	<data name="Services_NotAuthorizedViewRequirements" xml:space="preserve">
+    <value>Nincs jogosultsága követelmények megtekintéséhez</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTasks" xml:space="preserve">
+    <value>Nincs jogosultsága a feladatok megtekintéséhez</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestCases" xml:space="preserve">
+    <value>Nincs jogosultsága a tesztesetek megtekintéséhez</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestRuns" xml:space="preserve">
+    <value>Nincs jogosultsága teszt futások megtekintéséhez</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestSets" xml:space="preserve">
+    <value>Nincs jogosultsága teszt szettek megtekintéséhez</value>
+  </data>
+	<data name="Services_NotAuthorizedViewTestSteps" xml:space="preserve">
+    <value>Nincs jogosultsága teszt lépések megtekintéséhez</value>
+  </data>
+	<data name="Services_NotConnectedToProject" xml:space="preserve">
+    <value>Nincs kapcsolat projekttel. Elsőként hívja a Connection_ConnectToProject() metódust</value>
+  </data>
+	<data name="Services_ProjectIdNotNull" xml:space="preserve">
+    <value>Project létrehozásához ProjectId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_ReleaseIdMissing" xml:space="preserve">
+    <value>Release ReleaseId mezőjének megadása kötelező</value>
+  </data>
+	<data name="Services_ReleaseIdNotNull" xml:space="preserve">
+    <value>Release létrehozásához ReleaseId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_ReleaseNotFound" xml:space="preserve">
+    <value>A megadott release azonosító nem található a rendszerben</value>
+  </data>
+	<data name="Services_RequirementIdMissing" xml:space="preserve">
+    <value>Követelmény RequirementId mezőjének megadása kötelező</value>
+  </data>
+	<data name="Services_RequirementIdNotNull" xml:space="preserve">
+    <value>Követelmény létrehozásához RequirementId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_RequirementNotFound" xml:space="preserve">
+    <value>A megadott követelmény azonosító nem található a rendszerben</value>
+  </data>
+	<data name="Services_RunnerNameMissing" xml:space="preserve">
+    <value>Tesztfutás RunnerName mezőjének beállítása kötelező automatikus tesztek eredményeinek rögzítéséhez</value>
+  </data>
+	<data name="Services_SessionNotAuthenticated" xml:space="preserve">
+    <value>A munkamenet nem hitelesített. Elsőként hívja a Connection_Authenticate() metódust</value>
+  </data>
+	<data name="Services_SortMissing" xml:space="preserve">
+    <value>Egy feltöltött RemoteSort objektumot kell paraméterül adnia</value>
+  </data>
+	<data name="Services_TaskIdMissing" xml:space="preserve">
+    <value>Egy feladatnak TaskId mezőjének kitöltése kötelező</value>
+  </data>
+	<data name="Services_TaskIdNotNull" xml:space="preserve">
+    <value>Feladat létrehozásához TaskId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_TestCaseIdMissing" xml:space="preserve">
+    <value>Teszteset TestCaseId mezőjének kitöltése kötelező</value>
+  </data>
+	<data name="Services_TestCaseIdNotNull" xml:space="preserve">
+    <value>Teszteset létrehozásához TestCaseId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_TestCaseParameterIdNotNull" xml:space="preserve">
+    <value>Teszteset paraméterének hozzáadásához TestCaseParameterId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_TestSetIdMissing" xml:space="preserve">
+    <value>Teszt set TestSetId mezőjének kitöltése kötelező</value>
+  </data>
+	<data name="Services_TestSetIdNotNull" xml:space="preserve">
+    <value>Teszt szett létrehozásához TestSetId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_TestStepIdNotNull" xml:space="preserve">
+    <value>Teszt lépés létrehozásához TestStepId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_UserIdNotNull" xml:space="preserve">
+    <value>Felhasználó létrehozásához UserId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_DocumentationUnavailable" xml:space="preserve">
+    <value>A Webszolgáltatás online dokumentációjának megjelenítése sikertelen</value>
+  </data>
+	<data name="Services_DocumentNotFound" xml:space="preserve">
+    <value>A megadott melléklet azonosító nem található a rendszerben</value>
+  </data>
+	<data name="Services_IncidentNotFound" xml:space="preserve">
+    <value>A megadott incidens nem található</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteDocuments" xml:space="preserve">
+    <value>Nincs jogosultsága dokumentum törléséhez</value>
+  </data>
+	<data name="PageLayout_ProjectNoLongerExists" xml:space="preserve">
+    <value>A kiválasztott projekt már nem létezik.</value>
+  </data>
+	<data name="Services_ArtifactLinkIdNotNull" xml:space="preserve">
+    <value>A kapcsolódó elem létrehozásához ArtifactLinkId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_NotAuthorizedAddAssociations" xml:space="preserve">
+    <value>Nincs jogosultsága kapcsolat felvételéhez a forráselem típusához</value>
+  </data>
+	<data name="Services_ArtifactLinkIdMissing" xml:space="preserve">
+    <value>A kapcsolódó elem ArtifactLinkId mezőjének kitöltése kötelező</value>
+  </data>
+	<data name="Services_ArtifactLinkNotFound" xml:space="preserve">
+    <value>A megadott kapcsolat nem található</value>
+  </data>
+	<data name="Services_ArtifactLinkReadOnly" xml:space="preserve">
+    <value>A kapcsolat nem módosítható, mivel az a rendszer által lett létrehozva</value>
+  </data>
+	<data name="Services_NotAuthorizedViewAssociations" xml:space="preserve">
+    <value>Nincs jogosultsága ehhez az elemtípushoz tartozó kapcsolatok megtekintéséhez</value>
+  </data>
+	<data name="Services_CustomListNotBelongToProject" xml:space="preserve">
+    <value>A megadott egyéni lista nem jelenlegi projekthez tartozik</value>
+  </data>
+	<data name="ScriptService_UnableToLoadUserControl" xml:space="preserve">
+    <value>A felhasználói vezérlő betöltése {0}-n sikertelen a {1} téma használata mellett.</value>
+  </data>
+	<data name="Global_DataChangedBySomeoneElse" xml:space="preserve">
+    <value>Az adatok mentése sikertelen, mert valaki már módosította őket. Kattintson a 'Frissítés' gombra és próbálja újra.</value>
+  </data>
+	<data name="Global_DependentArtifactDeleted" xml:space="preserve">
+    <value>Az adatok mentése sikertelen, mert egy függő elem törlésre került. Kattintson a 'Frissítés' gombra és próbálja újra</value>
+  </data>
+	<data name="Releases_CannotTurnSummaryToIteration" xml:space="preserve">
+    <value>Összefoglaló release nem alakítható sprintté</value>
+  </data>
+	<data name="Releases_VersionNumberInUse" xml:space="preserve">
+    <value>Olyan verziószámot kell választania, amely még nem felhasznált</value>
+  </data>
+	<data name="TestCaseService_DuplicatePositionException" xml:space="preserve">
+    <value>Tesztesetek hozzáadása sikertelen, mert egy másik felhasználó módosította azokat. Kattintson a 'Frissítés' gombra és próbálja újra.</value>
+  </data>
+	<data name="TestSetTestCaseService_MissingTestSetIdStdFilter" xml:space="preserve">
+    <value>Szűréshez TestSetId megadása kötelező</value>
+  </data>
+	<data name="TestSetTestCaseService_MissingAddedTestCasesStdFilter" xml:space="preserve">
+    <value>Szűréshez LinkedTestCaseId megadása kötelező</value>
+  </data>
+	<data name="TestCaseService_DuplicateParameterName" xml:space="preserve">
+    <value>Válasszon olyan paraméternevet, amely még nincs használatban</value>
+  </data>
+	<data name="TestStepService_SelfReferencingTestLink" xml:space="preserve">
+    <value>A teszt link amelyet létrehozott önmagára hivatkozik. A végrehajtása nem lesz megfelelő.</value>
+  </data>
+	<data name="IncidentList_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja a kiválasztott incidens(eke)t?</value>
+  </data>
+	<data name="RequirementsList_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja a kiválasztott követelmény(eke)t?</value>
+  </data>
+	<data name="TaskList_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja a kijelölt feladato(ka)t?</value>
+  </data>
+	<data name="TestCaseDetails_TestStepDeleteConfirm" xml:space="preserve">
+    <value>Biztos, hogy törölni kívánja a kiválasztott teszt lépéseket?</value>
+  </data>
+	<data name="TestRunList_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja a kiválasztott tesztfutás(oka)t?</value>
+  </data>
+	<data name="ReleaseList_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja a kiválasztott release-(eke)t?</value>
+  </data>
+	<data name="TestCaseList_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja a kiválasztott teszteset(eke)t?</value>
+  </data>
+	<data name="TestSetList_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja a kiválasztott teszt szett(eke)t?</value>
+  </data>
+	<data name="ArtifactLinkPanel_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törli a kiválasztott kapcsolatot?</value>
+  </data>
+	<data name="Admin_Notification_DeleteEvent" xml:space="preserve">
+    <value>Biztosan törli ez az eseményt? A művelet nem visszavonható.</value>
+  </data>
+	<data name="Admin_Notification_ErrorEventIdNotFound" xml:space="preserve">
+    <value>Megadott azonosítójú esemény nem található.</value>
+  </data>
+	<data name="Admin_SelectProject" xml:space="preserve">
+    <value>Először projektet kell választania a Projekt megtekintése / szerkesztése oldalon!</value>
+  </data>
+	<data name="Admin_Notification_WorkflowNotice" xml:space="preserve">
+    <value>Megjegyzés: ezek az események nem írják felül az értesítéseket, amelyek az incidens munkafolyamatokhoz tartoznak. Az incidensek státuszaihoz tartozó beállításokhoz és munkafolyamati lépésekhez a Munkafolyamatok szerkesztése oldalra látogasson el</value>
+  </data>
+	<data name="TestExecutionService_PendingTestRunDoesNotExist" xml:space="preserve">
+    <value>A függőben lévő teszt futás {0} nem található a rendszerben</value>
+  </data>
+	<data name="Global_TooltipNotAvailable" xml:space="preserve">
+    <value>Tooltip nem elérhető!</value>
+  </data>
+	<data name="Admin_Notification_EditArtifactTemplate" xml:space="preserve">
+    <value>Az alábbi sablon kerül küldésre amikor egy {0} történik {1} elemmel. A sablonban szereplő tokenek behelyettesítésre kerülnek, ha ez beállított. Egyébként a sablon így kerül küldésre a hozzárendelt személyekhez, szerepkörökhöz.</value>
+  </data>
+	<data name="Admin_Notification_EditArtifactTemplates" xml:space="preserve">
+    <value>Ezen az oldalon beállíthatóak az elemekhez kapcsolódó email értesítő sablonok. A sablon szerkesztéséhez kattintson a 'Sablon szerkesztése' linkre. &lt;br /&gt; A teszt email küldéséhez kattintson a 'Sablon tesztelése' linkre. A kiküldött teszt emailben a projektben szereplő első elem adatai szerepelnek.</value>
+  </data>
+	<data name="Admin_Notification_EditTemplateTokens" xml:space="preserve">
+    <value>Az elérhető tokenek {0}-hoz és jelentésük. A listában nem szereplő tokenek kimaradnak a végső üzenetből. Kattintson egy tokenre a fenti szerkesztőben a jelenlegi kurzor pozíciójához való beszúráshoz</value>
+  </data>
+	<data name="Global_TestRunDoesNotExist" xml:space="preserve">
+    <value>TR{0} azonosítójú teszt futás nem található a rendszerben</value>
+  </data>
+	<data name="Global_TestRunStepDoesNotExist" xml:space="preserve">
+    <value>Tesztfutás lépése {0} nem található a rendszerben</value>
+  </data>
+	<data name="TestCaseExecution_NotAuthorizedToResume" xml:space="preserve">
+    <value>Nincs jogosultsága a függőben lévő tesztfutás folytatására</value>
+  </data>
+	<data name="TestExecutionService_NotAuthorizedToUpdateTestRun" xml:space="preserve">
+    <value>A tesztfutás nem módosítható, mert nincs hozzád rendelve</value>
+  </data>
+	<data name="Notification_YouAreSubscribed" xml:space="preserve">
+    <value>Sikeresen feliratkozott a {0}-ra.</value>
+  </data>
+	<data name="Notification_YouAreUnsubscribed" xml:space="preserve">
+    <value>Sikeresen leiratkozott a {0}-ról.</value>
+  </data>
+	<data name="Login_UnlicensedProduct" xml:space="preserve">
+    <value>LICENSE NÉLKÜLI. KÉRJÜK NE HASZNÁLJA</value>
+  </data>
+	<data name="Admin_Notification_NoArtifactFound" xml:space="preserve">
+    <value>Nincs ilyen típusú elem a rendszerben. Teszt email küldése előtt bizonyosodjon meg arról, hogy legalább egy elemtípus létezik.</value>
+  </data>
+	<data name="Admin_Notification_TestTemplateSent" xml:space="preserve">
+    <value>A teszt email küldése folyamatban.</value>
+  </data>
+	<data name="Admin_Notification_ViewEditNotificationEventText" xml:space="preserve">
+    <value>Az esemény részletei alább láthatóak. A mezők tartalma bármikor szerkeszthető, kivéve az elem típusát.</value>
+  </data>
+	<data name="AutomationHostService_AutomationHostTokenNotUnique" xml:space="preserve">
+    <value>Az automatizációs kiszolgálónak egyedi Tokent kell adnia</value>
+  </data>
+	<data name="AutomationHosts_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja a kiválasztott automatizációs kiszolgáló(ka)t?</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_UpdatedAdmin_AutomationEngineDetails_EngineNotExists" xml:space="preserve">
+    <value>A kiválasztott automatizációs motor törlése került a rendszerből.</value>
+  </data>
+	<data name="Admin_AutomationEngineDetails_UpdatedMessage" xml:space="preserve">
+    <value>Automatizációs motor sikeresen frissítve.</value>
+  </data>
+	<data name="Services_TestSetNotAutomated" xml:space="preserve">
+    <value>Adjon meg egy teszt szettet, amely automatizált</value>
+  </data>
+	<data name="TestCaseDetails_UnableToConvertToText" xml:space="preserve">
+    <value>A szöveg konvertálása sikertelen</value>
+  </data>
+	<data name="TestCaseDetails_NeedAutomationFilename" xml:space="preserve">
+    <value>Az automatizált teszt szkript neve megadása kötelező</value>
+  </data>
+	<data name="UserDetails_ChangesSaved" xml:space="preserve">
+    <value>A beállítások mentése sikeresen megtörtént.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError1" xml:space="preserve">
+    <value>Adja meg a jelenlegi jelszót.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError2" xml:space="preserve">
+    <value>Az új jelszó mezők nem egyeznek.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError3" xml:space="preserve">
+    <value>Az új jelszó nem lehet üres.</value>
+  </data>
+	<data name="UserDetails_NewPasswordError4" xml:space="preserve">
+    <value>A jelenlegi jelszó hibás.</value>
+  </data>
+	<data name="UserDetails_UpdateMessage" xml:space="preserve">
+    <value>Kérjük, olvassa el a lenti információkat és szükség esetén módosítsa az adatokat.&lt;br /&gt;A változtatások mentéséhez kattintson a [Frissítés] gombra.</value>
+  </data>
+	<data name="UserDetails_UpdatePasswordMessage" xml:space="preserve">
+    <value>Jelszavának megváltoztatásához meg kell adnia jelenlegi jelszavát és az újat, amelyet használni szeretne.</value>
+  </data>
+	<data name="TaskDetails_DatesOutsideReleaseDates" xml:space="preserve">
+    <value>A feladat kezdő vagy záró dátuma a release / spirnt időintervallumában kell legyen</value>
+  </data>
+	<data name="TaskDetails_EnterValidActualEffort" xml:space="preserve">
+    <value>Adjon meg érvényes óraszámot Tényleges ráfordításként</value>
+  </data>
+	<data name="TaskDetails_EnterValidEstimatedEffort" xml:space="preserve">
+    <value>Adjon meg érvényes óraszámot Becsült ráfordításként</value>
+  </data>
+	<data name="TaskDetails_EnterValidRemainingEffort" xml:space="preserve">
+    <value>Adjon meg érvényes óraszámot Fennmaradó ráfordításként</value>
+  </data>
+	<data name="RequirementDetails_EnterValidPlannedEffort" xml:space="preserve">
+    <value>Adjon meg érvényes óraszámot Tervezett ráfordításként</value>
+  </data>
+	<data name="UserDetails_detEnableNotifications" xml:space="preserve">
+    <value>Kikapcsolt állapotban kap értesítést a rendszertől.</value>
+  </data>
+	<data name="UserDetails_ToChangePassword" xml:space="preserve">
+    <value>Jelszavának megváltoztatásához meg kell adnia jelenlegi jelszavát és az újat, amelyet használni szeretne.</value>
+  </data>
+	<data name="Notification_EventDeleted" xml:space="preserve">
+    <value>A kiválasztott értesítési esemény törlésre került</value>
+  </data>
+	<data name="InvalidDatabase_ContactSupport1" xml:space="preserve">
+    <value>Kérem</value>
+  </data>
+	<data name="InvalidDatabase_InvalidRevisionInstalled" xml:space="preserve">
+    <value>Érvénytelen adatbázis változat van telepítve a szerveren. &lt;br /&gt;Elvárt: &lt;b&gt;{0}&lt;/b&gt;&lt;br /&gt;Telepített: &lt;b&gt;{1}&lt;/b&gt;</value>
+  </data>
+	<data name="TestCaseDetails_EnterValidEstimatedDuration" xml:space="preserve">
+    <value>Adjon meg érvényes óraszámot Becsült időtartamnak</value>
+  </data>
+	<data name="TestRunDetails_EnterValidActualDuration" xml:space="preserve">
+    <value>Add meg érvényes óraszámot a Tényleges Időtartamnak</value>
+  </data>
+	<data name="TestRunDetails_EnterValidEstimatedDuration" xml:space="preserve">
+    <value>Add meg érvényes óraszámot a Becsült Időtartamnak</value>
+  </data>
+	<data name="Login_InvalidUserNamePassword" xml:space="preserve">
+    <value>A megadott felhasználónév vagy jelszó érvénytelen. Kérjük próbálja újra</value>
+  </data>
+	<data name="Login_NeedToEnterPassword" xml:space="preserve">
+    <value>Jelszó megadása kötelező</value>
+  </data>
+	<data name="Login_NeedToEnterUserName" xml:space="preserve">
+    <value>Felhasználónév megadása kötelező</value>
+  </data>
+	<data name="EmailPassword_EmailNotEnabled" xml:space="preserve">
+    <value>Nem lehet visszaállítani jelszót email-ben nincs engedélyezve!</value>
+  </data>
+	<data name="EmailPassword_EmailNotMatch" xml:space="preserve">
+    <value>Az e-mail cím nem egyezik, próbálja újra!</value>
+  </data>
+	<data name="EmailPassword_EnterUserNameEmail" xml:space="preserve">
+    <value>Felhasználónév és email cím megadása kötelező!</value>
+  </data>
+	<data name="EmailPassword_ErrorSending" xml:space="preserve">
+    <value>Email küldése sikertelen, értesítse a rendszergazdát!</value>
+  </data>
+	<data name="EmailPassword_NotResetLDAP" xml:space="preserve">
+    <value>Az LDAP-felhasználó jelszavát nem állíthatja vissza {0}-n keresztül!</value>
+  </data>
+	<data name="EmailPassword_NoUserExists" xml:space="preserve">
+    <value>Ezzel a névvel nem létezik felhasználó!</value>
+  </data>
+	<data name="EmailPassword_PasswordSent" xml:space="preserve">
+    <value>A jelszó elküldve a megadott email címre!</value>
+  </data>
+	<data name="NeedAccount_EmailNotValid" xml:space="preserve">
+    <value>A megadott email cím érvénytelen</value>
+  </data>
+	<data name="NeedAccount_EmailRequired" xml:space="preserve">
+    <value>Email cím megadása kötelező</value>
+  </data>
+	<data name="NeedAccount_EmailSent" xml:space="preserve">
+    <value>Az új felhasználói igényről email elküldve a rendszergazda részére</value>
+  </data>
+	<data name="NeedAccount_ErrorSendingEmail" xml:space="preserve">
+    <value>Email küldése sikertelen, értesítse a rendszergazdát!</value>
+  </data>
+	<data name="NeedAccount_FirstNameRequired" xml:space="preserve">
+    <value>Keresztnév megadása kötelező</value>
+  </data>
+	<data name="NeedAccount_LastNameRequired" xml:space="preserve">
+    <value>Vezetéknév megadása kötelező</value>
+  </data>
+	<data name="ForceSession_AccountSignedInMultiple" xml:space="preserve">
+    <value>A felhasználói fiók jelenleg bejelentkezett {0}-be &lt;u&gt;más&lt;/u&gt; helyen.</value>
+  </data>
+	<data name="Global_UnableToLoad" xml:space="preserve">
+    <value>Sikertelen betöltés</value>
+  </data>
+	<data name="PendingTestRuns_ArtifactNotExists" xml:space="preserve">
+    <value>A kiválasztott függőben lévő teszt futás már nem létezik!</value>
+  </data>
+	<data name="RequirementsList_ArtifactNotExists" xml:space="preserve">
+    <value>A kiválasztott követelmény nem található</value>
+  </data>
+	<data name="SavedReports_DeleteConfirmation" xml:space="preserve">
+    <value>Biztosan törölni kívánja a mentett riportot?</value>
+  </data>
+	<data name="SavedSearches_DeleteConfirmation" xml:space="preserve">
+    <value>Biztosan törölni kívánja a mentett keresést?</value>
+  </data>
+	<data name="SavedSearches_UnableToRetrieveSeach" xml:space="preserve">
+    <value>A mentett keresés visszaállítása sikertelen</value>
+  </data>
+	<data name="TaskList_ArtifactNotExists" xml:space="preserve">
+    <value>A kijelölt feladat már nem létezik.</value>
+  </data>
+	<data name="TestCaseList_ArtifactNotExists" xml:space="preserve">
+    <value>A kiválasztott teszteset már nem létezik.</value>
+  </data>
+	<data name="TestSetList_ArtifactNotExists" xml:space="preserve">
+    <value>A kiválasztott teszt szett már nem létezik.</value>
+  </data>
+	<data name="WeatherBox_ErrorRetrievingWeather" xml:space="preserve">
+    <value>Az időjárási adatok letöltése sikertelen.</value>
+  </data>
+	<data name="WeatherBox_NoResults" xml:space="preserve">
+    <value>A megadott helyen nem található időjárási adatok.</value>
+  </data>
+	<data name="InvalidLicense_EvaluationExpired" xml:space="preserve">
+    <value>Az ideiglenes licence-e lejárt. &lt;br /&gt;Kérjük, lépjen kapcsolatba a projekt értékesítőjével állandó licence-ért.</value>
+  </data>
+	<data name="InvalidLicense_ExceededConcurrent" xml:space="preserve">
+    <value>Elérte az egy időben megengedett felhasználók számát. &lt;br /&gt;Egy bejelentkezett felhasználónak ki kell lépnie, mielőtt folytathatná.</value>
+  </data>
+	<data name="InvalidLicense_InvalidLicenseOnServer" xml:space="preserve">
+    <value>Érvénytelen licence kulcs található a szerveren. Lépjen kapcsolatba a rendszergazdával.</value>
+  </data>
+	<data name="InvalidDatabase_ContactSupport2" xml:space="preserve">
+    <value>Lépjen kapcsolatba a szupporttal</value>
+  </data>
+	<data name="InvalidDatabase_ContactSupport3" xml:space="preserve">
+    <value>további segítségért</value>
+  </data>
+	<data name="ErrorPage_ContactSupport1" xml:space="preserve">
+    <value>Kérem</value>
+  </data>
+	<data name="ErrorPage_ContactSupport2" xml:space="preserve">
+    <value>lépjen kapcsolatba a szupporttal</value>
+  </data>
+	<data name="ErrorPage_ContactSupport3" xml:space="preserve">
+    <value>és adja meg a következőket:</value>
+  </data>
+	<data name="ErrorPage_DetailsNotAvailable" xml:space="preserve">
+    <value>A hiba részletei nem elérhetőek - ellenőrizze a Windows alkalmazások eseménynaplójában</value>
+  </data>
+	<data name="Global_CannotAddWidgetMoreThanOnce" xml:space="preserve">
+    <value>Nem adhatja hozzá többször ugyanazt a widget-et.</value>
+  </data>
+	<data name="AssignedIncidents_ArtifactNotExists" xml:space="preserve">
+    <value>A kiválasztott incidens nem létezik.</value>
+  </data>
+	<data name="RequirementsService_OnlySupportsRequirementInserts" xml:space="preserve">
+    <value>Ez az eljárás csak Követelmények beszúrását támogatja</value>
+  </data>
+	<data name="TestSetList_SelectSingleTestSet" xml:space="preserve">
+    <value>Válasszon egyetlen teszt setet a végrehajtáshoz!</value>
+  </data>
+	<data name="TestSetList_TestSetHasNoTestCases" xml:space="preserve">
+    <value>A kiválasztott teszt szett nem tartalmaz teszteseteket!</value>
+  </data>
+	<data name="Global_InvalidOperation" xml:space="preserve">
+    <value>Érvénytelen művelet</value>
+  </data>
+	<data name="SourceCode_ProviderError" xml:space="preserve">
+    <value>Szolgáltató hiba</value>
+  </data>
+	<data name="TestSetList_TestSetsCannotHaveChildItems" xml:space="preserve">
+    <value>Teszt szettek nem rendelkezhetnek alteszt szettekkel, almappákkal.</value>
+  </data>
+	<data name="TestCaseList_SelectCheckboxForExecute" xml:space="preserve">
+    <value>Legalább egy checkbox választása kötelező a Futtatás parancshoz!</value>
+  </data>
+	<data name="TestCaseList_TestCasesCannotHaveChildItems" xml:space="preserve">
+    <value>Teszteseteknek nem lehet altesztjei, almappái</value>
+  </data>
+	<data name="RequirementDetails_ArtifactNotExists" xml:space="preserve">
+    <value>A kiválasztott követelmény nem található a rendszerben.</value>
+  </data>
+	<data name="RequirementDetails_DeleteConfirm" xml:space="preserve">
+    <value>A művelet véglegesen törli a követelményt. Biztosan folytatja?</value>
+  </data>
+	<data name="RequirementDetails_RefreshConfirm" xml:space="preserve">
+    <value>A művelet elveti a változtatásokat. Biztosan folytatja?</value>
+  </data>
+	<data name="RequirementDetails_NameRequired" xml:space="preserve">
+    <value>Követelmény nevének megadása kötelező</value>
+  </data>
+	<data name="RequirementDetails_PlannedEffortInvalid" xml:space="preserve">
+    <value>A tervezett ráfordítás megadása érvénytelen</value>
+  </data>
+	<data name="RequirementDetails_SaveSuccess" xml:space="preserve">
+    <value>A követelmény módosításai sikeresen elmentve</value>
+  </data>
+	<data name="UserProfile_EmailNotValid" xml:space="preserve">
+    <value>A megadott e-mail cím nem érvényes</value>
+  </data>
+	<data name="UserProfile_EmailRequired" xml:space="preserve">
+    <value>Az email cím megadása kötelező</value>
+  </data>
+	<data name="UserProfile_FirstNameRequired" xml:space="preserve">
+    <value>Keresztnév megadása kötelező</value>
+  </data>
+	<data name="UserProfile_LastNameRequired" xml:space="preserve">
+    <value>Vezetéknév megadása kötelező</value>
+  </data>
+	<data name="UserProfile_NotLinked" xml:space="preserve">
+    <value>Nem hivatkozott</value>
+  </data>
+	<data name="Global_EnterValidDateRangeValue" xml:space="preserve">
+    <value>Adjon meg érvényes dátum intervallumot '{0}'-nak</value>
+  </data>
+	<data name="Global_EnterValidIntegerValue" xml:space="preserve">
+    <value>Adjon meg érvényes egész számot '{0}'-nak</value>
+  </data>
+	<data name="FileUploadDialog_ErrorLoadingDialog" xml:space="preserve">
+    <value>Hiba történt a párbeszédablak betöltése során</value>
+  </data>
+	<data name="FileUploadDialog_TagsNotValid" xml:space="preserve">
+    <value>A címkék csak alfanumerikus karaktereket tartalmazhatnak vesszővel elválasztva</value>
+  </data>
+	<data name="FileUploadDialog_URLNotValid" xml:space="preserve">
+    <value>Az URL-cím nem megfelelő formátumú</value>
+  </data>
+	<data name="AttachmentPanel_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törli ezt a dokumentumot a rendszerből?</value>
+  </data>
+	<data name="ReleaseDetails_SaveSuccess" xml:space="preserve">
+    <value>A release módosításai sikeresen elmentve</value>
+  </data>
+	<data name="ReleaseDetails_DeleteConfirm" xml:space="preserve">
+    <value>A művelet véglegesen törli a release-t / sprintet. Biztosan folytatja?</value>
+  </data>
+	<data name="ReleaseDetails_EndDateInvalid" xml:space="preserve">
+    <value>Adja meg a lezárás dátumát a megadott formátumban</value>
+  </data>
+	<data name="ReleaseDetails_EndDateRequired" xml:space="preserve">
+    <value>Lezárás dátuma megadása kötelező</value>
+  </data>
+	<data name="ReleaseDetails_NameRequired" xml:space="preserve">
+    <value>Release nevének megadása kötelező</value>
+  </data>
+	<data name="ReleaseDetails_NonWorkInvalid" xml:space="preserve">
+    <value>A nem munkanapok száma egész szám kell legyen</value>
+  </data>
+	<data name="ReleaseDetails_NonWorkRequired" xml:space="preserve">
+    <value>A nem munkanapok száma megadása kötelező</value>
+  </data>
+	<data name="ReleaseDetails_NumResourcesInvalid" xml:space="preserve">
+    <value>A források száma egész szám kell legyen</value>
+  </data>
+	<data name="ReleaseDetails_NumResourcesRequired" xml:space="preserve">
+    <value>A források száma megadása kötelező</value>
+  </data>
+	<data name="ReleaseDetails_RefreshConfirm" xml:space="preserve">
+    <value>A művelet elveti a változtatásokat. Biztosan folytatja?</value>
+  </data>
+	<data name="ReleaseDetails_StartDateInvalid" xml:space="preserve">
+    <value>Adja meg a kezdődátumot a megadott formátumban</value>
+  </data>
+	<data name="ReleaseDetails_StartDateRequired" xml:space="preserve">
+    <value>Kezdődátum megadása kötelező</value>
+  </data>
+	<data name="ReleaseDetails_VersionNumberRequired" xml:space="preserve">
+    <value>Verziószám megadása kötelező</value>
+  </data>
+	<data name="ReleaseDetails_CannotMakeSummaryReleaseIteration" xml:space="preserve">
+    <value>Összefoglaló release nem alakítható sprintté</value>
+  </data>
+	<data name="ReleaseDetails_VersionNumberInUse" xml:space="preserve">
+    <value>Olyan verziószámot kell választania, amely még nem felhasznált.</value>
+  </data>
+	<data name="TestCaseDetails_DeleteConfirm" xml:space="preserve">
+    <value>A művelet véglegesen törölni fogja a Tesztesetet és tartalmát. Biztosan folytatni kívánja?</value>
+  </data>
+	<data name="TestCaseDetails_NameRequired" xml:space="preserve">
+    <value>A teszteset neve megadása kötelező</value>
+  </data>
+	<data name="TestCaseDetails_RefreshConfirm" xml:space="preserve">
+    <value>A művelet elveti a változtatásokat. Biztosan folytatja?</value>
+  </data>
+	<data name="TestCaseDetails_SaveSuccess" xml:space="preserve">
+    <value>A teszteset változtatásai sikeresen mentve</value>
+  </data>
+	<data name="TestCaseDetails_VersionNumberInvalid" xml:space="preserve">
+    <value>A verziószám csak alfanumerikus karaktereket és pontokat tartalmazhat</value>
+  </data>
+	<data name="TestCaseDetails_TestHasNoParameters" xml:space="preserve">
+    <value>Ez a teszteset nem rendelkezik paraméterekkel.</value>
+  </data>
+	<data name="TestCaseDetails_ArtifactNotExists" xml:space="preserve">
+    <value>A  kiválasztott tesztesetet törölték a rendszerből.</value>
+  </data>
+	<data name="TestSetDetails_ArtifactNotExists" xml:space="preserve">
+    <value>A kiválasztott teszt szettet törölték a rendszerből.</value>
+  </data>
+	<data name="TestSetDetails_DeleteConfirm" xml:space="preserve">
+    <value>A művelet véglegesen törli a teszt szettet. Biztosan folytatni kívánja?</value>
+  </data>
+	<data name="TestSetDetails_NameRequired" xml:space="preserve">
+    <value>A teszt szett név megadása kötelező</value>
+  </data>
+	<data name="TestSetDetails_NotExecuteEmptySet" xml:space="preserve">
+    <value>Teszt szett mappa, vagy teszt szett nem hajtható végre, amennyiben nem tartalmaz teszteseteket</value>
+  </data>
+	<data name="TestSetDetails_NotExecuteTestsInAutomated" xml:space="preserve">
+    <value>Automatizált teszt szettben tesztesetek egyenként nem végrehajthatóak. Kérjük, válassz a Futtatás gombot a teszt szetten.</value>
+  </data>
+	<data name="TestSetDetails_PlannedTimeInvalid" xml:space="preserve">
+    <value>A tervezett időtartam megadása érvénytelen</value>
+  </data>
+	<data name="TestSetDetails_PlannedTimeTooltip" xml:space="preserve">
+    <value>Adja meg a tervezett időt.</value>
+  </data>
+	<data name="TestSetDetails_RefreshConfirm" xml:space="preserve">
+    <value>A művelet elveti a változtatásokat. Biztosan folytatja?</value>
+  </data>
+	<data name="TestSetDetails_SaveSuccess" xml:space="preserve">
+    <value>A teszt szett változtatásai sikeresen mentve</value>
+  </data>
+	<data name="TestSetDetails_SelectOneForExecute" xml:space="preserve">
+    <value>Legalább egy checkbox választása kötelező a Futtatás parancshoz!</value>
+  </data>
+	<data name="TestStepDetails_DeleteConfirm" xml:space="preserve">
+    <value>A művelet törli a teszt lépést. Biztosan folytatni kívánja?</value>
+  </data>
+	<data name="TestStepDetails_DescriptionRequired" xml:space="preserve">
+    <value>A leírás megadása kötelező</value>
+  </data>
+	<data name="TestStepDetails_ExpectedResultRequired" xml:space="preserve">
+    <value>Az elvárt eredmény megadása kötelező</value>
+  </data>
+	<data name="TestStepDetails_RefreshConfirm" xml:space="preserve">
+    <value>A művelet elveti a változtatásokat. Biztosan folytatja?</value>
+  </data>
+	<data name="TestRunDetails_ActualDurationInvalid" xml:space="preserve">
+    <value>A tényleges időtartam megadása érvénytelen</value>
+  </data>
+	<data name="TestRunDetails_ArtifactDeleted" xml:space="preserve">
+    <value>A kiválasztott tesztfutást törölték a rendszerből.</value>
+  </data>
+	<data name="TestRunDetails_ArtifactNotExists" xml:space="preserve">
+    <value>A kiválasztott tesztfutás nem található a rendszerben</value>
+  </data>
+	<data name="TestRunDetails_DeleteConfirm" xml:space="preserve">
+    <value>A művelet véglegesen törli a tesztfutást. Biztosan folytatni kívánja?</value>
+  </data>
+	<data name="TestRunDetails_EstimatedDurationInvalid" xml:space="preserve">
+    <value>A becsült időtartam megadása érvénytelen</value>
+  </data>
+	<data name="TestRunDetails_RefreshConfirm" xml:space="preserve">
+    <value>A művelet elveti a változtatásokat. Biztosan folytatja?</value>
+  </data>
+	<data name="TestRunDetails_TestSetIsFolderOrNotExists" xml:space="preserve">
+    <value>A kiválasztott teszt szett egy mappa, vagy már nem található a rendszerben</value>
+  </data>
+	<data name="TestRunDetails_UpdateSuccess" xml:space="preserve">
+    <value>A tesztfutás adatai sikeresen frissítve</value>
+  </data>
+	<data name="AutomationHostDetails_DeleteConfirm" xml:space="preserve">
+    <value>A művelet véglegesen törli a kiszolgálót. Biztosan folytatja?</value>
+  </data>
+	<data name="AutomationHostDetails_NameRequired" xml:space="preserve">
+    <value>Kiszolgáló neve kötelező</value>
+  </data>
+	<data name="AutomationHostDetails_RefreshConfirm" xml:space="preserve">
+    <value>A művelet elveti a változtatásokat. Biztosan folytatja?</value>
+  </data>
+	<data name="AutomationHostDetails_Success" xml:space="preserve">
+    <value>Az automatizációs kiszolgáló változtatásai sikeresen mentve</value>
+  </data>
+	<data name="AutomationHostDetails_TokenRequired" xml:space="preserve">
+    <value>Token megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_Success" xml:space="preserve">
+    <value>Incidens sikeresen frissítve.</value>
+  </data>
+	<data name="IncidentDetails_UnableToRetrieve" xml:space="preserve">
+    <value>A megadott incidens betöltése sikertelen</value>
+  </data>
+	<data name="Admin_FileTypes_AllListed" xml:space="preserve">
+    <value>Ez a beállított fájltípusok listája. Ikonjaik és MIME típusaik megjelennek az alkalmazásban. A nem definiált fájltípusok is engedélyezettek, 'ismeretlen'-ként jelennek meg.</value>
+  </data>
+	<data name="IncidentDetails_ActualEffortInvalid" xml:space="preserve">
+    <value>A tényleges ráfordítás megadása érvénytelen</value>
+  </data>
+	<data name="IncidentDetails_ActualEffortRequired" xml:space="preserve">
+    <value>Tényleges ráfordítás megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_ClosedDateInvalid" xml:space="preserve">
+    <value>Adja meg a lezárás dátumát a megadott formátumban</value>
+  </data>
+	<data name="IncidentDetails_ClosedDateRequired" xml:space="preserve">
+    <value>Lezárás dátuma megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_CommentRequired" xml:space="preserve">
+    <value>Egy új hozzászólás szükséges</value>
+  </data>
+	<data name="IncidentDetails_DescriptionRequired" xml:space="preserve">
+    <value>Incidens leírása szükséges</value>
+  </data>
+	<data name="IncidentDetails_DetectedReleaseRequired" xml:space="preserve">
+    <value>Releaseben detektálva megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_EstimatedEffortInvalid" xml:space="preserve">
+    <value>A becsült ráfordítás megadása érvénytelen</value>
+  </data>
+	<data name="IncidentDetails_EstimatedEffortRequired" xml:space="preserve">
+    <value>Becsült ráfordítás megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_IncidentIdNotValid" xml:space="preserve">
+    <value>Az incidens azonosítónak numerikusnak kell lennie</value>
+  </data>
+	<data name="IncidentDetails_NameRequired" xml:space="preserve">
+    <value>Incidens nevének megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_NoOperationsAvailable" xml:space="preserve">
+    <value>Nincsenek elérhető műveletek</value>
+  </data>
+	<data name="IncidentDetails_OwnerRequired" xml:space="preserve">
+    <value>Tulajdonos megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_PriorityRequired" xml:space="preserve">
+    <value>Prioritás megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_RemainingEffortInvalid" xml:space="preserve">
+    <value>Fennmaradó ráfordítás megadása érvénytelen</value>
+  </data>
+	<data name="IncidentDetails_RemainingEffortRequired" xml:space="preserve">
+    <value>Fennmaradó ráfordítás megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_SaveChangesFirst" xml:space="preserve">
+    <value>Kérjük, mentse a változtatásokat először.</value>
+  </data>
+	<data name="IncidentDetails_SeverityRequired" xml:space="preserve">
+    <value>Súlyosság megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_StartDateInvalid" xml:space="preserve">
+    <value>Adja meg a kezdődátumot a megadott formátumban</value>
+  </data>
+	<data name="IncidentDetails_StartDateRequired" xml:space="preserve">
+    <value>Kezdődátum megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_VerifiedReleaseRequired" xml:space="preserve">
+    <value>Releaseben ellenőrizve megadása kötelező</value>
+  </data>
+	<data name="IncidentDetails_DeleteConfirm" xml:space="preserve">
+    <value>Biztos benne, hogy törli ezt az incidenst?</value>
+  </data>
+	<data name="IncidentDetails_RefreshConfirm" xml:space="preserve">
+    <value>A művelet elveti a változtatásokat. Biztosan folytatja?</value>
+  </data>
+	<data name="TaskDetails_ActualEffortInvalid" xml:space="preserve">
+    <value>A Tényleges ráfordítás érvénytelen</value>
+  </data>
+	<data name="TaskDetails_ArtifactNotExists" xml:space="preserve">
+    <value>A kiválasztott feladat már nem létezik a rendszerben.</value>
+  </data>
+	<data name="TaskDetails_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja a feladatot?</value>
+  </data>
+	<data name="TaskDetails_EndDateInvalid" xml:space="preserve">
+    <value>Adja meg a lezárás dátumát a megadott formátumban</value>
+  </data>
+	<data name="TaskDetails_EstimatedEffortInvalid" xml:space="preserve">
+    <value>A becsült ráfordítás megadása érvénytelen</value>
+  </data>
+	<data name="TaskDetails_NameRequired" xml:space="preserve">
+    <value>A feladat neve megadása kötelező</value>
+  </data>
+	<data name="TaskDetails_RefreshConfirm" xml:space="preserve">
+    <value>A művelet elveti a változtatásokat. Biztosan folytatja?</value>
+  </data>
+	<data name="TaskDetails_RemainingEffortInvalid" xml:space="preserve">
+    <value>A fennmaradó ráfordítás megadása érvénytelen</value>
+  </data>
+	<data name="TaskDetails_StartDateInvalid" xml:space="preserve">
+    <value>Adja meg egy kezdődátumot a megadott formátumban</value>
+  </data>
+	<data name="TaskDetails_Success" xml:space="preserve">
+    <value>A feladat változtatásai sikeresen mentve</value>
+  </data>
+	<data name="Admin_FileTypes_EditFileTypeMessage" xml:space="preserve">
+    <value>Ez a megadott kiterjesztésű fájl definíciója. Adatok megadásával segíti a helyes információk megjelenését a Forráskódkezelés és Dokumentumok oldalakon. Minden mező kötelező, üresen hagyva alapértéket vesznek fel. Az ikon képfájlja a web szerveren kell legyen az aktív téma "Filetypes" mappájában.</value>
+  </data>
+	<data name="Admin_FileTypes_RequiredDecription" xml:space="preserve">
+    <value>A kiterjesztés leírása kötelező.</value>
+  </data>
+	<data name="Admin_FileTypes_RequiredExtension" xml:space="preserve">
+    <value>Meg kell adnia egy kiterjesztés az előtte álló pont nélkül.</value>
+  </data>
+	<data name="Admin_FileTypes_TypeDeletedError" xml:space="preserve">
+    <value>Fájltípust nem lehet eltávolítani.</value>
+  </data>
+	<data name="SourceCodeList_GeneralError" xml:space="preserve">
+    <value>Hiba történt a megadott Verziókezelő szolgáltatás elérése során. Ellenőrizze a beállításokat az adminisztrátori felületen</value>
+  </data>
+	<data name="SourceCodeList_InvalidLicense" xml:space="preserve">
+    <value>A Forráskód funkcionalitás nem elérhető a jelenlegi licence-el</value>
+  </data>
+	<data name="SourceCodeList_InvalidRole" xml:space="preserve">
+    <value>A Forráskód funkcionalitás nem elérhető a jelenlegi szerepkörrel</value>
+  </data>
+	<data name="SourceCodeList_UnableToAuthenticate" xml:space="preserve">
+    <value>A verziókezelő authentikálása sikertelen. Ellenőrizze a felhasználónevet / jelszót, majd próbálja újra</value>
+  </data>
+	<data name="SourceCodeList_UnableToLoadProvider" xml:space="preserve">
+    <value>A megadott verziókezelő betöltése sikertelen. Ellenőrizze a beállításokat az adminisztrátori felületen, majd próbálja újra</value>
+  </data>
+	<data name="Admin_FileTypes_ExtensionExists" xml:space="preserve">
+    <value>{0}' kiterjesztésű már létezik az adatbázisban.</value>
+  </data>
+	<data name="SourceCodeRedirect_CacheInvalid" xml:space="preserve">
+    <value>A forráskód gyorsítótár érvénytelen, kérjük próbálja meg újra.</value>
+  </data>
+	<data name="Admin_FileTypes_SuccessDeleted" xml:space="preserve">
+    <value>A {0} fájltípus sikeresen eltávolítva.</value>
+  </data>
+	<data name="Admin_FileTypes_SuccessAdded" xml:space="preserve">
+    <value>A {0} fájltípus sikeresen hozzáadva.</value>
+  </data>
+	<data name="Admin_FileTypes_SuccessUpdated" xml:space="preserve">
+    <value>A {0} fájltípus sikeresen frissítve.</value>
+  </data>
+	<data name="SourceCodeFileDetails_FileNotExists" xml:space="preserve">
+    <value>A kijelölt fájlt törölték a rendszerből.</value>
+  </data>
+	<data name="SourceCodeFileDetails_FolderNotExists" xml:space="preserve">
+    <value>A kijelölt mappát törölték a rendszerből.</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_NotAuthorizedForRevision" xml:space="preserve">
+    <value>Nincs jogosultsága a kiválasztott revízió megtekintéséhez.</value>
+  </data>
+	<data name="SourceCodeRevisionDetails_RevisionNotExists" xml:space="preserve">
+    <value>A kiválasztott revíziót törölték a rendszerből.</value>
+  </data>
+	<data name="Reports_DeleteSaved" xml:space="preserve">
+    <value>Biztosan törölni kívánja a mentett riportot?</value>
+  </data>
+	<data name="ReportConfiguration_FormatNotExists" xml:space="preserve">
+    <value>A kiválasztott formátum már nem létezik a rendszerben</value>
+  </data>
+	<data name="ReportConfiguration_Needs" xml:space="preserve">
+    <value>{0}-nak érvényes dátumtartományban kell lennie</value>
+  </data>
+	<data name="ReportConfiguration_NeedToSelectFormat" xml:space="preserve">
+    <value>Riport generáláshoz válasszon ki egy formátumot</value>
+  </data>
+	<data name="ReportConfiguration_NotAvailableInCurrentEdition" xml:space="preserve">
+    <value>Ez a funkció nem érhető el a jelenleg telepített változatban.</value>
+  </data>
+	<data name="ReportConfiguration_ReportIDNotExists" xml:space="preserve">
+    <value>A megadott riport azonosító nem található</value>
+  </data>
+	<data name="Reports_NotExists" xml:space="preserve">
+    <value>Mentett riport visszaállítása sikertelen</value>
+  </data>
+	<data name="TestCaseExecution_FinishConfirm" xml:space="preserve">
+    <value>Biztosan be kívánja fejezni a tesztfutást? A művelet után további módosítások nem lehetségesek</value>
+  </data>
+	<data name="TestCaseExecution_OwnerRequired" xml:space="preserve">
+    <value>Tulajdonos megadása kötelező</value>
+  </data>
+	<data name="TestCaseExecution_PriorityRequired" xml:space="preserve">
+    <value>Prioritás megadása kötelező</value>
+  </data>
+	<data name="TestCaseExecution_SeverityRequired" xml:space="preserve">
+    <value>Súlyosság megadása kötelező</value>
+  </data>
+	<data name="WebPartBase_NotAuthorizedForProject" xml:space="preserve">
+    <value>Jelenleg nem tagja a {0} projektnek. Lépjen kapcsolatba a projekt tulajdonosával.</value>
+  </data>
+	<data name="TestCaseExecution_PassAllConfirm" xml:space="preserve">
+    <value>Biztosan sikeres az összes teszt lépés ebben a tesztesetben? </value>
+  </data>
+	<data name="DocumentDetails_ArtifactIdInvalid" xml:space="preserve">
+    <value>Adja meg a kapcsolódó elem numerikus azonosítóját </value>
+  </data>
+	<data name="DocumentDetails_ArtifactIdRequired" xml:space="preserve">
+    <value>Adja meg a kapcsolódó elem azonosítóját</value>
+  </data>
+	<data name="DocumentDetails_ArtifactNotExists" xml:space="preserve">
+    <value>A megadott azonosító nem található a rendszerben</value>
+  </data>
+	<data name="DocumentDetails_CannotChangeFiletype" xml:space="preserve">
+    <value>A fájl neve nem módosítható úgy, hogy más fájltípusú legyen</value>
+  </data>
+	<data name="DocumentDetails_CannotDeleteActiveVersion" xml:space="preserve">
+    <value>Az aktív verzió nem törölhető</value>
+  </data>
+	<data name="DocumentDetails_DeleteConfirm" xml:space="preserve">
+    <value>A művelet véglegesen törli a dokumentumot. Biztosan folytatja?</value>
+  </data>
+	<data name="DocumentDetails_DeleteVersionConfirm" xml:space="preserve">
+    <value>Biztosan törli a dokumentum ezen verzióját?</value>
+  </data>
+	<data name="DocumentDetails_DocumentNotExists" xml:space="preserve">
+    <value>A kijelölt dokumentumot törölték a rendszerből.</value>
+  </data>
+	<data name="DocumentDetails_FolderNotExists" xml:space="preserve">
+    <value>A kiválasztott mappát törölték a rendszerből.</value>
+  </data>
+	<data name="DocumentDetails_NameRequired" xml:space="preserve">
+    <value>Dokumentum nevének megadása kötelező</value>
+  </data>
+	<data name="DocumentDetails_RefreshConfirm" xml:space="preserve">
+    <value>A művelet elveti a változtatásokat. Biztosan folytatja?</value>
+  </data>
+	<data name="DocumentDetails_RemoveAssociationConfirm" xml:space="preserve">
+    <value>Biztosan törli a kapcsolatot?</value>
+  </data>
+	<data name="DocumentDetails_TagsInvalid" xml:space="preserve">
+    <value>A címkék csak vesszővel elválasztott alfanumerikus karaktereket tartalmazhatnak</value>
+  </data>
+	<data name="DocumentDetails_URLInvalid" xml:space="preserve">
+    <value>Az URL-cím nem megfelelő formátumú</value>
+  </data>
+	<data name="DocumentDetails_VersionNumberInvalid" xml:space="preserve">
+    <value>A verziószám csak alfanumerikus karaktereket és pontokat tartalmazhat</value>
+  </data>
+	<data name="DocumentDetails_VersionNumberRequired" xml:space="preserve">
+    <value>Verziószám megadása kötelező</value>
+  </data>
+	<data name="Documents_DeleteConfirm" xml:space="preserve">
+    <value>Biztosan törölni kívánja a kiválasztott automatizációs dokumentumo(ka)t?</value>
+  </data>
+	<data name="Documents_InvalidLicense" xml:space="preserve">
+    <value>A Dokumentumok funkció nem hozzáférhető a jelenlegi licence-el.</value>
+  </data>
+	<data name="Admin_HistoryChangeset" xml:space="preserve">
+    <value>Ezen az oldalon találhatóak a projekthez kapcsolódó változtatások. A részletekért és az esetleges eltávolításért kattintson a változás azonosítójára.&lt;br/&gt;Több elem egyszerre történő visszaállításához válassza ki a checkbox-okat majd kattintson a 'Visszaállítás' gombra. Amennyiben több változás is tartozik egy elemhez a legkorábbira történik a visszaállítás. Hozzáadás, Törlés, Visszaállítás változások nem állíthatóak vissza.</value>
+  </data>
+	<data name="Admin_HistoryChangeDetails" xml:space="preserve">
+    <value>A változások részletei lentebb láthatóak.</value>
+  </data>
+	<data name="Admin_History_PurgeSure" xml:space="preserve">
+    <value>Biztosan törölni szeretné ez az elemet? Törlés után nem lesz elérhető az adatbázisban és nem állítható vissza.</value>
+  </data>
+	<data name="Admin_History_RestoreSure" xml:space="preserve">
+    <value>Az elem helyreállításával minden mező értéke visszaáll. Ha az elem törölve lett, az visszavonásra kerül. Amennyiben nem minden mező állítható vissza, a folyamat megszakad és a jelenlegi státuszban marad az elem. Biztosan vissza akarja állítani?</value>
+  </data>
+	<data name="ListServiceBase_EnterValidDateRange" xml:space="preserve">
+    <value>Adjon meg érvényes dátum intervallumot '{0}'-nak</value>
+  </data>
+	<data name="ListServiceBase_EnterValidInteger" xml:space="preserve">
+    <value>Adjon meg érvényes egész számot '{0}'-nak</value>
+  </data>
+	<data name="ListServiceBase_EnterValidNumeric" xml:space="preserve">
+    <value>Adjon meg érvényes numerikus értéket '{0}'-nak</value>
+  </data>
+	<data name="Admin_History_ArtifactIsDeleted" xml:space="preserve">
+    <value>Ezt a kapcsolódó elemet törölték.</value>
+  </data>
+	<data name="Admin_History_ErrorPurging" xml:space="preserve">
+    <value>A kapcsolódó elemet nem lehet törölni az adatbázisból.</value>
+  </data>
+	<data name="Admin_History_PurgingSuccessful" xml:space="preserve">
+    <value>A kapcsolódó elem törölve az adatbázisból.</value>
+  </data>
+	<data name="Admin_History_RevertError" xml:space="preserve">
+    <value>Helyrehozhatatlan hiba történt az elem visszaállítása során.</value>
+  </data>
+	<data name="Admin_History_RevertSuccessful" xml:space="preserve">
+    <value>A kapcsolódó elem visszaállítása sikeres.</value>
+  </data>
+	<data name="Admin_History_RevertWarning" xml:space="preserve">
+    <value>A kapcsolódó elem visszaállítása sikeres, néhány mező kivételével.</value>
+  </data>
+	<data name="UserProfile_PreferencesSaved" xml:space="preserve">
+    <value>A beállítások mentése sikeresen megtörtént.</value>
+  </data>
+	<data name="RssFeeds_UserNotExists" xml:space="preserve">
+    <value>A megadott RSS tokennel rendelkező felhasználó nem található. Ellenőrizze a tokent, majd próbálja újra</value>
+  </data>
+	<data name="BackgroundProcessService_Parameter1NotSpecified" xml:space="preserve">
+    <value>A művelethez Parameter1 megadása kötelező</value>
+  </data>
+	<data name="BackrgroundProcessService_CompletedSuccessfully" xml:space="preserve">
+    <value>A művelet sikeresen befejeződött</value>
+  </data>
+	<data name="Services_AutomationHostIdNotNull" xml:space="preserve">
+    <value>AutomationHostId-nak null-nak kell lennie</value>
+  </data>
+	<data name="Services_AutomationHostIdMissing" xml:space="preserve">
+    <value>Frissítéshez AutomationHostId mező kitöltése kötelező </value>
+  </data>
+	<data name="Services_NotAuthorizedCreateAutomationHosts" xml:space="preserve">
+    <value>Nincs jogosultsága Automatizációs kiszolgáló létrehozásához</value>
+  </data>
+	<data name="Services_NotAuthorizedModifyAutomationHosts" xml:space="preserve">
+    <value>Nem jogosult Automatizációs kiszolgáló módosításához</value>
+  </data>
+	<data name="Services_NotAuthorizedViewAutomationHosts" xml:space="preserve">
+    <value>Nincs jogosultsága Automatizációs kiszolgáló megtekintéséhez</value>
+  </data>
+	<data name="Services_ItemNotBelongToProject" xml:space="preserve">
+    <value>A frissítendő elem nem tartozik ehhez a projekthez</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteArtifactType" xml:space="preserve">
+    <value>Nincs jogosultsága ilyen típusú elemek törléséhez</value>
+  </data>
+	<data name="Services_NotAuthorizedAddDocumentFolders" xml:space="preserve">
+    <value>Nincs jogosultsága dokumentummappa hozzáadásához a projekten</value>
+  </data>
+	<data name="Services_NotAuthorizedDeleteDocumentFolders" xml:space="preserve">
+    <value>Nincs jogosultsága dokumentummappa törléséhez</value>
+  </data>
+	<data name="Services_AttachmentVersionIdNotNull" xml:space="preserve">
+    <value>Egy dokumentumverzió elem létrehozásához az AttachmentVersionId mezőjének null-nak kell lennie</value>
+  </data>
+	<data name="Services_AttachmentTypeMismatch" xml:space="preserve">
+    <value>Az új verziójú, hozzáadni kívánt melléklet típusa nem egyezik az eredeti típusával</value>
+  </data>
+	<data name="Services_ProjectAttachmentFolderIdMissing" xml:space="preserve">
+    <value>Projekt mellékletek mappa azonosító megadása kötelező</value>
+  </data>
+	<data name="Admin_HistoryPurgeAll" xml:space="preserve">
+    <value>A kiválasztott elemek véglegesen törlésre kerülnek. A művelet nem visszavonható. A folytatáshoz kattintson az 'OK' gombra, a 'Mégse' gombbal megszakítható a művelet.</value>
+  </data>
+	<data name="Admin_HistoryRevertAll" xml:space="preserve">
+    <value>Minden elem a legkorábbi kiváltott változtatásig kerül visszaállításra.</value>
+  </data>
+	<data name="ReleaseDetails_CannotMakeStartDateAfterEndDate" xml:space="preserve">
+    <value>A kezdés dátumának meg kell egyeznie, vagy meg kell előznie a zárás dátumát.</value>
+  </data>
+	<data name="FileUploadDialog_DirectoryNotFound" xml:space="preserve">
+    <value>Az adminisztrátori oldalon megadott Mellékletek mappa nem létezik</value>
+  </data>
+	<data name="FileUploadDialog_DirectorySecurityError" xml:space="preserve">
+    <value>Az adminisztrátori oldalon megadott Mellékletek mappához nincs jogosultsága a webalkalmazásnak</value>
+  </data>
+	<data name="FileUploadDialog_UploadErrorGeneral" xml:space="preserve">
+    <value>Hiba történt a melléklet feltöltése során ({0})</value>
+  </data>
+	<data name="TestSetList_TestSetFoldersCannotbeExecuted" xml:space="preserve">
+    <value>A teszt szett mappa nem végrehajtható</value>
+  </data>
+	<data name="MasterPage_JavaScriptDisabled" xml:space="preserve">
+    <value>JavaScript futtatást engedélyeznie kell, hogy az alkalmazás megfelelően működjön</value>
+  </data>
+	<data name="TestStepDetails_ArtifactNotExists" xml:space="preserve">
+    <value>A jelenlegi vizsgálat lépés már nem létezik.</value>
+  </data>
+	<data name="BackgroundProcessService_ProjectIdNotSpecified" xml:space="preserve">
+    <value>ProjectId van szüksége, annak érdekében, hogy a művelet a megadott</value>
+  </data>
+	<data name="NewsReaderService_FeedNotAccessible" xml:space="preserve">
+    <value>A megadott RSS/ATOM Hírtovábbításos közzététel esetén nem érhető el.</value>
+  </data>
+	<data name="NewsReaderService_FeedUrlIncorrect" xml:space="preserve">
+    <value>RSS/ATOM feliratkozáshoz formátuma helytelen.</value>
+  </data>
+	<data name="Admin_RoleList_DeleteConfirm" xml:space="preserve">
+    <value>Biztos benne, hogy törli a projekt szerepkör?</value>
+  </data>
+	<data name="SourceCodeFileDetails_AssociationAlreadyExists" xml:space="preserve">
+    <value>Nem lehet hozzáadni a társítás már létezik.</value>
+  </data>
+	<data name="BackgroundProcessService_Parameter2NotSpecified" xml:space="preserve">
+    <value>Parameter2 van szüksége annak érdekében, hogy a művelet a megadott</value>
+  </data>
+	<data name="BuildDetails_BuildNotExists" xml:space="preserve">
+    <value>A rendszer a kiválasztott épít törölve lett.</value>
+  </data>
+	<data name="ReleaseDetails_ReleaseNotExists" xml:space="preserve">
+    <value>A rendszer a kiválasztott kibocsátás törölve lett.</value>
+  </data>
+	<data name="IncidentDetails_FixedBuildRequired" xml:space="preserve">
+    <value>A rögzített épít szükséges</value>
+  </data>
+	<data name="Services_BuildIdNotNull" xml:space="preserve">
+    <value>Épület-készlet létrehozásához Null objektum kell építeni</value>
+  </data>
+	<data name="ReportConfiguration_NeedsToBeInteger" xml:space="preserve">
+    <value>kell lennie, hogy egy egész értéket.</value>
+  </data>
+	<data name="ReportConfiguration_NeedsToBeIntegerList" xml:space="preserve">
+    <value>egész számok pontosvesszővel elválasztott listáját kell átállítani.</value>
+  </data>
+	<data name="RecentBuilds_NeedToSelectRelease" xml:space="preserve">
+    <value>Ki kell választania egy release-t/sprintet a  a jelenlegi build megjelenítéséhez</value>
+  </data>
+	<data name="Admin_AssignedApprovers_Success" xml:space="preserve"><value>Approvers Updated.</value></data>
+	<data name="Services_UnableToConnectWithApiKey" xml:space="preserve">A kapcsolat nem lehetséges {0}-hoz a jelenlegi API Kulccsal</data><data name="Services_NotAuthorizedModifyArtifact" xml:space="preserve">Artifact Típus módosítása nem engedélyezett</data><data name="Services_NotAuthorizedViewArtifact" xml:space="preserve">Artifact Típus Nézete nem engedélyezett</data><data name="Register_ConfirmPasswordRequired" xml:space="preserve">Jelszó megerősítése kötelező</data><data name="Register_EmailNotValid" xml:space="preserve">A beírt Email Cím nem érvényes</data><data name="Register_EmailRequired" xml:space="preserve">Email Cím megadása kötelező</data><data name="Register_FirstNameRequired" xml:space="preserve">Keresztnév megadása kötelező</data><data name="Register_LastNameRequired" xml:space="preserve">Vezetéknév megadása kötelező</data><data name="Register_UserNameNotValid" xml:space="preserve">A beírt Felhasználói Név nem érvényes</data><data name="Register_UserNameRequired" xml:space="preserve">Felhasználó Név megadása kötelező</data><data name="Register_PasswordAnswerRequired" xml:space="preserve">Titkos Kérdés megadása Kötelező</data><data name="Register_PasswordQuestionRequired" xml:space="preserve">Titkos Válasz megadása Kötelező</data><data name="Register_PasswordRequired" xml:space="preserve">Jelszó kötelező</data><data name="Register_PasswordsMustMatch" xml:space="preserve">A Jelszó és a Jelszó megerősítésének eggyeznie kell</data><data name="EmailPassword_AnswerRequired" xml:space="preserve">Válasz megadása kötelező</data><data name="EmailPassword_GeneralFailureText" xml:space="preserve">A felhasználói fiok elérése közben egy általános hiba történt. Kérem lépjen kapcsolatba a rendszer adminisztrátorával.</data><data name="EmailPassword_UserNameFailureText" xml:space="preserve">Felhasználói fiókja jelenleg nem érhető el. Kérem próbálja később.</data><data name="EmailPassword_QuestionFailureText" xml:space="preserve">A jelszó visszaállítás válasza nem ellenőrízhető. Kérem próbálja később.</data><data name="UserDetails_NewPasswordError5" xml:space="preserve">A jelenlegi jelszava nem megfelelő a titkos kerdés/válasz megváltoztatásához.</data><data name="UserDetails_NewPasswordError6" xml:space="preserve">Az új jelszó nem tartalmaz elég számú speciális karaktert. Minimum {0} speciális karakter szükséges</data><data name="UserDetails_NewPasswordError7" xml:space="preserve">Az új jelszó nem elég hosszú. Minimum {0} karakter szükséges</data><data name="UserDetails_ToChangePasswordQuestionAnswer" xml:space="preserve">A fiók titkos kérdés/válasz változtatásához a jelenlegi jelszó és az új titkos kérdés/válasz megadása szőkséges.</data><data name="UserProfile_ErrorUpdatingProfile" xml:space="preserve">A felhasználói fiok frissítése közben hiba történt. Kérem próbálja később.</data><data name="UserDetails_CannotChangeAdminUser1" xml:space="preserve">A Rendszer Adminisztrátor admin/aktív státusza nem változtatható!</data><data name="UserDetails_ConfirmPasswordRequired" xml:space="preserve">Az új jelszó megerősítése kötelező</data><data name="UserDetails_InvalidEmailAddress" xml:space="preserve">A felhasználó email címe nem érvényes, kérem frissítse és próbálja újra.</data><data name="UserDetails_InvalidPassword" xml:space="preserve">A jelszó nem érvényes. Kérem bizonyosódjon meg, hogy megfelelő hosszúságú és elég számú speciális karaktert tartalmaz.</data><data name="UserDetails_InvalidPasswordAnswer" xml:space="preserve">A titkos válasz túl hosszú, kérem próbáljon egy másik választ megadni.</data><data name="UserDetails_InvalidPasswordQuestion" xml:space="preserve">A titkos kérdés túl hosszú, kérem próbáljon egy másik kérdés megadni.</data><data name="UserDetails_InvalidUserName" xml:space="preserve">A felhasználói név nem érvényes, kérem változtassa meg és próbálja újra.</data><data name="UserDetails_NeedToSpecifyDn" xml:space="preserve">Megkölönböztető Név (DN) megadása kötelező az LDAP felhasználó számára.</data><data name="UserDetails_NewPasswordRequired" xml:space="preserve">Kérem, írjon be egy új jelszót</data><data name="UserDetails_PasswordAnswerRequired" xml:space="preserve">Kérem, írjon be egy új titkos választ</data><data name="UserDetails_PasswordQuestionRequired" xml:space="preserve">Kérem, írjon be egy új titkos kérdést</data><data name="UserDetails_PasswordsNotMatch" xml:space="preserve">A jelszó megerősítése nem egyezik a jelszóval</data><data name="UserDetails_ProviderError" xml:space="preserve">Felhasználó nem létrehozható/frissíthető. Kérem nézze me ga Rendszer esemény naplót bővebb információért.</data><data name="UserDetails_UserNameInUse" xml:space="preserve">A megadott felhasználónév már létezik. Kérjük válasszon másikat!</data><data name="Users_PasswordError_MoreAlphaNumeric" xml:space="preserve">Az új jelszó létrehozásához több numerikus karkter szükségeltetik.</data><data name="Users_PasswordError_NoMatchRequired" xml:space="preserve">Az új jelszó nem egyezik a szükséges mintával.</data><data name="Users_PasswordError_TooLong" xml:space="preserve">Az új jelszó túl hosszú.</data><data name="Users_PasswordError_TooShort" xml:space="preserve">Az új jelszó túl rövid.</data><data name="Users_PasswordNotChanged" xml:space="preserve">A jelszó nem lett megváltoztatva.</data><data name="Users_QuestionAnswerNotChanged" xml:space="preserve">A titkos kérdés/válasz nem lett megváltoztatva.</data><data name="UserDetails_EmailAddressInvalid" xml:space="preserve">A megadott email cím nem érvényes</data><data name="UserDetails_EmailAddressRequired" xml:space="preserve">Email Cím megadása kötelező</data><data name="UserDetails_FirstNameRequired" xml:space="preserve">Keresztnév megadása kötelező</data><data name="UserDetails_LastNameRequired" xml:space="preserve">Vezetéknév megadása kötelező</data><data name="UserDetails_UserNameInvalid" xml:space="preserve">A felhasználónév csak betűt, számot, pontot, kötőjeet és aláhúzást tartalmazhat.</data><data name="UserDetails_UserNameRequired" xml:space="preserve">Felhasználónév megadása kötelező</data><data name="UserLdapImport_ImportSuccess" xml:space="preserve">A kiválasztott felhasználók sikeresen be lettek importálva.</data><data name="UserLdapImport_ImportWithErrors" xml:space="preserve">Az LDAP felhasználók importálása {0} hbával végződött.</data><data name="UserLdapImport_LdapGeneralError" xml:space="preserve">Hiba az LDAP szerver elérése közben:</data><data name="UserLdapImport_NeedToSelectOneUser" xml:space="preserve">Az importáláshoz legalább egy felhasználót ki kell választani.</data><data name="UserLdapImport_UnableToAccessLdapServer" xml:space="preserve">Az LDAP szerver nem elérhető. Kérem ellenőrízze az LDAP beállításokat és próbálja újra ({0})</data><data name="UserLdapImport_UnableToGetUserList" xml:space="preserve">A felhasználó lista az LDAP szervertől nem kérhető le. Kérem ellenőrízze az LDAP beállításokat és próbálja újra.</data><data name="UserRequests_ConfirmDelete" xml:space="preserve">Biztos benne, hogy le kívánja törölni ezt az új felhasználó kérést?</data><data name="SecuritySettings_MaxInvalidPasswordAttempts_Invalid" xml:space="preserve">A Maximum # Érvénytelen Jelszó Próbálkozáshoz egy egész értéket kell megadnia.</data><data name="SecuritySettings_MaxInvalidPasswordAttempts_Required" xml:space="preserve">A Maximum # Érvénytelen Jelszó Próbálkozáshoz meg kell adnia egy értéket.</data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters_Invalid" xml:space="preserve">A Minimum # Kötelező Speciális Karakterhez egy egész értéket kell megadnia.</data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters_Required" xml:space="preserve">A Minimum Kötelező Speciális Karakterhez meg kell adnia egy értéket.</data><data name="SecuritySettings_MinRequiredPasswordLength_Invalid" xml:space="preserve">A Minimum Kötelező Jelszó Hosszához egy egész értéket kell megadnia.</data><data name="SecuritySettings_MinRequiredPasswordLength_Required" xml:space="preserve">A Minimum Kötelező Jelszó Hosszához meg kell adnia egyértéket.</data><data name="SecuritySettings_PasswordAttemptWindow_Invalid" xml:space="preserve">A Jelszó Próbálkozás Időablakhoz egy egész értéket kell megadnia.</data><data name="SecuritySettings_PasswordAttemptWindow_Required" xml:space="preserve">A Jelszó Próbálkozás Időablakhoz meg kell adnia egy értéket.</data><data name="SecuritySettings_SaveSuccess" xml:space="preserve">Biztonsági Beállításokat mentettük.</data><data name="GeneralSettings_AttachmentsFolderNotExists" xml:space="preserve">A megadott Csatolmány Könyvtár nem létezik a szerveren!</data><data name="GeneralSettings_AttachmentsFolderRequired" xml:space="preserve">A csatolmány könyvtár útvonal megadása kötelező</data><data name="GeneralSettings_Success" xml:space="preserve">Általános Beállításokat mentettük.</data><data name="GeneralSettings_WebServerUrlInvalid" xml:space="preserve">A Web Szerver URL-je nem érvényes.</data><data name="GeneralSettings_WebServerUrlRequired" xml:space="preserve">A Web Szerver URL megadása kötelező.</data><data name="GeneralSettings_EventDaysToKeepInvalid" xml:space="preserve">Az Esemény Napló Megtartásához egy egész értéket kell megadnia</data><data name="GeneralSettings_EventDaysToKeepRequired" xml:space="preserve">Az Esemény Napló Megtartásához meg kell adnia egy értéket</data><data name="EventLog_ClearLogConfirm" xml:space="preserve">Biztos benne, hogy ki akarja törölni a rendszer Esemény Naplót? Ez a művelet nem visszavonható!</data><data name="EventLog_ClearLogFailure" xml:space="preserve">A rendszer Esemény naplót nem sikerült törölni.</data><data name="EventLog_ClearLogSuccess" xml:space="preserve">A rendszer Esemény napló sikeresen törlődött.</data><data name="VersionControlProviderDetails_TestFailed" xml:space="preserve">A Version Control provider-hez nem sikerült kapcsolódni.</data><data name="VersionControlProviderDetails_TestSuccess" xml:space="preserve">A kapcsolat a Version Control provider-hez sikeresen létrejött.</data><data name="GlobalNavigation_NotHavePermissionToView" xml:space="preserve">Nincs joga az alabbi információ megtekinteséhez.</data><data name="RequirementsTaskService_TaskOutsideDateRange" xml:space="preserve">Ez a feladat kezdő vagy befejező dátuma nem lehet kívűl a hozzá társított iteráció/release dátumain.</data><data name="Admin_CustomPropertyDefinition_Removed" xml:space="preserve">Az Egyedi Tulajdonság a #{0} pozíción törlődött.</data><data name="Admin_CustomPropertyDefinition_Saved" xml:space="preserve">Az Egyedi Tulajdonság a #{0} pozíción elmentődött.</data><data name="Admin_System_CustomListValue_ConfirmDeleteValue" xml:space="preserve">Biztos benne, hogy le akarja törölni ezt az értéket?\nBármelyik ezt az értkéket tartalmazó mező  a lista első értékét fogja felvenni vagy lenullázódik.</data><data name="ListServiceBase_EnterValidDecimal" xml:space="preserve">{0}'-hoz meg kell adnia egy decimális értéket.</data><data name="ListServiceBase_FieldIncorrectFormat" xml:space="preserve">{0}'-t érvényes formátumban kell megadnia.</data><data name="ListServiceBase_FieldRequired" xml:space="preserve">A '{0}'-hoz meg kell adnia egy értéket.</data><data name="Admin_WorkflowDetails_AddSuccess" xml:space="preserve">Új munkafolyamat átmenet sikeresen hozzáadódott.</data><data name="Admin_WorkflowDetails_NameRequired" xml:space="preserve">Egy nevet meg kell adnia az átmenethez.</data><data name="Admin_WorkflowStep_RequiredNotAllowed" xml:space="preserve">Ha egy mező vagy letiltott, akkor az nem adható meg Kötelezőként.</data><data name="Admin_WorkflowStep_UpdateSuccess" xml:space="preserve">Egyedi Tulajdonságot és Mezőt frissítetve lettek.</data><data name="Admin_Workflows_Default_CopySuccess" xml:space="preserve">A Munkafolyamat sikeresen átmásolódott</data><data name="Admin_Workflows_Default_DeleteConfirm" xml:space="preserve">Biztos benne, hogy le akarja törölni ezt a Munkafolyamatot?</data><data name="Admin_Workflows_Default_DeleteSuccess" xml:space="preserve">A Munkafolyamat sikeresen törlődött.</data><data name="Admin_Workflows_Default_EditActiveWarning" xml:space="preserve">Figyelmeztetés: Egy Aktív munkafolyamatot szerkeszt, ami esetleg használatban van.\nBiztos folytatni akarja?</data><data name="Admin_Workflows_Default_NameRequired" xml:space="preserve">A Munkafolyamathoz meg kell adnia egy nevet</data><data name="Admin_Workflows_Default_OneNeedsToBeActive" xml:space="preserve">Legalább egy Munkafolyamat Aktívnak kell lennie.</data><data name="Admin_Workflows_Default_SaveConfirm" xml:space="preserve">A Munkafolyamat sikeresen mentődött</data><data name="Admin_WorkflowTransition_NameRequired" xml:space="preserve">Meg kell adnia egy Átmenet Nevet!</data><data name="Admin_WorkflowTransition_SettingsSaved" xml:space="preserve">A Munkafolyamat Átmenet Beállítások frissítve lettek.</data><data name="IncidentsService_IncidentNotFound" xml:space="preserve">Az IN{0} incidens nem elérhető mert már nem létezik..</data><data name="TasksService_DatesOutsideBounds" xml:space="preserve">Ez a feladat kezdő vagy befejező dátuma nem lehet kívűl a hozzá társított iteráció/release dátumain.</data><data name="TestRunService_TestSetNotValid" xml:space="preserve">A Teszt Set amit kiválasztott vagy egy könyvtár vagy már nem létezik.</data><data name="Services_CustomPropertyDefinitionsNotLoaded" xml:space="preserve">Az Artifact Egyedi Tulajdonság definíciókat előszőr be kell tölteni.</data><data name="Services_CustomListDoesNotExist" xml:space="preserve">A kért Egyedi Listanem létezik a projektben.</data><data name="Services_NoAvailableCustomProperties" xml:space="preserve">Ehhez az Artifact Típushoz nem létezik Egyedi Tulajdonság ebben a projektben</data><data name="TestExecutionService_TestRunsPendingIdNotProvided" xml:space="preserve">A TestRunsPendingId parameterhez meg kell adnia egy értéket</data><data name="TestExecutionService_NoTestRunsFound" xml:space="preserve">A Függőben lévő Rekordban nem található Teszt Futás</data><data name="RequirementsService_RequirementNotFound" xml:space="preserve">A RQ{0} Követelmény nem elérhető, mert már nem létezik.</data><data name="ReleasesService_ReleaseNotFound" xml:space="preserve">A RL{0} release/iteráció nem elérhető, mert már nem létezik.</data><data name="TestSetService_TestSetNotFound" xml:space="preserve">A TX{0} Teszt Set nem elérhető, mert már nem létezik.</data><data name="TasksService_TaskNotFound" xml:space="preserve">A TK{0} Feladat nem elérhető, mert már nem létezik.</data><data name="AutomationHostsService_AutomationHostNotFound" xml:space="preserve">A AH{0} Automata Host nem elérhető, mert már nem létezik.</data><data name="TestCaseService_TestCaseNotFound" xml:space="preserve">A TC{0} Teszt Eset nem elérhető, mert már nem létezik.</data><data name="TestStepService_TestStepNotFound" xml:space="preserve">A TS{0} Teszt Lépés nem elérhető, mert már nem létezik.</data><data name="TestRunService_TestRunNotFound" xml:space="preserve">A TR{0} Teszt Futás nem elérhető, mert már nem létezik.</data><data name="ReportViewer_ReportFormatIdMissing" xml:space="preserve">Meg kell adnia egy riport formátum azonosítot</data><data name="ReportViewer_ReportIdNotValid" xml:space="preserve">Meg kell adnia egy érvényes numerikus riport azonosítot</data><data name="ReportViewer_QueryStringEmpty" xml:space="preserve">A riport lekérés üres volt, ezért a riport készítés leállt!</data><data name="ReportViewer_GeneratedReportNotExists" xml:space="preserve">Az elkészült riport nem létezik többé.</data><data name="ReportViewer_InvalidGeneratedId" xml:space="preserve">Meg kell adnia egy érvényes numerikus riport készített azonosítot</data><data name="ReportViewer_NeedGeneratedId" xml:space="preserve">Meg kell adnia egy riport készített azonosítot</data><data name="ReportViewer_NotAuthorizedToViewGeneratedReport" xml:space="preserve">Az elkészült riport megtekintéséhez nincs jogosultsága!</data><data name="PendingTestRuns_DeleteConfirm" xml:space="preserve">Biztos benne, hogy törölni akarja ezt a függőben lévő Teszt Futást?</data><data name="Admin_Reports_DeleteConfirm" xml:space="preserve">Biztos benne, hogy törölni akarja ezt a riportot? Ez a művelet nem visszavonható!</data><data name="Admin_Reports_ReportCopied" xml:space="preserve">A riport sikeresen átmásolódott.</data><data name="Admin_Reports_ReportDeleted" xml:space="preserve">A riport sikeresen törlődött.</data><data name="Admin_ReportDetails_DeleteSectionConfirm" xml:space="preserve">Biztos benne, hogy törölni akarja ezt a szekciót? Ez a művelet nem visszavonható!</data><data name="Admin_CustomPropertyDefinition_RemoveProperty" xml:space="preserve">Biztos benne, hogy törölni akarja ezt a tulajdonságot?\nA létező értékek ebben a mezőben elérhetetlenné válnak, ha folytatja.</data><data name="Admin_DataTools_CurrentStatusBad" xml:space="preserve">&lt;span style="color:darkred;"&gt;Hiba&lt;/span&gt;</data><data name="Admin_DataTools_CurrentStatusGood" xml:space="preserve">&lt;span style="color:darkgreen;"&gt;OK&lt;/span&gt;</data><data name="Admin_DataTools_Intro1" xml:space="preserve">A alkalmazás gyorsításáshoz néhány adattípushoz gyorsítótárt használunk. Néha a válozások megjelenítéséhez amiket az adatokkal végzünk a gyorsítótár frissítésére van szükség. Ehhez kattintson valamelyik linkre az alábbiakból:</data><data name="Admin_DataTools_Intro2" xml:space="preserve">Néha meghibásodott behúzás információ okozhat sor duplikációt vagy hiányzó sorokat. Ha valamelyik érték lent 'hibát' mutat, kattintson a linkre a hiba javításához.</data><data name="Admin_DataTools_RefreshThe" xml:space="preserve">Frissítsd a</data><data name="Admin_DataTools_TaskProgressCache" xml:space="preserve">Feladat Folyamat Cache</data><data name="Admin_DataTools_TestStatusCache" xml:space="preserve">Teszt Státusz Cache</data><data name="Admin_DataTools_Title" xml:space="preserve">Adat Eszközök</data><data name="Admin_DataTools_Correct" xml:space="preserve">Helyes</data><data name="Admin_DataTools_UpdatingTaskProgress" xml:space="preserve">Feladat Folyamat frissítése...</data><data name="Admin_DataTools_UpdatingTestStatus" xml:space="preserve">Teszt státusz frissítése...</data><data name="Admin_DataTools_IndentFixingRelease" xml:space="preserve">Release incidensesek javítása...</data><data name="Admin_DataTools_IndentFixingRequirement" xml:space="preserve">Követelmény incidensesek javítása...</data><data name="Admin_DataTools_IndentFixingTestCase" xml:space="preserve">Teszt Eset incidensesek javítása...</data><data name="Admin_DataTools_IndentFixingTestSet" xml:space="preserve">Teszt Set incidensesek javítása...</data><data name="Admin_History_PurgingAll" xml:space="preserve">Törlött elemek végleges eltávolítása...</data><data name="Admin_History_Restoring" xml:space="preserve">A kiválasztott elemek visszaállítása...</data><data name="Admin_History_RestoreError" xml:space="preserve">Legalább egy elemet ki kell választania a visszaállításhoz.</data><data name="DocumentDetails_ArtifactAlreadyAttached" xml:space="preserve">Az Artifact összerendelés már létezik.</data><data name="Services_CustomPropertyDoesNotExist" xml:space="preserve">A kért Egyedi Tulajdonság nem létezik a projektben.</data><data name="Services_CustomPropertyNotBelongToProject" xml:space="preserve">A megadott Egyedi Tulajdonság nem tartozik a jelenlegi projekthez.</data><data name="Services_CustomPropertyIdNotNull" xml:space="preserve">RemoteCustomProperty objektumhoz CustomPropertyId-t kell rendelni null értékkel a hozzáadáshoz</data><data name="Admin_RoleDetails_CannotDeactivateProjectOwner" xml:space="preserve">Project Tulajdonos beépített szerepkört nem lehet inaktíválni!</data><data name="Services_UnableToConnectWithApiKey" xml:space="preserve"><value>A kapcsolat nem lehetséges {0}-hoz a jelenlegi API Kulccsal</value></data><data name="Services_NotAuthorizedModifyArtifact" xml:space="preserve"><value>Az adott tárgykör  típus módosítása nem engedélyezett</value></data><data name="Services_NotAuthorizedViewArtifact" xml:space="preserve"><value>Az adott tárgykör  nézet nem engedélyezett</value></data><data name="Register_ConfirmPasswordRequired" xml:space="preserve"><value>Jelszó megerősítése kötelező</value></data><data name="Register_EmailNotValid" xml:space="preserve"><value>A beírt Email Cím nem érvényes</value></data><data name="Register_EmailRequired" xml:space="preserve"><value>Email Cím megadása kötelező</value></data><data name="Register_FirstNameRequired" xml:space="preserve"><value>Keresztnév megadása kötelező</value></data><data name="Register_LastNameRequired" xml:space="preserve"><value>Vezetéknév megadása kötelező</value></data><data name="Register_UserNameNotValid" xml:space="preserve"><value>A beírt Felhasználói Név nem érvényes</value></data><data name="Register_UserNameRequired" xml:space="preserve"><value>Felhasználó Név megadása kötelező</value></data><data name="Register_PasswordAnswerRequired" xml:space="preserve"><value>Titkos Kérdés megadása Kötelező</value></data><data name="Register_PasswordQuestionRequired" xml:space="preserve"><value>Titkos Válasz megadása Kötelező</value></data><data name="Register_PasswordRequired" xml:space="preserve"><value>Jelszó kötelező</value></data><data name="Register_PasswordsMustMatch" xml:space="preserve"><value>A Jelszó és a Jelszó megerősítésének eggyeznie kell</value></data><data name="EmailPassword_AnswerRequired" xml:space="preserve"><value>Válasz megadása kötelező</value></data><data name="EmailPassword_GeneralFailureText" xml:space="preserve"><value>A felhasználói fiók elérése közben egy általános hiba történt. Kérem lépjen kapcsolatba a rendszer adminisztrátorával.</value></data><data name="EmailPassword_UserNameFailureText" xml:space="preserve"><value>Felhasználói fiókja jelenleg nem érhető el. Kérem próbálja később.</value></data><data name="EmailPassword_QuestionFailureText" xml:space="preserve"><value>A jelszó visszaállítás válasza nem ellenőrizhető. Kérem próbálja később.</value></data><data name="UserDetails_NewPasswordError5" xml:space="preserve"><value>A jelenlegi jelszava nem megfelelő a titkos kérdés/válasz megváltoztatásához.</value></data><data name="UserDetails_NewPasswordError6" xml:space="preserve"><value>Az új jelszó nem tartalmaz elég számú speciális karaktert. Minimum {0} speciális karakter szükséges</value></data><data name="UserDetails_NewPasswordError7" xml:space="preserve"><value>Az új jelszó nem elég hosszú. Minimum {0} karakter szükséges</value></data><data name="UserDetails_ToChangePasswordQuestionAnswer" xml:space="preserve"><value>A fiók titkos kérdés/válasz változtatásához a jelenlegi jelszó és az új titkos kérdés/válasz megadása szükséges.</value></data><data name="UserProfile_ErrorUpdatingProfile" xml:space="preserve"><value>A felhasználói fiók frissítése közben hiba történt. Kérem próbálja később.</value></data><data name="UserDetails_CannotChangeAdminUser1" xml:space="preserve"><value>A Rendszer Adminisztrátor admin/aktív státusza nem változtatható!</value></data><data name="UserDetails_ConfirmPasswordRequired" xml:space="preserve"><value>Az új jelszó megerősítése kötelező</value></data><data name="UserDetails_InvalidEmailAddress" xml:space="preserve"><value>A felhasználó email címe nem érvényes, kérem frissítse és próbálja újra.</value></data><data name="UserDetails_InvalidPassword" xml:space="preserve"><value>A jelszó nem érvényes. Kérem bizonyosodjon meg, hogy megfelelő hosszúságú és elég számú speciális karaktert tartalmaz.</value></data><data name="UserDetails_InvalidPasswordAnswer" xml:space="preserve"><value>A titkos válasz túl hosszú, kérem próbáljon egy másik választ megadni.</value></data><data name="UserDetails_InvalidPasswordQuestion" xml:space="preserve"><value>A titkos kérdés túl hosszú, kérem próbáljon egy másik kérdés megadni.</value></data><data name="UserDetails_InvalidUserName" xml:space="preserve"><value>A felhasználói név nem érvényes, kérem változtassa meg és próbálja újra.</value></data><data name="UserDetails_NeedToSpecifyDn" xml:space="preserve"><value>Megkülönböztető Név (DN) megadása kötelező az LDAP felhasználó számára.</value></data><data name="UserDetails_NewPasswordRequired" xml:space="preserve"><value>Kérem, írjon be egy új jelszót</value></data><data name="UserDetails_PasswordAnswerRequired" xml:space="preserve"><value>Kérem, írjon be egy új titkos választ</value></data><data name="UserDetails_PasswordQuestionRequired" xml:space="preserve"><value>Kérem, írjon be egy új titkos kérdést</value></data><data name="UserDetails_PasswordsNotMatch" xml:space="preserve"><value>A jelszó megerősítése nem egyezik a jelszóval</value></data><data name="UserDetails_ProviderError" xml:space="preserve"><value>Felhasználó nem létrehozható/frissíthető. Kérem nézze meg a Rendszer esemény naplót bővebb információért.</value></data><data name="UserDetails_UserNameInUse" xml:space="preserve"><value>A megadott felhasználónév már létezik. Kérjük válasszon másikat!</value></data><data name="Users_PasswordError_MoreAlphaNumeric" xml:space="preserve"><value>Az új jelszó létrehozásához több numerikus karakter szükségeltetik.</value></data><data name="Users_PasswordError_NoMatchRequired" xml:space="preserve"><value>Az új jelszó nem egyezik a szükséges mintával.</value></data><data name="Users_PasswordError_TooLong" xml:space="preserve"><value>Az új jelszó túl hosszú.</value></data><data name="Users_PasswordError_TooShort" xml:space="preserve"><value>Az új jelszó túl rövid.</value></data><data name="Users_PasswordNotChanged" xml:space="preserve"><value>A jelszó nem lett megváltoztatva.</value></data><data name="Users_QuestionAnswerNotChanged" xml:space="preserve"><value>A titkos kérdés/válasz nem lett megváltoztatva.</value></data><data name="UserDetails_EmailAddressInvalid" xml:space="preserve"><value>A megadott email cím nem érvényes</value></data><data name="UserDetails_EmailAddressRequired" xml:space="preserve"><value>Email Cím megadása kötelező</value></data><data name="UserDetails_FirstNameRequired" xml:space="preserve"><value>Keresztnév megadása kötelező</value></data><data name="UserDetails_LastNameRequired" xml:space="preserve"><value>Vezetéknév megadása kötelező</value></data><data name="UserDetails_UserNameInvalid" xml:space="preserve"><value>A felhasználónév csak betűt, számot, pontot, kötőjelet és aláhúzást tartalmazhat.</value></data><data name="UserDetails_UserNameRequired" xml:space="preserve"><value>Felhasználónév megadása kötelező</value></data><data name="UserLdapImport_ImportSuccess" xml:space="preserve"><value>A kiválasztott felhasználók sikeresen be lettek importálva.</value></data><data name="UserLdapImport_ImportWithErrors" xml:space="preserve"><value>Az LDAP felhasználók importálása {0} hibával végződött.</value></data><data name="UserLdapImport_LdapGeneralError" xml:space="preserve"><value>Hiba az LDAP szerver elérése közben:</value></data><data name="UserLdapImport_NeedToSelectOneUser" xml:space="preserve"><value>Az importáláshoz legalább egy felhasználót ki kell választani.</value></data><data name="UserLdapImport_UnableToAccessLdapServer" xml:space="preserve"><value>Az LDAP szerver nem elérhető. Kérem ellenőrizze az LDAP beállításokat és próbálja újra ({0})</value></data><data name="UserLdapImport_UnableToGetUserList" xml:space="preserve"><value>A felhasználó lista az LDAP szervertől nem kérhető le. Kérem ellenőrizze az LDAP beállításokat és próbálja újra.</value></data><data name="UserRequests_ConfirmDelete" xml:space="preserve"><value>Biztos benne, hogy le kívánja törölni ezt az új felhasználó kérést?</value></data><data name="SecuritySettings_MaxInvalidPasswordAttempts_Invalid" xml:space="preserve"><value>A Maximum # Érvénytelen Jelszó Próbálkozáshoz egy egész értéket kell megadnia.</value></data><data name="SecuritySettings_MaxInvalidPasswordAttempts_Required" xml:space="preserve"><value>A Maximum # Érvénytelen Jelszó Próbálkozáshoz meg kell adnia egy értéket.</value></data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters_Invalid" xml:space="preserve"><value>A Minimum # Kötelező Speciális Karakterhez egy egész értéket kell megadnia.</value></data><data name="SecuritySettings_MinRequiredNonalphanumericCharacters_Required" xml:space="preserve"><value>A Minimum Kötelező Speciális Karakterhez meg kell adnia egy értéket.</value></data><data name="SecuritySettings_MinRequiredPasswordLength_Invalid" xml:space="preserve"><value>A Minimum Kötelező Jelszó Hosszához egy egész értéket kell megadnia.</value></data><data name="SecuritySettings_MinRequiredPasswordLength_Required" xml:space="preserve"><value>A Minimum Kötelező Jelszó Hosszához meg kell adnia egyértéket.</value></data><data name="SecuritySettings_PasswordAttemptWindow_Invalid" xml:space="preserve"><value>A Jelszó Próbálkozás Időablakhoz egy egész értéket kell megadnia.</value></data><data name="SecuritySettings_PasswordAttemptWindow_Required" xml:space="preserve"><value>A Jelszó Próbálkozás Időablakhoz meg kell adnia egy értéket.</value></data><data name="SecuritySettings_SaveSuccess" xml:space="preserve"><value>Biztonsági Beállításokat mentettük.</value></data><data name="GeneralSettings_AttachmentsFolderNotExists" xml:space="preserve"><value>A megadott Csatolmány Könyvtár nem létezik a szerveren!</value></data><data name="GeneralSettings_AttachmentsFolderRequired" xml:space="preserve"><value>A csatolmány könyvtár útvonal megadása kötelező</value></data><data name="GeneralSettings_Success" xml:space="preserve"><value>Általános Beállításokat mentettük.</value></data><data name="GeneralSettings_WebServerUrlInvalid" xml:space="preserve"><value>A Web Szerver URL-je nem érvényes.</value></data><data name="GeneralSettings_WebServerUrlRequired" xml:space="preserve"><value>A Web Szerver URL megadása kötelező.</value></data><data name="GeneralSettings_EventDaysToKeepInvalid" xml:space="preserve"><value>Az Esemény Napló Megtartásához egy egész értéket kell megadnia</value></data><data name="GeneralSettings_EventDaysToKeepRequired" xml:space="preserve"><value>Az Esemény Napló Megtartásához meg kell adnia egy értéket</value></data><data name="EventLog_ClearLogConfirm" xml:space="preserve"><value>Biztos benne, hogy ki akarja törölni a rendszer Esemény Naplót? Ez a művelet nem visszavonható!</value></data><data name="EventLog_ClearLogFailure" xml:space="preserve"><value>A rendszer Esemény naplót nem sikerült törölni.</value></data><data name="EventLog_ClearLogSuccess" xml:space="preserve"><value>A rendszer Esemény napló sikeresen törlődött.</value></data><data name="VersionControlProviderDetails_TestFailed" xml:space="preserve"><value>A Version Control provider-hez nem sikerült kapcsolódni.</value></data><data name="VersionControlProviderDetails_TestSuccess" xml:space="preserve"><value>A kapcsolat a Version Control provider-hez sikeresen létrejött.</value></data><data name="GlobalNavigation_NotHavePermissionToView" xml:space="preserve"><value>Nincs joga az alábbi információ megtekintéséhez.</value></data><data name="RequirementsTaskService_TaskOutsideDateRange" xml:space="preserve"><value>Ez a feladat kezdő vagy befejező dátuma nem lehet kívül a hozzá társított sprint/release dátumain.</value></data><data name="Admin_CustomPropertyDefinition_Removed" xml:space="preserve"><value>Az Egyedi Tulajdonság a #{0} pozíción törlődött.</value></data><data name="Admin_CustomPropertyDefinition_Saved" xml:space="preserve"><value>Az Egyedi Tulajdonság a #{0} pozíción elmentődött.</value></data><data name="Admin_System_CustomListValue_ConfirmDeleteValue" xml:space="preserve"><value>Biztos benne, hogy le akarja törölni ezt az értéket?\nBármelyik ezt az értkéket tartalmazó mező  a lista első értékét fogja felvenni vagy lenullázódik.</value></data><data name="ListServiceBase_EnterValidDecimal" xml:space="preserve"><value>{0}'-hoz meg kell adnia egy decimális értéket.</value></data><data name="ListServiceBase_FieldIncorrectFormat" xml:space="preserve"><value>{0}'-t érvényes formátumban kell megadnia.</value></data><data name="ListServiceBase_FieldRequired" xml:space="preserve"><value>A '{0}'-hoz meg kell adnia egy értéket.</value></data><data name="Admin_WorkflowDetails_AddSuccess" xml:space="preserve"><value>Új munkafolyamat átmenet sikeresen hozzáadódott.</value></data><data name="Admin_WorkflowDetails_NameRequired" xml:space="preserve"><value>Egy nevet meg kell adnia az átmenethez.</value></data><data name="Admin_WorkflowStep_RequiredNotAllowed" xml:space="preserve"><value>Ha egy mező vagy letiltott, akkor az nem adható meg Kötelezőként.</value></data><data name="Admin_WorkflowStep_UpdateSuccess" xml:space="preserve"><value>Egyedi Tulajdonságot és Mezőt frissítve lettek.</value></data><data name="Admin_Workflows_Default_CopySuccess" xml:space="preserve"><value>A Munkafolyamat sikeresen átmásolódott</value></data><data name="Admin_Workflows_Default_DeleteConfirm" xml:space="preserve"><value>Biztos benne, hogy le akarja törölni ezt a Munkafolyamatot?</value></data><data name="Admin_Workflows_Default_DeleteSuccess" xml:space="preserve"><value>A Munkafolyamat sikeresen törlődött.</value></data><data name="Admin_Workflows_Default_EditActiveWarning" xml:space="preserve"><value>Figyelmeztetés: Egy Aktív munkafolyamatot szerkeszt, ami esetleg használatban van.\nBiztos folytatni akarja?</value></data><data name="Admin_Workflows_Default_NameRequired" xml:space="preserve"><value>A Munkafolyamathoz meg kell adnia egy nevet</value></data><data name="Admin_Workflows_Default_OneNeedsToBeActive" xml:space="preserve"><value>Legalább egy Munkafolyamat Aktívnak kell lennie.</value></data><data name="Admin_Workflows_Default_SaveConfirm" xml:space="preserve"><value>A Munkafolyamat sikeresen mentődött</value></data><data name="Admin_WorkflowTransition_NameRequired" xml:space="preserve"><value>Meg kell adnia egy Átmenet nevet!</value></data><data name="Admin_WorkflowTransition_SettingsSaved" xml:space="preserve"><value>A Munkafolyamat Átmenet Beállítások frissítve lettek.</value></data><data name="IncidentsService_IncidentNotFound" xml:space="preserve"><value>Az IN{0} incidens nem elérhető mert már nem létezik..</value></data><data name="TasksService_DatesOutsideBounds" xml:space="preserve"><value>Ez a feladat kezdő vagy befejező dátuma nem lehet kívül a hozzá társított sprint/release dátumain.</value></data><data name="TestRunService_TestSetNotValid" xml:space="preserve"><value>A Teszt szett, amit kiválasztott vagy egy könyvtár vagy már nem létezik.</value></data><data name="Services_CustomPropertyDefinitionsNotLoaded" xml:space="preserve"><value>Az tárgykor egyedi tulajdonság definíciókat előszőr be kell tölteni.</value></data><data name="Services_CustomListDoesNotExist" xml:space="preserve"><value>A kért Egyedi Listanem létezik a projektben.</value></data><data name="Services_NoAvailableCustomProperties" xml:space="preserve"><value>Ehhez az tárgykör  típushoz nem létezik egyedi tulajdonság ebben a projektben</value></data><data name="TestExecutionService_TestRunsPendingIdNotProvided" xml:space="preserve"><value>A TestRunsPendingId parameterhez meg kell adnia egy értéket</value></data><data name="TestExecutionService_NoTestRunsFound" xml:space="preserve"><value>A függőben lévő Rekordban nem található Teszt Futás</value></data><data name="RequirementsService_RequirementNotFound" xml:space="preserve"><value>A RQ{0} Követelmény nem elérhető, mert már nem létezik.</value></data><data name="ReleasesService_ReleaseNotFound" xml:space="preserve"><value>A RL{0} release/sprint nem elérhető, mert már nem létezik.</value></data><data name="TestSetService_TestSetNotFound" xml:space="preserve"><value>A TX{0} Teszt szett nem elérhető, mert már nem létezik.</value></data><data name="TasksService_TaskNotFound" xml:space="preserve"><value>A TK{0} Feladat nem elérhető, mert már nem létezik.</value></data><data name="AutomationHostsService_AutomationHostNotFound" xml:space="preserve"><value>A AH{0} Automata Host nem elérhető, mert már nem létezik.</value></data><data name="TestCaseService_TestCaseNotFound" xml:space="preserve"><value>A TC{0} teszteset nem elérhető, mert már nem létezik.</value></data><data name="TestStepService_TestStepNotFound" xml:space="preserve"><value>A TS{0} Teszt Lépés nem elérhető, mert már nem létezik.</value></data><data name="TestRunService_TestRunNotFound" xml:space="preserve"><value>A TR{0} Teszt Futás nem elérhető, mert már nem létezik.</value></data><data name="ReportViewer_ReportFormatIdMissing" xml:space="preserve"><value>Meg kell adnia egy riport formátum azonosítót</value></data><data name="ReportViewer_ReportIdNotValid" xml:space="preserve"><value>Meg kell adnia egy érvényes numerikus riport azonosítót</value></data><data name="ReportViewer_QueryStringEmpty" xml:space="preserve"><value>A riport lekérés üres volt, ezért a riport készítés leállt!</value></data><data name="ReportViewer_GeneratedReportNotExists" xml:space="preserve"><value>Az elkészült riport nem létezik többé.</value></data><data name="ReportViewer_InvalidGeneratedId" xml:space="preserve"><value>Meg kell adnia egy érvényes numerikus riport készített azonosítót</value></data><data name="ReportViewer_NeedGeneratedId" xml:space="preserve"><value>Meg kell adnia egy riport készített azonosítót</value></data><data name="ReportViewer_NotAuthorizedToViewGeneratedReport" xml:space="preserve"><value>Az elkészült riport megtekintéséhez nincs jogosultsága!</value></data><data name="PendingTestRuns_DeleteConfirm" xml:space="preserve"><value>Biztos benne, hogy törölni akarja ezt a függőben lévő Teszt Futást?</value></data><data name="Admin_Reports_DeleteConfirm" xml:space="preserve"><value>Biztos benne, hogy törölni akarja ezt a riportot? Ez a művelet nem visszavonható!</value></data><data name="Admin_Reports_ReportCopied" xml:space="preserve"><value>A riport sikeresen átmásolódott.</value></data><data name="Admin_Reports_ReportDeleted" xml:space="preserve"><value>A riport sikeresen törlődött.</value></data><data name="Admin_ReportDetails_DeleteSectionConfirm" xml:space="preserve"><value>Biztos benne, hogy törölni akarja ezt a szekciót? Ez a művelet nem visszavonható!</value></data><data name="Admin_CustomPropertyDefinition_RemoveProperty" xml:space="preserve"><value>Biztos benne, hogy törölni akarja ezt a tulajdonságot?\nA létező értékek ebben a mezőben elérhetetlenné válnak, ha folytatja.</value></data><data name="Admin_DataTools_CurrentStatusBad" xml:space="preserve"><value>&lt;span style="color:darkred;"&gt;Hiba&lt;/span&gt;</value></data><data name="Admin_DataTools_CurrentStatusGood" xml:space="preserve"><value>&lt;span style="color:darkgreen;"&gt;OK&lt;/span&gt;</value></data><data name="Admin_DataTools_Intro1" xml:space="preserve"><value>A alkalmazás gyorsításához néhány adattípushoz gyorsítótárt használunk. Néha a változások megjelenítéséhez amiket az adatokkal végzünk a gyorsítótár frissítésére van szükség. Ehhez kattintson valamelyik linkre az alábbiakból:</value></data><data name="Admin_DataTools_Intro2" xml:space="preserve"><value>Néha meghibásodott behúzás információ okozhat sor duplikációt vagy hiányzó sorokat. Ha valamelyik érték lent 'hibát' mutat, kattintson a linkre a hiba javításához.</value></data><data name="Admin_DataTools_RefreshThe" xml:space="preserve"><value>Frissítsd a</value></data><data name="Admin_DataTools_TaskProgressCache" xml:space="preserve"><value>Feladat Folyamat Cache</value></data><data name="Admin_DataTools_TestStatusCache" xml:space="preserve"><value>Teszt Státusz Cache</value></data><data name="Admin_DataTools_Title" xml:space="preserve"><value>Adat Eszközök</value></data><data name="Admin_DataTools_Correct" xml:space="preserve"><value>Helyes</value></data><data name="Admin_DataTools_UpdatingTaskProgress" xml:space="preserve"><value>Feladat Folyamat frissítése...</value></data><data name="Admin_DataTools_UpdatingTestStatus" xml:space="preserve"><value>Teszt státusz frissítése...</value></data><data name="Admin_DataTools_IndentFixingRelease" xml:space="preserve"><value>Release incidensesek javítása...</value></data><data name="Admin_DataTools_IndentFixingRequirement" xml:space="preserve"><value>Követelmény incidensesek javítása...</value></data><data name="Admin_DataTools_IndentFixingTestCase" xml:space="preserve"><value>teszteset incidensesek javítása...</value></data><data name="Admin_DataTools_IndentFixingTestSet" xml:space="preserve"><value>Teszt szett incidensesek javítása...</value></data><data name="Admin_History_PurgingAll" xml:space="preserve"><value>Törlött elemek végleges eltávolítása...</value></data><data name="Admin_History_Restoring" xml:space="preserve"><value>A kiválasztott elemek visszaállítása...</value></data><data name="Admin_History_RestoreError" xml:space="preserve"><value>Legalább egy elemet ki kell választania a visszaállításhoz.</value></data><data name="DocumentDetails_ArtifactAlreadyAttached" xml:space="preserve"><value>Az  összerendelés már létezik.</value></data><data name="Services_CustomPropertyDoesNotExist" xml:space="preserve"><value>A kért Egyedi Tulajdonság nem létezik a projektben.</value></data><data name="Services_CustomPropertyNotBelongToProject" xml:space="preserve"><value>A megadott Egyedi Tulajdonság nem tartozik a jelenlegi projekthez.</value></data><data name="Services_CustomPropertyIdNotNull" xml:space="preserve"><value>RemoteCustomProperty objektumhoz CustomPropertyId-t kell rendelni null értékkel a hozzáadáshoz</value></data><data name="Admin_RoleDetails_CannotDeactivateProjectOwner" xml:space="preserve"><value>Project Tulajdonos beépített szerepkört nem lehet inaktiválni!</value></data><data name="IncidentDetails_Detectedrelease-required" xml:space="preserve"><value>release-ben detektálva megadása kötelező</value></data><data name="IncidentDetails_Verifiedrelease-required" xml:space="preserve"><value>release-ben ellenőrizve megadása kötelező</value></data><data name="SecuritySettings_AuthenticationExpirationRememberMe_Required" xml:space="preserve"><value>Meg kell adnia egy értéket az „Emlékezz rám lejáratához”!</value></data><data name="SecuritySettings_AuthenticationExpirationRememberMe_Invalid" xml:space="preserve"><value>Egy egész számot adjon meg az „Emlékezz rám lejáratához”!</value></data><data name="SecuritySettings_AuthenticationExpiration_Required" xml:space="preserve"><value>Meg kell adnia egy értéket a „Hitelesítés lejáratához”!</value></data><data name="SecuritySettings_AuthenticationExpiration_Invalid" xml:space="preserve"><value>Egy egész számot adjon meg a „Hitelesítés lejáratához”!</value></data><data name="Admin_EmailConfig_Seperator" xml:space="preserve"><value>E-mail küldése importáló elválasztó?</value></data><data name="Admin_EmailConfig_Seperator_Small" xml:space="preserve"><value>Ha engedélyezte, akkor az összes kimenő e-mail egy elválasztót tartalmaz, amivel a megjegyzésekké alakított válaszok törölhetők.</value></data><data name="Admin_CustomLists_CannotRemoveInUse" xml:space="preserve"><value>Nem távolítható el használatban lévő lista.</value></data><data name="Admin_CustomLists_Removed" xml:space="preserve"><value>Egyéni lista eltávolítva.</value></data><data name="TestExecutionService_TestRunHasNoSteps" xml:space="preserve"><value>A jelenlegi tesztfuttatás nem rendelkezik tesztlépésekkel, ezért nem hajtható végre.</value></data><data name="DocumentFolders_ConfirmDelete" xml:space="preserve"><value>Ezzel a rendszer törli a kiválasztott könyvtárat, alkönyvtárakat és az ezekben tárolt dokumentumokat! Biztosan folytatja?</value></data><data name="DocumentTypes_Success" xml:space="preserve"><value>Dokumentumtípusok sikeresen frissítve</value></data><data name="IncidentPriorities_AtLeastOneMustBeActive" xml:space="preserve"><value>Legalább egy incidensprioritást aktívként kell megjelölni.</value></data><data name="IncidentPriorities_ColorInvalid" xml:space="preserve"><value>Adjon meg egy érvényes színkódot az incidensprioritáshoz</value></data><data name="IncidentPriorities_ColorRequired" xml:space="preserve"><value>Adjon meg egy színkódot az incidensprioritáshoz</value></data><data name="IncidentPriorities_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet az incidensprioritáshoz</value></data><data name="IncidentPriorities_Success" xml:space="preserve"><value>Incidensprioritások sikeresen frissítve.</value></data><data name="IncidentSeverities_AtLeastOneMustBeActive" xml:space="preserve"><value>Legalább egy incidenssúlyosságot aktívként kell megjelölni.</value></data><data name="IncidentSeverities_ColorInvalid" xml:space="preserve"><value>Adjon meg egy érvényes színkódot az incidenssúlyossághoz</value></data><data name="IncidentSeverities_ColorRequired" xml:space="preserve"><value>Adjon meg egy színkódot az incidenssúlyossághoz</value></data><data name="IncidentSeverities_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet az incidenssúlyossághoz</value></data><data name="IncidentSeverities_Success" xml:space="preserve"><value>Incidenssúlyosság sikeresen frissítve.</value></data><data name="IncidentStatuses_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet az incidensállapothoz</value></data><data name="IncidentStatuses_Success" xml:space="preserve"><value>Incidensállapotok sikeresen frissítve.</value></data><data name="IncidentTypes_CannotSetDefaultTypeInactive" xml:space="preserve"><value>Nem állítható be alapértelmezett incidenstípus egy inaktív értékhez</value></data><data name="IncidentTypes_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet az incidensállapothoz</value></data><data name="IncidentTypes_Success" xml:space="preserve"><value>Incidenstípusok sikeresen frissítve.</value></data><data name="LdapConfiguration_SettingsSaved" xml:space="preserve"><value>Az LDAP-szerver alapján sikeresen hitelesített mintafelhasználó. Beállítások elmentve.</value></data><data name="LdapConfiguration_SettingsSavedWithoutTesting" xml:space="preserve"><value>Beállítások elmentve a mintafelhasználó tesztelése nélkül.</value></data><data name="LicenseDetails_EvalLicenseExpired" xml:space="preserve"><value>A megadott bemutató licenckulcs lejárt.&amp;nbsp;&lt;br&gt;&amp;nbsp;Új licenchez forduljon az ügyfélszolgálathoz.</value></data><data name="LicenseDetails_LicenseKeyRequired" xml:space="preserve"><value>Licenckulcs szükséges</value></data><data name="LicenseDetails_OrganizationRequired" xml:space="preserve"><value>Licencelt szervezetnév szükséges</value></data><data name="LicenseDetails_ProductOrgLicenseNotValid" xml:space="preserve"><value>A projektnév, licenckulcs és/vagy szervezetnév nem érvényes.&amp;nbsp;&lt;br /&gt;&amp;nbsp;Ellenőrizze, hogy ugyanazt a licenckulcsot ÉS szervezetnevet adta-e meg, mint ami az ügyfélfiókban fel van sorolva.</value></data><data name="LicenseDetails_Success" xml:space="preserve"><value>Licencadatok sikeresen frissítve.</value></data><data name="Admin_PlanningOptions_NonWorkingHoursExceedWorkingHours" xml:space="preserve"><value>Nem lehet több nem munkával töltött óra, mint munkaóra!</value></data><data name="Admin_PlanningOptions_Success" xml:space="preserve"><value>projekttervezési opciók elmentve.</value></data><data name="Admin_PlanningOptions_WorkHoursPerDayRequired" xml:space="preserve"><value>Napi munkaóra szükséges</value></data><data name="Admin_PlanningOptions_WorkingDaysPerWeekNotInRange" xml:space="preserve"><value>Heti munkanapnak 1-7 között kell lennie</value></data><data name="Admin_PlanningOptions_WorkingHoursPerDayNotInRange" xml:space="preserve"><value>Heti munkaórának 1-24 között kell lennie</value></data><data name="Admin_ProjectDetails_NotExists" xml:space="preserve"><value>Nem található meglévő projekt!</value></data><data name="Admin_ProjectDetails_ProjectNameRequired" xml:space="preserve"><value>projektnév szükséges</value></data><data name="Admin_ProjectDetails_WebSiteUrlInvalid" xml:space="preserve"><value>A webhelynek érvényes URL-nek kell lennie</value></data><data name="Admin_ProjectGroupDetails_CannotMakeDefaultInactive" xml:space="preserve"><value>Nem teheti inaktívvá az alapértelmezett programot</value></data><data name="Admin_ProjectGroupDetails_CannotMakeInactiveDefault" xml:space="preserve"><value>Nem tehet inaktív programot alapértelmezetté a rendszerben.</value></data><data name="Admin_ProjectGroupDetails_ConfirmUserDelete" xml:space="preserve"><value>Biztosan eltávolítja ezeket a felhasználókat a programból?</value></data><data name="Admin_ProjectGroupDetails_MembershipRemoved" xml:space="preserve"><value>Programtagok sikeresen eltávolítva.</value></data><data name="Admin_ProjectGroupDetails_MembershipUpdated" xml:space="preserve"><value>Programtagság frissítve.</value></data><data name="Admin_ProjectGroupDetails_NameRequired" xml:space="preserve"><value>Programnév szükséges</value></data><data name="Admin_ProjectGroupDetails_NeedAtLeastOneDefault" xml:space="preserve"><value>Legalább egy alapértelmezett programnak kell lennie. Kérem, tegye egy másik programot alapértelmezetté, és ne ezt állítsa „No”-ra.</value></data><data name="Admin_ProjectGroupDetails_NotExists" xml:space="preserve"><value>Nem található meglévő program!</value></data><data name="Admin_ProjectGroups_CannotDeleteDefault" xml:space="preserve"><value>Nem törölheti az alapértelmezett programot.</value></data><data name="Admin_ProjectGroups_DeleteConfirm" xml:space="preserve"><value>Biztosan törli ezt a programot? Ezzel a projektek mindegyike az alapértelmezett programba kerül.</value></data><data name="Global_EnterValidDateValue" xml:space="preserve"><value>Érvényes dátumot kell megadni a(z) {0}-hoz!</value></data><data name="LdapConfiguration_FailedToAuthenticate" xml:space="preserve"><value>FIGYELEM: Nem sikerült az LDAP-szerver alapján történő hitelesítés kérem, ellenőrizze a konfigurációt és próbálja újra. A beállítások nem kerültek mentésre.</value></data><data name="Admin_PlanningOptions_NonWorkingHoursPerMonthNotInteger" xml:space="preserve"><value>A nem munkával töltött órák száma havonta egész számnak kell lennie</value></data><data name="Admin_PlanningOptions_NonWorkingHoursPerMonthRequired" xml:space="preserve"><value>A nem munkával töltött órák száma havonta szükséges</value></data><data name="Admin_PlanningOptions_WorkDaysPerWeekNotInteger" xml:space="preserve"><value>A munkával töltött napok száma hetente egész számnak kell lennie</value></data><data name="Admin_PlanningOptions_WorkDaysPerWeekRequired" xml:space="preserve"><value>A munkával töltött napok száma hetente szükséges</value></data><data name="Admin_PlanningOptions_WorkHoursPerDayNotInteger" xml:space="preserve"><value>A munkával töltött napok száma egész számnak kell lennie</value></data><data name="Admin_ProjectGroupMembershipAdd_UserAlreadyMember" xml:space="preserve"><value>Nem adhat hozzá olyan felhasználót, aki már tagja a programnak!</value></data><data name="Admin_ProjectMembershipAdd_UserAlreadyMember" xml:space="preserve"><value>Nem adhat hozzá olyan felhasználót, aki már tagja a projektnek!</value></data><data name="Admin_ProjectMembership_ConfirmRemove" xml:space="preserve"><value>Biztosan eltávolítja a felhasználót (felhasználókat) a projektből?</value></data><data name="Admin_ProjectMembership_DeleteSuccess" xml:space="preserve"><value>projekttagok sikeresen eltávolítva.</value></data><data name="Admin_ProjectMembership_Success" xml:space="preserve"><value>projekttagság frissítve.</value></data><data name="Admin_ActiveSessions_ConfirmEnd" xml:space="preserve"><value>Biztosan lezárja a felhasználó munkamenetét?</value></data><data name="Admin_AutomationEngineDetails_DeleteConfirm" xml:space="preserve"><value>Biztosan törli ezt a kiegészítőt? Ezzel az összes adattérkép-bejegyzést törli, ami nem fordítható vissza.</value></data><data name="Admin_AutomationEngineDetails_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a motorhoz</value></data><data name="Admin_AutomationEngineDetails_TokenNotUnique" xml:space="preserve"><value>Adjon meg egy egyéni tokent ehhez az automatizációs motorhoz. A megadott tétel már használatban van.</value></data><data name="Admin_AutomationEngineDetails_TokenRequired" xml:space="preserve"><value>Egy tokent kell megadni a motorhoz</value></data><data name="Admin_AutomationEngines_DeleteConfirm" xml:space="preserve"><value>Biztosan törli ezt a motort? Ezzel az összes beállítást törli, ami nem fordítható vissza!</value></data><data name="Admin_DataSyncCustomPropertyMapping_Success" xml:space="preserve"><value>Egyéni tulajdonságok térképe sikeresen mentve</value></data><data name="Admin_DataSyncDetails_ConnectionRequired" xml:space="preserve"><value>Meg kell adnia a kiegészítő kapcsolati információját</value></data><data name="Admin_DataSyncDetails_LoginRequired" xml:space="preserve"><value>Meg kell adnia egy felhasználónevet a kiegészítőhöz</value></data><data name="Admin_DataSyncDetails_NameRequired" xml:space="preserve"><value>Meg kell adnia egy nevet a kiegészítőhöz</value></data><data name="Admin_DataSyncDetails_PlugInDeleted" xml:space="preserve"><value>A kiválasztott adatszinkronizáció törlődött a rendszerből.</value></data><data name="Admin_DataSyncDetails_TimeOffsetInvalid" xml:space="preserve"><value>Adjon meg egy egész szám időeltolási értéket</value></data><data name="Admin_DataSyncDetails_TimeOffsetRequired" xml:space="preserve"><value>Adjon meg egy időeltolási értéket</value></data><data name="Admin_DataSyncFieldMapping_Success" xml:space="preserve"><value>Mezőérték térképe sikeresen mentve</value></data><data name="Admin_DataSyncProjects_CustomPropertyNotExists" xml:space="preserve"><value>A kiválasztott egyéni tulajdonságot törölte a projektből.</value></data><data name="Admin_DataSyncProjects_DataSyncNotExists" xml:space="preserve"><value>A kiválasztott adatszinkronizáció törlődött a rendszerből.</value></data><data name="Admin_DataSyncProjects_NeedToSelectProject" xml:space="preserve"><value>Először ki kell választani egy projektet az adattérkép konfigurálása előtt.</value></data><data name="Admin_DataSyncProjects_NeedToSetExternalKey" xml:space="preserve"><value>Egy külső kulcsot kell megadni ehhez a projekthez</value></data><data name="Admin_DataSyncProjects_SettingsSaved" xml:space="preserve"><value>projektadat-szinkronizációs beállításai mentve</value></data><data name="Admin_DocumentFolderDetails_CannotInsertRoot" xml:space="preserve"><value>Nem illeszthet be új gyökérkönyvtárat a projektbe</value></data><data name="Admin_DocumentFolderDetails_CannotSetParentToYourChild" xml:space="preserve"><value>A szülő könyvtárat egy olyan elembe állítja, amely a jelenlegi tétel gyermeke.</value></data><data name="Admin_DocumentFolderDetails_FolderNameRequired" xml:space="preserve"><value>Könyvtárnév szükséges</value></data><data name="Admin_EmailConfiguration_AddressInvalid" xml:space="preserve"><value>A megadott e-mail-címek nem érvényesek.</value></data><data name="Admin_EmailConfiguration_EventNameRequired" xml:space="preserve"><value>Eseménynév szükséges</value></data><data name="Admin_EmailConfiguration_FromAddressRequired" xml:space="preserve"><value>A feladó e-mail-cím szükséges</value></data><data name="Admin_EmailConfiguration_PortNumberInvalid" xml:space="preserve"><value>Az SMTP-portszámnak egész számnak kell lennie</value></data><data name="Admin_EmailConfiguration_Success" xml:space="preserve"><value>E-mail-beállítások mentve.</value></data><data name="Admin_Notification_ErrorSendingTestEmail" xml:space="preserve"><value>Hiba történt a teszt e-mail küldésekor. Ellenőrizze az SMTP-naplókat, végezze el a javításokat, majd próbálja újra.</value></data><data name="Admin_Notification_SubjectLineRequired" xml:space="preserve"><value>Értesítés tárgysora szükséges.</value></data><data name="Admin_RoleDetails_NameRequired" xml:space="preserve"><value>Szerepnév szükséges</value></data><data name="Admin_VersionControlProject_NeedToSelectProject" xml:space="preserve"><value>Először választania kell egy projektet, mielőtt konfigurálná a verziókövetési beállításokat.</value></data><data name="Admin_VersionControlProject_Success" xml:space="preserve"><value>projektbeállítások sikeresen frissítve.</value></data><data name="Admin_VersionControlProvider_ConnectionInfoRequired" xml:space="preserve"><value>Meg kell adnia a kapcsolati információt a szolgáltatóhoz</value></data><data name="Admin_VersionControlProvider_HasBeenDeleted" xml:space="preserve"><value>A kiválasztott szolgáltató törlődött a rendszerből.</value></data><data name="Admin_VersionControlProvider_LoginRequired" xml:space="preserve"><value>Meg kell adnia a felhasználót a szolgáltatóhoz</value></data><data name="Admin_VersionControlProvider_NameRequired" xml:space="preserve"><value>Meg kell adnia egy nevet a szolgáltatóhoz</value></data><data name="Admin_VersionControlProvider_PasswordRequired" xml:space="preserve"><value>Meg kell adnia egy jelszót a szolgáltató felhasználónevéhez</value></data><data name="Admin_VersionControlProvider_Success" xml:space="preserve"><value>Szolgáltató sikeresen frissítve.</value></data><data name="PlanningOptions_DefaultEstimateInvalid" xml:space="preserve"><value>Alapértelmezés szerinti becslés érvénytelen</value></data><data name="PlanningOptions_PointEffortInvalid" xml:space="preserve"><value>Pontszerű feladat érvénytelen</value></data><data name="Admin_Components_Saved" xml:space="preserve"><value>Sikeresen mentett összetevők</value></data><data name="Admin_Components_SaveError" xml:space="preserve"><value>Hiba az összetevők mentésekor</value></data><data name="Global_UnableRetrieveTooltip" xml:space="preserve"><value>Nem sikerült a helyi súgó megjelenítése...</value></data><data name="ReleaseDetails_ScenarioStepDeleteConfirm" xml:space="preserve"><value>Biztosan törli a kiválasztott forgatókönyv-lépéseket?</value></data><data name="TasksService_TaskFolderIdNotInteger" xml:space="preserve"><value>A parentNodeId értéknek egész számnak kell lennie!</value></data><data name="TasksService_TaskFolderNameRequired" xml:space="preserve"><value>Új feladatkönyvtár szükséges!</value></data><data name="DocumentsService_DocumentFolderIdNotInteger" xml:space="preserve"><value>A parentNodeId értéknek egész számnak kell lennie!</value></data><data name="DocumentsService_DocumentFolderNameRequired" xml:space="preserve"><value>Új dokumentum-könyvtárnév szükséges!</value></data><data name="UserProfile_AvatarNotRemoved" xml:space="preserve"><value>Hiba történt a rendszerben az avatar törlésekor.</value></data><data name="UserProfile_AvatarRemoved" xml:space="preserve"><value>Az Ön avatarja törlődött. Némi időbe telhet, amíg a módosítás a rendszer egészében érvénybe lép.</value></data><data name="UserProfile_AvatarTooLarge" xml:space="preserve"><value>Az avatarképnek 100KB-nál kisebbnek kell lennie.</value></data><data name="UserProfile_AvatarWrongType" xml:space="preserve"><value>Csak a GIF, JPG vagy PNG fájltípusok engedélyezettek az avatarképekhez.</value></data><data name="Global_DataSavedWithoutNewComment" xml:space="preserve"><value>Az elemadatok mentésre kerültek, de új megjegyzést nem adtak hozzá.</value></data><data name="GeneralSettings_InstantMessengerRetentionInvalid" xml:space="preserve"><value>Egy egész számot kell megadnia az azonnali üzenet megőrzéséhez</value></data><data name="GeneralSettings_InstantMessengerRetentionRequired" xml:space="preserve"><value>Meg kell adnia egy értéket az azonnali üzenet megőrzéséhez</value></data><data name="Timecard_AdditionalEffortInvalid" xml:space="preserve"><value>Legalább egy További munka érték érvénytelen!</value></data><data name="Timecard_RemainingEffortInvalid" xml:space="preserve"><value>Legalább egy Hátralévő munka érték érvénytelen!</value></data><data name="Services_NotAuthorizedModifyProject" xml:space="preserve"><value>Ennek a funkciónak a használatához projektadminisztrátornak kell lennie!</value></data><data name="TestExecutionService_NoTestCaseFound" xml:space="preserve"><value>Nem tárolható el a teszteredmény, mert nem található ez a teszt. Folytatás a következő teszttel.</value></data><data name="Global_DatabaseTimeout" xml:space="preserve"><value>Az adatbázisban időtúllépés történt a parancs végrehajtásakor. Frissítse az adatbázisindexeket (lásd: KB10).</value></data><data name="Admin_VersionControlProvider_ClearCacheWarning" xml:space="preserve"><value>A gyorsítótár törlése esetén a rendszer frissíti a verziókövetési információt a szolgáltatótól. Ezzel a forráskezelő oldalak inaktívvá válnak a gyorsítótárazás befejezéséig. Biztos benne?</value></data><data name="Admin_TaraVault_NotActive" xml:space="preserve"><value>Az Ön TaraVault instanciája nem aktív. Az aktiválást követően TaraVault projektet kell létrehozni minden olyan {0} projekthez, amelyhez a verziókövetési tárat be kívánja állítani. A TaraVaultot az alábbi gombra kattintva aktiválhatja.</value></data><data name="SourceCodeList_CacheNotReadyError" xml:space="preserve"><value>A forráskódtár böngészője jelenleg inicializál. Frissítse az oldalt, majd próbálja újra.</value></data><data name="SourceCodeFileDetails_PreviewNotAvailable" xml:space="preserve"><value>Előnézet nem érhető el ehhez a fájlhoz.</value></data><data name="Admin_TaraVault_Active" xml:space="preserve"><value>Az Ön TaraVault előfizetése készen áll az aktiválásra!&lt;br/&gt; Az Ön {1} fiókja jelenleg {0} TaraVault felhasználóhoz van beállítva.</value></data><data name="Admin_User_TaraVaultNoProjects" xml:space="preserve"><value>Ez a felhasználó aktív, de nincs egyetlen projekthez sem rendelve.</value></data><data name="Admin_User_TaraVaultNoAvailProjects" xml:space="preserve"><value>A felhasználó már minden olyan projekthez tartozik, amelyet a TaraVaulthoz engedélyeztek.</value></data><data name="Admin_WorkflowDetails_DeleteConfirm" xml:space="preserve"><value>Biztosan törli ezt az átváltást?</value></data><data name="Admin_VersionControl_ReloadingCache" xml:space="preserve"><value>A verziókövetés gyorsítótárának újbóli betöltése...</value></data><data name="VersionControl_CacheUpdateRunning" xml:space="preserve"><value>A forráskód gyorsítótárjának frissítése jelenleg zajlik...</value></data><data name="VersionControl_CacheUpToDate" xml:space="preserve"><value>A forráskód gyorsítótárja naprakész.</value></data><data name="Services_NotAuthorizedCreateAutomationEngines" xml:space="preserve"><value>Nem jogosult az automatizációs motor létrehozásához - Rendszergazdának kell lennie</value></data><data name="ListServiceBase_EnterValidEffortRange" xml:space="preserve"><value>Egy érvényes munkatartományértéket kell megadni a(z) „{0}”-hoz</value></data><data name="Services_DigitalSignatureNotValid" xml:space="preserve"><value>Az elektronikus aláírás nem érvényes kérem, ellenőrizze az információt, majd próbálja újra!</value></data><data name="Admin_TaraVault_ProjectNameExists" xml:space="preserve"><value>A Vault nevet már használja egy másik projekt. Válasszon másik nevet.</value></data><data name="Admin_TaraVault_ErrorCreatingProject" xml:space="preserve"><value>Hiba történt a kérés végrehajtásakor.</value></data><data name="Admin_TaraVault_ProjCreated" xml:space="preserve"><value>Forrásellenőrző projekt létrejött!</value></data><data name="Admin_User_TaraVaultPassRequired" xml:space="preserve"><value>Felhasználói TaraVault jelszó szükséges.</value></data><data name="Admin_TaraVault_NotActiveNoService" xml:space="preserve"><value>Jelenleg nem aktiválható a TaraVault, mivel Ön nem iratkozott fel erre a szolgáltatásra. Tekintse át az ügyfélfiókját az OnShore Technology Group weboldalon, majd jelentkezzen be.</value></data><data name="DocumentsService_DocumentFolderNotEmptyCannotDelete" xml:space="preserve"><value>Nem törölhet olyan dokumentumkönyvtárat, ami nem üres!</value></data><data name="Services_ComponentDoesNotExist" xml:space="preserve"><value>A megadott összetevő nem létezik, ellenőrizze az azonosítót és próbálja újra.</value></data><data name="Services_ComponentIdNotPopulated" xml:space="preserve"><value>Fel kell tölteni a ComponentId mezőt a frissítésekhez!</value></data><data name="Services_NotAuthorizedUpdateComponents" xml:space="preserve"><value>Nem jogosult létrehozni, módosítani vagy törölni a projektösszetevőket.</value></data><data name="Services_NotAuthorizedModifyDataSyncs" xml:space="preserve"><value>Nem jogosult az adatokszinkronizációs bejegyzés módosítására.</value></data><data name="SecuritySettings_AllowedDomainsNotes_Invalid" xml:space="preserve"><value>Az engedélyezett tartományok listája nem érvényes.</value></data><data name="Admin_TaraVault_UnableToActivate" xml:space="preserve"><value>Nem aktiválható TaraVault fiók</value></data><data name="SpiraMembershipProvider_PasswordMatch" xml:space="preserve"><value>{0}' bejelentkezett a fiókjába</value></data><data name="SpiraMembershipProvider_PasswordNotMatch" xml:space="preserve"><value>{0}' helytelen jelszóval próbált meg bejelentkezni.</value></data><data name="SpiraMembershipProvider_UserLocked" xml:space="preserve"><value>{0}' megpróbált bejelentkezni, de kizárták.</value></data><data name="SpiraMembershipProvider_UserNotActive" xml:space="preserve"><value>{0}' megpróbált bejelentkezni, de a felhasználó inaktívvá vált.</value></data><data name="SpiraMembershipProvider_UserNotApproved" xml:space="preserve"><value>{0}' megpróbált bejelentkezni, de még nem hagyták jóvá.</value></data><data name="SpiraMembershipProvider_UserNotExist" xml:space="preserve"><value>Egy ismeretlen felhasználó megpróbált bejelentkezni a(z) „{0}” felhasználónevével.</value></data><data name="Releases_CannotInsertChildUnderIterationOrPhase" xml:space="preserve"><value>Nem illeszthet be gyermek elemet egy Sprint/fázis alá.</value></data><data name="TestCasesService_TestCaseFolderIdNotInteger" xml:space="preserve"><value>A parentNodeId értéknek egész számnak kell lennie!</value></data><data name="TestCasesService_TestCaseFolderNameRequired" xml:space="preserve"><value>Új teszteset-könyvtárnév szükséges!</value></data><data name="ErrorPage_ContactLocalAdmin" xml:space="preserve"><value>forduljon a rendszergazdához</value></data><data name="Admin_DataTools_RefreshingDatabaseIndexes" xml:space="preserve"><value>Az adatbázisindexek frissítése</value></data><data name="Admin_VersionControl_DeleteConfirm" xml:space="preserve"><value>Biztosan törli ezt a szolgáltatót? Ezzel az összes alapértelmezett és projektspecifikus beállítást törli, ami nem fordítható vissza!</value></data><data name="Admin_TaraVault_ProjectNotActivated" xml:space="preserve"><value>A TaraVaultot még nem aktiválta ehhez a projekthez. Ezt az alábbi részletek kitöltésével aktiválhatja.</value></data><data name="TestCasesService_CannotMoveFolderUnderItself" xml:space="preserve"><value>Nem helyezheti át a tesztkönyvtárt önmaga alá!</value></data><data name="TestSetsService_CannotMoveFolderUnderItself" xml:space="preserve"><value>Nem helyezheti át a tesz szett könyvtárt önmaga alá!</value></data><data name="TestSetsService_TestSetFolderIdNotInteger" xml:space="preserve"><value>A parentNodeId értéknek egész számnak kell lennie!</value></data><data name="TestSetsService_TestSetFolderNameRequired" xml:space="preserve"><value>Új teszt szett könyvtárnév szükséges!</value></data><data name="GeneralSettings_VersionControlCacheRetentionInvalid" xml:space="preserve"><value>Egy egész számot kell megadnia a verziókövetés gyorsítótár megőrzéséhez</value></data><data name="GeneralSettings_VersionControlCacheRetentionRequired" xml:space="preserve"><value>Adjon meg egy értéket a verziókövetés gyorsítótár megőrzéséhez</value></data><data name="TestingSettings_Success" xml:space="preserve"><value>Tesztelési beállítások mentve.</value></data><data name="TestExecutionService_NeedToProvideIncident" xml:space="preserve"><value>Adjon meg egy incidenst!</value></data><data name="Services_UserNotFound" xml:space="preserve"><value>Nem található a kért felhasználó</value></data><data name="Services_TaskNotFound" xml:space="preserve"><value>Nem található a kért feladat</value></data><data name="Services_AutomationEngineNotExist" xml:space="preserve"><value>Nem található a kért automatizációs motor</value></data><data name="Service_ProjectNotFound" xml:space="preserve"><value>Nem található a kért projekt</value></data><data name="TestCaseExecution_AddScreenshotUsingEditor" xml:space="preserve"><value>Képernyőkép hozzáadásához egyszerűen illessze be az Aktuális eredmények szövegdobozba</value></data><data name="TestCaseService_CannotAddToTestSetFolder" xml:space="preserve"><value>Válasszon egy teszt szettet, és ne egy teszt szett könyvtárat, majd próbálja újra!</value></data><data name="Services_TestStepIdMissing" xml:space="preserve"><value>A TestStep objektumhoz a TestStepId-nek kitöltve kell lennie</value></data><data name="Services_NotAuthorizedModifyTestSteps" xml:space="preserve"><value>Nem jogosult a tesztlépések módosításához</value></data><data name="Services_TestStepNotBelongToTestCase" xml:space="preserve"><value>A tesztlépés nem tartozik a meghatározott tesztesethez.</value></data><data name="Services_NoDataProvided" xml:space="preserve"><value>A webszolgáltatás nem kapott adatokat.</value></data><data name="Services_UserIsAlreadyMemberOfProject" xml:space="preserve"><value>A felhasználó már tagja a projektnek</value></data><data name="Services_UserIdIsNull" xml:space="preserve"><value>Adjon meg egy értéket a UserId-hez</value></data><data name="Services_AutomationEngineIdMissing" xml:space="preserve"><value>Ellenőrizze, hogy az automatizációs motor azonosítója ki van-e töltve</value></data><data name="Services_NotAuthorizedModifyUsers" xml:space="preserve"><value>Nem jogosult a felhasználók módosításához</value></data><data name="Services_NotAuthorizedViewAllUsers" xml:space="preserve"><value>Nem jogosult az összes felhasználó megtekintéséhez</value></data><data name="Services_RequirementStepIdMissing" xml:space="preserve"><value>Ellenőrizze, hogy a követelménylépés azonosítója ki van-e töltve</value></data><data name="Services_UserMembershipNotFound" xml:space="preserve"><value>Nem található felhasználótagsági bejegyzés ehhez a felhasználóhoz/projekthez</value></data><data name="Services_HistoryChangeSetNotFound" xml:space="preserve"><value>Az előzmény változtatási készlet nem található!</value></data><data name="Services_InvalidLicense" xml:space="preserve"><value>Ez a funkció nem elérhető az Ön licencével!</value></data><data name="Admin_ProjectAssociations_ConfirmRemove" xml:space="preserve"><value>Biztosan törli a kiválasztott projekteket?</value></data><data name="Admin_ProjectAssociations_RemoveSuccess" xml:space="preserve"><value>A választott projekteket törölte a listáról.</value></data><data name="Admin_ProjectAssociations_AddSuccess" xml:space="preserve"><value>Sikeresen hozzáadva az új projekttársításhoz.</value></data><data name="Admin_ProjectAssociations_ArtifactTypesRequired" xml:space="preserve"><value>Válasszon legalább egy tárgykör típust a megosztáshoz!</value></data><data name="Admin_ProjectAssociations_ProjectRequired" xml:space="preserve"><value>Válasszon egy projektet a megosztáshoz!</value></data><data name="Admin_ProjectAssociations_SaveSuccess" xml:space="preserve"><value>Sikeresen frissült a projekttársítás.</value></data><data name="Services_NotAuthorizedAddContact" xml:space="preserve"><value>Nem jogosult ennek a kapcsolatnak a hozzáadásához</value></data><data name="TestExecutionService_NoTestCasesWithStepsFound" xml:space="preserve"><value>Nincsenek tesztlépések egyik végrehajtott tesztesetben sem!</value></data><data name="TestConfigurationSet_DeleteConfirm" xml:space="preserve"><value>Biztosan törli a kiválasztott konfigurációt?</value></data><data name="TestExecutionService_ExploratoryDoNotDeleteLastStep" xml:space="preserve"><value>A tesztfuttatásnak minden esetben tartalmaznia kell legalább egy tesztlépést, ezért a kiválasztott tesztlépés nem törölhető</value></data><data name="TestExecutionService_ExploratoryNotAuthorized" xml:space="preserve"><value>Nem hajthatja végre ezt a tesztfuttatást felfedező módban, mivel nem rendelkezik megfelelő jogosultsággal</value></data><data name="Exception_Unknown" xml:space="preserve"><value>A kért művelet nem teljesíthető.</value></data><data name="TestConfigurationDetails_DeleteConfirm" xml:space="preserve"><value>Biztosan törli ezt a tesztkonfigurációs készletet?</value></data><data name="TestExecutionService_NeedToProvideTaskName" xml:space="preserve"><value>Adjon meg egy feladatnevet</value></data><data name="TestConfigurationService_MissingTestConfigurationSetIdStdFilter" xml:space="preserve"><value>Adjon meg egy TestConfigurationSetId sztenderd szűrőként ehhez a funkcióhoz</value></data><data name="TestConfigurationDetails_ConfirmRemoveConfiguration" xml:space="preserve"><value>Biztosan törli a kiválasztott tesztkonfigurációt?</value></data><data name="TestConfigurationService_NoParametersSpecified" xml:space="preserve"><value>Határozzon meg legalább egy teszteset-paramétert és egy egyéni listát</value></data><data name="TestConfigurationService_TooManyParametersSpecified" xml:space="preserve"><value>Túl sok teszteset-paramétert és egyéni listát adott meg ({0})</value></data><data name="Services_TestCase_NotInExecutableStatus" xml:space="preserve"><value>Nem hajthatja végre ezt a tesztesetet, miközben az ebben az állapotban van!</value></data><data name="TestStepDetails_RemoveIncidentConfirm" xml:space="preserve"><value>Biztosan törli a kiválasztott incidenshez társítást?</value></data><data name="Services_UserSelectedNotAuthorized" xml:space="preserve"><value>Sajnálom, de a felhasználó nem érheti el ezt az elemet</value></data><data name="AssociationService_UnableToFindArtifactInSharedProjects" xml:space="preserve"><value>Nem található egyező elem a megosztott projektek között.</value></data><data name="FileUploadDialog_EmptyFileUploaded" xml:space="preserve"><value>Ön egy üres fájlt próbált meg feltölteni.</value></data><data name="Admin_Graphs_GraphCloned" xml:space="preserve"><value>Az ábra sikeresen klónozva.</value></data><data name="Admin_Graphs_GraphDeleted" xml:space="preserve"><value>Az ábra sikeresen törölve.</value></data><data name="GraphingService_NeedAtLeastTwoColumns" xml:space="preserve"><value>Legalább két oszlopra van szükség a lekérdezésben ahhoz, hogy ábraként lehessen megjeleníteni.</value></data><data name="Admin_GraphDetails_NameRequired" xml:space="preserve"><value>Név szükséges</value></data><data name="Admin_GraphDetails_QueryRequired" xml:space="preserve"><value>Lekérdezés szükséges</value></data><data name="Admin_Graphs_DeleteConfirm" xml:space="preserve"><value>Biztosan törli ezt az ábrát? Ez nem fordítható vissza!</value></data><data name="GraphingService_CustomGraphNoLongerExists" xml:space="preserve"><value>A kiválasztott egyéni ábra már nem elérhető!</value></data><data name="ProjectGroup_InvalidLicense" xml:space="preserve"><value>Az Ön licence nem teszi lehetővé a funkció elérését!</value></data><data name="TasksService_CannotMoveFolderUnderItself" xml:space="preserve"><value>Nem helyezhet át egy feladatkönyvtárat önmaga alá!</value></data><data name="SecuritySettings_PasswordChangeInterval_Invalid" xml:space="preserve"><value>A jelszómódosítási intervallumnak egész számnak kell lennie.</value></data><data name="UserDetails_NewPasswordContainsNames" xml:space="preserve"><value>Az új jelszó nem tartalmazhatja a felhasználó nevét vagy felhasználónevét.</value></data><data name="SpiraMembershipProvider_PasswordCannotBeSame" xml:space="preserve"><value>Nem használhatja a régi jelszavát új jelszóként.</value></data><data name="SpiraMembershipProvider_PasswordCannotContainUsername" xml:space="preserve"><value>A jelszava nem tartalmazhatja az Ön felhasználónevét.</value></data><data name="ChangePassword_ConfirmNewPasswordMustMatch" xml:space="preserve"><value>Az új jelszónak és a megerősített jelszónak egyeznie kell.</value></data><data name="ChangePassword_ConfirmNewPasswordRequired" xml:space="preserve"><value>Adja meg a jelszó megerősítését.</value></data><data name="ChangePassword_CurrentPasswordRequired" xml:space="preserve"><value>Adja meg a jelenlegi jelszót.</value></data><data name="ChangePassword_NewPasswordRequired" xml:space="preserve"><value>Adja meg az új jelszót.</value></data><data name="WebPartBase_NotAuthorizedForProjectTemplate" xml:space="preserve"><value>Ön nem jogosult hozzáférni a(z) „{0}” projektsablonhoz.</value></data><data name="WebPartBase_NotAuthorizedToEditProjectTemplate" xml:space="preserve"><value>Ön nem jogosult változtatásokat végezni a(z) „{0}” projektsablonban.</value></data><data name="Services_EmptyCredentialsObject" xml:space="preserve"><value>Egy kitöltött hitelesítő objektumon át kell jutnia az API lehívásához!</value></data><data name="Services_YouNeedToPassApiKeyOrPassword" xml:space="preserve"><value>Adjon meg egy API-kulcsot vagy jelszót!</value></data><data name="Admin_SelectProjectTemplate" xml:space="preserve"><value>Először válassza ki a projektsablont, majd aztán nyissa meg az oldalt.</value></data><data name="Admin_Notification_TemplateSaved" xml:space="preserve"><value>Sablon sikeresen mentve</value></data><data name="Admin_Priorities_AtLeastOneMustBeActive" xml:space="preserve"><value>Legalább egy prioritást aktívként kell megjelölni.</value></data><data name="Admin_Priorities_ColorInvalid" xml:space="preserve"><value>Adjon meg egy érvényes színkódot a prioritáshoz</value></data><data name="Admin_Priorities_ColorRequired" xml:space="preserve"><value>Adjon meg egy színkódot a prioritáshoz</value></data><data name="Admin_Priorities_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a prioritáshoz</value></data><data name="Admin_Priorities_ScoreMustBeNumeric" xml:space="preserve"><value>Adjon meg egy numerikus pontértéket</value></data><data name="Admin_Priorities_ScoreRequired" xml:space="preserve"><value>Adjon meg egy pontszámot a prioritáshoz</value></data><data name="Admin_Priorities_Success" xml:space="preserve"><value>Prioritások sikeresen frissítve.</value></data><data name="RequirementTypes_CannotSetDefaultTypeInactive" xml:space="preserve"><value>Nem állítható be alapértelmezett követelménytípus egy inaktív értékhez</value></data><data name="RequirementTypes_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a követelményállapothoz</value></data><data name="RequirementTypes_Success" xml:space="preserve"><value>Követelménytípusok sikeresen frissítve.</value></data><data name="TaskTypes_CannotSetDefaultTypeInactive" xml:space="preserve"><value>Nem állítható be alapértelmezett feladattípus egy inaktív értékhez</value></data><data name="TaskTypes_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a követelményállapothoz</value></data><data name="TaskTypes_Success" xml:space="preserve"><value>Feladattípusok sikeresen frissítve.</value></data><data name="TestCaseTypes_CannotSetDefaultTypeInactive" xml:space="preserve"><value>Nem állítható be alapértelmezett tesztesettípus egy inaktív értékhez</value></data><data name="TestCaseTypes_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a teszteset-állapothoz</value></data><data name="TestCaseTypes_Success" xml:space="preserve"><value>Tesztesettípusok sikeresen frissítve.</value></data><data name="Admin_ProjectTemplateEdit_TemplateNameRequired" xml:space="preserve"><value>Sablonnév szükséges</value></data><data name="Admin_ProjectTemplates_CannotDeleteInUse" xml:space="preserve"><value>Nem törölhet olyan projektsablont, amit egy projekt használ.</value></data><data name="Admin_ProjectTemplates_DeleteConfirm" xml:space="preserve"><value>Biztosan törli ezt a sablont?</value></data><data name="DocumentStatuses_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a dokumentumállapothoz</value></data><data name="DocumentStatuses_Success" xml:space="preserve"><value>Dokumentumállapotok sikeresen frissítve.</value></data><data name="Admin_Importances_AtLeastOneMustBeActive" xml:space="preserve"><value>Legalább egy fontossági tényezőt aktívként kell megjelölni.</value></data><data name="RiskImpacts_AtLeastOneMustBeActive" xml:space="preserve"><value>Legalább egy kockázati hatást aktívként kell megjelölni.</value></data><data name="RiskImpacts_ColorInvalid" xml:space="preserve"><value>Adjon meg egy érvényes színkódot a kockázati hatáshoz</value></data><data name="RiskImpacts_ColorRequired" xml:space="preserve"><value>Adjon meg egy színkódot a kockázati hatáshoz</value></data><data name="RiskImpacts_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a kockázati hatáshoz</value></data><data name="RiskImpacts_Success" xml:space="preserve"><value>Kockázati állapotok sikeresen frissítve.</value></data><data name="RiskProbabilities_AtLeastOneMustBeActive" xml:space="preserve"><value>Legalább egy kockázati prioritást aktívként kell megjelölni.</value></data><data name="RiskProbabilities_ColorInvalid" xml:space="preserve"><value>Adjon meg egy érvényes színkódot a kockázat valószínűségéhez</value></data><data name="RiskProbabilities_ColorRequired" xml:space="preserve"><value>Adjon meg egy színkódot a kockázat valószínűségéhez</value></data><data name="RiskProbabilities_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a kockázat valószínűségéhez</value></data><data name="RiskProbabilities_Success" xml:space="preserve"><value>A kockázat valószínűség sikeresen frissítve.</value></data><data name="RiskStatuses_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a kockázatállapothoz</value></data><data name="RiskStatuses_Success" xml:space="preserve"><value>Kockázatállapotok sikeresen frissítve.</value></data><data name="RiskTypes_CannotSetDefaultTypeInactive" xml:space="preserve"><value>Nem állítható be alapértelmezett kockázattípus egy inaktív értékhez</value></data><data name="RiskTypes_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a kockázatállapothoz</value></data><data name="RiskTypes_Success" xml:space="preserve"><value>Kockázattípusok sikeresen frissítve.</value></data><data name="Admin_Impacts_ColorInvalid" xml:space="preserve"><value>Adjon meg egy érvényes színkódot a hatáshoz</value></data><data name="Admin_Impacts_ColorRequired" xml:space="preserve"><value>Adjon meg egy színkódot a hatáshoz</value></data><data name="Admin_Impacts_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a hatáshoz</value></data><data name="Admin_Impacts_PositionMustBeNumeric" xml:space="preserve"><value>Adjon meg egy numerikus pozícióértéket</value></data><data name="Admin_Impacts_PositionRequired" xml:space="preserve"><value>Adjon meg egy pontszámot a hatáshoz</value></data><data name="Admin_Impacts_ScoreMustBeNumeric" xml:space="preserve"><value>Adjon meg egy numerikus pontértéket</value></data><data name="Admin_Impacts_ScoreRequired" xml:space="preserve"><value>Adjon meg egy pontszámot a hatáshoz</value></data><data name="Admin_Probabilities_ColorInvalid" xml:space="preserve"><value>Adjon meg egy érvényes színkódot a valószínűséghez</value></data><data name="Admin_Probabilities_ColorRequired" xml:space="preserve"><value>Adjon meg egy színkódot a valószínűséghez</value></data><data name="Admin_Probabilities_NameRequired" xml:space="preserve"><value>Adjon meg egy nevet a valószínűséghez</value></data><data name="Admin_Probabilities_PositionMustBeNumeric" xml:space="preserve"><value>Adjon meg egy numerikus pozícióértéket</value></data><data name="Admin_Probabilities_PositionRequired" xml:space="preserve"><value>Adjon meg egy pontszámot a valószínűséghez</value></data><data name="Admin_Probabilities_ScoreMustBeNumeric" xml:space="preserve"><value>Adjon meg egy numerikus pontértéket</value></data><data name="Admin_Probabilities_ScoreRequired" xml:space="preserve"><value>Adjon meg egy pontszámot a valószínűséghez</value></data><data name="Admin_Statuses_PositionMustBeNumeric" xml:space="preserve"><value>Adjon meg egy numerikus pozícióértéket</value></data><data name="Admin_Statuses_PositionRequired" xml:space="preserve"><value>Adjon meg egy nevet az állapothoz</value></data><data name="RisksService_RiskNotFound" xml:space="preserve"><value>Nem lehet behozni az RK{0} kockázatot, mert már nem létezik.</value></data><data name="RiskList_DeleteConfirm" xml:space="preserve"><value>Biztosan törli a kiválasztott kockázatokat?</value></data><data name="RiskDetails_DeleteConfirm" xml:space="preserve"><value>Biztosan törli ezt a kockázatot?</value></data><data name="RiskDetails_RefreshConfirm" xml:space="preserve"><value>Ezzel elveti a nem mentett módosításokat. Biztosan folytatja?</value></data><data name="RiskDetails_MitigationDeleteConfirm" xml:space="preserve"><value>Biztosan törli a kiválasztott kockázatcsökkentést?</value></data><data name="LicenseDetails_LicenseExpired" xml:space="preserve"><value>A licenckulcs lejárt.&amp;nbsp;&lt;br&gt;&amp;nbsp;Új licenchez forduljon az ügyfélszolgálathoz.</value></data><data name="BackgroundProcessService_ProjectTemplateIdNotSpecified" xml:space="preserve"><value>A ProjectTemplateId-t meg kell határozni ehhez a művelethez</value></data><data name="Services_NotAuthorizedModifyDocumentFolders" xml:space="preserve"><value>Nem jogosult a dokumentumkönyvtárak módosításához</value></data><data name="ListServiceBase_UploadRequired" xml:space="preserve"><value>Töltsön fel új {0}-t</value></data><data name="TestCaseDetails_ParameterInUse" xml:space="preserve"><value>Nem mindegyik paraméter törölhető, mert máshol használják őket. Kérem, frissítse az oldalt.</value></data><data name="Services_NotAuthorizedCreateProjectTemplates" xml:space="preserve"><value>Nem jogosult a sablonok létrehozásához - Rendszergazdának kell lennie</value></data><data name="Services_ProjectTemplateIdNotNull" xml:space="preserve"><value>A projektsablon objektum létrehozásához a ProjectTemplateId-t nullára kell állítani</value></data><data name="Services_ArtifactNotFound" xml:space="preserve"><value>A meghatározott elem nem található!</value></data><data name="Services_NotAuthorizedUpdateProjectTemplates" xml:space="preserve"><value>Nem jogosult a projektsablon frissítéséhez!</value></data><data name="Services_ProjectIdMissing" xml:space="preserve"><value>A projektobjektumhoz a ProjectId-t ki kell tölteni</value></data><data name="Services_ProjectTemplateIdMissing" xml:space="preserve"><value>A ProjectTemplate objektumhoz a TestStepId-nek kitöltve kell lennie</value></data><data name="RequirementsFeature_InvalidLicense" xml:space="preserve"><value>A jelenlegi liszensszel nem léphet be ebbe a követelmény funkcióba.</value></data><data name="GraphingService_NoDataToGraph" xml:space="preserve"><value>Nincs adat, amit megjeleníthet ebben a grafikonban. Egyik grafikon sem változott.</value></data><data name="Services_NotAuthorizedToGenerateThisReport" xml:space="preserve"><value>Nincs jogosultsága ehhez a riporthoz.</value></data><data name="Services_NotAuthorizedViewProject" xml:space="preserve"><value>Nincs jogosultsága, hogy betekintsen a projekt adataiba.</value></data><data name="Services_NotAuthorizedViewProjectGroup" xml:space="preserve"><value>Nincs jogosultsága, hogy betekintsen a a program  adataiba.</value></data><data name="Services_NotAuthorizedViewSystemWideData" xml:space="preserve"><value>Nincs jogosultsága, hogy betekintsen a rendszer  adataiba.</value></data><data name="FileUploadDialog_FilenameRequired" xml:space="preserve"><value>Fájlnév szükséges.</value></data><data name="FileUploadDialog_URLRequired" xml:space="preserve"><value>URL szükséges.</value></data></root>

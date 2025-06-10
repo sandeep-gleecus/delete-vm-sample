@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+  <xsl:template match="/TestCaseData">
+    <table class="DataGrid" style="width:100%">
+      <tr>
+        <th>Test #</th>
+        <th>Name</th>
+        <th>Priority</th>
+        <th>Requirements Traceability</th>
+      </tr>
+      <xsl:for-each select="TestCaseFolder">
+        <tr>
+          <td>
+            <b>
+              <xsl:value-of select="TestCaseFolderId"/>
+            </b>
+          </td>
+          <td>
+            <xsl:attribute name="style">
+              padding-left: <xsl:value-of select="string-length(IndentLevel)*2"/>px;
+            </xsl:attribute>
+            <b>
+              <xsl:value-of select="Name"/>
+            </b>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <xsl:for-each select="TestCases/TestCase">
+          <tr>
+            <td>
+              TC<xsl:value-of select="TestCaseId"/>
+            </td>
+            <td>
+              <xsl:value-of select="Name"/>
+            </td>
+            <td>
+              <xsl:value-of select="TestCasePriorityName"/>
+            </td>
+            <td>
+              <xsl:for-each select="Requirements/Requirement">
+                <xsl:if test="position() > 1">
+                  , RQ<xsl:value-of select="RequirementId"/>
+				</xsl:if>
+                <xsl:if test="position() = 1">
+                  RQ<xsl:value-of select="RequirementId"/>
+				</xsl:if>
+              </xsl:for-each>
+            </td>
+          </tr>
+        </xsl:for-each>
+      </xsl:for-each>
+    </table>
+  </xsl:template>
+</xsl:stylesheet>
+

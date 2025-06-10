@@ -1,0 +1,29 @@
+-- Switch to single user mode
+USE master
+GO
+ALTER DATABASE mydatabase SET EMERGENCY
+GO
+ALTER DATABASE mydatabase SET SINGLE_USER 
+GO
+
+--Fix the database
+DBCC CHECKDB (mydatabase, REPAIR_REBUILD) WITH NO_INFOMSGS;
+--Try with REPAIR_ALLOW_DATA_LOSS if the REPAIR_REBUILD does not work
+GO 
+
+-- Verify the database
+USE mydatabase
+DBCC CHECKDB WITH NO_INFOMSGS;
+GO
+
+-- Bring it back online
+USE master
+GO
+ALTER DATABASE mydatabase SET MULTI_USER 
+GO
+ALTER DATABASE mydatabase SET ONLINE;
+GO
+
+-- Final Check
+DBCC CHECKDB (mydatabase)
+GO

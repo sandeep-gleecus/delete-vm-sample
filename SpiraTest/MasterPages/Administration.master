@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Main.Master" AutoEventWireup="true" CodeBehind="Administration.master.cs" Inherits="Inflectra.SpiraTest.Web.MasterPages.Administration" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cplHead" runat="server">
+    <tstsc:ThemeStylePlaceHolder ID="themeStylePlaceHolder" runat="server" SkinID="AdministrationStylesheet" />
+    <asp:ContentPlaceHolder ID="cplHead" runat="server" />
+</asp:Content>
+<asp:Content 
+    ID="Content2" 
+    ContentPlaceHolderID="cplMainContent" 
+    runat="server"
+    >
+    <div class="df min-h-insideHeadAndFoot">
+        <a
+            class="bg-nav-bg nav-text nav-active-hover db pointer w5 min-w5 tc py5 tdn tdn-hover transition-all relative dn-sm"
+            id="adminSidebarMenuToggle"
+            onclick="adminSidebarAdminToggleMenu()"
+            runat="server"
+            title="<%$Resources:Main,Admin_Sidebar_OpenMenu %>"
+            >
+            <i class="sticky top4 fas fa-th"></i>
+        </a>
+
+        <div class="flex-column admin ml2 mr2">
+	        <asp:ContentPlaceHolder ID="cplAdministrationContent" runat="server" />
+        </div>
+    </div>
+
+    <tstsc:ScriptManagerProxyEx ID="ajxScriptManager" runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/TypeScript/DetailsPage.js" />
+        </Scripts>
+	</tstsc:ScriptManagerProxyEx>
+    <script type="text/javascript">
+        SpiraContext.pageId = "Inflectra.Spira.Web.Administration";
+        
+        function adminSidebarAdminToggleMenu() {
+            // check if the global nav react component exists - ie has fully mounted
+            if (window && window.rct_comp_globalNav && window.rct_comp_globalNav.adminToggleMenu) {
+                window.rct_comp_globalNav.adminToggleMenu("sidebar");
+            }
+        };
+    </script>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="cplScripts" runat="server">
+    <asp:ContentPlaceHolder ID="cplScripts" runat="server" />
+</asp:Content>

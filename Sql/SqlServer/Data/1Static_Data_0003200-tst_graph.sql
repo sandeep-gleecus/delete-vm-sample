@@ -1,0 +1,80 @@
+/***************************************************************
+**	Insert script for table TST_GRAPH
+***************************************************************/
+SET IDENTITY_INSERT TST_GRAPH ON; 
+
+INSERT INTO TST_GRAPH
+(
+GRAPH_ID, GRAPH_TYPE_ID, ARTIFACT_TYPE_ID, NAME, POSITION, DESCRIPTION, IS_ACTIVE
+)
+VALUES
+(
+1, 2, 3, 'GraphName_IncidentSummary', 4, 'GraphDescription_IncidentSummary', 1
+),
+(
+2, 1, 3, 'GraphName_IncidentProgressRate', 1, 'GraphDescription_IncidentProgressRate', 1
+),
+(
+3, 1, 3, 'GraphName_IncidentCumulativeCount', 2, 'GraphDescription_IncidentCumulativeCount', 1
+),
+(
+4, 1, 3, 'GraphName_IncidentOpenCount', 3, 'GraphDescription_IncidentOpenCount', 1
+),
+(
+5, 3, 3, 'GraphName_IncidentAging', 5, 'GraphDescription_IncidentAging', 1
+),
+(
+6, 3, 3, 'GraphName_IncidentTurnaround', 6, 'GraphDescription_IncidentTurnaround', 1
+),
+(
+7, 2, 1, 'GraphName_RequirementSummary', 1, 'GraphDescription_RequirementSummary', 1
+),
+(
+8, 3, 1, 'GraphName_RequirementCoverage', 4, 'GraphDescription_RequirementCoverage', 1
+),
+(
+9, 2, 2, 'GraphName_TestCaseSummary', 2, 'GraphDescription_TestCaseSummary', 1
+),
+(
+10, 2, 5, 'GraphName_TestRunSummary', 3, 'GraphDescription_TestRunSummary', 1
+),
+(
+11, 1, 5, 'GraphName_TestRunProgressRate', 4, 'GraphDescription_TestRunProgressRate', 1
+),
+(
+12, 2, 6, 'GraphName_TaskSummary', 5, 'GraphDescription_TaskSummary', 1
+),
+(
+13, 3, 6, 'GraphName_TaskVelocity', 8, 'GraphDescription_TaskVelocity', 1
+),
+(
+14, 3, 6, 'GraphName_TaskBurnUp', 9, 'GraphDescription_TaskBurnUp', 1
+),
+(
+15, 3, 6, 'GraphName_TaskBurnDown', 7, 'GraphDescription_TaskBurnDown', 1
+),
+(
+16, 2, 8, 'GraphName_TestSetSummary', 6, 'GraphDescription_TestSetSummary', 1
+),
+(
+17, 3, 1, 'GraphName_RequirementVelocity', 3, 'GraphDescription_RequirementVelocity', 1
+),
+(
+18, 3, 1, 'GraphName_RequirementBurnUp', 2, 'GraphDescription_RequirementBurnUp', 1
+),
+(
+19, 3, 1, 'GraphName_RequirementBurnDown', 1, 'GraphDescription_RequirementBurnDown', 1
+),
+(
+20, 1, 5, 'GraphName_TestCaseProgress', 5, 'GraphDescription_TestCaseProgress', 1
+),
+(
+21, 1, 5, 'GraphName_TestCaseProgressCumulative', 6, 'GraphDescription_TestCaseProgressCumulative', 1
+),
+(
+22, 1, 3, 'GraphName_IncidentCountByStatus', 7, 'GraphDescription_IncidentCountByStatus', 1
+)
+GO
+
+SET IDENTITY_INSERT TST_GRAPH OFF; 
+

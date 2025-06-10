@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Global_NoneFlag" xml:space="preserve">
+    <value>{ 無 }</value>
+  </data>
+	<data name="TestRun_VariousTestCases" xml:space="preserve">
+    <value>多種測試案例</value>
+  </data>
+	<data name="Task_ProgressNotStarted" xml:space="preserve">
+    <value>未開始</value>
+  </data>
+	<data name="Task_ProgressPercentComplete" xml:space="preserve">
+    <value>完成 %</value>
+  </data>
+	<data name="Task_ProgressScheduledEndOn" xml:space="preserve">
+    <value>原訂計畫結束</value>
+  </data>
+	<data name="Task_ProgressShouldHaveStartedOn" xml:space="preserve">
+    <value>應已開始</value>
+  </data>
+	<data name="Task_Progress_ShouldHaveFinishedOn" xml:space="preserve">
+    <value>應已結束</value>
+  </data>
+	<data name="Global_NoTasks" xml:space="preserve">
+    <value>沒有任務</value>
+  </data>
+	<data name="Global_Tasks" xml:space="preserve">
+    <value>任務</value>
+  </data>
+	<data name="Task_NotStarted" xml:space="preserve">
+    <value>未開始</value>
+  </data>
+	<data name="Task_OnSchedule" xml:space="preserve">
+    <value>準時</value>
+  </data>
+	<data name="Task_RunningLate" xml:space="preserve">
+    <value>延誤執行</value>
+  </data>
+	<data name="Task_StartingLate" xml:space="preserve">
+    <value>延誤開始</value>
+  </data>
+	<data name="TestCase_NewTestCase" xml:space="preserve">
+    <value>新測試案例</value>
+  </data>
+	<data name="TestCase_NewTestCaseComment" xml:space="preserve">
+    <value>從需求建立測試案例</value>
+  </data>
+	<data name="TestSet_NewTestSetBasedOnRelease" xml:space="preserve">
+    <value>基於版本建立新測試集</value>
+  </data>
+	<data name="TestSet_NewTestSetBasedOnRequirements" xml:space="preserve">
+    <value>基於選擇的需求建立新測試集</value>
+  </data>
+	<data name="Requirement_NotCovered" xml:space="preserve">
+    <value>不包括</value>
+  </data>
+	<data name="TestCase_Blocked" xml:space="preserve">
+    <value>被阻止</value>
+  </data>
+	<data name="TestCase_Caution" xml:space="preserve">
+    <value>警示</value>
+  </data>
+	<data name="TestCase_Failed" xml:space="preserve">
+    <value>失敗</value>
+  </data>
+	<data name="TestCase_NotRun" xml:space="preserve">
+    <value>無執行</value>
+  </data>
+	<data name="TestCase_Passed" xml:space="preserve">
+    <value>通過</value>
+  </data>
+	<data name="TestCase_Run" xml:space="preserve">
+    <value>執行</value>
+  </data>
+	<data name="Global_No" xml:space="preserve">
+    <value>否</value>
+  </data>
+	<data name="Global_Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+	<data name="Global_Copy" xml:space="preserve">
+    <value>複製</value>
+  </data>
+	<data name="Global_CopyOf" xml:space="preserve">
+    <value>複製</value>
+  </data>
+	<data name="Task_Completed" xml:space="preserve">
+    <value>已完成</value>
+  </data>
+	<data name="Requirement_ReqCreatedFromIncident" xml:space="preserve">
+    <value>從已存在事件建立需求。</value>
+  </data>
+	<data name="TestCase_Call" xml:space="preserve">
+    <value>叫用</value>
+  </data>
+	<data name="Incident_Complete" xml:space="preserve">
+    <value>完成</value>
+  </data>
+	<data name="Incident_NotStarted" xml:space="preserve">
+    <value>未開始</value>
+  </data>
+	<data name="Incident_ShouldHaveStartedOn" xml:space="preserve">
+    <value>應已開始</value>
+  </data>
+	<data name="GraphDescription_IncidentAging" xml:space="preserve">
+    <value>事件老畫圖顯示事件於系統中一直處於開啟狀態的天數</value>
+  </data>
+	<data name="GraphDescription_IncidentCumulativeCount" xml:space="preserve">
+    <value>事件累積計數圖表顯示系統中目前專案在指定時間範圍內事件被記錄的累積總和</value>
+  </data>
+	<data name="GraphDescription_IncidentOpenCount" xml:space="preserve">
+    <value>事件開啟計數圖表顯示系統中目前專案在指定時間範圍內依事件優先度歸類的開啟事件總數</value>
+  </data>
+	<data name="GraphDescription_IncidentProgressRate" xml:space="preserve">
+    <value>事件進度率圖表顯示特定時間範圍內事件建立與關閉的總數</value>
+  </data>
+	<data name="GraphDescription_IncidentSummary" xml:space="preserve">
+    <value>事件摘要圖顯示目前專案中事件數量。根據您指定的標準顯示事件數量。您可指定X軸資料類型，和用於群組資料的事件資訊。</value>
+  </data>
+	<data name="GraphDescription_IncidentTurnaround" xml:space="preserve">
+    <value>事件週轉時間圖表顯示事件在系統中已被關閉（從第一次提出的時間）的天數</value>
+  </data>
+	<data name="GraphDescription_RequirementCoverage" xml:space="preserve">
+    <value>需求涵蓋圖顯示目前專案中根據測試涵蓋範圍狀態的需求數量</value>
+  </data>
+	<data name="GraphDescription_RequirementSummary" xml:space="preserve">
+    <value>需求摘要圖顯示目前專案中需求數量。根據您指定的標準顯示需求數量。您可指定X軸資料類型，和用於群組資料的需求資訊。</value>
+  </data>
+	<data name="GraphDescription_TaskBurnDown" xml:space="preserve">
+    <value>任務燃盡圖顯示每一個專案版本/迭代需被完成的剩餘工作。</value>
+  </data>
+	<data name="GraphDescription_TaskBurnUp" xml:space="preserve">
+    <value>任務燃耗圖顯示專案中每一個版本/迭代累積增加準時、延誤開始、延誤結束的任務百分比。</value>
+  </data>
+	<data name="GraphDescription_TaskSummary" xml:space="preserve">
+    <value>任務摘要圖顯示目前專案中任務數量。根據您指定的標準顯示任務數量。您可指定X軸資料類型，和用於群組資料的任務資訊。</value>
+  </data>
+	<data name="GraphDescription_TaskVelocity" xml:space="preserve">
+    <value>任務速度圖顯示每一個專案版本/迭代的預估工時和實際工時總和。</value>
+  </data>
+	<data name="GraphDescription_TestCaseSummary" xml:space="preserve">
+    <value>測試案例摘要圖顯示目前專案中測試案例數量。根據您指定的標準顯示測試案例數量。您可指定X軸資料類型，和用於群組資料的測試案例資訊。</value>
+  </data>
+	<data name="GraphDescription_TestRunProgressRate" xml:space="preserve">
+    <value>測試執行進度率圖顯示在一段時間內測試被執行的次數與記錄的執行狀態。</value>
+  </data>
+	<data name="GraphDescription_TestRunSummary" xml:space="preserve">
+    <value>測試執行摘要圖顯示目前專案中測試執行數量。根據您指定的標準顯示測試執行數量。您可指定X軸資料類型，和用於群組資料的測試執行資訊。</value>
+  </data>
+	<data name="GraphName_IncidentAging" xml:space="preserve">
+    <value>事件老化</value>
+  </data>
+	<data name="GraphName_IncidentCumulativeCount" xml:space="preserve">
+    <value>事件累積計數</value>
+  </data>
+	<data name="GraphName_IncidentOpenCount" xml:space="preserve">
+    <value>事件開啟數量</value>
+  </data>
+	<data name="GraphName_IncidentProgressRate" xml:space="preserve">
+    <value>事件進度率圖</value>
+  </data>
+	<data name="GraphName_IncidentSummary" xml:space="preserve">
+    <value>事件摘要</value>
+  </data>
+	<data name="GraphName_IncidentTurnaround" xml:space="preserve">
+    <value>事件週轉時間</value>
+  </data>
+	<data name="GraphName_RequirementCoverage" xml:space="preserve">
+    <value>需求涵蓋範圍</value>
+  </data>
+	<data name="GraphName_RequirementSummary" xml:space="preserve">
+    <value>需求摘要</value>
+  </data>
+	<data name="GraphName_TaskBurnDown" xml:space="preserve">
+    <value>任務燃盡</value>
+  </data>
+	<data name="GraphName_TaskBurnUp" xml:space="preserve">
+    <value>任務燃耗</value>
+  </data>
+	<data name="GraphName_TaskSummary" xml:space="preserve">
+    <value>任務摘要</value>
+  </data>
+	<data name="GraphName_TaskVelocity" xml:space="preserve">
+    <value>任務速度</value>
+  </data>
+	<data name="GraphName_TestCaseSummary" xml:space="preserve">
+    <value>測試案例摘要</value>
+  </data>
+	<data name="GraphName_TestRunProgressRate" xml:space="preserve">
+    <value>測試執行進度率</value>
+  </data>
+	<data name="GraphName_TestRunSummary" xml:space="preserve">
+    <value>測試執行摘要</value>
+  </data>
+	<data name="Graph_ClosedCount" xml:space="preserve">
+    <value>已關閉數量</value>
+  </data>
+	<data name="Graph_Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+	<data name="Graph_DiscoveredCount" xml:space="preserve">
+    <value>發現的數量</value>
+  </data>
+	<data name="Graph_OpenCount" xml:space="preserve">
+    <value>開啟的數量</value>
+  </data>
+	<data name="Graph_TotalCount" xml:space="preserve">
+    <value>總數</value>
+  </data>
+	<data name="Global_None" xml:space="preserve">
+    <value>(無)</value>
+  </data>
+	<data name="GraphDescription_TestSetSummary" xml:space="preserve">
+    <value>測試集摘要圖顯示目前專案中測試集數量。根據您指定的標準顯示測試集數量。您可指定X軸資料類型，和用於群組資料的測試集資訊。</value>
+  </data>
+	<data name="GraphName_TestSetSummary" xml:space="preserve">
+    <value>測試集摘要</value>
+  </data>
+	<data name="Graph_Age" xml:space="preserve">
+    <value>年齡</value>
+  </data>
+	<data name="Graph_Turnaround" xml:space="preserve">
+    <value>週轉</value>
+  </data>
+	<data name="Graph_Iteration" xml:space="preserve">
+    <value>迭代</value>
+  </data>
+	<data name="Graph_Release" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="Graphs_CompletedEffort" xml:space="preserve">
+    <value>已完成工時</value>
+  </data>
+	<data name="Graphs_EstimatedEffort" xml:space="preserve">
+    <value>預估工時</value>
+  </data>
+	<data name="Graphs_IdealEffort" xml:space="preserve">
+    <value>理想工時</value>
+  </data>
+	<data name="Graphs_RemainingEffort" xml:space="preserve">
+    <value>剩餘工時</value>
+  </data>
+	<data name="Graphs_ActualVelocity" xml:space="preserve">
+    <value>實際速度</value>
+  </data>
+	<data name="Graphs_ExpectedVelocity" xml:space="preserve">
+    <value>期望速度</value>
+  </data>
+	<data name="Graph_Start" xml:space="preserve">
+    <value>開始</value>
+  </data>
+	<data name="Graph_CoverageStatus" xml:space="preserve">
+    <value>涵蓋範圍狀態</value>
+  </data>
+	<data name="Project_ResourceAllocated" xml:space="preserve">
+    <value>資源配置</value>
+  </data>
+	<data name="Requirement_NewRequirement" xml:space="preserve">
+    <value>新需求</value>
+  </data>
+	<data name="Requirement_NewRequirementComment" xml:space="preserve">
+    <value>從事件案例建立新需求</value>
+  </data>
+	<data name="Global_Incident" xml:space="preserve">
+    <value>事件</value>
+  </data>
+	<data name="Workflow_ChangeStatusSubject" xml:space="preserve">
+    <value>改變狀態從 {0} 到 {1}</value>
+  </data>
+	<data name="Global_ImportedFrom" xml:space="preserve">
+    <value>從專案匯入 # {0} {1} # 2 {0}</value>
+  </data>
+	<data name="Global_ExportedTo" xml:space="preserve">
+    <value>匯出專案 # {0} {1} # 2 {0}</value>
+  </data>
+	<data name="Workflow_DefaultWorflow" xml:space="preserve"><value>預設工作流程</value></data><data name="TestStep_Step" xml:space="preserve"><value>步驟</value></data><data name="Global_Revision" xml:space="preserve"><value>修訂版本</value></data><data name="Global_Report" xml:space="preserve"><value>報表</value></data><data name="History_ArtifactIdFormat" xml:space="preserve"><value>項目 [{0}:{1}]</value></data><data name="History_PurgeProgress_AutomationHosts" xml:space="preserve"><value>清除自動化主機..</value></data><data name="History_PurgeProgress_Complete" xml:space="preserve"><value>完成！</value></data><data name="History_PurgeProgress_Incidents" xml:space="preserve"><value>清除事件..</value></data><data name="History_PurgeProgress_Releases" xml:space="preserve"><value>清除版本..</value></data><data name="History_PurgeProgress_Requirements" xml:space="preserve"><value>清除需求..</value></data><data name="History_PurgeProgress_RequirementSteps" xml:space="preserve"><value>清除需求步驟..</value></data><data name="History_PurgeProgress_Tasks" xml:space="preserve"><value>清除任務..</value></data><data name="History_PurgeProgress_TestCases" xml:space="preserve"><value>清除測試案例..</value></data><data name="History_PurgeProgress_TestSets" xml:space="preserve"><value>清除測試集..</value></data><data name="History_PurgeProgress_TestSteps" xml:space="preserve"><value>清除測試步驟..</value></data><data name="TestCase_NotApplicable" xml:space="preserve"><value>不適用</value></data><data name="NotificationManager_SendIndivNotification" xml:space="preserve"><value>{0} - 請注意 {1} ！</value></data><data name="SourceCode_SourceCodeCommit" xml:space="preserve"><value>來源碼說明</value></data><data name="SourceCode_NoProvidersLoaded" xml:space="preserve"><value>無來源碼提供器可被專案 #{0} 載入</value></data><data name="SourceCode_CouldNotLogin" xml:space="preserve"><value>無法認證來源碼提供器。</value></data><data name="SourceCode_NoProvidersEnabled" xml:space="preserve"><value>無來源碼提供器在專案 #{0} 啟動。</value></data><data name="SouceCode_UnableToLoadDLL" xml:space="preserve"><value>無法載入版本控制提供器「{0}」。</value></data><data name="SourceCode_CouldNotIni" xml:space="preserve"><value>無法初始化提供器文庫「{0}」。</value></data><data name="SourceCode_InvalidCache" xml:space="preserve"><value>版本控制文庫快取更新中。</value></data><data name="GraphDescription_RequirementBurnDown" xml:space="preserve"><value>需求燃盡圖顯示每一個專案版本/迭代中需被完成的剩餘故事點數量。</value></data><data name="GraphDescription_RequirementBurnUp" xml:space="preserve"><value>需求燃耗圖顯示專案中每一個版本/迭代故事點在每一個區間中需被完成的累計數量。</value></data><data name="GraphDescription_RequirementVelocity" xml:space="preserve"><value>需求速度圖顯示專案中每一個版本/迭代故事點與平均比較的實際數量。</value></data><data name="GraphName_RequirementBurnDown" xml:space="preserve"><value>需求燃盡</value></data><data name="GraphName_RequirementBurnUp" xml:space="preserve"><value>需求燃耗</value></data><data name="GraphName_RequirementVelocity" xml:space="preserve"><value>需求速度</value></data><data name="Graphs_ActualBurnup" xml:space="preserve"><value>實際燃耗</value></data><data name="Graphs_AverageVelocity" xml:space="preserve"><value>平均速度</value></data><data name="Graphs_CompletedPoints" xml:space="preserve"><value>完成點</value></data><data name="Graphs_IdealBurndown" xml:space="preserve"><value>理想燃盡</value></data><data name="Graphs_IdealBurnup" xml:space="preserve"><value>理想燃耗</value></data><data name="Graphs_RemainingPoints" xml:space="preserve"><value>剩餘點</value></data><data name="Graphs_RollingAverage" xml:space="preserve"><value>移動平均</value></data><data name="Global_Multiple" xml:space="preserve"><value>多個</value></data><data name="Project_ResourceAllocatedOpen" xml:space="preserve"><value>配置給開啟項目</value></data></root>

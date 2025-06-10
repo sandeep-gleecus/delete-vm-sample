@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DDBE8B78-E613-4A84-8267-AF81A7CCFEE6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Business</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Inflectra.SpiraTest.Business</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>1591 1572 1573 1570 1571 1574 1711</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DiffPlex">
+      <HintPath>Assemblies\DiffPlex.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="FoNet">
+      <HintPath>Assemblies\FoNet.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.18.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.18\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlRenderer.Core.1.5.0.6\lib\net45\HtmlRenderer.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer.WinForms, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlRenderer.WinForms.1.5.0.6\lib\net45\HtmlRenderer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>Assemblies\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{80D5A03B-BE61-4171-9D01-B8A492E49041}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{3A6B00CE-2665-4BAF-9CFC-4D08CE6D8446}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EFLinqToEdmx\EFLinqToEdmx.csproj">
+      <Project>{97D4C717-81F9-4DA0-8AAF-2C3206EECB3E}</Project>
+      <Name>EFLinqToEdmx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EFProviderWrapperToolkit\EFProviderWrapperToolkit.csproj">
+      <Project>{BAF62DE6-51D0-49AB-9E4E-9240E85E9C35}</Project>
+      <Name>EFProviderWrapperToolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EFTracingProvider\EFTracingProvider.csproj">
+      <Project>{F68D53D8-8926-49CF-B556-DF818C3BCA40}</Project>
+      <Name>EFTracingProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OAuth2\SpiraOAuth2Client.csproj">
+      <Project>{d9c1b724-655c-40c4-94a3-9a75bf172250}</Project>
+      <Name>SpiraOAuth2Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpiraTestPlugIns\PlugInInterfaces.csproj">
+      <Project>{15480C25-27D7-4933-BEB9-5A076BC8BA89}</Project>
+      <Name>PlugInInterfaces</Name>
+    </ProjectReference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Xml.Schema.Linq">
+      <HintPath>..\EFLinqToEdmx\Assemblies\Xml.Schema.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAuditManager.cs" />
+    <Compile Include="ArtifactLinkManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArtifactManager.cs" />
+    <Compile Include="AutomationManager.cs" />
+    <Compile Include="BaselineManager.cs" />
+    <Compile Include="BuildManager.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="ComponentManager.cs" />
+    <Compile Include="DataObjects\ChangedArtifact.cs" />
+    <Compile Include="PortfolioManager.cs" />
+    <Compile Include="PortfolioSettings.cs" />
+    <Compile Include="PortfolioSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>PortfolioSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupSettings.cs" />
+    <Compile Include="ProjectGroupSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>ProjectGroupSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PortfolioSettingsProvider.cs" />
+    <Compile Include="ProjectSettings.cs">
+      <DependentUpon>ProjectSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupSettingsProvider.cs" />
+    <Compile Include="ProjectTemplateSettings.cs" />
+    <Compile Include="ProjectTemplateSettingsProvider.cs" />
+    <Compile Include="ProjectSettingsProvider.cs" />
+    <Compile Include="OAuthManager.cs" />
+    <Compile Include="ProjectSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>ProjectSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectSettingsCollection.cs" />
+    <Compile Include="ProjectTemplateSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>ProjectTemplateSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PullRequestManager.cs" />
+    <Compile Include="ReportingTemplateManager.cs" />
+    <Compile Include="RequirementApprovedStatusDataObject.cs" />
+    <Compile Include="RequirementApproverDataObject.cs" />
+    <Compile Include="RiskManager.cs" />
+    <Compile Include="SortFilter.cs" />
+    <Compile Include="SystemManager.cs" />
+    <Compile Include="DocumentWorkflowManager.cs" />
+    <Compile Include="RiskWorkflowManager.cs" />
+    <Compile Include="TemplateManager.cs" />
+    <Compile Include="TestCaseApproverDataObject.cs" />
+    <Compile Include="TestCaseWorkflowManager.cs" />
+    <Compile Include="ReleaseWorkflowManager.cs" />
+    <Compile Include="SessionManager.cs" />
+    <Compile Include="SourceCodeManager.cs" />
+    <Compile Include="SourceCodeManager_LoadCache.cs" />
+    <Compile Include="TestCaseManager.cs" />
+    <Compile Include="TestConfigurationManager.cs" />
+    <Compile Include="TestRunManager.cs" />
+    <Compile Include="TestSetManager.cs" />
+    <Compile Include="UserActivityLogManager.cs" />
+    <Compile Include="UserAuditManager.cs" />
+    <Compile Include="VaultManager.cs" />
+    <Compile Include="MessageManager.cs" />
+    <Compile Include="TaskWorkflowManager.cs" />
+    <Compile Include="CustomPropertyManager.cs" />
+    <Compile Include="DashboardManager.cs" />
+    <Compile Include="DiscussionManager.cs" />
+    <Compile Include="EventManager.cs" />
+    <Compile Include="FileTypeManager.cs" />
+    <Compile Include="GlobalResources\General.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>General.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GraphManager.cs" />
+    <Compile Include="IncidentManager.cs" />
+    <Compile Include="ManagerBase.cs" />
+    <Compile Include="NotificationManager.cs" />
+    <Compile Include="GlobalResources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceholderManager.cs" />
+    <Compile Include="ProjectGroupManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttachmentManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataMappingManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HierarchicalList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistoryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportManager.cs" />
+    <Compile Include="RequirementManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RequirementWorkflowManager.cs" />
+    <Compile Include="SavedFilterManager.cs" />
+    <Compile Include="SelfTrackingEntityTemplate.Context.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.Context.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SelfTrackingEntityTemplate.Context.Extensions.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SgmlParser.cs" />
+    <Compile Include="SgmlReader.cs" />
+    <Compile Include="SortEntry.cs" />
+    <Compile Include="SpiraTestEntitiesEx.cs" />
+    <Compile Include="TaskManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VaultManager_RestCalls.cs" />
+    <Compile Include="WorkflowManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XHTMLWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GlobalResources\General.cs.resx" />
+    <EmbeddedResource Include="GlobalResources\General.de.resx" />
+    <EmbeddedResource Include="GlobalResources\General.en-gb.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResources\General.es.resx" />
+    <EmbeddedResource Include="GlobalResources\General.fi.resx" />
+    <EmbeddedResource Include="GlobalResources\General.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResources\General.hu.resx" />
+    <EmbeddedResource Include="GlobalResources\General.pl.resx" />
+    <EmbeddedResource Include="GlobalResources\General.pt-pt.resx" />
+    <EmbeddedResource Include="GlobalResources\General.pt.resx" />
+    <EmbeddedResource Include="GlobalResources\General.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>General.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResources\General.ru.resx" />
+    <EmbeddedResource Include="GlobalResources\General.zh-Hans.resx" />
+    <EmbeddedResource Include="GlobalResources\General.zh-Hant.resx" />
+    <EmbeddedResource Include="GlobalResources\Messages.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResources\Messages.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResources\Messages.en-gb.resx" />
+    <EmbeddedResource Include="GlobalResources\Messages.es.resx" />
+    <EmbeddedResource Include="GlobalResources\Messages.fi.resx" />
+    <EmbeddedResource Include="GlobalResources\Messages.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResources\Messages.hu.resx" />
+    <EmbeddedResource Include="GlobalResources\Messages.pl.resx" />
+    <EmbeddedResource Include="GlobalResources\Messages.pt-pt.resx" />
+    <EmbeddedResource Include="GlobalResources\Messages.pt.resx" />
+    <EmbeddedResource Include="GlobalResources\Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalResources\Messages.ru.resx" />
+    <EmbeddedResource Include="GlobalResources\Messages.zh-Hans.resx" />
+    <EmbeddedResource Include="GlobalResources\Messages.zh-Hant.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="PortfolioSettings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>PortfolioSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectGroupSettings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>ProjectGroupSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectSettings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>ProjectSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectTemplateSettings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>ProjectTemplateSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SelfTrackingEntityTemplate.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SelfTrackingEntityTemplate.Context.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NotificationTemplates\emailTemplate_documents_inline_default.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NotificationTemplates\emailTemplate_incidents_inline_default.htm" />
+    <EmbeddedResource Include="NotificationTemplates\emailTemplate_requirements_inline_default.htm" />
+    <EmbeddedResource Include="NotificationTemplates\emailTemplate_risks_inline_default.htm" />
+    <EmbeddedResource Include="NotificationTemplates\emailTemplate_tasks_inline_default.htm" />
+    <EmbeddedResource Include="NotificationTemplates\emailTemplate_testCase_inline_default.htm" />
+    <EmbeddedResource Include="NotificationTemplates\emailTemplate_testSet_inline_default.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NotificationTemplates\emailTemplate_releases_inline_default.htm" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_IncrementBeforeBuild="True" BuildVersion_BuildVersioningStyle="None.None.None.Increment" BuildVersion_ConfigurationName="Release" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UseGlobalSettings="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

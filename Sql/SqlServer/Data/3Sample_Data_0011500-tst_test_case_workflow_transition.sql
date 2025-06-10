@@ -1,0 +1,191 @@
+/***************************************************************
+**	Insert script for table TST_TEST_CASE_WORKFLOW_TRANSITION
+***************************************************************/
+SET IDENTITY_INSERT TST_TEST_CASE_WORKFLOW_TRANSITION ON; 
+
+INSERT INTO TST_TEST_CASE_WORKFLOW_TRANSITION
+(
+WORKFLOW_TRANSITION_ID, TEST_CASE_WORKFLOW_ID, NAME, IS_EXECUTE_BY_CREATOR, IS_EXECUTE_BY_OWNER, IS_SIGNATURE_REQUIRED, INPUT_TEST_CASE_STATUS_ID, OUTPUT_TEST_CASE_STATUS_ID
+)
+VALUES
+(
+1, 1, 'Review Test Case', 1, 1, 0, 1, 2
+),
+(
+2, 1, 'Reject Test Case', 1, 1, 0, 1, 3
+),
+(
+3, 1, 'Approve Test Case', 0, 1, 0, 2, 4
+),
+(
+4, 1, 'Reject Test Case', 1, 1, 0, 2, 3
+),
+(
+5, 1, 'Return to Draft', 1, 1, 0, 2, 1
+),
+(
+6, 1, 'Start Testing', 0, 1, 0, 4, 5
+),
+(
+7, 1, 'Return to Review', 1, 1, 0, 4, 2
+),
+(
+8, 1, 'Return to Review', 1, 1, 0, 3, 2
+),
+(
+9, 1, 'Retire Test Case', 0, 1, 0, 5, 6
+),
+(
+10, 1, 'Pause Testing', 0, 1, 0, 5, 4
+),
+(
+11, 1, 'Return to Review', 0, 1, 0, 6, 5
+),
+(
+12, 2, 'Review Test Case', 1, 1, 0, 1, 2
+),
+(
+13, 2, 'Reject Test Case', 1, 1, 0, 1, 3
+),
+(
+14, 2, 'Approve Test Case', 0, 1, 0, 2, 4
+),
+(
+15, 2, 'Reject Test Case', 1, 1, 0, 2, 3
+),
+(
+16, 2, 'Return to Draft', 1, 1, 0, 2, 1
+),
+(
+17, 2, 'Start Testing', 0, 1, 0, 4, 5
+),
+(
+18, 2, 'Return to Review', 1, 1, 0, 4, 2
+),
+(
+19, 2, 'Return to Review', 1, 1, 0, 3, 2
+),
+(
+20, 2, 'Retire Test Case', 0, 1, 0, 5, 6
+),
+(
+21, 2, 'Pause Testing', 0, 1, 0, 5, 4
+),
+(
+22, 2, 'Return to Review', 0, 1, 0, 6, 5
+),
+(
+23, 3, 'Review Test Case', 1, 0, 0, 1, 2
+),
+(
+24, 3, 'Reject Test Case', 0, 0, 0, 1, 3
+),
+(
+25, 3, 'Approve Test Case', 0, 1, 1, 2, 4
+),
+(
+26, 3, 'Reject Test Case', 0, 1, 0, 2, 3
+),
+(
+27, 3, 'Return to Draft', 0, 1, 0, 2, 1
+),
+(
+28, 3, 'Start Testing', 0, 0, 0, 4, 5
+),
+(
+29, 3, 'Return to Review', 0, 0, 0, 4, 2
+),
+(
+30, 3, 'Return to Review', 0, 0, 0, 3, 2
+),
+(
+31, 3, 'Retire Test Case', 0, 1, 0, 5, 6
+),
+(
+32, 3, 'Pause Testing', 0, 1, 1, 5, 4
+),
+(
+33, 3, 'Return to Review', 0, 0, 0, 6, 5
+),
+(
+34, 3, 'Approve Test Result', 0, 1, 1, 5, 7
+),
+(
+35, 3, 'Verify Test Result', 0, 0, 1, 7, 8
+),
+(
+36, 3, 'Retire Test Case', 0, 0, 0, 8, 6
+),
+(
+38, 4, 'Rejected', 1, 1, 0, 1, 3
+),
+(
+48, 4, 'Draft', 1, 1, 0, 2, 1
+),
+(
+49, 4, 'Approved', 1, 1, 0, 1, 4
+),
+(
+51, 4, 'Tested', 1, 1, 0, 1, 7
+),
+(
+52, 4, 'Verified', 1, 1, 0, 1, 8
+),
+(
+53, 4, 'Draft', 1, 1, 0, 3, 1
+),
+(
+54, 4, 'Draft', 1, 1, 0, 4, 1
+),
+(
+55, 4, 'Draft', 1, 1, 0, 5, 1
+),
+(
+56, 4, 'Draft', 1, 1, 0, 6, 1
+),
+(
+58, 4, 'Approved', 1, 1, 0, 3, 4
+),
+(
+64, 4, 'Rejected', 1, 1, 0, 4, 3
+),
+(
+67, 4, 'Tested', 1, 1, 0, 3, 7
+),
+(
+68, 4, 'Verified', 1, 1, 0, 3, 8
+),
+(
+69, 4, 'Tested', 1, 1, 0, 4, 7
+),
+(
+70, 4, 'Verified', 1, 1, 0, 4, 8
+),
+(
+71, 4, 'Draft', 1, 1, 0, 7, 1
+),
+(
+72, 4, 'Draft', 1, 1, 0, 8, 1
+),
+(
+73, 4, 'Verified', 1, 1, 0, 7, 8
+),
+(
+74, 4, 'Tested', 1, 1, 0, 8, 7
+),
+(
+75, 4, 'Approved', 1, 1, 0, 7, 4
+),
+(
+76, 4, 'Approved', 1, 1, 0, 8, 4
+),
+(
+78, 4, 'Rejected', 1, 1, 0, 7, 3
+),
+(
+79, 4, 'Rejected', 1, 1, 0, 8, 3
+)
+GO
+
+SET IDENTITY_INSERT TST_TEST_CASE_WORKFLOW_TRANSITION OFF; 
+

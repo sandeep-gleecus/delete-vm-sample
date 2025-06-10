@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="CatalogZone_AddRemoveItems" xml:space="preserve">
+    <value>Elemente Hinzufügen / Entfernen</value>
+  </data>
+	<data name="CatalogZone_AddVerbDescription" xml:space="preserve">
+    <value>Fügt dem Dashboard ein neues Widget hinzu</value>
+  </data>
+	<data name="CatalogZone_CloseVerbDescription" xml:space="preserve">
+    <value>Schließt dieses Dialogfeld</value>
+  </data>
+	<data name="CatalogZone_InstructionText" xml:space="preserve">
+    <value>Wählen Sie die Elemente, die Sie hinzufügen möchten: </value>
+  </data>
+	<data name="EditorZone_ApplyVerbDescription" xml:space="preserve">
+    <value>Übernimmt Änderungen</value>
+  </data>
+	<data name="EditorZone_CancelVerbDescription" xml:space="preserve">
+    <value>Änderungen abbrechen und Editor schließen</value>
+  </data>
+	<data name="EditorZone_CloseVerbDescription" xml:space="preserve">
+    <value>Änderungen abbrechen und Editor schließen</value>
+  </data>
+	<data name="EditorZone_DashboardSettings" xml:space="preserve">
+    <value>Dashboard-Einstellungen</value>
+  </data>
+	<data name="EditorZone_InstructionText" xml:space="preserve">
+    <value>Ändern Sie die Eigenschaften des Widgets, klicken Sie anschließend auf [OK] oder [Übernehmen], um Ihre Änderungen zu übernehmen.</value>
+  </data>
+	<data name="EditorZone_OKVerbDescription" xml:space="preserve">
+    <value>Übernimmt die Änderungen und schließt den Editor</value>
+  </data>
+	<data name="IncidentReleaseType_DetectedRelease" xml:space="preserve">
+    <value>Erkannt in diesem Release</value>
+  </data>
+	<data name="IncidentReleaseType_ResolvedRelease" xml:space="preserve">
+    <value>Gelöst in diesem Release</value>
+  </data>
+	<data name="IncidentReleaseType_VerifiedRelease" xml:space="preserve">
+    <value>Verifiziert in diesem Release</value>
+  </data>
+	<data name="RichTextBox_BorderThickness" xml:space="preserve">
+    <value>Rahmenstärke</value>
+  </data>
+	<data name="RichTextBox_Cancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+	<data name="RichTextBox_CellPadding" xml:space="preserve">
+    <value>Zellentextabstand</value>
+  </data>
+	<data name="RichTextBox_CellSpacing" xml:space="preserve">
+    <value>Zellenabstand</value>
+  </data>
+	<data name="RichTextBox_Columns" xml:space="preserve">
+    <value>Spalten</value>
+  </data>
+	<data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>Tabelle einfügen</value>
+  </data>
+	<data name="RichTextBox_Percent" xml:space="preserve">
+    <value>Prozent</value>
+  </data>
+	<data name="RichTextBox_Pixels" xml:space="preserve">
+    <value>Pixel</value>
+  </data>
+	<data name="RichTextBox_Rows" xml:space="preserve">
+    <value>Zeilen</value>
+  </data>
+	<data name="RichTextBox_TableWidth" xml:space="preserve">
+    <value>Tabellenbreite</value>
+  </data>
+	<data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>Textfarbe</value>
+  </data>
+	<data name="TabControl_Associations" xml:space="preserve">
+    <value>Verknüpfungen</value>
+  </data>
+	<data name="TabControl_Attachments" xml:space="preserve">
+    <value>Anhänge</value>
+  </data>
+	<data name="TabControl_Automation" xml:space="preserve">
+    <value>Automatisierung</value>
+  </data>
+	<data name="TabControl_Comments" xml:space="preserve">
+    <value>Kommentare</value>
+  </data>
+	<data name="TabControl_CustomProperties" xml:space="preserve">
+    <value>(Benutzerdef. Eig.)</value>
+  </data>
+	<data name="TabControl_History" xml:space="preserve">
+    <value>Verlauf</value>
+  </data>
+	<data name="TabControl_IncidentAssociations" xml:space="preserve">
+    <value>Vorfallsverknüpfungen</value>
+  </data>
+	<data name="TabControl_Incidents" xml:space="preserve">
+    <value>Vorfälle</value>
+  </data>
+	<data name="TabControl_Releases" xml:space="preserve">
+    <value>Releases</value>
+  </data>
+	<data name="TabControl_ReqCoverage" xml:space="preserve">
+    <value>Anf. Abdeckung</value>
+  </data>
+	<data name="TabControl_ReqsTasks" xml:space="preserve">
+    <value>Anf. &amp; Aufgaben</value>
+  </data>
+	<data name="TabControl_Tasks" xml:space="preserve">
+    <value>Aufgaben</value>
+  </data>
+	<data name="TabControl_TestCases" xml:space="preserve">
+    <value>Testfälle</value>
+  </data>
+	<data name="TabControl_TestCoverage" xml:space="preserve">
+    <value>Testabdeckung</value>
+  </data>
+	<data name="TabControl_TestRuns" xml:space="preserve">
+    <value>Testläufe</value>
+  </data>
+	<data name="TabControl_TestRunSteps" xml:space="preserve">
+    <value>Testlaufschritte</value>
+  </data>
+	<data name="TabControl_TestSteps" xml:space="preserve">
+    <value>Testschritte</value>
+  </data>
+	<data name="WebPartChrome_ChangeSettings" xml:space="preserve">
+    <value>Einstellungen ändern</value>
+  </data>
+	<data name="WebPartChrome_CloseWidget" xml:space="preserve">
+    <value>Widget schließen</value>
+  </data>
+	<data name="WebPartChrome_MinimizeWidget" xml:space="preserve">
+    <value>Widget minimieren</value>
+  </data>
+	<data name="WebPartChrome_RestoreWidget" xml:space="preserve">
+    <value>Widget wiederherstellen</value>
+  </data>
+	<data name="WebPartZone_LeftSide" xml:space="preserve">
+    <value>Linke Seite</value>
+  </data>
+	<data name="WebPartZone_RightSide" xml:space="preserve">
+    <value>Rechte Seite</value>
+  </data>
+	<data name="TabControl_Schedule" xml:space="preserve">
+    <value>Zeitplan</value>
+  </data>
+	<data name="TabControl_TestSets" xml:space="preserve">
+    <value>Testreihen</value>
+  </data>
+	<data name="TabControl_Files" xml:space="preserve">
+    <value>Dateien</value>
+  </data>
+	<data name="TabControl_Revisions" xml:space="preserve">
+    <value>Revisionen</value>
+  </data>
+	<data name="TabControl_Versions" xml:space="preserve">
+    <value>Versionen</value>
+  </data>
+	<data name="TagCloud_DefaultFormat" xml:space="preserve">
+    <value>%c Mal %k aufgetreten</value>
+  </data>
+	<data name="TagCloud_Error" xml:space="preserve">
+    <value>Fehler beim Generieren der Cloud</value>
+  </data>
+	<data name="TagCloud_NoValues" xml:space="preserve">
+    <value>Keine Werte um die Cloud zu generieren</value>
+  </data>
+	<data name="WebPartZone_SideBar" xml:space="preserve">
+    <value>Seitenleiste</value>
+  </data>
+	<data name="WebPartZone_Top" xml:space="preserve">
+    <value>Kopfende</value>
+  </data>
+	<data name="PlanningBoard_Resource" xml:space="preserve">
+    <value>Ressource:</value>
+  </data>
+	<data name="TabControl_Builds" xml:space="preserve">
+    <value>Builds</value>
+  </data>
+	<data name="TabControl_Builds" xml:space="preserve">
+    <value>Builds</value>
+  </data>
+	<data name="CatalogZone_SelectTargetZoneText" xml:space="preserve">Hinzufügen zu</data><data name="TabControl_Overview" xml:space="preserve">Überblick</data><data name="TabControl_Description" xml:space="preserve">Beschreibung</data><data name="TabControl_Details" xml:space="preserve">Details</data><data name="TimeExtender_SelectCurrentTime" xml:space="preserve">Klicken Sie um die aktuelle Zeit auszuwählen</data><data name="TabControl_Console" xml:space="preserve">Konsolenausgabe </data><data name="CatalogZone_SelectTargetZoneText" xml:space="preserve"><value>Hinzufügen zu</value></data><data name="TabControl_Overview" xml:space="preserve"><value>Überblick</value></data><data name="TabControl_Description" xml:space="preserve"><value>Beschreibung</value></data><data name="TabControl_Details" xml:space="preserve"><value>Details</value></data><data name="TimeExtender_SelectCurrentTime" xml:space="preserve"><value>Klicken Sie um die aktuelle Zeit auszuwählen</value></data><data name="TabControl_Console" xml:space="preserve"><value>Konsolenausgabe </value></data><data name="GridViewEx_SortByAscending" xml:space="preserve"><value>Aufsteigend sortieren</value></data><data name="GridViewEx_SortByDescending" xml:space="preserve"><value>Absteigend sortieren</value></data><data name="GridViewEx_SortByFieldAscending" xml:space="preserve"><value>Aufsteigend sortieren nach {0}</value></data><data name="GridViewEx_SortByFieldDescending" xml:space="preserve"><value>Absteigend sortieren nach {0}</value></data><data name="TabControl_ProjectList" xml:space="preserve"><value>Produktliste</value></data><data name="TabControl_UserMembership" xml:space="preserve"><value>Benutzermitgliedschaft</value></data><data name="TabControl_ChangeActions" xml:space="preserve"><value>Aktionen ändern</value></data><data name="TabControl_Scenario" xml:space="preserve"><value>Szenario</value></data><data name="PlanningBoard_ByComponent" xml:space="preserve"><value>der Komponente</value></data><data name="PlanningBoard_ByIteration" xml:space="preserve"><value>des Sprint</value></data><data name="PlanningBoard_ByPackage" xml:space="preserve"><value>dem Paket</value></data><data name="PlanningBoard_ByPerson" xml:space="preserve"><value>der Person</value></data><data name="PlanningBoard_ByPriority" xml:space="preserve"><value>der Priorität</value></data><data name="PlanningBoard_ByRelease" xml:space="preserve"><value>dem Release</value></data><data name="PlanningBoard_TasksByPerson" xml:space="preserve"><value>Aufgaben pro Person</value></data><data name="PlanningBoard_ByStatus" xml:space="preserve"><value>dem Status</value></data><data name="TabControl_Preview" xml:space="preserve"><value>Vorschau</value></data><data name="TabControl_ExistingIncidents" xml:space="preserve"><value>Vorhandene Vorfälle</value></data><data name="TabControl_NewIncident" xml:space="preserve"><value>Neuer Vorfall</value></data><data name="PlanningBoard_TasksByStatus" xml:space="preserve"><value>Aufgaben nach Status</value></data><data name="TabControl_Requirements" xml:space="preserve"><value>Anforderungen</value></data><data name="TabControl_Parameters" xml:space="preserve"><value>Parameter</value></data><data name="GridViewEx_DisplayingPage" xml:space="preserve"><value>Angezeigte Seite</value></data><data name="GridViewEx_RowsPerPage" xml:space="preserve"><value>Zeilen pro Seite</value></data><data name="PlanningBoard_ByProject" xml:space="preserve"><value>Nach Produkt</value></data><data name="TabControl_TestConfigurationEntries" xml:space="preserve"><value>Testkonfigurationseinträge</value></data><data name="TabControl_Mitigations" xml:space="preserve"><value>Minderung</value></data><data name="TabControl_Diagram" xml:space="preserve"><value>Diagramm</value></data><data name="PlanningBoard_ByRequirement" xml:space="preserve"><value>nach Anforderung</value></data><data name="WebPartZone_Bottom" xml:space="preserve"><value>Unten</value></data><data name="TabControl_ProgramList" xml:space="preserve"><value>Programme</value></data><data name="TabControl_Baselines" xml:space="preserve"><value>Baselines</value></data></root>

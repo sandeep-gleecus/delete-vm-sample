@@ -1,0 +1,6 @@
+﻿Have a way to test the REST tests and reuse the soap logic:
+https://stackoverflow.com/questions/3142495/deserialize-json-into-c-sharp-dynamic-object
+https://dzone.com/articles/json-schema-wadl
+
+https://jeroenhildering.com/2014/03/21/replacing-wcf-datacontractjsonserializer-with-newtonsoft-jsonserializer/
+https://stackoverflow.com/questions/16468704/c-sharp-json-net-wcf-rest-datetime-format

@@ -1,0 +1,9 @@
+project_group_id:Key,name:String,description:String,website:String,is_active:Normal,is_default:Normal,percent_complete:Normal,project_template_id:Normal,portfolio_id:Normal,start_date:Normal,end_date:Normal,requirement_count:Normal
+5,Clinical Trials,TBD,NULL,1,0,0,2,2,NULL,NULL,0
+6,Medical Systems,TBD,NULL,1,0,0,2,2,NULL,NULL,0
+7,Back Office,TBD,NULL,1,0,0,1,3,NULL,NULL,0
+8,Customer Experience,TBD,NULL,1,0,0,1,3,NULL,NULL,0
+9,Aviation Platform,TBD,NULL,1,0,0,2,4,NULL,NULL,0
+10,Space Platform,TBD,NULL,1,0,0,2,4,NULL,NULL,0
+11,Inventory Systems,TBD,NULL,1,0,0,2,5,NULL,NULL,0
+12,Production Systems,TBD,NULL,1,0,0,2,5,NULL,NULL,0

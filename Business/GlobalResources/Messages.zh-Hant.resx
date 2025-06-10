@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="TestSet_TestCasePositionInUse" xml:space="preserve">
+    <value>指定測試案例的位置已被使用</value>
+  </data>
+	<data name="TestSet_TestSetTestCaseIdNotExist" xml:space="preserve">
+    <value>通過的 testSetId 和 testSetTestCaseId 於測試集中的測試案例無法對應。</value>
+  </data>
+	<data name="Incident_ClosedDateCannotBeBeforeDetected" xml:space="preserve">
+    <value>關閉日期無法早於檢測日期</value>
+  </data>
+	<data name="Incident_ClosedDateCannotBeBeforeStart" xml:space="preserve">
+    <value>關閉日期無法早於開始日期</value>
+  </data>
+	<data name="Task_EndDateCannotBeBeforeStartDate" xml:space="preserve">
+    <value>結束日期無法早於開始日期</value>
+  </data>
+	<data name="Task_EndDateOutsideReleaseRange" xml:space="preserve">
+    <value>任務結束日期無法介於關聯版本/迭代的日期範圍</value>
+  </data>
+	<data name="Task_EstimatedEffortNeededForInProgress" xml:space="preserve">
+    <value>您需設定預估工時以移動任務至進行中</value>
+  </data>
+	<data name="Task_NeedActualEffortForCompleted" xml:space="preserve">
+    <value>您必須提供實際工時以完成任務</value>
+  </data>
+	<data name="Task_NeedEndDateForCompleted" xml:space="preserve">
+    <value>您必須提供結束日期以完成任務</value>
+  </data>
+	<data name="Task_NeedEndDateForInProgress" xml:space="preserve">
+    <value>您必須提供預估結束日期讓任務成為進行中</value>
+  </data>
+	<data name="Task_NeedEstimatedEffortForCompleted" xml:space="preserve">
+    <value>您必須提供預估工時以完成任務</value>
+  </data>
+	<data name="Task_NeedReleaseForCompleted" xml:space="preserve">
+    <value>您必須將任務與版本/迭代關聯，使它完成</value>
+  </data>
+	<data name="Task_NeedReleaseForInProgress" xml:space="preserve">
+    <value>您必須將任務與版本/迭代關聯，使它進行中</value>
+  </data>
+	<data name="Task_NeedStartDateForCompleted" xml:space="preserve">
+    <value>您必須提供開始日期讓任務完成</value>
+  </data>
+	<data name="Task_NeedStartDateForInProgress" xml:space="preserve">
+    <value>您必須提供開始日期讓任務進行中</value>
+  </data>
+	<data name="Task_PercentCompleteNotInRange" xml:space="preserve">
+    <value>完成 % 值需介於 1-100%</value>
+  </data>
+	<data name="Task_RemainingEffortNeededForInProgress" xml:space="preserve">
+    <value>您需設定剩餘工時以移動任務至進行中</value>
+  </data>
+	<data name="Task_StartDateOutsideReleaseRange" xml:space="preserve">
+    <value>任務的開始日期無法超過關聯的版本/迭代的日期範圍</value>
+  </data>
+	<data name="TestRun_TestSetNotContainTestCases" xml:space="preserve">
+    <value>通過的測試極不包含任何測試案例</value>
+  </data>
+	<data name="TestSet_TestSetCannotHaveChildItems" xml:space="preserve">
+    <value>測試集不可有子測試集或資料夾。</value>
+  </data>
+	<data name="Project_ArtifactNotExists" xml:space="preserve">
+    <value>專案 {0} 在系統中已不存在。</value>
+  </data>
+	<data name="Project_Copy_Attachments" xml:space="preserve">
+    <value>複製專案附件</value>
+  </data>
+	<data name="Project_Copy_CreateShell" xml:space="preserve">
+    <value>基於已存在的專案建立新專案。</value>
+  </data>
+	<data name="Project_Copy_CustomProperties" xml:space="preserve">
+    <value>複製項目自訂屬性</value>
+  </data>
+	<data name="Project_Copy_Mappings" xml:space="preserve">
+    <value>複製需求、版本、測試案例對應</value>
+  </data>
+	<data name="Project_Copy_Releases" xml:space="preserve">
+    <value>複製專案版本</value>
+  </data>
+	<data name="Project_Copy_Requirements" xml:space="preserve">
+    <value>複製專案需求</value>
+  </data>
+	<data name="Project_Copy_TestCases" xml:space="preserve">
+    <value>複製專案測試案例</value>
+  </data>
+	<data name="Project_Copy_TestSets" xml:space="preserve">
+    <value>複製專案測試集</value>
+  </data>
+	<data name="Project_Delete_Associations" xml:space="preserve">
+    <value>刪除項目關聯</value>
+  </data>
+	<data name="Project_Delete_Attachments" xml:space="preserve">
+    <value>刪除專案附件</value>
+  </data>
+	<data name="Project_Delete_DataMappings" xml:space="preserve">
+    <value>刪除資料同步對應</value>
+  </data>
+	<data name="Project_Delete_IncidentWorkflows" xml:space="preserve">
+    <value>刪除事件工作流程</value>
+  </data>
+	<data name="Project_Delete_Project" xml:space="preserve">
+    <value>刪除專案</value>
+  </data>
+	<data name="Project_Delete_Releases" xml:space="preserve">
+    <value>刪除版本</value>
+  </data>
+	<data name="Project_Delete_Reports" xml:space="preserve">
+    <value>刪除報表</value>
+  </data>
+	<data name="Project_Delete_Requirements" xml:space="preserve">
+    <value>刪除需求</value>
+  </data>
+	<data name="Project_Delete_TestCases" xml:space="preserve">
+    <value>刪除測試案例</value>
+  </data>
+	<data name="Project_Delete_TestRuns" xml:space="preserve">
+    <value>刪除測試執行</value>
+  </data>
+	<data name="Project_Delete_TestSets" xml:space="preserve">
+    <value>刪除測試集</value>
+  </data>
+	<data name="TestRun_CreatingTestRuns" xml:space="preserve">
+    <value>從測試案例建立測試執行。</value>
+  </data>
+	<data name="TestRun_CreationCompleted" xml:space="preserve">
+    <value>建立測試執行完成。</value>
+  </data>
+	<data name="TestRun_SavingPendingEntry" xml:space="preserve">
+    <value>儲存擱置的測試執行項目。</value>
+  </data>
+	<data name="BuildManager_BuildNotExists" xml:space="preserve">
+    <value>建置「{0}」在系統已不存。</value>
+  </data>
+	<data name="BuildManager_BuildNotExistsForRevision" xml:space="preserve">
+    <value>找不到來源碼修訂版本「{0}」</value>
+  </data>
+	<data name="BuildManager_ReleaseNotExists" xml:space="preserve">
+    <value>關聯的版本/迭代 RL{0} 不存在於目前專案</value>
+  </data>
+	<data name="ComponentManager_ArtifactNotExists" xml:space="preserve"><value>無法取得模組，編號為 {0}</value></data><data name="CustomProperty_MaxValueError" xml:space="preserve"><value>%field% 輸入的值大於允許 %value% 的最大值</value></data><data name="CustomProperty_MinLengthError" xml:space="preserve"><value>%field%最小長度為%min%字元。輸入字串有%act%字元。</value></data><data name="CustomProperty_MinValueError" xml:space="preserve"><value>%field% 輸入的值小於允許 %value% 的最小值</value></data><data name="CustomProperty_RegExError" xml:space="preserve"><value>%field%輸入的值不符合需要的正規表示。</value></data><data name="CustomProperty_RegExException_CannotChange" xml:space="preserve"><value>您無法改變系統正規表示。</value></data><data name="CustomProperty_RegExException_CannotDelete" xml:space="preserve"><value>您無法刪除系統正規表示。</value></data><data name="CustomProperty_ValueNullError" xml:space="preserve"><value>欄位 %field% 需要一個值。</value></data><data name="DiscussionManager_CannotDeletePermanentDiscussion" xml:space="preserve"><value>您無法刪除此標示為永久的說明。</value></data><data name="Incident_CompletionPercentOutOfRange" xml:space="preserve"><value>完成百分比需介於0-100%</value></data><data name="Project_Copy_AutomationHosts" xml:space="preserve"><value>複製專案自動化主機</value></data><data name="Project_Copy_Components" xml:space="preserve"><value>複製專案模組</value></data><data name="Project_Copy_Tasks" xml:space="preserve"><value>複製專案任務</value></data><data name="Report_CannotDeleteDefaultReport" xml:space="preserve"><value>您無法刪除標準/預設報表。</value></data><data name="Report_ReportGenerationComplete" xml:space="preserve"><value>報表產生完成。</value></data><data name="Report_ReportNotExist" xml:space="preserve"><value>編號 {0} 的報表不存在於系統！</value></data><data name="Report_StartGeneratingReport" xml:space="preserve"><value>開始產生報表。</value></data><data name="Requirement_StepNotExists" xml:space="preserve"><value>無法取得需求步驟，編號為 {0}</value></data><data name="SourceCode_BranchKeyNotFound" xml:space="preserve"><value>分支鍵值「{0}」找不到。請重整快取</value></data><data name="SourceCode_BranchKeyNull" xml:space="preserve"><value>分支鍵值為 NULL。請重整快取</value></data><data name="SourceCode_InvalidCacheLongMessage" xml:space="preserve"><value>來源版本控制文庫的來源碼快取已過期，請重整。</value></data><data name="TaskManager_FolderNotExists" xml:space="preserve"><value>任務資料夾，編號為 {0}，在系統中已不存在。</value></data><data name="UserManager_NotResetLDAP" xml:space="preserve"><value>您無法藉由 {0} 重置 LDAP 使用者</value></data><data name="UserManager_SettingNotExists" xml:space="preserve"><value>使用者設定採集「{0}」在系統中不存在！</value></data></root>

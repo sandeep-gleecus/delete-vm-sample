@@ -1,0 +1,1926 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GlobalFunctions_SpinnerText" xml:space="preserve">
+    <value>Cargando ...</value>
+  </data>
+	<data name="FileArtifactUploadDialog_DefaultScreenshotFilename" xml:space="preserve">
+    <value>Captura_Pantalla1</value>
+  </data>
+	<data name="FileArtifactUploadDialog_ScreenshotFilenameRequired" xml:space="preserve">
+    <value>Es necesario introducir un nombre de archivo para la captura de pantalla</value>
+  </data>
+	<data name="FileArtifactUploadDialog_ScreenshotFilenameWrongExtension" xml:space="preserve">
+    <value>El nombre del archive debe tener extension .png</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardContentUnsupported" xml:space="preserve">
+    <value>El portapapeles no contiene un formato de imagen compatible.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardEmpty" xml:space="preserve">
+    <value>El portapapeles está vacío.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardErrorCodeUnknown" xml:space="preserve">
+    <value>Error! Por desgracia no hay descripción de error que se aplique al código de error: </value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardUnknownError" xml:space="preserve">
+    <value>Error inesperado. Vea la consola del Applet Java para obtener más detalles.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaInternalException" xml:space="preserve">
+    <value>Excepción interna:</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaNotLoadedYet" xml:space="preserve">
+    <value>El Supa-Applet aún no ha cargado.</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaPasteImageFirst" xml:space="preserve">
+    <value>Por favor, primero pegue una imagen!</value>
+  </data>
+	<data name="GlobalFunctions_DefaultErrorMessage" xml:space="preserve">
+    <value>Por favor, revise el registro de eventos de aplicación para detalles del mensaje. </value>
+  </data>
+	<data name="GlobalFunctions_DefaultErrorType" xml:space="preserve">
+    <value>Error del sistema</value>
+  </data>
+	<data name="GlobalFunctions_TooltipLoading" xml:space="preserve">
+    <value>Cargando ...</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForBlocked" xml:space="preserve">
+    <value>¡Es necesario introducir el Resultado Real de un paso cuando se marca como Bloqueado!</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForCaution" xml:space="preserve">
+    <value>¡Es necesario introducir el Resultado Real de un paso cuando se marca como Necesita Atención!</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForFail" xml:space="preserve">
+    <value>¡Es necesario introducir el Resultado Real de un paso cuando se marca como Reprobado!</value>
+  </data>
+	<data name="TestCaseExecution_IncidentLoggedMessage" xml:space="preserve">
+    <value>Incidente {0} registrado en el resultado del paso de prueba.</value>
+  </data>
+	<data name="TestSetDetails_OnlyOneCheckboxToAddTestCases" xml:space="preserve">
+    <value>Por favor no seleccione más de UN elemento para ejecutar el comando Agregar casos de prueba!</value>
+  </data>
+	<data name="TestSetDetails_SelectOnlyOneTestCase" xml:space="preserve">
+    <value>Es necesario seleccionar exactamente UN caso de prueba para editar valores de los parámetros.</value>
+  </data>
+	<data name="TestSetDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>Primero debe seleccionar un caso de prueba. </value>
+  </data>
+	<data name="TreeView_ExpandCollapse" xml:space="preserve">
+    <value>Expandir / Contraer</value>
+  </data>
+	<data name="TreeView_Folder" xml:space="preserve">
+    <value>Directorio</value>
+  </data>
+	<data name="Global_Export" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+	<data name="Global_PleaseSelectProjectToExportTo" xml:space="preserve">
+    <value>Por favor, seleccione el proyecto que desea exportar a:</value>
+  </data>
+	<data name="Global_ApplyFilter" xml:space="preserve">
+    <value>Aplicar filtro</value>
+  </data>
+	<data name="Global_ArtifactHasAttachment" xml:space="preserve">
+    <value>El artefacto tiene adjunto(s)</value>
+  </data>
+	<data name="Global_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+	<data name="Global_CannotMoveItemOntoItself" xml:space="preserve">
+    <value>No se puede mover un element a si mismo!</value>
+  </data>
+	<data name="Global_ClipboardEmpty" xml:space="preserve">
+    <value>El portapapeles está vacío!</value>
+  </data>
+	<data name="Global_DestinationItemNotValid" xml:space="preserve">
+    <value>El elemento de destino no es válido!</value>
+  </data>
+	<data name="Global_DisplayingPage" xml:space="preserve">
+    <value>Mostrando la página</value>
+  </data>
+	<data name="Global_FilterSaved" xml:space="preserve">
+    <value>Filtro guardado correctamente. </value>
+  </data>
+	<data name="Global_Hide" xml:space="preserve">
+    <value>Ocultar</value>
+  </data>
+	<data name="Global_IntegerValidation" xml:space="preserve">
+    <value>{0}' debe ser un valor entero.</value>
+  </data>
+	<data name="Global_ItemDraggedNotValid" xml:space="preserve">
+    <value>El ítem arrastrado no es válido! </value>
+  </data>
+	<data name="Global_ItemsCopiedToClipboard" xml:space="preserve">
+    <value>Los ítems se han copiado correctamente al portpapeles.</value>
+  </data>
+	<data name="Global_ItemsCutToClipboard" xml:space="preserve">
+    <value>Ítems correctamente cortados al portapapeles.</value>
+  </data>
+	<data name="Global_NeedToSelectDestinationProject" xml:space="preserve">
+    <value>Debe seleccionar un proyecto destino.</value>
+  </data>
+	<data name="Global_NeedToSelectFilter" xml:space="preserve">
+    <value>Debe seleccionar un filtro de la lista.</value>
+  </data>
+	<data name="Global_NeedToSelectItem" xml:space="preserve">
+    <value>Debe seleccionar un {0} de la lista.</value>
+  </data>
+	<data name="Global_None" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+	<data name="Global_Of" xml:space="preserve">
+    <value>de</value>
+  </data>
+	<data name="Global_PleaseSelectFilter" xml:space="preserve">
+    <value>Por favor, seleccione el filtro que desea utilizar:</value>
+  </data>
+	<data name="Global_RetrieveSavedFilter" xml:space="preserve">
+    <value>Recuperar Filtro Guardado</value>
+  </data>
+	<data name="Global_RowsPerPage" xml:space="preserve">
+    <value>filas por página</value>
+  </data>
+	<data name="Global_Select" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+	<data name="Global_SelectFilter" xml:space="preserve">
+    <value>Seleccionar Filtro</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCommand" xml:space="preserve">
+    <value>Debe seleccionar al menos UN elemento para ejecutar este comando! </value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCopy" xml:space="preserve">
+    <value>Debe seleccionar al menos UN elemento para Copiar!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCut" xml:space="preserve">
+    <value>Debe seleccionar al menos UN elemento para Cortar!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForDelete" xml:space="preserve">
+    <value>Debe seleccionar al menos UN elemento para Borrar!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForInsert" xml:space="preserve">
+    <value>Por favor, no seleccione más de UN elemento para Insertar! </value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForOpen" xml:space="preserve">
+    <value>Debe seleccionar al menos UN elemento para ejecutar Abrir Ítem!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForPaste" xml:space="preserve">
+    <value>Debe seleccionar solamente UN elemento para Pegar!</value>
+  </data>
+	<data name="Global_Show" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+	<data name="Global_SuccessAddingItemsToItem" xml:space="preserve">
+    <value>Ítems añadidos con éxito a {0}.</value>
+  </data>
+	<data name="Global_SuccessExport" xml:space="preserve">
+    <value>Elementos exportados con éxito.</value>
+  </data>
+	<data name="Global_TimeIntervalValidation" xml:space="preserve">
+    <value>{0}' debe ser un intervalo de tiempo en horas, con minutes expresados como decimales.</value>
+  </data>
+	<data name="Global_YouNeedToEnterFilterName" xml:space="preserve">
+    <value>Es necesario introducir un nombre para este filtro!</value>
+  </data>
+	<data name="HierarchicalGrid_CollapseNode" xml:space="preserve">
+    <value>Contraer Nodo</value>
+  </data>
+	<data name="HierarchicalGrid_ExpandNode" xml:space="preserve">
+    <value>Expandir Nodo</value>
+  </data>
+	<data name="HierarchicalGrid_SelectOneCheckBoxForIndent" xml:space="preserve">
+    <value>Debe seleccionar al menos UN elemento para utilizar este comando!</value>
+  </data>
+	<data name="HierarchicalGrid_SelectOneCheckBoxForOutdent" xml:space="preserve">
+    <value>Debe seleccionar al menos UN elemento para utilizar este comando!</value>
+  </data>
+	<data name="Global_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+	<data name="Global_FillWithValue" xml:space="preserve">
+    <value>Rellenar con este valor</value>
+  </data>
+	<data name="Global_SelectAll" xml:space="preserve">
+    <value>Seleccionar Todos</value>
+  </data>
+	<data name="Global_Update" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+	<data name="Global_Insert" xml:space="preserve">
+    <value>Insertar</value>
+  </data>
+	<data name="Global_MultipleItems" xml:space="preserve">
+    <value>Múltiples ítems</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForBulkEdit" xml:space="preserve">
+    <value>Debe seleccionar al menos un elemento para usar la Edición Masiva.</value>
+  </data>
+	<data name="Global_ExportItems" xml:space="preserve">
+    <value>Exportar Ítems</value>
+  </data>
+	<data name="Global_Project" xml:space="preserve">
+    <value>Proyecto</value>
+  </data>
+	<data name="Requirements_SuccessfullyCreatedTestCases" xml:space="preserve">
+    <value>Caso de prueba creados con éxito a  partir de los requerimientos.</value>
+  </data>
+	<data name="Requirements_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>Conjunto de pruebas creado con éxito a  partir de los requerimientos.</value>
+  </data>
+	<data name="Global_Any" xml:space="preserve">
+    <value>-- Cualquier --</value>
+  </data>
+	<data name="Global_None2" xml:space="preserve">
+    <value>(Ninguno)</value>
+  </data>
+	<data name="DatePicker_April" xml:space="preserve">
+    <value>Abril</value>
+  </data>
+	<data name="DatePicker_August" xml:space="preserve">
+    <value>Agosto</value>
+  </data>
+	<data name="DatePicker_ChosenDateInvalid" xml:space="preserve">
+    <value>Lo sentimos, la fecha elegida no es aceptable. Por favor, lea las instrucciones en la página.</value>
+  </data>
+	<data name="DatePicker_December" xml:space="preserve">
+    <value>Diciembre </value>
+  </data>
+	<data name="DatePicker_DHTMLUnsupported" xml:space="preserve">
+    <value>Las funciones DHTML requeridas no son soportadas por este navegador.</value>
+  </data>
+	<data name="DatePicker_February" xml:space="preserve">
+    <value>Febrero</value>
+  </data>
+	<data name="DatePicker_Fr" xml:space="preserve">
+    <value>Vi</value>
+  </data>
+	<data name="DatePicker_Friday" xml:space="preserve">
+    <value>Viernes</value>
+  </data>
+	<data name="DatePicker_January" xml:space="preserve">
+    <value>Enero</value>
+  </data>
+	<data name="DatePicker_July" xml:space="preserve">
+    <value>Julio</value>
+  </data>
+	<data name="DatePicker_June" xml:space="preserve">
+    <value>Junio</value>
+  </data>
+	<data name="DatePicker_March" xml:space="preserve">
+    <value>Marzo</value>
+  </data>
+	<data name="DatePicker_May" xml:space="preserve">
+    <value>Mayo</value>
+  </data>
+	<data name="DatePicker_Mo" xml:space="preserve">
+    <value>Lu</value>
+  </data>
+	<data name="DatePicker_Monday" xml:space="preserve">
+    <value>Lunes</value>
+  </data>
+	<data name="DatePicker_November" xml:space="preserve">
+    <value>Noviembre</value>
+  </data>
+	<data name="DatePicker_October" xml:space="preserve">
+    <value>Octubre</value>
+  </data>
+	<data name="DatePicker_Sa" xml:space="preserve">
+    <value>Sa</value>
+  </data>
+	<data name="DatePicker_Saturday" xml:space="preserve">
+    <value>Sábado</value>
+  </data>
+	<data name="DatePicker_September" xml:space="preserve">
+    <value>Septiembre</value>
+  </data>
+	<data name="DatePicker_Su" xml:space="preserve">
+    <value>Dom </value>
+  </data>
+	<data name="DatePicker_Sunday" xml:space="preserve">
+    <value>Domingo</value>
+  </data>
+	<data name="DatePicker_TargetFormInvalid" xml:space="preserve">
+    <value>El campo de formulario de destino no es accessible o no está asignado.</value>
+  </data>
+	<data name="DatePicker_Th" xml:space="preserve">
+    <value>Jue </value>
+  </data>
+	<data name="DatePicker_Thursday" xml:space="preserve">
+    <value>Jueves</value>
+  </data>
+	<data name="DatePicker_Tu" xml:space="preserve">
+    <value>Mar</value>
+  </data>
+	<data name="DatePicker_Tuesday" xml:space="preserve">
+    <value>Martes</value>
+  </data>
+	<data name="DatePicker_UnknownError" xml:space="preserve">
+    <value>Error desconocido al ejecutar este script.</value>
+  </data>
+	<data name="DatePicker_We" xml:space="preserve">
+    <value>Mie</value>
+  </data>
+	<data name="DatePicker_Wednesday" xml:space="preserve">
+    <value>Miércoles</value>
+  </data>
+	<data name="DateRangeFilter_CustomDates" xml:space="preserve">
+    <value>Rangos de fechas personalizados:</value>
+  </data>
+	<data name="DateRangeFilter_EnterDateRange" xml:space="preserve">
+    <value>Introduzca el rango de fechas:</value>
+  </data>
+	<data name="DateRangeFilter_Last14Days" xml:space="preserve">
+    <value>Últimos 14 días</value>
+  </data>
+	<data name="DateRangeFilter_Last30Days" xml:space="preserve">
+    <value>Últimos 30 días</value>
+  </data>
+	<data name="DateRangeFilter_Last7Days" xml:space="preserve">
+    <value>Últimos 7 días</value>
+  </data>
+	<data name="DateRangeFilter_LastMonth" xml:space="preserve">
+    <value>Último Mes</value>
+  </data>
+	<data name="DateRangeFilter_LastWeek" xml:space="preserve">
+    <value>Última semana</value>
+  </data>
+	<data name="DateRangeFilter_StandardDates" xml:space="preserve">
+    <value>Rangos de fecha estándar: </value>
+  </data>
+	<data name="DateRangeFilter_ThisMonth" xml:space="preserve">
+    <value>Este Mes</value>
+  </data>
+	<data name="DateRangeFilter_ThisWeek" xml:space="preserve">
+    <value>Esta Semana</value>
+  </data>
+	<data name="DateRangeFilter_Today" xml:space="preserve">
+    <value>Hoy</value>
+  </data>
+	<data name="DateRangeFilter_Yesterday" xml:space="preserve">
+    <value>Ayer</value>
+  </data>
+	<data name="Global_PleaseSelect" xml:space="preserve">
+    <value>-- Por favor, Seleccione --</value>
+  </data>
+	<data name="Releases_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>Conjunto de pruebas creado con éxito a  partir de la Release </value>
+  </data>
+	<data name="Global_No" xml:space="preserve">
+    <value>No </value>
+  </data>
+	<data name="Global_Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+	<data name="Global_Add" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+	<data name="TestCaseList_AddToRelease" xml:space="preserve">
+    <value>Agregar en la Release </value>
+  </data>
+	<data name="TestCaseList_AddToRequirement" xml:space="preserve">
+    <value>Agregar al Requerimiento</value>
+  </data>
+	<data name="TestCaseList_AddToTestSet" xml:space="preserve">
+    <value>Agregar al Conjunto de pruebas</value>
+  </data>
+	<data name="TestCaseList_SelectRelease" xml:space="preserve">
+    <value>Por favor seleccione la release donde desea agregar:</value>
+  </data>
+	<data name="TestCaseList_SelectRequirement" xml:space="preserve">
+    <value>Por favor seleccione el requerimiento al que desea agregar:</value>
+  </data>
+	<data name="TestCaseList_SelectTestSet" xml:space="preserve">
+    <value>Por favor seleccione el conjunto de pruebas donde desea agregar:</value>
+  </data>
+	<data name="SortedList_SortByAscending" xml:space="preserve">
+    <value>Ordenar por orden creciente de {0}</value>
+  </data>
+	<data name="SortedList_SortByDescending" xml:space="preserve">
+    <value>Ordenar por orden decreciente de {0}</value>
+  </data>
+	<data name="Global_ChooseNameForFilter" xml:space="preserve">
+    <value>Por favor, elija un nombre para este filtro:</value>
+  </data>
+	<data name="Global_Save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+	<data name="Global_SaveFilter" xml:space="preserve">
+    <value>Guardar filtro</value>
+  </data>
+	<data name="Global_Refresh" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+	<data name="IterationPlan_CannotDragReqsTasksSameTime" xml:space="preserve">
+    <value>No se puede arrastrar requerimientos y tareas al mismo tiempo</value>
+  </data>
+	<data name="IterationPlan_NoReleaseSelected" xml:space="preserve">
+    <value>No hay ninguno {0} seleccionado! Por favor, elija un {1} para mostrar el plan.</value>
+  </data>
+	<data name="PlanningGrid_Available" xml:space="preserve">
+    <value>Disponible</value>
+  </data>
+	<data name="PlanningGrid_ItemsDirectlyAssociated" xml:space="preserve">
+    <value>Ítems directamente asociados a {0}</value>
+  </data>
+	<data name="PlanningGrid_Remaining" xml:space="preserve">
+    <value>Restantes</value>
+  </data>
+	<data name="PlanningGrid_Utilized" xml:space="preserve">
+    <value>Utilizados</value>
+  </data>
+	<data name="DropDownHierarchy_NavigateToArtifact" xml:space="preserve">
+    <value>Navegar al artefacto</value>
+  </data>
+	<data name="RichTextBox_AddImage" xml:space="preserve">
+    <value>Agregar imagen</value>
+  </data>
+	<data name="RichTextBox_AlignLeft" xml:space="preserve">
+    <value>Alinear a la izquierda</value>
+  </data>
+	<data name="RichTextBox_AlignRight" xml:space="preserve">
+    <value>Alinear a la derecha</value>
+  </data>
+	<data name="RichTextBox_BackgroundColor" xml:space="preserve">
+    <value>Color de fondo</value>
+  </data>
+	<data name="RichTextBox_Bold" xml:space="preserve">
+    <value>Negrita</value>
+  </data>
+	<data name="RichTextBox_Center" xml:space="preserve">
+    <value>Centrar</value>
+  </data>
+	<data name="RichTextBox_EnterImageUrl" xml:space="preserve">
+    <value>Introduzca la URL de la imagen:</value>
+  </data>
+	<data name="RichTextBox_EnterUrl" xml:space="preserve">
+    <value>Introduzca una URL</value>
+  </data>
+	<data name="RichTextBox_Font" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+	<data name="RichTextBox_FontDropDown" xml:space="preserve">
+    <value>-- Fuente --</value>
+  </data>
+	<data name="RichTextBox_HorizontalRule" xml:space="preserve">
+    <value>Línea Horizontal</value>
+  </data>
+	<data name="RichTextBox_Indent" xml:space="preserve">
+    <value>Dentro</value>
+  </data>
+	<data name="RichTextBox_InsertLink" xml:space="preserve">
+    <value>Insertar Link</value>
+  </data>
+	<data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>Insertar Tabla</value>
+  </data>
+	<data name="RichTextBox_Italic" xml:space="preserve">
+    <value>Itálica </value>
+  </data>
+	<data name="RichTextBox_OrderedList" xml:space="preserve">
+    <value>Lista ordenada</value>
+  </data>
+	<data name="RichTextBox_Outdent" xml:space="preserve">
+    <value>Fuera</value>
+  </data>
+	<data name="RichTextBox_Size" xml:space="preserve">
+    <value>Tamaño</value>
+  </data>
+	<data name="RichTextBox_SizeDropDown" xml:space="preserve">
+    <value>-- Tamaño --</value>
+  </data>
+	<data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>Color del texto</value>
+  </data>
+	<data name="RichTextBox_Underline" xml:space="preserve">
+    <value>Subrayar</value>
+  </data>
+	<data name="RichTextBox_UnorderedList" xml:space="preserve">
+    <value>Lista desordenada</value>
+  </data>
+	<data name="RichTextBox_ViewFullScreen" xml:space="preserve">
+    <value>Vista de Pantalla Completa</value>
+  </data>
+	<data name="RichTextBox_ViewHTMLSource" xml:space="preserve">
+    <value>Ver código fuente HTML</value>
+  </data>
+	<data name="Global_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+	<data name="Global_Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+	<data name="Global_Status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+	<data name="MappingSelector_Add" xml:space="preserve">
+    <value>Agregar &gt;</value>
+  </data>
+	<data name="MappingSelector_CollapseNode" xml:space="preserve">
+    <value>Contraer Nodo</value>
+  </data>
+	<data name="MappingSelector_ExpandNode" xml:space="preserve">
+    <value>Expandir Nodo</value>
+  </data>
+	<data name="MappingSelector_NoItemsToRemove" xml:space="preserve">
+    <value>No hay elementos mapeados para eliminar!</value>
+  </data>
+	<data name="MappingSelector_Remove" xml:space="preserve">
+    <value>&lt; Eliminar</value>
+  </data>
+	<data name="MappingSelector_RemoveAll" xml:space="preserve">
+    <value>&lt;&lt; Eliminar Todos</value>
+  </data>
+	<data name="MappingSelector_SelectItemFromLeftHandBox" xml:space="preserve">
+    <value>Primero, debe seleccionar al menos un elemento de la caja izquierda</value>
+  </data>
+	<data name="MappingSelector_SelectItemFromRightHandBox" xml:space="preserve">
+    <value>Primero, debe seleccionar al menos un elemento de la caja derecha</value>
+  </data>
+	<data name="TestCaseSelector_TestCaseCreatedFromRequirement" xml:space="preserve">
+    <value>Un nuevo caso de pruebas fue creado con éxito a  partir de los requerimientos.</value>
+  </data>
+	<data name="TestCaseSelector_TestSetCreatedFromRelease" xml:space="preserve">
+    <value>Un nuevo grupo de pruebas fue creado con éxito a  partir de esta release.</value>
+  </data>
+	<data name="Incidents_SuccessfullyCreatedRequirements" xml:space="preserve">
+    <value>Un nuevo requerimiento fue creado con éxito a  partir de los incidentes.</value>
+  </data>
+	<data name="Global_Uploading" xml:space="preserve">
+    <value>Uploading ...</value>
+  </data>
+	<data name="ArtifactLinkPanel_IncidentIdNotValid" xml:space="preserve">
+    <value>Es necesario usar un número entero como ID del incidente</value>
+  </data>
+	<data name="ArtifactLinkPanel_InvalidArtifactType" xml:space="preserve">
+    <value>Selección inválida del tipo de artefacto !</value>
+  </data>
+	<data name="ArtifactLinkPanel_NeedToSelectOneArtifact" xml:space="preserve">
+    <value>Es necesario seleccionar al menos un artefacto para realizar la asociación!</value>
+  </data>
+	<data name="ArtifactLinkPanel_RequirementIdNotValid" xml:space="preserve">
+    <value>Es necesario usar un número entero como ID del requerimiento</value>
+  </data>
+	<data name="ArtifactLinkPanel_TestStepIdNotValid" xml:space="preserve">
+    <value>Es necesario usar un número entero como ID del paso de prueba</value>
+  </data>
+	<data name="Global_Loading" xml:space="preserve">
+    <value>Cargando ...</value>
+  </data>
+	<data name="HierarchicalSelector_CollapseNode" xml:space="preserve">
+    <value>Contraer Nodo</value>
+  </data>
+	<data name="HierarchicalSelector_ExpandNode" xml:space="preserve">
+    <value>Expandir Nodo</value>
+  </data>
+	<data name="NavigationBar_AllItems" xml:space="preserve">
+    <value>Todos los ítems</value>
+  </data>
+	<data name="NavigationBar_Assigned" xml:space="preserve">
+    <value>Asignado</value>
+  </data>
+	<data name="NavigationBar_CurrentFilter" xml:space="preserve">
+    <value>Filtro actual</value>
+  </data>
+	<data name="NavigationBar_Display" xml:space="preserve">
+    <value>Mostrar:</value>
+  </data>
+	<data name="NavigationBar_Maximize" xml:space="preserve">
+    <value>Maximizar</value>
+  </data>
+	<data name="NavigationBar_Minimize" xml:space="preserve">
+    <value>Minimizar</value>
+  </data>
+	<data name="Global_ClipboardNotSupported" xml:space="preserve">
+    <value>El acceso al portapapeles no está permitido por su navegador. </value>
+  </data>
+	<data name="TestCaseDetails_CannotLinkToParent" xml:space="preserve">
+    <value>No se puede relacionar un caso de prueba que ya tiene vínculos con el actual</value>
+  </data>
+	<data name="TestCaseDetails_CannotLinkToSelf" xml:space="preserve">
+    <value>No se puede vincular un elemento a sí mismo!</value>
+  </data>
+	<data name="TestCaseDetails_NewParameterSuccess" xml:space="preserve">
+    <value>Nuevo parámetro de caso de prueba añadido.</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameInvalid" xml:space="preserve">
+    <value>El nombre del parámetro no puede contener una comilla simple, espacio o una barra invertida.</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameInvalid2" xml:space="preserve">
+    <value>El nombre del parámetro no puede contener una llave o signo de dólar.</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameRequired" xml:space="preserve">
+    <value>Es necesario proporcionar un nombre para el nuevo parámetro de caso de prueba.</value>
+  </data>
+	<data name="TestCaseDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>Primero, debe seleccionar un caso de prueba.</value>
+  </data>
+	<data name="ReleaseSelector_RequirementCreatedFromTestCase" xml:space="preserve">
+    <value>Un nuevo requerimiento ha sido creado con éxito a partir de este caso de prueba.</value>
+  </data>
+	<data name="TestCaseExecution_Release" xml:space="preserve">
+    <value>Release</value>
+  </data>
+	<data name="TestCaseExecution_TestRunReadOnly" xml:space="preserve">
+    <value>Esta ejecución es solo lectura por ser asignada a</value>
+  </data>
+	<data name="Documents_ExportDocuments" xml:space="preserve">
+    <value>Exportar Documentos</value>
+  </data>
+	<data name="JqPlot_DisplayDataGrid" xml:space="preserve">
+    <value>Mostrar cuadrícula de datos</value>
+  </data>
+	<data name="JqPlot_ResetZoom" xml:space="preserve">
+    <value>Restablecer Zoom</value>
+  </data>
+	<data name="JqPlot_DownloadData" xml:space="preserve">
+    <value>Descargar datos como CSV</value>
+  </data>
+	<data name="JqPlot_SaveAs" xml:space="preserve">
+    <value>Guardar como</value>
+  </data>
+	<data name="TestCases_BlockSucceeded" xml:space="preserve">
+    <value>Casos de prueba bloqueados con éxito </value>
+  </data>
+	<data name="TestCases_UnBlockSucceeded" xml:space="preserve">
+    <value>Casos de prueba desbloqueados con éxito </value>
+  </data>
+	<data name="Global_EstimatedEffort" xml:space="preserve">
+    <value>Esfuerzo Estimado</value>
+  </data>
+	<data name="Global_Owner" xml:space="preserve">
+    <value>Propietario</value>
+  </data>
+	<data name="Global_ProjectedEffort" xml:space="preserve">
+    <value>Esfuerzo Proyectado</value>
+  </data>
+	<data name="PlanningBoard_UnassignedItems" xml:space="preserve">
+    <value>Ítems no asignados</value>
+  </data>
+	<data name="Global_Multiple" xml:space="preserve">
+    <value>Múltiplos</value>
+  </data>
+	<data name="PlanningBoard_Back" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+	<data name="PlanningBoard_View" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+	<data name="BackgroundProcessManager_StartingProcess" xml:space="preserve">
+    <value>Iniciando el processo ...</value>
+  </data>
+	<data name="Administration_CopyProjectConfirm" xml:space="preserve">
+    <value>Está seguro que desea hacer una copia de este proyecto?</value>
+  </data>
+	<data name="Administration_CopyProjectDialogText" xml:space="preserve">
+    <value>Hacer una copia del proyecto seleccionado. Por favor espere ...</value>
+  </data>
+	<data name="Administration_CopyProjectDialogTitle" xml:space="preserve">
+    <value>Copiar Proyecto</value>
+  </data>
+	<data name="Administration_DeleteProjectConfirm" xml:space="preserve">
+    <value>Está seguro que desea borrar este proyecto? Esto no se puede deshacer.</value>
+  </data>
+	<data name="Administration_DeleteProjectDialogText" xml:space="preserve">
+    <value>Eliminando el proyecto seleccionado. Por favor espere ...</value>
+  </data>
+	<data name="Administration_DeleteProjectDialogTitle" xml:space="preserve">
+    <value>Borrar el Proyecto</value>
+  </data>
+	<data name="Global_Close" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+	<data name="NavigationBar_Detected" xml:space="preserve">
+    <value>Detectado</value>
+  </data>
+	<data name="NavigationBar_ForRelease" xml:space="preserve">
+    <value>Para Release</value>
+  </data>
+	<data name="NavigationBar_ForTestCase" xml:space="preserve">
+    <value>Para Caso de Prueba</value>
+  </data>
+	<data name="NavigationBar_ForTestSet" xml:space="preserve">
+    <value>Para Conjunto de Prueba</value>
+  </data>
+	<data name="TestCaseList_ExecuteTestCase" xml:space="preserve">
+    <value>Ejecutar Casos de Prueba</value>
+  </data>
+	<data name="TestCaseList_ExecuteTestCaseDesc" xml:space="preserve">
+    <value>Creando las ejecuciones de prueba para este caso de prueba. Por favor espere ...</value>
+  </data>
+	<data name="BackgroundProcessManager_ProcessCompleted" xml:space="preserve">
+    <value>Proceso terminado con éxito.</value>
+  </data>
+	<data name="TestSetList_ExecuteTestSet" xml:space="preserve">
+    <value>Ejecutar Conjunto de Prueba</value>
+  </data>
+	<data name="TestSetList_ExecuteTestSetDesc" xml:space="preserve">
+    <value>Creando las ejecuciones de prueba para este conjunto de pruebas. Por favor espere ...</value>
+  </data>
+	<data name="AttachmentPanel_NeedToSelectOneDocument" xml:space="preserve">
+    <value>Debe seleccionar al menos un documento para ser asociado!</value>
+  </data>
+	<data name="AttachmentPanel_NeedToSelectOneFile" xml:space="preserve">
+    <value>Debe seleccionar al menos un archivo asociado!</value>
+  </data>
+	<data name="TestSetList_SelectSingleTestSet" xml:space="preserve">
+    <value>Debe seleccionar solamente una prueba para ejecutar!</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTestCases" xml:space="preserve">
+    <value>Ejecutar Casos de Prueba en Conjunto de Pruebas</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTestCasesDesc" xml:space="preserve">
+    <value>Creando las ejecuciones de prueba para  los casos de prueba seleccionados. Por favor espere ...</value>
+  </data>
+	<data name="Admin_CustomPropertyOptions_Header" xml:space="preserve">
+    <value>Definición  n.º {0} Propiedad Personalizada</value>
+  </data>
+	<data name="Admin_CustomProp_FieldError_BadDate" xml:space="preserve">
+    <value>Fecha inválida.</value>
+  </data>
+	<data name="Admin_CustomProp_FieldError_ListEmpty" xml:space="preserve">
+    <value>Debe seleccionar una lista personalizada.</value>
+  </data>
+	<data name="Admin_CustomProp_FieldError_MinHigherMax" xml:space="preserve">
+    <value>El mínimo no puede ser más grande que el máximo.</value>
+  </data>
+	<data name="Admin_CustomProp_FieldError_MultipleErrors" xml:space="preserve">
+    <value>Existen multiples errores.\nPor favor, verifique los campos destacados.</value>
+  </data>
+	<data name="Admin_CustomProp_FieldError_NameEmpty" xml:space="preserve">
+    <value>El nombre no puede ser nulo.</value>
+  </data>
+	<data name="Admin_CustomProp_FieldError_NameUsed" xml:space="preserve">
+    <value>Este nombre ya se ha utilizado.</value>
+  </data>
+	<data name="Admin_CustomProp_FieldError_NaN" xml:space="preserve">
+    <value>El Ingreso no es un número.</value>
+  </data>
+	<data name="Admin_CustomProp_FieldError_NumLessZero" xml:space="preserve">
+    <value>El número no puede ser menos que cero.</value>
+  </data>
+	<data name="Admin_CustomProp_FieldError_TypeEmpty" xml:space="preserve">
+    <value>Debe seleccionar un tipo.</value>
+  </data>
+	<data name="Global_ClearFilters" xml:space="preserve">
+    <value>Borrar los Filtros</value>
+  </data>
+	<data name="Global_FilteringBy" xml:space="preserve">
+    <value>Resultados filtrados por {0}</value>
+  </data>
+	<data name="DropDownList_Multiple" xml:space="preserve">
+    <value>(Multiple)</value>
+  </data>
+	<data name="WorkflowOperations_NoOperationsAvailable" xml:space="preserve">
+    <value>Operaciones no disponibles</value>
+  </data>
+	<data name="WorkflowOperations_SaveChangesFirst" xml:space="preserve">
+    <value>Por favor, guarde para aplicar el cambio.</value>
+  </data>
+	<data name="CommentList_Legend" xml:space="preserve">
+    <value>Mostrando las listas de comentarios:</value>
+  </data>
+	<data name="CommentList_NewestFirst" xml:space="preserve">
+    <value>El más reciente primero</value>
+  </data>
+	<data name="CommentList_OldestFirst" xml:space="preserve">
+    <value>El más antiguo primero</value>
+  </data>
+	<data name="CommentList_ConfirmDelete" xml:space="preserve">
+    <value>Está seguro de que quiere borrar este comentario? Esto no se puede deshacer.</value>
+  </data>
+	<data name="AjaxFormManager_ConfirmRefresh" xml:space="preserve">
+    <value>Tiene unos cambios no guardados.  Al actualizar los datos perderá los cambios, está seguro de que quiere continuar?</value>
+  </data>
+	<data name="AjaxFormManager_ConfirmUnload" xml:space="preserve">
+    <value>Tiene unos cambios no guardados.  Si  navega a una página diferente, perderá sus cambios, está seguro de que quiere continuar?</value>
+  </data>
+	<data name="AjaxFormManager_SaveSuccess" xml:space="preserve">
+    <value>Cambios a {0} guardados con éxito.</value>
+  </data>
+	<data name="TestRunDetails_IncidentList" xml:space="preserve">
+    <value>Lista de Incidentes para la ejecución del paso de prueba:</value>
+  </data>
+	<data name="ReportViewer_GeneratingReport" xml:space="preserve">
+    <value>Visualizador de Informes</value>
+  </data>
+	<data name="ReportViewer_GeneratingReportDesc" xml:space="preserve">
+    <value>Por favor espere mientras se genera el informe ...</value>
+  </data>
+	<data name="ReportDetails_NeedToSpecifyCustomQuery" xml:space="preserve">
+    <value>Debe entrar una consulta personalizada antes de revisar los resultados!</value>
+  </data>
+	<data name="Global_Customize" xml:space="preserve">
+    <value>Personalizar</value>
+  </data>
+	<data name="Global_Delete" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+	<data name="ReportDetails_NameRequired" xml:space="preserve">
+    <value>Debe ingresar un nombre para este informe!</value>
+  </data>
+	<data name="Admin_DataTools_Processing" xml:space="preserve">
+    <value>Realizando limpieza de datos:</value>
+  </data>
+	<data name="Admin_DataTools_Title" xml:space="preserve">
+    <value>Herramientas de datos</value>
+  </data>
+	<data name="Admin_History_Processing" xml:space="preserve">
+    <value>Eliminando todos los registros borrados...</value>
+  </data>
+	<data name="Admin_History_Title" xml:space="preserve">
+    <value>Historial del Projecto</value>
+  </data>
+	<data name="NavigationBar_NotAuthorizedToView" xml:space="preserve">
+    <value>Tu función no está autorizada.</value>
+  </data>
+	<data name="AjaxFormManager_NotAuthorizedToModify" xml:space="preserve">
+    <value>No estás autorizado a modificar este ítem.</value>
+  </data>
+	<data name="Global_Remove" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+	<data name="TestCaseList_RemoveFromRelease" xml:space="preserve">
+    <value>Eliminar de la Release</value>
+  </data>
+	<data name="TestCaseList_SelectReleaseToRemove" xml:space="preserve">
+    <value>Por favor, seleccione la release de que desea eliminar</value>
+  </data>
+	<data name="Admin_History_Processing2" xml:space="preserve">
+    <value>Revirtiendo ítems seleccionados...</value>
+  </data>
+	<data name="Global_Rows" xml:space="preserve">
+    <value>Filas</value>
+  </data>
+	<data name="Global_ShareFilter" xml:space="preserve">
+    <value>Compartir con otros miembros del proyecto</value>
+  </data>
+	<data name="NumberRangeFilter_EnterMinMaxValues" xml:space="preserve">
+    <value>Por favor, introduzca los valores mínimo/máximo:</value>
+  </data>
+	<data name="NumberRangeFilter_Title" xml:space="preserve">
+    <value>Filtro de Rango</value>
+  </data>
+	<data name="Global_Change" xml:space="preserve">
+    <value>Cambiar</value>
+  </data>
+	<data name="NavigationBar_ForRequirement" xml:space="preserve">
+    <value>Para lo Requerimiento</value>
+  </data>
+	<data name="Global_NoneDropDown" xml:space="preserve">
+    <value>-- Ninguno --</value>
+  </data>
+	<data name="TreeView_AddItem" xml:space="preserve">
+    <value>Agregar {0}</value>
+  </data>
+	<data name="TreeView_ChooseParentItem" xml:space="preserve">
+    <value>Por favor, elija un {0} padre para agregar esto debajo</value>
+  </data>
+	<data name="TreeView_EditItem" xml:space="preserve">
+    <value>Editar {0}</value>
+  </data>
+	<data name="TreeView_EnterName" xml:space="preserve">
+    <value>Por favor, elija un nombre para este nuevo {0} :</value>
+  </data>
+	<data name="TreeView_NeedToProvideItemName" xml:space="preserve">
+    <value>Debe elegir un nombre para este nuevo {0}!</value>
+  </data>
+	<data name="Global_Done" xml:space="preserve">
+    <value>Hecho</value>
+  </data>
+	<data name="TreeView_ConfirmDelete" xml:space="preserve">
+    <value>Está seguro que desea borrar este {0} ?</value>
+  </data>
+	<data name="TreeView_EditName" xml:space="preserve">
+    <value>Por favor, edite el nombre de este {0} :</value>
+  </data>
+	<data name="TreeView_EditParentItem" xml:space="preserve">
+    <value>Por favor, elija un padre para este {0}:</value>
+  </data>
+	<data name="Messenger_SendMessage" xml:space="preserve">
+    <value>Enviar Mensaje</value>
+  </data>
+	<data name="Messenger_NeedToSelectComment" xml:space="preserve">
+    <value>Debe seleccionar al menos un mensaje antes de publicar al artefacto actual.</value>
+  </data>
+	<data name="Messenger_PostAsComments" xml:space="preserve">
+    <value>Publicar como Comentarios</value>
+  </data>
+	<data name="Messenger_PostAsCommentsSuccess" xml:space="preserve">
+    <value>Comentarios enviados com éxito al artefacto actual.</value>
+  </data>
+	<data name="ScreenshotCapture_BrowserNotSupported" xml:space="preserve">
+    <value>Su navegador web no es compatible con captura de pantalla!</value>
+  </data>
+	<data name="ScreenshotCapture_Intro" xml:space="preserve">
+    <value>Por favor, pegue la imagen usando el comando CTRL+V.</value>
+  </data>
+	<data name="ScreenshotCapture_InvalidImageFormat" xml:space="preserve">
+    <value>El portapapeles no contenía una imagen válida!</value>
+  </data>
+	<data name="ArtifactLinkPanel_TaskIdNotValid" xml:space="preserve">
+    <value>Debe introducir un valor entero para este ID de tarea</value>
+  </data>
+	<data name="Admin_History_Processing3" xml:space="preserve">
+    <value>Excluyendo elementos de forma permanente ...</value>
+  </data>
+	<data name="Global_All" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+	<data name="CommentList_PleaseEnterComment" xml:space="preserve">
+    <value>Por favor, introduzca un comentario y vuelve a intentarlo.</value>
+  </data>
+	<data name="TaskDetails_SplitTaskEffortNotInRange" xml:space="preserve">
+    <value>El Esfuerzo % debe estar en el rango 0-100%!</value>
+  </data>
+	<data name="TaskDetails_SplitTaskEffortNotInteger" xml:space="preserve">
+    <value>El Esfuerzo % necesita ser un valor entero!</value>
+  </data>
+	<data name="TaskDetails_SplitTaskNameRequired" xml:space="preserve">
+    <value>Debe introducir un nombre para la nueva tarea! </value>
+  </data>
+	<data name="AjaxFormManager_EnterSignature" xml:space="preserve">
+    <value>Introduzca la Firma Electrónica</value>
+  </data>
+	<data name="AjaxFormManager_EnterSignatureInfo" xml:space="preserve">
+    <value>Por favor, introduzca um Nombre de Usuario/Contraseña junto con el objetivo y haga clic en Firmar:</value>
+  </data>
+	<data name="AjaxFormManager_Login" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+	<data name="AjaxFormManager_Meaning" xml:space="preserve">
+    <value>Objetivo</value>
+  </data>
+	<data name="AjaxFormManager_Password" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+	<data name="AjaxFormManager_Sign" xml:space="preserve">
+    <value>Firmar:</value>
+  </data>
+	<data name="AjaxFormManager_DefaultMeaning" xml:space="preserve">
+    <value>Cambiando {0} {1}:{2} de '{3}' para '{4}'</value>
+  </data>
+	<data name="AjaxFormManager_LoginRequired" xml:space="preserve">
+    <value>Debe elegir un Nombre de Usuario!</value>
+  </data>
+	<data name="AjaxFormManager_MeaningRequired" xml:space="preserve">
+    <value>Debe elegir un Objetivo!</value>
+  </data>
+	<data name="AjaxFormManager_PasswordRequired" xml:space="preserve">
+    <value>Debe elegir una Contraseña!</value>
+  </data>
+	<data name="ArtifactEmail_SentMessageSuccess" xml:space="preserve">
+    <value>E-mail enviado con éxito</value>
+  </data>
+	<data name="SidebarPanel_Maximize" xml:space="preserve">
+    <value>Maximizar</value>
+  </data>
+	<data name="SidebarPanel_Minimize" xml:space="preserve">
+    <value>Minimizar</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForFocusOn" xml:space="preserve">
+    <value>Debe seleccionar exactamente un ítem para el comando Enfocar en!</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForClone" xml:space="preserve">
+    <value>Debe seleccionar al menos UNA casilla de verificación para el comando Clonar!</value>
+  </data>
+	<data name="Global_SaveAndNew" xml:space="preserve">
+    <value>Guardar y Crear Nuevo</value>
+  </data>
+	<data name="TreeView_EditDescription" xml:space="preserve">
+    <value>Por favor, introduzca la descripción de este nuevo {0}:</value>
+  </data>
+	<data name="TreeView_EnterDescription" xml:space="preserve">
+    <value>Por favor, introduzca la descripción de este nuevo {0}:</value>
+  </data>
+	<data name="WorkflowOperations" xml:space="preserve">
+    <value>Operaciones de Flujo de Trabajo</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForNotApplicable" xml:space="preserve">
+    <value>¡Debe introducir el resultado real al grabar N/A ! Haga clic en el botón  de abajo para confirmar.</value>
+  </data>
+	<data name="TestStep_Step" xml:space="preserve">
+    <value>Paso</value>
+  </data>
+	<data name="TestStep_StepPlural" xml:space="preserve">
+    <value>Passos</value>
+  </data>
+	<data name="TestCaseExecution_Blocked" xml:space="preserve">
+    <value>Bloqueado</value>
+  </data>
+	<data name="TestCaseExecution_Caution" xml:space="preserve">
+    <value>Precaución</value>
+  </data>
+	<data name="TestCaseExecution_Fail" xml:space="preserve">
+    <value>Reprobado</value>
+  </data>
+	<data name="TestCaseExecution_NotApplicable" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+	<data name="TestCaseExecution_Pass" xml:space="preserve">
+    <value>Aprobado</value>
+  </data>
+	<data name="TestCaseExecution_PassAll" xml:space="preserve">
+    <value>Aprobar Todos</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForImport" xml:space="preserve">
+    <value>Por favor,  seleccione exactamente UNA casilla de verificación para el comando Importar.</value>
+  </data>
+	<data name="TestCaseDetails_CannotImportSelf" xml:space="preserve">
+    <value>No puede importar el caso de prueba actual en sí mismo!</value>
+  </data>
+	<data name="TestCaseDetails_EnterTestCaseNameForNewLink" xml:space="preserve">
+    <value>Debe introducir un nombre para el próximo caso de prueba!</value>
+  </data>
+	<data name="TestSetDetails_ParameterRequired" xml:space="preserve">
+    <value>Debe elegir un parámetro!</value>
+  </data>
+	<data name="TestSetDetails_ParameterValueRequired" xml:space="preserve">
+    <value>Debe introducir un valor de parámetro!</value>
+  </data>
+	<data name="Global_RootFolderDropDown" xml:space="preserve">
+    <value>-- Directorio raíz --</value>
+  </data>
+	<data name="TestCaseExecution_Pause" xml:space="preserve">
+    <value>Pausar</value>
+  </data>
+	<data name="TestCaseExecution_Resume" xml:space="preserve">
+    <value>Continuar </value>
+  </data>
+	<data name="Global_Operations" xml:space="preserve">
+    <value>Operaciones</value>
+  </data>
+	<data name="Guide_Global_Next" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+	<data name="Guide_Global_Previous" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+	<data name="Guide_Global_Done" xml:space="preserve">
+    <value>Hecho</value>
+  </data>
+	<data name="Guide_Global_Skip" xml:space="preserve">
+    <value>Omitir</value>
+  </data>
+	<data name="Guide_Global_Close" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+	<data name="Guide_TestExecution_intro_Title" xml:space="preserve">
+    <value>Tutorial Rápido</value>
+  </data>
+	<data name="Guide_TestExecution_intro_Content" xml:space="preserve">
+    <value>Este Tutorial le ayudará a comprender rápidamente cómo ejecutar sus pruebas en ValidationMaster.&lt;br&gt;&lt;br&gt;Vamos a recorrer los elementos de la interfaz principal antes de ver cómo realmente ejecutar las pruebas.&lt;br&gt;&lt;br&gt;Haga clic en "Siguiente" para continuar.</value>
+  </data>
+	<data name="Guide_TestExecution_heading_Title" xml:space="preserve">
+    <value>Título de la Ejecución</value>
+  </data>
+	<data name="Guide_TestExecution_heading_Content" xml:space="preserve">
+    <value>Aquí puede ver el nombre de la ejecución de prueba (si existe) y la release seleccionada.</value>
+  </data>
+	<data name="Guide_TestExecution_display_Title" xml:space="preserve">
+    <value>Opciones de Visualización</value>
+  </data>
+	<data name="Guide_TestExecution_display_Content" xml:space="preserve">
+    <value>Existen tres modos de visualización diferentes..&lt;br&gt;Cada uno tiene dos opciones de visualización.&lt;br&gt;&lt;br&gt; Fueron diseñados para diferentes maneras de trabajar.</value>
+  </data>
+	<data name="Guide_TestExecution_settings_Title" xml:space="preserve">
+    <value>Otras Configuraciones</value>
+  </data>
+	<data name="Guide_TestExecution_settings_Content" xml:space="preserve">
+    <value>Haga clic aquí para accesar la configuración de cómo desea configurar la página o para repetir este tutorial.</value>
+  </data>
+	<data name="Guide_TestExecution_progress_Title" xml:space="preserve">
+    <value>Barra de Progreso</value>
+  </data>
+	<data name="Guide_TestExecution_progress_Content" xml:space="preserve">
+    <value>Aquí puede verificar el progreso de las pruebas (se puede ver los pasos de prueba por defecto o los casos de prueba si hay muchos pasos de prueba). Puede ver la información sobre la prueba de forma destacada.</value>
+  </data>
+	<data name="Guide_TestExecution_moving_Title" xml:space="preserve">
+    <value>Navegando entre las Pruebas</value>
+  </data>
+	<data name="Guide_TestExecution_moving_Content" xml:space="preserve">
+    <value>Haga clic aquí para retroceder o avanzar una prueba. O haga clic en cualquier prueba en la barra de progreso, o en la lista de abajo para ir directamente a la prueba.</value>
+  </data>
+	<data name="Guide_TestExecution_pause_Title" xml:space="preserve">
+    <value>Pausar pruebas</value>
+  </data>
+	<data name="Guide_TestExecution_pause_Content" xml:space="preserve">
+    <value>Si necesita hacer una pausa durante la ejecución de prueba, haga clic en el botón de pausa para detener el  temporizador interno de la prueba.  El botón se encenderá para recordarle que es necesario iniciar el temporizador para volver a probar.</value>
+  </data>
+	<data name="Guide_TestExecution_exit_Title" xml:space="preserve">
+    <value>Salir de la Prueba</value>
+  </data>
+	<data name="Guide_TestExecution_exit_Content" xml:space="preserve">
+    <value>Haga clic aquí para salir de las pruebas. La prueba inacabada se encuentra en 'Mi página'. Una vez finalizada la prueba, aparecerá un botón naranja a la derecha.</value>
+  </data>
+	<data name="Guide_TestExecution_split_Title" xml:space="preserve">
+    <value>Vista Dividida</value>
+  </data>
+	<data name="Guide_TestExecution_split_Content" xml:space="preserve">
+    <value>Aquí se puede ver una lista de todos los pasos al lado de un inspector, que muestra información detallada sobre el paso de la prueba actual.&lt;br&gt;&lt;br&gt; Utilice las pestañas en la parte inferior para obtener informaciones adicionales.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Opciones de visualización:&lt;/strong&gt; cambie el tamaño del inspector como quiera.</value>
+  </data>
+	<data name="Guide_TestExecution_table_Title" xml:space="preserve">
+    <value>Vista de Tabla</value>
+  </data>
+	<data name="Guide_TestExecution_table_Content" xml:space="preserve">
+    <value>Este modo de visualización es ideal para mostrarle todos sus pasos juntos. Fue diseñado para que pueda revisar y tomar medidas muy rápidamente en cada paso.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Opciones de visualización:&lt;/strong&gt;colapsar o expandir todos los campos de la tabla a la vez para administrar lo que se muestra en la pantalla.Tenga en cuenta que todos los campos se pueden colapsar o expandir individualmente también.</value>
+  </data>
+	<data name="Guide_TestExecution_mini_Title" xml:space="preserve">
+    <value>Vista en Miniatura</value>
+  </data>
+	<data name="Guide_TestExecution_mini_Content" xml:space="preserve">
+    <value>La vista principal muestra un inspector en pantalla completa, maximizando el espacio dedicado a mostrarle información sobre el paso actual.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Opciones de visualización:&lt;/strong&gt;cambiar de inspector sólo a inspector con un iframe. Esto le permite probar una página web con la información de prueba al lado.</value>
+  </data>
+	<data name="Guide_TestExecution_status_Title" xml:space="preserve">
+    <value>Registrar un Estado de Prueba</value>
+  </data>
+	<data name="Guide_TestExecution_status_Content" xml:space="preserve">
+    <value>Puede registrar el estado de un paso en cualquier vista.Si la prueba reprobó, debe introducir el resultado en el campo "Resultado Real".&lt;br&gt;&lt;br&gt;&lt;strong&gt;Observación: &lt;/strong&gt; para agregar un resultado manualmente en la vista de tabla, haga clic en el botón "+" para el paso.</value>
+  </data>
+	<data name="Guide_TestExecution_screenshot_Title" xml:space="preserve">
+    <value>Guardar una Captura de Pantalla</value>
+  </data>
+	<data name="Guide_TestExecution_screenshot_Content" xml:space="preserve">
+    <value>Pegue la imagen directamente en el editor de texto de "Resultado Real".&lt;br&gt;&lt;br&gt;Esto cargará y guardará la imagen. Asegúrese de que la imagen también tiene referencia en el cuadro de texto.</value>
+  </data>
+	<data name="Messenger_NewMessageFrom" xml:space="preserve">
+    <value>Nuevo mensaje de</value>
+  </data>
+	<data name="TestSetList_CannotExecuteFolder" xml:space="preserve">
+    <value>No puede ejecutar una carpeta. Por favor, elija um Conjunto de Pruebas y vuelva a intentarlo!</value>
+  </data>
+	<data name="ArtifactType_Release" xml:space="preserve">
+    <value>Release</value>
+  </data>
+	<data name="ArtifactType_Requirement" xml:space="preserve">
+    <value>Requerimiento</value>
+  </data>
+	<data name="ArtifactType_TestSet" xml:space="preserve">
+    <value>Conjunto de Pruebas</value>
+  </data>
+	<data name="TestCaseList_AddToReleaseSuccess" xml:space="preserve">
+    <value>Los casos de prueba se han añadido correctamente a la release.</value>
+  </data>
+	<data name="TestCaseList_AddToRequirementSuccess" xml:space="preserve">
+    <value>Los casos de prueba se han añadido correctamente al requerimiento.</value>
+  </data>
+	<data name="TestCaseList_AddToTestSetSuccess" xml:space="preserve">
+    <value>Los casos de prueba se han añadido correctamente al conjunto de pruebas.</value>
+  </data>
+	<data name="TestCaseList_RemoveFromReleaseSuccess" xml:space="preserve">
+    <value>Casos de prueba eliminados con éxito de la release.</value>
+  </data>
+	<data name="GlobalFunctions_InvalidOperation" xml:space="preserve">
+    <value>Operación Inválida</value>
+  </data>
+	<data name="Global_CannotSelectMoreThanOneFolder" xml:space="preserve">
+    <value>Si selecciona una carpeta, no podrá seleccionar otros elementos al mismo tiempo!</value>
+  </data>
+	<data name="ArtifactType_AutomationEngine" xml:space="preserve">
+    <value>Herramienta de Automatización</value>
+  </data>
+	<data name="ArtifactType_AutomationHost" xml:space="preserve">
+    <value>Host  de Automatización</value>
+  </data>
+	<data name="ArtifactType_Document" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+	<data name="ArtifactType_Incident" xml:space="preserve">
+    <value>Incidente</value>
+  </data>
+	<data name="ArtifactType_Message" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+	<data name="ArtifactType_RequirementStep" xml:space="preserve">
+    <value>Paso de requerimiento</value>
+  </data>
+	<data name="ArtifactType_Task" xml:space="preserve">
+    <value>Tarea</value>
+  </data>
+	<data name="ArtifactType_TestCase" xml:space="preserve">
+    <value>Caso de Prueba</value>
+  </data>
+	<data name="ArtifactType_TestRun" xml:space="preserve">
+    <value>Ejecución de prueba</value>
+  </data>
+	<data name="ArtifactType_TestStep" xml:space="preserve">
+    <value>Paso de prueba</value>
+  </data>
+	<data name="ArtifactType_User" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+	<data name="Global_Current" xml:space="preserve">
+    <value>Actual</value>
+  </data>
+	<data name="Global_CurrentProject" xml:space="preserve">
+    <value>Proyecto Actual</value>
+  </data>
+	<data name="Global_Filter" xml:space="preserve">
+    <value>Filtrar</value>
+  </data>
+	<data name="Global_Search_MatchingResults" xml:space="preserve">
+    <value>Resultado(s) coincidente(s)</value>
+  </data>
+	<data name="Global_Sort" xml:space="preserve">
+    <value>Ordenar</value>
+  </data>
+	<data name="Global_AllArtifacts" xml:space="preserve">
+    <value>Todos los artefactos</value>
+  </data>
+	<data name="Global_AllProjects" xml:space="preserve">
+    <value>Todos los Proyectos</value>
+  </data>
+	<data name="NavigationBar_ItemList" xml:space="preserve">
+    <value>Lista de Ítems</value>
+  </data>
+	<data name="Pagination_First" xml:space="preserve">
+    <value>Primero</value>
+  </data>
+	<data name="Pagination_Last" xml:space="preserve">
+    <value>Último</value>
+  </data>
+	<data name="Pagination_Next" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+	<data name="Pagination_Previous" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+	<data name="Pagination_Refresh" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+	<data name="Global_Search" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+	<data name="Global_AllFolders" xml:space="preserve">
+    <value>Todas las carpetas</value>
+  </data>
+	<data name="AssociationPanel_SelectArtifact" xml:space="preserve">
+    <value>Seleccionar Tipo de Artefacto</value>
+  </data>
+	<data name="ArtifactLinkType_Depends" xml:space="preserve">
+    <value>Depende de</value>
+  </data>
+	<data name="ArtifactLinkType_Related" xml:space="preserve">
+    <value>Relacionado com</value>
+  </data>
+	<data name="Global_Comment" xml:space="preserve">
+    <value>Comentario</value>
+  </data>
+	<data name="Global_Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+	<data name="Global_FilterByName" xml:space="preserve">
+    <value>Filtrar por nombre</value>
+  </data>
+	<data name="Global_RowsSelected" xml:space="preserve">
+    <value>Fila(s) seleccionada(s)</value>
+  </data>
+	<data name="AssociationPanel_CreateTestCaseFromRequirement" xml:space="preserve">
+    <value>Crear Caso de Prueba de este requerimiento</value>
+  </data>
+	<data name="AssociationPanel_CreateTestCaseFromRequirementTooltip" xml:space="preserve">
+    <value>Haga clic aquí para crear un nuevo Caso de Prueba en el árbol que está vinculado a este requerimiento</value>
+  </data>
+	<data name="AssociationPanel_CreateTestSetFromRelease" xml:space="preserve">
+    <value>Crear Conjunto de Pruebas de esta release</value>
+  </data>
+	<data name="AssociationPanel_CreateTestSetFromReleaseTooltip" xml:space="preserve">
+    <value>Haga clic aquí para crear un nuevo Conjunto de Pruebas en la lista que tiene los casos de prueba importados de esta release</value>
+  </data>
+	<data name="AssociationPanel_TestCaseCreatedFromRequirement" xml:space="preserve">
+    <value>Un nuevo caso de prueba fue creado con éxito a partir de este requerimiento.</value>
+  </data>
+	<data name="AssociationPanel_TestSetCreatedFromRelease" xml:space="preserve">
+    <value>Un nuevo Conjunto de Pruebas fue creado con éxito a partir de esta release</value>
+  </data>
+	<data name="Folders_AllPackages" xml:space="preserve">
+    <value>Todos los Paquetes</value>
+  </data>
+	<data name="Folders_Root" xml:space="preserve">
+    <value>Raíz</value>
+  </data>
+	<data name="AssociationPanel_FilterPlaceholder" xml:space="preserve">
+    <value>Filtrar por nombre o buscar por identificación (ID) (p. ej.</value>
+  </data>
+	<data name="Global_Start" xml:space="preserve">
+    <value>Iniciar</value>
+  </data>
+	<data name="AssociationPanel_NoResults" xml:space="preserve">
+    <value>No se encontraron coincidencias</value>
+  </data>
+	<data name="Onboarding_NavTour_ArtifactHasMenu_Text" xml:space="preserve">
+    <value>Los artefactos son los bloques de construcción de los proyectos. Cada artefacto tiene funcionalidad adaptada -- de los requerimientos, a las pruebas, a los incidentes. Haga clic en cada categoría para mostrar los artefactos que se puede accesar.</value>
+  </data>
+	<data name="Onboarding_NavTour_ArtifactHasMenu_Title" xml:space="preserve">
+    <value>Menú de Artefactos</value>
+  </data>
+	<data name="Onboarding_NavTour_ArtifactNoMenu_Text" xml:space="preserve">
+    <value>Los artefactos son los bloques de construcción de los proyectos. Cada artefacto tiene funcionalidad adaptada -- de los requerimientos, a las pruebas, a los incidentes. Cuando selecciona un proyecto, verá los artefactos que puede accesar.</value>
+  </data>
+	<data name="Onboarding_NavTour_ArtifactNoMenu_Title" xml:space="preserve">
+    <value>Artefactos</value>
+  </data>
+	<data name="Onboarding_NavTour_Intro_Text" xml:space="preserve">
+    <value>La barra de navegación de Spira le ayuda a accesar fácilmente a las cinco partes principales de la aplicación.</value>
+  </data>
+	<data name="Onboarding_NavTour_Intro_Title" xml:space="preserve">
+    <value>La Barra de Navegación de Spira</value>
+  </data>
+	<data name="Onboarding_NavTour_ProfileTitle_Text" xml:space="preserve">
+    <value>Vea y edite tu perfil y acceda a la ayuda en la aplicación.</value>
+  </data>
+	<data name="Onboarding_NavTour_ProfileTitle_Title" xml:space="preserve">
+    <value>Mi perfil</value>
+  </data>
+	<data name="Onboarding_NavTour_Projects_Text" xml:space="preserve">
+    <value>Los proyectos están en el corazón de Spira. Cada proyecto tiene sus propios datos, usuarios y configuraciones. Los proyectos pueden ser agrupados en Programas.</value>
+  </data>
+	<data name="Onboarding_NavTour_Projects_Title" xml:space="preserve">
+    <value>Lista de Proyectos</value>
+  </data>
+	<data name="Onboarding_NavTour_Search_Text" xml:space="preserve">
+    <value>Escriba un término de búsqueda y pulse Intro para obtener acceso instantáneo a la información relevante en toda la aplicación.</value>
+  </data>
+	<data name="Onboarding_NavTour_Search_Title" xml:space="preserve">
+    <value>Búsqueda Global</value>
+  </data>
+	<data name="Onboarding_NavTour_SpiraLogo_Text" xml:space="preserve">
+    <value>Acceda a su cuadro de indicadores, tarjeta de tiempo o administración (si está habilitada). Estos le permiten seguir y configurar su trabajo y proyectos.</value>
+  </data>
+	<data name="Onboarding_NavTour_SpiraLogo_Title" xml:space="preserve">
+    <value>Mi Spira</value>
+  </data>
+	<data name="Onboarding_NoThanks" xml:space="preserve">
+    <value>No, gracias</value>
+  </data>
+	<data name="Onboarding_Welcome_Message" xml:space="preserve">
+    <value>Queremos mostrarle rápidamente cómo navegar por la aplicación. Esto te llevará menos de un minuto y entonces usted puede explorar por su cuenta.</value>
+  </data>
+	<data name="Onboarding_Welcome_Title" xml:space="preserve">
+    <value>¡Bienvenido a Spira!</value>
+  </data>
+	<data name="Onboarding_YesPlease" xml:space="preserve">
+    <value>Sí, por favor</value>
+  </data>
+	<data name="Global_IncidentName" xml:space="preserve">
+    <value>Nombre del Incidente</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_intro_Title" xml:space="preserve">
+    <value>Tutorial Rápido</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_intro_Content" xml:space="preserve">
+    <value>Esta guía le mostrará brevemente cómo ejecutar casos de prueba en ValidationMaster usando su modo de prueba exploratorio. &lt;br&gt;&lt;br&gt; La guía está diseñada para usuarios avanzados y asume que ya está familiarizado con el funcionamiento de la ejecución de pruebas estándar en SpiraTeam. &lt;br&gt;&lt;br&gt; Haga clic en 'Siguiente' para continuar.</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_editing_Title" xml:space="preserve">
+    <value>Editar Todo</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_editing_Content" xml:space="preserve">
+    <value>Al ejecutar pruebas en modo exploratorio, se puede editar la mayoría de las partes de la prueba, simplemente haciendo clic en un campo y escribiendo. &lt;br&gt;&lt;br&gt; Se puede cambiar el nombre de la ejecución de prueba, la descripción y muchos otros campos. Cuando un campo está en gris, no podrá editarlo. &lt;br&gt;&lt;br&gt; Cuando te mueves a otro campo, los cambios que realice se guardarán de inmediato en el servidor; tenga en cuenta que el caso de prueba subyacente NO se modifica en absoluto (puede elegir más tarde si desea cambiar el caso de prueba o no).</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_grid_Title" xml:space="preserve">
+    <value>Moverse entre los Pasos</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_grid_Content" xml:space="preserve">
+    <value>Igual como la ejecución de prueba normal, hacer clic en cualquier paso de prueba le permitirá trabajar en ese paso. Los detalles se muestran en el inspector de la derecha.&lt;br&gt;Si algún paso está en gris, significa que no tiene permiso para editar ese paso, pero aún puede registrar los resultados para ese paso.&lt;br&gt;Un paso no se puede editar cuando se origina en un caso de prueba vinculado.</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_gridStep_Title" xml:space="preserve">
+    <value>Clonar o Eliminar Pasos</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_gridStep_Content" xml:space="preserve">
+    <value>Si pasar el cursor por encima de cualquier paso (que no esté en gris), verá tres puntos horizontales en el lado derecho del paso.&lt;br&gt;Al hacer clic en este menú, se abre un menú de mini acción. Esto le permite clonar este paso o eliminarlo. &lt;br&gt;&lt;br&gt;Si clona el paso, se crea un duplicado y se coloca al final de la lista de pasos. Si elimina el paso, se eliminará de esta ejecución.</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_gridStepMoving_Title" xml:space="preserve">
+    <value>Reordenar Pasos</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_gridStepMoving_Content" xml:space="preserve">
+    <value>Usted puede hacer clic y mantener presionado en cualquier paso y entonces  arrastrarlo hacia arriba o hacia abajo en la lista para colocarlo en una nueva posición. Esta es una manera realmente fácil de reordenar sus pasos de prueba. &lt;br&gt;&lt;br&gt; Puede hacer esto en cualquier momento: ninguna información en el paso se cambiará de ninguna manera.</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_gridAdd_Title" xml:space="preserve">
+    <value>Agregar Pasos</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_gridAdd_Content" xml:space="preserve">
+    <value>Para agregar un nuevo paso, haga clic en este botón. Se creará un paso en blanco en la parte inferior de la lista de pasos de prueba, que se puede editar completamente de la misma manera que en otros pasos. &lt;br&gt;&lt;br&gt; Juntamente con la funcionalidad ya mencionada, esta herramienta proporciona mucho poder para diseñar y cambiar su ejecución de prueba a medida que explora la funcionalidad que está probando.</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_tasks_Title" xml:space="preserve">
+    <value>Administrar Tareas</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_tasks_Content" xml:space="preserve">
+    <value>Mientras exploras, puedes encontrar algo que un desarrollador debería ver. Es posible que no esté seguro de que se trata de un bug o la prueba está en el principio de desarrollo. En cada uno de estos casos, crear un incidente puede ser una acción demasiado formal. En cambio, por qué no crear una tarea? Puede agregar un título, una descripción opcional y asignar la tarea a un compañero en unos pocos segundos.&lt;br&gt;&lt;br&gt;Puede ver todas las tareas creadas para esta prueba en cualquier momento.</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_settings_Title" xml:space="preserve">
+    <value>Opciones de Visualización</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_settings_Content" xml:space="preserve">
+    <value>Hay varias formas de personalizar el espacio de trabajo de las pruebas exploratorias. Específicamente, se pueden establecer varios campos por usuario para mostrar o ocultar. Por ejemplo, si no utiliza "Datos de Muestra" durante sus pruebas exploratorias, puede ocultar ese campo.&lt;br&gt;&lt;br&gt; Opcionalmente, puede mostrar los últimos resultados de un paso (si existe) para que pueda rápidamente compáralo con los resultados actuales.</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_exit_Title" xml:space="preserve">
+    <value>Dejar la Prueba</value>
+  </data>
+	<data name="Guide_TestExecutionExploratory_exit_Content" xml:space="preserve">
+    <value>Una vez que se completen las pruebas exploratorias, aparecerá un botón aquí en naranja con el símbolo "Stop". Al hacer clic, se mostrará un menú desplegable con dos opciones.&lt;br&gt;&lt;br&gt;1.Puede actualizar el caso de prueba subyacente en función de todos los cambios realizados (edición, adición, eliminación, movimiento de pasos).&lt;br&gt;&lt;br&gt;2. O puede dejar el caso de prueba sin cambios. Si selecciona esta opción, solo se actualiza el estado de ejecución del caso de prueba.Tenga en cuenta que la ejecución de prueba creada a partir de esta sesión reflejará completamente todos los cambios realizados en esta página.</value>
+  </data>
+	<data name="GlobalNavigation_MyProfile" xml:space="preserve">
+    <value>Mi Perfil</value>
+  </data>
+	<data name="GlobalNavigation_MyTimecard" xml:space="preserve">
+    <value>Mi Tarjeta de Tiempo</value>
+  </data>
+	<data name="Global_Search_SortByDate" xml:space="preserve">
+    <value>fecha</value>
+  </data>
+	<data name="Global_Search_SortByRelevance" xml:space="preserve">
+    <value>pertinencia</value>
+  </data>
+	<data name="Global_ShowAll" xml:space="preserve">
+    <value>Mostrar todo</value>
+  </data>
+	<data name="Global_ShowLess" xml:space="preserve">
+    <value>Mostrar menos</value>
+  </data>
+	<data name="Global_Followers" xml:space="preserve">
+    <value>Seguidores</value>
+  </data>
+	<data name="Global_People" xml:space="preserve">
+    <value>Gente</value>
+  </data>
+	<data name="ArtifactAddFollower_Success" xml:space="preserve">
+    <value>Seguidor añadido con éxito.</value>
+  </data>
+	<data name="Followers_UnfollowUser" xml:space="preserve">
+    <value>Quitar seguidor</value>
+  </data>
+	<data name="Incidents_AllClosed" xml:space="preserve">
+    <value>Todos Cerrados</value>
+  </data>
+	<data name="Incidents_AllOpen" xml:space="preserve">
+    <value>Todos Abiertos</value>
+  </data>
+	<data name="IncidentDetails_IncidentNotFound" xml:space="preserve">
+    <value>El incidente que seleccionaste fue eliminado del sistema!</value>
+  </data>
+	<data name="SourceCode_Commits" xml:space="preserve">
+    <value>Commits</value>
+  </data>
+	<data name="Global_Displaying" xml:space="preserve">
+    <value>Visualización</value>
+  </data>
+	<data name="Global_NewIncident" xml:space="preserve">
+    <value>Nuevo Incidente</value>
+  </data>
+	<data name="TreeView_NotAuthorizedToView" xml:space="preserve">
+    <value>No tienes autorización para ver las carpetas!</value>
+  </data>
+	<data name="Global_Count" xml:space="preserve">
+    <value>Recuento</value>
+  </data>
+	<data name="Dashboards_SaveAsImage" xml:space="preserve">
+    <value>Guardar como Imagen</value>
+  </data>
+	<data name="Global_PleaseTryAgain" xml:space="preserve">
+    <value>Hubo un problema al completar esta operación, inténtalo de nuevo por favor.</value>
+  </data>
+	<data name="TestExecutionService_ExploratoryDoNotDeleteLastStep" xml:space="preserve">
+    <value>Su ejecución de prueba siempre debe contener al menos un paso de prueba, entonces el paso de prueba seleccionado no se ha eliminado</value>
+  </data>
+	<data name="Global_Description" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+	<data name="ArtifactDetails_ArtifactNotFound" xml:space="preserve">
+    <value>El artefacto que seleccionaste ha sido eliminado del sistema!</value>
+  </data>
+	<data name="Global_Populate" xml:space="preserve">
+    <value>Rellenar</value>
+  </data>
+	<data name="TestConfigurationDetails_NoParameterOrCustomList" xml:space="preserve">
+    <value>Debe elegir un parámetro de caso de prueba y una lista personalizada!</value>
+  </data>
+	<data name="TestConfigurationDetails_PleaseChooseParametersToPopulate" xml:space="preserve">
+    <value>Por favor, elija un parámetro de caso de prueba y una lista personalizada asociada para agregar a este conjunto de configuración de prueba:</value>
+  </data>
+	<data name="TestConfiguration_CustomList" xml:space="preserve">
+    <value>Lista Personalizada</value>
+  </data>
+	<data name="TestConfiguration_TestCaseParameter" xml:space="preserve">
+    <value>Parámetro de Prueba</value>
+  </data>
+	<data name="TestConfigurationDetails_ConfirmPopulation" xml:space="preserve">
+    <value>Está seguro de que desea rellenar la lista de entradas de configuración de prueba? Esto eliminará todas sus entradas existentes en la cuadrícula de abajo?</value>
+  </data>
+	<data name="TestConfigurationDetails_TooManyParameters" xml:space="preserve">
+    <value>Solo puede ingresar hasta 5 parámetros de caso de prueba!</value>
+  </data>
+	<data name="Incident_EnterNewIncidentName" xml:space="preserve">
+    <value>Ingrese el nuevo nombre del incidente</value>
+  </data>
+	<data name="AssociationPanel_CreateArtifactXFromArtifactY" xml:space="preserve">
+    <value>Crear {0} a partir de esto {1}</value>
+  </data>
+	<data name="AssociationPanel_CreateArtifactXFromArtifactYTooltip" xml:space="preserve">
+    <value>Haga clic para crear un nuevo {0} que está vinculado a este {1}</value>
+  </data>
+	<data name="AssociationPanel_ArtifactXCreatedFromArtifactY" xml:space="preserve">
+    <value>Se creó con éxito un nuevo {0} a partir de este {1}.</value>
+  </data>
+	<data name="AssociationPanel_NoArtifactTypesCanBeAdded" xml:space="preserve">
+    <value>No puedes agregar ninguna asociación a este artefacto!</value>
+  </data>
+	<data name="ArtifactType_TestRunStep" xml:space="preserve">
+    <value>Paso de Ejecución de Prueba</value>
+  </data>
+	<data name="InAppHelp_Chart_IncidentAging" xml:space="preserve">
+    <value>Este cuadro muestra cuánto tiempo se han dejado abiertos los incidentes: los intervalos de edad están en el eje x, la cuenta de incidentes en el eje y.</value>
+  </data>
+	<data name="InAppHelp_Chart_IncidentOpenCount" xml:space="preserve">
+    <value>Este gráfico muestra el desglose de todos los incidentes abiertos en el producto por prioridad. La barra del gráfico coincide con el color asignado a esa prioridad.</value>
+  </data>
+	<data name="InAppHelp_Chart_IncidentTestCoverage" xml:space="preserve">
+    <value>Este gráfico muestra el estado de ejecución de cualquier caso de prueba que falló anteriormente y resultó en la generación de un incidente que se resolvió posteriormente. Puede ser muy útil para ver qué casos de prueba probablemente deben probarse nuevamente, ahora que sus incidentes están resueltos.</value>
+  </data>
+	<data name="InAppHelp_Chart_RequirementGraphs" xml:space="preserve">
+    <value>Puede ver rápidamente cuatro gráficos diferentes utilizados al medir el progreso de los requisitos en una metodología ágil: seleccione el gráfico apropiado en el menú desplegable</value>
+  </data>
+	<data name="InAppHelp_Chart_RequirementsCoverage" xml:space="preserve">
+    <value>Este gráfico muestra el recuento acumulado de la cobertura de prueba de requisitos para el producto. Cada cobertura de prueba de requisito se suma a 1, para que los requisitos con un número diferente de casos de prueba se cubran de la misma manera. El filtro por release filtrará los requisitos asignados a esa versión.</value>
+  </data>
+	<data name="InAppHelp_Chart_RequirementsCoverageRegression" xml:space="preserve">
+    <value>Este gráfico muestra el recuento acumulado de la cobertura de prueba de requisitos para el producto. Cada cobertura de prueba de requisito se suma a 1, para que los requisitos con un número diferente de casos de prueba se cubran de la misma manera. El filtro por release filtrará los casos de prueba, no los requisitos.</value>
+  </data>
+	<data name="InAppHelp_Chart_SourceCodeCommits" xml:space="preserve">
+    <value>Este gráfico muestra los últimos 3 meses de commits de código del producto (si está utilizando la funcionalidad de código fuente de la aplicación). Los commits se agregan por semana. La tabla está codificada por colores por cuartil inferior, el 50% medio y el cuartil superior de actividad.</value>
+  </data>
+	<data name="InAppHelp_Chart_TaskGraphs" xml:space="preserve">
+    <value>Puede ver rápidamente tres gráficos diferentes utilizados al medir el progreso de una tarea en una metodología ágil: seleccione el gráfico apropiado del menú desplegable</value>
+  </data>
+	<data name="InAppHelp_Chart_TestCasesPerStatusAndDay" xml:space="preserve">
+    <value>Este gráfico muestra los últimos 30 días de ejecuciones de casos de prueba en forma acumulativa. Eso significa que se mostrará para cada día el número total de casos de prueba ejecutados más el estado de los días anteriores que no se han cambiado. Cualquier caso de prueba que no se haya ejecutado hasta ese momento se considerará "no ejecutado" y aparecerá en la misma categoría. Por ejemplo, si tiene 10 casos de prueba creados el día 1, verá 10 casos de prueba "no ejecutado" en el día 1. En el día 2, usted ejecuta 5 casos de prueba y todos fallan, ahora verá 5 casos de prueba que fallaron y 5 no ejecutados. En el día 3, usted ejecuta 3 de los 5 casos de prueba anteriores y todos pasan. Ahora verá 3 casos de prueba aprobados, 2 con fallas y 5 no ejecutados.</value>
+  </data>
+	<data name="InAppHelp_Chart_TestExecutionStatus" xml:space="preserve">
+    <value>Este gráfico muestra el recuento acumulado de casos de prueba en cada estado de ejecución del producto.</value>
+  </data>
+	<data name="InAppHelp_Chart_TestRunProgress" xml:space="preserve">
+    <value>Este gráfico muestra los últimos 30 días de la actividad de ejecución de prueba desglosada, por cada día, por el estado de ejecución de prueba.</value>
+  </data>
+	<data name="InAppHelp_Chart_TestSetStatus" xml:space="preserve">
+    <value>Este gráfico muestra el recuento acumulado de casos de prueba en cada estado de ejecución para cada conjunto de prueba en el producto. Si tiene los mismos casos de prueba en varios conjuntos de pruebas, todos se cuentan por separado para asegurar que puede determinar que las pruebas se han ejecutado con éxito en todos los conjuntos de pruebas. Esto es útil cuando se prueba en diferentes entornos.</value>
+  </data>
+	<data name="InAppHelp_Chart_RequirementsCoverageProgram" xml:space="preserve">
+    <value>Este gráfico muestra el recuento acumulado de la cobertura de prueba de requisitos para todo el programa. Las barras Aprobado, Reprobado, Bloqueado, Precaución y No Ejecutado indican el recuento total de los requisitos que tienen las pruebas que los cubren, asignados a través del estado de ejecución de las pruebas de cobertura.</value>
+  </data>
+	<data name="InAppHelp_Chart_TaskProgress" xml:space="preserve">
+    <value>Este gráfico muestra el recuento acumulado de tareas por categoría de progreso para todo el programa. Las barras 'Dentro del Plazo', 'Fin Atrasado', 'Comienzo  Atrasado' y 'No Comenzado' indican el recuento total de tareas que se encuentran en esa categoría para todos los productos del programa.</value>
+  </data>
+	<data name="InAppHelp_Chart_TestExecutionStatusProgram" xml:space="preserve">
+    <value>Este gráfico muestra el recuento acumulado de casos de prueba por estado de ejecución para todo el programa. Las barras Aprobado, Reprobado, Bloqueado, Precaución y No Ejecutado indican el recuento total de casos de prueba que se encuentran en esa categoría para todos los productos del programa.</value>
+  </data>
+	<data name="InAppHelp_Chart_DateRangeIncident" xml:space="preserve">
+    <value>El &lt;b&gt;gráfico de tasa de progreso del incidente&lt;/b&gt; muestra el número total de incidentes creados y cerrados en un intervalo de fechas en particular, para todos los tipos de incidentes o para un tipo de incidente específico.&lt;br&gt;&lt;br&gt;El &lt;b&gt;gráfico de recuento de incidentes acumulados &lt;/b&gt;muestra el número total acumulado de incidentes registrados en un intervalo de fechas en particular, para todos los tipos de incidentes o para un tipo de incidente específico. El reporte muestra el recuento total de todos los incidentes y el recuento total de todos los incidentes abiertos (o sea, con el estado no establecido como fijo o cerrado).&lt;br&gt;&lt;br&gt;El&lt;b&gt; gráfico de recuento de incidentes abiertos &lt;/b&gt; muestra el número neto de incidentes abiertos en un rango de fechas en particular, categorizado por prioridad de incidentes, para todos los tipos de incidentes o para un tipo de incidente específico. En este gráfico, "abierto" se define como cualquier incidente con una fecha de "Cerrado en" vacía. El estado del incidente no se utiliza para este gráfico.&lt;br&gt;&lt;br&gt;El&lt;b&gt; recuento de incidentes por estado &lt;/b&gt;muestra el número de incidentes abiertos en el sistema para el producto actual en un rango de fechas en particular categorizado por estado de incidente, para todos los tipos de incidentes o para un tipo de incidente específico. En este gráfico, "abierto" se define como cualquier incidente con una fecha de "Cerrado en" vacía. El estado del incidente no se utiliza para este gráfico.</value>
+  </data>
+	<data name="InAppHelp_Chart_DateRangeTestRun" xml:space="preserve">
+    <value>El &lt;b&gt;gráfico de tasa de progreso de ejecuciones de prueba &lt;/b&gt; muestra cuántas pruebas se han ejecutado durante un período de tiempo y qué estado de ejecución se registró. Se puede mostrar el reporte  para un intervalo de fechas específico y para todo el producto o para un release/sprint específico.
+&lt;br&gt;&lt;br&gt;
+El &lt;b&gt;gráfico de tasa de progreso de casos de prueba&lt;/b&gt; muestra el número de ejecuciones de casos de prueba para el intervalo de fechas especificado. Eso significa que se mostrará para cada día el número total de casos de prueba ejecutados, ignorando el estado de los días anteriores. Cualquier caso de prueba que no se haya ejecutado ese día se considerará "no ejecutado" y aparecerá en la misma categoría.
+&lt;br&gt;&lt;br&gt;
+El &lt;b&gt;gráfico de progreso de casos de prueba acumulativo &lt;/b&gt; muestra el número de ejecuciones de casos de prueba acumulativamente en el intervalo de fechas especificado. Eso significa que se mostrará para cada día el número total de casos de prueba ejecutados más el estado de los días anteriores que no se han cambiado. Cualquier caso de prueba que no se haya ejecutado hasta ese momento se considerará "no ejecutado" y aparecerá en la misma categoría.</value>
+  </data>
+	<data name="InAppHelp_Chart_SnapshotIncident" xml:space="preserve">
+    <value>El &lt;b&gt; gráfico de duración de incidentes&lt;/b&gt; muestra el número de días que los incidentes se han dejado abiertos en el sistema. El gráfico está organizado como un histograma apilado, con el recuento de incidentes en el eje 'y' y diferentes intervalos de duración en el eje 'x'. Cada color del gráfico de barras representa una prioridad de incidentes diferente, lo que le da a un gerente de producto una vista instantánea de la duración de incidentes de productos abiertos por prioridad.
+&lt;br&gt;&lt;br&gt;
+El &lt;b&gt; gráfico de tiempos de respuesta a incidentes &lt;/b&gt; muestra el número de días que los incidentes han tardado en cerrarse (desde el momento en que se generaron) en el sistema. El gráfico se organiza como un histograma apilado, con el recuento de incidentes en el eje 'y' y diferentes intervalos de tiempo de respuesta en el eje 'x'. Cada color del gráfico de barras representa una prioridad de incidentes diferente, que le da a un gerente de producto una vista instantánea del tiempo de respuesta de los incidentes de productos por prioridad.</value>
+  </data>
+	<data name="InAppHelp_Chart_SnapshotRequirement" xml:space="preserve">
+    <value>El &lt;b&gt;gráfico de cobertura de requisitos&lt;/b&gt; muestra cuántos requisitos hay actualmente en un producto, de acuerdo con el estado de su cobertura de pruebas.
+&lt;br&gt;&lt;br&gt;
+El&lt;b&gt; gráfico Burndown de requisitos &lt;/b&gt;muestra el número restante de puntos que deben completarse para cada release/sprint en el producto con líneas separadas para el burndown estimado e ideal. Además, el gráfico incluye barras para el número completado de puntos en cada período de tiempo en el eje 'x'.
+&lt;br&gt;&lt;br&gt;
+El &lt;b&gt; gráfico Burnup de requisitos&lt;/b&gt; muestra el número acumulado de puntos pendientes para cada release/sprint en el producto con líneas separadas para el burnup estimado e ideal. Además, el gráfico incluye barras para el número de puntos completados en cada período de tiempo en el eje 'x'.
+&lt;br&gt;&lt;br&gt;
+El &lt;b&gt;gráfico de velocidad de requisitos&lt;/b&gt; muestra el número total de puntos que se han completado (o se planea que se completen) en un release, sprint o período de tiempo en particular (llamada velocidad). La velocidad real se muestra junto con la velocidad media general (en azul) y la velocidad media móvil (en verde).
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;&lt;/b&gt;</value>
+  </data>
+	<data name="InAppHelp_Chart_SnapshotTask" xml:space="preserve">
+    <value>El &lt;b&gt;gráfico de Velocidad de Tareas&lt;/b&gt; muestra el esfuerzo total estimado y real (en número de horas) entregado en cada release  y/o sprint del producto.
+&lt;br&gt;&lt;br&gt;
+El&lt;b&gt; gráfico Burnup de Tareas &lt;/b&gt;muestra la cantidad acumulada de trabajo por cada release/sprint en el producto, con líneas separadas para el burnup estimado e ideal. Además, el gráfico incluye barras para el esfuerzo restante y completado en cada período de tiempo en el eje 'x'.
+&lt;br&gt;&lt;br&gt;
+El &lt;b&gt;gráfico Burndown de Tareas&lt;/b&gt; muestra el trabajo restante (en horas) que debe realizarse para cada release/sprint en el producto con líneas separadas para el burndown estimado e ideal. Además, el gráfico incluye barras para el esfuerzo restante y completado en cada período de tiempo en el eje 'x'.</value>
+  </data>
+	<data name="InAppHelp_Chart_SummaryIncident" xml:space="preserve">
+    <value>El gráfico de resumen de incidentes muestra cuántos incidentes hay actualmente en un producto. El número de incidentes se muestra según los criterios que especifique.</value>
+  </data>
+	<data name="InAppHelp_Chart_SummaryRequirement" xml:space="preserve">
+    <value>El gráfico de resumen de requisitos muestra cuántos requisitos hay actualmente en un producto. El número de requisitos se muestra de acuerdo con los criterios que especifique.</value>
+  </data>
+	<data name="InAppHelp_Chart_SummaryTask" xml:space="preserve">
+    <value>El gráfico de resumen de tareas muestra cuántas tareas hay actualmente en un producto. El número de tareas se muestra de acuerdo con los criterios que especifique.</value>
+  </data>
+	<data name="InAppHelp_Chart_SummaryTestCase" xml:space="preserve">
+    <value>El gráfico de resumen de casos de prueba muestra cuántos casos de prueba hay actualmente en un producto. El número de casos de prueba se muestra de acuerdo con los criterios que especifique.</value>
+  </data>
+	<data name="InAppHelp_Chart_SummaryTestRun" xml:space="preserve">
+    <value>El gráfico de resumen de ejecuciones de prueba muestra cuántas ejecuciones de prueba hay actualmente en un producto. El número de ejecuciones de prueba se muestra de acuerdo con los criterios que especifique.</value>
+  </data>
+	<data name="InAppHelp_Chart_SummaryTestSet" xml:space="preserve">
+    <value>El gráfico de resumen de conjuntos de pruebas muestra cuántos conjuntos de pruebas hay actualmente en un producto. El número de conjuntos de prueba se muestra de acuerdo con los criterios que especifique.</value>
+  </data>
+	<data name="JqPlot_ImageExportNotSupport" xml:space="preserve">
+    <value>Tu navegador web no admite la exportación de imágenes!</value>
+  </data>
+	<data name="AssociationPanel_NoUnassociatedResults" xml:space="preserve">
+    <value>No se encontraron coincidencias disponibles</value>
+  </data>
+	<data name="DocumentDetails_DeleteVersionConfirm" xml:space="preserve">
+    <value>Está seguro de que desea eliminar esta versión del documento?</value>
+  </data>
+	<data name="FileUpload_AttachmentEmpty" xml:space="preserve">
+    <value>No puedes subir un archivo adjunto vacío!</value>
+  </data>
+	<data name="FileUpload_AttachmentTooLarge" xml:space="preserve">
+    <value>No puede cargar un archivo adjunto más grande que {0}KB!</value>
+  </data>
+	<data name="FileUpload_VersionNumberRequired" xml:space="preserve">
+    <value>Necesitas proporcionar un número de versión!</value>
+  </data>
+	<data name="FileUpload_VersionNumberTooLong" xml:space="preserve">
+    <value>El número de versión es demasiado largo!</value>
+  </data>
+	<data name="Graphs_NeedToHaveASingleDataSeries" xml:space="preserve">
+    <value>Este tipo de gráfico solo admite una única serie de datos!</value>
+  </data>
+	<data name="TestCaseExecution_ActualResult" xml:space="preserve">
+    <value>Resultado Real</value>
+  </data>
+	<data name="RequirementDetails_SplitRequirementEstimateNotNumeric" xml:space="preserve">
+    <value>El valor estimado debe ser numérico!</value>
+  </data>
+	<data name="RequirementDetails_SplitRequirementNameRequired" xml:space="preserve">
+    <value>Debe ingresar un nombre para el nuevo requisito!</value>
+  </data>
+	<data name="AjaxFormManager_NotAuthorizedToCreate" xml:space="preserve">
+    <value>No estás autorizado para crear este artículo!</value>
+  </data>
+	<data name="Global_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+	<data name="Global_ChooseWorkspace" xml:space="preserve">
+    <value>--- Elige Espacio de Trabajo ---</value>
+  </data>
+	<data name="AjaxFormManager_Logout" xml:space="preserve">
+    <value>Cerrar Sesión</value>
+  </data>
+	<data name="GlobalNavigation_KeyboardShortcuts" xml:space="preserve">
+    <value>Atajos de Teclado</value>
+  </data>
+	<data name="GlobalNavigation_ShowOnboardingTours" xml:space="preserve">
+    <value>Mostrar Tutoriales</value>
+  </data>
+	<data name="Global_Administration" xml:space="preserve">
+    <value>Administración</value>
+  </data>
+	<data name="Global_Help" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+	<data name="GlobalNavigation_SearchTooltip" xml:space="preserve">
+    <value>Puede buscar por palabras clave o ingresando un token único de artefacto (p. Ej., IN45 para el incidente 45)</value>
+  </data>
+	<data name="NavigationBar_RecentSearches" xml:space="preserve">
+    <value>Búsquedas Recientes</value>
+  </data>
+	<data name="Global_Artifacts" xml:space="preserve">
+    <value>Artefactos</value>
+  </data>
+	<data name="NavigationBar_NoWorkspaceMembership" xml:space="preserve">
+    <value>No se encontró ninguna afiliación en el espacio de trabajo</value>
+  </data>
+	<data name="GlobalNavigation_TooltipArtifacts" xml:space="preserve">
+    <value>Los artefactos son los componentes básicos de un producto o programa y contienen todos sus datos. Cada artefacto contiene datos diferentes y se utiliza de diferentes maneras. Por ejemplo, los requisitos son un artefacto y los releases son otro. Funcionan de manera diferente, y no son intercambiables. Hay artefactos para ayudarlo a probar, rastrear errores y tareas, planear y más.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipAutomationHost" xml:space="preserve">
+    <value>Los Hosts de Automatización son todos los sistemas diferentes (es decir, máquinas de prueba) que se utilizan para ejecutar pruebas automatizadas en el producto.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipTestConfigurationSet" xml:space="preserve">
+    <value>Una configuración es una matriz de parámetros con la que se puede ejecutar pruebas (tanto manuales como automatizadas). Las configuraciones le permiten crear rápidamente cada combinación posible a partir de múltiples parámetros diferentes.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipDocument" xml:space="preserve">
+    <value>Aquí se pueden ver todos los archivos adjuntos, documentos, imágenes (incluidas las capturas de pantalla) y otros archivos conectados al producto, con el control de versiones incorporado.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipIncident" xml:space="preserve">
+    <value>Todos los incidentes en el producto, incluidos bugs, mejoras, riesgos o cualquier otro tipo según lo especifique el propietario del producto.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipMyPage" xml:space="preserve">
+    <value>Su página de inicio contiene toda la información relevante para usted, consolidada en una sola página para que pueda actuar de inmediato.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipPlanningBoard" xml:space="preserve">
+    <value>Visualice y administre los elementos de backlog para su producto. Esta herramienta de planificación se basa en las metodologías Scrum y Kanban.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipRelease" xml:space="preserve">
+    <value>Colección jerárquica de releases de un producto (incluidos sprints y epics)</value>
+  </data>
+	<data name="GlobalNavigation_TooltipReporting" xml:space="preserve">
+    <value>Genere una amplia variedad de gráficos e reportes para el espacio de trabajo actual, incluidos los reportes generados por los usuarios. Los reportes pueden ser filtrados, ordenados y exportados.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipRequirement" xml:space="preserve">
+    <value>Colección jerárquica de requisitos de cualquier tipo, incluidas historias de usuario, casos de uso y características</value>
+  </data>
+	<data name="GlobalNavigation_TooltipResource" xml:space="preserve">
+    <value>Use la Administración de recursos para ver cada miembro activo de un producto, junto con la carga de trabajo total (tanto completada como planeada).</value>
+  </data>
+	<data name="GlobalNavigation_TooltipSourceCode" xml:space="preserve">
+    <value>Vea todo el código fuente conectado a la aplicación, incluyendo commits específicas, revisiones de archivos y branches.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipTask" xml:space="preserve">
+    <value>Las tareas ayudan a desglosar grandes áreas de trabajo, como Requisitos o Incidentes, para que diferentes personas puedan hacer partes discretas. Las tareas también pueden ser actividades independientes.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipTestCase" xml:space="preserve">
+    <value>Casos de prueba son la unidad clave de prueba en la aplicación. Cada caso de prueba se compone de pasos de prueba. El estado de ejecución de un caso de prueba (p. Ej., 'Aprobado' o 'Reprobado') se puede rastrear en todo el sistema hasta las versiones y requisitos.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipTestRun" xml:space="preserve">
+    <value>Cada vez que se ejecuta un caso de prueba, se crea una ejecución de prueba. Cada ejecución en un producto se recopila como Ejecuciones de prueba que actúan como registros para toda la actividad de prueba.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipTestSet" xml:space="preserve">
+    <value>Los Conjuntos de Pruebas contienen los Casos de Prueba. Un conjunto de pruebas actúa como un almacén para datos de prueba dinámicos y para establecer un orden específico de ejecución de los casos de prueba. Los conjuntos de prueba no son carpetas: un caso de prueba puede vivir en muchos conjuntos de prueba e tambíen estar en un conjunto de prueba varias veces.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipWorkspace" xml:space="preserve">
+    <value>Para comenzar a utilizar los recursos de la aplicación, debe seleccionar un espacio de trabajo para explorar, administrar o trabajar. Los espacios de trabajo pueden ser productos (por ejemplo, para una aplicación específica) o programas (que agrupan varios productos juntos).</value>
+  </data>
+	<data name="GlobalNavigation_TooltipWorkspaceHome" xml:space="preserve">
+    <value>Una "ventanilla única" para comprender el estado general del espacio de trabajo actual, con información completa, fácilmente digerible (y personalizable). Acceda a él haciendo clic en el icono de espacio de trabajo grande en la barra de navegación</value>
+  </data>
+	<data name="Global_Documentation" xml:space="preserve">
+    <value>Documentación</value>
+  </data>
+	<data name="Global_SystemAdministration" xml:space="preserve">
+    <value>Administracion del Sistema</value>
+  </data>
+	<data name="Global_Templates" xml:space="preserve">
+    <value>Plantillas</value>
+  </data>
+	<data name="Global_RiskName" xml:space="preserve">
+    <value>Nombre del Riesgo</value>
+  </data>
+	<data name="Onboarding_WelcomeToProduct" xml:space="preserve">
+    <value>Introducción a {0}</value>
+  </data>
+	<data name="GlobalNavigation_TooltipAdministration" xml:space="preserve">
+    <value>Los poderosos controles de administración permiten que aquellos con acceso suficiente realicen cambios en los espacios de trabajo relevantes, así como a la administración de usuarios, notificaciones, ajustes del sistema y seguridad, sincronizaciones de datos con servicios externos y más.</value>
+  </data>
+	<data name="GlobalNavigation_TooltipUserProfile" xml:space="preserve">
+    <value>Administre su perfil de usuario y la configuración (incluidas las contraseñas y la localización). En este menú también puede acceder a los enlaces a la documentación sobre la página en la que se encuentra, consultar mini tutoriales o atajos de teclado, o cerrar sesión en la aplicación.</value>
+  </data>
+	<data name="Global_Finish" xml:space="preserve">
+    <value>Terminar</value>
+  </data>
+	<data name="Global_MyPage" xml:space="preserve">
+    <value>Mi Página</value>
+  </data>
+	<data name="Global_UserProfile" xml:space="preserve">
+    <value>Perfil del Usuario</value>
+  </data>
+	<data name="Global_Workspaces" xml:space="preserve">
+    <value>Espacios de Trabajo</value>
+  </data>
+	<data name="Global_WorkspacesDashboard" xml:space="preserve">
+    <value>Cuadros de Indicadores del Espacio de Trabajo</value>
+  </data>
+	<data name="Onboarding_AppIntro_Title" xml:space="preserve">
+    <value>Conozca {0}</value>
+  </data>
+	<data name="Onboarding_SelectATour" xml:space="preserve">
+    <value>Por favor, elija una opción a continuación para ver ese tutorial</value>
+  </data>
+	<data name="Onboarding_UpdateIntro_Message" xml:space="preserve">
+    <value>Descubra las novedades de la última actualización.</value>
+  </data>
+	<data name="Onboarding_ReadMore" xml:space="preserve">
+    <value>Leer más</value>
+  </data>
+	<data name="Onboarding_ShowAllTours" xml:space="preserve">
+    <value>Mostrar todos los tutoriales</value>
+  </data>
+	<data name="GlobalNavigation_TooltipRisk" xml:space="preserve">
+    <value>Use riesgos para implementar una solución completa de administración de riesgos para sus productos. Cada riesgo puede tener una probabilidad y un impacto para ayudarlo a analizar cada exposición de riesgos. Agregue mitigaciones de riesgo para rastrear cómo está tratando el riesgo.</value>
+  </data>
+	<data name="ArtifactType_Risk" xml:space="preserve">
+    <value>Riesgo</value>
+  </data>
+	<data name="ArtifactType_RiskMitigation" xml:space="preserve">
+    <value>Mitigación</value>
+  </data>
+	<data name="Onboarding_TourAims_AppIntro" xml:space="preserve"><value>Este tutorial lo ayudará a navegar por la aplicación. Vamos a ver cada parte de la barra de navegación - esa sección oscura en la parte superior de cada página. Cada parte le ayuda a moverse entre las diferentes áreas de la aplicación. Si pasa el cursor sobre cualquiera de estas partes, aparecerá más información.</value></data><data name="Onboarding_TourAims_Title" xml:space="preserve"><value>Comienza Aquí</value></data><data name="Risk_EnterNewRiskName" xml:space="preserve"><value>Ingrese un nuevo nombre de riesgo</value></data><data name="ArtifactType_PlanningBoard" xml:space="preserve"><value>Tabla de Planificación</value></data><data name="ArtifactType_SourceCode" xml:space="preserve"><value>Código Fuente</value></data><data name="ArtifactType_TestConfigurationSet" xml:space="preserve"><value>Configuración</value></data><data name="Artifact_EnterNewName" xml:space="preserve"><value>Ingrese un nuevo nombre</value></data><data name="GlobalNavigation_ColorScheme_Auto" xml:space="preserve"><value>Modo Automático</value></data><data name="GlobalNavigation_ColorScheme_Dark" xml:space="preserve"><value>Modo Obscuro</value></data><data name="GlobalNavigation_ColorScheme_Light" xml:space="preserve"><value>Modo Claro</value></data><data name="GlobalNavigation_ColorScheme_AutoTitle" xml:space="preserve"><value>El modo de color es manejado por su sistema operativo. Haga clic para cambiar al Modo Oscuro</value></data><data name="GlobalNavigation_ColorScheme_DarkTitle" xml:space="preserve"><value>Un aspecto moderno que es más agradable a la vista. Haga clic para cambiar al Modo Claro (normal)</value></data><data name="GlobalNavigation_ColorScheme_LightTitle" xml:space="preserve"><value>Texto oscuro clásico de siempre sobre fondos claros. Haga clic para cambiar al Modo Automático</value></data><data name="Administration_Project_RemapTemplateDialogText" xml:space="preserve"><value>Actualmente cambiando la plantilla del producto ...</value></data><data name="Administration_Project_RemapTemplateTitle" xml:space="preserve"><value>Cambiar Plantilla de Producto</value></data><data name="Administration_Project_NeedToSelectTemplate" xml:space="preserve"><value>Debe seleccionar una plantilla de la lista!</value></data><data name="MoreArtifactsThanCanDisplay" xml:space="preserve"><value>Lo sentimos, hay más artefactos en total que esta vista puede mostrar.</value></data><data name="Admin_TemplateChange_FieldMappingLoss" xml:space="preserve"><value>Pérdida de Datos Estimada</value></data><data name="Global_Artifact" xml:space="preserve"><value>Artefacto</value></data><data name="Global_FieldName" xml:space="preserve"><value>Nombre del Campo</value></data><data name="FileArtifactUploadDialog_FilenameRequired" xml:space="preserve"><value>Debe seleccionar o arrastrar un archivo antes de intentar cargar!</value></data><data name="Global_ChooseFilterToUpdate" xml:space="preserve"><value>Elija el filtro existente para actualizar:</value></data><data name="Global_IncludeColumns" xml:space="preserve"><value>Guarde la selección de columna con el filtro.</value></data><data name="Global_SaveNew" xml:space="preserve"><value>Guardar Nuevo</value></data><data name="Global_UpdateExisting" xml:space="preserve"><value>Actualizar Existente</value></data><data name="Global_UpdateExistingOrSaveNew" xml:space="preserve"><value>Desea actualizar un filtro guardado existente o guardar uno nuevo?</value></data><data name="Global_Portfolio" xml:space="preserve"><value>Portafolio</value></data><data name="Global_Portfolios" xml:space="preserve"><value>Portafolios</value></data><data name="Global_Programs" xml:space="preserve"><value>Programas</value></data><data name="Global_Projects" xml:space="preserve"><value>Productos</value></data><data name="Global_Releases" xml:space="preserve"><value>Releases</value></data><data name="Global_Enterprise" xml:space="preserve"><value>Empresa</value></data><data name="Global_Sprints" xml:space="preserve"><value>Iteraciones</value></data><data name="GlobalNavigation_DefaultPortfolio" xml:space="preserve"><value>(Sin Portafolio)</value></data><data name="Dashboards_ProgressLegend_FullyDone" xml:space="preserve"><value>Totalmente Completo</value></data><data name="Dashboards_ProgressLegend_Late" xml:space="preserve"><value>Retrasado / Fuera de la Pista</value></data><data name="Dashboards_ProgressLegend_MostlyDone" xml:space="preserve"><value>Cerca de Listo</value></data><data name="Dashboards_ProgressLegend_Started" xml:space="preserve"><value>Empezado</value></data><data name="Dashboards_Legend_Title" xml:space="preserve"><value>Leyenda</value></data><data name="GlobalNavigation_TooltipEnterprise" xml:space="preserve"><value>La página de la empresa ofrece una vista panorámica de todo en su organización. Aquí puede ver todos los portafolios de su organización.</value></data><data name="InAppHelp_Chart_PortfolioRelativeSize" xml:space="preserve"><value>Este gráfico muestra el número de requisitos activos en cada portafolio activo. Al pasar el cursor sobre un segmento, se mostrará su porcentaje de todos los requisitos (esto se representa visualmente por el tamaño de la rosquilla). Tenga en cuenta que no se muestran portafolios sin requisitos activos.</value></data><data name="InAppHelp_Chart_ProductRelativeSize" xml:space="preserve"><value>Este gráfico muestra el número de requisitos activos en cada producto activo. Al pasar el cursor sobre un segmento, se mostrará su porcentaje de todos los requisitos (esto se representa visualmente por el tamaño de la rosquilla). Tenga en cuenta que no se muestran productos sin requisitos activos.</value></data><data name="InAppHelp_Chart_ProgramRelativeSize" xml:space="preserve"><value>Este gráfico muestra el número de requisitos activos en cada programa activo. Al pasar el cursor sobre un segmento, se mostrará su porcentaje de todos los requisitos (esto se representa visualmente por el tamaño de la rosquilla). Tenga en cuenta que no se muestran programas sin requisitos activos.</value></data><data name="InAppHelp_Chart_ReleaseRelativeSize" xml:space="preserve"><value>Este gráfico muestra el número de requisitos activos en cada release activa. Al pasar el cursor sobre un segmento, se mostrará su porcentaje de todos los requisitos (esto se representa visualmente por el tamaño de la rosquilla). Tenga en cuenta que las releases sin requisitos activos no se muestran.</value></data><data name="InAppHelp_Chart_EnterpriseOverallCompletion" xml:space="preserve"><value>Este gráfico muestra la proporción de todos los requisitos activos que se han completado en todos los portafolios activos en su empresa. Cuando se completa el 100% de los requisitos, el color cambia para que sea fácil saber lo que está en progreso frente a lo completado.</value></data><data name="InAppHelp_Chart_PortfolioOverallCompletion" xml:space="preserve"><value>Este gráfico muestra la proporción de todos los requisitos activos que se han completado en todos los programas activos de este portafolio. Cuando se completa el 100% de los requisitos, el color cambia para que sea fácil saber lo que está en progreso frente a lo completado.</value></data><data name="InAppHelp_Chart_ProductOverallCompletion" xml:space="preserve"><value>Este gráfico muestra la proporción de todos los requisitos activos que se han completado en todas las releases activas de este producto. Cuando se completa el 100% de los requisitos, el color cambia para que sea fácil saber lo que está en progreso frente a lo completado.</value></data><data name="InAppHelp_Chart_ProgramOverallCompletion" xml:space="preserve"><value>Este gráfico muestra la proporción de todos los requisitos activos que se han completado en todos los productos activos en este programa. Cuando se completa el 100% de los requisitos, el color cambia para que sea fácil saber lo que está en progreso frente a lo completado.</value></data><data name="Dashboards_Legend_AheadOfSchedule" xml:space="preserve"><value>Antes de lo previsto</value></data><data name="Dashboards_Legend_BehindSchedule" xml:space="preserve"><value>Después de lo previsto</value></data><data name="Dashboards_Legend_Completed" xml:space="preserve"><value>Completo</value></data><data name="Dashboards_Legend_InProgress" xml:space="preserve"><value>En progreso</value></data><data name="Dashboards_Legend_Late" xml:space="preserve"><value>Con Retraso</value></data><data name="Dashboards_Legend_OnSchedule" xml:space="preserve"><value>En la Fecha Prevista</value></data><data name="Dashboards_Legend_NotStarted" xml:space="preserve"><value>Todavía no Empezado</value></data><data name="Dashboard_Completion_RequirementsTitle" xml:space="preserve"><value>Requisitos Completos</value></data><data name="Dashboard_Completion_ScheduleTitle" xml:space="preserve"><value>Progreso del Calendario (desde el comienzo hasta hoy)</value></data><data name="Dashboard_Completion_ShowAsNumbers" xml:space="preserve"><value>Como Números</value></data><data name="Dashboard_Completion_ShowAsPercent" xml:space="preserve"><value>Como Porcentajes</value></data><data name="InAppHelp_Chart_EnterpriseSchedule" xml:space="preserve"><value>Este diagrama de Gantt muestra todos los portafolios activos, programas, productos, releases y iteraciones en la empresa. Cada barra abarca desde la fecha de inicio del artículo hasta la fecha de finalización. La parte sombreada más oscura de cada barra le indica qué tan completos son sus requisitos.</value></data><data name="InAppHelp_Chart_EnterpriseWorkspaceCompletion" xml:space="preserve"><value>Este gráfico muestra el progreso de cada portafolio en la empresa. El gráfico de la izquierda muestra el progreso desde la fecha de inicio hasta el final del portafolio. El color de la barra indica qué tan encaminado está el cronograma contra el cumplimiento del requisito. El gráfico de la derecha muestra la proporción de requisitos en los espacios de trabajo activos en el del portafolio que se han completado.</value></data><data name="InAppHelp_Chart_PortfolioSchedule" xml:space="preserve"><value>Este diagrama de Gantt muestra todos los programas activos, productos, releases y iteraciones en este portafolio. Cada barra abarca desde la fecha de inicio del artículo hasta la fecha de finalización. La parte sombreada más oscura de cada barra le indica qué tan completos son sus requisitos.</value></data><data name="InAppHelp_Chart_PortfolioWorkspaceCompletion" xml:space="preserve"><value>Este gráfico muestra el progreso de cada programa en este portafolio. El cuadro de la izquierda muestra el progreso desde la fecha de inicio hasta el final del programa. El color de la barra indica qué tan encaminado está el cronograma contra el cumplimiento de los requisitos. El cuadro de la derecha muestra la proporción de requisitos en los espacios de trabajo activos en el programa que se han completado.</value></data><data name="InAppHelp_Chart_ProductSchedule" xml:space="preserve"><value>Este diagrama de Gantt muestra todas las releases activas y iteraciones en este producto. Cada barra abarca desde la fecha de inicio del artículo hasta la fecha de finalización. La parte sombreada más oscura de cada barra le indica qué tan completos son sus requisitos.</value></data><data name="InAppHelp_Chart_ProductWorkspaceCompletion" xml:space="preserve"><value>Este gráfico muestra el progreso de cada release activa con los requisitos adjuntos en este producto. El gráfico de la izquierda muestra el progreso desde la fecha de inicio hasta el final del release. El color de la barra indica qué tan encaminado está el cronograma contra el cumplimiento de los requisitos. El cuadro de la derecha muestra la proporción de requisitos en la release que se han completado.</value></data><data name="InAppHelp_Chart_ProgramSchedule" xml:space="preserve"><value>Este diagrama de Gantt muestra todos los productos activos, releases y iteraciones en este programa. Cada barra abarca desde la fecha de inicio del artículo hasta la fecha de finalización. La parte sombreada más oscura de cada barra le indica qué tan completos son sus requisitos.</value></data><data name="InAppHelp_Chart_ProgramWorkspaceCompletion" xml:space="preserve"><value>Este gráfico muestra el progreso de cada producto en este programa. El cuadro de la izquierda muestra el progreso desde la fecha de inicio hasta el final del producto. El color de la barra indica qué tan encaminado está el cronograma contra el cumplimiento de los requisitos. El cuadro de la derecha muestra la proporción de requisitos entre las releases activas del producto que se han completado.</value></data><data name="LoginOAuth_NotAdmin" xml:space="preserve"><value>El usuario "administrador" no puede conectarse a Oauth</value></data><data name="Admin_UserDetailsEdit_LdapDnRequired" xml:space="preserve"><value>Debe ingresar un valor para el nuevo LDAP DN!</value></data><data name="ListPage_ExportToReport_MaxLengthExceeded" xml:space="preserve"><value>Ha seleccionado demasiados artefactos para exportar. Seleccione menos de {0} e intente nuevamente.</value></data><data name="TestRun_ChooseTestToRun" xml:space="preserve"><value>Prueba para Ejecutar</value></data><data name="TestRun_ExecuteNewTest" xml:space="preserve"><value>Iniciar nueva ejecución de prueba</value></data><data name="TestRun_ExistingPendingForUseAndTestId" xml:space="preserve"><value>Tienes pruebas pendientes para la prueba elegida</value></data><data name="TestRun_ExistingPendingForUseAndTestId_info" xml:space="preserve"><value>Puede: ejecutar un caso de prueba desde el principio (iniciar una nueva ejecución de prueba); o elija una ejecución de prueba pendiente reciente. Para ver todas sus ejecuciones de prueba pendientes, vaya a Mi Página.</value></data><data name="Global_NoDataToDisplay" xml:space="preserve"><value>Lo sentimos, no hay datos para mostrar</value></data><data name="Dashboards_Legend_AheadOfSchedule_Tooltip" xml:space="preserve"><value>El porcentaje de requisitos completados es mayor que el porcentaje del cronograma que ha transcurrido</value></data><data name="Dashboards_Legend_BehindSchedule_Tooltip" xml:space="preserve"><value>El porcentaje de requisitos completados es menor que el porcentaje del cronograma que ha transcurrido</value></data><data name="Dashboards_Legend_Completed_Tooltip" xml:space="preserve"><value>Todos los requisitos incluidos en la(s) release(s) en este espacio de trabajo están completos</value></data><data name="Dashboards_Legend_Late_Tooltip" xml:space="preserve"><value>El espacio de trabajo o cualquiera de sus elementos secundarios (si corresponde) se está retrasando. Para que un espacio de trabajo se retrase, sus requisitos aún no están completos, pero su fecha de finalización ya ha pasado</value></data><data name="Dashboards_Legend_OnSchedule_Tooltip" xml:space="preserve"><value>El porcentaje de requisitos completados es, en general, el mismo que el porcentaje del cronograma que ha transcurrido.</value></data><data name="SystemInfo_DeleteSampleDataConfirm" xml:space="preserve"><value>Realmente desea eliminar todos los datos de muestra? Esto intentará eliminar todos los productos de muestra, programas (excepto el predeterminado), portafolios y usuarios. Tenga en cuenta que el administrador raíz (con el nombre de usuario "adminstrador" y una ID de "1") no se eliminarán.</value></data><data name="SystemInfo_DeleteSampleData" xml:space="preserve"><value>Eliminar Datos de Muestra</value></data><data name="InAppHelp_Chart_Program_ProjectTestSummary" xml:space="preserve"><value>Esta tabla muestra cada producto en el programa, junto con el número de casos de prueba, pruebas ejecutadas (ejecuciones) y la proporción de pruebas que han aprobado, reprobado, bloqueado, precaución o no ejecutado. Además, para cada producto también muestra el número de incidentes abiertos y la distribución prioritaria de los mismos.</value></data><data name="Global_NameRequired" xml:space="preserve"><value>Ingresa un Nombre</value></data><data name="TestCaseExecution_ActualResultNeeded" xml:space="preserve"><value>Debe ingresar el resultado real para registrar este paso de prueba! Ingrese el resultado, luego haga clic en el botón de abajo para confirmar.</value></data><data name="TestCaseExecution_ActualResultNeededPassAll" xml:space="preserve"><value>Debe ingresar un Resultado Real para CADA paso de prueba antes de que pueda aprobar todo. Revise todos los pasos, agregue los resultados reales que faltan y luego intente aprobar todo nuevamente.</value></data><data name="TestCaseExecution_IncidentEntryInvalid" xml:space="preserve"><value>Por favor, complete todos los campos obligatorios (incluido el Nombre) para agregar este incidente</value></data><data name="PlanningBoard_CollapseAll" xml:space="preserve"><value>Contraer todo</value></data><data name="PlanningBoard_ExpandAll" xml:space="preserve"><value>Expandir todo</value></data><data name="PlanningBoard_WIP" xml:space="preserve"><value>WIP</value></data><data name="PlanningGrid_Available_HoursTooltip" xml:space="preserve"><value>El valor de horas disponibles es el mismo que el valor del esfuerzo planificado para esta release</value></data><data name="PlanningGrid_Available_PointsTooltip" xml:space="preserve"><value>Los puntos disponibles son los mismos que los puntos planificados para esta release</value></data><data name="PlanningGrid_Remaining_HoursTooltip" xml:space="preserve"><value>Las horas restantes se calculan como las disponibles menos las horas utilizadas</value></data><data name="PlanningGrid_Remaining_PointsTooltip" xml:space="preserve"><value>Los puntos restantes se calculan como los disponibles menos los puntos utilizados</value></data><data name="PlanningGrid_Utilized_HoursTooltip" xml:space="preserve"><value>Las horas utilizadas son las mismas que el valor del esfuerzo proyectado para esta release</value></data><data name="PlanningGrid_Utilized_PointsTooltip" xml:space="preserve"><value>
+
+
+Los puntos utilizados son los mismos que el valor de Puntos Requeridos para esta release</value></data><data name="GlobalNavigation_TooltipRevision" xml:space="preserve"><value>Vea el historial de commits de todo el código fuente del producto y explore los cambios específicos realizados en cada commit.</value></data><data name="ArtifactType_SourceCodeRevision" xml:space="preserve"><value>Commit</value></data><data name="SourceCode_Additions" xml:space="preserve"><value>Adiciones</value></data><data name="SourceCode_Changes" xml:space="preserve"><value>Cambios</value></data><data name="SourceCode_Deletions" xml:space="preserve"><value>Eliminaciones</value></data><data name="SourceCode_Diff_SplitView" xml:space="preserve"><value>Separar</value></data><data name="SourceCode_Diff_UnifiedView" xml:space="preserve"><value>Unificado</value></data><data name="SourceCode_NoDifferenceBetweenRevisions" xml:space="preserve"><value>No hay diferencias para mostrar</value></data><data name="SourceCode_RecentCommits" xml:space="preserve"><value>Commits recientes</value></data><data name="Admin_DataTools_Success" xml:space="preserve"><value>Operación completada con éxito.</value></data><data name="Documents_FilenameRequired" xml:space="preserve"><value>Debe especificar un nombre de archivo para este documento!</value></data><data name="SourceCode_Diff_CollapseTooltip" xml:space="preserve"><value>Contraer la vista para mostrar solo las líneas que han cambiado</value></data><data name="SourceCode_Diff_ExpandTooltip" xml:space="preserve"><value>Expanda la vista para mostrar todas las líneas del archivo.</value></data><data name="ArtifactType_PullRequest" xml:space="preserve"><value>Pull Request</value></data><data name="PullRequests_DefaultName" xml:space="preserve"><value>Incorpore '{0}' con '{1}'</value></data><data name="TestSetDetails_ParamatersNoneToAdd" xml:space="preserve"><value>No hay parámetros que pueda agregar a este conjunto de prueba</value></data><data name="GlobalNavigation_TooltipPullRequest" xml:space="preserve"><value>Administre y vea todas las tareas de pull request actuales. Use pull requests para estructurar sus procesos de revisión de código, de modo que solo el código aprobado se pueda combinar en sus canales de compilación.</value></data><data name="PullRequests_DestBranchNeeded" xml:space="preserve"><value>Debe elegir la rama que se fusionará con!</value></data><data name="PullRequests_DifferentBranchesNeeded" xml:space="preserve"><value>Debe elegir diferentes ramas DESDE y A!</value></data><data name="PullRequests_NameNeeded" xml:space="preserve"><value>Debe proporcionar un nombre de Pull Request!</value></data><data name="PullRequests_SourceBranchNeeded" xml:space="preserve"><value>Debe elegir la rama DE la que se fusionará!</value></data><data name="Global_SelectUserFromList" xml:space="preserve"><value>Debe seleccionar un usuario de la lista!</value></data><data name="FormValidation_FillInRequiredFields" xml:space="preserve"><value>Por favor, rellene todos los campos obligatorios</value></data><data name="AjxFormManager_UnsavedChanges" xml:space="preserve"><value>Tiene cambios sin guardar. Estás seguro de que quieres continuar?</value></data><data name="HierarchicalDocument_EditingTitle" xml:space="preserve"><value>Editando {0} elemento(s), con {1} cambios sin guardar</value></data><data name="HierarchicalDocument_OutlineCode" xml:space="preserve"><value>Números de Temas</value></data><data name="RequirementDocument_NoRequirements" xml:space="preserve"><value>No hay requerimientos para mostrar</value></data><data name="HierarchicalDocument_ErrorsInFieldsNotVisible" xml:space="preserve"><value>Algunos de estos campos no están visibles en esta página. Debe ir a la página de detalles de este artefacto para realizar los cambios necesarios.</value></data><data name="DiagramEditor_ApplyAll" xml:space="preserve"><value>Aplicar todo</value></data><data name="DiagramEditor_Arrange" xml:space="preserve"><value>Organizar</value></data><data name="DiagramEditor_AutoLayout" xml:space="preserve"><value>Diseño Automático</value></data><data name="DiagramEditor_Color" xml:space="preserve"><value>Color</value></data><data name="DiagramEditor_EmptyState" xml:space="preserve"><value>Seleccione una forma o un conector</value></data><data name="DiagramEditor_ExportData" xml:space="preserve"><value>Exportar Datos</value></data><data name="DiagramEditor_Fill" xml:space="preserve"><value>Llenar</value></data><data name="DiagramEditor_GridStep" xml:space="preserve"><value>Tamaño de la cuadrícula</value></data><data name="DiagramEditor_Image" xml:space="preserve"><value>Imagen</value></data><data name="DiagramEditor_ImageUpload" xml:space="preserve"><value>Haga clic para subir</value></data><data name="DiagramEditor_ImportData" xml:space="preserve"><value>Importar Datos</value></data><data name="DiagramEditor_Position" xml:space="preserve"><value>Posición</value></data><data name="DiagramEditor_ResetChanges" xml:space="preserve"><value>Restablecer Cambios</value></data><data name="DiagramEditor_ShapeSections" xml:space="preserve"><value>Formas</value></data><data name="DiagramEditor_Size" xml:space="preserve"><value>Tamaño</value></data><data name="DiagramEditor_Stroke" xml:space="preserve"><value>Pincel</value></data><data name="DiagramEditor_Text" xml:space="preserve"><value>Texto</value></data><data name="DiagramEditor_TextProps" xml:space="preserve"><value>Texto</value></data><data name="DiagramEditor_Title" xml:space="preserve"><value>Título</value></data><data name="Diagram_ExportPDF" xml:space="preserve"><value>Exportar PDF</value></data><data name="Diagram_ExportPNG" xml:space="preserve"><value>Exportar PNG</value></data></root>

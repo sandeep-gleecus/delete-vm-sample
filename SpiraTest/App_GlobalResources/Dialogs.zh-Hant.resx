@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ArtifactUploadDialog_NoJava" xml:space="preserve">
+    <value>沒有 &lt;a href='http://www.java.com'&gt; Java 外掛程式&lt;/a&gt; 安裝在您的瀏覽器中。</value>
+  </data>
+	<data name="ArtifactUploadDialog_PasteImageFromClipboard" xml:space="preserve">
+    <value>從剪貼簿中貼上圖片</value>
+  </data>
+	<data name="DocumentDetails_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+	<data name="DocumentDetails_CreatedBy" xml:space="preserve">
+    <value>建立來源：</value>
+  </data>
+	<data name="DocumentDetails_Description" xml:space="preserve">
+    <value>說明：</value>
+  </data>
+	<data name="DocumentDetails_DocumentID" xml:space="preserve">
+    <value>ID：</value>
+  </data>
+	<data name="DocumentDetails_DocumentType" xml:space="preserve">
+    <value>文件類型：</value>
+  </data>
+	<data name="DocumentDetails_EditedBy" xml:space="preserve">
+    <value>編輯來源：</value>
+  </data>
+	<data name="DocumentDetails_Filename" xml:space="preserve">
+    <value>檔案名稱：</value>
+  </data>
+	<data name="DocumentDetails_FileType" xml:space="preserve">
+    <value>檔案類型：</value>
+  </data>
+	<data name="DocumentDetails_Tags" xml:space="preserve">
+    <value>標籤：</value>
+  </data>
+	<data name="DocumentDetails_Version" xml:space="preserve">
+    <value>版本：</value>
+  </data>
+	<data name="DocumentDetails_ViewDetails" xml:space="preserve">
+    <value>檢視詳細資訊：</value>
+  </data>
+	<data name="TestRunDetails_IncidentList" xml:space="preserve">
+    <value>測試執行步驟的事件清單：</value>
+  </data>
+	<data name="TestSetDetails_AddTestCaseLegend" xml:space="preserve">
+    <value>選擇要新增到目前測試集的測試案例：</value>
+  </data>
+	<data name="TestSetDetails_AddTestCaseTitle" xml:space="preserve">
+    <value>新增測試案例至測試集</value>
+  </data>
+	<data name="TestSetDetails_TestCaseParametersLegend" xml:space="preserve">
+    <value>請填寫測試案例的參數：</value>
+  </data>
+	<data name="TestSetDetails_TestCaseParametersNone" xml:space="preserve">
+    <value>此測試案例不包含任何參數定義。</value>
+  </data>
+	<data name="TestSetDetails_TestCaseParametersTitle" xml:space="preserve">
+    <value>編輯測試案例參數</value>
+  </data>
+	<data name="TestStepDetails_SavedChanges" xml:space="preserve">
+    <value>已成功儲存異動的測試步驟</value>
+  </data>
+	<data name="WebParts_AvailableWidgets" xml:space="preserve">
+    <value>可用的小工具</value>
+  </data>
+	<data name="WebParts_ClosedWidgets" xml:space="preserve">
+    <value>已關閉的小工具</value>
+  </data>
+	<data name="WebParts_EditWidgetSettings" xml:space="preserve">
+    <value>編輯小工具設定</value>
+  </data>
+	<data name="Administration_GeneralSettings_DefaultCultureNoValue" xml:space="preserve">
+    <value>--- 伺服器預設值 ---</value>
+  </data>
+	<data name="UserProfile_UserCultureNoValue" xml:space="preserve">
+    <value>--- 使用應用程式預設值 ---</value>
+  </data>
+	<data name="Global_ChooseProject" xml:space="preserve">
+    <value>--- 選擇專案 ---</value>
+  </data>
+	<data name="Global_AllReleases" xml:space="preserve">
+    <value>--- 所有版本 ---</value>
+  </data>
+	<data name="Global_DropDownAll" xml:space="preserve">
+    <value>-- 所有 --</value>
+  </data>
+	<data name="Global_ShowHideColumns" xml:space="preserve">
+    <value>-- 顯示/隱藏欄 --</value>
+  </data>
+	<data name="Global_ShowLevel" xml:space="preserve">
+    <value>--- 顯示階層 ---</value>
+  </data>
+	<data name="Global_AllLevels" xml:space="preserve">
+    <value>所有階層</value>
+  </data>
+	<data name="Global_ExportToProject" xml:space="preserve">
+    <value>匯出至專案</value>
+  </data>
+	<data name="Global_Hide" xml:space="preserve">
+    <value>隱藏</value>
+  </data>
+	<data name="Global_Level" xml:space="preserve">
+    <value>階層</value>
+  </data>
+	<data name="Global_Show" xml:space="preserve">
+    <value>顯示</value>
+  </data>
+	<data name="RequirementList_ChildRequirement" xml:space="preserve">
+    <value>子需求</value>
+  </data>
+	<data name="RequirementList_NewRequirement" xml:space="preserve">
+    <value>新需求</value>
+  </data>
+	<data name="Requirements_CreateTestCases" xml:space="preserve">
+    <value>建立測試案例</value>
+  </data>
+	<data name="Requirements_CreateTestSet" xml:space="preserve">
+    <value>建立測試集</value>
+  </data>
+	<data name="Releases_CreateTestSet" xml:space="preserve">
+    <value>建立測試集</value>
+  </data>
+	<data name="Releases_NewIteration" xml:space="preserve">
+    <value>新增迭代</value>
+  </data>
+	<data name="Releases_NewRelease" xml:space="preserve">
+    <value>新增版本</value>
+  </data>
+	<data name="Global_Host" xml:space="preserve">
+    <value>主機</value>
+  </data>
+	<data name="Global_NewCustomList" xml:space="preserve">
+    <value>新增自訂清單</value>
+  </data>
+	<data name="Global_NewDocumentType" xml:space="preserve">
+    <value>新增文件類型</value>
+  </data>
+	<data name="Global_NewFolder" xml:space="preserve">
+    <value>新增資料夾</value>
+  </data>
+	<data name="Global_NewHost" xml:space="preserve">
+    <value>新增主機</value>
+  </data>
+	<data name="Global_NewIncident" xml:space="preserve">
+    <value>新增事件</value>
+  </data>
+	<data name="Global_NewIteration" xml:space="preserve">
+    <value>新增迭代</value>
+  </data>
+	<data name="Global_NewRelease" xml:space="preserve">
+    <value>新增版本</value>
+  </data>
+	<data name="Global_NewSubFolder" xml:space="preserve">
+    <value>新增子資料夾</value>
+  </data>
+	<data name="Global_NewTask" xml:space="preserve">
+    <value>新增工作</value>
+  </data>
+	<data name="Global_NewTestCase" xml:space="preserve">
+    <value>新增測試案例</value>
+  </data>
+	<data name="Global_NewTestSet" xml:space="preserve">
+    <value>新增測試集</value>
+  </data>
+	<data name="Global_NewValue" xml:space="preserve">
+    <value>新增值</value>
+  </data>
+	<data name="ReleasesService_NoTestsMapped" xml:space="preserve">
+    <value>無測試對應至此版本/迭代</value>
+  </data>
+	<data name="TestSetList_NewChildTestSet" xml:space="preserve">
+    <value>新增子測試集</value>
+  </data>
+	<data name="TestSetList_NewTestSet" xml:space="preserve">
+    <value>新增測試集</value>
+  </data>
+	<data name="TestCaseList_AddToRelease" xml:space="preserve">
+    <value>加入至版本</value>
+  </data>
+	<data name="TestCaseList_AddToRequirement" xml:space="preserve">
+    <value>加入至需求</value>
+  </data>
+	<data name="TestCaseList_AddToTestSet" xml:space="preserve">
+    <value>加入至測試集</value>
+  </data>
+	<data name="TestCaseList_ExecuteTests" xml:space="preserve">
+    <value>執行測試</value>
+  </data>
+	<data name="TestCaseList_NewChildTestCase" xml:space="preserve">
+    <value>新增子測試集</value>
+  </data>
+	<data name="TestCaseList_NewTestCase" xml:space="preserve">
+    <value>新增測試案例</value>
+  </data>
+	<data name="AutomationHosts_NewHost" xml:space="preserve">
+    <value>新增主機</value>
+  </data>
+	<data name="Global_CollapseAll" xml:space="preserve">
+    <value>全部折疊</value>
+  </data>
+	<data name="Global_ExpandAll" xml:space="preserve">
+    <value>全部展開</value>
+  </data>
+	<data name="Global_NoneDropDown" xml:space="preserve">
+    <value>-- 無 --</value>
+  </data>
+	<data name="Global_PleaseSelectDropDown" xml:space="preserve">
+    <value>--- 請選擇 ---</value>
+  </data>
+	<data name="IncidentList_CopyIncident" xml:space="preserve">
+    <value>複製事件</value>
+  </data>
+	<data name="IncidentList_DeleteIncident" xml:space="preserve">
+    <value>刪除事件</value>
+  </data>
+	<data name="IncidentList_NewIncident" xml:space="preserve">
+    <value>新增事件</value>
+  </data>
+	<data name="IterationPlan_InsertTask" xml:space="preserve">
+    <value>插入任務</value>
+  </data>
+	<data name="TaskList_CopyTask" xml:space="preserve">
+    <value>複製任務</value>
+  </data>
+	<data name="TaskList_DeleteTask" xml:space="preserve">
+    <value>刪除任務</value>
+  </data>
+	<data name="TaskList_NewTask" xml:space="preserve">
+    <value>新增任務</value>
+  </data>
+	<data name="ArtifactLinkPanel_AddAssociation" xml:space="preserve">
+    <value>新增關連</value>
+  </data>
+	<data name="ArtifactLinkPanel_AddNewAssociation" xml:space="preserve">
+    <value>新增新關連</value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseArtifact" xml:space="preserve">
+    <value>請選擇欲新增關聯的項目:</value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseFromList" xml:space="preserve">
+    <value>從清單中選擇:</value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseTypeOfArtifact" xml:space="preserve">
+    <value>請選擇欲新增關聯的項目類型:</value>
+  </data>
+	<data name="ArtifactLinkPanel_CreateRequirementFromIncident" xml:space="preserve">
+    <value>從此事件建立新需求</value>
+  </data>
+	<data name="ArtifactLinkPanel_DeleteAssociation" xml:space="preserve">
+    <value>刪除關聯</value>
+  </data>
+	<data name="ArtifactLinkPanel_EnterArtifactId" xml:space="preserve">
+    <value>輸入項目編號:</value>
+  </data>
+	<data name="ArtifactLinkPanel_IncludeSourceCodeRevisions" xml:space="preserve">
+    <value>包含原始碼版號</value>
+  </data>
+	<data name="AttachmentPanel_AddAttachment" xml:space="preserve">
+    <value>新增附件</value>
+  </data>
+	<data name="FileUploadDialog_AddNewDocument" xml:space="preserve">
+    <value>新增新文件</value>
+  </data>
+	<data name="Incidents_CreateRequirement" xml:space="preserve">
+    <value>轉換成需求</value>
+  </data>
+	<data name="TaskList_InsertTask" xml:space="preserve">
+    <value>插入任務</value>
+  </data>
+	<data name="TestCaseDetails_EditParameters" xml:space="preserve">
+    <value>編輯參數</value>
+  </data>
+	<data name="TestCaseDetails_InsertLink" xml:space="preserve">
+    <value>插入連結</value>
+  </data>
+	<data name="TestCaseDetails_InsertStep" xml:space="preserve">
+    <value>插入步驟</value>
+  </data>
+	<data name="TestCaseDetails_AddLinkedTestCase" xml:space="preserve">
+    <value>新增已連結的測試案例</value>
+  </data>
+	<data name="TestCaseDetails_ChooseTestCaseForLink" xml:space="preserve">
+    <value>選擇欲與測試步驟清單新增連結的測試案例:</value>
+  </data>
+	<data name="TestCaseDetails_EditLinkedTestParameters" xml:space="preserve">
+    <value>編輯連結測試案例的參數</value>
+  </data>
+	<data name="TestCaseDetails_PleaseFillOutParameters" xml:space="preserve">
+    <value>請填入此連結測試案例的參數:</value>
+  </data>
+	<data name="TestSetDetails_AddTests" xml:space="preserve">
+    <value>新增測試</value>
+  </data>
+	<data name="TestSetDetails_EditParameters" xml:space="preserve">
+    <value>編輯參數</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTests" xml:space="preserve">
+    <value>執行測試</value>
+  </data>
+	<data name="TestSetDetails_InsertTests" xml:space="preserve">
+    <value>插入測試</value>
+  </data>
+	<data name="TestSetDetails_RemoveTests" xml:space="preserve">
+    <value>移除測試</value>
+  </data>
+	<data name="TestCaseExecution_NoReleasesDropDown" xml:space="preserve">
+    <value>--- 無此專案的版本 ---</value>
+  </data>
+	<data name="Documents_AddDocument" xml:space="preserve">
+    <value>新增文件</value>
+  </data>
+	<data name="Global_SortedAscending" xml:space="preserve">
+    <value>按升冪排序</value>
+  </data>
+	<data name="Global_SortedDescending" xml:space="preserve">
+    <value>按降冪排序</value>
+  </data>
+	<data name="Global_Filter" xml:space="preserve">
+    <value>篩選:</value>
+  </data>
+	<data name="Global_AllItems" xml:space="preserve">
+    <value>所有項目</value>
+  </data>
+	<data name="Global_ItemsInFolder" xml:space="preserve">
+    <value>目前資料夾內的項目</value>
+  </data>
+	<data name="TestCases_BlockTestCases" xml:space="preserve">
+    <value>阻擋測試案例</value>
+  </data>
+	<data name="TestCases_UnBlockTestCases" xml:space="preserve">
+    <value>取消阻擋測試案例</value>
+  </data>
+	<data name="Timecard_SubmitConfirm" xml:space="preserve">
+    <value>您確定要提交此工時卡？此頁面的所有項目的額外工時與剩餘工時皆會變更。</value>
+  </data>
+	<data name="Timecard_SubmitSuccess" xml:space="preserve">
+    <value>您已成功提交工時卡。</value>
+  </data>
+	<data name="AttachmentPanel_AddExisting" xml:space="preserve">
+    <value>新增已存在的</value>
+  </data>
+	<data name="AttachmentPanel_AddExistingDocument" xml:space="preserve">
+    <value>新增已存在的文件</value>
+  </data>
+	<data name="AttachmentPanel_AddNew" xml:space="preserve">
+    <value>新增</value>
+  </data>
+	<data name="AttachmentPanel_IncludeSourceCodeDocuments" xml:space="preserve">
+    <value>包含原始碼文件</value>
+  </data>
+	<data name="AttachmentPanel_ChooseTypeOfExisting" xml:space="preserve">
+    <value>選擇欲加入的已存在文件位置：</value>
+  </data>
+	<data name="Global_PrintItems" xml:space="preserve">
+    <value>列印項目</value>
+  </data>
+	<data name="Admin_ReportDetails_AddNewQuery" xml:space="preserve"><value>--- 新增查詢 ---</value></data><data name="Admin_ReportDetails_CreateDefaultTemplate" xml:space="preserve"><value>建立預設範本</value></data><data name="Admin_ReportDetails_CustomQueryLegend" xml:space="preserve"><value>你必須輸入SQL命令取得報表資料。你能使用特殊的條件如${ProjectId}和${ProjectGroupId}限制查詢指定的專案或專案群組。警告:若您不需指定特別參數，報表中會取出所有系統中的專案，不論使用者的角色或權限。</value></data><data name="Admin_ReportDetails_CustomTemplateLegend" xml:space="preserve"><value>您必須輸入XSLT範本用以將資料顯示為HTML。當您案下「建立預設範本」選項，系統會自動產生欲設XSLT範本供您編輯。</value></data><data name="Admin_ReportDetails_PreviewResults" xml:space="preserve"><value>預覽結果</value></data><data name="Admin_ReportDetails_StandardTemplateLegend" xml:space="preserve"><value>您必須輸入XSLT範本用以將資料顯示為HTML。當您第一次新增章節，此章節會包含在預設範本，且可被修改。</value></data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve"><value>從版本移除</value></data><data name="Global_UnknownDropDownValue" xml:space="preserve"><value>-- 未知 --</value></data><data name="Global_SelectRole" xml:space="preserve"><value>--- 選擇角色 ---</value></data><data name="Admin_PlanningOptions_SuggestPointMetric" xml:space="preserve"><value>建議點工時</value></data><data name="Global_All" xml:space="preserve"><value>所有</value></data><data name="Global_AllActive" xml:space="preserve"><value>所有使用中的</value></data><data name="Global_AllButDeleted" xml:space="preserve"><value>所有刪除以外的</value></data><data name="Requirements_FocusOn" xml:space="preserve"><value>聚焦</value></data><data name="SidebarPanel_QuickFilters" xml:space="preserve"><value>快速篩選</value></data><data name="Global_AllReleases2" xml:space="preserve"><value>(所有版本)</value></data><data name="TaskDetails_SameAsCurrentTask" xml:space="preserve"><value>-- 與目前任務相同 --</value></data></root>

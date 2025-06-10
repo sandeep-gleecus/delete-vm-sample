@@ -1,0 +1,62 @@
+-- ====================================================================================
+-- Author:			Inflectra Corporation
+-- Business Object: Requirement
+-- Description:		Retrieves a dataset of total requirement coverage for a project/release
+-- =====================================================================================
+IF OBJECT_ID ( 'REQUIREMENT_RETRIEVE_COVERAGE_SUMMARY', 'P' ) IS NOT NULL 
+    DROP PROCEDURE REQUIREMENT_RETRIEVE_COVERAGE_SUMMARY;
+GO
+CREATE PROCEDURE REQUIREMENT_RETRIEVE_COVERAGE_SUMMARY
+	@ProjectId INT,
+	@ReleaseId INT
+AS
+BEGIN
+	--Declare results set
+	DECLARE  @ReleaseList TABLE
+	(
+		RELEASE_ID INT
+	)
+
+	--Populate list of child iterations if we have a release specified,
+	--if we have @ReleaseId = -2 it means only load in active releases
+	IF @ReleaseId IS NOT NULL
+	BEGIN
+		IF @ReleaseId = -2
+		BEGIN
+			INSERT @ReleaseList (RELEASE_ID)
+			SELECT RELEASE_ID FROM TST_RELEASE WHERE PROJECT_ID = @ProjectId AND RELEASE_STATUS_ID NOT IN (4 /*Closed*/, 5 /*Deferred*/, 6 /*Cancelled*/) AND IS_DELETED = 0
+		END
+		ELSE
+		BEGIN
+			INSERT @ReleaseList (RELEASE_ID)
+			SELECT RELEASE_ID FROM FN_RELEASE_GET_SELF_AND_ITERATIONS (@ProjectId, @ReleaseId)
+		END
+	END
+	
+	--Create select command for retrieving the total number of requirements per coverage status
+	--(i.e. sum of coverage per requirement normalized by the count for that requirement
+	SELECT	1 AS CoverageStatusOrder, 'Passed' AS CoverageStatus, ROUND(SUM(CASE COVERAGE_COUNT_TOTAL WHEN 0 THEN 0 ELSE CAST(COVERAGE_COUNT_PASSED AS FLOAT(53)) / CAST (COVERAGE_COUNT_TOTAL AS FLOAT(53)) END), 1) AS CoverageCount
+		FROM	TST_REQUIREMENT
+		WHERE	PROJECT_ID = @ProjectId AND IS_DELETED = 0 AND REQUIREMENT_STATUS_ID NOT IN (6,8) AND (@ReleaseId IS NULL OR RELEASE_ID IN (SELECT RELEASE_ID FROM @ReleaseList))
+	UNION
+		SELECT	2 AS CoverageStatusOrder, 'Failed' AS CoverageStatus, ROUND(SUM(CASE COVERAGE_COUNT_TOTAL WHEN 0 THEN 0 ELSE CAST(COVERAGE_COUNT_FAILED AS FLOAT(53)) / CAST(COVERAGE_COUNT_TOTAL AS FLOAT(53)) END), 1) AS CoverageCount
+		FROM	TST_REQUIREMENT
+		WHERE	PROJECT_ID = @ProjectId AND IS_DELETED = 0 AND REQUIREMENT_STATUS_ID NOT IN (6,8) AND (@ReleaseId IS NULL OR RELEASE_ID IN (SELECT RELEASE_ID FROM @ReleaseList))
+	UNION
+		SELECT	3 AS CoverageStatusOrder, 'Blocked' AS CoverageStatus, ROUND(SUM(CASE COVERAGE_COUNT_TOTAL WHEN 0 THEN 0 ELSE CAST(COVERAGE_COUNT_BLOCKED AS FLOAT(53)) / CAST(COVERAGE_COUNT_TOTAL AS FLOAT(53)) END), 1) AS CoverageCount
+		FROM	TST_REQUIREMENT
+		WHERE	PROJECT_ID = @ProjectId AND IS_DELETED = 0 AND REQUIREMENT_STATUS_ID NOT IN (6,8) AND (@ReleaseId IS NULL OR RELEASE_ID IN (SELECT RELEASE_ID FROM @ReleaseList))
+	UNION
+		SELECT	4 AS CoverageStatusOrder, 'Caution' AS CoverageStatus, ROUND(SUM(CASE COVERAGE_COUNT_TOTAL WHEN 0 THEN 0 ELSE CAST(COVERAGE_COUNT_CAUTION AS FLOAT(53)) / CAST(COVERAGE_COUNT_TOTAL AS FLOAT(53)) END), 1) AS CoverageCount
+		FROM	TST_REQUIREMENT
+		WHERE	PROJECT_ID = @ProjectId AND IS_DELETED = 0 AND REQUIREMENT_STATUS_ID NOT IN (6,8) AND (@ReleaseId IS NULL OR RELEASE_ID IN (SELECT RELEASE_ID FROM @ReleaseList))
+	UNION
+		SELECT	5 AS CoverageStatusOrder, 'Not Run' AS CoverageStatus, ROUND(SUM(CASE COVERAGE_COUNT_TOTAL WHEN 0 THEN 0 ELSE (CAST (COVERAGE_COUNT_TOTAL AS FLOAT(53)) - CAST (COVERAGE_COUNT_PASSED AS FLOAT(53)) - CAST (COVERAGE_COUNT_CAUTION AS FLOAT(53)) - CAST (COVERAGE_COUNT_BLOCKED AS FLOAT(53)) - CAST (COVERAGE_COUNT_FAILED AS FLOAT(53))) / CAST (COVERAGE_COUNT_TOTAL AS FLOAT(53)) END), 1) AS CoverageCount
+		FROM	TST_REQUIREMENT
+		WHERE	PROJECT_ID = @ProjectId AND IS_DELETED = 0 AND REQUIREMENT_STATUS_ID NOT IN (6,8) AND (@ReleaseId IS NULL OR RELEASE_ID IN (SELECT RELEASE_ID FROM @ReleaseList))
+	UNION
+		SELECT	6 AS CoverageStatusOrder, 'Not Covered' AS CoverageStatus, CAST (COUNT(REQUIREMENT_ID) - SUM(CASE COVERAGE_COUNT_TOTAL WHEN 0 THEN 0 ELSE 1 END) AS FLOAT(53)) AS CoverageCount
+		FROM	TST_REQUIREMENT
+		WHERE	PROJECT_ID = @ProjectId AND IS_DELETED = 0 AND REQUIREMENT_STATUS_ID NOT IN (6,8) AND (@ReleaseId IS NULL OR RELEASE_ID IN (SELECT RELEASE_ID FROM @ReleaseList))
+END
+GO

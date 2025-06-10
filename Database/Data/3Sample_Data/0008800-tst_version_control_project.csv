@@ -1,0 +1,4 @@
+version_control_system_id:Normal,project_id:Normal,is_active:Normal,connection_string:String,login:String,password:String,domain:String,custom_01:String,custom_02:String,custom_03:String,custom_04:String,custom_05:String
+1,1,1,test://MyRepository,joesmith,joesmith,MyCompany,testvalue,NULL,NULL,NULL,NULL
+1,2,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+1,3,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL

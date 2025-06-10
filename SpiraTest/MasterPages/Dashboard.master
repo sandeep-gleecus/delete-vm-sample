@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Main.Master" AutoEventWireup="true" CodeBehind="Dashboard.master.cs" Inherits="Inflectra.SpiraTest.Web.MasterPages.Dashboard" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cplHead" runat="server">
+    <tstsc:ThemeStylePlaceHolder ID="themeStylePlaceHolder" runat="server" SkinID="DashboardStylesheet" />
+    <asp:ContentPlaceHolder runat="server" ID="cplHead" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="cplMainContent" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="cplMainContent" />
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="cplScripts" runat="server">
+    <tstsc:ScriptManagerProxyEx ID="ajxScriptManager" runat="server">
+        <Scripts>
+            <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.html2canvas.min.js" Assembly="Web" />
+            <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.html2canvas.svg.min.js" Assembly="Web" />
+            <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.Dashboard.js" Assembly="Web" />
+            <asp:ScriptReference Path="~/JqPlot/canvas2image.js" />
+            <asp:ScriptReference Path="~/JqPlot/base64.js" />
+        </Scripts>
+    </tstsc:ScriptManagerProxyEx>
+    <script type="text/javascript">
+        var g_dashboard_post_url = '<%=ExportPngUrl%>';
+        $(document).ready(function ()
+        {
+            $('[data-action=export_as_image]')
+				.on("click", function () { Dashboard_exportAsImage(); })
+                .attr('title', resx.Dashboards_SaveAsImage);
+        });
+        SpiraContext.WorkspaceEnums.release = 0;
+        SpiraContext.dashboard = {};
+
+        SpiraContext.dashboard.completions = {
+            inProgress: { enum: "inProgress", label: resx.Dashboards_Legend_InProgress },
+            complete: { enum: "complete", label: resx.Dashboards_Legend_Completed },
+            remaining: { enum: "remaining", label: resx.PlanningGrid_Remaining }
+        };
+        // the guage threshold numbers determine the threshold below which the prior color in the sequence is shown. 
+        // EG for 0 - 29.999 % the first color is used, for 30 % to 89.999 % the second color is used
+        SpiraContext.dashboard.completionBars = [
+            {
+                key: SpiraContext.dashboard.completions.inProgress.enum,
+                color: '#09b8d0',
+                label: SpiraContext.dashboard.completions.inProgress.label,
+                gaugeThreshold: 100
+            },
+            {
+                key: SpiraContext.dashboard.completions.complete.enum,
+                color: '#60B099',
+                label: SpiraContext.dashboard.completions.complete.label,
+                gaugeThreshold: 200
+            },
+            {
+                key: SpiraContext.dashboard.completions.remaining.enum,
+                color: "#808080",
+                label: SpiraContext.dashboard.completions.remaining.label,
+            }
+        ];
+
+        SpiraContext.dashboard.schedule = {
+            notStarted: { enum: "notStarted", label: resx.Dashboards_Legend_NotStarted },
+            complete: { enum: "complete", label: resx.Dashboards_Legend_Completed },
+            aheadOfSchedule: { enum: "aheadOfSchedule", label: resx.Dashboards_Legend_AheadOfSchedule },
+            onSchedule: { enum: "onSchedule", label: resx.Dashboards_Legend_OnSchedule },
+            behindSchedule: { enum: "behindSchedule", label: resx.Dashboards_Legend_BehindSchedule },
+            late: { enum: "late", label: resx.Dashboards_Legend_Late },
+            remaining: { enum: "remaining", label: resx.PlanningGrid_Remaining },
+        };
+        SpiraContext.dashboard.scheduleBars = [
+            {
+                key: SpiraContext.dashboard.schedule.complete.enum,
+                color: '#60B099',
+                label: SpiraContext.dashboard.schedule.complete.label,
+                tooltip: resx.Dashboards_Legend_Completed_Tooltip,
+                showInLegend: true
+            },
+            {
+                key: SpiraContext.dashboard.schedule.aheadOfSchedule.enum,
+                color: '#278996',
+                label: SpiraContext.dashboard.schedule.aheadOfSchedule.label,
+                tooltip: resx.Dashboards_Legend_AheadOfSchedule_Tooltip,
+                lowerThreshold: 10,
+                showInLegend: true
+            },
+            {
+                key: SpiraContext.dashboard.schedule.onSchedule.enum,
+                color: '#09b8d0',
+                label: SpiraContext.dashboard.schedule.onSchedule.label,
+                tooltip: resx.Dashboards_Legend_OnSchedule_Tooltip,
+                lowerThreshold: -10,
+                showInLegend: true
+            },
+            {
+                key: SpiraContext.dashboard.schedule.behindSchedule.enum,
+                color: '#f29e56',
+                label: SpiraContext.dashboard.schedule.behindSchedule.label,
+                tooltip: resx.Dashboards_Legend_BehindSchedule_Tooltip,
+                lowerThreshold: -100,
+                showInLegend: true
+            },
+            {
+                key: SpiraContext.dashboard.schedule.late.enum,
+                color: '#FF0000',
+                label: SpiraContext.dashboard.schedule.late.label,
+                tooltip: resx.Dashboards_Legend_Late_Tooltip,
+                showInLegend: true
+            },
+            {
+                key: SpiraContext.dashboard.schedule.remaining.enum,
+                color: "#808080",
+                label: SpiraContext.dashboard.schedule.remaining.label,
+                showInLegend: false
+            },
+        ];
+    </script>
+
+    <asp:ContentPlaceHolder runat="server" ID="cplScripts" />
+</asp:Content>
+

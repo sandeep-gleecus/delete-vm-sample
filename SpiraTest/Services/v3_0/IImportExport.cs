@@ -1,0 +1,1013 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+
+using Inflectra.SpiraTest.Web.Services.v3_0.DataObjects;
+using Inflectra.SpiraTest.Web.Services.Wsdl.Documentation;
+
+#pragma warning disable 1591
+
+namespace Inflectra.SpiraTest.Web.Services.v3_0
+{
+	[
+	ServiceContract(Namespace = "http://www.inflectra.com/SpiraTest/Services/v3.0/", SessionMode = SessionMode.Allowed),
+	XmlComments(XmlCommentFormat.Default, "Inflectra.SpiraTest.Web.Services.v3_0.ImportExport")
+	]
+	public interface IImportExport : IService
+	{
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteCustomProperty> CustomProperty_RetrieveForArtifactType(int artifactTypeId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void DataMapping_AddArtifactMappings(int dataSyncSystemId, int artifactTypeId, List<RemoteDataMapping> remoteDataMappings);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void DataMapping_AddUserMappings(int dataSyncSystemId, List<RemoteDataMapping> remoteDataMappings);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void DataMapping_RemoveArtifactMappings(int dataSyncSystemId, int artifactTypeId, List<RemoteDataMapping> remoteDataMappings);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteDataMapping> DataMapping_RetrieveArtifactMappings(int dataSyncSystemId, int artifactTypeId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteDataMapping DataMapping_RetrieveCustomPropertyMapping(int dataSyncSystemId, int artifactTypeId, int customPropertyId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteDataMapping> DataMapping_RetrieveCustomPropertyValueMappings(int dataSyncSystemId, int artifactTypeId, int customPropertyId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteDataMapping> DataMapping_RetrieveFieldValueMappings(int dataSyncSystemId, int artifactFieldId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteDataMapping> DataMapping_RetrieveProjectMappings(int dataSyncSystemId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteDataMapping> DataMapping_RetrieveUserMappings(int dataSyncSystemId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		byte[] Document_OpenFile(int attachmentId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteDocument Document_AddFile(RemoteDocument remoteDocument, byte[] binaryData);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteDocument Document_AddUrl(RemoteDocument remoteDocument);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteDocumentVersion Document_AddFileVersion(RemoteDocumentVersion remoteDocumentVersion, byte[] binaryData, bool makeCurrent);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteDocumentVersion Document_AddUrlVersion(RemoteDocumentVersion remoteDocumentVersion, bool makeCurrent);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Document_DeleteFromArtifact(int attachmentId, int artifactTypeId, int artifactId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Document_Delete(int attachmentId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteDocument> Document_RetrieveForFolder(int folderId, List<RemoteFilter> remoteFilters, RemoteSort remoteSort, int startingRow, int numberRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteDocument> Document_RetrieveForArtifact(int artifactTypeId, int artifactId, List<RemoteFilter> remoteFilters, RemoteSort remoteSort);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		void Document_AddToArtifactId(int artifactTypeId, int artifactId, int attachmentId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteDocument Document_RetrieveById(int attachmentId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteDocumentType> Document_RetrieveTypes(bool activeOnly);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteDocumentFolder> Document_RetrieveFolders();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteDocumentFolder Document_RetrieveFolderById(int folderId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteDocumentFolder Document_AddFolder(RemoteDocumentFolder remoteDocumentFolder);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Document_DeleteFolder(int projectAttachmentFolderId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Document_UpdateFolder(RemoteDocumentFolder remoteDocumentFolder);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteAssociation Association_Create(RemoteAssociation remoteAssociation);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Association_Update(RemoteAssociation remoteAssociation);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteAssociation> Association_RetrieveForArtifact(int artifactTypeId, int artifactId, List<RemoteFilter> remoteFilters, RemoteSort remoteSort);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteIncidentPriority Incident_AddPriority(RemoteIncidentPriority remoteIncidentPriority);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		long Incident_Count(List<RemoteFilter> remoteFilters);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncidentResolution> Incident_AddResolutions(List<RemoteIncidentResolution> remoteIncidentResolutions);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteIncidentSeverity Incident_AddSeverity(RemoteIncidentSeverity remoteIncidentSeverity);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteIncidentStatus Incident_AddStatus(RemoteIncidentStatus remoteIncidentStatus);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteIncidentType Incident_AddType(RemoteIncidentType remoteIncidentType);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteIncident Incident_Create(RemoteIncident remoteIncident);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncident> Incident_Retrieve(List<RemoteFilter> remoteFilters, RemoteSort remoteSort, int startingRow, int numberOfRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteIncident Incident_RetrieveById(int incidentId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncident> Incident_RetrieveByTestCase(int testCaseId, bool openOnly);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncident> Incident_RetrieveByTestRunStep(int testRunStepId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncident> Incident_RetrieveByTestStep(int testStepId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncident> Incident_RetrieveForOwner();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncident> Incident_RetrieveNew(DateTime creationDate);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncidentPriority> Incident_RetrievePriorities();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncidentResolution> Incident_RetrieveResolutions(int incidentId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncidentSeverity> Incident_RetrieveSeverities();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncidentStatus> Incident_RetrieveStatuses();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteIncidentType> Incident_RetrieveTypes();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteWorkflowIncidentFields> Incident_RetrieveWorkflowFields(int currentTypeId, int currentStatusId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteWorkflowIncidentTransition> Incident_RetrieveWorkflowTransitions(int currentTypeId, int currentStatusId, bool isDetector, bool isOwner);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteWorkflowIncidentCustomProperties> Incident_RetrieveWorkflowCustomProperties(int currentTypeId, int currentStatusId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Incident_Update(RemoteIncident remoteIncident);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Incident_Delete(int incidentId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteCustomList CustomProperty_AddCustomList(RemoteCustomList remoteCustomList);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteCustomListValue CustomProperty_AddCustomListValue(RemoteCustomListValue remoteCustomListValue);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteProject Project_Create(RemoteProject remoteProject, int? existingProjectId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Project_Delete(int projectId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteProject> Project_Retrieve();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteProject Project_RetrieveById(int projectId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteProjectUser> Project_RetrieveUserMembership();
+
+        [OperationContract]
+        [FaultContract(typeof(ServiceFaultMessage))]
+        void Project_RefreshProgressExecutionStatusCaches(int? releaseId, bool runInBackground);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void CustomProperty_UpdateCustomProperties(int artifactTypeId, List<RemoteCustomProperty> remoteCustomProperties);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteCustomList CustomProperty_RetrieveCustomListById(int customListId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteCustomList> CustomProperty_RetrieveCustomLists();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void CustomProperty_UpdateCustomList(RemoteCustomList remoteCustomList);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteProjectRole> ProjectRole_Retrieve();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Release_AddTestMapping(RemoteReleaseTestCaseMapping remoteReleaseTestCaseMapping);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Release_AddTestMapping2(RemoteReleaseTestCaseMapping[] remoteReleaseTestCaseMappings);
+
+		[OperationContract, FaultContract(typeof(ServiceFaultMessage))]
+		long Release_Count(List<RemoteFilter> remoteFilters);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteRelease Release_Create(RemoteRelease remoteRelease, int? parentReleaseId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Release_RemoveTestMapping(RemoteReleaseTestCaseMapping remoteReleaseTestCaseMapping);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteRelease> Release_Retrieve(bool activeOnly);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteRelease> Release_Retrieve2(List<RemoteFilter> remoteFilters, int startingRow, int numberOfRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteRelease Release_RetrieveById(int releaseId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Release_Update(RemoteRelease remoteRelease);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Release_Delete(int releaseId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Release_Move(int releaseId, int? destinationReleaseId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Requirement_AddTestCoverage(RemoteRequirementTestCaseMapping remoteReqTestCaseMapping);
+
+		[OperationContract, FaultContract(typeof(ServiceFaultMessage))]
+		long Requirement_Count(List<RemoteFilter> remoteFilters);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteRequirement Requirement_Create1(RemoteRequirement remoteRequirement, int indentPosition);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteRequirement Requirement_Create2(RemoteRequirement remoteRequirement, int? parentRequirementId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Requirement_RemoveTestCoverage(RemoteRequirementTestCaseMapping remoteReqTestCaseMapping);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteRequirement> Requirement_Retrieve(List<RemoteFilter> remoteFilters, int startingRow, int numberOfRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteRequirement Requirement_RetrieveById(int requirementId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteRequirement> Requirement_RetrieveForOwner();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteRequirementTestCaseMapping> Requirement_RetrieveTestCoverage(int requirementId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Requirement_Update(RemoteRequirement remoteRequirement);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Requirement_Delete(int requirementId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Requirement_Move(int requirementId, int? destinationRequirementId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteVersion System_GetProductVersion();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteSetting> System_GetSettings();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		string System_GetArtifactUrl(int navigationLinkId, int projectId, int artifactId, string tabName);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTask Task_Create(RemoteTask remoteTask);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTask> Task_Retrieve(List<RemoteFilter> remoteFilters, RemoteSort remoteSort, int startingRow, int numberOfRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTask Task_RetrieveById(int taskId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTask> Task_RetrieveForOwner();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTask> Task_RetrieveNew(DateTime creationDate);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Task_Update(RemoteTask remoteTask);
+
+		[OperationContract, FaultContract(typeof(ServiceFaultMessage))]
+		long Task_Count(List<RemoteFilter> remoteFilters);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void Task_Delete(int taskId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTestCaseParameter TestCase_AddParameter(RemoteTestCaseParameter remoteTestCaseParameter);
+
+		[OperationContract, FaultContract(typeof(ServiceFaultMessage))]
+		long TestCase_Count(List<RemoteFilter> remoteFilters);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTestCase TestCase_Create(RemoteTestCase remoteTestCase, int? parentTestFolderId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTestCase TestCase_CreateFolder(RemoteTestCase remoteTestCase, int? parentTestFolderId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		string TestCase_CreateParameterToken(string parameterName);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTestCase> TestCase_Retrieve(List<RemoteFilter> remoteFilters, int startingRow, int numberOfRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTestCase TestCase_RetrieveById(int testCaseId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTestCase> TestCase_RetrieveByReleaseId(int releaseId, List<RemoteFilter> remoteFilters, int startingRow, int numberOfRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTestCase> TestCase_RetrieveByTestSetId(int testSetId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTestCase> TestCase_RetrieveForOwner();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTestCase> TestCase_RetrieveByFolder(int testCaseFolderId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestCase_Update(RemoteTestCase remoteTestCase);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestCase_Delete(int testCaseId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestCase_Move(int testCaseId, int? destinationTestCaseId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestCase_MoveStep(int testCaseId, int sourceTestStepId, int? destinationTestStepId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestCase_DeleteStep(int testCaseId, int testStepId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteManualTestRun> TestRun_CreateFromTestCases(List<int> testCaseIds, int? releaseId);
+
+		[OperationContract, FaultContract(typeof(ServiceFaultMessage))]
+		long TestRun_Count(List<RemoteFilter> remoteFilters);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteManualTestRun> TestRun_CreateFromTestSet(int testSetId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteAutomatedTestRun> TestRun_CreateForAutomationHost(string automationHostToken, DataObjects.DateRange dateRange);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteAutomatedTestRun> TestRun_CreateForAutomatedTestSet(int testSetId, string automationHostToken);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteAutomatedTestRun TestRun_RecordAutomated1(RemoteAutomatedTestRun remoteTestRun);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		int TestRun_RecordAutomated2(string userName, string password, int projectId, int testerUserId, int testCaseId, int? releaseId, int? testSetId, int? testSetTestCaseId, DateTime startDate, DateTime endDate, int executionStatusId, string runnerName, string runnerTestName, int runnerAssertCount, string runnerMessage, string runnerStackTrace);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteAutomatedTestRun> TestRun_RecordAutomated3(List<RemoteAutomatedTestRun> remoteTestRuns);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTestRun> TestRun_Retrieve(List<RemoteFilter> remoteFilters, RemoteSort remoteSort, int startingRow, int numberOfRows);
+
+		[OperationContract, FaultContract(typeof(ServiceFaultMessage))]
+		List<RemoteManualTestRun> TestRun_RetrieveManual(List<RemoteFilter> remoteFilters, RemoteSort remoteSort, int startingRow, int numberOfRows);
+
+		[OperationContract, FaultContract(typeof(ServiceFaultMessage))]
+		List<RemoteAutomatedTestRun> TestRun_RetrieveAutomated(List<RemoteFilter> remoteFilters, RemoteSort remoteSort, int startingRow, int numberOfRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTestRun TestRun_RetrieveById(int testRunId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteAutomatedTestRun TestRun_RetrieveAutomatedById(int testRunId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteManualTestRun TestRun_RetrieveManualById(int testRunId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteManualTestRun> TestRun_Save(List<RemoteManualTestRun> remoteTestRuns, DateTime endDate);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestSet_AddTestMapping(RemoteTestSetTestCaseMapping remoteTestSetTestCaseMapping, Nullable<int> existingTestSetTestCaseId, List<RemoteTestSetTestCaseParameter> parameters);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTestSet TestSet_Create(RemoteTestSet remoteTestSet, int? parentTestSetFolderId);
+
+		[OperationContract, FaultContract(typeof(ServiceFaultMessage))]
+		long TestSet_Count(List<RemoteFilter> remoteFilters);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTestSet TestSet_CreateFolder(RemoteTestSet remoteTestSet, int? parentTestSetFolderId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestSet_RemoveTestMapping(RemoteTestSetTestCaseMapping remoteTestSetTestCaseMapping);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTestSetTestCaseMapping> TestSet_RetrieveTestCaseMapping(int testSetId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTestSet> TestSet_Retrieve(List<RemoteFilter> remoteFilters, int startingRow, int numberOfRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTestSet TestSet_RetrieveById(int testSetId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteTestSet> TestSet_RetrieveForOwner();
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestSet_Update(RemoteTestSet remoteTestSet);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestSet_Delete(int testSetId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestSet_Move(int testSetId, int? destinationTestSetId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteTestStep TestCase_AddStep(RemoteTestStep remoteTestStep, int testCaseId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		int TestCase_AddLink(int testCaseId, int position, int linkedTestCaseId, List<RemoteTestStepParameter> parameters);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void TestCase_AddUpdateAutomationScript(int testCaseId, Nullable<int> automationEngineId, string urlOrFilename, string description, byte[] binaryData, string version, Nullable<int> projectAttachmentTypeId, Nullable<int> projectAttachmentFolderId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteUser User_Create(RemoteUser remoteUser, int projectRoleId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteUser User_RetrieveById(int userId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteUser User_RetrieveByUserName(string userName);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		List<RemoteComment> TestCase_RetrieveComments(int TestCaseId);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		List<RemoteComment> Release_RetrieveComments(int ReleaseId);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		List<RemoteReleaseTestCaseMapping> Release_RetrieveTestMapping(int releaseId);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		List<RemoteComment> Requirement_RetrieveComments(int RequirementId);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		List<RemoteComment> TestSet_RetrieveComments(int TestSetId);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		List<RemoteComment> Task_RetrieveComments(int TaskId);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		RemoteComment Release_CreateComment(RemoteComment remoteComment);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		RemoteComment Requirement_CreateComment(RemoteComment remoteComment);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		RemoteComment Task_CreateComment(RemoteComment remoteComment);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		RemoteComment TestCase_CreateComment(RemoteComment remoteComment);
+
+		[OperationContract]
+		[FaultContract(typeof(ServiceFaultMessage))]
+		RemoteComment TestSet_CreateComment(RemoteComment remoteComment);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteAutomationHost> AutomationHost_Retrieve(List<RemoteFilter> remoteFilters, RemoteSort remoteSort, int startingRow, int numberOfRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteAutomationHost AutomationHost_RetrieveById(int automationHostId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteAutomationHost AutomationHost_RetrieveByToken(string token);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteAutomationEngine AutomationEngine_RetrieveByToken(string token);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteAutomationEngine> AutomationEngine_Retrieve(bool activeOnly);
+
+		[OperationContract, FaultContract(typeof(ServiceFaultMessage))]
+		RemoteAutomationEngine AutomationEngine_Create(RemoteAutomationEngine remoteEngine);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteAutomationEngine AutomationEngine_RetrieveById(int automationEngineId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteAutomationHost AutomationHost_Create(RemoteAutomationHost remoteAutomationHost);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void AutomationHost_Update(RemoteAutomationHost remoteAutomationHost);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		void AutomationHost_Delete(int automationHostId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		List<RemoteBuild> Build_RetrieveByReleaseId(int releaseId, List<RemoteFilter> remoteFilters, RemoteSort remoteSort, int startingRow, int numberOfRows);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteBuild Build_RetrieveById(int releaseId, int buildId);
+
+		[
+		OperationContract,
+		FaultContract(typeof(ServiceFaultMessage))
+		]
+		RemoteBuild Build_Create(RemoteBuild remoteBuild);
+	}
+}

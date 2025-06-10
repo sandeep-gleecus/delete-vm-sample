@@ -1,0 +1,10 @@
+graph_id:Key,graph_type_id:Normal,name:String,position:Normal,description:String,is_active:Normal,query:String
+1000,4,Test Graph 1,1,NULL,1,"select R.EXECUTION_STATUS_NAME, COUNT (R.TEST_RUN_ID) as COUNT
+from SpiraTestEntities.R_TestRuns as R
+where R.PROJECT_ID = ${ProjectId}
+group by R.EXECUTION_STATUS_NAME"
+1001,4,Test Graph 2,2,NULL,1,"select R.INCIDENT_STATUS_NAME, COUNT (R.INCIDENT_ID) as COUNT
+from SpiraTestEntities.R_Incidents as R
+where R.PROJECT_ID = ${ProjectId}
+group by R.INCIDENT_STATUS_NAME
+"

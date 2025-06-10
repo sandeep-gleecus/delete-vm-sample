@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{672C85F5-5498-43A8-BE0D-5E38036C6F2B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Themes\OnShore\app.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ValidationMasterInstaller_v6.7.0.0</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Inflectra.SpiraTest.Installer</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>E:\Omega\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>39</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>7</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\EnterpriseArchitectImporter.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\EnterpriseArchitectImporter.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CFFA17C4A3FF8490794C63C2E306E56C078C68B9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SpiraInstaller_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomMarshalers" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Administration, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\System32\inetsrv\Microsoft.Web.Administration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="492722928.crt" />
+    <None Include="492722928.pfx" />
+    <None Include="app.manifest" />
+    <EmbeddedResource Include="Package\DB_v700.zip" />
+    <None Include="Package\base\StagingScriptUpdate.zip" />
+    <None Include="Package\StagingScriptUpdate.zip" />
+    <None Include="SpiraInstaller_1_TemporaryKey.pfx" />
+    <Resource Include="Themes\Inflectra\App.ico" />
+    <EmbeddedResource Include="Package\DB_v670.zip" />
+    <EmbeddedResource Include="Themes\Inflectra\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\Inflectra\Spira.ico" />
+    <Resource Include="Themes\Inflectra\Error.png" />
+    <Resource Include="Themes\Inflectra\Processing.png" />
+    <Resource Include="Themes\Inflectra\Success.png" />
+    <Resource Include="Themes\Inflectra\img_Folder.png" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="App.cs" />
+    <Compile Include="HelperClasses\CommandLine\ArgumentsExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\AssemblyLicenseAttribute.cs" />
+    <Compile Include="HelperClasses\CommandLine\AssemblyUsageAttribute.cs" />
+    <Compile Include="HelperClasses\CommandLine\BaseAttribute.cs" />
+    <Compile Include="HelperClasses\CommandLine\CopyrightInfo.cs" />
+    <Compile Include="HelperClasses\CommandLine\Example.cs" />
+    <Compile Include="HelperClasses\CommandLine\HeadingInfo.cs" />
+    <Compile Include="HelperClasses\CommandLine\HelpText.cs" />
+    <Compile Include="HelperClasses\CommandLine\Maybe.cs" />
+    <Compile Include="HelperClasses\CommandLine\Either.cs" />
+    <Compile Include="HelperClasses\CommandLine\EnumerableExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\EnumerableExtensions2.cs" />
+    <Compile Include="HelperClasses\CommandLine\Error.cs" />
+    <Compile Include="HelperClasses\CommandLine\ErrorExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\ErrorHandling.cs" />
+    <Compile Include="HelperClasses\CommandLine\ExceptionExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\FSharpOptionHelper.cs" />
+    <Compile Include="HelperClasses\CommandLine\InstanceBuilder.cs" />
+    <Compile Include="HelperClasses\CommandLine\InstanceChooser.cs" />
+    <Compile Include="HelperClasses\CommandLine\KeyValuePairHelper.cs" />
+    <Compile Include="HelperClasses\CommandLine\MultilineTextAttribute.cs" />
+    <Compile Include="HelperClasses\CommandLine\NameExtension.cs" />
+    <Compile Include="HelperClasses\CommandLine\NameInfo.cs" />
+    <Compile Include="HelperClasses\CommandLine\NameLookup.cs" />
+    <Compile Include="HelperClasses\CommandLine\NullInstance.cs" />
+    <Compile Include="HelperClasses\CommandLine\OptionAttribute.cs" />
+    <Compile Include="HelperClasses\CommandLine\OptionMapper.cs" />
+    <Compile Include="HelperClasses\CommandLine\OptionSpecification.cs" />
+    <Compile Include="HelperClasses\CommandLine\Parser.cs" />
+    <Compile Include="HelperClasses\CommandLine\ParserExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\ParserResult.cs" />
+    <Compile Include="HelperClasses\CommandLine\ParserResultExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\ParserSettings.cs" />
+    <Compile Include="HelperClasses\CommandLine\PopsicleSetter.cs" />
+    <Compile Include="HelperClasses\CommandLine\PreprocessorGuards.cs" />
+    <Compile Include="HelperClasses\CommandLine\ReferenceEqualityComparer.cs" />
+    <Compile Include="HelperClasses\CommandLine\ReflectionExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\ReflectionHelper.cs" />
+    <Compile Include="HelperClasses\CommandLine\ResultExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\Scalar.cs" />
+    <Compile Include="HelperClasses\CommandLine\SentenceBuilder.cs" />
+    <Compile Include="HelperClasses\CommandLine\Sequence.cs" />
+    <Compile Include="HelperClasses\CommandLine\Specification.cs" />
+    <Compile Include="HelperClasses\CommandLine\SpecificationExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\SpecificationGuards.cs" />
+    <Compile Include="HelperClasses\CommandLine\SpecificationProperty.cs" />
+    <Compile Include="HelperClasses\CommandLine\SpecificationPropertyExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\SpecificationPropertyRules.cs" />
+    <Compile Include="HelperClasses\CommandLine\StringBuilderExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\StringExtensions.cs" />
+    <Compile Include="HelperClasses\CommandLine\Switch.cs" />
+    <Compile Include="HelperClasses\CommandLine\Token.cs" />
+    <Compile Include="HelperClasses\CommandLine\Tokenizer.cs" />
+    <Compile Include="HelperClasses\CommandLine\TokenPartitioner.cs" />
+    <Compile Include="HelperClasses\CommandLine\TypeConverter.cs" />
+    <Compile Include="HelperClasses\CommandLine\TypeDescriptor.cs" />
+    <Compile Include="HelperClasses\CommandLine\TypeLookup.cs" />
+    <Compile Include="HelperClasses\CommandLine\UnParserSettings.cs" />
+    <Compile Include="HelperClasses\CommandLine\UsageAttribute.cs" />
+    <Compile Include="HelperClasses\CommandLine\ValueAttribute.cs" />
+    <Compile Include="HelperClasses\CommandLine\ValueMapper.cs" />
+    <Compile Include="HelperClasses\CommandLine\ValueSpecification.cs" />
+    <Compile Include="HelperClasses\CommandLine\Verb.cs" />
+    <Compile Include="HelperClasses\CommandLine\VerbAttribute.cs" />
+    <Compile Include="HelperClasses\Constants.cs" />
+    <Compile Include="HelperClasses\DBConnection.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks610_620.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks600_610.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks622_630.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks621_622.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks620_621.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks630_640.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks640_650.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks650_652.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks652_660.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks660_661.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks661_670.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks670_671.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks671_672.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks672_673.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks673_674.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks674_700.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\_DbUpgradeSteps.cs" />
+    <Compile Include="HelperClasses\Extensions.cs" />
+    <Compile Include="HelperClasses\FinishSummaryArgs.cs" />
+    <Compile Include="HelperClasses\InstallationOptions.cs" />
+    <Compile Include="HelperClasses\License.cs" />
+    <Compile Include="HelperClasses\Logger.cs" />
+    <Compile Include="HelperClasses\CommandOptions.cs" />
+    <Compile Include="HelperClasses\PreReqCheck.cs" />
+    <Compile Include="HelperClasses\DataSyncConfig.cs" />
+    <Compile Include="HelperClasses\ReadWebConfig.cs" />
+    <Compile Include="HelperClasses\SimpleAES.cs" />
+    <Compile Include="HelperClasses\UnsafeNativeMethods\BrowseCallbackProc.cs" />
+    <Compile Include="HelperClasses\UnsafeNativeMethods\BrowseInfo.cs" />
+    <Compile Include="HelperClasses\UnsafeNativeMethods\IMalloc.cs" />
+    <Compile Include="HelperClasses\UnsafeNativeMethods\Ole32.cs" />
+    <Compile Include="HelperClasses\UnsafeNativeMethods\Shell32.cs" />
+    <Compile Include="HelperClasses\UnsafeNativeMethods\User32.cs" />
+    <Compile Include="HelperClasses\DBUpgradeSteps\UpgradeTasks544_600.cs" />
+    <Compile Include="HelperClasses\SQLUtilities.cs" />
+    <Compile Include="HelperClasses\Utilities.cs" />
+    <Compile Include="HelperClasses\Settings_DataSync.cs" />
+    <Compile Include="HelperClasses\WebConfigSettings.cs" />
+    <Compile Include="HelperClasses\WPFStandardDialogs\AbstractFileDialog.cs" />
+    <Compile Include="HelperClasses\WPFStandardDialogs\OpenFileDialog.cs" />
+    <Compile Include="HelperClasses\WPFStandardDialogs\OpenFolderDialog.cs" />
+    <Compile Include="HelperClasses\WrongDBVersionException.cs" />
+    <Compile Include="HelperClasses\ZipReader.cs" />
+    <Compile Include="Themes\Inflectra\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Threads\Thread-Install_ApplicationFiles.cs" />
+    <Compile Include="Threads\Thread-Install_CreateEventLogSource.cs" />
+    <Compile Include="Threads\Thread-Final_CleanupInstallFiles.cs" />
+    <Compile Include="Threads\Thread-Uninstall_DataSyncService.cs" />
+    <Compile Include="Threads\Thread-Uninstall_DeleteDatabase.cs" />
+    <Compile Include="Threads\Thread-Uninstall_ProgramMenuEntries.cs" />
+    <Compile Include="Threads\Thread-Install_CreateProgramMenuEntries.cs" />
+    <Compile Include="Threads\Thread-Install_WebServerObjects.cs" />
+    <Compile Include="Threads\Thread-Install_Database.cs" />
+    <Compile Include="Threads\Thread-Install_DataSyncService.cs" />
+    <Compile Include="Threads\Thread-Uninstall_RemoveWebServerObjects.cs" />
+    <Compile Include="Threads\Thread-Uninstall_RemoveFiles.cs" />
+    <Compile Include="Threads\Thread-Uninstall_BackupDatabase.cs" />
+    <Compile Include="Threads\Thread-Upgrade_UpgradeDatabase.cs" />
+    <Compile Include="Threads\Thread-Install_ControlPanel.cs" />
+    <Compile Include="Threads\Thread-Install_AppGlobalSettings.cs" />
+    <Compile Include="Threads\Thread-Install_UpdateWebConfig.cs" />
+    <Compile Include="Threads\Thread.cs" />
+    <Compile Include="UI\cntrlDatabaseBackup.xaml.cs">
+      <DependentUpon>cntrlDatabaseBackup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlChooseLocation.xaml.cs">
+      <DependentUpon>cntrlChooseLocation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlConfirmation.xaml.cs">
+      <DependentUpon>cntrlConfirmation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlDatabaseServer.xaml.cs">
+      <DependentUpon>cntrlDatabaseServer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlEula.xaml.cs">
+      <DependentUpon>cntrlEula.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlImportProgress.xaml.cs">
+      <DependentUpon>cntrlImportProgress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlInstallationType.xaml.cs">
+      <DependentUpon>cntrlInstallationType.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlLicenseKey.xaml.cs">
+      <DependentUpon>cntrlLicenseKey.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlPrerequisites.xaml.cs">
+      <DependentUpon>cntrlPrerequisites.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlWebServer.xaml.cs">
+      <DependentUpon>cntrlWebServer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ControlForm\DefaultConfiguration1.xaml.cs">
+      <DependentUpon>DefaultConfiguration1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ControlForm\DefaultConfirmation.xaml.cs">
+      <DependentUpon>DefaultConfirmation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ControlForm\DefaultIntroduction.xaml.cs">
+      <DependentUpon>DefaultIntroduction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ControlForm\DefaultProgress.xaml.cs">
+      <DependentUpon>DefaultProgress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ControlForm\DefaultResults.xaml.cs">
+      <DependentUpon>DefaultResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ControlForm\IProcedureComponent.cs" />
+    <Compile Include="UI\ControlForm\IProcedureProcessComponent.cs" />
+    <Compile Include="UI\ControlForm\NonClientRegionAPI.cs" />
+    <Compile Include="UI\ControlForm\ProcedureDialog.xaml.cs">
+      <DependentUpon>ProcedureDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ControlForm\VistaCanvasControl.xaml.cs">
+      <DependentUpon>VistaCanvasControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlIntroduction.xaml.cs">
+      <DependentUpon>cntrlIntroduction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\cntrlResults.xaml.cs">
+      <DependentUpon>cntrlResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterForm\wpfMasterForm - Wizard Funcs.xaml.cs" />
+    <Compile Include="UI\ItemProgress.xaml.cs">
+      <DependentUpon>ItemProgress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterForm\wpfMasterForm.xaml.cs">
+      <DependentUpon>wpfMasterForm.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Package\base\DB_Procs.zip" />
+    <EmbeddedResource Include="Package\base\DB_StaticData.zip" />
+    <EmbeddedResource Include="Package\base\DB_Views.zip" />
+    <EmbeddedResource Include="Package\base\DB_Funcs.zip" />
+    <EmbeddedResource Include="Package\base\Files.zip" />
+    <EmbeddedResource Include="Package\DB_v630.zip" />
+    <EmbeddedResource Include="Package\DB_v640.zip" />
+    <EmbeddedResource Include="Package\DB_v600.zip" />
+    <EmbeddedResource Include="Package\base\ClrDropObjs.zip" />
+    <EmbeddedResource Include="Package\base\DB_Create.zip" />
+    <EmbeddedResource Include="Package\base\DB_SampleData.zip" />
+    <EmbeddedResource Include="Package\DB_v600-v621.zip" />
+    <EmbeddedResource Include="Package\DB_v650.zip" />
+    <EmbeddedResource Include="Package\DB_v652.zip" />
+    <EmbeddedResource Include="Package\DB_v660.zip" />
+    <EmbeddedResource Include="Package\DB_v661.zip" />
+    <EmbeddedResource Include="Package\DB_v671.zip" />
+    <EmbeddedResource Include="Package\DB_v672.zip" />
+    <EmbeddedResource Include="Package\DB_v673.zip" />
+    <EmbeddedResource Include="Package\FS_v690.zip" />
+    <EmbeddedResource Include="Package\DB_v674.zip" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UI\cntrlDatabaseBackup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\cntrlChooseLocation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\cntrlConfirmation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\cntrlDatabaseServer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\cntrlEula.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\cntrlImportProgress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\cntrlInstallationType.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\cntrlLicenseKey.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\cntrlPrerequisites.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\cntrlWebServer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\ControlForm\DefaultConfiguration1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\ControlForm\DefaultConfirmation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\ControlForm\DefaultIntroduction.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\ControlForm\DefaultProgress.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\ControlForm\DefaultResults.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\ControlForm\ProcedureDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\ControlForm\VistaCanvasControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\cntrlIntroduction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\cntrlResults.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\ItemProgress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\MasterForm\wpfMasterForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Inflectra\EULA.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Inflectra\DefaultLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Inflectra\Unknown.png" />
+    <Resource Include="Themes\Inflectra\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+    <Content Include="HelperClasses\CommandLine\CommandLineParser.txt" />
+    <Resource Include="Themes\OnShore\DefaultLogo.png" />
+    <Resource Include="Themes\OnShore\Error.png" />
+    <Resource Include="Themes\OnShore\img_Folder.png" />
+    <Resource Include="Themes\OnShore\Processing.png" />
+    <Resource Include="Themes\OnShore\Success.png" />
+    <Resource Include="Themes\OnShore\ValidationMaster.png" />
+    <Resource Include="Themes\Inflectra\ValidationMaster.png" />
+    <Resource Include="Themes\OnShore\app.ico" />
+    <Resource Include="Themes\OnShore\app.png" />
+    <Resource Include="Themes\OnShore\EULA.txt" />
+    <Resource Include="Themes\OnShore\VM.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>"C:\Program Files (x86)\Windows Kits\10\App Certification Kit\SignTool.exe" sign /f "D:\Source\theta\ValidationMaster_Development_AHA_Latest\Installer\Setup\SpiraInstaller_1_TemporaryKey.pfx" /fd "certHash" /p "access@2020" /v "$(TargetPath)"
+echo F|xcopy /s /q /y /f "$(TargetPath)" "$(ProjectDir)\..\..\ValidationMaster-v7.0.0.0.exe"</PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_DetectChanges="False" BuildVersion_UpdateFileVersion="True" BuildVersion_AssemblyInfoFilename="Properties\AssemblyInfo.cs" BuildVersion_ConfigurationName="Any" BuildVersion_BuildVersioningStyle="None.None.None.DeltaBaseDate" BuildVersion_StartDate="2000/1/1" BuildVersion_IncrementBeforeBuild="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

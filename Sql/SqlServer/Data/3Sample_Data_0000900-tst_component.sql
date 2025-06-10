@@ -1,0 +1,86 @@
+/***************************************************************
+**	Insert script for table TST_COMPONENT
+***************************************************************/
+SET IDENTITY_INSERT TST_COMPONENT ON; 
+
+INSERT INTO TST_COMPONENT
+(
+COMPONENT_ID, PROJECT_ID, NAME, IS_DELETED, IS_ACTIVE
+)
+VALUES
+(
+1, 1, 'Book Management', 0, 1
+),
+(
+2, 1, 'Author Management', 0, 1
+),
+(
+3, 1, 'Administration', 0, 1
+),
+(
+4, 4, 'General Ledger', 0, 1
+),
+(
+5, 4, 'Accounts Payable', 0, 1
+),
+(
+6, 4, 'Accounts Receivable', 0, 1
+),
+(
+7, 4, 'Reporting', 0, 1
+),
+(
+8, 5, 'Employee Administration', 0, 1
+),
+(
+9, 5, 'Payroll Management', 0, 1
+),
+(
+10, 5, 'Time and Expenses', 0, 1
+),
+(
+11, 5, 'Benefits Administration', 0, 1
+),
+(
+12, 5, 'Employee Self-Service Benefits', 0, 1
+),
+(
+13, 5, 'Employee Performance Management', 0, 1
+),
+(
+14, 6, 'Home Page', 0, 1
+),
+(
+15, 6, 'Main Navigation', 0, 1
+),
+(
+16, 6, 'Company Information', 0, 1
+),
+(
+17, 6, 'Product Information', 0, 1
+),
+(
+18, 6, 'Content Management System', 0, 1
+),
+(
+19, 6, 'Authentication', 0, 1
+),
+(
+20, 6, 'Authorization', 0, 1
+),
+(
+21, 6, 'Social Media', 0, 1
+),
+(
+22, 7, 'Marketing Automation', 0, 1
+),
+(
+23, 7, 'Sales Force Automation', 0, 1
+),
+(
+24, 7, 'Customer Support', 0, 1
+)
+GO
+
+SET IDENTITY_INSERT TST_COMPONENT OFF; 
+

@@ -1,0 +1,70 @@
+/***************************************************************
+**	Insert script for table TST_PROJECT_ATTACHMENT_FOLDER_HIERARCHY
+***************************************************************/
+INSERT INTO TST_PROJECT_ATTACHMENT_FOLDER_HIERARCHY
+(
+PROJECT_ATTACHMENT_FOLDER_ID, PROJECT_ID, NAME, PARENT_PROJECT_ATTACHMENT_FOLDER_ID, HIERARCHY_LEVEL, INDENT_LEVEL
+)
+VALUES
+(
+1, 1, 'Root Folder', NULL, 1, 'AAA'
+),
+(
+2, 1, 'Specifications', 1, 2, 'AAAAAI'
+),
+(
+3, 1, 'Screen Captures', 1, 2, 'AAAAAH'
+),
+(
+4, 1, 'Test Results', 1, 2, 'AAAAAJ'
+),
+(
+5, 1, 'Error Messages', 4, 3, 'AAAAAJAAA'
+),
+(
+6, 1, 'Web Links', 4, 3, 'AAAAAJAAB'
+),
+(
+7, 1, 'Design Documents', 1, 2, 'AAAAAC'
+),
+(
+8, 1, 'Misc Documents', 1, 2, 'AAAAAG'
+),
+(
+9, 2, 'Root Folder', NULL, 1, 'AAA'
+),
+(
+10, 3, 'Root Folder', NULL, 1, 'AAA'
+),
+(
+11, 4, 'Root Folder', NULL, 1, 'AAA'
+),
+(
+12, 1, 'Test Scripts', 1, 2, 'AAAAAJ'
+),
+(
+14, 1, 'CreateNewAuthor', 1, 2, 'AAAAAA'
+),
+(
+15, 1, 'CreateNewBook', 1, 2, 'AAAAAB'
+),
+(
+16, 1, 'EditExistingAuthor', 1, 2, 'AAAAAE'
+),
+(
+17, 1, 'EditExistingBook', 1, 2, 'AAAAAF'
+),
+(
+18, 5, 'Root Folder', NULL, 1, 'AAA'
+),
+(
+19, 6, 'Root Folder', NULL, 1, 'AAA'
+),
+(
+20, 7, 'Root Folder', NULL, 1, 'AAA'
+),
+(
+21, 1, 'Diagrams', 1, 2, 'AAAAAD'
+)
+GO
+

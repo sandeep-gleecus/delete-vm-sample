@@ -1,0 +1,153 @@
+﻿<UserControl x:Class="Inflectra.SpiraTest.Installer.UI.cntrlPrerequisites"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Inflectra.SpiraTest.Installer.UI"
+             xmlns:resx="clr-namespace:Inflectra.SpiraTest.Installer.Themes.Inflectra"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400">
+	<DockPanel LastChildFill="True">
+		<TextBlock Name="msgStatus" DockPanel.Dock="Bottom" HorizontalAlignment="Right" Text="{x:Static resx:Resources.Global_ClickNext}"></TextBlock>
+		<StackPanel Orientation="Vertical">
+			<TextBlock FontSize="18" FontWeight="Bold" Text="{x:Static resx:Resources.Prerequisites_KeyText}" />
+			<TextBlock TextWrapping="Wrap" FontSize="14" Text="{x:Static resx:Resources.Prerequisites_Intro}" />
+			<TreeView BorderThickness="0" Margin="0,25,0,0" Name="tvPres">
+				<TreeViewItem IsExpanded="true" Tag="IIS:W3SVC">
+					<TreeViewItem.Header>
+						<DockPanel LastChildFill="True">
+							<Image DockPanel.Dock="Left" />
+							<TextBlock Text="Web Server (IIS)" />
+						</DockPanel>
+					</TreeViewItem.Header>
+					<TreeViewItem>
+						<TreeViewItem.Header>
+							<DockPanel LastChildFill="True">
+								<Image DockPanel.Dock="Left" />
+								<TextBlock Text="Common HTTP Features" />
+							</DockPanel>
+						</TreeViewItem.Header>
+						<TreeViewItem Tag="IIS:DefaultDocument">
+							<TreeViewItem.Header>
+								<DockPanel LastChildFill="True">
+									<Image DockPanel.Dock="Left" />
+									<TextBlock Text="Default Document" />
+								</DockPanel>
+							</TreeViewItem.Header>
+						</TreeViewItem>
+						<TreeViewItem Tag="IIS:HttpErrors">
+							<TreeViewItem.Header>
+								<DockPanel LastChildFill="True">
+									<Image DockPanel.Dock="Left" />
+									<TextBlock Text="HTTP Errors" />
+								</DockPanel>
+							</TreeViewItem.Header>
+						</TreeViewItem>
+						<TreeViewItem Tag="IIS:StaticContent">
+							<TreeViewItem.Header>
+								<DockPanel LastChildFill="True">
+									<Image DockPanel.Dock="Left" />
+									<TextBlock Text="Static Content" />
+								</DockPanel>
+							</TreeViewItem.Header>
+						</TreeViewItem>
+						<TreeViewItem Tag="IIS:HttpRedirect">
+							<TreeViewItem.Header>
+								<DockPanel LastChildFill="True">
+									<Image DockPanel.Dock="Left" />
+									<TextBlock Text="HTTP Redirection" />
+								</DockPanel>
+							</TreeViewItem.Header>
+						</TreeViewItem>
+					</TreeViewItem>
+					<TreeViewItem>
+						<TreeViewItem.Header>
+							<DockPanel LastChildFill="True">
+								<Image DockPanel.Dock="Left" />
+								<TextBlock Text="Web Management Tools" />
+							</DockPanel>
+						</TreeViewItem.Header>
+						<TreeViewItem Tag="IIS:ManagementConsole">
+							<TreeViewItem.Header>
+								<DockPanel LastChildFill="True">
+									<Image DockPanel.Dock="Left" />
+									<TextBlock Text="IIS Management Console" />
+								</DockPanel>
+							</TreeViewItem.Header>
+						</TreeViewItem>
+					</TreeViewItem>
+					<TreeViewItem>
+						<TreeViewItem.Header>
+							<DockPanel LastChildFill="True">
+								<Image DockPanel.Dock="Left" />
+								<TextBlock Text="Application Development" />
+							</DockPanel>
+						</TreeViewItem.Header>
+						<TreeViewItem Tag="IIS:NetFxExtensibility">
+							<TreeViewItem.Header>
+								<DockPanel LastChildFill="True">
+									<Image DockPanel.Dock="Left" />
+									<TextBlock Text=".NET Extensibility 4.5" />
+								</DockPanel>
+							</TreeViewItem.Header>
+						</TreeViewItem>
+						<TreeViewItem Tag="IIS:ASPNET">
+							<TreeViewItem.Header>
+								<DockPanel LastChildFill="True">
+									<Image DockPanel.Dock="Left" />
+									<TextBlock Text="ASP.NET 4.5" />
+								</DockPanel>
+							</TreeViewItem.Header>
+						</TreeViewItem>
+					</TreeViewItem>
+				</TreeViewItem>
+				<TreeViewItem>
+					<TreeViewItem.Header>
+						<DockPanel LastChildFill="True">
+							<Image DockPanel.Dock="Left" MaxWidth="20" />
+							<TextBlock Text=".NET Framework 4.5(+) Features" />
+						</DockPanel>
+					</TreeViewItem.Header>
+					<TreeViewItem Tag="IIS:ASPNET">
+						<TreeViewItem.Header>
+							<DockPanel LastChildFill="True">
+								<Image DockPanel.Dock="Left" />
+								<TextBlock Text="ASP.NET 4.5" />
+							</DockPanel>
+						</TreeViewItem.Header>
+					</TreeViewItem>
+					<TreeViewItem>
+						<TreeViewItem.Header>
+							<DockPanel LastChildFill="True">
+								<Image DockPanel.Dock="Left" />
+								<TextBlock Text="WCF Services" />
+							</DockPanel>
+						</TreeViewItem.Header>
+						<TreeViewItem Tag="NET:HTPACT">
+							<TreeViewItem.Header>
+								<DockPanel LastChildFill="True">
+									<Image DockPanel.Dock="Left" />
+									<TextBlock Text="HTTP Activation" />
+								</DockPanel>
+							</TreeViewItem.Header>
+						</TreeViewItem>
+						<TreeViewItem Tag="NET:TCPS">
+							<TreeViewItem.Header>
+								<DockPanel LastChildFill="True">
+									<Image DockPanel.Dock="Left" />
+									<TextBlock Text="TCP Port Sharing" />
+								</DockPanel>
+							</TreeViewItem.Header>
+						</TreeViewItem>
+					</TreeViewItem>
+				</TreeViewItem>
+			</TreeView>
+		</StackPanel>
+	</DockPanel>
+	<Control.Resources>
+		<Style TargetType="Image">
+			<Setter Property="Margin" Value="0,0,6,0" />
+			<Setter Property="MaxHeight" Value="12" />
+		</Style>
+	</Control.Resources>
+</UserControl>

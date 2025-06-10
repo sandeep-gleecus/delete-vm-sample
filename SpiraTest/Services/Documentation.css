@@ -1,0 +1,129 @@
+﻿@font-face 
+{
+  font-family: 'Kanit';
+  src: url('../App_Themes/fonts/Kanit-Light.ttf')  format('truetype');
+}
+@font-face 
+{
+  font-family: 'Kanit';
+  src: url('../App_Themes/fonts/Kanit-LightItalic.ttf')  format('truetype');
+  font-style: italic;
+}
+@font-face 
+{
+  font-family: 'Kanit';
+  src: url('../App_Themes/fonts/Kanit-Regular.ttf')  format('truetype');
+  font-weight: bold;
+}
+@font-face 
+{
+  font-family: 'Kanit';
+  src: url('../App_Themes/fonts/Kanit-Italic.ttf')  format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face
+{
+	font-family: 'Josefin';
+	src: url('../App_Themes/fonts/JosefinSans-Regular.ttf')  format('truetype');
+}
+
+body
+{
+	color: #333;
+	background-color: white;
+	font-family: -apple-system, Kanit, Verdana, sans-serif;
+	margin-left: 0px;
+	margin-top: 0px;
+	font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: Josefin, -apple-system, Kanit, sans-serif;
+}
+table
+{
+	border-collapse: collapse;
+}
+a, 
+a:hover, 
+a:visited, 
+a:active
+{
+	text-decoration: none;
+}
+a
+{
+	color: #f16824;
+}
+a:hover,
+a:active
+{
+	color: #c1480b;
+}
+a:visited
+{
+	color: #c1480b;
+}
+
+/* Used by WsdlHelpGenerator for old ASMX web services pages */
+.heading1
+{
+    background-color: #073642;
+    color: white;
+    font-family: Josefin;
+    font-size: 24px;
+    margin-top: 0px;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+.asmxBody
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.button
+{
+    background-color: #fdcb26;
+    border-color: #fdcb26;
+    color: #333;
+	border-style: solid;
+    border-width: 1px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.button:hover {
+    background-color: #fff1c4;
+    border-color: #f08231;
+}
+.alert-box {
+	background-color: #fff1c4;
+	border-color: #f08231;
+	color: #333;
+	border-style: solid;
+	border-width: 1px;
+	padding: 6px 12px;
+	font-size: 14px;
+	border-radius: 4px;
+}
+.code {
+	font-family: monospace, monospace;
+	font-size: 0.9em;
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	line-height: 1.42857143;
+	color: #333;
+	word-break: break-all;
+	word-wrap: break-word;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	overflow-x: hidden;
+}
+code {
+	font-size: 90%;
+	color: #c7254e;
+	background-color: #f9f2f4;
+}

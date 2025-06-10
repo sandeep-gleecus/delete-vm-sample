@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ArtifactUploadDialog_NoJava" xml:space="preserve">
+    <value>&lt;a href='http://www.java.com'&gt;Java-Pluginia&lt;/a&gt; ei ole asennettu selaimeesi.</value>
+  </data>
+	<data name="ArtifactUploadDialog_PasteImageFromClipboard" xml:space="preserve">
+    <value>Liitä kuva leikepöydältä</value>
+  </data>
+	<data name="DocumentDetails_Cancel" xml:space="preserve">
+    <value>Peruuta</value>
+  </data>
+	<data name="DocumentDetails_CreatedBy" xml:space="preserve">
+    <value>Luonut:</value>
+  </data>
+	<data name="DocumentDetails_Description" xml:space="preserve">
+    <value>Kuvaus:</value>
+  </data>
+	<data name="DocumentDetails_DocumentID" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+	<data name="DocumentDetails_DocumentType" xml:space="preserve">
+    <value>Dokumentti&amp;nbsp; Tyyppi:</value>
+  </data>
+	<data name="DocumentDetails_EditedBy" xml:space="preserve">
+    <value>Muokannut:</value>
+  </data>
+	<data name="DocumentDetails_Filename" xml:space="preserve">
+    <value>Tiedostonimi:</value>
+  </data>
+	<data name="DocumentDetails_FileType" xml:space="preserve">
+    <value>Tiedosto&amp;nbsp; Tyyppi:</value>
+  </data>
+	<data name="DocumentDetails_Tags" xml:space="preserve">
+    <value>Tunnisteet:</value>
+  </data>
+	<data name="DocumentDetails_Version" xml:space="preserve">
+    <value>Versio:</value>
+  </data>
+	<data name="DocumentDetails_ViewDetails" xml:space="preserve">
+    <value>Näytä yksityiskohdat</value>
+  </data>
+	<data name="TestRunDetails_IncidentList" xml:space="preserve">
+    <value>Testiajo-askeleen havaintolista:</value>
+  </data>
+	<data name="TestSetDetails_AddTestCaseLegend" xml:space="preserve">
+    <value>Valitse nykyiseen testijoukkoon lisättävät testi(t):</value>
+  </data>
+	<data name="TestSetDetails_AddTestCaseTitle" xml:space="preserve">
+    <value>Lisää Testitapaus Testijoukkoon</value>
+  </data>
+	<data name="TestSetDetails_TestCaseParametersLegend" xml:space="preserve">
+    <value>Täytä parametrit tämän Testitapauksen syötteeseen:</value>
+  </data>
+	<data name="TestSetDetails_TestCaseParametersNone" xml:space="preserve">
+    <value>Tälle testitapaukselle ei ole määritelty yhtään parametria.</value>
+  </data>
+	<data name="TestSetDetails_TestCaseParametersTitle" xml:space="preserve">
+    <value>Muokkaa Testitapauksen Parametereja</value>
+  </data>
+	<data name="TestStepDetails_SavedChanges" xml:space="preserve">
+    <value>Testiaskeleen muutokset onnistuneesti talletettu.</value>
+  </data>
+	<data name="WebParts_AvailableWidgets" xml:space="preserve">
+    <value>Käytettävissä olevat Widgetit</value>
+  </data>
+	<data name="WebParts_ClosedWidgets" xml:space="preserve">
+    <value>Suljetut Widgetit</value>
+  </data>
+	<data name="WebParts_EditWidgetSettings" xml:space="preserve">
+    <value>Muokkaa Widgetin asetuksia</value>
+  </data>
+	<data name="Administration_GeneralSettings_DefaultCultureNoValue" xml:space="preserve">
+    <value>--- Palvelimen oletusarvo ---</value>
+  </data>
+	<data name="UserProfile_UserCultureNoValue" xml:space="preserve">
+    <value>--- Käytä sovelluksen oletusarvoa  ---</value>
+  </data>
+	<data name="Global_ChooseProject" xml:space="preserve">
+    <value>--- Valitse Projekti ---</value>
+  </data>
+	<data name="Global_AllReleases" xml:space="preserve">
+    <value>--- Kaikki Julkaisut ---</value>
+  </data>
+	<data name="Global_DropDownAll" xml:space="preserve">
+    <value>-- Kaikki --</value>
+  </data>
+	<data name="Global_ShowHideColumns" xml:space="preserve">
+    <value>-Näytä/piilota sarakkeet-</value>
+  </data>
+	<data name="Global_ShowLevel" xml:space="preserve">
+    <value>--- Näytä Taso ---</value>
+  </data>
+	<data name="Global_AllLevels" xml:space="preserve">
+    <value>Kaikki tasot</value>
+  </data>
+	<data name="Global_ExportToProject" xml:space="preserve">
+    <value>Vie Projektiin</value>
+  </data>
+	<data name="Global_Hide" xml:space="preserve">
+    <value>Piilota</value>
+  </data>
+	<data name="Global_Level" xml:space="preserve">
+    <value>Taso</value>
+  </data>
+	<data name="Global_Show" xml:space="preserve">
+    <value>Näytä</value>
+  </data>
+	<data name="RequirementList_ChildRequirement" xml:space="preserve">
+    <value>ali-Vaatimus</value>
+  </data>
+	<data name="RequirementList_NewRequirement" xml:space="preserve">
+    <value>Uusi Vaatimus</value>
+  </data>
+	<data name="Requirements_CreateTestCases" xml:space="preserve">
+    <value>Luo Testitapaus</value>
+  </data>
+	<data name="Requirements_CreateTestSet" xml:space="preserve">
+    <value>Luo Testijoukko</value>
+  </data>
+	<data name="Releases_CreateTestSet" xml:space="preserve">
+    <value>Luo Testijoukko</value>
+  </data>
+	<data name="Releases_NewIteration" xml:space="preserve">
+    <value>Uusi Iteraatio</value>
+  </data>
+	<data name="Releases_NewRelease" xml:space="preserve">
+    <value>Uusi Julkaisu</value>
+  </data>
+	<data name="Global_Host" xml:space="preserve">
+    <value>Isäntä</value>
+  </data>
+	<data name="Global_NewCustomList" xml:space="preserve">
+    <value>Uusi kustomoitu lista</value>
+  </data>
+	<data name="Global_NewDocumentType" xml:space="preserve">
+    <value>Uusi dokumenttityyppi</value>
+  </data>
+	<data name="Global_NewFolder" xml:space="preserve">
+    <value>Uusi kansio</value>
+  </data>
+	<data name="Global_NewHost" xml:space="preserve">
+    <value>Uusi isäntä</value>
+  </data>
+	<data name="Global_NewIncident" xml:space="preserve">
+    <value>Uusi Havainto</value>
+  </data>
+	<data name="Global_NewIteration" xml:space="preserve">
+    <value>Uusi Iteraatio</value>
+  </data>
+	<data name="Global_NewRelease" xml:space="preserve">
+    <value>Uusi Julkaisu</value>
+  </data>
+	<data name="Global_NewSubFolder" xml:space="preserve">
+    <value>Uusi alikansio</value>
+  </data>
+	<data name="Global_NewTask" xml:space="preserve">
+    <value>Uusi Tehtävä</value>
+  </data>
+	<data name="Global_NewTestCase" xml:space="preserve">
+    <value>Uusi Testitapaus</value>
+  </data>
+	<data name="Global_NewTestSet" xml:space="preserve">
+    <value>Uusi Testijoukko</value>
+  </data>
+	<data name="Global_NewValue" xml:space="preserve">
+    <value>Uusi arvo</value>
+  </data>
+	<data name="ReleasesService_NoTestsMapped" xml:space="preserve">
+    <value>​Tähän Julkaisuun/Iteraatioon ei ole liitetty testejä</value>
+  </data>
+	<data name="TestSetList_NewChildTestSet" xml:space="preserve">
+    <value>Uusi ali-Testitapaus</value>
+  </data>
+	<data name="TestSetList_NewTestSet" xml:space="preserve">
+    <value>Uusi Testijoukko</value>
+  </data>
+	<data name="TestCaseList_AddToRelease" xml:space="preserve">
+    <value>Lisää Julkaisuun</value>
+  </data>
+	<data name="TestCaseList_AddToRequirement" xml:space="preserve">
+    <value>Lisää Vaatimukseen</value>
+  </data>
+	<data name="TestCaseList_AddToTestSet" xml:space="preserve">
+    <value>Lisää Testijoukkoon</value>
+  </data>
+	<data name="TestCaseList_ExecuteTests" xml:space="preserve">
+    <value>Suorita Testit</value>
+  </data>
+	<data name="TestCaseList_NewChildTestCase" xml:space="preserve">
+    <value>Uusi ali-Testitapaus</value>
+  </data>
+	<data name="TestCaseList_NewTestCase" xml:space="preserve">
+    <value>Uusi Testitapaus</value>
+  </data>
+	<data name="AutomationHosts_NewHost" xml:space="preserve">
+    <value>Uusi isäntä</value>
+  </data>
+	<data name="Global_CollapseAll" xml:space="preserve">
+    <value>Pura kaikki</value>
+  </data>
+	<data name="Global_ExpandAll" xml:space="preserve">
+    <value>Laajenna kaikki</value>
+  </data>
+	<data name="Global_NoneDropDown" xml:space="preserve">
+    <value>-- Tyhjä --</value>
+  </data>
+	<data name="Global_PleaseSelectDropDown" xml:space="preserve">
+    <value>--- Valitse ---</value>
+  </data>
+	<data name="IncidentList_CopyIncident" xml:space="preserve">
+    <value>Kopioi Havainto</value>
+  </data>
+	<data name="IncidentList_DeleteIncident" xml:space="preserve">
+    <value>Poista Havainto</value>
+  </data>
+	<data name="IncidentList_NewIncident" xml:space="preserve">
+    <value>Uusi Havainto</value>
+  </data>
+	<data name="IterationPlan_InsertTask" xml:space="preserve">
+    <value>Lisää Tehtävä</value>
+  </data>
+	<data name="TaskList_CopyTask" xml:space="preserve">
+    <value>Kopioi Tehtävä</value>
+  </data>
+	<data name="TaskList_DeleteTask" xml:space="preserve">
+    <value>Poista Tehtävä</value>
+  </data>
+	<data name="TaskList_NewTask" xml:space="preserve">
+    <value>Uusi Tehtävä</value>
+  </data>
+	<data name="ArtifactLinkPanel_AddAssociation" xml:space="preserve">
+    <value>Lisää Yhteys</value>
+  </data>
+	<data name="ArtifactLinkPanel_AddNewAssociation" xml:space="preserve">
+    <value>Lisää uusi Yhteys</value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseArtifact" xml:space="preserve">
+    <value>Valitse asia, johon haluat lisätä yhteyden:</value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseFromList" xml:space="preserve">
+    <value>Valitse listasta:</value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseTypeOfArtifact" xml:space="preserve">
+    <value>Valitse asian tyyppi, johon haluat lisätä yhteyden:</value>
+  </data>
+	<data name="ArtifactLinkPanel_CreateRequirementFromIncident" xml:space="preserve">
+    <value>Luo uusi vaatimus tästä havainnosta</value>
+  </data>
+	<data name="ArtifactLinkPanel_DeleteAssociation" xml:space="preserve">
+    <value>Poista Yhteys</value>
+  </data>
+	<data name="ArtifactLinkPanel_EnterArtifactId" xml:space="preserve">
+    <value>Anna Asian ID:</value>
+  </data>
+	<data name="ArtifactLinkPanel_IncludeSourceCodeRevisions" xml:space="preserve">
+    <value>Sisällytä lähdekoodin versiot</value>
+  </data>
+	<data name="AttachmentPanel_AddAttachment" xml:space="preserve">
+    <value>Lisää Liite</value>
+  </data>
+	<data name="FileUploadDialog_AddNewDocument" xml:space="preserve">
+    <value>Lisää uusi Dokumentti</value>
+  </data>
+	<data name="Incidents_CreateRequirement" xml:space="preserve">
+    <value>Muunna Vaatimukseksi</value>
+  </data>
+	<data name="TaskList_InsertTask" xml:space="preserve">
+    <value>Lisää Tehtävä</value>
+  </data>
+	<data name="TestCaseDetails_EditParameters" xml:space="preserve">
+    <value>Muokkaa Parametreja</value>
+  </data>
+	<data name="TestCaseDetails_InsertLink" xml:space="preserve">
+    <value>Lisää Linkki</value>
+  </data>
+	<data name="TestCaseDetails_InsertStep" xml:space="preserve">
+    <value>Lisää Askel</value>
+  </data>
+	<data name="TestCaseDetails_AddLinkedTestCase" xml:space="preserve">
+    <value>Lisää linkitetty Testitapaus</value>
+  </data>
+	<data name="TestCaseDetails_ChooseTestCaseForLink" xml:space="preserve">
+    <value>Valitse testitapaus, joka lisätään linkkinä testiaskel-listaan:</value>
+  </data>
+	<data name="TestCaseDetails_EditLinkedTestParameters" xml:space="preserve">
+    <value>Muokkaa linkitetyn Testitapauksen parametreja</value>
+  </data>
+	<data name="TestCaseDetails_PleaseFillOutParameters" xml:space="preserve">
+    <value>Täytä tämän linkitetyn testitapauksen parametrit:</value>
+  </data>
+	<data name="TestSetDetails_AddTests" xml:space="preserve">
+    <value>Lisää Testejä</value>
+  </data>
+	<data name="TestSetDetails_EditParameters" xml:space="preserve">
+    <value>Muokkaa Parametreja</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTests" xml:space="preserve">
+    <value>Suorita Testit</value>
+  </data>
+	<data name="TestSetDetails_InsertTests" xml:space="preserve">
+    <value>Lisää Testit</value>
+  </data>
+	<data name="TestSetDetails_RemoveTests" xml:space="preserve">
+    <value>Poista Testit</value>
+  </data>
+	<data name="TestCaseExecution_NoReleasesDropDown" xml:space="preserve">
+    <value>--- Ei Julkaisuja tähän projektiin ---</value>
+  </data>
+	<data name="Documents_AddDocument" xml:space="preserve">
+    <value>Lisää Dokumentti</value>
+  </data>
+	<data name="Global_SortedAscending" xml:space="preserve">
+    <value>Lajiteltu nousevasti</value>
+  </data>
+	<data name="Global_SortedDescending" xml:space="preserve">
+    <value>Lajiteltu laskevasti</value>
+  </data>
+	<data name="Global_Filter" xml:space="preserve">
+    <value>Suodatin:</value>
+  </data>
+	<data name="Global_AllItems" xml:space="preserve">
+    <value>Kaikki Kohteet</value>
+  </data>
+	<data name="Global_ItemsInFolder" xml:space="preserve">
+    <value>Kohteet nykyisessä kansiossa</value>
+  </data>
+	<data name="TestCases_BlockTestCases" xml:space="preserve">
+    <value>Estä Testitapaus</value>
+  </data>
+	<data name="TestCases_UnBlockTestCases" xml:space="preserve">
+    <value>Salli Testitapaus</value>
+  </data>
+	<data name="Timecard_SubmitConfirm" xml:space="preserve">
+    <value>Oletko varma että haluat lähettää nämä työmäärät? Se päivittää lisätyön ja jäljellä olevan työn kaikkiin sivun kohteisiin.</value>
+  </data>
+	<data name="Timecard_SubmitSuccess" xml:space="preserve">
+    <value>Työmääräsi lähetettiin onnistuneesti.</value>
+  </data>
+	<data name="AttachmentPanel_AddExisting" xml:space="preserve">
+    <value>Lisää nykyinen</value>
+  </data>
+	<data name="AttachmentPanel_AddExistingDocument" xml:space="preserve">
+    <value>Lisää nykyinen Dokumentti</value>
+  </data>
+	<data name="AttachmentPanel_AddNew" xml:space="preserve">
+    <value>Lisää uusi</value>
+  </data>
+	<data name="AttachmentPanel_IncludeSourceCodeDocuments" xml:space="preserve">
+    <value>Sisällytä Lähdekoodi-dokumentit</value>
+  </data>
+	<data name="AttachmentPanel_ChooseTypeOfExisting" xml:space="preserve">
+    <value>Valitse olemassa olevan dokumentin sijainti, jonka haluat lisätä:</value>
+  </data>
+	<data name="Global_PrintItems" xml:space="preserve">
+    <value>Tulosta Kohteet</value>
+  </data>
+	<data name="TaskList_DeleteTask" xml:space="preserve">
+    <value>Poista Tehtävä</value>
+  </data>
+	<data name="ArtifactLinkPanel_AddAssociation" xml:space="preserve">
+    <value>Lisää yhteys</value>
+  </data>
+	<data name="ArtifactLinkPanel_AddNewAssociation" xml:space="preserve">
+    <value>Lisää uusi yhteys</value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseFromList" xml:space="preserve">
+    <value>Valitse listasta:</value>
+  </data>
+	<data name="ArtifactLinkPanel_ChooseTypeOfArtifact" xml:space="preserve">
+    <value>Valitse Asian tyyppi, johon haluat lisätä yhteyden:</value>
+  </data>
+	<data name="ArtifactLinkPanel_CreateRequirementFromIncident" xml:space="preserve">
+    <value>Luo uusi Vaatimus tästä Havainnosta</value>
+  </data>
+	<data name="ArtifactLinkPanel_DeleteAssociation" xml:space="preserve">
+    <value>Poista yhteys</value>
+  </data>
+	<data name="DocumentDetails_DocumentType" xml:space="preserve">
+    <value>Dokumentti&amp;nbsp; Tyyppi:</value>
+  </data>
+	<data name="DocumentDetails_FileType" xml:space="preserve">
+    <value>Tiedosto&amp;nbsp; Tyyppi:</value>
+  </data>
+	<data name="Global_ExportToProject" xml:space="preserve">
+    <value>Vie Projektiin</value>
+  </data>
+	<data name="Global_NewCustomList" xml:space="preserve">
+    <value>Uusi mukautettu lista</value>
+  </data>
+	<data name="Global_NewRelease" xml:space="preserve">
+    <value>Uusi Julkaisu</value>
+  </data>
+	<data name="Global_NoneDropDown" xml:space="preserve">
+    <value>-- Tyhjä --</value>
+  </data>
+	<data name="TestCaseList_NewChildTestCase" xml:space="preserve">
+    <value>Uusi ali-Testitapaus</value>
+  </data>
+	<data name="Admin_ReportDetails_AddNewQuery" xml:space="preserve">--- Lisää uusi Haku ---</data><data name="Admin_ReportDetails_CreateDefaultTemplate" xml:space="preserve">Luo oletus sivupohja</data><data name="Admin_ReportDetails_CustomQueryLegend" xml:space="preserve">Sinun on annettava SQL-lause hakeaksesi raporttiin tietoja. Voit käyttää erikoisavaimia ${ProjectId} ja ${ProjectGroupId} rajoittaaksesi haun tiettyyn projektiin tai projektiryhmään. VAROITUS: Jos et rajaa hakua näillä parametreilla haetaan tiedot kaikista järjestelmässä olevista projekteista, riippumatta käyttäjän roolista tai oikeuksista.</data><data name="Admin_ReportDetails_CustomTemplateLegend" xml:space="preserve">Sinun on annettava XSLT-pohja esittääksesi haettu tieto HTML-formaatissa. Kun painat Luo oletus sivupohja-valintaa järjestelmä luo oletus XSLT-pohjan, jota voi muokata.</data><data name="Admin_ReportDetails_PreviewResults" xml:space="preserve">Esikatsele tuloksia</data><data name="Admin_ReportDetails_StandardTemplateLegend" xml:space="preserve">Sinun on annettava XSLT-pohja esittääksesi haettu tieto HTML-formaatissa. Kun ensin lisäät osan tehdään tälle pohja, jota voit muokata jos haluat.</data><data name="Admin_ReportDetails_AddNewQuery" xml:space="preserve"><value>--- Lisää uusi Haku ---</value></data><data name="Admin_ReportDetails_CreateDefaultTemplate" xml:space="preserve"><value>Luo oletus sivupohja</value></data><data name="Admin_ReportDetails_CustomQueryLegend" xml:space="preserve"><value>Sinun on annettava SQL-lause hakeaksesi raporttiin tietoja. Voit käyttää erikoisavaimia ${ProjectId} ja ${ProjectGroupId} rajoittaaksesi haun tiettyyn projektiin tai projektiryhmään. VAROITUS: Jos et rajaa hakua näillä parametreilla haetaan tiedot kaikista järjestelmässä olevista projekteista, riippumatta käyttäjän roolista tai oikeuksista.</value></data><data name="Admin_ReportDetails_CustomTemplateLegend" xml:space="preserve"><value>Sinun on annettava XSLT-pohja esittääksesi haettu tieto HTML-formaatissa. Kun klikkaat Luo oletus sivupohja-valintaa järjestelmä luo oletus XSLT-pohjan, jota voi muokata.</value></data><data name="Admin_ReportDetails_PreviewResults" xml:space="preserve"><value>Esikatsele tuloksia</value></data><data name="Admin_ReportDetails_StandardTemplateLegend" xml:space="preserve"><value>Sinun on annettava XSLT-pohja esittääksesi haettu tieto HTML-formaatissa. Kun ensin lisäät osan tehdään tälle pohja, jota voit muokata jos haluat.</value></data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve"><value>Poista Julkaisusta</value></data><data name="Global_UnknownDropDownValue" xml:space="preserve"><value>--Tuntematon--</value></data><data name="Global_SelectRole" xml:space="preserve"><value>--Valitse rooli--</value></data><data name="Admin_PlanningOptions_SuggestPointMetric" xml:space="preserve"><value>Ehdota pisteen työmäärä</value></data><data name="Global_All" xml:space="preserve"><value>Kaikki</value></data><data name="Global_AllActive" xml:space="preserve"><value>Kaikki aktiiviset</value></data><data name="Global_AllButDeleted" xml:space="preserve"><value>Kaikki paitsi poistetut</value></data><data name="Requirements_FocusOn" xml:space="preserve"><value>Keskitä</value></data><data name="SidebarPanel_QuickFilters" xml:space="preserve"><value>Pikasuodatin</value></data><data name="Global_AllReleases2" xml:space="preserve"><value>(Kaikki Julkaisut)</value></data><data name="TaskDetails_SameAsCurrentTask" xml:space="preserve"><value>-- Sama kuin nykyinen Tehtävä --</value></data><data name="Global_NewPhase" xml:space="preserve"><value>Uusi vaihe</value></data><data name="Releases_ChildIteration" xml:space="preserve"><value>ali-Iteraatio</value></data><data name="Releases_ChildRelease" xml:space="preserve"><value>ali-Julkaisu</value></data><data name="Global_ExportToExcel" xml:space="preserve"><value>Vie Exceliin</value></data><data name="Global_ExportToPdf" xml:space="preserve"><value>Vie Acrobatiin</value></data><data name="Global_ExportToWord" xml:space="preserve"><value>Vie Wordiin</value></data><data name="TaskList_CloneTask" xml:space="preserve"><value>Kloonaa Tehtävä</value></data><data name="IncidentList_CloneIncident" xml:space="preserve"><value>Kloonaa Havainto</value></data><data name="InsertTestLink_CreateNewTestCase" xml:space="preserve"><value>Luo uusi Testitapaus</value></data><data name="InsertTestLink_LinkExistingTestCase" xml:space="preserve"><value>Linkitä olemassaoleva Testitapaus</value></data><data name="InsertTestLink_LinkTypeLegend" xml:space="preserve"><value>Haluatko:</value></data><data name="Global_RootFolderDropDown" xml:space="preserve"><value>--- Juurihakemisto ---</value></data><data name="TestCaseDetails_ChooseTestCaseToImport" xml:space="preserve"><value>Valitse Testitapaus josta testiaskeleet tuodaan:</value></data><data name="TestCaseDetails_ImportStepsFromTestCase" xml:space="preserve"><value>Tuo askeleita Testitapauksesta</value></data><data name="TestCaseDetails_CreateTestCaseForLink" xml:space="preserve"><value>Valitse hakemisto ja nimi uudelle linkitetylle testitapaukselle:</value></data><data name="TestCaseDetails_EnterParameters" xml:space="preserve"><value>Syötä parametrit</value></data><data name="KeyBoardShortcuts_GlobalNav_MyPage" xml:space="preserve"><value>Mene omalle sivulle</value></data><data name="KeyBoardShortcuts_GlobalNav_ProjectHome" xml:space="preserve"><value>Mene Projektin kotiin</value></data><data name="KeyBoardShortcuts_GlobalNav_ProjectGroupHome" xml:space="preserve"><value>Mene Projektiryhmän kotiin</value></data><data name="KeyBoardShortcuts_GlobalNav_Requirements" xml:space="preserve"><value>Mene Vaatimuksiin</value></data><data name="KeyBoardShortcuts_GlobalNav_PlanningBoard" xml:space="preserve"><value>Mene Suunnittelutauluun</value></data><data name="KeyBoardShortcuts_GlobalNav_Releases" xml:space="preserve"><value>Mene Julkaisuihin</value></data><data name="KeyBoardShortcuts_GlobalNav_Documents" xml:space="preserve"><value>Mene Dokumentteihin</value></data><data name="KeyBoardShortcuts_GlobalNav_TestCases" xml:space="preserve"><value>Mene Testitapauksiin</value></data><data name="KeyBoardShortcuts_GlobalNav_TestSets" xml:space="preserve"><value>Mene Testijoukkoihin</value></data><data name="KeyBoardShortcuts_GlobalNav_TestRuns" xml:space="preserve"><value>Mene Testiajoihin</value></data><data name="KeyBoardShortcuts_GlobalNav_AutomationHosts" xml:space="preserve"><value>Mene Automaatio-isäntiin</value></data><data name="KeyBoardShortcuts_GlobalNav_Incidents" xml:space="preserve"><value>Mene Havaintoihin</value></data><data name="KeyBoardShortcuts_GlobalNav_Tasks" xml:space="preserve"><value>Mene Tehtäviin</value></data><data name="KeyBoardShortcuts_GlobalNav_Resources" xml:space="preserve"><value>Mene Resursseihin</value></data><data name="KeyBoardShortcuts_GlobalNav_SourceCode" xml:space="preserve"><value>Mene lähdekoodiin</value></data><data name="KeyBoardShortcuts_GlobalNav_Reporting" xml:space="preserve"><value>Mene Raportointiin</value></data><data name="KeyBoardShortcuts_GlobalNav_UserProfile" xml:space="preserve"><value>Mene käyttäjäprofiiliin</value></data><data name="KeyBoardShortcuts_GlobalNav_Administration" xml:space="preserve"><value>Mene Ylläpitoon</value></data><data name="KeyBoardShortcuts_GlobalSearch_Search" xml:space="preserve"><value>Globaali haku</value></data><data name="KeyBoardShortcuts_GlobalAction_NewIncident" xml:space="preserve"><value>Luo uusi Havainto</value></data><data name="KeyBoardShortcuts_GlobalAction_ShortcutReference" xml:space="preserve"><value>Näytä näppäimistön pikavalintojen viittaukset</value></data><data name="KeyBoardShortcuts_ListPage_NextRow" xml:space="preserve"><value>Mene seuraavalle riville</value></data><data name="KeyBoardShortcuts_ListPage_ToggleNav" xml:space="preserve"><value>Vaihda taulukkolistassa näppäimistöselaamiseen</value></data><data name="KeyBoardShortcuts_ListPage_ToggleCheckRow" xml:space="preserve"><value>Vaihda nykyinen rivi valituksi</value></data><data name="KeyBoardShortcuts_ListPage_OpenItem" xml:space="preserve"><value>Avaa valittu kohde</value></data><data name="KeyBoardShortcuts_ListPage_OpenItemNewWindow" xml:space="preserve"><value>Avaa valittu kohde uudessa selainikkunassa</value></data><data name="KeyBoardShortcuts_ListPage_PreviousRow" xml:space="preserve"><value>Mene edelliselle riville</value></data><data name="KeyBoardShortcuts_DetailsPage_NextTab" xml:space="preserve"><value>Mene seuraavaan välilehteen</value></data><data name="KeyBoardShortcuts_DetailsPage_PreviousTab" xml:space="preserve"><value>Mene edelliseen välilehteen</value></data><data name="KeyBoardShortcuts_Modal_Title" xml:space="preserve"><value>Näppäimistön pikavalintojen viittaukset</value></data><data name="KeyBoardShortcuts_GlobalNav_Title" xml:space="preserve"><value>Koko sivuston selaaminen</value></data><data name="KeyBoardShortcuts_GlobalNav_Note" xml:space="preserve"><value>Pääsy sivuille riippuu käyttäjästä ja projektista</value></data><data name="KeyBoardShortcuts_GlobalAction_Title" xml:space="preserve"><value>Koko sivuston pikavalinnat</value></data><data name="KeyBoardShortcuts_ListPage_Title" xml:space="preserve"><value>Listasivun pikavalinnat</value></data><data name="KeyBoardShortcuts_DetailsPage_Title" xml:space="preserve"><value>Lisätiedot sivun pikavalinnat</value></data><data name="KeyBoardShortcuts_TestExecution_Title" xml:space="preserve"><value>Testien suorittamisen pikavalinnat</value></data><data name="KeyBoardShortcuts_TestExecution_HeaderDisplay" xml:space="preserve"><value>Vaihda näyttöä</value></data><data name="KeyBoardShortcuts_TestExecution_SplitView" xml:space="preserve"><value>Näytä Jaettu näkymä</value></data><data name="KeyBoardShortcuts_TestExecution_TableView" xml:space="preserve"><value>Näytä Taulukkonäkymä</value></data><data name="KeyBoardShortcuts_TestExecution_MiniView" xml:space="preserve"><value>Näytä Niminäkymä</value></data><data name="KeyBoardShortcuts_TestExecution_SubViewLeft" xml:space="preserve"><value>Valitse vasen alinäkymä</value></data><data name="KeyBoardShortcuts_TestExecution_SubViewRight" xml:space="preserve"><value>Valitse oikea alinäkymä</value></data><data name="KeyBoardShortcuts_GlobalAction_Refresh" xml:space="preserve"><value>Virkistä</value></data><data name="KeyBoardShortcuts_TestExecution_ShowRun" xml:space="preserve"><value>Vaihda aina näyttäen testiajon lisätiedot</value></data><data name="KeyBoardShortcuts_TestExecution_HeaderInspector" xml:space="preserve"><value>Vaihda tarkistajan välilehdet</value></data><data name="KeyBoardShortcuts_TestExecution_ResultsTab" xml:space="preserve"><value>Vaihda Todellinen tulos välilehteen</value></data><data name="KeyBoardShortcuts_TestExecution_AttachmentsTab" xml:space="preserve"><value>Vaihda Liitetiedostot välilehteen</value></data><data name="KeyBoardShortcuts_TestExecution_IncidentsTab" xml:space="preserve"><value>Vaihda Havainnot välilehteen</value></data><data name="KeyBoardShortcuts_TestExecution_HeaderActions" xml:space="preserve"><value>Toiminteet</value></data><data name="KeyBoardShortcuts_TestExecution_TogglePausePlay" xml:space="preserve"><value>Vaihda Keskeytä / Aja</value></data><data name="KeyBoardShortcuts_TestExecution_AddResults" xml:space="preserve"><value>Lisää todellinen tulos</value></data><data name="KeyBoardShortcuts_TestExecution_Fail" xml:space="preserve"><value>Merkitse kyseinen askel Hylätyksi</value></data><data name="KeyBoardShortcuts_TestExecution_Pass" xml:space="preserve"><value>Merkitse kyseinen askel Hyväksytyksi</value></data><data name="KeyBoardShortcuts_TestExecution_Caution" xml:space="preserve"><value>Merkitse kyseinen askel Huomiolla</value></data><data name="KeyBoardShortcuts_TestExecution_Blocked" xml:space="preserve"><value>Merkitse kyseinen askel Estetyksi</value></data><data name="KeyBoardShortcuts_TestExecution_NotApplicable" xml:space="preserve"><value>Merkitse kyseinen askel N/A</value></data><data name="KeyBoardShortcuts_TestExecution_HeaderNavigate" xml:space="preserve"><value>Liiku Testiaskeleiden välillä</value></data><data name="KeyBoardShortcuts_TestExecution_NextStep" xml:space="preserve"><value>Siirry seuraavaan Testiajon askeleeseen</value></data><data name="KeyBoardShortcuts_TestExecution_PreviousStep" xml:space="preserve"><value>Siirry edelliseen Testiajon askeleeseen</value></data><data name="KeyBoardShortcuts_TestExecution_NextRun" xml:space="preserve"><value>Siirry seuraavaan Testiajoon</value></data><data name="KeyBoardShortcuts_TestExecution_PreviousRun" xml:space="preserve"><value>Siirry edelliseen Testiajoon</value></data><data name="TestStepDetails_EnterId" xml:space="preserve"><value>Syötä ID</value></data><data name="TestStepDetails_LinkExistingIncident" xml:space="preserve"><value>Linkitä olemassaolevaan Havaintoon</value></data><data name="TestStepDetails_LinkExistingIncidentIntro" xml:space="preserve"><value>Valitse Testiaskeleeseen liitettävä(t) Havainnot:</value></data><data name="KeyBoardShortcuts_GlobalSearch_GoToFirstResult" xml:space="preserve"><value>Mene ensimmäiseen listattuun tulokseen</value></data><data name="KeyBoardShortcuts_GlobalSearch_GoToSecondResult" xml:space="preserve"><value>Mene toiseen listattuun tulokseen</value></data><data name="KeyBoardShortcuts_GlobalSearch_GoToThirdResult" xml:space="preserve"><value>Mene kolmanteen listattuun tulokseen</value></data><data name="KeyBoardShortcuts_GlobalSearch_ShowResults" xml:space="preserve"><value>Näytä tulokset</value></data><data name="KeyBoardShortcuts_GlobalSearch_Title" xml:space="preserve"><value>Sivuston laajuinen haku</value></data><data name="TestRunDetails_LinkExistingIncidentIntro" xml:space="preserve"><value>Valitse Testiajon askeleeseen liitettävä(t) Havainnot:</value></data><data name="KeyBoardShortcuts_PlanningBoard_GroupByComponent" xml:space="preserve"><value>Ryhmitä Komponentin mukaan</value></data><data name="KeyBoardShortcuts_PlanningBoard_GroupByPackage" xml:space="preserve"><value>Ryhmitä Paketin mukaan</value></data><data name="KeyBoardShortcuts_PlanningBoard_GroupByPriority" xml:space="preserve"><value>Ryhmitä Prioriteetin mukaan</value></data><data name="KeyBoardShortcuts_PlanningBoard_GroupByStatus" xml:space="preserve"><value>Ryhmitä Tilan mukaan</value></data><data name="KeyBoardShortcuts_PlanningBoard_Title" xml:space="preserve"><value>Suunnittelutaulun oikoreitit</value></data><data name="KeyBoardShortcuts_PlanningBoard_ToggleDetails" xml:space="preserve"><value>Vaihda yksityiskohtainen näkymä</value></data><data name="KeyBoardShortcuts_PlanningBoard_ToggleIncidents" xml:space="preserve"><value>Vaihda Havainnot</value></data><data name="KeyBoardShortcuts_PlanningBoard_ToggleTasks" xml:space="preserve"><value>Vaihda Tehtävät</value></data><data name="KeyBoardShortcuts_PlanningBoard_ToggleTestCases" xml:space="preserve"><value>Vaihda Testitapaukset</value></data><data name="Global_AllProjects" xml:space="preserve"><value>(Kaikki Projektit)</value></data><data name="PendingTestRuns_Reassign_Intro" xml:space="preserve"><value>Valitse käyttäjän nimi, jolle haluat osoittaa kyseisen testiajon:</value></data><data name="SidebarPanel_Charts" xml:space="preserve"><value>Kaaviot</value></data><data name="KeyBoardShortcuts_DetailsPage_Save" xml:space="preserve"><value>Talleta kaikki muutokset</value></data></root>

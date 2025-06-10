@@ -1,0 +1,3 @@
+discussion_id:Key,artifact_id:Normal,text:String,creation_date:Normal,is_deleted:Normal,is_permanent:Normal,creator_id:Normal
+1,1,"<p>The v1.1 release is very important, we should look into ways to find additional people.</p>","DATEADD(day, -6, SYSUTCDATETIME())",0,0,2
+2,3,"<p>The database is an industry standard RDBMS system and it should handle the volume, but we should check.</p>","DATEADD(day, -4, SYSUTCDATETIME())",0,0,2

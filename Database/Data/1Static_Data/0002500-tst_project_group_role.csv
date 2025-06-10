@@ -1,0 +1,3 @@
+project_group_role_id:Key,name:String,description:String,active_yn:String
+1,Program Owner,Can add/remove projects to the program as well as view the program dashboard,Y
+2,Executive,Can view the program dashboard as well as view any of the projects in the program,Y

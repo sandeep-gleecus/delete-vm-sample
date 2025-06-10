@@ -1,0 +1,1948 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DatePicker_April" xml:space="preserve">
+    <value>апрель</value>
+  </data>
+  <data name="DatePicker_August" xml:space="preserve">
+    <value>август</value>
+  </data>
+  <data name="DatePicker_ChosenDateInvalid" xml:space="preserve">
+    <value>Извините, выбранная дата неприемлема. Пожалуйста, ознакомьтесь с инструкциями на странице.</value>
+  </data>
+  <data name="DatePicker_December" xml:space="preserve">
+    <value>декабрь</value>
+  </data>
+  <data name="DatePicker_DHTMLUnsupported" xml:space="preserve">
+    <value>Необходимые функции DHTML в этом браузере не поддерживаются.</value>
+  </data>
+  <data name="DatePicker_February" xml:space="preserve">
+    <value>февраль</value>
+  </data>
+  <data name="DatePicker_Fr" xml:space="preserve">
+    <value>Отец</value>
+  </data>
+  <data name="DatePicker_Friday" xml:space="preserve">
+    <value>пятница</value>
+  </data>
+  <data name="DatePicker_January" xml:space="preserve">
+    <value>январь</value>
+  </data>
+  <data name="DatePicker_July" xml:space="preserve">
+    <value>июль</value>
+  </data>
+  <data name="DatePicker_June" xml:space="preserve">
+    <value>июнь</value>
+  </data>
+  <data name="DatePicker_March" xml:space="preserve">
+    <value>март</value>
+  </data>
+  <data name="DatePicker_May" xml:space="preserve">
+    <value>май</value>
+  </data>
+  <data name="DatePicker_Mo" xml:space="preserve">
+    <value>Мо</value>
+  </data>
+  <data name="DatePicker_Monday" xml:space="preserve">
+    <value>Понедельник</value>
+  </data>
+  <data name="DatePicker_November" xml:space="preserve">
+    <value>ноябрь</value>
+  </data>
+  <data name="DatePicker_October" xml:space="preserve">
+    <value>октябрь</value>
+  </data>
+  <data name="DatePicker_Sa" xml:space="preserve">
+    <value>Sa</value>
+  </data>
+  <data name="DatePicker_Saturday" xml:space="preserve">
+    <value>суббота</value>
+  </data>
+  <data name="DatePicker_September" xml:space="preserve">
+    <value>сентябрь</value>
+  </data>
+  <data name="DatePicker_Su" xml:space="preserve">
+    <value>Су</value>
+  </data>
+  <data name="DatePicker_Sunday" xml:space="preserve">
+    <value>воскресенье</value>
+  </data>
+  <data name="DatePicker_TargetFormInvalid" xml:space="preserve">
+    <value>Поле целевой формы не назначено или недоступно.</value>
+  </data>
+  <data name="DatePicker_Th" xml:space="preserve">
+    <value>Th</value>
+  </data>
+  <data name="DatePicker_Thursday" xml:space="preserve">
+    <value>четверг</value>
+  </data>
+  <data name="DatePicker_Tu" xml:space="preserve">
+    <value>Tu</value>
+  </data>
+  <data name="DatePicker_Tuesday" xml:space="preserve">
+    <value>вторник</value>
+  </data>
+  <data name="DatePicker_UnknownError" xml:space="preserve">
+    <value>При выполнении этого скрипта произошла неизвестная ошибка.</value>
+  </data>
+  <data name="DatePicker_We" xml:space="preserve">
+    <value>Мы</value>
+  </data>
+  <data name="DatePicker_Wednesday" xml:space="preserve">
+    <value>среда</value>
+  </data>
+  <data name="DateRangeFilter_CustomDates" xml:space="preserve">
+    <value>Пользовательские диапазоны дат:</value>
+  </data>
+  <data name="DateRangeFilter_EnterDateRange" xml:space="preserve">
+    <value>Введите диапазон дат:</value>
+  </data>
+  <data name="DateRangeFilter_Last14Days" xml:space="preserve">
+    <value>Последние 14 дней</value>
+  </data>
+  <data name="DateRangeFilter_Last30Days" xml:space="preserve">
+    <value>Последние 30 дней</value>
+  </data>
+  <data name="DateRangeFilter_Last7Days" xml:space="preserve">
+    <value>Последние 7 дней</value>
+  </data>
+  <data name="DateRangeFilter_LastMonth" xml:space="preserve">
+    <value>последний месяц</value>
+  </data>
+  <data name="DateRangeFilter_LastWeek" xml:space="preserve">
+    <value>прошлая неделя</value>
+  </data>
+  <data name="DateRangeFilter_StandardDates" xml:space="preserve">
+    <value>Стандартные диапазоны дат:</value>
+  </data>
+  <data name="DateRangeFilter_ThisMonth" xml:space="preserve">
+    <value>Этот месяц</value>
+  </data>
+  <data name="DateRangeFilter_ThisWeek" xml:space="preserve">
+    <value>эта неделя</value>
+  </data>
+  <data name="DateRangeFilter_Today" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="DateRangeFilter_Yesterday" xml:space="preserve">
+    <value>Вчера</value>
+  </data>
+  <data name="FileArtifactUploadDialog_DefaultScreenshotFilename" xml:space="preserve">
+    <value>Скриншот1</value>
+  </data>
+  <data name="FileArtifactUploadDialog_ScreenshotFilenameRequired" xml:space="preserve">
+    <value>Для скриншота необходимо ввести имя файла.</value>
+  </data>
+  <data name="FileArtifactUploadDialog_ScreenshotFilenameWrongExtension" xml:space="preserve">
+    <value>Имя файла скриншота должно иметь расширение .png.</value>
+  </data>
+  <data name="FileArtifactUploadDialog_SupaClipboardContentUnsupported" xml:space="preserve">
+    <value>Буфер обмена не содержит поддерживаемого формата изображения.</value>
+  </data>
+  <data name="FileArtifactUploadDialog_SupaClipboardEmpty" xml:space="preserve">
+    <value>Буфер обмена пуст.</value>
+  </data>
+  <data name="FileArtifactUploadDialog_SupaClipboardErrorCodeUnknown" xml:space="preserve">
+    <value>Ошибка! К сожалению, для кода ошибки не реализовано ни одного сообщения об ошибке:</value>
+  </data>
+  <data name="FileArtifactUploadDialog_SupaClipboardUnknownError" xml:space="preserve">
+    <value>Неожиданная ошибка. Подробности см. в Java-Applet-Console.</value>
+  </data>
+  <data name="FileArtifactUploadDialog_SupaInternalException" xml:space="preserve">
+    <value>Внутреннее исключение:</value>
+  </data>
+  <data name="FileArtifactUploadDialog_SupaNotLoadedYet" xml:space="preserve">
+    <value>Суп-апплет еще не заряжен.</value>
+  </data>
+  <data name="FileArtifactUploadDialog_SupaPasteImageFirst" xml:space="preserve">
+    <value>Пожалуйста, сначала вставьте изображение!</value>
+  </data>
+  <data name="GlobalFunctions_DefaultErrorMessage" xml:space="preserve">
+    <value>Пожалуйста, проверьте журнал регистрации событий приложения для получения подробного сообщения.</value>
+  </data>
+  <data name="GlobalFunctions_DefaultErrorType" xml:space="preserve">
+    <value>Системная ошибка</value>
+  </data>
+  <data name="GlobalFunctions_SpinnerText" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="GlobalFunctions_TooltipLoading" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="Global_Any" xml:space="preserve">
+    <value>-- Любой --</value>
+  </data>
+  <data name="Global_ApplyFilter" xml:space="preserve">
+    <value>Применить фильтр</value>
+  </data>
+  <data name="Global_ArtifactHasAttachment" xml:space="preserve">
+    <value>Артефакт имеет вложение(и)</value>
+  </data>
+  <data name="Global_Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="Global_CannotMoveItemOntoItself" xml:space="preserve">
+    <value>Вы не можете переместить предмет на себя!</value>
+  </data>
+  <data name="Global_ClipboardEmpty" xml:space="preserve">
+    <value>Буфер обмена в настоящее время пуст!</value>
+  </data>
+  <data name="Global_DestinationItemNotValid" xml:space="preserve">
+    <value>Пункт назначения недействителен!</value>
+  </data>
+  <data name="Global_DisplayingPage" xml:space="preserve">
+    <value>Отображаемая страница</value>
+  </data>
+  <data name="Global_Edit" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="Global_Export" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="Global_ExportItems" xml:space="preserve">
+    <value>Экспорт товаров</value>
+  </data>
+  <data name="Global_FillWithValue" xml:space="preserve">
+    <value>Заполните это значение</value>
+  </data>
+  <data name="Global_FilterSaved" xml:space="preserve">
+    <value>Текущий фильтр успешно сохранен.</value>
+  </data>
+  <data name="Global_Hide" xml:space="preserve">
+    <value>Спрятать</value>
+  </data>
+  <data name="Global_Insert" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Global_IntegerValidation" xml:space="preserve">
+    <value>'{0}' должно быть целым числом.</value>
+  </data>
+  <data name="Global_ItemDraggedNotValid" xml:space="preserve">
+    <value>Перетаскиваемый элемент недействителен!</value>
+  </data>
+  <data name="Global_ItemsCopiedToClipboard" xml:space="preserve">
+    <value>Элементы успешно скопированы в буфер обмена.</value>
+  </data>
+  <data name="Global_ItemsCutToClipboard" xml:space="preserve">
+    <value>Предметы успешно вырезаются в буфер обмена.</value>
+  </data>
+  <data name="Global_MultipleItems" xml:space="preserve">
+    <value>Многочисленные пункты</value>
+  </data>
+  <data name="Global_NeedToSelectDestinationProject" xml:space="preserve">
+    <value>Необходимо выбрать продукт назначения.</value>
+  </data>
+  <data name="Global_NeedToSelectFilter" xml:space="preserve">
+    <value>Необходимо выбрать Фильтр из списка.</value>
+  </data>
+  <data name="Global_NeedToSelectItem" xml:space="preserve">
+    <value>Вам нужно выбрать {0} из списка.</value>
+  </data>
+  <data name="Global_None" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Global_None2" xml:space="preserve">
+    <value>(Нет)</value>
+  </data>
+  <data name="Global_Of" xml:space="preserve">
+    <value>от</value>
+  </data>
+  <data name="Global_PleaseSelect" xml:space="preserve">
+    <value>-- Пожалуйста, выберите --</value>
+  </data>
+  <data name="Global_PleaseSelectFilter" xml:space="preserve">
+    <value>Пожалуйста, выберите фильтр, который Вы хотите использовать:</value>
+  </data>
+  <data name="Global_PleaseSelectProjectToExportTo" xml:space="preserve">
+    <value>Пожалуйста, выберите продукт, в который вы хотите экспортировать:</value>
+  </data>
+  <data name="Global_Project" xml:space="preserve">
+    <value>Продукт</value>
+  </data>
+  <data name="Global_RetrieveSavedFilter" xml:space="preserve">
+    <value>Восстановить сохраненный фильтр</value>
+  </data>
+  <data name="Global_RowsPerPage" xml:space="preserve">
+    <value>строки на страницу</value>
+  </data>
+  <data name="Global_Select" xml:space="preserve">
+    <value>Выберите</value>
+  </data>
+  <data name="Global_SelectAll" xml:space="preserve">
+    <value>Выбрать все</value>
+  </data>
+  <data name="Global_SelectFilter" xml:space="preserve">
+    <value>Выберите Фильтр</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForBulkEdit" xml:space="preserve">
+    <value>Для использования опции "Групповое редактирование" необходимо установить хотя бы один флажок.</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForCommand" xml:space="preserve">
+    <value>Для этой команды необходимо выбрать хотя бы ОДИН флажок!</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForCopy" xml:space="preserve">
+    <value>Вы должны выбрать хотя бы ОДИН флажок для команды Копировать!</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForCut" xml:space="preserve">
+    <value>Для команды Cut необходимо выбрать хотя бы ОДИН флажок!</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForDelete" xml:space="preserve">
+    <value>Для команды "Удалить" необходимо выбрать хотя бы ОДИН флажок!</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForInsert" xml:space="preserve">
+    <value>Пожалуйста, установите флажок не более ОДНОГО для команды "Вставить"!</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForOpen" xml:space="preserve">
+    <value>Для команды "Открыть объект" необходимо установить флажок "Точно ОДИН"!</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForPaste" xml:space="preserve">
+    <value>Вы можете выбрать только один флажок для команды "Вставить"!</value>
+  </data>
+  <data name="Global_Show" xml:space="preserve">
+    <value>Показать</value>
+  </data>
+  <data name="Global_SuccessAddingItemsToItem" xml:space="preserve">
+    <value>Успешное добавление элементов в {0}.</value>
+  </data>
+  <data name="Global_SuccessExport" xml:space="preserve">
+    <value>Успешно экспортированные товары.</value>
+  </data>
+  <data name="Global_TimeIntervalValidation" xml:space="preserve">
+    <value>"{0}" должен быть интервалом времени в часах, с минутами, выраженными в десятичной дроби.</value>
+  </data>
+  <data name="Global_Update" xml:space="preserve">
+    <value>Обновление</value>
+  </data>
+  <data name="Global_YouNeedToEnterFilterName" xml:space="preserve">
+    <value>Вам необходимо ввести имя для этого фильтра!</value>
+  </data>
+  <data name="HierarchicalGrid_CollapseNode" xml:space="preserve">
+    <value>Узел опускания</value>
+  </data>
+  <data name="HierarchicalGrid_ExpandNode" xml:space="preserve">
+    <value>Узел расширения</value>
+  </data>
+  <data name="HierarchicalGrid_SelectOneCheckBoxForIndent" xml:space="preserve">
+    <value>Для команды "Отступ" установите флажок по крайней мере ОДИН!</value>
+  </data>
+  <data name="HierarchicalGrid_SelectOneCheckBoxForOutdent" xml:space="preserve">
+    <value>Для команды "Outdent" выберите хотя бы ОДИН флажок!</value>
+  </data>
+  <data name="Requirements_SuccessfullyCreatedTestCases" xml:space="preserve">
+    <value>Успешно созданные тестовые случаи из требований</value>
+  </data>
+  <data name="Requirements_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>Успешно созданный тестовый набор из требований</value>
+  </data>
+  <data name="TestCaseExecution_ActualResultNeededForBlocked" xml:space="preserve">
+    <value>При записи заблокированного шага теста необходимо ввести фактический результат! Нажмите на кнопку ниже для подтверждения.</value>
+  </data>
+  <data name="TestCaseExecution_ActualResultNeededForCaution" xml:space="preserve">
+    <value>При записи предостережения по шагу теста необходимо ввести фактический результат! Нажмите на кнопку ниже для подтверждения.</value>
+  </data>
+  <data name="TestCaseExecution_ActualResultNeededForFail" xml:space="preserve">
+    <value>При записи отказа необходимо ввести Фактический результат! Нажмите на кнопку ниже для подтверждения.</value>
+  </data>
+  <data name="TestCaseExecution_IncidentLoggedMessage" xml:space="preserve">
+    <value>Инцидент {0} записан на результат теста.</value>
+  </data>
+  <data name="TestSetDetails_OnlyOneCheckboxToAddTestCases" xml:space="preserve">
+    <value>Пожалуйста, установите флажок не более ОДНОГО для команды "Добавить тестовые случаи"!</value>
+  </data>
+  <data name="TestSetDetails_SelectOnlyOneTestCase" xml:space="preserve">
+    <value>Для редактирования значений параметров необходимо точно выбрать ОДИН тестовый случай.</value>
+  </data>
+  <data name="TestSetDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>Сначала нужно выбрать тестовый случай.</value>
+  </data>
+  <data name="TreeView_ExpandCollapse" xml:space="preserve">
+    <value>Расширение/Освобождение</value>
+  </data>
+  <data name="TreeView_Folder" xml:space="preserve">
+    <value>Папка</value>
+  </data>
+  <data name="Global_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Global_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Releases_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>Успешно созданный тестовый набор из релиза</value>
+  </data>
+  <data name="Global_Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="TestCaseList_AddToRelease" xml:space="preserve">
+    <value>Добавить в Релиз</value>
+  </data>
+  <data name="TestCaseList_AddToRequirement" xml:space="preserve">
+    <value>Добавить в Требование</value>
+  </data>
+  <data name="TestCaseList_AddToTestSet" xml:space="preserve">
+    <value>Добавить в тестовый набор</value>
+  </data>
+  <data name="TestCaseList_SelectRelease" xml:space="preserve">
+    <value>Пожалуйста, выберите релиз, к которому вы хотите добавить:</value>
+  </data>
+  <data name="TestCaseList_SelectRequirement" xml:space="preserve">
+    <value>Пожалуйста, выберите требование, которое вы хотите добавить:</value>
+  </data>
+  <data name="TestCaseList_SelectTestSet" xml:space="preserve">
+    <value>Пожалуйста, выберите тестовый набор, который Вы хотите добавить:</value>
+  </data>
+  <data name="SortedList_SortByAscending" xml:space="preserve">
+    <value>Сортирую по {0} Восхождению</value>
+  </data>
+  <data name="SortedList_SortByDescending" xml:space="preserve">
+    <value>Сортирую по {0} По убыванию</value>
+  </data>
+  <data name="Global_ChooseNameForFilter" xml:space="preserve">
+    <value>Пожалуйста, выберите название этого фильтра:</value>
+  </data>
+  <data name="Global_Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Global_SaveFilter" xml:space="preserve">
+    <value>Сохранить фильтр</value>
+  </data>
+  <data name="Global_Refresh" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="IterationPlan_CannotDragReqsTasksSameTime" xml:space="preserve">
+    <value>Нельзя перетаскивать и требования, и задачи одновременно.</value>
+  </data>
+  <data name="IterationPlan_NoReleaseSelected" xml:space="preserve">
+    <value>Нет {0} Избран! Пожалуйста, выберите {1} для отображения плана.</value>
+  </data>
+  <data name="PlanningGrid_Available" xml:space="preserve">
+    <value>Имеется на вебсайте .</value>
+  </data>
+  <data name="PlanningGrid_ItemsDirectlyAssociated" xml:space="preserve">
+    <value>Пункты, непосредственно связанные с {0}</value>
+  </data>
+  <data name="PlanningGrid_Remaining" xml:space="preserve">
+    <value>Остающийся</value>
+  </data>
+  <data name="PlanningGrid_Utilized" xml:space="preserve">
+    <value>Использованный</value>
+  </data>
+  <data name="DropDownHierarchy_NavigateToArtifact" xml:space="preserve">
+    <value>Перейдите к артефакту</value>
+  </data>
+  <data name="RichTextBox_AddImage" xml:space="preserve">
+    <value>Добавить изображение</value>
+  </data>
+  <data name="RichTextBox_AlignLeft" xml:space="preserve">
+    <value>Выровнять влево</value>
+  </data>
+  <data name="RichTextBox_AlignRight" xml:space="preserve">
+    <value>Выровнять право</value>
+  </data>
+  <data name="RichTextBox_BackgroundColor" xml:space="preserve">
+    <value>Цвет фона</value>
+  </data>
+  <data name="RichTextBox_Bold" xml:space="preserve">
+    <value>Смелый</value>
+  </data>
+  <data name="RichTextBox_Center" xml:space="preserve">
+    <value>Центр</value>
+  </data>
+  <data name="RichTextBox_EnterImageUrl" xml:space="preserve">
+    <value>Введите URL-адрес изображения:</value>
+  </data>
+  <data name="RichTextBox_EnterUrl" xml:space="preserve">
+    <value>Введите URL-адрес:</value>
+  </data>
+  <data name="RichTextBox_Font" xml:space="preserve">
+    <value>Шрифт</value>
+  </data>
+  <data name="RichTextBox_FontDropDown" xml:space="preserve">
+    <value>-- Шрифт --</value>
+  </data>
+  <data name="RichTextBox_HorizontalRule" xml:space="preserve">
+    <value>горизонтальное правило</value>
+  </data>
+  <data name="RichTextBox_Indent" xml:space="preserve">
+    <value>Индент</value>
+  </data>
+  <data name="RichTextBox_InsertLink" xml:space="preserve">
+    <value>Вставить ссылку</value>
+  </data>
+  <data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>Вставная таблица</value>
+  </data>
+  <data name="RichTextBox_Italic" xml:space="preserve">
+    <value>Курсив</value>
+  </data>
+  <data name="RichTextBox_OrderedList" xml:space="preserve">
+    <value>Список заказов</value>
+  </data>
+  <data name="RichTextBox_Outdent" xml:space="preserve">
+    <value>Outdent</value>
+  </data>
+  <data name="RichTextBox_Size" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="RichTextBox_SizeDropDown" xml:space="preserve">
+    <value>-- Размер --</value>
+  </data>
+  <data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>Цвет текста</value>
+  </data>
+  <data name="RichTextBox_Underline" xml:space="preserve">
+    <value>Подробнее</value>
+  </data>
+  <data name="RichTextBox_UnorderedList" xml:space="preserve">
+    <value>Единый список</value>
+  </data>
+  <data name="RichTextBox_ViewFullScreen" xml:space="preserve">
+    <value>Просмотр в полноэкранном режиме</value>
+  </data>
+  <data name="RichTextBox_ViewHTMLSource" xml:space="preserve">
+    <value>Просмотр источника HTML</value>
+  </data>
+  <data name="Global_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Global_Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Global_Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="MappingSelector_Add" xml:space="preserve">
+    <value>Добавить &gt;</value>
+  </data>
+  <data name="MappingSelector_CollapseNode" xml:space="preserve">
+    <value>Узел опускания</value>
+  </data>
+  <data name="MappingSelector_ExpandNode" xml:space="preserve">
+    <value>Узел расширения</value>
+  </data>
+  <data name="MappingSelector_NoItemsToRemove" xml:space="preserve">
+    <value>Нет ни одного картографического предмета, который можно было бы удалить!</value>
+  </data>
+  <data name="MappingSelector_Remove" xml:space="preserve">
+    <value>&lt;Удалить</value>
+  </data>
+  <data name="MappingSelector_RemoveAll" xml:space="preserve">
+    <value>&lt;&lt; Удалить все</value>
+  </data>
+  <data name="MappingSelector_SelectItemFromLeftHandBox" xml:space="preserve">
+    <value>Сначала необходимо выбрать хотя бы один пункт из левого поля.</value>
+  </data>
+  <data name="MappingSelector_SelectItemFromRightHandBox" xml:space="preserve">
+    <value>Сначала необходимо выбрать хотя бы один пункт из правого поля.</value>
+  </data>
+  <data name="TestCaseSelector_TestCaseCreatedFromRequirement" xml:space="preserve">
+    <value>Из этого требования был успешно создан новый тестовый случай.</value>
+  </data>
+  <data name="TestCaseSelector_TestSetCreatedFromRelease" xml:space="preserve">
+    <value>Из этого релиза был успешно создан новый тестовый набор.</value>
+  </data>
+  <data name="Incidents_SuccessfullyCreatedRequirements" xml:space="preserve">
+    <value>Успешно созданные требования по инцидентам</value>
+  </data>
+  <data name="ArtifactLinkPanel_IncidentIdNotValid" xml:space="preserve">
+    <value>Вам нужно ввести целое значение для идентификатора инцидента.</value>
+  </data>
+  <data name="ArtifactLinkPanel_InvalidArtifactType" xml:space="preserve">
+    <value>Недействительный тип артефакта выбран!</value>
+  </data>
+  <data name="ArtifactLinkPanel_NeedToSelectOneArtifact" xml:space="preserve">
+    <value>Необходимо выбрать хотя бы один артефакт, который будет ассоциироваться!</value>
+  </data>
+  <data name="ArtifactLinkPanel_RequirementIdNotValid" xml:space="preserve">
+    <value>Для идентификатора требования необходимо ввести целое значение</value>
+  </data>
+  <data name="ArtifactLinkPanel_TestStepIdNotValid" xml:space="preserve">
+    <value>Вам необходимо ввести целое значение для идентификатора тестового шага</value>
+  </data>
+  <data name="Global_Loading" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="Global_Uploading" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="HierarchicalSelector_CollapseNode" xml:space="preserve">
+    <value>Узел опускания</value>
+  </data>
+  <data name="HierarchicalSelector_ExpandNode" xml:space="preserve">
+    <value>Узел расширения</value>
+  </data>
+  <data name="NavigationBar_AllItems" xml:space="preserve">
+    <value>Все предметы</value>
+  </data>
+  <data name="NavigationBar_Assigned" xml:space="preserve">
+    <value>Назначен</value>
+  </data>
+  <data name="NavigationBar_CurrentFilter" xml:space="preserve">
+    <value>Фильтр тока</value>
+  </data>
+  <data name="NavigationBar_Display" xml:space="preserve">
+    <value>Дисплей:</value>
+  </data>
+  <data name="NavigationBar_Maximize" xml:space="preserve">
+    <value>Максимизировать</value>
+  </data>
+  <data name="NavigationBar_Minimize" xml:space="preserve">
+    <value>Минимизировать</value>
+  </data>
+  <data name="Global_ClipboardNotSupported" xml:space="preserve">
+    <value>Доступ к буферу обмена не поддерживается вашим браузером!</value>
+  </data>
+  <data name="TestCaseDetails_CannotLinkToParent" xml:space="preserve">
+    <value>Вы не можете ссылаться на тестовый случай, который уже связан с текущим.</value>
+  </data>
+  <data name="TestCaseDetails_CannotLinkToSelf" xml:space="preserve">
+    <value>Вы не можете связать себя с собой!</value>
+  </data>
+  <data name="TestCaseDetails_NewParameterSuccess" xml:space="preserve">
+    <value>Добавлен новый параметр тестового случая.</value>
+  </data>
+  <data name="TestCaseDetails_ParameterNameInvalid" xml:space="preserve">
+    <value>Нельзя использовать одну кавычку, пробел или обратный слеш в имени параметра.</value>
+  </data>
+  <data name="TestCaseDetails_ParameterNameInvalid2" xml:space="preserve">
+    <value>Нельзя использовать фигурные скобки или знак доллара в названии параметра.</value>
+  </data>
+  <data name="TestCaseDetails_ParameterNameRequired" xml:space="preserve">
+    <value>Необходимо указать имя нового параметра тестового случая.</value>
+  </data>
+  <data name="TestCaseDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>Сначала нужно выбрать тестовый случай.</value>
+  </data>
+  <data name="ReleaseSelector_RequirementCreatedFromTestCase" xml:space="preserve">
+    <value>Из этого тестового случая было успешно создано новое требование.</value>
+  </data>
+  <data name="TestCaseExecution_Release" xml:space="preserve">
+    <value>Релиз</value>
+  </data>
+  <data name="TestCaseExecution_TestRunReadOnly" xml:space="preserve">
+    <value>Этот пробный запуск только для чтения, так как он назначен на</value>
+  </data>
+  <data name="Documents_ExportDocuments" xml:space="preserve">
+    <value>Экспортные документы</value>
+  </data>
+  <data name="JqPlot_DisplayDataGrid" xml:space="preserve">
+    <value>Отобразить сетку данных</value>
+  </data>
+  <data name="JqPlot_ResetZoom" xml:space="preserve">
+    <value>Сброс Увеличения</value>
+  </data>
+  <data name="JqPlot_DownloadData" xml:space="preserve">
+    <value>Скачать данные в формате CSV</value>
+  </data>
+  <data name="JqPlot_SaveAs" xml:space="preserve">
+    <value>Сохранить как</value>
+  </data>
+  <data name="TestCases_BlockSucceeded" xml:space="preserve">
+    <value>Тестовые случаи успешно заблокированы</value>
+  </data>
+  <data name="TestCases_UnBlockSucceeded" xml:space="preserve">
+    <value>Тестовые случаи успешно разблокированы</value>
+  </data>
+  <data name="Global_EstimatedEffort" xml:space="preserve">
+    <value>Расчетный вклад</value>
+  </data>
+  <data name="Global_Owner" xml:space="preserve">
+    <value>Владелец</value>
+  </data>
+  <data name="Global_ProjectedEffort" xml:space="preserve">
+    <value>Прогнозируемый эффект</value>
+  </data>
+  <data name="PlanningBoard_UnassignedItems" xml:space="preserve">
+    <value>Неприписанные предметы</value>
+  </data>
+  <data name="Global_Multiple" xml:space="preserve">
+    <value>Многократный</value>
+  </data>
+  <data name="PlanningBoard_Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="PlanningBoard_View" xml:space="preserve">
+    <value>Посмотреть</value>
+  </data>
+  <data name="BackgroundProcessManager_StartingProcess" xml:space="preserve">
+    <value>Запуск процесса...</value>
+  </data>
+  <data name="Administration_CopyProjectConfirm" xml:space="preserve">
+    <value>Вы уверены, что хотите сделать клон этого продукта?</value>
+  </data>
+  <data name="Administration_CopyProjectDialogText" xml:space="preserve">
+    <value>Изготовление клона выбранного продукта. Пожалуйста, подождите...</value>
+  </data>
+  <data name="Administration_CopyProjectDialogTitle" xml:space="preserve">
+    <value>Клонированный продукт</value>
+  </data>
+  <data name="Administration_DeleteProjectConfirm" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить этот продукт? Это нельзя отменить.</value>
+  </data>
+  <data name="Administration_DeleteProjectDialogText" xml:space="preserve">
+    <value>Удаление выбранного продукта. Пожалуйста, подождите...</value>
+  </data>
+  <data name="Administration_DeleteProjectDialogTitle" xml:space="preserve">
+    <value>Удалить продукт</value>
+  </data>
+  <data name="Global_Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="NavigationBar_Detected" xml:space="preserve">
+    <value>Обнаружен</value>
+  </data>
+  <data name="NavigationBar_ForRelease" xml:space="preserve">
+    <value>Для освобождения</value>
+  </data>
+  <data name="NavigationBar_ForTestCase" xml:space="preserve">
+    <value>Для тестового случая</value>
+  </data>
+  <data name="NavigationBar_ForTestSet" xml:space="preserve">
+    <value>Для тестового набора</value>
+  </data>
+  <data name="TestCaseList_ExecuteTestCase" xml:space="preserve">
+    <value>Исполнить тестовый случай</value>
+  </data>
+  <data name="TestCaseList_ExecuteTestCaseDesc" xml:space="preserve">
+    <value>Создание тестовых запусков для этого тестового случая. Пожалуйста, подождите...</value>
+  </data>
+  <data name="BackgroundProcessManager_ProcessCompleted" xml:space="preserve">
+    <value>Процесс завершен успешно.</value>
+  </data>
+  <data name="TestSetList_ExecuteTestSet" xml:space="preserve">
+    <value>Выполнить набор тестов</value>
+  </data>
+  <data name="TestSetList_ExecuteTestSetDesc" xml:space="preserve">
+    <value>Создание тестовых запусков для этого набора тестов. Пожалуйста, подождите...</value>
+  </data>
+  <data name="AttachmentPanel_NeedToSelectOneDocument" xml:space="preserve">
+    <value>Необходимо выбрать хотя бы один документ, который будет ассоциироваться!</value>
+  </data>
+  <data name="AttachmentPanel_NeedToSelectOneFile" xml:space="preserve">
+    <value>Вы должны выбрать по крайней мере один файл, который будет ассоциироваться!</value>
+  </data>
+  <data name="TestSetList_SelectSingleTestSet" xml:space="preserve">
+    <value>Вам необходимо выбрать один набор тестов для выполнения!</value>
+  </data>
+  <data name="TestSetDetails_ExecuteTestCases" xml:space="preserve">
+    <value>Выполнить тестовые случаи в тестовом наборе</value>
+  </data>
+  <data name="TestSetDetails_ExecuteTestCasesDesc" xml:space="preserve">
+    <value>Создание тестовых запусков для выбранных тестовых случаев. Пожалуйста, подождите...</value>
+  </data>
+  <data name="Admin_CustomPropertyOptions_Header" xml:space="preserve">
+    <value>Пользовательское свойство #{0} Определение</value>
+  </data>
+  <data name="Admin_CustomProp_FieldError_BadDate" xml:space="preserve">
+    <value>Введена недействительная дата.</value>
+  </data>
+  <data name="Admin_CustomProp_FieldError_ListEmpty" xml:space="preserve">
+    <value>Вы должны выбрать пользовательский список.</value>
+  </data>
+  <data name="Admin_CustomProp_FieldError_MinHigherMax" xml:space="preserve">
+    <value>Минимум не может быть больше, чем максимум.</value>
+  </data>
+  <data name="Admin_CustomProp_FieldError_MultipleErrors" xml:space="preserve">
+    <value>Есть несколько ошибок.\nPlease проверьте выделенные поля.</value>
+  </data>
+  <data name="Admin_CustomProp_FieldError_NameEmpty" xml:space="preserve">
+    <value>Имя поля не может быть пустым.</value>
+  </data>
+  <data name="Admin_CustomProp_FieldError_NameUsed" xml:space="preserve">
+    <value>Имя поля уже используется.</value>
+  </data>
+  <data name="Admin_CustomProp_FieldError_NaN" xml:space="preserve">
+    <value>Ввод не является числом.</value>
+  </data>
+  <data name="Admin_CustomProp_FieldError_NumLessZero" xml:space="preserve">
+    <value>Номер не может быть меньше нуля.</value>
+  </data>
+  <data name="Admin_CustomProp_FieldError_TypeEmpty" xml:space="preserve">
+    <value>Вы должны выбрать тип.</value>
+  </data>
+  <data name="Global_ClearFilters" xml:space="preserve">
+    <value>Фильтры очистки</value>
+  </data>
+  <data name="Global_FilteringBy" xml:space="preserve">
+    <value>Фильтрация результатов по {0}.</value>
+  </data>
+  <data name="DropDownList_Multiple" xml:space="preserve">
+    <value>(Множественное)</value>
+  </data>
+  <data name="WorkflowOperations_NoOperationsAvailable" xml:space="preserve">
+    <value>Нет операций</value>
+  </data>
+  <data name="WorkflowOperations_SaveChangesFirst" xml:space="preserve">
+    <value>Пожалуйста, сохраните, чтобы применить изменения.</value>
+  </data>
+  <data name="CommentList_Legend" xml:space="preserve">
+    <value>Отображение списка комментариев:</value>
+  </data>
+  <data name="CommentList_NewestFirst" xml:space="preserve">
+    <value>новейшая разработка</value>
+  </data>
+  <data name="CommentList_OldestFirst" xml:space="preserve">
+    <value>старейший из первых</value>
+  </data>
+  <data name="CommentList_ConfirmDelete" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить этот комментарий? Это нельзя отменить.</value>
+  </data>
+  <data name="AjaxFormManager_ConfirmRefresh" xml:space="preserve">
+    <value>У тебя есть несохраненные изменения. Обновление данных потеряет ваши изменения, вы уверены, что хотите продолжить?</value>
+  </data>
+  <data name="AjaxFormManager_ConfirmUnload" xml:space="preserve">
+    <value>У тебя есть несохраненные изменения. Если вы перейдете на другую страницу, вы потеряете свои изменения, вы уверены, что хотите продолжить?</value>
+  </data>
+  <data name="AjaxFormManager_SaveSuccess" xml:space="preserve">
+    <value>Успешно сохраненные изменения до {0}</value>
+  </data>
+  <data name="TestRunDetails_IncidentList" xml:space="preserve">
+    <value>Список происшествий на этапе пробного запуска:</value>
+  </data>
+  <data name="ReportViewer_GeneratingReport" xml:space="preserve">
+    <value>Просмотрщик отчетов</value>
+  </data>
+  <data name="ReportViewer_GeneratingReportDesc" xml:space="preserve">
+    <value>Пожалуйста, подождите, пока ваш отчет будет создан...</value>
+  </data>
+  <data name="ReportDetails_NeedToSpecifyCustomQuery" xml:space="preserve">
+    <value>Вам необходимо ввести пользовательский запрос перед предварительным просмотром результатов!</value>
+  </data>
+  <data name="Global_Customize" xml:space="preserve">
+    <value>Настроить</value>
+  </data>
+  <data name="Global_Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="ReportDetails_NameRequired" xml:space="preserve">
+    <value>Вы должны указать Имя для этого отчета!</value>
+  </data>
+  <data name="Admin_DataTools_Processing" xml:space="preserve">
+    <value>Очистка данных:</value>
+  </data>
+  <data name="Admin_DataTools_Title" xml:space="preserve">
+    <value>Инструменты для работы с данными</value>
+  </data>
+  <data name="Admin_History_Processing" xml:space="preserve">
+    <value>Очистка всех удаленных записей...</value>
+  </data>
+  <data name="Admin_History_Title" xml:space="preserve">
+    <value>История продукции</value>
+  </data>
+  <data name="NavigationBar_NotAuthorizedToView" xml:space="preserve">
+    <value>Ваша роль не санкционирована.</value>
+  </data>
+  <data name="AjaxFormManager_NotAuthorizedToModify" xml:space="preserve">
+    <value>Вы не имеете права изменять этот пункт!</value>
+  </data>
+  <data name="Global_Remove" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="TestCaseList_RemoveFromRelease" xml:space="preserve">
+    <value>Удалить из отпуска</value>
+  </data>
+  <data name="TestCaseList_SelectReleaseToRemove" xml:space="preserve">
+    <value>Пожалуйста, выберите разрешение, которое вы хотите удалить:</value>
+  </data>
+  <data name="Admin_History_Processing2" xml:space="preserve">
+    <value>Переворачивание выбранных пунктов...</value>
+  </data>
+  <data name="Global_Rows" xml:space="preserve">
+    <value>строки</value>
+  </data>
+  <data name="Global_ShareFilter" xml:space="preserve">
+    <value>Поделиться с другими участниками продукта</value>
+  </data>
+  <data name="NumberRangeFilter_EnterMinMaxValues" xml:space="preserve">
+    <value>Пожалуйста, введите минимальные/максовые значения:</value>
+  </data>
+  <data name="NumberRangeFilter_Title" xml:space="preserve">
+    <value>Диапазонный фильтр</value>
+  </data>
+  <data name="Global_Change" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="NavigationBar_ForRequirement" xml:space="preserve">
+    <value>Для Требования</value>
+  </data>
+  <data name="Global_NoneDropDown" xml:space="preserve">
+    <value>-- Нет --</value>
+  </data>
+  <data name="TreeView_AddItem" xml:space="preserve">
+    <value>Добавить {0}</value>
+  </data>
+  <data name="TreeView_ChooseParentItem" xml:space="preserve">
+    <value>Пожалуйста, выберите родителя {0}, чтобы добавить это под:</value>
+  </data>
+  <data name="TreeView_EditItem" xml:space="preserve">
+    <value>Редактирование {0}</value>
+  </data>
+  <data name="TreeView_EnterName" xml:space="preserve">
+    <value>Пожалуйста, введите имя для этого нового {0}:</value>
+  </data>
+  <data name="TreeView_NeedToProvideItemName" xml:space="preserve">
+    <value>Вы должны указать имя для нового {0}!</value>
+  </data>
+  <data name="Global_Done" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="TreeView_ConfirmDelete" xml:space="preserve">
+    <value>Ты уверен, что хочешь удалить это {0}?</value>
+  </data>
+  <data name="TreeView_EditName" xml:space="preserve">
+    <value>Пожалуйста, отредактируйте название этого {0}:</value>
+  </data>
+  <data name="TreeView_EditParentItem" xml:space="preserve">
+    <value>Пожалуйста, выберите родителя этого {0}:</value>
+  </data>
+  <data name="Messenger_SendMessage" xml:space="preserve">
+    <value>Отправить сообщение</value>
+  </data>
+  <data name="Messenger_NeedToSelectComment" xml:space="preserve">
+    <value>Необходимо выбрать по крайней мере одно сообщение перед публикацией на текущий артефакт.</value>
+  </data>
+  <data name="Messenger_PostAsComments" xml:space="preserve">
+    <value>Сообщение в виде комментариев</value>
+  </data>
+  <data name="Messenger_PostAsCommentsSuccess" xml:space="preserve">
+    <value>Успешно размещены комментарии к текущему артефакту.</value>
+  </data>
+  <data name="ScreenshotCapture_BrowserNotSupported" xml:space="preserve">
+    <value>Ваш веб-браузер не поддерживает захват скриншотов!</value>
+  </data>
+  <data name="ScreenshotCapture_Intro" xml:space="preserve">
+    <value>Пожалуйста, вставьте ваше изображение с помощью команды CTRL+V клавиатуры.</value>
+  </data>
+  <data name="ScreenshotCapture_InvalidImageFormat" xml:space="preserve">
+    <value>Буфер обмена не содержал действительного изображения!</value>
+  </data>
+  <data name="ArtifactLinkPanel_TaskIdNotValid" xml:space="preserve">
+    <value>Необходимо ввести целое значение для идентификатора задачи</value>
+  </data>
+  <data name="Admin_History_Processing3" xml:space="preserve">
+    <value>Очищающий предмет...</value>
+  </data>
+  <data name="Global_All" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="CommentList_PleaseEnterComment" xml:space="preserve">
+    <value>Пожалуйста, введите комментарий и попробуйте еще раз!</value>
+  </data>
+  <data name="TaskDetails_SplitTaskEffortNotInRange" xml:space="preserve">
+    <value>Значение % Усилия должно быть в диапазоне 0-100%!</value>
+  </data>
+  <data name="TaskDetails_SplitTaskEffortNotInteger" xml:space="preserve">
+    <value>Значение % Effort должно быть целым числом!</value>
+  </data>
+  <data name="TaskDetails_SplitTaskNameRequired" xml:space="preserve">
+    <value>Вам необходимо ввести Имя для нового задания!</value>
+  </data>
+  <data name="AjaxFormManager_EnterSignature" xml:space="preserve">
+    <value>Введите электронную подпись</value>
+  </data>
+  <data name="AjaxFormManager_EnterSignatureInfo" xml:space="preserve">
+    <value>Пожалуйста, введите Ваш логин/пароль вместе со значением и нажмите кнопку Войти:</value>
+  </data>
+  <data name="AjaxFormManager_Login" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="AjaxFormManager_Meaning" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="AjaxFormManager_Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="AjaxFormManager_Sign" xml:space="preserve">
+    <value>Распишитесь на сайте .</value>
+  </data>
+  <data name="AjaxFormManager_DefaultMeaning" xml:space="preserve">
+    <value>Изменение {0}:{1}:{2} с '{3}' на '{4}'.</value>
+  </data>
+  <data name="AjaxFormManager_LoginRequired" xml:space="preserve">
+    <value>Вы должны предоставить Логин!</value>
+  </data>
+  <data name="AjaxFormManager_MeaningRequired" xml:space="preserve">
+    <value>Ты должен дать смысл!</value>
+  </data>
+  <data name="AjaxFormManager_PasswordRequired" xml:space="preserve">
+    <value>Вам необходимо предоставить Пароль!</value>
+  </data>
+  <data name="ArtifactEmail_SentMessageSuccess" xml:space="preserve">
+    <value>Успешно отправлено по электронной почте</value>
+  </data>
+  <data name="SidebarPanel_Maximize" xml:space="preserve">
+    <value>Максимизировать</value>
+  </data>
+  <data name="SidebarPanel_Minimize" xml:space="preserve">
+    <value>Минимизировать</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForFocusOn" xml:space="preserve">
+    <value>Для команды Focus On необходимо выбрать ровно один пункт!</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForClone" xml:space="preserve">
+    <value>Для команды "Клон" необходимо выбрать хотя бы ОДИН флажок!</value>
+  </data>
+  <data name="Global_SaveAndNew" xml:space="preserve">
+    <value>Сохранить и обновить</value>
+  </data>
+  <data name="TreeView_EditDescription" xml:space="preserve">
+    <value>Пожалуйста, введите описание для этого нового {0}:</value>
+  </data>
+  <data name="TreeView_EnterDescription" xml:space="preserve">
+    <value>Пожалуйста, введите описание для этого нового {0}:</value>
+  </data>
+  <data name="WorkflowOperations" xml:space="preserve">
+    <value>Рабочий процесс Операции</value>
+  </data>
+  <data name="TestCaseExecution_ActualResultNeededForNotApplicable" xml:space="preserve">
+    <value>При записи N/A необходимо ввести Фактический результат! Нажмите на кнопку ниже для подтверждения.</value>
+  </data>
+  <data name="TestStep_Step" xml:space="preserve">
+    <value>Шаг</value>
+  </data>
+  <data name="TestStep_StepPlural" xml:space="preserve">
+    <value>Шаги</value>
+  </data>
+  <data name="TestCaseExecution_Blocked" xml:space="preserve">
+    <value>Блокированный</value>
+  </data>
+  <data name="TestCaseExecution_Caution" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="TestCaseExecution_Fail" xml:space="preserve">
+    <value>Неудача</value>
+  </data>
+  <data name="TestCaseExecution_NotApplicable" xml:space="preserve">
+    <value>Н/Д</value>
+  </data>
+  <data name="TestCaseExecution_Pass" xml:space="preserve">
+    <value>Перейти на</value>
+  </data>
+  <data name="TestCaseExecution_PassAll" xml:space="preserve">
+    <value>Передать все</value>
+  </data>
+  <data name="Global_SelectOneCheckBoxForImport" xml:space="preserve">
+    <value>Пожалуйста, установите флажок не более ОДНОГО для команды Импорт!</value>
+  </data>
+  <data name="TestCaseDetails_CannotImportSelf" xml:space="preserve">
+    <value>Вы не можете импортировать текущий тестовый случай в себя!</value>
+  </data>
+  <data name="TestCaseDetails_EnterTestCaseNameForNewLink" xml:space="preserve">
+    <value>Вам необходимо ввести Имя для следующего тестового случая!</value>
+  </data>
+  <data name="TestSetDetails_ParameterRequired" xml:space="preserve">
+    <value>Вам нужно выбрать параметр!</value>
+  </data>
+  <data name="TestSetDetails_ParameterValueRequired" xml:space="preserve">
+    <value>Вам необходимо ввести значение параметра!</value>
+  </data>
+  <data name="Global_RootFolderDropDown" xml:space="preserve">
+    <value>-- Корневая папка --</value>
+  </data>
+  <data name="TestCaseExecution_Pause" xml:space="preserve">
+    <value>Пауза</value>
+  </data>
+  <data name="TestCaseExecution_Resume" xml:space="preserve">
+    <value>Резюме</value>
+  </data>
+  <data name="Global_Operations" xml:space="preserve">
+    <value>Операции</value>
+  </data>
+  <data name="Guide_Global_Next" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="Guide_Global_Previous" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="Guide_Global_Done" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Guide_Global_Skip" xml:space="preserve">
+    <value>Пропустить</value>
+  </data>
+  <data name="Guide_Global_Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Guide_TestExecution_intro_Title" xml:space="preserve">
+    <value>Быстрый тур</value>
+  </data>
+  <data name="Guide_TestExecution_intro_Content" xml:space="preserve">
+    <value>Это руководство поможет вам быстро понять, как выполнить тесты в ValidationMaster.&lt;br&gt;&lt;br&gt;Пройдитесь по основным элементам интерфейса, прежде чем посмотреть, как на самом деле выполнить тесты.&lt;br&gt;&lt;br&gt;Нажмите 'Далее', чтобы продолжить.</value>
+  </data>
+  <data name="Guide_TestExecution_heading_Title" xml:space="preserve">
+    <value>Название исполнения</value>
+  </data>
+  <data name="Guide_TestExecution_heading_Content" xml:space="preserve">
+    <value>Здесь отображается название тестового прогона (если имеется) и выбранная версия.</value>
+  </data>
+  <data name="Guide_TestExecution_display_Title" xml:space="preserve">
+    <value>Параметры отображения</value>
+  </data>
+  <data name="Guide_TestExecution_display_Content" xml:space="preserve">
+    <value>Существует три различных режима отображения.&lt;br&gt;В каждом из них есть два варианта отображения.&lt;br&gt;&lt;br&gt;Они предназначены для различных способов работы.</value>
+  </data>
+  <data name="Guide_TestExecution_settings_Title" xml:space="preserve">
+    <value>Другие настройки</value>
+  </data>
+  <data name="Guide_TestExecution_settings_Content" xml:space="preserve">
+    <value>Нажмите здесь, чтобы получить доступ к настройкам, как вы хотите, чтобы страница настроена, или чтобы воспроизвести этот тур.</value>
+  </data>
+  <data name="Guide_TestExecution_progress_Title" xml:space="preserve">
+    <value>Прогрессная шкала</value>
+  </data>
+  <data name="Guide_TestExecution_progress_Content" xml:space="preserve">
+    <value>Используйте эту функцию для проверки хода выполнения тестов (по умолчанию отображаются тестовые шаги, при наличии множества тестовых шагов - тестовые случаи). Информацию о тесте можно увидеть на парике.</value>
+  </data>
+  <data name="Guide_TestExecution_moving_Title" xml:space="preserve">
+    <value>Перемещение между испытаниями</value>
+  </data>
+  <data name="Guide_TestExecution_moving_Content" xml:space="preserve">
+    <value>Нажмите здесь, чтобы переместить назад или вперед один тест. Или нажмите на любой тест в индикаторе прогресса, или в списке ниже, чтобы перейти прямо туда.</value>
+  </data>
+  <data name="Guide_TestExecution_pause_Title" xml:space="preserve">
+    <value>Паузинг-тесты</value>
+  </data>
+  <data name="Guide_TestExecution_pause_Content" xml:space="preserve">
+    <value>Если вам нужно отойти от пробного запуска, нажмите кнопку паузы, чтобы остановить внутренний таймер для теста. Он светится при паузе, чтобы напомнить вам, чтобы запустить таймер, когда вы возобновите тестирование.</value>
+  </data>
+  <data name="Guide_TestExecution_exit_Title" xml:space="preserve">
+    <value>Оставляя тест</value>
+  </data>
+  <data name="Guide_TestExecution_exit_Content" xml:space="preserve">
+    <value>Нажмите здесь, чтобы выйти из тестирования. Незавершенный тест можно найти в "Моей странице". Когда тест можно будет закончить, справа появится оранжевая кнопка.</value>
+  </data>
+  <data name="Guide_TestExecution_split_Title" xml:space="preserve">
+    <value>Разделенный вид</value>
+  </data>
+  <data name="Guide_TestExecution_split_Content" xml:space="preserve">
+    <value>Это позволяет вам увидеть список всех шагов рядом с инспектором, который показывает подробную информацию о текущем шаге теста.&lt;br&gt;&lt;br&gt;Пользоваться вкладками внизу для просмотра дополнительной информации.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Параметры отображения:&lt;/strong&gt; сделайте инспектор широким или узким в соответствии с вашими потребностями.</value>
+  </data>
+  <data name="Guide_TestExecution_table_Title" xml:space="preserve">
+    <value>Вид на таблицу</value>
+  </data>
+  <data name="Guide_TestExecution_table_Content" xml:space="preserve">
+    <value>Этот режим отображения отлично подходит для того, чтобы показать вам все ваши шаги вместе. Она предназначена для того, чтобы вы могли очень быстро просмотреть и принять меры на каждом шаге.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Опции отображения:&lt;/strong&gt; свернуть или развернуть все поля в таблице сразу, чтобы управлять тем, что отображается на экране. Обратите внимание, что каждое поле может быть свернуто или расширено по отдельности.</value>
+  </data>
+  <data name="Guide_TestExecution_mini_Title" xml:space="preserve">
+    <value>Мини-Вид</value>
+  </data>
+  <data name="Guide_TestExecution_mini_Content" xml:space="preserve">
+    <value>В основном виде показан полноэкранный инспектор. Он максимизирует пространство, выделенное для показа информации о текущем шаге.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Параметры отображения:&lt;/strong&gt; позволяет переключиться с инспектора только на инспектор с ифреймом. Это позволяет вам протестировать веб-страницу с информацией о тестировании прямо рядом с ней.</value>
+  </data>
+  <data name="Guide_TestExecution_status_Title" xml:space="preserve">
+    <value>Регистрация состояния теста</value>
+  </data>
+  <data name="Guide_TestExecution_status_Content" xml:space="preserve">
+    <value>Вы можете записать статус шага в любой вид. Если вы не проходите этот шаг, вам нужно ввести результат в поле "Актуальный результат".&lt;br&gt;&lt;br&gt;&lt;strong&gt;Заметка: &lt;/strong&gt;, чтобы добавить результат вручную в табличном представлении, нажмите на кнопку "+" для этого шага.</value>
+  </data>
+  <data name="Guide_TestExecution_screenshot_Title" xml:space="preserve">
+    <value>Сохранение скриншота</value>
+  </data>
+  <data name="Guide_TestExecution_screenshot_Content" xml:space="preserve">
+    <value>Вставьте изображение непосредственно в текстовый редактор 'Actual Result'.&lt;br&gt;&lt;br&gt;Это позволит загрузить и сохранить изображение, а также убедиться, что на него есть правильные ссылки в текстовом поле.</value>
+  </data>
+  <data name="Messenger_NewMessageFrom" xml:space="preserve">
+    <value>Новое сообщение от</value>
+  </data>
+  <data name="TestSetList_CannotExecuteFolder" xml:space="preserve">
+    <value>Вы не можете выполнить папку, пожалуйста, выберите тестовый набор и повторите попытку!</value>
+  </data>
+  <data name="ArtifactType_Release" xml:space="preserve">
+    <value>Релиз</value>
+  </data>
+  <data name="ArtifactType_Requirement" xml:space="preserve">
+    <value>Требование</value>
+  </data>
+  <data name="ArtifactType_TestSet" xml:space="preserve">
+    <value>Набор для тестирования</value>
+  </data>
+  <data name="TestCaseList_AddToReleaseSuccess" xml:space="preserve">
+    <value>Успешно добавлены тестовые случаи для выпуска.</value>
+  </data>
+  <data name="TestCaseList_AddToRequirementSuccess" xml:space="preserve">
+    <value>Успешно добавленные тестовые случаи к требованию</value>
+  </data>
+  <data name="TestCaseList_AddToTestSetSuccess" xml:space="preserve">
+    <value>Успешно добавленные тестовые случаи к тестовому набору</value>
+  </data>
+  <data name="TestCaseList_RemoveFromReleaseSuccess" xml:space="preserve">
+    <value>Успешно удалены тестовые случаи из отпуска.</value>
+  </data>
+  <data name="GlobalFunctions_InvalidOperation" xml:space="preserve">
+    <value>Недействительная операция</value>
+  </data>
+  <data name="Global_CannotSelectMoreThanOneFolder" xml:space="preserve">
+    <value>При выборе папки нельзя одновременно выбирать и другие элементы!</value>
+  </data>
+  <data name="ArtifactType_AutomationEngine" xml:space="preserve">
+    <value>Двигатель автоматизации</value>
+  </data>
+  <data name="ArtifactType_AutomationHost" xml:space="preserve">
+    <value>Хост автоматизации</value>
+  </data>
+  <data name="ArtifactType_Document" xml:space="preserve">
+    <value>Документ</value>
+  </data>
+  <data name="ArtifactType_Incident" xml:space="preserve">
+    <value>Инцидент</value>
+  </data>
+  <data name="ArtifactType_Message" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="ArtifactType_RequirementStep" xml:space="preserve">
+    <value>Шаг требования</value>
+  </data>
+  <data name="ArtifactType_Task" xml:space="preserve">
+    <value>Задача</value>
+  </data>
+  <data name="ArtifactType_TestCase" xml:space="preserve">
+    <value>Тестовый случай</value>
+  </data>
+  <data name="ArtifactType_TestRun" xml:space="preserve">
+    <value>Тестовый запуск</value>
+  </data>
+  <data name="ArtifactType_TestStep" xml:space="preserve">
+    <value>Этап тестирования</value>
+  </data>
+  <data name="ArtifactType_User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="Global_Current" xml:space="preserve">
+    <value>Текущий</value>
+  </data>
+  <data name="Global_CurrentProject" xml:space="preserve">
+    <value>Текущий продукт</value>
+  </data>
+  <data name="Global_Filter" xml:space="preserve">
+    <value>Фильтр</value>
+  </data>
+  <data name="Global_Search_MatchingResults" xml:space="preserve">
+    <value>совпадающий результат (ы)</value>
+  </data>
+  <data name="Global_Sort" xml:space="preserve">
+    <value>Сортировать</value>
+  </data>
+  <data name="Global_AllArtifacts" xml:space="preserve">
+    <value>Все артефакты</value>
+  </data>
+  <data name="Global_AllProjects" xml:space="preserve">
+    <value>Все продукты</value>
+  </data>
+  <data name="NavigationBar_ItemList" xml:space="preserve">
+    <value>Перечень позиций</value>
+  </data>
+  <data name="Pagination_First" xml:space="preserve">
+    <value>Первый</value>
+  </data>
+  <data name="Pagination_Last" xml:space="preserve">
+    <value>Последний</value>
+  </data>
+  <data name="Pagination_Next" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="Pagination_Previous" xml:space="preserve">
+    <value>Предыдущий</value>
+  </data>
+  <data name="Pagination_Refresh" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="Global_Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="Global_AllFolders" xml:space="preserve">
+    <value>Все папки</value>
+  </data>
+  <data name="AssociationPanel_SelectArtifact" xml:space="preserve">
+    <value>Выберите тип артефакта</value>
+  </data>
+  <data name="ArtifactLinkType_Depends" xml:space="preserve">
+    <value>Зависит от</value>
+  </data>
+  <data name="ArtifactLinkType_Related" xml:space="preserve">
+    <value>Связанный с</value>
+  </data>
+  <data name="Global_Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="Global_Type" xml:space="preserve">
+    <value>Введите .</value>
+  </data>
+  <data name="Global_FilterByName" xml:space="preserve">
+    <value>Фильтр по имени</value>
+  </data>
+  <data name="Global_RowsSelected" xml:space="preserve">
+    <value>Выбранный(е) ряд(ы)</value>
+  </data>
+  <data name="AssociationPanel_CreateTestCaseFromRequirement" xml:space="preserve">
+    <value>Создать тестовый случай из этого требования</value>
+  </data>
+  <data name="AssociationPanel_CreateTestCaseFromRequirementTooltip" xml:space="preserve">
+    <value>Нажмите этот флажок, чтобы создать новый тестовый случай в дереве тестовых примеров, связанном с данным требованием.</value>
+  </data>
+  <data name="AssociationPanel_CreateTestSetFromRelease" xml:space="preserve">
+    <value>Создайте тестовый набор из этого выпуска</value>
+  </data>
+  <data name="AssociationPanel_CreateTestSetFromReleaseTooltip" xml:space="preserve">
+    <value>Щелкните это, чтобы создать новый набор тестов в списке тестов, в котором тестовые случаи импортированы из этого релиза.</value>
+  </data>
+  <data name="AssociationPanel_TestCaseCreatedFromRequirement" xml:space="preserve">
+    <value>Из этого требования был успешно создан новый тестовый случай.</value>
+  </data>
+  <data name="AssociationPanel_TestSetCreatedFromRelease" xml:space="preserve">
+    <value>Из этого релиза был успешно создан новый тестовый набор.</value>
+  </data>
+  <data name="Folders_AllPackages" xml:space="preserve">
+    <value>Все эпосы</value>
+  </data>
+  <data name="Folders_Root" xml:space="preserve">
+    <value>корень</value>
+  </data>
+  <data name="AssociationPanel_FilterPlaceholder" xml:space="preserve">
+    <value>Фильтровать по имени или искать по идентификатору (например</value>
+  </data>
+  <data name="Global_Start" xml:space="preserve">
+    <value>Начать</value>
+  </data>
+  <data name="AssociationPanel_NoResults" xml:space="preserve">
+    <value>Спичек не найдено</value>
+  </data>
+  <data name="Onboarding_NoThanks" xml:space="preserve">
+    <value>Нет, спасибо.</value>
+  </data>
+  <data name="Onboarding_Welcome_Message" xml:space="preserve">
+    <value>Мы хотим быстро показать вам, как обойти заявку. Это займет меньше минуты, а затем вы можете исследовать самостоятельно.</value>
+  </data>
+  <data name="Onboarding_YesPlease" xml:space="preserve">
+    <value>Да, пожалуйста.</value>
+  </data>
+  <data name="Global_IncidentName" xml:space="preserve">
+    <value>Имя инцидента</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_intro_Title" xml:space="preserve">
+    <value>Быстрый тур</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_intro_Content" xml:space="preserve">
+    <value>Данное руководство кратко покажет вам, как выполнять тестовые задания в ValidationMaster с использованием режима пробного тестирования.&lt;br&gt;&lt;br&gt;Это руководство предназначено для опытных тестировщиков. Это руководство предполагает, что вы уже знакомы со стандартным выполнением тестов в SpiraTeam.&lt;br&gt;&lt;br&gt;Нажмите 'Далее', чтобы продолжить.</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_editing_Title" xml:space="preserve">
+    <value>Редактировать Все</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_editing_Content" xml:space="preserve">
+    <value>При выполнении тестов в ознакомительном режиме можно редактировать большинство частей теста. Просто нажмите на поле и начните вводить.&lt;br&gt;&lt;br&gt;Вы можете изменить название тестового прогона, описание и многие другие поля. Когда поле выделено серым цветом, вы не сможете его отредактировать.&lt;br&gt;&lt;br&gt;После того, как вы перейдете к другому полю, внесенные вами изменения сразу же сохраняются на сервере - обратите внимание, что основной тестовый случай НЕ изменяется вообще (позже вы можете выбрать, изменять ли тестовый случай или нет).</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_grid_Title" xml:space="preserve">
+    <value>Перемещение между ступенями</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_grid_Content" xml:space="preserve">
+    <value>Как и при обычном выполнении теста, щелчок по любому шагу теста позволит вам поработать над этим шагом. Подробности отображаются в инспекторе справа.&lt;br&gt;Если какой-либо шаг не имеет серого цвета, это означает, что у вас нет права редактировать этот шаг, но вы все равно можете записать результаты для этого шага.&lt;br&gt;&lt;br&gt;Шаг не может быть отредактирован, когда он исходит из связанного тестового случая.</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_gridStep_Title" xml:space="preserve">
+    <value>Шаги клонирования или удаления</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_gridStep_Content" xml:space="preserve">
+    <value>Если вы наведете курсор на любой шаг (он не выделен серым цветом), вы увидите три горизонтальные точки справа от шага.&lt;br&gt;Нажав на эту кнопку, вы получите мини-меню действий. Это позволяет либо клонировать этот шаг, либо удалить его.&lt;br&gt;&lt;br&gt;Если вы клонируете шаг, то создается дубликат, который помещается в нижнюю часть списка шагов. Если вы удалите шаг, он будет удален из этого запуска.</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_gridStepMoving_Title" xml:space="preserve">
+    <value>Шаги по переупорядочиванию</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_gridStepMoving_Content" xml:space="preserve">
+    <value>Вы можете нажать и удерживать любой шаг, а затем перетащить его вверх или вниз по списку, чтобы поместить его в новую позицию. Это действительно простой способ переупорядочить шаги теста.&lt;br&gt;&lt;br&gt;Вы можете сделать это в любое время: никакая информация на шаге не будет изменена каким-либо образом.</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_gridAdd_Title" xml:space="preserve">
+    <value>Шаги добавления</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_gridAdd_Content" xml:space="preserve">
+    <value>Чтобы добавить новый шаг, нажмите эту кнопку. Пустой шаг будет создан и помещен в нижнюю часть списка шагов тестирования. Затем он может быть полностью отредактирован так же, как и другие шаги.&lt;br&gt;&lt;br&gt;В сочетании с уже упомянутой функциональностью, это дает вам много сил для проектирования и изменения вашего тестового прогона по мере изучения функциональности, которую вы тестируете.</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_tasks_Title" xml:space="preserve">
+    <value>Задачи управления</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_tasks_Content" xml:space="preserve">
+    <value>Во время изучения, вы вполне можете найти что-то, на что разработчик должен обратить внимание. Вы можете быть не уверены, является ли это ошибкой или тестирование может быть на ранних стадиях разработки. В каждом из этих случаев создание инцидента может быть слишком формальным действием.&lt;br&gt;&lt;br&gt;Пожалуйста, почему бы не создать задание? Вы можете добавить название, необязательное описание и назначить задание коллеге за несколько секунд.&lt;br&gt;&lt;br&gt;В любое время вы можете увидеть все задания, созданные для этого теста.</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_settings_Title" xml:space="preserve">
+    <value>Параметры отображения</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_settings_Content" xml:space="preserve">
+    <value>Существует несколько способов настройки рабочего пространства для проведения пробного тестирования. В частности, для каждого пользователя могут быть заданы различные поля для отображения или скрытия. Например, если Вы не используете "Sample Data" во время тестов, то Вы можете скрыть это поле.&lt;br&gt;&lt;br&gt;Вы можете по желанию показать последние результаты для шага (если он существует), чтобы можно было быстро сравнить его с текущими результатами.</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_exit_Title" xml:space="preserve">
+    <value>Оставляя тест</value>
+  </data>
+  <data name="Guide_TestExecutionExploratory_exit_Content" xml:space="preserve">
+    <value>После завершения пробного тестирования здесь появится кнопка оранжевого цвета с символом "стоп". Нажав на нее, вы увидите выпадающее окно с двумя опциями.&lt;br&gt;&lt;br&gt;1. Вы можете обновить базовый тестовый пример, основываясь на всех внесенных вами изменениях (редактирование, добавление, удаление, шаги перемещения).&lt;br&gt;&lt;br&gt;2. Или вы можете оставить тестовый пример без изменений. При выборе этой опции обновляется только статус выполнения тестового случая. Обратите внимание, что тестовый запуск, созданный из этой сессии, будет полностью отражать все изменения, сделанные на этой странице.</value>
+  </data>
+  <data name="GlobalNavigation_MyProfile" xml:space="preserve">
+    <value>Мой профиль</value>
+  </data>
+  <data name="GlobalNavigation_MyTimecard" xml:space="preserve">
+    <value>Моя карточка времени</value>
+  </data>
+  <data name="Global_Search_SortByDate" xml:space="preserve">
+    <value>дата</value>
+  </data>
+  <data name="Global_Search_SortByRelevance" xml:space="preserve">
+    <value>актуальность</value>
+  </data>
+  <data name="Global_ShowAll" xml:space="preserve">
+    <value>Показать все</value>
+  </data>
+  <data name="Global_ShowLess" xml:space="preserve">
+    <value>Показать меньше</value>
+  </data>
+  <data name="Global_Followers" xml:space="preserve">
+    <value>Писатели</value>
+  </data>
+  <data name="Global_People" xml:space="preserve">
+    <value>Люди</value>
+  </data>
+  <data name="ArtifactAddFollower_Success" xml:space="preserve">
+    <value>Успешно добавлен последователь.</value>
+  </data>
+  <data name="Followers_UnfollowUser" xml:space="preserve">
+    <value>Удалить последователя</value>
+  </data>
+  <data name="Incidents_AllClosed" xml:space="preserve">
+    <value>Все Закрыто</value>
+  </data>
+  <data name="Incidents_AllOpen" xml:space="preserve">
+    <value>Все открыто</value>
+  </data>
+  <data name="IncidentDetails_IncidentNotFound" xml:space="preserve">
+    <value>Выбранный вами инцидент был удален из системы!</value>
+  </data>
+  <data name="SourceCode_Commits" xml:space="preserve">
+    <value>Комментарии</value>
+  </data>
+  <data name="Global_Displaying" xml:space="preserve">
+    <value>Отображение</value>
+  </data>
+  <data name="Global_NewIncident" xml:space="preserve">
+    <value>Новый инцидент</value>
+  </data>
+  <data name="TreeView_NotAuthorizedToView" xml:space="preserve">
+    <value>Просмотр папок запрещен!</value>
+  </data>
+  <data name="Global_Count" xml:space="preserve">
+    <value>Посчитать</value>
+  </data>
+  <data name="Dashboards_SaveAsImage" xml:space="preserve">
+    <value>Сохранить как изображение</value>
+  </data>
+  <data name="Global_PleaseTryAgain" xml:space="preserve">
+    <value>Была проблема с завершением операции, пожалуйста, попробуйте еще раз.</value>
+  </data>
+  <data name="TestExecutionService_ExploratoryDoNotDeleteLastStep" xml:space="preserve">
+    <value>Ваш пробный запуск всегда должен содержать, по крайней мере, один этап теста, поэтому выбранный этап теста не был удален.</value>
+  </data>
+  <data name="Global_Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="ArtifactDetails_ArtifactNotFound" xml:space="preserve">
+    <value>Выбранный артефакт был удален из системы!</value>
+  </data>
+  <data name="Global_Populate" xml:space="preserve">
+    <value>Популяризировать</value>
+  </data>
+  <data name="TestConfigurationDetails_NoParameterOrCustomList" xml:space="preserve">
+    <value>Вам необходимо выбрать как параметр тестового случая, так и пользовательский список!</value>
+  </data>
+  <data name="TestConfigurationDetails_PleaseChooseParametersToPopulate" xml:space="preserve">
+    <value>Пожалуйста, выберите параметр тестового случая и связанный с ним пользовательский список для добавления в этот набор конфигурации тестирования:</value>
+  </data>
+  <data name="TestConfiguration_CustomList" xml:space="preserve">
+    <value>Пользовательский список</value>
+  </data>
+  <data name="TestConfiguration_TestCaseParameter" xml:space="preserve">
+    <value>Параметр тестирования</value>
+  </data>
+  <data name="TestConfigurationDetails_ConfirmPopulation" xml:space="preserve">
+    <value>Вы уверены, что хотите заполнить список записей тестовой конфигурации? Это удалит все существующие записи в сетке ниже?</value>
+  </data>
+  <data name="TestConfigurationDetails_TooManyParameters" xml:space="preserve">
+    <value>Вы можете ввести только до 5 параметров тестового случая для популяции!</value>
+  </data>
+  <data name="Incident_EnterNewIncidentName" xml:space="preserve">
+    <value>Введите новое имя инцидента</value>
+  </data>
+  <data name="AssociationPanel_CreateArtifactXFromArtifactY" xml:space="preserve">
+    <value>Создать {0} Из этого {1}</value>
+  </data>
+  <data name="AssociationPanel_CreateArtifactXFromArtifactYTooltip" xml:space="preserve">
+    <value>Нажмите, чтобы создать новый {0}, связанный с этим {1}.</value>
+  </data>
+  <data name="AssociationPanel_ArtifactXCreatedFromArtifactY" xml:space="preserve">
+    <value>Из этого {1} была успешно создана новая {0}.</value>
+  </data>
+  <data name="AssociationPanel_NoArtifactTypesCanBeAdded" xml:space="preserve">
+    <value>Вы не можете добавить никаких ассоциаций к этому артефакту!</value>
+  </data>
+  <data name="ArtifactType_TestRunStep" xml:space="preserve">
+    <value>Шаг теста</value>
+  </data>
+  <data name="InAppHelp_Chart_IncidentAging" xml:space="preserve">
+    <value>Эта диаграмма показывает, как долго инциденты оставались открытыми: возрастные интервалы по оси x, количество инцидентов по оси y.</value>
+  </data>
+  <data name="InAppHelp_Chart_IncidentOpenCount" xml:space="preserve">
+    <value>Эта диаграмма показывает разбивку всех открытых инцидентов в продукте по приоритетам. Полоса диаграммы соответствует цвету, присвоенному этому приоритету.</value>
+  </data>
+  <data name="InAppHelp_Chart_IncidentTestCoverage" xml:space="preserve">
+    <value>На этой диаграмме показан статус выполнения любого тестового случая, который ранее не удался и привел к возникновению инцидента, который впоследствии был устранен. Может быть очень полезно посмотреть, какие тестовые случаи, вероятно, придется тестировать еще раз, теперь, когда их инциденты устранены.</value>
+  </data>
+  <data name="InAppHelp_Chart_RequirementGraphs" xml:space="preserve">
+    <value>Вы можете быстро просмотреть четыре различных диаграммы, используемые при измерении прогресса требований в гибкой методологии: выберите соответствующую диаграмму из выпадающего списка</value>
+  </data>
+  <data name="InAppHelp_Chart_RequirementsCoverage" xml:space="preserve">
+    <value>На этой диаграмме показан совокупный подсчет тестового покрытия требований к продукту. Покрытие тестового покрытия каждого требования суммируется до 1, чтобы сделать требования с различным количеством тестовых случаев, покрывающих их одинаково весомыми. Фильтрация по выпуску будет фильтровать требования, привязанные к этому выпуску.</value>
+  </data>
+  <data name="InAppHelp_Chart_RequirementsCoverageRegression" xml:space="preserve">
+    <value>На этой диаграмме показан совокупный подсчет тестового покрытия требований к продукту. Покрытие тестового покрытия каждого требования суммируется до 1, чтобы сделать требования с различным количеством тестовых случаев, покрывающих их одинаково весомыми. Фильтрация по выпуску будет фильтровать тестовые случаи, а не требования.</value>
+  </data>
+  <data name="InAppHelp_Chart_SourceCodeCommits" xml:space="preserve">
+    <value>На этой диаграмме показаны последние 3 месяца фиксации кода к продукту (если вы используете функциональность исходного кода приложения). Комиссионные суммируются по неделям. График имеет цветовую кодировку по нижнему квартилю, среднему 50% и верхнему квартилю активности.</value>
+  </data>
+  <data name="InAppHelp_Chart_TaskGraphs" xml:space="preserve">
+    <value>Вы можете быстро просмотреть три различных диаграммы, используемые при измерении прогресса выполнения задачи в гибкой методологии: выберите соответствующую диаграмму из выпадающего списка</value>
+  </data>
+  <data name="InAppHelp_Chart_TestCasesPerStatusAndDay" xml:space="preserve">
+    <value>На этом графике кумулятивно отображаются последние 30 дней выполнения тестовых заданий. Это означает, что он будет отображать для каждого дня, общее количество выполненных тестовых заданий плюс статус за предыдущие дни, которые не были изменены. Любые тестовые случаи, не выполненные до этого момента, будут считаться "не выполненными" и появятся в категории "не выполненными". Например, если у вас есть 10 тестовых примеров, созданных на 1-й день, вы увидите 10 тестовых примеров "не запущенных" на 1-й день. На 2-й день вы выполняете 5 тестовых случаев и все они завершаются неудачно, теперь вы увидите 5 тестовых случаев неудачных и 5 не завершенных. На третий день Вы выполняете 3 из 5 предыдущих тестовых заданий и сдаете их. Теперь вы увидите 3 пройденных теста, 2 неудачных и 5 не пройденных.</value>
+  </data>
+  <data name="InAppHelp_Chart_TestExecutionStatus" xml:space="preserve">
+    <value>На этой диаграмме представлено агрегированное количество тестовых случаев в каждом статусе выполнения для продукта.</value>
+  </data>
+  <data name="InAppHelp_Chart_TestRunProgress" xml:space="preserve">
+    <value>На этом графике отображаются последние 30 дней активности тестового прогона с разбивкой по каждому дню по статусу тестового прогона.</value>
+  </data>
+  <data name="InAppHelp_Chart_TestSetStatus" xml:space="preserve">
+    <value>На этой диаграмме показано агрегированное количество тестовых случаев в каждом статусе выполнения для каждого тестового комплекта в продукте.  Если у вас одни и те же тесты в нескольких тестовых наборах, они все подсчитываются отдельно, чтобы убедиться, что вы можете сказать, что тесты успешно прошли через все тестовые наборы. Это полезно при тестировании в различных средах.</value>
+  </data>
+  <data name="InAppHelp_Chart_RequirementsCoverageProgram" xml:space="preserve">
+    <value>На данном графике показан агрегированный подсчет тестового покрытия требований для всей программы. Строки "пройдено", "не пройдено", "заблокировано", "предостережено" и "не выполнено" показывают общее количество требований, которые имеют тесты, покрывающие их, распределенные по статусу выполнения покрывающих тестов.</value>
+  </data>
+  <data name="InAppHelp_Chart_TaskProgress" xml:space="preserve">
+    <value>Данный график показывает суммарный подсчет заданий по категориям прогресса для всей программы. В столбцах "По расписанию", "Поздний финиш", "Поздний старт" и "Незавершенное" указывается общее количество задач, которые находятся в этой категории по всем продуктам в программе.</value>
+  </data>
+  <data name="InAppHelp_Chart_TestExecutionStatusProgram" xml:space="preserve">
+    <value>На данном графике показан агрегированный подсчет тестовых случаев по статусу исполнения для всей программы. Строки "Прошел", "Не прошел", "Заблокирован", "Внимание" и "Не прошел" указывают общее количество тестовых случаев, которые находятся в этой категории для всех изделий в программе.</value>
+  </data>
+  <data name="InAppHelp_Chart_DateRangeIncident" xml:space="preserve">
+    <value>&lt;b&gt;Чарт прогресса инцидентов&lt;/b&gt; отображает общее количество инцидентов, созданных и закрытых на определенном диапазоне данных, либо для всех типов инцидентов, либо для определенного типа инцидентов.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Совокупная диаграмма количества инцидентов&lt;/b&gt; отображает совокупное общее количество инцидентов, записанных в журнал в определенном диапазоне данных, либо для всех типов инцидентов, либо для определенного типа инцидентов. В отчете отображается общее количество всех инцидентов, а также общее количество всех открытых инцидентов (т.е. со статусом, который не установлен в фиксированный или закрытый).
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Сводная таблица количества открытых инцидентов&lt;/b&gt; отображает сетевое количество открытых инцидентов на определенном диапазоне данных, сгруппированных по приоритету инцидентов, либо для всех типов инцидентов, либо для определенного типа инцидентов. Для данного графика под "open" понимается любой инцидент с пустой датой "Closed On". Статус инцидента не используется для этой диаграммы.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Счетчик инцидентов по статусу&lt;/b&gt; отображает количество открытых инцидентов в системе для текущего продукта на определенном диапазоне данных, сгруппированных по статусу инцидента, либо для всех типов инцидентов, либо для определенного типа инцидентов. Для данного графика под "open" понимается любой инцидент с пустой датой "Closed On". Статус инцидента не используется для этой диаграммы.</value>
+  </data>
+  <data name="InAppHelp_Chart_DateRangeTestRun" xml:space="preserve">
+    <value>&lt;b&gt;Чарт прогресса выполнения теста&lt;/b&gt; показывает, сколько тестов было выполнено за определенный период времени, и какой статус выполнения был записан. Отчет может быть отображен для конкретного диапазона данных и для всего продукта или для конкретного выпуска/отпечатка.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Чарт прогресса тестового случая&lt;/b&gt; отображает количество выполнений тестового случая для указанного диапазона дат для данного конкретного интервала дат. Это означает, что для каждого дня будет отображаться общее количество выполненных тестовых заданий без учета состояния за предыдущие дни. Любые тестовые случаи, не выполненные в этот день, будут считаться "не выполненными" и появятся в категории "не выполненными".
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Совокупный график выполнения тестового случая&lt;/b&gt; отображает количество запусков тестового случая кумулятивно в указанном диапазоне дат. Это означает, что он будет отображать для каждого дня, общее количество выполненных тестовых заданий плюс статус за предыдущие дни, которые не были изменены. Любые тестовые случаи, не выполненные до этого момента, будут считаться "не выполненными" и появятся в категории "не выполненными".</value>
+  </data>
+  <data name="InAppHelp_Chart_SnapshotIncident" xml:space="preserve">
+    <value>&lt;b&gt;В диаграмме старения инцидентов&lt;/b&gt; отображается количество дней, в течение которых инциденты оставались в системе открытыми. График организован в виде уложенной гистограммы, с количеством инцидентов на оси y и различными возрастными интервалами на оси x. Каждый цвет гистограммы представляет различные инциденты по приоритету, предоставляя менеджеру по продукту моментальный снимок возраста открытых инцидентов с продуктом по приоритету.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Технологическая карта времени разворота инцидента&lt;/b&gt; отображает количество дней, в течение которых инциденты были закрыты (с момента их первого поднятия) в системе. График организован в виде суммированной гистограммы, с количеством инцидентов по оси Y и различными временными интервалами разворота по оси x. Каждый цвет гистограммы представляет собой отдельный приоритет происшествий, предоставляя менеджеру по продукту моментальный снимок времени прохождения происшествий с продуктом по приоритету.</value>
+  </data>
+  <data name="InAppHelp_Chart_SnapshotRequirement" xml:space="preserve">
+    <value>&lt;b&gt;График покрытия требований&lt;/b&gt; показывает, сколько требований в настоящее время находится в продукте, в соответствии с их тестовым покрытием.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;График "Требования к сжиганию"&lt;/b&gt; показывает оставшееся количество сюжетных точек, которые необходимо заполнить для каждого выпуска/отпечатка в продукте с отдельными строками для предполагаемого и идеального сжигания. Кроме того, график включает в себя столбики по количеству завершенных сюжетных точек в каждом временном отрезке по оси x
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;График требований по выгоранию&lt;/b&gt; показывает суммарное количество сюжетных очков, выдающихся за каждый выпуск/отпечаток в продукте, с отдельными строками для предполагаемого и идеального выгорания. Кроме того, график включает в себя столбики по количеству завершенных сюжетных точек в каждом временном периоде по оси x
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;График Скорости Требований&lt;/b&gt; показывает общее количество точек сюжета, которые были завершены (или планируются к завершению) в конкретном релизе, спринте или временном интервале (называемом скоростью). Фактическая скорость отображается вместе с общей средней скоростью (синим цветом) и средней скоростью прокатки (зеленым цветом).
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="InAppHelp_Chart_SnapshotTask" xml:space="preserve">
+    <value>&lt;b&gt;График скорости выполнения задачи&lt;/b&gt; показывает общие расчетные и фактические усилия (в количестве часов), приложенные в каждом выпуске продукта и/или спринтере.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;График "Прогорание задачи"&lt;/b&gt; показывает суммарный объем работы, выдающийся для каждого релиза/отпечатка в продукте, с отдельными строками для предполагаемого и идеального прогорания. Кроме того, график включает в себя столбики по оставшемуся и завершенному усилию в каждом временном периоде по оси x.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;График сжигания заданий&lt;/b&gt; показывает оставшуюся работу (в часах), которую необходимо выполнить для каждого выпуска/отпечатка в продукте с отдельными строками для предполагаемого и идеального сжигания. Кроме того, график включает в себя столбики по оставшемуся и завершенному усилию в каждом временном периоде по оси x.</value>
+  </data>
+  <data name="InAppHelp_Chart_SummaryIncident" xml:space="preserve">
+    <value>На сводном графике происшествий показано, сколько происшествий в настоящее время находится в продукте. Количество инцидентов отображается в соответствии с указанными вами критериями.</value>
+  </data>
+  <data name="InAppHelp_Chart_SummaryRequirement" xml:space="preserve">
+    <value>Сводный график требований показывает, сколько требований в настоящее время находится в продукте. Количество требований отображается в соответствии с указанными вами критериями</value>
+  </data>
+  <data name="InAppHelp_Chart_SummaryTask" xml:space="preserve">
+    <value>Сводный график задач показывает, сколько задач в настоящее время находится в продукте. Количество задач отображается в соответствии с указанными вами критериями.</value>
+  </data>
+  <data name="InAppHelp_Chart_SummaryTestCase" xml:space="preserve">
+    <value>Сводный график тестового случая показывает, сколько тестовых случаев в настоящее время находится в продукте. Количество тестовых случаев отображается в соответствии с указанными вами критериями.</value>
+  </data>
+  <data name="InAppHelp_Chart_SummaryTestRun" xml:space="preserve">
+    <value>Сводный график выполнения тестов показывает, сколько тестовых запусков в настоящее время в продукте. Количество тестовых запусков отображается в соответствии с указанными вами критериями.</value>
+  </data>
+  <data name="InAppHelp_Chart_SummaryTestSet" xml:space="preserve">
+    <value>Сводный график тестовых наборов показывает, сколько тестовых наборов в настоящее время находится в продукте. Количество тестовых наборов отображается в соответствии с указанными вами критериями.</value>
+  </data>
+  <data name="JqPlot_ImageExportNotSupport" xml:space="preserve">
+    <value>Ваш веб-браузер не поддерживает экспорт изображений!</value>
+  </data>
+  <data name="AssociationPanel_NoUnassociatedResults" xml:space="preserve">
+    <value>Нет найденных совпадений</value>
+  </data>
+  <data name="DocumentDetails_DeleteVersionConfirm" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить эту версию документа?</value>
+  </data>
+  <data name="FileUpload_AttachmentEmpty" xml:space="preserve">
+    <value>Нельзя загружать пустое вложение!</value>
+  </data>
+  <data name="FileUpload_AttachmentTooLarge" xml:space="preserve">
+    <value>Вы не можете загрузить вложение размером больше {0}KB!</value>
+  </data>
+  <data name="FileUpload_VersionNumberRequired" xml:space="preserve">
+    <value>Вам необходимо указать номер версии!</value>
+  </data>
+  <data name="FileUpload_VersionNumberTooLong" xml:space="preserve">
+    <value>Номер вашей версии слишком длинный!</value>
+  </data>
+  <data name="Graphs_NeedToHaveASingleDataSeries" xml:space="preserve">
+    <value>Этот тип графика поддерживает только один ряд данных!</value>
+  </data>
+  <data name="TestCaseExecution_ActualResult" xml:space="preserve">
+    <value>Фактический результат</value>
+  </data>
+  <data name="RequirementDetails_SplitRequirementEstimateNotNumeric" xml:space="preserve">
+    <value>Оценочное значение должно быть числовым!</value>
+  </data>
+  <data name="RequirementDetails_SplitRequirementNameRequired" xml:space="preserve">
+    <value>Вам необходимо ввести Имя для нового Требования!</value>
+  </data>
+  <data name="AjaxFormManager_NotAuthorizedToCreate" xml:space="preserve">
+    <value>Вы не имеете права создавать этот пункт!</value>
+  </data>
+  <data name="Global_Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Global_ChooseWorkspace" xml:space="preserve">
+    <value>--- Выберите рабочее место ---</value>
+  </data>
+  <data name="AjaxFormManager_Logout" xml:space="preserve">
+    <value>Выход из системы</value>
+  </data>
+  <data name="GlobalNavigation_KeyboardShortcuts" xml:space="preserve">
+    <value>Клавиатурные сокращения</value>
+  </data>
+  <data name="GlobalNavigation_ShowOnboardingTours" xml:space="preserve">
+    <value>Показать экскурсии на борту</value>
+  </data>
+  <data name="Global_Administration" xml:space="preserve">
+    <value>Администрация</value>
+  </data>
+  <data name="Global_Help" xml:space="preserve">
+    <value>Помощь</value>
+  </data>
+  <data name="GlobalNavigation_SearchTooltip" xml:space="preserve">
+    <value>Поиск можно осуществлять по ключевым словам или путем ввода уникального маркера артефакта (например, IN45 для инцидента 45).</value>
+  </data>
+  <data name="NavigationBar_RecentSearches" xml:space="preserve">
+    <value>Последние поиски</value>
+  </data>
+  <data name="Global_Artifacts" xml:space="preserve">
+    <value>Артефакты</value>
+  </data>
+  <data name="NavigationBar_NoWorkspaceMembership" xml:space="preserve">
+    <value>Членство в рабочей группе не найдено</value>
+  </data>
+  <data name="GlobalNavigation_TooltipArtifacts" xml:space="preserve">
+    <value>Артефакты являются строительными блоками продукта или программы и содержат все свои данные. Каждый артефакт содержит различные данные и используется по-разному. Например, требования - это один артефакт, а выпуски - это другой. Они работают по-другому и не взаимозаменяемы. Есть артефакты, которые помогут вам в тестировании, планировании, отслеживании ошибок и задач, и многое другое.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipAutomationHost" xml:space="preserve">
+    <value>Хозяева автоматизации - это все различные системы (т.е. испытательные машины), используемые для проведения автоматизированных испытаний продукта.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipTestConfigurationSet" xml:space="preserve">
+    <value>Конфигурация - это матрица параметров, с которыми можно выполнять тесты (как ручные, так и автоматические). Конфигурации позволяют быстро создавать все возможные комбинации из нескольких различных параметров.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipDocument" xml:space="preserve">
+    <value>Все вложения, документы, изображения (включая скриншоты) и другие файлы, подключенные к устройству, видны здесь, со встроенной версией.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipIncident" xml:space="preserve">
+    <value>Все инциденты, связанные с продуктом, включая ошибки, усовершенствования, риски или любые другие виды, указанные владельцем продукта.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipMyPage" xml:space="preserve">
+    <value>Ваша домашняя страница содержит всю важную для Вас информацию, объединенную на одной странице, чтобы Вы могли незамедлительно принять меры.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipPlanningBoard" xml:space="preserve">
+    <value>Визуализируйте и управляйте пунктами, запланированными для вашего продукта. Этот инструмент планирования основан на методологиях Scrum и Kanban.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipRelease" xml:space="preserve">
+    <value>Иерархический сборник релизов продуктов (включая спринты и эпосы)</value>
+  </data>
+  <data name="GlobalNavigation_TooltipReporting" xml:space="preserve">
+    <value>Сгенерировать широкий спектр диаграмм и отчетов для текущего рабочего пространства, включая пользовательские отчеты. Отчеты могут быть отфильтрованы, отсортированы и экспортированы.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipRequirement" xml:space="preserve">
+    <value>Иерархический набор требований любого типа, включая пользовательские истории, примеры использования и функции</value>
+  </data>
+  <data name="GlobalNavigation_TooltipResource" xml:space="preserve">
+    <value>Управление ресурсами для просмотра каждого активного члена продукта вместе с общей рабочей нагрузкой (как завершенной, так и запланированной).</value>
+  </data>
+  <data name="GlobalNavigation_TooltipSourceCode" xml:space="preserve">
+    <value>Просмотреть весь исходный код, связанный с приложением, включая конкретные фиксации, ревизии файлов и ветки.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipTask" xml:space="preserve">
+    <value>Задачи помогают разбивать большие области работы, такие как Требования или Инциденты, поэтому незаметные части могут выполняться разными людьми. Задачи также могут быть самостоятельной деятельностью.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipTestCase" xml:space="preserve">
+    <value>Тестовые корпуса являются ключевой единицей тестирования в приложении. Каждый тестовый случай состоит из тестовых шагов. Статус выполнения тестового случая (например, "пройдено" или "не пройдено") можно проследить по всей системе до разделов "Выпуски" и "Требования".</value>
+  </data>
+  <data name="GlobalNavigation_TooltipTestRun" xml:space="preserve">
+    <value>Каждый раз, когда выполняется тестовый случай, создается тестовый запуск. Каждое выполнение в продукте собирается как Test Runs, которые действуют в качестве записей для всех тестовых действий.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipTestSet" xml:space="preserve">
+    <value>Тестовые наборы содержат тестовые случаи. Test Set действует как хранилище данных динамического тестирования и для задания определенного порядка выполнения тестовых сценариев.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipWorkspace" xml:space="preserve">
+    <value>Чтобы начать работу в приложении, необходимо выбрать рабочее пространство для изучения, управления или работы над ним. Рабочими областями могут быть продукты (например, для конкретного применения) или программы (которые группируют ряд продуктов вместе).</value>
+  </data>
+  <data name="GlobalNavigation_TooltipWorkspaceHome" xml:space="preserve">
+    <value>Универсальный центр" для понимания общего состояния текущего рабочего пространства с исчерпывающей, легко усваиваемой (и настраиваемой) информацией. Доступ к нему осуществляется щелчком по большому значку рабочего пространства в навигационной панели.</value>
+  </data>
+  <data name="Global_Documentation" xml:space="preserve">
+    <value>Документация</value>
+  </data>
+  <data name="Global_SystemAdministration" xml:space="preserve">
+    <value>Системное администрирование</value>
+  </data>
+  <data name="Global_Templates" xml:space="preserve">
+    <value>Шаблоны</value>
+  </data>
+  <data name="Global_RiskName" xml:space="preserve">
+    <value>Имя риска</value>
+  </data>
+  <data name="Onboarding_WelcomeToProduct" xml:space="preserve">
+    <value>Введение в {0}</value>
+  </data>
+  <data name="GlobalNavigation_TooltipAdministration" xml:space="preserve">
+    <value>Мощный административный контроль позволяет тем, кто имеет достаточный доступ, вносить изменения в соответствующие рабочие области, а также управлять пользователями, уведомлениями, настройками системы и безопасности, синхронизацией данных с внешними сервисами и многим другим.</value>
+  </data>
+  <data name="GlobalNavigation_TooltipUserProfile" xml:space="preserve">
+    <value>Управляйте профилем пользователя и настройками (включая пароли и локализацию). Из этого меню вы также можете получить доступ к ссылкам на документацию о странице, на которой вы находитесь, посмотреть мини-инструкции или сочетания клавиш, или выйти из приложения.</value>
+  </data>
+  <data name="Global_Finish" xml:space="preserve">
+    <value>Закончить</value>
+  </data>
+  <data name="Global_MyPage" xml:space="preserve">
+    <value>Моя страница</value>
+  </data>
+  <data name="Global_UserProfile" xml:space="preserve">
+    <value>Профиль пользователя</value>
+  </data>
+  <data name="Global_Workspaces" xml:space="preserve">
+    <value>Рабочие пространства</value>
+  </data>
+  <data name="Global_WorkspacesDashboard" xml:space="preserve">
+    <value>Приборные панели рабочего пространства</value>
+  </data>
+  <data name="Onboarding_AppIntro_Title" xml:space="preserve">
+    <value>Узнайте {0}</value>
+  </data>
+  <data name="Onboarding_SelectATour" xml:space="preserve">
+    <value>Пожалуйста, выберите вариант ниже, чтобы увидеть этот тур</value>
+  </data>
+  <data name="Onboarding_UpdateIntro_Message" xml:space="preserve">
+    <value>Узнайте, что нового в последнем обновлении.</value>
+  </data>
+  <data name="Onboarding_ReadMore" xml:space="preserve">
+    <value>Подробнее</value>
+  </data>
+  <data name="Onboarding_ShowAllTours" xml:space="preserve">
+    <value>Показать все туры</value>
+  </data>
+  <data name="GlobalNavigation_TooltipRisk" xml:space="preserve">
+    <value>Используйте риски для внедрения полного решения по управлению рисками для ваших продуктов. Каждый риск может иметь свою вероятность и влияние, что поможет Вам проанализировать каждый риск. Добавить уменьшение риска для отслеживания того, как вы относитесь к риску.</value>
+  </data>
+  <data name="ArtifactType_Risk" xml:space="preserve">
+    <value>Риск</value>
+  </data>
+  <data name="ArtifactType_RiskMitigation" xml:space="preserve">
+    <value>Смягчение последствий</value>
+  </data>
+  <data name="Onboarding_TourAims_AppIntro" xml:space="preserve">
+    <value>Этот тур поможет вам сориентироваться в приложении. Мы рассмотрим каждую часть навигационной панели - этот темный раздел вверху каждой страницы. Каждая часть помогает перемещаться между различными областями применения. Если вы наведете курсор на любую из этих частей, всплывет всплывающая подсказка, которая даст вам больше информации.</value>
+  </data>
+  <data name="Onboarding_TourAims_Title" xml:space="preserve">
+    <value>Начните здесь</value>
+  </data>
+  <data name="Risk_EnterNewRiskName" xml:space="preserve">
+    <value>Введите новое название риска</value>
+  </data>
+  <data name="ArtifactType_PlanningBoard" xml:space="preserve">
+    <value>Плановый совет</value>
+  </data>
+  <data name="ArtifactType_SourceCode" xml:space="preserve">
+    <value>Исходный код</value>
+  </data>
+  <data name="ArtifactType_TestConfigurationSet" xml:space="preserve">
+    <value>Конфигурация</value>
+  </data>
+  <data name="Artifact_EnterNewName" xml:space="preserve">
+    <value>Введите новое имя</value>
+  </data>
+  <data name="GlobalNavigation_ColorScheme_Auto" xml:space="preserve">
+    <value>Автоматический режим</value>
+  </data>
+  <data name="GlobalNavigation_ColorScheme_Dark" xml:space="preserve">
+    <value>Темный режим</value>
+  </data>
+  <data name="GlobalNavigation_ColorScheme_Light" xml:space="preserve">
+    <value>Режим освещения</value>
+  </data>
+  <data name="GlobalNavigation_ColorScheme_AutoTitle" xml:space="preserve">
+    <value>Цветной режим обрабатывается операционной системой. Нажмите, чтобы переключиться в темный режим</value>
+  </data>
+  <data name="GlobalNavigation_ColorScheme_DarkTitle" xml:space="preserve">
+    <value>Смелый новый взгляд, который легче для глаз. Нажмите, чтобы переключиться в светлый (нормальный) режим.</value>
+  </data>
+  <data name="GlobalNavigation_ColorScheme_LightTitle" xml:space="preserve">
+    <value>Классический, вневременной темный текст на светлом фоне. Нажмите, чтобы переключиться в автоматический режим</value>
+  </data>
+  <data name="Administration_Project_RemapTemplateDialogText" xml:space="preserve">
+    <value>В настоящее время меняется шаблон продукта...</value>
+  </data>
+  <data name="Administration_Project_RemapTemplateTitle" xml:space="preserve">
+    <value>Изменить шаблон продукта</value>
+  </data>
+  <data name="Administration_Project_NeedToSelectTemplate" xml:space="preserve">
+    <value>Вам необходимо выбрать шаблон из списка!</value>
+  </data>
+  <data name="MoreArtifactsThanCanDisplay" xml:space="preserve">
+    <value>Извините, артефактов в целом больше, чем этот вид может отобразить.</value>
+  </data>
+  <data name="Admin_TemplateChange_FieldMappingLoss" xml:space="preserve">
+    <value>Расчетная потеря данных</value>
+  </data>
+  <data name="Global_Artifact" xml:space="preserve">
+    <value>Артефакт</value>
+  </data>
+  <data name="Global_FieldName" xml:space="preserve">
+    <value>Имя поля</value>
+  </data>
+  <data name="FileArtifactUploadDialog_FilenameRequired" xml:space="preserve">
+    <value>Вам нужно выбрать или бросить файл, прежде чем пытаться загрузить!</value>
+  </data>
+  <data name="Global_ChooseFilterToUpdate" xml:space="preserve">
+    <value>Выберите существующий фильтр для обновления:</value>
+  </data>
+  <data name="Global_IncludeColumns" xml:space="preserve">
+    <value>Сохраните выбор столбца с помощью фильтра.</value>
+  </data>
+  <data name="Global_SaveNew" xml:space="preserve">
+    <value>Сохранить Новое</value>
+  </data>
+  <data name="Global_UpdateExisting" xml:space="preserve">
+    <value>Обновление Существующее</value>
+  </data>
+  <data name="Global_UpdateExistingOrSaveNew" xml:space="preserve">
+    <value>Вы хотите обновить существующий сохраненный фильтр или сохранить новый?</value>
+  </data>
+  <data name="LoginOAuth_NotAdmin" xml:space="preserve">
+    <value>Пользователь "администратор" не может подключиться к Oauth.</value>
+  </data>
+  <data name="Admin_UserDetailsEdit_LdapDnRequired" xml:space="preserve">
+    <value>Вам необходимо ввести значение для нового LDAP DN!</value>
+  </data>
+</root>

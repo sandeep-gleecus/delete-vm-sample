@@ -1,0 +1,137 @@
+/***************************************************************
+**	Insert script for table TST_TEST_STEP
+***************************************************************/
+SET IDENTITY_INSERT TST_TEST_STEP ON; 
+
+INSERT INTO TST_TEST_STEP
+(
+TEST_STEP_ID, TEST_CASE_ID, EXECUTION_STATUS_ID, DESCRIPTION, POSITION, EXPECTED_RESULT, SAMPLE_DATA, LINKED_TEST_CASE_ID, IS_ATTACHMENTS, LAST_UPDATE_DATE, CONCURRENCY_DATE
+)
+VALUES
+(
+1, 2, 4, 'Call', 1, NULL, NULL, 17, 0, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+2, 2, 2, 'User clicks link to create book', 2, 'User taken to first screen in wizard', NULL, NULL, 0, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+3, 2, 2, 'User enters books name and author, then clicks Next', 3, 'User taken to next screen in wizard', 'Macbeth, William Shakespeare', NULL, 1, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+4, 2, 2, 'User chooses book''s genre and sub-genre from list', 4, 'User sees screen displaying all entered information', 'Play, Tragedy', NULL, 0, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+5, 2, 2, 'User clicks submit button', 5, 'Confirmation screen is displayed', NULL, NULL, 0, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+6, 4, 4, 'Call', 1, NULL, NULL, 17, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+7, 4, 2, 'User clicks link to create author', 2, 'User taken to first screen in wizard', NULL, NULL, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+8, 4, 1, 'User enters authors name and age', 3, 'User taken to next screen in wizard', 'MartinAMis, 39', NULL, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+9, 4, 3, 'User associates books with author', 4, 'User sees screen displaying all entered information', 'London Fields, Money, Informational', NULL, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+10, 4, 3, 'User clicks submit button', 5, 'Confirmation screen is displayed', NULL, NULL, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+11, 12, 4, 'Call', 1, NULL, NULL, 17, 0, DATEADD(day, -129, SYSUTCDATETIME()), DATEADD(day, -129, SYSUTCDATETIME())
+),
+(
+12, 12, 3, 'User clicks link to report lost book', 2, 'User taken to lost book screen', NULL, NULL, 0, DATEADD(day, -129, SYSUTCDATETIME()), DATEADD(day, -129, SYSUTCDATETIME())
+),
+(
+13, 12, 3, 'User chooses lost book from list of his loans', 3, NULL, 'London Fields', NULL, 0, DATEADD(day, -129, SYSUTCDATETIME()), DATEADD(day, -129, SYSUTCDATETIME())
+),
+(
+14, 12, 3, 'User clicks submit button', 4, 'Confirmation screen is displayed', NULL, NULL, 0, DATEADD(day, -129, SYSUTCDATETIME()), DATEADD(day, -129, SYSUTCDATETIME())
+),
+(
+17, 16, 2, 'User opens up ${browserName} and enters application URL: ${url}', 1, 'The browser loads the login web page', '${url}', NULL, 0, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+18, 17, 4, 'Call', 1, NULL, NULL, 16, 0, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+19, 17, 2, 'User logs in to application', 2, 'User taken to main menu screen', 'Login=${login}, Password=${password}', NULL, 0, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+20, 3, 4, 'Call', 1, NULL, NULL, 17, 0, DATEADD(day, -139, SYSUTCDATETIME()), DATEADD(day, -139, SYSUTCDATETIME())
+),
+(
+21, 3, 2, 'User clicks link to view existing books', 2, 'List of active books in system displayed', NULL, NULL, 0, DATEADD(day, -139, SYSUTCDATETIME()), DATEADD(day, -139, SYSUTCDATETIME())
+),
+(
+22, 3, 2, 'User clicks on link to edit a specific book', 3, 'User taken to edit book details screen', NULL, NULL, 0, DATEADD(day, -139, SYSUTCDATETIME()), DATEADD(day, -139, SYSUTCDATETIME())
+),
+(
+23, 5, 2, 'Call', 1, NULL, NULL, 17, 0, DATEADD(day, -140, SYSUTCDATETIME()), DATEADD(day, -140, SYSUTCDATETIME())
+),
+(
+24, 5, 2, 'User clicks link to view existing authors', 2, 'List of active authors in system displayed', NULL, NULL, 0, DATEADD(day, -140, SYSUTCDATETIME()), DATEADD(day, -140, SYSUTCDATETIME())
+),
+(
+25, 5, 6, 'User clicks on link to edit a specific author', 3, 'User taken to edit author details screen', NULL, NULL, 0, DATEADD(day, -140, SYSUTCDATETIME()), DATEADD(day, -140, SYSUTCDATETIME())
+),
+(
+26, 8, 4, 'Call', 1, NULL, NULL, 2, 0, DATEADD(day, -144, SYSUTCDATETIME()), DATEADD(day, -144, SYSUTCDATETIME())
+),
+(
+27, 8, 4, 'Call', 2, NULL, NULL, 3, 0, DATEADD(day, -144, SYSUTCDATETIME()), DATEADD(day, -144, SYSUTCDATETIME())
+),
+(
+28, 9, 2, 'Call', 1, NULL, NULL, 4, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+29, 9, 2, 'Call', 2, NULL, NULL, 5, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+32, 19, 3, 'Call', 1, NULL, NULL, 17, 0, DATEADD(day, -121, SYSUTCDATETIME()), DATEADD(day, -121, SYSUTCDATETIME())
+),
+(
+33, 18, 3, 'Call', 1, NULL, NULL, 17, 0, DATEADD(day, -137, SYSUTCDATETIME()), DATEADD(day, -137, SYSUTCDATETIME())
+),
+(
+34, 18, 3, 'Call', 2, NULL, NULL, 20, 0, DATEADD(day, -137, SYSUTCDATETIME()), DATEADD(day, -137, SYSUTCDATETIME())
+),
+(
+35, 18, 3, 'Call', 3, NULL, NULL, 21, 0, DATEADD(day, -137, SYSUTCDATETIME()), DATEADD(day, -137, SYSUTCDATETIME())
+),
+(
+36, 19, 3, 'Call', 2, NULL, NULL, 21, 0, DATEADD(day, -121, SYSUTCDATETIME()), DATEADD(day, -121, SYSUTCDATETIME())
+),
+(
+37, 19, 3, 'Call', 3, NULL, NULL, 21, 0, DATEADD(day, -121, SYSUTCDATETIME()), DATEADD(day, -121, SYSUTCDATETIME())
+),
+(
+38, 19, 3, 'Call', 4, NULL, NULL, 21, 0, DATEADD(day, -121, SYSUTCDATETIME()), DATEADD(day, -121, SYSUTCDATETIME())
+),
+(
+39, 21, 3, 'Click on the ''Create new book'' link<br>', 1, 'The new book page is displayed<br>', NULL, NULL, 0, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+40, 21, 3, 'Enter in the new book information<br>', 2, 'The data is accepted<br>', 'name: <span>${name}</span><br>author: <span>${author}</span><br>genre: <span>${genre}</span><br>', NULL, 0, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+41, 21, 3, 'Click the ''Insert'' button<br>', 3, 'The new book is added<br>', NULL, NULL, 0, DATEADD(day, -146, SYSUTCDATETIME()), DATEADD(day, -146, SYSUTCDATETIME())
+),
+(
+42, 20, 3, 'Click on the ''Create new author'' link.<br>', 1, 'The new author page is displayed<br>', NULL, NULL, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+43, 20, 3, 'Enter in the new author information<br>', 2, 'The data is accepted<br>', 'name: ${name}<br>age:<span> ${age}</span>', NULL, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+44, 20, 3, 'Click the ''Insert'' button<br>', 3, 'The new author is added<br>', NULL, NULL, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+),
+(
+45, 13, 2, '<p>Explore adding a new book and new author</p>', 1, '<p>Check for (examples):</p><ul><li>Cannot add a book with a blank author</li><li>Can add an author with no books</li><li>Can add a book with an author that has just been added</li><li>Can view newly added book page</li></ul>', NULL, NULL, 0, DATEADD(day, -136, SYSUTCDATETIME()), DATEADD(day, -136, SYSUTCDATETIME())
+)
+GO
+
+SET IDENTITY_INSERT TST_TEST_STEP OFF; 
+

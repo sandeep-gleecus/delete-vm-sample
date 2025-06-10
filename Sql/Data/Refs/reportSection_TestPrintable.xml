@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+  <xsl:template match="/TestRunData">
+    <xsl:for-each select="TestRun">
+      <div class="Title2">
+        Test #<xsl:value-of select="TestCaseId"/> - <xsl:value-of select="Name"/>
+      </div>
+      <div class="Description">
+        <xsl:value-of select="Description" disable-output-escaping="yes"/>
+      </div>
+
+      <xsl:if test="TestRunSteps">
+        <div class="Title3">
+          Test Steps:
+        </div>
+        <table class="DataGrid">
+          <tr>
+            <th>Step</th>
+            <th>Description</th>
+            <th>Expected Result</th>
+            <th>Sample Data</th>
+            <th>Status</th>
+            <th>Actual Result</th>
+          </tr>
+          <xsl:for-each select="TestRunSteps/TestRunStep">
+            <tr>
+              <td>
+                <xsl:value-of select="position()"/>
+              </td>
+              <td>
+                <xsl:value-of select="Description" disable-output-escaping="yes"/>
+              </td>
+              <td>
+                <xsl:value-of select="ExpectedResult" disable-output-escaping="yes"/>
+              </td>
+              <td>
+                <xsl:value-of select="SampleData" disable-output-escaping="yes"/>
+              </td>
+              <td style="width:150px">
+                <input type="checkbox"></input>Passed <input type="checkbox"></input>Failed<br></br>
+                <input type="checkbox"></input>Blocked <input type="checkbox"></input>Caution
+              </td>
+              <td style="width:200px">
+              </td>
+            </tr>
+          </xsl:for-each>
+        </table>
+      </xsl:if>
+
+      <div class="Spacer"></div>
+      <xsl:if test="Attachments/Attachment">
+        <div class="Title3">
+          File Attachments:
+        </div>
+        <table class="DataGrid">
+          <tr>
+            <th>Filename</th>
+            <th>Description</th>
+            <th>Author</th>
+            <th>Date Uploaded</th>
+          </tr>
+          <xsl:for-each select="Attachments/Attachment">
+            <tr>
+              <td>
+                <xsl:value-of select="Filename"/>
+              </td>
+              <td>
+                <xsl:value-of select="Description"/>
+              </td>
+              <td>
+                <xsl:value-of select="AuthorName"/>
+              </td>
+              <td class="Date">
+                <xsl:call-template name="format-date">
+                  <xsl:with-param name="datetime" select="UploadDate" />
+                </xsl:call-template>
+              </td>
+            </tr>
+          </xsl:for-each>
+        </table>
+      </xsl:if>
+      <br/>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template name="format-date">
+    <xsl:param name="datetime"/>
+    <xsl:variable name="date" select="substring-before($datetime, 'T')" />
+    <xsl:variable name="year" select="substring-before($date, '-')" />
+    <xsl:variable name="month" select="substring-before(substring-after($date, '-'), '-')" />
+    <xsl:variable name="day" select="substring-after(substring-after($date, '-'), '-')" />
+    <xsl:variable name="time" select="substring-before(substring-after($datetime, 'T'), '.')" />
+    <xsl:variable name="monthname">
+      <xsl:choose>
+        <xsl:when test="$month='01'">
+          <xsl:value-of select="'Jan'"/>
+        </xsl:when>
+        <xsl:when test="$month='02'">
+          <xsl:value-of select="'Feb'"/>
+        </xsl:when>
+        <xsl:when test="$month='03'">
+          <xsl:value-of select="'Mar'"/>
+        </xsl:when>
+        <xsl:when test="$month='04'">
+          <xsl:value-of select="'Apr'"/>
+        </xsl:when>
+        <xsl:when test="$month='05'">
+          <xsl:value-of select="'May'"/>
+        </xsl:when>
+        <xsl:when test="$month='06'">
+          <xsl:value-of select="'Jun'"/>
+        </xsl:when>
+        <xsl:when test="$month='07'">
+          <xsl:value-of select="'Jul'"/>
+        </xsl:when>
+        <xsl:when test="$month='08'">
+          <xsl:value-of select="'Aug'"/>
+        </xsl:when>
+        <xsl:when test="$month='09'">
+          <xsl:value-of select="'Sep'"/>
+        </xsl:when>
+        <xsl:when test="$month='10'">
+          <xsl:value-of select="'Oct'"/>
+        </xsl:when>
+        <xsl:when test="$month='11'">
+          <xsl:value-of select="'Nov'"/>
+        </xsl:when>
+        <xsl:when test="$month='12'">
+          <xsl:value-of select="'Dec'"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="''" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:value-of select="concat($day, '-' ,$monthname, '-', $year , ' ', $time)" />
+  </xsl:template>
+</xsl:stylesheet>
+

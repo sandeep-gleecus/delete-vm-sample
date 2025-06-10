@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<project name="OnShore ValidationMaster Build Tool" default="database">
+
+	<!-- The name of the product. This shouldn't really ever change. -->
+	<property name="product.name" value="ValidationMaster" />
+	<!-- The main version of the product. -->
+	<property name="product.version" value="7.0.0.0" />
+	<!-- The base location for ZIP files the installer expects. -->
+	<property name="dest.dir" value="Installer/Setup/Package" />
+	<!-- For switching between Windows Auth and SQL Auth -->
+	<property name="build.db.useWinAuth" value="true" />
+	<!-- 'true' use Integrated Auth. 'false' use User/Pass below. -->
+	<property name="build.db.SQLAuth.UserID" value="" />
+	<!-- Only if not using Integrated Auth -->
+	<property name="build.db.SQLAuth.Passwd" value="" />
+	<!-- Only if not using Integrated Auth -->
+	<property name="build.db.SQLServerInstance" value="VMASTER" />
+	<!-- Server/Instance of the database server. -->
+	<property name="build.db.SQLServerDatabaseName" value="ValidationMasterInstaller" />
+	<!-- Database name to create. -->
+	<property name="build.db.SQLCommand.Exe" value="sqlcmd.exe" />
+	<!-- Path/Exe to SQLCMD to execute commands with. -->
+	<property name="build.db.SQLCommand.Args.Integrated" value="-E" />
+	<!-- Argumens from above for Integrated Auth. -->
+	<property name="build.db.SQLCommand.Args.SQLAuth" value="-U ${build.db.SQLAuth.UserID} -P ${build.db.SQLAuth.Passwd}" />
+	<!-- SQL CLI: Standard arguments - echo input -->
+	<property name="build.db.osqlArgs" value="-e" />
+	<!-- SQL CLI: If there is an error return failure to Windows -->
+	<property name="build.db.stopOnError" value="-b" />
+	<property name="build.debug" value="false" />
+	<property name="build.dir" value="bin\Release" />
+	<property name="nunit.framework.path" value="C:\Program Files (x86)\Nant-gui\bin"/>
+
+	<!-- This Target rebuilds the Database and loads all Static and Sample data. -->
+	<target name="1) Build Database with Data" description="Build a fresh copy of the database."  depends="cleanlogs">
+		<loadtasks assembly="D:\Source\Repo1\DevelopmentTools\CSVSQLTask\CSVSQLTask\bin\Release\CSVSQLTask.dll" />
+		<echo message="Deleting existing SQL files:"/>
+		<delete>
+			<fileset>
+				<include name="${project::get-base-directory()}/Sql/SqlServer/Data/*.sql" />
+			</fileset>
+		</delete>
+
+		<echo message="Processing CSV files:"/>
+		<foreach item="Folder" property="foldername">
+			<in>
+				<items>
+					<include name="${project::get-base-directory()}/Sql/Data/*"/>
+				</items>
+			</in>
+			<do>
+				<echo message="PROCESSING folder ${foldername}..." />
+				<foreach item="File" property="filename">
+					<in>
+						<items>
+							<include name="${foldername}/*.csv"/>
+						</items>
+					</in>
+					<do>
+						<csvsql filename="${filename}" databasetype="SQL Server" outputFolder="..\..\SqlServer\Data" />
+					</do>
+				</foreach>
+			</do>
+		</foreach>
+
+		<choose>
+			<!-- If they set the Windows Auth to 'true' or 'false', set the full argumnt string. -->
+			<when test="${build.db.useWinAuth == 'true'}">
+				<echo message="Using Integrated Authentication" />
+				<property name="build.db.osqlArgs" value="-S ${build.db.SQLServerInstance} ${build.db.SQLCommand.Args.Integrated}" />
+			</when>
+			<otherwise>
+				<echo message="Using SQL Authentication" />
+				<property name="build.db.osqlArgs" value="-S ${build.db.SQLServerInstance} ${build.db.SQLCommand.Args.SQLAuth}" />
+			</otherwise>
+		</choose>
+		<echo message="DEBUG: OSQLArgs: ${build.db.osqlArgs}" />
+		<echo message="Creating the Database:"/>
+		<exec program="${build.db.SQLCommand.Exe}"
+			commandline="${build.db.osqlArgs} -i Schema\create_tst_db_development.txt -o database_creation.log"
+			workingdir="${project::get-base-directory()}/Sql/SqlServer" failonerror="false">
+		</exec>
+		<echo message="Dropping the Schema:"/>
+		<exec program="${build.db.SQLCommand.Exe}"
+			commandline="${build.db.osqlArgs} -d ${build.db.SQLServerDatabaseName} -i Schema\tst_schema_drop.sql -o schema_drop.log"
+			workingdir="${project::get-base-directory()}/Sql/SqlServer">
+		</exec>
+		<echo message="Creating the Schema:"/>
+		<exec program="${build.db.SQLCommand.Exe}"
+			commandline="${build.db.osqlArgs} ${build.db.stopOnError} -d ${build.db.SQLServerDatabaseName} -i Schema\tst_schema.sql -o schema_creation.log"
+			workingdir="${project::get-base-directory()}/Sql/SqlServer">
+		</exec>
+
+		<echo message="Creating the Freetext Indexes:"/>
+		<exec program="${build.db.SQLCommand.Exe}"
+			commandline="${build.db.osqlArgs} -d ${build.db.SQLServerDatabaseName} -i Append\create_freetext_catalogs.sql -o create_freetext_catalogs.log"
+			workingdir="${project::get-base-directory()}/Sql/SqlServer">
+		</exec>
+
+		<echo message="Loading SQL files:"/>
+		<echo message="  Funcs:" />
+		<foreach item="File" property="filename">
+			<in>
+				<items>
+					<include name="${project::get-base-directory()}/Sql/SqlServer/Functions/*.sql"/>
+				</items>
+			</in>
+			<do>
+				<echo message="- '${filename}'"/>
+				<exec program="${build.db.SQLCommand.Exe}"
+					commandline='${build.db.osqlArgs} ${build.db.stopOnError} -d ${build.db.SQLServerDatabaseName} -i "${filename}" -o "${filename}.log"'>
+				</exec>
+			</do>
+		</foreach>
+
+		<echo message="  Views:" />
+		<foreach item="File" property="filename">
+			<in>
+				<items>
+					<include name="${project::get-base-directory()}/Sql/SqlServer/Views/*.sql"/>
+				</items>
+			</in>
+			<do>
+				<echo message="- '${filename}'"/>
+				<exec program="${build.db.SQLCommand.Exe}"
+					commandline='${build.db.osqlArgs} ${build.db.stopOnError} -d ${build.db.SQLServerDatabaseName} -i "${filename}" -o "${filename}.log"'>
+				</exec>
+			</do>
+		</foreach>
+
+		<echo message="  Procs:" />
+		<foreach item="File" property="filename">
+			<in>
+				<items>
+					<include name="${project::get-base-directory()}/Sql/SqlServer/Procedures/*.sql"/>
+				</items>
+			</in>
+			<do>
+				<echo message="- '${filename}'"/>
+				<exec program="${build.db.SQLCommand.Exe}"
+					commandline='${build.db.osqlArgs} ${build.db.stopOnError} -d ${build.db.SQLServerDatabaseName} -i "${filename}" -o "${filename}.log"'>
+				</exec>
+			</do>
+		</foreach>
+
+		<echo message="  Reports:" />
+		<foreach item="File" property="filename">
+			<in>
+				<items>
+					<include name="${project::get-base-directory()}/Sql/SqlServer/Reports/*.sql"/>
+				</items>
+			</in>
+			<do>
+				<echo message="- '${filename}'"/>
+				<exec program="${build.db.SQLCommand.Exe}"
+					commandline='${build.db.osqlArgs} ${build.db.stopOnError} -d ${build.db.SQLServerDatabaseName} -i "${filename}" -o "${filename}.log"'>
+				</exec>
+			</do>
+		</foreach>
+
+		<echo message="  Sample/Static Data:"/>
+		<foreach item="File" property="filename">
+			<in>
+				<items>
+					<include name="${project::get-base-directory()}/Sql/SqlServer/Data/*.sql"/>
+				</items>
+			</in>
+			<do>
+				<echo message="- '${filename}'"/>
+				<exec program="${build.db.SQLCommand.Exe}"
+					commandline='${build.db.osqlArgs} ${build.db.stopOnError} -d ${build.db.SQLServerDatabaseName} -i "${filename}" -o "${filename}.log"'>
+				</exec>
+			</do>
+		</foreach>
+
+		<echo message="  Upaing Global Data:"/>
+		<exec program="${build.db.SQLCommand.Exe}"
+			commandline="${build.db.osqlArgs} ${build.db.stopOnError} -d ${build.db.SQLServerDatabaseName} -i Append\update_global_settings.sql -o update_global_settings.log"
+			workingdir="${project::get-base-directory()}/Sql/SqlServer">
+		</exec>
+
+	</target>
+
+	<!-- This Target creates the ZIP files needed for the installer. -->
+	<target name="2) Create Zip Files for Installer" description="Generates the needed ZIP files for the Installers.">
+		<!-- The name of the product. This shouldn't really ever change.  
+		****************** BUT... it did change from SpiraTestPlanTeam to ValidationMaster ***************  -->
+		<property name="product.name" value="ValidationMaster" />
+
+		<!-- Remove all but the needed Attachments -->
+		<echo message="Removing Unneeded Attachments..." />
+		<delete>
+			<fileset>
+				<include name="SpiraTest/Attachments/*.dat" />
+				<exclude name="SpiraTest/Attachments/?.dat" />
+				<exclude name="SpiraTest/Attachments/1?.dat" />
+				<exclude name="SpiraTest/Attachments/2?.dat" />
+				<exclude name="SpiraTest/Attachments/3?.dat" />
+				<exclude name="SpiraTest/Attachments/4?.dat" />
+				<exclude name="SpiraTest/Attachments/5?.dat" />
+				<exclude name="SpiraTest/Attachments/60.dat" />
+				<exclude name="SpiraTest/Attachments/61.dat" />
+				<exclude name="SpiraTest/Attachments/62.dat" />
+				<exclude name="SpiraTest/Attachments/63.dat" />
+				<exclude name="SpiraTest/Attachments/64.dat" />
+				<exclude name="SpiraTest/Attachments/65.dat" />
+				<exclude name="SpiraTest/Attachments/66.dat" />
+				<exclude name="SpiraTest/Attachments/67.dat" />
+				<exclude name="SpiraTest/Attachments/68.dat" />
+			</fileset>
+		</delete>
+
+		<echo message="Zipping up DB Creation Scripts..." />
+		<zip zipfile="${dest.dir}/base/DB_Create.zip" verbose="false" ziplevel="9">
+			<fileset basedir="Sql/SqlServer/Schema">
+				<include name="*.sql" />
+			</fileset>
+			<fileset basedir="Sql/SqlServer/Append">
+				<include name="create_freetext_catalogs.sql" />
+			</fileset>
+		</zip>
+
+		<echo message="Zipping up DB Static Data..." />
+		<zip zipfile="${dest.dir}/base/DB_StaticData.zip" verbose="false" ziplevel="9">
+			<fileset basedir="Sql/SqlServer/Data">
+				<include name="1*.sql" />
+				<include name="2*.sql" />
+			</fileset>
+		</zip>
+
+		<echo message="Zipping up DB Sample Data..." />
+		<zip zipfile="${dest.dir}/base/DB_SampleData.zip" verbose="false" ziplevel="9">
+			<fileset basedir="Sql/SqlServer/Data">
+				<include name="3*.sql" />
+			</fileset>
+		</zip>
+
+		<echo message="Zipping up DB Functions..." />
+		<zip zipfile="${dest.dir}/base/DB_Funcs.zip" verbose="false" ziplevel="9">
+			<fileset basedir="Sql/SqlServer/Functions">
+				<include name="*.sql" />
+			</fileset>
+		</zip>
+
+		<echo message="Zipping up DB Views..." />
+		<zip zipfile="${dest.dir}/base/DB_Views.zip" verbose="false" ziplevel="9">
+			<fileset basedir="Sql/SqlServer/Views">
+				<include name="*.sql" />
+			</fileset>
+			<fileset basedir="Sql/SqlServer/Reports">
+				<include name="*.sql" />
+			</fileset>
+		</zip>
+
+		<echo message="Zipping up DB Procs..." />
+		<zip zipfile="${dest.dir}/base/DB_Procs.zip" verbose="false" ziplevel="9">
+			<fileset basedir="Sql/SqlServer/Procedures">
+				<include name="*.sql" />
+			</fileset>
+		</zip>
+
+		<echo message="Zipping up release filesystem..." />
+		<call target="internal_createApplicationFileList"
+			  cascade="false"
+			  failonerror="true"
+			  unless="${target::has-executed('internal_createApplicationFileList')}" />
+		<zip zipfile="${dest.dir}/base/Files.zip" verbose="false" ziplevel="9">
+			<fileset refid="appFilesFileset" />
+			<fileset basedir="Installer/Files">
+				<include name="Web.Config" />
+			</fileset>
+			<fileset basedir="SpiraTestService/bin/Release" prefix="DataSync">
+				<include name="*.dll" />
+				<include name="*.exe" />
+			</fileset>
+			<fileset basedir="Installer/Files" prefix="DataSync">
+				<include name="DataSyncService.exe.config" />
+			</fileset>
+			<fileset basedir="Installer/Files" prefix="Icons">
+				<include name="*.ico" />
+			</fileset>
+		</zip>
+	</target>
+	
+	<!-- This Target is to load QA Data into the Database, to help with manual testing. -->
+	<target name="4) Insert Extra QA Data" description="Adds Data to Database to help in QA Testing"  depends="cleanlogs">
+		<loadtasks assembly="D:\Source\Repo1\DevelopmentTools\CSVSQLTask\CSVSQLTask\bin\Release\CSVSQLTask.dll" />
+		<echo message="Deleting existing SQL files:"/>
+		<delete>
+			<fileset>
+				<include name="${project::get-base-directory()}/Sql/SqlServer/QA-Data/*.sql" />
+			</fileset>
+		</delete>
+
+		<echo message="Processing CSV files:"/>
+		<foreach item="File" property="filename">
+			<in>
+				<items>
+					<include name="${project::get-base-directory()}/Sql/QA-Data/*.csv"/>
+				</items>
+			</in>
+			<do>
+				<!-- <echo message="- '${filename}'"/> -->
+				<csvsql filename="${filename}" databasetype="SQL Server" outputFolder="..\SqlServer\QA-Data" />
+			</do>
+		</foreach>
+
+		<echo message="Loading SQL files:"/>
+		<choose>
+			<!-- If they set the Windows Auth to 'true' or 'false', set the full argumnt string. -->
+			<when test="${build.db.useWinAuth == 'true'}">
+				<echo message="Using Integrated Authentication" />
+				<property name="build.db.osqlArgs" value="-S ${build.db.SQLServerInstance} ${build.db.SQLCommand.Args.Integrated}" />
+			</when>
+			<otherwise>
+				<echo message="Using SQL Authentication" />
+				<property name="build.db.osqlArgs" value="-S ${build.db.SQLServerInstance} ${build.db.SQLCommand.Args.SQLAuth}" />
+			</otherwise>
+		</choose>
+		<foreach item="File" property="filename">
+			<in>
+				<items>
+					<include name="${project::get-base-directory()}/Sql/SqlServer/QA-Data/*.sql"/>
+				</items>
+			</in>
+			<do>
+				<echo message="Loading QA: '${filename}'"/>
+				<echo message="${build.db.osqlArgs} ${build.db.stopOnError} -d '${build.db.SQLServerDatabaseName}' -i '${filename}' -o '${filename}'.log"/>
+
+				<exec program="${build.db.SQLCommand.Exe}"
+					commandline='${build.db.osqlArgs} ${build.db.stopOnError} -d ${build.db.SQLServerDatabaseName} -i "${filename}" -o "${filename}.log"'>
+				</exec>
+			</do>
+		</foreach>
+	</target>
+
+	<!-- LEGACY This Target prepares Database SQL Files for Cloud Installer. On-Prem Installer does not use this. -->
+	<target name="X-packageDatabaseFiles" description="LEGACY: Packages up the database files for the installer">
+		<!-- Installer\Cloud\DatabasePatcher\db_files -->
+		<property name="packageDatabaseFiles.outputDir" value="Installer/Cloud/DatabasePatcher/db_files" />
+
+		<!-- Database Objects - Functions, Views, Proc, Reports -->
+		<echo message="Generating Programmed Function SQL" />
+		<concat destfile="${packageDatabaseFiles.outputDir}/tst_addl_objects.sql" append="false">
+			<fileset basedir="Sql/SqlServer/Functions">
+				<include name="*.sql" />
+			</fileset>
+		</concat>
+		<concat destfile="${packageDatabaseFiles.outputDir}/tst_addl_objects.sql" append="true">
+			<fileset basedir="Sql/SqlServer/Views">
+				<include name="*.sql" />
+			</fileset>
+		</concat>
+		<concat destfile="${packageDatabaseFiles.outputDir}/tst_addl_objects.sql" append="true">
+			<fileset basedir="Sql/SqlServer/Reports">
+				<include name="*.sql" />
+			</fileset>
+		</concat>
+		<concat destfile="${packageDatabaseFiles.outputDir}/tst_addl_objects.sql" append="true">
+			<fileset basedir="Sql/SqlServer/Procedures">
+				<include name="*.sql" />
+			</fileset>
+		</concat>
+
+		<!-- Static & Sample Data -->
+		<echo message="Generating Static &amp; Sample Data SQLs" />
+		<concat destfile="${packageDatabaseFiles.outputDir}/tst_static_data.sql" append="false">
+			<fileset basedir="Sql/SqlServer/Data">
+				<include name="1*.sql" />
+				<include name="2*.sql" />
+			</fileset>
+		</concat>
+		<concat destfile="${packageDatabaseFiles.outputDir}/tst_sample_data.sql" append="false">
+			<fileset basedir="Sql/SqlServer/Data">
+				<include name="3*.sql" />
+			</fileset>
+		</concat>
+	</target>
+
+	<!-- This creates the single ZIP file needed for the Cloud installer's ZIP file. -->
+	<target name="createPatchZip" depends="X-packageDatabaseFiles"  description="Creates the ZIP file needed for the Cloud Installer/Upgrader.">
+		<property name="product.name" value="SpiraTestPlanTeam" />
+		<property name="createPatchZip.inputDir" value="Installer/Cloud/DatabasePatcher/db_files" />
+		<property name="dest.path" value="${product.name}_Update_v${product.version}.zip" readonly="true" />
+
+		<echo message="Zipping up patch ${dest.path}" />
+		<!-- Create the base ZIP. -->
+		<call target="internal_createApplicationFileList"
+			  cascade="false"
+			  failonerror="true"
+			  unless="${target::has-executed('internal_createApplicationFileList')}" />
+		<zip zipfile="${dest.path}" verbose="false" ziplevel="9" comment="${product.name} v${product.version}">
+			<fileset refid="appFilesFileset" />
+			<fileset basedir="${createPatchZip.inputDir}" prefix="Database">
+				<include name="*.sql" />
+			</fileset>
+			<fileset basedir="Installer/Cloud" prefix="Database">
+				<include name="*.exe" />
+				<include name="*.sql" />
+			</fileset>
+			<fileset basedir="Sql/SqlServer/Schema" prefix="Database">
+				<include name="*.sql" />
+			</fileset>
+			<fileset basedir="Sql/SqlServer/Append" prefix="Database">
+				<include name="create_freetext_catalogs.sql" />
+			</fileset>
+		</zip>
+	</target>
+
+	<!-- A common target where we get our Appllication File List frm. Never should be run from the command-line. is
+	     only called from 'createPatchZip' and 'createZip'. This is done as with the addition of OAuth, there were
+		 issues with two SEPERATE file lists in -->
+	<target name="internal_createApplicationFileList" descriptio="Packages up Application Files. Only called from other targets.">
+		<!-- Remove all but the needed Attachments -->
+		<echo message="Removing Unneeded Attachments..." />
+		<delete>
+			<fileset>
+				<include name="SpiraTest/Attachments/*.dat" />
+				<exclude name="SpiraTest/Attachments/?.dat" />
+				<exclude name="SpiraTest/Attachments/1?.dat" />
+				<exclude name="SpiraTest/Attachments/2?.dat" />
+				<exclude name="SpiraTest/Attachments/3?.dat" />
+				<exclude name="SpiraTest/Attachments/4?.dat" />
+				<exclude name="SpiraTest/Attachments/5?.dat" />
+				<exclude name="SpiraTest/Attachments/60.dat" />
+				<exclude name="SpiraTest/Attachments/61.dat" />
+				<exclude name="SpiraTest/Attachments/62.dat" />
+				<exclude name="SpiraTest/Attachments/63.dat" />
+				<exclude name="SpiraTest/Attachments/64.dat" />
+				<exclude name="SpiraTest/Attachments/65.dat" />
+				<exclude name="SpiraTest/Attachments/66.dat" />
+				<exclude name="SpiraTest/Attachments/67.dat" />
+				<exclude name="SpiraTest/Attachments/68.dat" />
+			</fileset>
+		</delete>
+
+		<echo message="Generating file list..." />
+		<zipfileset basedir="ValidationMaster" id="appFilesFileset">
+			<include name="**/*.asax" />
+			<include name="**/*.ashx" />
+			<include name="**/*.ascx" />
+			<include name="**/*.aspx" />
+			<include name="**/*.htm" />
+			<include name="**/*.html" />
+			<include name="Bin/*.dll" />
+			<include name="Bin/Common.dll" />
+			<include name="Bin/fr/*.*" />
+			<include name="Bin/de/*.*" />
+			<include name="Bin/es/*.*" />
+			<include name="Bin/cs/*.*" />
+			<include name="Bin/hu/*.*" />
+			<include name="Bin/fi/*.*" />
+			<include name="Bin/ru/*.*" />
+			<include name="Bin/en-gb/*.*" />
+			<include name="Bin/pl/*.*" />
+			<include name="Bin/pt/*.*" />
+			<include name="Bin/pt-pt/*.*" />
+			<include name="Bin/zh-Hans/*.*" />
+			<include name="Bin/zh-Hant/*.*" />
+			<include name="App_GlobalResources/*.resx" />
+			<include name="**/*.asmx" />
+			<include name="**/*.svc" />
+			<include name="Web.sitemap" />
+			<include name="Web.rewrite" />
+			<include name="**/*.css" />
+			<include name="**/*.browser" />
+			<include name="**/*.master" />
+			<include name="**/*.xml" />
+			<include name="**/*.xslt" />
+			<include name="**/*.gif" />
+			<include name="**/*.png" />
+			<include name="**/*.jpg" />
+			<include name="**/*.ico" />
+			<include name="**/*.dtd" />
+			<include name="**/*.skin" />
+			<include name="**/*.wav" />
+			<include name="**/*.otf" />
+			<include name="**/*.eot" />
+			<include name="**/*.svg" />
+			<include name="**/*.ttf" />
+			<include name="**/*.woff" />
+			<include name="**/*.woff2" />
+			<include name="JqPlot/**/*.js" />
+			<include name="JqPlot/**/*.txt" />
+			<include name="Attachments/*.dat" />
+			<include name="SyntaxHighlighter/**/*.js" />
+			<include name="*.js" />
+			<include name="ckEditor/**/*.js" />
+			<include name="ckEditor5/**/*.js" />
+			<include name="VersionControl/*.dll" />
+			<include name="VersionControl/*.svnExe" />
+			<include name="VersionControl/*.svnDll" />
+			<include name="Validation.Reports.Windward.Core/*.*" />
+			<include name="TypeScript/*.js" />
+			<include name="OAuthProviders/*.dll" />
+			<include name="Reporting/templatefiles/*.*" />
+			<include name="Reporting/podfiles/*.*" />
+			<include name="Reporting/output/*.*" />
+			<include name="Reporting/downloadablefiles/*.*" />
+			<exclude name="OAuthProviders/OAuth2_Dummy.dll" />
+		</zipfileset>
+		<echo message="... Done." />
+	</target>
+
+	<!-- This Target simply deleted all *.log files - Event Log, and SQl Generation -->
+	<target name="cleanlogs" description="Cleans all LOG files.">
+		<echo message="Cleaning up all log files:"/>
+		<delete failonerror="false">
+			<fileset>
+				<include name="${project::get-base-directory()}/**/*.log" />
+			</fileset>
+		</delete>
+	</target>
+</project>

@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.inflectra.com/SpiraTest/Services/v1.5.2/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.inflectra.com/SpiraTest/Services/v1.5.2/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This service provides the functionality for importing data from an external application into SpiraTest and for exporting SpiraTest data for import into another application.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.inflectra.com/SpiraTest/Services/v1.5.2/">
+      <s:element name="CreateProject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateProjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateProjectResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="middleInitial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="emailAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isAdmin" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="isActive" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="projectRoleId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddUserResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddRequirementTestCoverage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requirementId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="testCaseId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddRequirementTestCoverageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RemoveRequirementTestCoverage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requirementId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="testCaseId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveRequirementTestCoverageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddRequirement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="releaseId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="statusId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="importanceId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="requirementName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="requirementDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="indentPosition" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="authorUserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddRequirementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddRequirementResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRequirement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requirementId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="statusId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="importanceId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="requirementName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="authorUserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRequirementResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateTestCase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testCaseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="testCaseName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="authorUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ownerUserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTestCaseResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddRequirement2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="releaseId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="statusId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="importanceId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="requirementName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="requirementDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentRequirementId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="authorUserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddRequirement2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddRequirement2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestFolder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="folderName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="folderDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentTestFolderId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="authorUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ownerUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="priorityId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestFolderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTestFolderResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAttachment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="filename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="authorId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="binaryData" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="artifactId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="artifactTypeId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAttachmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddAttachmentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestSetFolder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="parentTestSetFolderId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="creatorId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestSetFolderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTestSetFolderResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="parentTestSetFolderId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="releaseId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="creatorId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ownerId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="testSetStatusId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="plannedDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="isPlannedDateNull" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTestSetResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestSetTestCaseMapping">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testSetId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="testCaseId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestSetTestCaseMappingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddTestCase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="testCaseName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="testCaseDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentTestFolderId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="authorUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ownerUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="activeTestCase" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="priorityId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="estimatedDuration" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestCaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTestCaseResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestStep">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testCaseId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="position" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="expectedResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sampleData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestStepResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTestStepResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWebServerUrl">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetWebServerUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWebServerUrlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTestCaseParameterToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parameterName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTestCaseParameterTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateTestCaseParameterTokenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestCaseParameter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testCaseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="defaultValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTestCaseParameterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTestCaseParameterResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCustomList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="active" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCustomListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddCustomListResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCustomListValue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customPropertyListId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="active" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCustomListValueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddCustomListValueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCustomProperties">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="artifactId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="artifactTypeId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="text01" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="text02" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="text03" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="text04" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="text05" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="text06" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="text07" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="text08" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="text09" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="text10" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="list01" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="list02" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="list03" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="list04" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="list05" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="list06" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="list07" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="list08" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="list09" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="list10" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCustomPropertiesResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddIncidentSeverity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="colorCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentSeverityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddIncidentSeverityResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddIncidentTypeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddIncidentStatusResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentPriority">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="colorCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentPriorityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddIncidentPriorityResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentResolution">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="incidentId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="resolution" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="creationDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="creatorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentResolutionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddIncidentResolutionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncident">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="typeId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="priorityId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="severityId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="statusId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="testRunStepId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="detectedByUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ownerUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="closedDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="isClosed" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddIncidentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="taskStatusId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="taskPriorityId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="requirementId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="releaseId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ownerId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="startDate" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDate" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="completionPercentage" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="estimatedEffort" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="actualEffort" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTaskResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConnectToProject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="projectId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConnectToProjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConnectToProjectResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrieveServerDateTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetrieveServerDateTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RetrieveServerDateTimeResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Authenticate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AuthenticateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Disconnect">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisconnectResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetrieveProjectList">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetrieveProjectListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetrieveProjectListResult" type="tns:ProjectData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProjectData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Project" type="tns:ArrayOfProjectRow" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProjectRow">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProjectRow" nillable="true" type="tns:ProjectRow" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProjectRow">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ProjectId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Website" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProjectGroupId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectGroupName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveYn" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreationDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateProjectSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateProject" />
+  </wsdl:message>
+  <wsdl:message name="CreateProjectSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUserSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUser" />
+  </wsdl:message>
+  <wsdl:message name="AddUserSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddRequirementTestCoverageSoapIn">
+    <wsdl:part name="parameters" element="tns:AddRequirementTestCoverage" />
+  </wsdl:message>
+  <wsdl:message name="AddRequirementTestCoverageSoapOut">
+    <wsdl:part name="parameters" element="tns:AddRequirementTestCoverageResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveRequirementTestCoverageSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveRequirementTestCoverage" />
+  </wsdl:message>
+  <wsdl:message name="RemoveRequirementTestCoverageSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveRequirementTestCoverageResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddRequirementSoapIn">
+    <wsdl:part name="parameters" element="tns:AddRequirement" />
+  </wsdl:message>
+  <wsdl:message name="AddRequirementSoapOut">
+    <wsdl:part name="parameters" element="tns:AddRequirementResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRequirementSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRequirement" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRequirementSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRequirementResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTestCaseSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTestCase" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTestCaseSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTestCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddRequirement2SoapIn">
+    <wsdl:part name="parameters" element="tns:AddRequirement2" />
+  </wsdl:message>
+  <wsdl:message name="AddRequirement2SoapOut">
+    <wsdl:part name="parameters" element="tns:AddRequirement2Response" />
+  </wsdl:message>
+  <wsdl:message name="AddTestFolderSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTestFolder" />
+  </wsdl:message>
+  <wsdl:message name="AddTestFolderSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTestFolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAttachmentSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAttachment" />
+  </wsdl:message>
+  <wsdl:message name="AddAttachmentSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTestSetFolderSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTestSetFolder" />
+  </wsdl:message>
+  <wsdl:message name="AddTestSetFolderSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTestSetFolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTestSetSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTestSet" />
+  </wsdl:message>
+  <wsdl:message name="AddTestSetSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTestSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTestSetTestCaseMappingSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTestSetTestCaseMapping" />
+  </wsdl:message>
+  <wsdl:message name="AddTestSetTestCaseMappingSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTestSetTestCaseMappingResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTestCaseSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTestCase" />
+  </wsdl:message>
+  <wsdl:message name="AddTestCaseSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTestCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTestStepSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTestStep" />
+  </wsdl:message>
+  <wsdl:message name="AddTestStepSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTestStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWebServerUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWebServerUrl" />
+  </wsdl:message>
+  <wsdl:message name="GetWebServerUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWebServerUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateTestCaseParameterTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateTestCaseParameterToken" />
+  </wsdl:message>
+  <wsdl:message name="CreateTestCaseParameterTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateTestCaseParameterTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTestCaseParameterSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTestCaseParameter" />
+  </wsdl:message>
+  <wsdl:message name="AddTestCaseParameterSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTestCaseParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomListSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCustomList" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomListSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCustomListResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomListValueSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCustomListValue" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomListValueSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCustomListValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomPropertiesSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCustomProperties" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomPropertiesSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCustomPropertiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentSeveritySoapIn">
+    <wsdl:part name="parameters" element="tns:AddIncidentSeverity" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentSeveritySoapOut">
+    <wsdl:part name="parameters" element="tns:AddIncidentSeverityResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddIncidentType" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddIncidentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:AddIncidentStatus" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:AddIncidentStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentPrioritySoapIn">
+    <wsdl:part name="parameters" element="tns:AddIncidentPriority" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentPrioritySoapOut">
+    <wsdl:part name="parameters" element="tns:AddIncidentPriorityResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentResolutionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddIncidentResolution" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentResolutionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddIncidentResolutionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentSoapIn">
+    <wsdl:part name="parameters" element="tns:AddIncident" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentSoapOut">
+    <wsdl:part name="parameters" element="tns:AddIncidentResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTask" />
+  </wsdl:message>
+  <wsdl:message name="AddTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConnectToProjectSoapIn">
+    <wsdl:part name="parameters" element="tns:ConnectToProject" />
+  </wsdl:message>
+  <wsdl:message name="ConnectToProjectSoapOut">
+    <wsdl:part name="parameters" element="tns:ConnectToProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveServerDateTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:RetrieveServerDateTime" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveServerDateTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:RetrieveServerDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateSoapIn">
+    <wsdl:part name="parameters" element="tns:Authenticate" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateSoapOut">
+    <wsdl:part name="parameters" element="tns:AuthenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisconnectSoapIn">
+    <wsdl:part name="parameters" element="tns:Disconnect" />
+  </wsdl:message>
+  <wsdl:message name="DisconnectSoapOut">
+    <wsdl:part name="parameters" element="tns:DisconnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveProjectListSoapIn">
+    <wsdl:part name="parameters" element="tns:RetrieveProjectList" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveProjectListSoapOut">
+    <wsdl:part name="parameters" element="tns:RetrieveProjectListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ImportSoap">
+    <wsdl:operation name="CreateProject">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Creates a new project in the system and makes the authenticated user owner of it</wsdl:documentation>
+      <wsdl:input message="tns:CreateProjectSoapIn" />
+      <wsdl:output message="tns:CreateProjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new user to the system and to the current project</wsdl:documentation>
+      <wsdl:input message="tns:AddUserSoapIn" />
+      <wsdl:output message="tns:AddUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRequirementTestCoverage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Maps a requirement to a test case, so that the test case 'covers' the requirement</wsdl:documentation>
+      <wsdl:input message="tns:AddRequirementTestCoverageSoapIn" />
+      <wsdl:output message="tns:AddRequirementTestCoverageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveRequirementTestCoverage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Removes a coverage mapping entry for a specific requirement and test case</wsdl:documentation>
+      <wsdl:input message="tns:RemoveRequirementTestCoverageSoapIn" />
+      <wsdl:output message="tns:RemoveRequirementTestCoverageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRequirement">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new requirement record to the current project using the position offset method</wsdl:documentation>
+      <wsdl:input message="tns:AddRequirementSoapIn" />
+      <wsdl:output message="tns:AddRequirementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequirement">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing requirement entry in the system (only its data, not its position)</wsdl:documentation>
+      <wsdl:input message="tns:UpdateRequirementSoapIn" />
+      <wsdl:output message="tns:UpdateRequirementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTestCase">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates an existing test case entry in the system (only its data, not its position)</wsdl:documentation>
+      <wsdl:input message="tns:UpdateTestCaseSoapIn" />
+      <wsdl:output message="tns:UpdateTestCaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRequirement2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new requirement record to the current project using the parent requirement method</wsdl:documentation>
+      <wsdl:input message="tns:AddRequirement2SoapIn" />
+      <wsdl:output message="tns:AddRequirement2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTestFolder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new test folder to the current project</wsdl:documentation>
+      <wsdl:input message="tns:AddTestFolderSoapIn" />
+      <wsdl:output message="tns:AddTestFolderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAttachment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new attachment into the system and associates it with the provided artifact</wsdl:documentation>
+      <wsdl:input message="tns:AddAttachmentSoapIn" />
+      <wsdl:output message="tns:AddAttachmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTestSetFolder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new test set folder into the system</wsdl:documentation>
+      <wsdl:input message="tns:AddTestSetFolderSoapIn" />
+      <wsdl:output message="tns:AddTestSetFolderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTestSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new test set into the system at a point in front of the passed in test set</wsdl:documentation>
+      <wsdl:input message="tns:AddTestSetSoapIn" />
+      <wsdl:output message="tns:AddTestSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTestSetTestCaseMapping">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a test case to a test set</wsdl:documentation>
+      <wsdl:input message="tns:AddTestSetTestCaseMappingSoapIn" />
+      <wsdl:output message="tns:AddTestSetTestCaseMappingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTestCase">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new test case to the current project</wsdl:documentation>
+      <wsdl:input message="tns:AddTestCaseSoapIn" />
+      <wsdl:output message="tns:AddTestCaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTestStep">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new test step to the test case specified</wsdl:documentation>
+      <wsdl:input message="tns:AddTestStepSoapIn" />
+      <wsdl:output message="tns:AddTestStepSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebServerUrl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets the base URL of the website that SpiraTest is running under. Used for notifications and exported artifacts</wsdl:documentation>
+      <wsdl:input message="tns:GetWebServerUrlSoapIn" />
+      <wsdl:output message="tns:GetWebServerUrlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTestCaseParameterToken">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the full token of a test caseparameter from its name</wsdl:documentation>
+      <wsdl:input message="tns:CreateTestCaseParameterTokenSoapIn" />
+      <wsdl:output message="tns:CreateTestCaseParameterTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTestCaseParameter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new parameter for a test case</wsdl:documentation>
+      <wsdl:input message="tns:AddTestCaseParameterSoapIn" />
+      <wsdl:output message="tns:AddTestCaseParameterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new custom list into the system</wsdl:documentation>
+      <wsdl:input message="tns:AddCustomListSoapIn" />
+      <wsdl:output message="tns:AddCustomListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomListValue">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new custom list value into the system</wsdl:documentation>
+      <wsdl:input message="tns:AddCustomListValueSoapIn" />
+      <wsdl:output message="tns:AddCustomListValueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomProperties">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds new custom properties to an artifact</wsdl:documentation>
+      <wsdl:input message="tns:AddCustomPropertiesSoapIn" />
+      <wsdl:output message="tns:AddCustomPropertiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentSeverity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new incident severity to the current project</wsdl:documentation>
+      <wsdl:input message="tns:AddIncidentSeveritySoapIn" />
+      <wsdl:output message="tns:AddIncidentSeveritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new incident type to the current project</wsdl:documentation>
+      <wsdl:input message="tns:AddIncidentTypeSoapIn" />
+      <wsdl:output message="tns:AddIncidentTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new incident status to the current project</wsdl:documentation>
+      <wsdl:input message="tns:AddIncidentStatusSoapIn" />
+      <wsdl:output message="tns:AddIncidentStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentPriority">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new incident priority to the current project</wsdl:documentation>
+      <wsdl:input message="tns:AddIncidentPrioritySoapIn" />
+      <wsdl:output message="tns:AddIncidentPrioritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentResolution">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new resolution to an existing incident</wsdl:documentation>
+      <wsdl:input message="tns:AddIncidentResolutionSoapIn" />
+      <wsdl:output message="tns:AddIncidentResolutionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIncident">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new incident to the current project</wsdl:documentation>
+      <wsdl:input message="tns:AddIncidentSoapIn" />
+      <wsdl:output message="tns:AddIncidentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTask">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds a new task to the current project</wsdl:documentation>
+      <wsdl:input message="tns:AddTaskSoapIn" />
+      <wsdl:output message="tns:AddTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConnectToProject">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Connects to a project, needed before calling other artifact import methods</wsdl:documentation>
+      <wsdl:input message="tns:ConnectToProjectSoapIn" />
+      <wsdl:output message="tns:ConnectToProjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveServerDateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves the current date-time on the server</wsdl:documentation>
+      <wsdl:input message="tns:RetrieveServerDateTimeSoapIn" />
+      <wsdl:output message="tns:RetrieveServerDateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Authenticates against the server. Need to call before using other methods</wsdl:documentation>
+      <wsdl:input message="tns:AuthenticateSoapIn" />
+      <wsdl:output message="tns:AuthenticateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Disconnect">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Disconnects the currenly authenticated / authorized user</wsdl:documentation>
+      <wsdl:input message="tns:DisconnectSoapIn" />
+      <wsdl:output message="tns:DisconnectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProjectList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves a list of projects that the passed in user has access to</wsdl:documentation>
+      <wsdl:input message="tns:RetrieveProjectListSoapIn" />
+      <wsdl:output message="tns:RetrieveProjectListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ImportSoap" type="tns:ImportSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateProject">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/CreateProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRequirementTestCoverage">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddRequirementTestCoverage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveRequirementTestCoverage">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/RemoveRequirementTestCoverage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRequirement">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddRequirement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequirement">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/UpdateRequirement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTestCase">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/UpdateTestCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRequirement2">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddRequirement2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestFolder">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestFolder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAttachment">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddAttachment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestSetFolder">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestSetFolder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestSet">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestSetTestCaseMapping">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestSetTestCaseMapping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestCase">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestStep">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebServerUrl">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/GetWebServerUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTestCaseParameterToken">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/CreateTestCaseParameterToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestCaseParameter">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestCaseParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomList">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddCustomList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomListValue">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddCustomListValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomProperties">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddCustomProperties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentSeverity">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncidentSeverity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentType">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncidentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentStatus">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncidentStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentPriority">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncidentPriority" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentResolution">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncidentResolution" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncident">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncident" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTask">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConnectToProject">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/ConnectToProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveServerDateTime">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/RetrieveServerDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/Authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Disconnect">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/Disconnect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProjectList">
+      <soap:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/RetrieveProjectList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ImportSoap12" type="tns:ImportSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateProject">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/CreateProject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRequirementTestCoverage">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddRequirementTestCoverage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveRequirementTestCoverage">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/RemoveRequirementTestCoverage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRequirement">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddRequirement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequirement">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/UpdateRequirement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTestCase">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/UpdateTestCase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRequirement2">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddRequirement2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestFolder">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestFolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAttachment">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddAttachment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestSetFolder">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestSetFolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestSet">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestSetTestCaseMapping">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestSetTestCaseMapping" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestCase">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestCase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestStep">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestStep" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebServerUrl">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/GetWebServerUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTestCaseParameterToken">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/CreateTestCaseParameterToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTestCaseParameter">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTestCaseParameter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomList">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddCustomList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomListValue">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddCustomListValue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomProperties">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddCustomProperties" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentSeverity">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncidentSeverity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentType">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncidentType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentStatus">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncidentStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentPriority">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncidentPriority" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentResolution">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncidentResolution" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncident">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddIncident" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTask">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/AddTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConnectToProject">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/ConnectToProject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveServerDateTime">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/RetrieveServerDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/Authenticate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Disconnect">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/Disconnect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProjectList">
+      <soap12:operation soapAction="http://www.inflectra.com/SpiraTest/Services/v1.5.2/RetrieveProjectList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Import">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This service provides the functionality for importing data from an external application into SpiraTest and for exporting SpiraTest data for import into another application.</wsdl:documentation>
+    <wsdl:port name="ImportSoap" binding="tns:ImportSoap">
+      <soap:address location="http://localhost/Spira/Services/v1_5_2/Import.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ImportSoap12" binding="tns:ImportSoap12">
+      <soap12:address location="http://localhost/Spira/Services/v1_5_2/Import.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

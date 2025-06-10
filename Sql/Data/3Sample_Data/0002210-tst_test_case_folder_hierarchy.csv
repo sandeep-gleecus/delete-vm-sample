@@ -1,0 +1,6 @@
+test_case_folder_id:Normal,project_id:Normal,name:String,parent_test_case_folder_id:Normal,hierarchy_level:Normal,indent_level:String
+1,1,Functional Tests,NULL,1,AAB
+2,1,Regression Tests,NULL,1,AAC
+3,1,Scenario Tests,NULL,1,AAD
+4,1,Exception Scenario Tests,3,2,AADAAA
+5,1,Common Tests,NULL,1,AAA

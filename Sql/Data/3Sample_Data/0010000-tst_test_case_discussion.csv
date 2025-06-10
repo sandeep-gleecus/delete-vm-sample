@@ -1,0 +1,4 @@
+discussion_id:Key,artifact_id:Normal,text:String,creator_id:Normal,creation_date:Normal,is_deleted:Normal,is_permanent:Normal
+1,2,We need to add a better definition of the pre-conditions and post-conditions,2,"DATEADD(minute, -212468, SYSUTCDATETIME())",0,0
+2,2,OK will make sure that we do.,3,"DATEADD(minute, -212451, SYSUTCDATETIME())",0,0
+3,2,"Thanks, appreciate it!",2,"DATEADD(minute, -212353, SYSUTCDATETIME())",0,0

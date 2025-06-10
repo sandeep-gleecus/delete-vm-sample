@@ -1,0 +1,10 @@
+task_status_id:Key,name:String,position:Normal,is_active:Normal
+1,Not Started,1,1
+2,In Progress,2,1
+3,Completed,4,1
+4,Blocked,5,1
+5,Deferred,6,1
+6,Rejected,7,1
+7,Duplicate,8,1
+8,Under Review,9,1
+9,Obsolete,10,1

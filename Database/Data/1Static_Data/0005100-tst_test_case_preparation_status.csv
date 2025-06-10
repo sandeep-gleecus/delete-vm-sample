@@ -1,0 +1,5 @@
+TEST_CASE_PREPARATION_STATUS_ID:Key,name:String,is_active:Normal,position:Normal
+1,Not Recorded,1,1
+2,Recorded - Failed,1,2
+3,Recorded - Issue,1,3
+4,Recorded - Passed,1,4

@@ -1,0 +1,8 @@
+execution_status_id:Key,name:String,is_active:Normal
+1,Failed,1
+2,Passed,1
+3,Not Run,1
+4,N/A,1
+5,Blocked,1
+6,Caution,1
+7,InProgress,1

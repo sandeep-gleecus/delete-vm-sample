@@ -1,0 +1,4 @@
+workflow_field_state_id:Key,name:String,is_active:Normal
+1,Inactive,1
+2,Required,1
+3,Hidden,1

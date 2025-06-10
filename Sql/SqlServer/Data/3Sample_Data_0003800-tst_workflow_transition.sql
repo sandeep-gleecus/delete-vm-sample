@@ -1,0 +1,218 @@
+/***************************************************************
+**	Insert script for table TST_WORKFLOW_TRANSITION
+***************************************************************/
+SET IDENTITY_INSERT TST_WORKFLOW_TRANSITION ON; 
+
+INSERT INTO TST_WORKFLOW_TRANSITION
+(
+WORKFLOW_TRANSITION_ID, WORKFLOW_ID, INPUT_INCIDENT_STATUS_ID, OUTPUT_INCIDENT_STATUS_ID, NAME, IS_EXECUTE_BY_DETECTOR, IS_EXECUTE_BY_OWNER, IS_NOTIFY_DETECTOR, IS_NOTIFY_OWNER, NOTIFY_SUBJECT, IS_SIGNATURE_REQUIRED
+)
+VALUES
+(
+1, 1, 1, 2, 'Review Incident', 0, 0, 0, 0, NULL, 0
+),
+(
+2, 1, 1, 3, 'Assign Incident', 0, 0, 0, 1, 'A ${IncidentTypeId} has been assigned to ${Owner} in product ${ProjectName}', 0
+),
+(
+3, 1, 2, 3, 'Assign Incident', 0, 0, 0, 1, 'A ${IncidentTypeId} has been assigned to ${Owner} in product ${ProjectName}', 0
+),
+(
+4, 1, 2, 7, 'Duplicate Incident', 0, 1, 0, 0, NULL, 0
+),
+(
+5, 1, 3, 4, 'Resolve Incident', 0, 1, 1, 0, NULL, 0
+),
+(
+6, 1, 3, 6, 'Unable to Reproduce', 0, 1, 1, 0, NULL, 0
+),
+(
+7, 1, 3, 7, 'Duplicate Incident', 0, 1, 0, 0, NULL, 0
+),
+(
+8, 1, 4, 5, 'Close Incident', 1, 0, 0, 0, NULL, 0
+),
+(
+9, 1, 4, 8, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+10, 1, 5, 8, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+11, 1, 6, 8, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+12, 1, 7, 8, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+13, 1, 8, 3, 'Assign Incident', 0, 1, 0, 1, 'A ${IncidentTypeId} has been assigned to ${Owner} in product ${ProjectName}', 0
+),
+(
+14, 1, 8, 4, 'Resolve Incident', 0, 1, 1, 0, NULL, 0
+),
+(
+15, 1, 8, 7, 'Duplicate Incident', 0, 1, 0, 0, NULL, 0
+),
+(
+16, 1, 8, 6, 'Unable to Reproduce', 0, 1, 1, 0, NULL, 0
+),
+(
+17, 2, 9, 10, 'Review Incident', 0, 0, 0, 0, NULL, 0
+),
+(
+18, 2, 9, 11, 'Assign Incident', 0, 0, 0, 1, 'A ${IncidentTypeId} has been assigned to ${Owner} in product ${ProjectName}', 0
+),
+(
+19, 2, 10, 11, 'Assign Incident', 0, 0, 0, 1, 'A ${IncidentTypeId} has been assigned to ${Owner} in product ${ProjectName}', 0
+),
+(
+20, 2, 10, 15, 'Duplicate Incident', 0, 1, 0, 0, NULL, 0
+),
+(
+21, 2, 11, 12, 'Resolve Incident', 0, 1, 1, 0, NULL, 0
+),
+(
+22, 2, 11, 14, 'Unable to Reproduce', 0, 1, 1, 0, NULL, 0
+),
+(
+23, 2, 11, 15, 'Duplicate Incident', 0, 1, 0, 0, NULL, 0
+),
+(
+24, 2, 12, 13, 'Close Incident', 1, 0, 0, 0, NULL, 0
+),
+(
+25, 2, 12, 16, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+26, 2, 13, 16, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+27, 2, 14, 16, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+28, 2, 15, 16, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+29, 2, 16, 11, 'Assign Incident', 0, 1, 0, 1, 'A ${IncidentTypeId} has been assigned to ${Owner} in product ${ProjectName}', 0
+),
+(
+30, 2, 16, 12, 'Resolve Incident', 0, 1, 1, 0, NULL, 0
+),
+(
+31, 2, 16, 15, 'Duplicate Incident', 0, 1, 0, 0, NULL, 0
+),
+(
+32, 2, 16, 14, 'Unable to Reproduce', 0, 1, 1, 0, NULL, 0
+),
+(
+33, 3, 17, 18, 'Review Incident', 0, 0, 0, 0, NULL, 0
+),
+(
+34, 3, 17, 19, 'Assign Incident', 0, 0, 0, 1, NULL, 0
+),
+(
+35, 3, 18, 19, 'Assign Incident', 0, 0, 0, 1, NULL, 0
+),
+(
+36, 3, 18, 23, 'Duplicate Incident', 0, 1, 0, 0, NULL, 1
+),
+(
+37, 3, 19, 20, 'Resolve Incident', 0, 1, 1, 0, NULL, 1
+),
+(
+38, 3, 19, 22, 'Unable to Reproduce', 0, 1, 1, 0, NULL, 1
+),
+(
+39, 3, 19, 23, 'Duplicate Incident', 0, 1, 0, 0, NULL, 1
+),
+(
+40, 3, 20, 21, 'Close Incident', 0, 0, 0, 0, NULL, 1
+),
+(
+41, 3, 20, 24, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+42, 3, 21, 24, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+43, 3, 22, 24, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+44, 3, 23, 24, 'Reopen Incident', 1, 1, 0, 1, NULL, 0
+),
+(
+45, 3, 24, 19, 'Assign Incident', 0, 1, 0, 1, NULL, 0
+),
+(
+46, 3, 24, 20, 'Resolve Incident', 0, 1, 1, 0, NULL, 1
+),
+(
+47, 3, 24, 23, 'Duplicate Incident', 0, 1, 0, 0, NULL, 1
+),
+(
+48, 3, 24, 22, 'Unable to Reproduce', 0, 1, 1, 0, NULL, 1
+),
+(
+49, 4, 25, 26, 'Open', 1, 1, 0, 0, NULL, 0
+),
+(
+52, 4, 26, 31, 'Duplicate', 1, 1, 0, 0, NULL, 0
+),
+(
+65, 4, 29, 25, 'New', 1, 1, 0, 0, NULL, 0
+),
+(
+66, 4, 31, 25, 'New', 1, 1, 0, 0, NULL, 0
+),
+(
+68, 4, 30, 25, 'New', 1, 1, 0, 0, NULL, 0
+),
+(
+69, 4, 26, 25, 'New', 1, 1, 0, 0, NULL, 0
+),
+(
+70, 4, 29, 31, 'Duplicate', 1, 1, 0, 0, NULL, 0
+),
+(
+71, 4, 25, 31, 'Duplicate', 1, 1, 0, 0, NULL, 0
+),
+(
+72, 4, 30, 31, 'Duplicate', 1, 1, 0, 0, NULL, 0
+),
+(
+73, 4, 31, 29, 'Closed', 1, 1, 0, 0, NULL, 0
+),
+(
+74, 4, 25, 29, 'Closed', 1, 1, 0, 0, NULL, 0
+),
+(
+75, 4, 30, 29, 'Closed', 1, 1, 0, 0, NULL, 0
+),
+(
+76, 4, 26, 29, 'Closed', 1, 1, 0, 0, NULL, 0
+),
+(
+77, 4, 29, 30, 'Not Reproducible', 1, 1, 0, 0, NULL, 0
+),
+(
+78, 4, 31, 30, 'Not Reproducible', 1, 1, 0, 0, NULL, 0
+),
+(
+79, 4, 25, 30, 'Not Reproducible', 1, 1, 0, 0, NULL, 0
+),
+(
+80, 4, 26, 30, 'Not Reproducible', 1, 1, 0, 0, NULL, 0
+),
+(
+81, 4, 29, 26, 'Open', 1, 1, 0, 0, NULL, 0
+),
+(
+82, 4, 31, 26, 'Open', 1, 1, 0, 0, NULL, 0
+),
+(
+83, 4, 30, 26, 'Open', 1, 1, 0, 0, NULL, 0
+)
+GO
+
+SET IDENTITY_INSERT TST_WORKFLOW_TRANSITION OFF; 
+

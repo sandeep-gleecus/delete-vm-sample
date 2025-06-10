@@ -1,0 +1,20 @@
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Inflectra.SpiraTest.Web.ServerControls
+{
+    public enum PositioningMode {
+        Absolute =  0,
+        Center =  1,
+        BottomLeft =  2,
+        BottomRight =  3,
+        TopLeft =  4,
+        TopRight =  5,
+        Right = 6,
+        Left = 7
+    }
+}

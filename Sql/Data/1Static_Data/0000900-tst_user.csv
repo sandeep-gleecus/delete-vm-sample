@@ -1,0 +1,2 @@
+user_id:Key,user_name:String,password:String,password_salt:String,email_address:String,is_active:Normal,is_approved:Normal,is_locked:Normal,creation_date:Date,last_login_date:Date,password_format:Normal,failed_password_attempt_count:Normal,failed_password_answer_attempt_count:Normal,password_question:String,password_answer:String,ldap_dn:String,rss_token:String,is_legacy_format:Normal
+1,administrator,EeZxIlwKF//cNP98N2M/RAIVnew=,lui8LATVu5iurfBcaRQjbQ==,administrator@mycompany.com,1,1,0,1/1/2010,1/1/2011,1,0,0,What is 1+1?,/YE8eBvAECNQD80jAQxJMabiO3s=,NULL,NULL,0

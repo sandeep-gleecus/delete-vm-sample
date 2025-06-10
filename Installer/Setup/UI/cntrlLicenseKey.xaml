@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="Inflectra.SpiraTest.Installer.UI.cntrlLicenseKey"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Inflectra.SpiraTest.Installer.UI"
+             xmlns:resx="clr-namespace:Inflectra.SpiraTest.Installer.Themes.Inflectra"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400">
+    <UserControl.Resources>
+        <LinearGradientBrush x:Key="ErrorControlBackground" StartPoint=".5,0" EndPoint=".5,1">
+            <GradientStop Color="LightPink" Offset=".35" />
+            <GradientStop Color="IndianRed" Offset="1.5" />
+        </LinearGradientBrush>
+        <Style x:Key="ErrorHighlight">
+            <Style.Triggers>
+                <Trigger Property="Control.Tag" Value="1">
+                    <Setter Property="Control.Background" Value="{StaticResource ErrorControlBackground}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <DockPanel LastChildFill="True">
+        <TextBlock Name="msgStatus" DockPanel.Dock="Bottom" HorizontalAlignment="Right" Text="{x:Static resx:Resources.Global_ClickNext}"></TextBlock>
+        <StackPanel Orientation="Vertical">
+            <TextBlock FontSize="18" FontWeight="Bold" Text="{x:Static resx:Resources.LicenseKey_KeyText}" />
+            <TextBlock FontSize="14" TextWrapping="Wrap" Text="{x:Static resx:Resources.LicenseKey_Intro}" />
+            <GroupBox>
+                <GroupBox.Header>
+                    <Label FontWeight="Bold" Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.LicenseKey_LicenseEntry}" />
+                </GroupBox.Header>
+                <GroupBox.Content>
+                    <StackPanel Orientation="Vertical">
+                        <Grid Name="grdEntry">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.LicenseKey_Organization}" />
+                            <TextBox Margin="2" Name="txbOrganization" HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="0"  VerticalAlignment="Center" Style="{StaticResource ResourceKey=ErrorHighlight}" />
+                            <Label Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.LicenseKey_LicenseKey}" />
+                            <TextBox Margin="2" Name="txbLicenseKey" HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Style="{StaticResource ResourceKey=ErrorHighlight}" />
+                        </Grid>
+                    </StackPanel>
+                </GroupBox.Content>
+            </GroupBox>
+            <GroupBox IsEnabled="False" Name="grdAvailProjs" Margin="0,15,0,0">
+                <GroupBox.Header>
+                    <Label FontWeight="Bold" Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.LicenseKey_Information}" />
+                </GroupBox.Header>
+                <GroupBox.Content>
+                    <StackPanel Orientation="Vertical">
+                        <Grid Name="grdResults">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.LicenseKey_Product}" />
+                            <Label Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" Name="txtProductName" />
+                            <Label Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.LicenseKey_Type}" />
+                            <Label Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" Name="txtLicenseType" />
+                            <Label Grid.Column="0" Grid.Row="2" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.LicenseKey_Expiration}" />
+                            <Label Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" Name="txtExpiration" />
+                        </Grid>
+                    </StackPanel>
+                </GroupBox.Content>
+            </GroupBox>
+        </StackPanel>
+    </DockPanel>
+</UserControl>

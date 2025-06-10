@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="TestSet_TestCasePositionInUse" xml:space="preserve">
+    <value>Vybraná pozice pro testovací případ je již používána</value>
+  </data>
+	<data name="TestSet_TestSetTestCaseIdNotExist" xml:space="preserve">
+    <value>Předané testSetId a testSetTestCaseId neodpovídají žádnému testu v testovací sadě!</value>
+  </data>
+	<data name="Incident_ClosedDateCannotBeBeforeDetected" xml:space="preserve">
+    <value>Datum uzavření nemůže být před datem nálezu</value>
+  </data>
+	<data name="Incident_ClosedDateCannotBeBeforeStart" xml:space="preserve">
+    <value>Datum uzavření nemůže být před datem zahájení</value>
+  </data>
+	<data name="Task_EndDateCannotBeBeforeStartDate" xml:space="preserve">
+    <value>Koncové datum nemůže být před datem zahájení</value>
+  </data>
+	<data name="Task_EndDateOutsideReleaseRange" xml:space="preserve">
+    <value>Koncové datum úkolu nemůže být mimo datové rozmezí navázané verze/sprintu</value>
+  </data>
+	<data name="Task_EstimatedEffortNeededForInProgress" xml:space="preserve">
+    <value>Je třeba zadat Odhadovanou pracnost pro přesun úkolu do stavu Probíhá řešení (In progress)</value>
+  </data>
+	<data name="Task_NeedActualEffortForCompleted" xml:space="preserve">
+    <value>Je třeba zadat skutečnou pracnost pro označení úkolu jako dokončený</value>
+  </data>
+	<data name="Task_NeedEndDateForCompleted" xml:space="preserve">
+    <value>Je třeba zadat koncové datum pro označení úkolu jako dokončený</value>
+  </data>
+	<data name="Task_NeedEndDateForInProgress" xml:space="preserve">
+    <value>Pro změnu stavu úkolu na Probíhá řešení (In progress) zadejte odhadované datum ukončení</value>
+  </data>
+	<data name="Task_NeedEstimatedEffortForCompleted" xml:space="preserve">
+    <value>Pro změnu stavu úkolu na Dokončený zadejte Odhad pracnosti</value>
+  </data>
+	<data name="Task_NeedReleaseForCompleted" xml:space="preserve">
+    <value>Pro změnu stavu úkolu na Dokončený propojte úkol s verzí/sprintem</value>
+  </data>
+	<data name="Task_NeedReleaseForInProgress" xml:space="preserve">
+    <value>Pro změnu stavu úkolu na Probíhá řešení propojte úkol s verzí/sprintem</value>
+  </data>
+	<data name="Task_NeedStartDateForCompleted" xml:space="preserve">
+    <value>Pro změnu stavu úkolu na Dokončený zadejte datum zahájení</value>
+  </data>
+	<data name="Task_NeedStartDateForInProgress" xml:space="preserve">
+    <value>Pro změnu stavu úkolu na Probíhá řešení zadejte datum zahájení</value>
+  </data>
+	<data name="Task_PercentCompleteNotInRange" xml:space="preserve">
+    <value>Hodnota % dokončeno musí být v rozmezí 0-100%</value>
+  </data>
+	<data name="Task_RemainingEffortNeededForInProgress" xml:space="preserve">
+    <value>Pro změnu stavu úkolu na Probíhá řešení zadejte Zbývající pracnost</value>
+  </data>
+	<data name="Task_StartDateOutsideReleaseRange" xml:space="preserve">
+    <value>Datum zahájení tohoto úkolu nesmí být mimo rozsah dat připojeného sprintu/verze</value>
+  </data>
+	<data name="TestRun_TestSetNotContainTestCases" xml:space="preserve">
+    <value>Předaná testovací sada neobsahuje žádné testovací případy.</value>
+  </data>
+	<data name="TestSet_TestSetCannotHaveChildItems" xml:space="preserve">
+    <value>Testovací sada nemůže mít vnořené testovací sady ani složky</value>
+  </data>
+	<data name="Project_ArtifactNotExists" xml:space="preserve">
+    <value>Produkt {0} již v systému neexistuje.</value>
+  </data>
+	<data name="Project_Copy_Attachments" xml:space="preserve">
+    <value>Kopírování příloh produktu</value>
+  </data>
+	<data name="Project_Copy_CreateShell" xml:space="preserve">
+    <value>Vytvoření nového produktu na základě již existujícího.</value>
+  </data>
+	<data name="Project_Copy_CustomProperties" xml:space="preserve">
+    <value>Kopírování vlastních polí artefaktu</value>
+  </data>
+	<data name="Project_Copy_Mappings" xml:space="preserve">
+    <value>Kopírování požadavku, verze a mapování testovacích případů</value>
+  </data>
+	<data name="Project_Copy_Releases" xml:space="preserve">
+    <value>Kopírování verzí v produktu</value>
+  </data>
+	<data name="Project_Copy_Requirements" xml:space="preserve">
+    <value>Kopírování požadavků produktu</value>
+  </data>
+	<data name="Project_Copy_TestCases" xml:space="preserve">
+    <value>Kopírování testovacích případů produktu</value>
+  </data>
+	<data name="Project_Copy_TestSets" xml:space="preserve">
+    <value>Kopírování testovacích sad produktu</value>
+  </data>
+	<data name="Project_Delete_Associations" xml:space="preserve">
+    <value>Odstranění propojení artefaktů</value>
+  </data>
+	<data name="Project_Delete_Attachments" xml:space="preserve">
+    <value>Odstranění příloh produktu</value>
+  </data>
+	<data name="Project_Delete_DataMappings" xml:space="preserve">
+    <value>Odstranění mapování synchronizace dat</value>
+  </data>
+	<data name="Project_Delete_IncidentWorkflows" xml:space="preserve">
+    <value>Odstranění workflow incidentů</value>
+  </data>
+	<data name="Project_Delete_Project" xml:space="preserve">
+    <value>Odstranění samotného produktu</value>
+  </data>
+	<data name="Project_Delete_Releases" xml:space="preserve">
+    <value>Odstranění verze</value>
+  </data>
+	<data name="Project_Delete_Reports" xml:space="preserve">
+    <value>Odstranění reportů</value>
+  </data>
+	<data name="Project_Delete_Requirements" xml:space="preserve">
+    <value>Odstranění požadavků</value>
+  </data>
+	<data name="Project_Delete_TestCases" xml:space="preserve">
+    <value>Odstranění testovacích případů</value>
+  </data>
+	<data name="Project_Delete_TestRuns" xml:space="preserve">
+    <value>Odstranění běhů testů</value>
+  </data>
+	<data name="Project_Delete_TestSets" xml:space="preserve">
+    <value>Odstranění testovacích sad</value>
+  </data>
+	<data name="TestRun_CreatingTestRuns" xml:space="preserve">
+    <value>Vytvářím běhy testů z testovacích případů.</value>
+  </data>
+	<data name="TestRun_CreationCompleted" xml:space="preserve">
+    <value>Tvorba běhů testů dokončena.</value>
+  </data>
+	<data name="TestRun_SavingPendingEntry" xml:space="preserve">
+    <value>Ukládání rozdělaných běhů testů.</value>
+  </data>
+	<data name="BuildManager_BuildNotExists" xml:space="preserve">
+    <value>Sestavení (Build)  '{0}' již neexistuje v systému.</value>
+  </data>
+	<data name="BuildManager_BuildNotExistsForRevision" xml:space="preserve">
+    <value>Nepodařilo se najít build pro revizi zdrojového kódu '{0}'</value>
+  </data>
+	<data name="BuildManager_ReleaseNotExists" xml:space="preserve">
+    <value>Propojená Verze/Sprint RL{0} neexistuje v aktuálním produktu</value>
+  </data>
+	<data name="CustomProperty_MaxValueError" xml:space="preserve">Zadaná hodnota pro '%field%' je větší než maximální povolená hoznota z %value%.</data><data name="CustomProperty_MinLengthError" xml:space="preserve">Minimální délka pro  '%field%' je %min% znaků. Zadaný text má %act% znaků.</data><data name="CustomProperty_MinValueError" xml:space="preserve">Zadaná hodnota pro '%field%' je menší než minimální povolená hoznota z %value%.</data><data name="CustomProperty_RegExError" xml:space="preserve">Zadaná hodnota pro '%field%' neodpovídá požadovaným regulárním výrazům.</data><data name="CustomProperty_RegExException_CannotChange" xml:space="preserve">Nemůžete měnit systémové regulární výrazy.</data><data name="CustomProperty_RegExException_CannotDelete" xml:space="preserve">Nemůžete mazat systémové regulární výrazy.</data><data name="CustomProperty_ValueNullError" xml:space="preserve">Pole '%field%' vyžaduje hodnotu.</data><data name="Incident_CompletionPercentOutOfRange" xml:space="preserve">Procento dokončení musí být v rozmezí 0 - 100%.</data><data name="Report_CannotDeleteDefaultReport" xml:space="preserve">Nemůžete smazat standardní reporty.</data><data name="Report_ReportGenerationComplete" xml:space="preserve">Generování reportu je dokončeno. </data><data name="Report_ReportNotExist" xml:space="preserve">Report s id '{0}' v systému neexistuje.</data><data name="Report_StartGeneratingReport" xml:space="preserve">Spuštění generování reportu.</data><data name="UserManager_NotResetLDAP" xml:space="preserve">Nemůžete obnovit heslo LDAP-uživatele přes {0}!</data><data name="UserManager_SettingNotExists" xml:space="preserve">Soubor uživatelského nastavení '{0}' v systému neexistuje.</data><data name="CustomProperty_MaxValueError" xml:space="preserve"><value>Zadaná hodnota pro '%field%' je větší než maximální povolená hoznota z %value%.</value></data><data name="CustomProperty_MinLengthError" xml:space="preserve"><value>Minimální délka pro  '%field%' je %min% znaků. Zadaný text má %act% znaků.</value></data><data name="CustomProperty_MinValueError" xml:space="preserve"><value>Zadaná hodnota pro '%field%' je menší než minimální povolená hoznota z %value%.</value></data><data name="CustomProperty_RegExError" xml:space="preserve"><value>Zadaná hodnota pro '%field%' neodpovídá požadovaným regulárním výrazům.</value></data><data name="CustomProperty_RegExException_CannotChange" xml:space="preserve"><value>Nemůžete měnit systémové regulární výrazy.</value></data><data name="CustomProperty_RegExException_CannotDelete" xml:space="preserve"><value>Nemůžete mazat systémové regulární výrazy.</value></data><data name="CustomProperty_ValueNullError" xml:space="preserve"><value>Pole '%field%' vyžaduje hodnotu.</value></data><data name="Incident_CompletionPercentOutOfRange" xml:space="preserve"><value>Procento dokončení musí být v rozmezí 0 - 100%.</value></data><data name="Report_CannotDeleteDefaultReport" xml:space="preserve"><value>Nemůžete smazat standardní reporty.</value></data><data name="Report_ReportGenerationComplete" xml:space="preserve"><value>Generování reportu je dokončeno. </value></data><data name="Report_ReportNotExist" xml:space="preserve"><value>Report s id '{0}' v systému neexistuje.</value></data><data name="Report_StartGeneratingReport" xml:space="preserve"><value>Spuštění generování reportu.</value></data><data name="UserManager_NotResetLDAP" xml:space="preserve"><value>Nemůžete obnovit heslo LDAP-uživatele přes {0}!</value></data><data name="UserManager_SettingNotExists" xml:space="preserve"><value>Soubor uživatelského nastavení '{0}' v systému neexistuje.</value></data><data name="Admin_EventLog_ClearUserName" xml:space="preserve"><value>&lt;Neznámý&gt;</value></data><data name="Admin_EventLog_ClearUserNameMessage" xml:space="preserve"><value>Log událostí byl vymazán uživatelem '{0}'.</value></data><data name="BaselineManager_CannotCreateWithoutChangeset" xml:space="preserve"><value>Základní úroveň nelze vytvořit na produktu s prázdnou historií.</value></data><data name="ComponentManager_ArtifactNotExists" xml:space="preserve"><value>Nelze načíst komponentu s ID={0}</value></data><data name="DiscussionManager_CannotDeletePermanentDiscussion" xml:space="preserve"><value>Tento komentář nemůžete smazat, protože je označen jako permanentní!</value></data><data name="GraphManager_GraphNotExist" xml:space="preserve"><value>Zadaný vlastní graf s ID {0} v systému neexistuje!</value></data><data name="GraphManager_InvalidColumn" xml:space="preserve"><value>Sloupec '{0}' obsahuje nečíselné údaje a nelze jej zobrazit v grafu!</value></data><data name="HierarchicalItem_CannotMoveUnderItself" xml:space="preserve"><value>Došlo k pokusu o přesunutí položky pod sebe!</value></data><data name="Incident_StartDateCannotBeBeforeDetected" xml:space="preserve"><value>Datum zahájení nemůže být dříve než datum zjištění</value></data><data name="ProjectTemplate_CannotDeleteActive" xml:space="preserve"><value>Nelze odstranit šablonu produktu, která je produkty používána!</value></data><data name="ProjectTemplate_NotActive" xml:space="preserve"><value>Zadaná šablona produktu {0} musí být aktivní, ale není!</value></data><data name="ProjectTemplate_NotExists" xml:space="preserve"><value>Zadaná šablona produktu {0} neexistuje!</value></data><data name="ProjectTemplate_ProjectTemplateIdTheSame" xml:space="preserve"><value>Došlo k pokusu o změnu šablony produktu na stejnou šablonu, a proto byla akce ignorována!</value></data><data name="Project_Copy_AutomationHosts" xml:space="preserve"><value>Kopírování hostitelů automatizace produktu</value></data><data name="Project_Copy_Components" xml:space="preserve"><value>Kopírování komponent produktu</value></data><data name="Project_Copy_Tasks" xml:space="preserve"><value>Kopírování úkolů produktu</value></data><data name="Project_Copy_TestCaseFolders" xml:space="preserve"><value>Kopírování složek testovacích případů produktu</value></data><data name="Project_Copy_TestSetFolders" xml:space="preserve"><value>Kopírování složek testovacích sad produktu</value></data><data name="Project_Delete_Risks" xml:space="preserve"><value>Odstranění rizik</value></data><data name="ReleaseManager_CreatingFakeVersionNumber" xml:space="preserve"><value>Zadané číslo verze není jedinečné, vytvářím fiktivní číslo verze</value></data><data name="ReleaseManager_IterationSummaryException" xml:space="preserve"><value>Nemůžete mít souhrnnou položku sprintu.</value></data><data name="ReleaseManager_PhaseSummaryException" xml:space="preserve"><value>Nemůžete mít souhrnnou položku fáze.</value></data><data name="ReleaseManager_ReleaseIterationNotExistsForAssociation" xml:space="preserve"><value>Verze/sprint, se kterou se snažíte propojit, již neexistuje.</value></data><data name="ReleaseManager_VersionNumberNotUnique" xml:space="preserve"><value>Zadané číslo verze není jedinečné</value></data><data name="Releases_CannotRetrieveExistingRelease" xml:space="preserve"><value>Nelze načíst stávající verzi</value></data><data name="Report_NeedToProvideAnXsltTemplate" xml:space="preserve"><value>Musíte poskytnout šablonu XSLT pro sekci s vlastními reporty!</value></data><data name="Report_ReportConvertingToPdf" xml:space="preserve"><value>Převádím report do formátu PDF</value></data><data name="Requirement_CannotSplitSummaryRequirement" xml:space="preserve"><value>Souhrnný požadavek nelze rozdělit!</value></data><data name="Requirement_NoDefaultTypeForProjectTemplate" xml:space="preserve"><value>Pro šablonu produktu PT{0} nebyl nalezen žádný výchozí typ požadavku!</value></data><data name="Requirement_StepNotExists" xml:space="preserve"><value>Nelze načíst krok požadavku s ID={0}</value></data><data name="Risk_ClosedDateCannotBeBeforeCreated" xml:space="preserve"><value>Datum uzavření nesmí být před datem vytvoření</value></data><data name="Risk_MitigationNotExists" xml:space="preserve"><value>Nelze načíst zmírnění rizika s ID={0}</value></data><data name="Risk_NoDefaultTypeForProjectTemplate" xml:space="preserve"><value>Pro šablonu produktu PT{0} nebyl nalezen žádný výchozí typ rizika!</value></data><data name="Risk_ReviewDateCannotBeBeforeCreated" xml:space="preserve"><value>Datum posouzení nemůže být před datem vytvoření</value></data><data name="SavedFilterManager_UnableToRetrieveFilter" xml:space="preserve"><value>Nelze načíst uložený filtr s ID={0}</value></data><data name="SourceCode_BranchKeyNotFound" xml:space="preserve"><value>Klíč větve (branche) '{0}' nebyl nalezen, takže se obnovuje mezipaměť</value></data><data name="SourceCode_BranchKeyNull" xml:space="preserve"><value>Klíč větve (branche) byl NULL, takže se obnovuje mezipaměť</value></data><data name="SourceCode_CannotDeleteCacheBecauseUpdateRunning" xml:space="preserve"><value>Mezipaměť nelze vymazat, protože již běží aktualizace</value></data><data name="SourceCode_InvalidCacheLongMessage" xml:space="preserve"><value>Mezipaměť zdrojového kódu knihovny zdrojové verze je zastaralá a aktualizuje se.</value></data><data name="System_FinishingToClearSampleData" xml:space="preserve"><value>Dokončeno mazání vzorových dat ze systému.</value></data><data name="System_StartingToClearSampleData" xml:space="preserve"><value>Začínám mazat vzorová data ze systému.</value></data><data name="TaskManager_FolderNotExists" xml:space="preserve"><value>Složka úkolu s ID={0} v systému neexistuje!</value></data><data name="Task_CannotMakeParentChildOfCurrentTask" xml:space="preserve"><value>Nemůžete z nadřazené složky úkolů učinit jako jednu z jejich podřízených!</value></data><data name="Task_NoDefaultTypeForProjectTemplate" xml:space="preserve"><value>Pro šablonu produktu PT{0} nebyl nalezen žádný výchozí typ úkolu!</value></data><data name="Template_Remap_Completed" xml:space="preserve"><value>Dokončená změna šablony produktu</value></data><data name="Template_Remap_CustomFieldForArtifactType_Completed" xml:space="preserve"><value>Přemapována vlastní pole pro {0}</value></data><data name="Template_Remap_CustomFieldsFields_Completed" xml:space="preserve"><value>Přemapována vlastní pole</value></data><data name="Template_Remap_DataSyncDisabled" xml:space="preserve"><value>Služby synchronizace dat jsou deaktivovány</value></data><data name="Template_Remap_DataSyncMappingsCleared" xml:space="preserve"><value>Synchronizace dat pro mapování polí vyčištěna</value></data><data name="Template_Remap_FinishingInfo" xml:space="preserve"><value>Úspěšně změněn produktu PR{0} ze šablony {1} na šablonu {2}.</value></data><data name="Template_Remap_StandardFields_Completed" xml:space="preserve"><value>Přemapována standardní pole</value></data><data name="Template_Remap_Starting" xml:space="preserve"><value>Zahájení změny šablony produktu</value></data><data name="Template_Remap_StartingInfo" xml:space="preserve"><value>Zahájení procesu změny produktu PR{0} ze šablony {1} na šablonu {2}.</value></data><data name="Template_Remap_TestConfigurations_Completed" xml:space="preserve"><value>Přemapovány konfigurace testů</value></data><data name="Template_Remap_UserViewSettingsCleared" xml:space="preserve"><value>Vymazáno nastavení zobrazení produktu uživatele, uložené filtry a řazení</value></data><data name="TestCase_CannotMakeParentChildOfCurrentTestCase" xml:space="preserve"><value>Nemůžete z nadřazené složky Testovacího Případu učinit jako jednu z jeho podřízených!</value></data><data name="TestCase_NoDefaultTypeForProjectTemplate" xml:space="preserve"><value>Pro šablonu produktu PT{0} nebyl nalezen žádný výchozí typ testovacího případu!</value></data><data name="TestConfigurationManager_TestConfigurationIdNotExist" xml:space="preserve"><value>Zadaná konfigurace testu neexistuje</value></data><data name="TestConfigurationManager_TestConfigurationPositionInUse" xml:space="preserve"><value>Zadaná pozice konfigurace testu se již používá</value></data><data name="TestConfigurationManager_TestConfigurationSetIdNotExist" xml:space="preserve"><value>Zadaná testovací konfigurační sada ({0}) neexistuje</value></data><data name="TestRun_TestConfigurationBlank" xml:space="preserve"><value>Tuto testovací sadu nelze provést, protože vybraná testovací konfigurace neobsahuje žádné položky</value></data><data name="TestSet_CannotMakeParentChildOfCurrentTestSet" xml:space="preserve"><value>Nemůžete z nadřazené složky Testovací sady učinit jako jednu z její podřízených!</value></data><data name="UserManager_NewUserEmail_Approved" xml:space="preserve"><value>Byl pro vás vytvořen účet {0} s následujícími přihlašovacími údaji:
+
+URL: {1}
+Uživatelské jméno: {2}
+Heslo: {3}
+
+S případnými dotazy se obraťte na správce systému.</value></data><data name="UserManager_NewUserEmail_Approved_LDAPPass" xml:space="preserve"><value>(Síťové heslo)</value></data><data name="UserManager_NewUserEmail_Oauth" xml:space="preserve"><value>Byl pro vás vytvořen účet {0} s následujícími přihlašovacími údaji pomocí vašich přihlašovacích údajů {4} na adrese: {1}
+
+Jakmile bude účet schválen, obdržíte samostatný e-mail s oznámením, že účet je aktivní a připravený k použití.
+S případnými dotazy se obraťte na správce systému.</value></data><data name="UserManager_NewUserEmail_Unapproved" xml:space="preserve"><value>Byl pro vás vytvořen účet {0} s následujícími přihlašovacími údaji:
+
+URL: {1}
+Uživatelské jméno: {2}
+
+Jakmile bude účet schválen, obdržíte samostatný e-mail s oznámením, že účet je aktivní a připravený k použití.
+S případnými dotazy se obraťte na správce systému.</value></data></root>

@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GlobalFunctions_SpinnerText" xml:space="preserve">
+    <value>正在加载...</value>
+  </data>
+	<data name="FileArtifactUploadDialog_DefaultScreenshotFilename" xml:space="preserve">
+    <value>截图1</value>
+  </data>
+	<data name="FileArtifactUploadDialog_ScreenshotFilenameRequired" xml:space="preserve">
+    <value>您需要输入一个文档名到截图</value>
+  </data>
+	<data name="FileArtifactUploadDialog_ScreenshotFilenameWrongExtension" xml:space="preserve">
+    <value>屏幕截图文档名需要有.png 扩展名</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardContentUnsupported" xml:space="preserve">
+    <value>剪贴板中不包含受支持的图像格式。</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardEmpty" xml:space="preserve">
+    <value>剪贴板是空的。</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardErrorCodeUnknown" xml:space="preserve">
+    <value>错误 ！不幸的是，没有错误消息被实施的错误代码：</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaClipboardUnknownError" xml:space="preserve">
+    <value>发生意外的错误。请参阅Java 小程序控制台的详细信息。</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaInternalException" xml:space="preserve">
+    <value>内部异常：</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaNotLoadedYet" xml:space="preserve">
+    <value>Supa小程序尚未加载。</value>
+  </data>
+	<data name="FileArtifactUploadDialog_SupaPasteImageFirst" xml:space="preserve">
+    <value>请首先粘贴一张图像</value>
+  </data>
+	<data name="GlobalFunctions_DefaultErrorMessage" xml:space="preserve">
+    <value>请检查「应用程序事件」日志中的详细消息。</value>
+  </data>
+	<data name="GlobalFunctions_DefaultErrorType" xml:space="preserve">
+    <value>系统错误</value>
+  </data>
+	<data name="GlobalFunctions_TooltipLoading" xml:space="preserve">
+    <value>正在加载...</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForBlocked" xml:space="preserve">
+    <value>在记录被阻止的测试步骤时，您需要输入"实际的结果"</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForCaution" xml:space="preserve">
+    <value>在记录测试步骤的警告时，您需要输入"实际的结果"</value>
+  </data>
+	<data name="TestCaseExecution_ActualResultNeededForFail" xml:space="preserve">
+    <value>在记录失败时，您需要输入"实际的结果"</value>
+  </data>
+	<data name="TestCaseExecution_IncidentLoggedMessage" xml:space="preserve">
+    <value>针对测试步骤的事件{0}的结果</value>
+  </data>
+	<data name="TestSetDetails_OnlyOneCheckboxToAddTestCases" xml:space="preserve">
+    <value>请给添加测试用例命令选择不多于一个的复选框.</value>
+  </data>
+	<data name="TestSetDetails_SelectOnlyOneTestCase" xml:space="preserve">
+    <value>您需要选择恰好一个测试用例来编辑参数值.</value>
+  </data>
+	<data name="TestSetDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>您需要先选择一个测试用例。</value>
+  </data>
+	<data name="TreeView_ExpandCollapse" xml:space="preserve">
+    <value>展开/折叠</value>
+  </data>
+	<data name="TreeView_Folder" xml:space="preserve">
+    <value>文件夹</value>
+  </data>
+	<data name="Global_Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+	<data name="Global_PleaseSelectProjectToExportTo" xml:space="preserve">
+    <value>请选择您要导出到的项目：</value>
+  </data>
+	<data name="Global_ApplyFilter" xml:space="preserve">
+    <value>应用筛选器</value>
+  </data>
+	<data name="Global_ArtifactHasAttachment" xml:space="preserve">
+    <value>工件带有附件</value>
+  </data>
+	<data name="Global_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+	<data name="Global_CannotMoveItemOntoItself" xml:space="preserve">
+    <value>您不能移动到其自身元件 ！</value>
+  </data>
+	<data name="Global_ClipboardEmpty" xml:space="preserve">
+    <value>剪贴板当前为空!</value>
+  </data>
+	<data name="Global_DestinationItemNotValid" xml:space="preserve">
+    <value>目标元件无效 ！</value>
+  </data>
+	<data name="Global_DisplayingPage" xml:space="preserve">
+    <value>正在页示面显</value>
+  </data>
+	<data name="Global_FilterSaved" xml:space="preserve">
+    <value>已成功保存当前的筛选器。</value>
+  </data>
+	<data name="Global_Hide" xml:space="preserve">
+    <value>隐藏</value>
+  </data>
+	<data name="Global_IntegerValidation" xml:space="preserve">
+    <value>"{0}"需要一个整数值。</value>
+  </data>
+	<data name="Global_ItemDraggedNotValid" xml:space="preserve">
+    <value>正被拖动的元件无效 ！</value>
+  </data>
+	<data name="Global_ItemsCopiedToClipboard" xml:space="preserve">
+    <value>元件成功复制到剪贴板中。</value>
+  </data>
+	<data name="Global_ItemsCutToClipboard" xml:space="preserve">
+    <value>元件成功剪切到剪贴板。</value>
+  </data>
+	<data name="Global_NeedToSelectDestinationProject" xml:space="preserve">
+    <value>您需要选择目标项目。</value>
+  </data>
+	<data name="Global_NeedToSelectFilter" xml:space="preserve">
+    <value>您需要从列表中选择一个筛选器。</value>
+  </data>
+	<data name="Global_NeedToSelectItem" xml:space="preserve">
+    <value>您需要从列表中选择 {0}。</value>
+  </data>
+	<data name="Global_None" xml:space="preserve">
+    <value>无</value>
+  </data>
+	<data name="Global_Of" xml:space="preserve">
+    <value>的</value>
+  </data>
+	<data name="Global_PleaseSelectFilter" xml:space="preserve">
+    <value>请选择您要使用的筛选器：</value>
+  </data>
+	<data name="Global_RetrieveSavedFilter" xml:space="preserve">
+    <value>恢复保存的筛选器</value>
+  </data>
+	<data name="Global_RowsPerPage" xml:space="preserve">
+    <value>行数/页</value>
+  </data>
+	<data name="Global_Select" xml:space="preserve">
+    <value>选择</value>
+  </data>
+	<data name="Global_SelectFilter" xml:space="preserve">
+    <value>选择筛选器</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCommand" xml:space="preserve">
+    <value>您需要选择至少一个复选框给此命令.</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCopy" xml:space="preserve">
+    <value>您需要选择至少一个复选框给复制命令.</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForCut" xml:space="preserve">
+    <value>您需要选择至少一个复选框给剪切命令.</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForDelete" xml:space="preserve">
+    <value>您需要选择至少一个复选框给删除命令.</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForInsert" xml:space="preserve">
+    <value>您需要选择至少一个复选框给插入命令.</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForOpen" xml:space="preserve">
+    <value>您需要选择至少一个复选框给开启命令.</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForPaste" xml:space="preserve">
+    <value>您需要选择至少一个复选框给粘贴命令.</value>
+  </data>
+	<data name="Global_Show" xml:space="preserve">
+    <value>显示</value>
+  </data>
+	<data name="Global_SuccessAddingItemsToItem" xml:space="preserve">
+    <value>已成功添加到 {0} 的元件。</value>
+  </data>
+	<data name="Global_SuccessExport" xml:space="preserve">
+    <value>已成功导出的元件。</value>
+  </data>
+	<data name="Global_TimeIntervalValidation" xml:space="preserve">
+    <value>"{0}"以小时为时差单位，以分钟为小数。</value>
+  </data>
+	<data name="Global_YouNeedToEnterFilterName" xml:space="preserve">
+    <value>您需要给这个筛选器命名！</value>
+  </data>
+	<data name="HierarchicalGrid_CollapseNode" xml:space="preserve">
+    <value>折叠节点</value>
+  </data>
+	<data name="HierarchicalGrid_ExpandNode" xml:space="preserve">
+    <value>展开节点</value>
+  </data>
+	<data name="HierarchicalGrid_SelectOneCheckBoxForIndent" xml:space="preserve">
+    <value>您需要选择至少一个复选框给「缩排」命令.</value>
+  </data>
+	<data name="HierarchicalGrid_SelectOneCheckBoxForOutdent" xml:space="preserve">
+    <value>您需要选择至少一个复选框给「凸排」命令.</value>
+  </data>
+	<data name="Global_Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+	<data name="Global_FillWithValue" xml:space="preserve">
+    <value>填入此值</value>
+  </data>
+	<data name="Global_SelectAll" xml:space="preserve">
+    <value>选择全部</value>
+  </data>
+	<data name="Global_Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+	<data name="Global_Insert" xml:space="preserve">
+    <value>插入</value>
+  </data>
+	<data name="Global_MultipleItems" xml:space="preserve">
+    <value>多个元件</value>
+  </data>
+	<data name="Global_SelectOneCheckBoxForBulkEdit" xml:space="preserve">
+    <value>您需要选择至少一个复选框作为「批量编辑」选项.</value>
+  </data>
+	<data name="Global_ExportItems" xml:space="preserve">
+    <value>导出元件</value>
+  </data>
+	<data name="Global_Project" xml:space="preserve">
+    <value>项目</value>
+  </data>
+	<data name="Requirements_SuccessfullyCreatedTestCases" xml:space="preserve">
+    <value>成功从满足需求项中创建测试用例</value>
+  </data>
+	<data name="Requirements_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>成功从满足需求项中创建测试仪</value>
+  </data>
+	<data name="Global_Any" xml:space="preserve">
+    <value>-- 任何 --</value>
+  </data>
+	<data name="Global_None2" xml:space="preserve">
+    <value>(无)</value>
+  </data>
+	<data name="DatePicker_April" xml:space="preserve">
+    <value>4 月</value>
+  </data>
+	<data name="DatePicker_August" xml:space="preserve">
+    <value>8 月</value>
+  </data>
+	<data name="DatePicker_ChosenDateInvalid" xml:space="preserve">
+    <value>很抱歉，所选择的日期是不能接受。请阅读页面上的说明。</value>
+  </data>
+	<data name="DatePicker_December" xml:space="preserve">
+    <value>12 月</value>
+  </data>
+	<data name="DatePicker_DHTMLUnsupported" xml:space="preserve">
+    <value>在此浏览器不支持所需的 DHTML 函数。</value>
+  </data>
+	<data name="DatePicker_February" xml:space="preserve">
+    <value>2 月</value>
+  </data>
+	<data name="DatePicker_Fr" xml:space="preserve">
+    <value>周五</value>
+  </data>
+	<data name="DatePicker_Friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+	<data name="DatePicker_January" xml:space="preserve">
+    <value>1 月</value>
+  </data>
+	<data name="DatePicker_July" xml:space="preserve">
+    <value>7 月</value>
+  </data>
+	<data name="DatePicker_June" xml:space="preserve">
+    <value>6 月</value>
+  </data>
+	<data name="DatePicker_March" xml:space="preserve">
+    <value>3 月</value>
+  </data>
+	<data name="DatePicker_May" xml:space="preserve">
+    <value>5 月</value>
+  </data>
+	<data name="DatePicker_Mo" xml:space="preserve">
+    <value>周一</value>
+  </data>
+	<data name="DatePicker_Monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+	<data name="DatePicker_November" xml:space="preserve">
+    <value>11 月</value>
+  </data>
+	<data name="DatePicker_October" xml:space="preserve">
+    <value>10 月</value>
+  </data>
+	<data name="DatePicker_Sa" xml:space="preserve">
+    <value>周六</value>
+  </data>
+	<data name="DatePicker_Saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+	<data name="DatePicker_September" xml:space="preserve">
+    <value>9 月</value>
+  </data>
+	<data name="DatePicker_Su" xml:space="preserve">
+    <value>周日</value>
+  </data>
+	<data name="DatePicker_Sunday" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+	<data name="DatePicker_TargetFormInvalid" xml:space="preserve">
+    <value>目标表单字段未分配或不能被访问</value>
+  </data>
+	<data name="DatePicker_Th" xml:space="preserve">
+    <value>周四</value>
+  </data>
+	<data name="DatePicker_Thursday" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+	<data name="DatePicker_Tu" xml:space="preserve">
+    <value>周二</value>
+  </data>
+	<data name="DatePicker_Tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+	<data name="DatePicker_UnknownError" xml:space="preserve">
+    <value>执行此脚本时出现未知的错误。</value>
+  </data>
+	<data name="DatePicker_We" xml:space="preserve">
+    <value>周三</value>
+  </data>
+	<data name="DatePicker_Wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+	<data name="DateRangeFilter_CustomDates" xml:space="preserve">
+    <value>自定义的日期范围：</value>
+  </data>
+	<data name="DateRangeFilter_EnterDateRange" xml:space="preserve">
+    <value>输入日期范围：</value>
+  </data>
+	<data name="DateRangeFilter_Last14Days" xml:space="preserve">
+    <value>最近14天</value>
+  </data>
+	<data name="DateRangeFilter_Last30Days" xml:space="preserve">
+    <value>最近 30 天</value>
+  </data>
+	<data name="DateRangeFilter_Last7Days" xml:space="preserve">
+    <value>最近 7 天</value>
+  </data>
+	<data name="DateRangeFilter_LastMonth" xml:space="preserve">
+    <value>上个月</value>
+  </data>
+	<data name="DateRangeFilter_LastWeek" xml:space="preserve">
+    <value>上个星期</value>
+  </data>
+	<data name="DateRangeFilter_StandardDates" xml:space="preserve">
+    <value>标准的日期范围：</value>
+  </data>
+	<data name="DateRangeFilter_ThisMonth" xml:space="preserve">
+    <value>本月</value>
+  </data>
+	<data name="DateRangeFilter_ThisWeek" xml:space="preserve">
+    <value>本周</value>
+  </data>
+	<data name="DateRangeFilter_Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+	<data name="DateRangeFilter_Yesterday" xml:space="preserve">
+    <value>昨天</value>
+  </data>
+	<data name="Global_PleaseSelect" xml:space="preserve">
+    <value>-- 请选择 --</value>
+  </data>
+	<data name="Releases_SuccessfullyCreatedTestSet" xml:space="preserve">
+    <value>成功从发行中创建测试仪</value>
+  </data>
+	<data name="Global_No" xml:space="preserve">
+    <value>否</value>
+  </data>
+	<data name="Global_Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+	<data name="Global_Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+	<data name="TestCaseList_AddToRelease" xml:space="preserve">
+    <value>添加到发行</value>
+  </data>
+	<data name="TestCaseList_AddToRequirement" xml:space="preserve">
+    <value>添加到需求项</value>
+  </data>
+	<data name="TestCaseList_AddToTestSet" xml:space="preserve">
+    <value>添加到测试仪</value>
+  </data>
+	<data name="TestCaseList_SelectRelease" xml:space="preserve">
+    <value>请选择您要增加的发行：</value>
+  </data>
+	<data name="TestCaseList_SelectRequirement" xml:space="preserve">
+    <value>请选择您要增加的要求：</value>
+  </data>
+	<data name="TestCaseList_SelectTestSet" xml:space="preserve">
+    <value>请选择您要增加的测试仪：</value>
+  </data>
+	<data name="SortedList_SortByAscending" xml:space="preserve">
+    <value>按{0}升序排序</value>
+  </data>
+	<data name="SortedList_SortByDescending" xml:space="preserve">
+    <value>按{0}降序排序</value>
+  </data>
+	<data name="Global_ChooseNameForFilter" xml:space="preserve">
+    <value>请选择一名称给该筛选器:</value>
+  </data>
+	<data name="Global_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+	<data name="Global_SaveFilter" xml:space="preserve">
+    <value>保存筛选器</value>
+  </data>
+	<data name="Global_Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+	<data name="IterationPlan_CannotDragReqsTasksSameTime" xml:space="preserve">
+    <value>您不能在同一时间拖动需求和任务</value>
+  </data>
+	<data name="IterationPlan_NoReleaseSelected" xml:space="preserve">
+    <value>没有 {0} 选择 ！请选择 {1} 显示计划。</value>
+  </data>
+	<data name="PlanningGrid_Available" xml:space="preserve">
+    <value>可用</value>
+  </data>
+	<data name="PlanningGrid_ItemsDirectlyAssociated" xml:space="preserve">
+    <value>直接关联的 {0} 元件</value>
+  </data>
+	<data name="PlanningGrid_Remaining" xml:space="preserve">
+    <value>剩余</value>
+  </data>
+	<data name="PlanningGrid_Utilized" xml:space="preserve">
+    <value>使用</value>
+  </data>
+	<data name="DropDownHierarchy_NavigateToArtifact" xml:space="preserve">
+    <value>导航到工件</value>
+  </data>
+	<data name="RichTextBox_AddImage" xml:space="preserve">
+    <value>添加图像</value>
+  </data>
+	<data name="RichTextBox_AlignLeft" xml:space="preserve">
+    <value>靠左对齐</value>
+  </data>
+	<data name="RichTextBox_AlignRight" xml:space="preserve">
+    <value>靠右对齐</value>
+  </data>
+	<data name="RichTextBox_BackgroundColor" xml:space="preserve">
+    <value>背景颜色</value>
+  </data>
+	<data name="RichTextBox_Bold" xml:space="preserve">
+    <value>粗体</value>
+  </data>
+	<data name="RichTextBox_Center" xml:space="preserve">
+    <value>居中</value>
+  </data>
+	<data name="RichTextBox_EnterImageUrl" xml:space="preserve">
+    <value>输入图像的 URL：</value>
+  </data>
+	<data name="RichTextBox_EnterUrl" xml:space="preserve">
+    <value>输入URL：</value>
+  </data>
+	<data name="RichTextBox_Font" xml:space="preserve">
+    <value>字体</value>
+  </data>
+	<data name="RichTextBox_FontDropDown" xml:space="preserve">
+    <value>-- 字体 --</value>
+  </data>
+	<data name="RichTextBox_HorizontalRule" xml:space="preserve">
+    <value>水平线规则</value>
+  </data>
+	<data name="RichTextBox_Indent" xml:space="preserve">
+    <value>缩排</value>
+  </data>
+	<data name="RichTextBox_InsertLink" xml:space="preserve">
+    <value>插入链接</value>
+  </data>
+	<data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>插入表格</value>
+  </data>
+	<data name="RichTextBox_Italic" xml:space="preserve">
+    <value>斜体</value>
+  </data>
+	<data name="RichTextBox_OrderedList" xml:space="preserve">
+    <value>有序列的表</value>
+  </data>
+	<data name="RichTextBox_Outdent" xml:space="preserve">
+    <value>凸排</value>
+  </data>
+	<data name="RichTextBox_Size" xml:space="preserve">
+    <value>大小</value>
+  </data>
+	<data name="RichTextBox_SizeDropDown" xml:space="preserve">
+    <value>-- 大小 --</value>
+  </data>
+	<data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>文本颜色</value>
+  </data>
+	<data name="RichTextBox_Underline" xml:space="preserve">
+    <value>下划线</value>
+  </data>
+	<data name="RichTextBox_UnorderedList" xml:space="preserve">
+    <value>无序列的表</value>
+  </data>
+	<data name="RichTextBox_ViewFullScreen" xml:space="preserve">
+    <value>看全屏视图</value>
+  </data>
+	<data name="RichTextBox_ViewHTMLSource" xml:space="preserve">
+    <value>看 HTML 原文</value>
+  </data>
+	<data name="Global_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+	<data name="Global_Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+	<data name="Global_Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+	<data name="MappingSelector_Add" xml:space="preserve">
+    <value>添加 〉</value>
+  </data>
+	<data name="MappingSelector_CollapseNode" xml:space="preserve">
+    <value>折叠节点</value>
+  </data>
+	<data name="MappingSelector_ExpandNode" xml:space="preserve">
+    <value>展开节点</value>
+  </data>
+	<data name="MappingSelector_NoItemsToRemove" xml:space="preserve">
+    <value>没有要移除的映射的元件！</value>
+  </data>
+	<data name="MappingSelector_Remove" xml:space="preserve">
+    <value>移除 &lt;</value>
+  </data>
+	<data name="MappingSelector_RemoveAll" xml:space="preserve">
+    <value>移除所有</value>
+  </data>
+	<data name="MappingSelector_SelectItemFromLeftHandBox" xml:space="preserve">
+    <value>您需要先从左侧的框中选择至少一个元件</value>
+  </data>
+	<data name="MappingSelector_SelectItemFromRightHandBox" xml:space="preserve">
+    <value>您需要先从右框中选择至少一个元件</value>
+  </data>
+	<data name="TestCaseSelector_TestCaseCreatedFromRequirement" xml:space="preserve">
+    <value>新的测试用例已成功按要求创建。</value>
+  </data>
+	<data name="TestCaseSelector_TestSetCreatedFromRelease" xml:space="preserve">
+    <value>新的测试仪已成功按照这一版本创建。</value>
+  </data>
+	<data name="Incidents_SuccessfullyCreatedRequirements" xml:space="preserve">
+    <value>从事件成功地创建需求</value>
+  </data>
+	<data name="Global_Uploading" xml:space="preserve">
+    <value>上传...</value>
+  </data>
+	<data name="ArtifactLinkPanel_IncidentIdNotValid" xml:space="preserve">
+    <value>您需要输入一个整数值到事件的ID</value>
+  </data>
+	<data name="ArtifactLinkPanel_InvalidArtifactType" xml:space="preserve">
+    <value>无效的工件类型选择 ！</value>
+  </data>
+	<data name="ArtifactLinkPanel_NeedToSelectOneArtifact" xml:space="preserve">
+    <value>您需要选择要关联的至少一个工件！</value>
+  </data>
+	<data name="ArtifactLinkPanel_RequirementIdNotValid" xml:space="preserve">
+    <value>您需要输入一个整数到所需的ID</value>
+  </data>
+	<data name="ArtifactLinkPanel_TestStepIdNotValid" xml:space="preserve">
+    <value>您需要输入一个整数到测试步骤的ID</value>
+  </data>
+	<data name="Global_Loading" xml:space="preserve">
+    <value>正在加载...</value>
+  </data>
+	<data name="HierarchicalSelector_CollapseNode" xml:space="preserve">
+    <value>折叠节点</value>
+  </data>
+	<data name="HierarchicalSelector_ExpandNode" xml:space="preserve">
+    <value>展开节点</value>
+  </data>
+	<data name="NavigationBar_AllItems" xml:space="preserve">
+    <value>所有元件</value>
+  </data>
+	<data name="NavigationBar_Assigned" xml:space="preserve">
+    <value>分配</value>
+  </data>
+	<data name="NavigationBar_CurrentFilter" xml:space="preserve">
+    <value>当前筛选器</value>
+  </data>
+	<data name="NavigationBar_Display" xml:space="preserve">
+    <value>显示：</value>
+  </data>
+	<data name="NavigationBar_Maximize" xml:space="preserve">
+    <value>最大化</value>
+  </data>
+	<data name="NavigationBar_Minimize" xml:space="preserve">
+    <value>最小化</value>
+  </data>
+	<data name="Global_ClipboardNotSupported" xml:space="preserve">
+    <value>您的浏览器不支持剪贴板访问 ！</value>
+  </data>
+	<data name="TestCaseDetails_CannotLinkToParent" xml:space="preserve">
+    <value>您不能链接到一个已链接到当前的测试用例</value>
+  </data>
+	<data name="TestCaseDetails_CannotLinkToSelf" xml:space="preserve">
+    <value>您不能链接到你自己 ！</value>
+  </data>
+	<data name="TestCaseDetails_NewParameterSuccess" xml:space="preserve">
+    <value>添加了新的测试用例参数。</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameInvalid" xml:space="preserve">
+    <value>不能在参数名中使用单引号、 空间或反斜线。</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameInvalid2" xml:space="preserve">
+    <value>不能在参数名中使用花括号或美元符号</value>
+  </data>
+	<data name="TestCaseDetails_ParameterNameRequired" xml:space="preserve">
+    <value>您需要给新的测试用例参数提供名称。</value>
+  </data>
+	<data name="TestCaseDetails_SelectTestCaseFirst" xml:space="preserve">
+    <value>您需要先选择一个测试用例。</value>
+  </data>
+	<data name="ReleaseSelector_RequirementCreatedFromTestCase" xml:space="preserve">
+    <value>从这个测试用例成功创建了新的需求。</value>
+  </data>
+	<data name="TestCaseExecution_Release" xml:space="preserve">
+    <value>发行</value>
+  </data>
+	<data name="TestCaseExecution_TestRunReadOnly" xml:space="preserve">
+    <value>因被分配，该测试运行仅为只读。</value>
+  </data>
+	<data name="Documents_ExportDocuments" xml:space="preserve">
+    <value>导出文件</value>
+  </data>
+	<data name="JqPlot_DisplayDataGrid" xml:space="preserve">
+    <value>显示数据网格</value>
+  </data>
+	<data name="JqPlot_ResetZoom" xml:space="preserve">
+    <value>重置显示比例</value>
+  </data>
+	<data name="JqPlot_DownloadData" xml:space="preserve">
+    <value>下载数据为 CSV</value>
+  </data>
+	<data name="JqPlot_SaveAs" xml:space="preserve">
+    <value>另存为：</value>
+  </data>
+	<data name="TestCases_BlockSucceeded" xml:space="preserve">
+    <value>测试用例成功阻止</value>
+  </data>
+	<data name="TestCases_UnBlockSucceeded" xml:space="preserve">
+    <value>已成功取消阻止测试用例</value>
+  </data>
+	<data name="Global_EstimatedEffort" xml:space="preserve">
+    <value>预计的付出</value>
+  </data>
+	<data name="Global_Owner" xml:space="preserve">
+    <value>拥有者</value>
+  </data>
+	<data name="Global_ProjectedEffort" xml:space="preserve">
+    <value>预计的付出</value>
+  </data>
+	<data name="PlanningBoard_UnassignedItems" xml:space="preserve">
+    <value>未分配的元件</value>
+  </data>
+	<data name="Global_Multiple" xml:space="preserve">
+    <value>多个</value>
+  </data>
+	<data name="PlanningBoard_Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+	<data name="PlanningBoard_View" xml:space="preserve">
+    <value>看</value>
+  </data>
+	<data name="BackgroundProcessManager_StartingProcess" xml:space="preserve">
+    <value>启动过程...</value>
+  </data>
+	<data name="Administration_CopyProjectConfirm" xml:space="preserve">
+    <value>是否确实要制造这一项目的副本?</value>
+  </data>
+	<data name="Administration_CopyProjectDialogText" xml:space="preserve">
+    <value>正在制造选定项目的副本, 请稍候...</value>
+  </data>
+	<data name="Administration_CopyProjectDialogTitle" xml:space="preserve">
+    <value>复制项目</value>
+  </data>
+	<data name="Administration_DeleteProjectConfirm" xml:space="preserve">
+    <value>确实要删除此项目吗？这不能撤消。</value>
+  </data>
+	<data name="Administration_DeleteProjectDialogText" xml:space="preserve">
+    <value>正在删除选定的项目中. 请稍候...</value>
+  </data>
+	<data name="Administration_DeleteProjectDialogTitle" xml:space="preserve">
+    <value>删除项目</value>
+  </data>
+	<data name="Global_Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+	<data name="NavigationBar_Detected" xml:space="preserve">
+    <value>检测到</value>
+  </data>
+	<data name="NavigationBar_ForRelease" xml:space="preserve">
+    <value>供发行</value>
+  </data>
+	<data name="NavigationBar_ForTestCase" xml:space="preserve">
+    <value>为测试用例</value>
+  </data>
+	<data name="NavigationBar_ForTestSet" xml:space="preserve">
+    <value>为测试仪</value>
+  </data>
+	<data name="TestCaseList_ExecuteTestCase" xml:space="preserve">
+    <value>执行测试用例</value>
+  </data>
+	<data name="TestCaseList_ExecuteTestCaseDesc" xml:space="preserve">
+    <value>为此测试用例创建测试性运行。请稍候…</value>
+  </data>
+	<data name="BackgroundProcessManager_ProcessCompleted" xml:space="preserve">
+    <value>过程成功地完成</value>
+  </data>
+	<data name="TestSetList_ExecuteTestSet" xml:space="preserve">
+    <value>执行测试仪</value>
+  </data>
+	<data name="TestSetList_ExecuteTestSetDesc" xml:space="preserve">
+    <value>为此测试仪创建测试性运行。请稍候…</value>
+  </data>
+	<data name="AttachmentPanel_NeedToSelectOneDocument" xml:space="preserve">
+    <value>您需要选择要关联的至少一个文件！</value>
+  </data>
+	<data name="AttachmentPanel_NeedToSelectOneFile" xml:space="preserve">
+    <value>您需要选择要关联的至少一个文档 ！</value>
+  </data>
+	<data name="TestSetList_SelectSingleTestSet" xml:space="preserve">
+    <value>您需要选择单个测试仪来执行 ！</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTestCases" xml:space="preserve">
+    <value>在测试仪中执行测试用例</value>
+  </data>
+	<data name="TestSetDetails_ExecuteTestCasesDesc" xml:space="preserve">
+    <value>为选定测试用例创建测试性运行。请稍候…</value>
+  </data>
+	<data name="Admin_CustomPropertyOptions_Header" xml:space="preserve">自定义属性#{0}定义</data><data name="Admin_CustomProp_FieldError_BadDate" xml:space="preserve">输入日期无效</data><data name="Admin_CustomProp_FieldError_ListEmpty" xml:space="preserve">请选择一个自定义列表</data><data name="Admin_CustomProp_FieldError_MinHigherMax" xml:space="preserve">最小值不能高于最大值</data><data name="Admin_CustomProp_FieldError_MultipleErrors" xml:space="preserve">存在多个错误.\请查看高亮显示区域</data><data name="Admin_CustomProp_FieldError_NameEmpty" xml:space="preserve">名称不能为空</data><data name="Admin_CustomProp_FieldError_NameUsed" xml:space="preserve">该字段已被使用</data><data name="Admin_CustomProp_FieldError_NaN" xml:space="preserve">请输入数字</data><data name="Admin_CustomProp_FieldError_NumLessZero" xml:space="preserve">数字不能小于0</data><data name="Admin_CustomProp_FieldError_TypeEmpty" xml:space="preserve">请选择类型</data><data name="Global_ClearFilters" xml:space="preserve">清空筛选器</data><data name="Global_FilteringBy" xml:space="preserve">按 {0}排序筛选结果</data><data name="DropDownList_Multiple" xml:space="preserve">(多个)</data><data name="WorkflowOperations_NoOperationsAvailable" xml:space="preserve">没有可用的操作</data><data name="WorkflowOperations_SaveChangesFirst" xml:space="preserve">请先保存更改</data><data name="CommentList_Legend" xml:space="preserve">显示注释</data><data name="CommentList_NewestFirst" xml:space="preserve">最新评论在上</data><data name="CommentList_OldestFirst" xml:space="preserve">最新评论在下</data><data name="CommentList_ConfirmDelete" xml:space="preserve">确认删除此条注释吗，此操作不可撤销</data><data name="AjaxFormManager_ConfirmRefresh" xml:space="preserve">继续刷新会导致丢失您现在未保存的更改，确认继续？</data><data name="AjaxFormManager_ConfirmUnload" xml:space="preserve">继续浏览其它网页会导致丢失您现在未保存的更改，确认继续？</data><data name="AjaxFormManager_SaveSuccess" xml:space="preserve">成功保存更改到{0}</data><data name="TestRunDetails_IncidentList" xml:space="preserve">测试运行相关的时间列表</data><data name="ReportViewer_GeneratingReport" xml:space="preserve">报告查看者</data><data name="ReportViewer_GeneratingReportDesc" xml:space="preserve">请稍候，正在生成报告。。</data><data name="ReportDetails_NeedToSpecifyCustomQuery" xml:space="preserve">请在查看结果前输入查询条件</data><data name="Global_Customize" xml:space="preserve">自定义</data><data name="Global_Delete" xml:space="preserve">删除项目</data><data name="ReportDetails_NameRequired" xml:space="preserve">请输入报告的名称</data><data name="Admin_DataTools_Processing" xml:space="preserve">数据整理:</data><data name="Admin_DataTools_Title" xml:space="preserve">数据处理工具</data><data name="Admin_History_Processing" xml:space="preserve">清除已删除的记录。。</data><data name="Admin_History_Title" xml:space="preserve">项目记录</data><data name="NavigationBar_NotAuthorizedToView" xml:space="preserve">您没有此授权</data><data name="AjaxFormManager_NotAuthorizedToModify" xml:space="preserve">您没有权限更改此项</data><data name="Global_Remove" xml:space="preserve">移除</data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve">从版本中移除</data><data name="TestCaseList_SelectReleaseToRemove" xml:space="preserve">请选择你想移除的版本:</data><data name="Admin_CustomPropertyOptions_Header" xml:space="preserve"><value>自定义属性#{0}定义</value></data><data name="Admin_CustomProp_FieldError_BadDate" xml:space="preserve"><value>输入日期无效</value></data><data name="Admin_CustomProp_FieldError_ListEmpty" xml:space="preserve"><value>请选择一个自定义列表</value></data><data name="Admin_CustomProp_FieldError_MinHigherMax" xml:space="preserve"><value>最小值不能高于最大值</value></data><data name="Admin_CustomProp_FieldError_MultipleErrors" xml:space="preserve"><value>存在多个错误.\请查看高亮显示区域</value></data><data name="Admin_CustomProp_FieldError_NameEmpty" xml:space="preserve"><value>名称不能为空</value></data><data name="Admin_CustomProp_FieldError_NameUsed" xml:space="preserve"><value>该字段已被使用</value></data><data name="Admin_CustomProp_FieldError_NaN" xml:space="preserve"><value>请输入数字</value></data><data name="Admin_CustomProp_FieldError_NumLessZero" xml:space="preserve"><value>数字不能小于0</value></data><data name="Admin_CustomProp_FieldError_TypeEmpty" xml:space="preserve"><value>请选择类型</value></data><data name="Global_ClearFilters" xml:space="preserve"><value>清空筛选器</value></data><data name="Global_FilteringBy" xml:space="preserve"><value>按 {0}排序筛选结果</value></data><data name="DropDownList_Multiple" xml:space="preserve"><value>(多个)</value></data><data name="WorkflowOperations_NoOperationsAvailable" xml:space="preserve"><value>没有可用的操作</value></data><data name="WorkflowOperations_SaveChangesFirst" xml:space="preserve"><value>请先保存更改</value></data><data name="CommentList_Legend" xml:space="preserve"><value>显示注释</value></data><data name="CommentList_NewestFirst" xml:space="preserve"><value>最新评论在上</value></data><data name="CommentList_OldestFirst" xml:space="preserve"><value>最新评论在下</value></data><data name="CommentList_ConfirmDelete" xml:space="preserve"><value>确认删除此条注释吗，此操作不可撤销</value></data><data name="AjaxFormManager_ConfirmRefresh" xml:space="preserve"><value>继续刷新会导致丢失您现在未保存的更改，确认继续？</value></data><data name="AjaxFormManager_ConfirmUnload" xml:space="preserve"><value>继续浏览其它网页会导致丢失您现在未保存的更改，确认继续？</value></data><data name="AjaxFormManager_SaveSuccess" xml:space="preserve"><value>成功保存更改到{0}</value></data><data name="TestRunDetails_IncidentList" xml:space="preserve"><value>测试运行相关的时间列表</value></data><data name="ReportViewer_GeneratingReport" xml:space="preserve"><value>报告查看者</value></data><data name="ReportViewer_GeneratingReportDesc" xml:space="preserve"><value>请稍候，正在生成报告。。</value></data><data name="ReportDetails_NeedToSpecifyCustomQuery" xml:space="preserve"><value>请在查看结果前输入查询条件</value></data><data name="Global_Customize" xml:space="preserve"><value>自定义</value></data><data name="Global_Delete" xml:space="preserve"><value>删除项目</value></data><data name="ReportDetails_NameRequired" xml:space="preserve"><value>请输入报告的名称</value></data><data name="Admin_DataTools_Processing" xml:space="preserve"><value>数据整理:</value></data><data name="Admin_DataTools_Title" xml:space="preserve"><value>数据处理工具</value></data><data name="Admin_History_Processing" xml:space="preserve"><value>清除已删除的记录。。</value></data><data name="Admin_History_Title" xml:space="preserve"><value>项目记录</value></data><data name="NavigationBar_NotAuthorizedToView" xml:space="preserve"><value>您没有此授权</value></data><data name="AjaxFormManager_NotAuthorizedToModify" xml:space="preserve"><value>您没有权限更改此项</value></data><data name="Global_Remove" xml:space="preserve"><value>移除</value></data><data name="TestCaseList_RemoveFromRelease" xml:space="preserve"><value>从版本中移除</value></data><data name="TestCaseList_SelectReleaseToRemove" xml:space="preserve"><value>请选择你想移除的版本:</value></data></root>

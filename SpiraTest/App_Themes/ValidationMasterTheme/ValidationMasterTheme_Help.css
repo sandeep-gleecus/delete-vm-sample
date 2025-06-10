@@ -1,0 +1,279 @@
+﻿/* Text Styles */
+body
+{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+hr { color: #000000}
+A, A:visited
+{
+    color: #f26722;
+}
+A:hover
+{
+    color: #f2b272;
+}
+
+.section-full-height
+{
+    height: calc(100vh - 150px);
+    min-height: calc(100vh - 150px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.section-full-height2
+{
+    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.header
+{
+    height: 40px;
+    margin-bottom: 10px;
+}
+.header h1
+{
+    margin-top: 10px;
+}
+.footer
+{
+    padding-top: 10px;
+    height: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-size: small;
+    color: #777;
+}
+.no-padding-right
+{
+    padding-right: 0px;
+}
+.no-padding-both
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+ul.nav-tabs li
+{
+    font-size: 18px;
+}
+.tab-pane
+{
+    padding-top: 10px;
+}
+
+/* Help Index */
+
+.help-index ul
+{
+    padding-left: 20px;
+}
+.help-index ul li a
+{
+    text-decoration: none;
+    color: #333;
+}
+.help-index ul li a:hover
+{
+    text-decoration: underline;
+    color: #f26722;
+}
+.help-index ul li a.matched
+{
+    background-color: yellow;
+}
+.help-index ul li b.matched
+{
+    background-color: yellow;
+}
+
+.tree ul
+{
+    list-style: none outside none;
+    padding-left: 15px;
+}
+.tree ul li
+{
+    line-height: 22px;
+    padding-left: 12px;
+}
+.tree ul li:before
+{
+    font-family: "Font Awesome 5 Pro"; font-weight: 900;
+    content: '\f0f6  ';
+    color: #777;
+}
+.tree ul li.parent
+{
+    font-weight: bold;
+    background-image: url(../Images/ExpandedY.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+    cursor: pointer;
+}
+.tree ul li.parent:before
+{
+    font-family: "Font Awesome 5 Pro"; font-weight: 900;
+    content: '\f02d  ';
+    color: #777;
+}
+.tree ul li.collapsed
+{
+    background-image: url(../Images/ExpandedN.gif);
+}
+.tree ul li a
+{
+    color: #333;
+    text-decoration: none;
+}
+.tree ul li a:hover
+{
+    color: #f26722;
+    text-decoration: underline;
+}
+
+/* TOC Tree */
+@media(max-width:767px)
+{
+    .tree
+    {
+        margin-left:0px;
+    }
+    .tree > ul
+    {
+        padding-left:0px;
+    }
+}
+
+/* XML Based Help Files */
+
+body.xml-help p.Heading1  /* Heading1 */
+{
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+body.xml-help p.Heading2 /* Heading2 */
+{
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+body.xml-help p.Heading3 /* Heading3 */
+{
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body.xml-help .table-of-contents a:link,
+body.xml-help .table-of-contents a:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+body.xml-help .table-of-contents a:hover,
+body.xml-help .table-of-contents a:active
+{
+    color: #f26722;
+    text-decoration: underline;
+}
+
+body.xml-help .table-of-contents img.toggle
+{
+    cursor: pointer;
+}
+
+body.xml-help .table-of-contents .Heading1
+{
+	margin-left: 0px;
+    white-space: nowrap;
+}
+body.xml-help .table-of-contents .Heading1 a:before
+{
+    font-family: "Font Awesome 5 Pro"; font-weight: 900;
+    content: '\f02d';
+    color: #777;
+}
+
+body.xml-help .table-of-contents .Heading2
+{
+	margin-left: 15px;
+    white-space: nowrap;
+}
+body.xml-help .table-of-contents .Heading2 a:before
+{
+    font-family: "Font Awesome 5 Pro"; font-weight: 900;
+    content: '\f02d  ';
+    color: #777;
+}
+
+body.xml-help .table-of-contents .Heading3
+{
+	margin-left: 30px;
+    white-space: nowrap;
+}
+body.xml-help .table-of-contents .Heading3 a:before
+{
+    font-family: "Font Awesome 5 Pro"; font-weight: 500;
+    content: '\f15c';
+    color: #777;
+}
+body.xml-help .table-of-contents span.highlighted
+{
+    border: 1px solid #f26722;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 1px #f26722;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+body.xml-help .help-index div.section
+{
+    display: block !important;
+}
+body.xml-help .help-index img[data-help-section]
+{
+    display: none;
+}
+body.xml-help .help-index span
+{
+    display: none;
+}
+body.xml-help .help-index br
+{
+    display: none;
+}
+body.xml-help .help-index span.matched
+{
+    display: block;
+}
+body.xml-help .help-index a:link,
+body.xml-help .help-index a:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+body.xml-help .help-index a:hover,
+body.xml-help .help-index a:active
+{
+    color: #f26722;
+    text-decoration: underline;
+}
+
+body.xml-help .alert-narrow
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="CatalogZone_AddRemoveItems" xml:space="preserve">
+    <value>新增/除除項目</value>
+  </data>
+	<data name="CatalogZone_AddVerbDescription" xml:space="preserve">
+    <value>在儀表板中新增一個小工具</value>
+  </data>
+	<data name="CatalogZone_CloseVerbDescription" xml:space="preserve">
+    <value>關閉對話框</value>
+  </data>
+	<data name="CatalogZone_InstructionText" xml:space="preserve">
+    <value>選擇於新增的項目：</value>
+  </data>
+	<data name="EditorZone_ApplyVerbDescription" xml:space="preserve">
+    <value>應用更改</value>
+  </data>
+	<data name="EditorZone_CancelVerbDescription" xml:space="preserve">
+    <value>取消更改並關閉編輯器</value>
+  </data>
+	<data name="EditorZone_CloseVerbDescription" xml:space="preserve">
+    <value>取消更改並關閉編輯器</value>
+  </data>
+	<data name="EditorZone_DashboardSettings" xml:space="preserve">
+    <value>儀表板設定</value>
+  </data>
+	<data name="EditorZone_InstructionText" xml:space="preserve">
+    <value>修改小工具屬性，按下「確定」或「應用」來應用您的修改</value>
+  </data>
+	<data name="EditorZone_OKVerbDescription" xml:space="preserve">
+    <value>應用更改並關閉編輯器</value>
+  </data>
+	<data name="IncidentReleaseType_DetectedRelease" xml:space="preserve">
+    <value>在此版本中檢測到</value>
+  </data>
+	<data name="IncidentReleaseType_ResolvedRelease" xml:space="preserve">
+    <value>在此版本中已解決</value>
+  </data>
+	<data name="IncidentReleaseType_VerifiedRelease" xml:space="preserve">
+    <value>在此版本中已驗證</value>
+  </data>
+	<data name="RichTextBox_BorderThickness" xml:space="preserve">
+    <value>邊框粗度</value>
+  </data>
+	<data name="RichTextBox_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+	<data name="RichTextBox_CellPadding" xml:space="preserve">
+    <value>儲存格邊距</value>
+  </data>
+	<data name="RichTextBox_CellSpacing" xml:space="preserve">
+    <value>儲存格間距</value>
+  </data>
+	<data name="RichTextBox_Columns" xml:space="preserve">
+    <value>欄</value>
+  </data>
+	<data name="RichTextBox_InsertTable" xml:space="preserve">
+    <value>插入表格</value>
+  </data>
+	<data name="RichTextBox_Percent" xml:space="preserve">
+    <value>百分比</value>
+  </data>
+	<data name="RichTextBox_Pixels" xml:space="preserve">
+    <value>像素</value>
+  </data>
+	<data name="RichTextBox_Rows" xml:space="preserve">
+    <value>列</value>
+  </data>
+	<data name="RichTextBox_TableWidth" xml:space="preserve">
+    <value>表格寬度</value>
+  </data>
+	<data name="RichTextBox_TextColor" xml:space="preserve">
+    <value>文字顏色</value>
+  </data>
+	<data name="TabControl_Associations" xml:space="preserve">
+    <value>關聯</value>
+  </data>
+	<data name="TabControl_Attachments" xml:space="preserve">
+    <value>附件</value>
+  </data>
+	<data name="TabControl_Automation" xml:space="preserve">
+    <value>自動化</value>
+  </data>
+	<data name="TabControl_Comments" xml:space="preserve">
+    <value>說明</value>
+  </data>
+	<data name="TabControl_CustomProperties" xml:space="preserve">
+    <value>自訂屬性</value>
+  </data>
+	<data name="TabControl_History" xml:space="preserve">
+    <value>歷史</value>
+  </data>
+	<data name="TabControl_IncidentAssociations" xml:space="preserve">
+    <value>事件關聯</value>
+  </data>
+	<data name="TabControl_Incidents" xml:space="preserve">
+    <value>事件</value>
+  </data>
+	<data name="TabControl_Releases" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="TabControl_ReqCoverage" xml:space="preserve">
+    <value>需求涵蓋範圍</value>
+  </data>
+	<data name="TabControl_ReqsTasks" xml:space="preserve">
+    <value>需求和任務</value>
+  </data>
+	<data name="TabControl_Tasks" xml:space="preserve">
+    <value>任務</value>
+  </data>
+	<data name="TabControl_TestCases" xml:space="preserve">
+    <value>測試案例</value>
+  </data>
+	<data name="TabControl_TestCoverage" xml:space="preserve">
+    <value>測試涵蓋範圍</value>
+  </data>
+	<data name="TabControl_TestRuns" xml:space="preserve">
+    <value>測試執行</value>
+  </data>
+	<data name="TabControl_TestRunSteps" xml:space="preserve">
+    <value>測試執行步驟</value>
+  </data>
+	<data name="TabControl_TestSteps" xml:space="preserve">
+    <value>測試步驟</value>
+  </data>
+	<data name="WebPartChrome_ChangeSettings" xml:space="preserve">
+    <value>更改設定</value>
+  </data>
+	<data name="WebPartChrome_CloseWidget" xml:space="preserve">
+    <value>關閉小工具</value>
+  </data>
+	<data name="WebPartChrome_MinimizeWidget" xml:space="preserve">
+    <value>最小化小工具</value>
+  </data>
+	<data name="WebPartChrome_RestoreWidget" xml:space="preserve">
+    <value>還原小工具</value>
+  </data>
+	<data name="WebPartZone_LeftSide" xml:space="preserve">
+    <value>左側</value>
+  </data>
+	<data name="WebPartZone_RightSide" xml:space="preserve">
+    <value>右側</value>
+  </data>
+	<data name="TabControl_Schedule" xml:space="preserve">
+    <value>排程</value>
+  </data>
+	<data name="TabControl_TestSets" xml:space="preserve">
+    <value>測試集</value>
+  </data>
+	<data name="TabControl_Files" xml:space="preserve">
+    <value>文件</value>
+  </data>
+	<data name="TabControl_Revisions" xml:space="preserve">
+    <value>修訂版本</value>
+  </data>
+	<data name="TabControl_Versions" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="TagCloud_DefaultFormat" xml:space="preserve">
+    <value>%k 發生 %c 次</value>
+  </data>
+	<data name="TagCloud_Error" xml:space="preserve">
+    <value>錯誤產生雲</value>
+  </data>
+	<data name="TagCloud_NoValues" xml:space="preserve">
+    <value>無值產生雲</value>
+  </data>
+	<data name="WebPartZone_SideBar" xml:space="preserve">
+    <value>測欄</value>
+  </data>
+	<data name="WebPartZone_Top" xml:space="preserve">
+    <value>置頂</value>
+  </data>
+	<data name="PlanningBoard_Resource" xml:space="preserve">
+    <value>資源：</value>
+  </data>
+	<data name="TabControl_Builds" xml:space="preserve">
+    <value>建置</value>
+  </data>
+	<data name="CatalogZone_SelectTargetZoneText" xml:space="preserve"><value>新增至</value></data><data name="TabControl_Overview" xml:space="preserve"><value>概觀</value></data><data name="TabControl_Description" xml:space="preserve"><value>描述</value></data><data name="TabControl_Details" xml:space="preserve"><value>詳細資訊</value></data><data name="TimeExtender_SelectCurrentTime" xml:space="preserve"><value>按下選擇目前時間</value></data><data name="TabControl_Console" xml:space="preserve"><value>控制器輸出</value></data><data name="GridViewEx_SortByAscending" xml:space="preserve"><value>升冪排序</value></data><data name="GridViewEx_SortByDescending" xml:space="preserve"><value>降冪排序</value></data><data name="GridViewEx_SortByFieldAscending" xml:space="preserve"><value>依 {0} 升冪排序</value></data><data name="GridViewEx_SortByFieldDescending" xml:space="preserve"><value>依 {0} 降冪排序</value></data><data name="TabControl_ProjectList" xml:space="preserve"><value>專案列表</value></data><data name="TabControl_UserMembership" xml:space="preserve"><value>使用者成員</value></data><data name="TabControl_ChangeActions" xml:space="preserve"><value>更改動作</value></data><data name="TabControl_Scenario" xml:space="preserve"><value>情境</value></data><data name="PlanningBoard_ByComponent" xml:space="preserve"><value>依模組</value></data><data name="PlanningBoard_ByIteration" xml:space="preserve"><value>依迭代</value></data><data name="PlanningBoard_ByPackage" xml:space="preserve"><value>依套裝</value></data><data name="PlanningBoard_ByPerson" xml:space="preserve"><value>依人</value></data><data name="PlanningBoard_ByPriority" xml:space="preserve"><value>依優先度</value></data><data name="PlanningBoard_ByRelease" xml:space="preserve"><value>依版本</value></data><data name="PlanningBoard_TasksByPerson" xml:space="preserve"><value>任務依人</value></data><data name="PlanningBoard_ByStatus" xml:space="preserve"><value>依狀態</value></data><data name="TabControl_Preview" xml:space="preserve"><value>預覽</value></data><data name="TabControl_ExistingIncidents" xml:space="preserve"><value>已存在事件</value></data><data name="TabControl_NewIncident" xml:space="preserve"><value>新事件</value></data><data name="PlanningBoard_TasksByStatus" xml:space="preserve"><value>任務依狀態</value></data></root>

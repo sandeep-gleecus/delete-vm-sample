@@ -1,0 +1,36 @@
+
+function TestInit()
+{
+	//Input variables - allows SpiraTest to configure as parameters
+	//Provide backup values if not defined
+	if ('undefined' == typeof(g_book_name))
+	{
+		g_book_name = 'The Restaurant at the end of the Universe';
+	}
+	if ('undefined' == typeof(g_book_author))
+	{
+		g_book_author = 'Agatha Christie';
+	}
+	if ('undefined' == typeof(g_book_genre))
+	{
+		g_book_genre = 'Science Fiction';
+	}
+	
+	Tester.SetReportAttribute("Browser", g_browserLibrary);
+	KillBrowser();
+}
+
+
+//########## Script Steps ##############
+
+function Test()
+{
+	Login();
+	CreateBook(g_book_name, g_book_author, g_book_genre);
+	Logout();//========== Recorded at Saturday, September 10, 2011 8:29:30 AM: ======
+
+}
+
+g_load_libraries=["%g_browserLibrary:Internet Explorer HTML%"];
+
+

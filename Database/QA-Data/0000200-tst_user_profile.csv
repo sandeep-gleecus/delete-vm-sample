@@ -1,0 +1,17 @@
+user_id:Normal,LAST_OPENED_PROJECT_ID:Normal,first_name:String,middle_initial:String,last_name:String,is_admin:Normal,is_email_enabled:Normal,department:String,organization:String,last_update_date:Normal,timezone:String,avatar_image:String,is_busy:Normal,is_away:Normal,unread_messages:Normal,avatar_mime_type:String,LAST_OPENED_PROJECT_GROUP_ID:Normal,LAST_OPENED_PROJECT_TEMPLATE_ID:Normal,is_resource_admin:Normal,is_portfolio_admin:Normal,is_restricted:Normal
+36,NULL,Maximum,,Permission,0,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+37,NULL,Second,,Admin,1,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+38,NULL,Proj,,Owner,0,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+39,NULL,Testing1,,Non Admin,0,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+40,NULL,Testing1-admin,,Admin,1,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+41,NULL,Testing2,,Non Admin,0,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+42,NULL,Testing2-admin,,Admin,1,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+43,NULL,Testing3,,Non Admin,0,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+44,NULL,Testing3-admin,,Admin,1,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+45,NULL,Testing4,,Non Admin,0,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+46,NULL,Testing4-admin,,Admin,1,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+47,NULL,Testing5,,Non Admin,0,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+48,NULL,Testing5-admin,,Admin,1,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+49,NULL,Testing6,,Non Admin,0,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+50,NULL,Testing6-admin,,Admin,1,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0
+51,NULL,french-admin,,Admin,1,0,,,"DATEADD(minute, -1000, SYSUTCDATETIME())",NULL,NULL,0,0,0,NULL,NULL,NULL,0,0,0

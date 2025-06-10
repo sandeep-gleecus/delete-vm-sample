@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Inflectra.SpiraTest.Web.Services.v3_0.ImportExport" CodeBehind="ImportExport.svc.cs" Factory="Inflectra.SpiraTest.Web.Services.Wsdl.FlatWsdlServiceHostFactory" %>

@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      <!--REPORT-TITLE-->
+    </title>
+    <style type="text/css">
+      /* Reports Styles */
+      body {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      background-color: #f5f5f5;
+      color: #333;
+      font-family: Helvetica, Arial, Sans-Serif;
+      font-weight: normal;
+      }
+
+      .Reports {
+      max-width: 960px;
+      margin: 1rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: .5rem;
+      overflow-x: auto;
+      }
+
+      p {
+      margin: .25rem 0;
+      }
+
+      table {
+      font-size: .8125rem;
+      border-collapse: collapse;
+      width: 100%;
+      }
+      .Spacer {
+      font-size: 1pt;
+      height: .5rem;
+      }
+
+      .Title1, .Title2, .Title3, .Title4 {
+      color: #777;
+      font-weight: bold;
+      text-align: left;
+      }
+      .Title1
+      {
+      color: #999;
+      font-size: 1.75rem;
+      margin: 1rem 0;
+      }
+      .Title2
+      {
+      font-size: 1.5rem;
+      margin-top: 4rem;
+      padding-top: 1rem;
+      border-top: 4px solid #bbb;
+      }
+      .Title3
+      {
+      font-size: 1.1rem;
+      margin: 1rem 0;
+      }
+      .Title4
+      {
+      font-size: 1rem;
+      margin: 1rem 0;
+      }
+
+
+      .HiddenTable
+      {
+      border: none;
+      margin: .5rem 0 2rem;
+      }
+      .HiddenTable TR
+      {
+      border: none;
+      }
+      .HiddenTable TD
+      {
+      border: none;
+      padding: .25rem;
+      width: 30%;
+      }
+      .HiddenTable TH
+      {
+      font-weight: bold;
+      text-align: left;
+      border: none;
+      padding: .25rem;
+      width: 20%;
+      }
+
+      .DataGrid {
+      margin: .5rem 0 2rem;
+      }
+      .DataGrid TD
+      {
+      padding: .25rem;
+      border-top: 1px solid Silver;
+      border-collapse: collapse;
+      }
+      .DataGrid TH
+      {
+      text-align: left;
+      padding: .25rem;
+      background-color: #e0e0e0;
+      white-space: nowrap;
+      font-weight: bold;
+      border-collapse: collapse;
+      }
+      img 
+      { 
+      max-width: 90% !important; 
+      height: auto !important;
+      }
+      .DataGrid TD img 
+      { 
+      max-width: 200px !important; 
+      }
+
+
+      .ItalicRow TD { font-style: italic; }
+      .BoldRow TD { font-weight: bold; }
+      .SmallRow TD { font-size: 12px; }
+      .SmallItalicRow TD { font-size: 12px; font-style: italic; }
+
+      @media print {
+      .Reports {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" onclick="window.print()" style="padding: .5rem; font-size: 12px;">Print Report</a>
+    <div class="Reports">
+      <div class="Title1">
+        <!--REPORT-TITLE-->
+      </div>
+      <!--REPORT-BODY-->
+    </div>
+  </body>
+</html>

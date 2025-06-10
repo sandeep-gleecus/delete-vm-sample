@@ -1,0 +1,431 @@
+/***************************************************************
+**	Insert script for table TST_PROJECT_COLLECTION
+***************************************************************/
+SET IDENTITY_INSERT TST_PROJECT_COLLECTION ON; 
+
+INSERT INTO TST_PROJECT_COLLECTION
+(
+PROJECT_COLLECTION_ID, NAME, ACTIVE_YN
+)
+VALUES
+(
+1, 'IncidentSortExpression', 'Y'
+),
+(
+2, 'IncidentFiltersList', 'Y'
+),
+(
+3, 'IncidentPaginationSize', 'Y'
+),
+(
+4, 'RequirementFiltersList', 'Y'
+),
+(
+5, 'TestCaseFiltersList', 'Y'
+),
+(
+6, 'ReleaseFiltersList', 'Y'
+),
+(
+7, 'TestCaseSelectedRelease', 'N'
+),
+(
+8, 'ProjectHome.ProjectOverview', 'N'
+),
+(
+9, 'ProjectHome.RequirementsSummary', 'N'
+),
+(
+10, 'ProjectHome.RequirementsCoverage', 'N'
+),
+(
+11, 'ProjectHome.RequirementIncidentCount', 'N'
+),
+(
+12, 'ProjectHome.OpenIssues', 'N'
+),
+(
+13, 'ProjectHome.OpenRisks', 'N'
+),
+(
+14, 'ProjectHome.IncidentSummary', 'N'
+),
+(
+15, 'ProjectHome.TestExecutionStatus', 'N'
+),
+(
+16, 'TestSetFiltersList', 'Y'
+),
+(
+17, 'ProjectHome.ReleaseTestSummary', 'N'
+),
+(
+18, 'TaskSortExpression', 'Y'
+),
+(
+19, 'TaskFiltersList', 'Y'
+),
+(
+20, 'TaskPaginationSize', 'Y'
+),
+(
+21, 'ProjectHome.TasksLateStarting', 'N'
+),
+(
+22, 'ProjectHome.TasksLateFinishing', 'N'
+),
+(
+23, 'ProjectHome.ReleaseTaskProgress', 'N'
+),
+(
+24, 'IterationPlan.SelectedRelease', 'Y'
+),
+(
+25, 'RequirementsList.Pagination', 'Y'
+),
+(
+26, 'TestCaseList.Pagination', 'Y'
+),
+(
+27, 'ReleaseList.Pagination', 'Y'
+),
+(
+28, 'TestSetList.Pagination', 'Y'
+),
+(
+29, 'DocumentList.GeneralSettings', 'Y'
+),
+(
+30, 'DocumentList.Filters', 'Y'
+),
+(
+31, 'Resources.Filters', 'Y'
+),
+(
+32, 'Resources.GeneralSettings', 'Y'
+),
+(
+33, 'ProjectHome.GeneralSettings', 'Y'
+),
+(
+34, 'TestRunList.SortExpression', 'Y'
+),
+(
+35, 'TestRunList.Filters', 'Y'
+),
+(
+36, 'TestRunList.Pagination', 'Y'
+),
+(
+37, 'ArtifactLinks.Filters', 'Y'
+),
+(
+38, 'ArtifactLinks.Pagination', 'Y'
+),
+(
+39, 'ArtifactLinks.SortExpression', 'Y'
+),
+(
+40, 'TestCaseDetails.TestSteps.Pagination', 'Y'
+),
+(
+41, 'TestSetDetails.TestCases.Pagination', 'Y'
+),
+(
+42, 'AutomationHosts.SortExpression', 'Y'
+),
+(
+43, 'AutomationHosts.Filters', 'Y'
+),
+(
+44, 'AutomationHosts.Pagination', 'Y'
+),
+(
+45, 'RequirementsTaskList.Pagination', 'Y'
+),
+(
+46, 'RequirementsTaskList.Filters', 'Y'
+),
+(
+47, 'History.SortExpression', 'Y'
+),
+(
+48, 'History.Filters', 'Y'
+),
+(
+49, 'History.Pagination', 'Y'
+),
+(
+50, 'RequirementsList.GeneralSettings', 'Y'
+),
+(
+51, 'ReleaseList.GeneralSettings', 'Y'
+),
+(
+52, 'TestCaseList.GeneralSettings', 'Y'
+),
+(
+53, 'TestSetList.GeneralSettings', 'Y'
+),
+(
+54, 'History.AdminSetPagination', 'Y'
+),
+(
+55, 'History.AdminSetFilters', 'Y'
+),
+(
+56, 'PlanningBoard.CollapsedReleases', 'N'
+),
+(
+57, 'PlanningBoard.CollapsedResources', 'N'
+),
+(
+58, 'TestStepList.GeneralSettings', 'Y'
+),
+(
+59, 'SourceCodeList.GeneralSettings', 'Y'
+),
+(
+60, 'TestExecution.GeneralSettings', 'Y'
+),
+(
+61, 'Build.Filters', 'Y'
+),
+(
+62, 'Build.GeneralSettings', 'Y'
+),
+(
+63, 'Resources.ActionsSortExpression', 'Y'
+),
+(
+64, 'Resources.ActionFilters', 'Y'
+),
+(
+65, 'Reports.GeneralSettings', 'Y'
+),
+(
+66, 'History.AdminSetSortExpression', 'Y'
+),
+(
+67, 'RequirementStep.GeneralSettings', 'Y'
+),
+(
+68, 'RequirementStep.Filters', 'Y'
+),
+(
+69, 'Global.SidebarPanel', 'Y'
+),
+(
+70, 'Tasks.GeneralSettings', 'Y'
+),
+(
+71, 'RequirementTasks.ExpandedList', 'Y'
+),
+(
+72, 'SourceCodeList.CommitList.Filter', 'Y'
+),
+(
+73, 'SourceCodeList.FileList.Filter', 'Y'
+),
+(
+74, 'SourceCodeList.CommitList', 'Y'
+),
+(
+75, 'SourceCodeList.FileList', 'Y'
+),
+(
+76, 'PlanningBoard.ExpandedGroups', 'Y'
+),
+(
+77, 'TestSetDetails.TestCases.Columns', 'Y'
+),
+(
+78, 'AssociationsArtifact.Filters', 'Y'
+),
+(
+79, 'AssociationsTestCaseCoverage.Filters', 'Y'
+),
+(
+80, 'AssociationsRequirementCoverage.Filters', 'Y'
+),
+(
+81, 'AssociationsReleaseCoverage.Filters', 'Y'
+),
+(
+82, 'AssociationsArtifact.SortExpression', 'Y'
+),
+(
+83, 'AssociationsTestCaseCoverage.SortExpression', 'Y'
+),
+(
+84, 'AssociationsRequirementCoverage.SortExpression', 'Y'
+),
+(
+85, 'AssociationsReleaseCoverage.SortExpression', 'Y'
+),
+(
+86, 'RequirementDetails.Tasks.Filters', 'Y'
+),
+(
+87, 'RequirementDetails.Tasks.General', 'Y'
+),
+(
+88, 'TestCaseDetails.TestRuns.Filters', 'Y'
+),
+(
+89, 'TestCaseDetails.TestRuns.General', 'Y'
+),
+(
+90, 'TestSetDetails.TestRuns.Filters', 'Y'
+),
+(
+91, 'TestSetDetails.TestRuns.General', 'Y'
+),
+(
+92, 'TestCaseDetails.Incidents.Filters', 'Y'
+),
+(
+93, 'TestCaseDetails.Incidents.General', 'Y'
+),
+(
+94, 'TestSetDetails.Incidents.Filters', 'Y'
+),
+(
+95, 'TestSetDetails.Incidents.General', 'Y'
+),
+(
+96, 'TestRunDetails.Incidents.Filters', 'Y'
+),
+(
+97, 'TestRunDetails.Incidents.General', 'Y'
+),
+(
+98, 'TestConfigurationSets.Filters', 'Y'
+),
+(
+99, 'TestConfigurationSets.General', 'Y'
+),
+(
+100, 'TestConfigurations.Filters', 'Y'
+),
+(
+101, 'TestConfigurations.General', 'Y'
+),
+(
+102, 'ReleaseDetails.TestCases.Filters', 'Y'
+),
+(
+103, 'ReleaseDetails.TestCases.General', 'Y'
+),
+(
+104, 'Attachments.Associations.Filters', 'Y'
+),
+(
+105, 'Attachments.Associations.General', 'Y'
+),
+(
+106, 'TaskBoard.General', 'Y'
+),
+(
+107, 'TaskBoard.ExpandedGroups', 'Y'
+),
+(
+108, 'IncidentBoard.General', 'Y'
+),
+(
+109, 'IncidentBoard.ExpandedGroups', 'Y'
+),
+(
+110, 'RiskList.Filters', 'Y'
+),
+(
+111, 'RiskList.General', 'Y'
+),
+(
+112, 'RiskDetails.Tasks.Filters', 'Y'
+),
+(
+113, 'RiskDetails.Tasks.General', 'Y'
+),
+(
+114, 'Baseline.Filters', 'Y'
+),
+(
+115, 'Baseline.SortExpression', 'Y'
+),
+(
+116, 'Baseline.Pagination', 'Y'
+),
+(
+117, 'Admin.Baseline.Filters', 'Y'
+),
+(
+118, 'Admin.Baseline.SortExpression', 'Y'
+),
+(
+119, 'Admin.Baseline.Pagination', 'Y'
+),
+(
+120, 'Artifact.Baseline.Filters', 'Y'
+),
+(
+121, 'Artifact.Baseline.SortExpression', 'Y'
+),
+(
+122, 'Artifact.Baseline.Pagination', 'Y'
+),
+(
+123, 'PullRequests.Filters', 'Y'
+),
+(
+124, 'PullRequests.General', 'Y'
+),
+(
+125, 'BuildDetails.Commits.Filters', 'Y'
+),
+(
+126, 'BuildDetails.Commits.General', 'Y'
+),
+(
+127, 'SourceCodeFileDetails.Commits.Filters', 'Y'
+),
+(
+128, 'SourceCodeFileDetails.Commits.General', 'Y'
+),
+(
+129, 'PullRequest.Commits.Filters', 'Y'
+),
+(
+130, 'PullRequest.Commits.General', 'Y'
+),
+(
+131, 'RequirementsList.DocumentView', 'Y'
+),
+(132,	'AdminAudit.SortExpression',	'Y'),
+(133,	'AdminAudit.Filters',	'Y'),
+(134,	'AdminAudit.Pagination'	,'Y'),
+(135,	'AdminAudit.AdminSetPagination',	'Y'),
+(136,	'AdminAudit.AdminSetFilters',	'Y'),
+(137,	'AdminAudit.AdminSetSortExpression',	'Y'),
+(138,	'UserAudit.SortExpression',	'Y'),
+(139,	'UserAudit.Filters',	'Y'),
+(140,	'UserAudit.Pagination',	'Y'),
+(141,	'UserAudit.AdminSetPagination'	,'Y'),
+(142,	'UserAudit.AdminSetFilters',	'Y'),
+(143,	'UserAudit.AdminSetSortExpression',	'Y'),
+(144,	'Audit.SortExpression',	'Y'),
+(145,	'Audit.Filters',	'Y'),
+(146,	'Audit.Pagination',	'Y'),
+(147,	'Audit.AdminSetPagination',	'Y'),
+(148,	'Audit.AdminSetFilters',	'Y'),
+(149,	'Audit.AdminSetSortExpression',	'Y'),
+(150,	'History.OldAdminSetSortExpression',	'Y'),
+(151,	'History.OldAdminSetFilters',	'Y'),
+(152,	'History.OldAdminSetPagination',	'Y'),
+(153,	'History.OldAdminSetSortExpression',	'Y'),
+(154,	'History.OldAdminSetFilters',	'Y'),
+(155,	'History.OldAdminSetPagination',	'Y')
+GO
+
+SET IDENTITY_INSERT TST_PROJECT_COLLECTION OFF; 
+

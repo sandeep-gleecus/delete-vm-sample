@@ -1,0 +1,31 @@
+-- =============================================
+-- Author:			Inflectra Corporation
+-- Business Object: SourceCode
+-- Description:		Deletes the database part of the source code cache
+-- =============================================
+IF OBJECT_ID ( 'SOURCE_CODE_DELETE_PROJECT_CACHE', 'P' ) IS NOT NULL 
+    DROP PROCEDURE SOURCE_CODE_DELETE_PROJECT_CACHE;
+GO
+CREATE PROCEDURE SOURCE_CODE_DELETE_PROJECT_CACHE
+	@VersionControlSystemId INT,
+	@ProjectId INT
+AS
+BEGIN
+	SET NOCOUNT ON;
+	--Delete pull requests (both source and dest branches)
+	DELETE FROM TST_VERSION_CONTROL_PULL_REQUEST
+	WHERE SOURCE_BRANCH_ID IN
+		(SELECT BRANCH_ID FROM TST_SOURCE_CODE_COMMIT_BRANCH
+		WHERE VERSION_CONTROL_SYSTEM_ID = @VersionControlSystemId AND PROJECT_ID = @ProjectId);
+	DELETE FROM TST_VERSION_CONTROL_PULL_REQUEST
+	WHERE DEST_BRANCH_ID IN
+		(SELECT BRANCH_ID FROM TST_SOURCE_CODE_COMMIT_BRANCH
+		WHERE VERSION_CONTROL_SYSTEM_ID = @VersionControlSystemId AND PROJECT_ID = @ProjectId);			
+	
+	--Delete commits
+	DELETE FROM TST_SOURCE_CODE_COMMIT_BRANCH WHERE VERSION_CONTROL_SYSTEM_ID = @VersionControlSystemId AND PROJECT_ID = @ProjectId;
+	DELETE FROM TST_SOURCE_CODE_COMMIT WHERE VERSION_CONTROL_SYSTEM_ID = @VersionControlSystemId AND PROJECT_ID = @ProjectId;
+	--Delete branches
+    DELETE FROM TST_VERSION_CONTROL_BRANCH WHERE VERSION_CONTROL_SYSTEM_ID = @VersionControlSystemId AND PROJECT_ID = @ProjectId;
+END
+GO

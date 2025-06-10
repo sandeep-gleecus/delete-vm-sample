@@ -1,0 +1,194 @@
+/***************************************************************
+**	Insert script for table TST_INCIDENT
+***************************************************************/
+SET IDENTITY_INSERT TST_INCIDENT ON; 
+
+INSERT INTO TST_INCIDENT
+(
+INCIDENT_ID, PRIORITY_ID, SEVERITY_ID, PROJECT_ID, INCIDENT_STATUS_ID, INCIDENT_TYPE_ID, OPENER_ID, OWNER_ID, RESOLVED_BUILD_ID, NAME, DESCRIPTION, COMPONENT_IDS, DETECTED_RELEASE_ID, RESOLVED_RELEASE_ID, VERIFIED_RELEASE_ID, CREATION_DATE, START_DATE, CLOSED_DATE, COMPLETION_PERCENT, ESTIMATED_EFFORT, ACTUAL_EFFORT, PROJECTED_EFFORT, REMAINING_EFFORT, LAST_UPDATE_DATE, CONCURRENCY_DATE, IS_ATTACHMENTS
+)
+VALUES
+(
+1, NULL, NULL, 1, 1, 1, 2, NULL, NULL, 'Cannot log into the application', 'When trying to log into the application with a valid username and password, the system throws a fatal exception', NULL, 1, 2, 2, DATEADD(day, -21, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -4, SYSUTCDATETIME()), DATEADD(day, -4, SYSUTCDATETIME()), 1
+),
+(
+2, NULL, NULL, 1, 1, 1, 3, NULL, NULL, 'Not able to add new author', 'When I try and click on the button to add a new author the system simply displays the main screen and does nothing', '2', 1, 2, 2, DATEADD(day, -21, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -16, SYSUTCDATETIME()), DATEADD(day, -16, SYSUTCDATETIME()), 0
+),
+(
+3, NULL, NULL, 1, 1, 1, 2, NULL, 1, 'Clicking on link throws fatal error', 'When I click on the logout link, instead of logging out, I get an ASP session not valid error', NULL, 2, 3, 3, DATEADD(day, -63, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -33, SYSUTCDATETIME()), DATEADD(day, -33, SYSUTCDATETIME()), 0
+),
+(
+4, NULL, NULL, 1, 2, 2, 3, NULL, 1, 'Database not backing up correctly', 'When I backup the database and try to restore from the backup, the system tells me that the datafiles have become corrupted', '3', 2, 3, NULL, DATEADD(day, -60, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -55, SYSUTCDATETIME()), DATEADD(day, -117, SYSUTCDATETIME()), 0
+),
+(
+5, 1, 1, 1, 2, 2, 2, NULL, 2, 'Cannot install system on Oracle 9i', 'When I try and install the system on Oracle 9i, I get a TNSlistener not found error', NULL, 3, 4, 5, DATEADD(day, -21, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -15, SYSUTCDATETIME()), DATEADD(day, -97, SYSUTCDATETIME()), 0
+),
+(
+6, 3, 2, 1, 2, 2, 3, NULL, 2, 'The book listing screen doesn''t sort', 'When I click on the grid headings on the book listing screen, nothing happens', '1', 3, 4, NULL, DATEADD(day, -15, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -11, SYSUTCDATETIME()), DATEADD(day, -11, SYSUTCDATETIME()), 1
+),
+(
+7, 1, 3, 1, 3, 2, 3, 3, NULL, 'Cannot add a new book to the system', 'When I click on the button to add a book, enter the new information and click submit, I get a subscript out of range error', '1', 1, 2, 3, DATEADD(day, -17, SYSUTCDATETIME()), DATEADD(day, -17, SYSUTCDATETIME()), NULL, 25, 20, NULL, 20, 15, DATEADD(day, -17, SYSUTCDATETIME()), DATEADD(day, -124, SYSUTCDATETIME()), 1
+),
+(
+8, 2, 4, 1, 3, 2, 3, 2, NULL, 'Editing the date on a book is clunky', 'The data-validation on the date fields is too strict, and there is no help text indicating the format to use. Consider adding a calendar control', '1', 4, 5, 6, DATEADD(day, -8, SYSUTCDATETIME()), DATEADD(day, -8, SYSUTCDATETIME()), NULL, 50, 25, NULL, 25, 13, DATEADD(day, -8, SYSUTCDATETIME()), DATEADD(day, -65, SYSUTCDATETIME()), 1
+),
+(
+9, 3, 1, 1, 3, 2, 3, 3, 4, 'Editing the date on an author is clunky', 'The data-validation on the date fields is too strict, and there is no help text indicating the format to use. Consider adding a calendar control', '2', 4, 5, NULL, DATEADD(day, -10, SYSUTCDATETIME()), DATEADD(day, -10, SYSUTCDATETIME()), NULL, 75, 30, NULL, 30, 8, DATEADD(day, -10, SYSUTCDATETIME()), DATEADD(day, -54, SYSUTCDATETIME()), 0
+),
+(
+10, 4, 2, 1, 4, 2, 2, 2, 4, 'Doesn''t let me add a new category', 'Whan I try and add a new category, the system says that I have insuffient priviledges, even when I''m an administrator', '3', 5, NULL, NULL, DATEADD(day, -10, SYSUTCDATETIME()), DATEADD(day, -12, SYSUTCDATETIME()), NULL, 25, 40, NULL, 40, 30, DATEADD(day, -12, SYSUTCDATETIME()), DATEADD(day, -51, SYSUTCDATETIME()), 0
+),
+(
+11, 1, 3, 1, 4, 2, 2, 3, 5, 'Validation on the edit book page', 'The edit book page keeps throwing validation errors even where form filled out correctly', '1', 5, NULL, NULL, DATEADD(day, -12, SYSUTCDATETIME()), DATEADD(day, -14, SYSUTCDATETIME()), NULL, 50, 60, NULL, 60, 30, DATEADD(day, -14, SYSUTCDATETIME()), DATEADD(day, -48, SYSUTCDATETIME()), 0
+),
+(
+12, 2, 4, 1, 4, 2, 2, 2, 5, 'Quote handling issues throughout', 'Entering quotes into any text box throws a SQL error', '1,2', 6, NULL, NULL, DATEADD(day, -3, SYSUTCDATETIME()), DATEADD(day, -2, SYSUTCDATETIME()), NULL, 75, 75, NULL, 75, 19, DATEADD(day, -1, SYSUTCDATETIME()), DATEADD(day, -1, SYSUTCDATETIME()), 0
+),
+(
+13, 3, 1, 1, 5, 2, 3, 3, 5, 'The tables get cutoff on low-res modes', 'Displaying any of the datagrid tables on a 800x600 display results in the ends being cutoff, with no scroll bars to navigate', NULL, 6, NULL, NULL, DATEADD(day, -4, SYSUTCDATETIME()), DATEADD(day, -2, SYSUTCDATETIME()), DATEADD(day, -1, SYSUTCDATETIME()), 100, 20, 22, 20, 0, DATEADD(day, -1, SYSUTCDATETIME()), DATEADD(day, -1, SYSUTCDATETIME()), 0
+),
+(
+14, 4, 2, 1, 5, 2, 3, 2, 5, 'Permissions not updating when changed', 'When I update a user''s permissions and click the update button, the data is not being persisted', '3', NULL, NULL, NULL, DATEADD(day, -96, SYSUTCDATETIME()), DATEADD(day, -91, SYSUTCDATETIME()), DATEADD(day, -73, SYSUTCDATETIME()), 100, 25, 33, 25, 0, DATEADD(day, -73, SYSUTCDATETIME()), DATEADD(day, -73, SYSUTCDATETIME()), 0
+),
+(
+15, 1, 3, 1, 5, 2, 3, 3, NULL, 'Session handling', 'When I click logoff, my session is still open and I can navigate without logging back in again', NULL, NULL, NULL, NULL, DATEADD(day, -17, SYSUTCDATETIME()), DATEADD(day, -14, SYSUTCDATETIME()), DATEADD(day, -7, SYSUTCDATETIME()), 100, 30, 26, 30, 0, DATEADD(day, -7, SYSUTCDATETIME()), DATEADD(day, -7, SYSUTCDATETIME()), 0
+),
+(
+16, 2, 4, 1, 6, 2, 3, 2, NULL, 'The homepage hangs whilst loading', 'When I click on the homepage link, the browser just hangs and nothing is displayed', NULL, NULL, NULL, NULL, DATEADD(day, -117, SYSUTCDATETIME()), DATEADD(day, -100, SYSUTCDATETIME()), NULL, 25, 40, NULL, 40, 30, DATEADD(day, -74, SYSUTCDATETIME()), DATEADD(day, -74, SYSUTCDATETIME()), 0
+),
+(
+17, NULL, NULL, 1, 7, 2, 2, 2, 8, 'Cannot add a new book to the system', 'Duplicate', '1', NULL, NULL, NULL, DATEADD(day, -25, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -22, SYSUTCDATETIME()), DATEADD(day, -22, SYSUTCDATETIME()), 0
+),
+(
+18, NULL, NULL, 1, 2, 3, 3, NULL, 8, 'Ability to integrate with other systems', 'It would be great if we could integrate this system with the standard packages used for library financials and inventory management', NULL, NULL, NULL, NULL, DATEADD(day, -6, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -6, SYSUTCDATETIME()), DATEADD(day, -6, SYSUTCDATETIME()), 0
+),
+(
+19, 2, NULL, 1, 2, 3, 2, NULL, 8, 'Support for IBM DB2', 'The system only supports Oracle 9i+ and SQL Server 7.0+, would like to be able to use it with IBM DB2', NULL, NULL, NULL, NULL, DATEADD(day, -13, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -13, SYSUTCDATETIME()), DATEADD(day, -13, SYSUTCDATETIME()), 0
+),
+(
+20, NULL, NULL, 1, 2, 3, 3, NULL, NULL, 'Ability to remember passwords', 'The system doesn''t let users cache passwords in their browser using a session cookie', NULL, NULL, NULL, NULL, DATEADD(day, -123, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -118, SYSUTCDATETIME()), DATEADD(day, -118, SYSUTCDATETIME()), 0
+),
+(
+21, 1, 1, 1, 3, 3, 2, 2, 9, 'Ability to associate multiple authors', 'Would be nice if we could allow books to be associated with multiple authors rather than just the one - as at present', '1', NULL, NULL, NULL, DATEADD(day, -65, SYSUTCDATETIME()), DATEADD(day, -63, SYSUTCDATETIME()), NULL, 25, 20, 8, 23, 15, DATEADD(day, -63, SYSUTCDATETIME()), DATEADD(day, -63, SYSUTCDATETIME()), 0
+),
+(
+22, 2, NULL, 1, 3, 3, 3, 3, 9, 'Integration of security with NTLM/PKI', 'Instead of having to seprately manage logins and passwords in the system, would be great to be able to use existing Windows security groups and logins', NULL, NULL, NULL, NULL, DATEADD(day, -36, SYSUTCDATETIME()), DATEADD(day, -27, SYSUTCDATETIME()), NULL, 50, 25, 10, 23, 13, DATEADD(day, -26, SYSUTCDATETIME()), DATEADD(day, -26, SYSUTCDATETIME()), 0
+),
+(
+23, 3, 2, 1, 3, 3, 3, 2, 9, 'Ability to import data from excel', 'Can we have a way of allowing an excel user to import data easily into the system?', '3', NULL, NULL, NULL, DATEADD(day, -24, SYSUTCDATETIME()), DATEADD(day, -21, SYSUTCDATETIME()), NULL, 75, 30, 20, 28, 8, DATEADD(day, -19, SYSUTCDATETIME()), DATEADD(day, -19, SYSUTCDATETIME()), 0
+),
+(
+24, 4, 3, 1, 4, 3, 3, 3, NULL, 'Ability to use different color schemes', 'Can you provide a set of different color schemes/themes for the system that we can choose from', NULL, NULL, NULL, NULL, DATEADD(day, -65, SYSUTCDATETIME()), DATEADD(day, -59, SYSUTCDATETIME()), NULL, 90, 40, 35, 39, 4, DATEADD(day, -57, SYSUTCDATETIME()), DATEADD(day, -57, SYSUTCDATETIME()), 0
+),
+(
+25, 1, NULL, 1, 4, 3, 3, 3, NULL, 'Ability to generate customized reports', 'The existing standard reports are acceptable, but it would be nice to generate customized reports', NULL, NULL, NULL, NULL, DATEADD(day, -7, SYSUTCDATETIME()), DATEADD(day, -4, SYSUTCDATETIME()), NULL, 50, 60, 35, 65, 30, DATEADD(day, -4, SYSUTCDATETIME()), DATEADD(day, -4, SYSUTCDATETIME()), 0
+),
+(
+26, 2, 4, 1, 4, 3, 3, 3, NULL, 'Configurable meta-data columns', 'The list pages only display a fixed set of columns, could we have a way to let admins add custom columns and have those be displayed', NULL, NULL, NULL, NULL, DATEADD(day, -12, SYSUTCDATETIME()), DATEADD(day, -8, SYSUTCDATETIME()), NULL, 75, 75, 50, 69, 19, DATEADD(day, -8, SYSUTCDATETIME()), DATEADD(day, -8, SYSUTCDATETIME()), 0
+),
+(
+27, 3, NULL, 1, 5, 3, 2, 2, 10, 'Ability to delete multiple books', 'Right now the use of delete buttons only allows the deletion of a single book at a time, can we add checkboxes to allow multiple deletions?', '1', NULL, NULL, NULL, DATEADD(day, -112, SYSUTCDATETIME()), DATEADD(day, -105, SYSUTCDATETIME()), DATEADD(day, -96, SYSUTCDATETIME()), 100, 20, 15, 15, 0, DATEADD(day, -96, SYSUTCDATETIME()), DATEADD(day, -96, SYSUTCDATETIME()), 0
+),
+(
+28, 4, 1, 1, 5, 3, 2, 2, 10, 'Ability to delete multiple authors', 'Right now the use of delete buttons only allows the deletion of a single book at a time, can we add checkboxes to allow multiple deletions?', '2', NULL, NULL, NULL, DATEADD(day, -112, SYSUTCDATETIME()), DATEADD(day, -99, SYSUTCDATETIME()), DATEADD(day, -85, SYSUTCDATETIME()), 100, 25, 28, 28, 0, DATEADD(day, -85, SYSUTCDATETIME()), DATEADD(day, -85, SYSUTCDATETIME()), 0
+),
+(
+29, 1, 2, 1, 7, 3, 2, NULL, NULL, 'Ability to associate multiple authors', 'Duplicate', '2', NULL, NULL, NULL, DATEADD(day, -19, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -19, SYSUTCDATETIME()), DATEADD(day, -19, SYSUTCDATETIME()), 0
+),
+(
+30, NULL, NULL, 1, 2, 4, 2, NULL, 11, 'Cannot install system on Windows 10', 'The system only supports Windows Vista, 7, 8 and 8.1, many users are now using Windows 10', NULL, NULL, NULL, NULL, DATEADD(day, -62, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -16, SYSUTCDATETIME()), DATEADD(day, -16, SYSUTCDATETIME()), 0
+),
+(
+31, 3, 1, 1, 2, 4, 3, NULL, NULL, 'System may require process changes', 'The business processes encoded in the application are different from some libraries, they will need to adopt the new business processes first', NULL, 18, NULL, NULL, DATEADD(day, -2, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -2, SYSUTCDATETIME()), DATEADD(day, -76, SYSUTCDATETIME()), 0
+),
+(
+32, 2, 2, 1, 3, 4, 3, 3, 12, 'Ability to be accessed by Mozilla', 'The system doesn''t support Mozilla browsers, only Internet Explorer/Edge', NULL, 19, NULL, NULL, DATEADD(day, 0, SYSUTCDATETIME()), DATEADD(day, 0, SYSUTCDATETIME()), NULL, 25, 20, NULL, NULL, NULL, DATEADD(day, 0, SYSUTCDATETIME()), DATEADD(day, -72, SYSUTCDATETIME()), 0
+),
+(
+33, 3, 3, 1, 3, 4, 3, 3, 12, 'Management of children''s loans', 'The lending features assume the same loan-type and associated penalities regardless of whether the book is being borrowed by an adult or child', '1,2', NULL, NULL, NULL, DATEADD(day, -14, SYSUTCDATETIME()), DATEADD(day, -12, SYSUTCDATETIME()), NULL, 75, 25, 10, 16, 6, DATEADD(day, -12, SYSUTCDATETIME()), DATEADD(day, -12, SYSUTCDATETIME()), 0
+),
+(
+34, 4, 4, 1, 5, 4, 3, 3, NULL, 'Scalability of system', 'The system doesn''t make full use of a clustered server environment, due to its use of sessions', NULL, NULL, NULL, NULL, DATEADD(day, -14, SYSUTCDATETIME()), DATEADD(day, -12, SYSUTCDATETIME()), DATEADD(day, -6, SYSUTCDATETIME()), 100, 30, 65, 65, 0, DATEADD(day, -4, SYSUTCDATETIME()), DATEADD(day, -4, SYSUTCDATETIME()), 0
+),
+(
+35, 1, 1, 1, 5, 4, 2, 3, 13, 'Section 508 compliance', 'The system has not been tested and certified for Section 508 compliance', NULL, NULL, NULL, NULL, DATEADD(day, -13, SYSUTCDATETIME()), DATEADD(day, -10, SYSUTCDATETIME()), DATEADD(day, -2, SYSUTCDATETIME()), 100, 40, 55, 55, 0, DATEADD(day, -2, SYSUTCDATETIME()), DATEADD(day, -2, SYSUTCDATETIME()), 0
+),
+(
+36, 2, 2, 1, 5, 4, 2, 2, 13, 'How do we regression test', 'There is no process in place right now for regression testing the entire application when changes are made', NULL, NULL, NULL, NULL, DATEADD(day, -74, SYSUTCDATETIME()), DATEADD(day, -68, SYSUTCDATETIME()), DATEADD(day, -62, SYSUTCDATETIME()), 100, 60, 48, 48, 0, DATEADD(day, -62, SYSUTCDATETIME()), DATEADD(day, -62, SYSUTCDATETIME()), 0
+),
+(
+37, NULL, NULL, 1, 7, 4, 2, NULL, 14, 'System may require process changes', 'Duplicate', NULL, NULL, NULL, NULL, DATEADD(day, -86, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -66, SYSUTCDATETIME()), DATEADD(day, -66, SYSUTCDATETIME()), 0
+),
+(
+38, 4, 1, 1, 2, 5, 2, NULL, 14, 'User expectations from old client app', 'Users were familiar with the user interface metaphors of a client-server application rather than a web-app, need a web-browser 101 training section', NULL, NULL, NULL, NULL, DATEADD(day, -11, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -8, SYSUTCDATETIME()), DATEADD(day, -8, SYSUTCDATETIME()), 0
+),
+(
+39, 4, NULL, 1, 2, 5, 2, NULL, NULL, 'Exporting data to excel', 'It is not obvious for many users that macro security on excel needs to be changed to medium to allow the export function to work', '3', NULL, NULL, NULL, DATEADD(day, -59, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -47, SYSUTCDATETIME()), DATEADD(day, -47, SYSUTCDATETIME()), 0
+),
+(
+40, 1, 2, 1, 3, 5, 2, 2, NULL, 'Test Training Item', 'This is a test training item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -4, SYSUTCDATETIME()), DATEADD(day, -2, SYSUTCDATETIME()), NULL, 25, 30, NULL, 30, 23, DATEADD(day, -1, SYSUTCDATETIME()), DATEADD(day, -1, SYSUTCDATETIME()), 0
+),
+(
+41, 2, NULL, 1, 3, 5, 2, 2, NULL, 'Test Training Item', 'This is a test training item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -25, SYSUTCDATETIME()), DATEADD(day, -22, SYSUTCDATETIME()), NULL, 50, 40, NULL, 40, 20, DATEADD(day, -3, SYSUTCDATETIME()), DATEADD(day, -3, SYSUTCDATETIME()), 0
+),
+(
+42, 3, 2, 1, 5, 5, 3, 2, NULL, 'Test Training Item', 'This is a test training item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -26, SYSUTCDATETIME()), DATEADD(day, -22, SYSUTCDATETIME()), DATEADD(day, -6, SYSUTCDATETIME()), 100, 60, 53, 53, 0, DATEADD(day, -6, SYSUTCDATETIME()), DATEADD(day, -6, SYSUTCDATETIME()), 0
+),
+(
+43, 4, 3, 1, 5, 5, 3, 3, NULL, 'Test Training Item', 'This is a test training item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -31, SYSUTCDATETIME()), DATEADD(day, -25, SYSUTCDATETIME()), DATEADD(day, -18, SYSUTCDATETIME()), 100, 75, 76, 76, 0, DATEADD(day, -18, SYSUTCDATETIME()), DATEADD(day, -18, SYSUTCDATETIME()), 0
+),
+(
+44, NULL, NULL, 1, 7, 5, 3, 3, NULL, 'Test Training Item', 'Duplicate', NULL, NULL, NULL, NULL, DATEADD(day, -22, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -22, SYSUTCDATETIME()), DATEADD(day, -22, SYSUTCDATETIME()), 0
+),
+(
+45, 1, 1, 1, 2, 6, 2, NULL, NULL, 'Test System Limitation', 'This is a test system limitation item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -102, SYSUTCDATETIME()), DATEADD(day, -95, SYSUTCDATETIME()), NULL, 50, 30, 15, 30, 15, DATEADD(day, -95, SYSUTCDATETIME()), DATEADD(day, -95, SYSUTCDATETIME()), 0
+),
+(
+46, 1, NULL, 1, 3, 6, 3, 2, NULL, 'Test System Limitation', 'This is a test system limitation item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -90, SYSUTCDATETIME()), DATEADD(day, -86, SYSUTCDATETIME()), NULL, 75, 40, 40, 50, 10, DATEADD(day, -86, SYSUTCDATETIME()), DATEADD(day, -86, SYSUTCDATETIME()), 0
+),
+(
+47, 2, 2, 1, 3, 6, 2, 3, NULL, 'Test System Limitation', 'This is a test system limitation item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -16, SYSUTCDATETIME()), DATEADD(day, -13, SYSUTCDATETIME()), NULL, 75, 60, 60, 75, 15, DATEADD(day, -13, SYSUTCDATETIME()), DATEADD(day, -13, SYSUTCDATETIME()), 0
+),
+(
+48, 3, 3, 1, 3, 6, 3, 2, NULL, 'Test System Limitation', 'This is a test system limitation item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -108, SYSUTCDATETIME()), DATEADD(day, -107, SYSUTCDATETIME()), NULL, 90, 75, 80, 88, 8, DATEADD(day, -107, SYSUTCDATETIME()), DATEADD(day, -107, SYSUTCDATETIME()), 0
+),
+(
+49, 4, 4, 1, 5, 6, 2, 3, NULL, 'Test System Limitation', 'This is a test system limitation item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -107, SYSUTCDATETIME()), DATEADD(day, -104, SYSUTCDATETIME()), DATEADD(day, -100, SYSUTCDATETIME()), 100, 90, 77, 77, 0, DATEADD(day, -100, SYSUTCDATETIME()), DATEADD(day, -100, SYSUTCDATETIME()), 0
+),
+(
+50, 1, 1, 1, 7, 6, 3, 2, NULL, 'Test System Limitation', 'Duplicate', NULL, NULL, NULL, NULL, DATEADD(day, -109, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -109, SYSUTCDATETIME()), DATEADD(day, -109, SYSUTCDATETIME()), 0
+),
+(
+51, 2, NULL, 1, 2, 7, 2, NULL, NULL, 'Test Change Request', 'This is a test change request item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -108, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -108, SYSUTCDATETIME()), DATEADD(day, -108, SYSUTCDATETIME()), 0
+),
+(
+52, 2, 2, 1, 2, 7, 3, NULL, NULL, 'Test Change Request', 'This is a test change request item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -106, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -106, SYSUTCDATETIME()), DATEADD(day, -106, SYSUTCDATETIME()), 0
+),
+(
+53, 3, NULL, 1, 3, 7, 3, 2, NULL, 'Test Change Request', 'This is a test change request item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -106, SYSUTCDATETIME()), DATEADD(day, -106, SYSUTCDATETIME()), NULL, 25, 30, NULL, 30, 23, DATEADD(day, -72, SYSUTCDATETIME()), DATEADD(day, -72, SYSUTCDATETIME()), 0
+),
+(
+54, 4, 3, 1, 3, 7, 2, 3, NULL, 'Test Change Request', 'This is a test change request item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -105, SYSUTCDATETIME()), DATEADD(day, -105, SYSUTCDATETIME()), NULL, 50, 40, NULL, 40, 20, DATEADD(day, -102, SYSUTCDATETIME()), DATEADD(day, -102, SYSUTCDATETIME()), 0
+),
+(
+55, 1, 4, 1, 5, 7, 2, 3, NULL, 'Test Change Request', 'This is a test change request item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -14, SYSUTCDATETIME()), DATEADD(day, -7, SYSUTCDATETIME()), DATEADD(day, -4, SYSUTCDATETIME()), 100, 60, 55, 55, 0, DATEADD(day, -4, SYSUTCDATETIME()), DATEADD(day, -4, SYSUTCDATETIME()), 0
+),
+(
+56, 2, NULL, 1, 5, 7, 2, 3, NULL, 'Test Change Request', 'This is a test change request item, that can be used for testing the system', NULL, NULL, NULL, NULL, DATEADD(day, -6, SYSUTCDATETIME()), DATEADD(day, -3, SYSUTCDATETIME()), DATEADD(day, -1, SYSUTCDATETIME()), 100, 75, 78, 78, 0, DATEADD(day, -1, SYSUTCDATETIME()), DATEADD(day, -1, SYSUTCDATETIME()), 0
+),
+(
+57, 3, 1, 1, 7, 7, 3, NULL, NULL, 'Test Change Request', 'Duplicate', NULL, NULL, NULL, NULL, DATEADD(day, -105, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -105, SYSUTCDATETIME()), DATEADD(day, -105, SYSUTCDATETIME()), 0
+),
+(
+59, 1, NULL, 1, 2, 8, 2, NULL, NULL, 'Sample Problem 1', 'Description of Problem 1', NULL, 17, NULL, NULL, DATEADD(day, -6, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -6, SYSUTCDATETIME()), DATEADD(day, -82, SYSUTCDATETIME()), 0
+),
+(
+60, 2, 3, 1, 2, 8, 2, NULL, NULL, 'Sample Problem 2', 'Description of Problem 2', NULL, 18, NULL, NULL, DATEADD(day, -2, SYSUTCDATETIME()), NULL, NULL, 0, NULL, NULL, NULL, NULL, DATEADD(day, -2, SYSUTCDATETIME()), DATEADD(day, -77, SYSUTCDATETIME()), 0
+),
+(
+61, 4, 4, 1, 3, 8, 2, 2, NULL, 'Sample Problem 3', 'Description of Problem 3', NULL, NULL, NULL, NULL, DATEADD(day, -108, SYSUTCDATETIME()), DATEADD(day, -103, SYSUTCDATETIME()), NULL, 90, 40, 47, 51, 4, DATEADD(day, -103, SYSUTCDATETIME()), DATEADD(day, -103, SYSUTCDATETIME()), 0
+)
+GO
+
+SET IDENTITY_INSERT TST_INCIDENT OFF; 
+

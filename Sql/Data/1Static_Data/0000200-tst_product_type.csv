@@ -1,0 +1,5 @@
+name:String,product_license_number:Normal,active_yn:String
+SpiraTest,1,N
+SpiraPlan,2,N
+SpiraTeam,3,N
+ValidationMaster,4,Y

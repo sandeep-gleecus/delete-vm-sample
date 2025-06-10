@@ -1,0 +1,6 @@
+event_type_id:Key,name:String,is_active:Normal
+1,Error,1
+2,Warning,1
+4,Information,1
+8,Success Audit,1
+16,Failure Audit,1

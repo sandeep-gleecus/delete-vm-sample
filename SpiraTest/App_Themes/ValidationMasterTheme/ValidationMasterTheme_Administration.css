@@ -1,0 +1,117 @@
+﻿.PanelContainer .admin-content
+{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.AdministrationNavigation a,
+.AdministrationNavigation a:hover
+{
+    text-decoration: none;
+}
+
+.btn-link-chevron:before
+{
+    font-family: "Font Awesome 5 Pro"; font-weight: 900;
+    content: '\f105';
+    padding-right: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-link-add:before
+{
+    font-family: "Font Awesome 5 Pro"; font-weight: 900;
+    content: '\f067';
+    padding-right: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1
+{
+    margin-top: 5px;
+}
+
+.WorkFlowDiagram-wrapper {
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    background-color: var(--off-white);
+    padding: 1.25rem;
+    display: inline-block;
+}
+.WorkflowDiagram td
+{
+	font-weight: bold;
+	color: DimGray;
+	color: var(--gray);
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.WorkflowDiagram .Step {
+    border: 1px solid #ddd;
+    border: 1px solid var(--light-gray2);
+    font-weight: bold;
+    background-color: White;
+    background-color: var(--white);
+    color: Black;
+    color: var(--dark-gray);
+    padding: 6px 10px 6px 10px;
+    border-radius: 4px;
+    transition: all 0.2s;
+	width:170px;
+}
+
+.WorkflowDiagram .Step a
+{
+	font-weight: normal;
+    text-decoration: none !important;
+}
+.WorkflowDiagram .Step a:hover
+{
+    text-decoration: underline;
+}
+.WorkflowDiagram .Step.step-has-hover {
+    box-shadow: 4px 4px 0px #0BB5FF, -4px 4px 0px #0BB5FF, 4px -4px 0px #0BB5FF, -4px -4px 0px #0BB5FF;
+}
+.WorkflowDiagram .btn-group
+{
+    margin-bottom: 5px;
+	width:150px;
+}
+.WorkflowDiagram .muted {
+    font-weight: normal;
+    color: #767676;
+    color: var(--gray);
+}
+.WorkflowDiagram .Step.muted
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+	width:150px
+}
+.WorkflowDiagram.workflow-list {
+    background-color: #f5f5f5;
+    background-color: var(--off-white);
+}
+.WorkflowDiagram.workflow-list tr:not(:first-child) {
+    border-bottom: 10px solid white;
+    border-bottom: 10px solid var(--white);
+}
+.DataEntryForm input[type=checkbox]
+{
+    margin-right: 10px;
+}
+
+.large
+{
+    font-size: 1.2em;
+}
+.SidePanel a
+{
+    text-decoration: none;
+}
+.SidePanel a:hover
+{
+    text-decoration: underline;
+}

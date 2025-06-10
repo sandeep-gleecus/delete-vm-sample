@@ -1,0 +1,2 @@
+requirement_type_id:Key,name:String,icon:String,is_active:Normal,is_default:Normal,is_steps:Normal,requirement_workflow_id:Normal,project_template_id:Normal,is_key_type:Normal
+-1,Epic,artifact-RequirementSummary.svg,1,0,0,NULL,NULL,0

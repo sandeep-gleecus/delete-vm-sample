@@ -1,0 +1,26 @@
+requirement_type_id:Key,requirement_workflow_id:Normal,project_template_id:Normal,name:String,icon:String,is_active:Normal,is_steps:Normal,is_default:Normal,is_key_type:Normal
+1,1,1,Need,Requirement.gif,1,0,0,0
+2,1,1,Feature,Requirement.gif,1,0,1,0
+3,1,1,Use Case,UseCase.gif,1,1,0,0
+4,1,1,User Story,UserStory.gif,1,0,0,0
+5,1,1,Quality,Quality.gif,1,0,0,0
+6,1,1,Design Element,Requirement.gif,1,0,0,0
+7,2,2,Need,Requirement.gif,1,0,0,0
+8,2,2,Feature,Requirement.gif,1,0,1,0
+9,2,2,Use Case,UseCase.gif,1,1,0,0
+10,2,2,User Story,UserStory.gif,1,0,0,0
+11,2,2,Quality,Quality.gif,1,0,0,0
+12,2,2,Design Element,Requirement.gif,1,0,0,0
+13,1,1,Acceptance Criteria,Requirement.gif,1,0,0,1
+14,3,3,Feature,Requirement.gif,1,0,1,0
+15,3,3,Need,Requirement.gif,1,0,0,0
+16,3,3,Quality,Requirement.gif,1,0,0,0
+17,3,3,Use Case,UseCase.gif,1,1,0,0
+18,3,3,User Story,Requirement.gif,1,0,0,0
+19,3,3,Design Element,Requirement.gif,1,0,0,0
+20,4,4,Feature,Requirement.gif,1,0,0,0
+21,4,4,Need,Requirement.gif,0,0,0,0
+22,4,4,Quality,Requirement.gif,0,0,0,0
+23,4,4,Use Case,UseCase.gif,1,1,0,0
+24,4,4,User Story,Requirement.gif,1,0,1,0
+25,4,4,Design Element,Requirement.gif,0,0,0,0

@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="Inflectra.SpiraTest.Installer.UI.cntrlDatabaseServer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Inflectra.SpiraTest.Installer.UI"
+             xmlns:resx="clr-namespace:Inflectra.SpiraTest.Installer.Themes.Inflectra"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400" Unloaded="UserControl_Unloaded" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <LinearGradientBrush x:Key="ErrorControlBackground" StartPoint=".5,0" EndPoint=".5,1">
+            <GradientStop Color="LightPink" Offset=".35" />
+            <GradientStop Color="IndianRed" Offset="1.5" />
+        </LinearGradientBrush>
+        <Style x:Key="ErrorHighlight">
+            <Style.Triggers>
+                <Trigger Property="Control.Tag" Value="1">
+                    <Setter Property="Control.Background" Value="{StaticResource ErrorControlBackground}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <DockPanel LastChildFill="True">
+        <TextBlock Name="msgStatus" DockPanel.Dock="Bottom" HorizontalAlignment="Right" Text="{x:Static resx:Resources.Global_ClickNext}"></TextBlock>
+        <StackPanel Orientation="Vertical">
+            <TextBlock FontSize="18" FontWeight="Bold" Text="{x:Static resx:Resources.DatabaseServer_KeyText}" />
+            <TextBlock TextWrapping="Wrap" Text="{x:Static resx:Resources.DatabaseServer_Intro}" />
+            <GroupBox Name="grpDatabaseInfo" Margin="0,10,0,0">
+                <GroupBox.Header>
+                    <Label FontWeight="Bold" Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.DatabaseServer_DatabaseInfo}" />
+                </GroupBox.Header>
+                <GroupBox.Content>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="{x:Static resx:Resources.DatabaseServer_Introduction}" TextWrapping="Wrap" Margin="5" />
+                        <Grid Name="grdConnection">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.DatabaseServer_Server}" />
+                            <Label Grid.Column="0" Grid.Row="2" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.DatabaseServer_Login}" />
+                            <Label Grid.Column="0" Grid.Row="3" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.DatabaseServer_Password}" />
+                            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                                <RadioButton Name="radWindowsAuth" 
+											 Content="{x:Static resx:Resources.DatabaseServer_WindowsAuth}" 
+											 Margin="0,0,10,0" 
+											 IsChecked="True"
+											 Checked="radWindowsAuth_Checked" />
+                                <RadioButton Name="radSQLAuth" 
+											 Content="{x:Static resx:Resources.DatabaseServer_SQLAuth}" 
+											 Checked="radSQLAuth_Checked" />
+                            </StackPanel>
+                            <TextBox Margin="2" Name="txbServer" HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1"  VerticalAlignment="Center" Style="{StaticResource ResourceKey=ErrorHighlight}" />
+                            <TextBox Margin="2" Name="txbLogin" HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Style="{StaticResource ResourceKey=ErrorHighlight}" />
+                            <PasswordBox Margin="2" Name="txbPassword" HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Style="{StaticResource ResourceKey=ErrorHighlight}" />
+                            <Button Margin="2" DockPanel.Dock="Right" Name="btnConnect" Content="{x:Static resx:Resources.DatabaseServer_Connect}" Click="btnConnect_Click" Grid.Row="4" Grid.Column="1" />
+                        </Grid>
+                    </StackPanel>
+                </GroupBox.Content>
+            </GroupBox>
+            <GroupBox Name="grpDatabaseAdvanced"  Margin="0,10,0,0">
+                <GroupBox.Header>
+                    <Label FontWeight="Bold" Height="Auto" VerticalAlignment="Center" Content="{x:Static resx:Resources.DatabaseServer_AdvancedSettings}" />
+                </GroupBox.Header>
+                <GroupBox.Content>
+                    <StackPanel Orientation="Vertical">
+                        <Grid Name="grdDBSettings">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.DatabaseServer_NewLogin}" />
+                            <Label Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.DatabaseServer_DatabaseName}" />
+                            <Label Grid.Column="0" Grid.Row="2" HorizontalContentAlignment="Right" Content="{x:Static resx:Resources.DatabaseServer_DatabaseUser}" />
+                            <TextBox Margin="2" Name="txbNewLogin" HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="0"  VerticalAlignment="Center" Style="{StaticResource ResourceKey=ErrorHighlight}" />
+                            <TextBox Margin="2" Name="txbDatabaseName" HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Style="{StaticResource ResourceKey=ErrorHighlight}" />
+                            <TextBox Margin="2" Name="txbDatabaseUser" HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Style="{StaticResource ResourceKey=ErrorHighlight}" />
+                            <CheckBox Name="chkSampleData" Content="{x:Static resx:Resources.DatabaseServer_SampleData}" Grid.Column="1" Grid.Row="4" />
+                        </Grid>
+                    </StackPanel>
+                </GroupBox.Content>
+            </GroupBox>
+        </StackPanel>
+    </DockPanel>
+</UserControl>

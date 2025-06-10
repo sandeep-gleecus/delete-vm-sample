@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="AuthorId" xml:space="preserve">
+    <value>作者</value>
+  </data>
+	<data name="Blocked" xml:space="preserve">
+    <value>被阻擋</value>
+  </data>
+	<data name="Caution" xml:space="preserve">
+    <value>警告</value>
+  </data>
+	<data name="Comments" xml:space="preserve">
+    <value>評論</value>
+  </data>
+	<data name="Coverage" xml:space="preserve">
+    <value>涵蓋範圍</value>
+  </data>
+	<data name="CoverageId" xml:space="preserve">
+    <value>測試範圍</value>
+  </data>
+	<data name="CreationDate" xml:space="preserve">
+    <value>建立日期</value>
+  </data>
+	<data name="DateOpened" xml:space="preserve">
+    <value>啟動日期</value>
+  </data>
+	<data name="Description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+	<data name="DueDate" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+	<data name="EmailAddress" xml:space="preserve">
+    <value>電子郵件</value>
+  </data>
+	<data name="EndDate" xml:space="preserve">
+    <value>結束日期</value>
+  </data>
+	<data name="Est" xml:space="preserve">
+    <value>預估</value>
+  </data>
+	<data name="ExecutionStatus" xml:space="preserve">
+    <value>執行狀態</value>
+  </data>
+	<data name="Failed" xml:space="preserve">
+    <value>失敗</value>
+  </data>
+	<data name="FirstName" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+	<data name="Group" xml:space="preserve">
+    <value>群組</value>
+  </data>
+	<data name="Importance" xml:space="preserve">
+    <value>重要性</value>
+  </data>
+	<data name="ImportanceId" xml:space="preserve">
+    <value>重要性</value>
+  </data>
+	<data name="Iteration" xml:space="preserve">
+    <value>迭代</value>
+  </data>
+	<data name="LastExecuted" xml:space="preserve">
+    <value>最後執行</value>
+  </data>
+	<data name="LastName" xml:space="preserve">
+    <value>姓氏</value>
+  </data>
+	<data name="LastUpdated" xml:space="preserve">
+    <value>最後更新</value>
+  </data>
+	<data name="LastUpdateDate" xml:space="preserve">
+    <value>最後更新</value>
+  </data>
+	<data name="MiddleInitial" xml:space="preserve">
+    <value>中間名稱</value>
+  </data>
+	<data name="Name" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+	<data name="None" xml:space="preserve">
+    <value>無</value>
+  </data>
+	<data name="NotRun" xml:space="preserve">
+    <value>無執行</value>
+  </data>
+	<data name="NumberOpen" xml:space="preserve">
+    <value># 啟動</value>
+  </data>
+	<data name="Open" xml:space="preserve">
+    <value>啟動</value>
+  </data>
+	<data name="OpenByPriority" xml:space="preserve">
+    <value>按優先順序啟動</value>
+  </data>
+	<data name="OwnedBy" xml:space="preserve">
+    <value>擁有來源</value>
+  </data>
+	<data name="Owner" xml:space="preserve">
+    <value>擁有者</value>
+  </data>
+	<data name="OwnerId" xml:space="preserve">
+    <value>擁有者編號</value>
+  </data>
+	<data name="Owner_s_" xml:space="preserve">
+    <value>擁有者</value>
+  </data>
+	<data name="Passed" xml:space="preserve">
+    <value>通過</value>
+  </data>
+	<data name="PlannedEffort" xml:space="preserve">
+    <value>已規劃的工時</value>
+  </data>
+	<data name="Priority" xml:space="preserve">
+    <value>優先度</value>
+  </data>
+	<data name="Progress" xml:space="preserve">
+    <value>進度</value>
+  </data>
+	<data name="ProgressId" xml:space="preserve">
+    <value>進度</value>
+  </data>
+	<data name="Proj" xml:space="preserve">
+    <value>專案</value>
+  </data>
+	<data name="Project" xml:space="preserve">
+    <value>專案</value>
+  </data>
+	<data name="ProjectGroup" xml:space="preserve">
+    <value>專案群組</value>
+  </data>
+	<data name="ProjectName" xml:space="preserve">
+    <value>專案名稱</value>
+  </data>
+	<data name="Release" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="ReleaseId" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="RequirementId" xml:space="preserve">
+    <value>需求 #</value>
+  </data>
+	<data name="RequirementName" xml:space="preserve">
+    <value>需求名稱</value>
+  </data>
+	<data name="Requirement_ImportanceCritical" xml:space="preserve">
+    <value>1 - 嚴重</value>
+  </data>
+	<data name="Requirement_ImportanceHigh" xml:space="preserve">
+    <value>2 - 高</value>
+  </data>
+	<data name="Requirement_ImportanceLow" xml:space="preserve">
+    <value>4 - 低</value>
+  </data>
+	<data name="Requirement_ImportanceMedium" xml:space="preserve">
+    <value>3 - 中</value>
+  </data>
+	<data name="Role" xml:space="preserve">
+    <value>角色</value>
+  </data>
+	<data name="ScopeLevelId" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+	<data name="Severity" xml:space="preserve">
+    <value>嚴重度</value>
+  </data>
+	<data name="StartDate" xml:space="preserve">
+    <value>開始日期</value>
+  </data>
+	<data name="Status" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+	<data name="TaskActualEffort" xml:space="preserve">
+    <value>實際工時</value>
+  </data>
+	<data name="TaskEstimatedEffort" xml:space="preserve">
+    <value>任務工時</value>
+  </data>
+	<data name="TaskProgress" xml:space="preserve">
+    <value>任務進度</value>
+  </data>
+	<data name="TaskProjectedEffort" xml:space="preserve">
+    <value>專案進度</value>
+  </data>
+	<data name="TaskRemainingEffort" xml:space="preserve">
+    <value>剩餘工時</value>
+  </data>
+	<data name="Tasks" xml:space="preserve">
+    <value>任務</value>
+  </data>
+	<data name="Tests" xml:space="preserve">
+    <value>測試</value>
+  </data>
+	<data name="Total" xml:space="preserve">
+    <value>共</value>
+  </data>
+	<data name="TotalCaps" xml:space="preserve">
+    <value>共</value>
+  </data>
+	<data name="Type" xml:space="preserve">
+    <value>類型</value>
+  </data>
+	<data name="WebSite" xml:space="preserve">
+    <value>網站</value>
+  </data>
+	<data name="ReqId" xml:space="preserve">
+    <value>需求 #</value>
+  </data>
+	<data name="CoveringTests" xml:space="preserve">
+    <value>涵蓋測試</value>
+  </data>
+	<data name="NotCovered" xml:space="preserve">
+    <value>不涵蓋</value>
+  </data>
+	<data name="ActiveYn" xml:space="preserve">
+    <value>使用中</value>
+  </data>
+	<data name="ActualDuration" xml:space="preserve">
+    <value>實際工期</value>
+  </data>
+	<data name="AvailableEffort" xml:space="preserve">
+    <value>可使用的工時</value>
+  </data>
+	<data name="CreatorId" xml:space="preserve">
+    <value>建立者</value>
+  </data>
+	<data name="DaysNonWorking" xml:space="preserve">
+    <value># 非工作日</value>
+  </data>
+	<data name="Hours" xml:space="preserve">
+    <value>小時</value>
+  </data>
+	<data name="IterationYn" xml:space="preserve">
+    <value>迭代？</value>
+  </data>
+	<data name="Minutes" xml:space="preserve">
+    <value>分鐘</value>
+  </data>
+	<data name="No" xml:space="preserve">
+    <value>無</value>
+  </data>
+	<data name="ReleaseName" xml:space="preserve">
+    <value>版本名稱</value>
+  </data>
+	<data name="ResourceCount" xml:space="preserve">
+    <value># 資源</value>
+  </data>
+	<data name="VersionNumber" xml:space="preserve">
+    <value>版本 #</value>
+  </data>
+	<data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+	<data name="AutomationHostId" xml:space="preserve">
+    <value>自動化主機</value>
+  </data>
+	<data name="EstimatedDuration" xml:space="preserve">
+    <value>預估工期</value>
+  </data>
+	<data name="ExecutionDate" xml:space="preserve">
+    <value>最後執行</value>
+  </data>
+	<data name="ExecutionStatusId" xml:space="preserve">
+    <value>執行狀態</value>
+  </data>
+	<data name="NA" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+	<data name="NoTests" xml:space="preserve">
+    <value>無測試</value>
+  </data>
+	<data name="PlannedDate" xml:space="preserve">
+    <value>已規劃日期</value>
+  </data>
+	<data name="RunnerName" xml:space="preserve">
+    <value>執行者名稱</value>
+  </data>
+	<data name="TesterId" xml:space="preserve">
+    <value>測試者</value>
+  </data>
+	<data name="TestRunId" xml:space="preserve">
+    <value>測試執行 #</value>
+  </data>
+	<data name="TestRunTypeId" xml:space="preserve">
+    <value>類型</value>
+  </data>
+	<data name="TestSetId" xml:space="preserve">
+    <value>測試集</value>
+  </data>
+	<data name="TestSetName" xml:space="preserve">
+    <value>測試集名稱</value>
+  </data>
+	<data name="AutomationEngineId" xml:space="preserve">
+    <value>自動化引擎</value>
+  </data>
+	<data name="TestCaseId" xml:space="preserve">
+    <value>測試 #</value>
+  </data>
+	<data name="TestCasePriorityId" xml:space="preserve">
+    <value>優先度</value>
+  </data>
+	<data name="ActualEffort" xml:space="preserve">
+    <value>實際工時</value>
+  </data>
+	<data name="ClosedDate" xml:space="preserve">
+    <value>關閉日期</value>
+  </data>
+	<data name="CompletionPercent" xml:space="preserve">
+    <value>% 完成</value>
+  </data>
+	<data name="DetectedReleaseId" xml:space="preserve">
+    <value>檢測到的版本</value>
+  </data>
+	<data name="EstimatedEffort" xml:space="preserve">
+    <value>預估工時</value>
+  </data>
+	<data name="ID" xml:space="preserve">
+    <value>編號</value>
+  </data>
+	<data name="Incident" xml:space="preserve">
+    <value>事件</value>
+  </data>
+	<data name="IncidentEffort" xml:space="preserve">
+    <value>事件工時</value>
+  </data>
+	<data name="IncidentId" xml:space="preserve">
+    <value>事件 #</value>
+  </data>
+	<data name="IncidentName" xml:space="preserve">
+    <value>事件名稱</value>
+  </data>
+	<data name="IncidentStatusId" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+	<data name="IncidentTypeId" xml:space="preserve">
+    <value>類型</value>
+  </data>
+	<data name="OpenerId" xml:space="preserve">
+    <value>檢測來源</value>
+  </data>
+	<data name="PriorityId" xml:space="preserve">
+    <value>檢測來源</value>
+  </data>
+	<data name="ProjectedEffort" xml:space="preserve">
+    <value>預計工時</value>
+  </data>
+	<data name="RemainingEffort" xml:space="preserve">
+    <value>剩餘工時</value>
+  </data>
+	<data name="Requirement" xml:space="preserve">
+    <value>需求</value>
+  </data>
+	<data name="RequirementTaskName" xml:space="preserve">
+    <value>需求/任務名稱</value>
+  </data>
+	<data name="Resolution" xml:space="preserve">
+    <value>評論</value>
+  </data>
+	<data name="ResolvedReleaseId" xml:space="preserve">
+    <value>已解決版本</value>
+  </data>
+	<data name="ResourceName" xml:space="preserve">
+    <value>資源名稱</value>
+  </data>
+	<data name="SeverityId" xml:space="preserve">
+    <value>嚴重度</value>
+  </data>
+	<data name="Task" xml:space="preserve">
+    <value>任務</value>
+  </data>
+	<data name="TaskEffort" xml:space="preserve">
+    <value>任務工時</value>
+  </data>
+	<data name="TaskId" xml:space="preserve">
+    <value>任務 #</value>
+  </data>
+	<data name="TaskName" xml:space="preserve">
+    <value>任務名稱</value>
+  </data>
+	<data name="TaskPriorityId" xml:space="preserve">
+    <value>優先度</value>
+  </data>
+	<data name="TaskStatusId" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+	<data name="TestCaseName" xml:space="preserve">
+    <value>測試案例名稱</value>
+  </data>
+	<data name="TestRunName" xml:space="preserve">
+    <value>測試執行名稱</value>
+  </data>
+	<data name="Token" xml:space="preserve">
+    <value>Token</value>
+  </data>
+	<data name="TotalEffort" xml:space="preserve">
+    <value>工時總計</value>
+  </data>
+	<data name="VerifiedReleaseId" xml:space="preserve">
+    <value>已驗證的版本</value>
+  </data>
+	<data name="ChangeDate" xml:space="preserve">
+    <value>更改日期</value>
+  </data>
+	<data name="ChangerId" xml:space="preserve">
+    <value>更改來源</value>
+  </data>
+	<data name="FieldName" xml:space="preserve">
+    <value>欄位名稱</value>
+  </data>
+	<data name="NewValue" xml:space="preserve">
+    <value>新值</value>
+  </data>
+	<data name="OldValue" xml:space="preserve">
+    <value>舊值</value>
+  </data>
+	<data name="ArtifactName" xml:space="preserve">
+    <value>項目名稱</value>
+  </data>
+	<data name="ArtifactTypeId" xml:space="preserve">
+    <value>項目類型</value>
+  </data>
+	<data name="Comment" xml:space="preserve">
+    <value>評論</value>
+  </data>
+	<data name="DocumentFolder" xml:space="preserve">
+    <value>文件資料夾</value>
+  </data>
+	<data name="DocumentName" xml:space="preserve">
+    <value>文件名稱</value>
+  </data>
+	<data name="DocumentType" xml:space="preserve">
+    <value>文件類型</value>
+  </data>
+	<data name="EditedDate" xml:space="preserve">
+    <value>編輯日期</value>
+  </data>
+	<data name="EditorId" xml:space="preserve">
+    <value>編輯來源</value>
+  </data>
+	<data name="File" xml:space="preserve">
+    <value>檔案</value>
+  </data>
+	<data name="Filename" xml:space="preserve">
+    <value>檔案名稱</value>
+  </data>
+	<data name="Screenshot" xml:space="preserve">
+    <value>螢幕截圖</value>
+  </data>
+	<data name="Size" xml:space="preserve">
+    <value>大小</value>
+  </data>
+	<data name="Tags" xml:space="preserve">
+    <value>標籤</value>
+  </data>
+	<data name="TestCase" xml:space="preserve">
+    <value>測試案例</value>
+  </data>
+	<data name="TestStep" xml:space="preserve">
+    <value>測試步驟</value>
+  </data>
+	<data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+	<data name="DefaultValue" xml:space="preserve">
+    <value>預設值</value>
+  </data>
+	<data name="Folder" xml:space="preserve">
+    <value>資料夾</value>
+  </data>
+	<data name="NonWorking" xml:space="preserve">
+    <value>非工作</value>
+  </data>
+	<data name="NumberResources" xml:space="preserve">
+    <value># 資源</value>
+  </data>
+	<data name="Operations" xml:space="preserve">
+    <value>操作</value>
+  </data>
+	<data name="ScriptType" xml:space="preserve">
+    <value>腳本類型</value>
+  </data>
+	<data name="StartEndDate" xml:space="preserve">
+    <value>開始/結束日期</value>
+  </data>
+	<data name="TestScript" xml:space="preserve">
+    <value>測試腳本</value>
+  </data>
+	<data name="TestScript_Attached" xml:space="preserve">
+    <value>已附加</value>
+  </data>
+	<data name="TestScript_Linked" xml:space="preserve">
+    <value>已連結</value>
+  </data>
+	<data name="Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+	<data name="ActualResult" xml:space="preserve">
+    <value>實際結果</value>
+  </data>
+	<data name="ExpectedResult" xml:space="preserve">
+    <value>預期結果</value>
+  </data>
+	<data name="SampleData" xml:space="preserve">
+    <value>範例資料</value>
+  </data>
+	<data name="Step" xml:space="preserve">
+    <value>步驟</value>
+  </data>
+	<data name="TestStepDescription" xml:space="preserve">
+    <value>測試步驟描述</value>
+  </data>
+	<data name="TestStepPosition" xml:space="preserve">
+    <value>步驟 #</value>
+  </data>
+	<data name="TestSet" xml:space="preserve">
+    <value>測試集</value>
+  </data>
+	<data name="AssertCount" xml:space="preserve">
+    <value>斷言次數</value>
+  </data>
+	<data name="HostName" xml:space="preserve">
+    <value>主機名稱</value>
+  </data>
+	<data name="RunnerDetails" xml:space="preserve">
+    <value>詳細資訊</value>
+  </data>
+	<data name="RunnerMessage" xml:space="preserve">
+    <value>訊息</value>
+  </data>
+	<data name="RunnerTestName" xml:space="preserve">
+    <value>測試名稱</value>
+  </data>
+	<data name="ReleaseIteration" xml:space="preserve">
+    <value>版本 / 迭代</value>
+  </data>
+	<data name="Department" xml:space="preserve">
+    <value>部門</value>
+  </data>
+	<data name="Email" xml:space="preserve">
+    <value>電子郵件</value>
+  </data>
+	<data name="ProjectRole" xml:space="preserve">
+    <value>專案角色</value>
+  </data>
+	<data name="TestSetStatusId" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+	<data name="Action" xml:space="preserve">
+    <value>行動</value>
+  </data>
+	<data name="LastEdited" xml:space="preserve">
+    <value>最後編輯</value>
+  </data>
+	<data name="LatestRevision" xml:space="preserve">
+    <value>最新修訂版本</value>
+  </data>
+	<data name="Revision" xml:space="preserve">
+    <value>修訂版本</value>
+  </data>
+	<data name="CommitDate" xml:space="preserve">
+    <value>提交日期</value>
+  </data>
+	<data name="ContentChanged" xml:space="preserve">
+    <value>內容 Δ</value>
+  </data>
+	<data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+	<data name="FilePath" xml:space="preserve">
+    <value>檔案路靜</value>
+  </data>
+	<data name="FileType" xml:space="preserve">
+    <value>檔案類型</value>
+  </data>
+	<data name="Format" xml:space="preserve">
+    <value>格式</value>
+  </data>
+	<data name="IncidentStatus_AllClosed" xml:space="preserve">
+    <value>(全部關閉)</value>
+  </data>
+	<data name="IncidentStatus_AllOpen" xml:space="preserve">
+    <value>(全部開啟)</value>
+  </data>
+	<data name="IncidentType_AllIssues" xml:space="preserve">
+    <value>(所有問題)</value>
+  </data>
+	<data name="IncidentType_AllRisks" xml:space="preserve">
+    <value>(所有風險)</value>
+  </data>
+	<data name="Notes" xml:space="preserve">
+    <value>被住</value>
+  </data>
+	<data name="PropertiesChanged" xml:space="preserve">
+    <value>屬性 Δ</value>
+  </data>
+	<data name="ReportName" xml:space="preserve">
+    <value>報告名稱</value>
+  </data>
+	<data name="SortField" xml:space="preserve">
+    <value>排序欄位</value>
+  </data>
+	<data name="Summary" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+	<data name="Document" xml:space="preserve">
+    <value>文件</value>
+  </data>
+	<data name="ArtifactId" xml:space="preserve">
+    <value>項目編號</value>
+  </data>
+	<data name="AutomationHost" xml:space="preserve">
+    <value>自動化主機</value>
+  </data>
+	<data name="CurrentVersion" xml:space="preserve">
+    <value>目前版本</value>
+  </data>
+	<data name="HTMLLink" xml:space="preserve">
+    <value>HTML 連結</value>
+  </data>
+	<data name="TestRun" xml:space="preserve">
+    <value>測試執行</value>
+  </data>
+	<data name="UploadDate" xml:space="preserve">
+    <value>上傳日期</value>
+  </data>
+	<data name="VersionComments" xml:space="preserve">
+    <value>版本評論</value>
+  </data>
+	<data name="ChangeSetID" xml:space="preserve">
+    <value>修改編號</value>
+  </data>
+	<data name="ChangeType" xml:space="preserve">
+    <value>修改類型</value>
+  </data>
+	<data name="Allocation" xml:space="preserve">
+    <value>分配</value>
+  </data>
+	<data name="AdditionalEffort" xml:space="preserve">
+    <value>額外工時</value>
+  </data>
+	<data name="EffortToDate" xml:space="preserve">
+    <value>工作日期</value>
+  </data>
+	<data name="Permission_Add" xml:space="preserve">
+    <value>新增</value>
+  </data>
+	<data name="Permission_Create" xml:space="preserve">
+    <value>建立</value>
+  </data>
+	<data name="Permission_Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+	<data name="Permission_Edit" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+	<data name="Permission_Modify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+	<data name="Permission_View" xml:space="preserve">
+    <value>檢視</value>
+  </data>
+	<data name="ProjectAdmin" xml:space="preserve">
+    <value>專案管理</value>
+  </data>
+	<data name="RoleName" xml:space="preserve">
+    <value>角色名稱</value>
+  </data>
+	<data name="SourceCode" xml:space="preserve">
+    <value>原始碼</value>
+  </data>
+	<data name="BuildName" xml:space="preserve">
+    <value>建立名稱</value>
+  </data>
+	<data name="BuildStatusId" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+	<data name="Build" xml:space="preserve">
+    <value>建立</value>
+  </data>
+	<data name="BuildId" xml:space="preserve">
+    <value>建立</value>
+  </data>
+	<data name="FixedBuild" xml:space="preserve">
+    <value>固定建立</value>
+  </data>
+	<data name="Actions" xml:space="preserve">
+    <value>行動</value>
+  </data>
+	<data name="Succeeded" xml:space="preserve">
+    <value>已成功</value>
+  </data>
+	<data name="Answer" xml:space="preserve"><value>回答</value></data>
+	<data name="NewPassword" xml:space="preserve"><value>新密碼</value></data>
+	<data name="OldPassword" xml:space="preserve"><value>舊密碼</value></data>
+	<data name="Password" xml:space="preserve"><value>密碼</value></data>
+	<data name="PasswordAnswer" xml:space="preserve"><value>密碼回答</value></data>
+	<data name="PasswordQuestion" xml:space="preserve"><value>密碼問題</value></data>
+	<data name="Question" xml:space="preserve"><value>問題</value></data>
+	<data name="UserName" xml:space="preserve"><value>使用者名稱</value></data>
+	<data name="ConfirmPassword" xml:space="preserve"><value>確認密碼</value></data>
+	<data name="Admin" xml:space="preserve"><value>管理</value></data>
+	<data name="EmailEnabled" xml:space="preserve"><value>電子郵件？</value></data>
+	<data name="MiddleInitialAbbreviation" xml:space="preserve"><value>中間名稱</value></data>
+	<data name="UserId" xml:space="preserve"><value>使用者 #</value></data>
+	<data name="EmailEnabledYn" xml:space="preserve"><value>啟動電子郵件？</value></data>
+	<data name="SystemAdministrator" xml:space="preserve"><value>系統管理者</value></data>
+	<data name="CommonName" xml:space="preserve"><value>一般名稱</value></data>
+	<data name="DistinguishedName" xml:space="preserve"><value>區分名稱</value></data>
+	<data name="Login" xml:space="preserve"><value>登入</value></data>
+	<data name="Category" xml:space="preserve"><value>種類</value></data>
+	<data name="EventCode" xml:space="preserve"><value>事件碼</value></data>
+	<data name="EventTime" xml:space="preserve"><value>事件時間</value></data>
+	<data name="Exception" xml:space="preserve"><value>例外</value></data>
+	<data name="Message" xml:space="preserve"><value>訊息</value></data>
+	<data name="Headline" xml:space="preserve"><value>標題</value></data>
+	<data name="PublishDate" xml:space="preserve"><value>發佈日期</value></data>
+	<data name="CustomProperty_FieldNumber" xml:space="preserve"><value>欄位 #</value></data>
+	<data name="CustomProperty_LegacyName" xml:space="preserve"><value>遺留名稱</value></data>
+	<data name="CustomProperty_PropertyName" xml:space="preserve"><value>屬性名稱</value></data>
+	<data name="Disabled" xml:space="preserve"><value>取消啟動</value></data>
+	<data name="general_isactive" xml:space="preserve"><value>使用中</value></data>
+	<data name="general_isdefault" xml:space="preserve"><value>預設值</value></data>
+	<data name="general_notify" xml:space="preserve"><value>通知</value></data>
+	<data name="general_operations" xml:space="preserve"><value>操作</value></data>
+	<data name="Hidden" xml:space="preserve"><value>隱藏</value></data>
+	<data name="Required" xml:space="preserve"><value>需要</value></data>
+	<data name="Subject" xml:space="preserve"><value>通知標題</value></data>
+	<data name="Workflow" xml:space="preserve"><value>工作流程</value></data>
+	<data name="workflow_id" xml:space="preserve"><value>工作流程 #</value></data>
+	<data name="workflow_name" xml:space="preserve"><value>工作流成名稱</value></data>
+	<data name="workflow_status_id" xml:space="preserve"><value>狀態 #</value></data>
+	<data name="workflow_step_name" xml:space="preserve"><value>步驟名稱</value></data>
+	<data name="workflow_transitions" xml:space="preserve"><value>轉換</value></data>
+	<data name="ReleaseVersionNumber" xml:space="preserve"><value>版本 #</value></data>
+	<data name="Report" xml:space="preserve"><value>報表</value></data>
+	<data name="Default" xml:space="preserve"><value>預設值</value></data>
+	<data name="Footer" xml:space="preserve"><value>腳注</value></data>
+	<data name="Formats" xml:space="preserve"><value>格式</value></data>
+	<data name="Header" xml:space="preserve"><value>標頭</value></data>
+	<data name="Query" xml:space="preserve"><value>查詢</value></data>
+	<data name="Template" xml:space="preserve"><value>範本</value></data>
+	<data name="Image" xml:space="preserve"><value>圖片</value></data>
+	<data name="LockedOut" xml:space="preserve"><value>關閉</value></data>
+	<data name="Issue" xml:space="preserve"><value>問題</value></data>
+	<data name="Risk" xml:space="preserve"><value>風險</value></data>
+	<data name="Color" xml:space="preserve"><value>顏色</value></data>
+	<data name="FullName" xml:space="preserve"><value>全名</value></data>
+	<data name="ProductType" xml:space="preserve"><value>產品類型</value></data>
+	<data name="ProjectGroupName" xml:space="preserve"><value>專案群組名稱</value></data>
+	<data name="ProjectGroupRole" xml:space="preserve"><value>專案群組角色</value></data>
+	<data name="Artifact" xml:space="preserve"><value>項目</value></data>
+	<data name="FieldSet" xml:space="preserve"><value>欄位集</value></data>
+	<data name="Configuration" xml:space="preserve"><value>設定</value></data>
+	<data name="ConnectionInfo" xml:space="preserve"><value>連結資訊</value></data>
+	<data name="Domain" xml:space="preserve"><value>網域</value></data>
+	<data name="ExternalKey" xml:space="preserve"><value>外部鍵值</value></data>
+	<data name="Field" xml:space="preserve"><value>欄位</value></data>
+	<data name="FieldValue" xml:space="preserve"><value>欄位值</value></data>
+	<data name="FolderName" xml:space="preserve"><value>資料夾名稱</value></data>
+	<data name="Interface" xml:space="preserve"><value>介面</value></data>
+	<data name="LastLogon" xml:space="preserve"><value>最後登入</value></data>
+	<data name="LastSyncDate" xml:space="preserve"><value>最後同步日期</value></data>
+	<data name="ParentFolder" xml:space="preserve"><value>父資料夾</value></data>
+	<data name="Primary" xml:space="preserve"><value>主要</value></data>
+	<data name="ProjectSettings" xml:space="preserve"><value>專案設定</value></data>
+	<data name="Provider" xml:space="preserve"><value>提供者</value></data>
+	<data name="SessionId" xml:space="preserve"><value>Session 編號</value></data>
+	<data name="RequirementStatusId" xml:space="preserve"><value>狀態</value></data>
+	<data name="ComponentId" xml:space="preserve"><value>模組</value></data>
+	<data name="RequirementTypeId" xml:space="preserve"><value>類型</value></data>
+	<data name="RequirementStepId" xml:space="preserve"><value>步驟 #</value></data>
+	<data name="UseCase" xml:space="preserve"><value>使用案例</value></data>
+	<data name="Estimate" xml:space="preserve"><value>預估</value></data>
+	<data name="TaskTypeId" xml:space="preserve"><value>類型</value></data>
+	<data name="Online" xml:space="preserve"><value>線上</value></data>
+	<data name="User" xml:space="preserve"><value>使用者</value></data>
+	<data name="ArtifactLinkTypeId" xml:space="preserve"><value>連結類型</value></data>
+	<data name="ProjectId" xml:space="preserve"><value>專案編號</value></data>
+	<data name="ProjectActive" xml:space="preserve"><value>專案活躍</value></data>
+	<data name="TaraVault_UserLogin" xml:space="preserve"><value>登入TaraVault </value></data>
+	<data name="ComponentIds" xml:space="preserve"><value>模組</value></data>
+	<data name="ReqTaskEffort" xml:space="preserve"><value>需求 / 任務工時</value></data>
+	<data name="AllocationIndicator" xml:space="preserve"><value>指派</value></data>
+	<data name="ProjectRoleId" xml:space="preserve"><value>專案角色</value></data>
+	<data name="ResourceEffort" xml:space="preserve"><value>資源工時</value></data>
+	<data name="PercentEffort" xml:space="preserve"><value>% 工時</value></data>
+	<data name="ArtifactDesc" xml:space="preserve"><value>項目名稱</value></data>
+	<data name="Author" xml:space="preserve"><value>作者</value></data>
+	<data name="UpdateDate" xml:space="preserve"><value>題交日期</value></data>
+</root>

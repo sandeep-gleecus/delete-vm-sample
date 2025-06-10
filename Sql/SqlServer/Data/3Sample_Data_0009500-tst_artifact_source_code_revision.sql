@@ -1,0 +1,38 @@
+/***************************************************************
+**	Insert script for table TST_ARTIFACT_SOURCE_CODE_REVISION
+***************************************************************/
+SET IDENTITY_INSERT TST_ARTIFACT_SOURCE_CODE_REVISION ON; 
+
+INSERT INTO TST_ARTIFACT_SOURCE_CODE_REVISION
+(
+ARTIFACT_SOURCE_CODE_REVISION_ID, ARTIFACT_TYPE_ID, ARTIFACT_ID, REVISION_KEY, COMMENT, CREATION_DATE
+)
+VALUES
+(
+1, 1, 6, '0010', NULL, DATEADD(day, -147, SYSUTCDATETIME())
+),
+(
+2, 1, 10, '0008', 'This implements the deletion functionality', DATEADD(day, -145, SYSUTCDATETIME())
+),
+(
+3, 1, 10, '0015', 'This implements the deletion screen fixes', DATEADD(day, -145, SYSUTCDATETIME())
+),
+(
+4, 3, 11, '0007', NULL, DATEADD(day, -140, SYSUTCDATETIME())
+),
+(
+5, 3, 12, '0001', NULL, DATEADD(day, -139, SYSUTCDATETIME())
+),
+(
+6, 3, 14, '0003', NULL, DATEADD(day, -141, SYSUTCDATETIME())
+),
+(
+7, 6, 19, '0015', NULL, DATEADD(day, -148, SYSUTCDATETIME())
+),
+(
+8, 6, 20, '0008', NULL, DATEADD(day, -147, SYSUTCDATETIME())
+)
+GO
+
+SET IDENTITY_INSERT TST_ARTIFACT_SOURCE_CODE_REVISION OFF; 
+

@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="App_Name" xml:space="preserve">
+    <value>ValidationMaster Installer</value>
+  </data>
+  <data name="ChooseLocation_Description" xml:space="preserve">
+    <value>Please choose the folder that {0} will be installed into. If the folder already exists, all contents will be removed without backup.</value>
+  </data>
+  <data name="ChooseLocation_Description_Uninstall" xml:space="preserve">
+    <value>Please choose the folder to uninstall {0} from. All folder contents will be removed without backup.</value>
+  </data>
+  <data name="ChooseLocation_Description_Upgrade" xml:space="preserve">
+    <value>Please choose the folder of the existing {0} installation to upgrade.</value>
+  </data>
+  <data name="ChooseLocation_Folder" xml:space="preserve">
+    <value>Folder:</value>
+  </data>
+  <data name="ChooseLocation_Header" xml:space="preserve">
+    <value>Installation Location</value>
+  </data>
+  <data name="ChooseLocation_Intro" xml:space="preserve">
+    <value>Please choose the location where ValidationMaster will be installed:</value>
+  </data>
+  <data name="ChooseLocation_KeyText" xml:space="preserve">
+    <value>Installation Location</value>
+  </data>
+  <data name="ChooseLocation_Path" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="Confirmation_Description" xml:space="preserve">
+    <value>The details and tasks to be performed are summarized below. Click the '{0}' button to begin the process. If you need to make changes to any of the setting below, use the 'Back' button.</value>
+  </data>
+  <data name="Confirmation_KeyText" xml:space="preserve">
+    <value>Start Installation</value>
+  </data>
+  <data name="Confirmation_StartInstallLegend" xml:space="preserve">
+    <value>Click '{0}' to start the process...</value>
+  </data>
+  <data name="DatabaseServer_AdvancedSettings" xml:space="preserve">
+    <value>Database Settings</value>
+  </data>
+  <data name="DatabaseServer_Connect" xml:space="preserve">
+    <value>Test Connection</value>
+  </data>
+  <data name="DatabaseServer_ConnectFailure" xml:space="preserve">
+    <value>Failed to connect to database server, error was '{0}'</value>
+  </data>
+  <data name="DatabaseServer_ConnectFailureLoginPassword" xml:space="preserve">
+    <value>Unable to login with the provided username and password.\nPlease check the login and password and try again\r\n (Error Message: '{0}')</value>
+  </data>
+  <data name="DatabaseServer_ConnectFailureServerInstanceNotFound" xml:space="preserve">
+    <value>Unable to connect to the database server.\n\nPlease make sure that the database server name is correct and that you have included the instance name if needed. (e.g. SQL Server express edition has a server name of MachineName\SQLEXPRESS)\n\n(Error Message: '{0}')</value>
+  </data>
+  <data name="DatabaseServer_ConnectSuccess" xml:space="preserve">
+    <value>Successfully connected to database server</value>
+  </data>
+  <data name="DatabaseServer_DatabaseInfo" xml:space="preserve">
+    <value>Connection Information</value>
+  </data>
+  <data name="DatabaseServer_DatabaseName" xml:space="preserve">
+    <value>Database Name:</value>
+  </data>
+  <data name="DatabaseServer_DatabaseUser" xml:space="preserve">
+    <value>Database User:</value>
+  </data>
+  <data name="DatabaseServer_Intro" xml:space="preserve">
+    <value>The installer will now help you connect to the SQL Server database that ValidationMaster is to be installed on.</value>
+  </data>
+  <data name="DatabaseServer_Introduction" xml:space="preserve">
+    <value>Please enter the name of the database server and the login/password for a system-administration level account that will be used to create the database and associated database objects:</value>
+  </data>
+  <data name="DatabaseServer_KeyText" xml:space="preserve">
+    <value>Database Connection</value>
+  </data>
+  <data name="DatabaseServer_Login" xml:space="preserve">
+    <value>Login:</value>
+  </data>
+  <data name="DatabaseServer_LoginNotSysAdmin" xml:space="preserve">
+    <value>The database login you have chosen is not a system administrator of the database. It will not be able to create the necessary database objects. Please try again using a 'sysadmin' level account.</value>
+  </data>
+  <data name="DatabaseServer_NewLogin" xml:space="preserve">
+    <value>SQL Server Login:</value>
+  </data>
+  <data name="DatabaseServer_Password" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="DatabaseServer_PasswordNoSemiColons" xml:space="preserve">
+    <value>You cannot use database passwords that contain semicolons</value>
+  </data>
+  <data name="DatabaseServer_SampleData" xml:space="preserve">
+    <value>Install Sample Data</value>
+  </data>
+  <data name="DatabaseServer_Server" xml:space="preserve">
+    <value>Server\Instance:</value>
+  </data>
+  <data name="DatabaseServer_ServerNoTrailingSlash" xml:space="preserve">
+    <value>The database server name cannot end in a backslash</value>
+  </data>
+  <data name="DatabaseServer_ServerRequired" xml:space="preserve">
+    <value>You need to provide a SQL Server instance!</value>
+  </data>
+  <data name="DatabaseServer_SQLAuth" xml:space="preserve">
+    <value>SQL Server Authentication</value>
+  </data>
+  <data name="DatabaseServer_SQLLoginRequired" xml:space="preserve">
+    <value>You need to provide a SQL Server login!</value>
+  </data>
+  <data name="DatabaseServer_UnableToDetectDatabaseRole" xml:space="preserve">
+    <value>Unable to detect database user's role. You can proceed with installation, but it may fail.</value>
+  </data>
+  <data name="DatabaseServer_UnableToDetectDatabaseVersion" xml:space="preserve">
+    <value>Unable to detect database version. You can proceed with installation, but it may fail.</value>
+  </data>
+  <data name="DatabaseServer_VersionTooOld" xml:space="preserve">
+    <value>Your database server is running an incompatible version of MS SQL Server. This application needs '{0}' or greater to be installed.</value>
+  </data>
+  <data name="DatabaseServer_WindowsAuth" xml:space="preserve">
+    <value>Windows Authentication</value>
+  </data>
+  <data name="Eula_AcceptEula" xml:space="preserve">
+    <value>I accept the terms of the End User License Agreement</value>
+  </data>
+  <data name="Eula_Intro" xml:space="preserve">
+    <value>Please read the following OnShore Technology Group, Inc. End User License Agreement (EULA) carefully:</value>
+  </data>
+  <data name="Eula_KeyText" xml:space="preserve">
+    <value>License Agreement</value>
+  </data>
+  <data name="Global_ClickNext" xml:space="preserve">
+    <value>Click 'Next' to continue...</value>
+  </data>
+  <data name="Global_DefaultProduct" xml:space="preserve">
+    <value>ValidationMaster</value>
+  </data>
+  <data name="Global_Failure" xml:space="preserve">
+    <value>Failure</value>
+  </data>
+  <data name="Global_Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="Global_Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="InstallationType_AddApplicationNode" xml:space="preserve">
+    <value>Add a ValidationMaster Application Server to a Clustered Instance</value>
+  </data>
+  <data name="InstallationType_CleanInstall" xml:space="preserve">
+    <value>Installs a new version of ValidationMaster on this computer</value>
+  </data>
+  <data name="InstallationType_InstallationOptions" xml:space="preserve">
+    <value>Installation Options</value>
+  </data>
+  <data name="InstallationType_Intro" xml:space="preserve">
+    <value>Please choose the setup that best suits your needs:</value>
+  </data>
+  <data name="InstallationType_KeyText" xml:space="preserve">
+    <value>Installation Type</value>
+  </data>
+  <data name="InstallationType_MaintenanceOptions" xml:space="preserve">
+    <value>Maintenance Options</value>
+  </data>
+  <data name="InstallationType_Uninstall" xml:space="preserve">
+    <value>Uninstall Application From this Server</value>
+  </data>
+  <data name="InstallationType_Upgrade" xml:space="preserve">
+    <value>Upgrades an older version of ValidationMaster already installed</value>
+  </data>
+  <data name="InstallationType_UpgradeDatabaseOnly" xml:space="preserve">
+    <value>Upgrade a Standalone ValidationMaster Database</value>
+  </data>
+  <data name="Introduction_Legend" xml:space="preserve">
+    <value>Welcome to the ValidationMaster installation wizard. This wizard will walk you through the steps to install ValidationMaster on your server. The installer can also upgrade an existing installation of ValidationMaster or add an additional ValidationMaster application node to a clustered installation.</value>
+  </data>
+  <data name="LicenseKey_Expiration" xml:space="preserve">
+    <value>Expiration:</value>
+  </data>
+  <data name="LicenseKey_Information" xml:space="preserve">
+    <value>License Information:</value>
+  </data>
+  <data name="LicenseKey_Intro" xml:space="preserve">
+    <value>Please enter the organization and license key exactly as listed in your OnShore Technology Group, Inc. customer area.</value>
+  </data>
+  <data name="LicenseKey_KeyText" xml:space="preserve">
+    <value>License Key</value>
+  </data>
+  <data name="LicenseKey_LicenseEntry" xml:space="preserve">
+    <value>License Entry:</value>
+  </data>
+  <data name="LicenseKey_LicenseIsExpired" xml:space="preserve">
+    <value>The provided license key has expired. Please contact OnShore Technology Group, Inc. Sales as soon as possible to get a new license key.</value>
+  </data>
+  <data name="LicenseKey_LicenseIsExpiredCaption" xml:space="preserve">
+    <value>License Key Expired</value>
+  </data>
+  <data name="LicenseKey_LicenseIsInvalid" xml:space="preserve">
+    <value>The provided license key is invalid. Please make sure you have entered the Organization Name and License Key exactly as they appear in the OnShore Technology Group, Inc. Customer Area</value>
+  </data>
+  <data name="LicenseKey_LicenseIsInvalidCaption" xml:space="preserve">
+    <value>License Key Invalid</value>
+  </data>
+  <data name="LicenseKey_LicenseKey" xml:space="preserve">
+    <value>License Key:</value>
+  </data>
+  <data name="LicenseKey_Organization" xml:space="preserve">
+    <value>Organization:</value>
+  </data>
+  <data name="LicenseKey_Perpetual" xml:space="preserve">
+    <value>Perpetual</value>
+  </data>
+  <data name="LicenseKey_Product" xml:space="preserve">
+    <value>Product:</value>
+  </data>
+  <data name="LicenseKey_Type" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="LicenseKey_Validate" xml:space="preserve">
+    <value>Validate License</value>
+  </data>
+  <data name="Prerequisites_Intro" xml:space="preserve">
+    <value>Checking to make sure the prerequisites are installed. Please refer to the installation guide for further details.</value>
+  </data>
+  <data name="Prerequisites_KeyText" xml:space="preserve">
+    <value>Verify Prerequisites</value>
+  </data>
+  <data name="Procedure_Description" xml:space="preserve">
+    <value>This wizard will install ValidationMaster from OnShore Technology Group, Inc. onto your server.</value>
+  </data>
+  <data name="Procedure_Title" xml:space="preserve">
+    <value>ValidationMaster {0} Installation Wizard</value>
+  </data>
+  <data name="Progress_KeyText" xml:space="preserve">
+    <value>Installation Progress</value>
+  </data>
+  <data name="Results_KeyText" xml:space="preserve">
+    <value>Installation Complete</value>
+  </data>
+  <data name="Results_Message" xml:space="preserve">
+    <value>Installation of {0} was completed successfully. You can start the application by opening the {0} program entry on the Start Menu.</value>
+  </data>
+  <data name="Results_Status" xml:space="preserve">
+    <value>{0} Installation Successful</value>
+  </data>
+  <data name="Thread_Name" xml:space="preserve">
+    <value>ValidationMaster Installer: Worker Thread</value>
+  </data>
+  <data name="WebServer_ExistingVirtualDirectoryIntro1" xml:space="preserve">
+    <value>Please choose the IIS virtual directory that you want to be uninstalled:</value>
+  </data>
+  <data name="WebServer_ExistingVirtualDirectoryIntro2" xml:space="preserve">
+    <value>Please choose the IIS virtual directory that you want to be upgraded:</value>
+  </data>
+  <data name="WebServer_Intro" xml:space="preserve">
+    <value>The installer will now let you choose how the product is installed on your IIS web server:</value>
+  </data>
+  <data name="WebServer_KeyText" xml:space="preserve">
+    <value>Web Server Configuration</value>
+  </data>
+  <data name="WebServer_NewApplicationPool" xml:space="preserve">
+    <value>Application Pool</value>
+  </data>
+  <data name="WebServer_NewVirtualDirectoryIntro" xml:space="preserve">
+    <value>Please enter the name of the IIS virtual directory that you want to use with ValidationMaster. Leaving it will blank will install ValidationMaster directly under the Website itself:</value>
+  </data>
+  <data name="WebServer_VirtualDirectory" xml:space="preserve">
+    <value>Virtual Directory:</value>
+  </data>
+  <data name="WebServer_WebSite" xml:space="preserve">
+    <value>Web Site:</value>
+  </data>
+  <data name="WebServer_WebSiteIntro" xml:space="preserve">
+    <value>Please choose the IIS website that you want to install ValidationMaster onto:</value>
+  </data>
+  <data name="WebServer_WebsiteRoot" xml:space="preserve">
+    <value>(Web Site Root)</value>
+  </data>
+  <data name="DatabaseBackup_Description" xml:space="preserve">
+    <value>Please choose the location where {0} will be backed up to:</value>
+  </data>
+  <data name="DatabaseBackup_File" xml:space="preserve">
+    <value>Backup File:</value>
+  </data>
+  <data name="DatabaseBackup_Header" xml:space="preserve">
+    <value>Backup Settings</value>
+  </data>
+  <data name="DatabaseBackup_KeyText" xml:space="preserve">
+    <value>Database Backup Location</value>
+  </data>
+  <data name="Global_ManufacturerName" xml:space="preserve">
+    <value>OnShore Technology Group, Inc.</value>
+  </data>
+  <data name="Eula_AcceptToContinue" xml:space="preserve">
+    <value>You need to accept the End User License Agreement (EULA) to Proceed!</value>
+  </data>
+  <data name="Global_ValidationError" xml:space="preserve">
+    <value>Please Fix Errors to Proceed</value>
+  </data>
+  <data name="ChooseLocation_InstallationFolderAlreadyExists" xml:space="preserve">
+    <value>The install folder already exists. Contents will be deleted before installation.</value>
+  </data>
+  <data name="ChooseLocation_InstallationFolderDoesNotExist" xml:space="preserve">
+    <value>The chosen folder '{0}' cannot be upgraded or uninstalled because it does not exist!</value>
+  </data>
+  <data name="ChooseLocation_InstallationFolderNotEntered" xml:space="preserve">
+    <value>Please enter the name of the folder you want to install {0} into!</value>
+  </data>
+  <data name="ChooseLocation_InstallationFolderNoWebConfig" xml:space="preserve">
+    <value>The chosen folder '{0}' cannot be upgraded or uninstalled because there is no '{1}' installation in that folder.</value>
+  </data>
+  <data name="InstallationType_NoOptionChosen" xml:space="preserve">
+    <value>Please choose an installation option to continue!</value>
+  </data>
+  <data name="WebServer_NeedToProvideApplicationPoolName" xml:space="preserve">
+    <value>Please enter the name of the application pool you want to create for {0}</value>
+  </data>
+  <data name="WebServer_ApplicationNameAlreadyInUse" xml:space="preserve">
+    <value>The application name selected for {0} is already in use, please use another name and try again!</value>
+  </data>
+  <data name="DatabaseBackup_BackupFileAlreadyExists" xml:space="preserve">
+    <value>The specified backup file '{0}' already exists, please choose a different name and try again!</value>
+  </data>
+  <data name="DatabaseBackup_FilenameIncorrectExtension" xml:space="preserve">
+    <value>The backup filename '{0}' needs to have a .bak file extension!</value>
+  </data>
+  <data name="DatabaseBackup_FilenameNotEntered" xml:space="preserve">
+    <value>You need to enter the name of a backup file for the {0} database!</value>
+  </data>
+  <data name="DatabaseBackup_FolderPathDoesNotExist" xml:space="preserve">
+    <value>The specified backup directory '{0}' does not exist!</value>
+  </data>
+  <data name="DatabaseServer_CannotUseNewLoginConflicts" xml:space="preserve">
+    <value>You cannot create a new login named '{0}' as it will conflict with the login you specified to perform the installation with.</value>
+  </data>
+  <data name="DatabaseServer_ConnectSuccessWithAppPoolWarning" xml:space="preserve">
+    <value>You are using Windows Authentication to connect to a remote database server, you will need to change the Application Pool identity to a Windows Domain User after installation.</value>
+  </data>
+  <data name="DatabaseServer_DatabaseNameAlreadyExists" xml:space="preserve">
+    <value>Cannot create the database '{0}' as a database by this name already exists. Please enter a different name and try again!</value>
+  </data>
+  <data name="DatabaseServer_DatabaseNameDoesNotExist" xml:space="preserve">
+    <value>Cannot upgrade, connect to, or uninstall the database '{0}' as no database exists by this name. Please double-check the server and login/password then try again!</value>
+  </data>
+  <data name="DatabaseServer_InvalidVersionofDatabaseSchema" xml:space="preserve">
+    <value>You cannot upgrade the '{0}' database, it is not running a supported version of '{1}'.</value>
+  </data>
+  <data name="Thread_Completed" xml:space="preserve">
+    <value>Installation of {0} completed.</value>
+  </data>
+  <data name="Thread_Completed_Uninstall" xml:space="preserve">
+    <value>Uninstallation of {0} completed.</value>
+  </data>
+  <data name="Thread_CompletedMessage" xml:space="preserve">
+    <value>Successfully completed the installation of {0} on this computer.</value>
+  </data>
+  <data name="Thread_Completed_UninstallMessage" xml:space="preserve">
+    <value>Successfully completed the uninstallation of {0} on this computer.</value>
+  </data>
+  <data name="Global_ThemeName" xml:space="preserve">
+    <value>ValidationMasterTheme</value>
+  </data>
+  <data name="Global_OnlineDocumentationUrl" xml:space="preserve">
+    <value>https://validationmaster.atlassian.net/servicedesk/customer/portal/2/group/-1</value>
+  </data>
+  <data name="Global_HelpLink" xml:space="preserve">
+    <value>https://validationmaster.atlassian.net/servicedesk/customer/portal/2/group/-1</value>
+  </data>
+  <data name="Global_HelpTelephone" xml:space="preserve">
+    <value>1.312.321.6400</value>
+  </data>
+  <data name="Global_ManufacturerLegalName" xml:space="preserve">
+    <value>OnShore Technology Group, Inc.</value>
+  </data>
+  <data name="Global_ManufacturerWebsite" xml:space="preserve">
+    <value>https://www.onshoretech.com</value>
+  </data>
+  <data name="Global_Tagline" xml:space="preserve">
+    <value>a complete Quality Assurance and Project Management suite.</value>
+  </data>
+  <data name="DatabaseServer_DatabaseNameAlreadyExists_Simple" xml:space="preserve">
+    <value>An application's database already exists. If you are trying to upgrade, go back to the Install Type screen and select an upgrade option. Otherwise, remove the database '{0}' and try again.</value>
+  </data>
+  <data name="Global_Uninstall" xml:space="preserve">
+    <value>Uninstall</value>
+  </data>
+  <data name="Global_Upgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="Global_Install" xml:space="preserve">
+    <value>Install</value>
+  </data>
+  <data name="Global_AdvancedOptions" xml:space="preserve">
+    <value>Enable Advanced Options</value>
+  </data>
+  <data name="DatabaseBackup_Intro1" xml:space="preserve">
+    <value>Set up the database backup options below.</value>
+  </data>
+  <data name="DatabaseBackup_Intro2" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="DatabaseBackup_Intro3" xml:space="preserve">
+    <value>If entering a custom location, make sure that the path exists on the database server, and that the database process can write to the path. Uninstallation will continue even if backup creation fails.</value>
+  </data>
+  <data name="DatabaseBackup_Filename1" xml:space="preserve">
+    <value>The filename of the backup in the above directory will be '</value>
+  </data>
+  <data name="DatabaseBackup_Filename2" xml:space="preserve">
+    <value>{0}_&lt;timestamp&gt;.bak</value>
+  </data>
+  <data name="DatabaseBackup_Filename3" xml:space="preserve">
+    <value>'.</value>
+  </data>
+  <data name="InstallTasks_Action_BackupDatabase" xml:space="preserve">
+    <value>Backup Database To File</value>
+  </data>
+  <data name="InstallTasks_Action_CreateControlPanel" xml:space="preserve">
+    <value>Create Add/Remove Programs Link</value>
+  </data>
+  <data name="InstallTasks_Action_CreateEventLog" xml:space="preserve">
+    <value>Create Event Log</value>
+  </data>
+  <data name="InstallTasks_Action_CreateStartMenu" xml:space="preserve">
+    <value>Create Start Menu Shortcuts</value>
+  </data>
+  <data name="InstallTasks_Action_CreateWebServer" xml:space="preserve">
+    <value>Create Web Server Links</value>
+  </data>
+  <data name="InstallTasks_Action_DeleteDatabase" xml:space="preserve">
+    <value>Delete Database</value>
+  </data>
+  <data name="InstallTasks_Action_InstallApp" xml:space="preserve">
+    <value>Copy Application Files</value>
+  </data>
+  <data name="InstallTasks_Action_InstallDatabaase" xml:space="preserve">
+    <value>Create Database</value>
+  </data>
+  <data name="InstallTasks_Action_InstallSync" xml:space="preserve">
+    <value>Install DataSync Service</value>
+  </data>
+  <data name="InstallTasks_Action_RemoveApp" xml:space="preserve">
+    <value>Remove Application Files</value>
+  </data>
+  <data name="InstallTasks_Action_RemoveStartMenu" xml:space="preserve">
+    <value>Remove Start Menu Shortcuts</value>
+  </data>
+  <data name="InstallTasks_Action_RemoveSync" xml:space="preserve">
+    <value>Remove DataSync Service</value>
+  </data>
+  <data name="InstallTasks_Action_RemoveWebServer" xml:space="preserve">
+    <value>Remove Web Server Links</value>
+  </data>
+  <data name="InstallTasks_Action_UpdateConfig" xml:space="preserve">
+    <value>Update Configuration Files</value>
+  </data>
+  <data name="InstallTasks_Action_UpdateSettings" xml:space="preserve">
+    <value>Update Application Settings</value>
+  </data>
+  <data name="InstallTasks_Action_UpgradeDatabase" xml:space="preserve">
+    <value>Upgrade Database Schema</value>
+  </data>
+  <data name="InstallTasks_HeaderInstall" xml:space="preserve">
+    <value>Installation Tasks:</value>
+  </data>
+  <data name="InstallTasks_HeaderUninstall" xml:space="preserve">
+    <value>Uninstallation Tasks:</value>
+  </data>
+  <data name="InstallTasks_HeaderUpgrade" xml:space="preserve">
+    <value>Upgrade Tasks:</value>
+  </data>
+  <data name="Confirmation_UninstallNoDBBackup" xml:space="preserve">
+    <value>WARNING: The database will not be backed up.
+All data in it will be lost when the database is removed!</value>
+  </data>
+  <data name="Confirmation_UpgradeNoDBBackup" xml:space="preserve">
+    <value>WARNING: The database will not be backed up.
+Data may be lost if the upgrade process fails!</value>
+  </data>
+  <data name="Progress_DBUpgrade_WrongVersionMaximum" xml:space="preserve">
+    <value>Database is already version {0}. It cannot be upgraded to a higher version.</value>
+  </data>
+  <data name="Progress_DBUpgrade_WrongVersionMinimum" xml:space="preserve">
+    <value>Database is currently version {0}. It must be at least {1} to upgrade to {2}.</value>
+  </data>
+  <data name="Global_Installation" xml:space="preserve">
+    <value>Installation</value>
+  </data>
+  <data name="InstallResult_Message_ErrorAppSettings" xml:space="preserve">
+    <value>Could not update application settings with new setting. Log in to the application and verify Global Settings are correct.</value>
+  </data>
+  <data name="InstallResult_Message_ErrorBkpDatabase" xml:space="preserve">
+    <value>There was an error trying to back up the database. The {1} could not continue. Check hard drive space, and user permissions, then try the {1} again.</value>
+  </data>
+  <data name="InstallResult_Message_ErrorTitle" xml:space="preserve">
+    <value>{1} Incomplete</value>
+  </data>
+  <data name="InstallResult_Message_ErrorUpgApplFiles" xml:space="preserve">
+    <value>Could not properly copy the new application files into the install directory. Make sure there are no open files in the directory and that disk space is not limited, then run upgrade again.</value>
+  </data>
+  <data name="InstallResult_Message_ErrorUpgDatabase" xml:space="preserve">
+    <value>There was an error upgrading the database. Restore the backup that was created, and try the upgrade again.</value>
+  </data>
+  <data name="InstallResult_Message_ErrorWebConfig" xml:space="preserve">
+    <value>Could not update the application's configration. Please inform support if you cannot connect to the application.</value>
+  </data>
+  <data name="InstallResult_Message_SuccessTitle" xml:space="preserve">
+    <value>{1} Successful</value>
+  </data>
+  <data name="Install_Type_Upgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="InstallResult_Message_ErrorInsDatabase" xml:space="preserve">
+    <value>Could not create the database or database objects.</value>
+  </data>
+  <data name="InstallResult_Message_ErrorInsFiles" xml:space="preserve">
+    <value>Could not copy files into installation directory.</value>
+  </data>
+  <data name="InstallResult_Message_ErrorInsRollback" xml:space="preserve">
+    <value>The application could not be installed. {0}
+Try installation again. If you continue to have issues, contact support.</value>
+  </data>
+  <data name="InstallResult_Message_ErrorInsSettings" xml:space="preserve">
+    <value>Could not create application settings.</value>
+  </data>
+  <data name="InstallResult_Message_ErrorInsWebObj" xml:space="preserve">
+    <value>Could not create the IIS Server Web Objects.</value>
+  </data>
+  <data name="Upgrade_NewerVersion" xml:space="preserve">
+    <value>The application installed is a newer version than this installer. You cannot downgrade the current installation.</value>
+  </data>
+  <data name="Upgrade_SameVersion" xml:space="preserve">
+    <value>The applicaiton is already at version v{0} - there is no need to upgrade. Are you sure you want to continue?</value>
+  </data>
+  <data name="Upgrade_WrongVersion" xml:space="preserve">
+    <value>The version installed is older than v5.4. It must be upgraded to the latest v5.4 version before you can upgrade to v6.x.</value>
+  </data>
+  <data name="Global_LogLocation" xml:space="preserve">
+    <value>For additional information, the log can be found in C:\ProgramData\OnShore\ValidationMaster</value>
+  </data>
+</root>

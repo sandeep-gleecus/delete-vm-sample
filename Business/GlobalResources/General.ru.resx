@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Global_NoneFlag" xml:space="preserve">
+    <value>{Нет}</value>
+  </data>
+  <data name="TestRun_VariousTestCases" xml:space="preserve">
+    <value>Различные тестовые случаи</value>
+  </data>
+  <data name="Task_ProgressNotStarted" xml:space="preserve">
+    <value>не начатый</value>
+  </data>
+  <data name="Task_ProgressPercentComplete" xml:space="preserve">
+    <value>% полный</value>
+  </data>
+  <data name="Task_ProgressScheduledEndOn" xml:space="preserve">
+    <value>запланированный к концу</value>
+  </data>
+  <data name="Task_ProgressShouldHaveStartedOn" xml:space="preserve">
+    <value>надо было начинать</value>
+  </data>
+  <data name="Task_Progress_ShouldHaveFinishedOn" xml:space="preserve">
+    <value>надо было закончить</value>
+  </data>
+  <data name="Global_NoTasks" xml:space="preserve">
+    <value>Нет Задач</value>
+  </data>
+  <data name="Global_Tasks" xml:space="preserve">
+    <value>Задачи</value>
+  </data>
+  <data name="Task_NotStarted" xml:space="preserve">
+    <value>Не началось</value>
+  </data>
+  <data name="Task_OnSchedule" xml:space="preserve">
+    <value>В соответствии с графиком</value>
+  </data>
+  <data name="Task_RunningLate" xml:space="preserve">
+    <value>Опоздал с опозданием</value>
+  </data>
+  <data name="Task_StartingLate" xml:space="preserve">
+    <value>Позднее начало</value>
+  </data>
+  <data name="TestCase_NewTestCase" xml:space="preserve">
+    <value>Новый тестовый случай</value>
+  </data>
+  <data name="TestCase_NewTestCaseComment" xml:space="preserve">
+    <value>Новый тестовый пример, созданный по требованию</value>
+  </data>
+  <data name="TestSet_NewTestSetBasedOnRelease" xml:space="preserve">
+    <value>Новый набор тестов на основе релиза</value>
+  </data>
+  <data name="TestSet_NewTestSetBasedOnRequirements" xml:space="preserve">
+    <value>Новый испытательный комплект на основе выбранных требований</value>
+  </data>
+  <data name="Requirement_NotCovered" xml:space="preserve">
+    <value>Не закрыт</value>
+  </data>
+  <data name="TestCase_Blocked" xml:space="preserve">
+    <value>Блокированный</value>
+  </data>
+  <data name="TestCase_Caution" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="TestCase_Failed" xml:space="preserve">
+    <value>Не удалось</value>
+  </data>
+  <data name="TestCase_NotRun" xml:space="preserve">
+    <value>Не бегать</value>
+  </data>
+  <data name="TestCase_Passed" xml:space="preserve">
+    <value>Прошел</value>
+  </data>
+  <data name="TestCase_Run" xml:space="preserve">
+    <value>Запустить</value>
+  </data>
+  <data name="Global_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Global_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Global_Copy" xml:space="preserve">
+    <value>Скопировать</value>
+  </data>
+  <data name="Global_CopyOf" xml:space="preserve">
+    <value>Копия</value>
+  </data>
+  <data name="Task_Completed" xml:space="preserve">
+    <value>Заполнено</value>
+  </data>
+  <data name="Requirement_ReqCreatedFromIncident" xml:space="preserve">
+    <value>Требование, созданное на основе существующего инцидента.</value>
+  </data>
+  <data name="TestCase_Call" xml:space="preserve">
+    <value>Звоните на .</value>
+  </data>
+  <data name="Incident_Complete" xml:space="preserve">
+    <value>полный</value>
+  </data>
+  <data name="Incident_NotStarted" xml:space="preserve">
+    <value>не начатый</value>
+  </data>
+  <data name="Incident_ShouldHaveStartedOn" xml:space="preserve">
+    <value>надо было начинать</value>
+  </data>
+  <data name="GraphDescription_IncidentAging" xml:space="preserve">
+    <value>На диаграмме "Старение инцидентов" отображается количество дней, в течение которых инциденты оставались в системе незакрытыми.</value>
+  </data>
+  <data name="GraphDescription_IncidentCumulativeCount" xml:space="preserve">
+    <value>Диаграмма "Совокупный подсчет происшествий" отображает совокупное общее количество происшествий, зарегистрированных в системе для текущего продукта на определенном интервале данных.</value>
+  </data>
+  <data name="GraphDescription_IncidentOpenCount" xml:space="preserve">
+    <value>Диаграмма Incident Open Count отображает общее количество открытых инцидентов в системе для текущего продукта на определенном диапазоне данных, сгруппированных по приоритету инцидентов.</value>
+  </data>
+  <data name="GraphDescription_IncidentProgressRate" xml:space="preserve">
+    <value>На диаграмме "Прогресс в инцидентах" отображается общее количество инцидентов, созданных и закрытых на определенном интервале данных.</value>
+  </data>
+  <data name="GraphDescription_IncidentSummary" xml:space="preserve">
+    <value>График "Сводка происшествий" показывает, сколько происшествий в настоящее время происходит в продукте. Количество инцидентов отображается в соответствии с указанными вами критериями. Вы можете указать тип данных, отображаемых по оси x, и информацию об инцидентах, которая используется для группировки данных</value>
+  </data>
+  <data name="GraphDescription_IncidentTurnaround" xml:space="preserve">
+    <value>На графике времени происшествий отображается количество дней, в течение которых происшествия были закрыты (с момента их первого поднятия) в системе.</value>
+  </data>
+  <data name="GraphDescription_RequirementCoverage" xml:space="preserve">
+    <value>График Покрытия Требований показывает, сколько требований в настоящее время находится в продукте, в соответствии с их тестовым покрытием.</value>
+  </data>
+  <data name="GraphDescription_RequirementSummary" xml:space="preserve">
+    <value>Сводный график требований показывает, сколько требований в настоящее время находится в продукте. Количество требований отображается в соответствии с указанными вами критериями. Вы можете указать тип данных, отображаемых по оси х, а также информацию о требованиях, которая используется для группировки данных.</value>
+  </data>
+  <data name="GraphDescription_TaskBurnDown" xml:space="preserve">
+    <value>График Task Burndown показывает оставшуюся работу, которую необходимо выполнить для каждого релиза/отпечатка в продукте.</value>
+  </data>
+  <data name="GraphDescription_TaskBurnUp" xml:space="preserve">
+    <value>График "Скорость выполнения задач" показывает кумулятивное увеличение объема работы по каждому выпуску/оттиску продукта с указанием процентного соотношения задач, которые находятся в графике, позднего начала и позднего окончания.</value>
+  </data>
+  <data name="GraphDescription_TaskSummary" xml:space="preserve">
+    <value>График "Сводка задач" показывает, сколько задач в настоящее время находится в продукте. Количество задач отображается в соответствии с указанными вами критериями. Вы можете указать тип данных, отображаемых по оси x, и информацию о задаче, которая используется для группировки данных</value>
+  </data>
+  <data name="GraphDescription_TaskVelocity" xml:space="preserve">
+    <value>График "Скорость выполнения задачи" показывает общий расчетный и фактический объем трудозатрат по каждому выпуску продукции и/или спринтеру.</value>
+  </data>
+  <data name="GraphDescription_TestCaseSummary" xml:space="preserve">
+    <value>Сводный график тестовых случаев показывает, сколько тестовых случаев в настоящее время находится в продукте. Количество тестовых случаев отображается в соответствии с указанными вами критериями. Вы можете указать тип данных, отображаемых по оси х, и информацию об испытательном примере, которая используется для группировки данных</value>
+  </data>
+  <data name="GraphDescription_TestRunProgressRate" xml:space="preserve">
+    <value>График прогресса выполнения тестов показывает, сколько тестов было выполнено за определенный период времени, и какое состояние выполнения было зафиксировано.</value>
+  </data>
+  <data name="GraphDescription_TestRunSummary" xml:space="preserve">
+    <value>Сводный график выполнения тестов показывает, сколько тестовых запусков было выполнено в продукте. Количество тестовых запусков отображается в соответствии с указанными вами критериями. Вы можете указать тип данных, отображаемых по оси x, и информацию о пробном запуске, которая используется для группировки данных</value>
+  </data>
+  <data name="GraphName_IncidentAging" xml:space="preserve">
+    <value>Случайное старение</value>
+  </data>
+  <data name="GraphName_IncidentCumulativeCount" xml:space="preserve">
+    <value>Совокупный подсчёт происшествий</value>
+  </data>
+  <data name="GraphName_IncidentOpenCount" xml:space="preserve">
+    <value>Инцидент Открытый счет</value>
+  </data>
+  <data name="GraphName_IncidentProgressRate" xml:space="preserve">
+    <value>Прогресс в инцидентах</value>
+  </data>
+  <data name="GraphName_IncidentSummary" xml:space="preserve">
+    <value>Резюме происшествия</value>
+  </data>
+  <data name="GraphName_IncidentTurnaround" xml:space="preserve">
+    <value>Время рассмотрения инцидента</value>
+  </data>
+  <data name="GraphName_RequirementCoverage" xml:space="preserve">
+    <value>Требования Охват</value>
+  </data>
+  <data name="GraphName_RequirementSummary" xml:space="preserve">
+    <value>Резюме требований</value>
+  </data>
+  <data name="GraphName_TaskBurnDown" xml:space="preserve">
+    <value>Задача Берндаун</value>
+  </data>
+  <data name="GraphName_TaskBurnUp" xml:space="preserve">
+    <value>Задача Burnup</value>
+  </data>
+  <data name="GraphName_TaskSummary" xml:space="preserve">
+    <value>Резюме задачи</value>
+  </data>
+  <data name="GraphName_TaskVelocity" xml:space="preserve">
+    <value>Скорость выполнения задач</value>
+  </data>
+  <data name="GraphName_TestCaseSummary" xml:space="preserve">
+    <value>Сводка по результатам тестирования</value>
+  </data>
+  <data name="GraphName_TestRunProgressRate" xml:space="preserve">
+    <value>Темп прогрессирования тестов</value>
+  </data>
+  <data name="GraphName_TestRunSummary" xml:space="preserve">
+    <value>Сводка результатов тестирования</value>
+  </data>
+  <data name="Graph_ClosedCount" xml:space="preserve">
+    <value>Закрытый счёт</value>
+  </data>
+  <data name="Graph_Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="Graph_DiscoveredCount" xml:space="preserve">
+    <value>Обнаруженный граф</value>
+  </data>
+  <data name="Graph_OpenCount" xml:space="preserve">
+    <value>Открытый счет</value>
+  </data>
+  <data name="Graph_TotalCount" xml:space="preserve">
+    <value>Общее количество</value>
+  </data>
+  <data name="Global_None" xml:space="preserve">
+    <value>(Нет)</value>
+  </data>
+  <data name="GraphDescription_TestSetSummary" xml:space="preserve">
+    <value>Сводный график тестовых наборов показывает, сколько тестовых наборов в настоящее время находится в продукте. Количество тестовых наборов отображается в соответствии с указанными вами критериями. Вы можете указать тип данных, отображаемых по оси х, и информацию об испытательном комплекте, которая используется для группировки данных</value>
+  </data>
+  <data name="GraphName_TestSetSummary" xml:space="preserve">
+    <value>Резюме тестового набора</value>
+  </data>
+  <data name="Graph_Age" xml:space="preserve">
+    <value>Возраст</value>
+  </data>
+  <data name="Graph_Turnaround" xml:space="preserve">
+    <value>Оборот</value>
+  </data>
+  <data name="Graph_Iteration" xml:space="preserve">
+    <value>Спринт</value>
+  </data>
+  <data name="Graph_Release" xml:space="preserve">
+    <value>Релиз</value>
+  </data>
+  <data name="Graphs_CompletedEffort" xml:space="preserve">
+    <value>Завершенное усилие</value>
+  </data>
+  <data name="Graphs_EstimatedEffort" xml:space="preserve">
+    <value>Расчетный вклад</value>
+  </data>
+  <data name="Graphs_IdealEffort" xml:space="preserve">
+    <value>Идеальное Усилие</value>
+  </data>
+  <data name="Graphs_RemainingEffort" xml:space="preserve">
+    <value>Оставшиеся усилия</value>
+  </data>
+  <data name="Graphs_ActualVelocity" xml:space="preserve">
+    <value>Фактическая скорость</value>
+  </data>
+  <data name="Graphs_ExpectedVelocity" xml:space="preserve">
+    <value>Ожидаемая скорость</value>
+  </data>
+  <data name="Graph_Start" xml:space="preserve">
+    <value>Начать</value>
+  </data>
+  <data name="Graph_CoverageStatus" xml:space="preserve">
+    <value>Статус покрытия</value>
+  </data>
+  <data name="Project_ResourceAllocated" xml:space="preserve">
+    <value>Распределенные ресурсы</value>
+  </data>
+  <data name="Requirement_NewRequirement" xml:space="preserve">
+    <value>Новое требование</value>
+  </data>
+  <data name="Requirement_NewRequirementComment" xml:space="preserve">
+    <value>Новое требование, созданное из тестового случая</value>
+  </data>
+  <data name="Global_Incident" xml:space="preserve">
+    <value>Инцидент</value>
+  </data>
+  <data name="Workflow_ChangeStatusSubject" xml:space="preserve">
+    <value>изменил статус с '{0}' на '{1}'.</value>
+  </data>
+  <data name="Global_ImportedFrom" xml:space="preserve">
+    <value>Импортировано из Товара #{0}, {1} #{2}</value>
+  </data>
+  <data name="Global_ExportedTo" xml:space="preserve">
+    <value>Экспортируется в продукт #{0}, #{1} #{2}</value>
+  </data>
+  <data name="Workflow_DefaultWorflow" xml:space="preserve">
+    <value>По умолчанию Рабочий процесс</value>
+  </data>
+  <data name="TestStep_Step" xml:space="preserve">
+    <value>Шаг</value>
+  </data>
+  <data name="Global_Revision" xml:space="preserve">
+    <value>Редакция</value>
+  </data>
+  <data name="Global_Report" xml:space="preserve">
+    <value>Сообщить</value>
+  </data>
+  <data name="History_ArtifactIdFormat" xml:space="preserve">
+    <value>Артефакт [{0}:{1}]</value>
+  </data>
+  <data name="History_PurgeProgress_AutomationHosts" xml:space="preserve">
+    <value>Хозяева Очищающей Автоматики...</value>
+  </data>
+  <data name="History_PurgeProgress_Complete" xml:space="preserve">
+    <value>Полный!</value>
+  </data>
+  <data name="History_PurgeProgress_Incidents" xml:space="preserve">
+    <value>Чистящие Инциденты...</value>
+  </data>
+  <data name="History_PurgeProgress_Releases" xml:space="preserve">
+    <value>"Чистящие" выпуски...</value>
+  </data>
+  <data name="History_PurgeProgress_Requirements" xml:space="preserve">
+    <value>Требования по очистке...</value>
+  </data>
+  <data name="History_PurgeProgress_RequirementSteps" xml:space="preserve">
+    <value>Шаги очистки...</value>
+  </data>
+  <data name="History_PurgeProgress_Tasks" xml:space="preserve">
+    <value>Чистящие Задачи...</value>
+  </data>
+  <data name="History_PurgeProgress_TestCases" xml:space="preserve">
+    <value>Тесты очистки...</value>
+  </data>
+  <data name="History_PurgeProgress_TestSets" xml:space="preserve">
+    <value>Наборы тестов очистки...</value>
+  </data>
+  <data name="History_PurgeProgress_TestSteps" xml:space="preserve">
+    <value>Шаги теста очистки...</value>
+  </data>
+  <data name="TestCase_NotApplicable" xml:space="preserve">
+    <value>Не применимо</value>
+  </data>
+  <data name="NotificationManager_SendIndivNotification" xml:space="preserve">
+    <value>Это требует вашего внимания!</value>
+  </data>
+  <data name="SourceCode_SourceCodeCommit" xml:space="preserve">
+    <value>Комитет по исходному коду</value>
+  </data>
+  <data name="SourceCode_NoProvidersLoaded" xml:space="preserve">
+    <value>Для продукта #{0} не было загружено ни одного провайдера исходного кода.</value>
+  </data>
+  <data name="SourceCode_CouldNotLogin" xml:space="preserve">
+    <value>Невозможно аутентифицироваться у поставщика исходных кодов.</value>
+  </data>
+  <data name="SourceCode_NoProvidersEnabled" xml:space="preserve">
+    <value>Для продукта #{0} не включены провайдеры исходных кодов.</value>
+  </data>
+  <data name="SouceCode_UnableToLoadDLL" xml:space="preserve">
+    <value>Невозможно загрузить провайдер версионного контроля '{0}'.</value>
+  </data>
+  <data name="SourceCode_CouldNotIni" xml:space="preserve">
+    <value>Не смог инициализировать библиотеку провайдера '{0}'.</value>
+  </data>
+  <data name="SourceCode_InvalidCache" xml:space="preserve">
+    <value>Библиотека Version Control обновляет кэш.</value>
+  </data>
+  <data name="GraphDescription_RequirementBurnDown" xml:space="preserve">
+    <value>График "Сжигание требований" показывает оставшееся количество сюжетных точек, которые необходимо сделать для каждого релиза/отпечатка в продукте.</value>
+  </data>
+  <data name="GraphDescription_RequirementBurnUp" xml:space="preserve">
+    <value>График "Требования к сжиганию" показывает суммарное количество точек сюжета для каждого выпуска/отпечатка в изделии с указанием количества завершенных точек сюжета для каждого интервала.</value>
+  </data>
+  <data name="GraphDescription_RequirementVelocity" xml:space="preserve">
+    <value>График "Скорость выполнения требований" показывает фактическое количество сюжетных точек, поставленных в каждом выпуске продукта и/или спринтере, в сравнении со средним значением.</value>
+  </data>
+  <data name="GraphName_RequirementBurnDown" xml:space="preserve">
+    <value>Требование Сжигание</value>
+  </data>
+  <data name="GraphName_RequirementBurnUp" xml:space="preserve">
+    <value>Ожог по требованию</value>
+  </data>
+  <data name="GraphName_RequirementVelocity" xml:space="preserve">
+    <value>Скорость выполнения требования</value>
+  </data>
+  <data name="Graphs_ActualBurnup" xml:space="preserve">
+    <value>Фактическое выгорание</value>
+  </data>
+  <data name="Graphs_AverageVelocity" xml:space="preserve">
+    <value>Средняя скорость</value>
+  </data>
+  <data name="Graphs_CompletedPoints" xml:space="preserve">
+    <value>Заполненные пункты</value>
+  </data>
+  <data name="Graphs_IdealBurndown" xml:space="preserve">
+    <value>идеальный сгорание</value>
+  </data>
+  <data name="Graphs_IdealBurnup" xml:space="preserve">
+    <value>Идеальный ожог</value>
+  </data>
+  <data name="Graphs_RemainingPoints" xml:space="preserve">
+    <value>Оставшиеся пункты</value>
+  </data>
+  <data name="Graphs_RollingAverage" xml:space="preserve">
+    <value>среднеспутниковая прокатка</value>
+  </data>
+  <data name="Global_Multiple" xml:space="preserve">
+    <value>Многократный</value>
+  </data>
+  <data name="Project_ResourceAllocatedOpen" xml:space="preserve">
+    <value>Распределены по открытым артефактам</value>
+  </data>
+  <data name="History_Exported" xml:space="preserve">
+    <value>Экспортировано</value>
+  </data>
+  <data name="History_Imported" xml:space="preserve">
+    <value>Импортированный</value>
+  </data>
+  <data name="Exception_BadRequest" xml:space="preserve">
+    <value>Поле в запросе было недействительным.</value>
+  </data>
+  <data name="Exception_Conflict" xml:space="preserve">
+    <value>Элемент с таким именем/электронной почтой уже существует.</value>
+  </data>
+  <data name="Exception_Unauthorized" xml:space="preserve">
+    <value>Учетная запись не может выполнять это действие.</value>
+  </data>
+  <data name="Exception_Unknown" xml:space="preserve">
+    <value>Произошла неизвестная коммуникационная ошибка ({0}). {1}</value>
+  </data>
+  <data name="Exceptioon_MethodNotAllowed" xml:space="preserve">
+    <value>Ты не можешь выполнить это действие в данный момент.</value>
+  </data>
+  <data name="TestCase_DefaultTestStepExpectedResult" xml:space="preserve">
+    <value>Работает, как и ожидалось.</value>
+  </data>
+  <data name="TestStep_WorksAsExpected" xml:space="preserve">
+    <value>Работает, как и ожидалось.</value>
+  </data>
+  <data name="Global_Root" xml:space="preserve">
+    <value>корень</value>
+  </data>
+  <data name="Task_NewTask" xml:space="preserve">
+    <value>Новая задача</value>
+  </data>
+  <data name="TestSet_NewTestSet" xml:space="preserve">
+    <value>Новый тестовый набор</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="GraphDescription_IncidentCountByStatus" xml:space="preserve">
+    <value>График "Подсчет происшествий по статусу" отображает совокупное общее количество происшествий, зарегистрированных в системе для текущего продукта в определенном диапазоне данных, сгруппированных по статусу.</value>
+  </data>
+  <data name="GraphDescription_TestCaseProgress" xml:space="preserve">
+    <value>График хода выполнения тестовых заданий показывает, сколько уникальных тестовых заданий было выполнено за определенный период времени, и какой статус выполнения был записан.</value>
+  </data>
+  <data name="GraphDescription_TestCaseProgressCumulative" xml:space="preserve">
+    <value>График "Совокупный ход выполнения тестовых заданий" отображает ход выполнения тестовых заданий за период времени в сравнении с общим количеством не выполненных тестовых заданий.</value>
+  </data>
+  <data name="GraphName_IncidentCountByStatus" xml:space="preserve">
+    <value>Подсчет происшествий по статусу</value>
+  </data>
+  <data name="GraphName_TestCaseProgress" xml:space="preserve">
+    <value>Степень прогресса в тестовом случае</value>
+  </data>
+  <data name="GraphName_TestCaseProgressCumulative" xml:space="preserve">
+    <value>Совокупный прогресс по тестовому делу</value>
+  </data>
+  <data name="TestSet_Future" xml:space="preserve">
+    <value>Будущее</value>
+  </data>
+  <data name="TestSet_Overdue" xml:space="preserve">
+    <value>Просрочка</value>
+  </data>
+  <data name="TestSet_Unscheduled" xml:space="preserve">
+    <value>Внеплановый</value>
+  </data>
+</root>

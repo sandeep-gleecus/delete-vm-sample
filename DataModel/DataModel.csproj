@@ -1,0 +1,1708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A6B00CE-2665-4BAF-9CFC-4D08CE6D8446}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inflectra.SpiraTest.DataModel</RootNamespace>
+    <AssemblyName>DataModel</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllocationActual.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllocationPlanned.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Artifact.cs" />
+    <Compile Include="ArtifactAttachment.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactAttachmentView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactAttachmentViewEx.cs" />
+    <Compile Include="ArtifactCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactCustomPropertyEx.cs" />
+    <Compile Include="ArtifactField.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactFieldDisplay.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactFieldEx.cs" />
+    <Compile Include="ArtifactFieldType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactLink.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactLinkEx.cs" />
+    <Compile Include="ArtifactLinkType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactLinkTypeEx.cs" />
+    <Compile Include="ArtifactLinkView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactLinkViewEx.cs" />
+    <Compile Include="ArtifactListFieldDisplay.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactMessage.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactSourceCodeFile.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactSourceCodeRevision.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactSourceCodeRevisionView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactTag.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtifactTypeEx.cs" />
+    <Compile Include="ArtifactView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Attachment.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AttachmentEx.cs" />
+    <Compile Include="AttachmentType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AttachmentVersion.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AttachmentVersionView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuditTrailEntityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuditTrailEntityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuditTrailEntityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuditTrailEntityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuditTrailEntityModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AutomationEngine.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AutomationEngineEx.cs" />
+    <Compile Include="AutomationHost.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AutomationHostEx.cs" />
+    <Compile Include="AutomationHostView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AutomationHostViewEx.cs" />
+    <Compile Include="Build.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BuildEx.cs" />
+    <Compile Include="BuildSourceCode.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BuildStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BuildStatusEx.cs" />
+    <Compile Include="BuildView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BuildViewEx.cs" />
+    <Compile Include="VW_OLD_HISTORY_CHANGE_LISTEx.cs" />
+    <Compile Include="Component.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentEx.cs" />
+    <Compile Include="CustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPropertyList.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPropertyOption.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPropertyOptionValue.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPropertyType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPropertyValue.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardCustom.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardCustomPermission.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardCustomType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardGlobalPersonalization.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUserPersonalization.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncArtifactFieldValueMapping.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncArtifactMapping.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncCustomPropertyMapping.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncCustomPropertyMappingEx.cs" />
+    <Compile Include="DataSyncCustomPropertyValueMapping.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncCustomPropertyValueMappingView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncFieldValueMappingView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncProject.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncSystem.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncSystemEx.cs" />
+    <Compile Include="DataSyncUserMapping.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSyncUserMappingView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools_Release.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataTools_Requirement.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentDiscussion.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentStatusEx.cs" />
+    <Compile Include="DocumentType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentWorkflow.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentWorkflowCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentWorkflowField.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentWorkflowTransition.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentWorkflowTransitionRole.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptionHelper.cs" />
+    <Compile Include="ErrorLog.cs" />
+    <Compile Include="ErrorLogEx.cs" />
+    <Compile Include="Event.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EventType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionStatusActiveView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionStatusEx.cs" />
+    <Compile Include="Filetype.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FiletypeEx.cs" />
+    <Compile Include="GlobalArtifactCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalCustomPropertyList.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalCustomPropertyOptionValue.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalCustomPropertyValue.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalHistoryChangeset.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalHistoryDetails.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalOAuthProvider.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalOAuthProviderEx.cs" />
+    <Compile Include="GlobalSecureSetting.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSetting.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalTag.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Graph.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GraphCustom.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GraphEx.cs" />
+    <Compile Include="GraphType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryAssociation.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryChangeSet.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryChangeSetEx.cs" />
+    <Compile Include="HistoryChangeSetNetChange.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryChangeSetNetChangeEx.cs" />
+    <Compile Include="HistoryChangeSetNetChangeSquashed.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryChangeSetNetChangeSquashedEx.cs" />
+    <Compile Include="HistoryChangeSetType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryChangeSetView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryChangeView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryDetail.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryDetailEx.cs" />
+    <Compile Include="HistoryDiscussion.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryPosition.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryTag.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Importance.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Incident.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentAgeCount.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentOpenClosedCount.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentOpenCountByPrioritySeverity.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentPriority.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentResolution.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentSeverity.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentStatusCount.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentTestCoverage.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MultiApprover.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MultiApproverExecuted.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MultiApproverType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationArtifactTemplate.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationArtifactUserType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationEvent.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationEventEx.cs" />
+    <Compile Include="NotificationEventWebHook.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationUserSubscription.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationUserSubscriptionView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PeriodicReviewAlertType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PeriodicReviewNotification.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Permission.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Placeholder.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Portfolio.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortfolioSetting.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortfolioSettingValue.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Project.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectArtifactSharing.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectAttachment.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectAttachmentFolder.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectAttachmentFolderEx.cs" />
+    <Compile Include="ProjectAttachmentFolderHierarchy.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectAttachmentFolderHierarchyEx.cs" />
+    <Compile Include="ProjectAttachmentFolderHierarchyView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectAttachmentView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectBaseline.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectBaselineEx.cs" />
+    <Compile Include="ProjectCollection.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectCollectionEntry.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectForUserView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGoal.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroup.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupEx.cs" />
+    <Compile Include="ProjectGroupGoal.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupMilestone.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupRoadmap.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupRole.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupSetting.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupSettingValue.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupTheme.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupUser.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectGroupUserEx.cs" />
+    <Compile Include="ProjectGroupUserView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectResourceView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectRole.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectRoleEx.cs" />
+    <Compile Include="ProjectRolePermission.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectSetting.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectSettingValue.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectSignature.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTagFrequency.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTaskProgressEntryView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTemplate.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTemplateArtifactDefault.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTemplateSetting.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTemplateSettingValue.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectUser.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectUserView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectViewPermission.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PullRequest.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PullRequestEx.cs" />
+    <Compile Include="Recurrence.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Release.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseDiscussion.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseStatusEx.cs" />
+    <Compile Include="ReleaseTestCase.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseTestCaseFolder.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseTestSet.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseTestSetFolder.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseTypeEx.cs" />
+    <Compile Include="ReleaseTypeWorkflow.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseUser.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseViewEx.cs" />
+    <Compile Include="DiscussionBase.cs" />
+    <Compile Include="HistoryChangeSetViewEx.cs" />
+    <Compile Include="HistoryChangeViewEx.cs" />
+    <Compile Include="ProjectUserEx.cs" />
+    <Compile Include="ReleaseEx.cs" />
+    <Compile Include="ReleaseWorkflow.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseWorkflowCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseWorkflowField.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseWorkflowTransition.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseWorkflowTransitionRole.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportableEntities\ArtifactAssociation.cs" />
+    <Compile Include="ReportableEntities\ArtifactAttachments.cs" />
+    <Compile Include="ReportableEntities\ArtifactType.cs" />
+    <Compile Include="ReportableEntities\AttachmentFolder.cs" />
+    <Compile Include="ReportableEntities\Baseline.cs" />
+    <Compile Include="ReportableEntities\DocumentStatus.cs" />
+    <Compile Include="ReportableEntities\DocumentType.cs" />
+    <Compile Include="ReportableEntities\IncidentPriority.cs" />
+    <Compile Include="ReportableEntities\IncidentSeverity.cs" />
+    <Compile Include="ReportableEntities\IncidentStatus.cs" />
+    <Compile Include="ReportableEntities\IncidentType.cs" />
+    <Compile Include="ReportableEntities\Portfolio.cs" />
+    <Compile Include="ReportableEntities\ProjectMembership.cs" />
+    <Compile Include="ReportableEntities\ProjectRole.cs" />
+    <Compile Include="ReportableEntities\ProjectTemplate.cs" />
+    <Compile Include="ReportableEntities\RequirementStep.cs" />
+    <Compile Include="ReportableEntities\RequirementType.cs" />
+    <Compile Include="ReportableEntities\RiskImpact.cs" />
+    <Compile Include="ReportableEntities\RiskMitigation.cs" />
+    <Compile Include="ReportableEntities\Risk.cs" />
+    <Compile Include="ReportableEntities\Component.cs" />
+    <Compile Include="ReportableEntities\Event.cs" />
+    <Compile Include="ReportableEntities\RequirementTestStep.cs" />
+    <Compile Include="ReportableEntities\RiskProbability.cs" />
+    <Compile Include="ReportableEntities\RiskStatus.cs" />
+    <Compile Include="ReportableEntities\RiskType.cs" />
+    <Compile Include="ReportableEntities\TaskPriority.cs" />
+    <Compile Include="ReportableEntities\TaskType.cs" />
+    <Compile Include="ReportableEntities\TestCaseFolder.cs" />
+    <Compile Include="ReportableEntities\TestCaseType.cs" />
+    <Compile Include="ReportableEntities\TestSetIncident.cs" />
+    <Compile Include="ReportableEntities\TestRunIncident.cs" />
+    <Compile Include="ReportableEntities\TestConfigurationEntry.cs" />
+    <Compile Include="ReportableEntities\TestConfigurationSet.cs" />
+    <Compile Include="ReportableEntities\TestSetFolder.cs" />
+    <Compile Include="ReportCategory.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCustomSection.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportElement.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFormat.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGenerated.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSection.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSectionInstance.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Requirement.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementCoverageSummary.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementDiscussion.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementIncidentCount.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementIncidentView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementStatusCountInfo.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementStep.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementTestCase.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementUser.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementWorkflow.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementWorkflowCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementWorkflowField.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementWorkflowTransition.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementWorkflowTransitionRole.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceCategory.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceTrack.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Risk.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskDetectability.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskDiscussion.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskImpact.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskMitigation.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskProbability.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskViewEx.cs" />
+    <Compile Include="RiskEx.cs" />
+    <Compile Include="RiskMitigationEx.cs" />
+    <Compile Include="RiskImpactEx.cs" />
+    <Compile Include="RiskProbabilityEx.cs" />
+    <Compile Include="RiskStatusEx.cs" />
+    <Compile Include="RiskTypeEx.cs" />
+    <Compile Include="RiskWorkflow.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskWorkflowCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskWorkflowField.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskWorkflowTransition.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskWorkflowTransitionRole.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_HISTORYCHANGESETS.cs">
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_HISTORYDETAILS.cs">
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_PROJECT.cs">
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_ArtifactAssociation.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_ArtifactAttachment.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_ArtifactType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Attachment.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_AttachmentFolder.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_AutomationHost.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Baseline.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Build.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Comment.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Component.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_CustomList.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_CustomListValue.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_CustomPropertyDefinition.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_DocumentStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_DocumentType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Event.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_HistoryChangeSet.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_HistoryDetail.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Incident.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_IncidentPriority.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_IncidentSeverity.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_IncidentStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_IncidentType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Portfolio.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Project.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_ProjectGroup.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_ProjectMembership.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_ProjectReleaseResource.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_ProjectRole.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_ProjectTemplate.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Release.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_ReleaseTestCase.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Requirement.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_RequirementIncident.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_RequirementStep.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_RequirementTestCase.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_RequirementTestStep.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_RequirementType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Risk.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_RiskImpact.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_RiskMitigation.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_RiskProbability.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_RiskStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_RiskType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_Task.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TaskPriority.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TaskType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestCase.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestCaseFolder.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestCaseIncident.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestCaseType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestConfigurationEntry.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestConfigurationSet.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestRun.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestRunIncident.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestRunStep.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestSet.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestSetFolder.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestSetIncident.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestSetTestCase.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_TestStep.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="R_User.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SavedFilter.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SavedFilterEntry.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SavedReport.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SavedReportView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCodeCommit.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCodeCommitArtifact.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCodeFileEntry.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StandardTask.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StandardTaskSet.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StandardTestCase.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StandardTestCaseSet.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysInfoResult.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysInfoResultEx.cs" />
+    <Compile Include="RiskDiscussionEx.cs" />
+    <Compile Include="DocumentDiscussionEx.cs" />
+    <Compile Include="SYSTEM_USAGE_REPORT_Result.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaraVaultProject.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaraVaultType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaraVaultUser.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Task.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskDiscussion.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFolder.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFolderHierarchy.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFolderHierarchyView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskPriority.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskWorkflow.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskWorkflowCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskWorkflowField.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskWorkflowTransition.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskWorkflowTransitionRole.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Task_GroupSummary.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TASK_RETRIEVE_GROUP_SUMMARY_BY_PROJECT_Result.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Template.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateDataSource.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateOutputType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateParameter.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateRemapStandardFieldsInfo.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCase.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseApprovalUser.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseApprovalWorkflow.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseDiscussion.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseFolder.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseFolderHierarchy.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseFolderHierarchyView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseFolderReleaseView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseIncidentView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseParameter.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseParameterHierarchy.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseParameterHierarchyAlreadySet.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCasePreparationStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCasePreparationStatusEx.cs" />
+    <Compile Include="TestCasePriority.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCasePriorityEx.cs" />
+    <Compile Include="TestCaseReleaseView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseSignature.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseWorkflow.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseWorkflowCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseWorkflowField.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseWorkflowTransition.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCaseWorkflowTransitionRole.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCase_ExecutionStatusSummary.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestConfiguration.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestConfigurationEntry.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestConfigurationParameterValue.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestConfigurationSet.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestConfigurationSetEx.cs" />
+    <Compile Include="TestConfigurationSetParameter.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRun.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRunFormat.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRunIncidentView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRunsPending.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRunsPendingEx.cs" />
+    <Compile Include="TestRunsPendingView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRunStep.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRunStepEx.cs" />
+    <Compile Include="TestRunStepIncidentView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRunStepView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRunStepViewEx.cs" />
+    <Compile Include="TestRunType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRunView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestRun_DailyCount.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSet.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetDiscussion.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetFolder.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetFolderHierarchy.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetFolderHierarchyView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetFolderReleaseView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetFolderReleaseViewEx.cs" />
+    <Compile Include="TestSetIncidentView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetParameter.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetReleaseView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetTestCase.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetTestCaseEx.cs" />
+    <Compile Include="TestSetTestCaseParameter.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetTestCaseView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSetTestCaseViewEx.cs" />
+    <Compile Include="TestSetView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestSet_ExecutionStatusSummary.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestStep.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestStepIncidentView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestStepParameter.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestStepView.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestStepViewEx.cs" />
+    <Compile Include="TestStepEx.cs" />
+    <Compile Include="TestStepParameterEx.cs" />
+    <Compile Include="TestSetTestCaseParameterEx.cs" />
+    <Compile Include="TestSetParameterEx.cs" />
+    <Compile Include="TestSetReleaseViewEx.cs" />
+    <Compile Include="TestSetFolderHierarchyViewEx.cs" />
+    <Compile Include="TestRunTypeEx.cs" />
+    <Compile Include="TestSetFolderEx.cs" />
+    <Compile Include="RecurrenceEx.cs" />
+    <Compile Include="TestSetStatusEx.cs" />
+    <Compile Include="TestSetViewEx.cs" />
+    <Compile Include="TestSetEx.cs" />
+    <Compile Include="TestCaseEx.cs" />
+    <Compile Include="TestCaseFolderHierarchyViewEx.cs" />
+    <Compile Include="TestCaseFolderReleaseViewEx.cs" />
+    <Compile Include="TestCaseFolderEx.cs" />
+    <Compile Include="TestCaseStatusEx.cs" />
+    <Compile Include="TestCaseTypeEx.cs" />
+    <Compile Include="TestCaseReleaseViewEx.cs" />
+    <Compile Include="TestCaseViewEx.cs" />
+    <Compile Include="TestRunViewEx.cs" />
+    <Compile Include="TestRunEx.cs" />
+    <Compile Include="TestSetDiscussionEx.cs" />
+    <Compile Include="TestCaseDiscussionEx.cs" />
+    <Compile Include="TaskDiscussionEx.cs" />
+    <Compile Include="ReleaseDiscussionEx.cs" />
+    <Compile Include="IDiscussion.cs" />
+    <Compile Include="IncidentEx.cs" />
+    <Compile Include="IncidentPriorityEx.cs" />
+    <Compile Include="IncidentResolutionEx.cs" />
+    <Compile Include="IncidentSeverityEx.cs" />
+    <Compile Include="IncidentStatusEx.cs" />
+    <Compile Include="IncidentTypeEx.cs" />
+    <Compile Include="IncidentViewEx.cs" />
+    <Compile Include="MessageEx.cs" />
+    <Compile Include="ProjectAttachmentEx.cs" />
+    <Compile Include="DocumentTypeEx.cs" />
+    <Compile Include="ProjectAttachmentViewEx.cs" />
+    <Compile Include="ProjectResourceViewEx.cs" />
+    <Compile Include="ReportableEntities\CustomList.cs" />
+    <Compile Include="ReportableEntities\CustomListValue.cs" />
+    <Compile Include="ReportableEntities\CustomPropertyDefinition.cs" />
+    <Compile Include="ReportableEntities\ReleaseTestCase.cs" />
+    <Compile Include="ReportableEntities\RequirementTestCase.cs" />
+    <Compile Include="ReportableEntities\TestSetTestCase.cs" />
+    <Compile Include="RequirementDiscussionEx.cs" />
+    <Compile Include="TaskFolderEx.cs" />
+    <Compile Include="TaskFolderHierarchyViewEx.cs" />
+    <Compile Include="TaskPriorityEx.cs" />
+    <Compile Include="TaskStatusEx.cs" />
+    <Compile Include="TaskTypeEx.cs" />
+    <Compile Include="TaskViewEx.cs" />
+    <Compile Include="TaskEx.cs" />
+    <Compile Include="CustomPropertyEx.cs" />
+    <Compile Include="CustomPropertyListEx.cs" />
+    <Compile Include="CustomPropertyValueEx.cs" />
+    <Compile Include="DatabaseExtensions.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="EventEx.cs" />
+    <Compile Include="Functions.cs" />
+    <Compile Include="ImportanceEx.cs" />
+    <Compile Include="ProductTypeEx.cs" />
+    <Compile Include="ProjectEx.cs" />
+    <Compile Include="ProjectForUserViewEx.cs" />
+    <Compile Include="ProjectViewEx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportableEntities\Attachment.cs" />
+    <Compile Include="ReportableEntities\AutomationHost.cs" />
+    <Compile Include="ReportableEntities\Build.cs" />
+    <Compile Include="ReportableEntities\Comment.cs" />
+    <Compile Include="ReportableEntities\HistoryChangeSet.cs" />
+    <Compile Include="ReportableEntities\HistoryDetail.cs" />
+    <Compile Include="ReportableEntities\Incident.cs" />
+    <Compile Include="ReportableEntities\Project.cs" />
+    <Compile Include="ReportableEntities\ProjectGroup.cs" />
+    <Compile Include="ReportableEntities\ProjectReleaseResource.cs" />
+    <Compile Include="ReportableEntities\Release.cs" />
+    <Compile Include="ReportableEntities\ReportableEntitiesManager.cs" />
+    <Compile Include="ReportableEntities\ReportableEntityAttribute.cs" />
+    <Compile Include="ReportableEntities\Requirement.cs" />
+    <Compile Include="ReportableEntities\RequirementIncident.cs" />
+    <Compile Include="ReportableEntities\Task.cs" />
+    <Compile Include="ReportableEntities\TestCase.cs" />
+    <Compile Include="ReportableEntities\TestCaseIncident.cs" />
+    <Compile Include="ReportableEntities\TestRun.cs" />
+    <Compile Include="ReportableEntities\TestRunStep.cs" />
+    <Compile Include="ReportableEntities\TestSet.cs" />
+    <Compile Include="ReportableEntities\TestStep.cs" />
+    <Compile Include="ReportableEntities\User.cs" />
+    <Compile Include="ReportElementEx.cs" />
+    <Compile Include="ReportEx.cs" />
+    <Compile Include="RequirementEx.cs" />
+    <Compile Include="RequirementStatusEx.cs" />
+    <Compile Include="RequirementStepEx.cs" />
+    <Compile Include="RequirementTypeEx.cs" />
+    <Compile Include="RequirementViewEx.cs" />
+    <Compile Include="SavedFilterEx.cs" />
+    <Compile Include="SelfTrackingEntityTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpiraDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpiraDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemePriority.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Timecard.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TimecardEntry.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TimecardEntryType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TimecardStatus.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TrackMessage.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_ADMIN_HISTORY_CHANGESET.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_ADMIN_HISTORY_CHANGESET_AUDIT.cs">
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_ADMIN_HISTORY_DETAILS.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_ADMIN_HISTORY_DETAILS_AUDIT.cs">
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_ADMIN_SECTION.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_ADMIN_SECTION_AUDIT.cs">
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_ARTIFACT_SIGNATURE.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_ERROR_LOG.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_HISTORY_CHANGESET.cs">
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_HISTORY_DETAIL.cs">
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_REPORT_DOWNLOADABLE.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_REQUIREMENT_APPROVAL_USERS.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_REQUIREMENT_APPROVAL_WORKFLOW.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_REQUIREMENT_SIGNATURE.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_USER_ACTIVITY_LOG.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_USER_ACTIVITY_LOG_AUDIT.cs">
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_USER_HISTORY_CHANGESET.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TST_USER_HISTORY_CHANGESET_AUDIT.cs">
+      <DependentUpon>AuditTrailEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsageLog.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserArtifactField.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserCollection.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserCollectionEntry.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserEx.cs" />
+    <Compile Include="UserIdea.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserPageViewed.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfileEx.cs" />
+    <Compile Include="UserRecentArtifact.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserRecentProject.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserRecentProjectEx.cs" />
+    <Compile Include="VersionControlBranch.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VersionControlBranchEx.cs" />
+    <Compile Include="VersionControlProject.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VersionControlProjectEx.cs" />
+    <Compile Include="VersionControlPullRequest.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VersionControlSystem.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VersionControlSystemEx.cs" />
+    <Compile Include="VW_ADMINHISTORYCHANGE_LIST.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VW_OLD_HISTORY_CHANGESET_NET_CHANGES.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VW_OLD_HISTORY_CHANGE_LIST.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VW_OLD_HISTORY_LIST.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VW_RELEASE_LIST_INTERNAL.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VW_REQUIREMENT_LIST_INTERNAL.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VW_TESTSET_TESTCASE_LIST_INTERNAL.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VW_USERHISTORYCHANGE_LIST.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowCustomProperty.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowField.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowFieldState.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowFieldStateEx.cs" />
+    <Compile Include="WorkflowTransition.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowTransitionRole.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowTransitionRoleType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowTransitionRoleTypeEx.cs" />
+    <Compile Include="WorkflowTransitionStandardTask.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowTransitionStandardTestCase.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowTriggerConfiguration.cs" />
+    <Compile Include="WorkspaceEx.cs" />
+    <Compile Include="WorkspaceType.cs">
+      <DependentUpon>SelfTrackingEntityTemplate.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SpiraDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SpiraDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="AuditTrailEntityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AuditTrailEntityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AuditTrailEntityModel.edmx.diagram">
+      <DependentUpon>AuditTrailEntityModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="SelfTrackingEntityTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SelfTrackingEntityTemplate.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuditTrailEntityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AuditTrailEntityModel.Context.cs</LastGenOutput>
+      <DependentUpon>AuditTrailEntityModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="AuditTrailEntityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AuditTrailEntityModel.edmx</DependentUpon>
+      <LastGenOutput>AuditTrailEntityModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_ConfigurationName="Release" BuildVersion_BuildVersioningStyle="None.None.None.Increment" BuildVersion_UseGlobalSettings="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>$(SolutionDir)EFSetEdmxSqlVersion\$(OutDir)\EFSetEdmxSqlVersion.exe $(ProjectDir)SpiraDataModel.edmx 2005</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

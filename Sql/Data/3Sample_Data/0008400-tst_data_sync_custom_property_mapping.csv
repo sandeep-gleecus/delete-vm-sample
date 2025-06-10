@@ -1,0 +1,4 @@
+data_sync_system_id:Normal,project_id:Normal,custom_property_id:Normal,external_key:String
+1,1,6,10010
+1,1,7,10000
+2,1,7,operatingsystem

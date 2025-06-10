@@ -1,0 +1,21 @@
+-- =============================================
+-- Author:			Inflectra Corporation
+-- Business Object: TestCase
+-- Description:		Deletes a Test Case Parameter
+-- =============================================
+IF OBJECT_ID ( 'TESTCASE_DELETE_PARAMETER', 'P' ) IS NOT NULL 
+    DROP PROCEDURE TESTCASE_DELETE_PARAMETER;
+GO
+CREATE PROCEDURE TESTCASE_DELETE_PARAMETER
+	@TestCaseParameterId INT
+AS
+BEGIN
+	SET NOCOUNT ON;
+	--Delete the varies entries
+	DELETE FROM TST_TEST_CONFIGURATION_PARAMETER_VALUE WHERE TEST_CASE_PARAMETER_ID = @TestCaseParameterId;
+	DELETE FROM TST_TEST_CONFIGURATION_SET_PARAMETER WHERE TEST_CASE_PARAMETER_ID = @TestCaseParameterId;
+    DELETE FROM TST_TEST_STEP_PARAMETER WHERE TEST_CASE_PARAMETER_ID = @TestCaseParameterId;
+    DELETE FROM TST_TEST_SET_TEST_CASE_PARAMETER WHERE TEST_CASE_PARAMETER_ID = @TestCaseParameterId;
+    DELETE FROM TST_TEST_CASE_PARAMETER WHERE TEST_CASE_PARAMETER_ID = @TestCaseParameterId;
+END
+GO

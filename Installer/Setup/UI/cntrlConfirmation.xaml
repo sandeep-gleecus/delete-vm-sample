@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Inflectra.SpiraTest.Installer.UI.cntrlConfirmation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:resx="clr-namespace:Inflectra.SpiraTest.Installer.Themes.Inflectra"
+             mc:Ignorable="d" 
+             d:DesignHeight="480" d:DesignWidth="480"
+			 Padding="7"
+			 Background="Transparent"
+			 >
+	<DockPanel LastChildFill="True">
+        <TextBlock Name="txtIntro" FontSize="14" DockPanel.Dock="Top" TextWrapping="Wrap" Text="{x:Static resx:Resources.Confirmation_Description}" />
+        <TextBlock Name="txtSubtitle" DockPanel.Dock="Bottom" HorizontalAlignment="Right" Text="{x:Static resx:Resources.Confirmation_StartInstallLegend}" />
+        <TextBox Name="txbSummary" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" VerticalAlignment="Stretch" Margin="0,5,0,5" IsReadOnly="True" FontFamily="Lucida Console, Lucida Sans Typewriter, Courier New" />
+	</DockPanel>
+</UserControl>

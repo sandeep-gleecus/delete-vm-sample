@@ -1,0 +1,85 @@
+/***************************************************************
+**	Insert script for table TST_INCIDENT_RESOLUTION
+***************************************************************/
+INSERT INTO TST_INCIDENT_RESOLUTION
+(
+INCIDENT_ID, RESOLUTION, CREATOR_ID, CREATION_DATE
+)
+VALUES
+(
+10, 'Fixed the permissions check in the admin module', 2, DATEADD(day, -140, SYSUTCDATETIME())
+),
+(
+10, 'Retested and it looks good', 3, DATEADD(day, -140, SYSUTCDATETIME())
+),
+(
+11, 'There was an erroneous exception throw in the module - removed', 2, DATEADD(day, -128, SYSUTCDATETIME())
+),
+(
+11, 'Exception code retested and error no longer occurs', 3, DATEADD(day, -128, SYSUTCDATETIME())
+),
+(
+12, 'Wrote a generic routine to handle quotes that has been added to the global database code', 3, DATEADD(day, -128, SYSUTCDATETIME())
+),
+(
+12, 'Need to get external customer to retest', 2, DATEADD(day, -128, SYSUTCDATETIME())
+),
+(
+13, 'Adding wordwrap and % table widths where appropriate', 3, DATEADD(day, -126, SYSUTCDATETIME())
+),
+(
+13, 'Verify that it will work in different browsers', 2, DATEADD(day, -126, SYSUTCDATETIME())
+),
+(
+14, 'The database update command was commented out - has been fixed', 3, DATEADD(day, -125, SYSUTCDATETIME())
+),
+(
+15, 'The session command was not using the correct syntax - fixed', 2, DATEADD(day, -125, SYSUTCDATETIME())
+),
+(
+15, 'Retested and it looks good', 3, DATEADD(day, -125, SYSUTCDATETIME())
+),
+(
+16, 'Cannot reproduce on my system, need more information', 3, DATEADD(day, -128, SYSUTCDATETIME())
+),
+(
+24, 'Developed a set of CSS files and associated imagery, with a web page that allows user to choose', 3, DATEADD(day, -120, SYSUTCDATETIME())
+),
+(
+25, 'Bought licenses to cognos and added them to the system', 3, DATEADD(day, -120, SYSUTCDATETIME())
+),
+(
+26, 'Refactored database to include user-defined columns, and added admin screens to allow users to define them', 2, DATEADD(day, -119, SYSUTCDATETIME())
+),
+(
+27, 'Checkboxes added and delete button moved outside table', 2, DATEADD(day, -120, SYSUTCDATETIME())
+),
+(
+28, 'Checkboxes added and delete button moved outside table', 2, DATEADD(day, -119, SYSUTCDATETIME())
+),
+(
+34, 'Replaced use of sessions with special ClustedSession object', 3, DATEADD(day, -113, SYSUTCDATETIME())
+),
+(
+35, 'Tested system with compliancy checking tool - passed ok', 3, DATEADD(day, -112, SYSUTCDATETIME())
+),
+(
+36, 'Implemented regression testing using nUnit and jUnit', 2, DATEADD(day, -112, SYSUTCDATETIME())
+),
+(
+42, 'This item was closed with a successful resolution', 3, DATEADD(day, -110, SYSUTCDATETIME())
+),
+(
+43, 'This item was closed with a successful resolution', 3, DATEADD(day, -110, SYSUTCDATETIME())
+),
+(
+49, 'This item was closed with a successful resolution', 2, DATEADD(day, -108, SYSUTCDATETIME())
+),
+(
+55, 'This item was closed with a successful resolution', 3, DATEADD(day, -105, SYSUTCDATETIME())
+),
+(
+56, 'This item was closed with a successful resolution', 3, DATEADD(day, -104, SYSUTCDATETIME())
+)
+GO
+

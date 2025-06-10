@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="TestSet_TestCasePositionInUse" xml:space="preserve">
+    <value>Määritelty testitapauksen sijainti on jo käytössä</value>
+  </data>
+	<data name="TestSet_TestSetTestCaseIdNotExist" xml:space="preserve">
+    <value>hyväksytty testSetid ja testSetTestCaseid eivät vastaa Testijoukossa kuvattua Testitapausta!</value>
+  </data>
+	<data name="Incident_ClosedDateCannotBeBeforeDetected" xml:space="preserve">
+    <value>Suljettu päivämäärä ei voi olla ennen havaittu päivämäärää</value>
+  </data>
+	<data name="Incident_ClosedDateCannotBeBeforeStart" xml:space="preserve">
+    <value>Suljettu päivämäärä ei voi olla ennen aloitus päivämäärä</value>
+  </data>
+	<data name="Task_EndDateCannotBeBeforeStartDate" xml:space="preserve">
+    <value>Päättymispäivämäärä ei voi olla ennen aloituspäivämäärää</value>
+  </data>
+	<data name="Task_EndDateOutsideReleaseRange" xml:space="preserve">
+    <value>Tehtävän päättymispäivämäärä ei voi olla siihen liittyvän julkaisun/iteraation päivämäärävälin ulkopuolella</value>
+  </data>
+	<data name="Task_EstimatedEffortNeededForInProgress" xml:space="preserve">
+    <value>Sinun tulee asettaa arvioitu työmäärä siirtääksesi tehtävän tekeillä-tilaan</value>
+  </data>
+	<data name="Task_NeedActualEffortForCompleted" xml:space="preserve">
+    <value>Sinun on annettava todellinen työmäärä, jotta voit asettaa tehtävän valmiiksi</value>
+  </data>
+	<data name="Task_NeedEndDateForCompleted" xml:space="preserve">
+    <value>Sinun on annettava päättymispäivä, jotta voit asettaa tehtävän valmis-tilaan</value>
+  </data>
+	<data name="Task_NeedEndDateForInProgress" xml:space="preserve">
+    <value>Sinun on annettava arvioitu päättymispäivämäärä, jotta voit asettaa tehtävän tekeillä-tilaan</value>
+  </data>
+	<data name="Task_NeedEstimatedEffortForCompleted" xml:space="preserve">
+    <value>Sinun on annettava arvioitu työmäärä, jotta voit asettaa tehtävän valmis-tilaan</value>
+  </data>
+	<data name="Task_NeedReleaseForCompleted" xml:space="preserve">
+    <value>Sinun täytyy liittää tehtävä Julkaisuun/Iteraatioon, jotta voit asettaa sen valmis-tilaan</value>
+  </data>
+	<data name="Task_NeedReleaseForInProgress" xml:space="preserve">
+    <value>Sinun täytyy liittää tehtävä Julkaisuun/Iteraatioon, jotta voit asettaa sen tekeillä-tilaan</value>
+  </data>
+	<data name="Task_NeedStartDateForCompleted" xml:space="preserve">
+    <value>Sinun on annettava aloitus päivämäärä, jotta voit asettaa tehtävän valmis-tilaan</value>
+  </data>
+	<data name="Task_NeedStartDateForInProgress" xml:space="preserve">
+    <value>Sinun on annettava aloitus päivämäärä, jotta voit asettaa tehtävän Tekeillä-tilaan</value>
+  </data>
+	<data name="Task_PercentCompleteNotInRange" xml:space="preserve">
+    <value>% valmiina arvo on oltava välillä 0-100%</value>
+  </data>
+	<data name="Task_RemainingEffortNeededForInProgress" xml:space="preserve">
+    <value>Sinun on annettava jäljellä oleva työmäärä, jotta voit asettaa Tehtävän tekeillä-tilaan</value>
+  </data>
+	<data name="Task_StartDateOutsideReleaseRange" xml:space="preserve">
+    <value>Tehtävän aloituspäivämäärä ei voi olla siihen liittyvän Iteraation/Julkaisun päivämäärävälin ulkopuolella</value>
+  </data>
+	<data name="TestRun_TestSetNotContainTestCases" xml:space="preserve">
+    <value>Hyväksytty testijoukko ei sisällä yhtään Testitapausta</value>
+  </data>
+	<data name="TestSet_TestSetCannotHaveChildItems" xml:space="preserve">
+    <value>Testijoukot eivät voi sisältää ali-testijoukkoja tai kansioita.</value>
+  </data>
+	<data name="Project_ArtifactNotExists" xml:space="preserve">
+    <value>Projektia {0} ei enää ole järjestelmässä.</value>
+  </data>
+	<data name="Project_Copy_Attachments" xml:space="preserve">
+    <value>Kopioidaan projektin liitetiedostoja</value>
+  </data>
+	<data name="Project_Copy_CreateShell" xml:space="preserve">
+    <value>Luodaan uusi projekti vanhan pohjalta.</value>
+  </data>
+	<data name="Project_Copy_CustomProperties" xml:space="preserve">
+    <value>Kopioidaan asian kustomoituja ominaisuuksia</value>
+  </data>
+	<data name="Project_Copy_Mappings" xml:space="preserve">
+    <value>Kopioidaan vaatimusten-, julkaisujen- ja testitapausten mäppäyksiä</value>
+  </data>
+	<data name="Project_Copy_Releases" xml:space="preserve">
+    <value>Kopioidaan projektin julkaisuja</value>
+  </data>
+	<data name="Project_Copy_Requirements" xml:space="preserve">
+    <value>Kopioidaan projektin vaatimuksia</value>
+  </data>
+	<data name="Project_Copy_TestCases" xml:space="preserve">
+    <value>Kopioidaan projektin testitapauksia</value>
+  </data>
+	<data name="Project_Copy_TestSets" xml:space="preserve">
+    <value>Kopioidaan projektin testijoukkoja</value>
+  </data>
+	<data name="Project_Delete_Associations" xml:space="preserve">
+    <value>Poistetaan asian yhteyksiä</value>
+  </data>
+	<data name="Project_Delete_Attachments" xml:space="preserve">
+    <value>Poistetaan projektin liitetiedostoja</value>
+  </data>
+	<data name="Project_Delete_DataMappings" xml:space="preserve">
+    <value>Poistetaan tietojen synkronoinnin kuvauksia</value>
+  </data>
+	<data name="Project_Delete_IncidentWorkflows" xml:space="preserve">
+    <value>Poistetaan havaintojen työnkulkuja</value>
+  </data>
+	<data name="Project_Delete_Project" xml:space="preserve">
+    <value>Poistetaan itse projekti</value>
+  </data>
+	<data name="Project_Delete_Releases" xml:space="preserve">
+    <value>Poistetaan julkaisuja</value>
+  </data>
+	<data name="Project_Delete_Reports" xml:space="preserve">
+    <value>Poistetaan raportteja</value>
+  </data>
+	<data name="Project_Delete_Requirements" xml:space="preserve">
+    <value>Poistetaan vaatimuksia</value>
+  </data>
+	<data name="Project_Delete_TestCases" xml:space="preserve">
+    <value>Poistetaan testitapauksia</value>
+  </data>
+	<data name="Project_Delete_TestRuns" xml:space="preserve">
+    <value>Poistetaan testiajoja</value>
+  </data>
+	<data name="Project_Delete_TestSets" xml:space="preserve">
+    <value>Poistetaan testijoukkoja</value>
+  </data>
+	<data name="TestRun_CreatingTestRuns" xml:space="preserve">
+    <value>Luodaan testiajoja testitapauksista.</value>
+  </data>
+	<data name="TestRun_CreationCompleted" xml:space="preserve">
+    <value>Testiajot luotu.</value>
+  </data>
+	<data name="TestRun_SavingPendingEntry" xml:space="preserve">
+    <value>Tallennetaan vireillä oleva testiajo.</value>
+  </data>
+	<data name="BuildManager_BuildNotExists" xml:space="preserve">Järjestelmästä ei löydy enää buildia {0}.</data><data name="BuildManager_BuildNotExistsForRevision" xml:space="preserve">Buildia ei löydy lähdekoodin versiosta '{0}'</data><data name="BuildManager_ReleaseNotExists" xml:space="preserve">Nykyisestä projektista ei löydy viitattua julkaisua/iteraatiota RL{0}</data><data name="CustomProperty_MaxValueError" xml:space="preserve">Annettu arvo kentälle '%field%' on suurempi kuin suurin sallittu kentän %field% arvo.</data><data name="CustomProperty_MinLengthError" xml:space="preserve">Kentän '%field%' minimipituus on %min% merkkiä. Syötetty merkkijono on %act% merkkiä pitkä.</data><data name="CustomProperty_MinValueError" xml:space="preserve">Annettu arvo kentälle '%field%' on pienempi kuin pienin sallittu kentän %field% arvo.</data><data name="CustomProperty_RegExError" xml:space="preserve">Kenttään '%field%' syötetty arvo ei täytä vaadittua säännöllistä lauseketta.</data><data name="CustomProperty_RegExException_CannotChange" xml:space="preserve">Et voi muokata järjestelmän säännöllistä lauseketta.</data><data name="CustomProperty_RegExException_CannotDelete" xml:space="preserve">Et voi poistaa järjestelmän säännöllistä lauseketta.</data><data name="CustomProperty_ValueNullError" xml:space="preserve">Kenttään '%field%' vaaditaan arvo. </data><data name="Incident_CompletionPercentOutOfRange" xml:space="preserve">Valmistumis-prosentti pitää olla välillä 0-100%</data><data name="Report_CannotDeleteDefaultReport" xml:space="preserve">Et voi voi poistaa perus/oletusraporttia.</data><data name="Report_ReportGenerationComplete" xml:space="preserve">Raportti luotu.</data><data name="Report_ReportNotExist" xml:space="preserve">Raporttia id '{0}' ei löydy järjestelmästä!</data><data name="Report_StartGeneratingReport" xml:space="preserve">Raportin luonti alkaa.</data><data name="UserManager_NotResetLDAP" xml:space="preserve">Et voi alustaa LDAP-käyttäjän salasanaa {0}:n kautta!</data><data name="UserManager_SettingNotExists" xml:space="preserve">Järjestelmästä ei löydy Käyttäjä-määritysten kokoelmaa {0}!</data><data name="BuildManager_BuildNotExists" xml:space="preserve"><value>Järjestelmästä ei löydy enää buildia '{0}'.</value></data><data name="BuildManager_BuildNotExistsForRevision" xml:space="preserve"><value>Buildia ei löydy lähdekoodin versiosta '{0}'</value></data><data name="BuildManager_ReleaseNotExists" xml:space="preserve"><value>Nykyisestä projektista ei löydy viitattua julkaisua/iteraatiota RL{0}</value></data><data name="CustomProperty_MaxValueError" xml:space="preserve"><value>Annettu arvo kentälle '%field%' on suurempi kuin suurin sallittu kentän %value% arvo.</value></data><data name="CustomProperty_MinLengthError" xml:space="preserve"><value>Kentän '%field%' minimipituus on %min% merkkiä. Syötetty merkkijono on %act% merkkiä pitkä.</value></data><data name="CustomProperty_MinValueError" xml:space="preserve"><value>Annettu arvo kentälle '%field%' on pienempi kuin pienin sallittu kentän %value% arvo.</value></data><data name="CustomProperty_RegExError" xml:space="preserve"><value>Kenttään '%field%' syötetty arvo ei täytä vaadittua säännöllistä lauseketta.</value></data><data name="CustomProperty_RegExException_CannotChange" xml:space="preserve"><value>Et voi muokata järjestelmän säännöllistä lauseketta.</value></data><data name="CustomProperty_RegExException_CannotDelete" xml:space="preserve"><value>Et voi poistaa järjestelmän säännöllistä lauseketta.</value></data><data name="CustomProperty_ValueNullError" xml:space="preserve"><value>Kenttään '%field%' vaaditaan arvo. </value></data><data name="Incident_CompletionPercentOutOfRange" xml:space="preserve"><value>Valmistumis-prosentti pitää olla välillä 0-100%</value></data><data name="Report_CannotDeleteDefaultReport" xml:space="preserve"><value>Et voi voi poistaa perus/oletusraporttia.</value></data><data name="Report_ReportGenerationComplete" xml:space="preserve"><value>Raportti on valmis.</value></data><data name="Report_ReportNotExist" xml:space="preserve"><value>Raporttia id '{0}' ei löydy järjestelmästä!</value></data><data name="Report_StartGeneratingReport" xml:space="preserve"><value>Raportin luonti alkaa.</value></data><data name="UserManager_NotResetLDAP" xml:space="preserve"><value>Et voi alustaa LDAP-käyttäjän salasanaa {0}:in kautta!</value></data><data name="UserManager_SettingNotExists" xml:space="preserve"><value>Järjestelmästä ei löydy käyttäjä-määritysten kokoelmaa {0}!</value></data><data name="ComponentManager_ArtifactNotExists" xml:space="preserve"><value>Komponenttia ID:llä {0} ei löydy</value></data><data name="Project_Copy_AutomationHosts" xml:space="preserve"><value>Kopioidaan projektin automaatio-isäntiä</value></data><data name="Project_Copy_Components" xml:space="preserve"><value>Kopioidaan projektin komponentteja</value></data><data name="Project_Copy_Tasks" xml:space="preserve"><value>Poistetaan projektin liitetiedostoja</value></data><data name="Requirement_StepNotExists" xml:space="preserve"><value>Ei voida hake vaatimuksen askelta ID={0}</value></data><data name="SourceCode_InvalidCacheLongMessage" xml:space="preserve"><value>Alkuperäisen lähdekoodikirjaston lähdekoodi-välimuisti ei ole ajantasalla ja siksi virkistetään.</value></data><data name="TaskManager_FolderNotExists" xml:space="preserve"><value>Tehtävähakemistoa ID={0} ei löydy järjestelmästä!</value></data><data name="DiscussionManager_CannotDeletePermanentDiscussion" xml:space="preserve"><value>Et voi poistaa kommenttia, koska se on asetettu pysyväksi.</value></data><data name="Incident_StartDateCannotBeBeforeDetected" xml:space="preserve"><value>Alku-päivämäärä ei voi olla ennen havaittu päivämäärää</value></data><data name="Project_Copy_TestCaseFolders" xml:space="preserve"><value>Poistetaan asian yhteyksiä</value></data><data name="Project_Copy_TestSetFolders" xml:space="preserve"><value>Poistetaan tietojen synkronoinnin kuvauksia</value></data><data name="ReleaseManager_CreatingFakeVersionNumber" xml:space="preserve"><value>Annettu versionumero ei ole yksiselitteinen, luodaan kuvitteellinen</value></data><data name="ReleaseManager_IterationSummaryException" xml:space="preserve"><value>Ei voi olla kohdetta iteraatioiden yhteenvedolle.</value></data><data name="ReleaseManager_PhaseSummaryException" xml:space="preserve"><value>Ei voi olla kohdetta vaiheen yhteenvedolle.</value></data><data name="ReleaseManager_ReleaseIterationNotExistsForAssociation" xml:space="preserve"><value>Liitettävää julkaisua/iteraatiota ei enää ole.</value></data><data name="ReleaseManager_VersionNumberNotUnique" xml:space="preserve"><value>Annettu versionumero ei ole yksiselitteinen</value></data><data name="Releases_CannotRetrieveExistingRelease" xml:space="preserve"><value>Ei voida hakea julkaisua</value></data><data name="SourceCode_BranchKeyNotFound" xml:space="preserve"><value>Koodihaaran avainta '{0}' ei löydy, virkistetään välimuisti</value></data><data name="SourceCode_BranchKeyNull" xml:space="preserve"><value>Koodihaaran avainta oli NULL, virkistetään välimuisti</value></data></root>

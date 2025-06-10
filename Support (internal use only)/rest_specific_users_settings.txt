@@ -1,0 +1,7 @@
+Replce <#> with the user ID..
+
+
+   DELETE FROM tst_user_collection_entry
+   WHERE user_id = <#>;
+   DELETE FROM tst_project_collection_entry
+   WHERE user_id = <#>;

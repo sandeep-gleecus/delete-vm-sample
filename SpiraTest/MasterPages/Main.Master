@@ -1,0 +1,664 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Inflectra.SpiraTest.Web.MasterPages.Main" %>
+<%@ Register TagPrefix="tstuc" TagName="GlobalNavigation" Src="~/UserControls/GlobalNavigation.ascx" %>
+<%@ Register TagPrefix="tstuc" TagName="MessageManager" Src="~/UserControls/MessageManager.ascx" %>
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ROBOTS" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <tstsc:ThemeStylePlaceHolder ID="themeStylePlaceHolder" runat="server" SkinID="MainStylesheet" />
+    <asp:ContentPlaceHolder ID="cplHead" runat="server" />
+    
+</head>
+<body 
+    class="MainBody <%=ResponsiveClasses() %>" 
+    data-colorscheme="<%=ColorMode %>"
+    xmlns:sys="javascript:Sys" 
+    xmlns:tst="javascript:Inflectra.Web.SpiraTest"
+    >
+    <div id="dhtmltooltip"></div>
+    <script type="text/javascript">
+        var browserCapabilities = {};
+    </script>
+    <!--[if IE 9]>
+        <script type="text/javascript">browserCapabilities.isIE9 = true;</script>
+    <![endif]-->
+    <!--[if IE 10]>
+        <script type="text/javascript">browserCapabilities.isIE10 = true;</script>
+    <![endif]-->
+    <!--[if IE 11]>
+        <script type="text/javascript">browserCapabilities.isIE11 = true;</script>
+    <![endif]-->
+    <script type="text/javascript">
+        //Needed because ScriptManager tries to check dependencies before the main scripts are loaded
+        if (!window) this.window = this;
+        window.Type = Function;
+        Type._checkDependency = function (a, b) { return true; }
+
+        //Set the current timezone if available
+        var SpiraContext = {};
+        SpiraContext.BaseUrl = '<%=GetBaseUrl()%>';
+        SpiraContext.BaseThemeUrl = '<%=GetThemeUrl()%>';
+        SpiraContext.ThemeName = '<%=Page.Theme%>';
+        SpiraContext.CurrentTimezone = '<%=GetTimezone() %>';
+        SpiraContext.CurrentUsername = '<%=GetUserName() %>';
+        SpiraContext.CurrentUserId = '<%=GetUserId() %>';
+        SpiraContext.IsSystemAdmin = <%=IsSystemAdmin.ToString().ToLowerInvariant() %>;
+		SpiraContext.IsReportAdmin = <%=IsReportAdmin.ToString().ToLowerInvariant() %>;
+        SpiraContext.IsPortfolioAdmin = <%=IsPortfolioAdmin.ToString().ToLowerInvariant() %>;
+        SpiraContext.IsGroupAdmin = <%=GetIsGroupAdmin()%>;
+        SpiraContext.IsMobile = <%=isMobileDevice()%>;
+        SpiraContext.IsProjectAdmin = <%=GetIsProjectAdmin()%>;
+        SpiraContext.IsTemplateAdmin = <%=GetIsTemplateAdmin()%>;
+        SpiraContext.ProductType = '<%=GetProductType()%>';
+        SpiraContext.ProjectRoleId = '<%=GetProjectRoleId()%>';
+        SpiraContext.ProjectId = <%=GetProjectId()%>;
+        SpiraContext.ProjectGroupId = <%=GetProjectGroupId()%>;
+        SpiraContext.ProjectTemplateId = <%=GetProjectTemplateId()%>;
+        SpiraContext.PortfolioId = <%=GetPortfolioId()%>;
+        SpiraContext.WorkspaceType = <%=GetWorkspaceType()%>;
+        SpiraContext.CanUserAddCommentToArtifacts = <%=CanUserAddCommentToArtifacts.ToString().ToLowerInvariant()%>;
+        SpiraContext.ProjectRole = <%=ProjectRole%>;
+        SpiraContext.Permissions = <%=Permissions%>;
+        SpiraContext.IsEmailEnabled = <%=Inflectra.SpiraTest.Common.ConfigurationSettings.Default.EmailSettings_Enabled.ToString().ToLowerInvariant()%>;
+        SpiraContext.uiState = {};
+        SpiraContext.AntiXsrfToken = <%=GetAntiXsrfTokenValue()%>;
+
+        SpiraContext.WorkspaceEnums = {
+            product: 1,
+            program: 2,
+            template: 3,
+            portfolio: 4,
+            enterprise: 5,
+            release: 0, // used by gantt charts on dashboards
+            releaseTask: -2, // used by gantt charts on dashboards
+            sprint: -1, // used by gantt charts on dashboards
+            sprintTask: -3 // used by gantt charts on dashboards
+        };
+
+        SpiraContext.Features = {
+            baselines: <%=Inflectra.SpiraTest.Common.Global.Feature_Baselines.ToString().ToLowerInvariant()%>,
+            portfolios: <%=Inflectra.SpiraTest.Common.Global.Feature_Portfolios.ToString().ToLowerInvariant()%>,
+            risks: <%=Inflectra.SpiraTest.Common.Global.Feature_Risks.ToString().ToLowerInvariant()%>,
+        }
+    </script>
+	<tstsc:ActionlessForm runat="server">
+        <!--Validate that JavaScript is enabled-->
+        <noscript>
+            <div class="MessageError w-100 ma2">
+                <asp:Localize runat="server" Text="<%$Resources:Messages,MasterPage_JavaScriptDisabled%>" />                            
+            </div>
+        </noscript>
+        <tstsc:ScriptManagerEx ID="ajxScriptManager" runat="server" EnableScriptGlobalization="true" EnableScriptLocalization="true"
+            AjaxFrameworkMode="Explicit">
+            <Scripts>
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxCore.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxGlobalization.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxSerialization.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxComponentModel.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxNetwork.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxWebServices.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.MicrosoftAjaxScriptLoader.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.AjaxExtensions.js" Assembly="Web" />
+ 
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.jQuery.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.Bootstrap.min.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.knockout.min.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.knockout.mapping.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.react.min.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.react-dom.min.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.mousetrap.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.c3.min.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.d3.min.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.xss.min.js" Assembly="Web" />
+         
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.GlobalFunctions.js" Assembly="Web" />
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ClientScripts.Validation.js" Assembly="Web" />
+                        
+                <asp:ScriptReference Name="Inflectra.SpiraTest.Web.ServerControls.ClientScripts.bootstrap-switch.min.js" Assembly="Web" />
+
+                <asp:ScriptReference Path="~/TypeScript/rct_comp_adminMenu.js" />
+                <asp:ScriptReference Path="~/TypeScript/rct_comp_avatarIcon.js" />
+                <asp:ScriptReference Path="~/TypeScript/rct_comp_errorBoundary.js" />
+                <asp:ScriptReference Path="~/TypeScript/rct_comp_dropdown.js" />
+                <asp:ScriptReference Path="~/TypeScript/rct_comp_messagePopup.js" />
+                <asp:ScriptReference Path="~/TypeScript/GlobalNavigation.js" />
+                <asp:ScriptReference Path="~/TypeScript/GlobalSearch.js" />
+                <asp:ScriptReference Path="~/TypeScript/AssociationPanel.js" />
+                <asp:ScriptReference Path="~/TypeScript/Onboarding.js" />
+            </Scripts>
+            <Services>
+                <asp:ServiceReference Path="~/Services/Ajax/SearchService.svc" />
+                <asp:ServiceReference Path="~/Services/Ajax/GlobalService.svc" />
+            </Services>
+        </tstsc:ScriptManagerEx>
+
+
+
+
+        <!-- Start Header Block -->
+        <tstuc:GlobalNavigation id="tstGlobalNavigation" runat="server" />
+        <!-- End Header Block -->
+
+
+
+
+
+        <!-- Start Dynamic Message / Dialog Block (eg used by global search and onboarding) -->
+        <div id="dlgGlobalDynamic"></div>
+        <!-- End Dynamic Message / Dialog Block -->
+
+
+
+
+
+        <!-- Start Main Content Block -->            
+        <div class="min-h-insideHeadAndFoot">
+            <asp:ContentPlaceHolder ID="cplMainContent" runat="server" />
+        </div>
+        <!-- End Main Content Block -->
+
+
+
+
+
+        <!-- Begin Footer Block -->
+        <!-- BEGIN PCS COMMENT -->
+        <%--<footer class="footer df flex-wrap bg-off-white fs-90 gray b-yolk bt">
+            <div class="w-50 w-100-sm px3 pt3 pb2">
+                <p class="tc-sm fs-80-sm mb2">
+                    <asp:Label ID="lblProductName" runat="server" />
+		            v<asp:Label ID="lblVersionNumber" runat="server" />.<tstsc:LabelEx ID="lblBuildNumber" runat="server" />
+		            |
+		            <asp:Label ID="lblCurrentCulture" runat="server" />
+		            |
+		            <asp:Label ID="lblCurrentTimezone" runat="server" />
+                    <asp:Label ID="ltrDebug" runat="server" Text="[Debug]" Visible="false" />
+                </p>
+                <p class="tc-sm fs-80-sm ma0">
+                    <asp:Localize runat="server" Text="<%$ Resources:Main,Global_Copyright %>" />
+		            (C)
+		            <asp:Label ID="lblCopyrightYear" runat="server" />,
+		            <tstsc:HyperLinkEx ID="lnkCompany" SkinID="CompanyName" runat="server" Target="_blank" CssClass="link-no-decoration" />
+		        </p>
+            </div>
+            <div class="w-50 w-100-sm px3 pt3 pt0-sm pb2 tr tc-sm">
+                <tstsc:ImageEx 
+                    CssClass="h5"
+                    runat="server" 
+                    ImageUrl="Images/CompanyLogoSmall.gif" 
+                    ID="footerCompanyLogo" 
+                    ClientIDMode="static"
+                    AlternateText="Inflectra" 
+                    />
+            </div>
+        </footer>--%>
+
+        <!-- END PCS COMMENT -->
+
+        <footer class="footer">
+            <div class="col-sm-6">
+                <div id="divCopyrightLicense">
+                    <p>
+
+                            <asp:Label ID="lblOrganization" runat="server" Font-Bold="true" />
+                    </p>
+                    <p>
+                        <asp:Label ID="lblProductName" runat="server" /> 
+                        v<asp:Label ID="lblVersionNumber" runat="server" />.<tstsc:LabelEx ID="lblBuildNumber" runat="server" />
+                        |
+                        <asp:Label ID="lblCurrentCulture" runat="server" />
+                        |
+                        <asp:Label ID="lblCurrentTimezone" runat="server" />
+                        <asp:Label ID="ltrDebug" runat="server" Text="[Debug]" Visible="false" />
+                        <asp:Localize ID="ltrVersion" runat="server"  Visible="false" />
+
+                    </p>
+                    <p>
+                        <asp:Localize runat="server" Text="<%$ Resources:Main,Global_Copyright %>" />
+                        (C)
+                            <asp:Label ID="lblCopyrightYear" runat="server"></asp:Label>,
+                            <tstsc:HyperLinkEx ID="lnkCompany" CssClass="company-link" Text="OnShore Technology Group, Inc" NavigateUrl="http://www.onshoretech.com" runat="server"  Target="_blank" />
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                    <tstsc:ImageEx AlternateText="OnShore" ImageUrl="Images/CompanyLogo.gif" ID="companyLogo" runat="server" ClientIDMode="Static" />
+            </div>
+        </footer>
+
+        <!-- End Footer Block -->
+
+
+
+
+        <tstuc:MessageManager id="ucMessageManager" runat="server" />
+        <asp:ContentPlaceHolder ID="cplScripts" runat="server" />
+	</tstsc:ActionlessForm>
+
+
+
+
+
+    <!-- Keyboard shortcut modal -->
+    <div class="modal fade" id="global-nav-keyboard-shortcuts" tabindex="-1" role="dialog" aria-labelledby="keyboard-shortcuts">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content fill-darken2 dark filter-blur-bg">
+                <div class="modal-header border-none">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Keyboard Shortcuts</h4>
+                    <p class="tc"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_Instructions %>" /></p>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-sm-6">
+                        <h3 class="tc"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_Modal_Title %>" /></h3>
+                        <dl class="dl-horizontal pb2-children">
+                            <dt></dt>
+                            <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Title %>" /></h4></dd>
+                            <dt></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Note %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>1</kbd></dt>
+                             
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_ProjectHome %>" /></dd>
+                            <dt><kbd>mod</kbd>&nbsp;+&nbsp;<kbd>alt</kbd>&nbsp;+&nbsp;<kbd>w</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_OpenWorkspace %>" /></dd>
+                            <dt><kbd>mod</kbd>&nbsp;+&nbsp;<kbd>alt</kbd>&nbsp;+&nbsp;<kbd>a</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_OpenArtifacts %>" /></dd>
+                            <dt><kbd>mod</kbd>&nbsp;+&nbsp;<kbd>alt</kbd>&nbsp;+&nbsp;<kbd>u</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_OpenUser %>" /></dd>
+                        </dl>
+                        <br />
+                        <dl class="dl-horizontal pb2-children">
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>r</kbd>&nbsp;...&nbsp;<kbd>q</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Requirements %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>p</kbd>&nbsp;...&nbsp;<kbd>b</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_PlanningBoard %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>r</kbd>&nbsp;...&nbsp;<kbd>l</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Releases %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>d</kbd>&nbsp;...&nbsp;<kbd>c</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Documents %>" /></dd>
+                        </dl>
+                        <br />
+                        <dl class="dl-horizontal pb2-children">
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>t</kbd>&nbsp;...&nbsp;<kbd>c</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_TestCases %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>t</kbd>&nbsp;...&nbsp;<kbd>s</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_TestSets %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>t</kbd>&nbsp;...&nbsp;<kbd>r</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_TestRuns %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>a</kbd>&nbsp;...&nbsp;<kbd>h</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_AutomationHosts %>" /></dd>
+                        </dl>
+                        <br />
+                        <dl class="dl-horizontal pb2-children">
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>s</kbd>&nbsp;...&nbsp;<kbd>c</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_SourceCode %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>c</kbd>&nbsp;...&nbsp;<kbd>o</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Commits %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>p</kbd>&nbsp;...&nbsp;<kbd>r</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_PullRequests %>" /></dd>
+                        </dl>
+                        <br />
+                        <dl class="dl-horizontal pb2-children">
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>i</kbd>&nbsp;...&nbsp;<kbd>n</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Incidents %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>t</kbd>&nbsp;...&nbsp;<kbd>k</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Tasks %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>u</kbd>&nbsp;...&nbsp;<kbd>s</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Resources %>" /></dd>
+                        </dl>
+                        <br />
+                        <dl class="dl-horizontal pb2-children">
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>r</kbd>&nbsp;...&nbsp;<kbd>p</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Reporting %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>0</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_UserProfile %>" /></dd>
+                            <dt><kbd>n</kbd>&nbsp;...&nbsp;<kbd>a</kbd>&nbsp;...&nbsp;<kbd>d</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_Administration %>" /></dd>
+                        </dl>
+                        <br />
+                        <dl class="dl-horizontal pb2-children">
+                            <dt><kbd>mod</kbd>&nbsp;+&nbsp;<kbd>alt</kbd>&nbsp;+&nbsp;<kbd>w</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_ToggleWorkspaceMenu %>" /></dd>
+                            <dt><kbd>mod</kbd>&nbsp;+&nbsp;<kbd>alt</kbd>&nbsp;+&nbsp;<kbd>a</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_ToggleArtifactMenu %>" /></dd>
+                            <dt><kbd>mod</kbd>&nbsp;+&nbsp;<kbd>alt</kbd>&nbsp;+&nbsp;<kbd>u</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_ToggleUserMenu %>" /></dd>
+                            <dt><kbd>shift</kbd>&nbsp;+&nbsp;<kbd>a</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalNav_ToggleAdminMenu %>" /></dd>
+                        </dl>
+                        <br />
+                        <dl class="dl-horizontal pb2-children">
+                            <dt></dt>
+                            <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalSearch_Title %>" /></h4></dd>
+                            <dt><kbd>shift</kbd>&nbsp;+&nbsp;<kbd>s</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalSearch_Search %>" /></dd>
+                            <dt><kbd>enter</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalSearch_ShowResults %>" /></dd>
+                        </dl>
+                        <br />
+                        <dl class="dl-horizontal pb2-children">
+                            <dt></dt>
+                            <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalAction_Title %>" /></h4></dd>
+                            <dt><kbd>shift</kbd>&nbsp;+&nbsp;<kbd>i</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalAction_NewIncident %>" /></dd>
+                            <dt><kbd>?</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalAction_ShortcutReference %>" /></dd>
+                            <dt><kbd>r</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_GlobalAction_Refresh %>" /></dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="text-center"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_ListPage_Title %>" /></h3>
+                        <dl class="dl-horizontal pb2-children">
+                            <dt><kbd>shift</kbd>&nbsp;+&nbsp;<kbd>x</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_ListPage_ToggleNav %>" /></dd>
+                            <dt><kbd>x</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_ListPage_ToggleCheckRow %>" /></dd>
+                            <dt><kbd>j</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_ListPage_NextRow %>" /></dd>
+                            <dt><kbd>k</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_ListPage_PreviousRow %>" /></dd>
+                            <dt><kbd>enter</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_ListPage_OpenItem %>" /></dd>
+                            <dt><kbd>shift</kbd>&nbsp;+&nbsp;<kbd>enter</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_ListPage_OpenItemNewWindow %>" /></dd>
+                        </dl>
+                        <br />
+                        <h3 class="text-center"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_DetailsPage_Title %>" /></h3>
+                        <dl class="dl-horizontal pb2-children">
+                            <dt><kbd>mod</kbd>&nbsp;+&nbsp;<kbd>s</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_DetailsPage_Save %>" /></dd>
+                            <dt><kbd>l</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_DetailsPage_NextTab %>" /></dd>
+                            <dt><kbd>h</kbd></dt>
+                            <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_DetailsPage_PreviousTab %>" /></dd>
+                        </dl>
+                        <br />
+                        <div id="shortcuts-test-execution" class="dn">
+                            <h3 class="text-center"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_Title %>" /></h3>
+                            <dl class="dl-horizontal pb2-children">
+                                <dt></dt>
+                                <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_HeaderDisplay %>" /></h4></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>1</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_SplitView %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>2</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_TableView %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>3</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_MiniView %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>j</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_SubViewLeft %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>k</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_SubViewRight %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>d</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_ShowRun %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>c</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_ShowCustomProperties %>" /></dd>
+
+                                <dt></dt>
+                                <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_HeaderInspector %>" /></h4></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>r</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_ResultsTab %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>a</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_AttachmentsTab %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>i</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_IncidentsTab %>" /></dd>
+
+                                <dt></dt>
+                                <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_HeaderActions %>" /></h4></dd>
+                                <dt><kbd>shift</kbd>&nbsp;+&nbsp;<kbd>alt</kbd>&nbsp;+&nbsp;<kbd>p</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_TogglePausePlay %>" /></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>r</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_AddResults %>" /></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>f</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_Fail %>" /></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>p</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_Pass %>" /></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>c</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_Caution %>" /></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>b</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_Blocked %>" /></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>n</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_NotApplicable %>" /></dd>
+
+                                <dt></dt>
+                                <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_HeaderNavigate %>" /></h4></dd>
+                                <dt><kbd>j</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_NextStep %>" /></dd>
+                                <dt><kbd>k</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_PreviousStep %>" /></dd>
+                                <dt><kbd>shift</kbd>&nbsp;+&nbsp;<kbd>j</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_NextRun %>" /></dd>
+                                <dt><kbd>shift</kbd>&nbsp;+&nbsp;<kbd>k</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_PreviousRun %>" /></dd>
+                            </dl>
+                        </div>
+                        <div id="shortcuts-test-execution-exploratory" class="dn">
+                            <h3 class="text-center"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_Title %>" /></h3>
+                            <dl class="dl-horizontal pb2-children">
+                                <dt></dt>
+                                <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_HeaderActions %>" /></h4></dd>
+                                <dt><kbd>a</kbd>&nbsp;...&nbsp;<kbd>a</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_AddStep %>" /></dd>
+                                <dt><kbd>a</kbd>&nbsp;...&nbsp;<kbd>c</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_CloneStep %>" /></dd>
+                                <dt><kbd>a</kbd>&nbsp;...&nbsp;<kbd>d</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_DeleteStep %>" /></dd>
+                                
+                                <dt><kbd>m</kbd>&nbsp;...&nbsp;<kbd>j</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_MoveStepDown %>" /></dd>
+                                <dt><kbd>m</kbd>&nbsp;...&nbsp;<kbd>k</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_MoveStepUp %>" /></dd>
+
+                                <dt></dt>
+                                <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_HeaderEdit %>" /></h4></dd>
+                                <dt><kbd>e</kbd>&nbsp;...&nbsp;<kbd>d</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_EditStepDescription %>" /></dd>
+                                <dt><kbd>e</kbd>&nbsp;...&nbsp;<kbd>e</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_EditStepExpectedResult %>" /></dd>
+                                <dt><kbd>e</kbd>&nbsp;...&nbsp;<kbd>s</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_EditStepSampleData %>" /></dd>
+                                <dt><kbd>e</kbd>&nbsp;...&nbsp;<kbd>a</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_EditStepActualResult %>" /></dd>
+                                <dt><kbd>e</kbd>&nbsp;...&nbsp;<kbd>c</kbd>&nbsp;...&nbsp;<kbd>n</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_EditCaseName %>" /></dd>
+                                <dt><kbd>e</kbd>&nbsp;...&nbsp;<kbd>c</kbd>&nbsp;...&nbsp;<kbd>d</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_EditCaseDescription %>" /></dd>
+                                
+                                <dt><kbd>shift</kbd>&nbsp;+&nbsp;<kbd>alt</kbd>&nbsp;+&nbsp;<kbd>p</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_TogglePausePlay %>" /></dd>
+
+                                <dt></dt>
+                                <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_HeaderChangeStatus %>" /></h4></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>f</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_Fail %>" /></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>p</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_Pass %>" /></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>c</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_Caution %>" /></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>b</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_Blocked %>" /></dd>
+                                <dt><kbd>alt</kbd>&nbsp;+&nbsp;<kbd>n</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_NotApplicable %>" /></dd>
+                                
+                                <dt></dt>
+                                <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_HeaderNavigate %>" /></h4></dd>
+                                <dt><kbd>j</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_NextStep %>" /></dd>
+                                <dt><kbd>k</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_PreviousStep %>" /></dd>
+
+                                <dt></dt>
+                                <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_HeaderDisplay %>" /></h4></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>d</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_ShowCaseDescription %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>e</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_ShowExpectedResult %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>s</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_ShowSampleData %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>c</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_ShowCustomProperties %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>l</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_ShowLastResult %>" /></dd>
+
+                                <dt></dt>
+                                <dd><h4 class="accent"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_HeaderInspector %>" /></h4></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>t</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecutionExploratory_TasksTab %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>a</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_AttachmentsTab %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>i</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_TestExecution_IncidentsTab %>" /></dd>
+                                <dt></dt>
+                            </dl>
+                        </div>
+                        <div id="shortcuts-planning-board" class="dn">
+                            <h3 class="text-center"><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_PlanningBoard_Title %>" /></h3>
+                            <dl class="dl-horizontal pb2-children">
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>d</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_PlanningBoard_ToggleDetails %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>i</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_PlanningBoard_ToggleIncidents %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>t</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_PlanningBoard_ToggleTasks %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>c</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_PlanningBoard_ToggleTestCases %>" /></dd>
+                                <dt><kbd>g</kbd>&nbsp;...&nbsp;<kbd>c</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_PlanningBoard_GroupByComponent %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>p</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_PlanningBoard_GroupByPackage %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>r</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_PlanningBoard_GroupByPriority %>" /></dd>
+                                <dt><kbd>d</kbd>&nbsp;...&nbsp;<kbd>s</kbd></dt>
+                                <dd><asp:Localize runat="server" Text="<%$Resources:Dialogs,KeyBoardShortcuts_PlanningBoard_GroupByStatus %>" /></dd>
+                                <dt></dt>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-none">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    var resx = Inflectra.SpiraTest.Web.GlobalResources;
+
+    Mousetrap.bind('t a r d i s', function () {
+        $('body').addClass('animated tada');
+        $('body').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+            $('body').removeClass('animated tada');
+        });
+    });
+    //NAVIGATING DATAGRIDS ON LIST PAGES (KEYBOARD)
+    //Toggle being able to traverse the data grid
+    Mousetrap.bind('shift+x', function focusOnGrid() {
+        if($('.main-content > .DataGrid').length) {
+            $('.main-content > .DataGrid > tbody tr').removeClass('is-keys-active');
+            $('.main-content > .DataGrid > tbody tr:first-child').addClass('is-keys-active');
+            $('.main-content > .DataGrid').toggleClass('is-keys-active');
+            pageMasterGrid.rowCount = $('.main-content .DataGrid > tbody tr:not(.Pagination)').length;
+            //change setting to store whether the grid is in use or not (to help with unbinding and binding)
+            pageMasterGrid.gridIsActive = !pageMasterGrid.gridIsActive;
+            pageMasterGrid.setSelectedRow();
+            //bind and unbind depending on state 
+            if(pageMasterGrid.gridIsActive) {
+                pageMasterGrid.unbind();
+                pageMasterGrid.bind();
+            } else {
+                pageMasterGrid.unbind();
+                pageMasterDetails.bind();
+            }
+        }
+    });
+    //Toggle the selector Checkbox on the currently selected row
+    Mousetrap.bind('x', function toggleCheck() {
+        var checkboxRow = $('.DataGrid.is-keys-active tr.is-keys-active'),
+            checkbox = $('.DataGrid.is-keys-active tr.is-keys-active .Checkbox input');
+        checkbox.prop("checked", !checkbox.prop("checked"));
+        checkboxRow.toggleClass('Highlighted');
+        checkboxRow.toggleClass('Normal');
+    });
+    
+    //Go to the artifact listed in the row (in current tab, in new tab)
+    Mousetrap.bind('enter', function openItem() {
+        var rowTarget = $('.DataGrid.is-keys-active tr.is-keys-active td.priority1 a').attr('href');
+        if(rowTarget) {
+            window.location = $('.DataGrid.is-keys-active tr.is-keys-active td.priority1 a').attr('href');
+        }
+    });
+    Mousetrap.bind('shift+enter', function openItemNewWindow() {
+        var rowTarget = $('.DataGrid.is-keys-active tr.is-keys-active td.priority1 a').attr('href');
+        if(rowTarget) {
+            window.open($('.DataGrid.is-keys-active tr.is-keys-active td.priority1 a').attr('href'), '_blank');
+        }
+    });
+    pageMasterGrid = {
+        gridIsActive: false,
+        rowCount: '',
+        currentRow: '',
+        setSelectedRow: function () {
+            $('.DataGrid tr td:first-child').removeClass('shadow-l-orange-dark');
+            $('.DataGrid.is-keys-active tr.is-keys-active td:first-child').addClass('shadow-l-orange-dark');
+            pageMasterGrid.currentRow = $('.DataGrid.is-keys-active tr.is-keys-active').index();
+        },
+        bind: function() {
+           //Move up or down a row
+            Mousetrap.bind('j', function moveRowDown() {
+                if (pageMasterGrid.rowCount > (pageMasterGrid.currentRow + 1)) {
+                    $('.DataGrid.is-keys-active tr.is-keys-active').removeClass('is-keys-active').next().addClass('is-keys-active');
+                    pageMasterGrid.setSelectedRow();
+                }
+            });
+            Mousetrap.bind('k', function moveRowUp() {
+                if (pageMasterGrid.currentRow > 0) {
+                    $('.DataGrid.is-keys-active tr.is-keys-active').removeClass('is-keys-active').prev().addClass('is-keys-active');
+                    pageMasterGrid.setSelectedRow();
+                }
+            }); 
+        },
+        unbind: function() {
+            Mousetrap.unbind('j');
+            Mousetrap.unbind('k');
+        }
+    };
+
+	window.addEventListener("load", function () {
+        pageMasterDetails.bind();
+
+        //If in debug mode
+        //if (document.getElementById("<%=ltrDebug.ClientID%>")) {
+            // change the nav bg color
+        //    document.documentElement.style.setProperty('--nav-bg', 'rgba(119,52,57,.9)');
+        //}
+    });
+
+    //NAVIGATING DETAILS PAGES (KEYBOARD)
+    //Move right or left one tab
+    var pageMasterDetails = {
+        bind: function() {
+            //only bind on a standard page
+            if( $('.main-content').length ) {
+                Mousetrap.bind('l', function moveTabRight() {
+                    var tabCount = $('.main-content .TabControl > .Tab').length,
+                        currentTab = $('.main-content .TabControl > .Tab.TabSelected').index();
+                    if (tabCount > (currentTab + 1)) {
+                        $('.main-content .TabControl > .Tab.TabSelected').next().click();
+                    }
+                });
+                Mousetrap.bind('h', function moveTabLeft() {
+                    var currentTab = $('.main-content .TabControl > .Tab.TabSelected').index();
+                    if (currentTab > 0) {
+                        $('.main-content .TabControl > .Tab.TabSelected').prev().click();
+                    }
+                });
+            }
+        }
+    }
+
+    
+</script>
+</html>

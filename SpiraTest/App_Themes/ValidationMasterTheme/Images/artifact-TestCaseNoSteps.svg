@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{clip-path:url(#SVGID_2_);fill:none;stroke:#0667AC;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#0667AC;}
+	.st2{fill:#7FABDA;}
+	.st3{fill:none;stroke:#839594;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="284" y="375" width="43.92" height="43.92"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st0" d="M316.8,403.56l9.6-9.6 M316.8,384.36l9.6,9.6 M326.4,393.96h-15.2"/>
+	</g>
+	<polyline class="st1" points="301.6,412.36 311.2,412.36 311.2,375.56 284,375.56 284,412.36 	"/>
+	<path class="st2" d="M301.6,381.16l-17.6-5.6v36.8l17.6,5.6V381.16z M301.6,381.16"/>
+	<line class="st3" x1="295.2" y1="398.76" x2="299.2" y2="400.36"/>
+</g>
+</svg>
